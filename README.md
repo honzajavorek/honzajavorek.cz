@@ -1,5 +1,5 @@
 
-# Blog _Javorové lístky_
+# Blog Javorové lístky
 
 This is source code of my blog _Javorové lístky_. You can read it
 comfortably at [blog.javorek.net][blog] if you know Czech. It is
