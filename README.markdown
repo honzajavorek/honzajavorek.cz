@@ -6,7 +6,7 @@ comfortably at [blog.javorek.net][blog] if you know Czech. It is
 proudly powered by Python using Blogofile, Markdown, and Mako
 (I'd like to use my favorite Jinja2, but [it's not possible yet][blogofile0.8]).
 
-Push requests fixing typos in my articles are very welcome! :-D
+GitHub pull requests fixing typos in my articles are very welcome! :-D
 
 
 ## License (English)

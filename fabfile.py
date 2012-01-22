@@ -57,7 +57,7 @@ def update_requirements():
 def update_license_year():
     """Checks year range in license and updates it if necessary."""
 
-    license_file = os.path.join(project_dir, 'README.md')
+    license_file = os.path.join(project_dir, 'README.markdown')
 
     with open(license_file) as license:
         content = unicode(license.read(), 'utf-8')
@@ -86,6 +86,7 @@ def update_styles():
     with lcd(css_dir):
         local('sass --style compressed --update .:.')
         local('rm -rf .sass-cache')
+    okay('SCSS compiled.')
 
 
 # Main Fabric tasks
@@ -108,9 +109,18 @@ def build():
 def deploy():
     """Uploads blog to hosting via FTP."""
 
-    with lcd(site_dir):
-        # git-ftp https://github.com/ezyang/git-ftp
-        pass
+    execute(build)
+
+    ftpsync = os.path.join(project_dir, 'ftpsync.py')
+    password_file = os.path.join(project_dir, '.ftp_password')
+
+    with open(password_file) as f:
+        password = f.read()
+
+    okay('Connecting to FTP and uploading...')
+    local('python %(ftpsync)s ftp://javorek.net:%(pwd)s@www.javorek.net/test %(dir)s --upload'
+        % dict(ftpsync=ftpsync, dir=output_dir, pwd=password))
+    okay('All uploaded.')
 
 
 @task
@@ -164,3 +174,13 @@ draft: true
     okay("Article prepared as '%s'." % os.path.basename(filename))
     local('sublime-text-2 "%s"' % filename)
 
+
+@task
+def publish():
+    with lcd(posts_dir):
+        local('git add -A')
+        local('git commit -m "publishing new articles"')
+        local('git push origin master')
+    okay("All published.")
+
+    execute(deploy)

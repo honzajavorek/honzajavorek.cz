@@ -22,3 +22,4 @@
 - last tweet? (by javascript)
 - gui accessible for mobile phones
 - migration: production db -> localhost db -> script taking HTML versions and metadata -> pandoc -> saving to yaml/markdown format
+- .htaccess disallowing .listing files (not safe, not nice)
