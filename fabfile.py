@@ -10,7 +10,16 @@ from glob import glob
 import re
 
 
+# Paths
+
 project_dir = os.path.dirname(os.path.realpath(__file__))
+src_dir = os.path.join(project_dir, 'src')
+posts_dir = os.path.join(src_dir, '_posts')
+output_dir = os.path.join(src_dir, '_site')
+css_dir = os.path.join(src_dir, 'css')
+
+
+# Auxiliary functions
 
 def okay(message):
     puts((green(u'✔ ') + message).encode('utf-8'))
@@ -74,10 +83,9 @@ def update_license_year():
 def update_styles():
     """Compiles SCSS files to CSS."""
 
-    with lcd(project_dir):
-        #local('sass --style compressed --update %(css_dir)s:%(css_dir)s' % dict(css_dir=))
-        #local('rm -rf .sass-cache')
-        pass
+    with lcd(css_dir):
+        local('sass --style compressed --update .:.')
+        local('rm -rf .sass-cache')
 
 
 # Main Fabric tasks
@@ -90,7 +98,7 @@ def build():
     execute(update_license_year)
     execute(update_styles)
 
-    with lcd(os.path.join(project_dir, 'src')):
+    with lcd(src_dir):
         local('blogofile build')
 
     okay('See http://localhost:3838')
@@ -100,7 +108,7 @@ def build():
 def deploy():
     """Uploads blog to hosting via FTP."""
 
-    with lcd(project_dir):
+    with lcd(site_dir):
         # git-ftp https://github.com/ezyang/git-ftp
         pass
 
@@ -114,7 +122,6 @@ def write(title=None):
     if not isinstance(title, unicode):
         title = unicode(title, 'utf-8')
 
-    posts_dir = os.path.join(project_dir, 'src', '_posts')
     now = datetime.now()
 
     original_slug = slugify(title, True)

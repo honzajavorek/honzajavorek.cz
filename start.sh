@@ -2,12 +2,13 @@
 
 
 # Simple BASH script to begin work on project.
+# - Blogofile server
 # - Sass/Scss compiler
 # - opens terminal at project directory with virtualenv activated
 
 
 PROJECT_DIR=`dirname $0`
-CSS_DIR="$PROJECT_DIR/css"
+CSS_DIR="$PROJECT_DIR/src/css"
 
 
 RCFILE=`tempfile`
