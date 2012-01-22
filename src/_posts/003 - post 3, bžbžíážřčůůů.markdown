@@ -1,5 +1,5 @@
 ---
-categories: Unicode
+categories: Unicode, General Stuff
 date: 2009/08/22 15:22:00
 format: markdown
 title: Post 3 - Unicode Test - How about some 日本語テスト
@@ -24,5 +24,5 @@ I can eat glass:
 I kå Glas frässa, ond des macht mr nix!
 ᚛᚛ᚉᚑᚅᚔᚉᚉᚔᚋ ᚔᚈᚔ ᚍᚂᚐᚅᚑ ᚅᚔᚋᚌᚓᚅᚐ᚜
 אני יכול לאכול זכוכית וזה לא מזיק לי
-काचं शक्नोम्यत्तुम् । नोपहिनस्ति माम् ॥ 
+काचं शक्नोम्यत्तुम् । नोपहिनस्ति माम् ॥
 
