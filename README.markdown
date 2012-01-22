@@ -3,7 +3,8 @@
 
 This is source code of my blog _Javorové lístky_. You can read it
 comfortably at [blog.javorek.net][blog] if you know Czech. It is
-proudly powered by Python using Blogofile, Markdown, and jinja2.
+proudly powered by Python using Blogofile, Markdown, and Mako
+(I'd like to use my favorite Jinja2, but [it's not possible yet][blogofile0.8]).
 
 Push requests fixing typos in my articles are very welcome! :-D
 
@@ -30,3 +31,4 @@ https://creativecommons.org/licenses/by-nc-sa/3.0/cz/
 
 
 [blog]: http://blog.javorek.net
+[blogofile0.8]: http://www.blogofile.com/blog/archive/2011/04/1/
