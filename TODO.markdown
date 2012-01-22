@@ -12,3 +12,13 @@
 
 - http://www.blogofile.com/demo/sample_posts.html (sample posts)
 - http://www.blogofile.com/blog/archive/2011/04/1/ (jinja2)
+
+## Ideas
+
+- automatic FTP deploy
+- remove counts of comments
+- edit links right to github
+- about: minimalist, short, brief, list of profiles I actively use (github, linkedin, ...), follow me on twitter
+- last tweet? (by javascript)
+- gui accessible for mobile phones
+- migration: production db -> localhost db -> script taking HTML versions and metadata -> pandoc -> saving to yaml/markdown format
