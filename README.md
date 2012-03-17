@@ -1,7 +1,7 @@
 # Blog Javorové lístky
 
 
-## In English
+## English explanation
 
 This is source code of my blog _Javorové lístky_. You can read it
 comfortably at [honzajavorek.cz][blog] if you know Czech. It is
