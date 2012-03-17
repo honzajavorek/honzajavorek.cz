@@ -7,15 +7,9 @@
 - https://secure.flickr.com/photos/themandatepress/2398586965/
 - http://www.1stwebdesigner.com/inspiration/minimal-business-cards/
 
-## Blogofile tuning
-
-- http://www.blogofile.com/demo/sample_posts.html (sample posts)
-- http://www.blogofile.com/blog/archive/2011/04/1/ (jinja2)
-
 ## Ideas
 
 - deploy to ep.io
-- automatic FTP deploy
 - remove counts of comments
 - edit links right to github
 - about: minimalist, short, brief, list of profiles I actively use (github, linkedin, ...), follow me on twitter
