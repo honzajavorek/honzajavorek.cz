@@ -2,7 +2,7 @@
 
 
 # Simple BASH script to begin work on project.
-# - Blogofile server
+# - Pelican compiler
 # - Sass/Scss compiler
 # - opens terminal at project directory with virtualenv activated
 
@@ -19,14 +19,14 @@ cat $RCFILE >> $VIRTUALENV_RCFILE
 echo ". $PROJECT_DIR/env/bin/activate" >> $VIRTUALENV_RCFILE
 
 
-SERVER_RCFILE=`tempfile`
-cat $VIRTUALENV_RCFILE >> $SERVER_RCFILE
-echo "cd $PROJECT_DIR/src
-until blogofile serve 3838; do
-    echo 'Blogofile crashed with exit code $?. Respawning...' >&2
+PELICAN_RCFILE=`tempfile`
+cat $VIRTUALENV_RCFILE >> $PELICAN_RCFILE
+echo "cd $PROJECT_DIR
+until pelican src -r -s pelican.conf.py; do
+    echo 'Pelican crashed with exit code $?. Respawning...' >&2
     sleep 5
 done
-" >> $SERVER_RCFILE
+" >> $PELICAN_RCFILE
 
 SASS_RCFILE=`tempfile`
 cat $RCFILE >> $SASS_RCFILE
@@ -41,7 +41,7 @@ if which gnome-terminal &> /dev/null; then
     # GNOME Terminal
     exec gnome-terminal\
         --geometry="85x24+850+100"\
-        --tab -e "bash --rcfile $SERVER_RCFILE" -t "Server"\
+        --tab -e "bash --rcfile $PELICAN_RCFILE" -t "Pelican"\
         --tab -e "bash --rcfile $SASS_RCFILE" -t "Sass/Scss"\
         --tab -e "bash --rcfile $SHELL_RCFILE" -t "Shell"
 
@@ -50,5 +50,5 @@ else
 fi
 
 
-rm $RCFILE $VIRTUALENV_RCFILE $SERVER_RCFILE $SHELL_RCFILE
+rm $RCFILE $VIRTUALENV_RCFILE $PELICAN_RCFILE $SHELL_RCFILE
 
