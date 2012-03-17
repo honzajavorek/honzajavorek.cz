@@ -15,7 +15,6 @@
 ## Ideas
 
 - deploy to ep.io
-- migrate to pelican.notmyidea.org, Bologofile is dead
 - automatic FTP deploy
 - remove counts of comments
 - edit links right to github
