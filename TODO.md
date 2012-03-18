@@ -9,7 +9,8 @@
 
 ## Ideas
 
-- deploy to ep.io
+- deploy to ep.io or publish to github pages http://pelican.notmyidea.org/en/2.8/tips.html ?
+- inspiration https://github.com/jokull/solberg.is
 - remove counts of comments
 - edit links right to github
 - about: minimalist, short, brief, list of profiles I actively use (github, linkedin, ...), follow me on twitter
