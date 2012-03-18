@@ -8,7 +8,7 @@
 
 
 PROJECT_DIR=`dirname $0`
-CSS_DIR="$PROJECT_DIR/src/css"
+CSS_DIR="$PROJECT_DIR/theme/static"
 
 
 RCFILE=`tempfile`
@@ -22,7 +22,7 @@ echo ". $PROJECT_DIR/env/bin/activate" >> $VIRTUALENV_RCFILE
 PELICAN_RCFILE=`tempfile`
 cat $VIRTUALENV_RCFILE >> $PELICAN_RCFILE
 echo "cd $PROJECT_DIR
-until pelican src -r -s pelican.conf.py; do
+until pelican -r -s settings.py; do
     echo 'Pelican crashed with exit code $?. Respawning...' >&2
     sleep 5
 done
