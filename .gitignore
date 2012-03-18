@@ -1,6 +1,5 @@
 env
-output/*
-!output/README.md
+output
 *.pyc
 *.pyo
 .sass-cache
