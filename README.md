@@ -50,9 +50,6 @@ https://creativecommons.org/licenses/by-nc-sa/3.0/cz/
 [pull_requests]: http://help.github.com/send-pull-requests/
 
 
--------------------------------------------------------------------------------
-
-
 ## Installation
 
 This installation guide is for Ubuntu Linux in 7 simple steps. It's remainder for me in case I would forget how to run the blog on my computer.
