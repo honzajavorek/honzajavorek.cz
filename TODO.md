@@ -1,5 +1,13 @@
 # TODO
 
+1. Export all articles from my current system.
+2. Convert the articles into HTML by Texy! and then into Markdown by [Pandoc][pandoc]
+3. Import all articles in Markdown into this repository.
+4. Prepare minimal design. Remove all unnecessary stuff.
+5. Make a Pelican theme.
+6. Prepare a way to deploy Pelican. GitHub pages? ep.io?
+7. Write new articles. Love the world.
+
 ## Design
 
 - http://sbhr.dk/
@@ -18,3 +26,5 @@
 - gui accessible for mobile phones
 - migration: production db -> localhost db -> script taking HTML versions and metadata -> pandoc -> saving to yaml/markdown format
 - .htaccess disallowing .listing files (not safe, not nice)
+
+[pandoc]: http://johnmacfarlane.net/pandoc/
