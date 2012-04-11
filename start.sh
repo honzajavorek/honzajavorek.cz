@@ -7,36 +7,45 @@
 # - opens terminal at project directory with virtualenv activated
 
 
+# Define paths to affected directories
 PROJECT_DIR=`dirname $0`
 CSS_DIR="$PROJECT_DIR/theme/static"
 
 
+# Prepare RC file boilerplate
 RCFILE=`tempfile`
 echo ". ~/.bashrc" >> $RCFILE
 
+# RC file to activate virtualenv
 VIRTUALENV_RCFILE=`tempfile`
 cat $RCFILE >> $VIRTUALENV_RCFILE
 echo ". $PROJECT_DIR/env/bin/activate" >> $VIRTUALENV_RCFILE
 
-
+# Pelican RC file to watch changes and automatically recompile
 PELICAN_RCFILE=`tempfile`
 cat $VIRTUALENV_RCFILE >> $PELICAN_RCFILE
 echo "cd $PROJECT_DIR
+echo '>>> Pelican is watching for changes. Press Ctrl-C to stop.'
 until pelican -r -s settings.py; do
     echo 'Pelican crashed with exit code $?. Respawning...' >&2
     sleep 5
 done
 " >> $PELICAN_RCFILE
 
+# SASS RC file to watch changes and automatically recompile
 SASS_RCFILE=`tempfile`
 cat $RCFILE >> $SASS_RCFILE
 echo "sass --style expanded --debug-info --watch $CSS_DIR" >> $SASS_RCFILE
 
+# Shell RC file, only activates virtualenv and changes directory
+# to the project root
 SHELL_RCFILE=`tempfile`
 cat $VIRTUALENV_RCFILE >> $SHELL_RCFILE
 echo "cd $PROJECT_DIR" >> $SHELL_RCFILE
 
 
+# Launch Gnome terminal with tabs, each dedicated to one of the
+# tools prepared above
 if which gnome-terminal &> /dev/null; then
     # GNOME Terminal
     exec gnome-terminal\
@@ -46,9 +55,11 @@ if which gnome-terminal &> /dev/null; then
         --tab -e "bash --rcfile $SHELL_RCFILE" -t "Shell"
 
 else
+    # I didn't need any other graphic terminal yet.
     echo "Your terminal is not supported."
 fi
 
 
-rm $RCFILE $VIRTUALENV_RCFILE $PELICAN_RCFILE $SHELL_RCFILE
+# Cleanup all temporary RC files.
+rm $RCFILE $VIRTUALENV_RCFILE $PELICAN_RCFILE $SASS_RCFILE $SHELL_RCFILE
 
