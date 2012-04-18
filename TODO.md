@@ -1,8 +1,8 @@
 # TODO
 
-1. Export all articles from my current system.
-2. Convert the articles into HTML by Texy! and then into Markdown by [Pandoc][pandoc]
-3. Import all articles in Markdown into this repository.
+1. <del>Export all articles from my current system.</del>
+2. <del>Convert the articles into HTML by Texy! and then into Markdown by [Pandoc][pandoc]</del>
+3. <del>Import all articles in Markdown into this repository.</del>
 4. Prepare minimal design. Remove all unnecessary stuff.
 5. Make a Pelican theme.
 6. Prepare a way to deploy Pelican. GitHub pages? ep.io?
