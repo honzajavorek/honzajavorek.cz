@@ -39,9 +39,12 @@ MENUITEMS = (
 
 
 # A list of files to copy from the source to the destination
-#FILES_TO_COPY = (
-#    ('extra/robots.txt', 'robots.txt'),
-#)
+FILES_TO_COPY = (
+    ('robots.txt', 'robots.txt'),
+    ('404.html', '404.html'), # TODO
+    ('index.html', 'index.html'), # temporary
+    ('CNAME', 'CNAME'),
+)
 
 
 # Feeds
