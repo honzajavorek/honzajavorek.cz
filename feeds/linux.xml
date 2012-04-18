@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Javorové lístky</title><link href="http://www.honzajavorek.cz" rel="alternate"></link><link href="http://www.honzajavorek.cz/feeds/linux.xml" rel="self"></link><id>http://www.honzajavorek.cz</id><updated>2012-01-22T20:00:00+01:00</updated><entry><title>Co s hudbou?</title><link href="http://www.honzajavorek.cz/blog/co-s-hudbou.html" rel="alternate"></link><updated>2012-01-22T20:00:00+01:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/co-s-hudbou.html</id><summary type="html">&lt;p&gt;Bohužel jsem multižánrový člověk a mám na disku 140 GB hudby. Nevím
+co s ní. Nedělám si iluze, že to všechno poslouchám nebo že to chci
+všechno nějak schraňovat. Poradíte mi?&lt;/p&gt;
+&lt;p&gt;Předem avizuji, že jsem
+&lt;a href="https://github.com/Littlemaple/elk"&gt;souborově založený člověk&lt;/a&gt; a
+žádné divoké přehrávače s prohledávatelnými knihovnami nejenže
+neřeší níže nastíněný problém, ale ani nesmí na můj počítač.&lt;/p&gt;
+&lt;p&gt;Článek jsem uzrávat nenechával, nechtěl jsem tímhle trávit více
+času než je nutné. Proto je možná takový trochu &lt;em&gt;hrr&lt;/em&gt; :-)&lt;/p&gt;
+&lt;h2&gt;Co bych s hudbou nejraději udělal&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;smazal bych radikálně vše, co neposlouchám&lt;/li&gt;
+&lt;li&gt;zrušil bych až na výjimky „sbírky“ (dilema &lt;em&gt;mít všechny Floydy&lt;/em&gt;
+    vs. &lt;em&gt;mít alba Floydů, která poslouchám&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;vyhledat duplicity a raději symlinkovat soubory, pokud je má
+    opravdu smysl mít na více místech&lt;/li&gt;
+&lt;li&gt;vedle složky s alby a případnými kusovkami bych udělal složku
+    s mixy, kde jsou pečlivě namíchané playlisty podle různé nálady&lt;/li&gt;
+&lt;li&gt;otagoval správně veškerou hudbu, irituje mě jak je všechno
+    strašně nesourodé a neorganizované&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Problémy&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;jak poznat co neposlouchám?&lt;/li&gt;
+&lt;li&gt;jak vyhledat duplicity v písničkách (soubory nemusí mít stejný
+    název ani velikost – např. když jsou v různém bitrate)&lt;/li&gt;
+&lt;li&gt;jak otagovat hudbu?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Popravdě, s tím mazáním bych si poradil. Duplicity jsou horší, ale
+i to jde algoritmicky řešit, můžu si za dvě hodiny napsat skript,
+který bude chytřejší než běžné hledače duplicitních souborů. Co ale
+s těmi tagy?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;tagování, struktura a vše je naprosto chaotické&lt;/li&gt;
+&lt;li&gt;konvence pojmenování souborů je naprosto chaotická&lt;/li&gt;
+&lt;li&gt;žádný nástroj neproleze celou mou hudbu a neotaguje ji
+    spolehlivě (ani
+    &lt;a href="http://musicbrainz.org/doc/MusicBrainz_Picard"&gt;MusicBrainz Picard&lt;/a&gt;),
+    je nutná účast člověka a já s tím nechci strávit půl života ani to
+    ručně udržovat&lt;/li&gt;
+&lt;li&gt;vyhovovala by mi netradiční struktura:&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;folk/Xavier Baumaxa/2003 - Fenkám/01 Nedělní chvilka poesie.mp3&lt;/code&gt;
+    pro umělce s více alby&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pop/Kryštof - Poločas/01 Plán.mp3&lt;/code&gt; pro umělce s jediným albem&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pop/Mig 21/Mig 21 - Chci ti říct.mp3&lt;/code&gt; pro kusovky zařaditelné
+    k umělci, od něhož mám nějaká alba&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mixes/.../Britney Spears - Toxic.mp3&lt;/code&gt; pro úplné kusovky, které
+    mám jen tak&lt;/li&gt;
+&lt;li&gt;Žádné jiné informace než ty o umělci, albu, roku, čísla tracku
+    a názvu tracku mě nezajímají. Nechci aby tam překážely nějaké
+    komentáře typu &lt;em&gt;tohle je z iTunes, milujte iTunes a množte se&lt;/em&gt; nebo
+    &lt;em&gt;music from ultrawesome mega hyper ganjatorrent&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Řešení?&lt;/h2&gt;
+&lt;p&gt;Nemám tušení. Není to algoritmizovatelné, je to šíleně &lt;strong&gt;fuzzy&lt;/strong&gt;,
+není to řešitelné. Navíc mám spoustu alb neúplných nebo takových,
+které v žádných registrech nejsou (různé výběry, world music, čeští
+a slovenští interpreti, …).&lt;/p&gt;
+&lt;p&gt;Jeden můj kamarád údajně &lt;strong&gt;smazal všechnu svou hudbu&lt;/strong&gt; – řekl si,
+že může poslouchat online rádia a že poslouchání stále téže hudby
+jej nikam dál neposouvá. OK, to už je hodně radikální, ale mojí
+sbírce by určitě nějaký podobný přístup prospěl.&lt;/p&gt;
+&lt;h3&gt;Mazání&lt;/h3&gt;
+&lt;p&gt;Uvažuji, že bych promazal drtivou většinu věcí. Jen máloco z hudby
+není v tomto směru obnovitelné. Kritériem bude otázka:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Jsem si stoprocentně jistý, že si tuto hudbu chci nechat, že se mi
+líbí a že ji poslouchám?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Odpověď &lt;strong&gt;ne&lt;/strong&gt; vede ke klávese &lt;em&gt;delete&lt;/em&gt;.&lt;/p&gt;
+&lt;h3&gt;Rušení alb&lt;/h3&gt;
+&lt;p&gt;Potom bych zrušil drtivou většinu alb. Jen málokdy se mi líbí celé.
+Pouštím si sice hudbu po albech, ale vlastně mě to baví o dost méně
+než si ji pouštět namixovanou. Drtivá většina alb má 3 dobré
+písničky a zbytek je o ničem. Život je krátký na to poslouchat
+průměr. Kritériem ponechání či rozebrání a promazání bude otázka:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Pouštěl bych si často toto album jako celek? Líbí se mi celé?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Mixy&lt;/h3&gt;
+&lt;p&gt;Tím mi zbude pár alb, jejichž existenci i obsah jsem si 2× obhájil
+a které zřejmě půjde ručně udržovat. Zbytek přesunu do mixů nebo
+smažu. Mixy potom nebudou nijak třízeny, bude to plochá struktura –
+např. bad mood, africa, good morning, reggae, classic rock, pop,
+club, sentimental, … V každé složce budou prostě jen naházené
+soubory bez jakéhokoliv ladu, skladu, koncepčního tagování, pořadí
+(přehrávač má přece &lt;em&gt;shuffle&lt;/em&gt;), atd.&lt;/p&gt;
+&lt;h2&gt;Správná cesta?&lt;/h2&gt;
+&lt;p&gt;Hudba se změnila. Už nelze mít vše utřízené a organizované jako to
+šlo, když světu vládly gramodesky, kazety, nebo CD. Musím se zřejmě
+změnit taky. Změnit přístup a jestliže jsou data, která se snažím
+třídit, takto chaotická, tak potom musí zřejmě i mé třízení být co
+nejplošší a nejméně komplikované. Vlastně takové &lt;em&gt;netřízení&lt;/em&gt;. Jinak
+bych se zbláznil nebo nedělal nic jiného, než že bych třídil hudbu.
+Nebo ne? Existuje jiná cesta?&lt;/p&gt;</summary><category term="linux"></category><category term="management"></category><category term="software"></category><category term="ušima"></category></entry><entry><title>Lisa: HP EliteBook 8440p</title><link href="http://www.honzajavorek.cz/blog/lisa-hp-elitebook-8440p.html" rel="alternate"></link><updated>2010-11-29T15:09:00+01:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/lisa-hp-elitebook-8440p.html</id><summary type="html">&lt;p&gt;Pořídil jsem si
+&lt;a href="http://blog.javorek.net/novy-laptop/"&gt;nový laptop&lt;/a&gt;. Jak jste si
+přečetli v nadpisu, je to HP EliteBook 8440p a na rozdíl od
+předešlého jsem se rozhodl mu dát jméno a to hned. Nazval jsem ho
+&lt;em&gt;Lisa&lt;/em&gt;, protože je na leasing :) Mám rád jména, která se nabídnou
+tak nějak sama, třeba &lt;em&gt;Netvor&lt;/em&gt; pro moje kolo.&lt;/p&gt;
+&lt;p&gt;Co se mi na něm líbí? Že je nový, odolný, výkonný a fajn. Líbí se
+mi matný displej, lampička nad klávesnicí, opravdu odolná
+konstrukce a zajímavá výbava. Nerozplývám se nad procesorem nebo
+grafickou kartou, protože jim nerozumím a ani rozumět nechci.
+Oplývám se naopak nad tím, jak svižně systém jede na RAMku a na
+baterku, i když tu výdrž bych si asi představoval lepší. No a s tou
+RAMkou… můžu mít otevřené Eclipse, Firefox, virtuály, no prostě
+kdovíco a jede to parádně, přičemž System Monitor mi navíc dává
+jasně najevo, že swap oddíl jsem na disku vyhrazoval prakticky
+zbytečně. Tímto povídáním o paměti zdravím hlavně majitele strojů
+Mac, především pak &lt;a href="http://twitter.com/svecmichal"&gt;@svecmichal&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Hned jak jsem si laptop vezl z Prahy, nainstaloval jsem do něj ve
+žlutém autobuse nejnovější Ubuntu, 64bit. Rozhodl jsem se zahrnout
+do článku výčet toho, co jsem musel někde hledat nebo řešit, než
+jsem se na počítači zabydlel. A to jsem se rozhodl nezabydlovat se
+příliš – nemám čas na kraviny, tak jsem jen proletěl nastavení a
+programy nahazuji za běhu podle toho, jak je zrovna potřebuji. Je
+to i dobrý způsob jak zjistit, že některé programy vůbec
+nepotřebuji :D&lt;/p&gt;
+&lt;h2&gt;Návody&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Jak &lt;a href="http://blog.javorek.net/hamachi-na-ubuntu/"&gt;zprovoznit touchpad&lt;/a&gt; v novém Ubuntu, kde už není HAL:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;přečíst si
+    &lt;a href="http://newyork.ubuntuforums.org/showthread.php?t=1603683"&gt;tento post&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;a zapamatovat si, že magická formule zní
+    &lt;code&gt;synclient RTCornerButton=2 TopEdge=3000&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Jak vypnout otravné zvuky v Ubuntu:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;v Preferences / Sound&lt;/li&gt;
+&lt;li&gt;v Preferences / Startup Applications&lt;/li&gt;
+&lt;li&gt;v Administration / Login Screen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Jak naučit Git svoje jméno a jak nastavit barvičky:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://help.github.com/git-cheat-sheets/"&gt;http://help.github.com/…heat-sheets/&lt;/a&gt;
+    (hned nahoře, ty dva řádky v configuration)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jblevins.org/log/git-colors"&gt;http://jblevins.org/log/git-colors&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Jak se nerozčilovat, že i když mám tutéž verzi Apache a tytéž konfiguráky, že to zase nejede:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;a2enmod rewrite&lt;/code&gt; ;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Nezapomenout na řádek do &lt;code&gt;.bashrc&lt;/code&gt;:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;export PATH=${PATH}:/home/honza/workspace/android-sdk/tools:/home/honza/bin&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Jak rozjet Hamachi:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;viz &lt;a href="http://blog.javorek.net/hamachi-na-ubuntu/"&gt;můj návod&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Jak vypnout notifikace statusů v Pidginovi:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://bugs.launchpad.net/ubuntu/+source/pidgin/+bug/339370"&gt;https://bugs.launchpad.net/…/+bug/339370&lt;/a&gt;
+    (jde to naklikat, ale těžko se to hledá)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Jak přidat uživatele do MySQL:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://dev.mysql.com/doc/refman/5.1/en/adding-users.html"&gt;http://dev.mysql.com/…g-users.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Jak zašifrovat home po instalaci:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://ubuntu.shapado.com/questions/how-to-encrypt-home-directory-after-install"&gt;http://ubuntu.shapado.com/…fter-install&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Jak nainstalovat ffmpeg i s restricted blbinama:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo apt-get install ffmpeg libavcodec-extra-52&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Co funguje pěkně a testoval jsem&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;webkamera&lt;/li&gt;
+&lt;li&gt;čtečka karet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Co stále řeším, co nefunguje, co se mi nelíbí, nebo co nevím&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;čtečka otisků prstů
+    &lt;a href="http://twitter.com/#!/littlemaple/status/9233187414740993"&gt;bez šance&lt;/a&gt;
+    (nebo
+    &lt;a href="http://twitter.com/#!/martin_javorek/status/9239350004940800"&gt;ne&lt;/a&gt;?)&lt;/li&gt;
+&lt;li&gt;svítící tlačítka nahoře mi nejde moc ovládat ani přemapovat
+    (&lt;em&gt;touchpad&lt;/em&gt;, &lt;em&gt;web&lt;/em&gt;… naopak &lt;em&gt;mail&lt;/em&gt; jede, nechápu)&lt;/li&gt;
+&lt;li&gt;přepínání EN/CS klávesnice v Ubuntu mám postaru windowsácky
+    vždy na alt-shift, jenže na tomhle laptopu mi to funguje jen když
+    mačkám v pořadí shift-alt … to je poměrně velké WTF, ale poměrně
+    snadno se na to dá převyknout, co už nadělám&lt;/li&gt;
+&lt;li&gt;tethering s Androidem jsem nezkoušel a GSM modul taky ne (ale
+    ten asi ani jen tak nevyzkouším a ani si nedělám velké iluze)&lt;/li&gt;
+&lt;li&gt;vůbec jsem nepochopil, jak funguje numerická klávesnice a
+    podezřívám ji z toho, že prostě nefunguje… čert ji vem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;No kdybyste chtěli nějak pomoct, tak svoje problémy s klávesnicí
+jsem shrnul
+&lt;a href="http://www.linlap.com/wiki/hp+elitebook+8440p#comment_b07fe68646b9dd791d986ad4371c82ef"&gt;sem&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Závěr?&lt;/h2&gt;
+&lt;p&gt;No jsem určitě spokojený :) . Vždyť má pěkný displej, zdá se být
+nezničitelný, funguje F7 a hlavně písmeno Z… no a na posun kurzoru
+v Eclipse nečekám věčnost :) Mise splněna. Jde se do práce.&lt;/p&gt;</summary><category term="hračičkování"></category><category term="linux"></category><category term="práce"></category><category term="tech"></category></entry><entry><title>Hamachi na Ubuntu</title><link href="http://www.honzajavorek.cz/blog/hamachi-na-ubuntu.html" rel="alternate"></link><updated>2010-11-08T18:11:00+01:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/hamachi-na-ubuntu.html</id><summary type="html">&lt;p&gt;Opět využiju svého blogísku jako zápisníku, kam utrousím věci, jež
+nechci zapomenout. Brzy mě čeká zase instalace Ubuntu a tak budu
+potřebovat vědět, že pokud na něm chci mít funkční Hamachi (kvůli
+klientovi), musím…&lt;/p&gt;
+&lt;h2&gt;Jak nainstalovat Hamachi&lt;/h2&gt;
+&lt;p&gt;Stáhnout
+&lt;a href="http://files.hamachi.cc/linux/hamachi-0.9.9.9-20-lnx.tar.gz"&gt;Hamachi pro Linux&lt;/a&gt;
+a rozbalit. Potom:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$ &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;build&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;essential&lt;/span&gt;   # &lt;span class="n"&gt;m&lt;/span&gt;á&lt;span class="n"&gt;me&lt;/span&gt; &lt;span class="n"&gt;v&lt;/span&gt;š&lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="n"&gt;pot&lt;/span&gt;ř&lt;span class="n"&gt;ebn&lt;/span&gt;é &lt;span class="n"&gt;pro&lt;/span&gt; &lt;span class="n"&gt;instalaci&lt;/span&gt;?
+$ &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;make&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt;   # &lt;span class="n"&gt;instalujeme&lt;/span&gt;
+$ &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;tuncfg&lt;/span&gt;   # &lt;span class="n"&gt;nastaven&lt;/span&gt;í &lt;span class="n"&gt;tunel&lt;/span&gt;áž&lt;span class="n"&gt;e&lt;/span&gt;
+$ &lt;span class="n"&gt;hamachi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;init&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;   # &lt;span class="n"&gt;vytvo&lt;/span&gt;ř&lt;span class="n"&gt;en&lt;/span&gt;í &lt;span class="n"&gt;metadat&lt;/span&gt; &lt;span class="n"&gt;Hamachi&lt;/span&gt; &lt;span class="n"&gt;v&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;
+$ &lt;span class="n"&gt;hamachi&lt;/span&gt; &lt;span class="n"&gt;start&lt;/span&gt;   # &lt;span class="n"&gt;start&lt;/span&gt; &lt;span class="n"&gt;Hamachi&lt;/span&gt;
+$ &lt;span class="n"&gt;hamachi&lt;/span&gt; &lt;span class="n"&gt;login&lt;/span&gt;   # &lt;span class="n"&gt;p&lt;/span&gt;ř&lt;span class="n"&gt;ihl&lt;/span&gt;áš&lt;span class="n"&gt;en&lt;/span&gt;í &lt;span class="n"&gt;do&lt;/span&gt; &lt;span class="n"&gt;Hamachi&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Jak používat Hamachi&lt;/h2&gt;
+&lt;p&gt;Další práce s Hamachi, tedy nastavení jména, přihlášení do skupiny,
+nastavení online stavu a výpis toho co vidím:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$ &lt;span class="n"&gt;hamachi&lt;/span&gt; &lt;span class="n"&gt;set&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;nick&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;nick&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+$ &lt;span class="n"&gt;hamachi&lt;/span&gt; &lt;span class="n"&gt;join&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;network&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;password&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+$ &lt;span class="n"&gt;hamachi&lt;/span&gt; &lt;span class="n"&gt;go&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;online&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;network&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+$ &lt;span class="n"&gt;hamachi&lt;/span&gt; &lt;span class="n"&gt;list&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Zajímavé odkazy&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.webupd8.org/2010/05/script-to-install-hamachi-with-gui-in.html"&gt;GUI pro Hamachi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.supware.net/other-fun-stuff/hamachiubuntuhowto/"&gt;Goměrně komplexní návod na Hamachi&lt;/a&gt;
+    (vytisknout a přečíst v důchodu nebo na záchodě)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://ubuntuforums.org/showthread.php?t=135036"&gt;Návod na UbuntuForums, Hamachi jako služba s VPN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://logmeinwiki.com/wiki/Hamachi:Install_on_Linux"&gt;Oficiální návod&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forums.hamachi.cc/viewforum.php?f=15"&gt;Oficiální fórum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://logmeinwiki.com/wiki/Hamachi:Uninstall_on_Linux"&gt;Jak odinstalovat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Zkušenost&lt;/h2&gt;
+&lt;p&gt;Nejlepší způsob, jak používat Hamachi, je vyhnout se mu.&lt;/p&gt;</summary><category term="linux"></category><category term="práce"></category><category term="software"></category></entry><entry><title>Neupravujte menu, shodíte systém... ehm</title><link href="http://www.honzajavorek.cz/blog/neupravujte-menu-shodite-system-ehm.html" rel="alternate"></link><updated>2010-09-12T10:31:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/neupravujte-menu-shodite-system-ehm.html</id><summary type="html">&lt;p&gt;Jelikož mě
+&lt;a href="http://blog.javorek.net/kdyz-je-na-disku-malo-mista/"&gt;předchozí geekovina&lt;/a&gt;
+od té doby co jsem ji napsal asi tak 10× znova zachránila, padám
+sem honem napsat další.&lt;/p&gt;
+&lt;p&gt;Nevěřili byste, kam se můžete v GNOME dostat pouhou editací menu.
+Přestože mám GNOME a Linux rád, nebudu zastírat, že tohle je
+naprostá idiocie systému. Od začátku: Zdálo se mi, že nemám menu
+pro aplikace až tolik hezké a že bych mohl pár položek přejmenovat
+a nějaké vyházet. To jsem udělal a následně mi zkolaboval systém a
+při spuštění se nenačtaly okraje okýnek. Nedařilo se mi za boha
+najít příčinu, restartoval jsem několikrát celý okenní manažer,
+Metacity, přeinstalovával co se dalo. Bez reakce. Jediné co
+pomáhalo bylo dát Metacity do programů po spuštění, ale to bylo
+dost blbé řešení, něco jako kdybych díru na autě zalepil izolepou.&lt;/p&gt;
+&lt;p&gt;Nebudu vás napínat, po ztracené hodině času jsem
+&lt;a href="http://ubuntuforums.org/showpost.php?p=7610738&amp;amp;postcount=4"&gt;našel na fórech problém&lt;/a&gt;
+který jasně říká, že když se v menu odstraní ty špatné věci, tak se
+přesně tohle stane. Smazal jsem nějaká lokální nastavení v &lt;code&gt;~&lt;/code&gt; a
+najednou se to rozjelo… Uff… WTF?!&lt;/p&gt;
+&lt;p&gt;Protože se tím menu vrátilo do zcela prehistorického stavu a spolu
+s ním se &lt;em&gt;vyčistilo&lt;/em&gt; i menu od Wine, tady je příkaz, kterým lze win
+aplikace do menu vrátit:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;export WINEPREFIX=~/.wine; find $WINEPREFIX/drive_c/ -name "*.lnk" -exec wine winemenubuilder '{}' \;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Našel jsem ho &lt;a href="http://forum.winehq.org/viewtopic.php?t=3769"&gt;tady&lt;/a&gt;.
+To se nehodí jen v těchto krizových případech, ale kdykoliv se vám
+povede přes editor menu to Wine menu rozkopat.&lt;/p&gt;
+&lt;p&gt;Závěr: Mezi Windows a Linuxem žádný rozdíl není. Co vás nenasere
+v jednom, nasere vás v druhém. Prašť jak uhoď. Ale Linux je
+zadarmo, líp se v něm programuje a má hezčí okýnka :D&lt;/p&gt;</summary><category term="fail"></category><category term="linux"></category><category term="software"></category><category term="windows"></category></entry><entry><title>Když je na disku málo místa</title><link href="http://www.honzajavorek.cz/blog/kdyz-je-na-disku-malo-mista.html" rel="alternate"></link><updated>2010-07-24T09:01:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/kdyz-je-na-disku-malo-mista.html</id><summary type="html">&lt;p&gt;Setkal jsem se teď se zajímavým problémem. Že nemám místo na home
+partition kvůli hudbě, to jsem věděl. Jenže teď mi systém začal
+hlásit, že jsem vypotřeboval veškerý prostor i na root partition,
+kde jsem měl ještě před pár dny sotva čtvrtinu využitou.&lt;/p&gt;
+&lt;p&gt;V Ubuntu existuje několik možností, jak se koukat na disky. Můžete
+si doinstalovat GParted a přímo si prohlížet partitions, ale pro
+základní informace stačí záložka File Systems v System Monitoru.
+Pak je tady Disk Usage Analyzer, což je takový chytrý program,
+který projede váš disk a v pěkném grafu vám přesně řekne, co a kde
+vám zabírá nejvíce místa. Zvláštní ovšem bylo, že jak GParted, tak
+System Monitor mi sdělovaly, že na root partition žádné místo
+nemám, ale tím Analyzerem nešlo ani za nic najít žádné velké
+soubory.&lt;/p&gt;
+&lt;p&gt;Nakonec jsem vygooglil toto: &lt;code&gt;find / -size +1000000000c&lt;/code&gt;. Příkaz,
+který najde soubory větší než X. Vypsalo mi to spoustu zamítnutých
+pokusů o přístup, tak jsem před to dal &lt;code&gt;sudo&lt;/code&gt; a &lt;em&gt;voilà&lt;/em&gt;, najednou
+se mi tam vyloupl v rootově koši nějaký šílený temporary soubor
+přes 20 GB velký, který jsem tam nedávno asi nějak vytvořil.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ponaučení:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dávat si dobrý pozor, co jako root dělám a kde mi zůstávají
+    velké soubory.&lt;/li&gt;
+&lt;li&gt;Dávat si pozor na to, že programy často opravdu nevidí všude a
+    to co patří rootovi je pro ně tabu, i když třeba jen počítají místo
+    na disku.&lt;/li&gt;
+&lt;li&gt;Zapamatovat si užitečný příkaz pro nalezení souborových obrů.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Chtěl jsem si tímto článkem hlavně poznamenat, na co jsem přišel,
+takže pokud jsem vás zdržel a vy zrovna netoužili po nějaké šílené
+geekovině, pak se omlouvám a
+&lt;a href="http://www.youtube.com/watch?v=GrO5J7TdS7c"&gt;posílám vám krásnou písničku&lt;/a&gt;
+na uklidnění.&lt;/p&gt;</summary><category term="linux"></category></entry><entry><title>Nové Ubuntu Lucid Lynx mě nenadchlo</title><link href="http://www.honzajavorek.cz/blog/nove-ubuntu-lucid-lynx-me-nenadchlo.html" rel="alternate"></link><updated>2010-05-11T16:56:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/nove-ubuntu-lucid-lynx-me-nenadchlo.html</id><summary type="html">&lt;p&gt;Moje dojmy z nového systému jsou rozporuplné, protože změny jsou
+takové nějaké rozpačité a poloviční.&lt;/p&gt;
+&lt;p&gt;Upgrade proběhl v pořádku, ale úvodní obrazovka při spuštění je
+pomalu v ASCII a prolítávají na ni výpisy spouštěných komponent. To
+asi autoři nezamýšleli. Fialová barva je mi ukradená, stejně ji
+vidím jen při spuštění a na ikonkách. Naběhnutí systému je asi
+rychlejší, ale koho to dnes trápí :)&lt;/p&gt;
+&lt;h2&gt;Panel&lt;/h2&gt;
+&lt;p&gt;Změny na hlavním panelu se mi nelíbí. Messaging menu je k ničemu,
+pokud mám co nejvyšší tendenci nenechat se otravovat žádnými
+notifikacemi (maily, IM, …). Odebrat nejde. Chápu, že nová
+oznamovací oblast má za úkol oddělit systémové prvky od aplikací,
+ale to se právě vůbec nepovedlo. Nezahrnuje wi-fi (to zůstalo
+v notifikacích) a nově je navíc v notifikacích indikátor
+klávesnice, který býval jako applet. Totální zmatek. Gwibber vypadá
+celkem fajn, ale nepochopil jsem, kam se spouští nebo schovává,
+takže nadále používám TwitterFox (aka Echofon) ve Firefoxu. Popisek
+v messaging menu „Broadcast“ mi přijde jako totální WTF. Globální
+změny statusu jsou hezká teorie, ale nulová praxe. Zřejmě bylo
+záměrem udělat jedno okýnko, kam napíšu status a pošlu do celého
+světa (Twitter, Facebook) a kde si nastavím stav a pošlu do všech
+aplikací (online, offline). No to jednak dělat nechci a jednak to
+nefunguje pro všechny (Skype?). Designově mi přijde nová verze
+Ubuntu dost rozpolceně. Polovina věcí je předesignovaných, polovina
+ne, někde design dost kulhá. Ovládací prvky na liště se jednou po
+zmáčknutí tváří jako tlačítko, jednou mají hezký černý podklad…
+Tuším jsem někde četl o tom, že bude i nový panel na datum a čas,
+který se mi vůbec nelíbil, ale buď to neprošlo, nebo mi záhadou
+zůstal starý GNOMEácký, za což jsem fakt rád. Také oceňuji, že si
+systém už konečně pamatuje nastavení klávesnice i po restartu.&lt;/p&gt;
+&lt;h2&gt;Quo vadis, GNOME?&lt;/h2&gt;
+&lt;p&gt;Tu horní oblast by mělo řešit přímo GNOME a né Afričani
+z Canonical. Co jsem ale koukal na GNOME 3, tak to je v nějaké
+mimozemské dimenzi od oka nepraktického shellu a nějaké automatické
+celosystémové knihovny zeitgeist (kterou budu zřejmě jako všechny
+jiné knihovny nenávidět), místo toho, aby řešilo aktuální
+problémy.&lt;/p&gt;
+&lt;h2&gt;Nautilus&lt;/h2&gt;
+&lt;p&gt;Od nového Nautilu jsem čekal hodně, měl být konečně dvoupanelový.
+Jenže to by nebyl Nautilus, aby si nevymyslel nesmyslné klávesové
+zkratky a nikde je neumožnil změnit. I když ještě větší bolest než
+nemožnost ty zkratky změnit je jejich naprostá absence. V Nautilu
+s klávesnicí totiž neuděláte vůbec nic. Místo aby vyřešili tohle a
+zakomponovali Nautilus Elementary, tak se bijí v prsa možností
+rozdělit okno na dvě, což ale bez klávesnice nemá žádný význam.
+Záložky jsou navíc podivně přes celou délku aplikace – no čert to
+vem, ale hezké to není.&lt;/p&gt;
+&lt;h2&gt;Ovládací prvky&lt;/h2&gt;
+&lt;p&gt;U okýnek se přesunuly ovládací prvky vlevo. Nevím, jestli je to
+další věc odkoukaná od Macu, každopádně v současné chvíli to fakt
+nemá žádný význam. Je mi to docela jedno kde budou (věřím, že si
+zvyknu), ale tak nějak nechápu, proč to bylo provedeno. Četl jsem
+něco o prostoru pro jakési rozšířené kontextové ovládací prvky
+napravo, ale ty nikde nejsou, takže ten přesun vyznívá do prázdna a
+je to co? Je to WTF.&lt;/p&gt;
+&lt;h2&gt;Programy, které mě těší&lt;/h2&gt;
+&lt;p&gt;No aspoň se budu těšit na nové verze Docky. To mi dost usnadnilo
+práci s aplikacemi a jen je škoda, že je takové nedodělané a má
+spoustu chyb. Takový Dock bych si dokázal v GNOME 3 představit.
+Musí se uznat, že jak nemám moc rád Apple, některé nápady mají
+dobré (teď nemyslím ty od Xeroxu ;D). Mac bych na kompu nechtěl (ne
+z přesvědčení, ale ze špatné zkušenosti), ale nějaké pěkné distro
+které od něho kopíruje nápady by se mi asi líbilo. Taky jsem
+narazil na Swiftfox, což je odnož Firefoxu kompilovaná přímo pro
+určité procesory. Jede rychleji, takže
+&lt;a href="http://en.wikipedia.org/wiki/Red_Panda"&gt;panda&lt;/a&gt; musela z domů a
+nahradila ji konečně tedy
+&lt;a href="http://en.wikipedia.org/wiki/Swift_fox"&gt;liška&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Závěr? Aspoň nebudu trávit tolik času u PC. Hmmmh. Howgh. Jdu ven.&lt;/p&gt;</summary><category term="fail"></category><category term="linux"></category><category term="názory"></category><category term="software"></category></entry><entry><title>Stručná recenze manažerů fotek pod Linux</title><link href="http://www.honzajavorek.cz/blog/strucna-recenze-manazeru-fotek-pod-linux.html" rel="alternate"></link><updated>2010-04-14T14:14:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/strucna-recenze-manazeru-fotek-pod-linux.html</id><summary type="html">&lt;p&gt;Používal jsem &lt;a href="http://picasa.google.com/linux/"&gt;Picasu&lt;/a&gt; a byl jsem
+do ní zamilovaný. Bohužel, Google se rozhodl přestat vyvíjet verzi
+pod Linux a přiznejme si to, ani ta vyvíjená verze nebyla žádný
+klenot. Navíc se program časem posunul k něčemu, co se snažilo
+strašně moc myslet za mě a to já nemám rád. Stejně jako mi to
+vadilo v přístupu Windows nebo třeba hudebních přehrávačů. Začal
+jsem zkoumat alternativy. Následuje krátké shrnutí,
+&lt;strong&gt;subjektivní&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;F-Spot&lt;/h2&gt;
+&lt;p&gt;Výchozí v Ubuntu. Já jsem ho ale tak nějak asi vůbec nepochopil.
+Fotky třídí podle jakési časové osy, má sice upload na Picasa Web
+Albums, ale jinak toho moc neumí a je prostě… divný. Tuším, že nemá
+ani základní úpravy.&lt;/p&gt;
+&lt;h2&gt;XnView&lt;/h2&gt;
+&lt;p&gt;Vypadá nabušeně, ale pořádná verze pro Linux se teprv píše a není
+hotová. Do budoucna to vypadá slibně, Windows verze vypadá
+hodně dobře.&lt;/p&gt;
+&lt;h2&gt;digiKam&lt;/h2&gt;
+&lt;p&gt;Tady to ztroskotalo na přístupu zvaném KDE. Infantilní ikonky a
+nablýskané nabídky by člověk ještě přetrpěl (to, že se mu kvůli
+němu nainstaluje půlka KDE i s vedlejšími programy do OS a
+kooperovat s GNOME to moc neumí už méně), ale hlavně to mělo
+miliony tlačítek, se kterýma jsem vůbec nevěděl co dělat a vůbec se
+mi nechtělo zkoumat, co s nimi dělat mám a jak program ovládat.&lt;/p&gt;
+&lt;h2&gt;gThumb&lt;/h2&gt;
+&lt;p&gt;Je takový trochu staromódní a vypadá spíš jako prohlížeč fotek. Má
+něco jako katalogy a pracuje na bázi souborového systému. V zásadě
+se docela blíží tomu co bych chtěl a má i nějaká ty kouzelná
+tlačítka na úpravy fotek, jenže zase nemá možnost uploadovat fotky
+na Picasa Web Albums.&lt;/p&gt;
+&lt;h2&gt;Shotwell&lt;/h2&gt;
+&lt;p&gt;Fotky řadí podle událostí. To mi naprosto vyhovuje. Má databázi
+fotek a v ní má definované události, ke kterým lze přistupovat
+zvlášť. Má základní editační funkce včetně magických tlačítek a umí
+fotky nahrát na Picasa Web Albums. V podstatě umí úplně všechno co
+od takového manažeru chci. Hurá :) . GUI ještě není nic moc, ale
+zuřivě se na programu pracuje a na první osahání nijak chybový
+není. U mě vyhrává a možná se díky němu dočkáte nových fotek
+v &lt;a href="http://picasaweb.google.com/honza.javorek"&gt;mém albu&lt;/a&gt; :)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://yorba.org/shotwell/"&gt;http://yorba.org/shotwell/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="linux"></category><category term="management"></category><category term="software"></category></entry><entry><title>O čem už nenapíšu</title><link href="http://www.honzajavorek.cz/blog/o-cem-uz-nenapisu.html" rel="alternate"></link><updated>2009-12-11T23:57:00+01:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/o-cem-uz-nenapisu.html</id><summary type="html">&lt;p&gt;Tak jsem se probíral rozepsanými články a náměty na články na blog.
+Zjistil jsem, že pokud něco člověk nenapíše, když nad tím přemýšlí,
+tak už o tom nenapíše nikdy. Svět se mění moc rychle a námět prostě
+už potom není aktuální. Dost jsem jich smazal a zbylo mi asi
+18 konceptů, převážně názorových. O čem se tedy už na tomto blogu
+nedočtete?&lt;/p&gt;
+&lt;p&gt;Chtěl jsem napsat ještě nějaké články &lt;strong&gt;o Finsku&lt;/strong&gt; a o cestě domů,
+ale už je to prostě daleko. To podstatné je na
+&lt;a href="http://picasaweb.google.com/honza.javorek"&gt;fotkách&lt;/a&gt; a
+&lt;a href="http://www.youtube.com/user/KaniiniLM"&gt;videích&lt;/a&gt;. Mě už o tom psát
+nebaví. Z velké části také proto, že neumím psát stručně a vím, že
+pokud bych chtěl &lt;strong&gt;plně zachytit své pocity a dojmy&lt;/strong&gt;, musel bych
+napsat dlouhé články. Na těch fotkách a videích to vynikne lépe.
+Nenapíšu o Vappu, ESN Sea Battle, půlnoci na pláži bez tmy.
+Nenapíšu už ani o neopakovatelné a úžasné přírodě v národním parku
+Oulanka.&lt;/p&gt;
+&lt;p&gt;Také jsem měl spoustu nápadů na nástroje, programy zdarma a
+všelijaká řešení problémů &lt;strong&gt;pro Windows&lt;/strong&gt;. To už taky není
+aktuální, v podstatě potichu a jediným rozhodnutím jsem konečně
+&lt;a href="http://blog.javorek.net/windows-xp-budou-moje-posledni-windows/"&gt;přešel na Linux&lt;/a&gt;.
+Tím pro mě samozřejmě přestává mít smysl psát o tom jaký je
+&lt;a href="http://www.wampserver.com/en/"&gt;dobrý webový server&lt;/a&gt; na Windows,
+jaké jsou
+&lt;a href="http://www.freewaregenius.com/2007/10/29/reinstall-windows-and-outfit-your-system-with-all-freeware-programs/"&gt;prima&lt;/a&gt;
+&lt;a href="http://www.opensourcewindows.org/"&gt;zdarma&lt;/a&gt; nástroje na to a tamto,
+jak si do střev Windows nainstalovat
+&lt;a href="http://www.cygwin.com/"&gt;Linux&lt;/a&gt;, nebo jak Windows zachraňovat, když
+se vám na nich něco fakt hodně rozbije. Chtěl jsem napsat třeba
+i o věcech jako &lt;a href="http://www.nethdd.eu/"&gt;NetHDD&lt;/a&gt;, ale v době
+&lt;a href="https://www.dropbox.com/"&gt;Dropboxů&lt;/a&gt; už to taky nemá smysl.&lt;/p&gt;
+&lt;p&gt;Takže rada do budoucna –
+&lt;strong&gt;buď napsat hned, nebo se na to vykašlat&lt;/strong&gt;. Nebo to aspoň
+twítnout, pokud je to třeba jen nějaký tip. &lt;strong&gt;Twitter&lt;/strong&gt; samozřejmě
+taky změnil moje uvažování a pokud chci sdělit něco, co se dá
+opravdu do těch 140 znaků napsat, udělám to, než abych psal něco
+delšího sem na blog. Tím pádem už sem nepíšu tak často a o kdejaké
+blbině.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Kam se budou Lístky vyvíjet dál?&lt;/strong&gt; Kam je vítr zanese :) . Dříve
+byly hodně o básničkách, ale teď na ně nějak není inspirace. Budou
+o tipech pro Linux, o Internetu, softwaru, webdesignu. Ale narostou
+i nějaké lístečky o názorech nebo zajímavostech z běžného světa.
+A samozřejmě nebudou chybět články, na nichž se vybouřím, až mě
+zase něco naštve ;) . Začal jsem tady 13. 8. 2007, takže si
+dovolím, když už se blíží ten Silvestr, popřát tomuto blogu, aby se
+za zájmu všech svých dvou čtenářů v pořádku dožil svých
+&lt;strong&gt;třetích narozenin&lt;/strong&gt; :) .&lt;/p&gt;</summary><category term="erasmus"></category><category term="finsko"></category><category term="linux"></category><category term="net"></category><category term="oulu"></category><category term="píšu si"></category><category term="software"></category><category term="zážitky"></category></entry><entry><title>Touchpad v Ubuntu</title><link href="http://www.honzajavorek.cz/blog/touchpad-v-ubuntu.html" rel="alternate"></link><updated>2009-12-06T18:25:00+01:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/touchpad-v-ubuntu.html</id><summary type="html">&lt;p&gt;Moji kamarádi
+&lt;a href="http://twitter.com/markoph/status/6380776939"&gt;mají radost, že jsem přešel na Linux&lt;/a&gt;,
+tak jim přidám vodu na mlýn článkem s na první pohled
+masochistickým tématem.
+&lt;a href="http://blog.javorek.net/nemam-rad-mysi/"&gt;Rád používám touchpad&lt;/a&gt; a
+v Ubuntu mě vždy štvalo, že nastavení jeho ovládání nebylo nikdy
+moc snadné. Zapíšu si tu tedy pár poznámek, jak dotáhnout jeho
+ovládání k dokonalosti, protože dohledat tyhle věci je trochu
+problém. Pokud člověk napíše do Google slova Ubuntu a touchpad,
+většinou se lidé ptají na jeho vypnutí (barbaři!). Abych se
+vyvaroval některých komentářů, hned na úvod dodám návod pro
+Windows: Nainstalujte si ovladače pro Synaptics Touchpad, tam si to
+naklikejte a nepište o tom články ;) .&lt;/p&gt;
+&lt;p&gt;Nastavení touchpadu je normálně v &lt;em&gt;System → Preferences → Mouse&lt;/em&gt; na
+záložce &lt;em&gt;Touchpad&lt;/em&gt;. Pokud toužíte po rozšířeném nastavení, tak
+pomůže instalace &lt;em&gt;gsynaptics&lt;/em&gt; (pro GNOME). Ten je potom k nalezení
+pod &lt;em&gt;System → Preferences → Touchpad&lt;/em&gt;. Jenže… Ačkoliv si můžete
+dopřát applovské triky a používat zoom nebo scrolling více prsty,
+pořád vám to nikde nedovolí nastavit ťapací oblasti. Já nutně
+potřebuji „prostřední tlačítko“ v pravém horním rohu.&lt;/p&gt;
+&lt;p&gt;No a k tomu pomůže
+&lt;a href="http://ubuntuforums.org/showthread.php?p=8403017"&gt;tato stránka&lt;/a&gt;,
+kde je nejprve
+&lt;a href="http://ubuntuforums.org/showpost.php?p=8261605&amp;amp;postcount=3"&gt;řešení dočasné&lt;/a&gt;
+(do prvního restartu, což moc ani nepovažuji za řešení) a pak
+&lt;a href="http://ubuntuforums.org/showpost.php?p=8399228&amp;amp;postcount=8"&gt;řešení permanentní&lt;/a&gt;.
+Tedy přidat do &lt;code&gt;/etc/hal/fdi/policy&lt;/code&gt; soubor &lt;code&gt;synaptics.fdi&lt;/code&gt; a do
+něj hodit&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;deviceinfo&lt;/span&gt; &lt;span class="na"&gt;version=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;0.2&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;device&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;match&lt;/span&gt; &lt;span class="na"&gt;key=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;input.x11_driver&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;string=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;synaptics&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;merge&lt;/span&gt; &lt;span class="na"&gt;key=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;input.x11_options.RTCornerButton&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;string&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;2&lt;span class="nt"&gt;&amp;lt;/merge&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/device&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/deviceinfo&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;No a to je vše. Pomocí změn v HALu (viz odkaz na permanentní
+řešení) byste měli uspokojit veškerá svá tajná přání, která vás
+v souvislosti s touchpadem kdy napadla. Ještě dodám, že tohle
+nastavení prostředního tlačítka do pravého horního rohu bylo
+v Ubuntu výchozí, ale podle lidu stěžujícího si na fórech pro
+Karmic teď zmizelo. Netuším proč. Přeji hezké ťapání.&lt;/p&gt;</summary><category term="hračičkování"></category><category term="linux"></category><category term="software"></category></entry><entry><title>Skript na rozbalení .zip v blbém kódování</title><link href="http://www.honzajavorek.cz/blog/skript-na-rozbaleni-zip-v-blbem-kodovani.html" rel="alternate"></link><updated>2009-11-20T11:27:00+01:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/skript-na-rozbaleni-zip-v-blbem-kodovani.html</id><summary type="html">&lt;p&gt;.zip je dost primitivní formát a pokud v něm zabalíme složky a
+soubory &lt;strong&gt;s diakritikou&lt;/strong&gt; na Windows a budeme rozbalovat jinde
+(kdekoliv, kde nebude kódování windows-1250), tak si na tom
+grafický rozbalovač vyláme zuby a &lt;code&gt;unzip&lt;/code&gt; z terminálu rozbalí vše,
+ale s podivnými znaky (takže se soubory nejde nic dělat, musí se
+nejdříve přejmenovat). Podobný problém bude asi fungovat i opačným
+směrem – pokud já zabalím něco v Linuxu do .zip, pravděpodobně se
+to podobně rozbije ve Windows.&lt;/p&gt;
+&lt;p&gt;Už dlouhou dobu (i na Windows) mám nejraději
+&lt;a href="http://www.7-zip.org/"&gt;7zip&lt;/a&gt;, asi nejlepší program na archivy
+vůbec. Má vlastní formát .7z, který je hodně parametrizovatelný a
+má skvělou kompresi. Rozbalí i zabalí .zip, .rar a spoustu jiných
+dalších typů archivů.
+&lt;strong&gt;Navíc je zadarmo a je na všechny platformy.&lt;/strong&gt; Když můžu, používám
+ho místo .zip a nemám žádné problémy.&lt;/p&gt;
+&lt;p&gt;Pokud ale nějaký .zip přijde, nedá se nic dělat. Napsal jsem
+skript, který problém řeší:&lt;/p&gt;
+&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c"&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class="nv"&gt;dirname&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="sb"&gt;`&lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;$1&amp;quot;&lt;/span&gt; | sed -e &lt;span class="s1"&gt;&amp;#39;s/\(.\+\)\.zip/\1/&amp;#39;&lt;/span&gt;&lt;span class="sb"&gt;`&lt;/span&gt;
+unzip &lt;span class="nv"&gt;$1&lt;/span&gt;
+convmv -f cp1250 -t utf8 -r &lt;span class="nv"&gt;$dirname&lt;/span&gt; --notest
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;Pokud jej uložíme jako třeba &lt;code&gt;unzip-win&lt;/code&gt;, rozbalíme archiv jako
+&lt;code&gt;./unzip-win bidny-kojot.zip&lt;/code&gt;. Přeji bezproblémové rozbalování
+:) .&lt;/p&gt;</summary><category term="linux"></category><category term="software"></category></entry></feed>

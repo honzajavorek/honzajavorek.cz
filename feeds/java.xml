@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Javorové lístky</title><link href="http://www.honzajavorek.cz" rel="alternate"></link><link href="http://www.honzajavorek.cz/feeds/java.xml" rel="self"></link><id>http://www.honzajavorek.cz</id><updated>2008-03-30T18:05:00+02:00</updated><entry><title>Tahák na syntaxi: PHP VS. Java</title><link href="http://www.honzajavorek.cz/blog/tahak-na-syntaxi-php-vs-java.html" rel="alternate"></link><updated>2008-03-30T18:05:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/tahak-na-syntaxi-php-vs-java.html</id><summary type="html">&lt;p&gt;Ano, můžeme si otevřít knihy, můžeme zkoumat
+&lt;a href="http://en.wikipedia.org/wiki/PHP_syntax_and_semantics"&gt;PHP syntaxi&lt;/a&gt;
+nebo &lt;a href="http://en.wikipedia.org/wiki/Java_syntax"&gt;Java syntaxi&lt;/a&gt; na
+Wikipedii, číst si v referenčních webech… Ale to je zdlouhavé.
+Nabízím malý tahák pro stejně konvertované jako já – z PHP na Javu.
+Nesnažil jsem se o nic komplexního, Javu se z toho nenaučíte. Jde
+jen o výčet nejzákladnějších rozdílů v syntaxi, které se mohou
+plést, zvláště když jsou zažité…&lt;/p&gt;
+&lt;p&gt;část syntaxe
+PHP
+Java
+konstruktor
+&lt;code&gt;__construct()&lt;/code&gt;, &lt;code&gt;Class()&lt;/code&gt;
+&lt;code&gt;Class()&lt;/code&gt;
+toString
+&lt;code&gt;$object-&amp;gt;__toString()&lt;/code&gt;
+&lt;code&gt;object.toString()&lt;/code&gt;
+přístup ke statické proměnné/metodě
+&lt;code&gt;Class::$name&lt;/code&gt;, &lt;code&gt;Class::name()&lt;/code&gt;
+&lt;code&gt;Class.name&lt;/code&gt;, &lt;code&gt;Class.name()&lt;/code&gt;
+přístup k vlastní statické proměnné/metodě
+&lt;code&gt;self::$name&lt;/code&gt;, &lt;code&gt;self::name()&lt;/code&gt;
+&lt;code&gt;name&lt;/code&gt;, &lt;code&gt;Class.name&lt;/code&gt;, &lt;code&gt;name()&lt;/code&gt;, &lt;code&gt;Class.name()&lt;/code&gt;
+přístup k proměnné/metodě
+&lt;code&gt;$object-&amp;gt;name&lt;/code&gt;, &lt;code&gt;$object-&amp;gt;name()&lt;/code&gt;
+&lt;code&gt;object.name&lt;/code&gt;, &lt;code&gt;object.name()&lt;/code&gt;
+přístup k vlastní proměnné/metodě
+&lt;code&gt;$this-&amp;gt;name&lt;/code&gt;, &lt;code&gt;$this-&amp;gt;name()&lt;/code&gt;
+&lt;code&gt;name&lt;/code&gt;, &lt;code&gt;this.name&lt;/code&gt;, &lt;code&gt;name()&lt;/code&gt;, &lt;code&gt;this.name()&lt;/code&gt;
+(statická) konstanta
+&lt;code&gt;const NAME&lt;/code&gt;
+&lt;code&gt;static final type NAME&lt;/code&gt;
+přístup ke konstantě
+&lt;code&gt;self::NAME&lt;/code&gt;, &lt;code&gt;Class::NAME&lt;/code&gt;
+&lt;code&gt;NAME&lt;/code&gt;, &lt;code&gt;Class.NAME&lt;/code&gt;
+Mimochodem, když jsem hledal něco takového jako tento článek na
+internetu, narazil jsem na
+&lt;a href="http://www.blueshoes.org/en/developer/php_cheat_sheet/"&gt;pěkný tahák pro PHP&lt;/a&gt;.&lt;/p&gt;</summary><category term="java"></category><category term="php"></category></entry></feed>

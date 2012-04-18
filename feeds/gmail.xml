@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Javorové lístky</title><link href="http://www.honzajavorek.cz" rel="alternate"></link><link href="http://www.honzajavorek.cz/feeds/gmail.xml" rel="self"></link><id>http://www.honzajavorek.cz</id><updated>2010-01-08T02:47:00+01:00</updated><entry><title>Gmail jako plnohodnotný poštovní klient (+ case study: VUT mail)</title><link href="http://www.honzajavorek.cz/blog/gmail-jako-plnohodnotny-postovni-klient-case-study-vut-mail.html" rel="alternate"></link><updated>2010-01-08T02:47:00+01:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/gmail-jako-plnohodnotny-postovni-klient-case-study-vut-mail.html</id><summary type="html">&lt;p&gt;Asi se shodneme na tom, že obyčejný poštovní klient jako Outlook
+nebo Thunderbird by měl splňovat tyto vlastnosti: Umět stahovat
+poštu odjinud přes &lt;strong&gt;POP3&lt;/strong&gt;, být přístupný &lt;strong&gt;offline&lt;/strong&gt; i se všemi
+daty, odesílat poštu přes jakýkoliv &lt;strong&gt;SMTP&lt;/strong&gt; server. Tak
+&lt;strong&gt;Gmail tohle všechno už nějakou dobu splňuje&lt;/strong&gt;. Navíc má rychlé a
+přehledné webové rozhraní. Zkusím popsat jak na to a jako case
+study si vezmu náš &lt;strong&gt;školní mail&lt;/strong&gt;. Omlouvám se, ale pojmy z Gmailu
+budou v angličtině – nemám ponětí jak jsou přeloženy do češtiny a
+nehodlám to zjišťovat.&lt;/p&gt;
+&lt;p&gt;Zadáním je využívat Gmail pro příjem, uskladnění a odesílání
+&lt;a href="http://www.fit.vutbr.cz/CVT/net/email.html.cs"&gt;této školní pošty&lt;/a&gt;.
+Je potřeba, aby chodila na Gmail ze školního serveru, aby byla
+přístupná offline a aby odesílala zprávy přes školní SMTP, protože
+pokud tak činit nebude, kvůli tvrdé fakultní antispamové politice
+pravděpodobně každý náš e-mail žadonící o bodík z předmětu navíc
+skončí ve věčných lovištích a nikdo si jej nikdy nepřečte (to je
+fakt potvrzený zaměstnanci fakulty).&lt;/p&gt;
+&lt;h2&gt;Accounts&lt;/h2&gt;
+&lt;p&gt;Základním stavebním kamenem pro náš úkol budou Accounts. Gmail
+dovoluje zakládat nové Accounts, tedy hloupě přeloženo účty. Každý
+takový účet představuje jednu e-mailovou adresu. Můžeme si vytvořit
+účet pro náš e-mail na Seznamu, na Centru, Hotmailu apod. To ještě
+není nic moc zvláštního – nastavíme si účet pro mail na Seznamu,
+třeba &lt;em&gt;&lt;a href="mailto:usni.lalok@seznam.cz"&gt;usni.lalok@seznam.cz&lt;/a&gt;&lt;/em&gt;,
+ověříme jej a Gmail nám dovolí odesílat e-maily, jež se tváří, jako
+by byly odeslané z
+&lt;em&gt;&lt;a href="mailto:usni.lalok@seznam.cz"&gt;usni.lalok@seznam.cz&lt;/a&gt;&lt;/em&gt;. Zpravidla si
+pak ještě na tom Seznamu nastavíme automatické přeposílání na
+Gmail.
+&lt;strong&gt;Takto můžeme spoustu e-mailových schránek sdružit pod jednu v Gmailu&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;POP3&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Gmail ale dovoluje maily z takových účtů automaticky stahovat přes POP3&lt;/strong&gt;
+jako jiný běžný klient. Tak můžeme napojit i účty, kde není
+vytvoření přeposílacího pravidla možné, jednoduché, nebo úplně
+žádoucí. V nastavení dokonce vidíme, kdy naposledy mail
+kontroloval, kolik zpráv přijal a jestli se mu to vůbec povedlo.
+Kliknutím na tlačítko můžeme zprávy přijmout i hned, pokud chceme
+proces z nějakého důvodu urychlit. Přidání POP3 účtu je intuitivní.
+Pro případ školního mailu nám ale POP3 moc nepomůže, protože
+přístup je jen přes IMAP a ten Gmail neumí.&lt;/p&gt;
+&lt;h2&gt;Přeposílání&lt;/h2&gt;
+&lt;p&gt;Ve většině e-mailů je možnost
+&lt;strong&gt;přeposílat všechnu poštu někam jinam&lt;/strong&gt;, nebo se dá alespoň
+nastavit takový filtr, který ovlivní všechny příchozí e-maily (ať
+už je to třeba podmínkou „předmět neobsahuje slovo
+&lt;em&gt;b\~v\~d\~ď\~g\~h\~z\~ž&lt;/em&gt;“, kterou projdou všechny) a pošle je
+jinam. Školní mail ale nic takového nenabízí, ani ve svém
+&lt;a href="https://email.fit.vutbr.cz/"&gt;webovém rozhraní&lt;/a&gt;. Co s tím? No
+existuje trochu hackerské řešení: Přihlašte se na libovolný školní
+server a do svého &lt;em&gt;home&lt;/em&gt; dejte soubor &lt;code&gt;.procmailrc&lt;/code&gt; s následujícím
+obsahem:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="p"&gt;:&lt;/span&gt;0
+&lt;span class="o"&gt;*&lt;/span&gt; !^&lt;span class="n"&gt;FROM_MAILER&lt;/span&gt;
+&lt;span class="sx"&gt;! lalok@gmail.com&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Tento kód zajistí, že všechna vaše pošta bude automaticky
+přeposílána na váš Gmailový účet
+&lt;em&gt;&lt;a href="mailto:lalok@gmail.com"&gt;lalok@gmail.com&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;h2&gt;Reply-To&lt;/h2&gt;
+&lt;p&gt;Ke každému Accountu si můžeme nastavit tzv. &lt;strong&gt;reply-to&lt;/strong&gt;, tedy
+e-mail, na který má dojít odpověd k mailům odeslaným z adresy
+tohoto Accountu. Bude většinou stejný, ale můžeme chtít takovým
+způsobem naznačit přátelům, že starý e-mail už nepoužíváme.
+Odešleme jim mail z
+&lt;em&gt;&lt;a href="mailto:usni.lalok@seznam.cz"&gt;usni.lalok@seznam.cz&lt;/a&gt;&lt;/em&gt;, ale když
+dají odpovědět, jejich mail půjde automaticky na
+&lt;em&gt;&lt;a href="mailto:lalok@gmail.com"&gt;lalok@gmail.com&lt;/a&gt;&lt;/em&gt;, pokud si to nastavíme.
+Takové srandy jde nastavit i globálně pro celý mail
+(&lt;em&gt;When receiving a message: Reply from the same address the message was sent to / Always reply from default address&lt;/em&gt;),
+přičemž odchozí adresu si můžeme stejně kdykoliv explicitně vybrat
+při psaní mailu.&lt;/p&gt;
+&lt;h2&gt;SMTP&lt;/h2&gt;
+&lt;p&gt;Velmi důležitou možností je &lt;strong&gt;nastavení vlastního SMTP&lt;/strong&gt;. Bez něj
+nám sice vše bude fungovat po teoretické stránce – maily ze školy
+přijdou na náš Gmail, tam budeme mít nastavené, aby se tvářil jako
+&lt;em&gt;&lt;a href="mailto:xlalok00@stud.fit.vutbr.cz"&gt;xlalok00@stud.fit.vutbr.cz&lt;/a&gt;&lt;/em&gt; a
+on bude vesele pod touto adresou e-maily odesílat. Jenže problém je
+v tom, že školní servery v praxi stejně
+&lt;strong&gt;rozeznají, že zpráva není odeslána z VUT&lt;/strong&gt; a mohou ji
+nekompromisně skartovat. Proto musíme e-maily posílat přes školní
+server k tomu určený – Evu. Potřebné nastavení je
+&lt;a href="http://www.fit.vutbr.cz/CVT/net/email.html.cs"&gt;zde&lt;/a&gt;, ale kam ho
+v Gmailu dát? Dříve to vůbec nešlo, nyní to ale Gmail už umí.
+Nejsem si jistý, ale mám dojem, že tu funkci spustil bez jakékoliv
+slávy. Prostě se tam jednoho dne objevila, já si jí za půl roku
+všiml a jásal jsem. Tak tedy SMTP lze nastavit pro každý Account
+zvlášť. Zeptá se vás &lt;em&gt;Send mail through your SMTP server?&lt;/em&gt; a dá na
+výběr z posílání přes něj, nebo použití vlastního SMTP. Vyberte
+vlastní a napište tam údaje pro Evu.&lt;/p&gt;
+&lt;h2&gt;Offline přístup&lt;/h2&gt;
+&lt;p&gt;Já osobně &lt;strong&gt;offline přístup&lt;/strong&gt; nevyžaduji, ale Gmail jej podporuje a
+zkoušel jsem, jde to. Pokud nutně potřebujete poštu i někde na
+cestách, nainstalujte si &lt;a href="http://gears.google.com/"&gt;Google Gears&lt;/a&gt; a
+v pravém horním rožku Gmailu si ikonkou nechte synchronizovat obsah
+e-mailu s diskem. Zabere vám to nějaké místo (pokud máte v Gmailu
+gigabajty pošty, tak gigabajty) a bude to chvíli trvat, ale
+inkrementální změny jsou potom už plynulé.&lt;/p&gt;
+&lt;h2&gt;Gmail jako klient&lt;/h2&gt;
+&lt;p&gt;Tento článek neměl být ani tak o tom, že Gmail je lepší klient než
+Outlook nebo Thunderbird. Měl představit některé jeho
+&lt;strong&gt;méně známé funkce&lt;/strong&gt; a vypíchnout, že z Gmailu jde udělat
+&lt;strong&gt;terminál&lt;/strong&gt; se stejnou základní funkčností jako zmíněné programy a
+to včetně toho SMTP. Snažil jsem se to pojmout i jako
+&lt;strong&gt;návod, jak integrovat školní poštu do Gmailu&lt;/strong&gt; a snad se to
+povedlo srozumitelně. Pokud někomu nevyhovuje Gmail nebo vůbec
+nějaká webová rozhraní, tak se tímhle vším samozřejmě vůbec
+nezabývejte. Mě vyhovuje Gmail, takže chci mít všechno v něm.&lt;/p&gt;
+&lt;p&gt;Nezapomeňte, že Gmail má nejvíce funkcí ve své &lt;strong&gt;US English&lt;/strong&gt;
+jazykové verzi. Nové funkce se šíří do ostatních jazyků pomalu a to
+až tehdy, kdy jsou zcela přeloženy. Je tedy možné, že v českém
+Gmailu ani žádné SMTP není.&lt;/p&gt;</summary><category term="gmail"></category><category term="net"></category><category term="software"></category><category term="škola"></category><category term="vut fit"></category></entry><entry><title>Ikonky ke štítkům v Gmailu</title><link href="http://www.honzajavorek.cz/blog/ikonky-ke-stitkum-v-gmailu.html" rel="alternate"></link><updated>2009-12-12T00:25:00+01:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/ikonky-ke-stitkum-v-gmailu.html</id><summary type="html">&lt;p&gt;&lt;a href="http://blog.javorek.net/wp-content/gmaillabels.png"&gt;&lt;img alt="image" src="http://blog.javorek.net/image/122/" /&gt;&lt;/a&gt;
+Napadl mě hezký trik, jak si zpestřit štítky v Gmailu &lt;strong&gt;ikonkami&lt;/strong&gt;.
+Zkoušel jsem to různě už dříve – např. &lt;em&gt;důležité&lt;/em&gt; e-maily měly
+štítek &lt;code&gt;[ ! ]&lt;/code&gt;, konverzace obsahující &lt;em&gt;něco k zaplacení&lt;/em&gt; měly třeba
+&lt;code&gt;[ $$$ ]&lt;/code&gt;. Ale nebylo to úplně ono a většinu ostatních štítků jsem
+měl normálně, běžným textem. Navíc, když na štítek člověk klikl,
+nešlo si nevšimnout, že ve vyhledávání Gmail místo speciálních
+znaků zobrazoval různé mezery a pomlčky. Sice to fungovalo, ale
+dobrý pocit jsem z toho neměl.&lt;/p&gt;
+&lt;p&gt;Gmail má však dnes již, empiricky ověřeno, v tomto směru podporu
+pro UTF-8 plnou. Jednoho dne jsem dostal nápad úplně všechny štítky
+doplnit &lt;em&gt;ikonkami&lt;/em&gt; tvořenými znaky z UTF-8. Pomohly mi hlavně
+stránky jako
+&lt;a href="http://www.jakpsatweb.cz/html/entity-vsechny.html"&gt;entity na JPW&lt;/a&gt;
+(&lt;a href="http://blog.filosof.biz/"&gt;Filosofova&lt;/a&gt; dlouhodobě nejoblíbenější
+stránka :D ) a
+&lt;a href="http://thenextweb.com/2008/09/16/twitterkeys-enhance-your-twitter-conversations/"&gt;tento nástroj pro Twitter&lt;/a&gt;.
+Výsledek vidíte na obrázku :) .&lt;/p&gt;</summary><category term="gmail"></category><category term="hračičkování"></category><category term="management"></category><category term="net"></category><category term="software"></category></entry><entry><title>Tip na filtry v Gmailu</title><link href="http://www.honzajavorek.cz/blog/tip-na-filtry-v-gmailu.html" rel="alternate"></link><updated>2009-11-16T22:01:00+01:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/tip-na-filtry-v-gmailu.html</id><summary type="html">&lt;p&gt;Takový krátký tip. Pokud jste někdy zkoušeli &lt;strong&gt;filtrovat&lt;/strong&gt; e-maily
+na nějaké obyčejné slovo (které může být specifické, třeba název
+projektu) a zároveň používáte &lt;strong&gt;Google Talk&lt;/strong&gt; s ukládáním historie
+do Gmailu jako „chats“, možná jste narazili na problém, že tímto
+filtrem projdou právě i ony chaty. To neznamená bohužel jen to, že
+se jim přidá štítek a neskončí ve spamu, ale také to, že vám
+&lt;strong&gt;oštítkované budou zůstávat jako přečtené konverzace v inboxu&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Řešení&lt;/h2&gt;
+&lt;p&gt;Zkoušel jsem udělat sofistikovaný dotaz do vyhledávání, kde jsem
+využil operátoru is:chat a operátoru – pro negaci. Bohužel
+u výsledků vyhledávání byla možnost „Filter messages like these“
+zašedlá. Zkusil jsem to tedy jinak –
+&lt;strong&gt;v nastavení filtru dát do „Doesn't have“ právě to „is:chat“&lt;/strong&gt;.
+Gmail sice vyhodí nějaké upozornění, že tato možnost se neaplikuje
+na příchozí maily, ale to nevadí, protože na ty chaty to funguje :)
+. Hotovo.&lt;/p&gt;</summary><category term="gmail"></category><category term="management"></category><category term="net"></category><category term="software"></category></entry><entry><title>Remember The Milk</title><link href="http://www.honzajavorek.cz/blog/remember-the-milk.html" rel="alternate"></link><updated>2008-09-27T01:16:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/remember-the-milk.html</id><summary type="html">&lt;p&gt;Ať už máte rádi mlíko nebo ne, pokud jste postiženi fenoménem
+notebooků a navíc máte třeba něco společného s písmeny &lt;strong&gt;I&lt;/strong&gt; a
+&lt;strong&gt;T&lt;/strong&gt; (ne, opravdu, &lt;strong&gt;I&lt;/strong&gt; a &lt;strong&gt;Q&lt;/strong&gt; není podmínkou), jistě se vám
+stane, že &lt;strong&gt;máte svůj počítač po ruce častěji, než tužku a papír&lt;/strong&gt;.
+Pro detailisty doplním, že tužka je všechno od té malé, ukradené
+z IKEA, přes propisky po tlusté černé fixy, kterými se maluje po
+opilých lidech, když spí.&lt;/p&gt;
+&lt;p&gt;Protože jsme všichni chaotičtí, neumíme si organizovat čas a tím
+pádem ani život, máme ve všem binec a na to, že jsme měli zalít
+kytičky na okně si vzpomeneme po měsíci a že termín na odevzdání
+potvrzení o přiznání odevzdání potvrzení byl před týdnem,
+&lt;strong&gt;používáme věci jako tudů&lt;/strong&gt;. To není nic jiného, než ryze odborný
+výraz pocházející z jedné poloviny z latiny a z osmé pětiny
+z řečtiny, znamenající &lt;em&gt;seznam úkolů&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;No a pokud se teď tak nějak zamyslíme nad těmi dvěma
+předcházejícími odstavci, tak si nejenže uvědomíme, že bych už
+neměl před psaním článků hulit, ale dokonce možná dojdeme k závěru,
+že
+&lt;strong&gt;existuje jisté procento lidí, kteří hledají počítačový program, jenž by fungoval jako ono tudů&lt;/strong&gt;.
+Řekněme, že je jeden, který je nejlepší na světe a kromě tužky
+s papírem jej nepřekoná nic.
+&lt;strong&gt;&lt;a href="http://www.rememberthemilk.com/"&gt;Remember The Milk&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Bůůůů, tudůůůůů&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Remember The Milk&lt;/strong&gt; je snadno použitelná, intuitivně a
+&lt;strong&gt;lehce ovladatelná online aplikace&lt;/strong&gt;. Není třeba dlouhého
+vysvětlovnání – prostě hned po tom, co se zaregistrujete, umíte
+s RTM dělat vše, co potřebujete. Doporučuji tedy ale ještě přečíst
+si &lt;strong&gt;klávesové zkratky&lt;/strong&gt;, šetří hrozně čas. Co je na ní tak
+úžasného? No, třeba to, že &lt;strong&gt;je i česky&lt;/strong&gt;. Dobře, dobře, teď vážně
+něco úžasného, tohle je sice fajn, ale anglicky dnes umí už každý
+čolek. RTM je velmi snadno integrovatelné do hrozné spousty věcí,
+má asi padesát různých exportů a dvacet možností, jak si např.
+nechat posílat upomínky (e-maily, jabber, SMS, …). Jestliže
+existuje nějaká technologie nebo způsob jak rozšířit známý a
+používaný program, RTM to pravděpodobně implementuje. Další věcí
+jsou funkce – RTM jich má hrozně moc, můžete si do mapy zaznačit,
+kde se vaše úkoly odehrávají, můžete si je dělit do několika
+tudůček zároveň (osobní, škola, práce, …), můžete si úkoly tagovat…
+Popravdě, někoho to třeba zláká, ale moje zkušenost říká, že
+&lt;strong&gt;čím méně z toho použijete, tím budete efektivnější a šťastnější&lt;/strong&gt;
+;) . Tak či tak, i když to nevyužijete, můžete se s tím, sakra,
+přece chlubit mezi kamarády…! A to za to stojí, zvlášť když je to
+zadarmo.&lt;/p&gt;
+&lt;h2&gt;Funkce sem, funkce tam, co já s nimi udělám?&lt;/h2&gt;
+&lt;p&gt;Pěkné na RTM je, že &lt;strong&gt;můžete používat to, co chcete&lt;/strong&gt;. Nikdo vás
+nenutí nic tagovat nebo určovat GPS každého úkolu. Můžete používat
+3 funkce ze 300 nebo 30 ze 300 a je to jedno. Je to na vás. Tudů je
+podle mě nejlepší jako &lt;strong&gt;jeden seznam úkolů&lt;/strong&gt;, které se mi řadí
+podle &lt;strong&gt;dní&lt;/strong&gt;, kdy mají být provedeny a potom podle &lt;strong&gt;priorit&lt;/strong&gt;
+(dejme tomu… hoří, důležité, počká, nedůležité). Dobré je, když se
+dá nastavit, aby se úkol třeba v nějakých intervalech opakoval
+(typicky týdenní záležitost jako &lt;em&gt;zazálohuj data&lt;/em&gt;). Vše ostatní
+zdržuje. Lokace není třeba, tagy není třeba, více tudůček není
+třeba, … Podstatné je, pokud je ovládání aplikace opravdu
+&lt;strong&gt;velmi snadné a rychlé&lt;/strong&gt;. A to RTM je. Při zadávání data např.
+rozezná zkratky jako &lt;em&gt;zitra&lt;/em&gt;, &lt;em&gt;dnes&lt;/em&gt;, &lt;em&gt;ct&lt;/em&gt;, &lt;em&gt;po&lt;/em&gt;, … To je hodně
+pohodlné. A i zbytek RTM je v podobném duchu.&lt;/p&gt;
+&lt;h2&gt;Ale já přece používám…&lt;/h2&gt;
+&lt;p&gt;Integrace? RTM můžete mít jako aplikaci v GNOME, aplikaci pro Mac,
+můžete spravovat svoje RTM pomocí IM. Můžete přidávat úkoly přes
+bookmarklety v prohlížeči, &lt;strong&gt;můžete mít RTM v mobilu&lt;/strong&gt; (!), na
+iGoogle, &lt;strong&gt;v Google Calendar&lt;/strong&gt;, ve Windows Mobile, v iPhone
+i iPodu. Co je ale největší maso – RTM
+&lt;strong&gt;podporuje Google Gears a tím pádem ho můžete mít i offline&lt;/strong&gt;,
+s ikonkou na ploše a prohlédnete si své úkoly třeba
+i v horkovzdušném baloně nad Medláneckým letištěm, mimo dosah
+wi-fi. Ok, a teď ta největší pecka, která dělá z RTM konečně něco
+k používání :) . Existuje doplněk pro Firefox, který vám RTM
+geniálním způsobem &lt;strong&gt;zaintegruje do GMailu&lt;/strong&gt;! No a pak si s tou
+aplikací s roztomilou kraví hlavou v logu člověk nemá vytvořit
+láskyplný vztah…&lt;/p&gt;
+&lt;h2&gt;Vstávat a cvičit!&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.rememberthemilk.com/tour/"&gt;schopnosti RTM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.rememberthemilk.com/services/"&gt;integrace a služby&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://freelanceswitch.com/product-reviews/review-remember-the-milk/"&gt;recenze na FreelanceSwitch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="gmail"></category><category term="management"></category><category term="net"></category><category term="software"></category></entry></feed>

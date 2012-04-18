@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Javorové lístky</title><link href="http://www.honzajavorek.cz" rel="alternate"></link><link href="http://www.honzajavorek.cz/feeds/mysql.xml" rel="self"></link><id>http://www.honzajavorek.cz</id><updated>2009-08-30T01:48:00+02:00</updated><entry><title>Bakalář</title><link href="http://www.honzajavorek.cz/blog/bakalar.html" rel="alternate"></link><updated>2009-08-30T01:48:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/bakalar.html</id><summary type="html">&lt;p&gt;Tak jsem to všechno úspěšně dokončil. Odstátnicoval jsem za A,
+&lt;a href="http://blog.javorek.net/bakalarka/"&gt;bakalářka&lt;/a&gt; je taky za A.
+&lt;a href="http://www.slideshare.net/littlemaple/bakalsk-prce-evidence-geografickch-tras-uivatele"&gt;Evidence geografických tras uživatele&lt;/a&gt;
+je na SlideShare k dispozici k přečtení. K vidění to je pod názvem
+&lt;a href="http://blog.javorek.net/trekmap/"&gt;TrekMap&lt;/a&gt; na
+&lt;a href="http://www.trekmap.cz"&gt;www.trekmap.cz&lt;/a&gt;.&lt;/p&gt;</summary><category term="ajax"></category><category term="css"></category><category term="erasmus"></category><category term="html"></category><category term="javascript"></category><category term="mysql"></category><category term="php"></category><category term="projekty"></category><category term="škola"></category><category term="vut fit"></category></entry><entry><title>MySQL Error 1449 a pitomý phpMyAdmin</title><link href="http://www.honzajavorek.cz/blog/mysql-error-1449-a-pitomy-phpmyadmin.html" rel="alternate"></link><updated>2009-02-03T14:56:00+01:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/mysql-error-1449-a-pitomy-phpmyadmin.html</id><summary type="html">&lt;p&gt;Tak se mi stalo, že jsem &lt;strong&gt;nahrál dump databáze na localhost&lt;/strong&gt; a
+ona vyhodila asi takovýto error:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There is no ‚root‘@‚%‘ registered&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Jeho číselné označení si přečtěte v titulku. Pátral jsem pátral a
+nakonec jsem zjistil, že příčin může být více a zjistit o tom nejde
+skoro nic. Prima. Každopádně můj problém byl způsobený tím, že
+v databázi byly pohledy (&lt;code&gt;VIEW&lt;/code&gt;) a ty mají
+&lt;strong&gt;nastaveno určité oprávnění&lt;/strong&gt;. Je to kvůli bezpečnosti atd. – viz
+&lt;a href="http://dev.mysql.com/doc/refman/5.0/en/create-view.html"&gt;manuál&lt;/a&gt;,
+no každopádně když si to tam &lt;strong&gt;nastavíte špatně&lt;/strong&gt;, tak máte smůlu.
+Při tvorbě &lt;code&gt;VIEW&lt;/code&gt; máte možnost zadat &lt;code&gt;SQL SECURITY&lt;/code&gt; jako &lt;code&gt;DEFINER&lt;/code&gt;
+nebo &lt;code&gt;INVOKER&lt;/code&gt;. Někdy se může hodit to první, tedy přesné nastavení
+uživatele na serveru, ale pro normální přenos kamkoliv jinam bez
+omezení je asi lepší &lt;code&gt;INVOKER&lt;/code&gt;, což by měl být
+&lt;strong&gt;ten, kdo pohled spouští&lt;/strong&gt;. Zajímavá diskuse k tématu je
+&lt;a href="http://groups.google.com/group/comp.databases.mysql/browse_thread/thread/d8e6da7244a13788?pli=1"&gt;zde&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ale já přeci &lt;strong&gt;nic nenastavoval&lt;/strong&gt; :| . Mám čistý dump
+z phpMyAdmina! No, to je sice hezké, ale phpMyAdmin s těmi &lt;code&gt;VIEW&lt;/code&gt;
+moc neumí a přiřazuje každému nějaký defaultní &lt;code&gt;DEFINER&lt;/code&gt;, který si
+vygeneruje (v mém případě &lt;code&gt;'root'@'%'&lt;/code&gt;). Ten samozřejmě
+&lt;strong&gt;na jiném PC vůbec neexistuje&lt;/strong&gt;. V phpMyAdminu mi to ani nešlo
+změnit, musel jsem to přepsat přímo v SQL a potom se to rozjelo. No
+asi mám nějaký starý phpMyAdmin, říkám si, takže stahuju a zkouším
+nový s myšlenkou, že to snad už dopilovali.&lt;/p&gt;
+&lt;p&gt;No, a světe div se, sice má více možností práce s &lt;code&gt;VIEW&lt;/code&gt;, ale
+&lt;strong&gt;kazí export úplně stejně jako ten starý&lt;/strong&gt;. Nikde nevidím
+nastavení tohoto omezení – ani v nabídkách pro pohledy, ani při
+exportu. Ach jo, takže &lt;strong&gt;ruční práce&lt;/strong&gt; a dávat si pozor… Nic jiného
+nezbývá :( .&lt;/p&gt;</summary><category term="fail"></category><category term="mysql"></category><category term="php"></category></entry></feed>

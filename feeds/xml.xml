@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Javorové lístky</title><link href="http://www.honzajavorek.cz" rel="alternate"></link><link href="http://www.honzajavorek.cz/feeds/xml.xml" rel="self"></link><id>http://www.honzajavorek.cz</id><updated>2007-12-20T01:42:00+01:00</updated><entry><title>XML deklarace a PHP</title><link href="http://www.honzajavorek.cz/blog/xml-deklarace-a-php.html" rel="alternate"></link><updated>2007-12-20T01:42:00+01:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/xml-deklarace-a-php.html</id><summary type="html">&lt;p&gt;Zase trochu o webdesignu. Připravte se na vzrušující objevování
+Ameriky, kola a podobných užitečných věcí. Čtenářky, které se
+nezabývají tvorbou webu, zřejmě zklamu, ale tak už to v životě
+chodí. Bavte se zatím třeba
+&lt;a href="http://gringo.profitux.cz/komixy/"&gt;tímhle&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;XML deklarace&lt;/h2&gt;
+&lt;p&gt;Pokud se člověk už definitivně nevzbouřil, neodklonil od XHTML a
+stále ho baví psát striktně nevalidní jakožeXML dokumenty (více
+o těchto kravinách čtěte
+u &lt;a href="http://dero.name/weblog/xhtml-mime/"&gt;Dera&lt;/a&gt; nebo
+&lt;a href="http://html456.blogspot.com/"&gt;Martina Hassmana&lt;/a&gt;), jistě do nich
+také rád vkládá XML deklaraci. Je to první řádek v kódu, jenž hřímá
+„já jsem XML!“ a pokud stránka používá UTF-8, není povinný.
+Zakládám si na používání UTF-8, ale stejně jako mne náramně
+vzrušuje používat &lt;strong&gt;X&lt;/strong&gt;HTML, svědomí mi nedovolí XML deklaraci
+prostě vynechat. Holt zažité superstriktní pudy z dob
+evangelizace webu.&lt;/p&gt;
+&lt;h2&gt;PHP&lt;/h2&gt;
+&lt;p&gt;Bo su mimo jiné i PHP programátor, musel jsem po čase pokojného
+deklarování XML řešit jistý nedostatek symbiózy mezi jazykem a
+právě oním prvním řádkem dokumentu.&lt;/p&gt;
+&lt;p&gt;Zápis&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?&lt;/span&gt;&lt;span class="nx"&gt;xml&lt;/span&gt; &lt;span class="nx"&gt;version&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;1.0&amp;quot;&lt;/span&gt; &lt;span class="nx"&gt;encoding&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt; &lt;span class="cp"&gt;?&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;prostě není úplně ono, protože ty špičaté závorky a otazníčky PHP
+bere na sebe a server vám vrátí něco podivného, asi
+&lt;strong&gt;parse error&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Řešení&lt;/h2&gt;
+&lt;p&gt;Řešení je zřejmé…&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt; &lt;span class="k"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&amp;lt;?xml version=&lt;/span&gt;&lt;span class="se"&gt;\&amp;quot;&lt;/span&gt;&lt;span class="s2"&gt;1.0&lt;/span&gt;&lt;span class="se"&gt;\&amp;quot;&lt;/span&gt;&lt;span class="s2"&gt; encoding=&lt;/span&gt;&lt;span class="se"&gt;\&amp;quot;&lt;/span&gt;&lt;span class="s2"&gt;utf-8&lt;/span&gt;&lt;span class="se"&gt;\&amp;quot;&lt;/span&gt;&lt;span class="s2"&gt; ?&amp;gt;&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="cp"&gt;?&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Nebo třeba&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt; &lt;span class="k"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot; ?&amp;gt;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="cp"&gt;?&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Jak je ale vidět, zřejmá řešení problémů nejsou ani hezká, ani
+elegantní. Předkládám proto jedno ne zcela zřejmé, ale geniální
+řešení, které je hezké, elegantní a navíc rychlé – nepotřebuje
+prakticky žádný výkon PHP.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt; &lt;span class="cp"&gt;?&amp;gt;&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt;&lt;span class="nx"&gt;xml&lt;/span&gt; &lt;span class="nx"&gt;version&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;1.0&amp;quot;&lt;/span&gt; &lt;span class="nx"&gt;encoding&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;?&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;A je to! Že se tu zabývám blbostmi? No jistě že ano! Ale proč
+netrávit čas psaním a čtením článků o roztomilých maličkostech ;) .
+A že to šlo napsat v jedné větě? Ale no tak… Jako byste mě
+neznali! :D&lt;/p&gt;</summary><category term="php"></category><category term="projekty"></category><category term="xml"></category></entry></feed>
