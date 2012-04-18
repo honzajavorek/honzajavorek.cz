@@ -1,8 +1,6 @@
 # Blog Javorové lístky
 
 
-## English explanation
-
 This is source code of my blog _Javorové lístky_. You can read it
 comfortably at [honzajavorek.cz][blog] if you know Czech. It is
 proudly powered by [Python][python] using [Pelican][pelican], [Markdown][markdown],
@@ -21,7 +19,8 @@ Attribution-NonCommercial-ShareAlike 3.0 Unported License.
 https://creativecommons.org/licenses/by-nc-sa/3.0/
 
 
-## Česky
+--------------------------------------
+
 
 Toto je zdrojový kód mého blogu _Javorové lístky_. Můžeš si jej pohodlně
 přečíst na [honzajavorek.cz][blog]. Velice hrdě se hlásím k tomu, že celá
@@ -39,7 +38,6 @@ Toto dílo podléhá licenci Creative Commons
 Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 3.0 Česko.
 
 https://creativecommons.org/licenses/by-nc-sa/3.0/cz/
-
 
 
 [python]: http://www.python.org
