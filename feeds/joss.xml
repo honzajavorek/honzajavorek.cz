@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Javorové lístky</title><link href="http://www.honzajavorek.cz" rel="alternate"></link><link href="http://www.honzajavorek.cz/feeds/joss.xml" rel="self"></link><id>http://www.honzajavorek.cz</id><updated>2009-07-23T07:38:00+02:00</updated><entry><title>Joss není mrtvý</title><link href="http://www.honzajavorek.cz/blog/joss-neni-mrtvy.html" rel="alternate"></link><updated>2009-07-23T07:38:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/joss-neni-mrtvy.html</id><summary type="html">&lt;p&gt;Můj framework/redakční systém (to druhé je ale asi fakt přespříliš
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Javorové lístky</title><link href="http://www.honzajavorek.cz" rel="alternate"></link><link href="http://www.honzajavorek.cz/feeds/joss.xml" rel="self"></link><id>http://www.honzajavorek.cz</id><updated>2009-07-23T07:38:00+02:00</updated><entry><title>Joss není mrtvý</title><link href="http://www.honzajavorek.cz/joss-neni-mrtvy.html" rel="alternate"></link><updated>2009-07-23T07:38:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/joss-neni-mrtvy.html</id><summary type="html">&lt;p&gt;Můj framework/redakční systém (to druhé je ale asi fakt přespříliš
 honosné označení) pro tvorbu malých stránek,
 &lt;a href="http://code.google.com/p/joss-cms/"&gt;Joss&lt;/a&gt;, si po nějaké době
 nachází své fanoušky :) . Zatímco já postupně přecházím na
@@ -19,7 +19,7 @@ vývoji nepokračuji. Na jeho úvodní stranu jsem vyvěsil informaci,
 že vývoj nejde dál, ale že současná verze funguje dobře. A to
 platí. Pokud byste chtěli ve vývoji pokračovat nebo byste chtěli
 s něčím na Jossu pomoci (vlastní plugin?), napište mi a jestli budu
-mít čas, rád vám pomůžu.&lt;/p&gt;</summary><category term="joss"></category><category term="php"></category><category term="projekty"></category></entry><entry><title>Ultralight mezi PHP frameworky: Joss</title><link href="http://www.honzajavorek.cz/blog/ultralight-mezi-php-frameworky-joss.html" rel="alternate"></link><updated>2008-08-20T07:54:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/ultralight-mezi-php-frameworky-joss.html</id><summary type="html">&lt;p&gt;&lt;img alt="image" src="http://blog.javorek.net/image/64/" /&gt;Před časem jsem se na
+mít čas, rád vám pomůžu.&lt;/p&gt;</summary><category term="joss"></category><category term="php"></category><category term="projekty"></category></entry><entry><title>Ultralight mezi PHP frameworky: Joss</title><link href="http://www.honzajavorek.cz/ultralight-mezi-php-frameworky-joss.html" rel="alternate"></link><updated>2008-08-20T07:54:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/ultralight-mezi-php-frameworky-joss.html</id><summary type="html">&lt;p&gt;&lt;img alt="image" src="http://blog.javorek.net/image/64/" /&gt;Před časem jsem se na
 blogu zmínil, že se
 &lt;a href="http://blog.javorek.net/narodil-se-joss/"&gt;narodil Joss&lt;/a&gt;. Dneska
 bych chtěl konečně napsat, co
@@ -114,7 +114,7 @@ testovat, diskutovat? Nikdo vám nebrání! Je poptávka po kompletní
 anglické dokumentaci? Máte nějaký nápad na novou funkci?
 Napište mi!&lt;/p&gt;
 &lt;p&gt;Přeji do života Jossu hodně štěstí a doufám, že bude líbit.
-A hodit! :P&lt;/p&gt;</summary><category term="joss"></category><category term="php"></category><category term="projekty"></category></entry><entry><title>Šablony v PHP a jak obejít nepodporu short open tags</title><link href="http://www.honzajavorek.cz/blog/sablony-v-php-a-jak-obejit-nepodporu-short-open-tags.html" rel="alternate"></link><updated>2008-08-09T16:26:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/sablony-v-php-a-jak-obejit-nepodporu-short-open-tags.html</id><summary type="html">&lt;p&gt;Jestliže vás nalákal nadpis a nechcete číst širší úvod do problému
+A hodit! :P&lt;/p&gt;</summary><category term="joss"></category><category term="php"></category><category term="projekty"></category></entry><entry><title>Šablony v PHP a jak obejít nepodporu short open tags</title><link href="http://www.honzajavorek.cz/sablony-v-php-a-jak-obejit-nepodporu-short-open-tags.html" rel="alternate"></link><updated>2008-08-09T16:26:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/sablony-v-php-a-jak-obejit-nepodporu-short-open-tags.html</id><summary type="html">&lt;p&gt;Jestliže vás nalákal nadpis a nechcete číst širší úvod do problému
 šablon v PHP, poskočte o něco níže, tam už to tak široké není a
 článek lze ve zdraví přebrodit celkem rychle ;) .&lt;/p&gt;
 &lt;p&gt;Píšete-li aplikaci v PHP a nejste-li v programování vepř, sele,
@@ -228,7 +228,7 @@ Trávníček: „A to se vyplatí!“&lt;/p&gt;
 tvrdohlavý server se jistě jen tak nepoštěstí… Ale za tu jistotu to
 samozřejmě stojí. Teď už si můžeme pohodlně psát short open tags,
 velmi rychle, přehledně a efektivně s nimi kódovat šablony a
-nemusíme se ohlížet na nic a nikoho.&lt;/p&gt;</summary><category term="joss"></category><category term="php"></category><category term="projekty"></category></entry><entry><title>Narodil se Joss</title><link href="http://www.honzajavorek.cz/blog/narodil-se-joss.html" rel="alternate"></link><updated>2008-06-13T02:13:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/narodil-se-joss.html</id><summary type="html">&lt;p&gt;… a má 126 kilo :D . Ale teď vážně. Dnes vyšla &lt;strong&gt;první verze&lt;/strong&gt;
+nemusíme se ohlížet na nic a nikoho.&lt;/p&gt;</summary><category term="joss"></category><category term="php"></category><category term="projekty"></category></entry><entry><title>Narodil se Joss</title><link href="http://www.honzajavorek.cz/narodil-se-joss.html" rel="alternate"></link><updated>2008-06-13T02:13:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/narodil-se-joss.html</id><summary type="html">&lt;p&gt;… a má 126 kilo :D . Ale teď vážně. Dnes vyšla &lt;strong&gt;první verze&lt;/strong&gt;
 &lt;a href="http://code.google.com/p/joss-cms/"&gt;Jossu&lt;/a&gt;, mého skromného
 &lt;strong&gt;open source frameworku&lt;/strong&gt;. Tedy zatím frameworku… Jednou bych
 z něj chtěl udělat lehké CMS.&lt;/p&gt;

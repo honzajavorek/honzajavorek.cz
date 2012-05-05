@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Javorové lístky</title><link href="http://www.honzajavorek.cz" rel="alternate"></link><link href="http://www.honzajavorek.cz/feeds/php.xml" rel="self"></link><id>http://www.honzajavorek.cz</id><updated>2009-08-30T01:48:00+02:00</updated><entry><title>Bakalář</title><link href="http://www.honzajavorek.cz/blog/bakalar.html" rel="alternate"></link><updated>2009-08-30T01:48:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/bakalar.html</id><summary type="html">&lt;p&gt;Tak jsem to všechno úspěšně dokončil. Odstátnicoval jsem za A,
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Javorové lístky</title><link href="http://www.honzajavorek.cz" rel="alternate"></link><link href="http://www.honzajavorek.cz/feeds/php.xml" rel="self"></link><id>http://www.honzajavorek.cz</id><updated>2009-08-30T01:48:00+02:00</updated><entry><title>Bakalář</title><link href="http://www.honzajavorek.cz/bakalar.html" rel="alternate"></link><updated>2009-08-30T01:48:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/bakalar.html</id><summary type="html">&lt;p&gt;Tak jsem to všechno úspěšně dokončil. Odstátnicoval jsem za A,
 &lt;a href="http://blog.javorek.net/bakalarka/"&gt;bakalářka&lt;/a&gt; je taky za A.
 &lt;a href="http://www.slideshare.net/littlemaple/bakalsk-prce-evidence-geografickch-tras-uivatele"&gt;Evidence geografických tras uživatele&lt;/a&gt;
 je na SlideShare k dispozici k přečtení. K vidění to je pod názvem
 &lt;a href="http://blog.javorek.net/trekmap/"&gt;TrekMap&lt;/a&gt; na
-&lt;a href="http://www.trekmap.cz"&gt;www.trekmap.cz&lt;/a&gt;.&lt;/p&gt;</summary><category term="ajax"></category><category term="css"></category><category term="erasmus"></category><category term="html"></category><category term="javascript"></category><category term="mysql"></category><category term="php"></category><category term="projekty"></category><category term="škola"></category><category term="vut fit"></category></entry><entry><title>Joss není mrtvý</title><link href="http://www.honzajavorek.cz/blog/joss-neni-mrtvy.html" rel="alternate"></link><updated>2009-07-23T07:38:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/joss-neni-mrtvy.html</id><summary type="html">&lt;p&gt;Můj framework/redakční systém (to druhé je ale asi fakt přespříliš
+&lt;a href="http://www.trekmap.cz"&gt;www.trekmap.cz&lt;/a&gt;.&lt;/p&gt;</summary><category term="ajax"></category><category term="css"></category><category term="erasmus"></category><category term="html"></category><category term="javascript"></category><category term="mysql"></category><category term="php"></category><category term="projekty"></category><category term="škola"></category><category term="vut fit"></category></entry><entry><title>Joss není mrtvý</title><link href="http://www.honzajavorek.cz/joss-neni-mrtvy.html" rel="alternate"></link><updated>2009-07-23T07:38:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/joss-neni-mrtvy.html</id><summary type="html">&lt;p&gt;Můj framework/redakční systém (to druhé je ale asi fakt přespříliš
 honosné označení) pro tvorbu malých stránek,
 &lt;a href="http://code.google.com/p/joss-cms/"&gt;Joss&lt;/a&gt;, si po nějaké době
 nachází své fanoušky :) . Zatímco já postupně přecházím na
@@ -24,7 +24,7 @@ vývoji nepokračuji. Na jeho úvodní stranu jsem vyvěsil informaci,
 že vývoj nejde dál, ale že současná verze funguje dobře. A to
 platí. Pokud byste chtěli ve vývoji pokračovat nebo byste chtěli
 s něčím na Jossu pomoci (vlastní plugin?), napište mi a jestli budu
-mít čas, rád vám pomůžu.&lt;/p&gt;</summary><category term="joss"></category><category term="php"></category><category term="projekty"></category></entry><entry><title>MySQL Error 1449 a pitomý phpMyAdmin</title><link href="http://www.honzajavorek.cz/blog/mysql-error-1449-a-pitomy-phpmyadmin.html" rel="alternate"></link><updated>2009-02-03T14:56:00+01:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/mysql-error-1449-a-pitomy-phpmyadmin.html</id><summary type="html">&lt;p&gt;Tak se mi stalo, že jsem &lt;strong&gt;nahrál dump databáze na localhost&lt;/strong&gt; a
+mít čas, rád vám pomůžu.&lt;/p&gt;</summary><category term="joss"></category><category term="php"></category><category term="projekty"></category></entry><entry><title>MySQL Error 1449 a pitomý phpMyAdmin</title><link href="http://www.honzajavorek.cz/mysql-error-1449-a-pitomy-phpmyadmin.html" rel="alternate"></link><updated>2009-02-03T14:56:00+01:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/mysql-error-1449-a-pitomy-phpmyadmin.html</id><summary type="html">&lt;p&gt;Tak se mi stalo, že jsem &lt;strong&gt;nahrál dump databáze na localhost&lt;/strong&gt; a
 ona vyhodila asi takovýto error:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;There is no ‚root‘@‚%‘ registered&lt;/p&gt;
@@ -54,7 +54,7 @@ nový s myšlenkou, že to snad už dopilovali.&lt;/p&gt;
 &lt;strong&gt;kazí export úplně stejně jako ten starý&lt;/strong&gt;. Nikde nevidím
 nastavení tohoto omezení – ani v nabídkách pro pohledy, ani při
 exportu. Ach jo, takže &lt;strong&gt;ruční práce&lt;/strong&gt; a dávat si pozor… Nic jiného
-nezbývá :( .&lt;/p&gt;</summary><category term="fail"></category><category term="mysql"></category><category term="php"></category></entry><entry><title>Pár triků pro mod_rewrite a .htaccess</title><link href="http://www.honzajavorek.cz/blog/par-triku-pro-mod_rewrite-a-htaccess.html" rel="alternate"></link><updated>2008-08-27T08:10:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/par-triku-pro-mod_rewrite-a-htaccess.html</id><summary type="html">&lt;p&gt;Velmi často je součástí webového serveru tzv. &lt;code&gt;mod_rewrite&lt;/code&gt;, který
+nezbývá :( .&lt;/p&gt;</summary><category term="fail"></category><category term="mysql"></category><category term="php"></category></entry><entry><title>Pár triků pro mod_rewrite a .htaccess</title><link href="http://www.honzajavorek.cz/par-triku-pro-mod_rewrite-a-htaccess.html" rel="alternate"></link><updated>2008-08-27T08:10:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/par-triku-pro-mod_rewrite-a-htaccess.html</id><summary type="html">&lt;p&gt;Velmi často je součástí webového serveru tzv. &lt;code&gt;mod_rewrite&lt;/code&gt;, který
 nám povoluje přepisovat jakékoliv požadavky od uživatele na jiné.
 Například přepsat nebo přesměrovat adresu. Více o &lt;code&gt;mod_rewrite&lt;/code&gt; a
 souboru &lt;code&gt;.htaccess&lt;/code&gt;, jenž s ním úzce souvisí, najdete třeba na
@@ -170,7 +170,7 @@ silné a velmi užitečné nástroje, bez nichž bych si dneska pohyb po
 hostinzích nebo vlastním serveru představil jen stěží. Mnohdy je
 sice možné řešit totéž jiným způsobem, ale touto cestou je to
 mnohdy rychlejší, elegantnější a na pohled hezčí :) . Takže kdo
-s nimi ještě nezačal… Hurá do toho!&lt;/p&gt;</summary><category term="apache"></category><category term="mod_rewrite"></category><category term="php"></category><category term="projekty"></category><category term="webdesign"></category></entry><entry><title>Ultralight mezi PHP frameworky: Joss</title><link href="http://www.honzajavorek.cz/blog/ultralight-mezi-php-frameworky-joss.html" rel="alternate"></link><updated>2008-08-20T07:54:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/ultralight-mezi-php-frameworky-joss.html</id><summary type="html">&lt;p&gt;&lt;img alt="image" src="http://blog.javorek.net/image/64/" /&gt;Před časem jsem se na
+s nimi ještě nezačal… Hurá do toho!&lt;/p&gt;</summary><category term="apache"></category><category term="mod_rewrite"></category><category term="php"></category><category term="projekty"></category><category term="webdesign"></category></entry><entry><title>Ultralight mezi PHP frameworky: Joss</title><link href="http://www.honzajavorek.cz/ultralight-mezi-php-frameworky-joss.html" rel="alternate"></link><updated>2008-08-20T07:54:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/ultralight-mezi-php-frameworky-joss.html</id><summary type="html">&lt;p&gt;&lt;img alt="image" src="http://blog.javorek.net/image/64/" /&gt;Před časem jsem se na
 blogu zmínil, že se
 &lt;a href="http://blog.javorek.net/narodil-se-joss/"&gt;narodil Joss&lt;/a&gt;. Dneska
 bych chtěl konečně napsat, co
@@ -265,7 +265,7 @@ testovat, diskutovat? Nikdo vám nebrání! Je poptávka po kompletní
 anglické dokumentaci? Máte nějaký nápad na novou funkci?
 Napište mi!&lt;/p&gt;
 &lt;p&gt;Přeji do života Jossu hodně štěstí a doufám, že bude líbit.
-A hodit! :P&lt;/p&gt;</summary><category term="joss"></category><category term="php"></category><category term="projekty"></category></entry><entry><title>Když potřebujeme register_globals</title><link href="http://www.honzajavorek.cz/blog/kdyz-potrebujeme-register_globals.html" rel="alternate"></link><updated>2008-08-16T15:27:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/kdyz-potrebujeme-register_globals.html</id><summary type="html">&lt;p&gt;Stalo se tuším od jedné z podverzí PHP4 dobrým zvykem
+A hodit! :P&lt;/p&gt;</summary><category term="joss"></category><category term="php"></category><category term="projekty"></category></entry><entry><title>Když potřebujeme register_globals</title><link href="http://www.honzajavorek.cz/kdyz-potrebujeme-register_globals.html" rel="alternate"></link><updated>2008-08-16T15:27:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/kdyz-potrebujeme-register_globals.html</id><summary type="html">&lt;p&gt;Stalo se tuším od jedné z podverzí PHP4 dobrým zvykem
 &lt;strong&gt;vypínat v PHP direktivu register_globals&lt;/strong&gt;. Naštěstí. Díky tomu
 pak nemáme přístup k příchozím datům přes různě pojmenované
 proměnné, ale máme je hezky v globálních polích, třízena podle
@@ -291,7 +291,7 @@ možnosti:&lt;/p&gt;
 &lt;h2&gt;Nastavení na serveru nelze změnit&lt;/h2&gt;
 &lt;p&gt;V tomto případě nám nezbyde, než si ručně proměnné vytvořit.&lt;/p&gt;
 &lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;extract&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;$&lt;span class="n"&gt;_REQUEST&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="php"></category></entry><entry><title>Šablony v PHP a jak obejít nepodporu short open tags</title><link href="http://www.honzajavorek.cz/blog/sablony-v-php-a-jak-obejit-nepodporu-short-open-tags.html" rel="alternate"></link><updated>2008-08-09T16:26:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/sablony-v-php-a-jak-obejit-nepodporu-short-open-tags.html</id><summary type="html">&lt;p&gt;Jestliže vás nalákal nadpis a nechcete číst širší úvod do problému
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="php"></category></entry><entry><title>Šablony v PHP a jak obejít nepodporu short open tags</title><link href="http://www.honzajavorek.cz/sablony-v-php-a-jak-obejit-nepodporu-short-open-tags.html" rel="alternate"></link><updated>2008-08-09T16:26:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/sablony-v-php-a-jak-obejit-nepodporu-short-open-tags.html</id><summary type="html">&lt;p&gt;Jestliže vás nalákal nadpis a nechcete číst širší úvod do problému
 šablon v PHP, poskočte o něco níže, tam už to tak široké není a
 článek lze ve zdraví přebrodit celkem rychle ;) .&lt;/p&gt;
 &lt;p&gt;Píšete-li aplikaci v PHP a nejste-li v programování vepř, sele,
@@ -405,7 +405,7 @@ Trávníček: „A to se vyplatí!“&lt;/p&gt;
 tvrdohlavý server se jistě jen tak nepoštěstí… Ale za tu jistotu to
 samozřejmě stojí. Teď už si můžeme pohodlně psát short open tags,
 velmi rychle, přehledně a efektivně s nimi kódovat šablony a
-nemusíme se ohlížet na nic a nikoho.&lt;/p&gt;</summary><category term="joss"></category><category term="php"></category><category term="projekty"></category></entry><entry><title>Narodil se Joss</title><link href="http://www.honzajavorek.cz/blog/narodil-se-joss.html" rel="alternate"></link><updated>2008-06-13T02:13:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/narodil-se-joss.html</id><summary type="html">&lt;p&gt;… a má 126 kilo :D . Ale teď vážně. Dnes vyšla &lt;strong&gt;první verze&lt;/strong&gt;
+nemusíme se ohlížet na nic a nikoho.&lt;/p&gt;</summary><category term="joss"></category><category term="php"></category><category term="projekty"></category></entry><entry><title>Narodil se Joss</title><link href="http://www.honzajavorek.cz/narodil-se-joss.html" rel="alternate"></link><updated>2008-06-13T02:13:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/narodil-se-joss.html</id><summary type="html">&lt;p&gt;… a má 126 kilo :D . Ale teď vážně. Dnes vyšla &lt;strong&gt;první verze&lt;/strong&gt;
 &lt;a href="http://code.google.com/p/joss-cms/"&gt;Jossu&lt;/a&gt;, mého skromného
 &lt;strong&gt;open source frameworku&lt;/strong&gt;. Tedy zatím frameworku… Jednou bych
 z něj chtěl udělat lehké CMS.&lt;/p&gt;
@@ -424,7 +424,7 @@ Měl bych připravit nějakou ochutnávku, výpis fičur nebo důvody,
 proč jsem to celé programoval, ale asi si to &lt;strong&gt;nechám na jindy&lt;/strong&gt;,
 protože teď mám spoustu jiné práce a ještě navrch k tomu mne
 udolává velká ospalost :) . Pokud jste zvědaví, nic vám nebrání
-stáhnout si archiv a hrát si… ;)&lt;/p&gt;</summary><category term="joss"></category><category term="php"></category><category term="projekty"></category></entry><entry><title>Tahák na syntaxi: PHP VS. Java</title><link href="http://www.honzajavorek.cz/blog/tahak-na-syntaxi-php-vs-java.html" rel="alternate"></link><updated>2008-03-30T18:05:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/tahak-na-syntaxi-php-vs-java.html</id><summary type="html">&lt;p&gt;Ano, můžeme si otevřít knihy, můžeme zkoumat
+stáhnout si archiv a hrát si… ;)&lt;/p&gt;</summary><category term="joss"></category><category term="php"></category><category term="projekty"></category></entry><entry><title>Tahák na syntaxi: PHP VS. Java</title><link href="http://www.honzajavorek.cz/tahak-na-syntaxi-php-vs-java.html" rel="alternate"></link><updated>2008-03-30T18:05:00+02:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/tahak-na-syntaxi-php-vs-java.html</id><summary type="html">&lt;p&gt;Ano, můžeme si otevřít knihy, můžeme zkoumat
 &lt;a href="http://en.wikipedia.org/wiki/PHP_syntax_and_semantics"&gt;PHP syntaxi&lt;/a&gt;
 nebo &lt;a href="http://en.wikipedia.org/wiki/Java_syntax"&gt;Java syntaxi&lt;/a&gt; na
 Wikipedii, číst si v referenčních webech… Ale to je zdlouhavé.
@@ -461,7 +461,7 @@ přístup ke konstantě
 &lt;code&gt;NAME&lt;/code&gt;, &lt;code&gt;Class.NAME&lt;/code&gt;
 Mimochodem, když jsem hledal něco takového jako tento článek na
 internetu, narazil jsem na
-&lt;a href="http://www.blueshoes.org/en/developer/php_cheat_sheet/"&gt;pěkný tahák pro PHP&lt;/a&gt;.&lt;/p&gt;</summary><category term="java"></category><category term="php"></category></entry><entry><title>Jak uchránit textový soubor na serveru</title><link href="http://www.honzajavorek.cz/blog/jak-uchranit-textovy-soubor-na-serveru.html" rel="alternate"></link><updated>2008-02-03T12:30:00+01:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/blog/jak-uchranit-textovy-soubor-na-serveru.html</id><summary type="html">&lt;p&gt;Dnes jen krátce malý trik, jak uchránit soubory textového typu na
+&lt;a href="http://www.blueshoes.org/en/developer/php_cheat_sheet/"&gt;pěkný tahák pro PHP&lt;/a&gt;.&lt;/p&gt;</summary><category term="java"></category><category term="php"></category></entry><entry><title>Jak uchránit textový soubor na serveru</title><link href="http://www.honzajavorek.cz/jak-uchranit-textovy-soubor-na-serveru.html" rel="alternate"></link><updated>2008-02-03T12:30:00+01:00</updated><author><name>Honza Javorek</name></author><id>http://www.honzajavorek.cz/jak-uchranit-textovy-soubor-na-serveru.html</id><summary type="html">&lt;p&gt;Dnes jen krátce malý trik, jak uchránit soubory textového typu na
 serveru. Pokud si na &lt;code&gt;www.example.com&lt;/code&gt; nahraji nějaký
 &lt;code&gt;velikost-poprsi.txt&lt;/code&gt;, pak si jej logicky každý může přečíst na
 adrese &lt;code&gt;www.example.com/velikost-poprsi.txt&lt;/code&gt;. Někdy je to ale

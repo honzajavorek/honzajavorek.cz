@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Touchpad v Ubuntu</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
+        <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Javorové lístky ATOM Feed" />
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="./css/ie.css"/>
+                <script src="./js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="./css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href=".">Javorové lístky </a></h1>
+                <nav><ul>
+                
+                    <li><a href="http://www.example.com">Řehoř</a></li>
+                
+                
+                
+                
+                
+                    <li class="active"><a href="./category/blog.html">blog</a></li>
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+<section id="content" class="body">    
+<article>
+        <header> <h1 class="entry-title"><a href=""
+        rel="bookmark" title="Permalink to Touchpad v Ubuntu">Touchpad v Ubuntu</a></h1>  </header>
+        <div class="entry-content">
+        <footer class="post-info">
+        <abbr class="published" title="2009-12-06T18:25:00">
+                6.12.2009
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href="./author/Honza Javorek.html">Honza Javorek</a>
+        </address>
+        
+<p>In <a href="./category/blog.html">blog</a>. </p>
+<p>tags: <a href="./tag/hračičkování.html">hračičkování</a><a href="./tag/linux.html">linux</a><a href="./tag/software.html">software</a></p>
+
+
+</footer><!-- /.post-info -->
+        <p>Moji kamarádi
+<a href="http://twitter.com/markoph/status/6380776939">mají radost, že jsem přešel na Linux</a>,
+tak jim přidám vodu na mlýn článkem s na první pohled
+masochistickým tématem.
+<a href="http://blog.javorek.net/nemam-rad-mysi/">Rád používám touchpad</a> a
+v Ubuntu mě vždy štvalo, že nastavení jeho ovládání nebylo nikdy
+moc snadné. Zapíšu si tu tedy pár poznámek, jak dotáhnout jeho
+ovládání k dokonalosti, protože dohledat tyhle věci je trochu
+problém. Pokud člověk napíše do Google slova Ubuntu a touchpad,
+většinou se lidé ptají na jeho vypnutí (barbaři!). Abych se
+vyvaroval některých komentářů, hned na úvod dodám návod pro
+Windows: Nainstalujte si ovladače pro Synaptics Touchpad, tam si to
+naklikejte a nepište o tom články ;) .</p>
+<p>Nastavení touchpadu je normálně v <em>System → Preferences → Mouse</em> na
+záložce <em>Touchpad</em>. Pokud toužíte po rozšířeném nastavení, tak
+pomůže instalace <em>gsynaptics</em> (pro GNOME). Ten je potom k nalezení
+pod <em>System → Preferences → Touchpad</em>. Jenže… Ačkoliv si můžete
+dopřát applovské triky a používat zoom nebo scrolling více prsty,
+pořád vám to nikde nedovolí nastavit ťapací oblasti. Já nutně
+potřebuji „prostřední tlačítko“ v pravém horním rohu.</p>
+<p>No a k tomu pomůže
+<a href="http://ubuntuforums.org/showthread.php?p=8403017">tato stránka</a>,
+kde je nejprve
+<a href="http://ubuntuforums.org/showpost.php?p=8261605&amp;postcount=3">řešení dočasné</a>
+(do prvního restartu, což moc ani nepovažuji za řešení) a pak
+<a href="http://ubuntuforums.org/showpost.php?p=8399228&amp;postcount=8">řešení permanentní</a>.
+Tedy přidat do <code>/etc/hal/fdi/policy</code> soubor <code>synaptics.fdi</code> a do
+něj hodit</p>
+<div class="codehilite"><pre><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="nt">&lt;deviceinfo</span> <span class="na">version=</span><span class="s">&quot;0.2&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;device&gt;</span>
+    <span class="nt">&lt;match</span> <span class="na">key=</span><span class="s">&quot;input.x11_driver&quot;</span> <span class="na">string=</span><span class="s">&quot;synaptics&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;merge</span> <span class="na">key=</span><span class="s">&quot;input.x11_options.RTCornerButton&quot;</span> <span class="na">type=</span><span class="s">&quot;string&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/merge&gt;</span>
+    <span class="nt">&lt;/match&gt;</span>
+  <span class="nt">&lt;/device&gt;</span>
+<span class="nt">&lt;/deviceinfo&gt;</span>
+</pre></div>
+
+
+<p>No a to je vše. Pomocí změn v HALu (viz odkaz na permanentní
+řešení) byste měli uspokojit veškerá svá tajná přání, která vás
+v souvislosti s touchpadem kdy napadla. Ještě dodám, že tohle
+nastavení prostředního tlačítka do pravého horního rohu bylo
+v Ubuntu výchozí, ale podle lidu stěžujícího si na fórech pro
+Karmic teď zmizelo. Netuším proč. Přeji hezké ťapání.</p>
+        </div><!-- /.entry-content -->
+        
+        <div class="comments">
+        <h2>Comments !</h2>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+               var disqus_identifier = "touchpad-v-ubuntu.html";
+               (function() {
+               var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+               dsq.src = 'http://javorove-listky.disqus.com/embed.js';
+               (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+            </script>
+        </div>
+        
+
+</article>
+</section>
+
+        <section id="extras" class="body">
+        
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                        
+                            <li><a href="http://docs.notmyidea.org/alexis/pelican/">Pelican</a></li>
+                        
+                            <li><a href="http://python.org">Python.org</a></li>
+                        
+                            <li><a href="http://jinja.pocoo.org">Jinja2</a></li>
+                        
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        
+                        </ul>
+                </div><!-- /.blogroll -->
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="./feeds/all.atom.xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="#">You can add links in your config file</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>, which takes great advantages of <a href="http://python.org">python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'javorove-listky';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

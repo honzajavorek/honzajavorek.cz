@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Jak na CVS</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
+        <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Javorové lístky ATOM Feed" />
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="./css/ie.css"/>
+                <script src="./js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="./css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href=".">Javorové lístky </a></h1>
+                <nav><ul>
+                
+                    <li><a href="http://www.example.com">Řehoř</a></li>
+                
+                
+                
+                
+                
+                    <li class="active"><a href="./category/blog.html">blog</a></li>
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+<section id="content" class="body">    
+<article>
+        <header> <h1 class="entry-title"><a href=""
+        rel="bookmark" title="Permalink to Jak na CVS">Jak na CVS</a></h1>  </header>
+        <div class="entry-content">
+        <footer class="post-info">
+        <abbr class="published" title="2007-12-30T12:00:00">
+                30.12.2007
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href="./author/Honza Javorek.html">Honza Javorek</a>
+        </address>
+        
+<p>In <a href="./category/blog.html">blog</a>. </p>
+<p>tags: <a href="./tag/software.html">software</a><a href="./tag/windows.html">windows</a></p>
+
+
+</footer><!-- /.post-info -->
+        <p>Návod jak rozběhat <strong>CVS repository na Windows</strong>. Jde to i na
+Linuxu, ale nikdy jsem to nedělal. Popravdě, toto byla trochu
+zvrhlá věta, protože pro CVS jsou unixové systémy nativní
+platformou. Nehledejte zde
+<a href="http://cs.wikipedia.org/wiki/CVS">co je to CVS</a>. Návod není ani
+o používání CVS – je o instalaci služeb do systému, aby se mohly
+používat.</p>
+<h2>První kroky</h2>
+<p>Protože CVS je primárně pro jiné OS než Windows, uchýlíme se
+k <a href="http://www.march-hare.com/cvspro/">CVSNT</a>. To je rozšíření CVS,
+jež lze instalovat i na Windows. Na stránkách projektu se přes free
+download proklikáme ke stažení instalace. Instalační
+cvsnt-verze.msi spustíme typický klikací průvodce instalací, kde by
+nemělo dojít k žádným složitostem (klikat na <em>next</em> umí i nesmažený
+hermelín).</p>
+<p>Nainstalováno. Co teď? CVS bude používat pro svou práci nějaký
+port. Zřejmě zůstanete u standardního <strong>2401</strong>. Musíte jej povolit
+ve firewallu.</p>
+<h2>Control Panel a vytvoření repository</h2>
+<p>Koukněte do <strong>Start menu</strong> a najděte nově nainstalovanou složku
+s CVSNT. Je tam <strong>CVSNT Control Panel</strong>. Dosti užitečné GUI, které
+hned využijeme. Hned na první záložce je možnost vypínat a spouštět
+obě CVS služby. Na záložce s <strong>Repository configuration</strong> můžete
+spravovat úložiště dat (či jak to nazvat). V <strong>Location</strong> vyberte
+cestu k nově zřizovanému repository. Repository je serverová část
+CVS, místo, kam si CVS ukládá údaje o změnách v souborech vašich
+projektů. Cestu volte nějak rozumně, třeba D:/wrk/cvs.</p>
+<p>V <strong>Server settings</strong> záložce bych sice nic za normálních okolností
+neměnil, ale pokud z různých firewallových důvodů nemůžete využít
+výchozí port pro CVS, zde jej můžete upravit. Relevantní je
+<strong>CVS server port</strong>, ten druhý měnit netřeba.</p>
+<h2>Uživatelé</h2>
+<p>Já osobně využívám CVSNT na jednom počítači jako server i klient a
+tím se řídí můj návod. Pokud to potřebujete jinak, musíte se s tím
+nějak poprat. CVSNT při tomto mém nastavení využívá uživatelské
+účty ve Windows.</p>
+<p>Ve složce, kam jsme umístili repository se vytvořil adresář
+<strong>CVSROOT</strong>. Zde je milion souborů, které není radno editovat a pár
+souborů, jejichž editace může mít docela vlídné následky :) . Např.
+soubor admin definuje administrátory repository. Na každém řádku má
+být jméno administrátora, takže tam přidejte název svého Windows
+účtu (u mě soubor obsahuje dvě písmena, a to lm).</p>
+<p>Pak v příkazové řádce Windows zadejte</p>
+<div class="codehilite"><pre><span class="n">set</span> <span class="n">CVSROOT</span><span class="p">=:</span><span class="n">pserver</span><span class="p">:</span><span class="n">adminlogin</span><span class="p">@</span><span class="n">localhost</span><span class="p">:</span><span class="o">/</span><span class="n">cvs</span>
+</pre></div>
+
+
+<p>nebo, pokud jste měnili port,</p>
+<div class="codehilite"><pre><span class="n">set</span> <span class="n">CVSROOT</span><span class="p">=:</span><span class="n">pserver</span><span class="p">:</span><span class="n">adminlogin</span><span class="p">@</span><span class="n">localhost</span><span class="p">:</span>0000<span class="p">:</span><span class="o">/</span><span class="n">cvs</span>
+</pre></div>
+
+
+<p>Místo adminlogin pište svůj administrátorský login (já lm), místo
+0000 svůj port a místo /cvs název repository (ten vypisuje Control
+Panel v přehledu repositories v prvním sloupci tabulky). Pak už si
+můžete hrát s účty (přidávat a měnit hesla):</p>
+<div class="codehilite"><pre><span class="n">cvs</span> <span class="n">passwd</span> <span class="o">-</span><span class="n">a</span> <span class="n">nejakylogin</span>
+</pre></div>
+
+
+<p>Zeptá se na nové heslo, to zašifruje a spolu s loginem plácne do
+souboru <strong>passwd</strong> v CVSROOT. Dále domapujeme uživatele Windows
+k CVS a to poeditováním passwd do následující podoby:</p>
+<div class="codehilite"><pre><span class="o">&lt;</span><span class="n">login</span><span class="o">&gt;</span><span class="p">:</span><span class="o">&lt;</span><span class="n">heslo</span><span class="o">&gt;</span><span class="p">:</span><span class="o">&lt;</span><span class="n">windows</span> <span class="n">user</span><span class="o">&gt;</span>
+</pre></div>
+
+
+<p>Je hotovo. Teď už se jen připojit. Na všechno jsou příkazy v CLI,
+ale zkušenější člověk se s tím nemusí párat a může poeditovat
+nějaký ten soubor ručně, když k tomu má přístup nevzdáleně a ví co
+dělá. Akorát heslo je třeba tvořit přes příkazovou řádku, protože
+se šifruje.</p>
+<h2>Vzdálený přístup pro kolegy</h2>
+<p>Protože je provázanost mezi uživateli vašeho systému a CVS,
+vytvořte si lokálního fiktivního uživatele ve Windows, např.
+<em>cvsuser</em> nebo <em>cvs</em>. Nemusí se k němu jít ani přihlásit, měl by
+mít omezená práva apod. Jinak se s tím zápasí pod Windows XP
+Proffesional (je na to GUI) a jinak pod Windows XP Home (buď
+necháte jako běžného usera, nebo nakonfigurujete přes CLI stejně
+jako byste to dělali v Proffesional přes GUI), ale jde to všude. Na
+tohoto uživatele můžeme mapovat všechny spolupracovníky.</p>
+<p>Uživatele pak přidáte úplně stejně jako výše,
+<strong>akorát jej namapujete v passwd na Windows fiktivního uživatele pro cvs</strong>.
+Kolega se pak připojí nějak takto:</p>
+<div class="codehilite"><pre><span class="p">:</span><span class="n">pserver</span><span class="p">:</span><span class="n">jehoskvelylogin</span><span class="p">@</span><span class="n">vaseipadresa</span><span class="p">:</span><span class="n">port</span><span class="p">:</span><span class="n">repository</span>
+</pre></div>
+
+
+<p>Například:</p>
+<div class="codehilite"><pre><span class="p">:</span><span class="n">pserver</span><span class="p">:</span><span class="n">karkulka</span><span class="p">@</span>0<span class="p">.</span>255<span class="p">.</span>0<span class="p">.</span>255<span class="p">:</span><span class="o">/</span><span class="n">work</span><span class="o">/</span><span class="n">cvs</span>
+</pre></div>
+
+
+<p>a musíte mu samozřejmě napsat i přidělené heslo. Místo IP můžete
+použít i DNS adresu, pokud nějakou máte.</p>
+<h2>конец</h2>
+<p>Tak milé děti, konec! Teď už můžete vyvíjet pod CVS. A já si jdu
+hrát s <a href="http://cs.wikipedia.org/wiki/SVN">SVN</a> ;) . Za spolupráci
+na operaci a za trpělivost budiž položen dík
+<a href="http://jentak.javorkovi.cz/">brašulemu</a>.</p>
+        </div><!-- /.entry-content -->
+        
+        <div class="comments">
+        <h2>Comments !</h2>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+               var disqus_identifier = "jak-na-cvs.html";
+               (function() {
+               var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+               dsq.src = 'http://javorove-listky.disqus.com/embed.js';
+               (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+            </script>
+        </div>
+        
+
+</article>
+</section>
+
+        <section id="extras" class="body">
+        
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                        
+                            <li><a href="http://docs.notmyidea.org/alexis/pelican/">Pelican</a></li>
+                        
+                            <li><a href="http://python.org">Python.org</a></li>
+                        
+                            <li><a href="http://jinja.pocoo.org">Jinja2</a></li>
+                        
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        
+                        </ul>
+                </div><!-- /.blogroll -->
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="./feeds/all.atom.xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="#">You can add links in your config file</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>, which takes great advantages of <a href="http://python.org">python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'javorove-listky';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>
