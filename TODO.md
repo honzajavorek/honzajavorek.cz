@@ -3,7 +3,7 @@
 1. <del>Export all articles from my current system.</del>
 2. <del>Convert the articles into HTML by Texy! and then into Markdown by [Pandoc][pandoc]</del>
 3. <del>Import all articles in Markdown into this repository.</del>
-4. Migrate images.
+4. Migrate images, YouTube videos, etc.
 5. Migrate links. Handle redirects.
 6. Prepare deployment to GitHub Pages.
 7. Prepare minimal design. Remove all unnecessary stuff.
