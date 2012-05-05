@@ -107,6 +107,10 @@ def deploy():
         local('git checkout gh-pages')
         okay('GitHub Pages branch.')
         local('cp -r %s/* .' % output_dir)
+
+        # remove unnecessary directories
+        local('rm -rf author category tag')
+
         local('git add -A')
         with settings(hide('warnings'), warn_only=True):
             local('git commit -m "deploying changes in pages"')
