@@ -108,7 +108,8 @@ def deploy():
         okay('GitHub Pages branch.')
         local('cp -r %s/* .' % output_dir)
         local('git add -A')
-        local('git commit -m "deploying changes in pages"')
+        with settings(hide('warnings'), warn_only=True):
+            local('git commit -m "deploying changes in pages"')
         local('git push origin gh-pages')
 
     local('rm -rf ' + deploy_dir)
@@ -120,7 +121,8 @@ def publish():
     """Saves changes in articles."""
     with lcd(posts_dir):
         local('git add -A')
-        local('git commit -m "publishing new articles"')
+        with settings(hide('warnings'), warn_only=True):
+            local('git commit -m "publishing new articles"')
         local('git push origin master')
     okay('All published.')
     execute(deploy)
