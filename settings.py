@@ -22,7 +22,7 @@ DISQUS_SITENAME = 'javorove-listky'
 # Blog settings
 DEFAULT_PAGINATION = 5
 DEFAULT_CATEGORY = 'blog'
-MD_EXTENSIONS = ['codehilite', 'extra']
+MD_EXTENSIONS = ['codehilite', 'extra', 'headerid', 'sane_lists']
 
 
 # Static paths will be copied under the same name
