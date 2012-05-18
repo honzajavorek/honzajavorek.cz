@@ -1,0 +1,81 @@
+Ač se to může zdát nezvyklé, PHP je celkem univerzální jazyk a lze jej samozřejmě "používat v příkazové řádce operačního systému":http://www.php.net/manual/en/features.commandline.php, tedy přes CLI((command line interface)). Musíte k tomu mít nainstalované `php-cli`, což je zvláštní `.deb` balíček. Na Windows a jiných systémech nevím. Potom potřebujete mít samotné PHP v PATH operačního systému. Na Linuxu byste to tak měli mít už po instalaci (zkuste si do terminálu napsat `$ php`, jestli příkaz systém zná), na Windows si musíte do PATH přidat cestu k `php.exe`. Potom už můžete radostně spouštět skripty, třeba `php helloworld.php`.
+<!--more-->
+
+Proč PHP?
+======
+Mohu to přece udělat v Pythonu, BASHi, Perlu, Céčku, ... No řekněme, že to má své výhody. Pokud "člověk drtivou **většinu života programuje v PHP**":http://php.vrana.cz/php-cli.php a většinu úloh v něm udělá nejrychleji a s největší jistotou, pak je logické, že si tentýž jazyk vybere i pro skripty ve svém OS nebo malinké aplikace.
+
+Druhý důvod vidím třeba v tom, že máme webovou aplikaci, která chce **cronem spouštět nějaké úlohy**. Psát takové úlohy veřejně přístupné (tzn. že cron vykoná HTTP požadavek na dané URL a tím se spustí skript) je poměrně nesmysl a psát je v jiném jazyce je neefektivní -- máme-li hotovou aplikaci s připojením k databázi a propracovaným modelem, je škoda toho rovnou nevyužít a psát to znova na koleně třeba v Pythonu.
+
+Také se může hodit napsat si jednoduchý skript pro **automatizaci práce nad určitým projektem**. Já to osobně dělám často a musím přiznat, že mě to naučil framework "Symfony":http://www.symfony-project.org/, který má přes příkazy v CLI automatizováno hodně věcí. Takové skripty často míchám s BASHem. Skript `projekt` (vždy použiji název konkrétního projektu), který mám v PATH a je tedy přístupný odkudkoliv, potom vypadá třeba takto:
+
+/---code bash
+#!/bin/bash
+cd ~/workspace/.../projekt/
+
+if [ "$1" = "ssh" ]; then
+
+  # connect to server via ssh
+  ssh honzajavorek@225.225.225.225
+
+elif [ "$1" = "cc" ]; then
+
+  # clear cache
+  rm -rf ./projekt/temp/cache/* ./projekt/temp/sessions/*;
+  exit
+  
+elif [ "$1" = "check" ]; then
+
+  # check code by Nette Code Checker
+  php ./projekt/tools/Code-Checker/code-checker.php -ld ./projekt/
+  exit
+  
+elif [ "$1" = "fix" ]; then
+
+  # fix code by Nette Code Checker
+  php ./projekt/tools/Code-Checker/code-checker.php -fld ./projekt/
+  exit
+
+elif [ "$1" = "git" ]; then
+
+  shift 1
+
+  # before adding files to git...
+  if [ "$1" = "add" ]; then
+    # dump database schema into sql file
+    ./command schema --dump
+    
+    # automatically fix all code
+    php ./projekt/tools/Code-Checker/code-checker.php -fld ./projekt/
+  fi
+
+  # delegate to git
+  git "$@"
+  exit
+
+else
+
+  # else delegate to CLI interface of my project written in PHP
+  ./command "$@"
+  exit
+
+fi
+
+echo "Unknown command."
+\---
+
+Skript `command` je ve složce s projektem a vypadá takto:
+
+/---code bash
+#!/bin/bash
+script_dir=`dirname "$0"`
+exec php "$script_dir/index.php" "task:$@"
+\---
+
+Jak vidíte, jen deleguje požadavky na aplikaci. Využívá se zde "Nette CLI routeru":http://forum.nette.org/cs/2015-nette-a-php-cli?pid=13529#p13529 a jak si můžete všimnout, můj presenter na skriptové požadavky se nazývá `TaskPresenter`.
+
+Specifika CLI
+========
+Při práci s PHP v CLI je třeba myslet na některá jeho **omezení** a je dobré si uvědomit, čím disponuje navíc. Například nelze samozřejmě zjistit IP adresu a ani všechny ostatní věci okolo HTTP požadavku. To je logické, protože žádné HTTP není ve hře, ale vaše aplikace na tom může záviset. Pro zjištění kde se skript nachází se mi osvědčila funkce "php_uname":[http://php.net/manual/en/function.php-uname.php], konkrétně `php_uname('n')`. Tak snadno poznám, jestli spouštím skript na mém počítači *lisa*, nebo na produkčním serveru.
+
+Čím PHP v CLI disponuje navíc? Např. `max_execution_time` je **nekonečný**, což je důležité pro dlouhé náročné úlohy. Co je pro ně ale také důležité je spotřeba paměti. Zapomeňte, že s PHP budete psát nějaké výkonné skripty -- neumí moc paměť uvolňovat a můžete se snažit jak chcete, ale skript zpracovávající velký objem dat vám v tomto případě často zhyne na **nedostatek paměti**, ať už mu jí přidělíte v `php.ini` kolik chcete. To mě také přivádí k faktu, že (nevím jak v jiných prostředích, ale na Ubuntu ano) PHP CLI má v `/etc` svůj vlastní soubor `php.ini`, kde můžete mít odlišnou konfiguraci. Hodí se mít na paměti "seznam všech nastavení, která jsou v PHP CLI tzv. *hardcoded*":http://www.php.net/manual/en/features.commandline.differences.php.
