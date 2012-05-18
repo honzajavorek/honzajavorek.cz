@@ -2,7 +2,7 @@ Title: Ikonky ke štítkům v Gmailu
 Date: 2009-12-12 00:25:00
 Tags: gmail, hračičkování, management, net, software
 
-[![image](http://blog.javorek.net/image/122/)](http://blog.javorek.net/wp-content/gmaillabels.png)
+[![obrázek](images/122.jpg){: .right }](http://blog.javorek.net/wp-content/gmaillabels.png)
 Napadl mě hezký trik, jak si zpestřit štítky v Gmailu **ikonkami**.
 Zkoušel jsem to různě už dříve – např. *důležité* e-maily měly
 štítek `[ ! ]`, konverzace obsahující *něco k zaplacení* měly třeba

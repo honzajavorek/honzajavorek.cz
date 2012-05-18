@@ -2,7 +2,7 @@ Title: Zážitky z WebExpo 2010
 Date: 2010-09-26 13:52:00
 Tags: fail, názory, net, práce, projekty, software, tech, webdesign, zážitky
 
-![image](http://blog.javorek.net/image/127/150x)Účastnil jsem se už
+![obrázek](images/127.jpg){: .right }Účastnil jsem se už
 dvou pražských konferencí WebExpo, ale ta letošní byla trochu jiná.
 Představila se s novým logem, novou identitou, novou cenou za
 lístek a především už nebyla pražská, ale středoevropská. Nad
@@ -190,7 +190,7 @@ Ryan Singer: Designing from start to finish
 
 ## Zhodnocení
 
-![image](http://blog.javorek.net/image/129/)Já musím říct, že
+![obrázek](images/129.jpg){: .right }Já musím říct, že
 WebExpo má spoustu chyb. Ze začátku jsem byl tak naštvaný, že jsem
 si je vyloženě zapisoval. V minulých letech je šlo snadno
 tolerovat, ale letos, když se udělalo kolem konference opravdu
@@ -216,7 +216,7 @@ konferenční jídlo by mohlo vypadat o něco lépe a šlo by jej
 servírovat s trochu jinou úrovní. Lidé si stěžovali dokonce na
 studené řízky apod.
 
-![image](http://blog.javorek.net/image/128/)Z nových problémů:
+![obrázek](images/128.jpg){: .left }Z nových problémů:
 Dostal jsem desky WebExpo bez jediného rozumného důvodu. Nenašel
 jsem v nich ani plánek areálu (já osobně oželím, jiní asi ne), ani
 program. Absence programu byla největší tragédie, chtěl jsem si na

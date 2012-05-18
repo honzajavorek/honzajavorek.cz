@@ -5,7 +5,7 @@ Tags: projekty
 Tak jsem dnes spustil část webu zaměřenou na své projekty. Najdete
 ji na adrese [http://work.javorek.net/](http://work.javorek.net/).
 
-![image](http://blog.javorek.net/image/36/)
+![obrázek](images/36.jpg)
 ## Čtverečky
 
 Designově to není nic geniálního, ale ani nemělo být. Snažil jsem

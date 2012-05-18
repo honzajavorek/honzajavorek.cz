@@ -6,7 +6,7 @@ Tak mi [to](http://blog.javorek.net/2008/02/17/erasmus/) začíná
 hezky :) . Já prostě zásadně nemůžu nic zažít konvenčním
 způsobem… ;)
 
-![image](http://blog.javorek.net/image/44/)
+![obrázek](images/44.jpg)
 **<ondra\>** čau, vidím, že jedeš do Finska, gratuluju ;-)  
 **<littlemaple\>** zdar, to je z blogu, nebo jsou uz nekde
 oficialni vysledky? :D  
@@ -27,4 +27,4 @@ prestalo bavit, tak sem se ze vsech odhlasil
 za report, ja bych se to asi nedovedel :D  
 **<ondra\>** :-DDDDDD
 
-![image](http://blog.javorek.net/image/45/)
+![obrázek](images/45.jpg)

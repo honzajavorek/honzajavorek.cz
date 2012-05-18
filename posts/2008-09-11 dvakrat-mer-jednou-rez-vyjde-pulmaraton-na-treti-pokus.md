@@ -15,7 +15,7 @@ dokolečka! :D Sakra už!
 Na mapky a profily dneska kašlu. Přidám ale **foto pro pobavení**
 ;) .
 
-![image](http://blog.javorek.net/image/63/)
+![obrázek](images/63.jpg)
 Já to ale jednou dám. Minimálně proto, že se v neděli stěhuji zpět
 ze svého letního sídla na původní bydliště a to je určitě nejméně
 o kilometr dál… Nějaké statistiky:

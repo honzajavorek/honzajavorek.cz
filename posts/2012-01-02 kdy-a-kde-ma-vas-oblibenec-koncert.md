@@ -2,7 +2,7 @@ Title: Kdy a kde má váš oblíbenec koncert?
 Date: 2012-01-02 12:00:00
 Tags: práce, projekty, software, ušima
 
-![image](http://blog.javorek.net/image/160/)Jste na
+![obrázek](images/160.jpg){: .right }Jste na
 [Facebooku](http://www.facebook.com/)? Jo? Oukej. A používáte tam
 nějaké ty aplikace? Jo? FarmVille, MafiaWars, Slevomat, posílání
 růžožůžových srdíček, nebo nějaké srandičky od PR agentur, které na

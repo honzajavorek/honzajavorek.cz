@@ -8,7 +8,7 @@ k diskusi. Jsem rád, že se komentáře nezaplnily polemikou, ale spíš
 tipy na různé programy, které by mi mohly pomoci. Rád bych
 detailněji otevřel téma souborového manažeru.
 
-![image](http://blog.javorek.net/image/121/)
+![obrázek](images/121.jpg)
 Používám
 [Altap (dříve Servant) Salamander](http://www.altap.cz/salam_cz/).
 Na Linuxu jsem vyzkoušel spoustu grafických manažerů, z KDE asi

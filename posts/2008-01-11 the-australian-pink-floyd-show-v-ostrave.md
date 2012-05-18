@@ -13,7 +13,7 @@ PinkFloyd.cz:
 
 Rád budu mezi nimi :) .
 
-![image](http://blog.javorek.net/image/30/)
+![obrázek](images/30.jpg)
 Jak to bude vypadat u nás…
 
 -   [http://www.pinkfloyd.cz/…yd/index.php?…](http://www.pinkfloyd.cz/pinkfloyd/index.php?action=news_detail&id=115)

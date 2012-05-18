@@ -23,7 +23,7 @@ sebe vypustíte „*uau*“, když si na
 [web2.0úžasném](http://en.wikipedia.org/wiki/Web_2.0) webu přečtete
 to, *co už dávno víte*.
 
-![image](http://blog.javorek.net/image/4/)Dovíte se informace
+![obrázek](images/4.jpg){: .right }Dovíte se informace
 o svém softwaru, dovíte se, když na něj vyjde nějaká recenze. To je
 jistě **přínosné**. Velmi často čtu recenze na software, který
 používám… Ale co… Hlavně že svůj profil můžete **sdílet** i se

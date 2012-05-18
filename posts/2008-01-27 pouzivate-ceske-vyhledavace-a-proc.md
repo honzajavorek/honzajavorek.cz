@@ -53,7 +53,7 @@ protože o Google toho bylo napsáno už dost :) . (A vrcholem jsou
 články o tom, že *změnil tvar šipečky* nebo někde
 *přidal oddělovač* mezi seznamem svých služeb…)
 
-![image](http://blog.javorek.net/image/35/)Ne, vážně.
+![obrázek](images/35.jpg){: .left }Ne, vážně.
 **Dříve byl důvod používat české vyhledávače**, protože ty
 zahraniční nebyly české. Ty naše domácí hledaly naše domácí
 stránky, uměly **skloňovat** a celkově se uměly lépe orientovat na

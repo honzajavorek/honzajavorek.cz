@@ -2,7 +2,7 @@ Title: Druhé brněnské PyVo
 Date: 2011-06-14 17:00:00
 Tags: net, práce, projekty, python, pyvo, software, webdesign, zážitky
 
-![image](http://blog.javorek.net/image/145/)Kamarád
+![obrázek](images/145.jpg){: .right }Kamarád
 [Michal Švec](http://twitter.com/svecmichal) se na Twitteru zmínil
 o **setkání programátorů** v Ruby a já se zeptal, jestli něco
 takového není i pro Python. Prý nikde nic, tak že to mám
@@ -34,7 +34,7 @@ tzv. „pythoním Heroku“.
 -   [Jocho: **Django & Seznam.cz**](https://docs.google.com/present/view?id=dd9dv3df_29fx5hp4db)
 -   [Sputnikus: **ep.io a další cloudy pro Python**](http://prezi.com/sgokjfuweg5z/python-in-da-cloud/)
 
-![image](http://blog.javorek.net/image/146/)
+![obrázek](images/146.jpg)
 Následně jsme se zabrali do volné diskuse a do samotného pyva.
 Povídat si bylo určitě o čem, jelikož se nás u stolu
 **sešlo přes 15 lidí** a mnozí měli docela zajímavé příběhy ať už

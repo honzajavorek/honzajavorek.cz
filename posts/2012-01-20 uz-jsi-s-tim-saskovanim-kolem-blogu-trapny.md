@@ -24,7 +24,7 @@ dobrá původní myšlenka, ale tady se něco dělá přes ruku, tam je to
 nedomyšlené, tam něco schází, tuhle se projeví nějaká opomenutá
 chybka.
 
-![image](http://blog.javorek.net/image/166/400x)To je normální.
+![obrázek](images/166.jpg){: .right }To je normální.
 Napsal jsem ten blog za pár dní programovacího času (i když to
 trvalo měsíce) a je to zcela nový software, který má zaručeně své
 chyby. Jenže mě se ukrutně nechtějí opravovat. Chci psát články.

@@ -122,7 +122,7 @@ více a více, až se zcela nesoustředí a jen omylem si všimne, že
 že není třeba streaming ani zapínat → škole se vůbec nevěnuje.
 Doporučuji chodit na přednášky.
 
-[![image](http://blog.javorek.net/image/34/)](http://littlemaple.deviantart.com/art/Studying-75958742)
+[![obrázek](images/34.jpg)](http://littlemaple.deviantart.com/art/Studying-75958742)
 Video jako záznam je mnohonásobně **přínosnější**. Můžete si pustit
 přednášku, kterou jste **nestihli**, můžete si pustit již viděnou
 přednášku pro **zopakování** před písemkou (to je překvapivě velmi

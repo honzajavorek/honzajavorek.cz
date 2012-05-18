@@ -2,7 +2,7 @@ Title: Spam všude kolem nás
 Date: 2009-10-19 14:37:00
 Tags: názory, net
 
-![image](http://blog.javorek.net/image/118/)Když se řekne spam, tak
+![obrázek](images/118.jpg){: .right }Když se řekne spam, tak
 si člověk vybaví svou e-mailovou schránku zaplácanou nabídkami na
 Viagru, Rolexky a penis enlargement, nebo
 [toto video](http://www.youtube.com/watch?v=anwy2MPT5RE). Spam nás
@@ -44,7 +44,7 @@ prosbu, ale je to asi jako si udělat e-mail
 
 ## Bránit se? A pokud ano, tak jak?
 
-![image](http://blog.javorek.net/image/119/)Chápu, že některé
+![obrázek](images/119.jpg){: .left }Chápu, že některé
 letáky nebo hovory mohou být pro příjemce užitečné. Zavolali mi
 např. jednou z T-Mobile, jestli nechci prodloužit smlouvu, když za
 dva měsíce končila. To jsem popravdě chtěl, ale byl jsem líný někam
@@ -65,7 +65,7 @@ s „ne, díky“, protože někde zveřejnil své číslo?
 
 ## Smysl reklamy
 
-![image](http://blog.javorek.net/image/120/)Malá úvaha nakonec. Já
+![obrázek](images/120.jpg){: .right }Malá úvaha nakonec. Já
 osobně nenávidím reklamu a cokoliv s ní spojeného, ačkoliv jsem
 v oboru, jenž k ní nemá zrovna dvakrát daleko a živnostenský list
 mám na *reklamní činnost a marketing*. Pokud definujeme spam jako

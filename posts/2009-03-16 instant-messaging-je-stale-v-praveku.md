@@ -87,7 +87,7 @@ prostředky, že někdy je třeba
 A tohle funguje. Nikdo mě neruší, nechodí mi spam, vidím správně
 status a funguje mi přenos souborů. Co víc potřebuji?
 
-![image](http://blog.javorek.net/image/111/)
+![obrázek](images/111.jpg)
 A kdy se vrátím k Psi s Jabberem? **Až se uklidním.** Nebo až bude
 Facebook chat postaven na Jabberu. Nebo až budu mít titul. Nebo až
 najdu jiné řešení… Nebo až Jan Tleskač…

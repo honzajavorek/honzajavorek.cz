@@ -9,7 +9,7 @@ se, chtěli si jej pustit znova, nechápali, učili se „slova“…
 **Jen jeden muž však vystoupil z davu** a zahájil v dějinách našeho
 vztahu s YouTube nevídanou pátrací akci.
 
-![image](http://blog.javorek.net/image/93/)
+![obrázek](images/93.jpg)
 **Karel** se vydal na předlouhou a strastiplnou cestu. Ta však
 přinesla kýžené ovoce – přinesla **pravdu**. Zjistil, že Benny Lava
 je ve skutečnosti

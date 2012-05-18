@@ -11,7 +11,7 @@ téma **leží rozepsané už hodně dlouho**, stejně asi jako článek
 o křesťanství. Dokonce se mi některé odkazované články začaly
 propadat v historii Internetu.
 
-![image](http://blog.javorek.net/image/117/300x) Po osvětlení, proč
+![obrázek](images/117.jpg){: .right } Po osvětlení, proč
 mám potřebu psát o tomto tématu, předložím hned na úvod
 **svůj názor**. Podle mě je většina argumentace odpůrců potratů
 založená na slovíčkaření, definování pojmů a na suchém

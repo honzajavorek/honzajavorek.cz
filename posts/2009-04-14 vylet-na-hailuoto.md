@@ -28,7 +28,7 @@ odkopávacích sáňkách. Bylo to super odpoledne sněhových radovánek
 viděl jsem něco takového poprvé v životě a přišlo mi to docela
 srandovní) a potom už jsme jeli domů.
 
-![image](http://blog.javorek.net/image/106/)
+![obrázek](images/106.jpg)
 Během závěru v kostele se venku strhla sněhová bouře, naopak po
 cestě tam a celé odpoledne krásně svítilo sluníčko. Poprvé v životě
 jsem **stál na zamrzlém moři**, viděl jsem
@@ -44,7 +44,7 @@ nevadí – jen to pozoruju jako **divák**. Já určitě taky musím
 někomu připadat zvláštní, když se oddávám
 [tomu svému náboženství](http://www.hc-kometa.cz/).
 
-![image](http://blog.javorek.net/image/107/)
+![obrázek](images/107.jpg)
 Finské **moderní kostely** jsou, co jsem si tak všiml, dost
 **spjaté s přírodou**. Mají velké prosklené části apod. Nevím proč,
 ale ta zdejší protestantská víra mi přijde mnohonásobně

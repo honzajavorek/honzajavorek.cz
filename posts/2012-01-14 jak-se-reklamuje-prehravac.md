@@ -2,7 +2,7 @@ Title: Jak se reklamuje přehrávač
 Date: 2012-01-14 18:00:00
 Tags: seriózně, tech
 
-![image](http://blog.javorek.net/image/94/)Stále ještě jsem
+![obrázek](images/94.jpg){: .right }Stále ještě jsem
 majitelem **Evolve Base + 2GB**, mp3 přehrávače, který byl ve své
 době docela jedinečný tím, že jej šlo rozšířit Mini SD kartou, a
 tím, že měl zcela psychedelické ovládání. Dnes už toho má za sebou

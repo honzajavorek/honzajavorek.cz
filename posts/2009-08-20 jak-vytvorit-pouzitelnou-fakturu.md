@@ -22,7 +22,7 @@ která zajišťuje určitou **přehlednost** (no dobrá, je to trochu
 *side effect*, fakturu jsem tvořil v OpenOffice Calc :)) ), ale
 hlavně **vyzdvihuje informace**, které plátce zajímají.
 
-![image](http://blog.javorek.net/image/115/)
+![obrázek](images/115.jpg)
 Hlavní myšlenkou je zvýraznit informace, které jsou důležité pro
 mého partnera a jež chce ihned vidět a neopomenout informace, které
 by na faktuře měly být ze zákona. Všimněte si, že na mé faktuře je
@@ -53,7 +53,7 @@ vyplivnutý nějakým složitým účetním systémem, na němž většinou půl
 hodiny hledám i tak triviální informaci jako kolik mám zaplatit.
 Srovnejte třeba s tou vygenerovanou na Paymo.biz:
 
-![image](http://blog.javorek.net/image/116/)
+![obrázek](images/116.jpg)
 Hledání chyb a hrůz (pomiňme, že postrádá místo pro některé věci
 užitečné pro ČR) v této faktuře nechám na vás. Jak jsem napsal
 výše, jde o to **udělat placení vašich faktur příjemnějším**. Proč

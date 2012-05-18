@@ -12,7 +12,7 @@ nachází. Jaké to bylo překvapení, když jsem zjistil, že žádný nemá
 měli – takový ten klasický stolní. Ten však nedávno dosloužil a já
 musel na lov znovu. Co mi nabídli v obchodě mě mile překvapilo.
 
-![image](http://blog.javorek.net/image/123/)
+![obrázek](images/123.jpg)
 Jak vidíte na obrázku, pro laptopy jako dělaný. Je to tvarovatelná
 černá tyčinka s jackem na jednom konci a mikrofonem na druhém.
 Používám ho několik měsíců a opravdu mi dokonale vyhovuje. Nastavit

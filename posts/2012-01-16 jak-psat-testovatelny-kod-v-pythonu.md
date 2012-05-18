@@ -2,7 +2,7 @@ Title: Jak psát testovatelný kód v Pythonu?
 Date: 2012-01-16 11:00:00
 Tags: práce, projekty, python, webdesign
 
-![image](http://blog.javorek.net/image/164/200x)Troufl bych si
+![obrázek](images/164.jpg){: .right }Troufl bych si
 říci, že na WebExpo 2011 byly
 [testy](http://zdrojak.root.cz/n/testovani/) jedním z předních
 vývojářských témat. Ať už šlo o JavaScript, PHP nebo cokoliv

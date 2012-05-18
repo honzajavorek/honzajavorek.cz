@@ -7,7 +7,7 @@ Někdy se zamýšlím nad tím, komu bych fandil na
 MU. Která z univerzit mi více přirostla k srdci? Která je pro mě
 větším domovem?
 
-![image](http://blog.javorek.net/image/158/)
+![obrázek](images/158.jpg)
 ## Srovnání?
 
 Zřejmě nikdy nenapíšu velké srovnání mezi
@@ -21,7 +21,7 @@ spíš čekám, až dostanu diplom a ze škol konečně vypadnu, možná tak
 nemám dost motivace k radikálním názorům. Ale možná je to prostě
 tak a FI je pro mě neslaná, nemastná.
 
-![image](http://blog.javorek.net/image/157/200x)
+![obrázek](images/157.jpg)
 FI MU není nijak špatná. Někdy překvapí, jak se ke mě hezky chovají
 a jak mají kde co dobře zařízené, jindy si pod vousy zamumlám, že
 to a tamto bylo na FITu řešené lépe. **Rozdíl mezi FI a FITem** je
@@ -65,7 +65,7 @@ Nejlepší by asi bylo **reformovat FIT**. Ubrat z toho jejich tempa
 a z té šikany, posadit to na rozumnou laťku, ale neztrácet směr a
 základní zásady. Vím, není to možné, ale představa je to pěkná.
 
-![image](http://blog.javorek.net/image/156/200x)
+![obrázek](images/156.jpg)
 Připadám si jako v exilu. Myslím nakonec, že **srdce** mi zůstalo
 na Božetěchove, ale chodím na Botanickou, jelikož je to tam o dost
 snesitelnější. Vnitřně

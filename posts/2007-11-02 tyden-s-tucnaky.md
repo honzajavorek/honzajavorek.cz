@@ -2,7 +2,7 @@ Title: Týden s tučňáky
 Date: 2007-11-02 17:21:00
 Tags: fail, linux, názory, software, windows
 
-![image](http://blog.javorek.net/image/21/)O zkouškovém na počátku
+![obrázek](images/21.jpg){: .right }O zkouškovém na počátku
 tohoto roku se mi poprvé povedlo nainstalovat
 [GNU/Linux](http://proc.linux.cz). **Uchvátil mne.** Bylo ale
 příliš složité rychle se v něm začít orientovat, takže jsem jej měl
@@ -27,7 +27,7 @@ velmi rád bych jej používal i nadále jako svůj systém. No, škoda.
 A přitom jsem se dostal už tak daleko :) . Opravdu jsem přemýšlel
 o smazání Windows z partition.
 
-![image](http://blog.javorek.net/image/22/)Jenže… Jenže
+![obrázek](images/22.jpg){: .left }Jenže… Jenže
 **potřebuji na PC pracovat** a potřebuji, aby fungovalo vše co
 chci. Po týdenním škrábání se na kolmou stěnu to tedy vzdávám. Asi
 jsem nebyl ani moc daleko od vrcholu, ale nemám už dost sil a
@@ -147,7 +147,7 @@ mi to asi fakt nestojí.
 
 ### [ + ]
 
-![image](http://blog.javorek.net/image/23/)
+![obrázek](images/23.jpg){: .right }
 -   **kompatibilita** kompletně se vším (vynechme
     [SATA](http://en.wikipedia.org/wiki/Serial_ATA) apod.)
 -   velmi **kvalitní programové vybavení**, neskutečný výběr
@@ -227,7 +227,7 @@ zkusil Linux, že jsem se s ním nějak nepohodl a že se vracím
 k Widlím. Pak uvádím dlouhý soupis postřehů o operačních systémech,
 z nichž ani jeden nevychází s čistým štítem :) .
 
-![image](http://blog.javorek.net/image/24/)Chtěl jsem tím říct
+![obrázek](images/24.jpg){: .left }Chtěl jsem tím říct
 přesně to, co z toho tak nějak čiší… To, že mě
 **v dnešní moderní době nekonečných možností dva nejpoužívanější OS opravdu zklamaly**.
 Zklamala mě situace v tomhle segmentu trhu. A k Widlím se vracím

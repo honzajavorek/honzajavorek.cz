@@ -8,10 +8,10 @@ Finové, Francouzi, Španělé… Je nás tady na
 **Otokylä v bloku A** asi 60, možná i víc. Pokusím se vám
 představit lidi, se kterými trávím nejvíce času.
 
-![image](http://blog.javorek.net/image/70/)
+![obrázek](images/70.jpg)
 ## Spolubydlící – Flavien, Martiño (Laura), Şafak
 
-![image](http://blog.javorek.net/image/71/)V jednom pokoji bydlím
+![obrázek](images/71.jpg){: .left }V jednom pokoji bydlím
 s **Flavienem** z Francie. Studuje tady na School of Business. Je
 fajn, ale je hodně vysazený na úklid a pořádek, tak se často
 rozčiluje kvůli nádobí nebo koupelně :P . My ostatní ale moc
@@ -26,7 +26,7 @@ pamatuje (i slušné věci!), což se o mě a francouzských slovech říct
 nedá, protože vůbec nejdou ani vyslovit :D . Na fotce uprostřed
 svých italských přátel.
 
-![image](http://blog.javorek.net/image/72/)**Martiño** tady je od
+![obrázek](images/72.jpg){: .right }**Martiño** tady je od
 minulého semestru a byl to první spolubydlící, kterého jsem měl. Je
 z Viga (1. pád Vigo), z Galicie ve Španělsku. Proto s ním taky moc
 španělštinu neprocvičím – mluví galicijsky, což je blíž
@@ -44,7 +44,7 @@ Výslovnost je taková trochu galicijská a někdy mě opravdu přivádí
 k záchvatům smíchu (nazvat pumpičku na kolo *plum* místo *pump*, to
 už mě dostalo). Na fotce s Laurou a Antoniem.
 
-![image](http://blog.javorek.net/image/73/)**Şafak** je z Turecka a
+![obrázek](images/73.jpg){: .left }**Şafak** je z Turecka a
 studuje na School of Business. Pochází z malé vesničky daleko na
 východě Turecka, ale studuje v Istanbulu. Ukazoval mi moc pěkné
 fotky z Turecka a vyprávěl mi o něm. Ze začátku měl problém
@@ -62,7 +62,7 @@ ho bývá líto :) .
 
 ## Španělsko – Antonio, Narciso
 
-![image](http://blog.javorek.net/image/74/)**Antonio** bydlí hned
+![obrázek](images/74.jpg){: .right }**Antonio** bydlí hned
 na pokoji vedle a je z Valencie na jihu Španělska. S ním tedy
 španělštinu procvičovat můžu. Je s ním sranda a začínáme být taky
 dobří kamarádi, protože tráví většinu času s Martiñem… Až si z něj
@@ -82,7 +82,7 @@ nahoře se svou láskou.
 
 ## Francie – Denis, Adrien
 
-![image](http://blog.javorek.net/image/75/)![image](http://blog.javorek.net/image/76/)Tyhle
+![obrázek](images/75.jpg){: .left }![obrázek](images/76.jpg){: .right }Tyhle
 dva jsem poznal jako úplně první ze všech Erasmáků, když vynechám
 Andreie a Lorenza, od nichž jsem kupoval kolo. Poznal jsem je na
 hodině XML, ale to si najděte v historii blogu, to sem nebudu
@@ -97,11 +97,11 @@ s nimi rád netrávil čas :) .
 
 ## Litva – Indre, Martynas
 
-![image](http://blog.javorek.net/image/77/)S **Indre** sice tolik
+![obrázek](images/77.jpg){: .right }S **Indre** sice tolik
 času netrávím, protože nechodí na každou první nebo druhou párty
 jako já, nemá ráda pivo a ve škole se nepotkáváme, ale byli jsme
 spolu na nějakých akcích a třeba jsme strávili celé odpoledne
-v muzeu a na hokeji.![image](http://blog.javorek.net/image/78/) Je
+v muzeu a na hokeji.![obrázek](images/78.jpg){: .left } Je
 do všeho správně zapálená a je s ní sranda. Závodně hraje
 basketbal, no je taky docela vysoká.
 
@@ -115,7 +115,7 @@ a Antonio v akci:
 
 ## Československo – Martin, Filip, Miro, Anča, Palko, Peter
 
-![image](http://blog.javorek.net/image/79/)Tady abych se bál něco
+![obrázek](images/79.jpg){: .left }Tady abych se bál něco
 napsat… Ještě si to přečtou a pak mě někam zahrabou do sněhu ;) .
 S Martinem a Filipem jsem byl na roadtripu do Švédska. **Martina**
 fascinují vojenské věci a zbraně a je fajn, je pro každou srandu.
@@ -123,7 +123,7 @@ fascinují vojenské věci a zbraně a je fajn, je pro každou srandu.
 s ním povídá, hned mi byl sympatický. A to nejen proto, že má taky
 holku na Slovensku ;) :P .
 
-![image](http://blog.javorek.net/image/80/)**Miro** (Slovensko) je
+![obrázek](images/80.jpg){: .right }**Miro** (Slovensko) je
 kapitola sama pro sebe. Ten můj blog, zdá se, čte, takže tady musím
 být opatrný :P . Určitě není nějaký šílený „party animal“, ale umí
 se bavit a hlavně se svou Rychlou Rotou z pokoje 512 umí udělat
@@ -131,7 +131,7 @@ taky hodně srandy :) . Pití alkoholu nepovažuje za něco extrémně
 podstatného nebo nutného, chodí do posilovny a u některých jeho
 fotek na Facebooku aby se člověk bál, jestli se nechystá na nějakou
 kulturistickou soutěž :P .
-![image](http://blog.javorek.net/image/81/)Má fotogenický ksicht a
+![obrázek](images/81.jpg){: .left }Má fotogenický ksicht a
 na všech fotkách vypadá jako modelka :D . Když se to sečte a
 vynásobí, dá se vlastně s odstupem říct, že má docela slušnou
 *Playboy image*, i když spíš tak nějak mimochodem, není to nějaký
@@ -144,7 +144,7 @@ sranda :) . Teď si tak říkám, že na hodně akcích jsem ji taky
 neviděl, takže asi taky bude v tomhle ohledu mírnější živel :P . Na
 fotce s Martinem.
 
-![image](http://blog.javorek.net/image/82/)![image](http://blog.javorek.net/image/83/)**Palko a Peter**
+![obrázek](images/82.jpg){: .left }![obrázek](images/83.jpg){: .right }**Palko a Peter**
 jsou slovenští „filmaři“, studují tady na School of Dance and
 Media, která je shodou okolností ve stejné budově jako moje
 technika, takže se tam potkáváme. Oba jsou to sympaťáci a jejich
@@ -155,7 +155,7 @@ Je fakt poznat, že to studuje. Peter je na fotce se Sini.
 
 ## Rakousko, Německo – Armin, Martin, Lars, Simone
 
-![image](http://blog.javorek.net/image/84/)![image](http://blog.javorek.net/image/85/)**Armina**
+![obrázek](images/84.jpg){: .left }![obrázek](images/85.jpg){: .right }**Armina**
 jsem původně tipoval někam do Brazílie, ale ukázalo se, že je
 z Vídně :D . **Martin** je naopak přízvukem úplně jasný Rakušák.
 Oba tvoří silné Rakouské komando, Martin je vyloženě živel a nesmí
@@ -165,7 +165,7 @@ se na 90% všech fotek, ačkoliv jste původně zamýšleli fotit soby
 nebo vlastně úplně cokoliv :D . Určitě je to jeden z mých
 nejoblíbenějších Erasmáků tady, šíří kolem sebe zábavu a akci :) .
 
-![image](http://blog.javorek.net/image/86/)![image](http://blog.javorek.net/image/87/)Lars
+![obrázek](images/86.jpg){: .left }![obrázek](images/87.jpg){: .right }Lars
 a Simone jsou z Německa. Nemám Německo ani Němce rád, ale jak jsem
 i vždy říkal, spíš obecně. Nikdy jsem moc nevztahoval podobné
 pocity na konkrétní lidi, kteří s nimi nemají nic společného.
@@ -188,7 +188,7 @@ Její historie je tak složitá, že je až nepopsatelná. Je ze
 snad třech Erasmech a teď žije ve Finsku, takže teď se stará ona
 o nás, Erasmáky :) . I když někdy spíš my o ni :D .
 
-![image](http://blog.javorek.net/image/88/)**Maarten** je
+![obrázek](images/88.jpg){: .left }**Maarten** je
 z Holandska a je to asi jediný Nizozemec, s nímž jsem měl tu čest.
 Má dredy a je to takový správný flegmatik. Nevím, jestli je to
 proto, že v Holandsku jezdí na kolech snad i novorozenci, ale
@@ -198,7 +198,7 @@ pokud se vám zdá (a třeba i z fotek), že každý druhý se tu jmenuje
 Martin (Martynas, Maarten apod.), tak ano, je to tak, je jich tu
 snad 10 :)) .
 
-![image](http://blog.javorek.net/image/89/)**Mika** bydlí taky na
+![obrázek](images/89.jpg){: .right }**Mika** bydlí taky na
 Otokylä, stejně jako třeba Sini. Bydlí ale na jiných blocích, blok
 A je určen pro živelnou zahraniční pohromu jménem Erasmus. Mika je
 oblíbenec úplně všech tady, je to člověk, který se taky umí
@@ -207,7 +207,7 @@ hlavně tím, že není uzavřený jako jiní Finové, ale je až nezvykle
 extrovertní, přátelský a otevřený :)) . Byl nám řidičem na
 roadtripu.
 
-![image](http://blog.javorek.net/image/90/)**Elżbieta** nebo taky
+![obrázek](images/90.jpg){: .left }**Elżbieta** nebo taky
 **Ella** je Polka. Chodí s Denisem, studuje School of Business a
 bydlí na stejném patře jako já, s Aničkou. Je to fajn kámoška, dost
 často jsem s ní vedl dlouhé debaty a bavili jsme se o všem možném,

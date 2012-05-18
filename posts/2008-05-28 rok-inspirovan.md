@@ -2,7 +2,7 @@ Title: Rok inspirován
 Date: 2008-05-28 19:54:00
 Tags: tech
 
-![image](http://blog.javorek.net/image/62/)Už rok vlastním notebook
+![obrázek](images/62.jpg){: .right }Už rok vlastním notebook
 **Dell Inspiron 6400**. Tedy už o nějaký ten měsíc více jak rok,
 ale vzhledem k tomu, že mi slečnu nenahrazuje, s výročími to
 společně nějak nepřeháníme. Dokonce chudák ani po roce nemá jméno –

@@ -9,7 +9,7 @@ v **adaptačním chování**. Myslím, že Češi zapomněli, že jednou
 z charakteristik člověka jako živočišného druhu je úžasná
 **schopnost adaptace a sžití se s přírodou**.
 
-![image](http://blog.javorek.net/image/112/)
+![obrázek](images/112.jpg)
 Čtrnáctého ledna 2006 jsem na svůj tehdejší blog napsal článek
 s titulkem *Proč nechodit v zimě ven?*. Myslím, že je ještě celkem
 mírný na to, jakou rétorikou jsem se prezentoval později. Tento

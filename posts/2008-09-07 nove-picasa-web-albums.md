@@ -22,7 +22,7 @@ Ale já pořád nějak necítím posun Picasy k:
 -   **RSS nových fotek** mých přátel na Picase (v současnosti lze
     jen odebírat nějaký třeba týdenní souhrn novinek mailem)
 
-![image](http://blog.javorek.net/image/69/)Po ničem dalším asi
+![obrázek](images/69.jpg){: .right }Po ničem dalším asi
 netoužím, Picasa mi plně vyhovuje a neumím si představit nějaké
 nové vlastnosti, které by **pro mne** byly přínosné. Škoda, že
 vývojáři se soustřeďují na sociální kraviny a nelikvidují největší

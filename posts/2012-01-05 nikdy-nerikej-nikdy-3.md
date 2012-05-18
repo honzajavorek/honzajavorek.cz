@@ -45,7 +45,7 @@ většina mé práce je krocení neposlušných
 [hadů](https://en.wikipedia.org/wiki/Python_(genus))
 v [čutoře](http://flask.pocoo.org/).
 
-![image](http://blog.javorek.net/image/162/300x)
+![obrázek](images/162.jpg)
 No a dnes **vzalo za své i to IDE**, bez něhož jsem dříve vůbec
 nemohl žít. Mé milované [Eclipse](http://www.eclipse.org/). To,
 díky němuž jsem vlastně kupoval nový počítač, protože mi kluci
@@ -72,7 +72,7 @@ v PHP nebo Pythonu to byla bída. Navíc vše žralo paměť a ostatní
 zdroje. Byl jsem nešťastný a přitom už jsem většinu funkcí IDE ani
 nepoužíval.
 
-![image](http://blog.javorek.net/image/161/430x)
+![obrázek](images/161.jpg)
 Vsuvka pro rejpaly:
 *Ne, nechci používat NetBeans. Zkoušel jsem to mnohokrát a nejsem schopen překousnout GUI toho programu. Nemám rád Javovský Swing (ne z přesvědčení, ale z pocitů marnosti) a tudíž to pro mne není cesta.*
 

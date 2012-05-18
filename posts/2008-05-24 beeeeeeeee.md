@@ -2,7 +2,7 @@ Title: Beeeeeeeee!
 Date: 2008-05-24 10:01:00
 Tags: očima
 
-![image](http://blog.javorek.net/image/60/150x)**Shaun the Sheep**
+![obrázek](images/60.jpg){: .right }**Shaun the Sheep**
 je můj nejnovější objev v oblasti sledování počítačové obrazovky za
 účelem pasivní relaxace. Opět britského původu. Abych byl
 spravedlivý – objev není přímo můj, poprvé jsem ovečky viděl na
@@ -31,7 +31,7 @@ také své speciální hrdiny stáda – brzy si zamilujete **jehně** nebo
 **extrémně obrovskou a tlustou ovci**, která sežere všechno co vidí
 a v mnoha dílech dobře poslouží jako závaží na kladce :)) .
 
-![image](http://blog.javorek.net/image/61/100x)No na seriálu
+![obrázek](images/61.jpg){: .left }No na seriálu
 obdivuji především zpracování a vtipnost, která se s díly nevytrácí
 a je taková… nenásilná, chytrá… Nejde o sprosťárny nebo násilí, za
 celých 5 minut nezazní jiný zvuk než *beeeeeeeeeeee­eeeeee* a

@@ -20,7 +20,7 @@ postavení. Řeší se jen „máš – nemáš“. Stejně jako obleční apod
 vám je zima, nebo není. Jestli vypadáte pěkně, to je každému
 v –20°C jedno.
 
-![image](http://blog.javorek.net/image/91/)Oulu je i ve Finsku pro
+![obrázek](images/91.jpg){: .left }Oulu je i ve Finsku pro
 cyklistiku stvořené více než je obvyklé. Celé město je pokryto
 **širokými chodníky, cyklopěšími stezkami, …** Na kole (a pěšky) se
 dostanete úplně všude a to velmi pěkně. Jako cyklista nikoho nikde

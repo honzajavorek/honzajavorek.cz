@@ -9,7 +9,7 @@ bych na to zapomínal dál, kdyby nepřišla jedna opravdová tanečnice
 a téma znova nenaťukla. Takže tenhle článek je tak trochu na přání
 a i proto vychází mimo běžnou středečně-nedělní periodu ;) .
 
-[![image](http://blog.javorek.net/image/39/)](http://littlemaple.deviantart.com/art/Magic-of-gnomish-Windows-XP-77441542)
+[![obrázek](images/39.jpg)](http://littlemaple.deviantart.com/art/Magic-of-gnomish-Windows-XP-77441542)
 ## 5 z 5 odrážek doporučují učit se tancovat Tango
 
 -   především, **GNOME je sexy** ;)
@@ -36,7 +36,7 @@ museli jinak dělat ruční editací registrů. Co dělá ClearType asi
 netřeba vysvětlovat, pro méně znalé ale napíšu, že nastavuje
 **vyhlazování písma** a pro LCD je nedocenitelný.
 
-[![image](http://blog.javorek.net/image/40/)](http://littlemaple.deviantart.com/art/Laptop-during-exams-55166516)
+[![obrázek](images/40.jpg)](http://littlemaple.deviantart.com/art/Laptop-during-exams-55166516)
 ## Taneční botičky
 
 Tak a teď k vzhledu. Začít můžete třeba **výměnou kurzoru**
@@ -62,7 +62,7 @@ splašil. Google však pomohl a opět jej
 [lze spatřit na DA](http://hsn.deviantart.com/art/Clearlooks-0-6-Black-31325014?offset=40),
 dokonce ve více barvách.
 
-[![image](http://blog.javorek.net/image/41/)](http://littlemaple.deviantart.com/art/Laptop-during-1st-exams-in-08-74255208)
+[![obrázek](images/41.jpg)](http://littlemaple.deviantart.com/art/Laptop-during-1st-exams-in-08-74255208)
 Styl prý stačí rozbalit do `C:\Windows\Resources\Themes` a nastavit
 si ho v nabídce. Mě se osvědčil dvojklik na soubor s příponou
 `.msstyles`.

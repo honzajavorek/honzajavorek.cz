@@ -17,7 +17,7 @@ od 15 let a dávají jej
 i v [Palace cinemas](http://www.palacecinemas.cz) až hodně
 pozdě večer.
 
-![image](http://blog.javorek.net/image/14/100x)Faunův labyrint je
+![obrázek](images/14.jpg){: .right }Faunův labyrint je
 naprosto dokonalý (smutný!) snímek, v němž se prolíná zlý,
 nespravedlivý a neuvěřitelně krutý svět dospělých lidí se světem
 pohádek malé holčičky. Chytne vás za duši, zacloumá srdcem,
@@ -25,7 +25,7 @@ myšlenka je hluboká a v některých chvílích budeš zadržovat dech
 kvůli adrenalinu. To je hlavní linka, víc prozrazovat nebudu.
 Ztvárnění, hudba a vůbec celé provedení je naprosto úžasné.
 
-![image](http://blog.javorek.net/image/15/100x)**Nepíšu recenzi**
+![obrázek](images/15.jpg){: .left }**Nepíšu recenzi**
 (nehodlám psát na filmy recenze, k hodnocení mi vážně stačí
 hvězdičky na [ČSFD](http://www.csfd.cz)), ale spíše takové
 nakopnutí, které ti **dodá odvahu utratit hříšné peníze za kino** a

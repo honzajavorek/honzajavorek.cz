@@ -2,7 +2,7 @@ Title: Jsou abstinenti nudní?
 Date: 2011-06-10 07:07:00
 Tags: názory
 
-![image](http://blog.javorek.net/image/143/)Otázek okolo abstinence
+![obrázek](images/143.jpg){: .right }Otázek okolo abstinence
 je spousta. Lze se zamyslet nad tím, proč lidé abstinují
 (přesvědčení, zdravotní potíže, …), proč lidé naopak alkohol pijí,
 jak a proč je tomu v naší společnosti a jak je v ní například

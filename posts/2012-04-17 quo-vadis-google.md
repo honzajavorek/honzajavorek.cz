@@ -56,7 +56,7 @@ podrobnosti. Takže si to proberme.
     fialovo-hnědo-modré. Proč modré, to nevím. U mě nikdy Chrome
     nepřekonal Firefox, asi jsem konzerva.
 
-![image](http://blog.javorek.net/image/167/300x)
+![obrázek](images/167.jpg)
 No a ještě jednou musím napsat, jak mě štve, že mi Google všude
 tlačí nějaké nesmysly, o kterých si on myslí, že jsou dobré.
 Google+. Nebo Play na liště. Proboha proč? Dříve to nedělal.

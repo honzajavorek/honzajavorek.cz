@@ -6,7 +6,7 @@ Několik měsíců se na [blog.javorek.net](http://blog.javorek.net)
 nic nevyskytovalo, protože jsem si omylem smazal databázi a
 nesehnal zálohu blogu.
 
-![image](http://blog.javorek.net/image/151/)
+![obrázek](images/151.jpg)
 Na svůj (mimochodem výborný) [hosting](http://www.profitux.cz) jsem
 nahrával testovací aplikaci pro vývoj
 [ConcertIn](http://www.concertin.com/)u a omylem jsem smazal data

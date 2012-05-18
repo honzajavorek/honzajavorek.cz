@@ -2,7 +2,7 @@ Title: Hloupé chytré telefony
 Date: 2011-07-21 11:00:00
 Tags: android, fail, názory, tech
 
-![image](http://blog.javorek.net/image/149/150x)Po čase používání
+![obrázek](images/149.jpg){: .right }Po čase používání
 telefonů s Androidem jsem dospěl k několika poznatkům. Jedním
 z nich je, že pokud máte **starý stroj**, brzy na něm skoro ani
 nezavoláte nebo nepošlete SMS, jelikož nestíhá. Druhým je fakt, že
@@ -41,7 +41,7 @@ prostě nechce… :/
 
 ## Baterie, *fail* dnešní doby
 
-![image](http://blog.javorek.net/image/150/)Ať mi nikdo neříká, že
+![obrázek](images/150.jpg){: .left }Ať mi nikdo neříká, že
 kdyby se hodně zainvestovalo do výzkumu a vývoje baterií, nepřišel
 by brzy někdo s úžasnými nápady, jak narvat do dnešní malé baterky
 mnohonásobně víc energie, než je tam dnes.

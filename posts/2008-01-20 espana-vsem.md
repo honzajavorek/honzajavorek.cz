@@ -5,7 +5,7 @@ Tags: net, projekty, španělsko
 Jedním z mých prvních internetových projektů byla Espaňa, stránky
 o Španělsku.
 
-![image](http://blog.javorek.net/image/25/)Stránky byly tvořeny
+![obrázek](images/25.jpg){: .right }Stránky byly tvořeny
 přibližně rok (podzim 2003 – podzim 2004). Učil jsem se španělsky a
 tak mě pochopitelně začaly zajímat veškeré španělské reálie. Časem
 jsem zjistil, že mě fascinuje nejen španělský jazyk, ale i kultura

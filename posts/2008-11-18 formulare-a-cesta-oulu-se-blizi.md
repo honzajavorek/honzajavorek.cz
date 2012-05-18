@@ -163,7 +163,7 @@ z Prahy) a v Helsinkách je utahaný človíček ve středu ráno. Tam
 bych měl [najít vlak do Oulu](http://www.vr.fi/heo/index.html),
 zaplatit a jet dalších 9 hodin! Už se těším :D .
 
-![image](http://blog.javorek.net/image/92/)Vlastně pojedu tři dny
+![obrázek](images/92.jpg){: .right }Vlastně pojedu tři dny
 (do Oulu dorazím kolem osmé večer), tramvají, autobusem, lodí a
 vlakem. Všichni mi říkají, že jsem blázen, ale já přeci potřebuji
 nějaký důvod, proč si dát příště tu práci s hledáním letenek.

@@ -79,7 +79,7 @@ směrech nejvyzrálejší. API je neustále vyvíjeno a pracuje se na
 jeho
 [třetí verzi](http://code.google.com/intl/cs/apis/maps/documentation/v3/).
 
-![image](http://blog.javorek.net/image/125/700x)
+![obrázek](images/125.jpg)
 Není dobré se však nechat unést jeho možnostmi. Je nutné zaměřit se
 i na jiné rysy, důležité pro náš záměr. Mezi takové patří například
 skutečnost, že do češtiny začala být služba lokalizována až
@@ -122,7 +122,7 @@ je také omezení na 1000 zobrazení denně a zákaz provozu map pro
 komerční užití, což v rané fázi projektu není velkou překážkou, ale
 pro budoucí rozvoj projektů ano.
 
-![image](http://blog.javorek.net/image/126/700x)
+![obrázek](images/126.jpg)
 Nové API čtvrté verze vyvíjí v Seznam.cz Ondřej Žára, autor
 povedeného nástroje pro tvorbu databázových schémat,
 [WWW SQL Designer](http://code.google.com/p/wwwsqldesigner).
@@ -158,7 +158,7 @@ hlavičku Centrum Holdings, nelze již kolem API pozorovat vůbec
 zpracoval Daniel Steigerwald, který mé doměnky
 [de facto potvrdil](http://twitter.com/steida/statuses/2211073537).
 
-![image](http://blog.javorek.net/image/124/700x)
+![obrázek](images/124.jpg)
 API je však opravdu velmi dobře použitelné a mapové podklady
 kvalitní, připravené ve spolupráci s firmou DPA. I přes API lze
 dokonce zobrazovat vrstvy s turistickými a cyklistickými značkami a

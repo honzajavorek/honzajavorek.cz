@@ -2,7 +2,7 @@ Title: Parametry Firefoxu
 Date: 2008-01-23 11:58:00
 Tags: firefox, linux, software, windows
 
-![image](http://blog.javorek.net/image/37/)Většina z nich klikne na
+![obrázek](images/37.jpg){: .right }Většina z nich klikne na
 ikonku modrého Exploreru. Většina z nás klikne na ikonku Firefoxu.
 Někteří z nás spustí
 [Launchy](http://blog.javorek.net/2007/12/29/launchy/) a na nic

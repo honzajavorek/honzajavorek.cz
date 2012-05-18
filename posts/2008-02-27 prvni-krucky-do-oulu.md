@@ -13,7 +13,7 @@ moje návody jednou někdo našel, musím tady Googlu nechat pár
 klíčových slov – třeba **Finsko**, **Oulu**, **nahý Vojta Kotek**,
 **Erasmus**, …!
 
-![image](http://blog.javorek.net/image/48/)
+![obrázek](images/48.jpg)
 ## Erasmus v Oulu a kde o něm píšou
 
 **Hledal jsem** samozřejmě na internetu něco, co by mě mohlo
@@ -64,7 +64,7 @@ To vysvětluje nejednotnost v zápiscích minulých studentů.
 
 ## Kontaktáž
 
-![image](http://blog.javorek.net/image/49/) A je to tady, dámové a
+![obrázek](images/49.jpg){: .left } A je to tady, dámové a
 pány. Fakulta má dva mezinárodní koordinátory, dle zápisků
 předešlých erasmáků již několik let tytéž. Je to
 [Katja Kurasto](http://www.oamk.fi/utils/hkorttilinkki_new.php?ikkunassa=1&lyhenne=otek&sukunimi=Kurasto&etunimi=Katja&kieli=en)

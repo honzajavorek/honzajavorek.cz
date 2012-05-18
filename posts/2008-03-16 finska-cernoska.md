@@ -8,7 +8,7 @@ měl se jmenovat podobný, připravovaný článek. Měl být ódou na můj
 mobilní telefon. Oslavnou hymnou. Jenže ten jsem v úterý
 **ztratil**…
 
-![image](http://blog.javorek.net/image/56/)Prvně se zmíním o takové
+![obrázek](images/56.jpg){: .right }Prvně se zmíním o takové
 maličkosti. **Je perfektní nemít pár dní telefon.** Nikdo vám
 nevolá, nikdo vám nepíše a máte rajský, ba dokonce rajčatový klid.
 Nevěřili byste, kolik **zbytečných** SMS lidé pošlou. Takové ty

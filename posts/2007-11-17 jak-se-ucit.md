@@ -2,7 +2,7 @@ Title: Jak se učit
 Date: 2007-11-17 01:00:00
 Tags: management, škola, vut fit
 
-![image](http://blog.javorek.net/image/19/)Zkusím formulovat pár
+![obrázek](images/19.jpg){: .left }Zkusím formulovat pár
 postřehů, **jak se učit**. Určitě to nebudou všechny mé zkušenosti
 a rozhodně nebudou fungovat zrovna vám, protože každý máme jiné
 mozkové buňky, každému to tělo funguje jinak, každá z nás má jinak
@@ -62,7 +62,7 @@ zmíněné nebudou fungovat na nikoho jiného než mě :D .
 -   lze chvíli žít bez spánku
 -   **jen chvíli** ;)
 
-![image](http://blog.javorek.net/image/20/)Dobrá, teď vážně:
+![obrázek](images/20.jpg){: .right }Dobrá, teď vážně:
 
 -   mám zkušenosti s dny, které mají 38 až přes 40 hodin, ale není
     to nic extra a výkon na zkoušce příliš neodpovídá obětovanému úsilí

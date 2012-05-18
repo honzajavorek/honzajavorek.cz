@@ -7,7 +7,7 @@ Tags: joss, php, projekty
 **open source frameworku**. Tedy zatím frameworku… Jednou bych
 z něj chtěl udělat lehké CMS.
 
-![image](http://blog.javorek.net/image/64/)Kód je napsán
+![obrázek](images/64.jpg){: .right }Kód je napsán
 v objektovém PHP 5 a využívá nebo hodlá využívat co nejpoctivěji
 technologií XML, XHTML, CSS a JavaScript. Díky všem, kteří umožnili
 vznik Jossu vydáním svých skvělých projektů a myšlenek jako open

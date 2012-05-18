@@ -29,7 +29,7 @@ A v tričku FITboy :)
 
 ## První dojem z bakalářského studia
 
-![image](http://blog.javorek.net/image/130/)Když jsem přišel na
+![obrázek](images/130.jpg){: .right }Když jsem přišel na
 FIT, škola stavěla **nový areál**.
 [Vše bylo voňavé a nové, velmi moderní a praktické.](https://video1.fit.vutbr.cz/index.php?record_id=2570&categ_id=130)
 Zjistil jsem sice, že se v něm kromě kuchařek nenacházejí skoro
@@ -78,7 +78,7 @@ vyspím a budou Vánoce!“
 
 ### Průběh semestru
 
-![image](http://blog.javorek.net/image/131/)Velmi brzy po skončení
+![obrázek](images/131.jpg){: .left }Velmi brzy po skončení
 vaší kocoviny ze začátku semestru se na vás jako vosy začnou slétat
 **půlsemestrální testy**. Na FITu se sbírají body celosemestrálně,
 takže co si vysloužíte na písemkách a projektech, s tím jdete ke
@@ -182,7 +182,7 @@ efektivní.
 
 ### Areál školy
 
-![image](http://blog.javorek.net/image/132/)Další divná věc je, že
+![obrázek](images/132.jpg){: .right }Další divná věc je, že
 po čase na vás z fakulty **začne doléhat chlad**. A to nemyslím jen
 metaforicky. Nevydržíte více jak třicet minut na chodbě kláštera
 bez svetru, ačkoliv je venku parný letní den. V CVT, centru
@@ -275,7 +275,7 @@ Impulzem pro tyto „řezy“ je podle vedení radikální zhoršení
 
 ## První dojem z magisterského studia
 
-![image](http://blog.javorek.net/image/133/)Co na studenta číhá na
+![obrázek](images/133.jpg){: .right }Co na studenta číhá na
 magisterském studiu na FIT? Především **ztráta motivace**. Pokud od
 školy očekáváte přípravu pro vaše budoucí povolání, pak vám tedy
 jde především o soft skills a náplň výuky. Žádné nové
@@ -372,7 +372,7 @@ Je mi samozřejmě jasné, že na drtivé většině fakult v ČR žádné
 takové videozáznamy nejsou.
 [Na některých však ano a problém to není.](http://twitpic.com/3htc9c)
 
-[![image](http://blog.javorek.net/image/142/500x)](http://littlemaple.deviantart.com/art/Studying-75958742)
+[![obrázek](images/142.jpg)](http://littlemaple.deviantart.com/art/Studying-75958742)
 Pedagogický sbor školy zaznamenal pokles kvalit studentů u státnic
 a zastává názor, že existence záznamů a jejich stahování před
 zkouškami na to má nezanedbatelný vliv. Velké části studentů to ale
@@ -464,7 +464,7 @@ znechucují studium i těm posledním, které ještě bavilo.
 
 ### Závěr
 
-![image](http://blog.javorek.net/image/134/)Pokud nakonec stejně
+![obrázek](images/134.jpg){: .right }Pokud nakonec stejně
 fakultu doděláte a půjdete makat do
 [RedHatu](http://www.cz.redhat.com/) jako všichni ostatní z FITu,
 tak vám blahopřeji. Máte titul *prestižní inženýr* nebo

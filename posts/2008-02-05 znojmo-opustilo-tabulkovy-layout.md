@@ -4,4 +4,4 @@ Tags: seriózně, webdesign
 
 Malá profesionální deformace :D .
 
-![image](http://blog.javorek.net/image/33/)
+![obrázek](images/33.jpg)

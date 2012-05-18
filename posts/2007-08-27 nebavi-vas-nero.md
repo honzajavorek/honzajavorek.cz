@@ -7,7 +7,7 @@ Tags: software, windows
 vypalovací program, pak si zkusím tipnout, jaké myšlenky tě možná
 napadají při jeho používání nebo instalaci.
 
-![image](http://blog.javorek.net/image/1/)Jak se Nero dostane do
+![obrázek](images/1.jpg){: .right }Jak se Nero dostane do
 počítače? Když pominu případy, kdy ho k PC v akci rovnou přibalí,
 tak sis jej sehnal buď slušně (60–70 €), nebo zvrhle (crack, serial
 number, …). Pokud jsi zkoumal jeho instalaci, tak se prodává tuším
@@ -33,7 +33,7 @@ tehdy nahradilo skvělé
 umí přesně tolik věcí, které člověk potřebuje, a je samozřejmě
 zdarma.
 
-![image](http://blog.javorek.net/image/2/)U čeho jsem tedy skončil?
+![obrázek](images/2.jpg){: .left }U čeho jsem tedy skončil?
 [CDBurnerXP Pro](http://www.cdburnerxp.se/)! Skvělá alternativa pro
 vypalování CD a DVD. Umí
 **přesně tolik, kolik běžný člověk potřebuje**. Zapíše na jakékoliv

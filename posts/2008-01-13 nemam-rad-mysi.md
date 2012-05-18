@@ -2,7 +2,7 @@ Title: Nemám rád myši
 Date: 2008-01-13 07:38:00
 Tags: názory, tech
 
-![image](http://blog.javorek.net/image/27/)Nemám, nemám a nemám.
+![obrázek](images/27.jpg){: .right }Nemám, nemám a nemám.
 Fuj. Strčte si všechny svoje myši někam do terária a nikdy mi je už
 neukazujte. Je to stvoření zbytečné, ničící zdraví. A co se má
 dělat se zbytečnými existencemi? Vyhodit je, popřípadě jinak
@@ -41,7 +41,7 @@ příčiny zahozením hlodavce.
 
 ## Dzindzik
 
-![image](http://blog.javorek.net/image/28/)Když jsem dostal po
+![obrázek](images/28.jpg){: .left }Když jsem dostal po
 legendárním Joshuovi svůj druhý notebook, tentokrát jako firemní a
 také už jako pořádnější dělíčko od
 [chlapců z IBM](http://en.wikipedia.org/wiki/Thinkpad),
@@ -64,7 +64,7 @@ jsem s trackpointem veškerou práci,
 
 ## Ťap ťap
 
-![image](http://blog.javorek.net/image/29/)Ale nic netrvá věčně a
+![obrázek](images/29.jpg){: .right }Ale nic netrvá věčně a
 ani jiskra mezi mnou a
 klit…
 dzindzikem neodolala všem vnějším vlivům. Ono už se to tak stává,

@@ -10,7 +10,7 @@ one is definitely the colouring and decorating of eggs.
 
 ## Decoration of eggs
 
-![image](http://blog.javorek.net/image/108/)Professionals in the
+![obrázek](images/108.jpg){: .right }Professionals in the
 art of **egg-decorating** can turn eggs into genuine works of art,
 decorating them with straw, wax or bobbin lace. They usually use
 egg shells from which the raw yolk is blown through two opposite
@@ -24,7 +24,7 @@ choose from.
 
 ## Whipping of women and dousing them with water
 
-![image](http://blog.javorek.net/image/109/)Another popular pagan
+![obrázek](images/109.jpg){: .left }Another popular pagan
 tradition surviving to these days is the
 **whipping of women and girls**. The whip or „pomlázka“ is braided
 from three or more willow rods. Actually, in every region of our
@@ -49,7 +49,7 @@ clapper and rattle.
 
 ## Eggs, candy, lamb cake and shots of home brew
 
-![image](http://blog.javorek.net/image/110/)**Girls and women present the carollers with eggs**,
+![obrázek](images/110.jpg){: .left }**Girls and women present the carollers with eggs**,
 the pagan symbol of life and fertility. But apart from eggs – real
 and chocolate ones, Easter is also associated with other foods,
 mainly with lamb. These days lamb is rarely eaten in the Czech

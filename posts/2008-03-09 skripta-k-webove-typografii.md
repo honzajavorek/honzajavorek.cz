@@ -2,7 +2,7 @@ Title: Skripta k webové typografii
 Date: 2008-03-09 03:53:00
 Tags: typografie, webdesign
 
-![image](http://blog.javorek.net/image/54/)Před 564 lety vynalezl
+![obrázek](images/54.jpg){: .right }Před 564 lety vynalezl
 Honza Gutenberg **knihtisk**. Asi tehdy netušil, co úžasného se mu
 povedlo a už vůbec netušil, že jeho řemeslo přežije do daleké
 budoucnosti. Že se vědy s ním spojené nebudou omezovat na papírový

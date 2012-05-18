@@ -7,7 +7,7 @@ Tak je
 za mnou. Jaký byl nedělní koncert The Australian Pink Floyd Show?
 Těžko říct. Některé věci nelze popsat slovy :) . A pocity?
 
-![image](http://blog.javorek.net/image/52/)
+![obrázek](images/52.jpg)
 ## Numb
 
 Začněme tím, co bylo **trochu hořké**. Koncert byl skvělý a
@@ -23,7 +23,7 @@ přesvědčením, že projevit radost něčím více než je potlesk, by
 mohlo být společensky nepřípustné a možná by si potom museli
 narovnávat kravatu.
 
-![image](http://blog.javorek.net/image/53/)
+![obrázek](images/53.jpg)
 ## Welcome to the…
 
 Ale zpět k tomu *růžovému* :) . To bylo onen nedělní večer hlavní…
@@ -50,7 +50,7 @@ song *In the Flesh?*. V **The Wall** potom pokračovali až po
 hitů. Myslím, že převažovaly skladby
 z **The Dark Side of the Moon** a **Division Bell**.
 
-![image](http://blog.javorek.net/image/50/)
+![obrázek](images/50.jpg)
 ## Kangaroos on the wing
 
 The Australian Pink Floyd Show nezapře svůj původ a nenechá diváka
@@ -81,7 +81,7 @@ výkony zpěváků, kytaristů… Nemluvě ani
 o **famózním výkonu zpěvaček**, když hráli
 *The Great Gig in the Sky*. Asi neopakovatelný zážitek.
 
-![image](http://blog.javorek.net/image/51/)
+![obrázek](images/51.jpg)
 Pokud bych měl možnost, určitě bych na ně zajel či zašel znova.
 Opravdoví Pink Floyd už jsou dědečci. Live 8, kde hráli poprvé od
 oddělení Waterse a zřejmě naposledy v historii společně, byla

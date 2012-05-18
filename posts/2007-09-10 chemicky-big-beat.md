@@ -15,7 +15,7 @@ Po vzoru poloviny náctiletého obyvatelstva českých zemí se nemohu
 na svém blogísku nepodělit o své milášššky. Akorát to tedy
 tentokrát nebude o Tokio Hotel.
 
-![image](http://blog.javorek.net/image/10/)
+![obrázek](images/10.jpg)
 Pokud jsi někdy přemýšlel nad tím, kam zařadit
 [Prodigy](http://www.google.cz/search?hl=cs&q=prodigy+site:www.last.fm+OR+site:www.youtube.com),
 [Fatboy Slima](http://www.google.cz/search?hl=cs&q=fatboy%20slim+site:www.last.fm+OR+site:www.youtube.com)
@@ -35,7 +35,7 @@ ukázkami. A ještě je celé
 
 ## Chemical Brothers
 
-![image](http://blog.javorek.net/image/11/)
+![obrázek](images/11.jpg){: .right }
 [Dva borci z Británie](http://en.wikipedia.org/wiki/The_Chemical_Brothers),
 s nimiž jsme měli nedávno
 [tu čest](http://show.idnes.cz/chemical-brothers-prijedou-do-prahy-dbo-/hudba.asp?c=A070213_164514_hudba_efl).
@@ -79,7 +79,7 @@ o mnoho nepřijdeš, když si video pustíš *na pozadí*.
 
 ## Fatboy Slim
 
-![image](http://blog.javorek.net/image/12/) Pro mě jednoznačně král
+![obrázek](images/12.jpg){: .right } Pro mě jednoznačně král
 big beatu. Dokonalý producent, DJ, ale hlavně *joker*
 [Fatboy Slim](http://en.wikipedia.org/wiki/Fatboy_Slim) se dneska
 toulá někde po Brazílii a hraje tam své setíky kořeněné sambou, ale
@@ -115,7 +115,7 @@ opravdu vtipné a originální :) .
 
 ## Prodigy
 
-![image](http://blog.javorek.net/image/13/)
+![obrázek](images/13.jpg){: .right }
 [Prodigy](http://www.last.fm/music/The+Prodigy) jsou jednoduše
 [Prodigy](http://en.wikipedia.org/wiki/The_Prodigy). Prošli mnohými
 hudebními styly, ale nejznámější jsou asi právě v onom big beatovém

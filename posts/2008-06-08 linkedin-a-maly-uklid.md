@@ -2,7 +2,7 @@ Title: LinkedIn a malý úklid
 Date: 2008-06-08 13:45:00
 Tags: management, net, práce
 
-![image](http://blog.javorek.net/image/57/)[LinkedIn](http://www.linkedin.com)
+![obrázek](images/57.jpg){: .right }[LinkedIn](http://www.linkedin.com)
 je sociální síť, dost možná i Web2.0, jež se stará o to, abyste už
 **nikdy v životě nemohli na webu zažít nedostatek modré barvy**
 v tom správném *biz* odstínu. Pokud moc nesjíždíte sociální sítě,

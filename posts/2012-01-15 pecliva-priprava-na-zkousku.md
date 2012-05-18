@@ -7,7 +7,7 @@ Vždy, když si někde přečtu, že si mohu ke zkoušce donést list A4
 vzpomenu si na takovýto svůj list ke zkoušce z diskrétní matematiky
 z prváku.
 
-![image](http://blog.javorek.net/image/163/500x)
+![obrázek](images/163.jpg)
 Pěkné na tom je, že když si člověk něco takového píše, docela dost
 se toho naučí. Já osobně se toho psaním podobných šíleností naučím
 asi nejvíce. Před každou zkouškou z teoretické informatiky (dal

@@ -83,7 +83,7 @@ je samozřejmě k dispozici, ale pokusím se to vysvětlit lidsky.
 
 Jak to vypadá?
 
-[![image](http://blog.javorek.net/image/55/)](http://littlemaple.deviantart.com/art/Remote-Linux-from-Windows-79416945)
+[![obrázek](images/55.jpg)](http://littlemaple.deviantart.com/art/Remote-Linux-from-Windows-79416945)
 Popravdě, k ničemu jinému užitečnému Xka na Cygwinu využít nelze.
 Myslím si, že je to ale (alespoň pro mne) dostatečný přínos
 k jejich instalaci :) . Přeji příjemnou zábavu.

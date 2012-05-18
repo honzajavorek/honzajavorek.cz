@@ -13,7 +13,7 @@ existuje, ale je mizivá a nikoho nezajímá –
 
 ## Éra telefonování po internetu
 
-![image](http://blog.javorek.net/image/58/)Skype vyrostl na
+![obrázek](images/58.jpg){: .right }Skype vyrostl na
 internetovém telefonování. Jeho program dnes znají prakticky
 všichni, kdo mají internet, bez rozdílu věku a hloubky počítačové
 gramotnosti. Lidé nainstalují Skype a pokud mají mikrofon, hurá do

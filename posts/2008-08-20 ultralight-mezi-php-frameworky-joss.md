@@ -2,7 +2,7 @@ Title: Ultralight mezi PHP frameworky: Joss
 Date: 2008-08-20 07:54:00
 Tags: joss, php, projekty
 
-![image](http://blog.javorek.net/image/64/)Před časem jsem se na
+![obrázek](images/64.jpg){: .right }Před časem jsem se na
 blogu zmínil, že se
 [narodil Joss](http://blog.javorek.net/narodil-se-joss/). Dneska
 bych chtěl konečně napsat, co
