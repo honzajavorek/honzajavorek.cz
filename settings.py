@@ -22,11 +22,11 @@ DISQUS_SITENAME = 'javorove-listky'
 # Blog settings
 DEFAULT_PAGINATION = 5
 DEFAULT_CATEGORY = 'blog'
-MD_EXTENSIONS = ['codehilite', 'extra', 'headerid', 'sane_lists']
+MD_EXTENSIONS = ['codehilite', 'extra', 'headerid']
 
 
 # Static paths will be copied under the same name
-#STATIC_PATHS = ('css', 'images') TODO
+STATIC_PATHS = ('images',)
 
 
 # A list of files to copy from the source to the destination
