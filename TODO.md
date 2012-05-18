@@ -5,10 +5,10 @@
 3. <del>Import all articles in Markdown into this repository.</del>
 4. Migrate images, YouTube videos, etc.
 5. Migrate links. Handle redirects.
-6. Prepare deployment to GitHub Pages.
+6. <del>Prepare deployment to GitHub Pages.</del>
 7. Prepare minimal design. Remove all unnecessary stuff.
 8. Make a Pelican theme.
-9. Prepare a way to deploy Pelican. GitHub pages? ep.io?
+9. <del>Prepare a way to deploy Pelican. GitHub pages? ep.io?</del>
 10. Write new articles. Love the world.
 
 ## Design
@@ -17,6 +17,10 @@
 - http://www.youthedesigner.com/2010/09/02/40-plus-various-high-quality-free-paper-patterns-and-textures/
 - https://secure.flickr.com/photos/themandatepress/2398586965/
 - http://www.1stwebdesigner.com/inspiration/minimal-business-cards/
+
+- http://minima.soup.io/
+- http://poshcss.com/
+- http://isaacbythewood.com/
 
 ## Ideas
 
