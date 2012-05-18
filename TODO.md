@@ -3,8 +3,8 @@
 1. <del>Export all articles from my current system.</del>
 2. <del>Convert the articles into HTML by Texy! and then into Markdown by [Pandoc][pandoc]</del>
 3. <del>Import all articles in Markdown into this repository.</del>
-4. Migrate images, YouTube videos, etc.
-5. Migrate links. Handle redirects.
+4. <del>Migrate images</del>, YouTube videos, etc. Find code snippets and add ::lang.
+5. Migrate links. Find and replace all occurances of blog.javorek.net... Handle redirects.
 6. <del>Prepare deployment to GitHub Pages.</del>
 7. Prepare minimal design. Remove all unnecessary stuff.
 8. Make a Pelican theme.
