@@ -30,6 +30,7 @@ právě oním prvním řádkem dokumentu.
 
 Zápis
 
+    ::xml
     <?xml version="1.0" encoding="utf-8" ?>
 
 prostě není úplně ono, protože ty špičaté závorky a otazníčky PHP
@@ -40,10 +41,12 @@ bere na sebe a server vám vrátí něco podivného, asi
 
 Řešení je zřejmé…
 
+    ::php
     <?php echo "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n"; ?>
 
 Nebo třeba
 
+    ::php
     <?php echo '<?xml version="1.0" encoding="utf-8" ?>' . "\n"; ?>
 
 Jak je ale vidět, zřejmá řešení problémů nejsou ani hezká, ani
@@ -51,6 +54,7 @@ elegantní. Předkládám proto jedno ne zcela zřejmé, ale geniální
 řešení, které je hezké, elegantní a navíc rychlé – nepotřebuje
 prakticky žádný výkon PHP.
 
+    ::php
     <<?php ?>?xml version="1.0" encoding="utf-8" ?>
 
 A je to! Že se tu zabývám blbostmi? No jistě že ano! Ale proč

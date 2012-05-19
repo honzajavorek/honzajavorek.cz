@@ -33,6 +33,7 @@ kde je nejprve
 Tedy přidat do `/etc/hal/fdi/policy` soubor `synaptics.fdi` a do
 něj hodit
 
+    ::xml
     <?xml version="1.0" encoding="UTF-8"?>
     <deviceinfo version="0.2">
       <device>

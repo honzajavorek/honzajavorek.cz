@@ -23,6 +23,7 @@ Pokud se vám zdá původní PuTTY zaprášené a ohrané, zpestřete si
 Chcete se připojovat z příkazového řádku ve Windows stejně jako to
 děláte na Linuxu? Chcete, aby vám stačilo pouhé
 
+    ::bash
     ssh <server> -l <login>
 
 a mohli jste se hned poté oddávat orgiím v bashi uprostřed vod
@@ -112,6 +113,7 @@ forwarding rozběhat. Je to docela jednoduché…
 2.  Ve spuštěném xtermu napíšeme upravený příkaz pro SSH
     (přepínač -Y)
 
+    ::bash
     ssh -Y <server> -l <login>
 
 3.  Jsme na vzdáleném serveru a můžeme spouštět grafické aplikace.

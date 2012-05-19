@@ -18,6 +18,7 @@ možnosti:
 
 Serveru řekneme co potřebujeme v souboru `.htaccess`.
 
+    ::apache
     php_flag register_globals 1
 
 ## Změna nastavení přímo v PHP
@@ -25,10 +26,12 @@ Serveru řekneme co potřebujeme v souboru `.htaccess`.
 Použijeme
 [ini\_set](http://cz2.php.net/manual/en/function.ini-set.php).
 
+    ::php
     ini_set('register_globals','on');
 
 ## Nastavení na serveru nelze změnit
 
 V tomto případě nám nezbyde, než si ručně proměnné vytvořit.
 
+    ::php
     extract($_REQUEST);

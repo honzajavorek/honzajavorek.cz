@@ -60,6 +60,7 @@ v předešlém odstavci. Nechci se hádat co je lepší – prostě jen
 napíšu, že pro mě je lepší tato varianta a proto mám rád takové ty
 na první pohled obskurní věci, jako například short open tags:
 
+    ::php
     <?= $var ?> je totez jako konvencni <?php echo $var ?>
     <? ... ?> je totez jako delsi <?php ... ?>
 
@@ -98,11 +99,13 @@ s radostí používáte. Co s tím? Buď je nepoužívat (což je škoda),
 nebo přidat jeden *požadavek* navíc a snížit tak možnost nasazení
 aplikace. Nebo vymyslet něco chytrého ;) .
 
+    ::php
     if (!ini_get('short_open_tag')) { // explicit short open tags support
         eval('?>' . preg_replace(
             array('~<\\?(\\s)~', '~<\\?=~'),
             array('<?php\\1', '<?php echo'),
             $this->tpl->content));
+
     } else {
         include($this->tpl->file); // include the file
     }

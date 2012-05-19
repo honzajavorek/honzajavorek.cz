@@ -18,6 +18,7 @@ pomocí
 Konfigurační `velikost-poprsi.txt` si například dáme do nějakého
 adresáře, do něhož umístíme i .htaccess soubor s obsahem
 
+    ::apache
     deny from all
 
 Server pak **všechny vnější požadavky** na soubory ve složce
@@ -31,12 +32,14 @@ přístup zvenčí okamžitým **ukončením vykonávání skriptu** hned na
 začátku. Aplikace soubor načítá lokálně, takže jí to nijak nemusí
 vadit, pokud samozřejmě PHP kód řádně zakomentujeme.
 
+    ::ini
     ; <?php exit; ?>
     leve = A
     prave = C
 
 Pro XML by mělo fungovat něco podobného.
 
+    ::xml
     <!-- <?php exit; ?> -->
     <conf>
       <const name="leve">A</const>

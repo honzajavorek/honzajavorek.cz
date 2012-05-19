@@ -13,6 +13,7 @@ Stáhnout
 [Hamachi pro Linux](http://files.hamachi.cc/linux/hamachi-0.9.9.9-20-lnx.tar.gz)
 a rozbalit. Potom:
 
+    ::bash
     $ sudo apt-get install build-essential   # máme vše potřebné pro instalaci?
     $ sudo make install   # instalujeme
     $ sudo tuncfg   # nastavení tuneláže
@@ -25,6 +26,7 @@ a rozbalit. Potom:
 Další práce s Hamachi, tedy nastavení jména, přihlášení do skupiny,
 nastavení online stavu a výpis toho co vidím:
 
+    ::bash
     $ hamachi set-nick [nick]
     $ hamachi join [network] [password]
     $ hamachi go-online [network]

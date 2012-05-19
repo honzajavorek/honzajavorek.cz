@@ -34,11 +34,12 @@ nějak zlomit a přizpůsobit svým potřebám…
 V okýnku s rádiem klikněte někam pravým a vyberte `zdrojový kód`.
 V něm najděte něco jako
 
+    ::html
     <OBJECT ID="MediaPlayer" WIDTH=468 HEIGHT=64 CLASSID="CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6">
               <PARAM NAME="URL" VALUE="http://www.play.cz/radio/krokodyl128.asx">
               <PARAM NAME="Autostart" VALUE="True">
               <PARAM NAME="UiMode" VALUE="Mini">
-    
+
               <PARAM NAME="EnableContextMenu" VALUE="False">
             <EMBED TYPE="application/x-mplayer2" SRC="http://www.play.cz/radio/krokodyl128.asx" NAME="MediaPlayer" WIDTH="468" HEIGHT="45" ENABLECONTEXTMENU="False">
                 </EMBED>

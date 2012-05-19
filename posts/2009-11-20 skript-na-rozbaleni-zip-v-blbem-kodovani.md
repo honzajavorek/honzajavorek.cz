@@ -22,6 +22,7 @@ ho místo .zip a nemám žádné problémy.
 Pokud ale nějaký .zip přijde, nedá se nic dělat. Napsal jsem
 skript, který problém řeší:
 
+    ::bash
     #!/bin/bash
     dirname=`echo "$1" | sed -e 's/\(.\+\)\.zip/\1/'`
     unzip $1

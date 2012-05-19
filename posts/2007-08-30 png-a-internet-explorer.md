@@ -35,6 +35,7 @@ z příkazového řádku. Soubor **pngcrush.exe** si tedy nahraj do
 adresáře se všemi *postiženými* obrázky a pak za hlubokých meditací
 prones magickou formuli
 
+    ::bash
     pngcrush -rem alla -d out *.png
 
 ## Výsledek?

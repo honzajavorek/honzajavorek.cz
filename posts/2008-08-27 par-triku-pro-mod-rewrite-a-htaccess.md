@@ -17,6 +17,7 @@ jsem časem nashromáždil…
 Přesměruje adresy `tralala.com/venku/je/tma` na
 `tralala.com/venku/je/tma/`.
 
+    ::apache
     ## endslashes
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{ENV:REDIRECT_STATUS} ^$
@@ -30,6 +31,7 @@ adresami chceme… Stačí jeden kouzelný řádek, který úplně vše
 přesměruje na `index.php` a potom si adresu rozparsujeme přímo
 v PHP (dostupná v `$_SERVER['REQUEST_URI']`).
 
+    ::apache
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule . /index.php [L]
@@ -45,6 +47,7 @@ pro WordPress najdete
 v [článku na AskApache](http://www.askapache.com/htaccess/redirecting-wordpress-feeds-to-feedburner.html),
 já jsem si vystačil s tímto:
 
+    ::apache
     ## feedburner
     RewriteCond %{HTTP_USER_AGENT} !^.*(FeedBurner|FeedValidator|Recent) [NC]
     RewriteRule ^feed/?$ http://feeds.feedburner.com/javorovelistky [R=302,L]
@@ -56,6 +59,7 @@ prohlížeče a zobrazí se vám tato chybová stránka. Pokud zadáte
 absolutní, přesměruje se chyba zcela na soubor s chybovou stránkou
 (což podle mě není dobrý nápad).
 
+    ::apache
     ## errorpages
     ErrorDocument 404 /joss/?doc=_404
     ErrorDocument 403 /joss/?doc=_403
@@ -69,11 +73,13 @@ přes `index.php`, teoreticky stačí vložit do rootu webu
 `index.html` a něco do něj napsat. Toto zajistí, že se určitě bude
 HTML verze zobrazovat prioritně:
 
+    ::apache
     DirectoryIndex index.html index.php
 
 Skryté soubory by se neměly nikomu dostat do rukou. Správný server
 má toto už v globálním nastavení, ale člověk nikdy neví…
 
+    ::apache
     <Files ~ "^[\.]">
         Order allow,deny
         Deny from all
@@ -83,28 +89,30 @@ má toto už v globálním nastavení, ale člověk nikdy neví…
 Nevíte jestli na cílovém serveru bude `mod_rewrite` a nechcete
 riskovat *Internal Server Error 500*? Stačí vše obalit podmínkou…
 
+    ::apache
     <IfModule mod_rewrite.c>
-    RewriteEngine on
-    ...
+        RewriteEngine on
+        ...
     </IfModule>
 
 A co tak si nastavit PHP?
 
+    ::apache
     <IfModule mod_php5.c>
-    # development setting
-    php_flag display_errors 1
-    # safety
-    php_flag register_globals 0
-    # allowed stealing from other websites ;)
-    php_flag allow_url_fopen 1
-    # fu*king quotes...
-    php_flag magic_quotes_gpc 0
-    php_flag magic_quotes_runtime 0
-    php_flag magic_quotes_sybase 0
-    # yes, I love short open tags!
-    php_flag short_open_tag 1
-    # utf forever
-    php_flag default_charset utf-8
+        # development setting
+        php_flag display_errors 1
+        # safety
+        php_flag register_globals 0
+        # allowed stealing from other websites ;)
+        php_flag allow_url_fopen 1
+        # fu*king quotes...
+        php_flag magic_quotes_gpc 0
+        php_flag magic_quotes_runtime 0
+        php_flag magic_quotes_sybase 0
+        # yes, I love short open tags!
+        php_flag short_open_tag 1
+        # utf forever
+        php_flag default_charset utf-8
     </IfModule>
 
 ## Závěrem
