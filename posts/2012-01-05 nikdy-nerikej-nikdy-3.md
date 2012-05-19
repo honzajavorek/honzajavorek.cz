@@ -46,6 +46,7 @@ většina mé práce je krocení neposlušných
 v [čutoře](http://flask.pocoo.org/).
 
 ![obrázek](images/162.jpg)
+
 No a dnes **vzalo za své i to IDE**, bez něhož jsem dříve vůbec
 nemohl žít. Mé milované [Eclipse](http://www.eclipse.org/). To,
 díky němuž jsem vlastně kupoval nový počítač, protože mi kluci
@@ -73,6 +74,7 @@ zdroje. Byl jsem nešťastný a přitom už jsem většinu funkcí IDE ani
 nepoužíval.
 
 ![obrázek](images/161.jpg)
+
 Vsuvka pro rejpaly:
 *Ne, nechci používat NetBeans. Zkoušel jsem to mnohokrát a nejsem schopen překousnout GUI toho programu. Nemám rád Javovský Swing (ne z přesvědčení, ale z pocitů marnosti) a tudíž to pro mne není cesta.*
 
@@ -83,6 +85,8 @@ u [Sublime Text](http://www.sublimetext.com/)
 [2](http://www.sublimetext.com/2). Úžasný editor, který umí vše
 potřebné, chová se normálně a předvídatelně, nežere paměť, nehází
 klacky pod nohy.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wyUjnPgOPGE" frameborder="0" allowfullscreen></iframe>
 
 A je to. 5. 1. 2012 jsem odinstaloval i to IDE. Co zbylo z mých
 hodnot, z pilířů mého programátorského života v prváku na

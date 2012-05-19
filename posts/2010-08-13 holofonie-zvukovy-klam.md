@@ -10,6 +10,8 @@ opravdová **SLUCHÁTKA**, jasné? Žádné repro, prostě sluchátka. Je
 to fakt důležité a spočívá v tom celý trik. Taky bude super,
 **pokud ZAVŘETE OČI**, má to lepší efekt.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pgeFdOayeaw" frameborder="0" allowfullscreen></iframe>
+
 O co se jedná? Jakto, že je zvuk tak živý a prostorový? Jedná se
 o zvuk nahraný speciálními technikami, které toho umí docílit –
 například se nahrává na modelu lidské hlavy. Jmenuje se to

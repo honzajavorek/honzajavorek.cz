@@ -8,6 +8,8 @@ je nainstaloval. Byla to chyba, protože mi v nich blbne taskbar a
 nikdo o té chybě nic neví – Windows 7 oficiálně ještě nevyšly. Až
 na tuto chybu ale nemám větších námitek.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YDvWtO-114I" frameborder="0" allowfullscreen></iframe>
+
 Tak či tak ale musím uznat, že Windows 7 jsou povedený systém a
 subjektivně na tomtéž stroji rychlejší než Windows XP (mám Core
 Duo, 2 GB RAM). Uvnitř vypadají mnohem logičtěji než XP a tak nějak

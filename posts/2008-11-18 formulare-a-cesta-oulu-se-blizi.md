@@ -24,6 +24,8 @@ Připadal jsem si trochu jako hlavní hrdina ve filmu
 který taky běhal po úřadech a sháněl dokumenty pro Erasmus. Nevadí,
 že neumíte francouzsky, myslím že sdělení scény je jasné :D
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9ZA8sVgXJuw" frameborder="0" allowfullscreen></iframe>
+
 Ale ne, tak hrozné to nebylo. Na webu OAMK je pěkný
 [průvodce pro exchange studenty](http://www.oamk.fi/english/exchange_opportunities/ects/).
 Dá se tam najít
@@ -124,15 +126,21 @@ si říkám, že bych měl konečně vyzvednout tu novou nálepku na ISIC.
 Jenže když oni mají na tom studijním oddělení tak geniální
 otvírací dobu…
 
-Po
-8:00–11:00
-–
-St
-8:00–11:00
-13:00–14:30
-Pá
-8:00–11:00
-–
+<table>
+    <tr>
+        <th>Po</th>
+        <td>8:00–11:00</td>
+    </tr>
+    <tr>
+        <th>St</th>
+        <td>8:00–11:00, 13:00–14:30</td>
+    </tr>
+    <tr>
+        <th>Pá</th>
+        <td>8:00–11:00</td>
+    </tr>
+</table>
+
 ## Cestujemééé
 
 Cesta. To je další oříšek. Ptal jsem se kamarádky, která byla

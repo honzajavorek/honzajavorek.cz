@@ -25,6 +25,8 @@ Last.fm kdysi dávno poslouchal *similar artists radio* k Tori Amos.
 Ochutnávky (vybírám ty popovější, abyste hned neřekli, že je to
 divné :D ):
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SGTDRztaCCw" frameborder="0" allowfullscreen></iframe>
+
 A další…
 
 -   [Hotel Song](http://www.youtube.com/watch?v=kk2AIir_eaM)
@@ -58,6 +60,8 @@ Kdo je švédská Miss Li? Zkoumám, co je to za hudbu, ale nikde nic.
 Wikipedie, kromě té švédské, mlčí. Jediné sdílné médium je YT. To
 je ale sdílné poměrně dost… Miss Li tam má nejen běžné nahrávky,
 ale i spoustu videí z živých vystoupení, kde dělá parádní šou:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wGMnW7FKFvg" frameborder="0" allowfullscreen></iframe>
 
 A co dál?
 

@@ -10,6 +10,8 @@ v kuchyňkopředsíni. Z té má vstup do jednoho pokoje pro dva lidi,
 do druhého pokoje pro dva lidi a do koupelnozáchodu. Dobře to jde
 vidět tady:
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-7rvR9fjpHU" frameborder="0" allowfullscreen></iframe>
+
 To není moje video, ale proč natáčet jednu věc desetkrát… Bydlím
 tedy zatím sám. Ten, kdo tu má věci, je vedlebydlící (z vedlejší
 „buňky“), spolubydlícího zatím nemám vůbec.

@@ -20,6 +20,8 @@ značka :) . Vtipné je, že spolu s Finskem opustíte
 i východoevropský čas a ocitnete se mezi lidmi, kteří mají
 o hodinu dříve.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TwiNrt3qh8w" frameborder="0" allowfullscreen></iframe>
+
 V **Haparanda** kousek za Tornio jsme nakoupili levné sladkosti a
 levné švédské pivo (no to moje je tedy ve skutečnosti dánské) a
 jeli jsme dál. Směr Karlix, no odbočili jsme pak na sever mezi

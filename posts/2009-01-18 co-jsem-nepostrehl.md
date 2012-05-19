@@ -34,4 +34,6 @@ Kärpät Oulu nebo vás zajímá jestli je tady opravdu na každém rohu
 sauna? Tak si **o to napište** :) . Na konec přihodím mé první
 video na YouTube v životě ;) .
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Bb7LQpg6lK8" frameborder="0" allowfullscreen></iframe>
+
 Hudba se trochu seká, ale nepodařilo se mi to spravit.

@@ -4,6 +4,8 @@ Tags: erasmus, finsko, oulu
 
 Tak s tímhle jsem si **hrál celé odpoledne**:
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BkS6tlVTMqA" frameborder="0" allowfullscreen></iframe>
+
 Natočil jsem to dnes odpoledne, když jsme se se
 **zmrzlým Flavienem** vraceli z fotografické projížďky.
 Fotografické výsledky najdete spolu s dalšími dvěma alby tam jako

@@ -12,4 +12,6 @@ Komeťáckých, co jsou na YouTube, líbí asi nejvíc :) . I když hokeji
 příliš neholdujete, zkuste aspoň tyhle dvě minuty. Stojí za to
 ;) .
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/72byRXZwqbE" frameborder="0" allowfullscreen></iframe>
+
 A samozřejmě přeju Kometě hodně štěstí a držím palce!

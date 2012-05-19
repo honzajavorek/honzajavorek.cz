@@ -372,7 +372,8 @@ Je mi samozřejmě jasné, že na drtivé většině fakult v ČR žádné
 takové videozáznamy nejsou.
 [Na některých však ano a problém to není.](http://twitpic.com/3htc9c)
 
-[![obrázek](images/142.jpg)](http://littlemaple.deviantart.com/art/Studying-75958742)
+![obrázek](images/142.jpg)
+
 Pedagogický sbor školy zaznamenal pokles kvalit studentů u státnic
 a zastává názor, že existence záznamů a jejich stahování před
 zkouškami na to má nezanedbatelný vliv. Velké části studentů to ale
@@ -415,6 +416,8 @@ odměna kantorů za výuku. Nabízí se říci, že vlastně můžeme být
 rádi, že nás ještě někdo učí a že se akademici nesoustředí už jen a
 pouze na své projekty. Jistě by bylo hezké, kdyby měli kantoři vizi
 a chuť vzdělávat, ale chápu, že musí z něčeho žít.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M_bvT-DGcWw" frameborder="0" allowfullscreen></iframe>
 
 Na druhou stranu, **skutečnost bude někde na půl cesty** a vinu
 nelze svádět jen na peníze. Jak fungují jiné fakulty a univerzity,

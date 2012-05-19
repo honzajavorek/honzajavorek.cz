@@ -9,6 +9,7 @@ Finové, Francouzi, Španělé… Je nás tady na
 představit lidi, se kterými trávím nejvíce času.
 
 ![obrázek](images/70.jpg)
+
 ## Spolubydlící – Flavien, Martiño (Laura), Şafak
 
 ![obrázek](images/71.jpg){: .left }V jednom pokoji bydlím
@@ -112,6 +113,8 @@ Studuje nějaký speciální obor zaměřený na osly, ale když mi to
 řekl, tak jsem myslel, že si dělá srandu a smál jsem se. No,
 nedělal si srandu, takže se pak cítil trochu uražený :D . Martynas
 a Antonio v akci:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zwdsnoh1MOw" frameborder="0" allowfullscreen></iframe>
 
 ## Československo – Martin, Filip, Miro, Anča, Palko, Peter
 

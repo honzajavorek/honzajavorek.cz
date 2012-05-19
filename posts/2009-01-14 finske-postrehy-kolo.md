@@ -40,6 +40,8 @@ tam přesně v původním stavu, ač tam už visí třeba i sama. Druhá
 myšlenka se týká toho, jak je možné,
 **že se tady dá jezdit nejen na sněhu, ale i na ledě**.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BkS6tlVTMqA" frameborder="0" allowfullscreen></iframe>
+
 Každý den je z ulic totiž uklízen sníh. Myslím normálně rolbami,
 **silničáři to prostě projedou a posypou** kamínky. A nejen ulice!
 Přesně toto udělají s tak 80% všech těch 600 km cyklostezek, co
@@ -59,6 +61,8 @@ nebo čelenkou, aby nezmrzlo. Každopádně… Jede se po sněhu stokrát
 lépe než po trávě a jiných terénních záležitostech a jede se po něm
 snad i lépe než po betonu. Když se náhodou blbě otočíte a žuchnete
 na zem… Tak co? Spadli jste přece **do sněhu** ;) .
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Fhu-LJVJO7o" frameborder="0" allowfullscreen></iframe>
 
 Jiná je to ovšem s ledem. **Led je sviňa.** Když jeden den přes noc
 polovina sněhu v Oulu roztála, protože bylo kolem nuly a možná
