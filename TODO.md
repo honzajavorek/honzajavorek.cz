@@ -1,6 +1,5 @@
 # TODO
 
-- Find code snippets and add ::lang.
 - Detect and repair tables.
 - Migrate links. Find and replace all occurances of blog.javorek.net... Handle redirects.
 - Remove unnecessary line breaks. Detect line breaks after standalone images and adjust them.
