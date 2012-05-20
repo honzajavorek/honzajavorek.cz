@@ -2,11 +2,7 @@ Title: Pod tlakem
 Date: 2008-01-04 16:30:00
 Tags: rýmovaně, seriózně, škola
 
-První zkoušku tohoto semestru, z matematiky, mám přesně v tento
-okamžik, tedy 2008–01–04 16.00 – 18.00. Abyste se nenudili během mé
-nepřítomnosti a zároveň si dokázali představit, jak náročné období
-mi začíná, potěším vás tématicky nazvanou a dekadentně laděnou
-básní **Pod tlakem**. Je také staršího data.
+První zkoušku tohoto semestru, z matematiky, mám přesně v tento okamžik, tedy 2008–01–04 16.00 – 18.00. Abyste se nenudili během mé nepřítomnosti a zároveň si dokázali představit, jak náročné období mi začíná, potěším vás tématicky nazvanou a dekadentně laděnou básní **Pod tlakem**. Je také staršího data.
 
 Tlačím ze všech sil  
 je to ovšem děsná dřina  

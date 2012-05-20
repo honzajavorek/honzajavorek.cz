@@ -1,12 +1,14 @@
 # TODO
 
-- Remove unnecessary line breaks. Detect line breaks after standalone images and adjust them.
+- Mirgate files (http://blog.javorek.net/file/138/).
 - Migrate links. Find and replace all occurances of blog.javorek.net... Handle redirects.
 - Try to adjust standalone image generation so it's rendered inside a DIV (FIGURE).
 - Find out how to implement archives: archives.html vs http://lucumr.pocoo.org/archive/
 - Prepare minimal design. Remove all unnecessary stuff.
 - Make a Pelican theme.
 - Custom 404 page.
+- Script (library?) for typographic changes -> to →, -- to –, quotes, hellip, etc. Make it a hook before publishig.
+- Style paragraphs with indent if the first sentence doesn't contain `<br>`
 - Write new articles. Love the world.
 
 ## Design

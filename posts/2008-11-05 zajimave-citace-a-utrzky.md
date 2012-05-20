@@ -2,10 +2,7 @@ Title: Zajímavé citace a útržky
 Date: 2008-11-05 00:53:00
 Tags: seriózně, škola
 
-Pár nových příspěvků do
-[osobního lamera](http://blog.javorek.net/osobni-lamer/), několik
-světových mouder a zajímavých citátů. Prostě vše, co jsem po čase
-tak nějak posbíral…
+Pár nových příspěvků do [osobního lamera](http://blog.javorek.net/osobni-lamer/), několik světových mouder a zajímavých citátů. Prostě vše, co jsem po čase tak nějak posbíral…
 
 ## Ze života
 
@@ -59,8 +56,7 @@ Zabiják na konec:
 
 ## Vysokoškolské
 
-Jedna z posledních fakult, které mají papírový index, je…
-Informatická :) .
+Jedna z posledních fakult, které mají papírový index, je… Informatická :) .
 
 > Za 3 semestry jsme zjistili, že index je nám na jednu jedinou věc.
 > Když si do něj necháte dát razítko, že máte zkoušku, tak v ten samý

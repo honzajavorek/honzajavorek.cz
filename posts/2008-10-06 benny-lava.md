@@ -6,8 +6,7 @@ Nevinný [odkaz v komentáři](http://blog.javorek.net/hudebni-tipy-predelavky/
 
 ![obrázek](images/93.jpg)
 
-**Karel** se vydal na předlouhou a strastiplnou cestu. Ta však přinesla kýžené ovoce – přinesla **pravdu**. Zjistil, že Benny Lava je ve skutečnosti [Prabhu Deva Sundaram](http://en.wikipedia.org/wiki/Prabhu_Deva_Sundaram). Že Benny Lava je [internetový mem](http://en.wikipedia.org/wiki/Prabhu_Deva_Sundaram#Benny_Lava) (nějaké
-[české memy](http://cs.wikipedia.org/wiki/České_internetové_memy)). Díky tomu se dopátral názvu ostře sledované skladby – Kalluri Vaanil.
+**Karel** se vydal na předlouhou a strastiplnou cestu. Ta však přinesla kýžené ovoce – přinesla **pravdu**. Zjistil, že Benny Lava je ve skutečnosti [Prabhu Deva Sundaram](http://en.wikipedia.org/wiki/Prabhu_Deva_Sundaram). Že Benny Lava je [internetový mem](http://en.wikipedia.org/wiki/Prabhu_Deva_Sundaram#Benny_Lava) (nějaké [české memy](http://cs.wikipedia.org/wiki/České_internetové_memy)). Díky tomu se dopátral názvu ostře sledované skladby – Kalluri Vaanil.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZA1NoOOoaNw" frameborder="0" allowfullscreen></iframe>
 

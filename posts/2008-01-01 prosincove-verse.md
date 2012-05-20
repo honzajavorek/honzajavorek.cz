@@ -2,14 +2,7 @@ Title: Prosincové verše
 Date: 2008-01-01 10:00:00
 Tags: rýmovaně
 
-K zjemnění dnešního
-[hengouvru](http://en.wikipedia.org/wiki/Hangover) přikládám něco
-na čtení (pokud tedy po včerejšku alespoň vidíte). Pár vyhrabaných
-básniček z **5. – 6. 12. 2003**. Zajímavé, jak to letí… Teď slavíme
-2008 a já si přeji, aby
-[mé starosti](http://www.fit.vutbr.cz/study/courses/index.php?id=5875)
-byly stejně „nebetyčné“ jako ty, jež se staly podnětem k téhle
-poezii :) .
+K zjemnění dnešního [hengouvru](http://en.wikipedia.org/wiki/Hangover) přikládám něco na čtení (pokud tedy po včerejšku alespoň vidíte). Pár vyhrabaných básniček z **5. – 6. 12. 2003**. Zajímavé, jak to letí… Teď slavíme 2008 a já si přeji, aby [mé starosti](http://www.fit.vutbr.cz/study/courses/index.php?id=5875) byly stejně „nebetyčné“ jako ty, jež se staly podnětem k téhle poezii :) .
 
 ## Jeden je den
 

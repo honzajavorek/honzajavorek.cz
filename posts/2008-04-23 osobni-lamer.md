@@ -2,14 +2,9 @@ Title: Osobní lamer
 Date: 2008-04-23 10:02:00
 Tags: im, jabber, seriózně, škola
 
-Před nějakou dobou jsem si řekl, že po cca třech neschválených
-citacích na [lamer.cz](http://www.lamer.cz) nemá cenu je tam
-přidávat a že si raději založím osobní „notýsek“, kam budu vtipné
-výroky z IM či IRC uskladňovat. Po čase jeho existence jsem
-zjistil, že opravdu přetéká pěknými kousky :) .
+Před nějakou dobou jsem si řekl, že po cca třech neschválených citacích na [lamer.cz](http://www.lamer.cz) nemá cenu je tam přidávat a že si raději založím osobní „notýsek“, kam budu vtipné výroky z IM či IRC uskladňovat. Po čase jeho existence jsem zjistil, že opravdu přetéká pěknými kousky :) .
 
-Brzy to bude rok od chvil, kdy jsme se s markophem přes noc nonstop
-učili na operační systémy a zkoušeli co vydrží naše organismy…
+Brzy to bude rok od chvil, kdy jsme se s markophem přes noc nonstop učili na operační systémy a zkoušeli co vydrží naše organismy…
 
 > Markoph: je o chvíľu šesť :) máme asi tak 3 hodiny :)  
 > 5:50 AM  
@@ -175,8 +170,7 @@ Zoufalí informatici :-)
 > prijdes na svy  
 > [17:33:56] <sabe\> :D
 
-Zlatý hřeb – **naprosto kompletní zmatení** markopha při učení se
-na zkoušku (poslední hodiny před písemkou):
+Zlatý hřeb – **naprosto kompletní zmatení** markopha při učení se na zkoušku (poslední hodiny před písemkou):
 
 > [10:15:06] <markoph\> nedám to :) nemám šancu… nič mi nevychádza
 > :D  
@@ -231,6 +225,4 @@ A nakonec jeden ohledně blogu ;) .
 > [13:34:11] <markoph\> gratulujem :) to ti určite privedie státisíce
 > čitateľov :D:D
 
-**Poznámka nakonec:** pokud někomu z účastníků vadí uveřejnění jeho
-příspěvku, nechť se dodatečně ozve a já jej smažu. Nechtělo se mi
-psát všem lidem, jestli mi to povolí.
+**Poznámka nakonec:** pokud někomu z účastníků vadí uveřejnění jeho příspěvku, nechť se dodatečně ozve a já jej smažu. Nechtělo se mi psát všem lidem, jestli mi to povolí.

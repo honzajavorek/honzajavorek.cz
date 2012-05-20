@@ -2,20 +2,11 @@ Title: Pár triků pro mod_rewrite a .htaccess
 Date: 2008-08-27 08:10:00
 Tags: apache, mod_rewrite, php, projekty, webdesign
 
-Velmi často je součástí webového serveru tzv. `mod_rewrite`, který
-nám povoluje přepisovat jakékoliv požadavky od uživatele na jiné.
-Například přepsat nebo přesměrovat adresu. Více o `mod_rewrite` a
-souboru `.htaccess`, jenž s ním úzce souvisí, najdete třeba na
-[Jak psát web](http://www.jakpsatweb.cz/server/htaccess.html). Ta
-nejlepší helpka je však velmi pěkně napsaný
-[originální manuál](http://httpd.apache.org/docs/2.0/mod/mod_rewrite.html).
-Já se zkusím podělit o několik užitečných *code snippets*, které
-jsem časem nashromáždil…
+Velmi často je součástí webového serveru tzv. `mod_rewrite`, který nám povoluje přepisovat jakékoliv požadavky od uživatele na jiné. Například přepsat nebo přesměrovat adresu. Více o `mod_rewrite` a souboru `.htaccess`, jenž s ním úzce souvisí, najdete třeba na [Jak psát web](http://www.jakpsatweb.cz/server/htaccess.html). Ta nejlepší helpka je však velmi pěkně napsaný [originální manuál](http://httpd.apache.org/docs/2.0/mod/mod_rewrite.html). Já se zkusím podělit o několik užitečných *code snippets*, které jsem časem nashromáždil…
 
 ## Lomítka na koncích
 
-Přesměruje adresy `tralala.com/venku/je/tma` na
-`tralala.com/venku/je/tma/`.
+Přesměruje adresy `tralala.com/venku/je/tma` na `tralala.com/venku/je/tma/`.
 
     ::apache
     ## endslashes
@@ -26,10 +17,7 @@ Přesměruje adresy `tralala.com/venku/je/tma` na
 
 ## Hezká a všelijaká URL pro aplikaci v PHP
 
-Žádných složitých 50 regulárních výrazů na to, co vlastně s těmi
-adresami chceme… Stačí jeden kouzelný řádek, který úplně vše
-přesměruje na `index.php` a potom si adresu rozparsujeme přímo
-v PHP (dostupná v `$_SERVER['REQUEST_URI']`).
+Žádných složitých 50 regulárních výrazů na to, co vlastně s těmi adresami chceme… Stačí jeden kouzelný řádek, který úplně vše přesměruje na `index.php` a potom si adresu rozparsujeme přímo v PHP (dostupná v `$_SERVER['REQUEST_URI']`).
 
     ::apache
     RewriteCond %{REQUEST_FILENAME} !-f
@@ -38,14 +26,7 @@ v PHP (dostupná v `$_SERVER['REQUEST_URI']`).
 
 ## Přesměrování RSS na FeedBurner
 
-Chcete [statistiky přístupů](http://www.feedburner.com) na vaše
-RSS, ale nechcete obtěžovat odběratele článků se změnami adresy?
-Přesměrujte je. Není to tak snadné jak se zdá, protože přesměrování
-se nesmí provést, když se na váš *feed* snaží dostat samotný
-FeedBurner (to se pak logicky zacyklí). Sofistikovanější postupy
-pro WordPress najdete
-v [článku na AskApache](http://www.askapache.com/htaccess/redirecting-wordpress-feeds-to-feedburner.html),
-já jsem si vystačil s tímto:
+Chcete [statistiky přístupů](http://www.feedburner.com) na vaše RSS, ale nechcete obtěžovat odběratele článků se změnami adresy? Přesměrujte je. Není to tak snadné jak se zdá, protože přesměrování se nesmí provést, když se na váš *feed* snaží dostat samotný FeedBurner (to se pak logicky zacyklí). Sofistikovanější postupy pro WordPress najdete v [článku na AskApache](http://www.askapache.com/htaccess/redirecting-wordpress-feeds-to-feedburner.html), já jsem si vystačil s tímto:
 
     ::apache
     ## feedburner
@@ -54,10 +35,7 @@ já jsem si vystačil s tímto:
 
 ## Chybové stránky
 
-Pokud zadáte relativní cestu, původní URL zůstane v adresním řádku
-prohlížeče a zobrazí se vám tato chybová stránka. Pokud zadáte
-absolutní, přesměruje se chyba zcela na soubor s chybovou stránkou
-(což podle mě není dobrý nápad).
+Pokud zadáte relativní cestu, původní URL zůstane v adresním řádku prohlížeče a zobrazí se vám tato chybová stránka. Pokud zadáte absolutní, přesměruje se chyba zcela na soubor s chybovou stránkou (což podle mě není dobrý nápad).
 
     ::apache
     ## errorpages
@@ -66,18 +44,12 @@ absolutní, přesměruje se chyba zcela na soubor s chybovou stránkou
 
 ## Tatíček .htaccess
 
-Neodolal jsem a nakonec ještě přidám několik osvědčených kousků
-i pro samotný `.htaccess`. Někdy je dobré na web jen na oko zamezit
-přístup, alespoň přes hlavní stránku. Jelikož ta se většinou volá
-přes `index.php`, teoreticky stačí vložit do rootu webu
-`index.html` a něco do něj napsat. Toto zajistí, že se určitě bude
-HTML verze zobrazovat prioritně:
+Neodolal jsem a nakonec ještě přidám několik osvědčených kousků i pro samotný `.htaccess`. Někdy je dobré na web jen na oko zamezit přístup, alespoň přes hlavní stránku. Jelikož ta se většinou volá přes `index.php`, teoreticky stačí vložit do rootu webu `index.html` a něco do něj napsat. Toto zajistí, že se určitě bude HTML verze zobrazovat prioritně:
 
     ::apache
     DirectoryIndex index.html index.php
 
-Skryté soubory by se neměly nikomu dostat do rukou. Správný server
-má toto už v globálním nastavení, ale člověk nikdy neví…
+Skryté soubory by se neměly nikomu dostat do rukou. Správný server má toto už v globálním nastavení, ale člověk nikdy neví…
 
     ::apache
     <Files ~ "^[\.]">
@@ -86,13 +58,11 @@ má toto už v globálním nastavení, ale člověk nikdy neví…
         Satisfy All
     </Files>
 
-Nevíte jestli na cílovém serveru bude `mod_rewrite` a nechcete
-riskovat *Internal Server Error 500*? Stačí vše obalit podmínkou…
+Nevíte jestli na cílovém serveru bude `mod_rewrite` a nechcete riskovat *Internal Server Error 500*? Stačí vše obalit podmínkou…
 
     ::apache
     <IfModule mod_rewrite.c>
-        RewriteEngine on
-        ...
+        RewriteEngine on ...
     </IfModule>
 
 A co tak si nastavit PHP?
@@ -117,12 +87,4 @@ A co tak si nastavit PHP?
 
 ## Závěrem
 
-Pokud byste měli nějaké další dobré tipy, podělte se v komentářích.
-Doufám, že se vám tyto útržky kódu budou hodit a usnadní vám život.
-Ne že bych byl expert na `mod_rewrite` nebo nastavení Apache přes
-`.htaccess`, ale už z toho co umím mohu usoudit, že jsou to opravdu
-silné a velmi užitečné nástroje, bez nichž bych si dneska pohyb po
-hostinzích nebo vlastním serveru představil jen stěží. Mnohdy je
-sice možné řešit totéž jiným způsobem, ale touto cestou je to
-mnohdy rychlejší, elegantnější a na pohled hezčí :) . Takže kdo
-s nimi ještě nezačal… Hurá do toho!
+Pokud byste měli nějaké další dobré tipy, podělte se v komentářích. Doufám, že se vám tyto útržky kódu budou hodit a usnadní vám život. Ne že bych byl expert na `mod_rewrite` nebo nastavení Apache přes `.htaccess`, ale už z toho co umím mohu usoudit, že jsou to opravdu silné a velmi užitečné nástroje, bez nichž bych si dneska pohyb po hostinzích nebo vlastním serveru představil jen stěží. Mnohdy je sice možné řešit totéž jiným způsobem, ale touto cestou je to mnohdy rychlejší, elegantnější a na pohled hezčí :) . Takže kdo s nimi ještě nezačal… Hurá do toho!
