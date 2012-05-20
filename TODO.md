@@ -1,12 +1,12 @@
 # TODO
 
-- Detect and repair tables.
-- Migrate links. Find and replace all occurances of blog.javorek.net... Handle redirects.
 - Remove unnecessary line breaks. Detect line breaks after standalone images and adjust them.
+- Migrate links. Find and replace all occurances of blog.javorek.net... Handle redirects.
 - Try to adjust standalone image generation so it's rendered inside a DIV (FIGURE).
-- Find out how to implement archives.
+- Find out how to implement archives: archives.html vs http://lucumr.pocoo.org/archive/
 - Prepare minimal design. Remove all unnecessary stuff.
 - Make a Pelican theme.
+- Custom 404 page.
 - Write new articles. Love the world.
 
 ## Design
