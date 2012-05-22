@@ -1,21 +1,38 @@
 # TODO
 
-- theming: http://pelican.notmyidea.org/en/latest/themes.html
-- Try to adjust standalone image generation so it's rendered inside a DIV (FIGURE): https://github.com/ametaireau/pelican/pull/96 (custom filters)
-- Script (library?) for typographic changes -> to →, -- to –, quotes, hellip, etc. Make it a hook before publishig. typogrify?
-- feeds: http://feeds.honzajavorek.cz/javorovelistky
+- Script (library?) for typographic changes -> to →, -- to –, quotes, hellip, etc. Make it a hook before publishig. typogrify? (remove smartypants and add tipi)
+- Theming: http://pelican.notmyidea.org/en/latest/themes.html
 - Find out how to implement archives: archives.html vs http://lucumr.pocoo.org/archive/
+
+## HTML5
+- http://modernizr.com/
+- figure on code listing
+- time
+- css3, javascript
+- perfect content styling
+- additional disqus styling
+- article, artcile header, article footer, article time with pubdate
+- aside (almost none)
+- search input
+- fonts
+- no images at all in design?
+- style focused on reading
+- poem styling
 
 ## Design
 - Prepare minimal design. Remove all unnecessary stuff.
 - Make a Pelican theme.
 - Custom 404 page.
+- favicon
 - http://blog.filosof.biz/koderuv-checklist/
+- connect disqus
+- connect google "site tool"
 - Style paragraphs with indent if the first sentence doesn't contain `<br>`
 
 ## Integration
 - Unify www.honzajavorek.cz to honzajavorek.cz only, everywhere.
 - Handle redirects from the original blog to the new one.
+- feed - redirect to the new address permanently
 
 ## And...
 - Write new articles. Love the world.

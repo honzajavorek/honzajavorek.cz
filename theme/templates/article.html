@@ -17,7 +17,7 @@
     {% endif %}
   </footer><!-- /.post-info -->
   <div class="entry-content">
-    {{ article.content }}
+    {{ article.content|figure|code|typo }}
   </div><!-- /.entry-content -->
 </section>
 {% endblock %}
