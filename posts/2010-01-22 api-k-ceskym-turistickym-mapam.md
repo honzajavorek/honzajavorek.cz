@@ -3,7 +3,7 @@ Date: 2010-01-22 00:00:00
 Tags: net, projekty, sport, vut fit, webdesign
 Draft: true
 
-*Článek vyšel na serveru [Zdrojak.cz](http://zdrojak.root.cz/clanky/api-k-ceskym-turistickym-mapam/). Volně vychází z [mé bakalářské práce](http://blog.javorek.net/bakalar/).*
+*Článek vyšel na serveru [Zdrojak.cz](http://zdrojak.root.cz/clanky/api-k-ceskym-turistickym-mapam/). Volně vychází z [mé bakalářské práce](http://honzajavorek.cz/blog/bakalar).*
 
 Zdá se, že český trh s mapovými službami je poměrně stabilizovaný a nic převratného se, kromě zavádění Google Street View, neděje. Pojďme se tedy společně podívat, co nám, webovým vývojářům, současný stav nabízí a jaké máme vlastně možnosti, chceme-li psát aplikace pro Českou republiku využívající turistické mapové podklady.
 

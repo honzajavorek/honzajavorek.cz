@@ -2,7 +2,7 @@ Title: Už jsi s tím šaškováním kolem blogu trapný!
 Date: 2012-01-20 17:00:00
 Tags: píšu si
 
-Ano, jsem. Je to osm měsíců, co jsem [spustil blog v novém hávu a na novém systému](http://blog.javorek.net/blog-v-novem/). Pak jsem si ho po chvilce omylem smazal. Před vánoci jsem jej obnovil, píšu zde články, ale spokojený opět nejsem.
+Ano, jsem. Je to osm měsíců, co jsem [spustil blog v novém hávu a na novém systému](http://honzajavorek.cz/blog/blog-v-novem). Pak jsem si ho po chvilce omylem smazal. Před vánoci jsem jej obnovil, píšu zde články, ale spokojený opět nejsem.
 
 Zjišťuji několik věcí. Na svém blogu mám rád design a [Texy!](http://www.texy.info) s vlastními rozšířeními. Nenávidím na něm skoro vše ostatní :-/ Je to zabugované a nechce se mi to řešit.
 

@@ -2,7 +2,7 @@ Title: Benny Lava
 Date: 2008-10-06 09:17:00
 Tags: očima, seriózně, ušima
 
-Nevinný [odkaz v komentáři](http://blog.javorek.net/hudebni-tipy-predelavky/#comment-4395) spustil lavinu. Všichni, kteří Bennyho Lavu viděli, žasli, smáli se, chtěli si jej pustit znova, nechápali, učili se „slova“… **Jen jeden muž však vystoupil z davu** a zahájil v dějinách našeho vztahu s YouTube nevídanou pátrací akci.
+Nevinný [odkaz v komentáři](http://honzajavorek.cz/blog/hudebni-tipy-predelavky) spustil lavinu. Všichni, kteří Bennyho Lavu viděli, žasli, smáli se, chtěli si jej pustit znova, nechápali, učili se „slova“… **Jen jeden muž však vystoupil z davu** a zahájil v dějinách našeho vztahu s YouTube nevídanou pátrací akci.
 
 ![obrázek](images/93.jpg)
 

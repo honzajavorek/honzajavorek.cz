@@ -12,6 +12,6 @@ Zálohu nemám a u hostera jsem ji neměl zaplacenou, ačkoliv stojí pár koru
 
 [Nedalo se nic dělat.](http://nooooooooooooooo.com/) Některé články to schytaly a zmizely v propadlišti digitálních dějin, některé jsme s kamarády povytahovali z Google Cache. Střípky jsem uschoval a subdoménu odstavil. Nebyl čas ani chuť to řešit.
 
-Vrátil jsem se k tomu až dnes. Je to taková malá vánoční radost. Poskládal jsem ze záloh články, přepsal je zpět do [Texy!](http://texy.info) syntaxe, spravil komentáře, doladil nějaké chyby… Nejvíce práce dal samozřejmě strašně dlouhý [článek o FITu](http://blog.javorek.net/byl-jsem-fit), ale naštěstí mi to usnadnila nějaká starší verze z dob, kdy byl ještě rozepsaný.
+Vrátil jsem se k tomu až dnes. Je to taková malá vánoční radost. Poskládal jsem ze záloh články, přepsal je zpět do [Texy!](http://texy.info) syntaxe, spravil komentáře, doladil nějaké chyby… Nejvíce práce dal samozřejmě strašně dlouhý [článek o FITu](http://honzajavorek.cz/blog/byl-jsem-fit), ale naštěstí mi to usnadnila nějaká starší verze z dob, kdy byl ještě rozepsaný.
 
 A to je celé. Teď už si zase můžu na blogu stěžovat na celý svět a nebudu to muset říkat jenom klukům v sauně ;)

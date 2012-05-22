@@ -3,7 +3,7 @@ Date: 2009-08-27 00:48:00
 Tags: fail, názory, net, rádio, software, ušima
 
 Dovolím si malý [spin-off](http://en.wikipedia.org/wiki/Spin-off)
-článku [Proč neopustím Last.fm](http://blog.javorek.net/proc-neopustim-lastfm/). V tom jsem prezentoval své názory. Teď přihodím pár empirických dat.
+článku [Proč neopustím Last.fm](http://honzajavorek.cz/blog/proc-neopustim-lastfm). V tom jsem prezentoval své názory. Teď přihodím pár empirických dat.
 
 Přehrávač Last.fm s obrázky interpretů a informacemi o nich je fajn, pokud posloucháte něco nového a neznámého. Což se vám s absencí rádia Last.fm už moc nestane (hudbu z vlastního disku znám a stream reálného rádia mi to nebere ;) ). Funkce pro socky nepotřebuju, když chci někomu doporučit hudbu, dělám to jako po staru prostě tak, že mu o ní napíšu nebo pošlu link na YouTube. Klikat na srdíčko v přehrávači mě taky omrzelo a žebříčky, jak jsem zjistil, mě nakonec stejně nějak nezajímají. Bylo fajn si s tím hrát, ale nějak to už nemá to kouzlo, co to mělo měsíc po založení účtu na Last.fm. Ono se to taky vlastně ani v čase nemění. Mám rád Pink Floyd, Chemical Brothers a Fatboy Slima, blink-182, Green Day, Queen, Red Hot Chili Peppers, Yanna Tiersena, Miss Li, Manu Chaa, Horkýže Slíže, Karla Plíhala, Led Zeppelin a Simona & Garfunkela. Takže mám rád vlastně všechno :) .
 

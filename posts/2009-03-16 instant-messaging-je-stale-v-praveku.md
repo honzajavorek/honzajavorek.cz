@@ -2,7 +2,7 @@ Title: Instant Messaging je stále v pravěku
 Date: 2009-03-16 13:33:00
 Tags: facebook, im, jabber, názory, net, software
 
-Opět mi včera přišel nějaký **spam od automaticky vygenerovaného rusáka** z ICQ transportu pro [Jabber](http://blog.javorek.net/jabber/). Jako vždy jsem mohl označit jeho číslo, přidat do seznamu ignorovaných kontaktů a jít dál. Jenže mě už nějak přetekl pohár trpělivosti. Smazal jsem své ICQ číslo z webu a z profilu na Facebooku (doufám, že nikam jinam jsem jej už nenapsal). A začal jsem si po dlouhé době **hrát s blbostma**.
+Opět mi včera přišel nějaký **spam od automaticky vygenerovaného rusáka** z ICQ transportu pro [Jabber](http://honzajavorek.cz/blog/jabber). Jako vždy jsem mohl označit jeho číslo, přidat do seznamu ignorovaných kontaktů a jít dál. Jenže mě už nějak přetekl pohár trpělivosti. Smazal jsem své ICQ číslo z webu a z profilu na Facebooku (doufám, že nikam jinam jsem jej už nenapsal). A začal jsem si po dlouhé době **hrát s blbostma**.
 
 ## Antispam? Likvidace ICQ? Facebook chat?
 

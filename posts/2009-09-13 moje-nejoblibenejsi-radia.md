@@ -2,7 +2,7 @@ Title: Moje nejoblíbenější rádia
 Date: 2009-09-13 21:18:00
 Tags: rádio, ušima
 
-Kdysi jsem tady na blogu [psal obecně o rádiích](http://blog.javorek.net/radium-atomove-cislo-88/). Po čase se k tématu stručně vrátím. Na internetu je velká spousta online rádií a různých služeb na motivy Last.fm, ale popravdě, ani to Last.fm jsem si nepouštěl tak rád nebo často jako si pouštím níže zmíněné čtyři.
+Kdysi jsem tady na blogu [psal obecně o rádiích](http://honzajavorek.cz/blog/radium-atomove-cislo-88). Po čase se k tématu stručně vrátím. Na internetu je velká spousta online rádií a různých služeb na motivy Last.fm, ale popravdě, ani to Last.fm jsem si nepouštěl tak rád nebo často jako si pouštím níže zmíněné čtyři.
 
 Největší problém rádií jsou reklamy. Samy rádia to ví, protože samy propagují např. „u nás plných 40 minut bez reklam“ apod. Jenže to nestačí, no. Jestli u toho pracuju, hodina uplyne jako nic a reklamy a i jakékoliv kecání mě ruší. Řešení?
 

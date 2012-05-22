@@ -2,7 +2,7 @@ Title: Parametry Firefoxu
 Date: 2008-01-23 11:58:00
 Tags: firefox, linux, software, windows
 
-![obrázek](images/37.jpg){: .right }Většina z nich klikne na ikonku modrého Exploreru. Většina z nás klikne na ikonku Firefoxu. Někteří z nás spustí [Launchy](http://blog.javorek.net/2007/12/29/launchy/) a na nic neklikají. Někteří se [nebojí příkazového řádku](http://blog.javorek.net/2007/08/30/png-a-internet-explorer/#comment-2514).
+![obrázek](images/37.jpg){: .right }Většina z nich klikne na ikonku modrého Exploreru. Většina z nás klikne na ikonku Firefoxu. Někteří z nás spustí [Launchy](http://honzajavorek.cz/blog/launchy) a na nic neklikají. Někteří se [nebojí příkazového řádku](http://honzajavorek.cz/blog/png-a-internet-explorer).
 
 Firefox lze spouštět i z CLI, popřípadě jej obdařit parametry v zástupci. Co tím získáme? Můžeme vynutit nějaké chování nebo použít Firefox ve skriptech pro operační systém. Parametry samozřejmě fungují jak na Linuxu, tak ve Windows:
 

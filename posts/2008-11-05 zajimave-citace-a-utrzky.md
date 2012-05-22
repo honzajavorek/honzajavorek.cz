@@ -2,7 +2,7 @@ Title: Zajímavé citace a útržky
 Date: 2008-11-05 00:53:00
 Tags: seriózně, škola
 
-Pár nových příspěvků do [osobního lamera](http://blog.javorek.net/osobni-lamer/), několik světových mouder a zajímavých citátů. Prostě vše, co jsem po čase tak nějak posbíral…
+Pár nových příspěvků do [osobního lamera](http://honzajavorek.cz/blog/osobni-lamer), několik světových mouder a zajímavých citátů. Prostě vše, co jsem po čase tak nějak posbíral…
 
 ## Ze života
 

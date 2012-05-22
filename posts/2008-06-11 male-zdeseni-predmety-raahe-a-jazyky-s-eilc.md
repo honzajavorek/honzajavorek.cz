@@ -12,7 +12,7 @@ No ale přečetl jsem si pár stránek a poslal nějaký ten mail. A samozřejm
 
 > Dobry den, vyjizdite-li az v letnim semestru 2009, mate cas. Navstivte stranky OAMK a zjistete si deadline a veskere nalezitosti prihlasky, at nezapomenete podruhe :-).
 
-Asi si mne nepamatuje z [oné památné středy](http://blog.javorek.net/2008/02/17/erasmus/), kdy jsem jí svou přihlášku vrazil do rukou den po termínu… Ale opravovat ji, že to by bylo už mé třetí zapomenutí, se mi nechtělo
+Asi si mne nepamatuje z [oné památné středy](http://honzajavorek.cz/blog/erasmus), kdy jsem jí svou přihlášku vrazil do rukou den po termínu… Ale opravovat ji, že to by bylo už mé třetí zapomenutí, se mi nechtělo
 :D .
 
 ## Raahe

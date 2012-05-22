@@ -2,7 +2,7 @@ Title: Skvělý mikrofon pro laptopy
 Date: 2010-01-17 16:09:00
 Tags: práce, tech
 
-Je to už hafo járů, co sem si ve štatlu kópil fešný počítaci bazmek, jakésik [DELL Inspiron 6400](http://blog.javorek.net/rok-inspirovan/)… Když mi nefachčil Skype kvůli mikrofonu, zabrousil jsem do diskusí a zkusil zjistit proč. Nemohl jsem totiž ani přijít na to, kde se nachází. Jaké to bylo překvapení, když jsem zjistil, že žádný nemá :) . Zašel jsem do obchodu a koupil za kilo první mikrofon, co měli – takový ten klasický stolní. Ten však nedávno dosloužil a já musel na lov znovu. Co mi nabídli v obchodě mě mile překvapilo.
+Je to už hafo járů, co sem si ve štatlu kópil fešný počítaci bazmek, jakésik [DELL Inspiron 6400](http://honzajavorek.cz/blog/rok-inspirovan)… Když mi nefachčil Skype kvůli mikrofonu, zabrousil jsem do diskusí a zkusil zjistit proč. Nemohl jsem totiž ani přijít na to, kde se nachází. Jaké to bylo překvapení, když jsem zjistil, že žádný nemá :) . Zašel jsem do obchodu a koupil za kilo první mikrofon, co měli – takový ten klasický stolní. Ten však nedávno dosloužil a já musel na lov znovu. Co mi nabídli v obchodě mě mile překvapilo.
 
 ![obrázek](images/123.jpg)
 

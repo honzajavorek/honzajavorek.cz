@@ -2,7 +2,7 @@ Title: Ondro, díky! Jedu do Finska :D
 Date: 2008-02-21 11:24:00
 Tags: erasmus, škola
 
-Tak mi [to](http://blog.javorek.net/2008/02/17/erasmus/) začíná hezky :) . Já prostě zásadně nemůžu nic zažít konvenčním způsobem… ;)
+Tak mi [to](http://honzajavorek.cz/blog/erasmus) začíná hezky :) . Já prostě zásadně nemůžu nic zažít konvenčním způsobem… ;)
 
 ![obrázek](images/44.jpg)
 

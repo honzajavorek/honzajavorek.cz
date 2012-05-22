@@ -2,7 +2,7 @@ Title: Neupravujte menu, shodíte systém... ehm
 Date: 2010-09-12 10:31:00
 Tags: fail, linux, software, windows
 
-Jelikož mě [předchozí geekovina](http://blog.javorek.net/kdyz-je-na-disku-malo-mista/) od té doby co jsem ji napsal asi tak 10× znova zachránila, padám sem honem napsat další.
+Jelikož mě [předchozí geekovina](http://honzajavorek.cz/blog/kdyz-je-na-disku-malo-mista) od té doby co jsem ji napsal asi tak 10× znova zachránila, padám sem honem napsat další.
 
 Nevěřili byste, kam se můžete v GNOME dostat pouhou editací menu. Přestože mám GNOME a Linux rád, nebudu zastírat, že tohle je naprostá idiocie systému. Od začátku: Zdálo se mi, že nemám menu pro aplikace až tolik hezké a že bych mohl pár položek přejmenovat a nějaké vyházet. To jsem udělal a následně mi zkolaboval systém a při spuštění se nenačtaly okraje okýnek. Nedařilo se mi za boha najít příčinu, restartoval jsem několikrát celý okenní manažer, Metacity, přeinstalovával co se dalo. Bez reakce. Jediné co pomáhalo bylo dát Metacity do programů po spuštění, ale to bylo dost blbé řešení, něco jako kdybych díru na autě zalepil izolepou.
 

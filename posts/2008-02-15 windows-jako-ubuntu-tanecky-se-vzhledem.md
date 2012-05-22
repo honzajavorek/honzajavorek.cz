@@ -2,7 +2,7 @@ Title: Windows jako Ubuntu, tanečky se vzhledem
 Date: 2008-02-15 15:22:00
 Tags: hračičkování, linux, software, windows
 
-O vánocích jsem díky [Tangu](http://tango.freedesktop.org/) trochu [zatočil se svým operačním systémem](http://blog.javorek.net/2007/12/28/tango-s-okny/) a sliboval jsem pokračování, v němž nastíním taneční kroky. Asi bych na to zapomínal dál, kdyby nepřišla jedna opravdová tanečnice a téma znova nenaťukla. Takže tenhle článek je tak trochu na přání a i proto vychází mimo běžnou středečně-nedělní periodu ;) .
+O vánocích jsem díky [Tangu](http://tango.freedesktop.org/) trochu [zatočil se svým operačním systémem](http://honzajavorek.cz/blog/tango-s-okny) a sliboval jsem pokračování, v němž nastíním taneční kroky. Asi bych na to zapomínal dál, kdyby nepřišla jedna opravdová tanečnice a téma znova nenaťukla. Takže tenhle článek je tak trochu na přání a i proto vychází mimo běžnou středečně-nedělní periodu ;) .
 
 ![obrázek](images/39.jpg)
 

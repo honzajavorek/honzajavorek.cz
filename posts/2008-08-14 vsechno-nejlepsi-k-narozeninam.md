@@ -14,7 +14,7 @@ Včera měl můj blogísek rok. Za tu dobu na něm vyšlo přes 140 příspěvk
 -   archiv jsem udělal na samostatné stránce
 -   RSS je přístupněji hned v hlavičce webu
 -   komentáře nyní umožňují náhled
--   obrázky by se (asi) měly otvírat v lightboxu… ale žádné takové tu teď nemám :D mám: [http://blog.javorek.net/kam-beham/](http://blog.javorek.net/kam-beham/)
+-   obrázky by se (asi) měly otvírat v lightboxu… ale žádné takové tu teď nemám :D mám: [http://honzajavorek.cz/blog/kam-beham](http://honzajavorek.cz/blog/kam-beham)
 -   funguje zvýrazňování syntaxe v úsecích kódu (pouze u nových článků)
 -   změnil jsem kompletně design
 
@@ -28,7 +28,7 @@ Dodělám jindy, budete to muset přežít. I ten blog je jen zábava a stačí
 -   přidat více ikonek na místa, kde se hodí
 -   otestovat web v jakémkoliv jiném prohlížeči než Mozilla Firefox 3 (pozn.: až si tohle budu potom někdy číst, nesmím zapomenout nastavit třídě .entry min-height pro IE6)
 -   dát někam přehledně všechny odkazy na RSS (blog, komentáře blogu, komentáře článku)
--   otestovat lightbox ([http://blog.javorek.net/kam-beham/](http://blog.javorek.net/kam-beham/))
+-   otestovat lightbox ([http://honzajavorek.cz/blog/kam-beham](http://honzajavorek.cz/blog/kam-beham))
 -   uklidit v CSS, pokusit se to udělat jako extenzi stylu pro [www.javorek.net](http://www.javorek.net), předělat ten příšerný mišmaš mého CSS a tříd WP, no prostě… předělat to, ať se to dá použít i za měsíc, až nebudu vědět co je co :)
 
 ## Čím si nejsem jistý

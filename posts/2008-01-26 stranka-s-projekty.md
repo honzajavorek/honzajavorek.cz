@@ -10,7 +10,7 @@ Tak jsem dnes spustil část webu zaměřenou na své projekty. Najdete ji na ad
 
 Designově to není nic geniálního, ale ani nemělo být. Snažil jsem se najít nějaký **univerzální vzhled**, jenž bude spíše „užitkový“ než krásný. Ten, co jsem vymyslel se mi docela líbí (mám rád čtverečkovaný papír :D ) a je jednoduchý, takže mi dovoluje zůstat líný. A to je důležité, protože většinou nemám moc náladu vytvářet složité projektové weby například k aplikacím v php, které jsem napsal za pár hodin.
 
-Na web jsem natlačil všechny své dosavadní projekty. Svůj „domeček“ tam má trio Espaňa (ohledně níž jsem se [stále nerozhodl](http://blog.javorek.net/2008/01/20/espana-vsem/)), [Hlad](http://hlad.javorek.net) a [táborový web](http://www.taborprekvapeni.net), doplněné o malé „odpolední“ aplikace jako jsou [SMS na T-Mobile](http://blog.javorek.net/2007/10/10/nove-reference-a-sms-na-t-mobile-zdarma/) nebo [morseovka](http://blog.javorek.net/2007/09/01/morseovka/).
+Na web jsem natlačil všechny své dosavadní projekty. Svůj „domeček“ tam má trio Espaňa (ohledně níž jsem se [stále nerozhodl](http://honzajavorek.cz/blog/espana-vsem)), [Hlad](http://hlad.javorek.net) a [táborový web](http://www.taborprekvapeni.net), doplněné o malé „odpolední“ aplikace jako jsou [SMS na T-Mobile](http://honzajavorek.cz/blog/nove-reference-a-sms-na-t-mobile-zdarma) nebo [morseovka](http://honzajavorek.cz/blog/morseovka).
 
 ## Joss
 

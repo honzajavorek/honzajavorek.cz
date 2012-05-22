@@ -2,7 +2,7 @@ Title: Nový laptop?
 Date: 2010-10-25 16:08:00
 Tags: tech
 
-Můj [miláček](http://blog.javorek.net/rok-inspirovan/) se blíží ke konci své kariéry. A to jsem mu pořád nestihl vymyslet to jméno! Abych navázal na odkazovaný článek, momentálně začíná můj prompt v konzoli `vaahtera`, ale to opravdu nepoužívám k oslovení ani k volání :) . Proč ho čeká odchod do důchodu? Kdo bude jeho nástupcem?
+Můj [miláček](http://honzajavorek.cz/blog/rok-inspirovan) se blíží ke konci své kariéry. A to jsem mu pořád nestihl vymyslet to jméno! Abych navázal na odkazovaný článek, momentálně začíná můj prompt v konzoli `vaahtera`, ale to opravdu nepoužívám k oslovení ani k volání :) . Proč ho čeká odchod do důchodu? Kdo bude jeho nástupcem?
 
 ## Život s penzistou
 

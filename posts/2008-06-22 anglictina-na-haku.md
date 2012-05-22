@@ -2,7 +2,7 @@ Title: Angličtina na háku
 Date: 2008-06-22 00:36:00
 Tags: anglicky, seriózně, škola
 
-Kulturní vložka. No – ano, máte pravdu. Je to jasné. Nemám o čem psát! Sahám na dno! Ano, uchyluji se k tomu, že vykrádám svá *školní díla* a prokládám je básničkami, aby na blogu byl alespoň nějaký provoz. Nejdříve [seminárka o Clavellovi](http://blog.javorek.net/2008/06/14/sogun/)… Hrozné, že? ;)
+Kulturní vložka. No – ano, máte pravdu. Je to jasné. Nemám o čem psát! Sahám na dno! Ano, uchyluji se k tomu, že vykrádám svá *školní díla* a prokládám je básničkami, aby na blogu byl alespoň nějaký provoz. Nejdříve [seminárka o Clavellovi](http://honzajavorek.cz/blog/sogun)… Hrozné, že? ;)
 
 Dneska se podělím o kus textu, který mi je líto jen tak vyhodit a donutili mne ho napsat v angličtině jako dílo na téma *pojednání o čemkoliv* v předepsaném stylu *prezentace*. S Lojzou jsme zapíchli prst do slovníku, čímž jsme získali náhodné téma a jali se tvořit jako obvykle improvizovanou kravinu hodnou téměř i středoškolského intelektu – tak jak jsme byli zvyklí… On psal o *sí ou es*, tedy o Completely Ordinary Stone, já o červech. Nevím, jestli si lektorka do konce semestru vůbec uvědomila, jak vážně její předmět bereme, ale věřím, že pojala určitá podezření, když si Lojza na zkoušce (nutno podotknouti, že byl ovlivněn jistým počtem piv, jež jsme noc předtím požili) jezdil po lavici s angličáky…
 

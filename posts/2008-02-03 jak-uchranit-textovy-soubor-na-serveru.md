@@ -26,4 +26,4 @@ Pro XML by mělo fungovat něco podobného.
     ::xml
     <!-- <?php exit; ?> --> <conf> <const name="leve">A</const> <const name="prave">C</const> </conf>
 
-Samozřejmě, pokud použijete XML deklaraci, přijde vám na pomoc také [parse error](http://blog.javorek.net/2007/12/20/xml-deklarace-a-php/). **Nelze se však na něj spoléhat** a určitě je dobré vše pojistit oním PHP v komentáři, protože parse error může, ale nemusí nastat (nedojde ke kolizi, když má vaše PHP direktiva `short_open_tag` hodnotu `0`).
+Samozřejmě, pokud použijete XML deklaraci, přijde vám na pomoc také [parse error](http://honzajavorek.cz/blog/xml-deklarace-a-php). **Nelze se však na něj spoléhat** a určitě je dobré vše pojistit oním PHP v komentáři, protože parse error může, ale nemusí nastat (nedojde ke kolizi, když má vaše PHP direktiva `short_open_tag` hodnotu `0`).

@@ -2,7 +2,7 @@ Title: Ultralight mezi PHP frameworky: Joss
 Date: 2008-08-20 07:54:00
 Tags: joss, php, projekty
 
-![obrázek](images/64.jpg){: .right }Před časem jsem se na blogu zmínil, že se [narodil Joss](http://blog.javorek.net/narodil-se-joss/). Dneska bych chtěl konečně napsat, co [Joss](http://code.google.com/p/joss-cms/) je, proč se narodil a proč byste si ho měli stáhnout a používat. Od 14. srpna navíc ve [zcela nové verzi 1.1.1](http://joss-cms.googlecode.com/files/joss1.1.1.zip), která přináší opravy a mnohé nové funkce a pokud jste něco vyvinuli na starém Jossu, asi vám dá trochu do těla (**není** zpětně kompatibilní).
+![obrázek](images/64.jpg){: .right }Před časem jsem se na blogu zmínil, že se [narodil Joss](http://honzajavorek.cz/blog/narodil-se-joss). Dneska bych chtěl konečně napsat, co [Joss](http://code.google.com/p/joss-cms/) je, proč se narodil a proč byste si ho měli stáhnout a používat. Od 14. srpna navíc ve [zcela nové verzi 1.1.1](http://joss-cms.googlecode.com/files/joss1.1.1.zip), která přináší opravy a mnohé nové funkce a pokud jste něco vyvinuli na starém Jossu, asi vám dá trochu do těla (**není** zpětně kompatibilní).
 
 ## Specialista na malé weby
 

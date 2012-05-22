@@ -10,7 +10,7 @@ Pěkné na tom je, že když si člověk něco takového píše, docela dost se 
 
 Pokud jste se sem přišli dovědět jak se učit na zkoušky místo koukání na [Rosettskou desku](https://cs.wikipedia.org/wiki/Rosettská_deska), tak o tom jsem už psal dříve:
 
--   [Jak se učit](http://blog.javorek.net/jak-se-ucit/)
--   [Jak se učit, post scriptum](http://blog.javorek.net/jak-se-ucit-post-scriptum/)
+-   [Jak se učit](http://honzajavorek.cz/blog/jak-se-ucit)
+-   [Jak se učit, post scriptum](http://honzajavorek.cz/blog/jak-se-ucit-post-scriptum)
 
 Přeji úspěšné zkouškové :)

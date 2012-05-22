@@ -9,7 +9,7 @@ Než začnete odpovídat na otázku, kterou nepoložím a předhánět se v ná
 Mno, vzhled vyšel už z de facto druhého návrhu a podle toho asi trochu vypadá. Podepsalo se na něm také to, že jsem nikdy design pro blog dříve nedělal. Popravdě, strávil jsem koukáním do té zelené barvy už tolik hodin, že bych to teď nejraději **zmuchlal a zahodil**, ale protože si zase trochu přecejen vážím ušlého času a navíc bych si nerad muchlal (a už vůbec někam házel) displej, nechám už to tak. Jelikož se k nějakému redesignu či úpravám asi hned tak nedostanu, nezbývá nám, než si **zvyknout**
 ;) .
 
-Mělo to vypadat ještě trošku jinak, ale to až časem, teď už nemám náladu. **Odstranil jsem** poslední písničky z [Last.fm](http://blog.javorek.net/2007/08/15/internetova-radia-noveho-tisicileti/), protože stejně nebyly poslední a navíc mi kvůli nim na web chodili zoufalci, kteří hledali v Googlu třeba *U2*, *Green Day mp3*, apod. **Přidal jsem** vyhledávání a zavedl podporu [Gravatarů](http://site.gravatar.com/).
+Mělo to vypadat ještě trošku jinak, ale to až časem, teď už nemám náladu. **Odstranil jsem** poslední písničky z [Last.fm](http://honzajavorek.cz/blog/internetova-radia-noveho-tisicileti), protože stejně nebyly poslední a navíc mi kvůli nim na web chodili zoufalci, kteří hledali v Googlu třeba *U2*, *Green Day mp3*, apod. **Přidal jsem** vyhledávání a zavedl podporu [Gravatarů](http://site.gravatar.com/).
 
 Je tu ještě dost věcí, které by potřebovaly doladit. Navíc, WordPress je **tak trochu prase** a místo nějakých šablon má jakýsi mnoholičný lektvar z PHP a XHTML. Ale co. Všechno je jednou poprvé a až zase budu někdy dělat facelift, bude to třeba vypadat líp.
 

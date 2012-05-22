@@ -4,7 +4,7 @@ Tags: erasmus, finsko, oulu
 
 Takový malý článeček o Oulu. Shrne nějaké první a pozdější dojmy, ale nečekejte od něj, že vám v několika větách přiblíží kouzlo města. To je celkem těžké hlavně proto, že **v něm žiji**. Pokud chcete vědět, o čem Oulu je, nejlepší cesta jak to zjistit je **cesta do Finska**.
 
-Oulu je velké a placaté. **Velké** proto, že na místě, kde by u nás postavili sídliště pro 1000 lidí, je tady pár chalup a les. Na rozloze Prahy má Oulu počet obyvatel asi někde mezi Olomoucí a Plzní. **Placaté** proto, že nejvyšší bod, kam se můžete dostat na kole nebo autem, je silniční most přes železnici (z něj je drtivá většina mých fotek celkově na Oulu). Pokud se po Oulu rozhlédnete, uvidíte asi jen **tři hlavní výškové budovy** – katedrálu ve městě, věž muzea [Tietomaa](http://blog.javorek.net/retrospektivni-kousek/) a komíny papíren.
+Oulu je velké a placaté. **Velké** proto, že na místě, kde by u nás postavili sídliště pro 1000 lidí, je tady pár chalup a les. Na rozloze Prahy má Oulu počet obyvatel asi někde mezi Olomoucí a Plzní. **Placaté** proto, že nejvyšší bod, kam se můžete dostat na kole nebo autem, je silniční most přes železnici (z něj je drtivá většina mých fotek celkově na Oulu). Pokud se po Oulu rozhlédnete, uvidíte asi jen **tři hlavní výškové budovy** – katedrálu ve městě, věž muzea [Tietomaa](http://honzajavorek.cz/blog/retrospektivni-kousek) a komíny papíren.
 
 Oulu je uklizené a příjemné. Bez sněhu jsem jej pořádně ještě neviděl, ale za dob bílých měsíců byly cesty a cyklistické stezky, jichž je tady kolem 600 km, shrabovány **pravidelně vždy brzo ráno**.
 

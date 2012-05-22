@@ -2,7 +2,7 @@ Title: Jak se učit, post scriptum
 Date: 2008-01-30 01:26:00
 Tags: management, škola
 
-Konec zkouškového! [První článek o učení](http://blog.javorek.net/2007/11/17/jak-se-ucit/) jsem psal v půlce semestru a zahrnoval spíše nějaké základní postřehy, jež by zřejmě mohly pomoci. Nyní mám v rukávu postupy, jež mne **dovedly ke zdárným výsledkům**. Tedy asi spíše k výsledkům než zdárným, ale to by přeci neznělo tak hezky a důvěryhodně ;) .
+Konec zkouškového! [První článek o učení](http://honzajavorek.cz/blog/jak-se-ucit) jsem psal v půlce semestru a zahrnoval spíše nějaké základní postřehy, jež by zřejmě mohly pomoci. Nyní mám v rukávu postupy, jež mne **dovedly ke zdárným výsledkům**. Tedy asi spíše k výsledkům než zdárným, ale to by přeci neznělo tak hezky a důvěryhodně ;) .
 
 ## Nekoukejte do světla
 
@@ -34,7 +34,7 @@ Nevím jak u jiných, ale po sprše se mi vždy **chtělo spát**, ať už byla
 
 ## Hýbejte se!
 
-**Fyzická zátěž** uleví vašemu mozku, posílí tělo a prokrví, nabudí vás, budete **lépe myslet**. Nebudete spát. Jděte si [zaběhat](http://blog.javorek.net/2007/08/16/run-forrest-run/) (ta hodinka vás nezabije), udělejte si v přestávce pár dřepů nebo kliků a myslete na jiné věci než třeba na rovnice. Protáhněte si tělo, **zaskákejte na oblíbený song** a pak se vraťte k učení :) .
+**Fyzická zátěž** uleví vašemu mozku, posílí tělo a prokrví, nabudí vás, budete **lépe myslet**. Nebudete spát. Jděte si [zaběhat](http://honzajavorek.cz/blog/run-forrest-run) (ta hodinka vás nezabije), udělejte si v přestávce pár dřepů nebo kliků a myslete na jiné věci než třeba na rovnice. Protáhněte si tělo, **zaskákejte na oblíbený song** a pak se vraťte k učení :) .
 
 ## Jezte a pijte
 

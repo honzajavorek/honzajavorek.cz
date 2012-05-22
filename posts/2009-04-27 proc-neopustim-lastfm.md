@@ -2,8 +2,8 @@ Title: Proč neopustím Last.fm
 Date: 2009-04-27 17:59:00
 Tags: hračičkování, názory, net, rádio, software, ušima
 
-Po tom, co [Last.fm](http://blog.javorek.net/internetova-radia-noveho-tisicileti/)
-zavedlo [zpoplatnění rádia](http://blog.javorek.net/nejsi-z-usa-nemas-narok/), by se dalo čekat, že se na něj vyprdnu. **A neudělám to.** Proč?
+Po tom, co [Last.fm](http://honzajavorek.cz/blog/internetova-radia-noveho-tisicileti)
+zavedlo [zpoplatnění rádia](http://honzajavorek.cz/blog/nejsi-z-usa-nemas-narok), by se dalo čekat, že se na něj vyprdnu. **A neudělám to.** Proč?
 
 Našel jsem **několik dobrých důvodů**, proč mi Last.fm do života něco přináší i přesto, že v něm už pro mě není rádio. Ona i tak je to poměrně zajímavá služba pro hudebního nadšence jako jsem já…
 

@@ -2,7 +2,7 @@ Title: Formuláře a cesta. Oulu se blíží!
 Date: 2008-11-18 19:05:00
 Tags: erasmus, škola
 
-Moje frekvence vydávání článků na blogu se blíží samopalové kadenci [markophova blogu](http://blog.markoph.net/). Zeje to tu prázdnotou, sem tam akorát přihodím nějaký ten [odpad](http://blog.javorek.net/zajimave-citace-a-utrzky/), aby bylo vidět, že mě nadobro neunesli [teoretičtí fyzikové](http://www.csfd.cz/film/234260-big-bang-theory-the/), že žiju. Nedá se nic dělat, v těchto měsících jsou články méně časté a trochu delší.
+Moje frekvence vydávání článků na blogu se blíží samopalové kadenci [markophova blogu](http://blog.markoph.net/). Zeje to tu prázdnotou, sem tam akorát přihodím nějaký ten [odpad](http://honzajavorek.cz/blog/zajimave-citace-a-utrzky), aby bylo vidět, že mě nadobro neunesli [teoretičtí fyzikové](http://www.csfd.cz/film/234260-big-bang-theory-the/), že žiju. Nedá se nic dělat, v těchto měsících jsou články méně časté a trochu delší.
 
 Konec října, termín pro *application* na můj půlrok strávený ve Finsku, už dávno v kalendáři zmizel pod náporem dalších dní. Jak se to má s Finskem? Dá se říci, že jsem vše stihl, vše zařídil a teď nakupuju věci na polární výpravu, sháním jízdenky, zjišťuji podrobnosti. A čekají mě zkoušky. Uff…
 

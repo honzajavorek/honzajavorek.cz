@@ -10,7 +10,7 @@ K jádru věci… Jednou dávno se mi stalo, že jsem stál na můstku u zast�
 
 ## Odstavec o divokých nákupech
 
-Jiný příběh. Jako obyvatel kolejí nemívám přeplněnou ledničku. Občas se ale stane, že se vybavím na delší dobu, že si koupím pochutin, [otravin](http://blog.javorek.net/2007/10/12/ziva-polivka/) a potravin více a že je tam toho dost. Běžně jsem samozřejmě rád za každý kus jídla, který najdu… Když je ale lednička plná, stane se někdy zvláštní věc. Otevřu ji a vybírám si tak dlouho co budu jíst, až prostě zjistím, že si vybrat **nedokážu**. Zavřu ji a řeknu si, že si vyberu později a udělám jídlo později, když mi to tedy teď nějak nejde.
+Jiný příběh. Jako obyvatel kolejí nemívám přeplněnou ledničku. Občas se ale stane, že se vybavím na delší dobu, že si koupím pochutin, [otravin](http://honzajavorek.cz/blog/ziva-polivka) a potravin více a že je tam toho dost. Běžně jsem samozřejmě rád za každý kus jídla, který najdu… Když je ale lednička plná, stane se někdy zvláštní věc. Otevřu ji a vybírám si tak dlouho co budu jíst, až prostě zjistím, že si vybrat **nedokážu**. Zavřu ji a řeknu si, že si vyberu později a udělám jídlo později, když mi to tedy teď nějak nejde.
 
 ## Odstavec, který je tu zbytečně a pouze proto, abyste mi záviděli
 
@@ -22,7 +22,7 @@ Jsem mladý. Zdravý. Silný a pozitivně laděný. Všichni nejsou mladí, zdra
 
 ## A špetka rozmarných povzdechů
 
-Mám **takové možnosti**… A přitom nevím co s nimi. Stojím na místě, v agonii, zaseknutý. Neumím si vybrat. Stále hovořím a píšu o tom, [jak si pohrát s životem](http://blog.javorek.net/category/moje/), ale nedokážu realizovat to, co bych vlastně v srdci chtěl. Selhávám. Předstírám nadšení a optimismus, ale přitom mě deptají melancholické stavy, způsobené kompletní nekonzistencí činů. A život mi utíká. A **šalina ujíždí**.
+Mám **takové možnosti**… A přitom nevím co s nimi. Stojím na místě, v agonii, zaseknutý. Neumím si vybrat. Stále hovořím a píšu o tom, [jak si pohrát s životem](http://honzajavorek.cz/blog/category), ale nedokážu realizovat to, co bych vlastně v srdci chtěl. Selhávám. Předstírám nadšení a optimismus, ale přitom mě deptají melancholické stavy, způsobené kompletní nekonzistencí činů. A život mi utíká. A **šalina ujíždí**.
 
 ## Sice vás to nezajímá, ale přece je to tak dojemné…
 
@@ -36,6 +36,6 @@ Co cítím? Že přes veškeré své možnosti nedělám pořádně nic, co by m
 
 ## Odstavec do počtu
 
-Až mě tedy zase někdy, mí blízcí, uvidíte jak dělám to, co nechci, zkuste mě na to prosím upozornit ;) . Některým se to už nějakou dobu naštěstí daří. Někdy sice pozdě, ale přece. Ono totiž, jak jsem [tady už psal](http://blog.javorek.net/2007/11/02/problemy-neexistuji-iv/#comment-53), člověka nelze měnit, když sám nechce. Mějte tedy se mnou trpělivost a vydržte to do té doby, než pochopím :) .
+Až mě tedy zase někdy, mí blízcí, uvidíte jak dělám to, co nechci, zkuste mě na to prosím upozornit ;) . Některým se to už nějakou dobu naštěstí daří. Někdy sice pozdě, ale přece. Ono totiž, jak jsem [tady už psal](http://honzajavorek.cz/blog/problemy-neexistuji-iv), člověka nelze měnit, když sám nechce. Mějte tedy se mnou trpělivost a vydržte to do té doby, než pochopím :) .
 
 A propos, kdo vám proboha řekl, že *problémy neexistují*?! :D

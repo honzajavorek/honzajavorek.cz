@@ -11,7 +11,7 @@ Zapsal jsem si tyto **předměty, jež tu budu studovat**:
 -   **Project Management Course** – Měl jsem mít dnes, ale prostě se to nekonalo a nikdo mi nebyl schopen vysvětlit proč. Tak třeba za týden :) .
 -   **English 2 Course** – Angličtina. Původně jsem místo ní měl English and Multicultural Skills, ale bilo se mi to s XML. Na této angličtině bude míň cizinců, ale více Finů, no snad ne i *finnglish*. Příležitost pro kontakt s místními :) .
 
-No a víc nic. Že je to málo? No, je, ale milé čtenářky, já u toho ještě dělám [bakalářku](http://blog.javorek.net/bakalarka/)! :) Jinak svou školu (School of Engeneering) nemám daleko, pěšky tam jsem za 8–10 minut. Na podnikatelku to je kousek dál, tam by se mi asi nechtělo jinak než na kole.
+No a víc nic. Že je to málo? No, je, ale milé čtenářky, já u toho ještě dělám [bakalářku](http://honzajavorek.cz/blog/bakalarka)! :) Jinak svou školu (School of Engeneering) nemám daleko, pěšky tam jsem za 8–10 minut. Na podnikatelku to je kousek dál, tam by se mi asi nechtělo jinak než na kole.
 
 **Změna v rozvrhu** proběhla celkem hladce, šlo jen o domluvu po e-mailech s Bastianem, koordinátorem. Budu pak muset samozřejmě **změnit LA** a poslat ho na VUT… Brr…
 
@@ -37,6 +37,6 @@ Přemístili jsme se do místnosti s počítači a dělali cvičení s XML, co
 
 ## Sami Niemelä a Katja
 
-Protože mi dneska zrušili hodinu project managementu, rozhodl jsem se **zajet k ubytovacímu guruovi jménem Sami Niemelä**, do budovy, která by se u nás asi jmenovala rektorát. Už jsem tam jednou byl, ale to tam zase nebyl on. Výhodou bylo, že jsem věděl kde to je. Dojel jsem tam, potkal jsem tam celou skupinu ostatních Erasmáků (popravdě, věděl jsem, že tam budou), vyplnil jsem formuláře a zjistil, že platit kolejné mám až někdy **v únoru**. Prima :) . Připletla se tam i **Katja**, kterou jsem poznal podle fotky (utkvěla mi v hlavě). Příjemná, [opravdu sluníčko](http://blog.javorek.net/prvni-krucky-do-oulu/#comment-3805) :) . Ale Bastian je dobrá náhrada :) .
+Protože mi dneska zrušili hodinu project managementu, rozhodl jsem se **zajet k ubytovacímu guruovi jménem Sami Niemelä**, do budovy, která by se u nás asi jmenovala rektorát. Už jsem tam jednou byl, ale to tam zase nebyl on. Výhodou bylo, že jsem věděl kde to je. Dojel jsem tam, potkal jsem tam celou skupinu ostatních Erasmáků (popravdě, věděl jsem, že tam budou), vyplnil jsem formuláře a zjistil, že platit kolejné mám až někdy **v únoru**. Prima :) . Připletla se tam i **Katja**, kterou jsem poznal podle fotky (utkvěla mi v hlavě). Příjemná, [opravdu sluníčko](http://honzajavorek.cz/blog/prvni-krucky-do-oulu) :) . Ale Bastian je dobrá náhrada :) .
 
 Rozloučili se s námi a řekli, že se těší na zítra. To je totiž „Welcome day“ pro Erasmáky s **celodenním programem** a oni ho zajišťují. My jsme se poté odebrali ke kolům a **rozprchli po Oulu**. Někdo do banky, někdo do obchodu, do tureckého fast foodu, někdo zpět na Otokylä (koleje). Zjistil jsem, že díky mým projížďkám na kole a samotářskému začátku se v některých věcech a hlavně v Oulu vyznám o trošku více než ostatní. Taky dobře :) .

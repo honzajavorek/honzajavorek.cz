@@ -1,13 +1,14 @@
 # TODO
 
-- Migrate links. Find and replace all occurances of blog.javorek.net... Handle redirects.
 - Try to adjust standalone image generation so it's rendered inside a DIV (FIGURE).
 - Find out how to implement archives: archives.html vs http://lucumr.pocoo.org/archive/
 - Prepare minimal design. Remove all unnecessary stuff.
 - Make a Pelican theme.
 - Custom 404 page.
-- Script (library?) for typographic changes -> to →, -- to –, quotes, hellip, etc. Make it a hook before publishig.
+- Script (library?) for typographic changes -> to →, -- to –, quotes, hellip, etc. Make it a hook before publishig. typogrify?
 - Style paragraphs with indent if the first sentence doesn't contain `<br>`
+- Unify www.honzajavorek.cz to honzajavorek.cz only, everywhere.
+- Handle redirects from the original blog to the new one.
 - Write new articles. Love the world.
 
 ## Design

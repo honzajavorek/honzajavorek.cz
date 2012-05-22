@@ -4,7 +4,7 @@ Tags: seriózně, tech
 
 ![obrázek](images/94.jpg){: .right }Stále ještě jsem majitelem **Evolve Base + 2GB**, mp3 přehrávače, který byl ve své době docela jedinečný tím, že jej šlo rozšířit Mini SD kartou, a tím, že měl zcela psychedelické ovládání. Dnes už toho má za sebou opravdu hodně a vozím jej s sebou někam jen výjimečně. Nový ale v plánu nemám, protože teď nemám pro mp3 přehrávač využití. Ne že by jej něco nahradilo (Androidu by se hned vybila baterka), ale spíš že takto hudbu už moc neposlouchám, raději si při přesunech čtu nebo spím.
 
-Po nějaké době od pořízení jsem na něm [pozoroval závady a proto jsem přistoupil k reklamaci](http://blog.javorek.net/evolve/). Dělám pořádky v dokumentech a tak jsem tu reklamaci objevil:
+Po nějaké době od pořízení jsem na něm [pozoroval závady a proto jsem přistoupil k reklamaci](http://honzajavorek.cz/blog/evolve). Dělám pořádky v dokumentech a tak jsem tu reklamaci objevil:
 
 ## Hezký den,
 

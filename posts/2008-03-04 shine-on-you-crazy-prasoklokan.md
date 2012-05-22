@@ -2,7 +2,7 @@ Title: Shine On You Crazy Prasoklokan
 Date: 2008-03-04 13:46:00
 Tags: ušima, zážitky
 
-Tak je [to](http://blog.javorek.net/2008/01/11/the-australian-pink-floyd-show-v-ostrave/) za mnou. Jaký byl nedělní koncert The Australian Pink Floyd Show? Těžko říct. Některé věci nelze popsat slovy :) . A pocity?
+Tak je [to](http://honzajavorek.cz/blog/the-australian-pink-floyd-show-v-ostrave) za mnou. Jaký byl nedělní koncert The Australian Pink Floyd Show? Těžko říct. Některé věci nelze popsat slovy :) . A pocity?
 
 ![obrázek](images/52.jpg)
 

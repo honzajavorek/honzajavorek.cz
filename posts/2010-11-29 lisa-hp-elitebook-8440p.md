@@ -2,7 +2,7 @@ Title: Lisa: HP EliteBook 8440p
 Date: 2010-11-29 15:09:00
 Tags: hračičkování, linux, práce, tech
 
-Pořídil jsem si [nový laptop](http://blog.javorek.net/novy-laptop/). Jak jste si přečetli v nadpisu, je to HP EliteBook 8440p a na rozdíl od předešlého jsem se rozhodl mu dát jméno a to hned. Nazval jsem ho *Lisa*, protože je na leasing :) Mám rád jména, která se nabídnou tak nějak sama, třeba *Netvor* pro moje kolo.
+Pořídil jsem si [nový laptop](http://honzajavorek.cz/blog/novy-laptop). Jak jste si přečetli v nadpisu, je to HP EliteBook 8440p a na rozdíl od předešlého jsem se rozhodl mu dát jméno a to hned. Nazval jsem ho *Lisa*, protože je na leasing :) Mám rád jména, která se nabídnou tak nějak sama, třeba *Netvor* pro moje kolo.
 
 Co se mi na něm líbí? Že je nový, odolný, výkonný a fajn. Líbí se mi matný displej, lampička nad klávesnicí, opravdu odolná konstrukce a zajímavá výbava. Nerozplývám se nad procesorem nebo grafickou kartou, protože jim nerozumím a ani rozumět nechci. Oplývám se naopak nad tím, jak svižně systém jede na RAMku a na baterku, i když tu výdrž bych si asi představoval lepší. No a s tou RAMkou… můžu mít otevřené Eclipse, Firefox, virtuály, no prostě kdovíco a jede to parádně, přičemž System Monitor mi navíc dává jasně najevo, že swap oddíl jsem na disku vyhrazoval prakticky zbytečně. Tímto povídáním o paměti zdravím hlavně majitele strojů Mac, především pak [@svecmichal](http://twitter.com/svecmichal).
 
@@ -10,7 +10,7 @@ Hned jak jsem si laptop vezl z Prahy, nainstaloval jsem do něj ve žlutém aut
 
 ## Návody
 
-**Jak [zprovoznit touchpad](http://blog.javorek.net/hamachi-na-ubuntu/) v novém Ubuntu, kde už není HAL:**
+**Jak [zprovoznit touchpad](http://honzajavorek.cz/blog/hamachi-na-ubuntu) v novém Ubuntu, kde už není HAL:**
 
 -   přečíst si [tento post](http://newyork.ubuntuforums.org/showthread.php?t=1603683)
 -   a zapamatovat si, že magická formule zní `synclient RTCornerButton=2 TopEdge=3000`
@@ -36,7 +36,7 @@ Hned jak jsem si laptop vezl z Prahy, nainstaloval jsem do něj ve žlutém aut
 
 **Jak rozjet Hamachi:**
 
--   viz [můj návod](http://blog.javorek.net/hamachi-na-ubuntu/)
+-   viz [můj návod](http://honzajavorek.cz/blog/hamachi-na-ubuntu)
 
 **Jak vypnout notifikace statusů v Pidginovi:**
 
