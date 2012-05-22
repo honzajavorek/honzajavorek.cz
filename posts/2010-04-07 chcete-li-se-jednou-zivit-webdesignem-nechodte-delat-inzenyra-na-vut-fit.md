@@ -6,7 +6,7 @@ Vyvrcholení mého rozhořčení. Zatímco v **bakalářském studiu na [FIT VU
 
 ## VUT FIT má magisterské obory na prd
 
-Nejprve můj [tweet o bilanci předmětů](https://twitter.com/littlemaple/status/11262501696).
+Nejprve můj [tweet o bilanci předmětů](https://twitter.com/honzajavorek/status/11262501696).
 
 Na fakultě se letos otevřela [spousta nových oborů](http://www.fit.vutbr.cz/study/msc/program-l.php?id=6). K webdesignu se blíží obor Informační systémy, ale jeho [stavba](http://www.fit.vutbr.cz/study/msc/stplan-l.php?id=91) je tristní. IS samotných se týkají Pokročilé databázové systémy, Management projektů, Analýza a návrh informačních systémů, Bezpečnost informačních systémů, Pokročilé informační systémy. 5 předmětů z 15 povinných. Co je proboha ten zbytek?
 
@@ -24,8 +24,8 @@ Co nepoznáte z názvů předmětů je navíc to, že většina kurzů o webu 
 
 Moje tweety budou asi hovořit za vše:
 
--   [Seminář o webdesignu na FI MUNI](http://twitter.com/littlemaple/statuses/11758034097)
--   [Přednášky na FI MUNI](http://twitter.com/littlemaple/statuses/11327777859)
+-   [Seminář o webdesignu na FI MUNI](http://twitter.com/honzajavorek/statuses/11758034097)
+-   [Přednášky na FI MUNI](http://twitter.com/honzajavorek/statuses/11327777859)
 
 Bohužel je to všechno z FI MUNI, ale dění na pražských školách tolik nesleduji a přijde mi to jako „fail“ i z toho důvodu, že mezi FITem a FI je tady v Brně určitá rivalita. Zatímco na bakalářském studiu, jak jsem naznačil v úvodu, FIT zřejmě vyhrává (a pěkně to [popisuje Martin Janda](http://oldblog.martinjanda.com/ostatni/mu-fi-vs-vut-fit/)), magisterské je pro člověka jako já jednoznačně průšvih.
 

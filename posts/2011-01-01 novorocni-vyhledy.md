@@ -26,7 +26,7 @@ Tags: běh, ego, názory, projekty, sport, škola, zážitky
 -   pařil jsem v Praze tak, že jsem dal dohromady rozhádané kamarády a pak jsem ve slamáku chodil v šest ráno po vylidněném Pražském hradu a Karlově mostě
 -   byl jsem na BarCampu, semináři o webdesignu, WebExpu, Google Developer Day
 -   byl jsem [na svojí první dřevárně](http://lumenn.blog.cz/1006/divci-valka-zazitky-fotky) (a zatím poslední) a přežil jsem ji
--   odstěhoval jsem se z kolejí a poprvé jsem bydlel na privátě, nejdříve dočasně a pak natrvalo… natrvalo jsem opustil Královo Pole a vůbec tu svou osudovou stranu Brna, vzal jsem si k sobě už definitivně v podstatě veškerý svůj majetek a na chvíli jsem asi ukončil svůj kočovný život, poznal jsem [skvělé nové živé a bláznivé spolubydlící](http://twitter.com/littlemaple/bytc7) a přestal jsem po roce zase žít sám
+-   odstěhoval jsem se z kolejí a poprvé jsem bydlel na privátě, nejdříve dočasně a pak natrvalo… natrvalo jsem opustil Královo Pole a vůbec tu svou osudovou stranu Brna, vzal jsem si k sobě už definitivně v podstatě veškerý svůj majetek a na chvíli jsem asi ukončil svůj kočovný život, poznal jsem [skvělé nové živé a bláznivé spolubydlící](http://twitter.com/honzajavorek/bytc7) a přestal jsem po roce zase žít sám
 -   vrátil jsem se po dvou letech na [tábor](http://www.taborprekvapeni.net/) a koupil jsem si [mačetu](http://www.profi-technika.cz/fiskars-maceta-126000-4929)
 -   přežil jsem konzumaci [kuřecího vindaloo v brněnském Taj](http://www.tajbrno.cz/)
 -   poznal jsem hromadu malých, středních i větších českých a moravských pivovarů, naučil jsem se vychutnávat si speciální odrůdy piva místo supermarketově všudypřítomných europiv

@@ -6,7 +6,7 @@ Michal: ([link](http://twitter.com/kacer/status/5258958649))
 
 > Svobodná volba prohlížeče v praxi vypadá tak, že všechny pluginy existují pouze pro Firefox (a samozřejmě IE)…
 
-Já: ([link](http://twitter.com/littlemaple/statuses/5259161155))
+Já: ([link](http://twitter.com/honzajavorek/statuses/5259161155))
 
 > Firefox chápe browser jako platformu, ale ostatní jako hotovou aplikaci. Tvůrci pluginů jsou v tom nevinně a Firefox má jasně navrch.
 

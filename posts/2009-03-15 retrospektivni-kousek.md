@@ -2,7 +2,7 @@ Title: Retrospektivní kousek
 Date: 2009-03-15 01:15:00
 Tags: erasmus, finsko, oulu, sport, škola, zážitky
 
-Jak jste si jistě všimli, nemám v poslední době moc **náladu psát na blog**. Ani nevím proč. Čas by určitě byl, ale tak nějak není ta touha sednout si k počítači a napsat spoustu textu o tom, co jsem pěkného prožil. A tak se stává, že na blogu se nic moc neděje a vy **nevíte nic o tom, co tady dělám**. A já pomalu mizím z vašich životů… Občas se objeví nové fotky nebo [videa](http://www.youtube.com/user/KaniiniLM), ale to je tak vše. Můžete číst můj [Twitter](http://twitter.com/littlemaple), ale pokud neumíte anglicky, máte smůlu. Tak to zkusím dneska trochu napravit. Pokud mi zbude energie, zkusím i napsat něco do zásoby a vydat to v nejbližších dnech, aby to tu nebylo tak smutné.
+Jak jste si jistě všimli, nemám v poslední době moc **náladu psát na blog**. Ani nevím proč. Čas by určitě byl, ale tak nějak není ta touha sednout si k počítači a napsat spoustu textu o tom, co jsem pěkného prožil. A tak se stává, že na blogu se nic moc neděje a vy **nevíte nic o tom, co tady dělám**. A já pomalu mizím z vašich životů… Občas se objeví nové fotky nebo [videa](http://www.youtube.com/user/KaniiniLM), ale to je tak vše. Můžete číst můj [Twitter](http://twitter.com/honzajavorek), ale pokud neumíte anglicky, máte smůlu. Tak to zkusím dneska trochu napravit. Pokud mi zbude energie, zkusím i napsat něco do zásoby a vydat to v nejbližších dnech, aby to tu nebylo tak smutné.
 
 Pokud se dobře pamatuji, s líčením zážitků jsem skončil někde u **roadtripu do Švédska**. To je, musím uznat, docela dlouhá doba. Uf.
 

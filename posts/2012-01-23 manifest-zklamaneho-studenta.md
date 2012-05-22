@@ -23,7 +23,7 @@ Můj problém už trvá delší dobu. Spolu se snahou o jeho řešení jsem v 
 
 -   Už je **pozdě přestat**. Mohl jsem sebrat odvahu, obrátit se proti proudu společnosti, skončit se školou a obhájit si to. Ale neudělal jsem to, neměl jsem na to dostatečnou vnitřní jistotu a tím pádem ani koule. Udělat to pár měsíců před koncem už je ovšem blbost.
 -   Mou milou čeká podobně krušný půlrok jako mě a **nenechám ji v tom samotnou**. Nechci „začít život“ bez ní.
--   Když to **dokázali kamarádi**, nechci být horší. [Soutěživost](https://twitter.com/littlemaple/status/159326446177894400).
+-   Když to **dokázali kamarádi**, nechci být horší. [Soutěživost](https://twitter.com/honzajavorek/status/159326446177894400).
 -   Když někam přijdu a řeknu, že **mám 11 semestrů vysoké školy a dál jsem neshledal studium zajímavým**, dostanu chtě nechtě nálepku „ztroskotanec, který v životě nic nedokáže“. Musel bych být opravdu hodně dobrý, abych se prosadil, nebo mít společnost hodně na háku.
 -   V [indickém filmu](http://www.csfd.cz/film/107196-statecne-srdce-ziska-nevestu/) hlavní hrdina říkal, že ta **snazší cesta k řešení situace většinou přinese v důsledcích víc problémů** a bývá nezodpovědná. Myslím, že to řekl dobře.
 -   Všechno špatný je k něčemu dobrý. Blbej důvod je taky důvod.
