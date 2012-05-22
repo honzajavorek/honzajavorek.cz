@@ -26,7 +26,7 @@ MD_EXTENSIONS = ['codehilite', 'extra', 'headerid']
 
 
 # Static paths will be copied under the same name
-STATIC_PATHS = ('images',)
+STATIC_PATHS = ('images', 'files')
 
 
 # A list of files to copy from the source to the destination

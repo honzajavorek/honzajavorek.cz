@@ -33,7 +33,7 @@ Co jsem si tak všiml, předměty mívají kreditované **v rozmezí přibližn
 
 No předně bych si měl už asi **vymyslet bakalářku** a začít řešit podle tématu s kým ji budu mít, jak dobře ji půjde konzultovat dálkově a případně kde ji vůbec budu oficiálně dělat (tím teď myslím jestli u nás, jak psal Matti, nebo nakonec stejně u nich). Ona ta bakalářka je asi nejnejasnější věcí na celém mém Erasmu, takže by nebylo od věci začít objasňovat – to ale, domnívám se, půjde jen s *konkretizací* tématu :) .
 
-Kdyby někoho zajímal [ten papír](http://blog.javorek.net/file/140/)… Já se ale spoléhám na to, že si ty letní předměty v září najdu trochu lépe popsané a rozebrané na pěkném OAMK webu… Já mám tak nějak raději weby než takovéto doc/pdf papíry :) .
+Kdyby někoho zajímal [ten papír](files/courses0809.pdf)… Já se ale spoléhám na to, že si ty letní předměty v září najdu trochu lépe popsané a rozebrané na pěkném OAMK webu… Já mám tak nějak raději weby než takovéto doc/pdf papíry :) .
 
 ## EICL kursy
 

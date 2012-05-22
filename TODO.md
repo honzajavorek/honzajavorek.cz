@@ -1,6 +1,5 @@
 # TODO
 
-- Mirgate files (http://blog.javorek.net/file/138/).
 - Migrate links. Find and replace all occurances of blog.javorek.net... Handle redirects.
 - Try to adjust standalone image generation so it's rendered inside a DIV (FIGURE).
 - Find out how to implement archives: archives.html vs http://lucumr.pocoo.org/archive/

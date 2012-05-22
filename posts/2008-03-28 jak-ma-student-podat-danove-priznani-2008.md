@@ -12,7 +12,7 @@ Jak? To se zeptejte [tady](http://jakpodnikat.cz/) :) . Chcete-li si počíst, z
 
 Každý podnikající člověk s příjmem z něj musí platit daň. Abyste věděli kolik toho máte zaplatit, kdy a jak, čtěte dál.
 
-Důležité je, abyste uměli počítat. Jak počítat, vám poradí tyto dvě geniální stránky: [Novinky pro OSVČ v roce 2007](http://www.beruna.cz/rs/index.php?text=109-novinky-pro-osvc-v-roce-2007) a [Student živnostník – manuál](http://www.euroekonom.cz/podnikani-student2.php). Podle těchto a jiných jsem vytvořil [počítadlo](http://blog.javorek.net/file/137/ "dane.zip").
+Důležité je, abyste uměli počítat. Jak počítat, vám poradí tyto dvě geniální stránky: [Novinky pro OSVČ v roce 2007](http://www.beruna.cz/rs/index.php?text=109-novinky-pro-osvc-v-roce-2007) a [Student živnostník – manuál](http://www.euroekonom.cz/podnikani-student2.php). Podle těchto a jiných jsem vytvořil [počítadlo](files/dane.zip).
 
 Adresu svého finančáku si najděte na [užitečném portálu státní správy](http://portal.gov.cz/).
 
@@ -29,6 +29,6 @@ Nezapomeňte, že **do měsíce od odevzdání daňového přiznání musíte od
 
 Nezapomeňte, že nejtěžší je jen začít :) . Neodpustím si nakonec jeden citát, a to i přesto, že se již jednou v útrobách tohoto blogu nachází ;) .
 
-> **Fran:** Bernard? Finished with your accounts?  
+> **Fran:** Bernard? Finished with your accounts?
 > **Bernard:** Yes. I've turned them into a rather smart casual
 > jacket.

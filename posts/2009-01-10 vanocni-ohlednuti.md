@@ -21,7 +21,7 @@ Ani tentokrát se [nadpis nevztahuje k slečně s Bc. před jménem](http://bl
 
 Potom budu mít, doufám, bakalářky dvě. Ta druhá bude zcela fádní. Papírová, bez výrazných křivek. Během semestru a před vánoci jsem neměl čas se vůbec podívat na cokoliv souvisejícího s mým tématem a tak jsem už jen zoufale napsal profesoru Hruškovi před vánoci, co s tím můžu udělat. Dostal jsem za úkol **sejít se s ním 6. 1., tedy den před odletem, a donést si 15–20 stran textu, jež se může stát částí BP**. Napíšu zde jen asi tolik, že po smrtelném zkouškovém týdnu jsem byl psychicky vyčerpaný a nepoužitelný, takže na BP jsem se opět ani nepodíval. Potom byly Vánoce, jež jsem projezdil po rodině, a Silvestr, který jsem strávil s kamarády. Zbylo jen pár dní. Nakonec jsem čtrnáctistránkovou zprávu psal noc před 5. 1. a dokončil ji večer před 6. 1. **A obhájil ji 6. 1. a dostal přislíbeno, že zápočet z předmětu „Semestrální projekt“ dostanu, že nebudu studovat o rok déle a že v BP můžu pokračovat ;) .**
 
--   [Semestrální projekt ke stažení](http://blog.javorek.net/file/139/)
+-   [Semestrální projekt ke stažení](files/zprava.pdf)
 
 Připomínky mi můžete napsat do komentářů k článku nebo poslat na e-mail ([honza@javorek.net](mailto:honza@javorek.net)).
 
