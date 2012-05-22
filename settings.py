@@ -25,6 +25,13 @@ DEFAULT_CATEGORY = 'blog'
 MD_EXTENSIONS = ['codehilite', 'extra', 'headerid']
 
 
+# URL settings
+ARTICLE_URL = '{slug}'
+ARTICLE_LANG_URL = '{slug}-{lang}'
+PAGE_URL = 'pages/{slug}'
+PAGE_LANG_URL = 'pages/{slug}-{lang}'
+
+
 # Static paths will be copied under the same name
 STATIC_PATHS = ('images', 'files')
 
