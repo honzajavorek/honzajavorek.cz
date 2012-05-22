@@ -61,5 +61,7 @@ FILES_TO_COPY = (
 
 # Feeds
 FEED = 'feed.xml'
-FEED_MAX_ITEMS = 38
+FEED_MAX_ITEMS = 50
+
+FEEDBURNER_URL = 'http://feeds.honzajavorek.cz/blog/all'
 
