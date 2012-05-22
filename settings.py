@@ -4,7 +4,7 @@
 # Author & site
 AUTHOR = u'Honza Javorek'
 SITENAME = u'Javorové lístky'
-SITEURL = 'http://www.honzajavorek.cz'
+SITEURL = 'http://honzajavorek.cz'
 PATH = 'posts'
 
 
@@ -25,11 +25,15 @@ DEFAULT_CATEGORY = 'blog'
 MD_EXTENSIONS = ['codehilite', 'extra', 'headerid']
 
 
-# URL settings
-ARTICLE_URL = '{slug}'
-ARTICLE_LANG_URL = '{slug}-{lang}'
+# URL and save paths settings
+ARTICLE_URL = 'blog/{slug}'
+ARTICLE_SAVE_AS = 'blog/{slug}.html'
+ARTICLE_LANG_URL = 'blog/{slug}-{lang}'
+ARTICLE_LANG_SAVE_AS = 'blog/{slug}-{lang}.html'
 PAGE_URL = 'pages/{slug}'
+PAGE_SAVE_AS = 'pages/{slug}.html'
 PAGE_LANG_URL = 'pages/{slug}-{lang}'
+PAGE_LANG_SAVE_AS = 'pages/{slug}-{lang}.html'
 
 
 # Static paths will be copied under the same name
@@ -46,5 +50,6 @@ FILES_TO_COPY = (
 
 
 # Feeds
+FEED = 'feed.xml'
 FEED_MAX_ITEMS = 38
 

@@ -109,7 +109,7 @@ def deploy():
         local('cp -r %s/* .' % output_dir)
 
         # remove unnecessary directories
-        local('rm -rf author category tag feeds/blog.atom.xml')
+        local('rm -rf author category tag feeds')
 
         local('git add -A')
         with settings(hide('warnings'), warn_only=True):
