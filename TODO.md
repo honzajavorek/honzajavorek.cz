@@ -3,6 +3,7 @@
 - theming: http://pelican.notmyidea.org/en/latest/themes.html
 - Try to adjust standalone image generation so it's rendered inside a DIV (FIGURE): https://github.com/ametaireau/pelican/pull/96 (custom filters)
 - Script (library?) for typographic changes -> to →, -- to –, quotes, hellip, etc. Make it a hook before publishig. typogrify?
+- feeds: http://feeds.honzajavorek.cz/javorovelistky
 - Find out how to implement archives: archives.html vs http://lucumr.pocoo.org/archive/
 
 ## Design
