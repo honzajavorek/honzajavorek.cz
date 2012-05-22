@@ -1,5 +1,6 @@
 # TODO
 
+- theming: http://pelican.notmyidea.org/en/latest/themes.html
 - Try to adjust standalone image generation so it's rendered inside a DIV (FIGURE): https://github.com/ametaireau/pelican/pull/96 (custom filters)
 - Script (library?) for typographic changes -> to →, -- to –, quotes, hellip, etc. Make it a hook before publishig. typogrify?
 - Find out how to implement archives: archives.html vs http://lucumr.pocoo.org/archive/
@@ -8,6 +9,7 @@
 - Prepare minimal design. Remove all unnecessary stuff.
 - Make a Pelican theme.
 - Custom 404 page.
+- http://blog.filosof.biz/koderuv-checklist/
 - Style paragraphs with indent if the first sentence doesn't contain `<br>`
 
 ## Integration

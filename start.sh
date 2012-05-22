@@ -9,7 +9,7 @@
 
 # Define paths to affected directories
 PROJECT_DIR=`dirname $0`
-CSS_DIR="$PROJECT_DIR/theme/static"
+CSS_DIR="$PROJECT_DIR/theme/static/css"
 
 
 # Prepare RC file boilerplate

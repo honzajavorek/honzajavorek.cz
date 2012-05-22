@@ -15,10 +15,6 @@ DEFAULT_LANG = 'cs'
 DEFAULT_DATE_FORMAT = '%x'
 
 
-# External services
-DISQUS_SITENAME = 'javorove-listky'
-
-
 # Blog settings
 DEFAULT_PAGINATION = 5
 DEFAULT_CATEGORY = 'blog'
@@ -38,6 +34,20 @@ PAGE_LANG_SAVE_AS = 'pages/{slug}-{lang}.html'
 
 # Static paths will be copied under the same name
 STATIC_PATHS = ('images', 'files')
+
+
+# Theming
+THEME = 'theme'
+THEME_STATIC_PATHS = ('static',)
+CSS_FILE = 'main.css'
+
+DISQUS_SITENAME = 'javorove-listky'
+GOOGLE_ANALYTICS = 'UA-1316071-6'
+TWITTER_USERNAME = 'honzajavorek'
+
+MENUITEMS = ()
+LINKS = ()
+SOCIAL = ()
 
 
 # A list of files to copy from the source to the destination
