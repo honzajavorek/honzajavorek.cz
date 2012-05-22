@@ -29,7 +29,7 @@ Další práce s Hamachi, tedy nastavení jména, přihlášení do skupiny, na
 ## Zajímavé odkazy
 
 -   [GUI pro Hamachi](http://www.webupd8.org/2010/05/script-to-install-hamachi-with-gui-in.html)
--   [Goměrně komplexní návod na Hamachi](http://www.supware.net/other-fun-stuff/hamachiubuntuhowto/) (vytisknout a přečíst v důchodu nebo na záchodě)
+-   [Poměrně komplexní návod na Hamachi](http://www.supware.net/other-fun-stuff/hamachiubuntuhowto/) (vytisknout a přečíst v důchodu nebo na záchodě)
 -   [Návod na UbuntuForums, Hamachi jako služba s VPN](http://ubuntuforums.org/showthread.php?t=135036)
 -   [Oficiální návod](http://logmeinwiki.com/wiki/Hamachi:Install_on_Linux)
 -   [Oficiální fórum](https://forums.hamachi.cc/viewforum.php?f=15)
