@@ -2,6 +2,7 @@
 
 
 import re
+from datetime import date
 
 
 # Author & site
@@ -13,7 +14,7 @@ PATH = 'posts'
 
 # Timezone, language
 TIMEZONE = 'Europe/Prague'
-LOCALE = ('cs_CZ.utf8', 'en_GB.utf8')
+LOCALE = 'cs_CZ.utf8'
 DEFAULT_LANG = 'cs'
 DEFAULT_DATE_FORMAT = '%x'
 
@@ -78,7 +79,21 @@ def code(html):
     html = re.sub(r'</pre></div>', r'</code></pre>', html)
     return html
 
+def month_name(month_no):
+    return [
+        u'leden', u'únor', u'březen',
+        u'duben', u'květen', u'červen',
+        u'červenec', u'srpen', u'září',
+        u'říjen', u'listopad', u'prosinec',
+    ][month_no - 1]
+
+def format_date(datetime, format):
+    formatted = datetime.strftime(format)
+    return re.sub(r'\b0', '', formatted)
+
 JINJA_FILTERS = {
     'figure': figure,
     'code': code,
+    'month_name': month_name,
+    'format_date': format_date,
 }
