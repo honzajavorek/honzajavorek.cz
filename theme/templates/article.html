@@ -15,9 +15,10 @@
       By <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
     </address>
     {% endif %}
-  </footer><!-- /.post-info -->
+    <a href="https://github.com/honzajavorek/blog/edit/master/posts/{{ article.date|format_date('%Y-%m-%d', strip_zeros=False) }}%20{{ article.slug }}.md">Edit</a>
+  </footer>
   <div class="entry-content">
     {{ article.content|figure|code }}
-  </div><!-- /.entry-content -->
+  </div>
 </section>
 {% endblock %}

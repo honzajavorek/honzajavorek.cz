@@ -26,6 +26,11 @@
 - http://poshcss.com/
 - http://isaacbythewood.com/
 
+- inspiration https://github.com/jokull/solberg.is
+- remove counts of comments
+- about: minimalist, short, brief, list of profiles I actively use (github, linkedin, ...), follow me on twitter
+- gui accessible for mobile phones
+
 - Theming: http://pelican.notmyidea.org/en/latest/themes.html
 - Prepare minimal design. Remove all unnecessary stuff.
 - Make a Pelican theme.
@@ -41,18 +46,4 @@
 - Unify www.honzajavorek.cz to honzajavorek.cz only, everywhere.
 - Handle redirects from the original blog to the new one.
 - feed - redirect to the new address permanently
-
-## And...
-
-- Write new articles. Love the world.
-
-## Ideas
-
-- inspiration https://github.com/jokull/solberg.is
-- remove counts of comments
-- edit links right to github
-- about: minimalist, short, brief, list of profiles I actively use (github, linkedin, ...), follow me on twitter
-- gui accessible for mobile phones
 - move videos from my KaniiniLM YouTube account to my honzajavorek accounts (YouTube or Vimeo) and search/replace their codes in posts
-
-[pandoc]: http://johnmacfarlane.net/pandoc/

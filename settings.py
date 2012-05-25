@@ -87,9 +87,11 @@ def month_name(month_no):
         u'říjen', u'listopad', u'prosinec',
     ][month_no - 1]
 
-def format_date(datetime, format):
+def format_date(datetime, format, strip_zeros=True):
     formatted = datetime.strftime(format)
-    return re.sub(r'\b0', '', formatted)
+    if strip_zeros:
+        return re.sub(r'\b0', '', formatted)
+    return formatted
 
 JINJA_FILTERS = {
     'figure': figure,
