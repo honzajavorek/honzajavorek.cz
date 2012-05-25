@@ -1,6 +1,7 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+{% block title %}Herbář - {{ SITENAME }}{% endblock %}
 {% block content %}
-<h1>Archives for {{ SITENAME }}</h1>
+<h1>Herbář</h1>
 <ul>
 {% for year_group in dates|groupby('date.year')|reverse %}
     <li>
@@ -14,7 +15,9 @@
             </h3>
             <ul>
             {% for article in month_group.list|reverse %}
-                <li>{{ article.date|format_date('%d.%m.') }} <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+                <li>
+                    <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.date|format_date('%d.%m.') }}</time>
+                    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
             {% endfor %}
             </ul>
         {% endfor %}

@@ -1,22 +1,7 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+{% block title %}{{ article.title }} - {{ SITENAME }}{% endblock %}
 {% block content %}
-<section id="content" class="body">
-  <header>
-    <h2 class="entry-title">{{ article.title }}</h2>
-  </header>
-  <footer class="post-info">
-    <abbr class="published" title="{{ article.date.isoformat() }}">
-      {{ article.locale_date }}
-    </abbr>
-    {% if article.author %}
-    <address class="vcard author">
-      By <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
-    </address>
-    {% endif %}
-    <a href="https://github.com/honzajavorek/blog/edit/master/posts/{{ article.date|format_date('%Y-%m-%d', strip_zeros=False) }}%20{{ article.slug }}.md">Edit</a>
-  </footer>
-  <div class="entry-content">
-    {{ article.content|figure|code }}
-  </div>
-</section>
+
+{% include '_article.html' %}
+
 {% endblock %}

@@ -2,7 +2,7 @@
 <html lang="{{ DEFAULT_LANG }}">
     <head>
         {% block head %}
-        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+        <title>{% block title %}{{ SITENAME }} Honzy Javorka{% endblock title %}</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/monokai.css">
@@ -10,34 +10,27 @@
     </head>
     <body>
         <header>
-            <h1><a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
+            <hgroup>
+                <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
+                <h2>Honza Javorek</h2>
+            </hgroup>
         </header>
-
-        <nav>
-            <ul>
-                {% for title, link in MENUITEMS %}
-                    <li><a href="{{ link }}">{{ title }}</a></li>
-                {% endfor %}
-                {% if DISPLAY_PAGES_ON_MENU %}
-                    {% for p in PAGES %}
-                        <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-                    {% endfor %}
-                {% else %}
-                    {% for cat, null in categories %}
-                        <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-                    {% endfor %}
-                {% endif %}
-            </ul>
-        </nav>
 
         {% block content %}{% endblock %}
 
+        <nav>
+            <h3>Hrábě</h3>
+            <form action="https://www.google.com/cse" id="cse-search-box">
+                <input type="hidden" name="cx" value="011917998094738623377:qowdxfpbkv4">
+                <input type="hidden" name="ie" value="UTF-8">
+                <input type="search" name="q" size="31" placeholder="Hledat">
+                <input type="submit" name="sa" value="Prohrabat listí" class="button">
+            </form>
+        </nav>
+
         <footer>
-            <address>
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                Honza's custom theme.
-            </address>
+            <h3>Zahradník</h3>
+            <address>{{ 2007|copyright }} Honza Javorek</address>
         </footer>
     </body>
 </html>

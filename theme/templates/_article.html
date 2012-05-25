@@ -1,0 +1,24 @@
+{% if use_summary %}
+    {% set article_content = article.summary %}
+    {% set h = 2 %}
+{% else %}
+    {% set article_content = article.content %}
+    {% set h = 1 %}
+{% endif %}
+
+<article>
+    <header>
+        <h{{ h }}><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h{{ h }}>
+        <small>
+            <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time>
+        </small>
+    </header>
+
+    {{ article_content|figure|code }}
+
+    <footer>
+        <small>
+            <a href="https://github.com/honzajavorek/blog/edit/master/posts/{{ article.date|format_date('%Y-%m-%d', strip_zeros=False) }}%20{{ article.slug }}.md">Edit</a>
+        </small>
+    </footer>
+</article>

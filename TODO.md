@@ -17,32 +17,26 @@
 
 ## Design
 
-- http://sbhr.dk/
-- http://www.youthedesigner.com/2010/09/02/40-plus-various-high-quality-free-paper-patterns-and-textures/
 - https://secure.flickr.com/photos/themandatepress/2398586965/
-- http://www.1stwebdesigner.com/inspiration/minimal-business-cards/
-
-- http://minima.soup.io/
-- http://poshcss.com/
+- https://secure.flickr.com/photos/paperedtogether/3761796805/
 - http://isaacbythewood.com/
 
-- inspiration https://github.com/jokull/solberg.is
 - remove counts of comments
 - about: minimalist, short, brief, list of profiles I actively use (github, linkedin, ...), follow me on twitter
 - gui accessible for mobile phones
 
-- Theming: http://pelican.notmyidea.org/en/latest/themes.html
 - Prepare minimal design. Remove all unnecessary stuff.
-- Make a Pelican theme.
 - Custom 404 page.
 - favicon
 - http://blog.filosof.biz/koderuv-checklist/
-- connect disqus
-- connect google "site tool"
 - Style paragraphs with indent if the first sentence doesn't contain `<br>`
 
 ## Integration
 
+- rss links, email digest links
+- connect disqus
+- fb like
+- connect google "site tool"
 - Unify www.honzajavorek.cz to honzajavorek.cz only, everywhere.
 - Handle redirects from the original blog to the new one.
 - feed - redirect to the new address permanently

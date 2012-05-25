@@ -92,9 +92,13 @@ def format_date(datetime, format, strip_zeros=True):
         return re.sub(r'\b0', '', formatted)
     return formatted
 
+def copyright(year):
+    return u'© %s–%s' % (year, date.today().year)
+
 JINJA_FILTERS = {
     'figure': figure,
     'code': code,
     'month_name': month_name,
     'format_date': format_date,
+    'copyright': copyright,
 }
