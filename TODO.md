@@ -1,6 +1,5 @@
 # TODO
 
-- Script (library?) for typographic changes -> to →, -- to –, quotes, hellip, etc. Make it a hook before publishig. typogrify? (remove smartypants and add tipi)
 - Theming: http://pelican.notmyidea.org/en/latest/themes.html
 - Find out how to implement archives: archives.html vs http://lucumr.pocoo.org/archive/
 

@@ -2,7 +2,6 @@
 
 
 import re
-import smartypants
 
 
 # Author & site
@@ -22,7 +21,7 @@ DEFAULT_DATE_FORMAT = '%x'
 # Blog settings
 DEFAULT_PAGINATION = 5
 DEFAULT_CATEGORY = 'blog'
-MD_EXTENSIONS = ['codehilite', 'extra', 'headerid', 'smartypants']
+MD_EXTENSIONS = ['codehilite', 'extra', 'headerid']
 
 
 # URL and save paths settings
@@ -79,20 +78,7 @@ def code(html):
     html = re.sub(r'</pre></div>', r'</code></pre>', html)
     return html
 
-class CzechTypography(object):
-    re_spaces = re.compile(r'\s+')
-
-    single_quotes = (u'‚', u'‘')
-    double_quotes = (u'„', u'“')
-
-    def strip_spaces(self, html):
-        return html
-
-    def __call__(self, html):
-        return html
-
 JINJA_FILTERS = {
     'figure': figure,
     'code': code,
-    'typo': CzechTypography(),
 }
