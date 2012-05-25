@@ -59,7 +59,6 @@ FEEDBURNER_URL = 'http://feeds.honzajavorek.cz/blog/all'
 # Theming
 THEME = 'theme'
 THEME_STATIC_PATHS = ('static',)
-CSS_FILE = 'main.css'
 
 DISQUS_SITENAME = 'javorove-listky'
 GOOGLE_ANALYTICS = 'UA-1316071-6'
@@ -75,7 +74,7 @@ def figure(html):
     return re.sub(r'<p([^\>]*)>\s*(<img[^\>]*>)\s*</p>', r'<figure\1>\2</figure>', html)
 
 def code(html):
-    html = re.sub(r'<div[^\>]*class="codehilite"[^\>]*>\s*<pre[^\>]*>', r'<pre class="codehilite"><code>', html)
+    html = re.sub(r'<div[^\>]*class="codehilite"[^\>]*>\s*<pre[^\>]*>', r'<pre class="highlight"><code>', html)
     html = re.sub(r'</pre></div>', r'</code></pre>', html)
     return html
 
