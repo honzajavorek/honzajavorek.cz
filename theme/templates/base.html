@@ -4,22 +4,26 @@
     {% block head %}
         <meta charset="utf-8">
         <title>{% block title %}{{ SITENAME }} Honzy Javorka{% endblock title %}</title>
-        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" media="screen,projection,tv">
     {% endblock head %}
     </head>
     <body>
-        <header>
-            <a href="{{ SITEURL }}">
-            <hgroup>
-                <h1>
-                    Javorové<span id="logo">&nbsp;</span>lístky
-                </h1>
-                <h2>Honza Javorek</h2>
-            </hgroup>
-            </a>
-        </header>
+        <div id="document" class="{% block class %}{% endblock %}">
+            <header>
+                <a href="{{ SITEURL }}">
+                <hgroup>
+                    <h1>
+                        Javorové<span id="logo">&nbsp;</span>lístky
+                    </h1>
+                    <h2>Honza Javorek</h2>
+                </hgroup>
+                </a>
+            </header>
 
-        {% block content %}{% endblock %}
+            <div id="content">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
 
         <nav>
             <h3>Hrábě</h3>
@@ -27,7 +31,7 @@
                 <input type="hidden" name="cx" value="011917998094738623377:qowdxfpbkv4">
                 <input type="hidden" name="ie" value="UTF-8">
                 <input type="search" name="q" size="31" placeholder="Hledat">
-                <input type="submit" name="sa" value="Prohrabat listí" class="button">
+                <button type="submit" name="sa">Prohrabat listí</button>
             </form>
         </nav>
 

@@ -4,9 +4,9 @@
 
 @import 'code.css';
 
-body, html {
-    color: #353535;
-}
+@import url('http://fonts.googleapis.com/css?family=Noticia+Text&subset=latin,latin-ext#');
+@import url('http://fonts.googleapis.com/css?family=Enriqueta&subset=latin,latin-ext#');
+@import url('http://fonts.googleapis.com/css?family=Crete+Round&subset=latin,latin-ext#');
 
 @font-face {
     font-family: 'AllerBold';
@@ -38,14 +38,57 @@ body, html {
     font-style: normal;
 }
 
+@mixin hidden() {
+    position: absolute;
+    left: -38000px;
+    visibility: hidden;
+    line-height: 0;
+    font-size: 0;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+$font_content: 'Enriqueta', 'Georgia', serif;
 $font_title: 'AllerDisplayRegular', sans-serif;
 $font_subtitle: 'AllerRegular', sans-serif;
 $letter_spacing_title: 0.05ex;
 $letter_spacing_subtitle: $letter_spacing_title * 5;
+$color_green: #97B600;
+$color_text: #353535;
+$color_text_emph: #000;
+$color_aside_text: #A3A3A3;
+$color_almost_invisible_text: #EEE;
+$color_link: #779600;
 
-body > header {
+body, html {
+    color: $color_text;
+    font-family: $font_content;
+    margin: 0; padding: 0;
+}
+
+html { background: #FFF url('../images/cotton_paper.png'); }
+body { text-align: center; }
+
+a { color: $color_link; }
+a:hover, a:focus {  }
+a:visited {  }
+
+#document {
+    background: #FFF;
+    max-width: 850px;
+    margin: 1em auto; padding: 1.5em 0 2em 0;
+    text-align: left;
+    @include border-radius(0.8em);
+}
+
+#document > header {
     text-align: center;
     text-transform: uppercase;
+    padding: 0.3em 0;
 
     h1 {
         font-family: $font_title;
@@ -61,21 +104,26 @@ body > header {
         font-weight: normal;
         text-transform: uppercase;
         word-spacing: 0.1em;
-        margin: 0.5em 0 3em 0;
+        margin: 1em 0 3em 0;
         letter-spacing: $letter_spacing_subtitle;
     }
 
-    a { display: block; color: #353535; text-decoration: none; }
-    a:hover, a:focus { color: #000; }
+    a { display: block; color: $color_text; text-decoration: none; }
+    a:hover, a:focus { color: $color_text_emph; }
 }
 
 @-moz-document url-prefix() {
     /* ugly 'gimme-firefox-only' hack */
+    $fix_offset: 0.03ex;
 
-    body > header {
-        $fix_offset: 0.03ex;
+    #document > header {
         h1 { letter-spacing: $letter_spacing_title - (5 * $fix_offset) }
         h2 { letter-spacing: $letter_spacing_subtitle - (1 * $fix_offset) }
+    }
+
+    article {
+        h1 { letter-spacing: -4.5 * $fix_offset; } /* TODO */
+        h2 { letter-spacing: -4.5 * $fix_offset; }
     }
 }
 
@@ -89,4 +137,73 @@ body > header {
     font-weight: normal;
     margin: 0 -0.1em; padding-left: $logo_size;
     position: relative; top: 0.1ex;
+}
+
+body > nav h3, footer h3, .index #content > h1 { @include hidden(); }
+
+#content {
+    padding: 0 3em;
+}
+
+body > nav {
+    padding: 3em 0;
+
+    input, button {
+        padding: 0.5em;
+    }
+}
+
+body > footer {
+    padding-bottom: 3em;
+    font-family: $font_subtitle;
+    font-size: 80%;
+
+    address { font-style: normal; }
+}
+
+article {
+    position: relative;
+
+    header {
+        h1, h2 { font-size: 150%; display: inline; }
+        a { color: $color_text; text-decoration: none; }
+        a:hover, a:focus { color: $color_link; }
+        small { margin-left: 1em; }
+    }
+
+    footer {
+        position: absolute;
+        right: 0; top: 0;
+
+        &, & a { color: $color_almost_invisible_text; }
+        a:hover, a:focus { color: $color_link; }
+    }
+}
+
+.paginator {
+    text-align: center;
+    margin: 1em 0;
+
+    .previous, .next { display: inline-block; width: 5em; }
+    small { font-size: inherit; color: $color_aside_text; }
+}
+
+.archives_link {
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.index #content > ul {
+    &, & > li {
+        list-style-type: none;
+        margin: 0; padding: 0;
+    }
+
+    & > li {
+        margin: 3em 0;
+    }
+
+    article {
+        h2 { font-size: 200%; }
+    }
 }
