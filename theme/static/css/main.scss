@@ -1,0 +1,92 @@
+/**
+ * Main stylesheet.
+ */
+
+@import 'code.css';
+
+body, html {
+    color: #353535;
+}
+
+@font-face {
+    font-family: 'AllerBold';
+    src: url('../fonts/aller_bd-webfont.eot');
+    src: url('../fonts/aller_bd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aller_bd-webfont.woff') format('woff'),
+         url('../fonts/aller_bd-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AllerDisplayRegular';
+    src: url('../fonts/allerdisplay-webfont.eot');
+    src: url('../fonts/allerdisplay-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/allerdisplay-webfont.woff') format('woff'),
+         url('../fonts/allerdisplay-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AllerRegular';
+    src: url('../fonts/aller_rg-webfont.eot');
+    src: url('../fonts/aller_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aller_rg-webfont.woff') format('woff'),
+         url('../fonts/aller_rg-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font_title: 'AllerDisplayRegular', sans-serif;
+$font_subtitle: 'AllerRegular', sans-serif;
+$letter_spacing_title: 0.05ex;
+$letter_spacing_subtitle: $letter_spacing_title * 5;
+
+body > header {
+    text-align: center;
+    text-transform: uppercase;
+
+    h1 {
+        font-family: $font_title;
+        font-size: 350%;
+        position: relative;
+        margin: 0;
+        letter-spacing: $letter_spacing_title;
+    }
+
+    h2 {
+        font-family: $font_subtitle;
+        font-size: 120%;
+        font-weight: normal;
+        text-transform: uppercase;
+        word-spacing: 0.1em;
+        margin: 0.5em 0 3em 0;
+        letter-spacing: $letter_spacing_subtitle;
+    }
+
+    a { display: block; color: #353535; text-decoration: none; }
+    a:hover, a:focus { color: #000; }
+}
+
+@-moz-document url-prefix() {
+    /* ugly 'gimme-firefox-only' hack */
+
+    body > header {
+        $fix_offset: 0.03ex;
+        h1 { letter-spacing: $letter_spacing_title - (5 * $fix_offset) }
+        h2 { letter-spacing: $letter_spacing_subtitle - (1 * $fix_offset) }
+    }
+}
+
+#logo {
+    $logo_size: 100px;
+
+    width: $logo_size; height: $logo_size;
+    background: url('../images/logo.svg') center no-repeat;
+    font-size: $logo_size;
+    line-height: $logo_size;
+    font-weight: normal;
+    margin: 0 -0.1em; padding-left: $logo_size;
+    position: relative; top: 0.1ex;
+}

@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
     <head>
-        {% block head %}
-        <title>{% block title %}{{ SITENAME }} Honzy Javorka{% endblock title %}</title>
+    {% block head %}
         <meta charset="utf-8">
+        <title>{% block title %}{{ SITENAME }} Honzy Javorka{% endblock title %}</title>
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
-        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/monokai.css">
-        {% endblock head %}
+    {% endblock head %}
     </head>
     <body>
         <header>
+            <a href="{{ SITEURL }}">
             <hgroup>
-                <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
+                <h1>
+                    Javorové<span id="logo">&nbsp;</span>lístky
+                </h1>
                 <h2>Honza Javorek</h2>
             </hgroup>
+            </a>
         </header>
 
         {% block content %}{% endblock %}

@@ -1,7 +1,7 @@
 
 ## HTML5
 
-- http://modernizr.com/
+- http://modernizr.com/ - fontface, svg support detection, html5 objects
 - figure on code listing
 - time
 - css3, javascript
