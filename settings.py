@@ -43,8 +43,8 @@ STATIC_PATHS = ('images', 'files')
 # A list of files to copy from the source to the destination
 FILES_TO_COPY = (
     ('robots.txt', 'robots.txt'),
-    ('404.html', '404.html'), # TODO
-    ('index.html', 'index.html'), # temporary
+    ('404.html', '404.html'),
+    ('favicon.ico', 'favicon.ico'),
     ('CNAME', 'CNAME'),
 )
 
@@ -71,6 +71,7 @@ SOCIAL = ()
 
 # Jinja
 def figure(html):
+    html = re.sub(r'(<iframe[^\>]*>[^\<]*</iframe>)', r'<figure>\1</figure>', html)
     return re.sub(r'<p([^\>]*)>\s*(<img[^\>]*>)\s*</p>', r'<figure\1>\2</figure>', html)
 
 def code(html):

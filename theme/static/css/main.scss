@@ -52,6 +52,24 @@
     border-radius: $radius;
 }
 
+@mixin box-shadow() {
+    -webkit-box-shadow: 0 0 5px #888;
+    -moz-box-shadow: 0 0 5px #888;
+    box-shadow: 0 0 5px #888;
+}
+
+@mixin columns($count) {
+    -webkit-column-count: $count;
+    -webkit-column-gap: normal;
+    -webkit-column-rule: medium none;
+    -moz-column-count: $count;
+    -moz-column-gap: normal;
+    -moz-column-rule: medium none;
+    column-count: $count;
+    column-gap: normal;
+    column-rule: medium none;
+}
+
 $font_content: 'Enriqueta', 'Georgia', serif;
 $font_title: 'AllerDisplayRegular', sans-serif;
 $font_subtitle: 'AllerRegular', sans-serif;
@@ -76,6 +94,7 @@ body { text-align: center; }
 a { color: $color_link; }
 a:hover, a:focus {  }
 a:visited {  }
+#content a:active { position: relative; top: 1px; }
 
 #document {
     background: #FFF;
@@ -83,6 +102,7 @@ a:visited {  }
     margin: 1em auto; padding: 1.5em 0 2em 0;
     text-align: left;
     @include border-radius(0.8em);
+    @include box-shadow();
 }
 
 #document > header {
@@ -122,12 +142,13 @@ a:visited {  }
     }
 
     article {
-        h1 { letter-spacing: -4.5 * $fix_offset; } /* TODO */
+        /* TODO, test this properly! */
+        h1 { letter-spacing: -4.5 * $fix_offset; }
         h2 { letter-spacing: -4.5 * $fix_offset; }
     }
 }
 
-#logo {
+.svg #logo {
     $logo_size: 100px;
 
     width: $logo_size; height: $logo_size;
@@ -143,10 +164,31 @@ body > nav h3, footer h3, .index #content > h1 { @include hidden(); }
 
 #content {
     padding: 0 3em;
+    font-size: 100%;
+    line-height: 165%;
+
+    h1 {
+        font-size: 200%;
+        line-height: normal;
+    }
+
+    & li {
+        margin-bottom: 1em;
+    }
 }
+
+h1, h2, h3, h4 { clear: both; }
+h2 { font-size: 150%; }
+img { @include border-radius(0.5em); margin: 0.5em; }
+img.right { float: right; margin-left: 1em; }
+img.left { float: left; margin-right: 1em; }
+figure { text-align: center; img, iframe { margin: 1.5em auto; } }
+pre { margin-bottom: 1.5em; }
+p.poem { text-align: center; margin: 3em 0; }
 
 body > nav {
     padding: 3em 0;
+    text-shadow: 2px 2px #FFF;
 
     input, button {
         padding: 0.5em;
@@ -157,6 +199,7 @@ body > footer {
     padding-bottom: 3em;
     font-family: $font_subtitle;
     font-size: 80%;
+    text-shadow: 1px 1px #FFF;
 
     address { font-style: normal; }
 }
@@ -165,7 +208,7 @@ article {
     position: relative;
 
     header {
-        h1, h2 { font-size: 150%; display: inline; }
+        h1 { font-size: 200%; display: inline; }
         a { color: $color_text; text-decoration: none; }
         a:hover, a:focus { color: $color_link; }
         small { margin-left: 1em; }
@@ -181,6 +224,7 @@ article {
 }
 
 .paginator {
+    clear: both;
     text-align: center;
     margin: 1em 0;
 
@@ -202,8 +246,43 @@ article {
     & > li {
         margin: 3em 0;
     }
+}
 
-    article {
-        h2 { font-size: 200%; }
+.article #content article {
+    header { text-align: center; margin-bottom: 3em; }
+    h1 { font-size: 260%; display: block; margin: 0 0 0.5em 0; }
+    header small { margin: 0; font-size: 100%; }
+}
+
+.archives {
+    h1, p {
+        text-align: center;
     }
+
+    h3 {
+        font-size: 100%;
+        font-weight: normal;
+        color: $color_aside_text;
+    }
+
+    time {
+        display: inline-block;
+        width: 3em;
+    }
+
+    ul, ul li {
+        list-style-type: none;
+        margin: 0; padding: 0;
+    }
+
+    #content > ul {
+        margin-bottom: 3em;
+    }
+}
+
+.error404 {
+    #content { text-align: center; }
+    p { margin: 2em 0; }
+    form { margin: 3em 0; }
+    input, button { padding: 0.5em; }
 }

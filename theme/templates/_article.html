@@ -1,19 +1,20 @@
-{% if use_summary %}
-    {% set article_content = article.summary %}
-    {% set h = 2 %}
-{% else %}
-    {% set article_content = article.content %}
-    {% set h = 1 %}
-{% endif %}
-
 <article>
     <header>
-        <h{{ h }}><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h{{ h }}>
+        <h1>
+            {%- if use_summary -%}<a href="{{ SITEURL }}/{{ article.url }}">{%- endif -%}
+            {{ article.title }}
+            {%- if use_summary -%}</a>{%- endif -%}
+        </h1>
         <small>
             <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time>
         </small>
     </header>
 
+    {% if use_summary %}
+        {% set article_content = article.summary %}
+    {% else %}
+        {% set article_content = article.content %}
+    {% endif %}
     {{ article_content|figure|code }}
 
     <footer>
