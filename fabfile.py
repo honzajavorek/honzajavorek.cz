@@ -16,7 +16,7 @@ project_dir = os.path.dirname(os.path.realpath(__file__))
 posts_dir = project_dir + '/posts'
 output_dir = project_dir + '/output'
 deploy_dir = '/tmp/blog-deploy'
-# css_dir = project_dir + '/theme/static' # TODO
+css_dir = project_dir + '/theme/static/css'
 
 
 # Auxiliary functions
@@ -73,11 +73,10 @@ def update_license_year():
 @task
 def update_styles():
     """Compiles SCSS files to CSS."""
-    pass
-    # with lcd(css_dir):
-    #     local('sass --style compressed --update .:.')
-    #     local('rm -rf .sass-cache')
-    # okay('SCSS compiled.')
+    with lcd(css_dir):
+        local('sass --style compressed --update .:.')
+        local('rm -rf .sass-cache')
+    okay('SCSS compiled.')
 
 
 # Main Fabric tasks
@@ -108,8 +107,9 @@ def deploy():
         okay('GitHub Pages branch.')
         local('cp -r %s/* .' % output_dir)
 
-        # remove unnecessary directories
+        # remove unnecessary stuff
         local('rm -rf author category tag feeds')
+        local('rm -rf theme/css/code.css theme/css/*.scss')
 
         local('git add -A')
         with settings(hide('warnings'), warn_only=True):

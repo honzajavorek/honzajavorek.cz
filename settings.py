@@ -54,6 +54,7 @@ FEED = 'feed.xml'
 FEED_MAX_ITEMS = 50
 
 FEEDBURNER_URL = 'http://feeds.honzajavorek.cz/blog/all'
+FEEDBURNER_MAIL_URL = 'http://feedburner.google.com/fb/a/mailverify?uri=blog/all&loc=cs_CZ'
 
 
 # Theming
