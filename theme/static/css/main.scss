@@ -153,12 +153,16 @@ a:link, a:link span, .button, button { cursor: pointer; }
     $logo_size: 100px;
 
     width: $logo_size; height: $logo_size;
-    background: url('../images/logo.svg') center no-repeat;
+    background: url('../images/plain_logo.png') center no-repeat;
     font-size: $logo_size;
     line-height: $logo_size;
     font-weight: normal;
     margin: 0 -0.1em; padding-left: $logo_size;
     position: relative; top: 0.1ex;
+}
+
+.svg #logo {
+    background-image: url('../images/plain_logo.svg');
 }
 
 body > nav h3, footer h3, .index #content > h1 { @include hidden(); }
