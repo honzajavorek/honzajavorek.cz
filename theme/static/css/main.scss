@@ -149,7 +149,7 @@ a:link, a:link span, .button, button { cursor: pointer; }
     }
 }
 
-.svg #logo {
+#logo {
     $logo_size: 100px;
 
     width: $logo_size; height: $logo_size;
@@ -204,9 +204,6 @@ h4 { font-size: 102%; margin-bottom: 0.3em; }
 p, ul, ol, dl, table, blockquote, address { font-size: 1em; line-height: 1.8em; margin-bottom: 1em; }
 
 img, a img { border: none; }
-img { @include border-radius(0.5em); margin: 0.5em; }
-img.right { float: right; margin-left: 1em; }
-img.left { float: left; margin-right: 1em; }
 figure { text-align: center; img, iframe { margin: 1.5em auto; } }
 
 pre { margin-bottom: 1.5em; }
@@ -306,9 +303,31 @@ article {
         a:hover, a:focus { color: $color_link; }
     }
 
-    ul, ul li { list-style-type: none; }
-    ul { padding: 0; }
-    ul li { margin: 0; padding: 0 0 0 2em; background: url('../images/bullet-green.png') 0.5em 0.5em no-repeat; }
+    #article_content {
+        ul, ul li { list-style-type: none; }
+        ul { padding: 0; }
+        ul li { margin: 0; padding: 0 0 0 2em; background: url('../images/bullet-green.png') 0.5em 0.5em no-repeat; }
+
+        img { @include border-radius(0.5em); margin: 0.5em; }
+        img.right { float: right; margin-left: 1em; }
+        img.left { float: left; margin-right: 1em; }
+    }
+
+    hr {
+        $size: 50px;
+
+        border: 0;
+        background: none;
+        margin: 0; margin-bottom: 1.8 * $size; padding: 0;
+
+        &:before {
+            display: block;
+            content: "…";
+            font-size: 250%;
+            line-height: $size;
+            text-align: center;
+        }
+    }
 }
 
 .paginator {
@@ -373,4 +392,120 @@ article {
     p { margin: 2em 0; }
     form { margin: 3em 0; }
     input, button { padding: 0.5em; }
+}
+
+#disqus_thread {
+    margin: 0 !important;
+}
+
+#dsq-content {
+    font-size: 100% !important;
+    line-height: 100% !important;
+
+    button {
+        line-height: 100%;
+    }
+
+    ul, ul li {
+        list-style-type: none;
+    }
+
+    #dsq-global-toolbar {
+        margin: 0 0 4em 0;
+    }
+
+    .dsq-comment-header {
+        background: $color_almost_invisible_text !important;
+        border: none !important;
+
+        a { color: $color_text; text-decoration: none; }
+        a:hover, a:focus { text-decoration: none; }
+    }
+
+    .dsq-moderator-star, .dsq-collapse-toggle {
+        @include hidden();
+    }
+
+    .dsq-header-avatar img {
+        margin: 0.5em !important;
+        display: block !important;
+        border: none !important;
+    }
+
+    .dsq-request-user-info .dsq-header-avatar img {
+        margin: 0 !important;
+    }
+
+    .dsq-moderator .dsq-comment-header {
+        background: $color-highlight !important;
+    }
+
+    .dsq-comment-header-time {
+        font-size: 90% !important;
+
+        a, a:link, a:hover, a:focus {
+            color: $color-text;
+            text-decoration: none;
+        }
+    }
+
+    .dsq-remove-message, .dsq-realtime-alert, .dsq-missing-permissions p {
+        color: $color_text;
+        background: $color_almost_invisible_text !important;
+        border: none !important;
+        margin: 2em 0 !important;
+        padding: 1em !important;
+        text-align: center !important;
+        text-transform: uppercase !important;
+        font-family: $font_content !important;
+        font-size: 85%;
+    }
+
+    .dsq-comment-outline .dsq-comment-header {
+        outline: none !important;
+    }
+
+    .dsq-comment-cite, .dsq-request-user-name {
+        span, a {
+            font-weight: normal !important;
+            font-size: 120%;
+        }
+    }
+
+    #dsq-reactions .dsq-reaction-header table {
+        background: $color_almost_invisible_text !important;
+    }
+
+    .dsq-comment-hide-thread, .dsq-options, .dsq-post-report, #dsq-comments-title, .dsq-item-sort,
+         #dsq-pagination, .dsq-attach-media, #dsq-new-post h3, #dsq-sort-by, & > h3, #dsq-reply h3,
+         .dsq-comment-flag, .dsq-share-on h4 {
+        display: none !important;
+    }
+
+    & > h3.dsq-h3-reactions {
+        display: block !important;
+    }
+
+    .dsq-notice {
+        border: none !important;
+        box-shadow: none;
+    }
+
+    .dsq-like-activity {
+        margin: 0 !important; padding: 0 !important;
+        font-size: 75% !important;
+    }
+}
+
+.js #comments_inner, .js .article hr {
+    display: none;
+}
+
+.js .loading {
+    min-height: 150px;
+    background: url('../images/loader.gif') no-repeat center center;
+}
+
+.noscript {
+    text-align: center;
 }

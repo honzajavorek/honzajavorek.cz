@@ -2,6 +2,7 @@
 
 
 import re
+import json
 from datetime import date
 
 
@@ -97,10 +98,14 @@ def format_date(datetime, format, strip_zeros=True):
 def copyright(year):
     return u'© %s–%s' % (year, date.today().year)
 
+def tojson(*args, **kwargs):
+    return json.dumps(*args, **kwargs).replace('/', '\\/')
+
 JINJA_FILTERS = {
     'figure': figure,
     'code': code,
     'month_name': month_name,
     'format_date': format_date,
     'copyright': copyright,
+    'tojson': tojson,
 }
