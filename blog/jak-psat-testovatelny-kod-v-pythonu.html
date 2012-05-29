@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+    
+        <meta charset="utf-8">
+        <title>Jak psát testovatelný kód v Pythonu? - Javorové lístky</title>
+        <script src=".././theme/js/modernizr.custom.js"></script>
+        <!--[if !IE]> --><link rel="stylesheet" href=".././theme/css/main.css" media="screen,projection,tv"><!-- <![endif]-->
+        <!--[if gte IE 9]><link rel="stylesheet" href=".././theme/css/main.css" media="screen,projection,tv"><![endif]-->
+        <link rel="alternate" type="application/rss+xml" title="Javorové lístky" href="http://feeds.honzajavorek.cz/blog/all">
+        <link rel="shortcut icon" type="image/x-icon" href=".././favicon.ico">
+
+        <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', "UA-1316071-6"]);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    
+    </head>
+    <body>
+        <div id="document" class="article">
+            <header>
+                <a href="../.">
+                <hgroup>
+                    <h1>
+                        Javorové<span id="logo">&nbsp;</span>lístky
+                    </h1>
+                    <h2>Honza Javorek</h2>
+                </hgroup>
+                </a>
+            </header>
+
+            <div id="content">
+                
+
+<article>
+    <header>
+        <h1>Jak psát testovatelný kód v Pythonu?</h1>
+        <small>
+            <time datetime="2012-01-16T11:00:00" pubdate>16.1.2012</time>
+        </small>
+    </header>
+
+    
+        <section id="article_content">
+        
+    
+
+    <p><img alt="obrázek" class="right" src="../static/images/164.jpg" />Troufl bych si říci, že na WebExpo 2011 byly <a href="http://zdrojak.root.cz/n/testovani/">testy</a> jedním z předních vývojářských témat. Ať už šlo o JavaScript, PHP nebo cokoliv jiného, hojně se testování skloňovalo.</p>
+<p>Já osobně jsem v testování úplný začátečník. Testy jsem nepsal a nepíšu, ale rád bych se to naučil. Bohužel, na vysokých školách jsem neměl to štěstí být donucen jediný test napsat, pokud tedy nešlo o test mých chabých znalostí ;-)</p>
+<p>Už dříve jsem pochytil nějaké základy o testovatelnosti kódu a následně i <em>dependency injection</em> (hezky <a href="http://fabien.potencier.org/article/11/what-is-dependency-injection">vysvětlil Fabien P.</a>) v PHP, která s ním úzce souvisí. Na WebExpu jsem si tyto teoretické znalosti rozšířil díky <a href="http://webexpo.cz/praha2011/workshop/jak-napsat-otestovat-tisice-radku-kvalitniho-objektoveho-kodu/">workshopu</a>. Myslím, že teď už základní principy chápu a schází mi především praxe. Bohužel, jediný PHP projekt, který teď udržuji, je <a href="http://honzajavorek.cz/blog/kdy-a-kde-ma-vas-oblibenec-koncert">ConcertIn</a> a ten je na starším <a href="http://nette.org/">Nette</a> a navíc strašně závislý na Facebook platformě, takže abych něco testoval, musel bych upgradovat framework a polovinu věcí si namockovat. Což se mi pro začátek moc nechce, akorát by mě to otrávilo.</p>
+<p>Většinu věcí píšu teď v Pythonu. Bohužel mi tamtéž unikla <a href="http://webexpo.cz/praha2011/prednaska/testovani-prakticky/">přednáška Honzy Krále o testování v Pythonu</a>. Projíždím čas od času <a href="http://vimeo.com/webexpo/videos">uveřejněné videozáznamy přednášek</a>, ale pořád ji tam nevidím.</p>
+<p>Se zavedením testů do Pythonu mám ale problém. Ono je totiž PHP (Java, C#, …) jiné než Python a já si prostě ta naučená teoretická pravidla neumím nějak v Pythoním kódu představit. Něco už jsem v tom jazyce napsal a myslím, že je běžnou praxí psát v modulech obyčejné funkce, importovat si je do jiných modulů, importovat si tam a zpět nějaké proměnné, třídy, třídy chovající se jako funkce, … Vidím takové věci jak v <a href="https://www.djangoproject.com/">Djangu</a>, tak ve <a href="http://flask.pocoo.org/">Flasku</a>. Python je tak dynamický, že mi dělá problém aplikovat na něj tatáž pravidla jako pro PHP, kde stačí říct „nesmíte ve třídě udělat <code>new</code>, nové objekty prostě musí přijít zvenčí připravené“.</p>
+<p>Ano, mohl bych jej podrobit přísnému režimu a psát kód, který by byl přísně objektový a všemu vyhovoval, ale to by potom vůbec nebylo <em>pythonic</em>, nevyužíval bych toho jazyka plně tak jak byl navržen a tak jak to dělají všichni ostatní. No a to je druhá věc – externí knihovny neovlivním a jsou psány stejným způsobem (tzn. i ve svém API očekávají, že budou použity v podobném <em>pythonic</em> kódu). Jednoduše, <strong>šel bych proti přirozenosti Pythonu</strong>. Myslím si, že pes bude zakopaný někde jinde.</p>
+<p>Ale kde? No, a to právě vůbec nevím. Hledal jsem po internetu chvíli nějaké <em>best practices</em> psaní testovatelného kódu v Pythonu, ale moc jsem toho nenašel. A proto bych vás chtěl poprosit: Pomůžete mi vyřešit tento můj problém? Nemáte odkazy na nějaké dobré zdroje, které bych pročetl a bylo by mi tohle všechno hned jasné? Potřebuji příklady, nějaké ukázky z praxe, kde bych to opravdu pochopil, abych mohl takový kód psát, následně tvořit testy a potom to dělat tak dlouho, než do toho proniknu do hloubky a budu moci poučovat zase druhé ;-) Díky za každý komentář!</p>
+
+    
+        </section>
+
+        <hr>
+
+        <section id="comments" class="loading">
+            <div id="comments_inner">
+                <div class="fb-like" data-send="false" data-width="450" data-show-faces="true"></div>
+                <div id="disqus_thread"></div>
+                <script>
+                    var disqus_shortname = "javorove-listky";
+                    var disqus_developer = 0;
+                    var disqus_url = 'http:\/\/blog.javorek.net\/' + "jak-psat-testovatelny-kod-v-pythonu" + '\/';
+                    var disqus_title = "Jak ps\u00e1t testovateln\u00fd k\u00f3d v Pythonu?";
+
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.async = true;
+                        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript><p class="noscript"><em>Bez JavaScriptu komentáře nejsou.</em></p></noscript>
+            </div>
+        </section>
+    
+
+    <footer>
+        <small>
+            <a href="https://github.com/honzajavorek/blog/edit/master/posts/2012-01-16%20jak-psat-testovatelny-kod-v-pythonu.md">edit</a>
+        </small>
+    </footer>
+</article>
+
+
+            </div>
+        </div>
+
+        <nav>
+            <h3>Hrábě</h3>
+            <form action="https://www.google.com/cse" id="cse-search-box">
+                <input type="hidden" name="cx" value="011917998094738623377:qowdxfpbkv4">
+                <input type="hidden" name="ie" value="UTF-8">
+                <input type="search" name="q" size="31" placeholder="Hledat">
+                <button type="submit" name="sa">Prohrabat listí</button>
+            </form>
+        </nav>
+
+        <footer>
+            <h3>Zahradník</h3>
+            <address>© 2007–2012 Honza Javorek</address>
+            <p><small>
+                <a href="http://feeds.honzajavorek.cz/blog/all">do čtečky</a>
+                &middot;
+                <a href="http://feedburner.google.com/fb/a/mailverify?uri=blog/all&loc=cs_CZ">do mailu</a>
+            </small></p>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src=".././theme/js/jquery-1.7.2.min.js">\x3C/script>')</script>
+        <script src=".././theme/js/main.js"></script>
+        
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = '//connect.facebook.net/en_US/all.js#xfbml=1';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+    </body>
+</html>

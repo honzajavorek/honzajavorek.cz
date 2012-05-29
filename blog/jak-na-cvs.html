@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+    
+        <meta charset="utf-8">
+        <title>Jak na CVS - Javorové lístky</title>
+        <script src=".././theme/js/modernizr.custom.js"></script>
+        <!--[if !IE]> --><link rel="stylesheet" href=".././theme/css/main.css" media="screen,projection,tv"><!-- <![endif]-->
+        <!--[if gte IE 9]><link rel="stylesheet" href=".././theme/css/main.css" media="screen,projection,tv"><![endif]-->
+        <link rel="alternate" type="application/rss+xml" title="Javorové lístky" href="http://feeds.honzajavorek.cz/blog/all">
+        <link rel="shortcut icon" type="image/x-icon" href=".././favicon.ico">
+
+        <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', "UA-1316071-6"]);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    
+    </head>
+    <body>
+        <div id="document" class="article">
+            <header>
+                <a href="../.">
+                <hgroup>
+                    <h1>
+                        Javorové<span id="logo">&nbsp;</span>lístky
+                    </h1>
+                    <h2>Honza Javorek</h2>
+                </hgroup>
+                </a>
+            </header>
+
+            <div id="content">
+                
+
+<article>
+    <header>
+        <h1>Jak na CVS</h1>
+        <small>
+            <time datetime="2007-12-30T12:00:00" pubdate>30.12.2007</time>
+        </small>
+    </header>
+
+    
+        <section id="article_content">
+        
+    
+
+    <p>Návod jak rozběhat <strong>CVS repository na Windows</strong>. Jde to i na Linuxu, ale nikdy jsem to nedělal. Popravdě, toto byla trochu zvrhlá věta, protože pro CVS jsou unixové systémy nativní platformou. Nehledejte zde <a href="http://cs.wikipedia.org/wiki/CVS">co je to CVS</a>. Návod není ani o používání CVS – je o instalaci služeb do systému, aby se mohly používat.</p>
+<h2 id="prvni-kroky">První kroky</h2>
+<p>Protože CVS je primárně pro jiné OS než Windows, uchýlíme se k <a href="http://www.march-hare.com/cvspro/">CVSNT</a>. To je rozšíření CVS, jež lze instalovat i na Windows. Na stránkách projektu se přes free download proklikáme ke stažení instalace. Instalační cvsnt-verze.msi spustíme typický klikací průvodce instalací, kde by nemělo dojít k žádným složitostem (klikat na <em>next</em> umí i nesmažený hermelín).</p>
+<p>Nainstalováno. Co teď? CVS bude používat pro svou práci nějaký port. Zřejmě zůstanete u standardního <strong>2401</strong>. Musíte jej povolit ve firewallu.</p>
+<h2 id="control-panel-a-vytvoreni-repository">Control Panel a vytvoření repository</h2>
+<p>Koukněte do <strong>Start menu</strong> a najděte nově nainstalovanou složku s CVSNT. Je tam <strong>CVSNT Control Panel</strong>. Dosti užitečné GUI, které hned využijeme. Hned na první záložce je možnost vypínat a spouštět obě CVS služby. Na záložce s <strong>Repository configuration</strong> můžete spravovat úložiště dat (či jak to nazvat). V <strong>Location</strong> vyberte cestu k nově zřizovanému repository. Repository je serverová část CVS, místo, kam si CVS ukládá údaje o změnách v souborech vašich projektů. Cestu volte nějak rozumně, třeba D:/wrk/cvs.</p>
+<p>V <strong>Server settings</strong> záložce bych sice nic za normálních okolností neměnil, ale pokud z různých firewallových důvodů nemůžete využít výchozí port pro CVS, zde jej můžete upravit. Relevantní je <strong>CVS server port</strong>, ten druhý měnit netřeba.</p>
+<h2 id="uzivatele">Uživatelé</h2>
+<p>Já osobně využívám CVSNT na jednom počítači jako server i klient a tím se řídí můj návod. Pokud to potřebujete jinak, musíte se s tím nějak poprat. CVSNT při tomto mém nastavení využívá uživatelské účty ve Windows.</p>
+<p>Ve složce, kam jsme umístili repository se vytvořil adresář <strong>CVSROOT</strong>. Zde je milion souborů, které není radno editovat a pár souborů, jejichž editace může mít docela vlídné následky :) . Např. soubor admin definuje administrátory repository. Na každém řádku má být jméno administrátora, takže tam přidejte název svého Windows účtu (u mě soubor obsahuje dvě písmena, a to lm).</p>
+<p>Pak v příkazové řádce Windows zadejte</p>
+<pre class="highlight"><code><span class="k">set</span> <span class="nv">CVSROOT</span><span class="o">=</span><span class="nl">:pserver:adminlogin</span>@localhost:<span class="n">/cvs</span>
+</code></pre>
+
+
+<p>nebo, pokud jste měnili port,</p>
+<pre class="highlight"><code><span class="k">set</span> <span class="nv">CVSROOT</span><span class="o">=</span><span class="nl">:pserver:adminlogin</span>@localhost:0000:<span class="n">/cvs</span>
+</code></pre>
+
+
+<p>Místo adminlogin pište svůj administrátorský login (já lm), místo 0000 svůj port a místo /cvs název repository (ten vypisuje Control Panel v přehledu repositories v prvním sloupci tabulky). Pak už si můžete hrát s účty (přidávat a měnit hesla):</p>
+<pre class="highlight"><code>cvs passwd -a nejakylogin
+</code></pre>
+
+
+<p>Zeptá se na nové heslo, to zašifruje a spolu s loginem plácne do souboru <strong>passwd</strong> v CVSROOT. Dále domapujeme uživatele Windows k CVS a to poeditováním passwd do následující podoby:</p>
+<pre class="highlight"><code><span class="o">&lt;</span><span class="n">login</span><span class="o">&gt;</span><span class="p">:</span><span class="o">&lt;</span><span class="n">heslo</span><span class="o">&gt;</span><span class="p">:</span><span class="o">&lt;</span><span class="n">windows</span> <span class="n">user</span><span class="o">&gt;</span>
+</code></pre>
+
+
+<p>Je hotovo. Teď už se jen připojit. Na všechno jsou příkazy v CLI, ale zkušenější člověk se s tím nemusí párat a může poeditovat nějaký ten soubor ručně, když k tomu má přístup nevzdáleně a ví co dělá. Akorát heslo je třeba tvořit přes příkazovou řádku, protože se šifruje.</p>
+<h2 id="vzdaleny-pristup-pro-kolegy">Vzdálený přístup pro kolegy</h2>
+<p>Protože je provázanost mezi uživateli vašeho systému a CVS, vytvořte si lokálního fiktivního uživatele ve Windows, např. <em>cvsuser</em> nebo <em>cvs</em>. Nemusí se k němu jít ani přihlásit, měl by mít omezená práva apod. Jinak se s tím zápasí pod Windows XP Proffesional (je na to GUI) a jinak pod Windows XP Home (buď necháte jako běžného usera, nebo nakonfigurujete přes CLI stejně jako byste to dělali v Proffesional přes GUI), ale jde to všude. Na tohoto uživatele můžeme mapovat všechny spolupracovníky.</p>
+<p>Uživatele pak přidáte úplně stejně jako výše, <strong>akorát jej namapujete v passwd na Windows fiktivního uživatele pro cvs</strong>. Kolega se pak připojí nějak takto:</p>
+<pre class="highlight"><code><span class="p">:</span><span class="n">pserver</span><span class="p">:</span><span class="n">jehoskvelylogin</span><span class="p">@</span><span class="n">vaseipadresa</span><span class="p">:</span><span class="n">port</span><span class="p">:</span><span class="n">repository</span>
+</code></pre>
+
+
+<p>Například:</p>
+<pre class="highlight"><code><span class="p">:</span><span class="n">pserver</span><span class="p">:</span><span class="n">karkulka</span><span class="p">@</span>0<span class="p">.</span>255<span class="p">.</span>0<span class="p">.</span>255<span class="p">:</span><span class="o">/</span><span class="n">work</span><span class="o">/</span><span class="n">cvs</span>
+</code></pre>
+
+
+<p>a musíte mu samozřejmě napsat i přidělené heslo. Místo IP můžete použít i DNS adresu, pokud nějakou máte.</p>
+<h2 id="">конец</h2>
+<p>Tak milé děti, konec! Teď už můžete vyvíjet pod CVS. A já si jdu hrát s <a href="http://cs.wikipedia.org/wiki/SVN">SVN</a> ;) . Za spolupráci na operaci a za trpělivost budiž položen dík <a href="http://jentak.javorkovi.cz/">brašulemu</a>.</p>
+
+    
+        </section>
+
+        <hr>
+
+        <section id="comments" class="loading">
+            <div id="comments_inner">
+                <div class="fb-like" data-send="false" data-width="450" data-show-faces="true"></div>
+                <div id="disqus_thread"></div>
+                <script>
+                    var disqus_shortname = "javorove-listky";
+                    var disqus_developer = 0;
+                    var disqus_url = 'http:\/\/blog.javorek.net\/' + "jak-na-cvs" + '\/';
+                    var disqus_title = "Jak na CVS";
+
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.async = true;
+                        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript><p class="noscript"><em>Bez JavaScriptu komentáře nejsou.</em></p></noscript>
+            </div>
+        </section>
+    
+
+    <footer>
+        <small>
+            <a href="https://github.com/honzajavorek/blog/edit/master/posts/2007-12-30%20jak-na-cvs.md">edit</a>
+        </small>
+    </footer>
+</article>
+
+
+            </div>
+        </div>
+
+        <nav>
+            <h3>Hrábě</h3>
+            <form action="https://www.google.com/cse" id="cse-search-box">
+                <input type="hidden" name="cx" value="011917998094738623377:qowdxfpbkv4">
+                <input type="hidden" name="ie" value="UTF-8">
+                <input type="search" name="q" size="31" placeholder="Hledat">
+                <button type="submit" name="sa">Prohrabat listí</button>
+            </form>
+        </nav>
+
+        <footer>
+            <h3>Zahradník</h3>
+            <address>© 2007–2012 Honza Javorek</address>
+            <p><small>
+                <a href="http://feeds.honzajavorek.cz/blog/all">do čtečky</a>
+                &middot;
+                <a href="http://feedburner.google.com/fb/a/mailverify?uri=blog/all&loc=cs_CZ">do mailu</a>
+            </small></p>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src=".././theme/js/jquery-1.7.2.min.js">\x3C/script>')</script>
+        <script src=".././theme/js/main.js"></script>
+        
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = '//connect.facebook.net/en_US/all.js#xfbml=1';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+    
+        <meta charset="utf-8">
+        <title>Skript na rozbalení .zip v blbém kódování - Javorové lístky</title>
+        <script src=".././theme/js/modernizr.custom.js"></script>
+        <!--[if !IE]> --><link rel="stylesheet" href=".././theme/css/main.css" media="screen,projection,tv"><!-- <![endif]-->
+        <!--[if gte IE 9]><link rel="stylesheet" href=".././theme/css/main.css" media="screen,projection,tv"><![endif]-->
+        <link rel="alternate" type="application/rss+xml" title="Javorové lístky" href="http://feeds.honzajavorek.cz/blog/all">
+        <link rel="shortcut icon" type="image/x-icon" href=".././favicon.ico">
+
+        <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', "UA-1316071-6"]);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    
+    </head>
+    <body>
+        <div id="document" class="article">
+            <header>
+                <a href="../.">
+                <hgroup>
+                    <h1>
+                        Javorové<span id="logo">&nbsp;</span>lístky
+                    </h1>
+                    <h2>Honza Javorek</h2>
+                </hgroup>
+                </a>
+            </header>
+
+            <div id="content">
+                
+
+<article>
+    <header>
+        <h1>Skript na rozbalení .zip v blbém kódování</h1>
+        <small>
+            <time datetime="2009-11-20T11:27:00" pubdate>20.11.2009</time>
+        </small>
+    </header>
+
+    
+        <section id="article_content">
+        
+    
+
+    <p>.zip je dost primitivní formát a pokud v něm zabalíme složky a soubory <strong>s diakritikou</strong> na Windows a budeme rozbalovat jinde (kdekoliv, kde nebude kódování windows-1250), tak si na tom grafický rozbalovač vyláme zuby a <code>unzip</code> z terminálu rozbalí vše, ale s podivnými znaky (takže se soubory nejde nic dělat, musí se nejdříve přejmenovat). Podobný problém bude asi fungovat i opačným směrem – pokud já zabalím něco v Linuxu do .zip, pravděpodobně se to podobně rozbije ve Windows.</p>
+<p>Už dlouhou dobu (i na Windows) mám nejraději <a href="http://www.7-zip.org/">7zip</a>, asi nejlepší program na archivy vůbec. Má vlastní formát .7z, který je hodně parametrizovatelný a má skvělou kompresi. Rozbalí i zabalí .zip, .rar a spoustu jiných dalších typů archivů. <strong>Navíc je zadarmo a je na všechny platformy.</strong> Když můžu, používám ho místo .zip a nemám žádné problémy.</p>
+<p>Pokud ale nějaký .zip přijde, nedá se nic dělat. Napsal jsem skript, který problém řeší:</p>
+<pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="nv">dirname</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="s2">&quot;$1&quot;</span> | sed -e <span class="s1">&#39;s/\(.\+\)\.zip/\1/&#39;</span><span class="sb">`</span>
+unzip <span class="nv">$1</span> convmv -f cp1250 -t utf8 -r <span class="nv">$dirname</span> --notest
+</code></pre>
+
+
+<p>Pokud jej uložíme jako třeba <code>unzip-win</code>, rozbalíme archiv jako <code>./unzip-win bidny-kojot.zip</code>. Přeji bezproblémové rozbalování
+:) .</p>
+
+    
+        </section>
+
+        <hr>
+
+        <section id="comments" class="loading">
+            <div id="comments_inner">
+                <div class="fb-like" data-send="false" data-width="450" data-show-faces="true"></div>
+                <div id="disqus_thread"></div>
+                <script>
+                    var disqus_shortname = "javorove-listky";
+                    var disqus_developer = 0;
+                    var disqus_url = 'http:\/\/blog.javorek.net\/' + "skript-na-rozbaleni-zip-v-blbem-kodovani" + '\/';
+                    var disqus_title = "Skript na rozbalen\u00ed .zip v blb\u00e9m k\u00f3dov\u00e1n\u00ed";
+
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.async = true;
+                        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript><p class="noscript"><em>Bez JavaScriptu komentáře nejsou.</em></p></noscript>
+            </div>
+        </section>
+    
+
+    <footer>
+        <small>
+            <a href="https://github.com/honzajavorek/blog/edit/master/posts/2009-11-20%20skript-na-rozbaleni-zip-v-blbem-kodovani.md">edit</a>
+        </small>
+    </footer>
+</article>
+
+
+            </div>
+        </div>
+
+        <nav>
+            <h3>Hrábě</h3>
+            <form action="https://www.google.com/cse" id="cse-search-box">
+                <input type="hidden" name="cx" value="011917998094738623377:qowdxfpbkv4">
+                <input type="hidden" name="ie" value="UTF-8">
+                <input type="search" name="q" size="31" placeholder="Hledat">
+                <button type="submit" name="sa">Prohrabat listí</button>
+            </form>
+        </nav>
+
+        <footer>
+            <h3>Zahradník</h3>
+            <address>© 2007–2012 Honza Javorek</address>
+            <p><small>
+                <a href="http://feeds.honzajavorek.cz/blog/all">do čtečky</a>
+                &middot;
+                <a href="http://feedburner.google.com/fb/a/mailverify?uri=blog/all&loc=cs_CZ">do mailu</a>
+            </small></p>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src=".././theme/js/jquery-1.7.2.min.js">\x3C/script>')</script>
+        <script src=".././theme/js/main.js"></script>
+        
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = '//connect.facebook.net/en_US/all.js#xfbml=1';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+    </body>
+</html>
