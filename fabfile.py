@@ -48,26 +48,26 @@ def slugify(string, underscore=False):
 def update_license_year():
     """Checks year range in license and updates it if necessary."""
     pass
-#     license_file = os.path.join(project_dir, 'README.markdown')
+    license_file = os.path.join(project_dir, 'README.md')
 
-#     with open(license_file) as license:
-#         content = unicode(license.read(), 'utf-8')
-#     license_until_year = re.search(ur'2007–(\d+)', content).group(1)
-#     current_year = str(datetime.now().year)
+    with open(license_file) as license:
+        content = unicode(license.read(), 'utf-8')
+    license_until_year = re.search(ur'2007–(\d+)', content).group(1)
+    current_year = str(datetime.now().year)
 
-#     if license_until_year != current_year:
-#         warning('Year in license: %s. Updating to %s.'
-#             % (license_until_year, current_year))
+    if license_until_year != current_year:
+        warning('Year in license: %s. Updating to %s.'
+            % (license_until_year, current_year))
 
-#         with open(license_file, 'w') as license:
-#             license.write(
-#                 content.replace(
-#                     u'–' + license_until_year,
-#                     u'–' + current_year
-#                 ).encode('utf-8')
-#             )
+        with open(license_file, 'w') as license:
+            license.write(
+                content.replace(
+                    u'–' + license_until_year,
+                    u'–' + current_year
+                ).encode('utf-8')
+            )
 
-#     okay('License up to date.')
+    okay('License up to date.')
 
 
 @task
