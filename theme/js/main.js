@@ -29,10 +29,11 @@ $(document).ready(function() {
                 // my changes
                 $('.dsq-h3-reactions', $disqus).text('Reakce');
 
-                // display comments
-                $('.article hr').show();
-                $('#comments_inner').show();
-                $('#comments').removeClass('loading');
+                // display comments & ensure the right scroll position
+                $('html').addClass('ready');
+                if (window.location.hash) {
+                    window.location.hash = window.location.hash;
+                }
             }
         }, 100);
     }

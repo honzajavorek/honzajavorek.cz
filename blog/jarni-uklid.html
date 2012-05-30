@@ -6,7 +6,7 @@
         <title>Jarní úklid - Javorové lístky</title>
         <script src=".././theme/js/modernizr.custom.js"></script>
         <!--[if !IE]> --><link rel="stylesheet" href=".././theme/css/main.css" media="screen,projection,tv"><!-- <![endif]-->
-        <!--[if gte IE 9]><link rel="stylesheet" href=".././theme/css/main.css" media="screen,projection,tv"><![endif]-->
+        <!--[if gte IE 7]><link rel="stylesheet" href=".././theme/css/main.css" media="screen,projection,tv"><![endif]-->
         
     
         <link rel="alternate" type="application/rss+xml" title="Javorové lístky – všechny články" href="http://feeds.feedburner.com/javorove-listky">
@@ -72,31 +72,39 @@
 <li>Komentáře mají rozhraní pořád v angličtině, protože za to polovičaté české bych se fakt styděl. Napsal jsem Disqusu, že jim tu českou verzi klidně vylepším. Uvidíme, co napíšou.</li>
 </ul>
 <p>Nu a to je asi tak vše. Těšte se na nové články, mám při tom učení hrozný tvůrčí a myšlenkový přetlak.</p>
+<h2 id="aktualizace">Aktualizace</h2>
+<p>Na základě připomínek jsem udělal následující úpravy:</p>
+<ul>
+<li>Logo v SVG jsem nahradil jeho verzí v PNG. Svět očividně na SVG v CSS není stále připraven, nechytal se ani Chrome (vivat Firefox!).</li>
+<li>Zkusil jsem opravit fonty tak, aby se lépe zobrazovaly na Windows. Pomůže to? Nevím.</li>
+<li>Povolil jsem styly pro Internet Explorer 7 a vyšší. Prý bylo zobrazování, až na menší chybky, v pohodě.</li>
+</ul>
     </section>
 
     
-
+    <div id="loading_area">
     <hr>
 
-    <section id="comments" class="loading">
-        <div id="comments_inner">
+    <section id="comments">
+        <div id="fb_like">
             <div class="fb-like" data-send="false" data-width="450" data-show-faces="true"></div>
-            <div id="disqus_thread"></div>
-            <script>
-                var disqus_shortname = "javorove-listky";
-                var disqus_developer = 0;
-                var disqus_url = 'http:\/\/honzajavorek.cz\/blog\/' + "jarni-uklid";
-                var disqus_title = "Jarn\u00ed \u00faklid";
-
-                (function() {
-                    var dsq = document.createElement('script'); dsq.async = true;
-                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                })();
-            </script>
-            <noscript><p class="noscript"><em>Bez JavaScriptu komentáře nejsou.</em></p></noscript>
         </div>
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_shortname = "javorove-listky";
+            var disqus_developer = 0;
+            var disqus_url = 'http:\/\/honzajavorek.cz\/blog\/' + "jarni-uklid";
+            var disqus_title = "Jarn\u00ed \u00faklid";
+
+            (function() {
+                var dsq = document.createElement('script'); dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript><p class="noscript"><em>Bez JavaScriptu komentáře nejsou.</em></p></noscript>
     </section>
+    </div>
     
 
     <footer>

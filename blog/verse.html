@@ -6,7 +6,7 @@
         <title>Verše - Javorové lístky</title>
         <script src=".././theme/js/modernizr.custom.js"></script>
         <!--[if !IE]> --><link rel="stylesheet" href=".././theme/css/main.css" media="screen,projection,tv"><!-- <![endif]-->
-        <!--[if gte IE 9]><link rel="stylesheet" href=".././theme/css/main.css" media="screen,projection,tv"><![endif]-->
+        <!--[if gte IE 7]><link rel="stylesheet" href=".././theme/css/main.css" media="screen,projection,tv"><![endif]-->
         
     
         <link rel="alternate" type="application/rss+xml" title="Javorové lístky – všechny články" href="http://feeds.feedburner.com/javorove-listky">
@@ -70,28 +70,29 @@ s vervou Bruce Willise…</p>
     </section>
 
     
-
+    <div id="loading_area">
     <hr>
 
-    <section id="comments" class="loading">
-        <div id="comments_inner">
+    <section id="comments">
+        <div id="fb_like">
             <div class="fb-like" data-send="false" data-width="450" data-show-faces="true"></div>
-            <div id="disqus_thread"></div>
-            <script>
-                var disqus_shortname = "javorove-listky";
-                var disqus_developer = 0;
-                var disqus_url = 'http:\/\/honzajavorek.cz\/blog\/' + "verse";
-                var disqus_title = "Ver\u0161e";
-
-                (function() {
-                    var dsq = document.createElement('script'); dsq.async = true;
-                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                })();
-            </script>
-            <noscript><p class="noscript"><em>Bez JavaScriptu komentáře nejsou.</em></p></noscript>
         </div>
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_shortname = "javorove-listky";
+            var disqus_developer = 0;
+            var disqus_url = 'http:\/\/honzajavorek.cz\/blog\/' + "verse";
+            var disqus_title = "Ver\u0161e";
+
+            (function() {
+                var dsq = document.createElement('script'); dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript><p class="noscript"><em>Bez JavaScriptu komentáře nejsou.</em></p></noscript>
     </section>
+    </div>
     
 
     <footer>
