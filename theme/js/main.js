@@ -23,8 +23,11 @@ $(document).ready(function() {
             if (disqus_ready) {
                 clearInterval(check_disqus); // remove timer
 
+                // prepare context for lookup
+                $disqus = $('#dsq-content');
+
                 // my changes
-                $('.dsq-h3-reactions', '#dsq-content').text('Reakce');
+                $('.dsq-h3-reactions', $disqus).text('Reakce');
 
                 // display comments
                 $('.article hr').show();

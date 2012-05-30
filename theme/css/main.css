@@ -559,36 +559,40 @@ body > nav h3, footer h3, .index #content > h1 {
 #content li {
   margin-bottom: 1em;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003183}}
+#content > footer {
+  margin: 3.5em 0 0 0;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003184}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003188}}
 h1, h2, h3, h4 {
   clear: both;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003187}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003191}}
 h1:hover .anchor, h2:hover .anchor, h3:hover .anchor, h4:hover .anchor {
   visibility: visible;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003194}}
 h2 {
   font-size: 150%;
   margin-bottom: 0.9em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003191}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003195}}
 h3 {
   font-size: 116%;
   margin-bottom: 0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003192}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003196}}
 h4 {
   font-size: 102%;
   margin-bottom: 0.3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003194}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003198}}
 .anchor {
   font-size: 70%;
   display: block;
@@ -598,53 +602,53 @@ h4 {
   width: 20.1px;
   visibility: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003204}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003208}}
 .anchor, .anchor a, .anchor a:visited {
   color: #a3a3a3;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003205}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003209}}
 .anchor a {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003208}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003212}}
 p, ul, ol, dl, table, blockquote, address {
   font-size: 1em;
   line-height: 1.8em;
   margin-bottom: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003210}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003214}}
 img, a img {
   border: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003211}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003215}}
 figure {
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003211}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003215}}
 figure img, figure iframe {
   margin: 1.5em auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003213}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003217}}
 pre {
   margin-bottom: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003215}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003219}}
 p {
   margin: 0.3em 0 1em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003216}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003220}}
 p.poem {
   text-align: center;
   margin: 3em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003218}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003222}}
 blockquote {
   margin: 1.5em 0;
   padding: 0 0 0 1em;
@@ -653,44 +657,44 @@ blockquote {
   font-style: italic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003225}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003229}}
 small {
   font-size: 80%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003227}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003231}}
 code, sample, kbd, tt {
   padding: 0.2em 0.4em 0.1em 0.4em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003228}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003232}}
 pre, code, kbd, samp, tt {
   font-family: "Monospace font Firefox hack", Consolas, monospace;
   line-height: 120%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003229}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003233}}
 dfn, em, cite, var {
   font-style: italic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003231}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003235}}
 pre {
   margin: 1em 0;
   padding: 1em;
   overflow: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003235}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003239}}
 pre code, pre sample, pre kbd, pre tt {
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003238}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003242}}
 del {
   text-decoration: line-through;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003240}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003244}}
 ins, mark {
   text-decoration: none;
   background-color: #fffbab;
@@ -698,18 +702,18 @@ ins, mark {
   padding: 0.1em 0.4em 0.2em 0.4em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003247}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003251}}
 abbr[title], acronym[title] {
   border-bottom: #353535 1px dotted;
   cursor: help;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003251}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003255}}
 abbr[title]:hover, acronym[title]:hover {
   color: #a3a3a3;
   border-color: #a3a3a3;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003257}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003261}}
 table {
   font-size: inherit;
   color: inherit;
@@ -717,157 +721,158 @@ table {
   margin: 1.5em auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003258}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003262}}
 th, td {
   vertical-align: top;
   border: 1px dotted #a3a3a3;
   padding: 0.5em 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003259}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003263}}
 caption {
   margin: 0.5em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003261}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003265}}
 dt, caption, th, strong {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003263}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003267}}
 sup {
   vertical-align: super;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003264}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003268}}
 sub {
   vertical-align: sub;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003265}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003269}}
 sub, sup {
   font-size: 80%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003267}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003271}}
 ol, dl, article ul {
   margin: 1.5em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003268}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003272}}
 ol {
   padding-left: 2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003269}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003273}}
 ol li {
   padding-left: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003270}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003274}}
 dd {
   margin-left: 2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003272}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003276}}
 body > nav {
   padding: 3em 0;
   text-shadow: 2px 2px #FFF;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003276}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003280}}
 body > nav input, body > nav button {
   padding: 0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003281}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003285}}
 body > footer {
   padding-bottom: 3em;
   font-family: "AllerRegular", sans-serif;
   font-size: 80%;
   text-shadow: 1px 1px #FFF;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003287}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003291}}
 body > footer, body > footer a {
   color: #353535;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003288}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003292}}
 body > footer address {
   font-style: normal;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003289}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003293}}
 body > footer p a {
   margin: 0 0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003292}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003296}}
 article {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003296}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003300}}
 article header h1 {
   font-size: 200%;
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003297}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003301}}
 article header a {
   color: #353535;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003298}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003302}}
 article header a:hover, article header a:focus {
   color: #779600;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003299}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003303}}
 article header small {
   margin-left: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003302}}
-article footer {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003306}}
+article footer small {
+  display: block;
   position: absolute;
   right: 0;
   top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003306}}
-article footer, article footer a, article footer a:visited {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003311}}
+article footer small, article footer small a, article footer small a:visited {
   color: #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003307}}
-article footer a:hover, article footer a:focus {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003312}}
+article footer small a:hover, article footer small a:focus {
   color: #779600;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003316}}
 article #article_content ul, article #article_content ul li {
   list-style-type: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003317}}
 article #article_content ul {
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003318}}
 article #article_content ul li {
   margin: 0;
   padding: 0 0 0 2em;
   background: url("../images/bullet-green.png") 0.5em 0.5em no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003320}}
 article #article_content img {
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
   margin: 0.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003321}}
 article #article_content img.right {
   float: right;
   margin-left: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003322}}
 article #article_content img.left {
   float: left;
   margin-right: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003325}}
 article hr {
   border: 0;
   background: none;
@@ -875,7 +880,7 @@ article hr {
   margin-bottom: 90px;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003332}}
 article hr:before {
   display: block;
   content: "…";
@@ -884,137 +889,138 @@ article hr:before {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003342}}
 .paginator {
   clear: both;
   text-align: center;
   margin: 1em 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003347}}
 .paginator .previous, .paginator .next {
   display: inline-block;
   width: 5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003348}}
 .paginator small {
   font-size: inherit;
   color: #a3a3a3;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003346}}
-.archives_link {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003351}}
+.aside_links {
   text-align: center;
+  font-size: 80%;
   margin: 0.5em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003358}}
 .index #content > ul, .index #content > ul > li {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003363}}
 .index #content > ul > li {
   margin: 3em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003369}}
 .article #content article header {
   text-align: center;
   margin-bottom: 3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003370}}
 .article #content article h1 {
   font-size: 260%;
   display: block;
   margin: 0 0 0.5em 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003371}}
 .article #content article header small {
   margin: 0;
   font-size: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003375}}
 .archives h1, .archives p {
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003379}}
 .archives h3 {
   font-size: 100%;
   font-weight: normal;
   color: #a3a3a3;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003385}}
 .archives time {
   display: inline-block;
   width: 3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003390}}
 .archives ul, .archives ul li {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003395}}
 .archives #content > ul {
   margin-bottom: 3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003401}}
 .error404 #content {
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003402}}
 .error404 p {
   margin: 2em 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003403}}
 .error404 form {
   margin: 3em 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003404}}
 .error404 input, .error404 button {
   padding: 0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003401}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003407}}
 #disqus_thread {
   margin: 0 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003405}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003411}}
 #dsq-content {
   font-size: 100% !important;
   line-height: 100% !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003409}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003415}}
 #dsq-content button {
   line-height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003413}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003419}}
 #dsq-content ul, #dsq-content ul li {
   list-style-type: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003417}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003423}}
 #dsq-content #dsq-global-toolbar {
   margin: 0 0 4em 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003421}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003427}}
 #dsq-content .dsq-comment-header {
   background: #eeeeee !important;
   border: none !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003425}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003431}}
 #dsq-content .dsq-comment-header a {
   color: #353535;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003426}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003432}}
 #dsq-content .dsq-comment-header a:hover, #dsq-content .dsq-comment-header a:focus {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003429}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003435}}
 #dsq-content .dsq-moderator-star, #dsq-content .dsq-collapse-toggle {
   position: absolute;
   left: -38000px;
@@ -1022,30 +1028,30 @@ article hr:before {
   line-height: 0;
   font-size: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003433}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003439}}
 #dsq-content .dsq-header-avatar img {
   margin: 0.5em !important;
   display: block !important;
   border: none !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003439}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003445}}
 #dsq-content .dsq-request-user-info .dsq-header-avatar img {
   margin: 0 !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003443}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003449}}
 #dsq-content .dsq-moderator .dsq-comment-header {
   background: #fffbab !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003447}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003453}}
 #dsq-content .dsq-comment-header-time {
   font-size: 90% !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003450}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003456}}
 #dsq-content .dsq-comment-header-time a, #dsq-content .dsq-comment-header-time a:link, #dsq-content .dsq-comment-header-time a:hover, #dsq-content .dsq-comment-header-time a:focus {
   color: #353535;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003456}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003462}}
 #dsq-content .dsq-remove-message, #dsq-content .dsq-realtime-alert, #dsq-content .dsq-missing-permissions p {
   color: #353535;
   background: #eeeeee !important;
@@ -1057,53 +1063,53 @@ article hr:before {
   font-family: "Enriqueta", "Georgia", serif !important;
   font-size: 85%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003468}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003474}}
 #dsq-content .dsq-comment-outline .dsq-comment-header {
   outline: none !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003473}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003479}}
 #dsq-content .dsq-comment-cite span, #dsq-content .dsq-comment-cite a, #dsq-content .dsq-request-user-name span, #dsq-content .dsq-request-user-name a {
   font-weight: normal !important;
   font-size: 120%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003479}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003485}}
 #dsq-content #dsq-reactions .dsq-reaction-header table {
   background: #eeeeee !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003485}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003491}}
 #dsq-content .dsq-comment-hide-thread, #dsq-content .dsq-options, #dsq-content .dsq-post-report, #dsq-content #dsq-comments-title, #dsq-content .dsq-item-sort,
-#dsq-content #dsq-pagination, #dsq-content .dsq-attach-media, #dsq-content #dsq-new-post h3, #dsq-content #dsq-sort-by, #dsq-content > h3, #dsq-content #dsq-reply h3,
-#dsq-content .dsq-comment-flag, #dsq-content .dsq-share-on h4 {
+#dsq-content .dsq-attach-media, #dsq-content #dsq-new-post h3, #dsq-content #dsq-sort-by, #dsq-content > h3, #dsq-content #dsq-reply h3,
+#dsq-content .dsq-comment-flag, #dsq-content .dsq-share-on h4, #dsq-content #dsq-footer {
   display: none !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003489}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003495}}
 #dsq-content > h3.dsq-h3-reactions {
   display: block !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003493}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003499}}
 #dsq-content .dsq-notice {
   border: none !important;
   box-shadow: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003498}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003504}}
 #dsq-content .dsq-like-activity {
   margin: 0 !important;
   padding: 0 !important;
   font-size: 75% !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003504}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003525}}
 .js #comments_inner, .js .article hr {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003508}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003529}}
 .js .loading {
   min-height: 150px;
   background: url("../images/loader.gif") no-repeat center center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003513}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003534}}
 .noscript {
   text-align: center;
 }
