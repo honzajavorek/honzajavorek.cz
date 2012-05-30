@@ -100,6 +100,9 @@ def copyright(year):
 def tojson(*args, **kwargs):
     return json.dumps(*args, **kwargs).replace('/', '\\/')
 
+def has_images(html):
+    return re.search(r'<img[^\>]*>', html)
+
 JINJA_FILTERS = {
     'figure': figure,
     'code': code,
@@ -107,4 +110,5 @@ JINJA_FILTERS = {
     'format_date': format_date,
     'copyright': copyright,
     'tojson': tojson,
+    'has_images': has_images,
 }
