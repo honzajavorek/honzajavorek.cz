@@ -3,7 +3,7 @@
 
 from fabric.api import *
 from fabric.colors import red, green, yellow
-from datetime import datetime
+from datetime import datetime, timedelta
 from glob import glob
 import unicodedata
 import os
@@ -22,15 +22,15 @@ css_dir = project_dir + '/theme/static/css'
 # Auxiliary functions
 
 def okay(message):
-    puts((green(u'✔ ') + message).encode('utf-8'))
+    puts((green(u'✔ ') + message).encode('utf8'))
 
 def error(message):
     cross = red(u'✖')
-    abort((cross + ' ' + message + ' ' + cross).encode('utf-8'))
+    abort((cross + ' ' + message + ' ' + cross).encode('utf8'))
 
 def warning(message):
     star = yellow(u'★')
-    warn((star + ' ' + message + ' ' + star).encode('utf-8'))
+    warn((star + ' ' + message + ' ' + star).encode('utf8'))
 
 def slugify(string, underscore=False):
     if not isinstance(string, unicode):
@@ -51,7 +51,7 @@ def update_license_year():
     license_file = os.path.join(project_dir, 'README.md')
 
     with open(license_file) as license:
-        content = unicode(license.read(), 'utf-8')
+        content = unicode(license.read(), 'utf8')
     license_until_year = re.search(ur'2007–(\d+)', content).group(1)
     current_year = str(datetime.now().year)
 
@@ -64,7 +64,7 @@ def update_license_year():
                 content.replace(
                     u'–' + license_until_year,
                     u'–' + current_year
-                ).encode('utf-8')
+                ).encode('utf8')
             )
 
     okay('License up to date.')
@@ -128,3 +128,23 @@ def publish():
         local('git push origin master')
     okay('All published.')
     execute(deploy)
+
+
+@task
+def new(title=None):
+    """Creates new article template"""
+    if not title:
+        error('Missing title, usage: fab new:"Article title".')
+    else:
+        title = title.decode('utf8')
+
+    slug = slugify(title)
+    pubdate = datetime.now() + timedelta(hours=2)
+
+    filename = '%s %s.md' % (pubdate.strftime('%Y-%m-%d'), slug)
+    contents = 'Title: %s\nDate: %s\n\n' % (title, pubdate.strftime('%Y-%m-%d %H:%M:%S'))
+
+    path = os.path.join(posts_dir, filename)
+    with open(path, 'w') as f:
+        f.write(contents.encode('utf8'))
+        okay('%s prepared.' % filename)
