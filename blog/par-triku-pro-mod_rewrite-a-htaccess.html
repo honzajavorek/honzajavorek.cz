@@ -53,12 +53,12 @@
         </small>
     </header>
 
-    
-        <section id="article_content">
+    <section id="article_content">
         
-    
+            
+        
 
-    <p>Velmi často je součástí webového serveru tzv. <code>mod_rewrite</code>, který nám povoluje přepisovat jakékoliv požadavky od uživatele na jiné. Například přepsat nebo přesměrovat adresu. Více o <code>mod_rewrite</code> a souboru <code>.htaccess</code>, jenž s ním úzce souvisí, najdete třeba na <a href="http://www.jakpsatweb.cz/server/htaccess.html">Jak psát web</a>. Ta nejlepší helpka je však velmi pěkně napsaný <a href="http://httpd.apache.org/docs/2.0/mod/mod_rewrite.html">originální manuál</a>. Já se zkusím podělit o několik užitečných <em>code snippets</em>, které jsem časem nashromáždil…</p>
+        <p>Velmi často je součástí webového serveru tzv. <code>mod_rewrite</code>, který nám povoluje přepisovat jakékoliv požadavky od uživatele na jiné. Například přepsat nebo přesměrovat adresu. Více o <code>mod_rewrite</code> a souboru <code>.htaccess</code>, jenž s ním úzce souvisí, najdete třeba na <a href="http://www.jakpsatweb.cz/server/htaccess.html">Jak psát web</a>. Ta nejlepší helpka je však velmi pěkně napsaný <a href="http://httpd.apache.org/docs/2.0/mod/mod_rewrite.html">originální manuál</a>. Já se zkusím podělit o několik užitečných <em>code snippets</em>, které jsem časem nashromáždil…</p>
 <h2 id="lomitka-na-koncich">Lomítka na koncích</h2>
 <p>Přesměruje adresy <code>tralala.com/venku/je/tma</code> na <code>tralala.com/venku/je/tma/</code>.</p>
 <pre class="highlight"><code><span class="c">## endslashes</span>
@@ -137,31 +137,31 @@
 
 <h2 id="zaverem">Závěrem</h2>
 <p>Pokud byste měli nějaké další dobré tipy, podělte se v komentářích. Doufám, že se vám tyto útržky kódu budou hodit a usnadní vám život. Ne že bych byl expert na <code>mod_rewrite</code> nebo nastavení Apache přes <code>.htaccess</code>, ale už z toho co umím mohu usoudit, že jsou to opravdu silné a velmi užitečné nástroje, bez nichž bych si dneska pohyb po hostinzích nebo vlastním serveru představil jen stěží. Mnohdy je sice možné řešit totéž jiným způsobem, ale touto cestou je to mnohdy rychlejší, elegantnější a na pohled hezčí :) . Takže kdo s nimi ještě nezačal… Hurá do toho!</p>
+    </section>
 
     
-        </section>
 
-        <hr>
+    <hr>
 
-        <section id="comments" class="loading">
-            <div id="comments_inner">
-                <div class="fb-like" data-send="false" data-width="450" data-show-faces="true"></div>
-                <div id="disqus_thread"></div>
-                <script>
-                    var disqus_shortname = "javorove-listky";
-                    var disqus_developer = 0;
-                    var disqus_url = 'http:\/\/honzajavorek.cz\/blog\/' + "par-triku-pro-mod_rewrite-a-htaccess";
-                    var disqus_title = "P\u00e1r trik\u016f pro mod_rewrite a .htaccess";
+    <section id="comments" class="loading">
+        <div id="comments_inner">
+            <div class="fb-like" data-send="false" data-width="450" data-show-faces="true"></div>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_shortname = "javorove-listky";
+                var disqus_developer = 0;
+                var disqus_url = 'http:\/\/honzajavorek.cz\/blog\/' + "par-triku-pro-mod_rewrite-a-htaccess";
+                var disqus_title = "P\u00e1r trik\u016f pro mod_rewrite a .htaccess";
 
-                    (function() {
-                        var dsq = document.createElement('script'); dsq.async = true;
-                        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                    })();
-                </script>
-                <noscript><p class="noscript"><em>Bez JavaScriptu komentáře nejsou.</em></p></noscript>
-            </div>
-        </section>
+                (function() {
+                    var dsq = document.createElement('script'); dsq.async = true;
+                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript><p class="noscript"><em>Bez JavaScriptu komentáře nejsou.</em></p></noscript>
+        </div>
+    </section>
     
 
     <footer>

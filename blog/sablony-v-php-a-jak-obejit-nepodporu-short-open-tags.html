@@ -53,12 +53,12 @@
         </small>
     </header>
 
-    
-        <section id="article_content">
+    <section id="article_content">
         
-    
+            
+        
 
-    <p>Jestliže vás nalákal nadpis a nechcete číst širší úvod do problému šablon v PHP, poskočte o něco níže, tam už to tak široké není a článek lze ve zdraví přebrodit celkem rychle ;) .</p>
+        <p>Jestliže vás nalákal nadpis a nechcete číst širší úvod do problému šablon v PHP, poskočte o něco níže, tam už to tak široké není a článek lze ve zdraví přebrodit celkem rychle ;) .</p>
 <p>Píšete-li aplikaci v PHP a nejste-li v programování vepř, sele, prasnice nebo něco k tomu blízkého (vyjma kance, kanec být můžete), dříve či později pocítíte přinejmenším touhu <strong>oddělit prezentační vrstvu od zbytku</strong>. Nabízí se několik přístupů, co s touto touhou…</p>
 <h2 id="jamalalicha-paprtala-chanua-chanua-chanua">Jamalalicha, paprťála, chánua, chánua, chánua</h2>
 <p><strong>Žádná</strong> prezentační vrstva. Napaprťálujem to všechno do jednoho klubka, PHP do HTML, XML do PHP, CSS nějak k tomu a budeme mít binec, ale budeme to mít za 40 minut. Pokud po nás někdo kód dostane do rukou, nemá šanci s ním něco provést. Jestliže chceme oslovit kodéra, aby dělal na projektu úpravy, platíme mu poté pobyt v Bohnicích nebo, pro jihomoravské, Černovicích. Člověk by se divil, ale na takovém přístupu dnes stojí velké procento existujících webů a to i takových, do nichž byste to při pohledu zvenčí ani neřekli (nebo by vás napadlo, že je to sebevražda). Autoři těchto projektů neřeší dilema Smarty vs. PHP (viz dále), protože většinou ani nevědí, že taková řešení existují.</p>
@@ -97,31 +97,31 @@
 <p>První větev testuje, jestli jsou krátké značky vypnuty. Jestli ne, přejde plynule do <code>else</code>, kde proběhne zpracování přes <code>include</code> běžným způsobem. Pokud jsou vypnuty (tzn. server je tvrdohlavý a nepovolí je i přesto, že je v .htaccess a <a href="http://cz.php.net/manual/en/function.ini-set.php">ini_set</a> nastaveno aby zapnuty byly), dojde na slušné využití jedné z tabuizovaných funkcí v PHP, <a href="http://cz2.php.net/manual/en/function.eval.php">eval</a> :) . Už ten název…</p>
 <p>Jeden kouzelný řádek totiž způsobí, že se vezme text zdrojového souboru šablony, regulárním výrazem se v něm nahradí krátké značky za klasické dlouhé s <code>&lt;?php</code> apod. a předhodí se funkci <code>eval</code>, která následně kód PHP vykoná. Ne, čistěji to nejde a přijde mi to jako oprávněné a elegantní využití této funkce, které řeší významný problém a stírá rozdíly v nastavení serverů. No jak by řekl Béda Trávníček: „A to se vyplatí!“</p>
 <p>Cachování samozřejmě zcela <strong>maže handicap většího potřebného výkonu</strong>. Navíc, narazit na tak tvrdohlavý server se jistě jen tak nepoštěstí… Ale za tu jistotu to samozřejmě stojí. Teď už si můžeme pohodlně psát short open tags, velmi rychle, přehledně a efektivně s nimi kódovat šablony a nemusíme se ohlížet na nic a nikoho.</p>
+    </section>
 
     
-        </section>
 
-        <hr>
+    <hr>
 
-        <section id="comments" class="loading">
-            <div id="comments_inner">
-                <div class="fb-like" data-send="false" data-width="450" data-show-faces="true"></div>
-                <div id="disqus_thread"></div>
-                <script>
-                    var disqus_shortname = "javorove-listky";
-                    var disqus_developer = 0;
-                    var disqus_url = 'http:\/\/honzajavorek.cz\/blog\/' + "sablony-v-php-a-jak-obejit-nepodporu-short-open-tags";
-                    var disqus_title = "\u0160ablony v PHP a jak obej\u00edt nepodporu short open tags";
+    <section id="comments" class="loading">
+        <div id="comments_inner">
+            <div class="fb-like" data-send="false" data-width="450" data-show-faces="true"></div>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_shortname = "javorove-listky";
+                var disqus_developer = 0;
+                var disqus_url = 'http:\/\/honzajavorek.cz\/blog\/' + "sablony-v-php-a-jak-obejit-nepodporu-short-open-tags";
+                var disqus_title = "\u0160ablony v PHP a jak obej\u00edt nepodporu short open tags";
 
-                    (function() {
-                        var dsq = document.createElement('script'); dsq.async = true;
-                        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                    })();
-                </script>
-                <noscript><p class="noscript"><em>Bez JavaScriptu komentáře nejsou.</em></p></noscript>
-            </div>
-        </section>
+                (function() {
+                    var dsq = document.createElement('script'); dsq.async = true;
+                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript><p class="noscript"><em>Bez JavaScriptu komentáře nejsou.</em></p></noscript>
+        </div>
+    </section>
     
 
     <footer>
