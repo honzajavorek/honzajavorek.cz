@@ -16,3 +16,11 @@ Co je nového?
 - Komentáře mají rozhraní pořád v angličtině, protože za to polovičaté české bych se fakt styděl. Napsal jsem Disqusu, že jim tu českou verzi klidně vylepším. Uvidíme, co napíšou.
 
 Nu a to je asi tak vše. Těšte se na nové články, mám při tom učení hrozný tvůrčí a myšlenkový přetlak.
+
+## Aktualizace
+
+Na základě připomínek jsem udělal následující úpravy:
+
+- Logo v SVG jsem nahradil jeho verzí v PNG. Svět očividně na SVG v CSS není stále připraven, nechytal se ani Chrome (vivat Firefox!).
+- Zkusil jsem opravit fonty tak, aby se lépe zobrazovaly na Windows. Pomůže to? Nevím.
+- Povolil jsem styly pro Internet Explorer 7 a vyšší. Prý bylo zobrazování, až na menší chybky, v pohodě.
