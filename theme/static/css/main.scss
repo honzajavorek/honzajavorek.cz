@@ -5,20 +5,13 @@
 @import url('http://fonts.googleapis.com/css?family=Enriqueta&subset=latin,latin-ext#');
 @import 'code.scss';
 
-@font-face {
-    font-family: 'AllerBold';
-    src: url('../fonts/aller_bd-webfont.eot');
-    src: url('../fonts/aller_bd-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/aller_bd-webfont.woff') format('woff'),
-         url('../fonts/aller_bd-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+// see http://stackoverflow.com/questions/4060607/font-face-anti-aliasing-on-windows-and-mac
 
 @font-face {
     font-family: 'AllerDisplayRegular';
     src: url('../fonts/allerdisplay-webfont.eot');
-    src: url('../fonts/allerdisplay-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/allerdisplay-webfont.svg#AllerDisplayRegular') format('svg'),
+         url('../fonts/allerdisplay-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/allerdisplay-webfont.woff') format('woff'),
          url('../fonts/allerdisplay-webfont.ttf') format('truetype');
     font-weight: normal;
@@ -28,7 +21,8 @@
 @font-face {
     font-family: 'AllerRegular';
     src: url('../fonts/aller_rg-webfont.eot');
-    src: url('../fonts/aller_rg-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/aller_rg-webfont.svg#AllerRegular') format('svg'),
+         url('../fonts/aller_rg-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/aller_rg-webfont.woff') format('woff'),
          url('../fonts/aller_rg-webfont.ttf') format('truetype');
     font-weight: normal;
@@ -159,10 +153,6 @@ a:link, a:link span, .button, button { cursor: pointer; }
     font-weight: normal;
     margin: 0 -0.1em; padding-left: $logo_size;
     position: relative; top: 0.1ex;
-}
-
-.svg #logo {
-    background-image: url('../images/plain_logo.svg');
 }
 
 body > nav h3, footer h3, .index #content > h1 { @include hidden(); }
@@ -505,30 +495,40 @@ article {
         margin: 0 !important; padding: 0 !important;
         font-size: 75% !important;
     }
-
-    // #dsq-content #dsq-footer li {
-    //     float: none !important; // see #dsq-subscribe below
-    // }
-
-    // #dsq-subscribe {
-    //     text-transform: lowercase !important;
-    //     text-align: center !important;
-    //     font-size: 75% !important;
-
-    //     .dsq-font { display: none !important; }
-    //     li, a, span, em { display: inline !important; float: none !important; margin: 0 !important; padding: 0 !important; }
-    //     em { margin: 0 0.5em !important; }
-    //     a.dsq-subscribe-rss:before { content: ' · '; }
-    // }
 }
 
-.js #comments_inner, .js .article hr {
-    display: none;
+#comments, #content {
+    position: relative;
 }
 
-.js .loading {
+#fb_like {
+    height: 24px;
+    position: relative;
+
+    .fb-like {
+        position: absolute;
+        left: 0; top: 0;
+    }
+}
+
+.js #loading_area {
     min-height: 150px;
     background: url('../images/loader.gif') no-repeat center center;
+
+    section, hr {
+        visibility: hidden;
+        position: absolute; left: -38000px;
+    }
+}
+
+.js.ready #loading_area {
+    min-height: auto;
+    background: none;
+
+    section, hr {
+        visibility: visible;
+        position: static; left: 0;
+    }
 }
 
 .noscript {

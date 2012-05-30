@@ -74,6 +74,7 @@ def update_license_year():
 def update_styles():
     """Compiles SCSS files to CSS."""
     with lcd(css_dir):
+        local('rm -rf *.css')
         local('sass --style compressed --update .:.')
         local('rm -rf .sass-cache')
     okay('SCSS compiled.')
