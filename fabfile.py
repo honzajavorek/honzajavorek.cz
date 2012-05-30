@@ -99,12 +99,10 @@ def deploy():
 
     local('rm -rf ' + deploy_dir)
     local('mkdir ' + deploy_dir)
-    local('git clone git@github.com:honzajavorek/blog.git ' + deploy_dir)
+    local('git clone -b gh-pages git@github.com:honzajavorek/blog.git ' + deploy_dir)
 
     with lcd(deploy_dir):
         okay('Cloned blog repository.')
-        local('git checkout gh-pages')
-        okay('GitHub Pages branch.')
         local('cp -r %s/* .' % output_dir)
 
         # remove unnecessary stuff
