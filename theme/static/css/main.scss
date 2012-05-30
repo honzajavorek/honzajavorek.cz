@@ -481,7 +481,7 @@ article {
     }
 
     .dsq-comment-hide-thread, .dsq-options, .dsq-post-report, #dsq-comments-title, .dsq-item-sort,
-         #dsq-pagination, .dsq-attach-media, #dsq-new-post h3, #dsq-sort-by, & > h3, #dsq-reply h3,
+         .dsq-attach-media, #dsq-new-post h3, #dsq-sort-by, & > h3, #dsq-reply h3,
          .dsq-comment-flag, .dsq-share-on h4 {
         display: none !important;
     }
@@ -498,6 +498,21 @@ article {
     .dsq-like-activity {
         margin: 0 !important; padding: 0 !important;
         font-size: 75% !important;
+    }
+
+    #dsq-content #dsq-footer li {
+        float: none !important; // see #dsq-subscribe below
+    }
+
+    #dsq-subscribe {
+        text-transform: lowercase !important;
+        text-align: center !important;
+        font-size: 75% !important;
+
+        .dsq-font { display: none !important; }
+        li, a, span, em { display: inline !important; float: none !important; margin: 0 !important; padding: 0 !important; }
+        em { margin: 0 0.5em !important; }
+        a.dsq-subscribe-rss:before { content: ' · '; }
     }
 }
 
