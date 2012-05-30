@@ -7,7 +7,10 @@
         <script src="{{ SITEURL }}/theme/js/modernizr.custom.js"></script>
         <!--[if !IE]> --><link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" media="screen,projection,tv"><!-- <![endif]-->
         <!--[if gte IE 9]><link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" media="screen,projection,tv"><![endif]-->
-        <link rel="alternate" type="application/rss+xml" title="Javorové lístky" href="{{ FEEDBURNER_URL }}">
+        {% block feeds %}
+        <link rel="alternate" type="application/rss+xml" title="Javorové lístky – všechny články" href="http://feeds.feedburner.com/{{ FEEDBURNER_SITENAME }}">
+        <link rel="alternate" type="application/rss+xml" title="Javorové lístky – všechny komentáře" href="http://{{ DISQUS_SITENAME }}.disqus.com/latest.rss">
+        {% endblock feeds %}
         <link rel="shortcut icon" type="image/x-icon" href="{{ SITEURL }}/favicon.ico">
 
         <script>
@@ -54,11 +57,6 @@
         <footer>
             <h3>Zahradník</h3>
             <address>{{ 2007|copyright }} Honza Javorek</address>
-            <p><small>
-                <a href="http://feedburner.google.com/fb/a/mailverify?uri={{ FEEDBURNER_SITENAME }}&amp;loc=cs_CZ">do mailu</a>
-                &middot;
-                <a href="http://feeds.feedburner.com/{{ FEEDBURNER_SITENAME }}">do čtečky</a>
-            </small></p>
         </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>

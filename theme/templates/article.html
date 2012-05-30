@@ -1,4 +1,8 @@
 {% extends 'base.html' %}
+{% block feeds %}
+    {{ super() }}
+    <link rel="alternate" type="application/rss+xml" title="Javorové lístky – komentáře ke článku {{ article.title }}" href="http://{{ DISQUS_SITENAME }}.disqus.com/{{ article.slug|replace('-', '_') }}/latest.rss">
+{% endblock %}
 {% block class %}article{% endblock %}
 {% block title %}{{ article.title }} - {{ SITENAME }}{% endblock %}
 {% block content %}

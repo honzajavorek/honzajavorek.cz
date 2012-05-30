@@ -31,7 +31,7 @@
                 <script>
                     var disqus_shortname = {{ DISQUS_SITENAME|tojson|safe }};
                     var disqus_developer = 0;
-                    var disqus_url = 'http:\/\/blog.javorek.net\/' + {{ article.slug|tojson|safe }} + '\/';
+                    var disqus_url = 'http:\/\/honzajavorek.cz\/blog\/' + {{ article.slug|tojson|safe }};
                     var disqus_title = {{ article.title|tojson|safe }};
 
                     (function() {
@@ -49,5 +49,9 @@
         <small>
             <a href="https://github.com/honzajavorek/blog/edit/master/posts/{{ article.date|format_date('%Y-%m-%d', strip_zeros=False) }}%20{{ article.slug }}.md">edit</a>
         </small>
+
+        {% if not use_summary %}
+            <p class="aside_links"><a href="http://{{ DISQUS_SITENAME }}.disqus.com/{{ article.slug|replace('-', '_') }}/latest.rss">komentáře do čtečky</a></p>
+        {% endif %}
     </footer>
 </article>

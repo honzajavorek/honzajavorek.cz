@@ -179,6 +179,10 @@ body > nav h3, footer h3, .index #content > h1 { @include hidden(); }
     & li {
         margin-bottom: 1em;
     }
+
+    & > footer {
+        margin: 3.5em 0 0 0;
+    }
 }
 
 h1, h2, h3, h4 {
@@ -299,7 +303,8 @@ article {
         small { margin-left: 1em; }
     }
 
-    footer {
+    footer small {
+        display: block;
         position: absolute;
         right: 0; top: 0;
 
@@ -343,8 +348,9 @@ article {
     small { font-size: inherit; color: $color_aside_text; }
 }
 
-.archives_link {
+.aside_links {
     text-align: center;
+    font-size: 80%;
     margin: 0.5em 0;
 }
 
@@ -482,7 +488,7 @@ article {
 
     .dsq-comment-hide-thread, .dsq-options, .dsq-post-report, #dsq-comments-title, .dsq-item-sort,
          .dsq-attach-media, #dsq-new-post h3, #dsq-sort-by, & > h3, #dsq-reply h3,
-         .dsq-comment-flag, .dsq-share-on h4 {
+         .dsq-comment-flag, .dsq-share-on h4, #dsq-footer {
         display: none !important;
     }
 
@@ -500,20 +506,20 @@ article {
         font-size: 75% !important;
     }
 
-    #dsq-content #dsq-footer li {
-        float: none !important; // see #dsq-subscribe below
-    }
+    // #dsq-content #dsq-footer li {
+    //     float: none !important; // see #dsq-subscribe below
+    // }
 
-    #dsq-subscribe {
-        text-transform: lowercase !important;
-        text-align: center !important;
-        font-size: 75% !important;
+    // #dsq-subscribe {
+    //     text-transform: lowercase !important;
+    //     text-align: center !important;
+    //     font-size: 75% !important;
 
-        .dsq-font { display: none !important; }
-        li, a, span, em { display: inline !important; float: none !important; margin: 0 !important; padding: 0 !important; }
-        em { margin: 0 0.5em !important; }
-        a.dsq-subscribe-rss:before { content: ' · '; }
-    }
+    //     .dsq-font { display: none !important; }
+    //     li, a, span, em { display: inline !important; float: none !important; margin: 0 !important; padding: 0 !important; }
+    //     em { margin: 0 0.5em !important; }
+    //     a.dsq-subscribe-rss:before { content: ' · '; }
+    // }
 }
 
 .js #comments_inner, .js .article hr {

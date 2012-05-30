@@ -11,6 +11,16 @@
     {% endfor %}
     </ul>
     {% include '_pagination.html' %}
-    <p class="archives_link"><small><a href="{{ SITEURL }}/archives">herbář</a></small></p>
+
+    <footer>
+        <p class="aside_links">
+            <a href="http://feeds.feedburner.com/{{ FEEDBURNER_SITENAME }}">články do čtečky</a>
+            &middot;
+            <a href="http://{{ DISQUS_SITENAME }}.disqus.com/latest.rss">komentáře do čtečky</a>
+        </p>
+        <p class="aside_links">
+            <a href="{{ SITEURL }}/archives">herbář</a>
+        </p>
+    </footer>
 
 {% endblock content %}
