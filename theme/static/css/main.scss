@@ -87,7 +87,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 a { color: $color_link; }
 a:hover, a:focus { text-decoration: none; }
-article a:visited { color: $color_text }
+article a:visited, .archives #content a:visited { color: $color_text; }
 article a:active { position: relative; top: 1px; }
 a:link, a:link span, .button, button { cursor: pointer; }
 
