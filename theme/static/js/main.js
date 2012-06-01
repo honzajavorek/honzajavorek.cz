@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     if ($('.article').length) {
         // poem styling
-        $('#content article > p > br').closest('p').addClass('poem');
+        $('#article_content > p > br').closest('p').addClass('poem');
 
         // anchors
         $('h1, h2, h3, h4', '.article').filter('[id]').each(function() {
