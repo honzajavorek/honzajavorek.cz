@@ -15,7 +15,7 @@ Jenže když už měnit e-mail, tak aspoň vyřešit i něco, co mě trápí. T�
 
 Sranda je, že honzajavorek@gmail.com mám jakoby zarezervované já, ale nemohu to používat. Všichni víme, že Google v adrese e-mailu ignoruje tečky, takže janjavorek je pro něj totéž jako jan.javorek a honzajavorek jako honza.javorek. Ostatně, totéž dělá v adresách uživatelských účtů i Facebook. No a kdysi kdesi jsem asi použil honza.javorek jako svoje alternativní uživatelské jméno. Tuším že na Picase. Google mi ji rezervoval jako *other username*.
 
-![google-account.png](Google je prostě debil.)
+![Google je prostě debil.](google-account.png)
 
 Jenže problém je, že se k tomuto username nijak nedostanu. Nemůžu ho smazat, změnit, ani použít. Tedy nikdo si jej nemůže zaregistrovat, ale když někdo pošle e-mail na honza.javorek@gmail.com, nedojde mi! Což je nešťastné - tak málo by stačilo...
 
