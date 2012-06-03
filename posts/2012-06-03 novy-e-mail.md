@@ -9,13 +9,13 @@ Většinu z uvedeného jsem udělal už před několika měsíci. Dnes jsem ale 
 
 Koupil jsem doménu [honzajavorek.cz](http://honzajavorek.cz) a rozběhal na ní svůj blog. Starý web na [www.javorek.net](http://www.javorek.net) bude i se svým obsahem pomalu dožívat. Problém ale je, že mám na této staré doméně svůj hlavní e-mail - honza@javorek.net. Uvažoval jsem, jaký si vymyslet pro novou doménu, ale nic chytrého nebo vtipného, co by se dobře diktovalo do telefonu, mě nenapadlo. Řešil jsem to na Twitteru a mezi návrhy byly tuším me@honzajavorek.cz, jsem@honzajavorek.cz, ahoj@honzajavorek.cz, ja@honzajavorek.cz, email@honzajavorek.cz, a podobné. Žádné skvosty. Napadlo mě poprosit bráchu o zřízení adresy pod jeho doménou javorkovi.cz, ale kdyby si to někdo zadal do prohlížeče (jako to dělám u cizích adres často já), dostal by se na jeho poměrně osobní, potažmo rodinnou stránku, a ne na moji. A taky by se mu nesměl do budoucna narodit žádný Honzík, což jeden nemůže nikdy vyloučit :-D
 
-Říkám si tedy, jestli se na takové šaškování nevykašlat a neuchýlit se po letech ke staré dobré generické adrese u e-mailového poskytovatele. Ono ani takové honzajavorek@email.cz není vůbec špatné. Je to konzistentní s všemi mými ostatními účty, slovo email je pro e-mailovou adresu dost neutrální a CZ jasně praví odkud jsem. Pro Čechy je navíc taková adresa poměrně zapamatovatelná.
+Říkám si tedy, jestli se na takové šaškování nevykašlat a neuchýlit se po letech ke staré dobré generické adrese u e-mailového poskytovatele. Ono ani takové honzajavorek@email.cz není vůbec špatné. Je to konzistentní se všemi mými ostatními účty, slovo email je pro e-mailovou adresu dost neutrální a CZ jasně praví odkud jsem. Pro Čechy je navíc taková adresa poměrně zapamatovatelná.
 
 Jenže když už měnit e-mail, tak aspoň vyřešit i něco, co mě trápí. Třeba Google Calendar nezvládá situaci, kdy mi někdo pošle pozvánku na jiný e-mail, než jan.javorek@gmail.com. Tvrdí mi potom, že nejsem příjemcem pozvánky a ať si jdu po svých. Musím pak všem vysvětlovat, že ač je můj hlavní e-mail tamten, v kalendáři ať používají jiný. Na jan.javorek@gmail.com mám taky jabber, Google Talk. Co je ale blbé? To, že začíná mým občanským jménem - Jan Javorek. Nechci, aby mi tak někdo říkal a nelíbí se mi ta adresa na pohled, mám rád písmeno H :-D
 
 Sranda je, že honzajavorek@gmail.com mám jakoby zarezervované já, ale nemohu to používat. Všichni víme, že Google v adrese e-mailu ignoruje tečky, takže janjavorek je pro něj totéž jako jan.javorek a honzajavorek jako honza.javorek. Ostatně, totéž dělá v adresách uživatelských účtů i Facebook. No a kdysi kdesi jsem asi použil honza.javorek jako svoje alternativní uživatelské jméno. Tuším že na Picase. Google mi ji rezervoval jako *other username*.
 
-![Google je prostě debil.](google-account.png)
+![Google je prostě debil.](images/google-account.png)
 
 Jenže problém je, že se k tomuto username nijak nedostanu. Nemůžu ho smazat, změnit, ani použít. Tedy nikdo si jej nemůže zaregistrovat, ale když někdo pošle e-mail na honza.javorek@gmail.com, nedojde mi! Což je nešťastné - tak málo by stačilo...
 
