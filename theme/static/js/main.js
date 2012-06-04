@@ -19,7 +19,7 @@ $(document).ready(function() {
         // disqus
         var check_disqus = setInterval(function() {
             $reactionsHeader = $('.dsq-h3-reactions', '#dsq-content');
-            var disqus_ready = $('#dsq-reply').get(0) != null;
+            var disqus_ready = $('#dsq-reply').get(0) !== null;
             if (disqus_ready) {
                 clearInterval(check_disqus); // remove timer
 

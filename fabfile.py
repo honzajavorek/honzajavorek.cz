@@ -4,7 +4,6 @@
 from fabric.api import *
 from fabric.colors import red, green, yellow
 from datetime import datetime, timedelta
-from glob import glob
 import unicodedata
 import os
 import re
@@ -24,13 +23,16 @@ css_dir = project_dir + '/theme/static/css'
 def okay(message):
     puts((green(u'✔ ') + message).encode('utf8'))
 
+
 def error(message):
     cross = red(u'✖')
     abort((cross + ' ' + message + ' ' + cross).encode('utf8'))
 
+
 def warning(message):
     star = yellow(u'★')
     warn((star + ' ' + message + ' ' + star).encode('utf8'))
+
 
 def slugify(string, underscore=False):
     if not isinstance(string, unicode):
