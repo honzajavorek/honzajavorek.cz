@@ -61,7 +61,8 @@
     column-rule: medium none;
 }
 
-$font_content: 'Enriqueta', 'Georgia', serif;
+$font_content: 'Palatino Linotype', 'Georgia', serif;
+$font_content_title: 'Enriqueta', 'Georgia', serif;
 $font_title: 'AllerDisplayRegular', sans-serif;
 $font_subtitle: 'AllerRegular', sans-serif;
 $letter_spacing_title: 0.05ex;
@@ -179,6 +180,7 @@ h1, h2, h3, h4 {
     clear: both;
     position: relative;
     &:hover .anchor { visibility: visible; }
+    #content & { font-family: $font_content_title; }
 }
 
 h2 { font-size: 150%; margin-bottom: 0.9em; }
