@@ -1,6 +1,5 @@
 Title: Citace z Wikipedie
 Date: 2012-06-08 16:18:03
-Status: draft
 
 Snad každý student se setkal s doporučením, aby necitoval z Wikipedie. Někdy je to dokonce výslovně zákazáno. Je to proto, že informace na Wikipedii nejsou nikým ověřované a můžete tam najít kromě přesných faktů i spoustu hloupostí.
 
