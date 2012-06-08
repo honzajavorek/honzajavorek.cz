@@ -1,6 +1,5 @@
 Title: Sir Ken Robinson
 Date: 2012-06-09 02:30:01
-Status: draft
 
 Kdo sleduje [TED videa](http://www.ted.com/), určitě moc dobře tato dvě zná - jsou jedněmi z nejsledovanějších vůbec. Jenže ne každý TED videa sleduje a ne každý si na něco takového umí najít chvilku, i když tuší, že by se mu to líbilo. Takže píšu tento článek - aby nakopnul. Ujišťuji vás, že následující materiál je **humorný, inspirující a především otevírá mysl**. Je to o vzdělání a kreativitě, ale nejen o tom. Je to i o nás o lidech, o tom, jakou společnost máme a jakou si vychováváme.
 
