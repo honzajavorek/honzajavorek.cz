@@ -16,3 +16,7 @@ Co s tím? No asi nic. Musíme brát Wikipedii s rezervou a chceme-li na faktech
 Aby to však nebylo tak jednostranné, je dobré si připomenout, že Wikipedia nejsou "oni", ale "my". Upravovat a psát ji může každý. Ani účet tam nemusíte mít. Takže pokud vidíte nějakou chybu, ať už faktickou nebo třeba jen překlep, vylepšete ji! Vezme vám to minutu života, ale uděláte svět opravdu lepším.
 
 Pokud jste navíc akademik, zamyslete se třeba nad tím, že nemusíte jen kárat studenty za to, že z Wikipedie čerpají a učí se tam nesmysly. Můžete jít a ty nesmysly tam opravit, články rozšířit a vylepšit. Kdo jiný než vy to může udělat? Nadšenci, samouci v problematice? Nezlobte se na studenty, že mají k látce blíž na webové encyklopedii než ve vámi psaných skriptech. Využijte toho a předejte své znalosti nejen jim, ale celému světu. Je to jako třídit odpad - nevidíte hned výsledek, ale víte, že je to dobré, užitečné, že bude svět lepší :-)
+
+Odlehčení na závěr:
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/Gy3bS3r8hsg" frameborder="0" allowfullscreen></iframe>
