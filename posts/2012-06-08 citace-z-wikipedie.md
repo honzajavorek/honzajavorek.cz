@@ -17,6 +17,6 @@ Aby to však nebylo tak jednostranné, je dobré si připomenout, že Wikipedia 
 
 Pokud jste navíc akademik, zamyslete se třeba nad tím, že nemusíte jen kárat studenty za to, že z Wikipedie čerpají a učí se tam nesmysly. Můžete jít a ty nesmysly tam opravit, články rozšířit a vylepšit. Kdo jiný než vy to může udělat? Nadšenci, samouci v problematice? Nezlobte se na studenty, že mají k látce blíž na webové encyklopedii než ve vámi psaných skriptech. Využijte toho a předejte své znalosti nejen jim, ale celému světu. Je to jako třídit odpad - nevidíte hned výsledek, ale víte, že je to dobré, užitečné, že bude svět lepší :-)
 
-Odlehčení na závěr:
+Ještě jedno odlehčení na závěr:
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/Gy3bS3r8hsg" frameborder="0" allowfullscreen></iframe>
