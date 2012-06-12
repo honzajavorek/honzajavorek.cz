@@ -1,6 +1,5 @@
 Title: Poslední hodiny před poslední zkouškou
 Date: 2012-06-12 17:32:59
-Status: draft
 
 Pocit, který se opakuje už od prváku a v podstatě se na něm nic nemění. Je před každou těžkou zkouškou, kterou musím opravdu vydřít. Byl i před mou úplně poslední zkouškou z kryptografie.
 
