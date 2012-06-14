@@ -1,6 +1,5 @@
 Title: Levice, pravice a nesmysly kolem
 Date: 2012-06-14 18:05:57
-Status: draft
 
 Rozčilujeme se, jak média nejsou vůbec schopna zařadit politické strany do správných škatulek. Ale je to tak jednoduché, jak si myslíme? Škatulky jsou důležité - byť nejsou přesné, zlepšují prvotní orientaci a jsou užitečné i z didaktického hlediska. Jenže zrovna levice a pravice jsou dnes už v praxi úplně zmatené a dopletené. Je samozřejmě otázkou, zda tyto škatulky [nezměnit a nepřejmenovat](http://www.pehe.cz/zapisnik/2006/pravice-a-levice-matouci-pojmy), jenže jsou podle mě už příliš zažité na to, aby se tak stalo.
 
