@@ -73,12 +73,15 @@ SOCIAL = ()
 # Jinja
 def figure(html):
     html = re.sub(r'(<iframe[^\>]*>[^\<]*</iframe>)', r'<figure>\1</figure>', html)
+    html = re.sub(r'(<object[^\>]*>.*</object>)', r'<figure>\1</figure>', html)
     return re.sub(r'<p([^\>]*)>\s*(<img[^\>]*>)\s*</p>', r'<figure\1>\2</figure>', html)
+
 
 def code(html):
     html = re.sub(r'<div[^\>]*class="codehilite"[^\>]*>\s*<pre[^\>]*>', r'<pre class="highlight"><code>', html)
     html = re.sub(r'</pre></div>', r'</code></pre>', html)
     return html
+
 
 def month_name(month_no):
     return [
@@ -88,20 +91,25 @@ def month_name(month_no):
         u'říjen', u'listopad', u'prosinec',
     ][month_no - 1]
 
+
 def format_date(datetime, format, strip_zeros=True):
     formatted = datetime.strftime(format)
     if strip_zeros:
         return re.sub(r'\b0', '', formatted)
     return formatted
 
+
 def copyright(year):
     return u'© %s–%s' % (year, date.today().year)
+
 
 def tojson(*args, **kwargs):
     return json.dumps(*args, **kwargs).replace('/', '\\/')
 
+
 def has_images(html):
     return re.search(r'<img[^\>]*>', html)
+
 
 JINJA_FILTERS = {
     'figure': figure,
