@@ -99,7 +99,7 @@ Jak vidíte, nebudu to mít s výběrem banky jednoduché, pokud chci zachovat v
 ## ČSOB Studentské konto Plus (pro srovnání)
 
 *   **vlastník** ČSOB (Belgie) 
-*   **karta** embosovaná <a href="http://www.csob.cz/cz/Lide/Platebni-karty/Stranky/VISA-Classic-Student.aspx" class="external text" rel="nofollow">Visa Classic Student</a> s čipem 
+*   **karta** embosovaná [Visa Classic Student](http://www.csob.cz/cz/Lide/Platebni-karty/Stranky/VISA-Classic-Student.aspx) s čipem 
 *   **ATM** výběry ze všech automatů ČSOB (= ČSOB, Poštovní spořitelna, Volksbank) zdarma, jinak asi za 35 Kč 
 *   **IB** běžný (& možná mobilní, nezkoušel jsem nikdy, na webu cosi píšou) 
 *   **opravdu zdarma?** jo, platí se jen za nějaké služby navíc (vlastní nastavené informační SMS atd.) 
@@ -111,6 +111,6 @@ Jak vidíte, nebudu to mít s výběrem banky jednoduché, pokud chci zachovat v
 *   **vhodné pro běžný účet?** OK :-) karta v pohodě, ATM ČSOB jsou všude 
 *   **vhodné pro účet na přeposílání nájmu?** OK :-) i když na tento účel teda trochu nevhodný typ účtu
 
-Samozřejmě nemůžu zhodnotit kvalitu jednotlivých internetbankingů apod., přístup mám jen do toho od ČSOB a mBank, kterou jsem nakonec vybral pro to přeposílání peněz. Na druhou stranu, zajímal jsem se třeba i o vlastníky té které banky, abych případně věděl, jaké zprávy o kolabujících finančních skupin mě mají děsit.
+Samozřejmě nemůžu zhodnotit kvalitu jednotlivých internetbankingů apod., přístup mám jen do toho od ČSOB a mBank, kterou jsem nakonec vybral pro to přeposílání peněz. Na druhou stranu, zajímal jsem se třeba i o vlastníky té které banky, abych případně věděl, jaké zprávy o kolabujících finančních skupin mě mají děsit. Jak dojde na mezinárodní platby, poplatky se vždycky objeví a bývají mastné. Ale to je asi tak nějak všude a počítá se s tím, takže jsem to tu vůbec neřešil. Taky jsem vůbec neřešil úrok, protože na jednoúčelovém nebo osobním průtokovém účtu je mi úrok úplně jedno - moje peněženka taky nemá úrok. 
 
 Co byste poradili? Máte s těmito bankami a jejich účty nějaké zkušenosti? Dobré nebo špatné? Mám v těch svých kusých informacích nějakou chybu nebo nepřesnost? Budu rád za vaše komentáře :-)
