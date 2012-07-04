@@ -98,7 +98,7 @@ Jak vidíte, nebudu to mít s výběrem banky jednoduché, pokud chci zachovat v
 
 ## ČSOB Studentské konto Plus (pro srovnání)
 
-*   **vlastník** ČSOB (Belgie) 
+*   **vlastník** KBC (Belgie) 
 *   **karta** embosovaná [Visa Classic Student](http://www.csob.cz/cz/Lide/Platebni-karty/Stranky/VISA-Classic-Student.aspx) s čipem 
 *   **ATM** výběry ze všech automatů ČSOB (= ČSOB, Poštovní spořitelna, Volksbank) zdarma, jinak asi za 35 Kč 
 *   **IB** běžný (& možná mobilní, nezkoušel jsem nikdy, na webu cosi píšou) 
