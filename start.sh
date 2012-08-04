@@ -44,7 +44,7 @@ cat $VIRTUALENV_RCFILE >> $SHELL_RCFILE
 echo "cd $PROJECT_DIR" >> $SHELL_RCFILE
 
 
-# Launch Gnome terminal with tabs, each dedicated to one of the
+# Launch terminal with tabs, each dedicated to one of the
 # tools prepared above
 if which gnome-terminal &> /dev/null; then
     # GNOME Terminal
@@ -53,6 +53,14 @@ if which gnome-terminal &> /dev/null; then
         --tab -e "bash --rcfile $PELICAN_RCFILE" -t "Pelican"\
         --tab -e "bash --rcfile $SASS_RCFILE" -t "Sass/Scss"\
         --tab -e "bash --rcfile $SHELL_RCFILE" -t "Shell"
+
+elif which xfce4-terminal &> /dev/null; then
+    # XFCE Terminal
+    exec xfce4-terminal\
+        --geometry="85x24+850+100"\
+        -e "bash --rcfile $PELICAN_RCFILE" -T "Pelican"\
+        --tab -e "bash --rcfile $SASS_RCFILE" -T "Sass/Scss"\
+        --tab -e "bash --rcfile $SHELL_RCFILE" -T "Shell"
 
 else
     # I didn't need any other graphic terminal yet.
