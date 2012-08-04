@@ -31,10 +31,10 @@ ARTICLE_URL = 'blog/{slug}'
 ARTICLE_SAVE_AS = 'blog/{slug}.html'
 ARTICLE_LANG_URL = 'blog/{slug}-{lang}'
 ARTICLE_LANG_SAVE_AS = 'blog/{slug}-{lang}.html'
-PAGE_URL = 'pages/{slug}'
-PAGE_SAVE_AS = 'pages/{slug}.html'
-PAGE_LANG_URL = 'pages/{slug}-{lang}'
-PAGE_LANG_SAVE_AS = 'pages/{slug}-{lang}.html'
+PAGE_URL = '{slug}'
+PAGE_SAVE_AS = '{slug}.html'
+PAGE_LANG_URL = '{slug}-{lang}'
+PAGE_LANG_SAVE_AS = '{slug}-{lang}.html'
 
 
 # Static paths will be copied under the same name
@@ -111,6 +111,10 @@ def has_images(html):
     return re.search(r'<img[^\>]*>', html)
 
 
+def to_css_class(string):
+    return string.replace('-', '_')
+
+
 JINJA_FILTERS = {
     'figure': figure,
     'code': code,
@@ -119,4 +123,5 @@ JINJA_FILTERS = {
     'copyright': copyright,
     'tojson': tojson,
     'has_images': has_images,
+    'to_css_class': to_css_class,
 }

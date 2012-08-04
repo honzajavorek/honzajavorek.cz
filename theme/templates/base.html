@@ -53,6 +53,7 @@
             </div>
         </div>
 
+        {% if page is not defined or page.slug != '404' %}
         <nav>
             <h3>Hrábě</h3>
             <form action="https://www.google.com/cse" id="cse-search-box">
@@ -62,6 +63,7 @@
                 <button type="submit" name="sa">Prohrabat listí</button>
             </form>
         </nav>
+        {% endif %}
 
         <footer>
             <h3>Zahradník</h3>
