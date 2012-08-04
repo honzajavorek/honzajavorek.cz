@@ -17,25 +17,25 @@ $(document).ready(function() {
         });
 
         // disqus
-        var check_disqus = setInterval(function() {
-            $reactionsHeader = $('.dsq-h3-reactions', '#dsq-content');
-            var disqus_ready = $('#dsq-reply').get(0) !== null;
-            if (disqus_ready) {
-                clearInterval(check_disqus); // remove timer
+        // var check_disqus = setInterval(function() {
+        //     $reactionsHeader = $('.dsq-h3-reactions', '#dsq-content');
+        //     var disqus_ready = $('#dsq-reply').get(0) !== null;
+        //     if (disqus_ready) {
+        //         clearInterval(check_disqus); // remove timer
 
-                // prepare context for lookup
-                $disqus = $('#dsq-content');
+        //         // prepare context for lookup
+        //         $disqus = $('#dsq-content');
 
-                // my changes
-                $('.dsq-h3-reactions', $disqus).text('Reakce');
+        //         // my changes
+        //         $('.dsq-h3-reactions', $disqus).text('Reakce');
 
-                // display comments & ensure the right scroll position
-                $('html').addClass('ready');
-                if (window.location.hash) {
-                    window.location.hash = window.location.hash;
-                }
-            }
-        }, 100);
+        //         // display comments & ensure the right scroll position
+        //         $('html').addClass('ready');
+        //         if (window.location.hash) {
+        //             window.location.hash = window.location.hash;
+        //         }
+        //     }
+        // }, 100);
     }
 
 });
