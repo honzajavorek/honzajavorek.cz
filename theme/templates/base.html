@@ -38,10 +38,10 @@
     <body>
         <div id="document" class="{% block class %}{% endblock %}">
             <header>
-                <a href="{{ SITEURL }}">
+                <a href="{% block home_link %}{{ SITEURL }}{% endblock %}">
                 <hgroup>
                     <h1>
-                        Javorové<span id="logo">&nbsp;</span>lístky
+                        Javorové<span id="logo">&nbsp;</span>{% block maple_object %}lístky{% endblock %}
                     </h1>
                     <h2>Honza Javorek</h2>
                 </hgroup>

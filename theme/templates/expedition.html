@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block class %}page page_{{ page.slug|to_css_class }} expedition{% endblock %}
+{% block title %}{{ page.title }} - Javorové expedice{% endblock %}
+{% block maple_object %}expedice{% endblock %}
+{% block home_link %}{{ SITEURL }}/expedice{% endblock %}
+{% block content %}
+
+    <header>
+        <h1>{{ page.title }}</h1>
+        <p class="countries">
+            {% for country_code in page.countries|split(',') %}
+                {{ country_code|country_flag }}
+            {% endfor %}
+        </p>
+        <p class="date_range">
+            {% if page.begindate is defined %}
+                <time datetime="{{ page.begindate|isoformat }}">{{ page.begindate|format_date('%d.%m.%Y') }}</time>
+                {%- if page.enddate is defined -%}
+                    &ndash;<time datetime="{{ page.enddate|isoformat }}">{{ page.enddate|format_date('%d.%m.%Y') }}</time>
+                {%- endif -%}
+            {% else %}
+                teprve plánováno
+            {% endif %}
+        </p>
+    </header>
+
+    {% if page.map is defined %}
+        {{ page.map|split(';')|map }}
+    {% endif %}
+
+    {% if page.people is defined %}
+        {% for person in page.people|split_people %}
+            {% if person.link %}
+                <a href="{{ person.link }}">{{ person.avatar }} {{ person.name }}</a>
+            {% else %}
+                {{ person.avatar }} {{ person.name }}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    {{ page.content }}
+
+{% endblock %}
