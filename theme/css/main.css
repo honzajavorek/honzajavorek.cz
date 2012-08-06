@@ -966,19 +966,19 @@ article hr:before {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003403}}
-.page404 #content {
+.page_404 #content {
   text-align: center;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003404}}
-.page404 p {
+.page_404 p {
   margin: 2em 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003405}}
-.page404 form {
+.page_404 form {
   margin: 3em 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/honza\/workspace\/blog\/theme\/static\/css\/main\.scss}line{font-family:\00003406}}
-.page404 input, .page404 button {
+.page_404 input, .page_404 button {
   padding: 0.5em;
 }
 
