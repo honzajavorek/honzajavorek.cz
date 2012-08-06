@@ -3,7 +3,9 @@
 
 import re
 import json
-from datetime import date
+import requests
+from datetime import date, datetime
+from jinja2 import Markup
 
 
 # Author & site
@@ -71,6 +73,16 @@ SOCIAL = ()
 
 
 # Jinja
+def to_datetime(dt):
+    if not isinstance(dt, datetime):
+        dt = str(dt)
+        try:
+            return datetime.strptime(dt, '%Y-%m-%d %H:%M:%S')
+        except ValueError:
+            return datetime.strptime(dt, '%Y-%m-%d')
+    return dt
+
+
 def figure(html):
     html = re.sub(r'(<iframe[^\>]*>[^\<]*</iframe>)', r'<figure>\1</figure>', html)
     html = re.sub(r'(<object[^\>]*>.*</object>)', r'<figure>\1</figure>', html)
@@ -92,8 +104,8 @@ def month_name(month_no):
     ][month_no - 1]
 
 
-def format_date(datetime, format, strip_zeros=True):
-    formatted = datetime.strftime(format)
+def format_date(dt, format, strip_zeros=True):
+    formatted = to_datetime(dt).strftime(format)
     if strip_zeros:
         return re.sub(r'\b0', '', formatted)
     return formatted
@@ -115,6 +127,59 @@ def to_css_class(string):
     return string.replace('-', '_').replace('/', '_')
 
 
+class CountryResolver(object):
+
+    wiki_url = 'https://cs.wikipedia.org/wiki/ISO_3166-1'
+
+    _wiki = None
+    _cache = {}
+
+    @property
+    def wiki(self):
+        if not self._wiki:
+            r = requests.get(self.wiki_url)
+            r.raise_for_status()
+            self._wiki = r.text
+        return self._wiki
+
+    def __call__(self, code):
+        if not code in self._cache:
+            re_parse = re.compile(r'<td[^>]*><a[^>]*>' + re.escape(code) + r'</a></td>\s*' +\
+                r'<td[^>]*><a[^>]*>([^<]+)</a></td>', re.I)
+            match = re_parse.search(self.wiki)
+            self._cache[code] = match.group(1) if match else ''
+        return self._cache[code]
+
+
+country_name = CountryResolver()
+
+
+def split(string, separator):
+    return re.split(
+        re.escape(unicode(separator)) + r'\s*',
+        unicode(string)
+    )
+
+
+def country_flag(code):
+    return Markup(
+        '<img src="{}/static/images/flags/{}.png" alt="{}">'\
+        .format(SITEURL, code, country_name(code))
+    )
+
+
+def filter_expeditions(pages):
+    expeditions = [p for p in pages if p.template == 'expedition']
+    return sorted(expeditions,
+        reverse=True,
+        key=lambda x: getattr(x, 'begindate', str(date.today()))
+    )
+
+
+def isoformat(dt):
+    return to_datetime(dt).isoformat()
+
+
 JINJA_FILTERS = {
     'figure': figure,
     'code': code,
@@ -124,4 +189,9 @@ JINJA_FILTERS = {
     'tojson': tojson,
     'has_images': has_images,
     'to_css_class': to_css_class,
+    'split': split,
+    'country_name': country_name,
+    'country_flag': country_flag,
+    'filter_expeditions': filter_expeditions,
+    'isoformat': isoformat,
 }

@@ -26,7 +26,7 @@ PELICAN_RCFILE=`tempfile`
 cat $VIRTUALENV_RCFILE >> $PELICAN_RCFILE
 echo "cd $PROJECT_DIR
 echo '>>> Pelican is watching for changes. Press Ctrl-C to stop.'
-until pelican -r -s settings.py; do
+until pelican -r -D -s settings.py; do
     echo 'Pelican crashed. Respawning...' >&2
     sleep 2
 done
