@@ -1,7 +1,7 @@
 Title: Dunajská delta
 Slug: expedice/dunajska-delta
 Template: expedition
-Countries: ro, at, sk
+Countries: ro, sk
 BeginDate: 2012-07-19
 EndDate: 2012-07-31
 Map: Bucharest; Tulcea; Mila 23; Tulcea; Jurilovca; Gura Portitei; Jurilovca; 44.7576,28.9371; Jurilovca; Constanța; Bucharest
