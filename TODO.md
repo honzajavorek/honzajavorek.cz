@@ -7,3 +7,4 @@ Expeditions:
 - http://roughgiraffed.com/FBalbum/
 - http://www.kontakt.cz/harsa/travel.asp?A=false
 - make included templates for some parts of expedition.html
+- misto pismenek dat na mapku cisla podle toho jak se jelo
