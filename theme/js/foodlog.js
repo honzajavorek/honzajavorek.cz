@@ -4,7 +4,7 @@
 
 function error(details) {
     if (!$('#foodlog_error').text()) {
-        message = 'Stala se chyba :-(';
+        message = 'Chyba!';
         if (details) {
             message += ' <small><code>' + details + '</code></small>';
         }
@@ -47,12 +47,14 @@ function refresh() {
 }
 
 $(document).ready(function() {
+    $('#foodlog_form').attr('action', url() + '/add');
+
     $(this).ajaxError(function(event, xhr, settings, e) {
         error(e);
     });
 
     $('#foodlog_form').submit(function(event) {
-        $.post(url() + '/add', $(this).serialize(), function(data) {
+        $.post($(this).attr('action'), $(this).serialize(), function(data) {
             $('#name').val('');
             refresh();
         });
