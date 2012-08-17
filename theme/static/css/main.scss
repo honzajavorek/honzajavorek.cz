@@ -105,6 +105,7 @@ a:link, a:link span, .button, button { cursor: pointer; }
     text-align: center;
     text-transform: uppercase;
     padding: 0.3em 0;
+    word-wrap: normal;
 
     h1 {
         font-family: $font_title;
@@ -154,6 +155,24 @@ a:link, a:link span, .button, button { cursor: pointer; }
     font-weight: normal;
     margin: 0 -0.1em; padding-left: $logo_size;
     position: relative; top: 0.1ex;
+}
+
+@media (max-width: 600px) {
+    #document > header {
+        line-height: 400%;
+        font-size: 80%;
+        padding-bottom: 0;
+    }
+
+    #logo {
+        display: inline;
+        width: auto; height: auto;
+        font-size: inherit;
+        line-height: inherit;
+        background: 0;
+        margin: 0; padding: 0;
+        position: static;
+    }
 }
 
 body > nav h3, footer h3, .index #content > h1 { @include hidden(); }
@@ -304,31 +323,31 @@ article {
         &, & a, & a:visited { color: $color_almost_invisible_text; }
         a:hover, a:focus { color: $color_link; }
     }
+}
 
-    #article_content {
-        ul, ul li { list-style-type: none; }
-        ul { padding: 0; }
-        ul li { margin: 0; padding: 0 0 0 2em; background: url('../images/bullet-green.png') 0.5em 0.5em no-repeat; }
+article #article_content, .page #content {
+    ul, ul li { list-style-type: none; }
+    ul { padding: 0; }
+    ul li { margin: 0; padding: 0 0 0 2em; background: url('../images/bullet-green.png') 0.5em 0.5em no-repeat; }
 
-        img { @include border-radius(0.5em); margin: 0.5em; }
-        img.right { float: right; margin-left: 1em; }
-        img.left { float: left; margin-right: 1em; }
-    }
+    img { @include border-radius(0.5em); margin: 0.5em; }
+    img.right { float: right; margin-left: 1em; }
+    img.left { float: left; margin-right: 1em; }
+}
 
-    hr {
-        $size: 50px;
+article hr, .page hr {
+    $size: 50px;
 
-        border: 0;
-        background: none;
-        margin: 0; margin-bottom: 1.8 * $size; padding: 0;
+    border: 0;
+    background: none;
+    margin: 0; margin-bottom: 1.8 * $size; padding: 0;
 
-        &:before {
-            display: block;
-            content: "…";
-            font-size: 250%;
-            line-height: $size;
-            text-align: center;
-        }
+    &:before {
+        display: block;
+        content: "…";
+        font-size: 250%;
+        line-height: $size;
+        text-align: center;
     }
 }
 
@@ -438,6 +457,43 @@ article {
 
 .countries img {
     cursor: help;
+}
+
+.foodlog {
+    #foodlog_error {
+        text-align: center;
+
+        p {
+            margin: 3em 1em; padding: 0.3em 0.5em;
+            background: $color_highlight;
+            @include border-radius(0.5em);
+
+            small { font-size: 70%; margin-left: 1em; }
+        }
+    }
+
+    #foodlog_form {
+        width: 100%;
+        text-align: center;
+        line-height: 250%;
+
+        label { margin-right: 0.5em; }
+        small { color: $color_aside_text; }
+        input { padding: 0.5em; }
+        button { padding: 0.5em 2em; }
+    }
+
+    #foodlog_list {
+        margin: 3em 0;
+
+        strong { margin-left: 2em; }
+    }
+}
+
+@media (max-width: 600px) {
+    #foodlog_form {
+        label, #eaten_at_field { display: none; }
+    }
 }
 
 .page_404 {

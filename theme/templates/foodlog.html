@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block class %}page page_{{ page.slug|to_css_class }} foodlog{% endblock %}
+{% block title %}{{ page.title }} - Javorové jídlo{% endblock %}
+{% block maple_object %}jídlo{% endblock %}
+{% block home_link %}{{ SITEURL }}/jidlo{% endblock %}
+{% block content %}
+
+    <h1>{{ page.title }}</h1>
+    <div id="foodlog_error"></div>
+
+    {{ page.content }}
+
+    <form id="foodlog_form">
+        <span id="name_field">
+            <label for="name">Název</label>
+                <input name="name" id="name" size="30" autofocus><br>
+        </span>
+
+        <span id="eaten_at_field">
+            <label for="eaten_at">Kdy</label>
+                <input name="eaten_at" id="eaten_at" size="20" placeholder="prázdné = právě teď"><br>
+                <small>Formát času je potřeba zadávat ve tvaru dd.mm.yyyy, hh:mm.</small><br>
+        </span>
+
+        <button type="submit">Ham</button>
+    </form>
+
+    <div id="foodlog_list"></div>
+
+{% endblock %}
+{% block script -%}
+
+    <script src="{{ SITEURL }}/theme/js/foodlog.js?v=1"></script>
+
+{%- endblock %}
