@@ -49,6 +49,12 @@
     box-shadow: 0 0 5px #888;
 }
 
+@mixin no-box-shadow() {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
 @mixin columns($count) {
     -webkit-column-count: $count;
     -webkit-column-gap: normal;
@@ -99,6 +105,16 @@ a:link, a:link span, .button, button { cursor: pointer; }
     text-align: left;
     @include border-radius(0.8em);
     @include box-shadow();
+}
+
+@media (max-width: 600px) {
+    html {
+        background: #FFF;
+    }
+
+    #document {
+        @include no-box-shadow();
+    }
 }
 
 #document > header {
@@ -192,6 +208,12 @@ body > nav h3, footer h3, .index #content > h1 { @include hidden(); }
 
     & > footer {
         margin: 3.5em 0 0 0;
+    }
+}
+
+@media (max-width: 600px) {
+    #content {
+        padding: 0 0.5em;
     }
 }
 
