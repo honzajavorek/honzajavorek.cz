@@ -53,6 +53,7 @@ $(document).ready(function() {
 
     $('#foodlog_form').submit(function(event) {
         $.post(url() + '/add', $(this).serialize(), function(data) {
+            $('#name').val('');
             refresh();
         });
         event.preventDefault();
