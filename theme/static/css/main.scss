@@ -326,6 +326,10 @@ body > footer {
     p a { margin: 0 0.5em; }
 }
 
+@media (max-width: 250px) {
+    nav, footer { display: none; }
+}
+
 article {
     position: relative;
     clear: both;
@@ -515,6 +519,13 @@ article hr, .page hr {
 @media (max-width: 600px) {
     #foodlog_form {
         label, #eaten_at_field { display: none; }
+    }
+}
+
+@media (max-width: 250px) {
+    .foodlog {
+        header { display: none; }
+        #foodlog_form input { padding: 0; width: 90%; }
     }
 }
 
