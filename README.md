@@ -13,10 +13,9 @@ GitHub [pull requests][pull_requests] fixing typos in my articles are very welco
 
 (cc) 2007–2012 Jan Javorek.
 
-This work is licensed under a Creative Commons
-Attribution-NonCommercial-ShareAlike 3.0 Unported License.
-
-https://creativecommons.org/licenses/by-nc-sa/3.0/
+This work is licensed under a [Creative Commons
+Attribution-NonCommercial-ShareAlike 3.0 Unported
+License](https://creativecommons.org/licenses/by-nc-sa/3.0/).
 
 
 --------------------------------------
@@ -34,10 +33,9 @@ Vítám opravy překlepů a hrubek v článcích přes GitHub [pull requests][pu
 
 (cc) 2007–2012 Jan Javorek.
 
-Toto dílo podléhá licenci Creative Commons
-Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 3.0 Česko.
-
-https://creativecommons.org/licenses/by-nc-sa/3.0/cz/
+Toto dílo podléhá licenci [Creative Commons
+Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte
+licenci 3.0 Česko](https://creativecommons.org/licenses/by-nc-sa/3.0/cz/).
 
 
 [python]: http://www.python.org
