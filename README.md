@@ -9,7 +9,7 @@ and [Jinja2][jinja].
 GitHub [pull requests][pull_requests] fixing typos in my articles are very welcome! :-)
 
 
-### License
+### License: CC BY-NC-SA 3.0
 
 (cc) 2007–2012 Jan Javorek.
 
@@ -29,7 +29,7 @@ tahle sranda běží na [Pythonu][python] a [GitHubu][github] díky nástrojům 
 Vítám opravy překlepů a hrubek v článcích přes GitHub [pull requests][pull_requests]! :-)
 
 
-### Licence
+### Licence: CC BY-NC-SA 3.0
 
 (cc) 2007–2012 Jan Javorek.
 
