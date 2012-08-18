@@ -2,6 +2,8 @@
  * Foodlog. See https://github.com/honzajavorek/foodlog.
  */
 
+var errors = [];
+
 function error(details) {
     if (!$('#foodlog_error').text()) {
         message = 'Chyba!';
@@ -10,6 +12,7 @@ function error(details) {
         }
         $('#foodlog_error').html('<p>' + message + '</p>');
     }
+    errors.push('error: ' + details || 'unknown');
 }
 
 function url() {
@@ -54,11 +57,13 @@ $(document).ready(function() {
     });
 
     $('#foodlog_form').submit(function(event) {
-        $.post($(this).attr('action'), $(this).serialize(), function(data) {
-            $('#name').val('');
-            refresh();
-        });
-        event.preventDefault();
+        if (!errors.length) {
+            $.post($(this).attr('action'), $(this).serialize(), function(data) {
+                $('#name').val('');
+                refresh();
+            });
+            event.preventDefault();
+        }
     });
 
     refresh();
