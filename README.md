@@ -22,7 +22,7 @@ This installation guide is for Xubuntu Linux in 7 simple steps. It's a remainder
 6. Install Sass. `apt-get install ruby rubygems && gem install sass`
 7. Run it. `start.sh`
 
-## License: CC BY-NC-SA 3.0
+## License: CC BY-NC-SA
 
 (cc) 2007–2012 Jan Javorek &lt;<a
 href="mailto:jan.javorek&#64;gmail.com">jan.javorek&#64;gmail.com</a>&gt;
@@ -44,7 +44,7 @@ tahle sranda běží na [Pythonu][python] a [GitHubu][github] díky nástrojům 
 
 Aktivně vyvíjeno a udržováno. Vítám opravy překlepů a hrubek v článcích přes GitHub [pull requests][pull_requests]! :-)
 
-## Licence: CC BY-NC-SA 3.0
+## Licence: CC BY-NC-SA
 
 (cc) 2007–2012 Jan Javorek &lt;<a
 href="mailto:jan.javorek&#64;gmail.com">jan.javorek&#64;gmail.com</a>&gt;
