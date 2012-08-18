@@ -1,8 +1,8 @@
-# Blog Javorové lístky
+# honzajavorek.cz
 
 
-This is source code of my blog _Javorové lístky_. You can read it
-comfortably at [honzajavorek.cz][blog] if you know Czech. It is
+This is source code of my site, including my blog _Javorové lístky_. You can read it
+comfortably at [honzajavorek.cz][site] if you know Czech. It is
 proudly powered by [Python][python] and [GitHub][github] using [Pelican][pelican], [Markdown][markdown],
 and [Jinja2][jinja].
 
@@ -22,8 +22,8 @@ https://creativecommons.org/licenses/by-nc-sa/3.0/
 --------------------------------------
 
 
-Toto je zdrojový kód mého blogu _Javorové lístky_. Můžeš si jej pohodlně
-přečíst na [honzajavorek.cz][blog]. Velice hrdě se hlásím k tomu, že celá
+Toto je zdrojový kód mého webu včetně blogu _Javorové lístky_. Můžeš si jej pohodlně
+přečíst na [honzajavorek.cz][site]. Velice hrdě se hlásím k tomu, že celá
 tahle sranda běží na [Pythonu][python] a [GitHubu][github] díky nástrojům [Pelican][pelican],
 [Markdown][markdown] a [Jinja2][jinja].
 
@@ -42,7 +42,7 @@ https://creativecommons.org/licenses/by-nc-sa/3.0/cz/
 
 [python]: http://www.python.org
 [github]: http://pages.github.com/
-[blog]: http://www.honzajavorek.cz
+[site]: http://www.honzajavorek.cz
 [pelican]: https://github.com/ametaireau/pelican
 [markdown]: http://daringfireball.net/projects/markdown/
 [jinja]: http://jinja.pocoo.org/
@@ -53,8 +53,8 @@ https://creativecommons.org/licenses/by-nc-sa/3.0/cz/
 
 This installation guide is for Ubuntu Linux in 7 simple steps. It's remainder for me in case I would forget how to run the blog on my computer.
 
-1. Clone the code. `git clone git@github.com:honzajavorek/blog.git`
-2. `cd blog`
+1. Clone the code. `git clone git@github.com:honzajavorek/honzajavorek.cz.git`
+2. `cd honzajavorek.cz`
 3. Create a new Python virtual environment. `virtualenv env --distribute`
 4. Activate the environment. `. env/bin/activate`
 5. In virtual environment, install all Pythonic requirements. `pip install -r requirements.txt`
