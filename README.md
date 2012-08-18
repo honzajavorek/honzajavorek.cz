@@ -1,4 +1,3 @@
-
 # honzajavorek.cz
 
 This is source code of my site, including my blog _Javorové lístky_. You can read it
@@ -29,9 +28,9 @@ href="mailto:jan.javorek&#64;gmail.com">jan.javorek&#64;gmail.com</a>&gt;
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](https://creativecommons.org/licenses/by-nc-sa/3.0/).
 
-
+&nbsp;  
 ----
-
+&nbsp;  
 
 # honzajavorek.cz (in Czech)
 
