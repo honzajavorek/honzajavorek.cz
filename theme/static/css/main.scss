@@ -108,13 +108,12 @@ a:link, a:link span, .button, button { cursor: pointer; }
 }
 
 @media (max-width: 600px) {
-    html {
-        background: #FFF;
-    }
+    html { background: #FFF; }
+    #document { @include no-box-shadow(); }
+}
 
-    #document {
-        @include no-box-shadow();
-    }
+@media (max-width: 250px) {
+    #document { padding: 0; padding-top: 1em; margin: 0; }
 }
 
 #document > header {
@@ -213,7 +212,9 @@ body > nav h3, footer h3, .index #content > h1 { @include hidden(); }
 
 @media (max-width: 600px) {
     #content {
-        padding: 0 0.5em;
+        margin: 0; padding: 0 0.5em;
+
+        h1 { margin: 0; }
     }
 }
 
@@ -524,8 +525,9 @@ article hr, .page hr {
 
 @media (max-width: 250px) {
     .foodlog {
-        header { display: none; }
-        #foodlog_form input { padding: 0; width: 90%; }
+        #foodlog_error, header { display: none; }
+        #foodlog_form input { padding: 0; margin: 0; width: 100%; }
+        #foodlog_form button { padding: 0.3em 0.5em; }
     }
 }
 
