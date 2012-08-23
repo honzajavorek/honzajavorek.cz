@@ -14,12 +14,12 @@ CSS_DIR="$PROJECT_DIR/theme/static/css"
 
 # Prepare RC file boilerplate
 RCFILE=`tempfile`
-echo ". ~/.bashrc" >> $RCFILE
+echo "source ~/.bashrc" >> $RCFILE
 
 # RC file to activate virtualenv
 VIRTUALENV_RCFILE=`tempfile`
 cat $RCFILE >> $VIRTUALENV_RCFILE
-echo ". $PROJECT_DIR/env/bin/activate" >> $VIRTUALENV_RCFILE
+echo "workon honzajavorek.cz" >> $VIRTUALENV_RCFILE
 
 # Pelican RC file to watch changes and automatically recompile
 PELICAN_RCFILE=`tempfile`
