@@ -12,7 +12,7 @@ Title: Kontakt
     </tr>
     <tr>
         <th>Banka</th>
-        <td>198512086/<a href="https://www.csob.cz">0300</a></td>
+        <td>2400293585/<a href="http://www.fio.cz/">2010</a></td>
     </tr>
     <tr>
         <th>Podnikání</th>
