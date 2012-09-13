@@ -1,0 +1,22 @@
+<?wpl version="1.0"?>
+<smil>
+    <head>
+        <meta name="Generator" content="Microsoft Windows Media Player -- 12.0.7600.16385"/>
+        <meta name="ItemCount" content="4"/>
+        <meta name="IsFavorite"/>
+        <meta name="ContentPartnerListID"/>
+        <meta name="ContentPartnerNameType"/>
+        <meta name="ContentPartnerName"/>
+        <meta name="Subtitle"/>
+        <author/>
+        <title>Radio</title>
+    </head>
+    <body>
+        <seq>
+            <media src="mms://netshow4.play.cz/bonton128?WMContentBitrate=130000"/>
+            <media src="mms://netshow5.play.cz/krokodyl128"/>
+            <media src="mms://netshow4.play.cz/olympic128"/>
+            <media src="http://netshow.play.cz:8000/radiobeat128.mp3"/>
+        </seq>
+    </body>
+</smil>

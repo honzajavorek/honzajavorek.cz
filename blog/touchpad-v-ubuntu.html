@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+    
+        <meta charset="utf-8">
+        <title>Touchpad v Ubuntu - Javorové lístky</title>
+
+        <script src=".././theme/js/modernizr.custom.js"></script>
+
+        <!--[if !IE]> --><link rel="stylesheet" href=".././theme/css/main.css?v=1" media="screen,projection,tv"><!-- <![endif]-->
+        <!--[if gte IE 7]><link rel="stylesheet" href=".././theme/css/main.css?v=1" media="screen,projection,tv"><![endif]-->
+
+        
+    
+        <link rel="alternate" type="application/rss+xml" title="Javorové lístky – všechny články" href="http://feeds.feedburner.com/javorove-listky">
+        <link rel="alternate" type="application/rss+xml" title="Javorové lístky – všechny komentáře" href="http://javorove-listky.disqus.com/latest.rss">
+        
+    <link rel="alternate" type="application/rss+xml" title="Javorové lístky – komentáře ke článku Touchpad v Ubuntu" href="http://javorove-listky.disqus.com/touchpad_v_ubuntu/latest.rss">
+
+
+        <link rel="shortcut icon" type="image/x-icon" href=".././favicon.ico">
+
+        
+    
+        <meta property="og:image" content=".././theme/images/logo.png">
+    
+
+
+        <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', "UA-1316071-6"]);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    
+    </head>
+    <body>
+        <div id="document" class="article">
+            <header>
+                <a href="../.">
+                <hgroup>
+                    <h1>
+                        Javorové<span id="logo"> </span>lístky
+                    </h1>
+                    <h2>Honza Javorek</h2>
+                </hgroup>
+                </a>
+            </header>
+
+            <div id="content">
+                
+<article>
+    <header>
+        <h1>Touchpad v Ubuntu</h1>
+        <small>
+            <time datetime="2009-12-06T18:25:00" pubdate>6.12.2009</time>
+        </small>
+    </header>
+
+    <section id="article_content">
+        
+            
+        
+
+        <p>Moji kamarádi <a href="http://twitter.com/markoph/status/6380776939">mají radost, že jsem přešel na Linux</a>, tak jim přidám vodu na mlýn článkem s na první pohled masochistickým tématem. <a href="http://honzajavorek.cz/blog/nemam-rad-mysi">Rád používám touchpad</a> a v Ubuntu mě vždy štvalo, že nastavení jeho ovládání nebylo nikdy moc snadné. Zapíšu si tu tedy pár poznámek, jak dotáhnout jeho ovládání k dokonalosti, protože dohledat tyhle věci je trochu problém. Pokud člověk napíše do Google slova Ubuntu a touchpad, většinou se lidé ptají na jeho vypnutí (barbaři!). Abych se vyvaroval některých komentářů, hned na úvod dodám návod pro
+Windows: Nainstalujte si ovladače pro Synaptics Touchpad, tam si to naklikejte a nepište o tom články ;) .</p>
+<p>Nastavení touchpadu je normálně v <em>System → Preferences → Mouse</em> na záložce <em>Touchpad</em>. Pokud toužíte po rozšířeném nastavení, tak pomůže instalace <em>gsynaptics</em> (pro GNOME). Ten je potom k nalezení pod <em>System → Preferences → Touchpad</em>. Jenže… Ačkoliv si můžete dopřát applovské triky a používat zoom nebo scrolling více prsty, pořád vám to nikde nedovolí nastavit ťapací oblasti. Já nutně potřebuji „prostřední tlačítko“ v pravém horním rohu.</p>
+<p>No a k tomu pomůže <a href="http://ubuntuforums.org/showthread.php?p=8403017">tato stránka</a>, kde je nejprve <a href="http://ubuntuforums.org/showpost.php?p=8261605&amp;postcount=3">řešení dočasné</a> (do prvního restartu, což moc ani nepovažuji za řešení) a pak <a href="http://ubuntuforums.org/showpost.php?p=8399228&amp;postcount=8">řešení permanentní</a>. Tedy přidat do <code>/etc/hal/fdi/policy</code> soubor <code>synaptics.fdi</code> a do něj hodit</p>
+<pre class="highlight"><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="nt">&lt;deviceinfo</span> <span class="na">version=</span><span class="s">&quot;0.2&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;device&gt;</span>
+        <span class="nt">&lt;match</span> <span class="na">key=</span><span class="s">&quot;input.x11_driver&quot;</span> <span class="na">string=</span><span class="s">&quot;synaptics&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;merge</span> <span class="na">key=</span><span class="s">&quot;input.x11_options.RTCornerButton&quot;</span> <span class="na">type=</span><span class="s">&quot;string&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/merge&gt;</span>
+        <span class="nt">&lt;/match&gt;</span>
+    <span class="nt">&lt;/device&gt;</span>
+<span class="nt">&lt;/deviceinfo&gt;</span>
+</code></pre>
+
+
+<p>No a to je vše. Pomocí změn v HALu (viz odkaz na permanentní řešení) byste měli uspokojit veškerá svá tajná přání, která vás v souvislosti s touchpadem kdy napadla. Ještě dodám, že tohle nastavení prostředního tlačítka do pravého horního rohu bylo v Ubuntu výchozí, ale podle lidu stěžujícího si na fórech pro Karmic teď zmizelo. Netuším proč. Přeji hezké ťapání.</p>
+    </section>
+
+    
+    <div id="loading_area">
+    <hr>
+
+    <section id="comments">
+        <div id="fb_like">
+            <div class="fb-like" data-send="false" data-width="450" data-show-faces="false"></div>
+        </div>
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_shortname = "javorove-listky";
+            var disqus_developer = 0;
+            //var disqus_url = 'http:\/\/honzajavorek.cz\/blog\/' + "touchpad-v-ubuntu";
+            var disqus_title = "Touchpad v Ubuntu";
+
+            (function() {
+                var dsq = document.createElement('script'); dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript><p class="noscript"><em>Bez JavaScriptu komentáře nejsou.</em></p></noscript>
+    </section>
+    </div>
+    
+
+    <footer>
+        <small>
+            <a href="https://github.com/honzajavorek/blog/edit/master/posts/2009-12-06%20touchpad-v-ubuntu.md">edit</a>
+        </small>
+
+        
+            <p class="aside_links"><a href="http://javorove-listky.disqus.com/touchpad_v_ubuntu/latest.rss">komentáře do čtečky</a></p>
+        
+    </footer>
+</article>
+
+            </div>
+        </div>
+
+        
+        <nav>
+            <h3>Hrábě</h3>
+            <form action="https://www.google.com/cse" id="cse-search-box">
+                <input type="hidden" name="cx" value="011917998094738623377:qowdxfpbkv4">
+                <input type="hidden" name="ie" value="UTF-8">
+                <input type="search" name="q" size="31" placeholder="Hledat">
+                <button type="submit" name="sa">Prohrabat listí</button>
+            </form>
+        </nav>
+        
+
+        <footer>
+            <h3>Zahradník</h3>
+            <address>© 2007–2012 <a href="kontakt">Honza Javorek</a></address>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src=".././theme/js/jquery-1.7.2.min.js">\x3C/script>')</script>
+        <script src=".././theme/js/main.js?v=1"></script>
+        
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = '//connect.facebook.net/en_US/all.js#xfbml=1';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+    </body>
+</html>

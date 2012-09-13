@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+    
+        <meta charset="utf-8">
+        <title>XML deklarace a PHP - Javorové lístky</title>
+
+        <script src=".././theme/js/modernizr.custom.js"></script>
+
+        <!--[if !IE]> --><link rel="stylesheet" href=".././theme/css/main.css?v=1" media="screen,projection,tv"><!-- <![endif]-->
+        <!--[if gte IE 7]><link rel="stylesheet" href=".././theme/css/main.css?v=1" media="screen,projection,tv"><![endif]-->
+
+        
+    
+        <link rel="alternate" type="application/rss+xml" title="Javorové lístky – všechny články" href="http://feeds.feedburner.com/javorove-listky">
+        <link rel="alternate" type="application/rss+xml" title="Javorové lístky – všechny komentáře" href="http://javorove-listky.disqus.com/latest.rss">
+        
+    <link rel="alternate" type="application/rss+xml" title="Javorové lístky – komentáře ke článku XML deklarace a PHP" href="http://javorove-listky.disqus.com/xml_deklarace_a_php/latest.rss">
+
+
+        <link rel="shortcut icon" type="image/x-icon" href=".././favicon.ico">
+
+        
+    
+        <meta property="og:image" content=".././theme/images/logo.png">
+    
+
+
+        <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', "UA-1316071-6"]);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    
+    </head>
+    <body>
+        <div id="document" class="article">
+            <header>
+                <a href="../.">
+                <hgroup>
+                    <h1>
+                        Javorové<span id="logo"> </span>lístky
+                    </h1>
+                    <h2>Honza Javorek</h2>
+                </hgroup>
+                </a>
+            </header>
+
+            <div id="content">
+                
+<article>
+    <header>
+        <h1>XML deklarace a PHP</h1>
+        <small>
+            <time datetime="2007-12-20T01:42:00" pubdate>20.12.2007</time>
+        </small>
+    </header>
+
+    <section id="article_content">
+        
+            
+        
+
+        <p>Zase trochu o webdesignu. Připravte se na vzrušující objevování Ameriky, kola a podobných užitečných věcí. Čtenářky, které se nezabývají tvorbou webu, zřejmě zklamu, ale tak už to v životě chodí. Bavte se zatím třeba <a href="http://gringo.profitux.cz/komixy/">tímhle</a>.</p>
+<h2 id="xml-deklarace">XML deklarace</h2>
+<p>Pokud se člověk už definitivně nevzbouřil, neodklonil od XHTML a stále ho baví psát striktně nevalidní jakožeXML dokumenty (více o těchto kravinách čtěte u <a href="http://dero.name/weblog/xhtml-mime/">Dera</a> nebo <a href="http://html456.blogspot.com/">Martina Hassmana</a>), jistě do nich také rád vkládá XML deklaraci. Je to první řádek v kódu, jenž hřímá „já jsem XML!“ a pokud stránka používá UTF-8, není povinný. Zakládám si na používání UTF-8, ale stejně jako mne náramně vzrušuje používat <strong>X</strong>HTML, svědomí mi nedovolí XML deklaraci prostě vynechat. Holt zažité superstriktní pudy z dob evangelizace webu.</p>
+<h2 id="php">PHP</h2>
+<p>Bo su mimo jiné i PHP programátor, musel jsem po čase pokojného deklarování XML řešit jistý nedostatek symbiózy mezi jazykem a právě oním prvním řádkem dokumentu.</p>
+<p>Zápis</p>
+<pre class="highlight"><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;</span>
+</code></pre>
+
+
+<p>prostě není úplně ono, protože ty špičaté závorky a otazníčky PHP bere na sebe a server vám vrátí něco podivného, asi <strong>parse error</strong>.</p>
+<h2 id="reseni">Řešení</h2>
+<p>Řešení je zřejmé…</p>
+<pre class="highlight"><code><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="s2">&quot;&lt;?xml version=</span><span class="se">\&quot;</span><span class="s2">1.0</span><span class="se">\&quot;</span><span class="s2"> encoding=</span><span class="se">\&quot;</span><span class="s2">utf-8</span><span class="se">\&quot;</span><span class="s2"> ?&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x"></span>
+</code></pre>
+
+
+<p>Nebo třeba</p>
+<pre class="highlight"><code><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="s1">&#39;&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;&#39;</span> <span class="o">.</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x"></span>
+</code></pre>
+
+
+<p>Jak je ale vidět, zřejmá řešení problémů nejsou ani hezká, ani elegantní. Předkládám proto jedno ne zcela zřejmé, ale geniální řešení, které je hezké, elegantní a navíc rychlé – nepotřebuje prakticky žádný výkon PHP.</p>
+<pre class="highlight"><code><span class="x">&lt;</span><span class="cp">&lt;?php</span> <span class="cp">?&gt;</span><span class="x">?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;</span>
+</code></pre>
+
+
+<p>A je to! Že se tu zabývám blbostmi? No jistě že ano! Ale proč netrávit čas psaním a čtením článků o roztomilých maličkostech ;) . A že to šlo napsat v jedné větě? Ale no tak… Jako byste mě neznali! :D</p>
+    </section>
+
+    
+    <div id="loading_area">
+    <hr>
+
+    <section id="comments">
+        <div id="fb_like">
+            <div class="fb-like" data-send="false" data-width="450" data-show-faces="false"></div>
+        </div>
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_shortname = "javorove-listky";
+            var disqus_developer = 0;
+            //var disqus_url = 'http:\/\/honzajavorek.cz\/blog\/' + "xml-deklarace-a-php";
+            var disqus_title = "XML deklarace a PHP";
+
+            (function() {
+                var dsq = document.createElement('script'); dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript><p class="noscript"><em>Bez JavaScriptu komentáře nejsou.</em></p></noscript>
+    </section>
+    </div>
+    
+
+    <footer>
+        <small>
+            <a href="https://github.com/honzajavorek/blog/edit/master/posts/2007-12-20%20xml-deklarace-a-php.md">edit</a>
+        </small>
+
+        
+            <p class="aside_links"><a href="http://javorove-listky.disqus.com/xml_deklarace_a_php/latest.rss">komentáře do čtečky</a></p>
+        
+    </footer>
+</article>
+
+            </div>
+        </div>
+
+        
+        <nav>
+            <h3>Hrábě</h3>
+            <form action="https://www.google.com/cse" id="cse-search-box">
+                <input type="hidden" name="cx" value="011917998094738623377:qowdxfpbkv4">
+                <input type="hidden" name="ie" value="UTF-8">
+                <input type="search" name="q" size="31" placeholder="Hledat">
+                <button type="submit" name="sa">Prohrabat listí</button>
+            </form>
+        </nav>
+        
+
+        <footer>
+            <h3>Zahradník</h3>
+            <address>© 2007–2012 <a href="kontakt">Honza Javorek</a></address>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src=".././theme/js/jquery-1.7.2.min.js">\x3C/script>')</script>
+        <script src=".././theme/js/main.js?v=1"></script>
+        
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = '//connect.facebook.net/en_US/all.js#xfbml=1';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+    
+        <meta charset="utf-8">
+        <title>Tahák na syntaxi: PHP VS. Java - Javorové lístky</title>
+
+        <script src=".././theme/js/modernizr.custom.js"></script>
+
+        <!--[if !IE]> --><link rel="stylesheet" href=".././theme/css/main.css?v=1" media="screen,projection,tv"><!-- <![endif]-->
+        <!--[if gte IE 7]><link rel="stylesheet" href=".././theme/css/main.css?v=1" media="screen,projection,tv"><![endif]-->
+
+        
+    
+        <link rel="alternate" type="application/rss+xml" title="Javorové lístky – všechny články" href="http://feeds.feedburner.com/javorove-listky">
+        <link rel="alternate" type="application/rss+xml" title="Javorové lístky – všechny komentáře" href="http://javorove-listky.disqus.com/latest.rss">
+        
+    <link rel="alternate" type="application/rss+xml" title="Javorové lístky – komentáře ke článku Tahák na syntaxi: PHP VS. Java" href="http://javorove-listky.disqus.com/tahak_na_syntaxi_php_vs_java/latest.rss">
+
+
+        <link rel="shortcut icon" type="image/x-icon" href=".././favicon.ico">
+
+        
+    
+        <meta property="og:image" content=".././theme/images/logo.png">
+    
+
+
+        <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', "UA-1316071-6"]);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    
+    </head>
+    <body>
+        <div id="document" class="article">
+            <header>
+                <a href="../.">
+                <hgroup>
+                    <h1>
+                        Javorové<span id="logo"> </span>lístky
+                    </h1>
+                    <h2>Honza Javorek</h2>
+                </hgroup>
+                </a>
+            </header>
+
+            <div id="content">
+                
+<article>
+    <header>
+        <h1>Tahák na syntaxi: PHP VS. Java</h1>
+        <small>
+            <time datetime="2008-03-30T18:05:00" pubdate>30.3.2008</time>
+        </small>
+    </header>
+
+    <section id="article_content">
+        
+            
+        
+
+        <p>Ano, můžeme si otevřít knihy, můžeme zkoumat <a href="http://en.wikipedia.org/wiki/PHP_syntax_and_semantics">PHP syntaxi</a> nebo <a href="http://en.wikipedia.org/wiki/Java_syntax">Java syntaxi</a> na Wikipedii, číst si v referenčních webech… Ale to je zdlouhavé. Nabízím malý tahák pro stejně konvertované jako já – z PHP na Javu. Nesnažil jsem se o nic komplexního, Javu se z toho nenaučíte. Jde jen o výčet nejzákladnějších rozdílů v syntaxi, které se mohou plést, zvláště když jsou zažité…</p>
+<table>
+    <tr>
+        <th>
+            část syntaxe
+        </th>
+        <th>
+            PHP
+        </th>
+        <th>
+            Java
+        </th>
+    </tr>
+    <tr>
+        <td>
+            konstruktor
+        </td>
+        <td>
+            `__construct()`, `Class()`
+        </td>
+        <td>
+            `Class()`
+        </td>
+    </tr>
+    <tr>
+        <td>
+            toString
+        </td>
+        <td>
+            `$object->__toString()`
+        </td>
+        <td>
+            `object.toString()`
+        </td>
+    </tr>
+    <tr>
+        <td>
+            přístup ke statické proměnné/metodě
+        </td>
+        <td>
+            `Class::$name`, `Class::name()`
+        </td>
+        <td>
+            `Class.name`, `Class.name()`
+        </td>
+    </tr>
+    <tr>
+        <td>
+            přístup k vlastní statické proměnné/metodě
+        </td>
+        <td>
+            `self::$name`, `self::name()`
+        </td>
+        <td>
+            `name`, `Class.name`, `name()`, `Class.name()`
+        </td>
+    </tr>
+    <tr>
+        <td>
+            přístup k proměnné/metodě
+        </td>
+        <td>
+            `$object->name`, `$object->name()`
+        </td>
+        <td>
+            `object.name`, `object.name()`
+        </td>
+    </tr>
+    <tr>
+        <td>
+            přístup k vlastní proměnné/metodě
+        </td>
+        <td>
+            `$this->name`, `$this->name()`
+        </td>
+        <td>
+            `name`, `this.name`, `name()`, `this.name()`
+        </td>
+    </tr>
+    <tr>
+        <td>
+            (statická) konstanta
+        </td>
+        <td>
+            `const NAME`
+        </td>
+        <td>
+            `static final type NAME`
+        </td>
+    </tr>
+    <tr>
+        <td>
+            přístup ke konstantě
+        </td>
+        <td>
+            `self::NAME`, `Class::NAME`
+        </td>
+        <td>
+            `NAME`, `Class.NAME`
+        </td>
+    </tr>
+</table>
+
+<p>Mimochodem, když jsem hledal něco takového jako tento článek na internetu, narazil jsem na <a href="http://www.blueshoes.org/en/developer/php_cheat_sheet/">pěkný tahák pro PHP</a>.</p>
+    </section>
+
+    
+    <div id="loading_area">
+    <hr>
+
+    <section id="comments">
+        <div id="fb_like">
+            <div class="fb-like" data-send="false" data-width="450" data-show-faces="false"></div>
+        </div>
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_shortname = "javorove-listky";
+            var disqus_developer = 0;
+            //var disqus_url = 'http:\/\/honzajavorek.cz\/blog\/' + "tahak-na-syntaxi-php-vs-java";
+            var disqus_title = "Tah\u00e1k na syntaxi: PHP VS. Java";
+
+            (function() {
+                var dsq = document.createElement('script'); dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript><p class="noscript"><em>Bez JavaScriptu komentáře nejsou.</em></p></noscript>
+    </section>
+    </div>
+    
+
+    <footer>
+        <small>
+            <a href="https://github.com/honzajavorek/blog/edit/master/posts/2008-03-30%20tahak-na-syntaxi-php-vs-java.md">edit</a>
+        </small>
+
+        
+            <p class="aside_links"><a href="http://javorove-listky.disqus.com/tahak_na_syntaxi_php_vs_java/latest.rss">komentáře do čtečky</a></p>
+        
+    </footer>
+</article>
+
+            </div>
+        </div>
+
+        
+        <nav>
+            <h3>Hrábě</h3>
+            <form action="https://www.google.com/cse" id="cse-search-box">
+                <input type="hidden" name="cx" value="011917998094738623377:qowdxfpbkv4">
+                <input type="hidden" name="ie" value="UTF-8">
+                <input type="search" name="q" size="31" placeholder="Hledat">
+                <button type="submit" name="sa">Prohrabat listí</button>
+            </form>
+        </nav>
+        
+
+        <footer>
+            <h3>Zahradník</h3>
+            <address>© 2007–2012 <a href="kontakt">Honza Javorek</a></address>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src=".././theme/js/jquery-1.7.2.min.js">\x3C/script>')</script>
+        <script src=".././theme/js/main.js?v=1"></script>
+        
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = '//connect.facebook.net/en_US/all.js#xfbml=1';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+    </body>
+</html>
