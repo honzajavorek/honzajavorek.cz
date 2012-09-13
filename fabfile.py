@@ -14,7 +14,7 @@ import re
 project_dir = os.path.dirname(os.path.realpath(__file__))
 posts_dir = project_dir + '/posts'
 output_dir = project_dir + '/output'
-deploy_dir = '/tmp/blog-deploy'
+deploy_dir = os.path.expanduser('~/.honzajavorek.cz/gh-pages')
 css_dir = project_dir + '/theme/static/css'
 
 
@@ -58,8 +58,9 @@ def update_license_year():
     current_year = str(datetime.now().year)
 
     if license_until_year != current_year:
-        warning('Year in license: %s. Updating to %s.'
-            % (license_until_year, current_year))
+        warning('Year in license: {0}. Updating to {1}.'.format(
+            license_until_year,
+            current_year))
 
         with open(license_file, 'w') as license:
             license.write(
@@ -100,13 +101,20 @@ def deploy():
     """Uploads blog to hosting."""
     execute(build)
 
-    local('rm -rf ' + deploy_dir)
-    local('mkdir ' + deploy_dir)
-    local('git clone -b gh-pages git@github.com:honzajavorek/blog.git ' + deploy_dir)
+    if os.path.exists(deploy_dir):
+        local('git pull origin gh-pages')
+        contents = [f for f in os.listdir(deploy_dir) if f != '.git']
+        with settings(hide('warnings'), warn_only=True):
+            for filename in contents:
+                local('rm -rf ' + os.path.join(deploy_dir, filename))
+    else:
+        os.makedirs(deploy_dir)
+        local('git clone -b gh-pages '
+              'git@github.com:honzajavorek/honzajavorek.cz.git ' + deploy_dir)
 
     with lcd(deploy_dir):
-        okay('Cloned blog repository.')
-        local('cp -r %s/* .' % output_dir)
+        okay('Synchronized blog repository.')
+        local('cp -r {0}/* .'.format(output_dir))
 
         # remove unnecessary stuff
         local('rm -rf author category tag feeds')
@@ -117,7 +125,6 @@ def deploy():
             local('git commit -m "deploying changes in pages"')
         local('git push origin gh-pages')
 
-    local('rm -rf ' + deploy_dir)
     okay('All deployed.')
 
 
@@ -144,10 +151,12 @@ def new(title=None):
     slug = slugify(title)
     pubdate = datetime.now() + timedelta(hours=2)
 
-    filename = '%s %s.md' % (pubdate.strftime('%Y-%m-%d'), slug)
-    contents = 'Title: %s\nDate: %s\n\n' % (title, pubdate.strftime('%Y-%m-%d %H:%M:%S'))
+    filename = '{0} {1}.md'.format(pubdate.strftime('%Y-%m-%d'), slug)
+    contents = 'Title: {0}\nDate: {1}\n\n'.format(
+        title,
+        pubdate.strftime('%Y-%m-%d %H:%M:%S'))
 
     path = os.path.join(posts_dir, filename)
     with open(path, 'w') as f:
         f.write(contents.encode('utf8'))
-        okay('%s prepared.' % filename)
+        okay('{0} prepared.'.format(filename))
