@@ -102,11 +102,12 @@ def deploy():
     execute(build)
 
     if os.path.exists(deploy_dir):
-        local('git pull origin gh-pages')
-        contents = [f for f in os.listdir(deploy_dir) if f != '.git']
-        with settings(hide('warnings'), warn_only=True):
-            for filename in contents:
-                local('rm -rf ' + os.path.join(deploy_dir, filename))
+        with lcd(deploy_dir):
+            local('git pull origin gh-pages')
+            contents = [f for f in os.listdir(deploy_dir) if f != '.git']
+            with settings(hide('warnings'), warn_only=True):
+                for filename in contents:
+                    local('rm -rf ' + os.path.join(deploy_dir, filename))
     else:
         os.makedirs(deploy_dir)
         local('git clone -b gh-pages '
