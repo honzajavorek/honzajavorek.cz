@@ -11,7 +11,7 @@ Under active development and maintenance. GitHub [pull requests][pull_requests] 
 
 ## Installation
 
-This installation guide is for Xubuntu Linux in 7 simple steps. It's a remainder for me in case I would forget how to run the site generator on my computer.
+This installation guide is for Xubuntu Linux in a few simple steps. It's a remainder for me in case I would forget how to run the site generator on my computer.
 
 1. Clone the code. `git clone git@github.com:honzajavorek/honzajavorek.cz.git`
 2. `cd honzajavorek.cz`
@@ -19,7 +19,8 @@ This installation guide is for Xubuntu Linux in 7 simple steps. It's a remainder
 4. Activate the environment. `. env/bin/activate`
 5. In virtual environment, install all Pythonic requirements. `pip install -r requirements.txt`
 6. Install Sass. `apt-get install ruby rubygems && gem install sass`
-7. Run it. `start.sh`
+7. Put your API key into plain text file `google_static_maps_api_key`.
+8. Run it: `start.sh`
 
 ## License: CC BY-NC-SA
 
@@ -28,9 +29,9 @@ href="mailto:jan.javorek&#64;gmail.com">jan.javorek&#64;gmail.com</a>&gt;
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](https://creativecommons.org/licenses/by-nc-sa/3.0/).
 
-&nbsp;  
+&nbsp;
 ----
-&nbsp;  
+&nbsp;
 
 # honzajavorek.cz (in Czech)
 
