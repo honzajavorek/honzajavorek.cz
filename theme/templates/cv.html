@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+    <head>
+    {% block head %}
+        <meta charset="utf-8">
+        <title>Honza Javorek: {{ page.title }}</title>
+
+        <script src="{{ SITEURL }}/theme/js/modernizr.custom.js"></script>
+
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/cv.css?v=1" media="screen,projection,tv">
+        <link rel="shortcut icon" type="image/x-icon" href="{{ SITEURL }}/favicon.ico">
+
+        {% block fb %}
+        <meta property="og:image" content="{{ SITEURL }}/theme/images/logo.png">
+        {% endblock fb %}
+
+        <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-1316071-12']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    {% endblock %}
+    </head>
+    <body>
+        <div id="document" class="page page_{{ page.slug|to_css_class }}">
+            <h1>
+                {{ page.title }}
+            </h1>
+
+            {{ page.content }}
+        </div>
+    </body>
+</html>
