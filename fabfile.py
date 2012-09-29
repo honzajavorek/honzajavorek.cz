@@ -153,7 +153,7 @@ def new(title=None):
     pubdate = datetime.now() + timedelta(hours=2)
 
     filename = '{0} {1}.md'.format(pubdate.strftime('%Y-%m-%d'), slug)
-    contents = 'Title: {0}\nDate: {1}\n\n'.format(
+    contents = u'Title: {0}\nDate: {1}\n\n'.format(
         title,
         pubdate.strftime('%Y-%m-%d %H:%M:%S'))
 
