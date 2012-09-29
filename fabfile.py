@@ -92,7 +92,7 @@ def build():
     execute(update_styles)
 
     with lcd(project_dir):
-        local('pelican -s settings.py')
+        local('pelican -s settings.py --delete-output-directory')
     okay('See http://localhost/blog/output.')
 
 
