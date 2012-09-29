@@ -116,7 +116,7 @@ Po vytvoření [@PythonCZ](http://twitter.com/pythoncz) a [python.cz](https://gi
 
 ## Výjezdy
 
-Zkusil jsem koncept [Pyonýrských výprav](srazy.info/pyonyrske-vypravy/). Tedy něco jako _výjezdy_ za poznáním a přátelstvím, především do Prahy na Pyvěc a do Blavy na jejich Rubyslavu + PyVo. No do Prahy jsem jel sám a Blavu jsem kvůli nemoci zrušil. Nicméně hodlám v tomto pokračovat, protože si myslím, že když to budu opakovat, propagovat a lidé to budou mít častěji na očích, sejdeme se za čas třeba aspoň tři, čtyři, nebo dokonce pět, no a to už je přece pěkná parta :)
+Zkusil jsem koncept [Pyonýrských výprav](http://srazy.info/pyonyrske-vypravy/). Tedy něco jako _výjezdy_ za poznáním a přátelstvím, především do Prahy na Pyvěc a do Blavy na jejich Rubyslavu + PyVo. No do Prahy jsem jel sám a Blavu jsem kvůli nemoci zrušil. Nicméně hodlám v tomto pokračovat, protože si myslím, že když to budu opakovat, propagovat a lidé to budou mít častěji na očích, sejdeme se za čas třeba aspoň tři, čtyři, nebo dokonce pět, no a to už je přece pěkná parta :)
 
 ## Organizační tým
 
