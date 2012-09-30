@@ -1,0 +1,120 @@
+/**
+ * Stylesheet for CV.
+ */
+
+@import 'main.scss';
+
+html { background: #FFF; }
+
+#document { @include no-box-shadow(); }
+
+.page #content {
+    img {
+        @include border-radius(0);
+        vertical-align: middle;
+    }
+
+    a {
+        color: $color_text;
+        background: $color_highlight;
+        text-decoration: none;
+        padding: 0 0.1em;
+    }
+
+    a:hover, a:focus {
+        text-decoration: underline;
+    }
+
+    article a:active {
+        position: relative;
+        top: 1px;
+    }
+
+    ul, ul li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        background: none;
+        vertical-align: middle;
+    }
+
+    li {
+        display: inline;
+        margin: 0 0.5em;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 200%;
+    }
+
+    .lead {
+        margin: 2em 0 5em 0;
+        text-align: center;
+        font-size: 130%;
+        font-family: $font_content_title;
+
+        .images {
+            position: relative;
+        }
+
+        .avatar {
+            position: absolute;
+            left: 50%; bottom: -12px;
+            margin-left: 52px;
+        }
+
+        li {
+            font-size: 80%;
+            margin: 0 0.5em;
+        }
+    }
+
+    .conditions {
+        @include columns(2);
+
+        h3 {
+            margin-top: 2em;
+        }
+    }
+
+    .mire_me {
+        text-align: center;
+        margin-bottom: 5em;
+    }
+
+    .caption {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 3em;
+    }
+
+    ul {
+        margin: 2em 0;
+    }
+
+    table, tr, th, td {
+        border: none;
+    }
+
+    th {
+        font-weight: normal;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    small {
+        color: $color_aside_text;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .page #content .conditions {
+        @include columns(1);
+    }
+}

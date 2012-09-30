@@ -58,13 +58,13 @@
 @mixin columns($count) {
     -webkit-column-count: $count;
     -webkit-column-gap: normal;
-    -webkit-column-rule: medium none;
+    -webkit-column-rule: none;
     -moz-column-count: $count;
     -moz-column-gap: normal;
-    -moz-column-rule: medium none;
+    -moz-column-rule: none;
     column-count: $count;
     column-gap: normal;
-    column-rule: medium none;
+    column-rule: none;
 }
 
 $font_content: 'Palatino Linotype', 'Georgia', serif;
