@@ -1,5 +1,5 @@
 Title: Dojmy z WebExpo 2012
-Date: 2012-09-29 14:13:47
+Date: 2012-09-30 23:00:00
 
 ![WebExpo 2012](images/webexpo2012.png){: .right }[Letošní WebExpo](http://webexpo.cz/praha2012/) bylo fajn. Stále mi někteří lidé říkají, že by jim návštěva WebExpa nic nedala, že jsou pro ně *Stoupou vybrané* přednášky nezajímavé. No však OK, nikdo nikoho přece nenutí :) Mě by taky nic moc nedal třeba [politologický Barcamp](http://polbarcamp.cz/), tak tam samozřejmě nejezdím, ale asi nemám potřebu to troubit do světa. Že jste od webů opravdu ještě neznamená, že vám WebExpo něco dá.
 
