@@ -19,6 +19,8 @@ Template: cv
 
 I'm systematic and precise. Communicative, flexible, able to learn new stuff. If I believe my work makes sense, I can do impossible. I love to analyze and solve unconventional, challenging problems. I hate routine tasks without need of invention.
 
+I believe less is more and smaller or simpler can beat bigger or more complex. I don't like using complex solutions only because everyone else does. I always seek for simpler workarounds and alternative ways.
+
 ## I love
 
 In 2010 I switched to Python after 5 years of professional PHP experience. I fell in love with it immediately. I am very passionate about getting as much experienced in Python as possible in the shortest time I can.
@@ -31,7 +33,7 @@ I learn every day. On top of my finished [university education](http://www.linke
 
 More accurately, I love to code. I do it even when I don't have to. Check out my [GitHub](http://github.com/honzajavorek/) profile.
 
-I was part of a team working on very complex SaaS app for film festivals, [Eventival](http://www.eventival.com/). [I freelanced 5 years](http://www.linkedin.com/in/honzajavorek#profile-experience) to get a [lot of experience](http://www.linkedin.com/in/honzajavorek#profile-skills) with creating many commercial sites, e-shops, portals, intranets, and some hobby sites. I worked on projects for both ordinary and web dev companies, but also for [large financial institutions](http://www.generali.cz).
+I was part of a team working on very complex SaaS app for film festivals, [Eventival](http://www.eventival.com/). [I freelanced 5 years](http://www.linkedin.com/in/honzajavorek#profile-experience) to get a [lot of experience](http://www.linkedin.com/in/honzajavorek#profile-skills) with creating many commercial sites, e-shops, portals, intranets, and some hobby sites. I worked on projects for both ordinary and web dev companies, but also for large institutions.
 
 I created a Facebook mashup [ConcertIn](https://apps.facebook.com/concertin/) recommending users to which concerts they might like to go. I designed and built rather large app [Mergado](http://www.mergado.cz), *feedburner for e-shops*, which is processing hundreds of XML exports daily. In my free time I code [Žít kino](http://zitkino.cz/), Brno cinema showtimes overview site and I started [python.cz](http://python.cz/) as a junction point for Czech Python community.
 
@@ -221,7 +223,7 @@ You don't believe a remote worker is the way to go? [37signals](https://37signal
 </div>
 
 <div class="mire_me" markdown="1">
-## I can charm pythons for you
+## Hire me
 
-Hire me: [jan.javorek@gmail.com](mailto:jan.javorek@gmail.com)
+[jan.javorek@gmail.com](mailto:jan.javorek@gmail.com)
 </div>
