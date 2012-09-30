@@ -2,7 +2,18 @@ Title: I can charm pythons for you
 Slug: cv
 Template: cv
 
-I am Honza Javorek, freelance web apps creator from Brno, Czech Republic.
+<div class="lead">
+    <p class="images">
+        <img class="photo" src="images/honza.jpg" width="150" height="150" alt="photo">
+        <img class="avatar" src="https://www.gravatar.com/avatar/d4a28b46d4ac5f2cc601f588becf9f74?s=50" width="50" height="50" alt="avatar">
+    </p>
+    <p>I am Honza Javorek, freelance web apps creator<br>from Brno, Czech Republic.</p>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/honzajavorek">LinkedIn</a></li>
+        <li><a href="https://github.com/honzajavorek">GitHub</a></li>
+        <li><a href="https://twitter.com/honzajavorek">@honzajavorek</a></li>
+    </ul>
+</div>
 
 ## I am
 
@@ -18,7 +29,9 @@ I learn every day. On top of my finished [university education](http://www.linke
 
 ## I code
 
-I was a part of a team working on very complex SaaS app for film festivals, [Eventival](http://www.eventival.com/). [I freelanced 5 years](http://www.linkedin.com/in/honzajavorek#profile-experience) to get a [lot of experience](http://www.linkedin.com/in/honzajavorek#profile-skills) with creating many commercial sites, e-shops, portals, intranets, and some hobby sites. I worked on projects for both ordinary and web dev companies, but also for [large financial institutions](http://www.generali.cz).
+More accurately, I love to code. I do it even when I don't have to. Check out my [GitHub](http://github.com/honzajavorek/) profile.
+
+I was part of a team working on very complex SaaS app for film festivals, [Eventival](http://www.eventival.com/). [I freelanced 5 years](http://www.linkedin.com/in/honzajavorek#profile-experience) to get a [lot of experience](http://www.linkedin.com/in/honzajavorek#profile-skills) with creating many commercial sites, e-shops, portals, intranets, and some hobby sites. I worked on projects for both ordinary and web dev companies, but also for [large financial institutions](http://www.generali.cz).
 
 I created a Facebook mashup [ConcertIn](https://apps.facebook.com/concertin/) recommending users to which concerts they might like to go. I designed and built rather large app [Mergado](http://www.mergado.cz), *feedburner for e-shops*, which is processing hundreds of XML exports daily. In my free time I code [Žít kino](http://zitkino.cz/), Brno cinema showtimes overview site and I started [python.cz](http://python.cz/) as a junction point for Czech Python community.
 
@@ -99,11 +112,11 @@ I created a Facebook mashup [ConcertIn](https://apps.facebook.com/concertin/) re
 
 ## I share
 
-I wrote [several articles](http://www.linkedin.com/in/honzajavorek#profile-publications) published in Czech online magazine for web developers, [Zdroják](http://zdrojak.cz). I also run my own blog here on [honzajavorek.cz](http://honzajavorek.cz). Sometimes I give a little presentation about an interesting topic on some local meetups (e.g. about [CSS preprocessors](https://speakerdeck.com/u/honzajavorek/p/jak-z-css-vymacknout-maximum) or [Celery](https://speakerdeck.com/u/honzajavorek/p/jak-prezit-frontu-a-nepredbihat)).
+I wrote [several articles](http://www.linkedin.com/in/honzajavorek#profile-publications) published in Czech online magazine for web developers, [Zdroják](http://zdrojak.cz). I also run my own blog here on [honzajavorek.cz](http://honzajavorek.cz). Sometimes I give a little presentation about an interesting topic at some local meetups (e.g. about [CSS preprocessors](https://speakerdeck.com/u/honzajavorek/p/jak-z-css-vymacknout-maximum) or [Celery](https://speakerdeck.com/u/honzajavorek/p/jak-prezit-frontu-a-nepredbihat)).
 
 ## I attend
 
-I like to join local professional communities. I attended local Barcamps and developer days of Google or Seznam. Since it has started back in 2008, I didn't miss any [Prague WebExpo conference](http://www.webexpo.net). I was on [RuPy 2012](http://rupy.eu/).
+I like to join local professional communities. I attended local Barcamps and developer days. Since it has started back in 2008, I didn't miss any [Prague WebExpo conference](http://www.webexpo.net). I was at [RuPy 2012](http://rupy.eu/).
 
 <ul>
     <li>
@@ -158,11 +171,24 @@ I like to join local professional communities. I attended local Barcamps and dev
 
 ## I organize
 
-As there was only weak local Python community in Brno, I started [PyVo](http://twitter.com/napyvo) meetup and I organize regular monthly events with *talks & beer*.
+As there was only weak local Python community in Brno, I started [PyVo](http://twitter.com/napyvo) meetup and I organize regular monthly events in *beer & talks* style.
 
 ## I want
 
-I want following. No other benefits needed. I need no PlayStation or children's slide in your office. I don't beg for healthcare insurance or paid vacations - if we can deal a contract based on my business license, just give me enough money so I can handle it myself. Of course, I am also open to work as an employee, but this depends on the conditions.
+I want following. No other benefits needed. I need no PlayStation or children's slide in your office. I don't beg for healthcare insurance or paid vacations - if we can deal a contract based on my business license, just give me enough money so I can handle it myself. Of course, I am also open to work as an employee, but this depends on the conditions presented.
+
+<div class="conditions" markdown="1">
+### Passion
+
+Does you product make a better world? Can I be passionate about it?
+
+### Homeoffice
+
+I'm sorry, no daily stand-up meeting. Let me live my life according to my rules. I will visit you as often as will be necessary to have a beer with the rest of the team.
+
+### Money
+
+Make me believe I cannot have the same amount in one week of selling WordPress sites.
 
 ### Python & friends
 
@@ -170,38 +196,32 @@ Please, no more PHP, MySQL, Apache. Do you use Nginx, PostgreSQL, MongoDB, Node.
 
 ### Knowledge boost
 
-I don't want to teach juniors right now. Opposite, let me be taught and pressed to learn more new stuff. Please, force me to do TDD!
+I don't want to teach juniors right now. Opposite! Let me be taught and pressed to learn more new stuff. Please, force me to finally start [TDD](https://en.wikipedia.org/wiki/Test-driven_development)!
 
 ### Challenge & adventure
 
 Hundreds of websites with welcome page and contact form? Wasting my brain cells! I need to design or code something challenging.
-
-### Passion
-
-Does you product make a better world? Can I be passionate about it?
-
-### Homeoffice
-
-Sorry, no daily stand-up meeting. Let me live my life according to my rules. I will visit you quite often, I promise.
-
-### Money
-
-Make me believe I cannot have the same amount in one week of selling WordPress sites.
+</div>
 
 ## I travel
 
-I hate daily transport overhead, but I love long-distance travelling. As mentioned above, I'd like my work to be based mostly on combination of homeoffice in Brno and travelling. By the way, you wouldn't like to kill Brno Python meetup (which I organize) by relocating me away, wouldn't you?
+I hate daily transport overhead, but I love long-distance travelling. As mentioned above, I'd like my work to be based mostly on combination of homeoffice in Brno and travelling. By the way, you wouldn't like to kill Brno Python meetup (which I organize) by relocating me away, would you?
 
 <table>
-    <tr><th>Prague</th><td>2.5 h by bus or train</td></tr>
-    <tr><th>London</th><td>1 h flight</td></tr>
-    <tr><th>Vienna</th><td>2 h by bus or train</td></tr>
-    <tr><th>Bratislava</th><td>1.5 h by bus</td></tr>
-    <tr><th>Berlin</th><td>4 h by bus &amp; flight</td></tr>
+    <tr><th>Brno</th><td><strong>0.1 h</strong> <small>by bike</small></td></tr>
+    <tr><th>Prague</th><td><strong>2.5 h</strong> <small>by bus or train</small></td></tr>
+    <tr><th>London</th><td><strong>1 h</strong> <small>direct flight</small></td></tr>
+    <tr><th>Vienna</th><td><strong>2 h</strong> <small>by bus or train</small></td></tr>
+    <tr><th>Bratislava</th><td><strong>1.5 h</strong> <small>by bus</small></td></tr>
+    <tr><th>Berlin</th><td><strong>4 h</strong> <small>by bus &amp; flight</small></td></tr>
 </table>
 
+<div class="caption" markdown="1">
 You don't believe a remote worker is the way to go? [37signals](https://37signals.com/svn/posts/3064-stop-whining-and-start-hiring-remote-workers) or [GitHub](https://github.com/about/team) do.
+</div>
 
+<div class="mire_me" markdown="1">
 ## I can charm pythons for you
 
-Contact me: [jan.javorek@gmail.com](mailto:jan.javorek@gmail.com)
+Hire me: [jan.javorek@gmail.com](mailto:jan.javorek@gmail.com)
+</div>
