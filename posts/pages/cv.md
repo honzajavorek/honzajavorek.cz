@@ -222,7 +222,7 @@ I hate daily transport overhead, but I love long-distance travelling. As mention
 You don't believe a remote worker is the way to go? [37signals](https://37signals.com/svn/posts/3064-stop-whining-and-start-hiring-remote-workers) or [GitHub](https://github.com/about/team) do.
 </div>
 
-<div class="mire_me" markdown="1">
+<div class="hire_me" markdown="1">
 ## Hire me
 
 [jan.javorek@gmail.com](mailto:jan.javorek@gmail.com)
