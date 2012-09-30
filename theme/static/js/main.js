@@ -4,6 +4,16 @@
 
 $(document).ready(function() {
 
+    $('img[title]').tipsy({
+        'opacity': 1,
+        'gravity': 's'
+    });
+
+    $('a[title]').tipsy({
+        'opacity': 1,
+        'gravity': 'n'
+    });
+
     if ($('.article').length) {
         // poem styling
         $('#article_content > p > br').closest('p').addClass('poem');
@@ -28,4 +38,4 @@ if ($('#disqus_thread').length) {
             $('html').addClass('ready');
         }
     }, 100);
-};
+}

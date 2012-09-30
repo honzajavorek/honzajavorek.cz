@@ -33,7 +33,7 @@ I learn every day. On top of my finished [university education](http://www.linke
 
 More accurately, I love to code. I do it even when I don't have to. Check out my [GitHub](http://github.com/honzajavorek/) profile.
 
-I was part of a team working on very complex SaaS app for film festivals, [Eventival](http://www.eventival.com/). [I freelanced 5 years](http://www.linkedin.com/in/honzajavorek#profile-experience) to get a [lot of experience](http://www.linkedin.com/in/honzajavorek#profile-skills) with creating many commercial sites, e-shops, portals, intranets, and some hobby sites. I worked on projects for both ordinary and web dev companies, but also for large institutions.
+I was part of a team working on very complex SaaS app for film festivals, [Eventival](http://www.eventival.com/). [I freelanced 5 years](http://www.javorek.net) to get a [lot of experience](http://www.linkedin.com/in/honzajavorek#profile-skills) with creating many commercial sites, e-shops, portals, intranets, and some hobby sites. I worked on projects for both ordinary and web dev companies, but also for large institutions.
 
 I created a Facebook mashup [ConcertIn](https://apps.facebook.com/concertin/) recommending users to which concerts they might like to go. I designed and built rather large app [Mergado](http://www.mergado.cz), *feedburner for e-shops*, which is processing hundreds of XML exports daily. In my free time I code [Žít kino](http://zitkino.cz/), Brno cinema showtimes overview site and I started [python.cz](http://python.cz/) as a junction point for Czech Python community.
 
