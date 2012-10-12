@@ -4,30 +4,29 @@
 
 @import 'main.scss';
 
-html { background: #FFF; }
+html { background: #FFF; font-size: 110%; }
 
 #document { @include no-box-shadow(); }
 
 .page #content {
     img {
         @include border-radius(0);
+        @include opacity(0.6);
         vertical-align: middle;
     }
 
-    a {
-        color: $color_text;
-        background: $color_highlight;
-        text-decoration: none;
+    .lead img, img:hover[title], img:hover[original-title] {
+        // original-title is replacement made by tipsy
+        @include opacity(1);
+    }
+
+    figure img:hover {
+        @include opacity(0.6);
+    }
+
+    strong {
         padding: 0 0.1em;
-    }
-
-    a:hover, a:focus {
-        text-decoration: underline;
-    }
-
-    article a:active {
-        position: relative;
-        top: 1px;
+        font-family: $font_content_title;
     }
 
     ul, ul li {
@@ -92,6 +91,15 @@ html { background: #FFF; }
         text-align: center;
     }
 
+    .map {
+        min-height: 400px;
+        background: url('../../static/images/brno-europe.png') right top no-repeat;
+
+        td, th {
+            padding: 1em 0.3em;
+        }
+    }
+
     h2 {
         text-align: center;
         margin-top: 3em;
@@ -99,6 +107,10 @@ html { background: #FFF; }
 
     ul {
         margin: 2em 0;
+    }
+
+    table {
+        margin: 2em 0 4em 0;
     }
 
     table, tr, th, td {
@@ -109,17 +121,23 @@ html { background: #FFF; }
         font-weight: normal;
     }
 
-    strong {
-        font-weight: bold;
-    }
-
     small {
         color: $color_aside_text;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .page #content .conditions {
-        @include columns(1);
+    .page #content {
+        .conditions {
+            @include columns(1);
+        }
+
+        figure {
+            display: none;
+        }
+
+        .map {
+            background: none;
+        }
     }
 }
