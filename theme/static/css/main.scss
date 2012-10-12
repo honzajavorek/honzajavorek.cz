@@ -4,6 +4,7 @@
 
 @import url('http://fonts.googleapis.com/css?family=Enriqueta&subset=latin,latin-ext#');
 @import 'code.scss';
+@import 'tipsy.scss';
 
 // see http://stackoverflow.com/questions/4060607/font-face-anti-aliasing-on-windows-and-mac
 
@@ -58,13 +59,19 @@
 @mixin columns($count) {
     -webkit-column-count: $count;
     -webkit-column-gap: normal;
-    -webkit-column-rule: medium none;
+    -webkit-column-rule: none;
     -moz-column-count: $count;
     -moz-column-gap: normal;
-    -moz-column-rule: medium none;
+    -moz-column-rule: none;
     column-count: $count;
     column-gap: normal;
-    column-rule: medium none;
+    column-rule: none;
+}
+
+@mixin opacity($value) {
+    zoom: 1;
+    filter: alpha(opacity=#{$value * 100});
+    opacity: $value;
 }
 
 $font_content: 'Palatino Linotype', 'Georgia', serif;
@@ -76,7 +83,7 @@ $letter_spacing_subtitle: $letter_spacing_title * 5;
 $color_green: #97B600;
 $color_text: #353535;
 $color_text_emph: #000;
-$color_aside_text: #A3A3A3;
+$color_aside_text: #777;
 $color_almost_invisible_text: #EEE;
 $color_link: #779600;
 $color_highlight: #FFFBAB;
@@ -584,4 +591,8 @@ article hr, .page hr {
 
 .noscript {
     text-align: center;
+}
+
+.tipsy-inner {
+    padding: 0 1em;
 }
