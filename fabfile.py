@@ -119,7 +119,9 @@ def deploy():
 
         # remove unnecessary stuff
         local('rm -rf author category tag feeds')
-        local('rm -rf theme/css/code.css theme/css/*.scss')
+        del_css = ['theme/css/.gitignore', 'theme/css/code.css',
+                   'theme/css/tipsy.css', 'theme/css/*.scss']
+        local('rm -rf ' + ' '.join(del_css))
 
         local('git add -A')
         with settings(hide('warnings'), warn_only=True):
@@ -135,7 +137,7 @@ def publish():
     with lcd(posts_dir):
         local('git add -A')
         with settings(hide('warnings'), warn_only=True):
-            local('git commit -m "publishing new articles"')
+            local('git commit -m "publishing"')
         local('git push origin master')
     okay('All published.')
     execute(deploy)
