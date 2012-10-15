@@ -5,7 +5,6 @@ Template: cv
 <!--
     mapa s destinacemi kolem brna http://blog.rupy.eu/post/32731707136/brno-bryes + destinace kam jsou prime lety z Brna
     pevne mezery
-    british english check
 -->
 
 <div class="lead">
@@ -140,7 +139,7 @@ I created a **Facebook mashup** called [ConcertIn](https://apps.facebook.com/con
 
 I wrote [several articles](http://www.linkedin.com/in/honzajavorek#profile-publications) which were **published** in the Czech online magazine for web developers, [Zdroják](http://zdrojak.cz). I also run **my own blog** here on [honzajavorek.cz](http://honzajavorek.cz). On occasion, I attend local meetups and give small **presentations** about some topics that may be of interest to others (e.g. about [CSS preprocessors](https://speakerdeck.com/u/honzajavorek/p/jak-z-css-vymacknout-maximum) or [Celery](https://speakerdeck.com/u/honzajavorek/p/jak-prezit-frontu-a-nepredbihat)).
 
-## I organize
+## I organise
 
 As the local Python community in Brno was very small, **I started [PyVo](http://lanyrd.com/series/brno-pyvo/) meetup** for which I organise regular monthly events in *beer & talks* style. When the PyVo meetup gained some followers and respect, **it helped to revive the whole Czech Python community**. Energy behind PyVo escalated to unite the local Python community under the one brand and to support their co-operation. This is also represented by the creation of the common **homepage for Czech Python community** at [python.cz](http://python.cz).
 
@@ -215,7 +214,7 @@ I like to **join local professional communities**. I have attended Barcamps and 
 
 ## I dream
 
-I dream about a job that **does not tie me down**. I dream about travelling around the world and working remotely from any destination. I do not need any employment benefits such as a PlayStation or a children's slide in the office, healthcare insurance or paid vacations. If you are prepared to give me a **contract based on my business license** that offers me the freedom and funds to support it, I am prepared to give you the best of my innovative and creative ability, my happy nature, loyalty and the results you desire.
+I dream about a job that **does not tie me down**. I dream about travelling around the world and working remotely from any destination. I do not need any employment benefits such as a PlayStation or a children's slide in the office, healthcare insurance or paid vacations. If you are prepared to give me a **contract based on my business licence** that offers me the freedom and funds to support it, I am prepared to give you the best of my innovative and creative ability, my happy nature, loyalty and the results you desire.
 
 I am also open to work as an **employee**, but it would have to meet the conditions I dream about.
 
@@ -247,7 +246,7 @@ Hundreds of websites with welcome pages and contact forms? A waste of my brain c
 
 ## I travel
 
-**I love long-distance travelling** but I dislike daily transport overheads. I would like my work to be based on a **combination of working from home in Brno and travelling**. I like Brno and I am very happy here spending my time with family and friends. <small>Besides, you would not want to let down the Brno Python meetup (which I organize) by relocating me elsewhere, would you?</small>
+**I love long-distance travelling** but I dislike daily transport overheads. I would like my work to be based on a **combination of working from home in Brno and travelling**. I like Brno and I am very happy here spending my time with family and friends. <small>Besides, you would not want to let down the Brno Python meetup (which I organise) by relocating me elsewhere, would you?</small>
 
 <div class="map">
     <table>
