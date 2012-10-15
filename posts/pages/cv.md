@@ -215,9 +215,9 @@ I like to **join local professional communities**. I have attended Barcamps and 
 
 ## I dream
 
-I dream about an **untied job**. I dream about travelling around the world and working remotely from any destination. I do not need any other employment benefits: I do not need a PlayStation, children's slide in the office, healthcare insurance or paid vacations. If you are prepared to give me **contract based on my business license**, which offers me such freedom and sufficient funds to support it, I am prepared to pay back with the best output, happy soul and loyality.
+I dream about a job that **does not tie me down**. I dream about travelling around the world and working remotely from any destination. I do not need any employment benefits such as a PlayStation or a children's slide in the office, healthcare insurance or paid vacations. If you are prepared to give me a **contract based on my business license** that offers me the freedom and funds to support it, I am prepared to give you the best of my innovative and creative ability, my happy nature, loyalty and the results you desire.
 
-I am also open to work as an **employee**, but it would have to be close to the conditions I dream about.
+I am also open to work as an **employee**, but it would have to meet the conditions I dream about.
 
 <div class="conditions" markdown="1">
 ### Passion
