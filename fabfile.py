@@ -163,3 +163,5 @@ def new(title=None):
     with open(path, 'w') as f:
         f.write(contents.encode('utf8'))
         okay('{0} prepared.'.format(filename))
+
+    local('sublime-text-2 "{0}"'.format(path))
