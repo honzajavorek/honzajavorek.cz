@@ -58,7 +58,7 @@ More specifically, I love to code. **I do it even when I do not have to.** Have 
 
 I was **part of a team** working on a very complex SaaS app for film festivals, [Eventival](http://www.eventival.com/). I **freelanced** for 5 years under the [javorek.net](http://javorek.net) brand name to enhance [my skills](http://www.linkedin.com/in/honzajavorek#profile-skills) in creating commercial sites, e-shops, portals, intranet, and some hobby sites. I worked on projects for both commercial and specialised web dev companies and also for large institutions.
 
-I created a **Facebook mashup** called [ConcertIn](https://apps.facebook.com/concertin/), which offers users concerts that they might like to go and see. I also designed and built a large app [Mergado](http://www.mergado.cz), a *Feedburner for e-shops*, which **processes hundreds of XML exports daily**. In my free time I code [Žít kino](http://zitkino.cz/), a site which provides an overview of Brno cinema film screening times and I started [python.cz](http://python.cz/) as a **homepage for the Czech Python community**.
+I created a **Facebook mashup** called [ConcertIn](https://apps.facebook.com/concertin/), which offers users concerts that they might like to go and see. I also designed and built a large app [Mergado](http://www.mergado.cz), a *Feedburner for e-shops*, which **processes hundreds of XML exports daily**. In my free time I code [Žít kino](http://zitkino.cz/), an open-source site which provides an overview of Brno cinema film screening times and I started [python.cz](http://python.cz/) as a **homepage for the Czech Python community**.
 
 <ul>
     <li>
