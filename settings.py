@@ -25,6 +25,7 @@ DEFAULT_DATE_FORMAT = '%x'
 
 # Blog settings
 DEFAULT_PAGINATION = 5
+SUMMARY_MAX_LENGTH = 80
 DEFAULT_CATEGORY = 'blog'
 MD_EXTENSIONS = ['codehilite', 'extra', 'headerid']
 
@@ -90,14 +91,19 @@ def to_datetime(dt):
 
 
 def figure(html):
-    html = re.sub(r'(<iframe[^\>]*>[^\<]*</iframe>)', r'<figure>\1</figure>', html)
-    html = re.sub(r'(<object[^\>]*>.*</object>)', r'<figure>\1</figure>', html)
-    return re.sub(r'<p([^\>]*)>\s*(<img[^\>]*>)\s*</p>', r'<figure\1>\2</figure>', html)
+    html = re.sub(r'(<iframe[^\>]*>[^\<]*</iframe>)',
+                  r'<figure>\1</figure>', html)
+    html = re.sub(r'(<object[^\>]*>.*</object>)',
+                  r'<figure>\1</figure>', html)
+    return re.sub(r'<p([^\>]*)>\s*(<img[^\>]*>)\s*</p>',
+                  r'<figure\1>\2</figure>', html)
 
 
 def code(html):
-    html = re.sub(r'<div[^\>]*class="codehilite"[^\>]*>\s*<pre[^\>]*>', r'<pre class="highlight"><code>', html)
-    html = re.sub(r'</pre></div>', r'</code></pre>', html)
+    html = re.sub(r'<div[^\>]*class="codehilite"[^\>]*>\s*<pre[^\>]*>',
+                  r'<pre class="highlight"><code>', html)
+    html = re.sub(r'</pre></div>',
+                  r'</code></pre>', html)
     return html
 
 
@@ -150,7 +156,8 @@ class CountryResolver(object):
 
     def __call__(self, code):
         if not code in self._cache:
-            re_parse = re.compile(r'<td[^>]*><a[^>]*>' + re.escape(code) + r'</a></td>\s*'\
+            re_parse = re.compile(
+                r'<td[^>]*><a[^>]*>' + re.escape(code) + r'</a></td>\s*'
                 r'<td[^>]*><a[^>]*>([^<]+)</a></td>', re.I)
             match = re_parse.search(self.wiki)
             self._cache[code] = match.group(1) if match else ''
@@ -170,17 +177,16 @@ def split(string, separator):
 def country_flag(code):
     name = country_name(code)
     return Markup(
-        u'<img src="{src}/static/images/flags/{code}.png" alt="{alt}" title="{title}" with="16" height="11">'\
-            .format(src=SITEURL, code=code, alt=name, title=name)
+        u'<img src="{src}/static/images/flags/{code}.png" '
+        u'alt="{alt}" title="{title}" with="16" height="11">'.format(
+            src=SITEURL, code=code, alt=name, title=name)
     )
 
 
 def filter_expeditions(pages):
     expeditions = [p for p in pages if p.template == 'expedition']
-    return sorted(expeditions,
-        reverse=True,
-        key=lambda x: getattr(x, 'begindate', str(date.today()))
-    )
+    return sorted(expeditions, reverse=True,
+                  key=lambda x: getattr(x, 'begindate', str(date.today())))
 
 
 def isoformat(dt):
@@ -217,7 +223,8 @@ class MapCreator(object):
             place_name = self.quote(place)
             if not self.re_coords.match(place):
                 first_letter = self.quote(self.first_letter(place))
-                url += self.marker_param.format(label=first_letter, place=place_name)
+                url += self.marker_param.format(label=first_letter,
+                                                place=place_name)
             venues += self.path_venue.format(place=place_name)
         return url + self.path_param.format(venues=venues)
 
@@ -231,17 +238,20 @@ class MapCreator(object):
 
         places = u' → '.join(places)
         return Markup(
-            u'<figure><img src="{src}" alt="{alt}" title="{title}" with="{width}" height="{height}">'\
-            '<figcaption>{title}</figcaption></figure>'\
-                .format(src=url, alt=places, title=places, width=width, height=height)
+            u'<figure><img src="{src}" alt="{alt}" '
+            u'title="{title}" with="{width}" height="{height}">'
+            '<figcaption>{title}</figcaption></figure>'.format(
+                src=url, alt=places, title=places, width=width, height=height)
         )
 
 
 class Person:
 
     fb_link = 'https://www.facebook.com/{id}'
-    fb_img = '<img src="https://graph.facebook.com/{id}/picture?type=square" width="50" height="50">'
-    default_img = '<img src="https://placekitten.com/49/49" width="50" height="50">'
+    fb_img = '<img src="https://graph.facebook.com/{id}/picture?type=square"'\
+        'width="50" height="50">'
+    default_img = '<img src="https://placekitten.com/49/49" '\
+        'width="50" height="50">'
 
     def __init__(self, name, fb_id=None):
         self.name = name
