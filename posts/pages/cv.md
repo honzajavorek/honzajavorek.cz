@@ -223,9 +223,9 @@ I am also open to work as an **employee**, but it would have to meet the conditi
 
 Does your product make a better world? Might I be **passionate** about it?
 
-### Homeoffice
+### Telecommuting
 
-Please, no daily stand-up meeting. **I will visit you as often as necessary** to discuss the work with the team. Weekly, monthly, whatever fits the project needs. In case of emergency **I can be in your office daily for a week or two**, just recommend me a good hostel. Let me do what I do best and to my rules.
+I wish to work from home. Let me do what I do best and to my rules. **I will visit you as often as necessary** to discuss the work with the team. Weekly, monthly, whatever fits the project needs. In case of emergency **I can be in your office daily for a week or two**, just recommend me a good hostel.
 
 ### Money
 
