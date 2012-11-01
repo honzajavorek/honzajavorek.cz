@@ -38,7 +38,7 @@ After 5 years of professional PHP experience I switched to **Python** in 2010 an
 
 ## I learn
 
-I learn **every day**. Even though I have recently completed my [university education](http://www.linkedin.com/in/honzajavorek#profile-education), I constantly seek information about new technology and trends.
+I learn **every day**. Even though I have recently completed my [university education](http://www.linkedin.com/in/honzajavorek#profile-education), I constantly seek information about new technology and trends. These days I attend [M101: MongoDB for Developers course](https://education.10gen.com/) by 10gen.
 
 <ul>
     <li>
@@ -49,6 +49,9 @@ I learn **every day**. Even though I have recently completed my [university educ
     </li>
     <li>
         <img src="images/attending/mu.png" alt="Masaryk University" title="Masaryk University">
+    </li>
+    <li>
+        <img src="images/attending/10gen.png" alt="10gen" title="10gen">
     </li>
 </ul>
 
