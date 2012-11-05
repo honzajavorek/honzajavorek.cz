@@ -2,11 +2,6 @@ Title: I can charm pythons for you
 Slug: cv
 Template: cv
 
-<!--
-    mapa s destinacemi kolem brna http://blog.rupy.eu/post/32731707136/brno-bryes + destinace kam jsou prime lety z Brna
-    pevne mezery
--->
-
 <div class="lead">
     <p class="images">
         <img class="photo" src="images/honza.jpg" width="150" height="150" alt="photo">
@@ -38,7 +33,7 @@ After 5 years of professional PHP experience I switched to **Python** in 2010 an
 
 ## I learn
 
-I learn **every day**. Even though I have recently completed my [university education](http://www.linkedin.com/in/honzajavorek#profile-education), I constantly seek information about new technology and trends. These days I attend [M101: MongoDB for Developers course](https://education.10gen.com/) by 10gen.
+I learn **every day**. Even though I have recently completed my [university education](http://www.linkedin.com/in/honzajavorek#profile-education), I constantly seek information about new technology and trends. For example, these days I attend [M101: MongoDB for Developers course](https://education.10gen.com/) by 10gen.
 
 <ul>
     <li>
