@@ -249,7 +249,7 @@ Hundreds of websites with welcome pages and contact forms? A waste of my brain c
 <div class="map">
     <table>
         <tr><th>Prague</th><td><strong>2.5 h</strong> <small>by bus or train</small></td></tr>
-        <tr><th>London</th><td><strong>1 h</strong> <small>direct flight</small></td></tr>
+        <tr><th>London</th><td><strong>2 h</strong> <small>direct flight</small></td></tr>
         <tr><th>Vienna</th><td><strong>2 h</strong> <small>by bus or train</small></td></tr>
         <tr><th>Bratislava</th><td><strong>1.5 h</strong> <small>by bus</small></td></tr>
         <tr><th>Berlin</th><td><strong>4 h</strong> <small>by bus &amp; flight</small></td></tr>
