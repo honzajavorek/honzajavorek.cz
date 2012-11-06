@@ -19,19 +19,19 @@ Template: cv
     </ul>
 </div>
 
-## I am
+## I am {#am}
 
 I am **systematic and precise, communicative**, flexible and have a passion to learn new things. **I can do the impossible** if my **work has a purpose**. I love to analyse and solve unconventional and **challenging** problems. I dislike routine tasks that restrict my ability to be **innovative**.
 
 I believe **less is more**. Smaller and simpler is better than large and complex. I do not like using complicated solutions because everyone does. I look for simple options and alternative possibilities and solutions.
 
-## I love
+## I love {#love}
 
 After 5 years of professional PHP experience I switched to **Python** in 2010 and fell in love with it immediately. I am very **passionate** about getting as much experience as possible using Python in the shortest time I can.
 
 ![Python](images/python-grey.png)
 
-## I learn
+## I learn {#learn}
 
 I learn **every day**. Even though I have recently completed my [university education](http://www.linkedin.com/in/honzajavorek#profile-education), I constantly seek information about new technology and trends. For example, these days I attend [M101: MongoDB for Developers course](https://education.10gen.com/) by 10gen.
 
@@ -50,7 +50,7 @@ I learn **every day**. Even though I have recently completed my [university educ
     </li>
 </ul>
 
-## I code
+## I code {#code}
 
 More specifically, I love to code. **I do it even when I do not have to.** Have a look at my [GitHub](http://github.com/honzajavorek/) profile.
 
@@ -133,11 +133,11 @@ I created a **Facebook mashup** called [ConcertIn](https://apps.facebook.com/con
     </li>
 </ul>
 
-## I share
+## I share {#share}
 
 I wrote [several articles](http://www.linkedin.com/in/honzajavorek#profile-publications) which were **published** in the Czech online magazine for web developers, [Zdroják](http://zdrojak.cz). I also run **my own blog** here on [honzajavorek.cz](http://honzajavorek.cz). On occasion, I attend local meetups and give small **presentations** about some topics that may be of interest to others (e.g. about [CSS preprocessors](https://speakerdeck.com/u/honzajavorek/p/jak-z-css-vymacknout-maximum) or [Celery](https://speakerdeck.com/u/honzajavorek/p/jak-prezit-frontu-a-nepredbihat)).
 
-## I organise
+## I organise {#organise}
 
 As the local Python community in Brno was very small, **I started [PyVo](http://lanyrd.com/series/brno-pyvo/) meetup** for which I organise regular monthly events in *beer & talks* style. When the PyVo meetup gained some followers and respect, **it helped to revive the whole Czech Python community**. Energy behind PyVo escalated to unite the local Python community under the one brand and to support their co-operation. This is also represented by the creation of the common **homepage for Czech Python community** at [python.cz](http://python.cz).
 
@@ -152,7 +152,7 @@ I also helped to organise a small local [conference about shopping-search engine
     </li>
 </ul>
 
-## I attend
+## I attend {#attend}
 
 I like to **join local professional communities**. I have attended Barcamps and developer days. Since they have started in 2008, I have not missed any [Prague WebExpo conferences](http://www.webexpo.net). I will also be attending [RuPy 2012](http://rupy.eu/).
 
@@ -210,7 +210,7 @@ I like to **join local professional communities**. I have attended Barcamps and 
     </li>
 </ul>
 
-## I dream
+## I dream {#dream}
 
 I dream about a job that **does not tie me down**. I dream about travelling around the world and working remotely from any destination. I do not need any employment benefits such as a PlayStation or a children's slide in the office, healthcare insurance or paid vacations. If you are prepared to give me a **contract based on my business licence** that offers me the freedom and funds to support it, I am prepared to give you the best of my innovative and creative ability, my happy nature, loyalty and the results you desire.
 
@@ -242,7 +242,7 @@ I do not want to teach juniors right now. The very opposite! **Let me be taught 
 Hundreds of websites with welcome pages and contact forms? A waste of my brain cells! I need to design or code something **challenging**.
 </div>
 
-## I travel
+## I travel {#travel}
 
 **I love long-distance travelling** but I dislike daily transport overheads. I would like my work to be based on a **combination of working from home in Brno and travelling**. I like Brno and I am very happy here spending my time with family and friends. <small>Besides, you would not want to let down the Brno Python meetup (which I organise) by relocating me elsewhere, would you?</small>
 
