@@ -74,6 +74,12 @@
     opacity: $value;
 }
 
+@mixin clearfix() {
+    &:before, &:after { content: " "; display: table; }
+    &:after { clear: both; }
+    zoom: 1;
+}
+
 $font_content: 'Palatino Linotype', 'Georgia', serif;
 $font_content_title: 'Enriqueta', 'Georgia', serif;
 $font_title: 'AllerDisplayRegular', sans-serif;
@@ -101,7 +107,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 a { color: $color_link; }
 a:hover, a:focus { text-decoration: none; }
-article a:visited, .archives #content a:visited { color: $color_text; }
+article a:visited, .archives .content a:visited { color: $color_text; }
 article a:active { position: relative; top: 1px; }
 a:link, a:link span, .button, button { cursor: pointer; }
 
@@ -167,7 +173,7 @@ a:link, a:link span, .button, button { cursor: pointer; }
     }
 }
 
-#logo {
+.logo {
     $logo_size: 100px;
 
     width: $logo_size; height: $logo_size;
@@ -186,7 +192,7 @@ a:link, a:link span, .button, button { cursor: pointer; }
         padding-bottom: 0;
     }
 
-    #logo {
+    .logo {
         display: inline;
         width: auto; height: auto;
         font-size: inherit;
@@ -197,9 +203,9 @@ a:link, a:link span, .button, button { cursor: pointer; }
     }
 }
 
-body > nav h3, footer h3, .index #content > h1 { @include hidden(); }
+body > nav h3, footer h3, .index .content > h1 { @include hidden(); }
 
-#content {
+.content {
     padding: 0 3em;
     font-size: 100%;
 
@@ -218,7 +224,7 @@ body > nav h3, footer h3, .index #content > h1 { @include hidden(); }
 }
 
 @media (max-width: 600px) {
-    #content {
+    .content {
         margin: 0; padding: 0 0.5em;
 
         h1 { margin: 0; }
@@ -229,7 +235,7 @@ h1, h2, h3, h4 {
     clear: both;
     position: relative;
     &:hover .anchor { visibility: visible; }
-    #content & { font-family: $font_content_title; }
+    .content & { font-family: $font_content_title; }
 }
 
 h2 { font-size: 150%; margin-bottom: 0.9em; }
@@ -359,7 +365,7 @@ article {
     }
 }
 
-article #article_content, .page #content {
+article .article_content, .page .content {
     ul, ul li { list-style-type: none; }
     ul { padding: 0; }
     ul li { margin: 0; padding: 0 0 0 2em; background: url('../images/bullet-green.png') 0.5em 0.5em no-repeat; }
@@ -400,7 +406,7 @@ article hr, .page hr {
     margin: 0.5em 0;
 }
 
-.index #content > ul {
+.index .content > ul {
     &, & > li {
         list-style-type: none;
         margin: 0; padding: 0;
@@ -411,13 +417,13 @@ article hr, .page hr {
     }
 }
 
-.article #content article {
+.article .content article {
     header { text-align: center; margin-bottom: 3em; }
     h1 { font-size: 260%; display: block; margin: 0 0 0.5em 0; }
     header small { margin: 0; font-size: 100%; }
 }
 
-.page #content h1 {
+.page .content h1 {
     text-align: center;
 }
 
@@ -447,12 +453,12 @@ article hr, .page hr {
         margin: 0; padding: 0;
     }
 
-    #content > ul {
+    .content > ul {
         margin-bottom: 3em;
     }
 }
 
-.expeditions #content {
+.expeditions .content {
     h1, p {
         text-align: center;
     }
@@ -487,78 +493,61 @@ article hr, .page hr {
     header p {
         text-align: center;
     }
+
+    .people {
+        @include clearfix();
+    }
+
+    .person {
+        display: block;
+        width: 100px;
+        height: 130px;
+        text-align: center;
+        font-size: 90%;
+        float: left;
+
+        img {
+            display: block;
+            margin: 0.5em auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color_text;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: $color_link;
+        }
+    }
 }
 
 .countries img {
     cursor: help;
 }
 
-.foodlog {
-    #foodlog_error {
-        text-align: center;
-
-        p {
-            margin: 3em 1em; padding: 0.3em 0.5em;
-            background: $color_highlight;
-            @include border-radius(0.5em);
-
-            small { font-size: 70%; margin-left: 1em; }
-        }
-    }
-
-    #foodlog_form {
-        width: 100%;
-        text-align: center;
-        line-height: 250%;
-
-        label { margin-right: 0.5em; }
-        small { color: $color_aside_text; }
-        input { padding: 0.5em; }
-        button { padding: 0.5em 2em; }
-    }
-
-    #foodlog_list {
-        margin: 3em 0;
-
-        strong { margin-left: 2em; }
-    }
-}
-
-@media (max-width: 600px) {
-    #foodlog_form {
-        label, #eaten_at_field { display: none; }
-    }
-}
-
-@media (max-width: 250px) {
-    .foodlog {
-        #foodlog_error, header { display: none; }
-        #foodlog_form input { padding: 0; margin: 0; width: 100%; }
-        #foodlog_form button { padding: 0.3em 0.5em; }
-    }
-}
-
 .page_404 {
-    #content { text-align: center; }
+    .content { text-align: center; }
     p { margin: 2em 0; }
     form { margin: 3em 0; }
     input, button { padding: 0.5em; }
 }
 
 .page_kino {
-    #content { text-align: center; padding-bottom: 5em; }
-    #content h1 { margin-bottom: 2em; }
+    .content { text-align: center; padding-bottom: 5em; }
+    .content h1 { margin-bottom: 2em; }
 }
 
 #disqus_thread {
     margin: 0 !important;
 }
 
-#comments, #content {
+#comments, .content {
     position: relative;
 }
 
-#fb_like {
+.fb_like {
     height: 24px;
     position: relative;
     margin-bottom: 1em;
@@ -569,7 +558,7 @@ article hr, .page hr {
     }
 }
 
-.js #loading_area {
+.js .loading_area {
     min-height: 150px;
     background: url('../images/loader.gif') no-repeat center center;
 
@@ -579,7 +568,7 @@ article hr, .page hr {
     }
 }
 
-.js.ready #loading_area {
+.js.ready .loading_area {
     min-height: auto;
     background: none;
 

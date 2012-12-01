@@ -41,14 +41,14 @@
                 <a href="{% block home_link %}{{ SITEURL }}{% endblock %}">
                 <hgroup>
                     <h1>
-                        Javorové<span id="logo"> </span>{% block maple_object %}lístky{% endblock %}
+                        Javorové<span class="logo"> </span>{% block maple_object %}lístky{% endblock %}
                     </h1>
                     <h2>Honza Javorek</h2>
                 </hgroup>
                 </a>
             </header>
 
-            <div id="content">
+            <div class="content">
                 {% block content %}{% endblock %}
             </div>
         </div>
@@ -56,7 +56,7 @@
         {% if page is not defined or page.slug != '404' %}
         <nav>
             <h3>Hrábě</h3>
-            <form action="https://www.google.com/cse" id="cse-search-box">
+            <form action="https://www.google.com/cse" class="cse-search-box">
                 <input type="hidden" name="cx" value="011917998094738623377:qowdxfpbkv4">
                 <input type="hidden" name="ie" value="UTF-8">
                 <input type="search" name="q" size="31" placeholder="Hledat">

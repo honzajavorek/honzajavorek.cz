@@ -29,13 +29,18 @@
     {% endif %}
 
     {% if page.people is defined %}
+        <h2 id="ucastnici">Účastníci</h2>
+        <div class="people">
         {% for person in page.people|split_people %}
+            <span class="person">
             {% if person.link %}
                 <a href="{{ person.link }}">{{ person.avatar }} {{ person.name }}</a>
             {% else %}
                 {{ person.avatar }} {{ person.name }}
             {% endif %}
+            </span>
         {% endfor %}
+        </div>
     {% endif %}
 
     {{ page.content }}
