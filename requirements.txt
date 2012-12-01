@@ -1,5 +1,4 @@
-git+git://github.com/getpelican/pelican.git@d726e5e81ceeddbac736a7c618622c2441f9aab4#egg=pelican
-#git+git://github.com/honzajavorek/tipi.git#egg=tipi
-markdown
-fabric
-requests
+pelican==3.0.1
+markdown==2.2.1
+fabric==1.5.1
+requests==0.13.8

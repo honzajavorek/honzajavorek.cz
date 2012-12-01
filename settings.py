@@ -55,7 +55,7 @@ FILES_TO_COPY = (
 
 
 # Feeds
-FEED = 'feed.xml'
+FEED_ATOM = 'feed.xml'
 FEED_MAX_ITEMS = 50
 
 FEEDBURNER_SITENAME = 'javorove-listky'
@@ -76,7 +76,7 @@ SOCIAL = ()
 
 # API key
 with open('google_static_maps_api_key') as f:
-    GOOGLE_STATIC_MAPS_API_KEY = f.read()
+    GOOGLE_STATIC_MAPS_API_KEY = f.read().strip()
 
 
 # Jinja
@@ -211,19 +211,12 @@ class MapCreator(object):
     def quote(self, string):
         return urllib.quote(unicode(string).encode('utf-8'))
 
-    def first_letter(self, string):
-        first_letter = string.upper()[0]
-        if self.re_letter.match(first_letter):
-            return first_letter
-        return u'★'
-
     def add_path(self, url, places):
         venues = ''
-        for place in places:
+        for i, place in enumerate(places, 65):  # 65 = ASCII code of 'A'
             place_name = self.quote(place)
             if not self.re_coords.match(place):
-                first_letter = self.quote(self.first_letter(place))
-                url += self.marker_param.format(label=first_letter,
+                url += self.marker_param.format(label=chr(i),
                                                 place=place_name)
             venues += self.path_venue.format(place=place_name)
         return url + self.path_param.format(venues=venues)
@@ -238,10 +231,10 @@ class MapCreator(object):
 
         places = u' → '.join(places)
         return Markup(
-            u'<figure><img src="{src}" alt="{alt}" '
+            u'<figure><img src="{src}" alt="mapa" '
             u'title="{title}" with="{width}" height="{height}">'
             '<figcaption>{title}</figcaption></figure>'.format(
-                src=url, alt=places, title=places, width=width, height=height)
+                src=url, title=places, width=width, height=height)
         )
 
 
