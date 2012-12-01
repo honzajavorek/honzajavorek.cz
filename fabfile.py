@@ -125,7 +125,7 @@ def deploy():
 
         local('git add -A')
         with settings(hide('warnings'), warn_only=True):
-            local('git commit -m "deploying changes in pages"')
+            local('git commit -m "Deploying changes in pages."')
         local('git push origin gh-pages')
 
     okay('All deployed.')
@@ -137,7 +137,7 @@ def publish():
     with lcd(posts_dir):
         local('git add -A')
         with settings(hide('warnings'), warn_only=True):
-            local('git commit -m "publishing"')
+            local('git commit -m "Publishing."')
         local('git push origin master')
     okay('All published.')
     execute(deploy)
