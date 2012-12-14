@@ -1,5 +1,5 @@
 Title: I can charm pythons for you
-Slug: cv
+Slug: cv-short
 Template: cv
 
 <div class="lead">

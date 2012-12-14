@@ -46,6 +46,11 @@ html { background: #FFF; font-size: 110%; }
         margin: 0 0.5em;
     }
 
+    h1, h2 {
+        text-align: center;
+        font-family: $font_content_title;
+    }
+
     h1 {
         text-transform: uppercase;
         font-size: 200%;
