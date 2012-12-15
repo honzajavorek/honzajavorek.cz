@@ -4,19 +4,20 @@
 
 $(document).ready(function() {
 
-    $('img[title]').tipsy({
-        'opacity': 1,
-        'gravity': 's'
-    });
-
-    $('a[title]').tipsy({
-        'opacity': 1,
-        'gravity': 'n'
-    });
+    if ($.fn.tipsy) {
+        $('img[title]').tipsy({
+            'opacity': 1,
+            'gravity': 's'
+        });
+        $('a[title]').tipsy({
+            'opacity': 1,
+            'gravity': 'n'
+        });
+    }
 
     if ($('.article').length) {
         // poem styling
-        $('#article_content > p > br').closest('p').addClass('poem');
+        $('.article_content > p > br').closest('p').addClass('poem');
 
         // anchors
         $('h1, h2, h3, h4', '.article').filter('[id]').each(function() {
