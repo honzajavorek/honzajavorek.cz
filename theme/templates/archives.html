@@ -21,7 +21,7 @@
                 {{ month_group.grouper|month_name }} &ndash; {{ entries_count }}
             </h3>
             <ul>
-            {% for article in month_group.list|reverse %}
+            {% for article in month_group.list %}
                 <li>
                     <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.date|format_date('%d.%m.') }}</time>
                     <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
