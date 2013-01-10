@@ -24,7 +24,7 @@ This installation guide is for Xubuntu Linux in a few simple steps. It's a remai
 
 ## License: CC BY-NC-SA
 
-(cc) 2007–2012 Jan Javorek &lt;<a
+(cc) 2007–2013 Jan Javorek &lt;<a
 href="mailto:jan.javorek&#64;gmail.com">jan.javorek&#64;gmail.com</a>&gt;
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](https://creativecommons.org/licenses/by-nc-sa/3.0/).
@@ -46,7 +46,7 @@ Aktivně vyvíjeno a udržováno. Vítám opravy překlepů a hrubek v článcí
 
 ## Licence: CC BY-NC-SA
 
-(cc) 2007–2012 Jan Javorek &lt;<a
+(cc) 2007–2013 Jan Javorek &lt;<a
 href="mailto:jan.javorek&#64;gmail.com">jan.javorek&#64;gmail.com</a>&gt;
 
 Toto dílo podléhá licenci [Creative Commons Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 3.0 Česko](https://creativecommons.org/licenses/by-nc-sa/3.0/cz/).
