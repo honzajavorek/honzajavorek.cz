@@ -41,9 +41,13 @@
                 <a href="{% block home_link %}{{ SITEURL }}{% endblock %}">
                 <hgroup>
                     <h1>
-                        Javorové<span class="logo"> </span>{% block maple_object %}lístky{% endblock %}
+                        {% block title_h1 %}
+                            {% block title_adjective %}Javorové{% endblock title_adjective -%}
+                            <span class="logo"> </span>
+                            {%- block title_noun %}lístky{% endblock title_noun %}
+                        {% endblock title_h1 %}
                     </h1>
-                    <h2>Honza Javorek</h2>
+                    <h2>{% block title_h2 %}Honza Javorek{% endblock %}</h2>
                 </hgroup>
                 </a>
             </header>
@@ -53,6 +57,7 @@
             </div>
         </div>
 
+        {% block search %}
         {% if page is not defined or page.slug != '404' %}
         <nav>
             <h3>Hrábě</h3>
@@ -64,6 +69,7 @@
             </form>
         </nav>
         {% endif %}
+        {% endblock %}
 
         <footer>
             <h3>Zahradník</h3>

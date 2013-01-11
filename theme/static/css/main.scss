@@ -141,6 +141,8 @@ a:link, a:link span, .button, button { cursor: pointer; }
         position: relative;
         margin: 0;
         letter-spacing: $letter_spacing_title;
+        vertical-align: middle;
+        line-height: normal;
     }
 
     h2 {
@@ -456,6 +458,70 @@ article hr, .page hr {
 
     .content > ul {
         margin-bottom: 3em;
+    }
+}
+
+.plevin .content {
+    h2 {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .schedule {
+        margin: 1em auto;
+        width: 100%;
+
+        th, td {
+            border: none;
+            border-bottom: 1px dotted $color_aside_text;
+            padding: 0.2em 0.5em;
+            text-align: center;
+        }
+
+        tr.today { background: $color_highlight; }
+
+        &.collapsed {
+            cursor: pointer;
+            font-size: 200%;
+            line-height: normal;
+            font-family: $font_content_title;
+            color: $color_green;
+            font-weight: bold;
+            margin: 1em 0;
+
+            th, td { border: none; padding: 0; }
+            th { display: none; }
+            tr { display: none; }
+
+            tr.today {
+                display: table-row;
+                background: none;
+            }
+        }
+    }
+
+    #menu, #offers {
+        margin: 2em 0;
+
+        .placeholder {
+            text-align: center;
+            padding: 2em 0 4em 0;
+        }
+
+        .dishes {
+            width: 100%;
+
+            td, th { border: none; }
+            tr { border-bottom: 1px dotted $color_aside_text; }
+            .price { font-weight: bold; }
+        }
+
+        &.collapsed {
+            cursor: pointer;
+
+            h3, .dishes { display: none; }
+            .today { display: table; }
+        }
     }
 }
 
