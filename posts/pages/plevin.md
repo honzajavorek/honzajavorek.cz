@@ -1,7 +1,7 @@
 Title: Plevín
 Template: plevin
 
-## Billa Rubín {#billa}
+## Billa Rubín
 
 <table class="schedule">
     <tr>
@@ -34,7 +34,7 @@ Template: plevin
     </tr>
 </table>
 
-## Budka Vychodilova {#budka}
+## Budka Vychodilova
 
 <table class="schedule">
     <tr>
@@ -67,7 +67,7 @@ Template: plevin
     </tr>
 </table>
 
-## Pošta 61600 {#posta}
+## Pošta 61600
 
 <table class="schedule">
     <tr>
