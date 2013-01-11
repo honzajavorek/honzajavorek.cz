@@ -102,6 +102,12 @@ Template: plevin
 
 ## Restaurace Rubín <small>[zdroj](http://restauracerubin.cz/obedova-menu/)</small> {#rubin}
 
+<table class="schedule collapsed">
+    <tr class="today">
+        <td>11 - 15</td>
+    </tr>
+</table>
+
 <div id="menu">
     <p class="placeholder">
         Načítá se menu&hellip;

@@ -481,7 +481,6 @@ article hr, .page hr {
         tr.today { background: $color_highlight; }
 
         &.collapsed {
-            cursor: pointer;
             font-size: 200%;
             line-height: normal;
             font-family: $font_content_title;

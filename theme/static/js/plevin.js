@@ -126,16 +126,18 @@ $(document).ready(function() {
     var weekday = getWeekday();
     var $schedules = $('.schedule');
 
-    $('.schedule').each(function() {
+    $('.schedule:not(.collapsed)').each(function() {
         var $table = $(this);
         $('tr', $table).eq(weekday).addClass('today');
 
         $table.addClass('collapsed');
+        $table.css('cursor', 'pointer');
         $table.attr('title', 'celý týden');
 
         $table.click(function() {
             var $table = $(this);
             $table.removeClass('collapsed');
+            $table.css('cursor', 'default');
             $table.removeAttr('title');
         });
     });
@@ -180,11 +182,13 @@ $(document).ready(function() {
 
         } else {
             $menu.addClass('collapsed');
+            $menu.css('cursor', 'pointer');
             $menu.attr('title', 'celý týden');
 
             $menu.click(function() {
                 var $menu = $(this);
                 $menu.removeClass('collapsed');
+                $menu.css('cursor', 'default');
                 $menu.removeAttr('title');
             });
         }
