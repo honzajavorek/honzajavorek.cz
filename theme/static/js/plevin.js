@@ -130,16 +130,19 @@ $(document).ready(function() {
         var $table = $(this);
         $('tr', $table).eq(weekday).addClass('today');
 
-        $table.addClass('collapsed');
-        $table.css('cursor', 'pointer');
-        $table.attr('title', 'celý týden');
-
         $table.click(function() {
             var $table = $(this);
-            $table.removeClass('collapsed');
-            $table.css('cursor', 'default');
-            $table.removeAttr('title');
+
+            if ($table.hasClass('collapsed')) {
+                $table.removeClass('collapsed');
+                $table.removeAttr('title');
+            } else {
+                $table.addClass('collapsed');
+                $table.css('cursor', 'pointer');
+                $table.attr('title', 'celý týden');
+            }
         });
+        $table.click();
     });
 
     // rubin
@@ -181,16 +184,19 @@ $(document).ready(function() {
             $('<p />', {'text': 'Dnes žádné menu není.', 'class': 'placeholder'}).appendTo($menu);
 
         } else {
-            $menu.addClass('collapsed');
-            $menu.css('cursor', 'pointer');
-            $menu.attr('title', 'celý týden');
-
             $menu.click(function() {
                 var $menu = $(this);
-                $menu.removeClass('collapsed');
-                $menu.css('cursor', 'default');
-                $menu.removeAttr('title');
+
+                if ($menu.hasClass('collapsed')) {
+                    $menu.removeClass('collapsed');
+                    $menu.removeAttr('title');
+                } else {
+                    $menu.addClass('collapsed');
+                    $menu.css('cursor', 'pointer');
+                    $menu.attr('title', 'celý týden');
+                }
             });
+            $menu.click();
         }
     });
 
