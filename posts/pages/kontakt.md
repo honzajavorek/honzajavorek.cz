@@ -1,14 +1,18 @@
 Title: Kontakt
 
+Jmenuji se Honza Javorek a živím se jako [programátor na volné noze](http://honzajavorek.cz/cv). Černobílý vypadám nějak takto:
+
+<img class="photo" src="images/honza.jpg" width="150" height="150" alt="photo">
+
 <div class="contact">
 <table>
     <tr>
         <th>Bydliště</th>
-        <td><a href="http://www.zitbrno.cz/">Brno</a>&ndash;Žabovřesky</td>
+        <td>Brno&ndash;Žabovřesky</td>
     </tr>
     <tr>
         <th>Pošta</th>
-        <td><a href="mailto:jan.javorek&#64;gmail.com">jan.javorek&#64;<!---->gmail.com</a> <img alt="Google status" class="status" src="http://www.google.com/talk/service/badge/Show?tk=z01q6amlqc1658b3o5ldt330s0u9h30729l9tlg0lhirdd1gfjc6v718cgecgrsng4f3c4r26u6l3hp3lffb0slitv1n04u4a9tm1o4vskm931tbogl1v2sc12p1as90hbh0trh74dgs1m82lc592vlggn68sbn2l1teib2h3&amp;w=9&amp;h=9"></td>
+        <td><a href="mailto:jan.javorek&#64;gmail.com">jan.javorek&#64;<!---->gmail.com</a></td>
     </tr>
     <tr>
         <th>Banka</th>
@@ -24,7 +28,6 @@ Title: Kontakt
 <a href="http://twitter.com/honzajavorek">Twitter</a> &middot;
 <a href="http://github.com/honzajavorek">GitHub</a> &middot;
 <a href="http://facebook.com/honzajavorek">Facebook</a> &middot;
-<a href="http://www.fitocracy.com/profile/honzajavorek/">Fitocracy</a> &middot;
 <a href="http://cz.linkedin.com/in/honzajavorek">LinkedIn</a>
 </small></p>
 </div>

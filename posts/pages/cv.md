@@ -8,7 +8,7 @@ Template: cv
         <img class="avatar" src="https://www.gravatar.com/avatar/d4a28b46d4ac5f2cc601f588becf9f74?s=50" width="50" height="50" alt="avatar">
     </p>
     <p>
-        I am Honza Javorek, freelance
+        I am Honza Javorek, independent
         <br><strong>web apps</strong> creator and <strong>Python</strong> developer
         <br>from Brno, Czech Republic.
     </p>
