@@ -67,6 +67,39 @@ Template: plevin
     </tr>
 </table>
 
+## Budka s kuřaty
+
+<table class="schedule">
+    <tr>
+        <th>Po</th>
+        <td>10 - 18</td>
+    </tr>
+    <tr>
+        <th>Út</th>
+        <td>10 - 18</td>
+    </tr>
+    <tr>
+        <th>St</th>
+        <td>10 - 18</td>
+    </tr>
+    <tr>
+        <th>Čt</th>
+        <td>10 - 18</td>
+    </tr>
+    <tr>
+        <th>Pá</th>
+        <td>10 - 18</td>
+    </tr>
+    <tr>
+        <th>So</th>
+        <td>10 - 14</td>
+    </tr>
+    <tr>
+        <th>Ne</th>
+        <td>zavřeno</td>
+    </tr>
+</table>
+
 ## Pošta 61600
 
 <table class="schedule">
@@ -97,6 +130,39 @@ Template: plevin
     <tr>
         <th>Ne</th>
         <td>zavřeno</td>
+    </tr>
+</table>
+
+## Květiny
+
+<table class="schedule">
+    <tr>
+        <th>Po</th>
+        <td>8 - 19</td>
+    </tr>
+    <tr>
+        <th>Út</th>
+        <td>8 - 19</td>
+    </tr>
+    <tr>
+        <th>St</th>
+        <td>8 - 19</td>
+    </tr>
+    <tr>
+        <th>Čt</th>
+        <td>8 - 19</td>
+    </tr>
+    <tr>
+        <th>Pá</th>
+        <td>8 - 19</td>
+    </tr>
+    <tr>
+        <th>So</th>
+        <td>8 - 18</td>
+    </tr>
+    <tr>
+        <th>Ne</th>
+        <td>8 - 14</td>
     </tr>
 </table>
 
