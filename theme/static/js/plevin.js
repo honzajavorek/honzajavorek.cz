@@ -219,7 +219,7 @@ $(document).ready(function() {
 
         // final refinements
         if (!$dishes.children().length) {
-            $('<p />', {'text': 'Žádné slevy nejsou.', 'class': 'placeholder'}).appendTo($menu);
+            $('<p />', {'text': 'Žádné slevy nejsou.', 'class': 'placeholder'}).appendTo($offers);
 
         } else {
             $dishes.appendTo($offers);
