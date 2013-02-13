@@ -135,7 +135,7 @@ I created a **Facebook mashup** called [ConcertIn](https://apps.facebook.com/con
 
 ## I share {#share}
 
-I wrote [several articles](http://www.linkedin.com/in/honzajavorek#profile-publications) which were **published** in the Czech online magazine for web developers, [Zdroják](http://zdrojak.cz). I also run **my own blog** here on [honzajavorek.cz](http://honzajavorek.cz). On occasion, I attend local meetups and give small **presentations** about some topics that may be of interest to others (e.g. about [CSS preprocessors](https://speakerdeck.com/u/honzajavorek/p/jak-z-css-vymacknout-maximum) or [Celery](https://speakerdeck.com/u/honzajavorek/p/jak-prezit-frontu-a-nepredbihat)).
+I wrote [several articles](http://www.zdrojak.cz/autori/honza-javorek/) which were **published** in the Czech online magazine for web developers, [Zdroják](http://zdrojak.cz). I also run **my own blog** here on [honzajavorek.cz](http://honzajavorek.cz). On occasion, I attend local meetups and give small **presentations** about some topics that may be of interest to others (e.g. about [CSS preprocessors](https://speakerdeck.com/u/honzajavorek/p/jak-z-css-vymacknout-maximum) or [Celery](https://speakerdeck.com/u/honzajavorek/p/jak-prezit-frontu-a-nepredbihat)).
 
 ## I organise {#organise}
 
