@@ -21,6 +21,11 @@
             {% else %}
                 teprve plánováno
             {% endif %}
+
+            {% if page.begindate is defined and page.enddate is defined %}
+                <br>
+                <small>počet dní: {{ page.begindate|count_days(page.enddate) }}, pracovních: {{ page.begindate|count_days(page.enddate, True) }}</small>
+            {% endif %}
         </p>
     </header>
 
@@ -29,7 +34,7 @@
     {% endif %}
 
     {% if page.people is defined %}
-        <h2 id="ucastnici">Účastníci</h2>
+        <h2 id="ucastnici">Účastníci ({{ page.people|split_people|length }})</h2>
         <div class="people">
         {% for person in page.people|split_people %}
             <span class="person">
@@ -44,5 +49,28 @@
     {% endif %}
 
     {{ page.content }}
+
+    <div class="loading_area">
+    <hr>
+
+    <section id="comments">
+        <div class="fb_like">
+            <div class="fb-like" data-send="false" data-width="450" data-show-faces="false"></div>
+        </div>
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_shortname = {{ DISQUS_SITENAME_EXPEDITIONS|tojson|safe }};
+            var disqus_developer = 0;
+            var disqus_title = {{ page.title|tojson|safe }};
+
+            (function() {
+                var dsq = document.createElement('script'); dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript><p class="noscript"><em>Bez JavaScriptu komentáře nejsou.</em></p></noscript>
+    </section>
+    </div>
 
 {% endblock %}

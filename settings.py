@@ -3,10 +3,10 @@
 
 import re
 import json
-import requests
-from datetime import date, datetime
 import urllib
+import requests
 from jinja2 import Markup
+from datetime import date, datetime, timedelta
 
 
 # Author & site
@@ -66,6 +66,7 @@ THEME = 'theme'
 THEME_STATIC_PATHS = ('static',)
 
 DISQUS_SITENAME = 'javorove-listky'
+DISQUS_SITENAME_EXPEDITIONS = 'javorove-expedice'
 GOOGLE_ANALYTICS = 'UA-1316071-6'
 TWITTER_USERNAME = 'honzajavorek'
 
@@ -121,6 +122,15 @@ def format_date(dt, format, strip_zeros=True):
     if strip_zeros:
         return re.sub(r'\b0', '', formatted)
     return formatted
+
+
+def count_days(dt1, dt2, ignore_weekends=False):
+    dt1 = to_datetime(dt1)
+    dt2 = to_datetime(dt2)
+    if ignore_weekends:
+        days = (dt1 + timedelta(d + 1) for d in xrange((dt2 - dt1).days))
+        return sum(1 for day in days if day.weekday() < 5)
+    return (dt2 - dt1).days
 
 
 def copyright(year):
@@ -280,6 +290,7 @@ JINJA_FILTERS = {
     'code': code,
     'month_name': month_name,
     'format_date': format_date,
+    'count_days': count_days,
     'copyright': copyright,
     'tojson': tojson,
     'has_images': has_images,
