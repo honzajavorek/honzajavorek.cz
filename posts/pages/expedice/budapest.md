@@ -5,7 +5,7 @@ Countries: hu
 Map: Budapešť
 People: Honza Javorek #honza.javorek, Zuzka Válková #zuzejk
 
-Výlet do Budapešti.
+Víkendový výlet do Budapešti v průběhu března. Okoukáme památky, naučíme se jak se maďarsky řekne guláš, vyfotíme Dunaj a jedem zpátky 8-)
 
 ## Plán
 
