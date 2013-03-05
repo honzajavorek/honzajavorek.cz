@@ -10,7 +10,7 @@ Víkendový výlet do Budapešti v průběhu března. Okoukáme památky, nauč�
 ## Plán
 
 - Doprava
-    - [autobus SA](http://jizdenky.studentagency.cz/Timetable/id/882267006) zhruba 300 Kč/4,5 h jedna cesta pro jednoho (EYCA)
+    - [autobus SA](http://jizdenky.studentagency.cz/Timetable/id/882267006) zhruba 600 Kč/4,5 h zpáteční cesta pro jednoho (kreditní, EYCA)
     - vlak ČD EC Jaroslav Hašek zhruba 367 Kč/4,13 h zpáteční cesta pro jednoho (IN25 s Rail plus)
 - Ubytování
 - [Co tam dělat?](http://wikitravel.org/en/Budapest#Do)
