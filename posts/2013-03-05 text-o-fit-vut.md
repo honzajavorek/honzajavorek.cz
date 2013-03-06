@@ -125,7 +125,7 @@ Po vydání toho článku se stalo následující:
     pochopen úplně správně** a tak jsem se na to už předem mohl trochu připravit.
 
 7.  Přišel jsem na schůzku s děkanem. Myslel jsem, že půjde o debatu mezi čtyřma
-    očima, ale na místě byli ještě, pamatuji-li se dobře, [Ing. Petr Matoušek, Ph.D.](http://www.fit.vutbr.cz/~matousp/)
+    očima, ale na místě byli ještě [Ing. Petr Matoušek, Ph.D.](http://www.fit.vutbr.cz/~matousp/)
     jako zástupce Akademického senátu a [Mgr. Iveta Pernicová](http://www.fit.vutbr.cz/~pernica/), právní zástupkyně fakulty.
 
     Děkan mi vysvětlil, že se se mnou chtěl slušně bavit, ale po vydání onoho druhého
