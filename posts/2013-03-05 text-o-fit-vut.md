@@ -126,7 +126,7 @@ Po vydání toho článku se stalo následující:
 
 7.  Přišel jsem na schůzku s děkanem. Myslel jsem, že půjde o debatu mezi čtyřma
     očima, ale na místě byli ještě, pamatuji-li se dobře, [Ing. Petr Matoušek, Ph.D.](http://www.fit.vutbr.cz/~matousp/)
-    jako zástupce Akademického senátu a jedna žena, tuším že právní zástupkyně fakulty.
+    jako zástupce Akademického senátu a [Mgr. Iveta Pernicová](http://www.fit.vutbr.cz/~pernica/), právní zástupkyně fakulty.
 
     Děkan mi vysvětlil, že se se mnou chtěl slušně bavit, ale po vydání onoho druhého
     článku po mne žádné vysvětlení už ani nechce a **vlastně se mnou už nehodlá o ničem ani
@@ -158,8 +158,17 @@ Po vydání toho článku se stalo následující:
     jsem autorem obou článků, ale že jsem první z nich na žádost děkana stáhl ze svého webu a nezodpovídám
     nijak za kopie vytvořené třetími stranami.
 
+    Jelikož jsem se v původním článku navážel do [Doc. Dr. Ing. Dušana Koláře](http://www.fit.vutbr.cz/~kolar/)
+    a i sám Zendulka vedl jeden z předmětů, jež jsem měl zrovna zapsané a čekala mě z nich zkouška, byl jsem upozorněn,
+    že pokud bych měl jakékoliv pochybnosti o svém hodnocení, mám právo domáhat se přezkoušení před komisí.
+
     Kopie všech dokumentů sepsaných na tomto setkání jsem si musel zvlášť
-    vyžádat. Poté jsme si všichni rozdali podpisy, popřáli si hezké svátky a rozešli se.
+    vyžádat. Poté jsme si všichni rozdali podpisy, popřáli si hezké svátky a rozešli se. Zde uveřejňuji vše, co jsem
+    si ze schůzky odnesl domů:
+
+    - [Zápis z jednání](files/p1190068.jpg)
+    - [Kopie článku **FIT nebo FI?** s mým vyjádřením a podpisem](files/p1190069.jpg)
+    - [Kopie článku **Sliby se mají dodržovat i o Vánocích** s mým vyjádřením a podpisem](files/p1190070.jpg)
 
 8.  Napsal jsem na blog
     [tahák k přechodu z FIT na FI](http://honzajavorek.cz/blog/maly-tahak-k-prechodu-z-fit-na-fi).
@@ -182,3 +191,5 @@ No, a to je celé. Možná se traduje, že jsem napsal rozumný článek kritick
 Nešťastný byl však celý pozdější průběh **komunikace s děkanem fakulty**. Myslím, že Zendulkovi chybělo především **pochopení** a ukázalo se to na mnoha detailech celé záležitosti. Celou kauzu jsem bral i v době jejího průběhu spíše s humorem a nadhledem. Z fakulty bych odešel tak či tak a to kvůli rozhodně lepším důvodům, než byla nějaká krizová komunikace s děkanem. Dojmy ze studia na fakultě a důvody pro své rozhodnutí odejít jsem sepsal právě do onoho [posledního článku](http://honzajavorek.cz/blog/byl-jsem-fit).
 
 Dnes mám magisterský titul z Masarykovy Univerzity, ale FIT mám pořád svým způsobem [rád jako svou alma mater](http://honzajavorek.cz/blog/alma-mater). Odchodu však nelituji. FI nebyla žádným růžovým sadem, ale viděl jsem posun v přístupu ke studentovi a variabilitě studia, což vyřešilo mé hlavní frustrace ze studia. Nejspíš jen díky tomu jsem pak byl schopen vše řádně dokončit.
+
+*Článek jsem aktualizoval 6. 3. 2013 - doplnil jsem ofocené dokumenty a několik detailů, na něž jsem si ještě vzpomněl.*
