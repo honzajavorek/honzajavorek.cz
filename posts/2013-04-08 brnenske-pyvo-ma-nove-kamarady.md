@@ -71,7 +71,7 @@ S [Janem](https://twitter.com/jsuchal) koukáme, co z toho nakonec
 bude, podporujeme to a těšíme se, že se nám ta setkání podaří dostat zase
 na trochu jiný level. On zrovna sehnal dodávku a hned jak na ni hoši domalují
 kytičkový nápis *Ruby Van Kenobi*, vyrážejí do Vídně. V praxi ale znamená
-*zapojení do Coders without Borders* pro pořadatele hlavně následující úkoly:
+zapojení do *Coders without Borders* pro pořadatele hlavně následující úkoly:
 
 -   Přiblížit přednášky zahraničnímu návštěvníkovi. Pokud nebudeme **v angličtině**
     přednášet, měli bychom v ní mít alespoň **slajdy**.
