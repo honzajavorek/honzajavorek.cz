@@ -67,10 +67,11 @@ Něco o tom už napsala i na svém [blo](http://www.1stfloorgraphics.nl/2013/03/
 byly vytvořeny i [stránky](http://coderswithoutborders.eu/), můžete to celé
 také sledovat i [na Twitteru](http://www.twitter.com/coderswoborders).
 
-S [Janem](https://twitter.com/jsuchal) zatím spíš koukáme, co z toho nakonec
-bude, ale podporujeme to a těšíme se, že se nám ta setkání podaří dostat zase
-na trochu jiný level. V praxi znamená *zapojení do Coders without Borders*
-následující úkoly pro pořadatele:
+S [Janem](https://twitter.com/jsuchal) koukáme, co z toho nakonec
+bude, podporujeme to a těšíme se, že se nám ta setkání podaří dostat zase
+na trochu jiný level. On zrovna sehnal dodávku a hned jak na ni hoši domalují
+kytičkový nápis *Ruby Van Kenobi*, vyrážejí do Vídně. V praxi ale znamená
+*zapojení do Coders without Borders* pro pořadatele hlavně následující úkoly:
 
 -   Přiblížit přednášky zahraničnímu návštěvníkovi. Pokud nebudeme **v angličtině**
     přednášet, měli bychom v ní mít alespoň **slajdy**.
