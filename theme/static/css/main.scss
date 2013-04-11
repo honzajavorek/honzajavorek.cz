@@ -84,8 +84,8 @@ $font_content: 'Palatino Linotype', 'Georgia', serif;
 $font_content_title: 'Enriqueta', 'Georgia', serif;
 $font_title: 'AllerDisplayRegular', sans-serif;
 $font_subtitle: 'AllerRegular', sans-serif;
-$letter_spacing_title: 0.05ex;
-$letter_spacing_subtitle: $letter_spacing_title * 5;
+$letter_spacing_title: -0.1ex;
+$letter_spacing_subtitle: $letter_spacing_title * -2.5;
 $color_green: #97B600;
 $color_text: #353535;
 $color_text_emph: #000;
@@ -137,6 +137,7 @@ a:link, a:link span, .button, button { cursor: pointer; }
 
     h1 {
         font-family: $font_title;
+        font-weight: normal;
         font-size: 350%;
         position: relative;
         margin: 0;
@@ -163,15 +164,9 @@ a:link, a:link span, .button, button { cursor: pointer; }
     /* ugly 'gimme-firefox-only' hack */
     $fix_offset: 0.03ex;
 
-    #document > header {
-        h1 { letter-spacing: $letter_spacing_title - (5 * $fix_offset) }
-        h2 { letter-spacing: $letter_spacing_subtitle - (1 * $fix_offset) }
-    }
-
     article {
-        /* TODO, test this properly! */
-        h1 { letter-spacing: -4.5 * $fix_offset; }
-        h2 { letter-spacing: -4.5 * $fix_offset; }
+        h1 { letter-spacing: -2.5 * $fix_offset; }
+        h2 { letter-spacing: -2.5 * $fix_offset; }
     }
 }
 
