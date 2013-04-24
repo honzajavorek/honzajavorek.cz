@@ -20,7 +20,9 @@ Pokud si chce člověk vést nějaké základní domácí účetnictví, má ně
     na sekundu přesně poznáte moment, kdy byste si v baru už neměli dát dalších
     osm Jamesonů, protože byste pak už nemuseli zaplatit zálohy sociálce za aktuální
     měsíc. Když se jakožto mistr tesař náhodou utnete, vždy to nějak vyžehlíte metodou
-    [Not Giving a Fuck!](https://www.youtube.com/watch?v=6wS5xOZ7Rq8)
+    *Not Giving a Fuck!*
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6wS5xOZ7Rq8?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Ujasnil jsem si, že od svého účetnictví chci těchto pár věcí. V nejlepším případě
 nechci vůbec nic navíc.
