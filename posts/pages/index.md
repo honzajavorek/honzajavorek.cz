@@ -1,6 +1,9 @@
-Title: Kontakt
+Title: Honza Javorek
+Template: home
+Url:
+Save_as: index.html
 
-Jmenuji se Honza Javorek a živím se jako [programátor na volné noze](http://honzajavorek.cz/cv). Černobílý vypadám nějak takto:
+Jmenuji se Honza Javorek a živím se jako [programátor na volné noze](http://www.linkedin.com/in/honzajavorek). Černobílý vypadám nějak takto:
 
 <img class="photo" src="images/honza.jpg" width="150" height="150" alt="photo">
 
@@ -33,5 +36,3 @@ Jmenuji se Honza Javorek a živím se jako [programátor na volné noze](http://
 </div>
 
 Programuji [Žít kino](http://zitkino.cz/), [redis-collections](https://github.com/honzajavorek/redis-collections) a [další malé projekty](https://github.com/honzajavorek/). Občas napíšu nějaký článek na [Zdroják.cz](http://www.zdrojak.cz/autori/honza-javorek/) nebo [přednáším](https://speakerdeck.com/u/honzajavorek/). Někdo rád čte [články na mém blogu](http://honzajavorek.cz), ale podle mě jsou na čtení příliš dlouhé. Snažím se o kultivaci Python komunity u nás. Vytvořil jsem [python.cz](http://python.cz) a pořádám brněnský sraz [PyVo](http://lanyrd.com/series/brno-pyvo/).
-
-Mimochodem, s kamarády chodím do [sauny](http://www.sauna-drobneho.cz/).

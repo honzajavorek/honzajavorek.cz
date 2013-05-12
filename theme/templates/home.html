@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block class %}page page_{{ page.slug|to_css_class }}{% endblock %}
+{% block title %}{{ page.title }}{% endblock %}
+{% block header %}
+    <header>
+        <h1>
+            Honza<span class="logo"> </span>Javorek
+        </h1>
+    </header>
+{% endblock %}
+{% block content %}
+
+    {{ page.content|figure|code }}
+
+{% endblock %}

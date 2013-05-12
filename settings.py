@@ -3,6 +3,7 @@
 
 import re
 import os
+import sys
 import json
 import urllib
 from datetime import date, datetime, timedelta
@@ -12,16 +13,21 @@ from PIL import Image
 from jinja2 import Markup
 
 
+is_localhost = any(map(lambda x: x in sys.argv,
+                       ['-r', '--autoreload', '-D', '--debug']))
+
+
 # Author & site
 AUTHOR = u'Honza Javorek'
 SITENAME = u'Javorové lístky'
-SITEURL = 'http://honzajavorek.cz'
+SITEURL = ('http://localhost/honzajavorek.cz/output'
+           if is_localhost else 'http://honzajavorek.cz')
 PATH = 'posts'
 
 
 # Timezone, language
 TIMEZONE = 'Europe/Prague'
-LOCALE = 'cs_CZ.utf8'
+LOCALE = 'cs_CZ.UTF-8'
 DEFAULT_LANG = 'cs'
 DEFAULT_DATE_FORMAT = '%x'
 
@@ -30,18 +36,20 @@ DEFAULT_DATE_FORMAT = '%x'
 DEFAULT_PAGINATION = 5
 SUMMARY_MAX_LENGTH = 80
 DEFAULT_CATEGORY = 'blog'
-MD_EXTENSIONS = ['codehilite', 'extra', 'headerid']
+MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid']
 
 
 # URL and save paths settings
 ARTICLE_URL = 'blog/{slug}'
-ARTICLE_SAVE_AS = 'blog/{slug}.html'
+ARTICLE_SAVE_AS = 'blog/{date} {slug}.html'
 ARTICLE_LANG_URL = 'blog/{slug}-{lang}'
-ARTICLE_LANG_SAVE_AS = 'blog/{slug}-{lang}.html'
+ARTICLE_LANG_SAVE_AS = 'blog/{date} {slug}-{lang}.html'
 PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}.html'
 PAGE_LANG_URL = '{slug}-{lang}'
 PAGE_LANG_SAVE_AS = '{slug}-{lang}.html'
+INDEX_SAVE_AS = 'blog/index.html'
+FILENAME_METADATA = r'(?P<date>\d{4}-\d{2}-\d{2}) (?P<slug>.*)'
 
 
 # Static paths will be copied under the same name
@@ -51,7 +59,7 @@ STATIC_PATHS = ('images', 'files')
 # A list of files to copy from the source to the destination
 FILES_TO_COPY = (
     ('robots.txt', 'robots.txt'),
-    ('404.html', '404.html'),
+    # ('404.html', '404.html'),
     ('favicon.ico', 'favicon.ico'),
     ('CNAME', 'CNAME'),
 )
@@ -77,6 +85,11 @@ TWITTER_USERNAME = 'honzajavorek'
 MENUITEMS = ()
 LINKS = ()
 SOCIAL = ()
+
+
+# Plugins
+PLUGIN_PATH = 'plugins'
+PLUGINS = []
 
 
 # API key
@@ -113,13 +126,25 @@ class FigureCreator(object):
 
         match = re.search(ur'src="([^"]+)', img_tag)
         if match:
-            # '../static/images/something.png'
-            path = re.sub('(../)?static/', 'posts/', match.group(1))
-            filename = os.path.join(self.dirname, path)
+            # '(../static/)images/something.png'
+            path = match.group(1)
+
+            # get dimensions
+            filename = os.path.join(
+                self.dirname,
+                re.sub('.*images/', 'posts/images/', path)
+            )
             width = Image.open(filename).size[0]
             if width > IMAGE_MAX_WIDTH:
                 width = IMAGE_MAX_WIDTH
             attr = 'width="{0}"'.format(int(width))
+
+            # fix path
+            url_path = os.path.join(
+                SITEURL,
+                re.sub('.*images/', 'static/images/', path)
+            )
+            img_tag = img_tag.replace(path, url_path)
 
             # inject width
             img_tag = re.sub(ur'\s*width="[^"]+"\s*', r' ', img_tag)
@@ -281,7 +306,7 @@ class MapCreator(object):
         return Markup(
             u'<figure><img src="{src}" alt="mapa" '
             u'title="{title}" with="{width}" height="{height}">'
-            '<figcaption>{title}</figcaption></figure>'.format(
+            u'<figcaption>{title}</figcaption></figure>'.format(
                 src=url, title=places, width=width, height=height)
         )
 

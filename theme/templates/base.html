@@ -37,9 +37,11 @@
     </head>
     <body>
         <div id="document" class="{% block class %}{% endblock %}">
+            {% block header %}
             <header>
-                <a href="{% block home_link %}{{ SITEURL }}{% endblock %}">
+                <a href="{% block home_link %}{{ SITEURL }}/blog{% endblock %}">
                 <hgroup>
+                    {% if self.title_h1() %}
                     <h1>
                         {% block title_h1 %}
                             {% block title_adjective %}Javorové{% endblock title_adjective -%}
@@ -47,10 +49,14 @@
                             {%- block title_noun %}lístky{% endblock title_noun %}
                         {% endblock title_h1 %}
                     </h1>
-                    <h2>{% block title_h2 %}Honza Javorek{% endblock %}</h2>
+                    {% endif %}
+                    {% if self.title_h2() %}
+                       <h2>{% block title_h2 %}Honza Javorek{% endblock %}</h2>
+                    {% endif %}
                 </hgroup>
                 </a>
             </header>
+            {% endblock %}
 
             <div class="content">
                 {% block content %}{% endblock %}
