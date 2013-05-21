@@ -41,9 +41,9 @@ MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid']
 
 # URL and save paths settings
 ARTICLE_URL = 'blog/{slug}'
-ARTICLE_SAVE_AS = 'blog/{date} {slug}.html'
+ARTICLE_SAVE_AS = 'blog/{slug}.html'
 ARTICLE_LANG_URL = 'blog/{slug}-{lang}'
-ARTICLE_LANG_SAVE_AS = 'blog/{date} {slug}-{lang}.html'
+ARTICLE_LANG_SAVE_AS = 'blog/{slug}-{lang}.html'
 PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}.html'
 PAGE_LANG_URL = '{slug}-{lang}'
