@@ -14,7 +14,6 @@ from fabric.colors import red, green, yellow
 
 project_dir = os.path.dirname(os.path.realpath(__file__))
 posts_dir = project_dir + '/posts'
-output_dir = project_dir + '/output'
 deploy_dir = os.path.expanduser('~/.honzajavorek.cz/gh-pages')
 css_dir = project_dir + '/theme/static/css'
 
@@ -87,22 +86,8 @@ def update_styles():
 # Main Fabric tasks
 
 @task
-def build():
-    """Build the blog."""
-    execute(update_license_year)
-    execute(update_styles)
-
-    with lcd(project_dir):
-        local('touch settings.py')  # prevent caching
-        local('pelican -s settings.py --delete-output-directory')
-    okay('See http://localhost/honzajavorek.cz/output/.')
-
-
-@task
 def deploy():
     """Uploads blog to hosting."""
-    execute(build)
-
     if os.path.exists(deploy_dir):
         with lcd(deploy_dir):
             local('git pull origin gh-pages')
@@ -115,10 +100,19 @@ def deploy():
         local('git clone -b gh-pages '
               'git@github.com:honzajavorek/honzajavorek.cz.git ' + deploy_dir)
 
-    with lcd(deploy_dir):
-        okay('Synchronized blog repository.')
-        local('cp -r {0}/* .'.format(output_dir))
+    okay('Synchronized blog repository.')
 
+    # build
+    execute(update_license_year)
+    execute(update_styles)
+
+    with lcd(project_dir):
+        local('touch settings.py')  # prevent caching
+        local('pelican -s settings.py -o ' + deploy_dir)
+    okay('See http://localhost/honzajavorek.cz/output/.')
+
+    # deploy
+    with lcd(deploy_dir):
         # remove unnecessary stuff
         local('rm -rf author category tag feeds')
         del_css = ['theme/css/.gitignore', 'theme/css/code.css',
