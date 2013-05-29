@@ -93,8 +93,9 @@ def build():
     execute(update_styles)
 
     with lcd(project_dir):
+        local('touch settings.py')  # prevent caching
         local('pelican -s settings.py --delete-output-directory')
-    okay('See http://localhost/blog/output.')
+    okay('See http://localhost/honzajavorek.cz/output/.')
 
 
 @task
