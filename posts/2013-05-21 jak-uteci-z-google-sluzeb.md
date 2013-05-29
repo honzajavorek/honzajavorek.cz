@@ -38,7 +38,7 @@ Když si projdu [stránku se službami](https://www.google.com/settings/products
 - **Google Groups** - Zde lze myslím pohodlně přispívat i bez Google účtu.
 - **Picasa Web Albums** - Mrtvé už dlouho, nahrazeno Google+. Viděli jste [nový Flickr](http://flickr.com/)?
 - **Reader** - Přešel jsem na [The Old Reader](http://theoldreader.com/).
-- **Talk** - Bude [zrušen](http://www.cnews.cz/node/24521). Uvažoval jsem, že se poohlédnu po jiném XMPP serveru, ale uvědomil jsem si, že s většinou lidí si stejně píšu přes Facebook, který XMPP podporuje. Nebo si nepíšu vůbec, protože drtivou většinu času mám IM vypnuté... Vyvstává mi v hlavě otázka: Potřebuji vůbec nějaké IM...?
+- **Talk** - Bude [zrušen](http://www.cnews.cz/node/24521). Postupně přecházím na [JabbIM](http://www.jabbim.cz), odkud jsem dříve odešel s tím, že *na Google mám přece všechno, navíc hezky pohromadě*.
 - **YouTube** - Stále hůře tam lze existovat bez propojení účtu s Google+. Lajkovat videa nepotřebuji, videa *18+* asi oželím (byl to původně jediný důvod proč se registrovat), svá videa mohu dát na o dost hezčí [Vimeo](http://vimeo.com/).
 - **Developer Consoles, Webmaster Tools** - Kvůli tomuto si klidně Google účet nechám.
 
