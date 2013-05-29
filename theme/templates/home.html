@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block class %}page page_{{ page.slug|to_css_class }}{% endblock %}
 {% block title %}{{ page.title }}{% endblock %}
+{% block search %}{% endblock %}
 {% block header %}
     <header>
         <h1>
@@ -8,6 +9,10 @@
         </h1>
     </header>
 {% endblock %}
+{% block fb %}
+        <meta property="og:description" content="Honza Javorek">
+        <meta property="og:image" content="{{ SITEURL }}/static/images/honza.jpg">
+{% endblock fb %}
 {% block content %}
 
     {{ page.content|figure|code }}
