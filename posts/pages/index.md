@@ -35,4 +35,4 @@ Jmenuji se Honza Javorek a živím se jako [programátor na volné noze](http://
 </small></p>
 </div>
 
-Programuji [Žít kino](http://zitkino.cz/) a [další malé projekty](https://github.com/honzajavorek/). Občas napíšu nějaký článek na [Zdroják.cz](http://www.zdrojak.cz/autori/honza-javorek/) nebo [přednáším](https://speakerdeck.com/u/honzajavorek/). Někdo rád čte [články na mém blogu](http://honzajavorek.cz), ale podle mě jsou na čtení příliš dlouhé. Snažím se o kultivaci Python komunity u nás. Vytvořil jsem [python.cz](http://python.cz) a pořádám brněnský sraz [PyVo](http://lanyrd.com/series/brno-pyvo/).
+Programuji [Žít kino](http://zitkino.cz/) a [další malé projekty](https://github.com/honzajavorek/). Občas napíšu nějaký článek na [Zdroják.cz](http://www.zdrojak.cz/autori/honza-javorek/) nebo [přednáším](https://speakerdeck.com/u/honzajavorek/). Někdo rád čte [články na mém blogu](http://honzajavorek.cz/blog/), ale podle mě jsou na čtení příliš dlouhé. Snažím se o kultivaci Python komunity u nás. Vytvořil jsem [python.cz](http://python.cz) a pořádám brněnský sraz [PyVo](http://lanyrd.com/series/brno-pyvo/).
