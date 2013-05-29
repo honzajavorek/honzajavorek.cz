@@ -14,7 +14,7 @@ Co mi vadí:
 
 -   Integrace všech služeb do Google+, které nepoužívám.
 -   Vypadá to, že většinu Google aplikací čeká buďto zánik, nebo násilné propojení s Google+.
--   Protěžování Google Chrome.
+-   Protežování Google Chrome.
 -   Začínám být na webu trochu paranoidní.
 
 <blockquote class="twitter-tweet" data-conversation="none"><p>@<a href="https://twitter.com/petrjoachim">petrjoachim</a> Moje Firefox doplňky: AdBlock, Ghostery, google-no-tracking-url, HTTPS-Everywhere.</p>&mdash; Honza Javorek (@honzajavorek) <a href="https://twitter.com/honzajavorek/status/336479286309556226">May 20, 2013</a></blockquote>
