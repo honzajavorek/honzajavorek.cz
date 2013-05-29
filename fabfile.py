@@ -1,12 +1,13 @@
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*- #
 
 
-from fabric.api import *
-from fabric.colors import red, green, yellow
-from datetime import datetime, timedelta
-import unicodedata
 import os
 import re
+from datetime import datetime, timedelta
+
+import unicodedata
+from fabric.api import *  # NOQA
+from fabric.colors import red, green, yellow
 
 
 # Paths
@@ -164,4 +165,4 @@ def new(title=None):
         f.write(contents.encode('utf8'))
         okay('{0} prepared.'.format(filename))
 
-    local('sublime-text-2 "{0}"'.format(path))
+    local('subl "{0}"'.format(path))
