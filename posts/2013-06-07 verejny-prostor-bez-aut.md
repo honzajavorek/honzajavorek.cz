@@ -125,3 +125,7 @@ bloumat po brněnských bulvárech a užívat si to, jako bych chodil po nějak�
 (já sám nejsem žádný Adam Gebrian, jen mě prostě baví nad takovými věcmi přemýšlet), sledujte
 [Urbanismus Brno](http://www.urbanismusbrno.cz) - je to pěkný web o všem možném,
 co se v Brně staví, plánuje, o veřejném prostoru a tak.</small>
+
+<small>Zdrojem fotografie Mendlova náměstí je [AMB](www.archiv.brno.cz/), X.a 49. Zdrojem fotografie
+Skácelovy ulice je [AMB](www.archiv.brno.cz/), fond U22 - sbírka pohlednic, sign. IVCa-1. Autorská
+práva ke snímku z Google Street View má společnost [Google](http://www.google.com).</small>
