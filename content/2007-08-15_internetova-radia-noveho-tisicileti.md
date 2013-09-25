@@ -4,7 +4,7 @@ Tags: názory, net, rádio, software, ušima
 
 **27. 12. 2006**, jsem zrušil svůj [Last.fm](http://www.last.fm) účet. Revoluce? Ne. **25. 4. 2007** jsem jej zase založil :) . Čtěte dlouhý a nudný příběh o tom, jak jsem proplul vodami internetových rádií nového tisíciletí.
 
-![Last.fm](|filename|/images/3.jpg)
+![Last.fm]({filename}/images/3.jpg)
 
 **Last.fm** je služba, která má prakticky 2 hlavní smysly, kromě toho, že je to super lesklé, moderní, Web2.0, cool, že je to sociální, tagované, že je tam komunita, a krom toho, že je tam skoro každý… Tedy mimo to všechno má 2 hlavní funkce. Za prvé umožňuje různými způsoby **sledovat podle ID3 (a mimo formát mp3 i jiných) tagů to, co posloucháš**, a dělá ti z toho statistiku. Za druhé ti zkusí podle tvého hudebního vkusu **namíchat hudbu, jaká by se ti mohla líbit**. Nebo si klikneš na tag „folk“ a ono to míchá hudbu z tohoto tagu. Pouští vlastně takové rádio na přání… Pokud nepatříš mezi lidi, co se na internetu opravdu nudí a nemají nic lepšího na práci, než diskutovat o hudbě ve fórech nebo štítkovat muziku ve prospěch blaha komunity, asi na Last.fm jiné funkce nevyužiješ. Snad jen interní Wiki, kde jsou informace (anglicky) o interpretech a k nim často i pár obrázků.
 

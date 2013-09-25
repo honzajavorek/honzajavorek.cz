@@ -1,12 +1,12 @@
 Title: Honza Javorek
+Template: home
 Url:
 Save_as: index.html
 
-<!-- Template: home -->
 
 Jmenuji se Honza Javorek a živím se jako [programátor na volné noze](http://www.linkedin.com/in/honzajavorek). Černobílý vypadám nějak takto:
 
-<img class="photo" src="images/honza.jpg" width="150" height="150" alt="photo">
+![Honza Javorek]({filename}/images/honza.jpg)
 
 <div class="contact">
 <table>
@@ -36,4 +36,4 @@ Jmenuji se Honza Javorek a živím se jako [programátor na volné noze](http://
 </small></p>
 </div>
 
-Programuji [Žít kino](http://zitkino.cz/) a [další malé projekty](https://github.com/honzajavorek/). Občas napíšu nějaký článek na [Zdroják.cz](http://www.zdrojak.cz/autori/honza-javorek/) nebo [přednáším](https://speakerdeck.com/u/honzajavorek/). Někdo rád čte [články na mém blogu](http://honzajavorek.cz/blog/), ale podle mě jsou na čtení příliš dlouhé. Snažím se o kultivaci Python komunity u nás. Vytvořil jsem [python.cz](http://python.cz) a pořádám brněnský sraz [PyVo](http://lanyrd.com/series/brno-pyvo/).
+Jsem na volné noze, programuji v Pythonu a zajímám se o API. Každý měsíc zvu v Brně na [Pyvo](http://lanyrd.com/series/brno-pyvo/). Vytvořil jsem [python.cz](http://python.cz), [Žít kino](http://zitkino.cz/), a [jiné milé drobnosti](https://github.com/honzajavorek/). Občas napíšu nějaký článek na [Zdroják.cz](http://www.zdrojak.cz/autori/honza-javorek/) nebo [přednáším](https://speakerdeck.com/u/honzajavorek/). Své zdlouhavé myšlenky občas upustím jako [Javorové lístky](blog/).

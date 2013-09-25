@@ -1,15 +1,15 @@
 Title: Human Resource
 Date: 2013-01-18 22:06:04
 
-V listopadu a prosinci 2012 jsem si hledal nové zaměstnání. Pokud vás zajímají souvislosti, najdete je v předchozích článcích o mém [restartu](|filename|2012-11-04_restart.md) a o tom, [jak to nakonec dopadlo](|filename|2013-01-02_mezi-dvanactkou-a-trinactkou.md). Na trhu práce jsem bojoval s [poměrně nestandardním CV](http://honzajavorek.cz/cv). V následujících odstavcích se pokusím podělit o zkušenosti, které jsem během oněch dvou měsíců získal.
+V listopadu a prosinci 2012 jsem si hledal nové zaměstnání. Pokud vás zajímají souvislosti, najdete je v předchozích článcích o mém [restartu]({filename}2012-11-04_restart.md) a o tom, [jak to nakonec dopadlo]({filename}2013-01-02_mezi-dvanactkou-a-trinactkou.md). Na trhu práce jsem bojoval s [poměrně nestandardním CV](http://honzajavorek.cz/cv). V následujících odstavcích se pokusím podělit o zkušenosti, které jsem během oněch dvou měsíců získal.
 
-![HR](|filename|/images/hr.png)
+![HR]({filename}/images/hr.png)
 
 ## Co se mi moc nepovedlo
 
 Významný vliv na výsledek celého mého hledání měla skutečnost, že jsem vlastně nevěděl **co chtít konkrétně**. Měl jsem jasnou představu o tom **co nechci**, ale obraz oné samotné vysněné práce byl dost mlhavý. Měl jsem výčet vlastností, jež jsem po novém zaměstnání požadoval, ale nebyl dostatečně detailní na to, abych mohl hledat práci nějak lépe, než jen rozhazováním sítí do všech stran.
 
-![taktika na prd](|filename|/images/hr-taktika-na-prd.png){: .right }Na to doplatilo i mé *vymazlené* CV. Nakonec se téměř vůbec **nesetkalo s tím správným publikem** a pro většinu návštěvníků bylo příliš rozvláčné. Byl jsem z toho potom tak rozladěný, že jsem jej pod nadpis "Pro lidské zdroje" zkrátil na čtyři věty a s textem "Pro lidská stvoření" jsem nechal odkaz na původní verzi. Zpětně bych rozdělil cílové skupiny svého webového životopisu asi následovně:
+![taktika na prd]({filename}/images/hr-taktika-na-prd.png){: .right }Na to doplatilo i mé *vymazlené* CV. Nakonec se téměř vůbec **nesetkalo s tím správným publikem** a pro většinu návštěvníků bylo příliš rozvláčné. Byl jsem z toho potom tak rozladěný, že jsem jej pod nadpis "Pro lidské zdroje" zkrátil na čtyři věty a s textem "Pro lidská stvoření" jsem nechal odkaz na původní verzi. Zpětně bych rozdělil cílové skupiny svého webového životopisu asi následovně:
 
 1. **Lidé jako vy**, vám rovni, ti ocení životopis *od srdíčka*, s nímž jste si dali velkou práci. Budou jej sdílet, lajkovat, retvítovat, budou si podle něj dělat to svoje příští CV, ale práci vám tito lidé nedají. Málokdy se jejich sdílení nějak projeví na výsledku, máte akorát větší publikum.
 2. **Profesionální personalisté** (HR) se vámi příliš nezabývají, očekávají stručné informace v bodech. Jsou schopni se vás po týdnu komunikace zeptat i na jméno nebo odkud že vlastně jste. Jejich čas je drahý, proto minimalizují vše, co jim jej bere. Ať už vám říkají cokoliv, jste v tomto případě součástí velké mašinerie, fabriky na práci. Personalista ocení ještě tak LinkedIn profil, ale i ten je pro něj někdy moc *ukecaný* a raději se vás na ty tři věci, které jej opravdu zajímají, zeptá telefonicky.
@@ -21,7 +21,7 @@ Když jsem neměl patřičnou odezvu, napadlo mě **projít zprávy na LinkedIn*
 
 ## Jak bych to udělal dnes?
 
-![super taktika](|filename|/images/hr-super-taktika.png){: .left }Na svou vlastní obranu musím říct (kromě známého rčení o bitvě a generálovi), že jsem celé své hledání nové práce původně bral spíše jen jako takový pokus. Věděl jsem, že v ČR nějakou práci najdu, ale lákalo mě **zkusit prorazit do zahraničí**. Vědel jsem, že nebude problém usadit se někde v kanceláři, ale co taková **práce na dálku**? Vypsal jsem si tedy na papír podmínky, jaké by měl mít můj *dream job* a na těch jsem pak stavěl i svůj životopis. Nemyslel jsem si, že to musí jednoznačně vyjít - právě naopak. Bylo to takové "Co kdyby?" a "Proč to nezkusit?" :-)
+![super taktika]({filename}/images/hr-super-taktika.png){: .left }Na svou vlastní obranu musím říct (kromě známého rčení o bitvě a generálovi), že jsem celé své hledání nové práce původně bral spíše jen jako takový pokus. Věděl jsem, že v ČR nějakou práci najdu, ale lákalo mě **zkusit prorazit do zahraničí**. Vědel jsem, že nebude problém usadit se někde v kanceláři, ale co taková **práce na dálku**? Vypsal jsem si tedy na papír podmínky, jaké by měl mít můj *dream job* a na těch jsem pak stavěl i svůj životopis. Nemyslel jsem si, že to musí jednoznačně vyjít - právě naopak. Bylo to takové "Co kdyby?" a "Proč to nezkusit?" :-)
 
 Když člověk testuje **samotnou průchodnost** nějaké věci, nedělá si konkrétní představy. Nevěděl jsem do jakého státu chci nebo pro jakých deset londýnských firem bych chtěl pracovat, abych jim napsal e-maily a tím hledání odstartoval. Dnes už vím, že leccos průchodné je a kdybych hledal znova, udělám to jinak:
 
@@ -43,7 +43,7 @@ Třeba bych opět na něco narazil, ale to je přirozený proces učení a průz
 - Pokud nejste schopni volat si s HR nebo potenciálním zaměstnavatelem **anglicky přes telefon** či Skype, velice se vám snižují šance něco najít.
 - Pokud jste **ochotni se přemístit** (*relocate*) a máte už nějaké zkušenosti, v podstatě lusknutím prstu můžete na západě sehnat práci. Londýn, Mnichov, Madrid, Seattle, Canada - cokoliv je libo.
 - Kontrakt na ŽL se moc nenosí. Všechny nabídky, které jsem dostal, byly na **standardní pracovní poměr**. Samozřejmě že lze pracovat v zahraničí na *business license* kontrakt, ale zřejmě se to musí shánět přes jiné kanály. (Mě odchytly hlavně personální agentury, přímé nabídky práce jsem dostal v podstatě jen z ČR nebo SR.)
-- [Práci na dálku](|filename|2012-10-27_prace-z-domova.md) seženete jen s **důvěrou**. Důvěru musíte někde získat. Nepočítejte s tím, že pokud nemáte nějaké perfektní mezinárodní reference na svou dlouholetou práci na dálku, seženete z fleku v zahraničí nějaký *telecommuting*. Největší ústupek, který vám udělají, bude možnost pracovat u nich v kanceláři třeba půl roku a když se osvědčíte, začnou vás pouštět na pár dní v týdnu domů. Cestou asi bude nejspíš [budování pověsti](http://bob.mcwhirter.org/blog/2010/09/12/HOWTO-work-from-home/) na open source nebo nějakých projektech na lokální scéně a postupně se propracovávat.
+- [Práci na dálku]({filename}2012-10-27_prace-z-domova.md) seženete jen s **důvěrou**. Důvěru musíte někde získat. Nepočítejte s tím, že pokud nemáte nějaké perfektní mezinárodní reference na svou dlouholetou práci na dálku, seženete z fleku v zahraničí nějaký *telecommuting*. Největší ústupek, který vám udělají, bude možnost pracovat u nich v kanceláři třeba půl roku a když se osvědčíte, začnou vás pouštět na pár dní v týdnu domů. Cestou asi bude nejspíš [budování pověsti](http://bob.mcwhirter.org/blog/2010/09/12/HOWTO-work-from-home/) na open source nebo nějakých projektech na lokální scéně a postupně se propracovávat.
 - Nevím jak je přesně definice toho slova *startup*, ale já si to vždy představoval jako [partu vousatých chlapíků](http://www.museumofhoaxes.com/photos/microsoft.html) v garáži, kteří prodali i boty, jen aby měli na hosting a doménu. Opravdu jsem nečekal, že **poletím na pohovor na otočku letadlem** a dostanu to bez mrknutí oka celé proplaceno.
 - Některým státům přijde úplně v pořádku **danit lidem platy skoro 50 %**. Firma vám řekne číslo, vám spadne držka, ale že ho máte vydělit dvěma abyste se dostali na *netto*, to už se jen tak nedovíte.
 - Některým státům přijde úplně v pořádku **udávat plat v částkách za rok**. Firma vám řekne číslo, vám spadne držka, ale že ho máte vydělit dvanácti...
@@ -66,7 +66,7 @@ Nejvíce ze všeho mě asi štval ten **posunutý žebříček hodnot**. Tím, �
 
 Připadal jsem si prostě, jako by mi někdo **dohazoval přítelkyni podle toho jestli je blond, má velká prsa a umí alespoň čtyři sexuální polohy**, přitom já si do podmínek jasně napsal, že je pro mě důležitá láska, vzájemné jiskření a společné vize.
 
-![tož není baba jako baba](|filename|/images/hr-baby.png)
+![tož není baba jako baba]({filename}/images/hr-baby.png)
 
 Brácha na mou paralelu s dohazovačem hezky navázal:
 
@@ -76,6 +76,6 @@ Nemůžu to své setkání s HR ale zase hodnotit tak špatně, protože něco j
 
 ## Nakonec nic
 
-![anarchista jsem](|filename|/images/hr-anarchista.png){: .right }Jak jsem psal už ve svém [novoročním článku](|filename|2013-01-02_mezi-dvanactkou-a-trinactkou.md), rozhodl jsem se nakonec zůstat na volné noze a dokonce ji ještě více rozvolnit. Nabídek jsem měl spoustu, prošel jsem si různými pohovory a námluvami, ale **vše jsem pak odmítl**. Uvědomil jsem si, že jsem chtěl původně vlastně **něco jiného** a že si svá přání mohu nejlépe splnit sám.
+![anarchista jsem]({filename}/images/hr-anarchista.png){: .right }Jak jsem psal už ve svém [novoročním článku]({filename}2013-01-02_mezi-dvanactkou-a-trinactkou.md), rozhodl jsem se nakonec zůstat na volné noze a dokonce ji ještě více rozvolnit. Nabídek jsem měl spoustu, prošel jsem si různými pohovory a námluvami, ale **vše jsem pak odmítl**. Uvědomil jsem si, že jsem chtěl původně vlastně **něco jiného** a že si svá přání mohu nejlépe splnit sám.
 
 Svého hledání práce však **nelituji**. Vzalo mi to množství energie, ale mnohé jsem se naučil, poznal jak kde určité věci fungují, proletěl se letadlem, nabral zkušenosti, jaké se mi budou určitě jednou ještě hodit. Navíc je dost možné, že bez celého toho procesu, jenž jsem 1. 11. 2012 spustil, by mi třeba na přelomu roku ani nedošlo, že je zde pořád i varianta, kde se starám sám o sebe. Sice taková staronová varianta, ale vůbec nijak špatná :-)

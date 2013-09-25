@@ -3,7 +3,7 @@ Date: 2010-01-22 00:00:00
 Tags: net, projekty, sport, vut fit, webdesign
 Draft: true
 
-*Článek vyšel na serveru [Zdrojak.cz](http://zdrojak.root.cz/clanky/api-k-ceskym-turistickym-mapam/). Volně vychází z [mé bakalářské práce](|filename|2009-08-30_bakalar.md).*
+*Článek vyšel na serveru [Zdrojak.cz](http://zdrojak.root.cz/clanky/api-k-ceskym-turistickym-mapam/). Volně vychází z [mé bakalářské práce]({filename}2009-08-30_bakalar.md).*
 
 Zdá se, že český trh s mapovými službami je poměrně stabilizovaný a nic převratného se, kromě zavádění Google Street View, neděje. Pojďme se tedy společně podívat, co nám, webovým vývojářům, současný stav nabízí a jaké máme vlastně možnosti, chceme-li psát aplikace pro Českou republiku využívající turistické mapové podklady.
 
@@ -26,7 +26,7 @@ Chceme-li však programovat aplikaci zaměřenou na turistiku, cyklistiku nebo j
 Začněme průkopníkem v oblasti online map. Mapový server i API samozřejmě nabízí již hodně dlouho, takže jeho služby jsou v mnoha směrech nejvyzrálejší. API je neustále vyvíjeno a pracuje se na
 jeho [třetí verzi](http://code.google.com/intl/cs/apis/maps/documentation/v3/).
 
-![obrázek](|filename|/images/125.jpg)
+![obrázek]({filename}/images/125.jpg)
 
 Není dobré se však nechat unést jeho možnostmi. Je nutné zaměřit se i na jiné rysy, důležité pro náš záměr. Mezi takové patří například skutečnost, že do češtiny začala být služba lokalizována až [nedávno](http://www.lupa.cz/clanky/mapy-google-v-cestine-realita-nebo-zbozne-prani/). Dnes je již sice míra integrace map do českého prostředí na velmi dobré úrovni, ale z hlediska mapových podkladů má jednu velkou, již zmíněnou mezeru – turistická data. Google poskytuje mapy globálně a proto se mu v nich velmi špatně odráží specifika jednotlivých zemí. K dispozici jsou sice terénní mapy s vrstevnicemi, ale neexistuje možnost zobrazit na nich české turistické trasy a cyklostezky.
 
@@ -38,7 +38,7 @@ Mapy.cz byly prvním ryze českým projektem v oblasti nových online map a dod
 
 Současný stav API je ale celkem nešťastný. Aplikační rozhraní nabízí jen omezenou škálu funkcí, omezené mapové podklady oproti službě Mapy.cz a samotná práce s funkcemi API působí na vývojáře poněkud těžkopádně. Jeho licenční podmínky navíc nejsou tak volné jako u ostatních API a požadují registraci klíče nikoliv na doménu, ale přímo na unikátní URI, kde se má mapa nacházet. To jej pro tvorbu složitější aplikace prakticky vyřazuje ze hry. V podmínkách je také omezení na 1000 zobrazení denně a zákaz provozu map pro komerční užití, což v rané fázi projektu není velkou překážkou, ale pro budoucí rozvoj projektů ano.
 
-![obrázek](|filename|/images/126.jpg)
+![obrázek]({filename}/images/126.jpg)
 
 Nové API čtvrté verze vyvíjí v Seznam.cz Ondřej Žára, autor povedeného nástroje pro tvorbu databázových schémat, [WWW SQL Designer](http://code.google.com/p/wwwsqldesigner). Bohužel rozhraní je zatím stále dost nestabilní a podle autorových
 slov v [diskusi](http://forum.lide.cz/forum.fcgi?akce=forum_data&forum_ID=86016&auth=) ani jemu stále ještě nejsou známy nové licenční podmínky. Ve výše zmíněné diskusi postupně přibývají oznámení o nových funkcích, takže se možná nového API jednou opravdu dočkáme. Kdy to však bude a za jakých podmínek bude k dispozici, to zatím nikdo neví.
@@ -49,7 +49,7 @@ Mapy.cz jsou připraveny kombinací geografických dat od PLANstudio a GEODIS Br
 
 Amapy.cz se na svět dostaly v roce 2006 pod hlavičkou portálu Atlas.cz. Ihned po [představení](http://management.blog.lupa.cz/2006/11/05/spetka-koreni-ze-zakulisi-projektu-novych-atlasich-map/) bylo jasné, že se s nimi musí na českém trhu počítat – zpracování bylo profesionální a spolu s mapami přišlo i první, na funkce bohaté, dobře dokumentované české mapové API. Vývoj však postupně ustával a po tom, co byl Atlas.cz sjednocen s Centrum.cz pod hlavičku Centrum Holdings, nelze již kolem API pozorovat vůbec žádnou činnost ze strany provozovatele. Celou službu původně zpracoval Daniel Steigerwald, který mé doměnky [de facto potvrdil](http://twitter.com/steida/statuses/2211073537).
 
-![obrázek](|filename|/images/124.jpg)
+![obrázek]({filename}/images/124.jpg)
 
 API je však opravdu velmi dobře použitelné a mapové podklady kvalitní, připravené ve spolupráci s firmou DPA. I přes API lze dokonce zobrazovat vrstvy s turistickými a cyklistickými značkami a už i zcela základní mapa disponuje vrstevnicemi. Aplikační rozhraní nabízí funkce, jež nelze najít ani u Google Maps API a podporuje několik souřadnicových systémů naráz, což je výhodné při spolupráci s jinými službami (každá požaduje body v jiném formátu).
 

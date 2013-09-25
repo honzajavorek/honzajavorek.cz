@@ -4,13 +4,13 @@ Tags: projekty
 
 Tak jsem dnes spustil část webu zaměřenou na své projekty. Najdete ji na adrese [http://work.javorek.net/](http://work.javorek.net/).
 
-![obrázek](|filename|/images/36.jpg)
+![obrázek]({filename}/images/36.jpg)
 
 ## Čtverečky
 
 Designově to není nic geniálního, ale ani nemělo být. Snažil jsem se najít nějaký **univerzální vzhled**, jenž bude spíše „užitkový“ než krásný. Ten, co jsem vymyslel se mi docela líbí (mám rád čtverečkovaný papír :D ) a je jednoduchý, takže mi dovoluje zůstat líný. A to je důležité, protože většinou nemám moc náladu vytvářet složité projektové weby například k aplikacím v php, které jsem napsal za pár hodin.
 
-Na web jsem natlačil všechny své dosavadní projekty. Svůj „domeček“ tam má trio Espaňa (ohledně níž jsem se [stále nerozhodl](|filename|2008-01-20_espana-vsem.md)), [Hlad](http://hlad.javorek.net) a [táborový web](http://www.taborprekvapeni.net), doplněné o malé „odpolední“ aplikace jako jsou [SMS na T-Mobile]http://honzajavorek.cz/blog/nove-reference-a-sms-na-t-mobile-zdarma) nebo [morseovka](|filename|2007-09-01_morseovka.md).
+Na web jsem natlačil všechny své dosavadní projekty. Svůj „domeček“ tam má trio Espaňa (ohledně níž jsem se [stále nerozhodl]({filename}2008-01-20_espana-vsem.md)), [Hlad](http://hlad.javorek.net) a [táborový web](http://www.taborprekvapeni.net), doplněné o malé „odpolední“ aplikace jako jsou [SMS na T-Mobile]http://honzajavorek.cz/blog/nove-reference-a-sms-na-t-mobile-zdarma) nebo [morseovka]({filename}2007-09-01_morseovka.md).
 
 ## Joss
 

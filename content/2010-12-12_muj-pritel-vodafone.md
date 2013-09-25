@@ -2,7 +2,7 @@ Title: Můj přítel Vodafone
 Date: 2010-12-12 13:44:00
 Tags: mobil, názory, tech, tmobile, vodafone, zážitky
 
-Kdo nezná celou story, čtěte [zde](|filename|2010-06-15_muj-pritel-t-mobile.md). Uprostřed léta mi zavolal borec z Vodafone s klasickou otázkou ohledně mé spokojenosti s tarify apod. Jak já nenávidím tenhleten spam! Jenže tentokrát se mi to snad poprvé v životě hodilo a velmi rád jsem na něj vysypal své rozhořčení nad svým růžovým operátorem. Shodli jsme se, že se nedá teď nic dělat a že musím vypovědět včas smlouvu a on mi zavolá. Není přímo z Vodafone, ale je to nějaký partner, takže nabízel bonusy navíc oproti jejich webu. Důvěryhodnost jsem si ověřil přes oficiální Vodafone Twitter a přes e-mailovou adresu, ze které mi posílal nabídku.
+Kdo nezná celou story, čtěte [zde]({filename}2010-06-15_muj-pritel-t-mobile.md). Uprostřed léta mi zavolal borec z Vodafone s klasickou otázkou ohledně mé spokojenosti s tarify apod. Jak já nenávidím tenhleten spam! Jenže tentokrát se mi to snad poprvé v životě hodilo a velmi rád jsem na něj vysypal své rozhořčení nad svým růžovým operátorem. Shodli jsme se, že se nedá teď nic dělat a že musím vypovědět včas smlouvu a on mi zavolá. Není přímo z Vodafone, ale je to nějaký partner, takže nabízel bonusy navíc oproti jejich webu. Důvěryhodnost jsem si ověřil přes oficiální Vodafone Twitter a přes e-mailovou adresu, ze které mi posílal nabídku.
 
 ## Konečné řešení růžové otázky
 

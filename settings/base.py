@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*- #
 
-
 import os
+import sys
+
+sys.path.append(os.path.dirname(os.path.realpath(__file__)))
+
+from templating import filters, IMAGE_MAX_WIDTH  # NOQA
 
 
 AUTHOR = 'Honza Javorek'
 SITENAME = 'Honza Javorek'
-SITEURL = 'file://' + os.path.dirname(os.path.realpath(__file__)) + '/output'
 
 
 # Timezone, language
@@ -20,7 +23,7 @@ DEFAULT_DATE_FORMAT = '%x'
 DEFAULT_PAGINATION = 5
 SUMMARY_MAX_LENGTH = 80
 DEFAULT_CATEGORY = 'blog'
-MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'headerid']  # , 'extra'
+MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'headerid', 'extra']
 
 
 # URL and save paths settings
@@ -32,19 +35,18 @@ PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}.html'
 PAGE_LANG_URL = '{slug}-{lang}'
 PAGE_LANG_SAVE_AS = '{slug}-{lang}.html'
+URL_EXT = ''
 INDEX_SAVE_AS = 'blog/index.html'
-FILENAME_METADATA = r'(?P<date>\d{4}-\d{2}-\d{2}) (?P<slug>.*)'
+FILENAME_METADATA = r'(?P<date>\d{4}-\d{2}-\d{2})_(?P<slug>.*)'
 
 
 # Static paths will be copied under the same name
-STATIC_PATHS = ('images', 'files')
-
-
-# A list of files to copy from the source to the destination
-FILES_TO_COPY = (
-    ('robots.txt', 'robots.txt'),
-    ('favicon.ico', 'favicon.ico'),
-    ('CNAME', 'CNAME'),
+STATIC_PATHS = (
+    'images',
+    'files',
+    'robots.txt',
+    'favicon.ico',
+    'CNAME',
 )
 
 
@@ -56,9 +58,9 @@ FEEDBURNER_SITENAME = 'javorove-listky'
 
 
 # Theming
-# THEME = 'theme'
+THEME = 'theme'
 THEME_STATIC_PATHS = ('static',)
-IMAGE_MAX_WIDTH = 650
+JINJA_FILTERS = filters
 
 DISQUS_SITENAME = 'javorove-listky'
 GOOGLE_ANALYTICS = 'UA-1316071-6'
@@ -67,7 +69,3 @@ TWITTER_USERNAME = 'honzajavorek'
 MENUITEMS = ()
 LINKS = ()
 SOCIAL = ()
-
-
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True

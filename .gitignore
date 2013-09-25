@@ -33,16 +33,10 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
-
-# Environment
 .env
-
-# Settings
-google_static_maps_api_key
 
 # Build and deploy
 output
-deploy
 
 # Sass
 .sass-cache

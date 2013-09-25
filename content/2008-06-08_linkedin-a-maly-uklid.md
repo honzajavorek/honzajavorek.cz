@@ -2,7 +2,7 @@ Title: LinkedIn a malý úklid
 Date: 2008-06-08 13:45:00
 Tags: management, net, práce
 
-![obrázek](|filename|/images/57.jpg){: .right }[LinkedIn](http://www.linkedin.com) je sociální síť, dost možná i Web2.0, jež se stará o to, abyste už **nikdy v životě nemohli na webu zažít nedostatek modré barvy** v tom správném *biz* odstínu. Pokud moc nesjíždíte sociální sítě, pokud je pro vás „slovo“ Web2.0 důvodem k požívání prášků na zlepšení zažívání, nebo pokud jste spokojeně zaměstnaná květinářka v Dolní Lhotě u Horní, tak asi ani nečtěte dál :) .
+![obrázek]({filename}/images/57.jpg){: .right }[LinkedIn](http://www.linkedin.com) je sociální síť, dost možná i Web2.0, jež se stará o to, abyste už **nikdy v životě nemohli na webu zažít nedostatek modré barvy** v tom správném *biz* odstínu. Pokud moc nesjíždíte sociální sítě, pokud je pro vás „slovo“ Web2.0 důvodem k požívání prášků na zlepšení zažívání, nebo pokud jste spokojeně zaměstnaná květinářka v Dolní Lhotě u Horní, tak asi ani nečtěte dál :) .
 
 ## Oč jde
 

@@ -5,7 +5,7 @@
             {% if articles_page.previous_page_number() == 1 %}
                 <a href="{{ SITEURL }}/blog/">novější</a>
             {% else %}
-                <a href="{{ SITEURL }}/blog/index{{ articles_page.previous_page_number() }}">novější</a>
+                <a href="{{ SITEURL }}/blog/index{{ articles_page.previous_page_number() }}{{ URL_EXT }}">novější</a>
             {% endif %}
         {% else %}
             <small>novější</small>
@@ -16,7 +16,7 @@
     </span>
     <span class="next">
         {% if articles_page.has_next() %}
-            <a href="{{ SITEURL }}/blog/index{{ articles_page.next_page_number() }}">starší</a>
+            <a href="{{ SITEURL }}/blog/index{{ articles_page.next_page_number() }}{{ URL_EXT }}">starší</a>
         {% else %}
             <small>starší</small>
         {% endif %}

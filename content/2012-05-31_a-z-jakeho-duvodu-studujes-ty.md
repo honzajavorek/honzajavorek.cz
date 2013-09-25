@@ -1,7 +1,7 @@
 Title: A z jakého důvodu studuješ ty?
 Date: 2012-05-31 08:51:16
 
-Tak si to shrňme. Mě už se to moc netýká, [já mám jasno](|filename|2012-01-23_manifest-zklamaneho-studenta.md), ale co [vy ostatní](http://ksinan.blog.respekt.ihned.cz/c1-55669350-hnupove-vsech-zemi-vzdelejte-se), proč studujete?
+Tak si to shrňme. Mě už se to moc netýká, [já mám jasno]({filename}2012-01-23_manifest-zklamaneho-studenta.md), ale co [vy ostatní](http://ksinan.blog.respekt.ihned.cz/c1-55669350-hnupove-vsech-zemi-vzdelejte-se), proč studujete?
 
 - rodiče nedokázali nebo nemohli vystudovat vysokou školu
 - rodiče jsou oba vysokoškoláci

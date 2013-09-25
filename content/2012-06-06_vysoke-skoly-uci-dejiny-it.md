@@ -10,7 +10,7 @@ Vysvětlím:
 
 Technická vysoká škola má učit principy. Nejen proto, že je stále pozadu, ale také z toho důvodu, že je to prostě to nejužitečnější, co by měla předat. Dějiny jsou velice zajímavé a já osobně je mám moc rád (třeba ty o starověku), ale je to, přiznejme si, jen zajímavost a určitý všeobecný rozhled. Ten leckdy napomůže k tomu, abychom se poučili z minulosti a neopakovali chyby, ale není žádnou základní dovedností. Naopak, zatížení mysli prošlapanými cestičkami ji může uvěznit a omezit její kreativitu v řešení problémů. O tom je to lidové moudro *všichni říkají že to nejde udělat, až se najde blbec, který to neví, a udělá to*.
 
-![Ha ha ha.](|filename|/images/history.jpg)
+![Ha ha ha.]({filename}/images/history.jpg)
 
 ## Příklady
 
@@ -29,4 +29,4 @@ Jistě vás napadlo, že v takovém případě je problém s projekty. Má-li do
 
 Nakonec je to stejně vždy o přístupu. Někomu se nechce hledat a vypichovat principy, tak předává studentům konkrétní věci, jež jim budou za dva roky na velké hnědé. Někdo si tu práci dá (nebo ji má jednodušší, jelikož jsou principy v jeho oboru jasněji viditelné) a předá studentům pevné základy, na nichž mohou jednou vystavět velké věci, ať už budou mít v ruce jakýkoliv nástroj.
 
-Není to tak dlouho, co jsem [volal po tom](|filename|2010-04-07_chcete-li-se-jednou-zivit-webdesignem-nechodte-delat-inzenyra-na-vut-fit.md), aby na VŠ byly předměty o konkrétních technologiích, jež jsou aktuální. Dnes vím, že to není možné a ani vhodné. Rozhodně ale nemohu dát plně za pravdu všem těm, kteří mě přesvědčovali, že VŠ je hlavně o principech. Souhlasím s tím, že by měla být. Bohužel však není.
+Není to tak dlouho, co jsem [volal po tom]({filename}2010-04-07_chcete-li-se-jednou-zivit-webdesignem-nechodte-delat-inzenyra-na-vut-fit.md), aby na VŠ byly předměty o konkrétních technologiích, jež jsou aktuální. Dnes vím, že to není možné a ani vhodné. Rozhodně ale nemohu dát plně za pravdu všem těm, kteří mě přesvědčovali, že VŠ je hlavně o principech. Souhlasím s tím, že by měla být. Bohužel však není.

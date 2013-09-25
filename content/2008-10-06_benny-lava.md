@@ -2,9 +2,9 @@ Title: Benny Lava
 Date: 2008-10-06 09:17:00
 Tags: očima, seriózně, ušima
 
-Nevinný [odkaz v komentáři](|filename|2008-08-23_hudebni-tipy-predelavky.md) spustil lavinu. Všichni, kteří Bennyho Lavu viděli, žasli, smáli se, chtěli si jej pustit znova, nechápali, učili se „slova“… **Jen jeden muž však vystoupil z davu** a zahájil v dějinách našeho vztahu s YouTube nevídanou pátrací akci.
+Nevinný [odkaz v komentáři]({filename}2008-08-23_hudebni-tipy-predelavky.md) spustil lavinu. Všichni, kteří Bennyho Lavu viděli, žasli, smáli se, chtěli si jej pustit znova, nechápali, učili se „slova“… **Jen jeden muž však vystoupil z davu** a zahájil v dějinách našeho vztahu s YouTube nevídanou pátrací akci.
 
-![obrázek](|filename|/images/93.jpg)
+![obrázek]({filename}/images/93.jpg)
 
 **Karel** se vydal na předlouhou a strastiplnou cestu. Ta však přinesla kýžené ovoce – přinesla **pravdu**. Zjistil, že Benny Lava je ve skutečnosti [Prabhu Deva Sundaram](http://en.wikipedia.org/wiki/Prabhu_Deva_Sundaram). Že Benny Lava je [internetový mem](http://en.wikipedia.org/wiki/Prabhu_Deva_Sundaram#Benny_Lava) (nějaké [české memy](http://cs.wikipedia.org/wiki/České_internetové_memy)). Díky tomu se dopátral názvu ostře sledované skladby – Kalluri Vaanil.
 

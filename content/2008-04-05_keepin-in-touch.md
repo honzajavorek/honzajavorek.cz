@@ -2,7 +2,7 @@ Title: Keepin' in touch
 Date: 2008-04-05 06:26:00
 Tags: erasmus, škola, vut fit
 
-Tak co Finsko? No jo, Finsko… ;) . Nadšení trochu *usedlo* a věc se plazí mezi ostatními úkoly s nálepkou „dyť je to za rok“. Ale tak úplně se zase neflákám… Po bráchou zprostředkovaném setkání s [Vladkim](http://www.linkedin.com/in/vladki), který strávil pár let ve Finsku, jsem nezapomněl ani na maily do OAMK. Cílovou destinací [mého e-mailu do Finska](|filename|2008-02-27_prvni-krucky-do-oulu.md) byla **Katja**, koordinátorka. No odpověděla, že nejsem v jejím rajónu a že mě **předává Mattimu** :D . Takže si zase žádné ženské neužiju :-| .
+Tak co Finsko? No jo, Finsko… ;) . Nadšení trochu *usedlo* a věc se plazí mezi ostatními úkoly s nálepkou „dyť je to za rok“. Ale tak úplně se zase neflákám… Po bráchou zprostředkovaném setkání s [Vladkim](http://www.linkedin.com/in/vladki), který strávil pár let ve Finsku, jsem nezapomněl ani na maily do OAMK. Cílovou destinací [mého e-mailu do Finska]({filename}2008-02-27_prvni-krucky-do-oulu.md) byla **Katja**, koordinátorka. No odpověděla, že nejsem v jejím rajónu a že mě **předává Mattimu** :D . Takže si zase žádné ženské neužiju :-| .
 
 Po mém mailu…
 

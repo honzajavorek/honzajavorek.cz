@@ -2,13 +2,13 @@ Title: Týden s tučňáky
 Date: 2007-11-02 17:21:00
 Tags: fail, linux, názory, software, windows
 
-![obrázek](|filename|/images/21.jpg){: .right }O zkouškovém na počátku tohoto roku se mi poprvé povedlo nainstalovat [GNU/Linux](http://proc.linux.cz). **Uchvátil mne.** Bylo ale příliš složité rychle se v něm začít orientovat, takže jsem jej měl pouze na dualbootu a občas jsem si s ním *hrál*. Vždy jsem vyřešil pár problémů, které mě štvaly, pak jsem byl chvíli šťastný, aby mě v zápětí dožralo zase něco jiného a já s tím šlahnul o zem. A abych se po měsíci zase přišoural zpět a zase to opravil a zase se naštval kvůli jiné věci ;) .
+![obrázek]({filename}/images/21.jpg){: .right }O zkouškovém na počátku tohoto roku se mi poprvé povedlo nainstalovat [GNU/Linux](http://proc.linux.cz). **Uchvátil mne.** Bylo ale příliš složité rychle se v něm začít orientovat, takže jsem jej měl pouze na dualbootu a občas jsem si s ním *hrál*. Vždy jsem vyřešil pár problémů, které mě štvaly, pak jsem byl chvíli šťastný, aby mě v zápětí dožralo zase něco jiného a já s tím šlahnul o zem. A abych se po měsíci zase přišoural zpět a zase to opravil a zase se naštval kvůli jiné věci ;) .
 
 Takhle to šlo měsíce a měsíce. Takhle jsem se učil s Linuxem. Jak vyšlo nové [Ubuntu 7.10 GG](http://en.wikipedia.org/wiki/Ubuntu_(Linux_distribution)#Releases), cítil jsem se **připravený proniknout** ;) .
 
 Měl jsem už nějaké zkušenosti a měl jsem hrozně moc vůle, ale stejně to krachlo a skončil jsem frustrován, jak jste asi, milé čtenářky, vytušily z nadpisu. Nadšení opadlo. Proč? Uvedu své **osobní zážitky**… Na Linux nechci zanevřít, [líbí se mi](http://littlemaple.deviantart.com/art/Not-UNIX-not-Windows-67844232) jako alternativa a kdyby mě na něm neštvalo několik zásadních věcí, velmi rád bych jej používal i nadále jako svůj systém. No, škoda. A přitom jsem se dostal už tak daleko :) . Opravdu jsem přemýšlel o smazání Windows z partition.
 
-![obrázek](|filename|/images/22.jpg){: .left }Jenže… Jenže **potřebuji na PC pracovat** a potřebuji, aby fungovalo vše co chci. Po týdenním škrábání se na kolmou stěnu to tedy vzdávám. Asi jsem nebyl ani moc daleko od vrcholu, ale nemám už dost sil a sklouznu zpět k Windows, ač mě štvou. Přišel na to, že Linux pro mne **není dost zralý** a Widle jsou přezrálé, nebo spíš tak nějak **přehnojené**. Štve mě Linux, protože se mi líbí, ale nedokáže mi poskytnout to, co chci. Štvou mě Widle, protože jsou oproti UNIXovým principům zevnitř prohnilé. Na Linux jsem přemístil své rodiče a pomohl jsem k němu i ségře. Já jsem ale asi moc náročný. Nevím.
+![obrázek]({filename}/images/22.jpg){: .left }Jenže… Jenže **potřebuji na PC pracovat** a potřebuji, aby fungovalo vše co chci. Po týdenním škrábání se na kolmou stěnu to tedy vzdávám. Asi jsem nebyl ani moc daleko od vrcholu, ale nemám už dost sil a sklouznu zpět k Windows, ač mě štvou. Přišel na to, že Linux pro mne **není dost zralý** a Widle jsou přezrálé, nebo spíš tak nějak **přehnojené**. Štve mě Linux, protože se mi líbí, ale nedokáže mi poskytnout to, co chci. Štvou mě Widle, protože jsou oproti UNIXovým principům zevnitř prohnilé. Na Linux jsem přemístil své rodiče a pomohl jsem k němu i ségře. Já jsem ale asi moc náročný. Nevím.
 
 Dost zbytečných omáček! Kde že byl ten problém? Jak jsem napsal, potřebuji na svém stroji pracovat. Programovat, prohlížet internet, přehrávat hudbu a video, tvořit grafiku… Jsem power user a mé nároky jsou **vyšší**, než nároky 90% populace, které by jistě Linux **stoprocentně prospěl**. Já používám více než tři programy a potřebuji se vrtat ve věcech pod povrchem, jenomže zase nemohu strávit 80 % svého času laděním nedodělků nebo nekompatibility. Bohužel nezávisí na počtu plusů a mínusů, ale na **prioritách** oněch výhod a nevýhod. Zůstávám u Widlí, protože kdybych měl mít v Linuxu vše co potřebuji, tak si 1) musím polovinu věcí naprogramovat, 2) druhou polovinu věcí dělat hrozne složitě, za což mi to asi fakt nestojí.
 
@@ -54,7 +54,7 @@ Dost zbytečných omáček! Kde že byl ten problém? Jak jsem napsal, potřebuj
 
 ### [ + ]
 
-![obrázek](|filename|/images/23.jpg){: .right }
+![obrázek]({filename}/images/23.jpg){: .right }
 
 -   **kompatibilita** kompletně se vším (vynechme [SATA](http://en.wikipedia.org/wiki/Serial_ATA) apod.)
 -   velmi **kvalitní programové vybavení**, neskutečný výběr **kvalitních** programů a lze mezi nimi najít spoustu opravdu dobrých programů zcela zadarmo
@@ -90,7 +90,7 @@ Dost zbytečných omáček! Kde že byl ten problém? Jak jsem napsal, potřebuj
 
 Na začátku dlouze se smíšenými pocity vyprávím o tom, že jsem zkusil Linux, že jsem se s ním nějak nepohodl a že se vracím k Widlím. Pak uvádím dlouhý soupis postřehů o operačních systémech, z nichž ani jeden nevychází s čistým štítem :) .
 
-![obrázek](|filename|/images/24.jpg){: .left }Chtěl jsem tím říct přesně to, co z toho tak nějak čiší… To, že mě **v dnešní moderní době nekonečných možností dva nejpoužívanější OS opravdu zklamaly**. Zklamala mě situace v tomhle segmentu trhu. A k Widlím se vracím proto, že mi na nich jedou věci potřebné k práci a to bez workaroundů a obtíží. Protože pokud si mám vybrat ze dvou špatných systémů, zvolím ten, kde mohu být línější a který méně podporuje sklony k masochismu. Je sice fajn že věřím myšlence Open Source, že se mi Linux líbí apod., ale omezení jako [Photoshop ve Wine](http://littlemaple.deviantart.com/art/PS-68188407) nebo neexistence pořádného souborového manažeru jsou docela velká a má víra v Linux není tak silná, že bych pokračoval v sebetýrání, když mohu dále používat svůj legální systém od Microsoftu, kde vše jede v klidu.
+![obrázek]({filename}/images/24.jpg){: .left }Chtěl jsem tím říct přesně to, co z toho tak nějak čiší… To, že mě **v dnešní moderní době nekonečných možností dva nejpoužívanější OS opravdu zklamaly**. Zklamala mě situace v tomhle segmentu trhu. A k Widlím se vracím proto, že mi na nich jedou věci potřebné k práci a to bez workaroundů a obtíží. Protože pokud si mám vybrat ze dvou špatných systémů, zvolím ten, kde mohu být línější a který méně podporuje sklony k masochismu. Je sice fajn že věřím myšlence Open Source, že se mi Linux líbí apod., ale omezení jako [Photoshop ve Wine](http://littlemaple.deviantart.com/art/PS-68188407) nebo neexistence pořádného souborového manažeru jsou docela velká a má víra v Linux není tak silná, že bych pokračoval v sebetýrání, když mohu dále používat svůj legální systém od Microsoftu, kde vše jede v klidu.
 
 Snad jindy ;) .
 

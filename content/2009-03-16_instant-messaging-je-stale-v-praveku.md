@@ -2,7 +2,7 @@ Title: Instant Messaging je stále v pravěku
 Date: 2009-03-16 13:33:00
 Tags: facebook, im, jabber, názory, net, software
 
-Opět mi včera přišel nějaký **spam od automaticky vygenerovaného rusáka** z ICQ transportu pro [Jabber](|filename|2007-09-23_jabber.md). Jako vždy jsem mohl označit jeho číslo, přidat do seznamu ignorovaných kontaktů a jít dál. Jenže mě už nějak přetekl pohár trpělivosti. Smazal jsem své ICQ číslo z webu a z profilu na Facebooku (doufám, že nikam jinam jsem jej už nenapsal). A začal jsem si po dlouhé době **hrát s blbostma**.
+Opět mi včera přišel nějaký **spam od automaticky vygenerovaného rusáka** z ICQ transportu pro [Jabber]({filename}2007-09-23_jabber.md). Jako vždy jsem mohl označit jeho číslo, přidat do seznamu ignorovaných kontaktů a jít dál. Jenže mě už nějak přetekl pohár trpělivosti. Smazal jsem své ICQ číslo z webu a z profilu na Facebooku (doufám, že nikam jinam jsem jej už nenapsal). A začal jsem si po dlouhé době **hrát s blbostma**.
 
 ## Antispam? Likvidace ICQ? Facebook chat?
 
@@ -26,6 +26,6 @@ Jsem **znechucen**. Už mě nebaví mazat ruské spammery a nebaví mě [vysvět
 
 Víte co? **Pište mi maily.** Já budu v klidu psát bakalářku a od IM si odpočinu. Budu zapínat jen jednu upravenou, minimalizovanou Mirandu. S jediným VIP kontaktem. Připojenou na **dedikované ICQ číslo**. Ne ne, peklo nezamrzlo, já mám pořád moc rád Jabber a Psi, ale člověk někdy musí uznat, že účel světí prostředky, že někdy je třeba **vykašlat se na veškerou idealogii a prostě místo toho pracovat s tím, co doopravdy funguje**. A tohle funguje. Nikdo mě neruší, nechodí mi spam, vidím správně status a funguje mi přenos souborů. Co víc potřebuji?
 
-![obrázek](|filename|/images/111.jpg)
+![obrázek]({filename}/images/111.jpg)
 
 A kdy se vrátím k Psi s Jabberem? **Až se uklidním.** Nebo až bude Facebook chat postaven na Jabberu. Nebo až budu mít titul. Nebo až najdu jiné řešení… Nebo až Jan Tleskač…

@@ -10,7 +10,7 @@ K jádru věci… Jednou dávno se mi stalo, že jsem stál na můstku u zast�
 
 ## Odstavec o divokých nákupech
 
-Jiný příběh. Jako obyvatel kolejí nemívám přeplněnou ledničku. Občas se ale stane, že se vybavím na delší dobu, že si koupím pochutin, [otravin](|filename|2007-10-12_ziva-polivka.md) a potravin více a že je tam toho dost. Běžně jsem samozřejmě rád za každý kus jídla, který najdu… Když je ale lednička plná, stane se někdy zvláštní věc. Otevřu ji a vybírám si tak dlouho co budu jíst, až prostě zjistím, že si vybrat **nedokážu**. Zavřu ji a řeknu si, že si vyberu později a udělám jídlo později, když mi to tedy teď nějak nejde.
+Jiný příběh. Jako obyvatel kolejí nemívám přeplněnou ledničku. Občas se ale stane, že se vybavím na delší dobu, že si koupím pochutin, [otravin]({filename}2007-10-12_ziva-polivka.md) a potravin více a že je tam toho dost. Běžně jsem samozřejmě rád za každý kus jídla, který najdu… Když je ale lednička plná, stane se někdy zvláštní věc. Otevřu ji a vybírám si tak dlouho co budu jíst, až prostě zjistím, že si vybrat **nedokážu**. Zavřu ji a řeknu si, že si vyberu později a udělám jídlo později, když mi to tedy teď nějak nejde.
 
 ## Odstavec, který je tu zbytečně a pouze proto, abyste mi záviděli
 
@@ -36,6 +36,6 @@ Co cítím? Že přes veškeré své možnosti nedělám pořádně nic, co by m
 
 ## Odstavec do počtu
 
-Až mě tedy zase někdy, mí blízcí, uvidíte jak dělám to, co nechci, zkuste mě na to prosím upozornit ;) . Některým se to už nějakou dobu naštěstí daří. Někdy sice pozdě, ale přece. Ono totiž, jak jsem [tady už psal](|filename|2007-11-02_problemy-neexistuji-iv.md), člověka nelze měnit, když sám nechce. Mějte tedy se mnou trpělivost a vydržte to do té doby, než pochopím :) .
+Až mě tedy zase někdy, mí blízcí, uvidíte jak dělám to, co nechci, zkuste mě na to prosím upozornit ;) . Některým se to už nějakou dobu naštěstí daří. Někdy sice pozdě, ale přece. Ono totiž, jak jsem [tady už psal]({filename}2007-11-02_problemy-neexistuji-iv.md), člověka nelze měnit, když sám nechce. Mějte tedy se mnou trpělivost a vydržte to do té doby, než pochopím :) .
 
 A propos, kdo vám proboha řekl, že *problémy neexistují*?! :D

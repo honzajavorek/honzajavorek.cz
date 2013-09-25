@@ -2,7 +2,7 @@ Title: Jak se učit, post scriptum
 Date: 2008-01-30 01:26:00
 Tags: management, škola
 
-Konec zkouškového! [První článek o učení](|filename|2007-11-17_jak-se-ucit.md) jsem psal v půlce semestru a zahrnoval spíše nějaké základní postřehy, jež by zřejmě mohly pomoci. Nyní mám v rukávu postupy, jež mne **dovedly ke zdárným výsledkům**. Tedy asi spíše k výsledkům než zdárným, ale to by přeci neznělo tak hezky a důvěryhodně ;) .
+Konec zkouškového! [První článek o učení]({filename}2007-11-17_jak-se-ucit.md) jsem psal v půlce semestru a zahrnoval spíše nějaké základní postřehy, jež by zřejmě mohly pomoci. Nyní mám v rukávu postupy, jež mne **dovedly ke zdárným výsledkům**. Tedy asi spíše k výsledkům než zdárným, ale to by přeci neznělo tak hezky a důvěryhodně ;) .
 
 ## Nekoukejte do světla
 
@@ -34,7 +34,7 @@ Nevím jak u jiných, ale po sprše se mi vždy **chtělo spát**, ať už byla
 
 ## Hýbejte se!
 
-**Fyzická zátěž** uleví vašemu mozku, posílí tělo a prokrví, nabudí vás, budete **lépe myslet**. Nebudete spát. Jděte si [zaběhat](|filename|2007-08-16_run-forrest-run.md) (ta hodinka vás nezabije), udělejte si v přestávce pár dřepů nebo kliků a myslete na jiné věci než třeba na rovnice. Protáhněte si tělo, **zaskákejte na oblíbený song** a pak se vraťte k učení :) .
+**Fyzická zátěž** uleví vašemu mozku, posílí tělo a prokrví, nabudí vás, budete **lépe myslet**. Nebudete spát. Jděte si [zaběhat]({filename}2007-08-16_run-forrest-run.md) (ta hodinka vás nezabije), udělejte si v přestávce pár dřepů nebo kliků a myslete na jiné věci než třeba na rovnice. Protáhněte si tělo, **zaskákejte na oblíbený song** a pak se vraťte k učení :) .
 
 ## Jezte a pijte
 
@@ -58,7 +58,7 @@ Pokud vaše fakulta tvoří **videa z přednášek**, pak máte úžasný zdroj
 
 **Streaming** je vesměs škodlivý – místo aby šel student na přednášku, pustí si ji z kolejí a kouká. Přednáška je nudná, takže se na ni nekouká a raději během toho začne něco dělat na internetu, více a více, až se zcela nesoustředí a jen omylem si všimne, že *už mu tam na pozadí nikdo nemluví*. To ho nakonec přesvědčí o tom, že není třeba streaming ani zapínat → škole se vůbec nevěnuje. Doporučuji chodit na přednášky.
 
-![obrázek](|filename|/images/34.jpg)
+![obrázek]({filename}/images/34.jpg)
 
 Video jako záznam je mnohonásobně **přínosnější**. Můžete si pustit přednášku, kterou jste **nestihli**, můžete si pustit již viděnou přednášku pro **zopakování** před písemkou (to je překvapivě velmi efektivní), můžete si stáhnout cvičení s **vysvětlením složitého postupu** a pozastavovat si video po pár vteřinách či posouvat jej tam a zpět tak dlouho, než věc pochopíte. Přednáška spuštěná **zrychleně** může být navíc stejně informačně hodnotná, ale zabere méně času.
 

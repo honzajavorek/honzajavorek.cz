@@ -1,7 +1,7 @@
 Title: Jak utéci z Google služeb?
 Date: 2013-05-21 13:44:12
 
-Před nedávnem jsem narazil tento [osobní akční plán](http://www.weblog.rider.cz/articles/269-jak-se-zbavit-google-osobni-akcni-plan) Michala Valáška a byť jsem chápal jeho výhrady, přišlo mi to trochu jako z jiného světa. Po dalších a dalších oznámeních Google o rušení služeb a jeho představování různých produktových veletočů mi podobný přístup už vůbec jako sci-fi nepřipadá. Google mě dlouhodobě [štve](|filename|2012-06-22_dej-mi-pokoj.md) a stále více cítím potřebu se nějak proti jeho krokům bránit.
+Před nedávnem jsem narazil tento [osobní akční plán](http://www.weblog.rider.cz/articles/269-jak-se-zbavit-google-osobni-akcni-plan) Michala Valáška a byť jsem chápal jeho výhrady, přišlo mi to trochu jako z jiného světa. Po dalších a dalších oznámeních Google o rušení služeb a jeho představování různých produktových veletočů mi podobný přístup už vůbec jako sci-fi nepřipadá. Google mě dlouhodobě [štve]({filename}2012-06-22_dej-mi-pokoj.md) a stále více cítím potřebu se nějak proti jeho krokům bránit.
 
 Aby bylo jasno, neupírám Googlu právo na jeho činy - je to soukromá společnost a může si dělat co se jí zlíbí. Jestli někdo někdy věřil na bullshitování "Don't be evil", tak je naivní. Google je dnes normální korporace, která chce vydělávat. Je jen můj problém, že dlouhodobě používám její služby a je jen shoda náhod, že až donedávna šel Google směrem, jaký se líbil i mě.
 

@@ -1,11 +1,11 @@
 Title: Jarní úklid
 Date: 2012-05-30 14:28:07
 
-Jak jsem [avizoval](|filename|2012-01-20_uz-jsi-s-tim-saskovanim-kolem-blogu-trapny.md), tak se stalo. Vymetl jsem na blogu pavučiny, dal jsem mu nová střívka, nový kabátek. V odkazovaném článku jsem sice psal, že to udělám večer před státnicemi, ale nakonec jsem to stihl dřív :-) Pracoval jsem na tom po malých kousíčkách několik měsíců, vždy ve volné chvilce mezi učením.
+Jak jsem [avizoval]({filename}2012-01-20_uz-jsi-s-tim-saskovanim-kolem-blogu-trapny.md), tak se stalo. Vymetl jsem na blogu pavučiny, dal jsem mu nová střívka, nový kabátek. V odkazovaném článku jsem sice psal, že to udělám večer před státnicemi, ale nakonec jsem to stihl dřív :-) Pracoval jsem na tom po malých kousíčkách několik měsíců, vždy ve volné chvilce mezi učením.
 
 Co je nového?
 
-- Blog je kompletně [na GitHubu](https://github.com/honzajavorek/blog). Nejen zdrojový kód, ale i [samotné HTML stránky](https://github.com/honzajavorek/blog/tree/gh-pages) (využívá tedy [GitHub Pages](http://pages.github.com/)). Můžete mi opravovat chyby v článcích posíláním *pull requestů* ;-) Taky to samozřejmě funguje i jako nezničitelná [záloha](|filename|2011-12-11_jak-jsem-ublizil-svemu-denicku.md).
+- Blog je kompletně [na GitHubu](https://github.com/honzajavorek/blog). Nejen zdrojový kód, ale i [samotné HTML stránky](https://github.com/honzajavorek/blog/tree/gh-pages) (využívá tedy [GitHub Pages](http://pages.github.com/)). Můžete mi opravovat chyby v článcích posíláním *pull requestů* ;-) Taky to samozřejmě funguje i jako nezničitelná [záloha]({filename}2011-12-11_jak-jsem-ublizil-svemu-denicku.md).
 - Adresy na RSS/Atom vedou nyní přímo na služby, které je poskytují. Tedy [Disqus](http://disqus.com) a [Feedburner](http://feedburner.com). Myslím, že umístění blogu měním o dost častěji, než tyhle služby, takže jsou pro čtenáře nakonec jistějším opěrným bodem :-) Zatím by mělo fungovat přesměrování, ale nevím jak dlouho - lepší bude, když si adresy změníte ve svých čtečkách.
 - Deníček je generován do statického HTML pomocí skvělého nástroje [Pelican](http://pelican.notmyidea.org) (Python). To znamená, že veškerou interakci na webu obstarává JavaScript (moc jí není, jen komentáře) a že by se všechny stránky měly načítat superrychle.
 - Vše je na nové doméně `honzajavorek.cz`. Na `blog.javorek.net` ani `honza.javorek.net` nic už nikdy nebude. Ostatně, v blízké době nejspíš zanikne celé `javorek.net`, ale to je jiná pohádka.

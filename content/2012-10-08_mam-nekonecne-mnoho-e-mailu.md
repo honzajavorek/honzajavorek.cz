@@ -1,7 +1,7 @@
 Title: Mám nekonečně mnoho e-mailů
 Date: 2012-10-08 17:43:04
 
-Nedávno jsem tady řešil [problém své e-mailové adresy](|filename|2012-06-03_novy-e-mail.md). Přešel jsem nakonec opravdu na Gmail. Díky tomu jsem si ale uvědomil ještě jednu věc.
+Nedávno jsem tady řešil [problém své e-mailové adresy]({filename}2012-06-03_novy-e-mail.md). Přešel jsem nakonec opravdu na Gmail. Díky tomu jsem si ale uvědomil ještě jednu věc.
 
 Mám více Twitter účtů (<a href="http://twitter.com/honzajavorek">@honzajavorek</a>, <a href="http://twitter.com/naPyvo">@naPyvo</a>, <a href="http://twitter.com/zitkino">@zitkino</a>) a ke každému musím mít jiný e-mail. A takových služeb, kde uživím více e-mailů, je víc. Třeba ty, kam žádný dávat nechci, ale musím ho tam napsat. Vždy jsem to řešil nějakým druhým, záložním mailem. Mnoho lidí to řeší podobně, mají jeden e-mail na důležité věci a pak druhý *na spam*.
 

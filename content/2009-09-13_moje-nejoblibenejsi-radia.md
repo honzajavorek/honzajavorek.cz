@@ -2,7 +2,7 @@ Title: Moje nejoblíbenější rádia
 Date: 2009-09-13 21:18:00
 Tags: rádio, ušima
 
-Kdysi jsem tady na blogu [psal obecně o rádiích](|filename|2008-03-19_radium-atomove-cislo-88.md). Po čase se k tématu stručně vrátím. Na internetu je velká spousta online rádií a různých služeb na motivy Last.fm, ale popravdě, ani to Last.fm jsem si nepouštěl tak rád nebo často jako si pouštím níže zmíněné čtyři.
+Kdysi jsem tady na blogu [psal obecně o rádiích]({filename}2008-03-19_radium-atomove-cislo-88.md). Po čase se k tématu stručně vrátím. Na internetu je velká spousta online rádií a různých služeb na motivy Last.fm, ale popravdě, ani to Last.fm jsem si nepouštěl tak rád nebo často jako si pouštím níže zmíněné čtyři.
 
 Největší problém rádií jsou reklamy. Samy rádia to ví, protože samy propagují např. „u nás plných 40 minut bez reklam“ apod. Jenže to nestačí, no. Jestli u toho pracuju, hodina uplyne jako nic a reklamy a i jakékoliv kecání mě ruší. Řešení?
 
@@ -37,5 +37,5 @@ Druhá varianta má výhodu v tom, že můžete pracovat kdy chcete a můžete 
 
 Takto vytažené streamy dokáže přehrát jak WMP, tak Winamp:
 
--   Playlist pro [WMP](|filename|/files/radio.wpl)
--   Playlist pro [Winamp](|filename|/files/radio.m3u)
+-   Playlist pro [WMP]({filename}/files/radio.wpl)
+-   Playlist pro [Winamp]({filename}/files/radio.m3u)

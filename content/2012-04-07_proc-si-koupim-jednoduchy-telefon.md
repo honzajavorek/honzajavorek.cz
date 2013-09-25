@@ -10,9 +10,9 @@ Připomínám, že má telefonní kariéra je asi následující:
 
 -   Alcatel OT 302, *první*
 -   Siemens M65, *vysněný, odolný*
--   [Nokia 3110c](|filename|2008-03-16_finska-cernoska.md), *Finská černoška*
+-   [Nokia 3110c]({filename}2008-03-16_finska-cernoska.md), *Finská černoška*
 -   HTC Dream, *první Android*
--   [HTC Hero](|filename|2011-07-21_hloupe-chytre-telefony.md), *hrdina v důchodu*
+-   [HTC Hero]({filename}2011-07-21_hloupe-chytre-telefony.md), *hrdina v důchodu*
 -   LG Optimus One, *pragmatický Android*
 
 Ten odkazovaný článek o Nokii je 4 roky starý, ale nic se nezměnilo – zase jsem telefon [někde](https://imgur.com/a/i87YM) potratil a řeším koupi nového. To už jsem prostě já, takže teď spíš k věci: Jaký nový telefon pořídit?

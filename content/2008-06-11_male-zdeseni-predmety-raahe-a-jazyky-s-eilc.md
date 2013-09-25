@@ -12,7 +12,7 @@ No ale přečetl jsem si pár stránek a poslal nějaký ten mail. A samozřejm
 
 > Dobry den, vyjizdite-li az v letnim semestru 2009, mate cas. Navstivte stranky OAMK a zjistete si deadline a veskere nalezitosti prihlasky, at nezapomenete podruhe :-).
 
-Asi si mne nepamatuje z [oné památné středy](|filename|2008-02-17_erasmus.md), kdy jsem jí svou přihlášku vrazil do rukou den po termínu… Ale opravovat ji, že to by bylo už mé třetí zapomenutí, se mi nechtělo
+Asi si mne nepamatuje z [oné památné středy]({filename}2008-02-17_erasmus.md), kdy jsem jí svou přihlášku vrazil do rukou den po termínu… Ale opravovat ji, že to by bylo už mé třetí zapomenutí, se mi nechtělo
 :D .
 
 ## Raahe
@@ -33,7 +33,7 @@ Co jsem si tak všiml, předměty mívají kreditované **v rozmezí přibližn
 
 No předně bych si měl už asi **vymyslet bakalářku** a začít řešit podle tématu s kým ji budu mít, jak dobře ji půjde konzultovat dálkově a případně kde ji vůbec budu oficiálně dělat (tím teď myslím jestli u nás, jak psal Matti, nebo nakonec stejně u nich). Ona ta bakalářka je asi nejnejasnější věcí na celém mém Erasmu, takže by nebylo od věci začít objasňovat – to ale, domnívám se, půjde jen s *konkretizací* tématu :) .
 
-Kdyby někoho zajímal [ten papír](|filename|/files/courses0809.pdf)… Já se ale spoléhám na to, že si ty letní předměty v září najdu trochu lépe popsané a rozebrané na pěkném OAMK webu… Já mám tak nějak raději weby než takovéto doc/pdf papíry :) .
+Kdyby někoho zajímal [ten papír]({filename}/files/courses0809.pdf)… Já se ale spoléhám na to, že si ty letní předměty v září najdu trochu lépe popsané a rozebrané na pěkném OAMK webu… Já mám tak nějak raději weby než takovéto doc/pdf papíry :) .
 
 ## EICL kursy
 

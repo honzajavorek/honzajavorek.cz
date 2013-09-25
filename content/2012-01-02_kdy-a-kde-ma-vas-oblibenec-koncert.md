@@ -2,7 +2,7 @@ Title: Kdy a kde má váš oblíbenec koncert?
 Date: 2012-01-02 12:00:00
 Tags: práce, projekty, software, ušima
 
-![obrázek](|filename|/images/160.jpg){: .right }Jste na [Facebooku](http://www.facebook.com/)? Jo? Oukej. A používáte tam nějaké ty aplikace? Jo? FarmVille, MafiaWars, Slevomat, posílání růžožůžových srdíček, nebo nějaké srandičky od PR agentur, které na vás mámí *lajky* a sdílení s přáteli? Hm. Řeknu vám, že i mezi Facebook aplikacemi se, myslím, najdou užitečnější věci.
+![obrázek]({filename}/images/160.jpg){: .right }Jste na [Facebooku](http://www.facebook.com/)? Jo? Oukej. A používáte tam nějaké ty aplikace? Jo? FarmVille, MafiaWars, Slevomat, posílání růžožůžových srdíček, nebo nějaké srandičky od PR agentur, které na vás mámí *lajky* a sdílení s přáteli? Hm. Řeknu vám, že i mezi Facebook aplikacemi se, myslím, najdou užitečnější věci.
 
 Rádi chodíte na koncerty? Mám pro vás tip na aplikaci, díky níž si můžete pohlídat, jestli ve vašem okolí nehrají něco, co máte rádi. A nejen to!
 

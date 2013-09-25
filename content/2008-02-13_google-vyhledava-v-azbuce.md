@@ -4,4 +4,4 @@ Tags: net
 
 Věděli jste, že Google vyhledává slova zapsaná latinkou i v jejich transkripci do azbuky? Mě to docela překvapilo :) .
 
-![obrázek](|filename|/images/38.jpg)
+![obrázek]({filename}/images/38.jpg)

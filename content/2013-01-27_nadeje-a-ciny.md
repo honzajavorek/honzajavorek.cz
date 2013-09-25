@@ -13,7 +13,7 @@ Než budeme lamentovat nad druhými, začněme od sebe. **My jsme ti, na které 
 
 Normální je mezi lidmi to, co dělá i jejich okolí. Když bude jeden z deseti přátel karatista a nebude jíst maso, možná se bude ostatním zdát nenormální. Přidá-li se k němu ale druhý, hned to bude pro ostatní respektovatelný pohled na svět. Pokud budou čtyři, nebude to ostatní už vůbec vzrušovat, stane se to samozřejmostí, ba dokonce možnou alternativou ke zvážení. Úplně stejně lze prosadit cokoliv. Ať už je to třídění odpadu (já jsem začal až když jsem byl se svým netřízením v domácnosti jediný *podivín*), poctivý přístup k životu, nebo občanská aktivita.
 
-Svět nikdy nebude dokonale růžový, ale každá změna k lepšímu se počítá. Stejně jako volební lístky, i malé změny se mohou nasčítat a postupně něco zlomit. Navíc [každý čin](http://sladek.blog.respekt.ihned.cz/c1-57493970-cheme-primou-demokracii-o-kterou-jsme-se-nikdy-nepokusili), jenž takto uděláme, zlepší naši [náladu](|filename|2012-12-08_blba-nalada.md) - přestože prohrajeme, budeme vědět, že jsme pro lepší budoucnost udělali alespoň něco, co bylo v našich silách. Ona je ta myšlenka i zhudebněná, byť v poněkud jednoduchých verších...
+Svět nikdy nebude dokonale růžový, ale každá změna k lepšímu se počítá. Stejně jako volební lístky, i malé změny se mohou nasčítat a postupně něco zlomit. Navíc [každý čin](http://sladek.blog.respekt.ihned.cz/c1-57493970-cheme-primou-demokracii-o-kterou-jsme-se-nikdy-nepokusili), jenž takto uděláme, zlepší naši [náladu]({filename}2012-12-08_blba-nalada.md) - přestože prohrajeme, budeme vědět, že jsme pro lepší budoucnost udělali alespoň něco, co bylo v našich silách. Ona je ta myšlenka i zhudebněná, byť v poněkud jednoduchých verších...
 
 > Dělání, dělání, všechny smutky zahání,<br>
 > dělání, dělání je lék.<br>
@@ -25,4 +25,4 @@ Svět nikdy nebude dokonale růžový, ale každá změna k lepšímu se počít
 
 Jednoduché úkony nic nezmění, jen nás ošálí, abychom si mysleli, že něco činíme. Na opravdovou změnu je ale potřeba vystoupit z komfortní zóny a opravdu **něco dělat**. Dělat něco, co není jednoduché. Něco těžkého.
 
-Uvědomuji si to stále více a proto si dám na [tento rok](|filename|2013-01-02_mezi-dvanactkou-a-trinactkou.md) ještě jedno předsevzetí. **Najdu způsob, jak něco kolem sebe aktivně zlepšit.**
+Uvědomuji si to stále více a proto si dám na [tento rok]({filename}2013-01-02_mezi-dvanactkou-a-trinactkou.md) ještě jedno předsevzetí. **Najdu způsob, jak něco kolem sebe aktivně zlepšit.**

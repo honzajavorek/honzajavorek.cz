@@ -9,7 +9,7 @@ Office?
 
 ## Konec MS Office
 
-Již drahnou dobu používám [OpenOffice.org](http://www.openoffice.cz/). Je to sada programů suplující MS Office, ale na rozdíl od Microsoftího produktu je zdarma. OOo jsem začal používat opravdu již před dlouhou dobou, takže ani nevím, jak vypadají MS Office, asi od nějaké verze XP. Když mi brácha nedávno posílal [screenshoty nejnovějších verzí](http://images.google.cz/images?hl=cs&q=%22ms+office+2007%22+gui&btnG=Hledat+obrázky), docela jsem se děsil a utvrdil se v názoru, že tyto programy bych už nedokázal ovládat ani intuicí. Změna GUI, nové funkce a hlavně způsoby jak používat ty staré… Proč se kdysi MS Office vlezly na CD a dnes jsou na DVD? Nezdá se mi, že by přidali tolik skvělých funkcí. Spíš balast. MS Windows Office. [Syndrom operačního systému.](|filename|2007-08-27_nebavi-vas-nero.md)
+Již drahnou dobu používám [OpenOffice.org](http://www.openoffice.cz/). Je to sada programů suplující MS Office, ale na rozdíl od Microsoftího produktu je zdarma. OOo jsem začal používat opravdu již před dlouhou dobou, takže ani nevím, jak vypadají MS Office, asi od nějaké verze XP. Když mi brácha nedávno posílal [screenshoty nejnovějších verzí](http://images.google.cz/images?hl=cs&q=%22ms+office+2007%22+gui&btnG=Hledat+obrázky), docela jsem se děsil a utvrdil se v názoru, že tyto programy bych už nedokázal ovládat ani intuicí. Změna GUI, nové funkce a hlavně způsoby jak používat ty staré… Proč se kdysi MS Office vlezly na CD a dnes jsou na DVD? Nezdá se mi, že by přidali tolik skvělých funkcí. Spíš balast. MS Windows Office. [Syndrom operačního systému.]({filename}2007-08-27_nebavi-vas-nero.md)
 
 ## Konec OpenOffice.org
 

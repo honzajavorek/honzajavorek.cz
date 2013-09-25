@@ -1,5 +1,4 @@
-pelican==3.2
-fabric==1.6.0
-pillow==2.0.0
+git+git://github.com/getpelican/pelican.git@dbbf95b1845661fd8ea4b183bd421ad8e8cc3f20#egg=pelican
 markdown==2.3.1
-requests==1.2.0
+fabric==1.7.0
+pillow==2.1.0

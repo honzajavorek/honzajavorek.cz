@@ -2,7 +2,7 @@ Title: Druhé brněnské PyVo
 Date: 2011-06-14 17:00:00
 Tags: net, práce, projekty, python, pyvo, software, webdesign, zážitky
 
-![obrázek](|filename|/images/145.jpg){: .right }Kamarád [Michal Švec](http://twitter.com/svecmichal) se na Twitteru zmínil o **setkání programátorů** v Ruby a já se zeptal, jestli něco takového není i pro Python. Prý nikde nic, tak že to mám zorganizovat. A že prý nevadí, když tam o tom Pythonu budu vědět ze všech nejméně :)
+![obrázek]({filename}/images/145.jpg){: .right }Kamarád [Michal Švec](http://twitter.com/svecmichal) se na Twitteru zmínil o **setkání programátorů** v Ruby a já se zeptal, jestli něco takového není i pro Python. Prý nikde nic, tak že to mám zorganizovat. A že prý nevadí, když tam o tom Pythonu budu vědět ze všech nejméně :)
 
 No a tak se stalo. Nejdříve jsem navázal spolupráci se [slovenskými Pyonýry](http://on.fb.me/pyoneers) pod taktovkou [Synopsiho](http://twitter.com/synopsi), dohodlo se první setkání jen tak v kroužku u piva a když šel vidět zájem a nadšení, začali jsme s [Michalem Janíkem](https://twitter.com/michaljanik), jenž mi nabídl pomoc při zařizování, plánovat něco většího.
 
@@ -15,7 +15,7 @@ Ty měli [Petr Jocho Joachim](https://twitter.com/jochocz) a [Martin Sputnikus P
 -   [Jocho: **Django & Seznam.cz**](https://docs.google.com/present/view?id=dd9dv3df_29fx5hp4db)
 -   [Sputnikus: **ep.io a další cloudy pro Python**](http://prezi.com/sgokjfuweg5z/python-in-da-cloud/)
 
-![obrázek](|filename|/images/146.jpg)
+![obrázek]({filename}/images/146.jpg)
 
 Následně jsme se zabrali do volné diskuse a do samotného pyva. Povídat si bylo určitě o čem, jelikož se nás u stolu **sešlo přes 15 lidí** a mnozí měli docela zajímavé příběhy ať už o Pythonu nebo jen tak ze života a studia. Měli jsme [návštěvu z Finska](https://twitter.com/encukou), zahraniční kluky mluvící jen lámanou češtinou, Seznamáky, studenty, nestudenty, pracanty i experimentátory, webaře i newebaře.
 

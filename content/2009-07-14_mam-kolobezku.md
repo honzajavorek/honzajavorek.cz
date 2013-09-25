@@ -2,7 +2,7 @@ Title: Mám koloběžku
 Date: 2009-07-14 14:14:00
 Tags: sport
 
-Tak mám [koloběžku](|filename|2009-03-31_kolobezka.md). Dostal jsem ji od [Martina Jandy](http://www.martinjanda.com) do opatrovnictví. Není taková, jakou jsem si představoval, ale na rozdíl od ní především **existuje** a mám ji v pokoji.
+Tak mám [koloběžku]({filename}2009-03-31_kolobezka.md). Dostal jsem ji od [Martina Jandy](http://www.martinjanda.com) do opatrovnictví. Není taková, jakou jsem si představoval, ale na rozdíl od ní především **existuje** a mám ji v pokoji.
 
 ## Výhody
 

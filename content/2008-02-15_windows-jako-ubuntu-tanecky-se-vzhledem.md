@@ -2,9 +2,9 @@ Title: Windows jako Ubuntu, tanečky se vzhledem
 Date: 2008-02-15 15:22:00
 Tags: hračičkování, linux, software, windows
 
-O vánocích jsem díky [Tangu](http://tango.freedesktop.org/) trochu [zatočil se svým operačním systémem](|filename|2007-12-28_tango-s-okny.md) a sliboval jsem pokračování, v němž nastíním taneční kroky. Asi bych na to zapomínal dál, kdyby nepřišla jedna opravdová tanečnice a téma znova nenaťukla. Takže tenhle článek je tak trochu na přání a i proto vychází mimo běžnou středečně-nedělní periodu ;) .
+O vánocích jsem díky [Tangu](http://tango.freedesktop.org/) trochu [zatočil se svým operačním systémem]({filename}2007-12-28_tango-s-okny.md) a sliboval jsem pokračování, v němž nastíním taneční kroky. Asi bych na to zapomínal dál, kdyby nepřišla jedna opravdová tanečnice a téma znova nenaťukla. Takže tenhle článek je tak trochu na přání a i proto vychází mimo běžnou středečně-nedělní periodu ;) .
 
-![obrázek](|filename|/images/39.jpg)
+![obrázek]({filename}/images/39.jpg)
 
 ## 5 z 5 odrážek doporučují učit se tancovat Tango
 
@@ -18,7 +18,7 @@ O vánocích jsem díky [Tangu](http://tango.freedesktop.org/) trochu [zatočil
 
 Tak předně jsem si upravil instalaci Windows pomocí **nLite**. Když vynechám instalaci ovladačů pro DELL fičurky, vnitřnosti jsem trochu promíchal pomocí **Tweak UI** a **ClearType Tuning Control Panel Applet**. Oba prográmky jsou oficiální nástroje vydané Microsoftem a lze je spolu s dalšími kravinkami stáhnout na [jedné zakopané stránce](http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx) na majkrosoftím webu. Odkazy ke stažení hledejte po pravé straně. Když si něco počtete, objevíte tam i jiné zajímavé věci. Tweak UI je ovladač pro některá **skrytá nastavení ve Windows**, jež byste museli jinak dělat ruční editací registrů. Co dělá ClearType asi netřeba vysvětlovat, pro méně znalé ale napíšu, že nastavuje **vyhlazování písma** a pro LCD je nedocenitelný.
 
-![obrázek](|filename|/images/40.jpg)
+![obrázek]({filename}/images/40.jpg)
 
 ## Taneční botičky
 
@@ -29,7 +29,7 @@ najdete [na DA](http://nordlicht.deviantart.com/art/Ubuntu-quot-Human-quot-Curso
 
 Teď už máte hezkou myš a jste celí žhaví pokračovat v konverzi. Stáhněte si [UXTheme multipatcher](http://www.softpedia.com/get/System/OS-Enhancements/UXTheme-MultiPatcher.shtml), utilitku, která odstřelí jakousi nesmyslnou ochranu ve Windows XP a umožní vám používat jiné styly vzhledu než od Microsoftu (tuším, že MS za dobu existence Windows XP vydal k těm výchozím asi jen jeden). Utilitku pak můžete klidně smazat a hurá na **změnu skinu**. Na netu se jich válí spousta, povedené lze vyhrabat na DA. Já používám styl černého GNOME, který je kvalitně udělaný a snad se mi za ta léta co ho používám nestalo, že by měl nějaké chybky v zobrazování GUI. Bohužel netuším, kde jsem ho splašil. Google však pomohl a opět jej [lze spatřit na DA](http://hsn.deviantart.com/art/Clearlooks-0-6-Black-31325014?offset=40), dokonce ve více barvách.
 
-![obrázek](|filename|/images/41.jpg)
+![obrázek]({filename}/images/41.jpg)
 
 Styl prý stačí rozbalit do `C:\Windows\Resources\Themes` a nastavit si ho v nabídce. Mě se osvědčil dvojklik na soubor s příponou `.msstyles`.
 

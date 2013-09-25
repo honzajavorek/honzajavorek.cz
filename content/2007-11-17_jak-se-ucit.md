@@ -2,7 +2,7 @@ Title: Jak se učit
 Date: 2007-11-17 01:00:00
 Tags: management, škola, vut fit
 
-![obrázek](|filename|/images/19.jpg){: .left }Zkusím formulovat pár postřehů, **jak se učit**. Určitě to nebudou všechny mé zkušenosti a rozhodně nebudou fungovat zrovna vám, protože každý máme jiné mozkové buňky, každému to tělo funguje jinak, každá z nás má jinak nízkou inteligenci a všichni máme jinou ztrátu neuronů způsobenou konzumací, jak by chemici řekli, [OH](http://cs.wikipedia.org/wiki/Alkoholy).
+![obrázek]({filename}/images/19.jpg){: .left }Zkusím formulovat pár postřehů, **jak se učit**. Určitě to nebudou všechny mé zkušenosti a rozhodně nebudou fungovat zrovna vám, protože každý máme jiné mozkové buňky, každému to tělo funguje jinak, každá z nás má jinak nízkou inteligenci a všichni máme jinou ztrátu neuronů způsobenou konzumací, jak by chemici řekli, [OH](http://cs.wikipedia.org/wiki/Alkoholy).
 
 Mmmm… A pokud máte těch buněk v kebuli fakt málo, předešlý odstavec chtěl říct, že píšu **úplně zbytečný článek**, protože rady v něm zmíněné nebudou fungovat na nikoho jiného než mě :D .
 
@@ -38,7 +38,7 @@ Mmmm… A pokud máte těch buněk v kebuli fakt málo, předešlý odstavec c
 -   lze chvíli žít bez spánku
 -   **jen chvíli** ;)
 
-![obrázek](|filename|/images/20.jpg){: .right }Dobrá, teď vážně:
+![obrázek]({filename}/images/20.jpg){: .right }Dobrá, teď vážně:
 
 -   mám zkušenosti s dny, které mají 38 až přes 40 hodin, ale není to nic extra a výkon na zkoušce příliš neodpovídá obětovanému úsilí
 -   pokud se jede přes noc, **musí se spát** alespoň 2 hodiny, v nejsmrtelnějším minimu 1, jinak usnete na zkoušce/písemce (vlastní zkušenost)

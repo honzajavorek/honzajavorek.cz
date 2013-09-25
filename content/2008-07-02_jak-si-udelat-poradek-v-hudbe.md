@@ -4,7 +4,7 @@ Tags: software, ušima, windows
 
 *Upozornění pro slušné lidi: Psáno pod rouškou tmy.*
 
-Hudbu mám moc rád. Hudbu miluji, hudbou žiji. Jsem do hudby [blázen](|filename|2008-05-07_jedinecna-individua.md) :) . Jak ji skamarádit s počítačem? Mám několik desítek GB hudby. Mám v ní nepředstavitelný nepořádek. Co s tím?
+Hudbu mám moc rád. Hudbu miluji, hudbou žiji. Jsem do hudby [blázen]({filename}2008-05-07_jedinecna-individua.md) :) . Jak ji skamarádit s počítačem? Mám několik desítek GB hudby. Mám v ní nepředstavitelný nepořádek. Co s tím?
 
 ## Vyházejte všechno, co je kulaté, s dírou uprostřed a třpytí se
 

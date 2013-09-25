@@ -33,13 +33,13 @@ si to drncala *Elektrische Linen*. Nebylo potřeba složitých přechodů, zábr
 město bylo (samozřejmě opticky) čistější. V zimě se po zemi možná neválelo tolik rozježděného bahna. Koukněte třeba
 na [Mendlovo náměstí v roce 1904](https://www.facebook.com/photo.php?fbid=578690995487413&set=a.163881583635025.33540.151919454831238&type=1):
 
-![Mendlovo náměstí](|filename|/images/mendlak.jpg)
+![Mendlovo náměstí]({filename}/images/mendlak.jpg)
 
 Nebo [Skácelova ulice](https://www.facebook.com/photo.php?fbid=561567107199802&set=a.163881583635025.33540.151919454831238&type=1) a její [dnešní podoba z Google Street View](http://goo.gl/maps/8pu4l):
 
-![Skácelova ulice kdysi](|filename|/images/skacelka.jpg)
+![Skácelova ulice kdysi]({filename}/images/skacelka.jpg)
 
-![Skácelova ulice dnes](|filename|/images/skacelka2.png)
+![Skácelova ulice dnes]({filename}/images/skacelka2.png)
 
 **Samozřejmě si dávné časy romantizuji** (doporučuji [moc pěkný film](http://www.csfd.cz/film/274980-pulnoc-v-parizi/) na toto téma od W. Allena), ale i tak - fotka je fakt,
 který se těžko obchází. Ten rozdíl je příliš velký na to, aby na tom celém něco
@@ -126,7 +126,7 @@ bloumat po brněnských bulvárech a užívat si to, jako bych chodil po nějak�
 [Urbanismus Brno](http://www.urbanismusbrno.cz) - je to pěkný web o všem možném,
 co se v Brně staví, plánuje, o veřejném prostoru a tak.</small>
 
-<small>Zdrojem fotografie Mendlova náměstí je [AMB](www.archiv.brno.cz/), X.a 49. Zdrojem fotografie
-Skácelovy ulice je [AMB](www.archiv.brno.cz/), fond U22 - sbírka pohlednic, sign. IVCa-1. Obě
+<small>Zdrojem fotografie Mendlova náměstí je [AMB](http://www.archiv.brno.cz/), X.a 49. Zdrojem fotografie
+Skácelovy ulice je [AMB](http://www.archiv.brno.cz/), fond U22 - sbírka pohlednic, sign. IVCa-1. Obě
 jsou použity s písemným svolením. Autorská práva ke snímku z Google Street
 View má společnost [Google](http://www.google.com).</small>

@@ -36,6 +36,6 @@ Ani nová okna nemusí vypadat zrovna dvakrát k světu a popravdě, mě jejich
 
 Ochutnávka na závěr:
 
-![gnomish tango](|filename|/images/39.jpg)
+![gnomish tango]({filename}/images/39.jpg)
 
 Abych dodal na dokonalosti, nenechal jsem Windows pouze vypadat jako Linux a toho [tučňáka](http://www.cygwin.com/) jsem do nich taky nainstaloval. Jak k takovým oknům dospět si nechám na nějaké jiné odpoledne. Dnes jsem se chtěl jen podělit o radost ;) .

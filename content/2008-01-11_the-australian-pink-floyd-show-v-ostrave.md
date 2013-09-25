@@ -13,7 +13,7 @@ PinkFloyd.cz:
 
 Rád budu mezi nimi :) .
 
-![obrázek](|filename|/images/30.jpg)
+![obrázek]({filename}/images/30.jpg)
 
 Jak to bude vypadat u nás…
 

@@ -2,7 +2,7 @@ Title: Aplikace pro Android II
 Date: 2011-01-22 11:48:00
 Tags: android, mobil, software, tech
 
-Oproti [poslednímu shrnutí Androida](|filename|2010-05-14_aplikace-pro-android.md) se dost věcí změnilo. Protože mě okradli, pořizoval jsem nový telefon, černý **HTC Hero** (opět přes [bazar](http://bazar.androidforum.cz/) a dokonce levněji než ten původní HTC Dream). Líbí se mi, že je lepší než ten předtím, že na něm jde docela psát i bez HW klávesnice, že je prost sr… srandiček od operátorů, že má od HTC vylepšené prostředí (HTC Sense).
+Oproti [poslednímu shrnutí Androida]({filename}2010-05-14_aplikace-pro-android.md) se dost věcí změnilo. Protože mě okradli, pořizoval jsem nový telefon, černý **HTC Hero** (opět přes [bazar](http://bazar.androidforum.cz/) a dokonce levněji než ten původní HTC Dream). Líbí se mi, že je lepší než ten předtím, že na něm jde docela psát i bez HW klávesnice, že je prost sr… srandiček od operátorů, že má od HTC vylepšené prostředí (HTC Sense).
 
 ## Co je na pytel
 
