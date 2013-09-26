@@ -9,19 +9,6 @@ and [Jinja2][jinja].
 
 Under active development and maintenance. GitHub [pull requests][pull_requests] fixing typos in my articles are very welcome! :-)
 
-## Installation
-
-This installation guide is for Xubuntu Linux in a few simple steps. It's a remainder for me in case I would forget how to run the site generator on my computer.
-
-1. Clone the code. `git clone git@github.com:honzajavorek/honzajavorek.cz.git`
-2. `cd honzajavorek.cz`
-3. Create a new Python virtual environment. `virtualenv env --distribute`
-4. Activate the environment. `. env/bin/activate`
-5. In virtual environment, install all Pythonic requirements. `pip install -r requirements.txt`
-6. Install Sass. `apt-get install ruby rubygems && gem install sass`
-7. Put your API key into plain text file `google_static_maps_api_key`.
-8. Run it: `start.sh`
-
 ## License: CC BY-NC-SA
 
 (cc) 2007–2013 Jan Javorek &lt;<a
