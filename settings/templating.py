@@ -113,7 +113,7 @@ def has_images(html):
 
 
 def to_css_class(string):
-    return string.replace('-', '_').replace('/', '_')
+    return string.replace('_', '-').replace('/', '-')
 
 
 filters = {

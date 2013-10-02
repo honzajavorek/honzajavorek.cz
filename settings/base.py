@@ -9,7 +9,7 @@ from templating import filters, IMAGE_MAX_WIDTH  # NOQA
 
 
 AUTHOR = 'Honza Javorek'
-SITENAME = 'Honza Javorek'
+SITENAME = u'Javorové Lístky'
 
 
 # Timezone, language

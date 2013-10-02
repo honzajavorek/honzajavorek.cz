@@ -12,15 +12,15 @@
     </ul>
     {% include '_pagination.html' %}
 
-    <footer>
-        <p class="aside_links">
-            <a href="http://feeds.feedburner.com/{{ FEEDBURNER_SITENAME }}">články do čtečky</a>
+    <div class="footer">
+        <p class="aside-links">
+            <a href="{{ SITEURL }}/{{ FEED_ATOM }}">RSS článků</a>
             &middot;
-            <a href="http://{{ DISQUS_SITENAME }}.disqus.com/latest.rss">komentáře do čtečky</a>
+            <a href="http://{{ DISQUS_SITENAME }}.disqus.com/latest.rss">RSS komentářů</a>
         </p>
-        <p class="aside_links">
+        <p class="aside-links">
             <a href="{{ SITEURL }}/archives{{ URL_EXT }}">herbář</a>
         </p>
-    </footer>
+    </div>
 
-{% endblock content %}
+{% endblock %}

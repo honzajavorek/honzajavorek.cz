@@ -3,12 +3,30 @@ Template: home
 Url:
 Save_as: index.html
 
+<div markdown="1" class="profile">
+Jsem na volné noze, pro [Synopsi.TV](http://www.synopsi.tv/) programuji v Pythonu a pro vás mohu navrhovat či konzultovat REST API. Každý měsíc zvu v Brně na [Pyvo](http://lanyrd.com/series/brno-pyvo/), vytvořil jsem [python.cz](http://python.cz/), [Žít kino](http://zitkino.cz/) a [jiné milé drobnosti](https://github.com/honzajavorek). Mám blog [Javorové lístky](blog/), kam píšu, když zrovna nepíšu pro [Zdroják](http://www.zdrojak.cz/autori/honza-javorek).
+</div>
 
-Jmenuji se Honza Javorek a živím se jako [programátor na volné noze](http://www.linkedin.com/in/honzajavorek). Černobílý vypadám nějak takto:
+## Navrhnu vám REST API
 
-![Honza Javorek]({filename}/images/honza.jpg)
+Najměte si mě jako API konzultanta - řeknu vám, jak se vyvarovat nejčastějších chyb a jak správně řešit i ty nejzapeklitější překážky při návrhu. [Dlouhodobě se specializuji na tuto problematiku](http://cz.linkedin.com/in/honzajavorek).
 
-<div class="contact">
+## Python komunita a Pyvo
+
+Organizuji [setkání Python programátorů v Brně](http://lanyrd.com/series/brno-pyvo/) a odstartoval jsem jej i v Ostravě. Chcete potkat podobně smýšlející kolegy a popovídat si s nimi nad půllitrem? Chcete se něco malého přiučit? [Přijďte na Pyvo!](http://python.cz/#pyvo) Potřebujete oslovit Python komunitu, chcete Pyvo podpořit? Napište mi - poradím vám, domluvíme se.
+
+## Pojďte do kina
+
+[Žít kino](http://zitkino.cz/) je můj malý *open source hobby startup experiment*. Jeho cílem je vytvořit co nejúplnější a nejpřehlednější program brněnských kin. Chcete jej podpořit? [Vylepšete jej](https://github.com/honzajavorek/zitkino/), [olajkukte jej](https://www.facebook.com/zitkino), [sledujte jej](https://twitter.com/zitkino).
+
+## Tiráž
+
+<p><small>
+    <a href="http://twitter.com/honzajavorek">Twitter</a> &middot;
+    <a href="http://github.com/honzajavorek">GitHub</a> &middot;
+    <a href="http://facebook.com/honzajavorek">Facebook</a> &middot;
+    <a href="http://cz.linkedin.com/in/honzajavorek">LinkedIn</a>
+</small></p>
 <table>
     <tr>
         <th>Bydliště</th>
@@ -16,7 +34,7 @@ Jmenuji se Honza Javorek a živím se jako [programátor na volné noze](http://
     </tr>
     <tr>
         <th>Pošta</th>
-        <td><a href="mailto:jan.javorek&#64;gmail.com">jan.javorek&#64;<!---->gmail.com</a></td>
+        <td><a href="mailto:mail&#64;honzajavorek.cz">mail&#64;<!---->honzajavorek.cz</a></td>
     </tr>
     <tr>
         <th>Banka</th>
@@ -28,12 +46,3 @@ Jmenuji se Honza Javorek a živím se jako [programátor na volné noze](http://
     </tr>
 </table>
 
-<p><small>Sociální sítě seřazeny podle míry věnovaného času &rarr;
-<a href="http://twitter.com/honzajavorek">Twitter</a> &middot;
-<a href="http://github.com/honzajavorek">GitHub</a> &middot;
-<a href="http://facebook.com/honzajavorek">Facebook</a> &middot;
-<a href="http://cz.linkedin.com/in/honzajavorek">LinkedIn</a>
-</small></p>
-</div>
-
-Jsem na volné noze, programuji v Pythonu a zajímám se o API. Každý měsíc zvu v Brně na [Pyvo](http://lanyrd.com/series/brno-pyvo/). Vytvořil jsem [python.cz](http://python.cz), [Žít kino](http://zitkino.cz/), a [jiné milé drobnosti](https://github.com/honzajavorek/). Občas napíšu nějaký článek na [Zdroják.cz](http://www.zdrojak.cz/autori/honza-javorek/) nebo [přednáším](https://speakerdeck.com/u/honzajavorek/). Své zdlouhavé myšlenky občas upustím jako [Javorové lístky](blog/).

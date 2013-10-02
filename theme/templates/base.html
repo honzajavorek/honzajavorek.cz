@@ -5,21 +5,18 @@
         <meta charset="utf-8">
         <title>{% block title %}{{ SITENAME }} Honzy Javorka{% endblock title %}</title>
 
-        <script src="{{ SITEURL }}/theme/js/modernizr.custom.js"></script>
-
-        <!--[if !IE]> --><link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css?v=1" media="screen,projection,tv"><!-- <![endif]-->
-        <!--[if gte IE 7]><link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css?v=1" media="screen,projection,tv"><![endif]-->
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
 
         {% block feeds %}
-        <link rel="alternate" type="application/rss+xml" title="Javorové lístky – všechny články" href="http://feeds.feedburner.com/{{ FEEDBURNER_SITENAME }}">
-        <link rel="alternate" type="application/rss+xml" title="Javorové lístky – všechny komentáře" href="http://{{ DISQUS_SITENAME }}.disqus.com/latest.rss">
+            <link rel="alternate" type="application/rss+xml" title="Javorové lístky – všechny články" href="{{ SITEURL }}/{{ FEED_ATOM }}">
+            <link rel="alternate" type="application/rss+xml" title="Javorové lístky – všechny komentáře" href="http://{{ DISQUS_SITENAME }}.disqus.com/latest.rss">
         {% endblock feeds %}
 
         <link rel="shortcut icon" type="image/x-icon" href="{{ SITEURL }}/favicon.ico">
 
         {% block fb %}
-        <meta property="og:description" content="Blog Honzy Javorka.">
-        <meta property="og:image" content="{{ SITEURL }}/theme/images/logo.png">
+            <meta property="og:description" content="Blog Honzy Javorka.">
+            <meta property="og:image" content="{{ SITEURL }}/theme/images/logo.png">
         {% endblock fb %}
 
         <script>
@@ -36,11 +33,11 @@
     {% endblock %}
     </head>
     <body>
-        <div id="document" class="{% block class %}{% endblock %}">
+        <div class="container {% block class %}{% endblock %}">
             {% block header %}
-            <header>
-                <a href="{% block home_link %}{{ SITEURL }}/blog{% endblock %}">
-                <hgroup>
+            <div class="header">
+                <a href="{% block home_link %}{{ SITEURL }}/blog/{% endblock %}">
+                <div class="hgroup">
                     {% if self.title_h1() %}
                     <h1>
                         {% block title_h1 %}
@@ -53,9 +50,9 @@
                     {% if self.title_h2() %}
                        <h2>{% block title_h2 %}Honza Javorek{% endblock %}</h2>
                     {% endif %}
-                </hgroup>
+                </div>
                 </a>
-            </header>
+            </div>
             {% endblock %}
 
             <div class="content">
@@ -63,28 +60,15 @@
             </div>
         </div>
 
-        {% block search %}
-        {% if page is not defined or page.slug != '404' %}
-        <nav>
-            <h3>Hrábě</h3>
-            <form action="https://www.google.com/cse" class="cse-search-box">
-                <input type="hidden" name="cx" value="011917998094738623377:qowdxfpbkv4">
-                <input type="hidden" name="ie" value="UTF-8">
-                <input type="search" name="q" size="31" placeholder="Hledat">
-                <button type="submit" name="sa">Prohrabat listí</button>
-            </form>
-        </nav>
-        {% endif %}
+        {% block footer %}
+        <div class="footer">
+            <h3>Zahradník</h3>
+            <p>{{ 2007|copyright }} <a href="{{ SITEURL }}">Honza Javorek</a></p>
+        </div>
         {% endblock %}
 
-        <footer>
-            <h3>Zahradník</h3>
-            <address>{{ 2007|copyright }} <a href="{{ SITEURL }}">Honza Javorek</a></address>
-        </footer>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-        <script>window.jQuery || document.write('<script src="{{ SITEURL }}/theme/js/jquery-1.7.2.min.js">\x3C/script>')</script>
-        <script src="{{ SITEURL }}/theme/js/main.js?v=1"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+        <script src="{{ SITEURL }}/theme/js/main.js"></script>
         <script async src="//platform.twitter.com/widgets.js"></script>
         {% block script %}{% endblock %}
     </body>
