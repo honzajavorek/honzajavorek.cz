@@ -7,9 +7,11 @@ from datetime import date, datetime, timedelta
 
 from PIL import Image
 
+from .typography import typography
+
 
 IMAGE_MAX_WIDTH = 650
-PROJECT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+PROJECT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
 
 
 def to_datetime(dt):
@@ -126,4 +128,5 @@ filters = {
     'tojson': tojson,
     'has_images': has_images,
     'to_css_class': to_css_class,
+    'typography': typography,
 }

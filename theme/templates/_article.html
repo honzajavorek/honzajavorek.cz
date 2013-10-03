@@ -17,7 +17,7 @@
             {% set article_content = article.content %}
         {% endif %}
 
-        {{ article_content|figure|code }}
+        {{ article_content|figure|code|typography }}
     </div>
 
     {% if not use_summary %}
