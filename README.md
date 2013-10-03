@@ -12,7 +12,7 @@ Aktivně vyvíjeno a udržováno. Vítám opravy překlepů a hrubek v článcí
 ## Licence: CC BY-NC-SA
 
 (cc) 2007–2013 Jan Javorek &lt;<a
-href="mailto:jan.javorek&#64;gmail.com">jan.javorek&#64;gmail.com</a>&gt;
+href="mailto:mail&#64;honzajavorek.cz">mail&#64;honzajavorek.cz</a>&gt;
 
 Toto dílo podléhá licenci [Creative Commons Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 3.0 Česko](https://creativecommons.org/licenses/by-nc-sa/3.0/cz/).
 
