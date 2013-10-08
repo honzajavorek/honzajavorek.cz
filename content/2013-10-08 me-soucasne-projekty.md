@@ -1,5 +1,5 @@
 Title: Mé současné projekty
-Date: 2013-10-03 17:54:55
+Date: 2013-10-08 10:54:55
 
 Od mého lednového [restartu]({filename}/2012-11-04_restart.md) jsem prošel vícero projekty a mnohdy jsem z týdne na týden odpovídal na otázku *na čem teď vlastně děláš?* pokaždé jinak. Teď se situace (snad!) na chvíli opět ustálila, takže jsem se rozhodl, že zde sepíšu takové menší shrnutí.
 
@@ -13,19 +13,31 @@ Od mého lednového [restartu]({filename}/2012-11-04_restart.md) jsem prošel v�
 
 **Od září pracuji pro [Synopsi.TV](http://synopsi.tv/)**, kam mě odlovil [Rasťo Turek](http://turek.co/). Kdo neznáte, jedná se o (víceméně) bratislavský startup se světovými ambicemi, jehož hlavním produktem je **doporučování filmů na míru uživateli**. To znamená, že si jednotlivá doporučení necucá z prstu, ani se neřídí vkusem vašich přátel, hodnocením kritiků (= [FFFilm](http://fffilm.name/)), nebo názorem masy (= hodnocení na ČSFD) - řídí se tím, co se v minulosti líbilo konkrétně vám. Jste-li tedy fanouškem béčkových hororů, Synopsi.TV by to mělo poznat a do budoucna vám je nabízet, ať už si o nich vaši přátelé, obyvatelé zeměkoule, či kritici myslí cokoliv.
 
+![Synopsi.TV]({filename}/images/stv.jpg)
+
 Byznys model je zatím v tom, že se dá takový *reccomendation system* poskytovat partnerům - podobně jako kdysi [jyxo.cz](https://cs.wikipedia.org/wiki/Jyxo.cz) vyvíjelo a licencovalo vyhledávač.
 
 Ještě se v nové práci stále rozkoukávám, ale na práci mám **vylepšování [API](https://developers.synopsi.tv/)**.
 
 ## API konzultant
 
-Na volné noze se zabývám **navrhováním a konzultováním REST API**. V této souvislosti jsem např. navrhoval podobu **RESTové obálky kolem [RÚIAN](http://vdp.cuzk.cz/)** a například s API **pomáhám [Videoflotu](http://www.videoflot.com/)**, virtuálnímu tržišti pro videotvůrce (další perfektní brněnský startup, [zrovna spouštějí novou verzi](https://www.facebook.com/events/584749094919023/591573977569868/)).
+Na volné noze se zabývám **navrhováním a konzultováním REST API**. V této souvislosti jsem např. navrhoval podobu **RESTové obálky kolem [RÚIAN](http://vdp.cuzk.cz/)** a například s API **pomáhám [Videoflotu](http://www.videoflot.com/)**, dalšímu perfektnímu brněnskému startupu.
 
 Pokud si s API nevíte rady, potřebujete vyřešit zapeklité otázky ohledně návrhu, *best practices*, apod., rád vám pomohu - **kontaktujte mě**. Pokud jste nějaký neziskový projekt a já usoudím, že pracujete pro dobrou věc, nabídnu vám konzultace *pro bono*. API vám však nenaprogramuji, v tomto ohledu jsem plně vytížen.
+
+### Videoflot
+
+[Videoflot](http://www.videoflot.com/) je **tržiště pro videotvůrce**. Pokud potřebujete úvodní video pro svůj startup nebo jste kapela potřebujete klip, na Videoflotu si zdarma zadáte poptávku a pak už jen čekáte, kdy se vám ozvou ti praví lidé. Pro tvůrce je to zase platforma k sdružování v rámci komunity, třeba pro různé neziskové projekty. Zrovna s velkou slávou [spouští novou verzi](https://www.facebook.com/events/584749094919023/591573977569868/), tak se na tento pěkný počin mrkněte.
+
+Mimochodem, tým za Videoflotem je **moc příjemná parta lidí**. Jejich kapitán David "Havran" Spáčil je navíc velice inspirativní osobou (viz [rozhovor](http://www.babelguide.com/case-studies/david-spacil-from-studying-camels-to-video-community-site-in-chile), který fakt stojí za přečtení), takže je vždycky radost s nimi strávit byť i jen chvilku času. Pokud se k nim chcete přidat a pomoci jim, neváhejte.
+
+![Videoflot]({filename}/images/videoflot.jpg)
 
 ## Hobby projekty
 
 [Žít kino](http://zitkino.cz/) je můj malý *open source hobby startup experiment*. Jeho cílem je vytvořit **co nejúplnější a nejpřehlednější program brněnských kin**. Chcete jej podpořit? [Vylepšete jej](https://github.com/honzajavorek/zitkino/), [olajkukte jej](https://www.facebook.com/zitkino), [sledujte jej](https://twitter.com/zitkino). Na jeho vylepšení dokonce v Brně proběhl [první Python sprint](https://www.facebook.com/events/316558888489555/).
+
+![Žít kino]({filename}/images/zitkino.png)
 
 No a potom pár knihovniček na [GitHubu](https://github.com/honzajavorek/):
 
