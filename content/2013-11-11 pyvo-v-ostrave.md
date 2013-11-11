@@ -11,6 +11,8 @@ Půlku života jsem prožil v Karviné, městě pár kilometrů na východ od Os
 
 Ostrava je navíc opravdu velkou spádovou oblastí. Například v mnoha českých městech by další Pyvo neuspělo, protože jsou příliš blízko Praze, kde už sraz je a lidé se tam sjedou spíš, než aby podporovali malou lokální komunitu (na to nám zřejmě trpí i Plzeň). Ostrava ale nespadá nikam k Brnu. Ostrava je sama o sobě **centrem velkého území, kam se mají lidé sjíždět**.
 
+![Uvítací slajd]({filename}/images/ostrava-front.jpg)
+
 Nakoplo mě pár příspěvků na [Pyonýrech](https://www.facebook.com/groups/pyonieri/), naší Facebookové skupině, kde se čas od času nějaký Ostravak sháněl po místním srazu. Chtěl jsem mít mapku na [python.cz](http://python.cz/#pyvo) rovnoměrně rozloženou, chtěl jsem mít možnost napsat, že i lidé ze Severní Moravy mají kam zajet na sraz. Zkusil jsem namotivovat pár místních, aby se do organizace vlastního setkání pustili, ale ani když jsem slíbil, že do Ostravy přijedu, předám know-how a se vším "vlastnoručně" pomůžu, nic se stále nekonalo.
 
 Rozhodl jsem se tedy, že zkusím ještě silnější impuls - **zorganizovat Pyvo v Ostravě sám**. Zlákal jsem na tento bláznivý nápad i Petra Viktorina, s nímž pořádám brněnské Pyvo a společně jsme, zaštítěni [Pyvcem](http://pyvec.org/), domluvili určitou podporu v [RedHatu](http://cz.redhat.com/). Pak už to bylo jen na nás - zajet do Ostravy, vybrat vhodné místo, zarezervovat jej a zpropagovat událost. Řekli jsme si, že zkusíme Pyvo v Ostravě párkrát zorganizovat sami a uvidíme, jestli se místní chytí. Dále jsme se v názorech rozcházeli - já jsem řekl, že pokud se nechytí a Ostravaci si jej nepřeberou, po třech pokusech se na to vykašlu, protože dvě Pyva za měsíc by dlouhodobě organizoval jenom šílenec. Petr je zřejmě šílenec, takže zastává názor, že třikrát je málo a i kdyby to hned nepadlo na úrodnou půdu, musí se tomu dát delší šance.
@@ -27,6 +29,8 @@ Celé zorganizování srazu vypadalo nějak takto:
 - **Přijeli jsme** na místo včas, objednali si pivo, těsně před zahájením jsem dotvořil "uvítací slajd" a udělali jsme malé zahájení ve stylu stand-up comedy, aby to jakože nějak začalo.
 - Zjistil jsem, že jsem nevzal kameru, takže jsme přednášky *punkově* **natočili aspoň na můj foťák**.
 - **Povídali jsme si** s lidma.
+
+![Přednáška]({filename}/images/ostrava-back.jpg)
 
 No, vlastně to není úplný seznam, ale chtěl jsem ukázat, že **ty hlavní věci byly poměrně jednoduché** a místního člověka by nic nestály. Ve skutečnosti jsem zkoušel na koleně rozjet takovou menší *propagační kampaň* a pohrával jsem si s efektem překvapení, takže:
 
@@ -54,6 +58,10 @@ Přátelé z *regionu*, jestli čtete tento článek a uvažujete o tom, že Pyv
 
 Vše ostatní je bonus. Můžete vzít foťák a zkusit přednášky natočit, můžete si vymyslet cokoliv dalšího, ale není to nic, bez čeho by sraz nebyl. Můžete v budoucnu [objet okolní srazy](http://www.coderswithoutborders.eu/) a podívat se, jak to žije jinde, načerpat inspiraci, získat další kontakty. Můžete si udělat [vlastní knihovnu](https://github.com/rubyslava/bookshelf). Můžete si [upéct dort](https://www.facebook.com/photo.php?fbid=507496402645746&set=a.507496165979103.1073741825.358777047517683). Je to na vás! Vtiskněte Ostravskému Pyvu vlastní tvář, **propůjčete mu kousek své duše, a ono se vám odmění** - spoustou nových přátel, kolegů, nových možností a úžasných zážitků.
 
+![Diskuse]({filename}/images/ostrava-talk.jpg)
+
 Takže? **Hurá do toho!** Napište nám, my vás přidáme [do Trella, kam si píšeme úkoly](https://trello.com/b/Mi3dSO22/ostrava-rutina-ka-deho-srazu), a je to.
 
 A **proč má vůbec takovéto srazy smysl konat?** To si přečtěte v [článku Jirky Urbáška](http://blog.urbasek.cz/proc-poradam-srazy-vyvojaru/), pořadatele [iOSOVA](http://iosova.cz/). Sám bych to lépe nenapsal. Uvidíte, že i dobrovolným organizátorům z pořádání srazů plynou podstatné výhody.
+
+<small>Fotky jsou od [Pavla Duroně](https://www.facebook.com/pavlozs), díky!</small>
