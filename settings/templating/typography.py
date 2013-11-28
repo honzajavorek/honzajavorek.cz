@@ -83,7 +83,7 @@ typo_patterns = (
 )
 
 
-def typography(html):
+def _typography(html):
     html = lxml.html.fromstring(html)
 
     for el in html.iter():
@@ -99,3 +99,7 @@ def typography(html):
                 el.tail = pattern[0].sub(pattern[1], unicode(el.tail))
 
     return lxml.html.tostring(html, encoding='utf-8').decode('utf-8')
+
+
+def typography(html):
+    return html

@@ -70,9 +70,9 @@ def figure(html):
 
 
 def code(html):
-    html = re.sub(r'<div[^\>]*class="codehilite"[^\>]*>\s*<pre[^\>]*>',
+    html = re.sub(r'<div[^\>]*class="highlight"[^\>]*>\s*<pre[^\>]*>',
                   r'<pre class="highlight"><code>', html)
-    html = re.sub(r'</pre></div>',
+    html = re.sub(r'</pre>\s*</div>',
                   r'</code></pre>', html)
     return html
 
