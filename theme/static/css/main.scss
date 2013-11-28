@@ -61,6 +61,7 @@ $color_aside_text: #777;
 $color_almost_invisible_text: #EEE;
 $color_link: #779600;
 $color_highlight: #FFFBAB;
+$color_inline_code: #EEE;
 
 body, html {
     color: $color_text;
@@ -199,8 +200,6 @@ img, a img { border: none; }
 figure { display: block; zoom: 1; text-align: center; img, iframe { margin: 1.5em auto; } }
 .content .twitter-tweet-rendered { margin: 1.5em auto !important; }
 
-pre { margin-bottom: 1.5em; }
-
 p { margin: 0.3em 0 1em 0; }
 p.poem { text-align: center; margin: 3em 0; }
 
@@ -212,16 +211,24 @@ blockquote {
 }
 
 small { font-size: 80%; }
-
-code, sample, kbd, tt { @extend .highlight; padding: 0.2em 0.4em 0.1em 0.4em; }
-pre, code, kbd, samp, tt { font-family: "Monospace font Firefox hack", Consolas, monospace; line-height: 120%; }
 dfn, em, cite, var { font-style: italic; }
+
+tt, kbd, code, sample, samp {
+    background: $color_inline_code;
+    color: $color_text_emph;
+    padding: 0.2em 0.4em 0.1em 0.4em;
+    margin: 0 0.2em;
+}
+
+pre, tt, kbd, code, sample, samp {
+    font-family: "Monospace font Firefox hack", Consolas, monospace; line-height: 120%;
+}
 
 pre {
     margin: 1em 0; padding: 1em;
     overflow: auto;
 
-    code, sample, kbd, tt { padding: 0; }
+    tt, kbd, code, sample, samp { background: none; color: inherit; padding: 0; margin: 0; }
 }
 
 del { text-decoration: line-through; }
