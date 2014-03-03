@@ -1,5 +1,5 @@
 Title: Paperwhite
-Date: 2014-01-20 14:03:12
+Date: ????-01-20 14:03:12
 
 Dostal jsem kdysi na narozeniny Kindle. Byl to klasický Kindle, jeden z těch prvních, s klávesnicí. Myslel jsem si, že mi to bude k ničemu, ale velice rychle jsem se na něm naučil číst všechno možné - od knih po delší internetové články. Kindle je o dost přenosnější než kniha a můžete v něm mít snadno rozečtených více věcí najednou - tedy můžete si vybrat podle délky vaší dlouhé chvíle nebo nálady a začíst se přesně do toho, do čeho chcete. Jestliže jsem po mnoha pokusech usoudil, že "chytrý" dotykový telefon mi víc bere než dává, tak s Kindlem to bylo přesně naopak.
 
