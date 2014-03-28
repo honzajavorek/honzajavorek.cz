@@ -6,8 +6,9 @@ import re
 from datetime import datetime, timedelta
 
 import unicodedata
-from fabric.api import *  # NOQA
 from fabric.colors import red, green, yellow
+from fabric.api import (puts, abort, warn, task, lcd, local, execute,
+                        settings, hide)
 
 
 # Paths
