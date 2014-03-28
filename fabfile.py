@@ -126,7 +126,7 @@ def deploy():
 def publish():
     """Saves changes in articles."""
     with lcd(posts_dir):
-        local('git add -A')
+        local('git add -A .')
         with settings(hide('warnings'), warn_only=True):
             local('git commit -m "Publishing."')
         local('git push origin master')
@@ -145,7 +145,7 @@ def new(title=None):
     slug = slugify(title)
     pubdate = datetime.now() + timedelta(hours=2)
 
-    filename = '{0} {1}.md'.format(pubdate.strftime('%Y-%m-%d'), slug)
+    filename = '{0}_{1}.md'.format(pubdate.strftime('%Y-%m-%d'), slug)
     contents = u'Title: {0}\nDate: {1}\n\n'.format(
         title,
         pubdate.strftime('%Y-%m-%d %H:%M:%S'))
