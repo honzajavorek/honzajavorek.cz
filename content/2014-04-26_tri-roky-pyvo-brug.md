@@ -1,6 +1,8 @@
 Title: Tři roky Pyvo + BRUG
 Date: 2014-04-26 14:57:17
 
+*Varování: Tento článek obsahuje mnohokrát slovo radost.*
+
 Prý už jsem dlouho nic nenapsal na blog. Teď mě napadlo, co bych sem mohl napsat, ale nevím, jestli to není nějaká sebechvála nebo něco. Jenže z toho **mám takovou radost, že se prostě neudržím**. Berte to třeba jako pozvánku na další [Pyvo + BRUG](http://lanyrd.com/series/brno-pyvo/).
 
 Ve čtvrtek proběhlo další brněnské Pyvo + BRUG, tentokrát s podtitulem "překladačové". Překladače a vše kolem mám rád, takže jsem to téma měl v záloze už dlouho a těšil jsem se na něj, ale **myslel jsem si, že nikoho dalšího to zase až tak moc nezajímá**, tak jsem se do toho nehrnul. Teď v dubnu jsem se odvážil a přichystali jsme to. Napsal jsem vytipovaným speakerům a kupodivu měli nakonec všichni čas a odvahu dorazit, byť dva byli až z nějaké větší vesnice u Dobrovíze nebo odkud... Organizace proběhla celkem bez zaváhání - jediné problémy, které jsme řešili, byly čeština versus angličtina a natáčení videa, což už je takový náš folklór, takže to neberu jako nic vážného. Na programu byly tři přednášky a jeden lightning talk:
