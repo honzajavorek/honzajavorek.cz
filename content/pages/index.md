@@ -4,7 +4,7 @@ Url:
 Save_as: index.html
 
 <div markdown="1" class="profile">
-Jsem na volné noze, pro [Synopsi.TV](http://www.synopsi.tv/) programuji v Pythonu a pro vás mohu navrhovat či konzultovat REST API. Každý měsíc zvu v Brně na [Pyvo](http://lanyrd.com/series/brno-pyvo/), vytvořil jsem [python.cz](http://python.cz/), [Žít kino](http://zitkino.cz/) a [jiné milé drobnosti](https://github.com/honzajavorek). Mám blog [Javorové lístky](blog/), kam píšu, když zrovna nepíšu pro [Zdroják](http://www.zdrojak.cz/autori/honza-javorek).
+Fascinují mě API, takže se snažím psát jejich dějiny v [Apiary.io](http://apiary.io/). Věřím v [Zen of Python](http://legacy.python.org/dev/peps/pep-0020/), což se projevuje hlavně tím, že každý měsíc zvu v Brně na seanci zvanou [Pyvo](http://lanyrd.com/series/brno-pyvo/). Vytvořil jsem [python.cz](http://python.cz/), [Žít kino](http://zitkino.cz/) a [jiné milé drobnosti](https://github.com/honzajavorek). Mám blog [Javorové lístky](blog/), kam píšu, když zrovna nepíšu pro [Zdroják](http://www.zdrojak.cz/autori/honza-javorek).
 </div>
 
 ## Navrhnu vám REST API
