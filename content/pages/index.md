@@ -4,20 +4,16 @@ Url:
 Save_as: index.html
 
 <div markdown="1" class="profile">
-Fascinují mě API, takže se snažím tvořit jejich dějiny v [Apiary.io](http://apiary.io/). Věřím v [Zen of Python](http://legacy.python.org/dev/peps/pep-0020/), což se projevuje hlavně tím, že každý měsíc zvu v Brně na seanci zvanou [Pyvo](http://lanyrd.com/series/brno-pyvo/). Vytvořil jsem [python.cz](http://python.cz/), [Žít kino](http://zitkino.cz/) a [jiné milé drobnosti](https://github.com/honzajavorek). Mám blog [Javorové lístky](blog/), kam píšu, když zrovna nepíšu pro [Zdroják](http://www.zdrojak.cz/autori/honza-javorek).
+Přispívám v [Apiary](http://apiary.io) k tomu, aby se stal [API Blueprint](http://apiblueprint.org/) nejlepším formátem pro popis webových API. Pomáhám v ČR [propagovat jazyk Python](http://honzajavorek.cz/blog/proc-python.html). Mám blog [Javorové lístky](blog/), kam píšu, když zrovna nepíšu pro [Zdroják](http://www.zdrojak.cz/autori/honza-javorek).
 </div>
 
-## Navrhnu vám REST API
+## Konzultace webových API
 
 Najměte si mě jako API konzultanta - řeknu vám, jak se vyvarovat nejčastějších chyb a jak správně řešit i ty nejzapeklitější překážky při návrhu. [Dlouhodobě se specializuji na tuto problematiku](http://cz.linkedin.com/in/honzajavorek).
 
 ## Python komunita a Pyvo
 
 Organizuji [setkání Python programátorů v Brně](http://lanyrd.com/series/brno-pyvo/) a nastartoval jsem jej i v Ostravě. Chcete potkat podobně smýšlející kolegy a popovídat si s nimi nad půllitrem? Chcete se něco malého přiučit? [Přijďte na Pyvo!](http://python.cz/#pyvo) Potřebujete oslovit Python komunitu, chcete Pyvo podpořit? Napište mi - poradím vám, domluvíme se.
-
-## Pojďte do kina
-
-[Žít kino](http://zitkino.cz/) je můj malý *open source hobby startup experiment*. Jeho cílem je vytvořit co nejúplnější a nejpřehlednější program brněnských kin. Chcete jej podpořit? [Vylepšete jej](https://github.com/honzajavorek/zitkino/), [olajkukte jej](https://www.facebook.com/zitkino), [sledujte jej](https://twitter.com/zitkino).
 
 ## Tiráž
 
