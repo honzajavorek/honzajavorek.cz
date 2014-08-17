@@ -13,7 +13,7 @@ Najměte si mě jako API konzultanta - řeknu vám, jak se vyvarovat nejčastěj
 
 ## Python komunita a Pyvo
 
-Organizuji [setkání Python programátorů v Brně](http://lanyrd.com/series/brno-pyvo/) a startuji jej i v Ostravě. Chcete potkat podobně smýšlející kolegy a popovídat si s nimi nad půllitrem? Chcete se něco malého přiučit? [Přijďte na Pyvo!](http://python.cz/#pyvo) Potřebujete oslovit Python komunitu, chcete Pyvo podpořit? Napište mi - poradím vám, domluvíme se.
+Organizuji [setkání Python programátorů v Brně](http://lanyrd.com/series/brno-pyvo/) a nastartoval jsem jej i v Ostravě. Chcete potkat podobně smýšlející kolegy a popovídat si s nimi nad půllitrem? Chcete se něco malého přiučit? [Přijďte na Pyvo!](http://python.cz/#pyvo) Potřebujete oslovit Python komunitu, chcete Pyvo podpořit? Napište mi - poradím vám, domluvíme se.
 
 ## Pojďte do kina
 
@@ -30,7 +30,7 @@ Organizuji [setkání Python programátorů v Brně](http://lanyrd.com/series/br
 <table>
     <tr>
         <th>Bydliště</th>
-        <td><a href="http://www.zitbrno.cz/">Brno</a>&ndash;<a href="https://cs.wikipedia.org/wiki/Brno-%C5%BDabov%C5%99esky">Žabovřesky</a></td>
+        <td>Praha&ndash;Žižkov</td>
     </tr>
     <tr>
         <th>Pošta</th>
