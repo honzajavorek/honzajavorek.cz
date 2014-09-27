@@ -5,8 +5,6 @@ Save_as: index.html
 
 <div markdown="1" class="profile">
 Přispívám v [Apiary](http://apiary.io) k tomu, aby se stal [API Blueprint](http://apiblueprint.org/) nejlepším formátem pro popis webových API. Pomáhám v ČR [propagovat jazyk Python](http://honzajavorek.cz/blog/proc-python.html). Mám blog [Javorové lístky](blog/), kam píšu, když zrovna nepíšu pro [Zdroják](http://www.zdrojak.cz/autori/honza-javorek).
-
-<br><br><!-- this is super-ugly, but quick :] -->
 </div>
 
 ## Konzultace webových API
