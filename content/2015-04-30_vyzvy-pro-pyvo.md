@@ -3,6 +3,8 @@ Date: 2015-04-30 16:55:11
 
 Dnes v Brně slavíme **čtyři roky** od založení místního srazu příznivců programovacího jazyka Python. Srazu, který nazýváme Pyvo. Zábavné příhody o tom, jak k založení došlo jsem kolem sebe trousil celé čtyři roky, takže se v rámci tohoto článku z hlediska minulosti omezím spíš na bilancování toho, co se nám povedlo, a taky něco o cestě, kterou si myslím, že by mělo Pyvo kráčet do budoucna.
 
+![Pyvodort]({filename}/images/pyvodort.jpg)
+
 ## Co se povedlo
 
 V Brně se za čtyři roky rozhodně podařilo **vytvořit pravidelný sraz**, který sdružuje místní komunitu Pythonistů a Rubystů. To samo o sobě není tak snadný úkol jak se zdá a je možná vlastně i dílem náhody, že zrovna nám v Brně se to povedlo. Myslel jsem si, že se tento úspěch dá snadno replikovat, ale zpětně vidím, že to není tak jednoduché a za každým funkčním srazem je ohromná spousta práce.
