@@ -9,7 +9,7 @@ Dnes v Brně slavíme **čtyři roky** od založení místního srazu příznivc
 
 ## Co se povedlo
 
-V Brně se za čtyři roky rozhodně podařilo **vytvořit pravidelný sraz**, který sdružuje místní komunitu Pythonistů a Rubystů. To samo o sobě není tak snadný úkol jak se zdá a je možná vlastně i dílem náhody, že zrovna nám v Brně se to povedlo. Myslel jsem si, že se tento úspěch dá snadno replikovat, ale zpětně vidím, že to není tak jednoduché a za každým funkčním srazem je ohromná spousta práce.
+V Brně se za čtyři roky rozhodně podařilo **vytvořit pravidelný sraz**, který sdružuje místní komunitu Pythonistů (a Rubystů). To samo o sobě není tak snadný úkol jak se zdá a je možná vlastně i dílem náhody, že zrovna nám v Brně se to povedlo. Myslel jsem si, že se tento úspěch dá snadno replikovat, ale zpětně vidím, že to není tak jednoduché a za každým funkčním srazem je ohromná spousta práce.
 
 Dokázali jsme se **sjednotit napříč republikou** a pojmenovat všechny Python srazy v ČR i SR názvem Pyvo. V ČR jsme přetavili existující pražskou neziskovku [Pyvec](http://pyvec.org/) založenou pro podporu několika Django projektů v celostátní platformu, která má pomáhat Python komunitě obecně a to bez ohledu na město. V současnosti se dokonce snažíme o přidružení k [PSF](https://www.python.org/psf/).
 
