@@ -19,7 +19,7 @@ Přestože byly Pyva, na které přišlo sotva pět lidí, dokázali jsme pozdě
 
 Rozjeli jsme **nahrávání přednášek** a relativně zautomatizovali jejich pořizování pro naše potřeby. Ještě se nám je nedaří stejně automatizovaně nahrávat na internet, ale to je už ten snadněji řešitelný problém (ha ha!).
 
-S tím, jak se ze svátečních návštěv mezi srazy v jednotlivých městech staly návštěvy pravidelné, odhodlal se [Petr Viktorin](http://encukou.cz/) i ke zřízení **[sdílené knihovničky](https://github.com/pyvec/bookshelf/)**, díky které si mohou lidé napříč republikou půjčovat knihy o Pythonu a příbuzných technologiích. Takovou službu [mají už delší dobu v Bratislavě](https://github.com/rubyslava/bookshelf), ale my to máme těžší o to, že máme srazy tři, každý v jiném koutě republiky.
+S tím, jak se ze svátečních návštěv mezi srazy v jednotlivých městech staly návštěvy pravidelné, odhodlal se [Petr Viktorin](http://encukou.cz/) i ke zřízení **[sdílené knihovničky](https://github.com/pyvec/bookshelf/)**, díky které si mohou lidé napříč ČR půjčovat knihy o Pythonu a příbuzných technologiích. Takovou službu [mají už delší dobu v Bratislavě](https://github.com/rubyslava/bookshelf), ale my to máme těžší o to, že máme srazy tři, každý v jiném koutě republiky.
 
 V neposlední řadě je nutno i napsat, že díky komunitě kolem srazů (ale nejen díky ní, samozřejmě) odstartovaly brněnské [PyLadies](http://python.cz/pyladies) a nejnověji také [Django Girls](http://www.djangogirls.org/) - v [Brně](http://www.djangogirls.org/brno/) a brzy i v [Praze](http://www.djangogirls.org/prague/).
 
@@ -27,7 +27,7 @@ V neposlední řadě je nutno i napsat, že díky komunitě kolem srazů (ale ne
 
 Jestliže výzvou v prvních letech existence bylo hlavně *existovat* a zajistit základní podmínky k pořádání srazu, jako salonek, návštěvníky a projektor, později už se objevily zajímavější otázky, na které bylo potřeba odpovědět.
 
-Řešili jsme například **rovnováha mezi vážnější, přednáškovou částí, a diskusními úseky, v nichž se lidi volně baví**. Cílem bylo přinášet nové informace, ale také neunavovat, spojovat komunitu networkingem, dát prostor i méně zkušeným speakerům. Z čistě tématických Pyv s předem připravovanou "dramaturgií" (pozvaní konkrétní přednášející) jsme zkusili přejít na volnější formáty, lightning talky a diskusní témata. Pozvánky pro celebrity jsme si nechali na takzvaná "speciální vydání", která byla jen jednou za čas.
+Řešili jsme například **rovnováhu mezi vážnější, přednáškovou částí, a diskusními úseky, v nichž se lidi volně baví**. Cílem bylo přinášet nové informace, ale také neunavovat, spojovat komunitu networkingem, dát prostor i méně zkušeným speakerům. Z čistě tématických Pyv s předem připravovanou "dramaturgií" (pozvaní konkrétní přednášející) jsme zkusili přejít na volnější formáty, lightning talky a diskusní témata. Pozvánky pro celebrity jsme si nechali na takzvaná "speciální vydání", která byla jen jednou za čas.
 
 Co se nám, myslím si, také podařilo tak nějak vybalancovat je **počet účastníků**. Uvědomili jsme si, že nechceme z Pyva dělat minikonferenci a maximum kolem 40 lidí není závadou, ale dobrou vlastností, protože se zachovává efekt malého kolektivu.
 
@@ -62,7 +62,7 @@ Nedokážeme-li najít v tomto rovnováhu, pak je otázkou, jaký účel naše s
 
 Popravdě, mnoha přednáškám na Pyvu nerozumím ani já sám. Jsou buď tak vzdálené tématu, kterým se zabývám, nebo jdou tak hluboko, že informace z nich prostě vůbec nevyužiju. Nevím, kolik lidí na srazu využije pouštění padesáti instancí Dockeru v pěti paralelních cloudech, ale tipnu si, že zhruba nula.
 
-Opět nehlásám, abychom se teď sebrali a začali dělat přednášky o tom, jak v Pythonu přiřazovat hodnoty do slovníku. Cílem by měl být zase nějaký vyvážený přístup. V zásadě teď s tématy přednášek na našich srazech diskriminujeme začátečníky na úkor starých mazáků, akorát že ti začátečníci se neozvou, jelikož kvůli tomu vlastně vůbec nepřijdou. Staří mazáci jsou navíc taky iluze, protože jak říkám - ani je ty přednášky v důsledku nebaví, protože mnohdy vůbec nejsou o tom, co by je zajímalo. Mazáci pak jen vyčkávají kdy že už to probůh skončí, jen aby se mohli pobavit s kamarády.
+Opět nehlásám, abychom se teď sebrali a začali dělat přednášky o tom, jak v Pythonu přiřazovat hodnoty do slovníku. Cílem by měl být zase nějaký vyvážený přístup. V zásadě teď s tématy přednášek na našich srazech diskriminujeme začátečníky na úkor starých mazáků, akorát že ti začátečníci se neozvou, jelikož kvůli tomu vlastně vůbec nepřijdou. Staří mazáci jsou navíc taky iluze, protože jak říkám - ani je ty přednášky v důsledku nebaví, jelikož mnohdy vůbec nejsou o tom, co by je zajímalo. Mazáci pak jen vyčkávají kdy že už to probůh skončí, jen aby se mohli pobavit s kamarády.
 
 Můj návrh je, abychom začali experimentovat s mixem přednášek - ze začátku večera zkoušet něco přístupné pro všechny (a mazáci možná osvěží základy, nebo ve svých základech zahladí mezery), později nasadit tvrdší kalibry. Opět je tu prostor pro to, aby ten, kdo na tvrdší kalibr není, třeba po první přednášce odešel. V takovém systému je prostor i pro to, aby se realizovali lidé méně zkušení v Pythonu a dali si třeba přednášku s lehčím tématem, kterému rozumí dobře.
 
