@@ -31,9 +31,9 @@ Když mi můj poslední smartphone ukradli během spánku v brněnském rozjezdu
 
 ## Proč tablet?
 
-Už jsem to trochu nastínil výše, ale hlavně proto, že jsem viděl jeho využití pro cestování. Ta další využití jsem si spíš vysnil a taky to podle toho dopadlo - moc se nepotvrdilo, že by mi tablet výrazně pomáhal ještě v něčem dalším. Taky jsem chtěl, abych mohl mobil ještě víc osekat čistě na zařízaní, které jen volá, posílá SMS a umí na zem padat tak, že se nerozbije.
+Už jsem to trochu nastínil výše, ale hlavně proto, že jsem viděl jeho využití pro cestování. Ta další využití jsem si spíš vysnil a taky to podle toho dopadlo - moc se nepotvrdilo, že by mi tablet výrazně pomáhal ještě v něčem dalším. Taky jsem chtěl, abych mohl mobil ještě víc osekat čistě na zařízení, které jen volá, posílá SMS a umí na zem padat tak, že se nerozbije.
 
-Zpětně mi přijde, že na cestování je to fajn zařízení, ale mohlo by vydržet déle, protože při aktivním používání člověk hledá zásuvku už po půl dni a to mě fakt prudí. V tomhle se mi dost líbí Mac, u kterého si často ani nevšimnu, že jej v zásuvce nemám a zjistím to až po celém pracovním dni. Problém hledání zásuvky u mě Mac úplně vytěsnil a je to skvělý pocit. Tohle je ten opravdový a hlavní problém, který pro mě ten stroj řeší: Funguje a přitom vydrží dlouho na baterku.
+Zpětně mi přijde, že na cestování je to fajn zařízení, ale mohlo by vydržet déle, protože při aktivním používání člověk hledá zásuvku už po půl dni a to mě fakt prudí. V tomhle se mi dost líbí Mac, u kterého si často ani nevšimnu, že jej v zásuvce nemám a zjistím to až po celém pracovním dni. Problém hledání zásuvky u mě Mac úplně vytěsnil a je to skvělý pocit. Tohle je ten opravdový a hlavní problém, který pro mě ten stroj řeší: Funguje a přitom vydrží dlouho na baterku. Výhodou je, že tablet je i při cestování spíš něco navíc a v nouzi se dá vždycky zalézt do McDonald's, píchnout ho do zásuvky, něco si najít a pak ho nechat zase klidně den mrtvý. Jeho špatná výdrž neovlivňuje mou schopnost být na příjmu nebo např. volat o pomoc.
 
 Tablet nepoužívám na čtení, protože mám ještě Kindle Paperwhite a ten považuji za naprosto dokonalé zařízení pro čtení dlouhých textů všeho druhu. Popisovat proč mám rád Kindle by ale bylo na další článek :)
 
