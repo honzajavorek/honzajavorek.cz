@@ -43,7 +43,7 @@ Napadlo mě, že občas beru s sebou všechna zařízení a není to úplně ono
 
 Přemýšel jsem, jak ale zjistit, zda by iPhone řešil moje problémy. Napsat otázku na Facebook by vedlo jen k fanouškovským komentářům typu "iPhone si určitě kup, protože já ho mám rád". Mě ale zajímala nějaká racionální data.
 
-Vytvořil jsem dotazník, kam jsem dal otázky ohledně věcí, jež mě zajímaly. Ten dotazník je [zde](https://docs.google.com/forms/d/1WHBDSKSSa4oxJhPnxuExtXpKQW4ixIwIryo__lREOmI/viewform). Jsou tam otázky jako *Vyjmenuj prosím tři věci, které tě na tvém telefonu serou nejvíc*, ale nemyslel jsem ten dotazník nijak negativně. I kdybych se ptal kamaráda na auto, které zvažuju koupit, tak se ho zeptám úplně stejně, protože to co na něm má rád se dočtu z letáčku automobilky taky. Zajímají mě reálné problémy z provozu.
+Vytvořil jsem dotazník, kam jsem dal otázky ohledně věcí, jež mě zajímaly. Ten dotazník je [zde](https://docs.google.com/forms/d/1WHBDSKSSa4oxJhPnxuExtXpKQW4ixIwIryo__lREOmI/viewform). Jsou tam otázky jako *Vyjmenuj prosím tři věci, které tě na tvém telefonu serou nejvíc*, ale nemyslel jsem ten dotazník nijak negativně. I kdybych se ptal kamaráda na auto, které zvažuju koupit, tak se ho zeptám úplně stejně, protože to co na něm má rád se dočtu z letáčku automobilky taky. Zajímají mě reálné problémy z provozu. Upřímně, při tvorbě toho dotazníku **jsem byl poměrně přesvědčený o tom, že si iPhone koupím**.
 
 Výsledky jsou následující:
 
