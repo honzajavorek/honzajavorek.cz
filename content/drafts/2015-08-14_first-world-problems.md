@@ -1,4 +1,6 @@
 Title: First world problems
+Date: 2015-08-14 16:55:11
+Status: draft
 
 Před časem jsem si koupil tablet. Nexus 7 druhé generace, pokud vám to něco řekne. No, nakonec nic moc. Měla to být "lightweight" verze počítače na hudbu, na večer a tak, mělo to být na cestování, na služby v práci. Jenže je to dobré jen na to cestování.
 

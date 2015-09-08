@@ -1,5 +1,6 @@
 Title: Re: Islám a jeho hlavní otázka
 Date: 2015-01-26 17:19:14
+Status: draft
 
 Jiří Hlavenka napsal článek [Islám a jeho hlavní otázka](http://www.bloc.cz/bloccz/art_409/islam-a-jeho-hlavni-otazka.aspx). Jeho články čtu skoro vždy. Mívá v nich zajímavé postřehy, někdy jsou lepší, někdy slabší. Co mě na nich štve vždy jsou všudypřítomné gramatické a stylistické chyby, zapomenutá nebo zdvojená slova, apod., ale to nechám být. Asi prostě nemá čas si to po sobě číst.
 

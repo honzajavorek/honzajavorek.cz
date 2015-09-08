@@ -1,4 +1,6 @@
 Title: Útěk versus boj
+Date: 2015-04-30 11:52:13
+Status: draft
 
 Mnohdy se stane, že se člověku něco přestane líbit. Něco kolem něj, něco, co silně ovlivňuje jeho život a každodenní vyrovnanost a spokojenost: škola, práce, místní samospráva, vývoj jeho dlouhodobého vztahu. Setkal jsem se s různými způsoby, jak tuto situaci řešit.
 

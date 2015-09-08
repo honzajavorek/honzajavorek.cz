@@ -1,4 +1,6 @@
 Title: Proč je lepší se přidat?
+Date: 2015-04-20 11:52:13
+Status: draft
 
 Máme tady takovou neziskovku, [Czechitas](http://czechitas.cz/), která se snaží pomáhat ženám do IT. Proč je taková aktivita záslužná, to jsem [vysvětloval minule]({filename}/2015-04-19_proc-pomahat-holkam-do-it.md).
 
