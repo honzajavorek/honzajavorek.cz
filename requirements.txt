@@ -1,12 +1,16 @@
 blinker==1.4
 docutils==0.12
 feedgenerator==1.7
+flake8==2.4.1
 ghp-import==0.4.1
 Jinja2==2.8
 Markdown==2.6.2
 MarkupSafe==0.23
+mccabe==0.3.1
 pelican==3.6.3
+pep8==1.5.7
 Pillow==2.9.0
+pyflakes==0.8.1
 Pygments==2.0.2
 python-dateutil==2.4.2
 python-slugify==1.1.3
