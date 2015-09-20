@@ -1,0 +1,19 @@
+{
+  "author": "Honza Javorek <mail@honzajavorek.cz>",
+  "scripts": {
+    "preinstall": "pip install -r requirements.txt",
+    "lint": "flake8 . --exclude=env*",
+    "start": "cd ./output && python3 -m http.server",
+    "pretest": "npm lint",
+    "test": "",
+    "deploy": "./scripts/deploy.sh",
+    "new": "./blog/scripts/new.py",
+    "develop": "./blog/scripts/develop.sh",
+    "prazeni-import": "./prazeni/scripts/import.sh",
+    "prazeni-develop": "./prazeni/scripts/develop.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:honzajavorek/honzajavorek.cz.git"
+  }
+}

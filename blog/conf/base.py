@@ -3,7 +3,8 @@
 import os
 import sys
 
-sys.path.append(os.path.dirname(os.path.realpath(__file__)))
+DIR = os.path.dirname(os.path.realpath(__file__))
+sys.path.append(DIR)
 
 from templating import filters, IMAGE_MAX_WIDTH  # NOQA
 
@@ -28,16 +29,15 @@ MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'headerid', 'extra']
 
 
 # URL and save paths settings
-ARTICLE_URL = 'blog/{slug}'
-ARTICLE_SAVE_AS = 'blog/{slug}.html'
-ARTICLE_LANG_URL = 'blog/{slug}-{lang}'
-ARTICLE_LANG_SAVE_AS = 'blog/{slug}-{lang}.html'
+ARTICLE_URL = '{slug}'
+ARTICLE_SAVE_AS = '{slug}.html'
+ARTICLE_LANG_URL = '{slug}-{lang}'
+ARTICLE_LANG_SAVE_AS = '{slug}-{lang}.html'
 PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}.html'
 PAGE_LANG_URL = '{slug}-{lang}'
 PAGE_LANG_SAVE_AS = '{slug}-{lang}.html'
 URL_EXT = ''
-INDEX_SAVE_AS = 'blog/index.html'
 FILENAME_METADATA = r'(?P<date>\d{4}-\d{2}-\d{2})_(?P<slug>.*)'
 
 
@@ -64,8 +64,8 @@ AUTHOR_FEED_RSS = None
 
 
 # Theming
-THEME = '../theme'
-THEME_STATIC_PATHS = ('static',)
+THEME = os.path.join(DIR, '../theme')
+THEME_STATIC_PATHS = (os.path.join(DIR, '../static'),)
 JINJA_FILTERS = filters
 
 DISQUS_SITENAME = 'javorove-listky'

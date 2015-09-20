@@ -8,7 +8,7 @@ Jiří Hlavenka napsal článek [Islám a jeho hlavní otázka](http://www.bloc.
 
 Většinou se mi stává, že s JH více méně souhlasím, nebo dokážu pochopit způsob, jakým nad danou věcí přemýšlí. U článku výše jsme se ale tak nějak minuli a mě z toho bylo smutno.
 
-![Duty calls](http://imgs.xkcd.com/comics/duty_calls.png)
+<!-- ![Duty calls](http://imgs.xkcd.com/comics/duty_calls.png) -->
 
 Na článku mi hlavně vadí hromada drobných generalizací a spousta míst, kam by se chtělo zarazit značku *citation needed*. Chybí odkazy na nějaké zdroje. Pak člověk neví, jestli to má JH ze zpráv v novinách a vlastních předsudků, nebo jestli si k tomu opravdu něco víc přečetl. Co formuje jeho přesvědčení a jeho myšlenkové pochody? Když to vztáhnu na sebe, já jsem zvyklý v článcích odkazovat na to, co jsem přečetl. V zásadě s JH ve spoustě věcí souhlasím, ale štve mě, že si někdy úplně zbytečně pomáhá dojmy a nepřesnostmi. Možná to dělal vždycky a já si toho jen všiml až dnes. Každopádně to přeteklo do tohoto mého komentáře.
 

@@ -17,6 +17,7 @@ pelican "$DIR_BLOG/content" -o "$DIR_BLOG_OUTPUT" -s "$DIR_BLOG/conf/production.
 rm -rf \
     "$DIR_BLOG_OUTPUT/author" \
     "$DIR_BLOG_OUTPUT/category" \
+    "$DIR_BLOG_OUTPUT/drafts" \
     "$DIR_BLOG_OUTPUT/tag" \
     "$DIR_BLOG_OUTPUT/feeds" \
     "$DIR_BLOG_OUTPUT/tags.html" \
@@ -36,6 +37,7 @@ pelican "$DIR_PRAZENI/content" -o "$DIR_PRAZENI_OUTPUT" -s "$DIR_PRAZENI/conf/pr
 rm -rf \
     "$DIR_PRAZENI_OUTPUT/author" \
     "$DIR_PRAZENI_OUTPUT/category" \
+    "$DIR_PRAZENI_OUTPUT/drafts" \
     "$DIR_PRAZENI_OUTPUT/tag" \
     "$DIR_PRAZENI_OUTPUT/feeds" \
     "$DIR_PRAZENI_OUTPUT/tags.html" \
