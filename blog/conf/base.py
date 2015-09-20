@@ -9,7 +9,7 @@ from templating import filters, IMAGE_MAX_WIDTH  # NOQA
 
 
 AUTHOR = 'Honza Javorek'
-SITENAME = u'Javorové Lístky'
+SITENAME = 'Javorové Lístky'
 
 
 # Timezone, language
@@ -20,6 +20,7 @@ DEFAULT_DATE_FORMAT = '%x'
 
 
 # Blog settings
+PATH = 'content'
 DEFAULT_PAGINATION = 5
 SUMMARY_MAX_LENGTH = 80
 DEFAULT_CATEGORY = 'blog'
@@ -51,10 +52,15 @@ STATIC_PATHS = (
 
 
 # Feeds
-FEED_ATOM = 'feed.xml'
+FEED_ALL_ATOM = 'feed.xml'
 FEED_MAX_ITEMS = 50
 
 FEEDBURNER_SITENAME = 'javorove-listky'
+
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
 
 # Theming

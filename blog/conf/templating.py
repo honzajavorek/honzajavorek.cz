@@ -9,7 +9,7 @@ from datetime import date, datetime, timedelta
 from PIL import Image
 
 
-IMAGE_MAX_WIDTH = 650
+IMAGE_MAX_WIDTH = 1024
 PROJECT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
 

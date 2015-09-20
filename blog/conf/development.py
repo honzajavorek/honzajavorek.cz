@@ -17,4 +17,4 @@ PAGE_URL = '{slug}.html'
 PAGE_LANG_URL = '{slug}-{lang}.html'
 URL_EXT = '.html'
 
-DELETE_OUTPUT_DIRECTORY = True
+DELETE_OUTPUT_DIRECTORY = False
