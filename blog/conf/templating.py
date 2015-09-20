@@ -28,20 +28,20 @@ def to_datetime(dt):
 
 
 def iframe_to_figure(html):
-    return re.sub(ur'(<iframe[^\>]*>[^\<]*</iframe>)',
-                  ur'<figure>\1</figure>', html)
+    return re.sub(r'(<iframe[^\>]*>[^\<]*</iframe>)',
+                  r'<figure>\1</figure>', html)
 
 
 def object_to_figure(html):
-    return re.sub(ur'(<object[^\>]*>.*</object>)',
-                  ur'<figure>\1</figure>', html)
+    return re.sub(r'(<object[^\>]*>.*</object>)',
+                  r'<figure>\1</figure>', html)
 
 
 def image_to_figure(html):
     def replace_image(match):
         figure_attrs, img_tag = match.group(1), match.group(2)
 
-        match = re.search(ur'src="([^"]+)', img_tag)
+        match = re.search(r'src="([^"]+)', img_tag)
         if match:
             # '(../static/)images/something.png'
             path = match.group(1)
@@ -57,12 +57,12 @@ def image_to_figure(html):
             attr = 'width="{0}"'.format(int(width))
 
             # inject width
-            img_tag = re.sub(ur'\s*width="[^"]+"\s*', r' ', img_tag)
-            img_tag = re.sub(ur'\s*>', ' {0}>'.format(attr), img_tag)
+            img_tag = re.sub(r'\s*width="[^"]+"\s*', r' ', img_tag)
+            img_tag = re.sub(r'\s*>', ' {0}>'.format(attr), img_tag)
 
         return u'<figure{0}>{1}</figure>'.format(figure_attrs, img_tag)
 
-    return re.sub(ur'<p([^\>]*)>\s*(<img[^\>]*>)\s*</p>', replace_image, html)
+    return re.sub(r'<p([^\>]*)>\s*(<img[^\>]*>)\s*</p>', replace_image, html)
 
 
 def figure(html):
@@ -100,7 +100,7 @@ def count_days(dt1, dt2, ignore_weekends=False):
     dt1 = to_datetime(dt1)
     dt2 = to_datetime(dt2)
     if ignore_weekends:
-        days = (dt1 + timedelta(d + 1) for d in xrange((dt2 - dt1).days))
+        days = (dt1 + timedelta(d + 1) for d in range((dt2 - dt1).days))
         return sum(1 for day in days if day.weekday() < 5)
     return (dt2 - dt1).days
 
