@@ -60,7 +60,7 @@ def image_to_figure(html):
                 img_tag = re.sub(r'\s*width="[^"]+"\s*', r' ', img_tag)
                 img_tag = re.sub(r'\s*>', ' {0}>'.format(attr), img_tag)
 
-        return u'<figure{0}>{1}</figure>'.format(figure_attrs, img_tag)
+        return '<figure{0}>{1}</figure>'.format(figure_attrs, img_tag)
 
     return re.sub(r'<p([^\>]*)>\s*(<img[^\>]*>)\s*</p>', replace_image, html)
 
@@ -82,10 +82,10 @@ def code(html):
 
 def month_name(month_no):
     return [
-        u'leden', u'únor', u'březen',
-        u'duben', u'květen', u'červen',
-        u'červenec', u'srpen', u'září',
-        u'říjen', u'listopad', u'prosinec',
+        'leden', 'únor', 'březen',
+        'duben', 'květen', 'červen',
+        'červenec', 'srpen', 'září',
+        'říjen', 'listopad', 'prosinec',
     ][month_no - 1]
 
 
@@ -106,7 +106,7 @@ def count_days(dt1, dt2, ignore_weekends=False):
 
 
 def copyright(year):
-    return u'© %s–%s' % (year, date.today().year)
+    return '© %s–%s' % (year, date.today().year)
 
 
 def tojson(*args, **kwargs):
