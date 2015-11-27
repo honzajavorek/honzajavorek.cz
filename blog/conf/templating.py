@@ -45,20 +45,20 @@ def image_to_figure(html):
         if match:
             # '(../static/)images/something.png'
             path = match.group(1)
+            if not path.startswith('http'):
+                # get dimensions
+                filename = os.path.join(
+                    PROJECT_DIR,
+                    re.sub('.*images/', 'content/images/', path)
+                )
+                width = Image.open(filename).size[0]
+                if width > IMAGE_MAX_WIDTH:
+                    width = IMAGE_MAX_WIDTH
+                attr = 'width="{0}"'.format(int(width))
 
-            # get dimensions
-            filename = os.path.join(
-                PROJECT_DIR,
-                re.sub('.*images/', 'content/images/', path)
-            )
-            width = Image.open(filename).size[0]
-            if width > IMAGE_MAX_WIDTH:
-                width = IMAGE_MAX_WIDTH
-            attr = 'width="{0}"'.format(int(width))
-
-            # inject width
-            img_tag = re.sub(r'\s*width="[^"]+"\s*', r' ', img_tag)
-            img_tag = re.sub(r'\s*>', ' {0}>'.format(attr), img_tag)
+                # inject width
+                img_tag = re.sub(r'\s*width="[^"]+"\s*', r' ', img_tag)
+                img_tag = re.sub(r'\s*>', ' {0}>'.format(attr), img_tag)
 
         return u'<figure{0}>{1}</figure>'.format(figure_attrs, img_tag)
 

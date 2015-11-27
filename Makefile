@@ -13,6 +13,9 @@ test: lint
 deploy:
 	$(DIR)/scripts/deploy.sh
 
+serve:
+	cd $(DIR)/output && python -m http.server
+
 new:
 	$(DIR_BLOG)/scripts/new.py
 

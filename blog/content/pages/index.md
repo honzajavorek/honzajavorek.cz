@@ -3,6 +3,7 @@ Template: home
 Url:
 Save_as: index.html
 
+
 <div markdown="1" class="profile">
 Přispívám v [Apiary](http://apiary.io) k tomu, aby se stal [API Blueprint](http://apiblueprint.org/) nejlepším formátem pro popis webových API. Pomáhám v ČR [propagovat jazyk Python](http://honzajavorek.cz/blog/proc-python.html). Mám blog [Javorové lístky](blog/), kam píšu, když zrovna nepíšu pro [Zdroják](http://www.zdrojak.cz/autori/honza-javorek/).
 </div>
@@ -41,4 +42,3 @@ Organizuji [setkání Python programátorů v Brně](http://lanyrd.com/series/br
         <td><a href="http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_rzp.cgi?ico=74279858&amp;jazyk=cz&amp;xml=1&amp;rozsah=0">74279858</a>, neplátce DPH</td>
     </tr>
 </table>
-

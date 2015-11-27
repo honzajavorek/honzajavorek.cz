@@ -64,7 +64,7 @@ AUTHOR_FEED_RSS = None
 
 
 # Theming
-THEME = 'theme'
+THEME = '../theme'
 THEME_STATIC_PATHS = ('static',)
 JINJA_FILTERS = filters
 
