@@ -5,12 +5,12 @@ env:
     global:
         - secure: "eQaNOSWB9XQeiAeS5qhVvdTOikbN8ITYGsugN3LM4lNkANauM9yf7Rb5TWwExgm9nwtTDuCLeEkSMj8Dey/GWUOp06adqoiMM23QfsMtepVQN6GMS+qLmZNCbznzg0svKYv8zFQ/aKprNU1QyvRZJJdyfnOnfG+KpdZRP3ShOXU="
 install:
-    - "npm install"
+    - "make install"
 script:
-    - "npm test"
+    - "make lint"
 deploy:
     provider: "script"
-    script: "npm run deploy"
+    script: "make deploy"
     on:
         branch: "master"
         python: "3.4"
