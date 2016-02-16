@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <title>{% block title %}{{ SITENAME }} Honzy Javorka{% endblock title %}</title>
 
-        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/main.css">
 
         {% block feeds %}
             <link rel="alternate" type="application/rss+xml" title="Javorové lístky – všechny články" href="{{ SITEURL }}/{{ FEED_ATOM }}">
@@ -67,8 +67,6 @@
         </div>
         {% endblock %}
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
-        <script src="{{ SITEURL }}/theme/js/main.js"></script>
         <script async src="//platform.twitter.com/widgets.js"></script>
         {% block script %}{% endblock %}
     </body>

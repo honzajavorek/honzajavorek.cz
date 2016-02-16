@@ -1,19 +1,24 @@
 {
+  "name": "honzajavorek.cz",
   "author": "Honza Javorek <mail@honzajavorek.cz>",
   "scripts": {
     "preinstall": "pip install -r requirements.txt",
+    "postinstall": "mv ./node_modules ./theme/static/",
     "lint": "flake8 . --exclude=env*",
     "start": "cd ./output && python3 -m http.server",
-    "pretest": "npm lint",
-    "test": "",
+    "pretest": "npm run lint",
+    "test": "echo 'No tests.'",
     "deploy": "./scripts/deploy.sh",
-    "new": "./blog/scripts/new.py",
-    "develop": "./blog/scripts/develop.sh",
-    "prazeni-import": "./prazeni/scripts/import.sh",
-    "prazeni-develop": "./prazeni/scripts/develop.sh"
+    "new": "./scripts/new.py",
+    "develop": "./scripts/develop.sh"
+  },
+  "dependencies": {
+    "jquery": "^2.2.0"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:honzajavorek/honzajavorek.cz.git"
-  }
+  },
+  "license": "UNLICENSED",
+  "private": true
 }

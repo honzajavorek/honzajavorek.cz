@@ -42,3 +42,7 @@ cache
 # Sass
 .sass-cache
 *.css.map
+
+# Environment
+env*
+node_modules

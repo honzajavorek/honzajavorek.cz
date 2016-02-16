@@ -2,19 +2,9 @@
  * Main JavaScript.
  */
 
+// ToDo rewrite this to Python
+
 $(document).ready(function() {
-
-    if ($.fn.tipsy) {
-        $('img[title]').tipsy({
-            'opacity': 1,
-            'gravity': 's'
-        });
-        $('a[title]').tipsy({
-            'opacity': 1,
-            'gravity': 'n'
-        });
-    }
-
     if ($('.article').length) {
         // poem styling
         $('.article-content > p > br').closest('p').addClass('poem');
@@ -27,5 +17,4 @@ $(document).ready(function() {
             $a.wrap($('<small>', {'class': 'anchor'}));
         });
     }
-
 });

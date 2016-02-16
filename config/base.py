@@ -1,10 +1,10 @@
-# -*- coding: utf-8 -*- #
 
 import os
 import sys
 
-DIR = os.path.dirname(os.path.realpath(__file__))
-sys.path.append(DIR)
+CONFIG_DIR = os.path.dirname(os.path.realpath(__file__))
+THEME_DIR = os.path.join(CONFIG_DIR, '..', 'theme')
+sys.path.append(THEME_DIR)
 
 from templating import filters, IMAGE_MAX_WIDTH  # NOQA
 
@@ -64,8 +64,8 @@ AUTHOR_FEED_RSS = None
 
 
 # Theming
-THEME = os.path.join(DIR, '../theme')
-THEME_STATIC_PATHS = (os.path.join(DIR, '../static'),)
+THEME = '../theme'
+THEME_STATIC_PATHS = ('../static',)
 JINJA_FILTERS = filters
 
 DISQUS_SITENAME = 'javorove-listky'
