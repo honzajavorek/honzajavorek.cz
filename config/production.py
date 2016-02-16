@@ -10,5 +10,3 @@ from base import *  # NOQA
 
 SITEURL = 'http://honzajavorek.cz'
 RELATIVE_URLS = False
-
-DELETE_OUTPUT_DIRECTORY = False
