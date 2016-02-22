@@ -1,5 +1,7 @@
 # honzajavorek.cz
 
+[![Build Status](https://travis-ci.org/honzajavorek/honzajavorek.cz.svg?branch=master)](https://travis-ci.org/honzajavorek/honzajavorek.cz)
+
 Source code of my personal site. Includes my Czech blog _Javorové lístky_.
 
 ## License
