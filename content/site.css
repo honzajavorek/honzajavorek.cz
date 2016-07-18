@@ -1,0 +1,17 @@
+
+.page-container .permalink {
+  display: none;
+}
+
+.video {
+  position: relative;
+}
+
+.video i {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 4rem;
+  color: #FFF;
+  z-index: 1000;
+}
