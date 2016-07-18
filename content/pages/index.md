@@ -1,5 +1,4 @@
 Title: Honza Javorek
-Template: home
 Url:
 Save_as: index.html
 
@@ -20,6 +19,19 @@ https://www.youtube.com/watch?v=acWgkd_W1Js
 HTTP, REST, JSON, [API Blueprint](https://apiblueprint.org/), [MSON](https://github.com/apiaryio/mson), Hypermedia, holy dissertations, best practices of API Design. My job and my passion. [Apiary](https://apiary.io/) pays me to write structured code in Node.js or Python and annoying, unbearably long e-mails about code linters. Since 2016 I work on [Dredd](https://github.com/apiaryio/dredd), an open source framework for testing Web APIs. I currently don't offer any trainings and no, I'm not looking for a new job, but I'll gladly speak at your event.
 
 <button>Book Honza to Speak at Your Event</button>
+
+
+<div id="feeds" class="feeds">
+    <a href="{{ SITEURL }}/{{ FEED_ATOM }}" class="btn btn-primary-outline">
+        <i class="fa fa-feed"></i> Články
+    </a>
+    {% if DISQUS_SITENAME %}
+        <a href="http://{{ DISQUS_SITENAME }}.disqus.com/latest.rss" class="btn btn-primary-outline">
+            <i class="fa fa-feed"></i> Všechny komentáře
+        </a>
+    {% endif %}
+</div>
+
 
 <small><button>Ask about APIs</button> <button>Ask about Apiary</button></small>
 
@@ -48,6 +60,7 @@ design: https://wunki.org/
 - [Javorové lístky](blog/) - Personal Blog
 - [Zdroják](http://www.zdrojak.cz/autori/honza-javorek/) - Professional Articles
 - [Jak psát API](http://jakpsatapi.cz) - Guide for API Designers, Work in Progress
+- [Pyvec Guide](https://github.com/pyvec/guide) - Czech Python User Group guides
 
 ## Speaking
 - [Videos](https://www.youtube.com/results?q=Honza+Javorek)
@@ -56,7 +69,7 @@ design: https://wunki.org/
 ## Coding
 - [apiaryio/dredd](https://github.com/apiaryio/dredd) - Language-agnostic framework for testing Web APIs
 - [pyvec/python.cz](https://github.com/pyvec/python.cz) - Czech Python User Group homepage
-- [pyvec/guide](https://github.com/pyvec/guide) - Czech Python User Group guides
+- [honzajavorek/cartoonist](https://github.com/honzajavorek/cartoonist) -  Tool to convert photo of a hand drawing into a PNG/SVG/PDF file
 - [honzajavorek/fiobank](https://github.com/honzajavorek/fiobank/) - Python SDK for [Fio banka](http://www.fio.cz/)'s API
 - [honzajavorek/redis-collections](https://github.com/honzajavorek/redis-collections/) - [Redis](http://redis.io/) types as [Python collections](https://docs.python.org/2/library/collections.html)
 - [honzajavorek/tipi](https://github.com/honzajavorek/tipi/) - Typographic replacements in HTML
