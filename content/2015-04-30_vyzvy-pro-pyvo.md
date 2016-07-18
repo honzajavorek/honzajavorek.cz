@@ -4,8 +4,7 @@ Date: 2015-04-30 16:55:11
 Dnes v Brně slavíme **čtyři roky** od založení místního srazu příznivců programovacího jazyka Python. Srazu, který nazýváme Pyvo. Zábavné příhody o tom, jak k založení došlo jsem kolem sebe trousil celé čtyři roky, takže se v rámci tohoto článku z hlediska minulosti omezím spíš na bilancování toho, co se nám povedlo, a taky něco o cestě, kterou si myslím, že by mělo Pyvo kráčet do budoucna.
 
 ![Pyvodort]({filename}/images/pyvodort.jpg)
-
-<small>*Fotka: [Ondra Veselý, čtyřleté výročí Pyva](https://twitter.com/xorwen/status/593866381826863105)*</small>
+Fotka: [Ondra Veselý, čtyřleté výročí Pyva](https://twitter.com/xorwen/status/593866381826863105)
 
 ## Co se povedlo
 

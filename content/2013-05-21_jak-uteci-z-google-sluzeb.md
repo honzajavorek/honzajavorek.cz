@@ -10,7 +10,6 @@ Co mi vadí:
 -   Rušení služeb, které používám.
 
 <blockquote class="twitter-tweet" data-conversation="none"><p>@<a href="https://twitter.com/honzajavorek">honzajavorek</a> všichni jsou mrtvý Dejve, … i GTalk ? … :)</p>&mdash; Ondra Beneš (@ondrabenes) <a href="https://twitter.com/ondrabenes/status/336777191142608897">May 21, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 -   Integrace všech služeb do Google+, které nepoužívám.
 -   Vypadá to, že většinu Google aplikací čeká buďto zánik, nebo násilné propojení s Google+.
@@ -18,7 +17,6 @@ Co mi vadí:
 -   Začínám být na webu trochu paranoidní.
 
 <blockquote class="twitter-tweet" data-conversation="none"><p>@<a href="https://twitter.com/petrjoachim">petrjoachim</a> Moje Firefox doplňky: AdBlock, Ghostery, google-no-tracking-url, HTTPS-Everywhere.</p>&mdash; Honza Javorek (@honzajavorek) <a href="https://twitter.com/honzajavorek/status/336479286309556226">May 20, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Jak se bránit:
 

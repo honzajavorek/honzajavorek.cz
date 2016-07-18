@@ -5,7 +5,6 @@ Zamysleli jste se někdy nad tím, jak jsou naše města a celé prostředí,
 v němž dnes žijeme, poznamenáno **automobilovou dopravou**?
 
 <blockquote class="twitter-tweet"><p>Povodně ukazujou, jak hezky by bylo na nábřeží bez aut. <a href="http://t.co/VFsqUsuraX" title="http://twitter.com/pachollini/status/342251772963860480/photo/1">twitter.com/pachollini/sta…</a></p>&mdash; pachollini (@pachollini) <a href="https://twitter.com/pachollini/status/342251772963860480">June 5, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Zkuste se někdy při chození po ulici aktivně soustředit na své okolí
 a představovat si, **jak by mohlo vypadat**, kdyby v něm nic nejezdilo. A nejen to -
@@ -91,7 +90,6 @@ zabezpečování komunikací, když bude autopilot chybovat mnohonásobně mén�
 často než člověk? Malý pohled na možnosti, jaké se otevírají:
 
 <blockquote class="twitter-tweet"><p>Huge junction + heavy traffic + self-driving cars: <a href="http://t.co/Fdi0tdGj" title="http://vimeo.com/37751380">vimeo.com/37751380</a> Amazing and scary.</p>&mdash; Milan Cermak (@milancermak) <a href="https://twitter.com/milancermak/status/282467475105402880">December 22, 2012</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Souhlasím s Milanem. *Amazing and scary.*
 
