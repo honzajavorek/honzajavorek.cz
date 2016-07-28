@@ -1,26 +1,10 @@
-# honzajavorek.cz (in Czech)
+# honzajavorek.cz
 
-Toto je zdrojový kód mého webu včetně blogu _Javorové lístky_. Můžeš si jej pohodlně
-přečíst na [honzajavorek.cz][site]. Velice hrdě se hlásím k tomu, že celá
-tahle sranda běží na [Pythonu][python] a [GitHubu][github] díky nástrojům [Pelican][pelican],
-[Markdown][markdown] a [Jinja2][jinja].
+[![Build Status](https://travis-ci.org/honzajavorek/honzajavorek.cz.svg?branch=master)](https://travis-ci.org/honzajavorek/honzajavorek.cz)
 
-## Status: AKTIVNÍ
+Source code of my personal site. Includes my Czech blog _Javorové lístky_.
 
-Aktivně vyvíjeno a udržováno. Vítám opravy překlepů a hrubek v článcích přes GitHub [pull requests][pull_requests]! :-)
+## License
 
-## Licence: CC BY-NC-SA
-
-(cc) 2007–2015 Jan Javorek &lt;<a
+All Rights Reserved © 2007–2016 Honza Javorek &lt;<a
 href="mailto:mail&#64;honzajavorek.cz">mail&#64;honzajavorek.cz</a>&gt;
-
-Toto dílo podléhá licenci [Creative Commons Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 3.0 Česko](https://creativecommons.org/licenses/by-nc-sa/3.0/cz/).
-
-
-[python]: http://www.python.org
-[github]: http://pages.github.com/
-[site]: http://www.honzajavorek.cz
-[pelican]: https://github.com/ametaireau/pelican
-[markdown]: http://daringfireball.net/projects/markdown/
-[jinja]: http://jinja.pocoo.org/
-[pull_requests]: http://help.github.com/send-pull-requests/

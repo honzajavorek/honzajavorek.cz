@@ -1,0 +1,66 @@
+
+.page-honza-javorek .permalink {
+  display: none;
+}
+
+.page-honza-javorek .header {
+  margin: 6rem 0 0 0;
+}
+
+.page-honza-javorek .header h1 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 4rem;
+}
+
+.page-honza-javorek .subheader {
+  text-align: center;
+  margin: 6rem 0 6rem 0;
+}
+
+.page-honza-javorek .subheader h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.5rem;
+  margin: 6rem 0 1rem 0;
+  line-height: normal;
+}
+
+.video {
+  position: relative;
+  margin: 2rem 0;
+  display: block;
+}
+
+.video i {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  font-size: 4rem;
+  color: #FFF;
+  z-index: 1000;
+}
+
+.about {
+  text-align: center;
+}
+
+.about img {
+  margin: 4rem 0 8rem 0;
+}
+
+.about h2,
+.about h3,
+.about h4 {
+  margin-top: 8rem;
+}
+
+.about ul,
+.about ul li {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.about ul li::before {
+  display: none;
+}

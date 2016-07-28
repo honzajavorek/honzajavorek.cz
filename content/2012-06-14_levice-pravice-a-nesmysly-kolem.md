@@ -4,8 +4,7 @@ Date: 2012-06-14 18:05:57
 Rozčilujeme se, jak média nejsou vůbec schopna zařadit politické strany do správných škatulek. Ale je to tak jednoduché, jak si myslíme? Škatulky jsou důležité - byť nejsou přesné, zlepšují prvotní orientaci a jsou užitečné i z didaktického hlediska. Jenže zrovna levice a pravice jsou dnes už v praxi úplně zmatené a dopletené. Je samozřejmě otázkou, zda tyto škatulky [nezměnit a nepřejmenovat](http://www.pehe.cz/zapisnik/2006/pravice-a-levice-matouci-pojmy), jenže jsou podle mě už příliš zažité na to, aby se tak stalo.
 
 ![Teletubbies]({filename}/images/teletubbies.jpg)
-
-<small>Na obrázku: typičtí zástupci pestrého politického spektra.</small>
+Na obrázku: typičtí zástupci pestrého politického spektra.
 
 Zůstaňme na chvíli u toho dvourozměrného, červenomodrého rozdělení. Kdysi jsem si kdesi přečetl, že levice je o tom, že posbírá peníze od lidí a přerozdělí je zpět podle svého nejlepšího vědomí a svědomí tak, aby se všude dostalo na užitečné věci. Jednotlivec má potom spoustu věcí "zadarmo", jsou to služby státu za jeho peníze. Pravice by pak měla být údajně o tom, že se peníze nechají jednotlivci a on sám rozhoduje, na co je dá. No a služby jsou potom pochopitelně placené.
 

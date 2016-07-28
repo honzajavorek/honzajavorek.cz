@@ -21,10 +21,10 @@ Ano, můžeme si otevřít knihy, můžeme zkoumat [PHP syntaxi](http://en.wikip
             konstruktor
         </td>
         <td>
-            `__construct()`, `Class()`
+            <code>__construct()</code>, <code>Class()</code>
         </td>
         <td>
-            `Class()`
+            <code>Class()</code>
         </td>
     </tr>
     <tr>
@@ -32,10 +32,10 @@ Ano, můžeme si otevřít knihy, můžeme zkoumat [PHP syntaxi](http://en.wikip
             toString
         </td>
         <td>
-            `$object->__toString()`
+            <code>$object->__toString()</code>
         </td>
         <td>
-            `object.toString()`
+            <code>object.toString()</code>
         </td>
     </tr>
     <tr>
@@ -43,10 +43,10 @@ Ano, můžeme si otevřít knihy, můžeme zkoumat [PHP syntaxi](http://en.wikip
             přístup ke statické proměnné/metodě
         </td>
         <td>
-            `Class::$name`, `Class::name()`
+            <code>Class::$name</code>, <code>Class::name()</code>
         </td>
         <td>
-            `Class.name`, `Class.name()`
+            <code>Class.name</code>, <code>Class.name()</code>
         </td>
     </tr>
     <tr>
@@ -54,10 +54,10 @@ Ano, můžeme si otevřít knihy, můžeme zkoumat [PHP syntaxi](http://en.wikip
             přístup k vlastní statické proměnné/metodě
         </td>
         <td>
-            `self::$name`, `self::name()`
+            <code>self::$name</code>, <code>self::name()</code>
         </td>
         <td>
-            `name`, `Class.name`, `name()`, `Class.name()`
+            <code>name</code>, <code>Class.name</code>, <code>name()</code>, <code>Class.name()</code>
         </td>
     </tr>
     <tr>
@@ -65,10 +65,10 @@ Ano, můžeme si otevřít knihy, můžeme zkoumat [PHP syntaxi](http://en.wikip
             přístup k proměnné/metodě
         </td>
         <td>
-            `$object->name`, `$object->name()`
+            <code>$object->name</code>, <code>$object->name()</code>
         </td>
         <td>
-            `object.name`, `object.name()`
+            <code>object.name</code>, <code>object.name()</code>
         </td>
     </tr>
     <tr>
@@ -76,10 +76,10 @@ Ano, můžeme si otevřít knihy, můžeme zkoumat [PHP syntaxi](http://en.wikip
             přístup k vlastní proměnné/metodě
         </td>
         <td>
-            `$this->name`, `$this->name()`
+            <code>$this->name</code>, <code>$this->name()</code>
         </td>
         <td>
-            `name`, `this.name`, `name()`, `this.name()`
+            <code>name</code>, <code>this.name</code>, <code>name()</code>, <code>this.name()</code>
         </td>
     </tr>
     <tr>
@@ -87,10 +87,10 @@ Ano, můžeme si otevřít knihy, můžeme zkoumat [PHP syntaxi](http://en.wikip
             (statická) konstanta
         </td>
         <td>
-            `const NAME`
+            <code>const NAME</code>
         </td>
         <td>
-            `static final type NAME`
+            <code>static final type NAME</code>
         </td>
     </tr>
     <tr>
@@ -98,10 +98,10 @@ Ano, můžeme si otevřít knihy, můžeme zkoumat [PHP syntaxi](http://en.wikip
             přístup ke konstantě
         </td>
         <td>
-            `self::NAME`, `Class::NAME`
+            <code>self::NAME</code>, <code>Class::NAME</code>
         </td>
         <td>
-            `NAME`, `Class.NAME`
+            <code>NAME</code>, <code>Class.NAME</code>
         </td>
     </tr>
 </table>
