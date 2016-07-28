@@ -3,12 +3,6 @@ Url:
 Save_as: index.html
 
 
-<!-- ![placeholder](work-in-progress.jpg) -->
-<!--
-design: https://wunki.org/
--->
-
-
 <div class="row">
 <div class="col-md-6">
     <div class="subheader">
@@ -91,7 +85,7 @@ design: https://wunki.org/
     <h2><i class="fa fa-commenting"></i> Speaking</h2>
     <ul>
         <li><a href="https://www.youtube.com/results?q=Honza+Javorek">YouTube</a> - Recorded presentations</li>
-        <li><a href="https://speakerdeck.com/honzajavorek/">SpeakerDeck</a> - Uploaded slides</li>
+        <li><a href="https://speakerdeck.com/honzajavorek/">Speaker Deck</a> - Uploaded slides</li>
     </ul>
 
     <h2><i class="fa fa-pencil"></i> Writing</h2>
