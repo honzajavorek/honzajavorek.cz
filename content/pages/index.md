@@ -52,7 +52,7 @@ Save_as: index.html
 </div>
 
 
-<div class="about about-centered">
+<div class="info info-centered">
 <ul>
     <li>Location: <a href="https://www.google.com/maps/place/Prague,+Czech+Republic/">Prague</a></li>
     <li>License Number: <a href="http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_rzp.cgi?ico=74279858&amp;jazyk=cz&amp;xml=1&amp;rozsah=0">74279858</a></li>
@@ -79,7 +79,7 @@ Save_as: index.html
 </div>
 
 
-<div class="about">
+<div class="info">
     <img class="img-fluid img-rounded" src="/images/homepage-photos/work-in-progress.jpg">
 
     <h2><i class="fa fa-commenting"></i> Speaking</h2>

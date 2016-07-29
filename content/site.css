@@ -41,26 +41,26 @@
   z-index: 1000;
 }
 
-.about {
+.info {
   text-align: center;
 }
 
-.about img {
+.info img {
   margin: 4rem 0 8rem 0;
 }
 
-.about h2,
-.about h3,
-.about h4 {
+.info h2,
+.info h3,
+.info h4 {
   margin-top: 8rem;
 }
 
-.about ul,
-.about ul li {
+.info ul,
+.info ul li {
   padding-left: 0;
   list-style-type: none;
 }
 
-.about ul li::before {
+.info ul li::before {
   display: none;
 }

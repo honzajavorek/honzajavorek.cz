@@ -5,6 +5,20 @@ from danube_delta.settings import *  # NOQA
 AUTHOR = 'Honza Javorek'
 SITENAME = 'Javorové lístky'
 
+
+ABOUT_HEADING = AUTHOR
+ABOUT = '''
+[Honza](http://honzajavorek.cz) je programátor. Od roku 2011 buduje českou
+komunitu kolem jazyka [Python](http://python.cz/). V současnosti pomáhá hlavně s
+propagací aktivit, jako jsou [PyLadies](http://pyladies.cz/),
+[Pyvo](http://pyvo.cz/), nebo [PyCon CZ](https://cz.pycon.org/). Přes den jej
+najdete v [Apiary](https://apiary.io/), kde se stará o
+[Dredd](https://github.com/apiaryio/dredd), framework na testování API. Občas
+taky radí lidem jak mají API dělat a přednáší o tom na konferencích.
+'''
+ABOUT_IMAGE = 'images/honza.jpg'
+
+
 if PRODUCTION:
     SITEURL = 'http://honzajavorek.cz'
 
