@@ -58,7 +58,7 @@ Save_as: index.html
     <li>License Number: <a href="http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_rzp.cgi?ico=74279858&amp;jazyk=cz&amp;xml=1&amp;rozsah=0">74279858</a></li>
     <li>E-mail: <a href="mailto:mail&#64;honzajavorek.cz">mail&#64;<!---->honzajavorek.cz</a></li>
     <li>LinkedIn: <a href="https://www.linkedin.com/in/honzajavorek">linkedin.com/in/honzajavorek</a></li>
-    <li>Bank Account: <code>CZ1220100000002400293585</code>,<code>FIOBCZPPXXX</code>(<code>2400293585/2010</code>)</li>
+    <li>Bank Account: <code>CZ1220100000002400293585</code>, <code>FIOBCZPPXXX</code> (<code>2400293585/2010</code>)</li>
 </ul>
 </div>
 
