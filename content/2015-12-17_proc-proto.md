@@ -29,7 +29,7 @@ Když máme ten konec roku, dovolím si tady trochu bilancovat a zhodnotit, jak 
 
     *Věčnou slávu si zaslouží hlavně Jarda Vysoký.*
 
--   Objevil se nápad zorganizovat první Python konferenci v ČR a během třech měsíců se povedlo vše zrealizovat. V Lednu tak v Brně proběhl [PyCon 2015](https://cz.pycon.org/2015/), dvoudenní akce s přednáškami, workshopy, silnou zahraniční účastí a skvělou atmosférou.
+-   Objevil se nápad zorganizovat první Python konferenci v ČR a během třech měsíců se povedlo vše zrealizovat. V listopadu tak v Brně proběhl [PyCon 2015](https://cz.pycon.org/2015/), dvoudenní akce s přednáškami, workshopy, silnou zahraniční účastí a skvělou atmosférou.
 
     *Věčnou slávu si zaslouží hlavně: Tomáš Ehrlich, Martin Bílek, já, Mikey Ariel, Stanislav Komanec, Honza Král, Petr Viktorin, Martin Matuszek, Chris Ward, Bára Drbohlavová.*
 
