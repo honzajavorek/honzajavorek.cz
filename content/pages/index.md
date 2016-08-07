@@ -6,6 +6,7 @@ Save_as: index.html
 <div class="row">
 <div class="col-md-6">
     <div class="subheader">
+        <img class="cartoon" src="/images/homepage/software-engineer-cartoon.svg" onerror="this.onerror = null; this.src = '/images/homepage/software-engineer-cartoon.png'">
         <h2>Software Engineer</h2>
         <h3 class="supressed">Web APIs</h3>
     </div>
@@ -15,7 +16,7 @@ Save_as: index.html
     </p>
 
     <a class="video" href="https://www.youtube.com/watch?v=acWgkd_W1Js" target="_blank">
-        <img class="img-fluid img-rounded" src="/images/homepage-photos/software-engineer.jpg">
+        <img class="img-fluid img-rounded" src="/images/homepage/software-engineer.jpg">
         <i class="fa fa-youtube-play"></i>
     </a>
 
@@ -25,6 +26,7 @@ Save_as: index.html
 </div>
 <div class="col-md-6">
     <div class="subheader">
+        <img class="cartoon" src="/images/homepage/activist-on-mission-cartoon.svg" onerror="this.onerror = null; this.src = '/images/homepage/activist-on-mission-cartoon.png'">
         <h2>Activist&nbsp;on Mission</h2>
         <h3 class="supressed">Czech Python User Group</h3>
     </div>
@@ -34,7 +36,7 @@ Save_as: index.html
     </p>
 
     <a class="video" href="https://www.youtube.com/watch?v=B8DYsKDz63Y" target="_blank">
-        <img class="img-fluid img-rounded" src="/images/homepage-photos/activist-on-mission.jpg">
+        <img class="img-fluid img-rounded" src="/images/homepage/activist-on-mission.jpg">
         <i class="fa fa-youtube-play"></i>
     </a>
 
@@ -80,7 +82,7 @@ Save_as: index.html
 
 
 <div class="info">
-    <img class="img-fluid img-rounded" src="/images/homepage-photos/work-in-progress.jpg">
+    <img class="img-fluid img-rounded" src="/images/homepage/work-in-progress.jpg">
 
     <h2><i class="fa fa-commenting"></i> Speaking</h2>
     <ul>

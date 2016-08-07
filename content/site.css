@@ -22,8 +22,22 @@
   text-align: center;
   font-weight: normal;
   font-size: 2.5rem;
-  margin: 6rem 0 1rem 0;
+  margin: 0 0 1rem 0;
   line-height: normal;
+}
+
+.page-honza-javorek .cartoon {
+  display: block;
+  margin: 6rem auto 2rem auto;
+}
+
+.page-honza-javorek .cartoon[src*="software-engineer-cartoon"] {
+  max-width: 150px;
+}
+
+.page-honza-javorek .cartoon[src*="activist-on-mission-cartoon"] {
+  max-width: 200px;
+  padding: 21.6px 0 21.6px 0;
 }
 
 .video {
@@ -63,4 +77,28 @@
 
 .info ul li::before {
   display: none;
+}
+
+.container::before {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  z-index: -1000;
+  content: "";
+  display: block;
+  width: 260px;
+  height: 200px;
+  background-image: url('/images/site-design/maple-leaves.png');
+  background-image: url('/images/site-design/maple-leaves.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+}
+
+@media only screen and (max-width: 992px) {
+  .container::before { display: none; }
+}
+
+@media only screen and (max-width: 1100px) {
+  .container::before { width: 200px; }
 }
