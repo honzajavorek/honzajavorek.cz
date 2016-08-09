@@ -1,16 +1,15 @@
+sudo: false
 language: "python"
-python:
-    - "3.5"
+python: "3.5"
 cache: "pip"
 script:
-    - "blog lint"
+  - "blog lint"
 env:
   global:
     - secure: "UAG7Tk6EbqFNKfzNsEAnnQbNBPFF7tO1Nu25yhByIEYO4Qi2eaHQuHg8nthaamiKplw1MouEGpFFhwXWzthW3xJ4m3CKJsJCxjcKtmsirgTxKoJv8SpbNNMHkEBMYYjhYnfEiD67G5PEKl8ekJMnHhH+5Qn9tgerKNibWZIDvLU="
 deploy:
-    provider: "script"
-    script: "blog deploy"
-    on:
-        branch: "master"
-        repo: "honzajavorek/honzajavorek.cz"
-sudo: false
+  provider: "script"
+  script: "blog deploy"
+  on:
+    branch: "master"
+    repo: "honzajavorek/honzajavorek.cz"
