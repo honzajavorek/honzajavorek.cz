@@ -6,7 +6,7 @@ Vyměňme na chvíli vánoční čepičky za přilby [conquistadorů](https://cs
 
 ## Kolonizátor
 
-![Kolonizátor]({filename}/images/conquistador.png){: .right }[Cortés](https://cs.wikipedia.org/wiki/Hern%C3%A1n_Cort%C3%A9s)! [Pizarro](https://cs.wikipedia.org/wiki/Francisco_Pizarro)! Tihle chlapíci se s tím moc nepárali. Na mapě bylo bílé místo a jejich pověřením bylo zjistit co tam je, a zařídit, aby to bylo za každou cenu co nejdříve pod španělskou vlajkou.
+![Kolonizátor]({filename}/images/conquistador.png){: .right }[Cortés](https://cs.wikipedia.org/wiki/Hern%C3%A1n_Cort%C3%A9s)! [Pizarro](https://cs.wikipedia.org/wiki/Francisco_Pizarro)! Tihle chlapíci se s tím moc nepárali. Na mapě bylo bílé místo a jejich pověřením bylo zjistit, co tam je, a zařídit, aby to bylo za každou cenu co nejdříve pod španělskou vlajkou.
 
 Kolonizátor pracuje rychle a efektivně. Dostal polovičaté zadání, ale není tady od toho, aby se na něco ptal. Jeho úkolem je doručit výsledek. Vytvořit [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product). Sestrojit prototyp, aby se dal validovat trh. Dokončit něco, protože zítra je demo.
 
@@ -24,7 +24,7 @@ Tenhle budovatel sem nepřišel na jedno léto. Sice by od srdce nejraději něc
 
 Abychom se nemotali pouze v opisech, přiložím dojemné příběhy z vlastního života.
 
-Hloupý Honza šel do světa a zavadil v roce 2013 o firmičku s názvem Skypicker. Skládala se asi ze třech lidí a měla hotový prototyp svojí služby. Už tehdy si Honza uvědomoval, že existuje buďto krásný a upravený kód, nebo kód, který vydělává peníze. Jenže to, co viděl ve Skypickeru, ho i tak překvapilo. Firma byla navíc nastavená čistě na výsledky, takže co neprodukovalo uchopitelné hodnoty, to nebylo zaplaceno. Honza tam vydržel měsíc.
+Hloupý Honza šel do světa a zavadil v roce 2013 o firmičku s názvem Skypicker. Skládala se asi ze tří lidí a měla hotový prototyp svojí služby. Už tehdy si Honza uvědomoval, že existuje buďto krásný a upravený kód, nebo kód, který vydělává peníze. Jenže to, co viděl ve Skypickeru, ho i tak překvapilo. Firma byla navíc nastavená čistě na výsledky, takže co neprodukovalo uchopitelné hodnoty, to nebylo zaplaceno. Honza tam vydržel měsíc.
 
 Dnes už je Honza o něco méně hloupý a ví, že je správce. A správce ve startupu o třech lidech nemá co dělat. Taková firma potřebuje kolonizátory. Skypicker si je sehnal, neslevil ze svého přístupu a dnes je z něj [Kiwi.com](http://kiwi.com/). S šedesáti (?) vývojáři dnes už zaměstnávají i nějaké budovatelské povahy. Občas za Honzou chodí a říkají, že pod sedimenty narazili na jeho commit.
 
@@ -32,15 +32,15 @@ Honza nyní pracuje v [Apiary](https://apiary.io/), kam přišel zhruba v době,
 
 ## Střet dvou světů
 
-Je problém, pokud správce dostane za úkol kolonizovat území a naopak. Také vznikají třenice, když mají lidé na něčem spolupracovat, nebo si třeba i jen předávat práci, a neuvědomují si přitom své "imperialistické" role.
+Je problém, pokud správce dostane za úkol kolonizovat území a naopak. Také vznikají třenice, když mají lidé na něčem spolupracovat nebo si třeba i jen předávat práci a neuvědomují si přitom své "imperialistické" role.
 
 ### Těžký život kolonizátorů
 
-Dobyvatelé jsou často šikanováni kolektivem, který jejich práci přebírá. Lidé komentují kvalitu dřevěných chatrčí, místo aby si uvědomili, že nebýt onoho chlapíka v zakrvaveném brnění, nestálo by tam nic a nemělo by to ani jméno. Že to, na co koukají, bylo napsáno ve tři ráno den před termínem, nebo v době, kdy nikdo nevěděl, jestli má smysl v projektu vůbec prokračovat. Pro nové osadníky je to "prasokód" a "legacy". Kolonizátor končí s nízkým sebevědomím, nebo v neustálé defenzivě.
+Dobyvatelé jsou často šikanováni kolektivem, který jejich práci přebírá. Lidé komentují kvalitu dřevěných chatrčí, místo aby si uvědomili, že nebýt onoho chlapíka v zakrvaveném brnění, nestálo by tam nic a nemělo by to ani jméno. Že to, na co koukají, bylo napsáno ve tři ráno den před termínem nebo v době, kdy nikdo nevěděl, jestli má smysl v projektu vůbec prokračovat. Pro nové osadníky je to "prasokód" a "legacy". Kolonizátor končí s nízkým sebevědomím nebo v neustálé defenzivě.
 
 ### Kolonizátor správcem
 
-Když necháme dobyvatele spravovat nově založenou kolonii, dokáže to. Klidně několik dalších let. Jenže už nikdy se k němu nikdo nepřidá. Kód nebude ve stavu, že by mu mohl porozumět ještě někdo další. Projekt po technické stránce začne fárat do nekonečné šachty. Z té není cesty ven - dá se pouze sjet ještě hlouběji, nebo začít odznova a věc bolestivě přepsat. Pokud se kolonizátor přestane projektu věnovat, je to často konec, nikdo jiný není schopen na tomtéž území operovat.
+Když necháme dobyvatele spravovat nově založenou kolonii, dokáže to. Klidně několik dalších let. Jenže už nikdy se k němu nikdo nepřidá. Kód nebude ve stavu, že by mu mohl porozumět ještě někdo další. Projekt po technické stránce začne fárat do nekonečné šachty. Z té není cesty ven - dá se pouze sjet ještě hlouběji, nebo začít odznova a věc bolestivě přepsat. Pokud se kolonizátor přestane projektu věnovat, je to často konec - nikdo jiný není schopen na témže území operovat.
 
 ### Pyšní správci
 
@@ -52,11 +52,11 @@ Správce kolonie najmutý na dobytí neznámého území je jako koule na noze. 
 
 ### Házení špíny
 
-Správci kolonie jsou mistři v práci s `git blame`. Sice by bez kolonizátora vůbec nemohli existovat, ale to jim nedochází. Dobývání neznámých obzorů by běžný správce buď nechtěl dělat, nebo vůbec nezvládl. Jenže bez prvotních osad by nebylo co spravovat. Nic by se nerozjelo, nikdo by správce nezaplatil. Správně by tihle budovatelé měli být kolonizátorům vděční, měli by obdivovat jejich odvahu, výdrž a ochotu vrhat se do krvavých bitev. Místo toho na ně u kafe v odpolední pauze hážou špínu.
+Správci kolonie jsou mistři v práci s `git blame`. Sice by bez kolonizátora vůbec nemohli existovat, ale to jim nedochází. Dobývání neznámých obzorů by běžný správce buď nechtěl dělat nebo vůbec nezvládl. Jenže bez prvotních osad by nebylo co spravovat. Nic by se nerozjelo, nikdo by správce nezaplatil. Správně by tihle budovatelé měli být kolonizátorům vděční, měli by obdivovat jejich odvahu, výdrž a ochotu vrhat se do krvavých bitev. Místo toho na ně u kafe v odpolední pauze hážou špínu.
 
 ## Výzvy
 
-Velkou výzvou pro kolonizátora je nenechat se zlikvidovat kolektivem, uvědomit si vlastní hodnotu, svoje slabiny, a sám se snažit podílet na projektech, na nichž může svoje schopnosti nejvíce uplatnit. Může se učit rozvaze a disciplíně, aby z něj mohl být jednou správce, ale není to nutné. Svět potřebuje i střelce.
+Velkou výzvou pro kolonizátora je nenechat se zlikvidovat kolektivem, uvědomit si vlastní hodnotu, svoje slabiny a sám se snažit podílet na projektech, na nichž může svoje schopnosti nejvíce uplatnit. Může se učit rozvaze a disciplíně, aby z něj mohl být jednou správce, ale není to nutné. Svět potřebuje i střelce.
 
 Obrovskou výzvou pro správce kolonií je pokora. Nedělat z `git blame` nástroj šikany, ale podívat se na čas commitu (ranní hodiny?), dohledat původního autora, poplácat ho po zádech a doptat se jej na co nejvíce kontextu. Nesázet tolik na to, že všechno ví nejlépe. Najít hranici mezi tím, co se bude do budoucna hodit a co je v dané fázi projektu zbytečná optimalizace, overegnineering, přiliš brzké DRY, apod. Nejet dakonicky podle pouček z knížek.
 
