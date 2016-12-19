@@ -1,5 +1,5 @@
 Title: Kolonizátoři a správci kolonií
-Date: 2015-12-18 13:43:00
+Date: 2016-12-18 13:43:00
 
 
 Vyměňme na chvíli vánoční čepičky za přilby [conquistadorů](https://cs.wikipedia.org/wiki/Conquista). Propůjčím si imperialistickou terminologii k tomu, abych odlišil dvě skupiny programátorů a upozornil na nešvary, které vznikají, když toto rozdělení ignorujete.
