@@ -58,7 +58,7 @@ Správci kolonie jsou mistři v práci s `git blame`. Sice by bez kolonizátora 
 
 Velkou výzvou pro kolonizátora je nenechat se zlikvidovat kolektivem, uvědomit si vlastní hodnotu, svoje slabiny a sám se snažit podílet na projektech, na nichž může svoje schopnosti nejvíce uplatnit. Může se učit rozvaze a disciplíně, aby z něj mohl být jednou správce, ale není to nutné. Svět potřebuje i střelce.
 
-Obrovskou výzvou pro správce kolonií je pokora. Nedělat z `git blame` nástroj šikany, ale podívat se na čas commitu (ranní hodiny?), dohledat původního autora, poplácat ho po zádech a doptat se jej na co nejvíce kontextu. Nesázet tolik na to, že všechno ví nejlépe. Najít hranici mezi tím, co se bude do budoucna hodit a co je v dané fázi projektu zbytečná optimalizace, overegnineering, přiliš brzké DRY, apod. Nejet dakonicky podle pouček z knížek.
+Obrovskou výzvou pro správce kolonií je pokora. Nedělat z `git blame` nástroj šikany, ale podívat se na čas commitu (ranní hodiny?), dohledat původního autora, poplácat ho po zádech a doptat se jej na co nejvíce kontextu. Nesázet tolik na to, že všechno ví nejlépe. Najít hranici mezi tím, co se bude do budoucna hodit a co je v dané fázi projektu zbytečná optimalizace, overegnineering, přiliš brzké DRY, apod. Nejet drakonicky podle pouček z knížek.
 
 ## Poznali jste se?
 
