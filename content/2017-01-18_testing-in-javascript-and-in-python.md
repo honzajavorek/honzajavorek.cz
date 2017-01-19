@@ -10,7 +10,7 @@ I'm originally a Python person, so I'm going to compare _developer experience_ o
 
 Many folks use the [unittest](https://docs.python.org/3/library/unittest.html) when writing tests in Python. It's a module of Python's standard library, which allows people to quickly jump into [XUnit](https://en.wikipedia.org/wiki/XUnit) way of writing tests, full of `class TestSomething`, `self.assertThis()` and `setUp/tearDown` that.
 
-When the test suite grows larger, people often get a test runner, for instance [nose](http://nose.readthedocs.io/en/latest/). The job of a test runner is to find and run tests in a smart way - e.g. just those, which previously failed.
+While unittest is able to find and run tests, when the test suite grows larger, people often get a alternative third-party test runner, for instance [nose](http://nose.readthedocs.io/en/latest/). The aim of having a dedicated test runner is to find and run tests in a smart way - e.g. just those, which previously failed.
 
 Thanks to the fact nose runs tests, it allows you to leave the XUnit style behind and offers some extra tricks how to make your tests better and simpler. Usually people don't use them though, because they don't know about them. However, in general, if you want to run a particular set of your tests or control the output of testing, test runner always has a smart command line option to do exactly that. That's very convenient primarily because it provides:
 
@@ -24,7 +24,7 @@ in Node.js](https://nodejs.org/api/assert.html). However, pytest [leverages intr
 
 I also like the fact frameworks usually provide sections about testing in their documentations and give me a hand (guides, tips, tools, classes to inherit from) so I could test my application in simpler and faster ways, without writing redundantly detailed [boilerplate code](https://en.wikipedia.org/wiki/Boilerplate_code). See [Flask](http://flask.pocoo.org/docs/0.12/testing/), [Django](https://docs.djangoproject.com/en/1.10/topics/testing/), [Scrapy](https://doc.scrapy.org/en/latest/topics/contracts.html) (links to dedicated chapters in respective docs).
 
-At the end of the day, I feel very comfortable when writing tests in Python. I can write a website using microframework, but even such stripped-down tool still gives me means to simplify writing tests. Often a test is just a few lines long, which saves my time, time of my code reviewer, and time of all other people reading the test suite in the future. I can easily run any set of tests I need, e.g. just those which didn't pass.
+At the end of the day, I feel very comfortable when writing tests in Python. I can write a website using a microframework, but even such stripped-down tool still gives me means to simplify writing tests. Often a test is just a few lines long, which saves my time, time of my code reviewer, and time of all other people reading the test suite in the future. I can easily run any set of tests I need, e.g. just those which didn't pass.
 
 ## Mocha
 
