@@ -28,7 +28,7 @@ At the end of the day, I feel very comfortable when writing tests in Python. I c
 
 ## Mocha
 
-In the world of server JavaScript, which I had the chance to meet in [Apiary](https://apiary.io/) where I currently work, the golden standard is [Mocha](http://mochajs.org/). The _feature-rich_ in their claim means that even the [assert library](http://chaijs.com/) needs to be installed separately. Okay, now seriously. _Killer features_ of Mocha look like this:
+In the world of server-side JavaScript, which I had the chance to meet in [Apiary](https://apiary.io/) where I currently work, the golden standard is [Mocha](http://mochajs.org/). The _feature-rich_ in their claim means that even the [assert library](http://chaijs.com/) needs to be installed separately. Okay, now seriously. _Killer features_ of Mocha look like this:
 
 - It runs all tests and if I type `.only` in code of my tests, I can run just that particular test,
 - it allows usage of _glob patterns_ to select which tests I want to run,
