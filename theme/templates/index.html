@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+
+
+{% block class %}index{% endblock %}
+
+
+{% block container %}
+<div class="site-header">
+    <h1 class="site-header-title">
+        {{ SITENAME }}
+    </h1>
+    {% if SITESUBTITLE %}
+        <p class="site-header-subtitle">
+            {{ SITESUBTITLE }}
+        </p>
+    {% endif %}
+</div>
+
+
+<div id="latest-article" class="latest-article">
+    <div class="latest-article-content article-content">
+        <h2 class="latest-article-title">{{ articles.0.title|prevent_line_breaks }}</h2>
+        <p class="supressed">Nejnovější článek</p>
+
+        {% if articles.0.image %}
+            <img src="{{ articles.0.image }}" class="right img-fluid pull-xs-right img-rounded img-featured">
+        {% endif %}
+
+        {{ articles.0.summary }}
+    </div>
+
+    <div class="continue">
+        <a href="{{ SITEURL }}/{{ articles.0.url }}" class="continue-overlay" title="Celý článek">
+            <button class="btn btn-primary btn-lg">
+                <i class="fa fa-align-left"></i> Celý článek
+            </button>
+        </a>
+    </div>
+</div>
+
+{% if ABOUT %}
+    <hr>
+
+    <div id="about" class="about">
+        <h2 class="supressed">{{ AUTHOR }}</h2>
+        <div class="about-box">
+            <div class="about-image">
+                <div class="about-image-crop img-rounded">
+                    {% if ABOUT_IMAGE %}
+                        <img src="{{ SITEURL }}/{{ ABOUT_IMAGE }}">
+                    {% endif %}
+                </div>
+            </div>
+            <div class="about-text">
+                {{ ABOUT|markdown }}
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+<hr>
+
+<div id="archive" class="archive">
+    <h2 class="supressed">Archiv</h2>
+    <div class="archive-content">
+      <p class="archive-navigation">
+          {% for year_group in dates|groupby('date.year')|reverse %}
+              <a href="#archive-{{ year_group.grouper }}">{{ year_group.grouper }}</a>
+              {% if not loop.last -%}&middot;{%- endif -%}
+          {% endfor %}
+      </p>
+      <ul class="archive-index">
+      {% for year_group in dates|groupby('date.year')|reverse %}
+          <li class="archive-year">
+              <h3 id="archive-{{ year_group.grouper }}">
+                  {{ year_group.grouper }}
+              </h3>
+              {% for month_group in year_group.list|groupby('date.month')|reverse %}
+                  <h4 class="supressed" id="archive-{{ year_group.grouper }}-{{ month_group.grouper }}" title="Počet článků: {{ month_group.list|length }}">
+                      {{ month_group.grouper|month_name }}
+                  </h4>
+                  <ul class="archive-month">
+                  {% for article in month_group.list %}
+                      <li class="archive-article">
+                          <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.date|format_date('%d.%m.') }}</time>
+                          <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title|prevent_line_breaks }}</a></li>
+                  {% endfor %}
+                  </ul>
+              {% endfor %}
+          </li>
+      {% endfor %}
+      </ul>
+    </div>
+</div>
+
+<hr>
+
+<div id="feeds" class="feeds">
+    <a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" class="btn btn-primary-outline">
+        <i class="fa fa-feed"></i> Články
+    </a>
+    {% if DISQUS_SITENAME %}
+        <a href="http://{{ DISQUS_SITENAME }}.disqus.com/latest.rss" class="btn btn-primary-outline">
+            <i class="fa fa-feed"></i> Všechny komentáře
+        </a>
+    {% endif %}
+</div>
+{% endblock %}

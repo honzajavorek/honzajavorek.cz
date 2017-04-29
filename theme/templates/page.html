@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block class %}page page-{{ page.slug|to_css_class }}{% endblock %}
+
+
+{% block title %}{{ page.title }}{% endblock %}
+
+
+{% block container %}
+<div class="page-container">
+    <div class="header">
+        <h1>{{ page.title|prevent_line_breaks }}</h1>
+    </div>
+    <div class="content">
+        {{ page.content }}
+    </div>
+</div>
+{% endblock %}

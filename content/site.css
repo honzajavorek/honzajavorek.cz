@@ -95,6 +95,16 @@
   background-size: contain;
 }
 
+.content .alert-warning {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.content .alert-warning a {
+  color: #8a6d3b;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 992px) {
   .container::before { display: none; }
 }
