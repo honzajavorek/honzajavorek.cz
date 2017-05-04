@@ -16,8 +16,8 @@ komunitu kolem jazyka [Python](http://python.cz/). V současnosti pomáhá hlavn
 propagací aktivit, jako jsou [PyLadies](http://pyladies.cz/),
 [Pyvo](http://pyvo.cz/), nebo [PyCon CZ](https://cz.pycon.org/). Přes den jej
 najdete v [Apiary](https://apiary.io/), kde se stará o
-[Dredd](https://github.com/apiaryio/dredd), framework na testování API. Občas
-taky radí lidem jak mají API dělat a přednáší o tom na konferencích.
+[Dredd](https://github.com/apiaryio/dredd), framework na testování API. Sem
+tam ho můžete potkat, jak přednáší na srazu nebo na konferenci.
 '''
 ABOUT_IMAGE = 'images/honza.jpg'
 
