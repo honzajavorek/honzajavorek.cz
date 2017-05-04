@@ -1,6 +1,10 @@
 Title: Vysoké školy učí dějiny IT
 Date: 2012-06-06 16:30:00
 
+<div class="alert alert-danger" markdown="1">
+**A ještě jedno upozornění!** Toto je historický text o studiu VŠ. Honzův aktuální názor na studium vysoké školy nejlépe vyjadřuje [tento článek]({filename}/2014-02-24_s-odstupem-o-studiu-informatiky.md).
+</div>
+
 [Přijde mi](https://twitter.com/honzajavorek/status/210268151118700544), že hodně názvů vysokoškolských předmětů na IT fakultách by dávalo větší smysl, kdyby se před ně dalo slovo "dějiny". Třeba Dějiny značkovacích jazyků, Dějiny informačních systémů, Dějiny superpočítačů, apod. Přitom by měly začínat slovem principy. Například Principy informačních systémů.
 
 Vysvětlím:

@@ -95,14 +95,21 @@
   background-size: contain;
 }
 
-.content .alert-warning {
+.content .alert {
   margin-bottom: 4rem;
   text-align: center;
 }
 
+.content .alert a {
+  font-weight: bold;
+}
+
 .content .alert-warning a {
   color: #8a6d3b;
-  font-weight: bold;
+}
+
+.content .alert-danger a {
+  color: #a94442;
 }
 
 @media only screen and (max-width: 992px) {

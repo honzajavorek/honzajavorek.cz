@@ -2,6 +2,10 @@ Title: Manifest zklamaného studenta
 Date: 2012-01-23 07:00:00
 Tags: ego, fi mu, management, názory, škola, vut fit
 
+<div class="alert alert-danger" markdown="1">
+**A ještě jedno upozornění!** Toto je historický text o studiu VŠ. Honzův aktuální názor na studium vysoké školy nejlépe vyjadřuje [tento článek]({filename}/2014-02-24_s-odstupem-o-studiu-informatiky.md).
+</div>
+
 Čeká mě půlrok plný stresu. Devět předmětů, diplomka, státnice, dvě práce. A já, jako už se to stává o zkouškovém tradicí, **ztrácím opět motivaci**. Přestup na FI trochu pomohl, ale můj vnitřní rozpor zjevně nevyřešil. Stále si neumím uspokojivě odpovědět na otázku **proč pokračovat ve studiu**. Moje pocity marnosti aj. neurózy jsou silnější a jediným způsobem, jak své vysokoškolské trápení ukončit, je zřejmě ukončit studium.
 
 To lze dvěma způsoby. Buď **vytrvám a školu do půlroku dodělám**, nebo z ní jednoduše odejdu. Abych si obhájil první řešení, sepsal jsem si tento **osobní manifest**. Je důležité, abyste pochopili, že zde řeším svůj **osobní problém s vysokou školou** a nikde neříkám, že to co zde píšu je platné i obecněji.
