@@ -6,16 +6,26 @@ Date: 2017-05-04 20:17:00
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This Friday <a href="https://twitter.com/fczbkk">@fczbkk</a> and <a href="https://twitter.com/honzajavorek">@honzajavorek</a> are speaking at my <a href="https://twitter.com/hashtag/HR?src=hash">#HR</a> event about the mistakes recruiters make. Can't wait! <a href="https://t.co/8AI1OLgVeU">pic.twitter.com/8AI1OLgVeU</a></p>&mdash; Jeanne Trojan (@jmtcz) <a href="https://twitter.com/jmtcz/status/859350211449298944">May 2, 2017</a></blockquote>
 
-We had a little brainstorming session to break down the topics, together with [Riki Fridrich](http://fczbkk.com/), the second speaker. Even though everything we mentioned was quite tempting, in the end I chose to speak about two main things:
-
-- How to become a desirable employer
-- Where to find more employees
-
 Because the talks are without slides, I decided to sort my thoughts and to prepare for the performance by writing it all down as an article on my blog. Looks like my approach worked well after all:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Big thanks to <a href="https://twitter.com/honzajavorek">@honzajavorek</a> and <a href="https://twitter.com/fczbkk">@fczbkk</a> for speaking with our <a href="https://twitter.com/hashtag/HR?src=hash">#HR</a> Community about <a href="https://twitter.com/hashtag/IT?src=hash">#IT</a> people. You were fabulous! <a href="https://t.co/JNwSU57l5V">pic.twitter.com/JNwSU57l5V</a></p>&mdash; Jeanne Trojan (@jmtcz) <a href="https://twitter.com/jmtcz/status/860439891943071745">May 5, 2017</a></blockquote>
 
-## How to Become a Desirable Employer
+## Why
+
+What is so special about IT people that it's so difficult to hire them? The IT people are not special at all. We're just spoiled by the current situation on the market. There is not enough of us to feed the demand, so companies go extra steps when hiring us, they overpay us, and they offer us extreme benefits.
+
+For example, finishing studies of information technologies looks like this:
+
+- Monday - graduation
+- Tuesday - hangover
+- Wednesday - interview, accepted, 20000 CZK first salary
+
+No prior experience required. We don't look for work. We get ten offers per week. We are very picky. If we lose job, we go for several months of hiatus. We never experience any actual _job seeking_. Unfair? Unhealthy? Yes. But that's how it currently is. I'd say there are generally two strategies you can take:
+
+1. To play along, compete, and to be part of the game
+2. To try to change the game (fix the market)
+
+## How to Compete
 
 I think one of the hardest problems recruiters of the big companies face is their public image. When someone says corporation, my imagination goes wild:
 
@@ -31,13 +41,15 @@ I think one of the hardest problems recruiters of the big companies face is thei
 
 The hard part is the fact you cannot hire a PR agency to improve your public image. It could very easily just become a part of the same problem.
 
-Software engineers, especially in the Czech Republic, are extremely allergic to pretending. To give the best impression, you need to align what you are and what you do with what you say, as much as possible.
+Software engineers, especially in the Czech Republic, do not like pretending when it comes to presenting the company in terms of a job offer.
+
+To give the best impression, you need to align what you are and what you do with what you say, as much as possible.
 
 ### Be Cool
 
 One way to improve the image is to change the company to genuinely become better and more flexible. Obviously, that can be very hard. Ask Microsoft about how hard it is.
 
-> Hi boss, Honza and Riki told us to tear down all the shiny office buildings we've been building for several years and to stop using open spaces. What do you think?
+> Hi boss, Honza told us to tear down all the shiny office buildings we've been building for several years and to stop using open spaces. What do you think?
 
 ### Own Cool
 
@@ -55,6 +67,8 @@ Do not overdo, do not bullshit, do not pretend. Be honest. Be open and straightf
 
 Every attempt to present your company as better then it is, every superlative and every buzzword or general term makes you more pathetic in the eyes of an ordinary developer.
 
+It's because the local market is small and they have friends who know what is it really like to work for your company. Or they worked on similar projects and just from plain experience they can recognize you're not saying the complete story.
+
 ### Find Cool
 
 Find technologically interesting things which small or medium companies just cannot afford to have. Ask your existing employees about what's great about their work (and don't forget to also ask what sucks). Large scale? Deep R&D? Open Source? Petabytes of data?
@@ -65,9 +79,9 @@ Size of userbase? Maybe it's the impact what counts. If your company saves lives
 
 There is a chance your company already is pretty cool, but people still imagine Dilbert strips when you offer them a job. That's because they have no idea what you do and how you do it. You probably have zero presence in the community of developers.
 
-Do you and your engineers attend [developer meetups](http://meetup.com/)? Do you send them to [conferences](http://konfery.cz/)? Do they speak at conferences? Do you sponsor events? Do you have conference booths where I could speak with your recruiters and employees? Do you have a funny sticker I can put on my laptop lid? Do you host any events? ([Look at Y-Soft!](https://www.meetup.com/ysoft-th/) [Look at Apiary!](https://www.meetup.com/apiaryio/)) All that shows you care about engineering. All that makes you a visible member of the community. All that puts real people in front of your candidates instead of shiny claims and anonymous logos.
+Do you and your engineers attend [developer meetups](http://meetup.com/)? Do you send them to [conferences](http://konfery.cz/)? Do they speak at conferences? Do you sponsor events? Do you have conference booths where I could speak with your recruiters and employees? Do you have a funny sticker I can put on my laptop lid? Do you host any events? ([Look at Y-Soft!](https://www.meetup.com/ysoft-th/) [Look at Apiary!](https://www.meetup.com/apiaryio/)) All that makes you a visible member of the community. All that puts real people in front of your candidates instead of shiny claims and anonymous logos.
 
-Seems hard? Hire a Developer Relations person (often shortened as DevRel), i.e. someone, who coordinates all your activities towards developers. General Public Relations doesn't count and won't work (goes to the pathetic category). Engineers are special, deal with it. You need someone special to make you visible to them. Ask [Kiwi.com](https://www.kiwi.com/) how [Jan Bleha](https://www.linkedin.com/in/janbleha) is essential to their success with hiring engineers.
+Seems hard? Hire a Developer Relations person (often shortened as DevRel), i.e. someone, who coordinates all your activities towards developers. Ask [Kiwi.com](https://www.kiwi.com/) how [Jan Bleha](https://www.linkedin.com/in/janbleha) is essential to their success with hiring engineers.
 
 **ProTip™:** Are you bored as a recruiter? Become a DevRel person!
 
@@ -83,34 +97,22 @@ Look at [phpstan](https://github.com/phpstan/phpstan) from Slevomat's employees 
 
 ### Offer Career
 
-Often companies don't offer adequate career advancement to engineers. For many software engineers, manager positions are not an acceptable advancement. You need to have two separate tracks:
+Often companies don't offer adequate career advancement to engineers. Many software engineers do not have ambitions to advance to a manager position. To give them some space to grow, you should have two separate tracks:
 
 - Manager Career Track
 - Technical Career Track
 
-Of course, there are people who will do great as managers, but there needs to be a choice for the rest of us. Imagine higher technical positions as architects, analysts, mentors. [My friend](http://petrnohejl.cz/) from [STRV](https://www.strv.com/) became an Android specialist and his task is to keep track of the best techniques in the field and to educate the rest of the company about them.
+Imagine higher technical positions as architects, analysts, mentors. [My friend](http://petrnohejl.cz/) from [STRV](https://www.strv.com/) became an Android specialist and his task is to keep track of the best techniques in the field and to educate the rest of the company about them.
 
-## Where to Find More Employees
-
-Everybody knows currently the market with software engineers is quite unhealthy. There is extremely high demand, but limited offer. That makes engineers very hard to hire and very well paid. Today finishing studies of information technologies looks like this:
-
-- Monday - graduation
-- Tuesday - hangover
-- Wednesday - interview, accepted, 20000 CZK first salary
-
-No prior experience required. Software engineers don't look for work. They get ten offers per week. They are very picky. If they lose job, they go for several months of vacation. They never experienced any actual _job seeking_.
-
-In such environment it's very hard to hire someone. But that doesn't mean you cannot change the game.
-
-### Foster
+## How to Change the Game
 
 Think long-term and train your future employees. Think big and don't limit this to your company. The whole market has a problem, so a big part of the market needs to unite their efforts to make a difference.
 
 You basically need to make sure more people gets trained as software engineers, which will not only feed the demand, but it will also devalue the software engineer position to a blue collar job.
 
-Logically, the people in the market should defend their exclusive positions and should prevent you doing such moves. The good news are that's not the case. The same people who can afford anything thanks to being a scarce resource, will volunteer to help you to bring more people to the market.
+Logically, we should defend our exclusive positions and should prevent you doing such moves. The good news are that's not the case. Although we're the ones who can afford anything exactly thanks to being a scarce resource, we will volunteer to help you to bring more people to the market.
 
-Why? First, the gap is so large it won't actually change anything on their position. On the contrary - by teaching others, they'll become even more experienced and more valued. Second, they feel socially responsible. They see how people with low-paid jobs can easily reach very comfortable lives just by going through a couple of programming courses. They see impact. For them, teaching beginners is Open Source in the real life.
+Why? First, currently the gap is so large it won't actually change anything on our position. On the contrary - by teaching others, we'll become even more experienced and more valued. Second, we feel socially responsible. We see how people with low-paid jobs can easily reach very comfortable lives just by going through a couple of programming courses. We see impact. For us, teaching beginners is Open Source in the real life.
 
 Imagine a funnel like this:
 
@@ -122,7 +124,11 @@ For the effort to be effective, companies in the market need to focus on all thr
 
 ### Improve interest in IT
 
-Again, public image. IT has a very bad public image generally in the society, especially the Czech society. The stereotype of an IT person is a white male introvert wierdo with glasses. You need to change public opinion to get more people to IT. Hire Public Relations and come up with a way how to make IT cool. Push the Czech government to introduce e-government faster, so more people are in touch with technologies and see their benefits. Push on schools to provide courses of basic literacy in modern technologies, internet, etc. Push on breaking stereotypes, such as those saying IT is not for women. Without changing the public image of the IT as a field, there will never be enough interest to feed your demand for employees.
+IT has a very bad public image generally in the society, especially the Czech society. The stereotype of an IT person is a white male introvert wierdo with glasses who does some genius stuff in the basement. You need to change the public opinion to get more people to want to become IT.
+
+Hire Public Relations and come up with a way how to make IT cool. Push the Czech government to introduce e-government faster, so more people are in touch with technologies and see their benefits. Push on schools to provide courses of basic literacy in modern technologies, internet, etc. Push on breaking stereotypes, such as those saying IT is not for women.
+
+Without changing the public image of the IT as a field, there will never be enough interest to devalue our jobs.
 
 ### Improve education
 
@@ -134,21 +140,14 @@ Support education on all levels. As mentioned above, push on public schools to t
 
 Today many people learn programming over the evenings. They have their day jobs or they're on maternity leave. They put a lot of effort in gaining all kind of knowledge, but then there's still a significant gap in skills and experience before they can be hired as a regular developer. To make this transition easier, you need to offer part-time jobs, internships, and to open junior positions suitable as first-time jobs.
 
-People who learned to code in order to change their live are not as picky as you're used to from regular developers. They don't have the luxury of choice and it will take a long time before they'll grow into that position. When hired as juniors, they're very grateful. They're very eager to learn. If you treat them right, they'll be very loyal. Yes, you need to invest in them and teach them. But it's worth it, trust me!
+People who learned to code in order to change their live are not as spoiled as you're used to from us, regular developers. They don't have the luxury of choice. When hired as juniors, they're very grateful. They're very eager to learn. If you treat them right, they'll be very loyal. Yes, you need to invest in them and teach them. But it's worth it, trust me!
 
 Be ready to employ people, who're not ready yet. Go to [PyLadies](http://pyladies.cz/), [Czechitas](http://www.czechitas.cz/cs/), and similar organizations, and feed them with entry-level offers.
 
 ## Conclusion
 
-The market is cruel. No mistake will go unnoticed. Nowadays, to hire IT people, you need to do an excellent job on many levels. But it's not impossible. There are big companies, which are desired and successful in recruiting. If you have problems to hire, it's because you're doing it wrong or because your organization has deeper issues, which are repelling people from even trying to get in touch with you. Don't give up though. You have the resources to do great, you just need to focus them to the right direction.
+If you're not successful in hiring IT people, it's probably because you don't realize the current situation on the market. If you need ready-made professionals, be prepared to invest a lot into the recruiting process, the environment, and into our salaries. You need to do some extra steps to compete, I'm sorry.
 
-- Do not pretend. Cut all the bullshit you produce. **Be honest.** Acknowledge you suck.
-- Find a way to **be cool, in a genunine way**.
-- Be **visible in the community**. Invest in your **public image specificially towards developers**, not only clients.
-- Make sure you offer proper **career advancement**.
-- Partner with other companies to **change the market** together.
-- Change the general image of IT in the Czech society, **invest in education, open entry-level jobs**.
-
-When it comes to mistakes or missed opportunities in hiring, there's so much more to say. Job postings, e-mails, benefits, working environment, ... I hope my talk and this article will show you the light at least in some parts of the process.
+For your own good, you should participate on fixing the market. You are probably the only ones to have the resources and the motivation to make a real difference in this regard, you just need to focus to the right things.
 
 **ProTip™:** If you're looking for Python developers in the Czech Republic, check out [How to find Czech Python software engineers](https://python.cz/en/jobs/#offer) (in Czech, [Jak najít Python programátory](https://python.cz/prace/#nabidka)). Also, there will be [PyCon CZ 2017](https://cz.pycon.org/2017/) in June and we're still looking for sponsors!
