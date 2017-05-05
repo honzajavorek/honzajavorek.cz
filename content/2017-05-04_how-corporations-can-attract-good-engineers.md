@@ -12,7 +12,7 @@ Because the talks are without slides, I decided to sort my thoughts and to prepa
 
 ## Why
 
-What is so special about IT people that it's so difficult to hire them? The IT people are not special at all. We're just spoiled by the current situation on the market. There is not enough of us to feed the demand, so companies go extra steps when hiring us, they overpay us, and they offer us extreme benefits.
+What is so special about IT people that it's so difficult to hire us? We are not special at all. We're just spoiled by the current situation on the market. There is not enough of us to feed the demand, so companies go extra steps when hiring us, they overpay us, and they offer us extreme benefits.
 
 For example, finishing studies of information technologies looks like this:
 
@@ -67,7 +67,7 @@ Do not overdo, do not bullshit, do not pretend. Be honest. Be open and straightf
 
 Every attempt to present your company as better then it is, every superlative and every buzzword or general term makes you more pathetic in the eyes of an ordinary developer.
 
-It's because the local market is small and they have friends who know what is it really like to work for your company. Or they worked on similar projects and just from plain experience they can recognize you're not saying the complete story.
+It's because the local market is small and we have friends who know what is it really like to work for your company. Or we worked on similar projects and just from plain experience we can recognize you're not saying the complete story.
 
 ### Find Cool
 
@@ -77,7 +77,7 @@ Size of userbase? Maybe it's the impact what counts. If your company saves lives
 
 ### Be Visible
 
-There is a chance your company already is pretty cool, but people still imagine Dilbert strips when you offer them a job. That's because they have no idea what you do and how you do it. You probably have zero presence in the community of developers.
+There is a chance your company already is pretty cool, but people still imagine Dilbert strips when you offer them a job. That's because we have no idea what you do and how you do it. You probably have zero presence in the community of developers.
 
 Do you and your engineers attend [developer meetups](http://meetup.com/)? Do you send them to [conferences](http://konfery.cz/)? Do they speak at conferences? Do you sponsor events? Do you have conference booths where I could speak with your recruiters and employees? Do you have a funny sticker I can put on my laptop lid? Do you host any events? ([Look at Y-Soft!](https://www.meetup.com/ysoft-th/) [Look at Apiary!](https://www.meetup.com/apiaryio/)) All that makes you a visible member of the community. All that puts real people in front of your candidates instead of shiny claims and anonymous logos.
 
@@ -97,7 +97,7 @@ Look at [phpstan](https://github.com/phpstan/phpstan) from Slevomat's employees 
 
 ### Offer Career
 
-Often companies don't offer adequate career advancement to engineers. Many software engineers do not have ambitions to advance to a manager position. To give them some space to grow, you should have two separate tracks:
+Often companies don't offer adequate career advancement to engineers. Many software engineers do not have ambitions to advance to a manager position. To give us some space to grow, you should have two separate tracks:
 
 - Manager Career Track
 - Technical Career Track
@@ -112,7 +112,7 @@ You basically need to make sure more people gets trained as software engineers, 
 
 Logically, we should defend our exclusive positions and should prevent you doing such moves. The good news are that's not the case. Although we're the ones who can afford anything exactly thanks to being a scarce resource, we will volunteer to help you to bring more people to the market.
 
-Why? First, currently the gap is so large it won't actually change anything on our position. On the contrary - by teaching others, we'll become even more experienced and more valued. Second, we feel socially responsible. We see how people with low-paid jobs can easily reach very comfortable lives just by going through a couple of programming courses. We see impact. For us, teaching beginners is Open Source in the real life.
+Why? First, currently the gap is so large it won't actually change anything on specificially our position. On the contrary - by teaching others, we'll become even more experienced and more valued. Second, we feel socially responsible. We see how people with low-paid jobs can easily reach very comfortable lives just by going through a couple of programming courses. We see impact. For us, teaching beginners is Open Source in the real life.
 
 Imagine a funnel like this:
 
