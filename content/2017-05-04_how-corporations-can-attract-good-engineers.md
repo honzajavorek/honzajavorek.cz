@@ -12,9 +12,7 @@ Because the talks are without slides, I decided to sort my thoughts and to prepa
 
 ## Why
 
-What is so special about IT people that it's so difficult to hire us? We are not special at all. We're just spoiled by the current situation on the market. There is not enough of us to feed the demand, so companies go extra steps when hiring us, they overpay us, and they offer us extreme benefits.
-
-For example, finishing studies of information technologies looks like this:
+What is so special about IT people that it's so difficult to hire us? We are not special at all. We're just spoiled by the current situation on the market. There is not enough of us to feed the demand, so companies go extra steps when hiring us, they overpay us, and they offer us extreme benefits. For example, finishing studies of information technologies looks like this:
 
 - Monday - graduation
 - Tuesday - hangover
