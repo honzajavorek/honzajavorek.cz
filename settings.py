@@ -1,7 +1,4 @@
 
-import pytz
-import datetime
-
 from danube_delta.settings import *  # NOQA
 
 
@@ -37,10 +34,5 @@ INDEX_SAVE_AS = URL_PREFIX + 'index.html'
 
 
 # Theming
-THEME = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'theme')
-
-OLD_ARTICLE_CLIFF_YEARS = 2
-OLD_ARTICLE_CLIFF = datetime.datetime.utcnow().replace(tzinfo=pytz.utc) - datetime.timedelta(days=365 * OLD_ARTICLE_CLIFF_YEARS)
-
 DISQUS_SITENAME = 'javorove-listky'
 GOOGLE_ANALYTICS = 'UA-1316071-6'
