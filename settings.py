@@ -1,7 +1,4 @@
 
-import pytz
-import datetime
-
 from danube_delta.settings import *  # NOQA
 
 
@@ -22,6 +19,14 @@ tam ho můžete potkat, jak přednáší na srazu nebo na konferenci.
 ABOUT_IMAGE = 'images/honza.jpg'
 
 
+OUTDATED_ARTICLE_YEARS = 2
+OUTDATED_ARTICLE_WARNING = '''
+**Upozornění!** Tento článek vyšel před více než {} lety. Můžete si
+jej přečíst v rámci zkoumání minulosti, ale přepokládejte, že dnes se
+Honza již nemusí s obsahem ztotožňovat.
+'''.format(OUTDATED_ARTICLE_YEARS)
+
+
 if PRODUCTION:
     SITEURL = 'http://honzajavorek.cz'
 
@@ -37,10 +42,5 @@ INDEX_SAVE_AS = URL_PREFIX + 'index.html'
 
 
 # Theming
-THEME = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'theme')
-
-OLD_ARTICLE_CLIFF_YEARS = 2
-OLD_ARTICLE_CLIFF = datetime.datetime.utcnow().replace(tzinfo=pytz.utc) - datetime.timedelta(days=365 * OLD_ARTICLE_CLIFF_YEARS)
-
 DISQUS_SITENAME = 'javorove-listky'
 GOOGLE_ANALYTICS = 'UA-1316071-6'
