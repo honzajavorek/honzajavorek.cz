@@ -19,6 +19,14 @@ tam ho můžete potkat, jak přednáší na srazu nebo na konferenci.
 ABOUT_IMAGE = 'images/honza.jpg'
 
 
+OUTDATED_ARTICLE_YEARS = 2
+OUTDATED_ARTICLE_WARNING = '''
+**Upozornění!** Tento článek vyšel před více než {} lety. Můžete si
+jej přečíst v rámci zkoumání minulosti, ale přepokládejte, že dnes se
+Honza již nemusí s obsahem ztotožňovat.
+'''.format(OUTDATED_ARTICLE_YEARS)
+
+
 if PRODUCTION:
     SITEURL = 'http://honzajavorek.cz'
 
