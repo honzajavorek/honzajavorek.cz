@@ -71,4 +71,4 @@ Když jsem si s lidmi vyprávěl o code review, narazil jsem často na to, že j
 
 Není to vyčerpávající, ale to ani být nemělo. K dnešnímu dni jsou jen na Zdrojáku na téma code review [tři články](https://www.zdrojak.cz/n/code-review/) a mimo český internet je určitě také spousta zdrojů, jak se v kontrole kódu zdokonalit. Jeden z nejlepších článků na toto téma je za mě jednoznačně [Top ten pull request review mistakes](https://blog.scottnonnenberg.com/top-ten-pull-request-review-mistakes/), kde Scott Nonnenberg rozebírá časté chyby při review a musím přiznat, že minimálně v rámci mojí praxe jsou to zásahy do černého.
 
-Jak děláte code review vy? Schválili byste tento článek? A věděli jste, že k němu [taky můžete udělat code review]()? :-)
+Jak děláte code review vy? Schválili byste tento článek? A věděli jste, že k němu [taky můžete udělat code review](https://github.com/honzajavorek/honzajavorek.cz/pull/33)? :-)
