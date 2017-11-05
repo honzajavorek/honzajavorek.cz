@@ -10,11 +10,11 @@ _Code review_ je kontrola změn v kódu před tím, než jsou začleněny do pro
 - Uršula diskutuje s Věnceslavem o změnách. Nakonec jde a opraví nalezené chyby (nejčastěji tím, že přidá další _commity_ do téže větve, tedy i do téhož PR).
 - Jestli začlenění schválených změn (_merge_) nakonec provede Uršula nebo Věnceslav, je opět na dohodě.
 
-Jak bylo zmíněno, GitHub dnes člověka [celkem pěkně tímto procesem vede](https://github.com/features/code-review/). Kolem této základní kostry, jenž je všem společná, je ovšem spousta věcí, které si rozhodujeme sami. Kdo poskytuje review? Jak review probíhá? Jak probíhá diskuse kolem PR?
+GitHub dnes člověka [celkem pěkně tímto procesem vede](https://github.com/features/code-review/). Kolem této základní kostry, jež je všem společná, je ovšem spousta věcí, které si rozhodujeme sami. Kdo poskytuje review? Jak review probíhá? Jak probíhá diskuse kolem PR?
+
+Jedna z věcí, které jsou od počátku zcela zakořeněny v softwarové kultuře [Apiary](https://apiary.io/), jsou právě code reviews. Natolik, že pokud se vyjímečně stane, že začleňuji kód, který review nedostal, cítím se stejně provinile, jako bych použil `goto`, `eval`, nebo jinou věc, která programátory od mala budí ze spaní. Jak to tedy funguje u nás?
 
 ## Kdo kontroluje
-
-Jedna z věcí, které jsou zcela zakořeněny v softwarové kultuře [Apiary](https://apiary.io/), jsou právě code reviews. Natolik, že pokud se vyjímečně stane, že začleňuji kód, který review nedostal, cítím se stejně provinile, jako bych použil `goto`, `eval`, nebo jinou věc, která programátory od mala budí ze spaní. Jak to u nás funguje?
 
 Když nás bylo málo a neměli jsme firmu rozdělenou na týmy, dělal každý zrovna to, co bylo potřeba. Každý rozuměl každé části produktu, a uměl komukoliv udělat code review. Velmi brzy po tom, co jsem nastoupil, jsem dělal review ostříleným mazákům a oni mě. V code review neexistovala žádná hierarchie, která by říkala, že zkušenější dělají review méně zkušeným. Díky tomu se znalost codebase a schopnost code review hezky rozprostřela. Také nikdo neměl pocit, že by byl chytřejší než ostatní, nebo neomylný. Rovní s rovnými. Ono totiž pokud vám dělá review začátečník a nepochopí váš kód, není to jeho chyba. Napsali jste příliš komplexní a nepochopitelný kód. Až tam bude chvíli ležet a vy se k němu po čase vrátíte, budete ho také číst jako začátečník.
 
@@ -23,6 +23,8 @@ Když jsme vytvořili týmy kolem produktových oblastí ([_bounded contexts_](h
 ## Co se kontroluje
 
 Code review se dělá zcela na všem, co má být začleněno do hlavní větve. I ve chvíli, kdy jsem ve tři ráno musel v rámci služby vstát a opravit produkci kvůli nějakému průšvihu, nechal jsem si udělat code review. Samozřejmě ne zcela vždy (někdy na to prostě nebyl čas) a také pomůže, když máte i ve tři polovinu firmy vzhůru, protože jsou v San Franciscu :-D
+
+Neexistuje, že bych začal novou knihovnu na zelené louce a tvořil bych to tam sám, bez code review. Kdo pohlídá, že ji navrhuji správně? Kdo bude schopen ji udržovat, když pojedu na dovolenou? Díky code review jsou zaručeny alespoň základní kvality kódu. A také existují minimálně dva lidé ve firmě, kteří danému kódu rozumí.
 
 ## Kdy se kontroluje
 
@@ -36,17 +38,17 @@ Zde záměrně smíchám to, co ve firmě děláme všichni, a to, co dělám j�
 - Podívám se, zda prošly testy v _Continuous Integration_. Pokud ne, PR zavřu, nezajímá mě. Autor mě měl pozvat k review až ve chvíli, kdy je vše zelené. Mám-li dobrou náladu, podívám se proč testy spadly a napíšu komentář, který autorovi pomůže s vyřešením problému.
 - Jestliže se změna týká něčeho, co ovlivňuje API nebo chování produktu, podívám se na změny v dokumentaci. Pokud žádné změny nejsou, PR zavřu. Pokud jsou, přečtu si dokumentaci a snažím se z ní pochopit, co změna dělá. V kontextu tohoto porozumění potom dělám review všeho ostatního. Jestli se něco od popisu liší, je to zásadní problém.
 - Jako první hned po dokumentaci se podívám na testy. **Testy jsou nejdůležitější část PR.** Pokud chybí, PR zavírám. Důkladně čtu testy a přemýšlím nad tím, zda to, co testují je opravdu to, čeho chtěl autor změn dosáhnout a co je v popisu změn. Není nic horšího, než testy, které testují nesmysly.
-- V tuto chvíli už přesně vím, jak má věc fungovat. Přečetl jsem totiž dokumentaci a testy. Mohu tedy pokračovat k vlastnímu kódu. Snažím se držet podstaty změn.
+- V tuto chvíli už přesně vím, jak má věc fungovat. Přečetl jsem totiž dokumentaci a testy. Mohu tedy pokračovat k vlastnímu kódu.
 
-Začínání testy považuji po čase jako jednu z nejdůležitějších kvalit toho, kdo dělá code review. Začlenění špatných testů totiž dává falešný pocit bezpečí, že něco funguje tak jak má a je to do budoucna tikající bomba. To už je lepší nemít žádné testy, protože potom aspoň víte, že o funkčnosti daného kódu nevíte vůbec nic, a jednáte s opatrností.
+Začínání testy považuji po čase jako jednu z nejdůležitějších kvalit toho, kdo dělá code review. Začlenění špatných testů totiž dává falešný pocit bezpečí, že něco funguje tak, jak má. Tikající bomba! To už je lepší nemít žádné testy, protože potom aspoň víte, že o funkčnosti daného kódu nevíte vůbec nic, a jednáte s opatrností.
 
 ## Jak se hodnotí
 
 Po celou dobu review si v hlavě připomínky dělím na tři kategorie:
 
-- _nitpick_ - Něco, co není vůbec důležité, ale [OCD](https://cs.wikipedia.org/wiki/Obsedantn%C4%9B_kompulzivn%C3%AD_porucha) mi nedovolí o tom nenapsat komentář.
-- _blocking_ - Zásadní problém, kvůli kterému nemůže být PR začleněn a proč mu dávám zamítavý verdikt.
-- Ostatní připomínky jsou buďto méně důležité, nebo k diskusi, ke zvážení.
+- _nitpick_ - Něco, co není vůbec důležité, ale [OCD](https://cs.wikipedia.org/wiki/Obsedantn%C4%9B_kompulzivn%C3%AD_porucha) mi nedovolí o tom nenapsat komentář. Většinou věci ohledně závorek, mezer, velikosti písmen, atd.
+- _blocking_ - Zásadní problém, kvůli kterému nemůže být PR začleněn a proč mu dávám zamítavý verdikt. Kód zapomněl na nějaký edge case a vybouchne, je tam výrazný performance nebo security problém, apod.
+- Ostatní připomínky jsou někde mezi. K diskusi, ke zvážení. Kód bude fungovat správně i bez nich. Architektura, pojmenovávání věcí, struktura kódu, použití jiné knihovny, aj.
 
 Připomínky podle toho jasně označím. V negativním závěřečném hodnocení zopakuji, co přesně bylo tak problematické, že jsem kvůli tomu PR nepustil dál. Nejsou-li ale v kódu žádné _blocking_ připomínky, dám mu zelenou. Je na autorovi, zda má čas se se mnou vybavovat, zda chce opravovat drobnosti, nebo jestli naopak musí mít tento kód nutně zítra na produkci a raději udělá okamžitě _merge_. Běžně se stává i to, že autor souhlasí s připomínkami, ale kód potřebuje co nejdříve začlenit, takže to udělá a k připomínky později opraví v dalším, dedikovaném PR, nebo pro ně založí issues - aby se na ně nezapomnělo.
 
@@ -56,18 +58,20 @@ Mnoho _nitpick_ připomínkám se lze vyhnout, pokud se používá nějaký _cod
 
 Code review je psaná komunikace mezi dvěma lidmi a jako taková trpí množstvím příležitostí k tomu, aby se dotyční začali nenávidět. Stručně doporučím dvě věci:
 
-- Pravidlo číslo jedna je odosobnit se od svého kódu. Pokud někdo píše, že váš kód je špatně, neznamená to, že chtěl ranit vaše city, že neumíte psát dobrý kód, že vás vyhodí z práce, že jste idiot, nebo že celý váš život nestojí za nic. Nejspíš chtěl jen napsat, že váš kód je špatně.
+- Pravidlo číslo jedna je odosobnit se od svého kódu. Pokud někdo píše, že váš kód je špatně, neznamená to, že chtěl ranit vaše city, že neumíte psát dobrý kód, že vás vyhodí z práce, že jste idiot, nebo že celý váš život nestojí za nic. Nejspíš chtěl jen napsat, že váš kód je špatně. Stejně tak při review nemyslete na toho, kdo kód psal, a koho volil do parlamentu, ale soustřeďte se na to, zda bude daná věc fungovat.
 - Přečtěte si [Humanizing among coders](https://ana-balica.github.io/2017/05/28/humanizing-among-coders/). Nebo si to [pusťte na YouTube](https://www.youtube.com/watch?v=npyB5Oz-v-I).
+
+Přemýšleli jste v minulém odstavci nad tím, jakou má funkci označovat připomínky jako _nitpick_, když mají při verdiktu stejnou váhu jako cokoliv, co není _blocking_? Je to proto, aby dal Věnceslav chudince Uršule najevo, že i když k jejímu PR napsal 60 komentářů, tak 55 z nich jsou "jen takové hlouposti, neboj".
 
 ## Kdo začleňuje
 
 Kdo začlení schválený PR? To záleží na tom, co je navázáno na začlenění kódu do hlavní větve. Často _merge_ způsobí, že se někde automatiky nasadí nová verze aplikace, nebo že se vydá nová verze knihovny. Co když ji ještě vydat nechceme? Co když tato změna nejdříve vyžaduje nějaké změny na produkční databázi? Tyto věci ví autor kódu, tedy Uršula. Proto by měla udělat _merge_ ona. Věnceslav akorát "dá zelenou".
 
-Kromě této ale existuje ještě jedna teorie, která říká, že v momentě, kdy je PR přijat, tak má být i začleněn. Pokud je při tom potřeba udělat něco speciálního, má to být napsáno v popisu PR a Věnceslav to má udělat a změny hned nasadit. Pokud Uršule napsal nějaké neblokující připomínky, ta je může adresovat v novém PR. Tento přístup zrychluje doručování nového kódu, protože se odstraňují některá čekání mezi Uršulou a Věnceslavem. Zároveň to klade nároky na Věnceslava - má zodpovědnost za nasazení aplikace, takže si bude dávat pozor, aby review udělal dobře.
+Kromě této ale existuje ještě jedna praxe, která říká, že v momentě, kdy je PR přijat, tak má být i začleněn. Pokud je při tom potřeba udělat něco speciálního, má to být napsáno v popisu PR a Věnceslav to má udělat a změny hned nasadit. Pokud Uršule napsal nějaké neblokující připomínky, ta je může adresovat v novém PR. Tento přístup zrychluje nasazování kódu na produkci, protože se odstraňují některá čekání mezi Uršulou a Věnceslavem. Zároveň to klade nároky na Věnceslava - má zodpovědnost za nasazení aplikace, takže si bude dávat pozor, aby review udělal dobře.
 
 ## Deset nejčastějších chyb
 
-Když jsem si s lidmi vyprávěl o code review, narazil jsem často na to, že jej dělají, ale vždy v nějaké z mého pohledu "jednonohé" formě. Vždy tomu něco chybělo k tomu, aby to fungovalo jako ta pěkná kontrolní mašinérie, jakou máme v práci. Rozhodl jsem se tedy o naše zvyklosti z Apiary a moje vlastní zkušenosti podělit.
+Když jsem si s lidmi vyprávěl o code review, narazil jsem mnohdy na to, že jej dělají, ale vždy v nějaké z mého pohledu "jednonohé" formě. Vždy tomu něco chybělo k tomu, aby to fungovalo jako ta pěkná kontrolní mašinérie, jakou máme v práci. Rozhodl jsem se tedy o naše zvyklosti z Apiary a moje vlastní zkušenosti podělit.
 
 Není to vyčerpávající, ale to ani být nemělo. K dnešnímu dni jsou jen na Zdrojáku na téma code review [tři články](https://www.zdrojak.cz/n/code-review/) a mimo český internet je určitě také spousta zdrojů, jak se v kontrole kódu zdokonalit. Jeden z nejlepších článků na toto téma je za mě jednoznačně [Top ten pull request review mistakes](https://blog.scottnonnenberg.com/top-ten-pull-request-review-mistakes/), kde Scott Nonnenberg rozebírá časté chyby při review a musím přiznat, že minimálně v rámci mojí praxe jsou to zásahy do černého.
 
