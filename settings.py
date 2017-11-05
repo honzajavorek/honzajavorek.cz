@@ -8,13 +8,10 @@ SITENAME = 'Javorové lístky'
 
 ABOUT_HEADING = AUTHOR
 ABOUT = '''
-[Honza](http://honzajavorek.cz) je programátor. Od roku 2011 buduje českou
-komunitu kolem jazyka [Python](http://python.cz/). V současnosti pomáhá hlavně s
-propagací aktivit, jako jsou [PyLadies](http://pyladies.cz/),
-[Pyvo](http://pyvo.cz/), nebo [PyCon CZ](https://cz.pycon.org/). Přes den jej
-najdete v [Apiary](https://apiary.io/), kde se stará o
-[Dredd](https://github.com/apiaryio/dredd), framework na testování API. Sem
-tam ho můžete potkat, jak přednáší na srazu nebo na konferenci.
+[Honza](http://honzajavorek.cz) je programátor. Od roku 2011 pomáhá budovat
+českou komunitu kolem jazyka [Python](http://python.cz/).
+V [Apiary](https://apiary.io/), se stará o [Dredd](https://github.com/apiaryio/dredd),
+nástroj na testování webových API.
 '''
 ABOUT_IMAGE = 'images/honza.jpg'
 
