@@ -65,7 +65,7 @@ Přemýšleli jste v minulém odstavci nad tím, jakou má funkci označovat př
 
 ## Kdo začleňuje
 
-Kdo začlení schválený PR? To záleží na tom, co je navázáno na začlenění kódu do hlavní větve. Často _merge_ způsobí, že se někde automatiky nasadí nová verze aplikace, nebo že se vydá nová verze knihovny. Co když ji ještě vydat nechceme? Co když tato změna nejdříve vyžaduje nějaké změny na produkční databázi? Tyto věci ví autor kódu, tedy Uršula. Proto by měla udělat _merge_ ona. Věnceslav akorát "dá zelenou".
+Kdo začlení schválený PR? To záleží na tom, co je navázáno na začlenění kódu do hlavní větve. Často _merge_ způsobí, že se někde automaticky nasadí nová verze aplikace, nebo že se vydá nová verze knihovny. Co když ji ještě vydat nechceme? Co když tato změna nejdříve vyžaduje nějaké změny na produkční databázi? Tyto věci ví autor kódu, tedy Uršula. Proto by měla udělat _merge_ ona. Věnceslav akorát "dá zelenou".
 
 Kromě této ale existuje ještě jedna praxe, která říká, že v momentě, kdy je PR přijat, tak má být i začleněn. Pokud je při tom potřeba udělat něco speciálního, má to být napsáno v popisu PR a Věnceslav to má udělat a změny hned nasadit. Pokud Uršule napsal nějaké neblokující připomínky, ta je může adresovat v novém PR. Tento přístup zrychluje nasazování kódu na produkci, protože se odstraňují některá čekání mezi Uršulou a Věnceslavem. Zároveň to klade nároky na Věnceslava - má zodpovědnost za nasazení aplikace, takže si bude dávat pozor, aby review udělal dobře.
 
