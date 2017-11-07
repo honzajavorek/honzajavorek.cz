@@ -10,7 +10,7 @@ ABOUT_HEADING = AUTHOR
 ABOUT = '''
 [Honza](http://honzajavorek.cz) je programátor. Od roku 2011 pomáhá budovat
 českou komunitu kolem jazyka [Python](http://python.cz/).
-V [Apiary](https://apiary.io/), se stará o [Dredd](https://github.com/apiaryio/dredd),
+V [Apiary](https://apiary.io/) se stará o [Dredd](https://github.com/apiaryio/dredd),
 nástroj na testování webových API.
 '''
 ABOUT_IMAGE = 'images/honza.jpg'
