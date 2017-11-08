@@ -34,10 +34,10 @@ Toto nemáme úplně pevně dáno, ale slušností je udělat code review co nej
 
 Zde záměrně smíchám to, co ve firmě děláme všichni, a to, co dělám já. Nebo co bych si přál, aby bylo běžné. Když přijdu k PR jako někdo, kdo má dělat review, postupuji následovně:
 
-- Přečtu si popis PR. Pokud jej nemá nebo nevysvětluje _proč_ jsou změny prováděny, PR zavřu, nezajímá mě.
-- Podívám se, zda prošly testy v _Continuous Integration_. Pokud ne, PR zavřu, nezajímá mě. Autor mě měl pozvat k review až ve chvíli, kdy je vše zelené. Mám-li dobrou náladu, podívám se proč testy spadly a napíšu komentář, který autorovi pomůže s vyřešením problému.
-- Jestliže se změna týká něčeho, co ovlivňuje API nebo chování produktu, podívám se na změny v dokumentaci. Pokud žádné změny nejsou, PR zavřu. Pokud jsou, přečtu si dokumentaci a snažím se z ní pochopit, co změna dělá. V kontextu tohoto porozumění potom dělám review všeho ostatního. Jestli se něco od popisu liší, je to zásadní problém.
-- Jako první hned po dokumentaci se podívám na testy. **Testy jsou nejdůležitější část PR.** Pokud chybí, PR zavírám. Důkladně čtu testy a přemýšlím nad tím, zda to, co testují je opravdu to, čeho chtěl autor změn dosáhnout a co je v popisu změn. Není nic horšího, než testy, které testují nesmysly.
+- Přečtu si popis PR. Pokud jej nemá nebo nevysvětluje _proč_ jsou změny prováděny, PR zamítnu.
+- Podívám se, zda prošly testy v _Continuous Integration_. Pokud ne, PR zamítnu. Autor mě měl pozvat k review až ve chvíli, kdy je vše zelené. Mám-li dobrou náladu, podívám se proč testy spadly a napíšu komentář, který autorovi pomůže s vyřešením problému.
+- Jestliže se změna týká něčeho, co ovlivňuje API nebo chování produktu, podívám se na změny v dokumentaci. Pokud žádné změny nejsou, PR zamítnu. Pokud jsou, přečtu si dokumentaci a snažím se z ní pochopit, co změna dělá. V kontextu tohoto porozumění potom dělám review všeho ostatního. Jestli se něco od popisu liší, je to zásadní problém.
+- Jako první hned po dokumentaci se podívám na testy. **Testy jsou nejdůležitější část PR.** Pokud chybí, PR zamítám. Důkladně čtu testy a přemýšlím nad tím, zda to, co testují je opravdu to, čeho chtěl autor změn dosáhnout a co je v popisu změn. Není nic horšího, než testy, které testují nesmysly.
 - V tuto chvíli už přesně vím, jak má věc fungovat. Přečetl jsem totiž dokumentaci a testy. Mohu tedy pokračovat k vlastnímu kódu.
 
 Začínání testy považuji po čase jako jednu z nejdůležitějších kvalit toho, kdo dělá code review. Začlenění špatných testů totiž dává falešný pocit bezpečí, že něco funguje tak, jak má. Tikající bomba! To už je lepší nemít žádné testy, protože potom aspoň víte, že o funkčnosti daného kódu nevíte vůbec nic, a jednáte s opatrností.
