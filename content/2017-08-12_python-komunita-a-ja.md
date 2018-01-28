@@ -57,5 +57,6 @@ Není to žádná velká změna. Mně to pomůže ujasnit si, čím se chci zab�
 Bohužel pár věcí, o které jsem se staral, nebo to vypadalo, že se o ně postarám, ostrouhají. Ale je to tak lepší, protože přestanu blokovat cestu jiným lidem v tom, aby je udělali. A já sám budu víc soustředěný.
 
 
+[blog.python.cz]: http://blog.python.cz
 [python.cz]: https://python.cz/
 [pyvec.org]: http://pyvec.org/

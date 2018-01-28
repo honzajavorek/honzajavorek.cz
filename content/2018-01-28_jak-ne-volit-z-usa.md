@@ -4,6 +4,8 @@ Date: 2018-01-28 13:59:00
 
 Do termínu prvního kola prezidentských voleb mi na poslední chvíli spadla pracovní cesta do San Franciska. Nejdřív jsem si myslel, že tím pádem volit prostě nebudu, ale kamarádi mi rychle ukázali, že se jen vymlouvám a možností, jak situaci vyřešit, je spousta.
 
+![Ze SF do LA]({filename}/images/sf-la.png)
+
 Letěl jsem s kolegou a navíc mi radili výše zmínění kamarádi, takže se sluší psát v množném čísle. Naše poznatky:
 
 - Pokud v jiné zemi nežijete, ale pouze do ní cestujete, stačí vám voličský průkaz, stejně jako kdybyste chtěli volit mimo místo trvalého pobytu v ČR.
