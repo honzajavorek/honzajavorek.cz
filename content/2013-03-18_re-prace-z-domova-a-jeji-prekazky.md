@@ -1,7 +1,7 @@
 Title: RE: Práce z domova a její překážky
 Date: 2013-03-18 11:40:52
 
-Kamarád mi poslal odkaz na Dagiho článek [Práce z domova a její překážky](http://www.dagblog.cz/2013/03/prace-z-domova-jeji-prekazky.html) s tím, že s obsahem naprosto souhlasí a co že na to jako já.
+Kamarád mi poslal odkaz na Dagiho článek [Práce z domova a její překážky](http://web.archive.org/web/20160407234607/https://dagblog.cz/2013/03/prace-z-domova-jeji-prekazky.html) s tím, že s obsahem naprosto souhlasí a co že na to jako já.
 
 <blockquote class="twitter-tweet"><p>Práce z domova a její překážky <a href="http://t.co/AIlxqH07tp" title="http://www.dagblog.cz/2013/03/prace-z-domova-jeji-prekazky.html">dagblog.cz/2013/03/prace-…</a> Uplny souhlas //cc @<a href="https://twitter.com/honzajavorek">honzajavorek</a></p>&mdash; Michal Svec (@svecmichal) <a href="https://twitter.com/svecmichal/status/313566445177020416">March 18, 2013</a></blockquote>
 
