@@ -95,6 +95,11 @@
   background-size: contain;
 }
 
+.figure-caption a:link, .figure-caption a:focus, .figure-caption a:hover, .figure-caption a:visited {
+  color: #818a91;
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 992px) {
   .container::before { display: none; }
 }
