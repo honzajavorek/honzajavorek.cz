@@ -27,7 +27,7 @@ Nebudu nic zastírat, jsme startup, který koupila korporace. Každý startup je
 Akvizicí začalo naše dobrodružství s Oracle. Dostali jsme se na hlavní stránku novin, spolu s Putinem v ponorce. Kdo z vás to má?
 
 ![Praha]({filename}/images/prg-office.jpg)
-Ač jsme nyní součástí Oracle, který v Praze sídlí v Jinonicích, zatím nám zůstávají [kanceláře v pražském Karlíne navržené majo architekty](https://www.archiweb.cz/b/kancelare-apiary). Nemáme open space.
+Ač jsme nyní součástí Oracle, který v Praze sídlí v Jinonicích, zatím nám zůstávají [kanceláře v pražském Karlíně navržené majo architekty](https://www.archiweb.cz/b/kancelare-apiary). Nemáme open space.
 
 ![Karlín]({filename}/images/vzduch-ze-slaniny.jpg)
 Karlín je v centru města a v centru dění. Navíc je to skvělá pozorovatelna pražské [gentrifikace](https://cs.wikipedia.org/wiki/Gentrifikace). Každý týden nová restaurace, bistro, specializovaný obchůdek. Při čtení jídelních lístků můžete přemýšlet nad tím, co je ještě hipsterské a co už snobské.
