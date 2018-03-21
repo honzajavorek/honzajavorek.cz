@@ -63,7 +63,7 @@ Takže ještě jednou:
 
 **Hledáme:** frontend, nejlíp React, spíše zkušenější, full time, spíš Praha<br>
 **Plný popis:** [tady na LinkedIn][linkedin]<br>
-**Pište na:** [monika.mikesova@oracle.com](mailto:monika.mikesova@oracle.com).
+**Pište na:** [monika.mikesova@oracle.com](mailto:monika.mikesova@oracle.com)
 
 
 [linkedin]: https://www.linkedin.com/jobs/cap/view/569580498/?pathWildcard=569580498&trk=job_capjs
