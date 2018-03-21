@@ -2,7 +2,7 @@ Title: Pracuj s námi
 Date: 2018-03-21 17:00:00
 
 
-Pracuji pro [Apiary](https://apiary.io/), což je bývalý český startup. Vytváříme nástroje pro návrh webových API. Píšu bývalý, protože jsme [startup prodali](https://byznys.ihned.cz/c1-65593630-oracle-kupuje-za-miliardy-korun-cesky-start-up-apiary-zakladatele-ve-firme-zustavaji). Původní tým ale zůstává a naopak by potřeboval doplnit. Jako startup jsme stále balancovali na hraně možností, sháněli investice, cíle se měnily z měsíce na měsíc. Být pod [Larryho](https://en.wikipedia.org/wiki/Larry_Ellison) křídly sice taky přináší výzvy, ale v zásadě máme konečně možnost nabrat lidi, opravit co je rozbité, a vytvořit vše, co jsme si kdy vysnili.
+Pracuji pro [Apiary](https://apiary.io/), což je bývalý český startup. Vytváříme nástroje pro návrh webových API. Píšu bývalý, protože jsme [startup prodali](https://byznys.ihned.cz/c1-65593630-oracle-kupuje-za-miliardy-korun-cesky-start-up-apiary-zakladatele-ve-firme-zustavaji). Původní tým ale zůstává a naopak by potřeboval doplnit. Jako startup jsme stále balancovali na hraně možností, sháněli investice, cíle se měnily z měsíce na měsíc. Plout pod [Larryho](https://en.wikipedia.org/wiki/Larry_Ellison) [plachtami](https://duckduckgo.com/?q=oracle+yacht&t=ffab&iar=images&iax=images&ia=images) sice taky přináší výzvy, ale v zásadě máme konečně možnost nabrat lidi, opravit co je rozbité, a vytvořit vše, co jsme si kdy vysnili.
 
 V Apiary vedu malý tým, který zodpovídá za všechny nástroje kolem testování API. Jedním z nich je třeba [Dredd](https://github.com/apiaryio/dredd) s více jak 2000 [hvězdičkami na GitHubu](https://github.com/thepracticaldev/orly-full-res/blob/master/choosingbasedongithubstars-big.png). Snažíme se být [Open Source](https://opensource.guide/) _first_, testovat jak se má, psát dokumentaci jak se má.
 
@@ -23,8 +23,8 @@ Máte-li otázky, klidně pište přímo nám dvěma. Jinak prosím rovnou Monic
 
 Nebudu nic zastírat, jsme startup, který koupila korporace. Každý startup je jiný, každá korporace, každá akvizice. Nikdo kromě nás nemá jasnou představu o tom, jak to ve skutečnosti dopadlo, takže mohou kolovat nejrůznější předsudky a mýty. Proto poskytuji následující _nakoukání do Apiary kultůry_:
 
-![Akvizice]({filename}/images/putin.jpg)
-Akvizicí začalo naše dobrodružství s Oracle. Dostali jsme se na hlavní stránku novin, spolu s Putinem v ponorce. Kdo z vás to má?
+![Investice]({filename}/images/putin.jpg)
+Už v dobách před akvizicí jsme byli známý český startup. Díky investicím jsme se dokonce dostali na hlavní stránku novin, spolu s Putinem v ponorce. Kdo z vás to má?
 
 ![Praha]({filename}/images/prg-office.jpg)
 Ač jsme nyní součástí Oracle, který v Praze sídlí v Jinonicích, zatím nám zůstávají [kanceláře v pražském Karlíně navržené majo architekty](https://www.archiweb.cz/b/kancelare-apiary). Nemáme open space.
