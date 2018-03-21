@@ -6,8 +6,6 @@ Pracuji pro [Apiary](https://apiary.io/), což je bývalý český startup. Vytv
 
 V Apiary vedu malý tým, který zodpovídá za všechny nástroje kolem testování API. Jedním z nich je třeba [Dredd](https://github.com/apiaryio/dredd) s více jak 2000 [hvězdičkami na GitHubu](https://github.com/thepracticaldev/orly-full-res/blob/master/choosingbasedongithubstars-big.png). Snažíme se být [Open Source](https://opensource.guide/) _first_, testovat jak se má, psát dokumentaci jak se má.
 
-![Dredd]({filename}/images/dredd.png)
-
 Máme velké plány, které ovšem ve dvou nezvládneme. A protože jde nejen o nástroje do terminálu, ale i o webové aplikace, které poběží uživatelům pod rukama přímo na apiary.io, v současném složení týmu to nezvládneme už vůbec. Zatímco [Michal](https://github.com/michalholasek) je renesanční osobnost a všeumětel (tedy _full stack_), tak já, jakožto [přeběhlík z Pythonu]({filename}/2014-05-29_proc-python.md) do Node.js, jsem na frontend úplný lempl.
 
 ![Honza a Michal]({filename}/images/sjs-2017.png)
