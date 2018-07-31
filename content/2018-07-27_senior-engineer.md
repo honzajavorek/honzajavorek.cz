@@ -1,6 +1,5 @@
 Title: Senior Engineer
 Date: 2018-07-27 15:02:00
-Status: draft
 
 
 Today morning I opened [Pyonieri](https://www.facebook.com/groups/pyonieri/) (Pyoneers), the Slovak & Czech Python user group on Facebook. There has been a [question](https://www.facebook.com/groups/pyonieri/permalink/1965160656829435/) about how many years one needs to become a senior software engineer. Reading the comments gave me an impression there is a great amount of confusion about **what does it mean to be a senior engineer** in the first place. I decided I'll write down my own thoughts on the topic.
