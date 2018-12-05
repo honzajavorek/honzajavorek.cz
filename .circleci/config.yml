@@ -11,7 +11,7 @@ jobs:
           name: install dependencies
           command: |
             python3 -m pip install pip pipenv --upgrade
-            npm install npm@6 --global
+            sudo npm install npm@6 --global
             ./install.sh
 
       - run:
