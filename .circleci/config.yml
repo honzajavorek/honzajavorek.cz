@@ -10,7 +10,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            python3 -m pip install pip pipenv --upgrade
+            python -m pip install pip pipenv --upgrade
             sudo npm install npm@6 --global
             ./install.sh
 
@@ -25,5 +25,6 @@ jobs:
             TRAVIS_REPO_SLUG: honzajavorek/honzajavorek.cz
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              pip install ghp-import
               ./deploy.sh
             fi
