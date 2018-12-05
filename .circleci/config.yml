@@ -25,6 +25,6 @@ jobs:
             TRAVIS_REPO_SLUG: honzajavorek/honzajavorek.cz
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              pip install ghp-import
+              sudo pip install ghp-import
               ./deploy.sh
             fi
