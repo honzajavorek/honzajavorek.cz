@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.7-node
+    working_directory: ~/repo
+    steps:
+      - checkout
+
+      - run:
+          name: install dependencies
+          command: |
+            python3 -m pip install pip pipenv --upgrade
+            npm install npm@6 --global
+            ./install.sh
+
+      - run:
+          name: run tests
+          command: |
+            ./lint.sh
+
+      - deploy:
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              ./deploy.sh
+            fi
