@@ -8,19 +8,22 @@ jobs:
       - checkout
 
       - run:
-          name: install dependencies
-          command: |
-            python3 -m pip install pip pipenv --upgrade
-            sudo npm install npm@6 --global
-            ./install.sh
+        name: install dependencies
+        command: |
+          python3 -m pip install pip pipenv --upgrade
+          sudo npm install npm@6 --global
+          ./install.sh
 
       - run:
-          name: run tests
-          command: |
-            ./lint.sh
+        name: run tests
+        command: |
+          ./lint.sh
 
       - deploy:
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              ./deploy.sh
-            fi
+        environment:
+          TRAVIS: true
+          TRAVIS_REPO_SLUG: honzajavorek/honzajavorek.cz
+        command: |
+          if [ "${CIRCLE_BRANCH}" == "master" ]; then
+            ./deploy.sh
+          fi
