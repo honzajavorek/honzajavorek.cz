@@ -65,6 +65,7 @@ cache = FileSystemCache('cache', default_timeout=0)
 def cached(fn):
     if app.config.get('ENV') == 'production':
         return fn
+
     @wraps(fn)
     def wrapper(*args, **kwargs):
         key = fn.__name__ + json.dumps(args) + json.dumps(kwargs)
@@ -84,12 +85,14 @@ def before_first_request():
 
 @app.route('/')
 def index():
-    return render_template('index.html',
+    return render_template(
+        'index.html',
         dredd_stars_raise=round(dredd_stars_after / dredd_stars_before),
         feeds=feeds,
         articles=get_articles(map(parse_feed, feeds)),
         appearances=appearances,
-        repos=get_pinned_repos(parse_html(request_github_profile('honzajavorek'))),
+        repos=get_pinned_repos(
+            parse_html(request_github_profile('honzajavorek'))),
     )
 
 

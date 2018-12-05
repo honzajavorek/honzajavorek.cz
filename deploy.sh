@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 cd blog
 pipenv run deploy
 cd ..

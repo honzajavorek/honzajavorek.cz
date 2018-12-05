@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 cd blog
 pipenv install --dev
 cd ..
