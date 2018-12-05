@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}Honza Javorek{% endblock %}</title>
+    <meta name="description" content="{{ self.bio()|striptags }}">
+    <link rel="canonical" href="{{ url_for('index', _external=True) }}">
+
+    <meta property="og:title" content="{{ self.title() }}">
+    <meta property="og:type" content="profile">
+    <meta property="profile:first_name" content="Honza">
+    <meta property="profile:last_name" content="Javorek">
+    <meta property="profile:username" content="honzajavorek">
+    <meta property="profile:gender" content="male">
+    <meta property="og:url" content="{{ url_for('index', _external=True) }}">
+    <meta property="og:image" content="{{ url_for('avatar', _external=True) }}">
+
+    <link rel="stylesheet" href="{{ url_for('css') }}">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="{{ url_for('avatar') }}">
+            <h1>Honza Javorek</h1>
+            <p class="icons">
+                <a href="https://linkedin.com/in/honzajavorek"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://github.com/honzajavorek/"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/honzajavorek/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/honza.javorek/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </p>
+            <p class="bio">
+                {% block bio %}
+                I&nbsp;am a&nbsp;<strong>software engineer</strong> from
+                <a href="https://en.wikipedia.org/wiki/Prague">Prague</a>,&nbsp;Europe.
+                I&nbsp;understand <strong>web&nbsp;APIs</strong>, I&nbsp;love open&nbsp;source and&nbsp;documentation,
+                and&nbsp;I&nbsp;code in&nbsp;<strong>Python</strong> or&nbsp;<strong>JavaScript</strong>.
+                {% endblock %}
+            </p>
+        </div>
+    </header>
+    <section id="achievements">
+        <h2>Achievements</h2>
+
+        <div class="achievement">
+            <img src="{{ url_for('static', filename='python.svg') }}" aria-hidden="true">
+            <p>
+                Since 2011 I have been helping to drive the grow and success of the
+                <a href="https://python.cz/en/">Czech Python User Group</a>.
+                For years I have been participating in volunteer-driven <a href="https://pyvo.cz/en/">meetups</a>,
+                <a href="https://pyladies.cz/">courses</a>,
+                workshops,
+                <a href="https://cz.pycon.org/">conferences</a>,
+                <a href="http://pyvec.org/en/">nonprofit</a>, and more.
+            </p>
+        </div>
+        <div class="achievement">
+            <img src="{{ url_for('static', filename='dredd.svg') }}" aria-hidden="true">
+            <p>
+                For years I have been leading the development and maintenance of
+                <a href="https://github.com/apiaryio/dredd">Dredd</a>,
+                an open source tool for testing HTTP APIs. The number of GitHub stars
+                <a href="https://starcharts.herokuapp.com/apiaryio/dredd">went up {{ dredd_stars_raise }}⨉</a> since when I took over the project in 2015.
+            </p>
+        </div>
+        <div class="achievement">
+            <img src="{{ url_for('static', filename='makers-menders.svg') }}" aria-hidden="true">
+            <p>
+                In 2016 I wrote an <a href="http://honzajavorek.cz/blog/kolonizatori-a-spravci-kolonii">article about two personalities of developers</a>,
+                which went viral in the Czech Republic. It got <a href="https://www.zdrojak.cz/clanky/kolonizatori-spravci-kolonii/">republished</a>,
+                <a href="https://www.zdrojak.cz/clanky/mezi-kolonizatory-spravci/">followed-up</a>,
+                <a href="https://nazory.ihned.cz/c1-66258330-sloupek-martina-maleho-inovace-nevznikaji-ziranim-do-excelovskych-tabulek">mentioned in mainstream media</a>,
+                and I get invited to <a href="https://speakerdeck.com/honzajavorek/dve-programatorske-povahy">speak about the topic</a>.
+            </p>
+        </div>
+    </section>
+    <section id="appearances">
+        <h2>Appearances</h2>
+        <ul>
+            {% for appearance in appearances %}
+                <li class="entry {% if loop.index0 > 5 %} archived{% endif %}{% if appearance.highlight %} highlighted{% endif %}">
+                    <i title="{{ appearance.type }}" class="fa fa-{{ appearance.type|appearance_icon }}"></i>
+                    <div>
+                        <h3>
+                            {% if appearance.url %}
+                                <a href="{{ appearance.url }}">{{ appearance.title }}</a>
+                            {% else %}
+                                {{ appearance.title }}
+                            {% endif %}
+                        </h3>
+                        <p>
+                            <small>
+                                {{ appearance.date|month }} {{ appearance.date.year }}
+                                &mdash;
+                                {{ appearance.event }}
+                                {% if appearance.resources_url %}
+                                    <span class="hidden">&mdash;</span>
+                                    <span class="detached">
+                                        <a href="{{ appearance.resources_url }}">
+                                            <i title="{{ appearance.resources_type }}" class="fa fa-{{ appearance.resources_type|appearance_icon }}"
+                                                aria-hidden="true"></i>&nbsp;
+                                            {{- appearance.resources_type -}}
+                                        </a>
+                                    </span>
+                                {% endif %}
+                            </small>
+                        </p>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+        <p class="more">
+            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+            <a href="#">view all</a>
+        </p>
+    </section>
+    <section id="articles">
+        <h2>Articles</h2>
+        <ul>
+            {% for article in articles %}
+                {% if loop.index0 < 10 %}
+                <li class="entry">
+                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                    <div>
+                        <h3>
+                            <a href="{{ article.link }}">{{ article.title }}</a>
+                        </h3>
+                        <p>
+                            <small>
+                                {{ article.published_parsed|struct_time_to_dt|month }} {{ article.published_parsed.tm_year }}
+                                &mdash;
+                                <a href="{{ article.feed_link }}">{{ article.feed_title }}</a>
+                            </small>
+                        </p>
+                    </div>
+                </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <p class="more">
+            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+            view more on my
+            {% for feed in feeds %}
+                {% if loop.last %}and{% endif %}
+                <a href="{{ feed.link }}">{{ feed.title }}</a>{% if not loop.last %},{% endif %}
+            {% endfor %}
+        </p>
+    </section>
+    <section>
+        <h2>Projects</h2>
+        <ul>
+            {% for repo in repos %}
+                <li class="entry">
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <div>
+                        <h3>
+                            <a href="{{ repo.url }}">{{ repo.owner }}/{{ repo.name }}</a>
+                        </h3>
+                        <p>
+                            <small>
+                                {{ repo.description }}
+                            </small>
+                        </p>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+        <p class="more">
+            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+            view more on my <a href="https://github.com/honzajavorek/">GitHub</a>
+        </p>
+    </section>
+
+    <footer>
+        <div>
+            <h2 class="hidden">Contacts</h2>
+            <dl>
+                <dt>E-mail</dt>
+                <dd><a href="mailto:mail&#64;honzajavorek.cz">mail&#64;<!---->honzajavorek.cz</a></dd>
+
+                <dt>License Number</dt>
+                <dd><a href="http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_rzp.cgi?ico=74279858&jazyk=en&xml=1&rozsah=0">74279858</a></dd>
+
+                <dt>Bank Account <a href="https://en.wikipedia.org/wiki/Czech_koruna">CZK</a></dt>
+                <dd>
+                    2400293585/2010
+                    <br><small>CZ1220100000002400293585 FIOBCZPPXXX</small>
+                </dd>
+            </dl>
+        </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        if (!document.querySelector) { return }
+        if (!document.querySelectorAll) { return }
+
+        var display;
+
+        document.querySelector('#appearances .more').style.display = 'block';
+        document.querySelectorAll('#appearances .archived').forEach(function (element) {
+          display = element.style.display;
+          element.style.display = 'none';
+        });
+
+        document.querySelector('#appearances .more a').addEventListener('click', function (event) {
+          event.preventDefault();
+          document.querySelector('#appearances .more').style.display = 'none';
+          document.querySelectorAll('#appearances .archived').forEach(function (element) {
+            element.style.display = display;
+          });
+        });
+      });
+    </script>
+</body>
+</html>

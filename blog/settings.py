@@ -27,7 +27,7 @@ if PRODUCTION:
     SITEURL = 'http://honzajavorek.cz'
 
 
-OUTPUT_PATH = '../output'
+OUTPUT_PATH = '../_output'
 
 
 # URL and save paths settings

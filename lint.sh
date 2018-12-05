@@ -1,9 +1,9 @@
 #!/bin/bash
 
 cd blog
-pipenv run deploy
+pipenv run lint
 cd ..
 
 cd home
-pipenv run deploy
+pipenv run lint
 cd ..

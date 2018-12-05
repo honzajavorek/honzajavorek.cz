@@ -5,7 +5,10 @@ name = "pypi"
 
 [scripts]
 lint = "pylama"
-deploy = "bash ./deploy.sh"
+write = "blog write"
+photos = "blog photos"
+preview = "blog preview"
+deploy = "blog deploy"
 
 [packages]
 danube-delta = ">=1.3.5"
