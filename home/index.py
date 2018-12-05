@@ -18,8 +18,6 @@ from werkzeug.contrib.cache import FileSystemCache
 
 
 app = Flask(__name__)
-app.config['FREEZER_DESTINATION'] = '../_output'
-app.config['FREEZER_REMOVE_EXTRA_FILES'] = False
 
 
 dredd_stars_before = 650
@@ -215,4 +213,5 @@ def appearance_icon_filter(t):
 
 if __name__ == '__main__':
     from elsa import cli
+    app.config['FREEZER_REMOVE_EXTRA_FILES'] = False
     cli(app, base_url='http://honzajavorek.cz')

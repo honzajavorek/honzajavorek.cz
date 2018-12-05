@@ -21,6 +21,7 @@ script:
   - "./lint.sh"
 deploy:
   provider: "script"
+  skip_cleanup: true
   script: "./deploy.sh"
   on:
     branch: "master"

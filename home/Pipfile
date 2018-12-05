@@ -6,8 +6,8 @@ name = "pypi"
 [scripts]
 lint = "pylama"
 serve = "python index.py serve"
-freeze = "python index.py freeze"
-deploy = "python index.py deploy"
+freeze = "python index.py freeze --path=../_output"
+deploy = "python index.py deploy --path=../_output"
 
 [packages]
 flask = "*"
