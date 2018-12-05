@@ -1,4 +1,3 @@
-
 from danube_delta.settings import *  # NOQA
 
 
@@ -10,7 +9,8 @@ ABOUT_HEADING = AUTHOR
 ABOUT = '''
 [Honza](http://honzajavorek.cz) je programátor. Od roku 2011 pomáhá budovat
 českou komunitu kolem jazyka [Python](http://python.cz/).
-V [Apiary](https://apiary.io/) se stará o [Dredd](https://github.com/apiaryio/dredd),
+V [Apiary](https://apiary.io/) se stará
+o [Dredd](https://github.com/apiaryio/dredd),
 nástroj na testování webových API.
 '''
 ABOUT_IMAGE = 'images/honza.jpg'
@@ -24,16 +24,19 @@ Honza již nemusí s obsahem ztotožňovat.
 '''.format(OUTDATED_ARTICLE_YEARS)
 
 
-if PRODUCTION:
+if PRODUCTION:  # NOQA
     SITEURL = 'http://honzajavorek.cz'
+
+
+OUTPUT_PATH = '../_output'
 
 
 # URL and save paths settings
 URL_PREFIX = 'blog/'
-ARTICLE_URL = URL_PREFIX + ARTICLE_URL
-ARTICLE_SAVE_AS = URL_PREFIX + ARTICLE_SAVE_AS
-ARTICLE_LANG_URL = URL_PREFIX + ARTICLE_LANG_URL
-ARTICLE_LANG_SAVE_AS = URL_PREFIX + ARTICLE_LANG_SAVE_AS
+ARTICLE_URL = URL_PREFIX + ARTICLE_URL  # NOQA
+ARTICLE_SAVE_AS = URL_PREFIX + ARTICLE_SAVE_AS  # NOQA
+ARTICLE_LANG_URL = URL_PREFIX + ARTICLE_LANG_URL  # NOQA
+ARTICLE_LANG_SAVE_AS = URL_PREFIX + ARTICLE_LANG_SAVE_AS  # NOQA
 INDEX_URL = SITEURL + '/' + URL_PREFIX
 INDEX_SAVE_AS = URL_PREFIX + 'index.html'
 

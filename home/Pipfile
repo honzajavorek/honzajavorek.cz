@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+lint = "pylama"
+serve = "python index.py serve"
+freeze = "python index.py freeze"
+deploy = "python index.py deploy"
+
+[packages]
+flask = "*"
+libsass = "*"
+feedparser = "*"
+requests = "*"
+lxml = "*"
+cssselect = "*"
+pyyaml = "*"
+
+[dev-packages]
+pylama = "*"
+elsa = "*"
+
+[requires]
+python_version = "3.7"
