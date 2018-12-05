@@ -1,4 +1,3 @@
-
 from danube_delta.settings import *  # NOQA
 
 
