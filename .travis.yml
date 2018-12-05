@@ -12,6 +12,7 @@ env:
   global:
     - secure: "Hie2d1kHFDosres0dt+ZUfK57BOmzJrW8J9+bP0kemBGvV4v+NLdLEtjeMNg/fcq6mO2g1a6M7K02N5hYm3bv0MhN2u2j5afQmQhqgJG1FcPhMR4YFzQ3WqEHMXU09DGu56Pe7PJ5WiKa2PAMUnmDkocbsaZ4cBrT51y4IZOj2M="
 before_install:
+  - "python -c 'import fcntl; fcntl.fcntl(1, fcntl.F_SETFL, 0)'"  # https://github.com/travis-ci/travis-ci/issues/8920#issuecomment-352661024
   - "pip install pip pipenv --upgrade"
   - "npm install npm@6 --global"
 install:
