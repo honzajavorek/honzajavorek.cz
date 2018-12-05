@@ -27,6 +27,9 @@ if PRODUCTION:
     SITEURL = 'http://honzajavorek.cz'
 
 
+OUTPUT_PATH = '../output'
+
+
 # URL and save paths settings
 URL_PREFIX = 'blog/'
 ARTICLE_URL = URL_PREFIX + ARTICLE_URL
