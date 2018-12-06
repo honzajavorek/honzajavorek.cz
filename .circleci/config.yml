@@ -14,7 +14,6 @@ jobs:
           name: Installing dependencies
           command: |
             python -m pip install pip pipenv --upgrade
-            sudo npm install npm@6 --global
             ./install.sh
       - run:
           name: "Running tests"
@@ -27,7 +26,6 @@ jobs:
           name: Installing dependencies
           command: |
             python -m pip install pip pipenv --upgrade
-            sudo npm install npm@6 --global
             ./install.sh
       - deploy:
           environment:
