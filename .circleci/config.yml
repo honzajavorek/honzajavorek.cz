@@ -1,30 +1,60 @@
 version: 2
+
+aliases:
+  - &install run:
+      name: Installing dependencies
+      command: |
+        python -m pip install pip pipenv --upgrade
+        sudo npm install npm@6 --global
+        ./install.sh
+
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: circleci/python:3.7-node
+
 jobs:
-  build:
-    docker:
-      - image: circleci/python:3.7-node
-    working_directory: ~/repo
+  test:
+    <<: *defaults
     steps:
-      - checkout
-
+      - "checkout"
+      - *install
       - run:
-          name: install dependencies
-          command: |
-            python -m pip install pip pipenv --upgrade
-            sudo npm install npm@6 --global
-            ./install.sh
-
-      - run:
-          name: run tests
-          command: |
-            ./lint.sh
-
+          name: "Running tests"
+          command: "./lint.sh"
+  deploy:
+    <<: *defaults
+    steps:
+      - "checkout"
+      - *install
       - deploy:
           environment:
             TRAVIS: true
-            TRAVIS_REPO_SLUG: honzajavorek/honzajavorek.cz
+            TRAVIS_REPO_SLUG: "honzajavorek/honzajavorek.cz"
           command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              sudo pip install ghp-import
-              ./deploy.sh
-            fi
+            sudo pip install ghp-import
+            ./deploy.sh
+
+workflows:
+    version: 2
+    test-deploy:
+      jobs:
+        - test
+        - deploy:
+            requires:
+              - test
+            filters:
+              branches:
+                only: "master"
+    nightly:
+      triggers:
+        - schedule:
+            cron: "0 0 * * *"
+            filters:
+              branches:
+                only: "master"
+      jobs:
+        - test
+        - deploy:
+            requires:
+              - test
