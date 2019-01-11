@@ -12,14 +12,12 @@
   type: workshop
   resources_type: text
   resources_url: http://cojeapi.cz
-  highlight: yes
 
 - date: "2018-10-25"
   title: Two personalities of developers
   event: Python User Group (Brno, CZE)
   url: https://www.youtube.com/watch?v=iQe9X0LgKR0
   resources_url: https://speakerdeck.com/honzajavorek/dve-programatorske-povahy
-  highlight: yes
 
 - date: "2018-10-24"
   title: Two personalities of developers
@@ -54,7 +52,6 @@
   event: FOSDEM (Brussels, BEL)
   url: https://archive.fosdem.org/2018/schedule/event/test_api_docs_with_dredd/
   resources_url: https://speakerdeck.com/honzajavorek/test-your-api-docs
-  highlight: yes
 
 - date: "2017-05-05"
   title: How corporations can attract good engineers
@@ -71,7 +68,6 @@
   event: Hive Talks (Prague, CZE)
   url: https://slideslive.com/38900864/design-apis-for-humans-and-test-what-you-promised
   resources_url: https://speakerdeck.com/honzajavorek/because-web-api-testing-should-be-easy
-  highlight: yes
 
 - date: "2017-05-02"
   title: Describe, test, develop
@@ -88,7 +84,6 @@
   event: PyCon SK (Bratislava, SVK)
   url: https://www.youtube.com/watch?v=mGUul6NbYw4
   resources_url: https://speakerdeck.com/honzajavorek/because-web-api-testing-should-be-easy
-  highlight: yes
 
 - date: "2017-02-01"
   title: API
@@ -100,7 +95,6 @@
   event: CZ Podcast (Prague, CZE)
   type: interview
   url: https://soundcloud.com/czpodcast-1/cz-podcast-158-honza-javorek-nejenom-o-pythonu
-  highlight: yes
 
 - date: "2016-10-05"
   title: How to learn programming (in Python)
@@ -133,14 +127,12 @@
   event: Python User Group (Brno, CZE)
   url: https://www.youtube.com/watch?v=B8DYsKDz63Y
   resources_url: https://speakerdeck.com/honzajavorek/jak-se-naucit-programovat-v-pythonu
-  highlight: yes
 
 - date: "2015-09-19"
   title: Designing APIs - Mastering HTTP is just beginning
   event: WebExpo (Prague, CZE)
   url: https://www.webexpo.net/prague2015/talk/designing-apis-mastering-http-is-just-beginning/
   resources_url: https://speakerdeck.com/honzajavorek/designing-apis
-  highlight: yes
 
 - date: "2015-06-18"
   title: API design life cycle + Dredd
@@ -172,7 +164,6 @@
   event: Nordic APIs Platform Summit (Stockholm, SWE)
   url: https://www.youtube.com/watch?v=sdlQvTWVQ_M
   resources_url: https://speakerdeck.com/honzajavorek/api-design-life-cycle-at-nordic-apis-2014
-  highlight: yes
 
 - date: "2014-10-02"
   title: requirements.txt and Heroku
