@@ -113,6 +113,7 @@ def get_articles(parsed_feeds):
 
 def merge_republished_articles(articles):
     feeds_order = [feed['link'] for feed in feeds]
+
     def article_to_sort_key(article):
         return feeds_order.index(article['feed_link'])
 
