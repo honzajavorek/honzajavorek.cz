@@ -107,7 +107,34 @@ def get_articles(parsed_feeds):
         )
         for parsed_feed in parsed_feeds
     )
-    return sorted(entries, key=itemgetter('published_parsed'), reverse=True)
+    entries = sorted(entries, key=itemgetter('published_parsed'), reverse=True)
+    return list(merge_republished_articles(entries))
+
+
+def merge_republished_articles(articles):
+    feeds_order = [feed['link'] for feed in feeds]
+    def article_to_sort_key(article):
+        return feeds_order.index(article['feed_link'])
+
+    for key, entries in itertools.groupby(articles, key=article_to_group_key):
+        entries = list(entries)
+        primary_entry = entries[0]
+        primary_entry['republished'] = []
+
+        if len(entries) > 1:
+            entries = sorted(entries, key=article_to_sort_key)
+            primary_entry = entries[0]
+            primary_entry['republished'] = entries[1:]
+
+        yield primary_entry
+
+
+def article_to_group_key(article):
+    return (
+        article['title'],
+        article['published_parsed'].tm_year,
+        article['published_parsed'].tm_mon,
+    )
 
 
 @cached
@@ -154,7 +181,7 @@ def request_github_profile(username):
 
 
 def get_appearances(yaml_load_input):
-    appearances = yaml.load(yaml_load_input)
+    appearances = yaml.safe_load(yaml_load_input)
     coerced_appearances = map(coerce_appearance, appearances)
     return sorted(coerced_appearances, key=itemgetter('date'), reverse=True)
 

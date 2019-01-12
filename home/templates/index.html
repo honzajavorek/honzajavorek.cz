@@ -132,6 +132,14 @@
                                 {{ article.published_parsed|struct_time_to_dt|month }} {{ article.published_parsed.tm_year }}
                                 &mdash;
                                 <a href="{{ article.feed_link }}">{{ article.feed_title }}</a>
+                                {%- if article.republished %}
+                                    (
+                                    {%- for article_republished in article.republished -%}
+                                        <a href="{{ article_republished.link }}">{{ article_republished.feed_title }}</a>
+                                        {%- if not loop.last -%}, {% endif -%}
+                                    {%- endfor -%}
+                                    )
+                                {%- endif -%}
                             </small>
                         </p>
                     </div>
