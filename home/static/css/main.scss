@@ -112,13 +112,12 @@ header {
 
 section {
   text-align: left;
-  max-width: 24 * $two;
+  max-width: 28 * $two;
   margin: $one auto;
   padding: $two;
 
-  @media screen and (max-width: 40em) {
-    & { padding: $half; }
-  }
+  @media screen and (max-width: 40em) { & { padding: $half; } }
+  @media screen and (min-width: 90em) { max-width: 34 * $two; }
 }
 
 .entry {
@@ -158,7 +157,7 @@ section {
 }
 
 @media screen and (min-width: 40em) {
-  #articles ul {
+  #appearances ul, #articles ul, #projects ul {
     column-count: 2;
     column-gap: $half;
   }
@@ -168,25 +167,28 @@ section {
   margin: $two 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   @media screen and (min-width: 30em) { & { flex-direction: row; } }
 
   img {
     display: block;
-    width: 2 * $two;
-    height: 2 * $two;
+    min-width: 2 * $two;
+    max-height: 2 * $two;
     margin: ($half / 2) $half $half ($half / 2);
 
     @media screen and (max-width: 30em) { & { margin: 0 auto $one auto; } }
+    @media screen and (min-width: 90em) { & { min-width: 2.3 * $two; max-height: 2.3 * $two; } }
   }
 
   p {
+    text-align: left;
     line-height: $line-height-larger;
     margin: 0;
     padding-left: $one;
     font-size: $font-size-larger;
 
     @media screen and (min-width: 40em) { & { font-size: $font-size-medium; } }
-    @media screen and (max-width: 30em) { & { padding-left: 0; } }
+    @media screen and (max-width: 30em) { & { padding-left: 0; text-align: center; } }
   }
 
   &:last-child {

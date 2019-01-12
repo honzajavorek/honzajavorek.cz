@@ -80,7 +80,7 @@
         <h2>Appearances</h2>
         <ul>
             {% for appearance in appearances %}
-                <li class="entry {% if loop.index0 > 5 %} archived{% endif %}">
+                <li class="entry {% if loop.index > 10 %} archived{% endif %}">
                     <i title="{{ appearance.type }}" class="fa fa-{{ appearance.type|appearance_icon }}"></i>
                     <div>
                         <h3>
@@ -156,7 +156,7 @@
             {% endfor %}
         </p>
     </section>
-    <section>
+    <section id="projects">
         <h2>Projects</h2>
         <ul>
             {% for repo in repos %}
