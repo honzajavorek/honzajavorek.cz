@@ -151,13 +151,13 @@ def parse_feed(feed):
 
 
 def get_pinned_repos(html_tree):
-    for repo_tree in html_tree.cssselect('.pinned-repo-item'):
+    for repo_tree in html_tree.cssselect('.pinned-item-list-item'):
         try:
             owner = repo_tree.cssselect('.owner')[0].text_content()
         except IndexError:
             owner = 'honzajavorek'
 
-        desc = repo_tree.cssselect('.pinned-repo-desc')[0].text_content()
+        desc = repo_tree.cssselect('.pinned-item-desc')[0].text_content()
         desc_en = desc.split(' / ')[0]
 
         yield dict(
