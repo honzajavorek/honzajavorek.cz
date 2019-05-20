@@ -10,7 +10,7 @@ freeze = "python index.py freeze --path=../_output"
 deploy = "python index.py deploy --path=../_output --push"
 
 [packages]
-flask = "~=1.0.2"
+flask = "~=1.0.3"
 libsass = "==0.18.0"
 feedparser = "~=5.2.1"
 requests = "~=2.22.0"
