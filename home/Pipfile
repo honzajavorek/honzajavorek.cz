@@ -11,7 +11,7 @@ deploy = "python index.py deploy --path=../_output --push"
 
 [packages]
 flask = "~=1.1.1"
-libsass = "==0.19.2"
+libsass = "==0.19.3"
 feedparser = "~=5.2.1"
 requests = "~=2.22.0"
 lxml = "~=4.4.0"
