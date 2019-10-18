@@ -21,7 +21,7 @@ app = Flask(__name__)
 
 
 dredd_stars_before = 650
-dredd_stars_after = 2650
+dredd_stars_after = 3200
 
 feeds = [
     {

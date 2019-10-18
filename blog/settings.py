@@ -7,16 +7,15 @@ SITENAME = 'Javorové lístky'
 
 ABOUT_HEADING = AUTHOR
 ABOUT = '''
-[Honza](http://honzajavorek.cz) je programátor. Od roku 2011 pomáhá budovat
+[Honza](http://honzajavorek.cz) je programátor. Založil
+[junior.guru](https://junior.guru), projekt pomáhající lidem naučit se
+programovat a získat svou první práci v IT. Od roku 2011 pomáhá budovat
 českou komunitu kolem jazyka [Python](http://python.cz/).
-V [Apiary](https://apiary.io/) se stará
-o [Dredd](https://github.com/apiaryio/dredd),
-nástroj na testování webových API.
 '''
 ABOUT_IMAGE = 'images/honza.jpg'
 
 
-OUTDATED_ARTICLE_YEARS = 2
+OUTDATED_ARTICLE_YEARS = 3
 OUTDATED_ARTICLE_WARNING = '''
 **Upozornění!** Tento článek vyšel před více než {} lety. Můžete si
 jej přečíst v rámci zkoumání minulosti, ale přepokládejte, že dnes se
