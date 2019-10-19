@@ -13,7 +13,7 @@ jobs:
       - run:
           name: Installing dependencies
           command: |
-            python -m pip install pip pipenv --upgrade
+            python -m pip install pipenv
             ./install.sh
       - run:
           name: "Running tests"
@@ -25,7 +25,7 @@ jobs:
       - run:
           name: Installing dependencies
           command: |
-            python -m pip install pip pipenv --upgrade
+            python -m pip install pipenv
             ./install.sh
       - deploy:
           environment:
