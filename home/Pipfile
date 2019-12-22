@@ -10,17 +10,17 @@ freeze = "python index.py freeze --path=../_output"
 deploy = "python index.py deploy --path=../_output --push"
 
 [packages]
-flask = "~=1.1.1"
-libsass = "==0.19.4"
-feedparser = "~=5.2.1"
-requests = "~=2.22.0"
-lxml = "~=4.4.2"
-cssselect = "~=1.1.0"
-pyyaml = "~=5.2"
+flask = "*"
+libsass = "*"
+feedparser = "*"
+requests = "*"
+lxml = "*"
+cssselect = "*"
+pyyaml = "*"
 
 [dev-packages]
-pylama = "~=7.7.1"
-elsa = "==0.1.5"
+pylama = "*"
+elsa = "*"
 
 [requires]
 python_version = "3.7"
