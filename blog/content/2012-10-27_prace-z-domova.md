@@ -7,7 +7,7 @@ Pro urovnání pojmů, anglicky se práci z domova říká nejčastěji [telecom
 
 ## Práce z domova
 
-![Hospoda Domov]({filename}/images/pub-home.png){: .right }Je asi třeba zamyslet se nejprve nad tím, co je vlastně všechno práce z domova. Mám-li rodinný dům na hlavní ulici a v přízemí si vedu obchod, je to také práce z domova? Pokud mám v garáži truhlářskou dílnu, je to práce z domova? No asi ano, na oběd jdu pravděpodobně do vlastní kuchyně a vstát mohu také v podstatě kdy si usmyslím. Akorát už to není onen *telecommuting* ani *telework*. Správně by se tedy podle mě mělo říkat spíš **práce na dálku** než práce z domova.
+![Hospoda Domov]({static}/images/pub-home.png){: .right }Je asi třeba zamyslet se nejprve nad tím, co je vlastně všechno práce z domova. Mám-li rodinný dům na hlavní ulici a v přízemí si vedu obchod, je to také práce z domova? Pokud mám v garáži truhlářskou dílnu, je to práce z domova? No asi ano, na oběd jdu pravděpodobně do vlastní kuchyně a vstát mohu také v podstatě kdy si usmyslím. Akorát už to není onen *telecommuting* ani *telework*. Správně by se tedy podle mě mělo říkat spíš **práce na dálku** než práce z domova.
 
 <small>U tohoto mi vždycky v hlavě vyskočí myšlenka, že před průmyslovou revolucí byl "OSVČ" prakticky každý a taky skoro každý "pracoval doma" - zemědělec, řemeslník... Dnes to je "výsada" odvážných. Nějaký divný systém jsme si to zavedli, ne?</small>
 
@@ -57,7 +57,7 @@ Na většinu těch problémů existují řešení. Většinou stačí se naučit
 
 Programátor Bob McWhirter [sepsal krásný návod](http://bob.mcwhirter.org/blog/2010/09/12/HOWTO-work-from-home/) na to, jak začít s prací na dálku. Jak to udělat, aby na to nějaký zaměstnavatel přistoupil a aby to fungovalo. V článku má několik doporučení:
 
-![Práce na dálku]({filename}/images/remote.png)
+![Práce na dálku]({static}/images/remote.png)
 
 1. **Nehledejte kancelářské zaměstnání** - Jak se dostat k práci na dálku? Jednoduše. Hledejte přímo práci na dálku. Sice se vám zúží výběr pracovních nabídek ze sta na dvě, ale pak se alespoň můžete lépe zaměřit na to, abyste jednu z těch dvou prací opravdu dostali.
 2. **Nehledejte zaměstnání blízko kanceláří** - Jestliže bydlíte v [Adamově](http://prigl.cz/uncategorized/adamov-%E2%80%93-mesto-legend/) a hledáte práci v Brně, nebudete schopni zachovat si onu mentalitu "pracuji pouze z domova". Pokud se do kanceláře můžete dostavit příliš jednoduše, skončíte tam. Nejlepší je tedy bydlet ve venkovské oblasti daleko od měst a letišť. Žádný zaměstnavatel vás pak nebude trápit tím, abyste za ním jezdili. Ani jednou týdně.
@@ -69,7 +69,7 @@ Práci pro open-source by se dalo lehce přirovnat k nějaké aktivitě zadarmo,
 
 ## Zvlčení
 
-![Vlčení]({filename}/images/wolf.png){: .left }Prakticky ze všech zdrojů vyplývá, že při práci na dálku je ze všeho nejdůležitější **vlastní disciplína**. Jakmile ji člověk nemá, není prakticky schopen takovou práci vůbec zvládat a vykonávat. Na druhou stranu, pokud si poručit dokáže, vyřeší tím prakticky všechny nevýhody telecommutingu a užívá si skvělého života.
+![Vlčení]({static}/images/wolf.png){: .left }Prakticky ze všech zdrojů vyplývá, že při práci na dálku je ze všeho nejdůležitější **vlastní disciplína**. Jakmile ji člověk nemá, není prakticky schopen takovou práci vůbec zvládat a vykonávat. Na druhou stranu, pokud si poručit dokáže, vyřeší tím prakticky všechny nevýhody telecommutingu a užívá si skvělého života.
 
 Co se týče tipů jak nezvlčet, musím přímo odkázat na [výborný článek](http://www.osobniproduktivita.cz/2012/09/jak-nezvlcit-pri-homeoffice/) shrnující poznatky [Michelle Losekoot](http://ruzovapanda.blogspot.cz/). Zkusím ale opět vytáhnout nějaké stručné odrážky z věcí, které se běžně zmiňují:
 
@@ -104,7 +104,7 @@ Zřejmě to tedy s tou produktivitou tak strašné nebude. Zaměstnávání na d
 
 ## Digitální nomádi
 
-![Nomádi]({filename}/images/nomads.png){: .right }Robert Vlach [píše](http://navolnenoze.cz/blog/nomadi/):
+![Nomádi]({static}/images/nomads.png){: .right }Robert Vlach [píše](http://navolnenoze.cz/blog/nomadi/):
 
 > Místa, o kterých jiní jen sní, mají dnes profesionálové pracující s počítačem prakticky na dosah. Díky globalizaci, levným letenkám a internetu se mohou stěhovat z jedné země do druhé, a zároveň pokračovat v práci pro své stálé klienty. (Nejčastěji kočují grafici, webaři, programátoři, překladatelé, copywriteři apod.)
 >

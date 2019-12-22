@@ -4,13 +4,13 @@ Tags: ušima, zážitky
 
 Tak je [to]({filename}2008-01-11_the-australian-pink-floyd-show-v-ostrave.md) za mnou. Jaký byl nedělní koncert The Australian Pink Floyd Show? Těžko říct. Některé věci nelze popsat slovy :) . A pocity?
 
-![obrázek]({filename}/images/52.jpg)
+![obrázek]({static}/images/52.jpg)
 
 ## Numb
 
 Začněme tím, co bylo **trochu hořké**. Koncert byl skvělý a dokonalý do posledního detailu, ale malinko jeho atmosféru snižovalo samotné publikum. Je velká škoda, že jsem byl na koncertě v České republice, zemi kde nerozumí anglicky. Kde nerozumí tomu, co jejich milášci řeknou na pódiu, kde nehodlají zpívat s kapelou. A to ani křičet tak jednoduchá slova, jako „RUN, RUN, RUN“ ve skladbě *Run like hell* během přídavku. A možná je to také tím, že hudba Pink Floyd přitahuje z velké části čtyřicátníky a padesátníky, kteří na koncert přišli v kvádru a pevným přesvědčením, že projevit radost něčím více než je potlesk, by mohlo být společensky nepřípustné a možná by si potom museli narovnávat kravatu.
 
-![obrázek]({filename}/images/53.jpg)
+![obrázek]({static}/images/53.jpg)
 
 ## Welcome to the…
 
@@ -20,7 +20,7 @@ Ale zpět k tomu *růžovému* :) . To bylo onen nedělní večer hlavní… Do
 
 Kolem haly se hemžilo dost lidí, ale nebyl problém se do ní dostat. Problémem byla spíše jen určitá kumulační místa. Exkurze na záchod se tak například proměňovaly v doslova válečné výpravy. Australští Floydi **začali stylově** – do závěrečné a úvodní harmonikové melodie z The Wall začaly burácet kytary a halou proletěl geniální song *In the Flesh?*. V **The Wall** potom pokračovali až po *we don't need no education*, od níž se vydali po cestě největších hitů. Myslím, že převažovaly skladby z **The Dark Side of the Moon** a **Division Bell**.
 
-![obrázek]({filename}/images/50.jpg)
+![obrázek]({static}/images/50.jpg)
 
 ## Kangaroos on the wing
 
@@ -32,7 +32,7 @@ Jaké to bylo? Úžasné. Byl to pekelně drahý výlet, docela drahý lístek, 
 
 Ještě něco. Když jsem jednou viděl na YT video Waterse, jak zpívá *Time* (které normálně zpívá Gilmour), bál jsem se, že od klokanů mi to bude znít taky divně. Ale opravdu překvapili – měli jednoho Waterse a dokonce dva Gilmoury :D . Hlasová podobnost úžasná. Zjistil jsem navíc, že některé skladby vyniknou naživo. Sóla a výkony zpěváků, kytaristů… Nemluvě ani o **famózním výkonu zpěvaček**, když hráli *The Great Gig in the Sky*. Asi neopakovatelný zážitek.
 
-![obrázek]({filename}/images/51.jpg)
+![obrázek]({static}/images/51.jpg)
 
 Pokud bych měl možnost, určitě bych na ně zajel či zašel znova. Opravdoví Pink Floyd už jsou dědečci. Live 8, kde hráli poprvé od oddělení Waterse a zřejmě naposledy v historii společně, byla zřejmě **tečka za jejich neskutečnou hudbou**, která změnila svět. Zřejmě nezbývá než se spokojit s jejich více než kvalitní náhradou a vychutnávat si Australany, kteří stejně jako Pink Floyd umí neuskutečnitelné – zahrát své skladby živě tak precizně, jako ve
 studiu.

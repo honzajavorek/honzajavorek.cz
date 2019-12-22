@@ -1,7 +1,7 @@
 Title: Jaké bude příští PyVo
 Date: 2012-09-29 14:13:20
 
-![Logo PyVa]({filename}/images/pyvo.png){: .right }Ve čtvrtek 27. 9. proběhlo po delší odmlce [setkání vývojářů v Pythonu, PyVo](http://srazy.info/brnenske-pyvo/2656). Pořadovým číslem už deváté.
+![Logo PyVa]({static}/images/pyvo.png){: .right }Ve čtvrtek 27. 9. proběhlo po delší odmlce [setkání vývojářů v Pythonu, PyVo](http://srazy.info/brnenske-pyvo/2656). Pořadovým číslem už deváté.
 
 Devět setkání nad pivem a s přednáškami, to už se dá považovat za nějakou tradici. No a když už je v nějakém setkávání tradice, začne se od něj něco očekávat. Lidé očekávají nějakou kvalitu přednášek, očekávají nějaký servis (jídlo, pití, wifi, klidný salonek), očekávají, že vše proběhne tak jak má. Už se nepromíjí chybky, kterým se dříve desítka Pythonistů nad pivem spíš jen zasmála. Jakmile jsou návštěvníci v očekávání, mizí z akce tzv. pořadatelský punk. A s jeho mizením mizí i lehkost, s jakou může pořadatel akci dělat.
 
@@ -37,7 +37,7 @@ Co se mi líbilo:
 - Větší prostor, servírka mohla poměrně nerušeně obsluhovat a všichni se dívali vpřed na přednášejícího s plátnem.
 - Blízko centra města.
 
-![Kaverna]({filename}/images/pyvo-2012-01_15.jpg)
+![Kaverna]({static}/images/pyvo-2012-01_15.jpg)
 
 ### U Dřeváka
 
@@ -55,7 +55,7 @@ Co je horší:
 - Servírka obsluhuje složitě a ruší přednášku. Jde slyšet hluk ze zbytku podniku.
 - Někomu se nelíbí sterilní prostředí (bílé stěny a dřevo).
 
-![U Dřeváka]({filename}/images/pyvo-2012-09_27.jpg)
+![U Dřeváka]({static}/images/pyvo-2012-09_27.jpg)
 
 ### Co lze řešit
 

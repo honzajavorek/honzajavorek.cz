@@ -34,4 +34,4 @@ Protože jsou ale všichni programátoři líní, napsal jsem si v php5 třídu
 
 Není to nic světoborného, napsal jsem to za 2 hodiny, protože na internetu jsem žádný dokonalý převaděč dle mých představ nenašel. Víc času tomu věnovat ani nechci, nehodlám to dále moc vyvíjet, poskytovat na to podporu apod. Pokud to použijete nebo budete rozvíjet dále, dejte mi prosím vědět nebo mi aspoň pošlete nové verze.
 
-[Stahuj zde, morse.zip]({filename}/files/morse.zip) (balíček s třídou, příkladem, licencí…)
+[Stahuj zde, morse.zip]({static}/files/morse.zip) (balíček s třídou, příkladem, licencí…)

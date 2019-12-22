@@ -3,7 +3,7 @@ Date: 2012-06-22 10:34:48
 
 Dneska to bude tak trochu "[hejt](http://www.1000vecicomeserou.cz/)". Už přesně vím, jak se cítí, nebo spíš cítili uživatelé Internet Exploreru, kteří nemohli nebo nechtěli přejít na jiný prohlížeč. Cítili se fakt mizerně a otráveně. Jako já teď v roli uživatele Firefoxu a odmítače Google+.
 
-![Google+ otravuje]({filename}/images/googleplus-sere.png)
+![Google+ otravuje]({static}/images/googleplus-sere.png)
 
 1. **Je úplně jedno, co budu na Google+ dělat, hlavní je, že tam budu.** Google mě tam chce fakt strašně moc. Svědčí o tom skutečnost, že můžete plusko mít a vůbec o něm nevědět - prakticky se vám nepřipomíná nebo si to můžete vypnout. Ale jakmile jej nemáte, přijde vám denně deset spamů o tom, že si vás kdejaký šulda přidal do kruhů nebo že s vámi s sdílí obsah. A tím nemyslím, že mi kamarád poslal fotky, ale příspěvky mě úplně neznámých lidí. Tohle beru jako důkaz toho, že [Google+ existuje jen pro sledování lidí a dotváření jejich online profilů](http://www.wordtracker.com/blog/google-plus-matters). Smutně vtipné je, že v e-mailu je sice *unsubscribe* odkaz, ale navede mě akorát na *registraci* do Google+. Spamování musím tedy řešit [takto](https://gist.github.com/2972331).
 

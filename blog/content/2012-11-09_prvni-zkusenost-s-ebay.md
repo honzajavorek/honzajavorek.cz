@@ -5,7 +5,7 @@ Hodně se mi potí ruce a místo, které tímto trpí nejvíc, je **klávesnice 
 
 Když se mi v létě už všichni smáli, jestli mi náhodou nespadl laptop na fesťáku do bláta, řekl jsem si, že jej teda konečně vyčistím. Udělal jsem to však důkladně a již **podruhé v životě se mi povedlo klávesnici zrušit**. Bohužel, pot je opravdu svinstvo a bez nějakého většího omytí dostat dolů nejde. Teď už třeba vím, že by byl nejspíš lepší alkohol. No každopádně voda je holt voda a já to opět nenechal nijak moc dlouho vyschnout, takže mi čudlíky vyzkratovaly a zblbly se. Můj předešlý DELL vyvázl po čase pouze s nefunkčním Z (popřípadě Y, záleží jaké máte rozložení) a F7. Pokud si klávesnici vykoupete ve vodě jako já, radím vám - nechte ji pořádně vyschnout. Měsíc je ideální, řekl bych. Potom ji zapojte a je dost možné, že bude úplně OK. Ale je taky dost možné, že ne. Jako u mého současného HP.
 
-![Suntech.cz klávesnice]({filename}/images/suntech-keyboard.jpg)
+![Suntech.cz klávesnice]({static}/images/suntech-keyboard.jpg)
 
 <small>Pozor! Tyhle rady se vztahují jen na to, když klávesnici **mimo počítač** omyjete **vodou z kohoutku**. Pokud si svůj laptop polijete vínem, máte zaděláno na mnohem větší problém - hlavně proto, že to neschytala jen klávesnice a nápoj vám uvnitř komponent vašeho milovaného stroje zahájí proces koroze a postupného rozkladu. Co s tím se dovíte od pana Google na souřadnicích *politá* a *klávesnice*.</small>
 

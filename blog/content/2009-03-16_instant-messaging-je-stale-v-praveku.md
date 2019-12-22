@@ -26,6 +26,6 @@ Jsem **znechucen**. Už mě nebaví mazat ruské spammery a nebaví mě [vysvět
 
 Víte co? **Pište mi maily.** Já budu v klidu psát bakalářku a od IM si odpočinu. Budu zapínat jen jednu upravenou, minimalizovanou Mirandu. S jediným VIP kontaktem. Připojenou na **dedikované ICQ číslo**. Ne ne, peklo nezamrzlo, já mám pořád moc rád Jabber a Psi, ale člověk někdy musí uznat, že účel světí prostředky, že někdy je třeba **vykašlat se na veškerou idealogii a prostě místo toho pracovat s tím, co doopravdy funguje**. A tohle funguje. Nikdo mě neruší, nechodí mi spam, vidím správně status a funguje mi přenos souborů. Co víc potřebuji?
 
-![obrázek]({filename}/images/111.jpg)
+![obrázek]({static}/images/111.jpg)
 
 A kdy se vrátím k Psi s Jabberem? **Až se uklidním.** Nebo až bude Facebook chat postaven na Jabberu. Nebo až budu mít titul. Nebo až najdu jiné řešení… Nebo až Jan Tleskač…

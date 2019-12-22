@@ -3,7 +3,7 @@ Date: 2012-06-08 16:18:03
 
 Snad každý student se setkal s doporučením, aby necitoval z Wikipedie. Někdy je to dokonce výslovně zákazáno. Je to proto, že informace na Wikipedii nejsou nikým ověřované a můžete tam najít kromě přesných faktů i spoustu hloupostí.
 
-![Wikipedia.]({filename}/images/wikipediafact.jpg)
+![Wikipedia.]({static}/images/wikipediafact.jpg)
 
 Samozřejmě, kdo potřebuje, ten to stejně obejde. Wikipedia sama o tomto svém problému ví a řeší to standardní cestou, tedy citacemi na původní zdroje. Takže pak stačí použít ty. Že se však jedná pouze o posun z *neověřený a nepodložený fakt* na *fakt podložený neověřenou citací na zdroj*, to už nikomu nevadí. Nikdo neověřuje, jestli se v odkázané knize opravdu nachází dokládaná informace. Pouze pozorný čtenář, který si s tím dá práci, nebo odborník, jenž nabude podezření na první pohled.
 
@@ -11,7 +11,7 @@ Jistě, zfalšovat citaci je snadné kdekoliv. I novinář, autor knihy nebo vě
 
 Co s tím? No asi nic. Musíme brát Wikipedii s rezervou a chceme-li na faktech z ní zakládat seriózní výzkum či na nich vystavět nějaká vlastní tvrzení, bude lepší najít si původní zdroje a dobře si je ověřit. Ono to není ani úplně na škodu, většinou dohledáním knihy a pročtením pár kapitol získáme širší pohled na problematiku nebo další, užitečné a relevantní informace. I když chápu, že už i samotná návštěva Wikipedie může být pro hodně lidí (a já jsem jedním z nich) dost časově náročná:
 
-![Tohle známe asi všichni.]({filename}/images/every-time-i-go-to-wikipedia.png)
+![Tohle známe asi všichni.]({static}/images/every-time-i-go-to-wikipedia.png)
 
 Aby to však nebylo tak jednostranné, je dobré si připomenout, že Wikipedia nejsou "oni", ale "my". Upravovat a psát ji může každý. Ani účet tam nemusíte mít. Takže pokud vidíte nějakou chybu, ať už faktickou nebo třeba jen překlep, vylepšete ji! Vezme vám to minutu života, ale uděláte svět opravdu lepším.
 

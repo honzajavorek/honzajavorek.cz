@@ -4,7 +4,7 @@ Tags: seriózně, škola
 
 Vždy, když si někde přečtu, že si mohu ke zkoušce donést list A4 **ručně** (ano, vždy je to takto zvýrazněno) psaných poznámek, vzpomenu si na takovýto svůj list ke zkoušce z diskrétní matematiky z prváku.
 
-![obrázek]({filename}/images/163.jpg)
+![obrázek]({static}/images/163.jpg)
 
 Pěkné na tom je, že když si člověk něco takového píše, docela dost se toho naučí. Já osobně se toho psaním podobných šíleností naučím asi nejvíce. Před každou zkouškou z teoretické informatiky (dal jsem ji myslím až napotřetí nebo napočtvrté) jsem si dělal takové výpisky. Vždy nanovo, staré jsem zahodil – opakování je matka moudrosti. Měly ale většinou kolem 4–6 listů, protože teoretická informatika byla trochu jiný kalibr :)
 

@@ -3,7 +3,7 @@ Date: 2013-10-21 11:11:33
 
 Ne že by to někoho zajímalo, ale **můj závěs je zelenej**. Pro jistotu jsem vám ho vyfotil, abyste mi věřili.
 
-![závěs]({filename}/images/zaves.jpg)
+![závěs]({static}/images/zaves.jpg)
 
 A kromě závěsu bude **zelenej i můj hlas**. Teda ne že bych si prolil hrdlo pepermintkou a pak se snažil zpívat, popřípadě rapovat, spíš takový ten hlas volební. Já stejně na rap moc nejsem, v tomhle se docela shoduju s Brucem Willisem.
 
@@ -49,7 +49,7 @@ Zelení jsou navíc osvědčená strana, která je tady dlouho, sedí na zastupi
 
 Stranu dělají lidi (ne program vyvěšený na internetu), a tak se, stejně jako výše u Svobodných, zaměřím i na příznivce Zelených. Potkal jsem jich také hodně a s kým jsem se dal do řeči, působil na mě jako docela rozumný člověk. Často to byli optimisti, kteří nad světem smýšleli mnohem idealističtěji než já, ale na druhou stranu ten svůj pohled nezřídkakdy podporovali tím, že se aspoň kousek toho lepšího světa odhodlali nějakými konkrétními činy realizovat. A ne, nemyslím tím žádné ekoteroristy, naopak mi byli velice sympatičtí různí občanští aktivisté, kteří se rozhodli, že jim není lhostejné jejich okolí. Co mi naopak docela vadí na lidech, kteří představují Zelené, je následující obrázek.
 
-![Zelení]({filename}/images/zeleni.png)
+![Zelení]({static}/images/zeleni.png)
 
 Stropnický a Kuchtová v předsednictvu? Seriously? No ale jak říkám, pod tímto svícnem se v pološeru skrývají lidé, o kterých si myslím, že jsou to féroví, pracovití a opravdu to se světem myslí dobře. Procházel jsem jejich kandidátku v různých krajích a vždy mě tam někdo zaujal - hele, toho znám, ten dělá toto, tamten se zasazuje o tohle... Spousta příležitostí pro kroužky.
 

@@ -5,7 +5,7 @@ Bydlím na novém bytě a vysnil jsem si, že v jednadvacátém století by nemu
 
 Tato hypotéza se úplně nepotvrzuje, ale neodrazuje mě to od myšlenek na nějaké řešení. Dalo by se říci, že s tím teď spamuju už dva dny Twitter a to je většinou okamžik, kdy by si měl dotyčný uvědomit, že to téma patří spíš někam jinak, třeba na blog. Už jen třeba proto, že odpověď na jeden tweet může vypadat třeba takto:
 
-![konverzace]({filename}/images/konverzace.png)
+![konverzace]({static}/images/konverzace.png)
 
 Samozřejmě mám mnohem lepší a důležitější věci na práci, samozřejmě že je to **[#firstworldproblems](https://twitter.com/hashtag/firstworldproblems)**, nebo snad dokonce **#tyhleproblémypražákůbychchtělmít**, ale já si prostě nemůžu pomoct.
 
@@ -32,7 +32,7 @@ Samozřejmě mám mnohem lepší a důležitější věci na práci, samozřejm�
 
 ## Moje situace na způsob Orbis pictus
 
-![Domácí hudba]({filename}/images/domacihudba.png)
+![Domácí hudba]({static}/images/domacihudba.png)
 
 ### Možná řešení na repráky
 

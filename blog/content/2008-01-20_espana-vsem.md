@@ -4,7 +4,7 @@ Tags: net, projekty, španělsko
 
 Jedním z mých prvních internetových projektů byla Espaňa, stránky o Španělsku.
 
-![obrázek]({filename}/images/25.jpg){: .right }Stránky byly tvořeny přibližně rok (podzim 2003 – podzim 2004). Učil jsem se španělsky a tak mě pochopitelně začaly zajímat veškeré španělské reálie. Časem jsem zjistil, že mě fascinuje nejen španělský jazyk, ale i kultura a vůbec celá země. Začal jsem se o Španělsko zajímat více a jelikož jsem díky tomu nashromáždil mnohé informace a znalosti, jež by se mohly hodit i jiným, rozhodl jsem se vytvořit ony stránky.
+![obrázek]({static}/images/25.jpg){: .right }Stránky byly tvořeny přibližně rok (podzim 2003 – podzim 2004). Učil jsem se španělsky a tak mě pochopitelně začaly zajímat veškeré španělské reálie. Časem jsem zjistil, že mě fascinuje nejen španělský jazyk, ale i kultura a vůbec celá země. Začal jsem se o Španělsko zajímat více a jelikož jsem díky tomu nashromáždil mnohé informace a znalosti, jež by se mohly hodit i jiným, rozhodl jsem se vytvořit ony stránky.
 
 Byl to první web, na němž jsem se učil CSS a prošel velkým vývojem. Spolu s mou homepage však začal časem chátrat. Neobnovován a zapomenut, zůstal webík o Španělsku na archaické adrese [http://littlemaple.jinak.cz/esp/](http://littlemaple.jinak.cz/esp/).
 

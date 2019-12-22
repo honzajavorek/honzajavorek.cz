@@ -17,7 +17,7 @@ Toto jsem napsal na Twitter a spousta z vás se mě zeptalo na podrobnosti. Tak
 -   **Android:** Koupil jsem si místo Androida obyčejnou Nokii C2–01. [Důvodem nebyl Google]({filename}2012-04-07_proc-si-koupim-jednoduchy-telefon.md), ale že by byl Android dotažený OS, to se říct rozhodně nedá. Spíš je prostě „levný“. Klávesa „zpět“ je nevyzpytatelná a vždy udělá přesně opak toho, než chci. UI aplikací nejednotné. Zařízení nemusí splňovat žádné standardy, takže drtivá většina Androidů jsou nekvalitní plasťáky s výdrží čtvrt dne a obskurním displejem. Nové verze systému výrobci telefonů schválně blokují. Teda uživatelé si to myslí, ale on by to ten jejich telefon už stejně neutáhl, zastará za pár měsíců… A mohl bych pokračovat.
 -   **Chrome:** Líbila se mi na něm vždy rychlost, ale nikdy jsem si na něj nezvykl. Je na mě až příliš jednoduchý, UI jeho rozšíření je psychedelické a připomíná skvosty z Android Marketu. Při instalaci aby člověk jen tiše doufal, že autor rozšíření neměl oblíbené barvy fialovou a hnědou, protože jestli měl, bude UI fialovo-hnědo-modré. Proč modré, to nevím. U mě nikdy Chrome nepřekonal Firefox, asi jsem konzerva.
 
-![obrázek]({filename}/images/167.jpg)
+![obrázek]({static}/images/167.jpg)
 
 No a ještě jednou musím napsat, jak mě štve, že mi Google všude tlačí nějaké nesmysly, o kterých si on myslí, že jsou dobré. Google+. Nebo Play na liště. Proboha proč? Dříve to nedělal. Propagoval užitečnou novou fičuru, ale nevnucoval se stále s něčím, ještě k tomu tak otravně. Klesá u mě s touhle politikou na úroveň telemarketingových firem, jež mi denně volají, jestli něco nechci, a já to nikdy nechci.
 

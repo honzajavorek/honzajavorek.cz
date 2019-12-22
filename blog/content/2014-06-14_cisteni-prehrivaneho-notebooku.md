@@ -22,7 +22,7 @@ S [novou prací](http://apiary.io/company#team) přišly nové nároky na výkon
 
 Protože poslední dobou na blogu flákám obrázky, vyfotil jsem vám aspoň ty kuponky:
 
-![Slevové kupony]({filename}/images/kupony.jpg)
+![Slevové kupony]({static}/images/kupony.jpg)
 
 Jestli je chcete, tak jak už jsem psal výše - přijďte na další Pyvo (brněnské, pochopitelně). Tak a to je vše. Teď už to nikomu nebudu muset sepisovat do zpráv. Jo a jestli vám to přijde jako reklama na ten servis, tak sorry - nic za tento článek nemám a odvedli prostě dobrou práci.
 

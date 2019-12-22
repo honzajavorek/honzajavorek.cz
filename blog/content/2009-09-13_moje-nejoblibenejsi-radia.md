@@ -37,5 +37,5 @@ Druhá varianta má výhodu v tom, že můžete pracovat kdy chcete a můžete 
 
 Takto vytažené streamy dokáže přehrát jak WMP, tak Winamp:
 
--   Playlist pro [WMP]({filename}/files/radio.wpl)
--   Playlist pro [Winamp]({filename}/files/radio.m3u)
+-   Playlist pro [WMP]({static}/files/radio.wpl)
+-   Playlist pro [Winamp]({static}/files/radio.m3u)

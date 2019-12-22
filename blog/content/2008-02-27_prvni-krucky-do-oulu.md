@@ -4,7 +4,7 @@ Tags: erasmus, škola
 
 Tak jsem se rozhodl **začít něco dělat** ve své věci studia v zahraničí :) . Postupně se s vámi hodlám dělit o vše, co dělám, aby to mohlo být návodem pro druhé. Z informací nalezených na internetu jsem vysledoval, že dost lidí, kteří jedou na Erasmus, si o tom píšou blog. Také jsem ale vysledoval, že začínají nejlépe příjezdem do země – všichni však víme, že **bez předehry** to prostě není ono, takže se to posnažím napravit. A ještě něco – aby moje návody jednou někdo našel, musím tady Googlu nechat pár klíčových slov – třeba **Finsko**, **Oulu**, **nahý Vojta Kotek**, **Erasmus**, …!
 
-![obrázek]({filename}/images/48.jpg)
+![obrázek]({static}/images/48.jpg)
 
 ## Erasmus v Oulu a kde o něm píšou
 
@@ -22,5 +22,5 @@ Našel jsem si tedy stránky fakulty a jednoduše se nechal vést [odkazy pro st
 
 ## Kontaktáž
 
-![obrázek]({filename}/images/49.jpg){: .left } A je to tady, dámové a pány. Fakulta má dva mezinárodní koordinátory, dle zápisků předešlých erasmáků již několik let tytéž. Je to [Katja Kurasto](http://www.oamk.fi/utils/hkorttilinkki_new.php?ikkunassa=1&lyhenne=otek&sukunimi=Kurasto&etunimi=Katja&kieli=en)
+![obrázek]({static}/images/49.jpg){: .left } A je to tady, dámové a pány. Fakulta má dva mezinárodní koordinátory, dle zápisků předešlých erasmáků již několik let tytéž. Je to [Katja Kurasto](http://www.oamk.fi/utils/hkorttilinkki_new.php?ikkunassa=1&lyhenne=otek&sukunimi=Kurasto&etunimi=Katja&kieli=en)
 a [Matti Alila](http://www.oamk.fi/utils/hkorttilinkki_new.php?ikkunassa=1&lyhenne=otek&sukunimi=Alila&etunimi=Matti&kieli=en). Matti sice vypadá docela jako sympaťák, ale řekl jsem si, že chlapů už mám kolem sebe dost a **navíc se Katja na fotce hezky směje** – mou vyvolenou se tedy stane ona :P . Napsal jsem e-mail s předmětem *Just another Erasmus exchange student (summer 2009)* a teď už se jen těším na odpověď :) .

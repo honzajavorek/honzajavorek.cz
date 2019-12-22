@@ -2,7 +2,7 @@ Title: Rok inspirován
 Date: 2008-05-28 19:54:00
 Tags: tech
 
-![obrázek]({filename}/images/62.jpg){: .right }Už rok vlastním notebook **Dell Inspiron 6400**. Tedy už o nějaký ten měsíc více jak rok, ale vzhledem k tomu, že mi slečnu nenahrazuje, s výročími to společně nějak nepřeháníme. Dokonce chudák ani po roce nemá jméno – neříkám mu ani Hildo, ani Věnceslave. V síti se hlásí nudně jako *lm-laptop*. Jak bych po roce zhodnotil tento svůj úlovek v moři notebookového trhu? Mmmm… Řekl bych, že jsem spokojen :) .
+![obrázek]({static}/images/62.jpg){: .right }Už rok vlastním notebook **Dell Inspiron 6400**. Tedy už o nějaký ten měsíc více jak rok, ale vzhledem k tomu, že mi slečnu nenahrazuje, s výročími to společně nějak nepřeháníme. Dokonce chudák ani po roce nemá jméno – neříkám mu ani Hildo, ani Věnceslave. V síti se hlásí nudně jako *lm-laptop*. Jak bych po roce zhodnotil tento svůj úlovek v moři notebookového trhu? Mmmm… Řekl bych, že jsem spokojen :) .
 
 Notebook využívám k **práci a na školní záležitosti**. Z her nemám ve svých Windows ani minolovku… Chci s ním **cestovat**, takže je pro mne důležitá konstrukce a baterka. Jinak jsem nějaké velké nároky neměl. Chtěl jsem dost paměti, na procesor jsem nároky neměl a přál jsem si širokoúhlý displej kvůli grafice. Ještě dodám, že asi v polovině života jsem dokoupil RAM a vyměnil z 512 MB na 2 GB (A propos, nechcete někdo pětsetdvanáctku DDR2 2Rx16 667 MHz? Taková zelená, prý z Malajsie ;) ). No – jak mi kdysi dávno řekl šéf v mé někdejší práci, nakonec člověk stejně zjistí, že pomalu jediný parametr, který ho vlastně zajímá, je skutečnost *mám notebook* vs. *nemám notebook*.
 

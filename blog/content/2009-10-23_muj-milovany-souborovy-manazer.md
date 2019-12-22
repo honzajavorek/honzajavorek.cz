@@ -4,7 +4,7 @@ Tags: linux, software, windows
 
 Včera jsem naznačil pomalou a postupnou konvergenci svých počítačových zvyků k Linuxu a hned se objevilo pár zajímavých témat k diskusi. Jsem rád, že se komentáře nezaplnily polemikou, ale spíš tipy na různé programy, které by mi mohly pomoci. Rád bych detailněji otevřel téma souborového manažeru.
 
-![obrázek]({filename}/images/121.jpg)
+![obrázek]({static}/images/121.jpg)
 
 Používám
 [Altap (dříve Servant) Salamander](http://www.altap.cz/salam_cz/). Na Linuxu jsem vyzkoušel spoustu grafických manažerů, z KDE asi hlavně Krusader (protože KDE nemám rád a on jediný se zdál, že za to stojí), z GNOME spoustu nedodělků. Do konzolového mc jsem nikdy nepronikl, protože je konzolový a jeho interakce s okolním GUI je (téměř?) nulová. Na okénková-ikonková udělátka jsem si nezvykl ani ve Windows a pochybuji, že by měl některý z nich takovou auru, aby můj odpor k nim zlomil – jednoduše mi přijdou vrcholem nepřehlednosti.

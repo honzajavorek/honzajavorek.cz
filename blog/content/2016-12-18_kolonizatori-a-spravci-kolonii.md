@@ -6,7 +6,7 @@ Vyměňme na chvíli vánoční čepičky za přilby [conquistadorů](https://cs
 
 ## Kolonizátor
 
-![Kolonizátor]({filename}/images/conquistador.png){: .right }[Cortés](https://cs.wikipedia.org/wiki/Hern%C3%A1n_Cort%C3%A9s)! [Pizarro](https://cs.wikipedia.org/wiki/Francisco_Pizarro)! Tihle chlapíci se s tím moc nepárali. Na mapě bylo bílé místo a jejich pověřením bylo zjistit, co tam je, a zařídit, aby to bylo za každou cenu co nejdříve pod španělskou vlajkou.
+![Kolonizátor]({static}/images/conquistador.png){: .right }[Cortés](https://cs.wikipedia.org/wiki/Hern%C3%A1n_Cort%C3%A9s)! [Pizarro](https://cs.wikipedia.org/wiki/Francisco_Pizarro)! Tihle chlapíci se s tím moc nepárali. Na mapě bylo bílé místo a jejich pověřením bylo zjistit, co tam je, a zařídit, aby to bylo za každou cenu co nejdříve pod španělskou vlajkou.
 
 Kolonizátor pracuje rychle a efektivně. Dostal polovičaté zadání, ale není tady od toho, aby se na něco ptal. Jeho úkolem je doručit výsledek. Vytvořit [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product). Sestrojit prototyp, aby se dal validovat trh. Dokončit něco, protože zítra je demo.
 
@@ -14,7 +14,7 @@ Chtějte nemožné a kolonizátor vám to doručí. Sice přes mrtvoly, ale doru
 
 ## Správce kolonií
 
-![Správce kolonií]({filename}/images/governor.png){: .right }Na mapě dobytého území už jsou první osady, domorodé obyvatelstvo je zpacifikované, Cortés se posunul někam dál za obzor. Co teď? Nastupuje správce. Zatímco kolonizátor nešel daleko pro nějakou tu genocidu, úkolem správce je spíš domluvit se s místními na kompromisech a situaci stabilizovat. Podpořit rozvoj krajiny, rozjet výnosy, udělat místo pro nové osadníky.
+![Správce kolonií]({static}/images/governor.png){: .right }Na mapě dobytého území už jsou první osady, domorodé obyvatelstvo je zpacifikované, Cortés se posunul někam dál za obzor. Co teď? Nastupuje správce. Zatímco kolonizátor nešel daleko pro nějakou tu genocidu, úkolem správce je spíš domluvit se s místními na kompromisech a situaci stabilizovat. Podpořit rozvoj krajiny, rozjet výnosy, udělat místo pro nové osadníky.
 
 Správce hledá řád. Navrhuje, refaktoruje, rozvažuje, uklízí, pětkrát měří, než něco uřízne. Sv. Linter a Sv. Coverage dostanou kostely uprostřed osady. Dbá na čitelnost kódu a dokumentaci, protože ví, že jsou to základy týmové spolupráce. Většinu chatrčí strhne a postaví domy z kamene, jež se budou do budoucna lépe udržovat.
 

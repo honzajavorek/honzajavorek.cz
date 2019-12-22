@@ -5,7 +5,7 @@ Půllitr s dvanáctkou je za námi a čeká na nás 13°. Už se nese, ale jestl
 
 ## Dvanáctka
 
-![Řezané]({filename}/images/rezane.jpg){: .right }**První polovinu** jsem se těšil na konec svého vysokoškolského studia. Odpočítával jsem dny a dělal vše pro to, aby to vyšlo a bylo to už konečně za mnou. Následně přišly **prázdniny**, po kterých jsem si uvědomil, že mě už sice netíží škola, ale jsem pro změnu nespokojený se svým pracovním životem. Takže to postupně vyústilo v další čekání, tentokrát na **konec roku**, kdy jsem měl opustit většinu svých závazků a [začít nějak nanovo, úplně jinak]({filename}2012-11-04_restart.md). Zase jsem si škrtal dny v kalendáři a opět jsem dělal vše pro to, abych mohl od ledna začít žít tak jak jsem si vysnil.
+![Řezané]({static}/images/rezane.jpg){: .right }**První polovinu** jsem se těšil na konec svého vysokoškolského studia. Odpočítával jsem dny a dělal vše pro to, aby to vyšlo a bylo to už konečně za mnou. Následně přišly **prázdniny**, po kterých jsem si uvědomil, že mě už sice netíží škola, ale jsem pro změnu nespokojený se svým pracovním životem. Takže to postupně vyústilo v další čekání, tentokrát na **konec roku**, kdy jsem měl opustit většinu svých závazků a [začít nějak nanovo, úplně jinak]({filename}2012-11-04_restart.md). Zase jsem si škrtal dny v kalendáři a opět jsem dělal vše pro to, abych mohl od ledna začít žít tak jak jsem si vysnil.
 
 Budu si ale pamatovat i několik **pěkných věcí**. Našli jsme si hezké bydlení, začal jsem chodit víc plavat, užil jsem si před závěrečným učením brněnské Hockey Games, po státnicích jsem si nadělil účast na nezapomenutelných Colours of Ostrava, projel jsem v létě deltu Dunaje v Rumunsku a slyšel jsem Fatboy Slima.
 

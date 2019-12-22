@@ -3,7 +3,7 @@ Date: 2014-01-14 01:00:04
 
 Většinu minulého týdne jsem strávil v Bratislavě, kde jsem se pokoušel o takové malé [digitální nomádství](http://navolnenoze.cz/blog/nomadi/) naruby. Proč naruby? Protože jsem se [své práci](http://synopsi.tv/) nevzdaloval, ale přibližoval. Běžně pracuji z domova v Brně, kancelář a většinu kolegů mám ale v Bratislavě.
 
-![Most SNP]({filename}/images/blava-most.jpg)
+![Most SNP]({static}/images/blava-most.jpg)
 
 V hlavním městě Slovenska jsem byl už mnohokrát, ale nikdy jsem neměl čas ho lépe poznat. Řekl jsem si, že tentokrát zůstanu na více dní.
 
@@ -17,7 +17,7 @@ Povedlo se mi hned po příchodu **zaseknout za sebou dveře do koupelny** a mus
 
 Bohužel na nějakou turistiku příliš nevyšlo počasí - bylo sice relativně teplo, ale mlhavo a zataženo. Chtěli jsme se podívat třeba na [Kamzík](https://sk.wikipedia.org/wiki/Telev%C3%ADzna_ve%C5%BEa_na_Kamz%C3%ADku), ale zrovna v ten den byla hmla tak hustá, že nešlo vidět ani UFO. Samozřejmě se v den odjezdu objevila modrá obloha.
 
-![Modrý kostel]({filename}/images/blava-kostel.jpg){: .right }
+![Modrý kostel]({static}/images/blava-kostel.jpg){: .right }
 
 - V Bratislavě je neuvěřitelné množství **výškových budov** (mrakodrapů?). V Česku to zřejmě nemá obdobu - Praha nesmí zastavět oblohu kvůli panoramatu a jinde asi není taková poptávka.
 - **Prezidentský palác** je nazdobený tak, že v noci vypadá spíš jako sídlo Santa Clause. **Hrad** je krásně opravený, ale dost strohý.

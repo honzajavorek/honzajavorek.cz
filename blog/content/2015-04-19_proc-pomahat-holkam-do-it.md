@@ -3,7 +3,7 @@ Date: 2015-04-19 16:00:11
 
 Pomáhám při organizaci [Django Girls v Praze](http://djangogirls.org/prague/). Jak už to tak u mě bývá, dělám hlavně maskota a snažím se akci propagovat na sociálních sítích a podobně.
 
-![Django Girls]({filename}/images/djangogirls.png)
+![Django Girls]({static}/images/djangogirls.png)
 
 Django Girls jsou jednodenní workshop pro dámy, na kterém se mohou zadarmo naučit úplné základy programování a udělat si svou první webovou stránku v Djangu, resp. v [programovacím jazyce Python]({filename}/2014-05-29_proc-python.md). Je to koncept převzatý ze zahraničí, všechno je připravené a nachystané, [existují manuály i pro organizátory](http://djangogirls.org/resources/), takže proto pro nás bylo jednodušší se pustit do něčeho takového, než něco stavět na koleně. A i tak je to dost velká fuška!
 
@@ -11,7 +11,7 @@ No a to je odpověď na otázku, proč neděláme stejné workshopy třeba pro s
 
 Poptávka je i ze strany holek. Já píšu holek, ale ony jsou to často spíš dámy. Přijdou středoškolačky, vysokoškolačky, ženy na mateřské, apod. Někdy je to jen zaujme jako zajímavý svět pro průzkum, ale často od toho opravdu očekávají změnu životního kurzu a rozšíření vlastních možností. Někdy jsou nespokojené s oborem, který studují nebo v němž už pracují, někdy se hledají v určitém životním intermezzu, motivace mohou být různé a je zajímavé poslouchat jednotlivé příběhy. Co je ovšem jistým faktem, tak to je enormní zájem. My budeme muset nějak vybrat 40 účastnic snad ze 150 přihlášených a [Czechitas](http://czechitas.cz/) když někdy vypíšou kurz, tak jsem slyšel, že dokáže být rozebraný i do půl hodiny.
 
-![Django Girls v Brně]({filename}/images/djangogirlsbrno.jpg)
+![Django Girls v Brně]({static}/images/djangogirlsbrno.jpg)
 Fotka: [Martin Kyral, Django Girls Brno 2015](https://www.flickr.com/photos/djangogirls/15864138433/in/set-72157650311095647)
 
 Workshopy pro holky tedy vznikají hlavně proto, že se setkává nabídka, poptávka a správná nálada cílovky, sponzorů, i nás aktivistů. Předchozí odstavce berte jako že jsem se nad celou věcí snažil povznést a bez emocí pochopit, proč je teď vlastně doba pro podobné akce tak příznivá. Jako aktivista v tom mám ale samozřejmě i nějaký ten svůj osobní rytířský příběh - nedělám to proto, aby se pohnula čísla v ekonomickém soukolí, ale proto, že za tím vidím nějaké vyšší cíle, že mám svou naivní, sluníčkovou vizi a výklad světa kolem sebe.

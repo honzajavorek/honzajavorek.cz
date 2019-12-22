@@ -34,7 +34,7 @@ Jak jsme si ale s Cygwinem polepšili ve vzdáleném připojení? Nu, nijak zvl
 
 Jak to vypadá?
 
-![obrázek]({filename}/images/55.jpg)
+![obrázek]({static}/images/55.jpg)
 
 Popravdě, k ničemu jinému užitečnému Xka na Cygwinu využít nelze. Myslím si, že je to ale (alespoň pro mne) dostatečný přínos k jejich instalaci :) . Přeji příjemnou zábavu.
 

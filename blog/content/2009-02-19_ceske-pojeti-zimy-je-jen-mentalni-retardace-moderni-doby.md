@@ -4,7 +4,7 @@ Tags: fail, finsko, názory
 
 **Mentální retardace** je podle Wikipedie postižení jedinců, při kterém dochází k zaostávání vývoje rozumových schopností, k odlišnému vývoji některých psychických vlastností a k poruchám v **adaptačním chování**. Myslím, že Češi zapomněli, že jednou z charakteristik člověka jako živočišného druhu je úžasná **schopnost adaptace a sžití se s přírodou**.
 
-![obrázek]({filename}/images/112.jpg)
+![obrázek]({static}/images/112.jpg)
 
 Čtrnáctého ledna 2006 jsem na svůj tehdejší blog napsal článek s titulkem *Proč nechodit v zimě ven?*. Myslím, že je ještě celkem mírný na to, jakou rétorikou jsem se prezentoval později. Tento bývalý příspěvek ještě připouští určité krásy zimy :) . Schválně jsem ho našel ve staré zálohované databázi. Bylo pokažené kódování, tak jsem jej přepsal z otazníků asi do tohoto:
 

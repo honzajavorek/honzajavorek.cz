@@ -3,7 +3,7 @@ Date: 2013-11-11 21:06:23
 
 Možná jste to zaznamenali, možná ne, každopádně proběhlo minulý týden ve čtvrtek (tj. 7. 11.) **první Pyvo v Ostravě**. Sponzorovaly jej **dvě firmy**, byly dvě krátké **přednášky** a přišlo kolem **třiceti účastníků**, což považuji za velký úspěch. Akce byla totiž organizována poměrně *punkově* a očekávání nebyla naprosto žádná. Místní příjemně překvapili a byl z toho parádní večer.
 
-![Pyvo v Ostravě]({filename}/images/ostrava-pyvo.png)
+![Pyvo v Ostravě]({static}/images/ostrava-pyvo.png)
 
 Za ty necelé tři roky, co v Brně pořádáme setkání přátel programovacího jazyka Python, se povedlo navázat vztahy s [Prahou](http://lanyrd.com/series/praha-pyvo/), [Bratislavou](http://rubyslava.sk/) a dokonce i [Vídní](http://vienna-rb.at/). Sjednotili jsme komunitu, srazům jsme dali jednotnou značku, *Pyvo*. Co mě ale mrzelo, byl fakt, že nemáme **spřátelený sraz v Ostravě**.
 
@@ -11,7 +11,7 @@ Půlku života jsem prožil v Karviné, městě pár kilometrů na východ od Os
 
 Ostrava je navíc opravdu velkou spádovou oblastí. Například v mnoha českých městech by další Pyvo neuspělo, protože jsou příliš blízko Praze, kde už sraz je a lidé se tam sjedou spíš, než aby podporovali malou lokální komunitu (na to nám zřejmě trpí i Plzeň). Ostrava ale nespadá nikam k Brnu. Ostrava je sama o sobě **centrem velkého území, kam se mají lidé sjíždět**.
 
-![Uvítací slajd]({filename}/images/ostrava-front.jpg)
+![Uvítací slajd]({static}/images/ostrava-front.jpg)
 
 Nakoplo mě pár příspěvků na [Pyonýrech](https://www.facebook.com/groups/pyonieri/), naší Facebookové skupině, kde se čas od času nějaký Ostravak sháněl po místním srazu. Chtěl jsem mít mapku na [python.cz](http://python.cz/#pyvo) rovnoměrně rozloženou, chtěl jsem mít možnost napsat, že i lidé ze Severní Moravy mají kam zajet na sraz. Zkusil jsem namotivovat pár místních, aby se do organizace vlastního setkání pustili, ale ani když jsem slíbil, že do Ostravy přijedu, předám know-how a se vším "vlastnoručně" pomůžu, nic se stále nekonalo.
 
@@ -30,7 +30,7 @@ Celé zorganizování srazu vypadalo nějak takto:
 - Zjistil jsem, že jsem nevzal kameru, takže jsme přednášky *punkově* **natočili aspoň na můj foťák**.
 - **Povídali jsme si** s lidma.
 
-![Přednáška]({filename}/images/ostrava-back.jpg)
+![Přednáška]({static}/images/ostrava-back.jpg)
 
 No, vlastně to není úplný seznam, ale chtěl jsem ukázat, že **ty hlavní věci byly poměrně jednoduché** a místního člověka by nic nestály. Ve skutečnosti jsem zkoušel na koleně rozjet takovou menší *propagační kampaň* a pohrával jsem si s efektem překvapení, takže:
 
@@ -38,7 +38,7 @@ No, vlastně to není úplný seznam, ale chtěl jsem ukázat, že **ty hlavní 
 - Na konci léta jsem hledal nějaké lidi kolem Ostravy, kteří by se se mnou podíleli na "tajném projektu". Ozvala se mi jich asi desítka. Odepsal jsem, že zatím je vše v přípravách a hned jak budu vědět detaily, ozvu se jim s bližšími informacemi. Jejich kontakty jsem si uschoval a při *odhalení* události jsem jim napsal, že hledám lidi, kteří na Pyvo přijedou a nejlépe ještě pomohou s organizací. <small>Nejlepší reakce na můj inzerát byla [tahle](https://www.facebook.com/groups/pyonieri/permalink/631294410216073/?comment_id=631306370214877&offset=0&total_comments=8).</small>
 - Ve fázi propagace jsem vyhledal co nejvíce relevantních ostravských IT firem a pokusil se je na Pyvo pozvat. Oslovil jsem také snad každou místní komunitu, která mívá nějaký svůj sraz, s prosbou, zda-li by nám nepomohli s propagací. Našel jsem si na Twitteru ostravské *influencery*, které jsem rovněž poprosil o předání zprávy dál. Jak se později ukázalo, klíčové bylo nechat pozvánku probublat i na elektronické vývěsky univerzit.
 
-![Spamování na Twitteru]({filename}/images/ostrava-napyvo.png)
+![Spamování na Twitteru]({static}/images/ostrava-napyvo.png)
 
 Věci výše byly jednoznačně něco navíc, rozhodně není potřeba je dělat před každým srazem a nejspíš i ten první by se bez nich obešel, jen by asi proběhl ve skromnějším duchu. Snažil jsem se ale takto "propagačně" vymačkat z Ostravy maximum, protože **jsem neměl prakticky žádné kontakty na místní**. Zpočátku nebylo moc čeho se chytit a když už jsem se rozjel, nešlo to zastavit. Zajímalo mě, jestli lze tímto způsobem událost opravdu dostat do povědomí a zabránit tomu, aby se jí účastnily jen tři osoby z Brna. **Bavilo mě to.** Nemohl jsem se odtrhnout od vymýšlení dalších a dalších způsobů, jak informaci dostat mezi cílovou skupinu a musím říct, že jsem nakonec ani nevyčerpal vše, co mě napadlo.
 
@@ -58,7 +58,7 @@ Přátelé z *regionu*, jestli čtete tento článek a uvažujete o tom, že Pyv
 
 Vše ostatní je bonus. Můžete vzít foťák a zkusit přednášky natočit, můžete si vymyslet cokoliv dalšího, ale není to nic, bez čeho by sraz nebyl. Můžete v budoucnu [objet okolní srazy](http://www.coderswithoutborders.eu/) a podívat se, jak to žije jinde, načerpat inspiraci, získat další kontakty. Můžete si udělat [vlastní knihovnu](https://github.com/rubyslava/bookshelf). Můžete si [upéct dort](https://www.facebook.com/photo.php?fbid=507496402645746&set=a.507496165979103.1073741825.358777047517683). Je to na vás! Vtiskněte Ostravskému Pyvu vlastní tvář, **propůjčete mu kousek své duše, a ono se vám odmění** - spoustou nových přátel, kolegů, nových možností a úžasných zážitků.
 
-![Diskuse]({filename}/images/ostrava-talk.jpg)
+![Diskuse]({static}/images/ostrava-talk.jpg)
 
 Takže? **Hurá do toho!** Napište nám, my vás přidáme [do Trella, kam si píšeme úkoly](https://trello.com/b/Mi3dSO22/ostrava-rutina-ka-deho-srazu), a je to.
 

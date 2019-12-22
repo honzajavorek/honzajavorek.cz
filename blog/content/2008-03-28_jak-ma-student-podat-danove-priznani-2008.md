@@ -12,7 +12,7 @@ Jak? To se zeptejte [tady](http://jakpodnikat.cz/) :) . Chcete-li si počíst, z
 
 Každý podnikající člověk s příjmem z něj musí platit daň. Abyste věděli kolik toho máte zaplatit, kdy a jak, čtěte dál.
 
-Důležité je, abyste uměli počítat. Jak počítat, vám poradí tyto dvě geniální stránky: [Novinky pro OSVČ v roce 2007](http://www.beruna.cz/rs/index.php?text=109-novinky-pro-osvc-v-roce-2007) a [Student živnostník – manuál](http://www.euroekonom.cz/podnikani-student2.php). Podle těchto a jiných jsem vytvořil [počítadlo]({filename}/files/dane.zip).
+Důležité je, abyste uměli počítat. Jak počítat, vám poradí tyto dvě geniální stránky: [Novinky pro OSVČ v roce 2007](http://www.beruna.cz/rs/index.php?text=109-novinky-pro-osvc-v-roce-2007) a [Student živnostník – manuál](http://www.euroekonom.cz/podnikani-student2.php). Podle těchto a jiných jsem vytvořil [počítadlo]({static}/files/dane.zip).
 
 Adresu svého finančáku si najděte na [užitečném portálu státní správy](http://portal.gov.cz/).
 

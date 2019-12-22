@@ -22,6 +22,6 @@ Sepsal jsem si zhruba požadavky:
 
 Díval jsem se trošku na ceny a ani profláklý iPad není až tak drahý, jak jsem myslel.
 
-![iPad]({filename}/images/ipad.png)
+![iPad]({static}/images/ipad.png)
 
 Jenže je ho tam dvacet druhů a já se v tom moc nevyznám. Nechci z toho dělat žádnou vědu. Neřeším žádné super-technické parametry. Dokážete mi něco poradit? Na co si dát pozor? Co si u tabletu hlídat, v čem si ujasnit preference? Co vás na vašich tabletech štve?

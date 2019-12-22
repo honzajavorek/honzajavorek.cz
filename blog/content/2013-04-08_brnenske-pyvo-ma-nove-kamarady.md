@@ -13,7 +13,7 @@ je dnes už spolupořadatelem celé akce. V komentářích zase Věroš zmiňuje
 telefonní ústřednu, kterou jsme zrovna teď v březnu viděli v akci přímo
 na stolech mezi půllitry :-)</small>
 
-![Zábava na PyVu]({filename}/images/pyvo-zabava-1.jpg)
+![Zábava na PyVu]({static}/images/pyvo-zabava-1.jpg)
 
 Rok poté jsme v lednu 2012 hostili **zatím nejúspěšnější akci** -
 [NoSQL PyVo](http://lanyrd.com/2012/pyvo-january/), kde se nás sešlo přes
@@ -26,7 +26,7 @@ pod "značku" PyVo a vytvoření [společného rozcestníku](http://python.cz/).
 S organizací mi začal pomáhat [Petr Viktorin](http://twitter.com/encukou),
 takže už **jsme na to dva** a žádné moje angíny si na PyVo nepřijdou.
 
-![Zábava na PyVu]({filename}/images/pyvo-zabava-2.jpg)
+![Zábava na PyVu]({static}/images/pyvo-zabava-2.jpg)
 
 Zatímco v Praze už mám lepší docházku než někteří místní (což si zatím
 bohužel vykládají tak, že oni za námi jezdit nemusí ;-),
@@ -45,7 +45,7 @@ o tom možná ani nevědí. Skupinu vedou [Ivan Nečas](https://twitter.com/iNec
 a [Marek Jelen](https://twitter.com/marek_jelen), s nimiž jsme
 se domluvili, že zkusíme v dubnu uspořádat **společný sraz**.
 
-![BRUG]({filename}/images/brug.png)
+![BRUG]({static}/images/brug.png)
 
 **V Brně se tedy spojuje Python s Ruby** (podobně jako to už dlouho funguje
 v Bratislavě). Místo konání, datum, apod. zůstává - budeme se scházet [U Dřeváka](http://www.udrevaka.cz/)
@@ -58,7 +58,7 @@ No a když už jsme se takto pěkně spojili (a když už je Brno teda tou posle
 obydlenou zatáčkou před Vídní), zapojujeme se i do iniciativy
 **Coders without Borders**.
 
-![Coders without Borders]({filename}/images/coderswithoutborders.png)
+![Coders without Borders]({static}/images/coderswithoutborders.png)
 
 [Floor Drees](http://www.1stfloorgraphics.nl/) je nizozemka z vídeňského
 [vienna.rb](https://twitter.com/viennarb) a objíždí
@@ -93,7 +93,7 @@ bude VCS, tedy **version control systems**. Mluvit se bude
 zřejmě hlavně o Gitu, Mercurialu, Bazaaru. Přednášky se zatím rodí, takže
 pokud jste experti na něco z uvedeného, ozvěte se nám!
 
-![PyVo + BRUG]({filename}/images/lanyrd-pyvo-brug.png)
+![PyVo + BRUG]({static}/images/lanyrd-pyvo-brug.png)
 
 Jak už jsem psal, datum konání je **25. 4.**, tedy poslední dubnový čtvrtek.
 Zapište si to za uši a na čelo a nechte si to vytetovat mezi lopatky, protože

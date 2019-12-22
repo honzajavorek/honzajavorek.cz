@@ -3,7 +3,7 @@ Date: 2013-11-21 21:26:24
 
 Sem tam se kouknu na [Devel.cz](http://devel.cz). Zaujal mě tam nedávno [dotaz na metody, díky nimž se člověk může udržovat "in"](http://devel.cz/otazka/jak-se-udrzujete-in). Nejednalo se zde až tak úplně o tipy na nákupy hipsterských oděvů, ani se nikdo nevyptával na roztodivné kejkle, jakými lze uniknout módní policii - tím "in" bylo myšleno sledování novinek o technologiích kolem nás.
 
-![čtení]({filename}/images/catreading.jpg)
+![čtení]({static}/images/catreading.jpg)
 
 Jak tedy zajistit, aby člověku při běžné práci na běžných projektech neujížděl vlak, ale zároveň aby se z toho množství případného čtení nezbláznil? Sepsal jsem do své odpovědi způsoby, jakými se "in" udržuji já a [tento můj příspěvek](http://devel.cz/otazka/jak-se-udrzujete-in#answer-11852) následně získal nejvíc hlasů, tak jsem se rozhodl, že to nějak rozvedu i zde na blogu.
 
@@ -58,7 +58,7 @@ Už zmiňovaný **Kin Lane** píše o hromadě věcí na svém webu [API Evangel
 
 Ke všemu výše sleduji i dost politických blogů, blogy přátel, apod., ale pořád platí, že převažuje kvalita nad kvantitou. Nejsem schopen číst sebevíc kvalitní médium, pokud produkuje ohromné množství informací (což je také důvod, proč si zřejmě nikdy nepředplatím [RESPEKT](http://respekt.ihned.cz/) - týdně prostě nemůžu zvládnout zkonzumovat takovou nálož zajímavých textů, to bych nedělal nic jiného).
 
-![čtení]({filename}/images/george-marks-shocked-woman-reading-newspaper-in-studio-portrait.jpg){: .right }Myslím si, že jedinou efektivní cestou jak omezit čas strávený čtením novinek je prostě osekat příjem na minimum a dle nejlepšího vědomí a svědomí se snažit nechávat jen těch 20 % kvalitních zdrojů chrlících v rozumném množství oněch 80 % nejzajímavějších a nejdůležitějších věcí.
+![čtení]({static}/images/george-marks-shocked-woman-reading-newspaper-in-studio-portrait.jpg){: .right }Myslím si, že jedinou efektivní cestou jak omezit čas strávený čtením novinek je prostě osekat příjem na minimum a dle nejlepšího vědomí a svědomí se snažit nechávat jen těch 20 % kvalitních zdrojů chrlících v rozumném množství oněch 80 % nejzajímavějších a nejdůležitějších věcí.
 
 Obecně tedy ani tak nepovažuji za umění najít ty správné lidi, které sledovat, jako spíš schopnost vyházet většinu těch ostatních a odstranit tak šum. Takový šum totiž produkuje spoustu "jakože zajímavých" věcí, člověk jejich čtením stráví v součtu hodiny času, ale ve výsledku mu nic nedají. Je super, že jsem si přečetl o tom, jak si Kim Čŏng-un zve do paláce vědce, aby mu prodloužili život, ale mě to život ve výsledku asi spíš zkrátilo.
 

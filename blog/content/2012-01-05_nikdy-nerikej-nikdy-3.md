@@ -11,13 +11,13 @@ Postupně ale vše z toho vzalo za své. V práci jednoho dne například **na
 Na **WebExpo 2008** jsem zavítal na přednášku od [Dagiho](http://www.dagblog.cz/) o [Spring Frameworku](http://webexpo.cz/praha2008/prednaska/spring-framework/). Říkal jsem si, že se musím konečně podívat, **jak se v té úžasné Javě dělá web** – tedy to, co mě baví a živí. Jenže jsem zjistil, že Java EE je jeden velký zamotanec vrstev, zkratek, složitých všemožností, prostě **obrovský moloch**, který vůbec nemám chuť zkoumat. Den předtím jsem viděl v akci [Karmiho](http://webexpo.cz/praha2008/prednaska/efektivni-vyvoj-webovych-aplikaci-v-ruby-on-rails/) a říkal jsem si, že chci dělat něco takového. Že nechci zůstat u PHP, ale ani se nechci nořit do toho molochu z Dagiho přednášky.
 Že chci **něco s čím je radost dělat, něco cool, něco in, něco jako Ruby nebo Python**. Teď mám na kalendáři číslovku 2012, přemýšlím nad pořádáním lednového [setkání Pythonistů v Brně](http://srazy.info/brnenske-pyvo/) a většina mé práce je krocení neposlušných [hadů](https://en.wikipedia.org/wiki/Python_(genus)) v [čutoře](http://flask.pocoo.org/).
 
-![obrázek]({filename}/images/162.jpg)
+![obrázek]({static}/images/162.jpg)
 
 No a dnes **vzalo za své i to IDE**, bez něhož jsem dříve vůbec nemohl žít. Mé milované [Eclipse](http://www.eclipse.org/). To, díky němuž jsem vlastně kupoval nový počítač, protože mi kluci v sauně řekli, že není normální čekat po kliknutí půl minuty na kontextové menu, že bych měl opravdu už posílit hardware.
 
 Proč? Časem jsem totiž přišel na to, že mi **víc překáží než pomáhá**. Git jsem přes Eclipse nedělal, protože jsem kdysi dávno nepochopil grafické rozhraní EGitu a následně nadělal pár nesmyslů v pracovním repository. Abych klukům nedrásal nervy, naučil jsem se Git ovládat z konzole, kde jsem přesně věděl co dělám, a už mi to zůstalo. Když přišlo PHP5.3, trvalo to hrozně dlouho, než pro něj mělo IDE podporu. Pak ji mělo, ale stejně blbou, namespaces implementovali hrozně. Totéž s Pythonem. Mít v PyDev funkční projekt nad virtualenv bylo neuskutečnitelné a pokud, tak jedině po úsilí srovnatelném s porodem středně velkého dikobraza. **Naučil jsem se efektivně pracovat bez nápověd, bez statické analýzy, bez detekce chyb…** No a začal jsem se ptát sám sebe: *Je vůbec IDE pro dynamické jazyky dobrý nástroj?* V Javě je jeho pomoc nenahraditelná, protože si ze statické analýzy Eclipse vyčte úplně vše a pak v kódu dokáže téměř cokoliv vyřešit za vás. Ale v PHP nebo Pythonu to byla bída. Navíc vše žralo paměť a ostatní zdroje. Byl jsem nešťastný a přitom už jsem většinu funkcí IDE ani nepoužíval.
 
-![obrázek]({filename}/images/161.jpg)
+![obrázek]({static}/images/161.jpg)
 
 Vsuvka pro rejpaly: *Ne, nechci používat NetBeans. Zkoušel jsem to mnohokrát a nejsem schopen překousnout GUI toho programu. Nemám rád Javovský Swing (ne z přesvědčení, ale z pocitů marnosti) a tudíž to pro mne není cesta.*
 

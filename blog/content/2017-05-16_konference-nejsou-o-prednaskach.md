@@ -4,7 +4,7 @@ Date: 2017-05-16 20:07:00
 
 Pořádáme konferenci [PyCon CZ](https://cz.pycon.org/) a stejně jako loni a stejně jako předloni plánujeme přednášky natočit a následně dát veřejně k dispozici na YouTube. Na [PyCon SK](https://pycon.sk/) jsou ještě odvážnější a celou konferenci online streamují. Proč? **Protože konference nejsou o přednáškách.**
 
-![Jaromír]({filename}/images/jaromir.jpg)
+![Jaromír]({static}/images/jaromir.jpg)
 
 Rok co rok se opakuje názor, že když vás z uveřejněného programu konference zaujalo jen několik přednášek, tak nemá význam, abyste za to platili a ještě kvůli tomu někam jezdili. Opakujte prosím po mě:
 

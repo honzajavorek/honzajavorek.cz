@@ -4,4 +4,4 @@ Tags: fail, net, seriózně
 
 Kdo má pravdu? Asiana s Letuškou nebo SA s Královnou? :)
 
-![obrázek]({filename}/images/59.jpg)
+![obrázek]({static}/images/59.jpg)

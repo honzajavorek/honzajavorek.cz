@@ -1,7 +1,7 @@
 Title: Dojmy z WebExpo 2012
 Date: 2012-09-30 23:00:00
 
-![WebExpo 2012]({filename}/images/webexpo2012.png){: .right }[Letošní WebExpo](http://webexpo.cz/praha2012/) bylo fajn. Stále mi někteří lidé říkají, že by jim návštěva WebExpa nic nedala, že jsou pro ně *Stoupou vybrané* přednášky nezajímavé. No však OK, nikdo nikoho přece nenutí :) Mě by taky nic moc nedal třeba [politologický Barcamp](http://polbarcamp.cz/), tak tam samozřejmě nejezdím, ale asi nemám potřebu to troubit do světa. Že jste od webů opravdu ještě neznamená, že vám WebExpo něco dá.
+![WebExpo 2012]({static}/images/webexpo2012.png){: .right }[Letošní WebExpo](http://webexpo.cz/praha2012/) bylo fajn. Stále mi někteří lidé říkají, že by jim návštěva WebExpa nic nedala, že jsou pro ně *Stoupou vybrané* přednášky nezajímavé. No však OK, nikdo nikoho přece nenutí :) Mě by taky nic moc nedal třeba [politologický Barcamp](http://polbarcamp.cz/), tak tam samozřejmě nejezdím, ale asi nemám potřebu to troubit do světa. Že jste od webů opravdu ještě neznamená, že vám WebExpo něco dá.
 
 WebExpo je hodně o pocitech. Člověk se vždycky vrátí takový... nabitý energií, inspirovaný, plný nápadů a chuti naučit se spoustu nových věcí a dohnat špičky v oboru. Pokud víte, že ať už uvidíte přednášku o čemkoliv, uvedete to do praxe ve své firmě nejdříve za 10 let, asi to pro vás vážně nemá smysl. Akorát by vám to přivodilo depku.
 

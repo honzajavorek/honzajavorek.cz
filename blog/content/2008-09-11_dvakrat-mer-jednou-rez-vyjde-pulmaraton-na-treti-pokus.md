@@ -7,7 +7,7 @@ Dnešní čas je **2:04:24**. Trasu jsem prodloužil, ale chtěl jsem mít stejn
 Na mapky a profily dneska kašlu. Přidám ale **foto pro pobavení**
 ;) .
 
-![obrázek]({filename}/images/63.jpg)
+![obrázek]({static}/images/63.jpg)
 
 Já to ale jednou dám. Minimálně proto, že se v neděli stěhuji zpět ze svého letního sídla na původní bydliště a to je určitě nejméně o kilometr dál… Nějaké statistiky:
 

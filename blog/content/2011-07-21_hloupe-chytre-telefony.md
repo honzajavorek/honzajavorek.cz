@@ -2,7 +2,7 @@ Title: Hloupé chytré telefony
 Date: 2011-07-21 11:00:00
 Tags: android, fail, názory, tech
 
-![obrázek]({filename}/images/149.jpg){: .right }Po čase používání telefonů s Androidem jsem dospěl k několika poznatkům. Jedním z nich je, že pokud máte **starý stroj**, brzy na něm skoro ani nezavoláte nebo nepošlete SMS, jelikož nestíhá. Druhým je fakt, že ať už budete mít jakkoliv lepší, čerstvější a nabouchanější model, nic vás nezachrání od stálého **nabíjení šťávy**.
+![obrázek]({static}/images/149.jpg){: .right }Po čase používání telefonů s Androidem jsem dospěl k několika poznatkům. Jedním z nich je, že pokud máte **starý stroj**, brzy na něm skoro ani nezavoláte nebo nepošlete SMS, jelikož nestíhá. Druhým je fakt, že ať už budete mít jakkoliv lepší, čerstvější a nabouchanější model, nic vás nezachrání od stálého **nabíjení šťávy**.
 
 ## Hrdina v důchodu
 
@@ -16,7 +16,7 @@ Jasně, můžu si koupit nový telefon. Jenže to se mi vůbec nelíbí, já si 
 
 ## Baterie, *fail* dnešní doby
 
-![obrázek]({filename}/images/150.jpg){: .left }Ať mi nikdo neříká, že kdyby se hodně zainvestovalo do výzkumu a vývoje baterií, nepřišel by brzy někdo s úžasnými nápady, jak narvat do dnešní malé baterky mnohonásobně víc energie, než je tam dnes.
+![obrázek]({static}/images/150.jpg){: .left }Ať mi nikdo neříká, že kdyby se hodně zainvestovalo do výzkumu a vývoje baterií, nepřišel by brzy někdo s úžasnými nápady, jak narvat do dnešní malé baterky mnohonásobně víc energie, než je tam dnes.
 
 Jenže lidem výdrž evidentně nevadí, rádi ji vyměňují za ťapací displeje a propojení s fejsbůkem. Takže jde vývoj jinudy…
 

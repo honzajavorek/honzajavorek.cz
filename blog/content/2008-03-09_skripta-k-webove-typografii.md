@@ -2,7 +2,7 @@ Title: Skripta k webové typografii
 Date: 2008-03-09 03:53:00
 Tags: typografie, webdesign
 
-![obrázek]({filename}/images/54.jpg){: .right }Před 564 lety vynalezl Honza Gutenberg **knihtisk**. Asi tehdy netušil, co úžasného se mu povedlo a už vůbec netušil, že jeho řemeslo přežije do daleké budoucnosti. Že se vědy s ním spojené nebudou omezovat na papírový tisk, ale proniknou také **do vod internetu**, kde není nic nemožné. Internetu, celosvětové sítě, již jsme už dávno přestali psát s velkým písmenem na začátku, protože zevšedněla a tvoří náš druhý svět. Internetu, místa, kde v dnešní době i tak ryze papírová záležitost jako typografie nachází své **rozsáhlé uplatnění**.
+![obrázek]({static}/images/54.jpg){: .right }Před 564 lety vynalezl Honza Gutenberg **knihtisk**. Asi tehdy netušil, co úžasného se mu povedlo a už vůbec netušil, že jeho řemeslo přežije do daleké budoucnosti. Že se vědy s ním spojené nebudou omezovat na papírový tisk, ale proniknou také **do vod internetu**, kde není nic nemožné. Internetu, celosvětové sítě, již jsme už dávno přestali psát s velkým písmenem na začátku, protože zevšedněla a tvoří náš druhý svět. Internetu, místa, kde v dnešní době i tak ryze papírová záležitost jako typografie nachází své **rozsáhlé uplatnění**.
 
 [Informační design je typografie](http://interval.cz/clanky/webdesign-je-z-95-typografie-zakladni-myslenky/). **Jak ale proniknout** do jejích skvostů?
 

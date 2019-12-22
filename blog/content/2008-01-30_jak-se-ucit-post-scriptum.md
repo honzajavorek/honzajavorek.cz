@@ -58,7 +58,7 @@ Pokud vaše fakulta tvoří **videa z přednášek**, pak máte úžasný zdroj
 
 **Streaming** je vesměs škodlivý – místo aby šel student na přednášku, pustí si ji z kolejí a kouká. Přednáška je nudná, takže se na ni nekouká a raději během toho začne něco dělat na internetu, více a více, až se zcela nesoustředí a jen omylem si všimne, že *už mu tam na pozadí nikdo nemluví*. To ho nakonec přesvědčí o tom, že není třeba streaming ani zapínat → škole se vůbec nevěnuje. Doporučuji chodit na přednášky.
 
-![obrázek]({filename}/images/34.jpg)
+![obrázek]({static}/images/34.jpg)
 
 Video jako záznam je mnohonásobně **přínosnější**. Můžete si pustit přednášku, kterou jste **nestihli**, můžete si pustit již viděnou přednášku pro **zopakování** před písemkou (to je překvapivě velmi efektivní), můžete si stáhnout cvičení s **vysvětlením složitého postupu** a pozastavovat si video po pár vteřinách či posouvat jej tam a zpět tak dlouho, než věc pochopíte. Přednáška spuštěná **zrychleně** může být navíc stejně informačně hodnotná, ale zabere méně času.
 

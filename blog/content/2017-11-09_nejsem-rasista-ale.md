@@ -1,7 +1,6 @@
 Title: Nejsem rasista, ale
 Date: 2017-11-09 10:36:00
-Status: Draft
-
+Status: draft
 
 Já vím, že v době, kdy strany ODS a SPD [dostaly ve volbách 22 %](https://cs.wikipedia.org/wiki/Volby_do_Poslaneck%C3%A9_sn%C4%9Bmovny_Parlamentu_%C4%8Cesk%C3%A9_republiky_2017), je asi úplně mimo upozorňovat na rozdíl mezi člověkem, který rasista není, a člověkem, který si to jen myslí. Jenže mě to prostě nedá. Je to něco, co jsem objevil, a o čem musím napsat, abych na to upozornil a poskytl návod jak z toho ven.
 

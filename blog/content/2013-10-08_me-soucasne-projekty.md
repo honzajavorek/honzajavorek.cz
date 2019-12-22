@@ -13,7 +13,7 @@ Od mého lednového [restartu]({filename}/2012-11-04_restart.md) jsem prošel v�
 
 **Od září pracuji pro [Synopsi.TV](http://synopsi.tv/)**, kam mě odlovil [Rasťo Turek](http://turek.co/). Kdo neznáte, jedná se o (víceméně) bratislavský startup se světovými ambicemi, jehož hlavním produktem je **doporučování filmů na míru uživateli**. To znamená, že si jednotlivá doporučení necucá z prstu, ani se neřídí vkusem vašich přátel, hodnocením kritiků (= [FFFilm](http://fffilm.name/)), nebo názorem masy (= hodnocení na ČSFD) - řídí se tím, co se v minulosti líbilo konkrétně vám. Jste-li tedy fanouškem béčkových hororů, Synopsi.TV by to mělo poznat a do budoucna vám je nabízet, ať už si o nich vaši přátelé, obyvatelé zeměkoule, či kritici myslí cokoliv.
 
-![Synopsi.TV]({filename}/images/stv.jpg)
+![Synopsi.TV]({static}/images/stv.jpg)
 
 Byznys model je zatím v tom, že se dá takový *reccomendation system* poskytovat partnerům - podobně jako kdysi [jyxo.cz](https://cs.wikipedia.org/wiki/Jyxo.cz) vyvíjelo a licencovalo vyhledávač.
 
@@ -31,13 +31,13 @@ Pokud si s API nevíte rady, potřebujete vyřešit zapeklité otázky ohledně 
 
 Mimochodem, tým za Videoflotem je **moc příjemná parta lidí**. Jejich kapitán David "Havran" Spáčil je navíc velice inspirativní osobou (viz [rozhovor](http://www.babelguide.com/case-studies/david-spacil-from-studying-camels-to-video-community-site-in-chile), který fakt stojí za přečtení), takže je vždycky radost s nimi strávit byť i jen chvilku času. Pokud se k nim chcete přidat a pomoci jim, neváhejte.
 
-![Videoflot]({filename}/images/videoflot.jpg)
+![Videoflot]({static}/images/videoflot.jpg)
 
 ## Hobby projekty
 
 [Žít kino](http://zitkino.cz/) je můj malý *open source hobby startup experiment*. Jeho cílem je vytvořit **co nejúplnější a nejpřehlednější program brněnských kin**. Chcete jej podpořit? [Vylepšete jej](https://github.com/honzajavorek/zitkino/), [olajkukte jej](https://www.facebook.com/zitkino), [sledujte jej](https://twitter.com/zitkino). Na jeho vylepšení dokonce v Brně proběhl [první Python sprint](https://www.facebook.com/events/316558888489555/).
 
-![Žít kino]({filename}/images/zitkino.png)
+![Žít kino]({static}/images/zitkino.png)
 
 No a potom pár knihovniček na [GitHubu](https://github.com/honzajavorek/):
 

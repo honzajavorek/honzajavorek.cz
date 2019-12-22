@@ -4,7 +4,7 @@ Tags: erasmus, škola
 
 Tak mi [to]({filename}2008-02-17_erasmus.md) začíná hezky :) . Já prostě zásadně nemůžu nic zažít konvenčním způsobem… ;)
 
-![obrázek]({filename}/images/44.jpg)
+![obrázek]({static}/images/44.jpg)
 
 **<ondra\>** čau, vidím, že jedeš do Finska, gratuluju ;-)
 **<littlemaple\>** zdar, to je z blogu, nebo jsou uz nekde oficialni vysledky? :D
@@ -21,4 +21,4 @@ FITu…
 **<littlemaple\>** no tak to je super! jedu do Finska!!! :D :D diky za report, ja bych se to asi nedovedel :D
 **<ondra\>** :-DDDDDD
 
-![obrázek]({filename}/images/45.jpg)
+![obrázek]({static}/images/45.jpg)

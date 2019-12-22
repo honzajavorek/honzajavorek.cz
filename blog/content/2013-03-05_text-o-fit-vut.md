@@ -120,7 +120,7 @@ Po vydání toho článku se stalo následující:
     > vysvětlení toho "zatím stáhnul" a schůzku bychom mohli odložit na leden.
 
 6.  Byl jsem studenty upozorněn, že se o mé věci **jednalo na kolegiu děkana**.
-    [Zápis z kolegia]({filename}/files/zkd40-101216.pdf) jsem si uschoval (strana 2, bod 2). Vyšel
+    [Zápis z kolegia]({static}/files/zkd40-101216.pdf) jsem si uschoval (strana 2, bod 2). Vyšel
     až přesně v den naší schůzky. Tam jsem si přečetl, že **můj druhý článek nebyl
     pochopen úplně správně** a tak jsem se na to už předem mohl trochu připravit.
 
@@ -166,9 +166,9 @@ Po vydání toho článku se stalo následující:
     vyžádat. Poté jsme si všichni rozdali podpisy, popřáli si hezké svátky a rozešli se. Zde uveřejňuji vše, co jsem
     si ze schůzky odnesl domů:
 
-    - [Zápis z jednání]({filename}/files/p1190068.jpg)
-    - [Kopie článku **FIT nebo FI?** s mým vyjádřením a podpisem]({filename}/files/p1190069.jpg)
-    - [Kopie článku **Sliby se mají dodržovat i o Vánocích** s mým vyjádřením a podpisem]({filename}/files/p1190070.jpg)
+    - [Zápis z jednání]({static}/files/p1190068.jpg)
+    - [Kopie článku **FIT nebo FI?** s mým vyjádřením a podpisem]({static}/files/p1190069.jpg)
+    - [Kopie článku **Sliby se mají dodržovat i o Vánocích** s mým vyjádřením a podpisem]({static}/files/p1190070.jpg)
 
 8.  Napsal jsem na blog
     [tahák k přechodu z FIT na FI]({filename}2011-01-03_maly-tahak-k-prechodu-z-fit-na-fi.md).
@@ -183,7 +183,7 @@ Po vydání toho článku se stalo následující:
     [Byl jsem fit]({filename}2011-05-09_byl-jsem-fit.md)**.
 
 10. Celá věc měla dohru hlavně v tom, že **SU FIT mohla udělat anketu mezi studenty o jejich nespokojenosti a pobavit se nad jejími závěry
-    s vedením školy**. Výsledky ankety jsem si uschoval a [zde je zveřejňuji]({filename}/files/souhrn.pdf), stejně jako [stanovisko fakulty]({filename}/files/stanovisko.pdf).
+    s vedením školy**. Výsledky ankety jsem si uschoval a [zde je zveřejňuji]({static}/files/souhrn.pdf), stejně jako [stanovisko fakulty]({static}/files/stanovisko.pdf).
     Myslím, že ani jedno nebylo v době jejich vydání zcela veřejně přístupné, ale když může [leakovat Šalina](http://www.zitbrno.cz/salina-leaks), můžu i já :-) Jestli se něco změnilo nebo ne, to už nevím. Jistý náznak popisu situace lze asi hledat v [tomto komentáři]({filename}2011-12-25_alma-mater.md#comment-398474427) z ledna 2012.
 
 No, a to je celé. Možná se traduje, že jsem napsal rozumný článek kritický ke své fakultě a došlo kvůli němu k nátlakům na mou osobu. Takové tvrzení by bylo nespravedlivé a jednostranné. **Můj článek rozumný nebyl a žádost o jeho stáhnutí byla zcela oprávněná.** Nešlo o žádnou bitvu svobody slova se zastrašováním, původní text byl nepravdivý štěk sepsaný v afektu, jenž nemělo od prvního okamžiku smysl obhajovat.

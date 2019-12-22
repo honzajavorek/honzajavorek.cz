@@ -14,7 +14,7 @@ Vysvětlím:
 
 Technická vysoká škola má učit principy. Nejen proto, že je stále pozadu, ale také z toho důvodu, že je to prostě to nejužitečnější, co by měla předat. Dějiny jsou velice zajímavé a já osobně je mám moc rád (třeba ty o starověku), ale je to, přiznejme si, jen zajímavost a určitý všeobecný rozhled. Ten leckdy napomůže k tomu, abychom se poučili z minulosti a neopakovali chyby, ale není žádnou základní dovedností. Naopak, zatížení mysli prošlapanými cestičkami ji může uvěznit a omezit její kreativitu v řešení problémů. O tom je to lidové moudro *všichni říkají že to nejde udělat, až se najde blbec, který to neví, a udělá to*.
 
-![Ha ha ha.]({filename}/images/history.jpg)
+![Ha ha ha.]({static}/images/history.jpg)
 
 ## Příklady
 

@@ -2,7 +2,7 @@ Title: Nemám rád myši
 Date: 2008-01-13 07:38:00
 Tags: názory, tech
 
-![obrázek]({filename}/images/27.jpg){: .right }Nemám, nemám a nemám. Fuj. Strčte si všechny svoje myši někam do terária a nikdy mi je už neukazujte. Je to stvoření zbytečné, ničící zdraví. A co se má dělat se zbytečnými existencemi? Vyhodit je, popřípadě jinak zaručit, abychom je nevlastnili či se s nimi nestýkali (třeba si je nikdy nepořizovat).
+![obrázek]({static}/images/27.jpg){: .right }Nemám, nemám a nemám. Fuj. Strčte si všechny svoje myši někam do terária a nikdy mi je už neukazujte. Je to stvoření zbytečné, ničící zdraví. A co se má dělat se zbytečnými existencemi? Vyhodit je, popřípadě jinak zaručit, abychom je nevlastnili či se s nimi nestýkali (třeba si je nikdy nepořizovat).
 
 ## Филипика proti myším
 
@@ -14,13 +14,13 @@ Kuličková se zanáší a nefunguje, optická nepříjemně svítí, což rozpt
 
 ## Dzindzik
 
-![obrázek]({filename}/images/28.jpg){: .left }Když jsem dostal po legendárním Joshuovi svůj druhý notebook, tentokrát jako firemní a také už jako pořádnější dělíčko od [chlapců z IBM](http://en.wikipedia.org/wiki/Thinkpad), **neměl myš**. Řekl jsem si, že si ji časem koupím a zatím jej zkusím ovládat přes ten podivný [dzindzik](http://slovnik.dovrecka.sk/narecovy-slovnik/dzindzik) v klávesnici – můj typ neměl ani [touchpad](http://cs.wikipedia.org/wiki/Touchpad). Ta zvláštnost se jmenuje [trackpoint](http://cs.wikipedia.org/wiki/Trackpoint), ale myslím že každý na něj volá, jak je mu libo. Věc je to svým tvarem k fantazii vlídná a ať už myslíte zrovna na cokoliv, stejně vás mezi prvními alternativními názvy napadne klitoris :D .
+![obrázek]({static}/images/28.jpg){: .left }Když jsem dostal po legendárním Joshuovi svůj druhý notebook, tentokrát jako firemní a také už jako pořádnější dělíčko od [chlapců z IBM](http://en.wikipedia.org/wiki/Thinkpad), **neměl myš**. Řekl jsem si, že si ji časem koupím a zatím jej zkusím ovládat přes ten podivný [dzindzik](http://slovnik.dovrecka.sk/narecovy-slovnik/dzindzik) v klávesnici – můj typ neměl ani [touchpad](http://cs.wikipedia.org/wiki/Touchpad). Ta zvláštnost se jmenuje [trackpoint](http://cs.wikipedia.org/wiki/Trackpoint), ale myslím že každý na něj volá, jak je mu libo. Věc je to svým tvarem k fantazii vlídná a ať už myslíte zrovna na cokoliv, stejně vás mezi prvními alternativními názvy napadne klitoris :D .
 
 Lenost zajít koupit myš mě **naučila s trackpointem**. Nejdříve jsem se nestrefil ani do tlačítka oukej, ale po dni a půl jsem již křižoval displej líp něž Římané své nepřátele. Jak to bylo jednoduché :) . Exotické, ale návykové. Kupovat myš? Bleee… Dělal jsem s trackpointem veškerou práci, **pixelovou grafiku a odehrál i velkou část Dungeon Siege**.
 
 ## Ťap ťap
 
-![obrázek]({filename}/images/29.jpg){: .right }Ale nic netrvá věčně a ani jiskra mezi mnou a
+![obrázek]({static}/images/29.jpg){: .right }Ale nic netrvá věčně a ani jiskra mezi mnou a
 klit… dzindzikem neodolala všem vnějším vlivům. Ono už se to tak stává, že zrovna notebook, který si vyberete pro začátek svého podnikání, čudlíkem nedisponuje. Sice trochu naštve, že prakticky skoro všechny ostatní Delly ho mají, ale co už – pořád s tím nic nenaděláte :) . Můj Dell má [touchpad](http://cs.wikipedia.org/wiki/Touchpad), **dotykovou plošku**. A řeknu vám, je to asi ještě lepší vynález. Můžete s ním dělat hotová **kouzla** – scrollovat nahoru, dolů, doleva, doprava, používat drag&drop jedním prstem, namapovat si speciální místa (třeba pravý horní roh jako prostřední tlačítko)… Sakryš, teď se mi rozlomilo jabko v ruce a spadlo mi do klávesnice… Mmmhhmm… Momentík :D .
 
 Kde jsem to byl? Jistě, rozplýval jsem se nad touchpadem. Ano, tahle ploška má **neskutečný potenciál**, dodává se rovnou v notebooku (nemusíte ji nosit zvlášť, někam zapojovat, není to žádný drát navíc do vašeho PC, nestane se vám, že máte krátkou šňůru nebo vybité baterky, …), nijak nesvítí, neotravuje, když si jej zaprasíte špínou, tak jej prostě utřete. Spousta lidí jej vypíná nebo nepoužívá dle mého názoru jen proto, že s ním neumí a nechápou jeho efektivitu. Neomyšíte si zápěstí, nikam nejezdíte s rukou a když jedete do světa autobusem, můžete pracovat stejně komfortně jako na stole ;) .

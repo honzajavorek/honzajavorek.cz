@@ -13,7 +13,7 @@ Upgradoval jsem po dlouhé době svoje Ubuntu a zjistil, že ani Unity, ani Gnom
 
 To Clearlooks vypadá takto:
 
-![Clearlooks]({filename}/images/clearlooks.png)
+![Clearlooks]({static}/images/clearlooks.png)
 
 Pohodlně skinovat na Clearlooks neznamená, že horko těžko najdu nějaký [Clearlooks-Phoenix](http://gnome-look.org/content/show.php/Clearlooks-Phenix?content=145210) GTK3 skin a potom zjistím, že na půlku oken se neaplikuje (nejspíš jsou v GTK2? ale koho to zajímá? proč to není dohromady?).
 
