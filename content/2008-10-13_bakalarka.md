@@ -3,7 +3,7 @@ Date: 2008-10-13 23:03:00
 Lang: cs
 Tags: škola, vut fit
 
-Žádné ukecané články z toho zeleného blogu? Mrtvé RSS? Jojo, mám teď hodně věcí, které musím zařizovat – Erasmus, bakalářku, práci, … A pochybuji, že to do budoucna (do ledna) bude nějak výrazně lepší, školy bude jen přibývat. Ale nebojte, jsou to jen výmluvy. Popravdě nepíšu spíš proto, že **nemám teď nějak chuť** :) .
+Žádné ukecané články z toho zeleného blogu? Mrtvé RSS? Jojo, mám teď hodně věcí, které musím zařizovat – Erasmus, bakalářku, práci… A pochybuji, že to do budoucna (do ledna) bude nějak výrazně lepší, školy bude jen přibývat. Ale nebojte, jsou to jen výmluvy. Popravdě nepíšu spíš proto, že **nemám teď nějak chuť** :) .
 
 Aby vám nebylo smutno, podělím se o téma své **bakalářské práce**. Vybral jsem si ji dnes odpoledne. Ne, později už to skoro nešlo, termín je půlnoc ;) . Já vím, čekali jste, že ten nadpis je k článku o nějaké vnadné slečně s Bc. před jménem, ale bohužel, na to si můj bložínek musí ještě počkat.
 

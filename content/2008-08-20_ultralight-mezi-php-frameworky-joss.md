@@ -32,13 +32,13 @@ Joss navíc vytvoří web **hezky**. Tak, jako kdybyste ho udělali ručně za s
 -   automatické generování sitemap.xml, robots.txt, .htaccess, …
 -   tvoří pěkný a validní XHTML kód
 -   automaticky generuje hlavičku webu, sám připojí styly, favicon, skripty, …
--   stará se o chybové stránky (404, 403, …)
+-   stará se o chybové stránky (404, 403…)
 -   podpora pro hierarchická menu
 -   konfigurace (dříve v INI, teď v XML)
 
 ## Co nikdy umět nebude
 
--   formuláře, dynamické prvky, … (Joss nikdy nebyl k těmto činnostem zamýšlen a proto by jejich implementace do návrhu nebyla moc dobře možná)
+-   formuláře, dynamické prvky… (Joss nikdy nebyl k těmto činnostem zamýšlen a proto by jejich implementace do návrhu nebyla moc dobře možná)
 
 ## A co se chystá?
 

@@ -9,7 +9,7 @@ V reálném světě je spousta spamu, kterého jsme si nějak nevšimli, ale je
 
 ## Otravné telefonní hovory
 
-Mám volně dostupné telefonní číslo, aby na něj mohl kdykoliv zavolat nějaký klient. Často se mi stane, že také zavolá a začne větu slovy „Dobrý den, máte chvilku čas? Měl bych pro vás nabídku…“ Bohužel, totožnými slovy také začínají lidé z telemarketingu. Zpočátku jsem je vždy vyslechl, ale jejich počet a vtíravost (volají mi ráno když spím, volají mi když mám promoce, …) narostl tak, že jim okamžitě vypínám telefon a přiřazuji je do kontaktu *debil, nebrat*. Nepomáhá to, tatáž čísla mi nadále volají. Obrana typu „antispam“ neexistuje.
+Mám volně dostupné telefonní číslo, aby na něj mohl kdykoliv zavolat nějaký klient. Často se mi stane, že také zavolá a začne větu slovy „Dobrý den, máte chvilku čas? Měl bych pro vás nabídku…“ Bohužel, totožnými slovy také začínají lidé z telemarketingu. Zpočátku jsem je vždy vyslechl, ale jejich počet a vtíravost (volají mi ráno když spím, volají mi když mám promoce…) narostl tak, že jim okamžitě vypínám telefon a přiřazuji je do kontaktu *debil, nebrat*. Nepomáhá to, tatáž čísla mi nadále volají. Obrana typu „antispam“ neexistuje.
 
 ## Stará dobrá pošta
 

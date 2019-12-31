@@ -506,6 +506,11 @@ blockquote {
   padding: 1rem 1rem 1rem 3rem;
 }
 
+blockquote a {
+  color: #888;
+  text-decoration: underline;
+}
+
 .article-poetry .article-content {
   text-align: center;
 }

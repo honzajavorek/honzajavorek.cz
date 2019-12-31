@@ -21,7 +21,7 @@ To by bylo asi nějaké stručné zhodnocení telefonu jako takového. Teď mal�
 -   **Gowalla** – hra v rozšířené realitě… tomuhle jsem, zdá se, fakt celkem propadl… [propadněte taky](http://met.blog.root.cz/2010/05/05/pojdte-hrat-gowallu/)!
 -   **MortPlayer Music** – přehrávač, který kašle na kni…hovnování podle tagů! tenhle zobrazuje hudbu podle složek 8-)
 -   **NewsRob** – asi nejlepší aplikace na čtení RSS z vašeho Google Readeru, jakou jsem našel
--   **Pubtran** – dokonalá aplikace na vyhledávání spojů MHD (v Praze, Brně, …), která si odjezdovou zastávku zkouší tipnout podle vaší aktuální polohy
+-   **Pubtran** – dokonalá aplikace na vyhledávání spojů MHD (v Praze, Brně…), která si odjezdovou zastávku zkouší tipnout podle vaší aktuální polohy
 -   **Seesmic** – Twitter klient, který se mi zalíbil asi nejvíc
 -   **Shazam** – nahraje si pár vteřin hudby a řekne vám, co to je a kdo to je… nejlepší aplikace na machrování (rozpozná i velmi špatnou nahrávku v hluku během hovoru a v šalině) s asi nejmenším praktickým využitím ;-)
 -   **ConnectBot** – SSH klient, vhodné pro \*NIXové adminy (tak nevím, proč jsem si ji nainstaloval, asi pro ten pocit ;-) )

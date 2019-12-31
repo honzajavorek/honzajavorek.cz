@@ -3,7 +3,7 @@ Date: 2011-06-10 07:07:00
 Lang: cs
 Tags: názory
 
-![obrázek]({static}/images/143.jpg){: .right }Otázek okolo abstinence je spousta. Lze se zamyslet nad tím, proč lidé abstinují (přesvědčení, zdravotní potíže, …), proč lidé naopak alkohol pijí, jak a proč je tomu v naší společnosti a jak je v ní například obtížné být abstinentem.
+![obrázek]({static}/images/143.jpg){: .right }Otázek okolo abstinence je spousta. Lze se zamyslet nad tím, proč lidé abstinují (přesvědčení, zdravotní potíže…), proč lidé naopak alkohol pijí, jak a proč je tomu v naší společnosti a jak je v ní například obtížné být abstinentem.
 
 Co se týče toho posledního, tak musím uznat, že to určitě není snadné. Sám jsem několikrát z různých důvodů abstinoval a minimálně jeden problém je v tom, že člověk v naší zemi utratí za *nealko* mnohonásobně více peněz než za, jak říká Limonádový Joe, *lihovinu*. A to má někdy vůbec problém nějakou tu limonádu
 sehnat.

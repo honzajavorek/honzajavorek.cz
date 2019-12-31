@@ -58,7 +58,7 @@ Potom bych zrušil drtivou většinu alb. Jen málokdy se mi líbí celé. Pouš
 
 ### Mixy
 
-Tím mi zbude pár alb, jejichž existenci i obsah jsem si 2× obhájil a které zřejmě půjde ručně udržovat. Zbytek přesunu do mixů nebo smažu. Mixy potom nebudou nijak třízeny, bude to plochá struktura – např. bad mood, africa, good morning, reggae, classic rock, pop, club, sentimental, … V každé složce budou prostě jen naházené soubory bez jakéhokoliv ladu, skladu, koncepčního tagování, pořadí (přehrávač má přece *shuffle*), atd.
+Tím mi zbude pár alb, jejichž existenci i obsah jsem si 2× obhájil a které zřejmě půjde ručně udržovat. Zbytek přesunu do mixů nebo smažu. Mixy potom nebudou nijak třízeny, bude to plochá struktura – např. bad mood, africa, good morning, reggae, classic rock, pop, club, sentimental… V každé složce budou prostě jen naházené soubory bez jakéhokoliv ladu, skladu, koncepčního tagování, pořadí (přehrávač má přece *shuffle*), atd.
 
 ## Správná cesta?
 

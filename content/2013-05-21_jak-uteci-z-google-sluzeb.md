@@ -10,7 +10,7 @@ Co mi vadí:
 
 -   Rušení služeb, které používám.
 
-<blockquote class="twitter-tweet" data-conversation="none"><p>@<a href="https://twitter.com/honzajavorek">honzajavorek</a> všichni jsou mrtvý Dejve, … i GTalk ? … :)</p>&mdash; Ondra Beneš (@ondrabenes) <a href="https://twitter.com/ondrabenes/status/336777191142608897">May 21, 2013</a></blockquote>
+<blockquote class="twitter-tweet" data-conversation="none"><p>@<a href="https://twitter.com/honzajavorek">honzajavorek</a> všichni jsou mrtvý Dejve… i GTalk ? … :)</p>&mdash; Ondra Beneš (@ondrabenes) <a href="https://twitter.com/ondrabenes/status/336777191142608897">May 21, 2013</a></blockquote>
 
 -   Integrace všech služeb do Google+, které nepoužívám.
 -   Vypadá to, že většinu Google aplikací čeká buďto zánik, nebo násilné propojení s Google+.

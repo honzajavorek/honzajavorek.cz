@@ -22,7 +22,7 @@ Jak je na tom Finsko zeměpisně, přírodopisně a všelijak jinak, si **může
 -   Pomineme-li Kalevalu, národní epos, který najdete v každé *literatuře v kostce*, je dobré připomenout [Miku Waltariho](http://cs.wikipedia.org/wiki/Mika_Waltari) a [Mumínky](http://cs.wikipedia.org/wiki/Mumínci).
 -   Ve sportu mají Finové úspěchy samozřejmě v **zimních sportech** (hokej! … a lyžování, ale to mne tolik nevzrušuje) a tradičně mají své želízko v ohni také ve Formuli 1 a jiných automobilových soutěžích.
 -   **Sauna je standardní** vybavení domácnosti.
--   Z Finska jsou HIM, Nightwish, The Rasmus, Apocalyptica, Children of Bodom, Värttinä, … [Loitumu zná asi každý.](http://www.youtube.com/watch?v=vjvVBCNcL_A)
+-   Z Finska jsou HIM, Nightwish, The Rasmus, Apocalyptica, Children of Bodom, Värttinä… [Loitumu zná asi každý.](http://www.youtube.com/watch?v=vjvVBCNcL_A)
 -   1. máj, **Vappu**, je jedním z nejvýznamějších svátků (jo, všichni se prý vožerou jako čuňata ;) ).
 -   Obchody musí mít ze zákona v **neděli zavřeno** (s výjimkami).
 -   [Nejvyšší bod Finska není vrcholem hory.](http://cs.wikipedia.org/wiki/Halti)
