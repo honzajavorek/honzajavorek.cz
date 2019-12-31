@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}Blog &mdash; {{ SITENAME }}{% endblock %}
+
+{% block head %}
+  {{ super() }}
+
+  {% if FEED_ALL_ATOM %}
+    <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} &mdash; Atom Feed">
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="archives">
+  <h1>{{ BLOGNAME }}</h1>
+
+  <footer class="author">
+    <img alt="Honza Javorek's photo" src="{{ SITEURL }}/images/home/honza.jpg">
+    <address>
+      {% include "honza.html" %}
+    </address>
+  </footer>
+
+  {% if FEED_ALL_ATOM %}
+  <p class="button button-orange">
+      <a href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}">
+        <i class="fa fa-feed"></i> Articles feed
+      </a>
+  </p>
+  {% endif %}
+
+  <nav class="archives-nav">
+      {% for year_group in dates|groupby('date.year')|reverse %}
+          <a href="#archives-{{ year_group.grouper }}">{{ year_group.grouper }}</a>
+          {% if not loop.last -%}&middot;{%- endif -%}
+      {% endfor %}
+  </nav>
+  <ul class="archives-list">
+  {% for year_group in dates|groupby('date.year')|reverse %}
+      <li class="archives-year">
+          <h2 id="archives-{{ year_group.grouper }}">
+              {{ year_group.grouper }}
+          </h2>
+          <ul class="archives-year-list">
+          {% for article in year_group.list %}
+              <li class="archives-article">
+                  <time datetime="{{ article.date.isoformat() }}">{{ article.date|strftime('%b\u00A0%-d') }}</time>
+                  <span>
+                    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+                    {% if article.lang != DEFAULT_LANG -%}
+                      <small>({{ article.lang }})</small>
+                    {%- elif article.translations %}
+                      <small>({{ article.lang }}, {% for translation in article.translations -%}
+                        <a href="{{ SITEURL }}/{{ translation.url }}">{{ translation.lang }}</a>
+                      {%- endfor %})</small>
+                    {% endif %}
+                  </span>
+              </li>
+          {% endfor %}
+          </ul>
+      </li>
+  {% endfor %}
+  </ul>
+</div>
+{% endblock %}

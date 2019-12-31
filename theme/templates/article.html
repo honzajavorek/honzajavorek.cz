@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block html_lang %}{{ article.lang }}{% endblock %}
+
+{% block title %}{{ article.title }} &mdash; {{ SITENAME }}{% endblock %}
+
+{% block image %}
+  {% if article.image %}
+    <meta property="og:image" content="{{ SITEURL }}/{{ article.image }}">
+    <meta name="twitter:image" content="{{ SITEURL }}/{{ article.image }}">
+    <meta name="twitter:card" content="summary_large_image">
+  {% else %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
+
+{% block head %}
+  {{ super() }}
+
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/code.css">
+
+  {% if FEED_ALL_ATOM %}
+    <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} &mdash; Atom Feed">
+  {% endif %}
+
+  {% if article.translations %}
+    {% for translation in article.translations %}
+      <link rel="alternate" hreflang="{{ translation.lang }}" href="{{ SITEURL }}/{{ translation.url }}">
+    {% endfor %}
+  {% endif %}
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="{{ article.date.isoformat() }}">
+  <meta property="article:author" content="{{ SITEURL }}">
+{% endblock %}
+
+{% block content %}
+<article class="article{% if article.style %} article-poetry{% endif %}">
+  <header class="article-header">
+    <h1>
+      <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark">
+        {{ article.title }}
+      </a>
+    </h1>
+  </header>
+  <footer class="article-info">
+    <ul>
+      {% if article.translations %}
+      <li class="article-translations">
+        <small>
+            {% if article.lang == 'cs' %}
+              Překlady:
+            {% else %}
+              Translations:
+            {% endif %}
+            {% for translation in article.translations %}
+              <a href="{{ SITEURL }}/{{ translation.url }}" hreflang="{{ translation.lang }}">{{ translation.lang }}</a>
+            {% endfor %}
+        </small>
+      </li>
+      {% endif %}
+      {% if article.alternates %}
+      <li class="article-alternates">
+        <small>
+            {% if article.lang == 'cs' %}
+              Vydáno také na:
+            {% else %}
+              Published also at:
+            {% endif %}
+            {% for alternate in article.alternates %}
+              <a href="{{ alternate.url }}">{{ alternate.name }}</a>
+              {%- if not loop.last -%}, {% endif -%}
+            {%- endfor %}
+        </small>
+      </li>
+      {% endif %}
+      <li class="article-published">
+        <small>
+          <time datetime="{{ article.date.isoformat() }}">
+            {{ article.locale_date }}
+          </time>
+        </small>
+      </li>
+      <li class="article-author">
+        <small>
+          <a href="#author">{{ AUTHOR }}</a>
+        </small>
+      </li>
+    <ul>
+  </footer>
+  <div class="article-content">
+    {% if (NOW.year - article.date.year) > OUTDATED_ARTICLE_YEARS %}
+      <div class="article-warning">
+        <p>
+        {% if article.lang == 'cs' %}
+          <strong>Upozornění!</strong> Tento článek vyšel
+          před {{ NOW.year - article.date.year }} lety.
+          Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
+          že dnes se Honza již nemusí s obsahem ztotožňovat.
+        {% else %}
+          <strong>Warning!</strong> This article has been published
+          {{ NOW.year - article.date.year }} years ago. If you're into internet
+          archeology, read it &mdash; but at your own risk. Honza doesn't
+          have to necessarily agree with the content by now.
+        {% endif %}
+        </p>
+      </div>
+    {% endif %}
+
+    {{ article.content }}
+  </div>
+  <footer class="article-footer">
+    <div id="author" class="author">
+      <img alt="Honza Javorek's photo" src="{{ SITEURL }}/images/home/honza.jpg">
+      <address>
+        {% if article.lang == 'cs' %}
+          <a href="{{ SITEURL }}">Honza Javorek</a> je programátor
+          a tvůrce projektu <a href="https://junior.guru/">junior.guru</a>,
+          pomáhajícího lidem získat svou první práci v IT. Od roku 2011
+          pomáhá budovat českou komunitu kolem jazyka
+          <a href="https://python.cz/">Python</a>.
+        {% else %}
+          {% include "honza.html" %}
+        {% endif %}
+      </address>
+    </div>
+    <p class="button">
+      {% if article.lang == 'cs' %}
+        <a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">
+          <i class="fa fa-list-ul"></i> Archiv článků
+        </a>
+      {% else %}
+        <a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">
+          <i class="fa fa-list-ul"></i> Articles archive
+        </a>
+      {% endif %}
+    </p>
+  </footer>
+</article>
+{% endblock %}

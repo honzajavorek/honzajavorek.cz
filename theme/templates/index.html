@@ -1,0 +1,222 @@
+{% extends "base.html" %}
+
+{% block head %}
+  {{ super() }}
+
+  <meta name="description" content="I am a software engineer from Prague, Europe. I understand web APIs, love open source and documentation, and code in Python or JavaScript.">
+  <meta property="og:title" content="Honza Javorek">
+  <meta property="og:type" content="profile">
+  <meta property="profile:first_name" content="Honza">
+  <meta property="profile:last_name" content="Javorek">
+  <meta property="profile:username" content="honzajavorek">
+  <meta property="profile:gender" content="male">
+{% endblock %}
+
+{% block content %}
+<div class="home">
+  <header class="author author-home">
+    <img src="{{ SITEURL }}/images/home/honza.jpg">
+    <h1>Honza Javorek</h1>
+    <p class="author-icons">
+      <a href="https://linkedin.com/in/honzajavorek">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+      <a href="https://github.com/honzajavorek/">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <a href="https://twitter.com/honzajavorek/">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.instagram.com/honza.javorek/">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+    </p>
+    <p>
+      I&nbsp;am a&nbsp;<strong>software engineer</strong> from
+      <a href="https://en.wikipedia.org/wiki/Prague">Prague</a>,&nbsp;Europe.
+      I&nbsp;understand <strong>web&nbsp;APIs</strong>, love open&nbsp;source and&nbsp;documentation,
+      and&nbsp;code in&nbsp;<strong>Python</strong> or&nbsp;<strong>JavaScript</strong>.
+    </p>
+  </header>
+  <section id="highlights">
+    <h2>Highlights</h2>
+
+    <div class="highlight">
+      <img src="{{ SITEURL }}/images/home/juniorguru.png" aria-hidden="true">
+      <p>
+        After 5+ years of developing API design tools
+        in <a href="https://apiary.io">Apiary</a>,
+        a successful startup acquired by Oracle,
+        I&nbsp;founded my own project, <a href="https://junior.guru/">junior.guru</a>.
+        It helps people to start <a href="https://junior.guru/learn/">learning how to code</a> and to get their <a href="https://junior.guru/jobs/">first
+        job in tech</a>. I'm also writing <a href="http://cojeapi.cz">What is an API?</a>,
+        learning materials for people starting with APIs.
+      </p>
+    </div>
+    <div class="highlight">
+      <img src="{{ SITEURL }}/images/home/python.svg" aria-hidden="true">
+      <p>
+        Since 2011 I have been helping to drive the growth and success of the
+        <a href="https://python.cz/en/">Czech Python User Group</a>.
+        For years I have been participating in volunteer-driven <a href="https://pyvo.cz/en/">meetups</a>,
+        <a href="https://pyladies.cz/">courses</a>,
+        workshops,
+        <a href="https://cz.pycon.org/">conferences</a>,
+        <a href="http://pyvec.org/en/">nonprofit</a>, and more.
+      </p>
+    </div>
+    <div class="highlight">
+      <img src="{{ SITEURL }}/images/home/dredd.svg" aria-hidden="true">
+      <p>
+        For almost five years I have been leading the development and maintenance of
+        <a href="https://github.com/apiaryio/dredd">Dredd</a>,
+        an open source tool for testing HTTP APIs. The number of GitHub stars
+        <a href="https://starcharts.herokuapp.com/apiaryio/dredd">went up {{ DREDD_STARS_RAISE }} times</a> since when I took over the project.
+      </p>
+    </div>
+    <div class="highlight">
+      <img src="{{ SITEURL }}/images/home/makers-menders.svg" aria-hidden="true">
+      <p>
+        In 2016 I wrote an <a href="https://honzajavorek.cz/blog/kolonizatori-a-spravci-kolonii">article about two personalities of developers</a>,
+        which went viral in the Czech Republic. It got <a href="https://www.zdrojak.cz/clanky/kolonizatori-spravci-kolonii/">republished</a>,
+        <a href="https://www.zdrojak.cz/clanky/mezi-kolonizatory-spravci/">followed-up</a>,
+        <a href="https://nazory.ihned.cz/c1-66258330-sloupek-martina-maleho-inovace-nevznikaji-ziranim-do-excelovskych-tabulek">mentioned in mainstream media</a>,
+        and I get invited to <a href="https://speakerdeck.com/honzajavorek/dve-programatorske-povahy">speak about the topic</a>.
+      </p>
+    </div>
+  </section>
+
+  <section id="appearances">
+    <h2>Appearances</h2>
+    <ul class="entries">
+    {% for appearance in appearances %}
+      <li class="entry {% if loop.index > 10 %} archived{% endif %}">
+        <i title="{{ appearance.type }}" class="fa fa-{% if appearance.type == 'talk' -%}
+          comment-o
+        {%- elif appearance.type == 'workshop' -%}
+          code
+        {%- elif appearance.type == 'interview' -%}
+          microphone
+        {%- endif %}"></i>
+        <div>
+          <h3>
+            {% if appearance.url %}
+              <a href="{{ appearance.url }}">{{ appearance.title }}</a>
+            {% else %}
+              {{ appearance.title }}
+            {% endif %}
+          </h3>
+          <p>
+            <small>
+              {{ appearance.date|strftime('%b') }} {{ appearance.date.year }}
+              &mdash;
+              {{ appearance.event }}
+              {% if appearance.resources_url %}
+                <span class="hidden">&mdash;</span>
+                <span class="detached">
+                  <a href="{{ appearance.resources_url }}">
+                    <i title="{{ appearance.resources_type }}" class="fa fa-{% if appearance.resources_type == 'slides' -%}
+                      television
+                    {%- elif appearance.resources_type == 'text' -%}
+                      file-text-o
+                    {%- endif %}" aria-hidden="true"></i>&nbsp;
+                    {{- appearance.resources_type -}}
+                  </a>
+                </span>
+              {% endif %}
+            </small>
+          </p>
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+    <p class="more">
+      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+      <a href="#">view all</a>
+    </p>
+  </section>
+
+  <section id="articles">
+    <h2>Articles</h2>
+    <ul class="entries">
+    {% for entry in feeds_entries %}
+      {% if loop.index0 < 10 %}
+      <li class="entry">
+        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+        <div>
+          <h3>
+            <a href="{{ entry.link }}">{{ entry.title }}</a>
+          </h3>
+          <p>
+            <small>
+              {{ entry.date|strftime('%b') }} {{ entry.date.year }}
+              &mdash;
+              <a href="{{ entry.feed_link }}">{{ entry.feed_title }}</a>
+              <!--
+              {%- if entry.republished %}
+                (
+                {%- for entry_republished in entry.republished -%}
+                    <a href="{{ entry_republished.link }}">{{ entry_republished.feed_title }}</a>
+                    {%- if not loop.last -%}, {% endif -%}
+                {%- endfor -%}
+                )
+              {%- endif -%}
+              -->
+            </small>
+          </p>
+        </div>
+      </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+    <p class="more">
+      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+      view more on my
+      {% for feed in feeds %}
+        {% if loop.last %}and{% endif %}
+        <a href="{{ feed.link }}">{{ feed.title }}</a>{% if not loop.last %},{% endif %}
+      {% endfor %}
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul class="entries">
+      {% for project in projects %}
+        <li class="entry">
+          <i class="fa fa-code" aria-hidden="true"></i>
+          <div>
+            <h3>
+              <a href="{{ project.url }}">{{ project.owner }}/{{ project.name }}</a>
+            </h3>
+            <p>
+              <small>
+                {{ project.description }}
+              </small>
+            </p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+    <p class="more">
+      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+      view more on my <a href="https://github.com/honzajavorek/">GitHub</a>
+    </p>
+  </section>
+</div>
+{% endblock content %}
+
+{% block footer %}
+<address>
+  <dl>
+    <dt>E-mail</dt>
+    <dd><a href="mailto:mail&#64;honzajavorek.cz">mail&#64;<!---->honzajavorek.cz</a></dd>
+
+    <dt>License Number</dt>
+    <dd><a href="http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_rzp.cgi?ico=74279858&jazyk=en&xml=1&rozsah=0">74279858</a></dd>
+  </dl>
+  <p>
+    {{ COPYRIGHT }} <a href="{{ SITEURL }}">Honza Javorek</a>
+  </p>
+</address>
+{% endblock %}
