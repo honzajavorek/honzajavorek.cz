@@ -1,9 +1,9 @@
 __pycache__/
 pip-log.txt
 *.log
-
-# npm
 node_modules/
+venv/
+.envrc
 
 # Pelican
 /output/
