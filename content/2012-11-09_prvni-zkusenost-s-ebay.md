@@ -1,0 +1,25 @@
+Title: První zkušenost s eBay
+Date: 2012-11-09 14:38:48
+Lang: cs
+
+Hodně se mi potí ruce a místo, které tímto trpí nejvíc, je **klávesnice mého laptopu**. Mám ji často špinavou, protože pot se na ni chytá a já nemám nervy ji čistit každý týden. Nejspíš trpím [hyperhidrózou](https://cs.wikipedia.org/wiki/Hyperhidr%C3%B3za). Popravdě, kromě dotykových zařízení a klávesnice s tím problémy moc nemám. Uvažoval jsem pro psaní na počítači o tenkých černých **rukavicích**, ale žádné vhodné jsem nenašel - máte-li tipy, podělte se prosím.
+
+Když se mi v létě už všichni smáli, jestli mi náhodou nespadl laptop na fesťáku do bláta, řekl jsem si, že jej teda konečně vyčistím. Udělal jsem to však důkladně a již **podruhé v životě se mi povedlo klávesnici zrušit**. Bohužel, pot je opravdu svinstvo a bez nějakého většího omytí dostat dolů nejde. Teď už třeba vím, že by byl nejspíš lepší alkohol. No každopádně voda je holt voda a já to opět nenechal nijak moc dlouho vyschnout, takže mi čudlíky vyzkratovaly a zblbly se. Můj předešlý DELL vyvázl po čase pouze s nefunkčním Z (popřípadě Y, záleží jaké máte rozložení) a F7. Pokud si klávesnici vykoupete ve vodě jako já, radím vám - nechte ji pořádně vyschnout. Měsíc je ideální, řekl bych. Potom ji zapojte a je dost možné, že bude úplně OK. Ale je taky dost možné, že ne. Jako u mého současného HP.
+
+![Suntech.cz klávesnice]({static}/images/suntech-keyboard.jpg)
+
+<small>Pozor! Tyhle rady se vztahují jen na to, když klávesnici **mimo počítač** omyjete **vodou z kohoutku**. Pokud si svůj laptop polijete vínem, máte zaděláno na mnohem větší problém - hlavně proto, že to neschytala jen klávesnice a nápoj vám uvnitř komponent vašeho milovaného stroje zahájí proces koroze a postupného rozkladu. Co s tím se dovíte od pana Google na souřadnicích *politá* a *klávesnice*.</small>
+
+Hloupé je, že na laptopu se bez klávesnice pracuje **dost špatně**. Vozil jsem si tedy s sebou všude externí, byť se sotva vešla do batohu a byla to s ní fakt otrava. V posteli při koukání na film pak situaci zachraňovala *Onboard*, klikací klávesnice na obrazovce. Ve Windows se něco takového dá zapnout tuším i při přihlášení. V mém Xubuntu ne, ale bylo to celkem jedno, protože heslo do BIOSu bych si nenaklikal tak jako tak :-)
+
+Přemýšlel jsem, jak to celé vyřešit. Šance na vyschnutí byla mizivá a já potřeboval slušně pracovat. U nás jsem našel jen **jedinou firmu**, která [měla tento náhradní díl](http://www.suntech.cz/produkt/138803-klavesnice-nahradni-pro-hp-elitebook-8440p-cz-sk), byl ovšem na objednávku do 20 dní a stál šílených 1200 Kč. Řekl jsem si, že zkusím eBay.
+
+Našel jsem si tedy britskou klávesnici (protože HP má pro US klávesnice jiný tvar a neseděla by) a objednal od relativně důvěryhodně vypadajícího uživatele za zhruba 700 Kč i s dopravou. Vše proběhlo v pořádku a výrobek brzy dorazil až k mým dveřím. Až na to, že to byl **úplně jiný typ**. Myslím, že by možná seděl na laptop kolegovi v práci, přišlo mi to povědomé... "Tož super," řekl jsem si a jal jsem se dolovat z uživatele správný typ nebo peníze. Ukecal mě, že se spletl a že mu ji mám poslat zpět. Tak se i stalo, za přibližně 120 korun frčela zpátky na ostrovy. Byly to sice peníze a práce navíc, ale na druhou stranu, co bych dělal s tou špatnou klávesnicí, že?
+
+No a pak se nedělo **nic**. Občas jsem mu psal, on občas odepsal, ale žádný posun. Takže jsem se jednoho dne pak už naštval, napsal mu zlou odpověď, dal mu špatné hodnocení a zkusil kliknout na *eBay Buyer Protection*. Nevěděl jsem jak to funguje, ale všude to inzerují, tak jsem doufal v poslední záchranu. No a přes strašně spletitou sérii obrazovek a help stránek a support formulářů jsem se dostal k informaci, že **tato ochrana kupujícího funguje jen 40 dní od koupě** a to už jsem před pár dny prošvih.
+
+Chvíli jsem se tloukl do hlavy, ale protože to není dlouhodobě moc užitečné řešení situace, napsal jsem i na eBay. Napsal jsem *zlou zprávu zhrzeného zákazníka zelenáče*. Hrál jsem trochu na city, aby si uvědomili, že jde o mou první zkušenost a podle ní jim budu na vždycky už věřit nebo ne. Odepsali velice hbitě a v podstatě **obratem mi proplatili na můj PayPal účet všechny výdaje**, omluvili se a připomněli mi, že si na to ale nemám zvykat a příště si pohlídat těch 40 dní :-) Ozval se mi i ten uživatel s tím, že mu doma na rakovinu umírá máti a že to poslal a že mi klidně vyhrabe papíry z odeslání. Bohužel, toto mu mohu a nemusím věřit, takže jsem mu dal akorát najevo, že je mi to líto a pokud klávesnice opravdu dorazí, pošlu mu peníze zpět.
+
+Tentýž den jsem zoufale kouknul na **eshop Suntech.cz**, tedy toho jediného českého dodavatele, kterého jsem našel. Náhoda, zrovna měli jednu klávesnici na skladě, bez čekání! Ihned jsem ji objednal, **druhý den byla u dveří** a měl jsem zase plně funkční počítač. Z Británie už nikdy nic nedorazilo.
+
+Takže toto je můj letní příběh s klávesnicí. Poučení je z toho několik, a to především pro mě. Vy to můžete navíc brát i jako úsměvnou historku a u piva se mi můžete tradičně vysmát.

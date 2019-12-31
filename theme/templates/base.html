@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+  {% block head %}
+    <meta charset="utf-8">
+    <link rel="canonical" href="{% block url %}{{ SITEURL }}/{{ output_file|replace('index.html', '') }}{% endblock %}">
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+
+    {% if GOOGLE_ANALYTICS %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ GOOGLE_ANALYTICS }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ GOOGLE_ANALYTICS }}');
+      </script>
+    {% endif %}
+
+    <meta property="og:title" content="{{ self.title() }}">
+    <meta property="og:url" content="{{ self.url() }}">
+    <meta name="twitter:creator" content="@{{ TWITTER_USERNAME }}">
+    <meta name="twitter:site" content="@{{ TWITTER_USERNAME }}">
+
+    {% block image %}
+      <meta property="og:image" content="{{ SITEURL }}/images/home/honza.jpg">
+      <meta name="twitter:image" content="{{ SITEURL }}/images/home/honza.jpg">
+      <meta name="twitter:card" content="summary">
+    {% endblock %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/main.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/fork-awesome/css/fork-awesome.min.css">
+  {% endblock %}
+  </head>
+  <body>
+    {% block body %}
+      <div class="content">
+        {% block content %}{% endblock %}
+      </div>
+      <footer class="footer">
+        {% block footer %}
+        <address>
+          {{ COPYRIGHT }}
+          <a href="{{ SITEURL }}">Honza&nbsp;Javorek</a>
+        </address>
+        {% endblock %}
+      </footer>
+    {% endblock %}
+    <script defer src="{{ SITEURL }}/theme/main.js"></script>
+  </body>
+</html>
