@@ -10,7 +10,6 @@ from pelicanconf import *
 
 DELETE_OUTPUT_DIRECTORY = True
 LOAD_CONTENT_CACHE = False
-SITEURL = get_deployment_url() if os.getenv('NOW_GITHUB_COMMIT_SHA') else 'https://honzajavorek.cz'
 GOOGLE_ANALYTICS = 'UA-1316071-6'
 
 
@@ -29,3 +28,5 @@ def get_deployment_url():
     status = sorted(res.json(), key=itemgetter('created_at'), reverse=True)[0]
 
     return status['target_url']
+
+SITEURL = get_deployment_url() if os.getenv('NOW_GITHUB_COMMIT_SHA') else 'https://honzajavorek.cz'
