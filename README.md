@@ -38,6 +38,15 @@ Because Pelican works better with an absolute `SITEURL` set but ZEIT Now doesn't
 
 As certain content on the homepage is dynamic, the site should be re-generated at least once a day. This is achieved using a [GitHub Actions](https://github.com/features/actions) scheduled workflow (see `.github`).
 
+## 📪 Domain
+
+The domain's DNS is managed by ZEIT. E-mail redirecting is done by [ImprovMX](https://improvmx.com/):
+
+```
+$ now dns add honzajavorek.cz '@' MX mx1.improvmx.com 10
+$ now dns add honzajavorek.cz '@' MX mx2.improvmx.com 20
+```
+
 ## 👀 License
 
 See [LICENSE](LICENSE). **TL;DR** is that the code is [MIT](LICENSE.MIT) and the content is _my precious_. If you wish to re-publish the texts or translate them, I'm usually fine with it, but let me know first.
