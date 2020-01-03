@@ -26,6 +26,18 @@ The `custom_transaction_id` plugin and related settings for translation URLs all
 
 The rest of the plugins are mostly minor automatic tweaks to the generated article markup.
 
+## 🇨🇿 Translations
+
+To connect translations, add `Translation-ID` to their meta data with the same value, and set their `Lang` properly. The default language is `en`.
+
+## 📚 Alternates
+
+To document where the article has been re-published, add the URLs to the meta data as `<whatever>-URL` properties. E.g. `Zdrojak-URL`, `Medium-URL`, or `DevTo-URL`.
+
+## 🖼 Open Graph Image
+
+By default, the Open Graph image is set to my photo. To set a different image, add it to the `content/images` directory and set the `Image` meta data property in the article to the path to the image, e.g. `Image: images/foo.jpg`.
+
 ## 📦 Dependencies
 
 The npm dependencies are managed in a standard way, but saved as exact versions (see `.npmrc`) as [@dependabot](https://dependabot.com/) takes care of upgrading (see `.dependabot`). Python dependencies are using plain old `requirements.txt`, but it's not used as a lockfile. Only the top-level dependencies which are truly needed are written and locked there, with the resulting tree being left unmanaged. Again, [@dependabot](https://dependabot.com/) takes care of upgrading.
