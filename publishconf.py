@@ -29,4 +29,7 @@ def get_deployment_url():
 
     return status['target_url']
 
-SITEURL = get_deployment_url() if os.getenv('NOW_GITHUB_COMMIT_SHA') else 'https://honzajavorek.cz'
+if os.getenv('NOW_GITHUB_COMMIT_SHA') and os.getenv('NOW_GITHUB_COMMIT_REF') != 'master':
+    SITEURL = get_deployment_url()
+else:
+    SITEURL = 'https://honzajavorek.cz'
