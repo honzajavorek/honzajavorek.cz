@@ -146,22 +146,27 @@
         <div>
           <h3>
             <a href="{{ entry.link }}">{{ entry.title }}</a>
+            {% if entry.lang != DEFAULT_LANG %}
+              <small>({{ entry.lang }})</small>
+            {% elif entry.translations %}
+              <small>({{ entry.lang }}, {% for translation in entry.translations -%}
+                <a href="{{ translation.link }}">{{ translation.lang }}</a>
+              {%- endfor %})</small>
+            {% endif %}
           </h3>
           <p>
             <small>
               {{ entry.date|strftime('%b') }} {{ entry.date.year }}
               &mdash;
               <a href="{{ entry.feed_link }}">{{ entry.feed_title }}</a>
-              <!--
-              {%- if entry.republished %}
+              {%- if entry.alternates %}
                 (
-                {%- for entry_republished in entry.republished -%}
-                    <a href="{{ entry_republished.link }}">{{ entry_republished.feed_title }}</a>
+                {%- for alternate in entry.alternates -%}
+                    <a href="{{ alternate.link }}">{{ alternate.feed_title }}</a>
                     {%- if not loop.last -%}, {% endif -%}
                 {%- endfor -%}
                 )
               {%- endif -%}
-              -->
             </small>
           </p>
         </div>
@@ -174,7 +179,7 @@
       view more on my
       {% for feed in feeds %}
         {% if loop.last %}and{% endif %}
-        <a href="{{ feed.link }}">{{ feed.title }}</a>{% if not loop.last %},{% endif %}
+        <a href="{{ feed.link }}">{{ feed.title }}</a>{% if not loop.last %}, {% endif %}
       {% endfor %}
     </p>
   </section>
