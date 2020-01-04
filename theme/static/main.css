@@ -79,7 +79,7 @@ figcaption a {
 }
 
 .content {
-  max-width: 83.2rem;
+  max-width: 85rem;
   margin: 0 auto;
   padding: .8rem;
   padding-bottom: 0;
@@ -223,14 +223,25 @@ strong {
 
 .highlight {
   display: flex;
-  align-items: center;
+  align-items: start;
   margin: 2rem 0;
 }
 
 .highlight img {
   min-width: 6.4rem;
   max-height: 6.4rem;
-  margin: 0 3rem 2rem 0;
+  margin: .5rem 2rem 2rem 0;
+}
+
+@media screen and (min-width: 900px) {
+  .highlight {
+    align-items: center;
+  }
+
+  .highlight img {
+    margin-top: 0;
+    margin-right: 3rem;
+  }
 }
 
 .highlight p {
@@ -268,16 +279,18 @@ strong {
   min-width: 8rem;
 }
 
-.entries {
-  column-count: 2;
-  column-gap: 2rem;
-}
-
 .entries,
 .entry {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+@media screen and (min-width: 850px) {
+  .entries {
+    column-count: 2;
+    column-gap: 2rem;
+  }
 }
 
 .entry {
