@@ -101,6 +101,7 @@ PLUGINS = [
     'custom_feed_meta',
     'code_blocks',
     'alternates',
+    'comments',
     'tables',
     'headings',
     'media',

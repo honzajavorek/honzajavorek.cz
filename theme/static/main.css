@@ -155,6 +155,34 @@ strong {
   padding: 0 .5rem;
 }
 
+.article-comments {
+  margin: 6rem 0;
+  text-align: center;
+}
+
+.article-comments h3,
+.article-comments ul,
+.article-comments li {
+  display: inline;
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+.article-comments h3::after {
+  content: ":";
+}
+
+.article-comments ul,
+.article-comments li {
+  list-style-type: none;
+}
+
+.article-comments li {
+  margin-left: 1rem;
+}
+
 .article-footer {
   clear: both;
 }

@@ -1,6 +1,9 @@
 Title: Reviving my blog
 Date: 2019-12-31 14:36:00
 Lang: en
+Twitter-Comments: https://twitter.com/honzajavorek/status/1212446176903094273
+LinkedIn-Comments: https://www.linkedin.com/posts/honzajavorek_reviving-my-blog-honza-javorek-activity-6618211942764949504-dq6D
+Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10157684811687707
 
 
 This blog hasn't seen a new article for almost a year and half now. **It's not dead though** - at least not on purpose. I still think about article ideas, and about finding time to sit down and publish new texts here. It's just that lately I was quite busy (getting married, leaving my job…) and blogging wasn't my priority. I'd like to get back to it now, with a few things changed.

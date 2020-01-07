@@ -109,6 +109,26 @@
 
     {{ article.content }}
   </div>
+  {% if article.comments %}
+  <div class="article-comments">
+    <h3>
+      {%- if article.lang == 'cs' -%}
+        Komentáře&nbsp;na
+      {%- else -%}
+        Comment&nbsp;at
+      {%- endif -%}
+    </h3>
+    <ul>
+    {% for comments in article.comments %}
+      <li>
+        <a href="{{ comments.url }}">
+          <i class="fa fa-{{ comments.icon }}"></i> {{ comments.name -}}
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
   <footer class="article-footer">
     <div id="author" class="author">
       <img alt="Honza Javorek's photo" src="{{ SITEURL }}/images/home/honza.jpg">

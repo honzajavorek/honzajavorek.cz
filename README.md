@@ -20,6 +20,8 @@ For the personal site (the index template) to work properly, there are a few plu
 
 The `alternates` plugin looks for meta data ending with `-url` in the articles and provides a list of alternate places where the article has been published. As an example, `Zdrojak-URL: https://zdrojak.cz/my-article` would appear as an alternate in the article's meta data.
 
+The `comments` plugin looks for meta data ending with `-comments` in the articles and provides a list of places where the article has been shared and where people can discuss it. As an example, `Twitter-Comments: https://twitter.com/honzajavorek/status/1a2b3c4d5` would appear in the `comments` list in the article's meta data.
+
 The `custom_feed_meta` overwrites Atom feed's top-level meta data with values from configuration.
 
 The `custom_transaction_id` plugin and related settings for translation URLs allow for translations of articles with backward-compatible URLs (independent slugs with no implicit language identifier in the URL).
@@ -33,6 +35,10 @@ To connect translations, add `Translation-ID` to their meta data with the same v
 ## 📚 Alternates
 
 To document where the article has been re-published, add the URLs to the meta data as `<whatever>-URL` properties. E.g. `Zdrojak-URL`, `Medium-URL`, or `DevTo-URL`.
+
+## 💬 Comments
+
+To document where on social networks the article has been shared, add the URLs to the meta data as `<whatever>-Comments` properties. E.g. `Twitter-Comments`, `LinkedIn-Comments`, or `Facebook-Comments`. Links should appear under the article.
 
 ## 🖼 Open Graph Image
 
