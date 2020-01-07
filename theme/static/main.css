@@ -181,6 +181,7 @@ strong {
 
 .article-comments li {
   margin-left: 1rem;
+  white-space: nowrap;
 }
 
 .article-footer {

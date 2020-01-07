@@ -122,7 +122,7 @@
     {% for comments in article.comments %}
       <li>
         <a href="{{ comments.url }}">
-          <i class="fa fa-{{ comments.icon }}"></i> {{ comments.name -}}
+          <i class="fa fa-{{ comments.icon }}"></i>&nbsp;{{ comments.name -}}
         </a>
       </li>
     {% endfor %}
