@@ -9,7 +9,6 @@ from pelicanconf import *
 
 
 DELETE_OUTPUT_DIRECTORY = True
-LOAD_CONTENT_CACHE = False
 GOOGLE_ANALYTICS = 'UA-1316071-6'
 
 

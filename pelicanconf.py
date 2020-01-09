@@ -36,6 +36,9 @@ PATH = 'content'
 DEFAULT_PAGINATION = False
 DEFAULT_CATEGORY = 'blog'
 MARKDOWN = {
+    'extensions': [
+        'markdown_del_ins',
+    ],
     'extension_configs': {
         'markdown.extensions.codehilite': {
             'css_class': 'highlight',
@@ -76,8 +79,6 @@ IGNORE_FILES = [
     'drafts',
 ]
 DELETE_OUTPUT_DIRECTORY = False
-LOAD_CONTENT_CACHE = True
-CACHE_CONTENT = True
 
 # Extra static files
 STATIC_PATHS = [
