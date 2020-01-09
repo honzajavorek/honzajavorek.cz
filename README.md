@@ -28,6 +28,16 @@ The `custom_transaction_id` plugin and related settings for translation URLs all
 
 The rest of the plugins are mostly minor automatic tweaks to the generated article markup.
 
+## 📸 Adding Images
+
+Drop them into the `content/images` directory and let the blog reload. If it's too large, it'll error with details. Resize large images to fit the constraints reported by the error messages. Ideally also run following to optimize images:
+
+```
+$ imagemin content/images/*.* --out-dir=content/images
+```
+
+The `imagemin` utility can be installed by ``npm install imagemin-cli --global``.
+
 ## 🇨🇿 Translations
 
 To connect translations, add `Translation-ID` to their meta data with the same value, and set their `Lang` properly. The default language is `en`.
@@ -46,7 +56,7 @@ By default, the Open Graph image is set to my photo. To set a different image, a
 
 ## 📦 Dependencies
 
-The npm dependencies are managed in a standard way, but saved as exact versions (see `.npmrc`) as [@dependabot](https://dependabot.com/) takes care of upgrading (see `.dependabot`). Python dependencies are using plain old `requirements.txt`, but it's not used as a lockfile. Only the top-level dependencies which are truly needed are written and locked there, with the resulting tree being left unmanaged. Again, [@dependabot](https://dependabot.com/) takes care of upgrading.
+The npm dependencies of the theme are managed in a standard way, but the `package.json` is inside the `theme` directory and the dependencies are saved as exact versions (see `.npmrc`) as [@dependabot](https://dependabot.com/) takes care of upgrading (see `.dependabot`). Python dependencies are using plain old `requirements.txt`, but it's not used as a lockfile. Only the top-level dependencies which are truly needed are written and locked there, with the resulting tree being left unmanaged. Again, [@dependabot](https://dependabot.com/) takes care of upgrading.
 
 ## 🚀 Deployment
 

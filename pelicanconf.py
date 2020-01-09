@@ -70,7 +70,17 @@ TAG_SAVE_AS = ''
 DIRECT_TEMPLATES = ['index', 'archives']
 
 # Generating
-IGNORE_FILES = ['.#*', '.DS_Store', 'drafts']
+IGNORE_FILES = [
+    # content
+    '.#*',
+    '.DS_Store',
+    'drafts',
+
+    # theme
+    '*.md',
+    'package*.json',
+    '.npmrc',
+]
 DELETE_OUTPUT_DIRECTORY = False
 LOAD_CONTENT_CACHE = True
 CACHE_CONTENT = True
@@ -87,8 +97,8 @@ EXTRA_PATH_METADATA = {
 # Theme
 THEME = './theme'
 THEME_STATIC_PATHS = [
-    '../node_modules',
-    './static',
+    'node_modules',
+    'static',
 ]
 
 # Plugins
