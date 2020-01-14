@@ -1,5 +1,9 @@
 Title: Courting Haskell
 Image: images/pawel-czerwinski-LEbkdsB8OMg-unsplash.jpg
+Twitter-Comments: https://twitter.com/honzajavorek/status/1217065971707449345
+Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10157720662087707
+HackerNews-Comments: https://news.ycombinator.com/item?id=22044262
+Reddit-Comments: https://www.reddit.com/r/haskell/comments/eokuao/blog_post_courting_haskell_honza_javorek/
 
 
 I spent my university years juggling studying, freelancing, and partying. To accommodate all three, some sleep included, I decided to reframe courses as "tours into potentially interesting topics". Regardless whether I liked a course or not, I formally finished it with E, which was satisfactory to continue the school. E as in EFFICIENT.
