@@ -6,14 +6,18 @@ HackerNews-Comments: https://news.ycombinator.com/item?id=22044262
 Reddit-Comments: https://www.reddit.com/r/haskell/comments/eokuao/blog_post_courting_haskell_honza_javorek/
 
 
+In the past two months I've been trying to learn the Haskell programming language. It's vastly different from anything I know, so it served me also as a way how to empathize with complete beginners to coding. This is a diary from my journey.
+
+![Triangles]({static}/images/pawel-czerwinski-LEbkdsB8OMg-unsplash.jpg)
+Photo by [Paweł Czerwiński](https://unsplash.com/@pawel_czerwinski) on [Unsplash](https://unsplash.com/)
+
+## First sight love
+
 I spent my university years juggling studying, freelancing, and partying. To accommodate all three, some sleep included, I decided to reframe courses as "tours into potentially interesting topics". Regardless whether I liked a course or not, I formally finished it with E, which was satisfactory to continue the school. E as in EFFICIENT.
 
 Personally, I categorized the topics into three sets. Respectable ones, which are noble and beautiful, but too hard for me to get my head around them (e.g. math). Intriguing ones, which I wished to dive into later in my life (compilers, functional programming…). And finally, topics I never wished to see again, ever (e.g. hardware).
 
 A superficial experience with Haskell programming language in one of the courses got stuck in my head as a divine encounter. Since then I have secretly desired to explore it further. It seemed to be as noble and pure as math, but unlike math, I felt there is a chance I could be able to actually learn how to do it without too much pain.
-
-![Triangles]({static}/images/pawel-czerwinski-LEbkdsB8OMg-unsplash.jpg)
-Photo by [Paweł Czerwiński](https://unsplash.com/@pawel_czerwinski) on [Unsplash](https://unsplash.com/)
 
 ## What is Haskell?
 
