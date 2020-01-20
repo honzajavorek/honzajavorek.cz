@@ -4,6 +4,7 @@ Twitter-Comments: https://twitter.com/honzajavorek/status/1217065971707449345
 Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10157720662087707
 HackerNews-Comments: https://news.ycombinator.com/item?id=22044262
 Reddit-Comments: https://www.reddit.com/r/haskell/comments/eokuao/blog_post_courting_haskell_honza_javorek/
+LinkedIn-Comments: https://www.linkedin.com/posts/honzajavorek_courting-haskell-honza-javorek-activity-6625070791035756544-J3Hr
 
 
 In the past two months I've been trying to learn the Haskell programming language. It's vastly different from anything I know, so it served me also as a way how to empathize with complete beginners to coding. This is a diary from my journey.
