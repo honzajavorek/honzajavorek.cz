@@ -2,6 +2,8 @@ Title: How I deploy
 Image: images/andy-li-CpsTAUPoScw-unsplash.jpg
 Twitter-Comments: https://twitter.com/honzajavorek/status/1220484534514393089
 HackerNews-Comments: https://news.ycombinator.com/item?id=22133377
+Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10157746976262707
+LinkedIn-Comments: https://www.linkedin.com/posts/honzajavorek_how-i-deploy-honza-javorek-activity-6626252714009477120-kggR
 
 
 I'm a dev with **no passion for ops**. Everyone around me is hyped up about Docker, Kubernetes, and whatnot. For me, these things are a waste of time. It's something which I think should be solved _for_ me, not _by_ me. I'm here to develop amazing things, not to mess with server configuration. Still, I need to publish my amazing things to the internet somehow, right? Let me present my go-to solutions to the problem.
