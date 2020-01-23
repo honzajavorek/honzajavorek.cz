@@ -10,7 +10,7 @@ LinkedIn-Comments: https://www.linkedin.com/posts/honzajavorek_courting-haskell-
 In the past two months I've been trying to learn the Haskell programming language. It's vastly different from anything I know, so it served me also as a way how to empathize with complete beginners to coding. This is a diary from my journey.
 
 ![Triangles]({static}/images/pawel-czerwinski-LEbkdsB8OMg-unsplash.jpg)
-Photo by [Paweł Czerwiński](https://unsplash.com/@pawel_czerwinski) on [Unsplash](https://unsplash.com/)
+Photo by [Paweł Czerwiński](https://unsplash.com/@pawel_czerwinski)
 
 ## First sight love
 

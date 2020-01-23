@@ -14,15 +14,18 @@ def register():
 
 def load_projects(article_generator):
     settings = article_generator.settings
-
     logger.info(f"Parsing https://github.com/honzajavorek")
-    response = requests.get('https://github.com/honzajavorek')
-    response.raise_for_status()
+    try:
+        response = requests.get('https://github.com/honzajavorek')
+        response.raise_for_status()
 
-    html_tree = html.fromstring(response.content)
-    html_tree.make_links_absolute(response.url)
+        html_tree = html.fromstring(response.content)
+        html_tree.make_links_absolute(response.url)
 
-    article_generator.context['projects'] = list(get_pinned_repos(html_tree))
+        article_generator.context['projects'] = list(get_pinned_repos(html_tree))
+    except requests.RequestException as e:
+        logger.debug(e)
+        logger.warning("Seems like you're developing offline, projects won't be available")
 
 
 def get_pinned_repos(html_tree):
