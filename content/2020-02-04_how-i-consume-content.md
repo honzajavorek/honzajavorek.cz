@@ -9,7 +9,7 @@ Although last ~10 years I'm very bad about reading books, **I go through tons of
 ![Reading]({static}/images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg)
 Photo by [Patrick Tomasso](https://unsplash.com/@impatrickt)
 
-**My best friend is [Pocket](https://getpocket.com/).** I used to send all the articles to my Kindle, but since I started using a smartphone, I switched to Pocket with articles and I keep Kindle as a device dedicated to books. (Which means Kindle is dusted now as I'm bad about reading books for the last ~10 years.) Pocket is great because it allows me to track and display _everything_, not just texts.
+**My best friend is [Pocket](https://getpocket.com/).** I used to send all the articles to my Kindle, but since I started using a smartphone, I switched to Pocket with articles and I keep Kindle as a device dedicated to books. (Which means Kindle is dusted now as I'm… you guessed it, bad about reading books for the last ~10 years.) Pocket is great because it allows me to track and display _everything_, not just texts.
 
 It is also integrated into my favorite browser, [Firefox](https://www.mozilla.org/firefox/), so conveniently I don't need an extension to make it work on my laptop. On my phone, I use their app.
 
