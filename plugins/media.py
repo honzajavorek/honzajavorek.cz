@@ -100,10 +100,11 @@ def check_img(img, content_dir, options):
         try:
             size_mb = filename.stat().st_size / 1024 / 1024
             width, height = Image.open(filename).size
+            is_video = filename.suffix.lower() == '.gif'
         except IOError:
             logger.error('Found non-existing image: %s', img_src)
         else:
-            if size_mb > options['max_mb']:
+            if not is_video and size_mb > options['max_mb']:
                 logger.error('Image too large: %s (%dmb, max size: %dmb)', img_src, size_mb, options['max_px'])
             if width > options['max_px']:
                 logger.error('Image too large: %s (%dpx, max width: %dpx)', img_src, width, options['max_px'])
