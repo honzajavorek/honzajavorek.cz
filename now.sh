@@ -1,7 +1,5 @@
 #!/bin/bash
 
-env
-
 # Installation
 npm install --prefix=./theme
 python3 -m venv ./venv
