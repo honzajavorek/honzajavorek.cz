@@ -1,8 +1,10 @@
 Title: How I consume content
 Image: images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg
+Twitter-Comments: https://twitter.com/honzajavorek/status/1224766396044804096
+Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10157783904067707
 
 
-Although last ~10 years I'm very bad about reading books, **I read tons of text every day**. It's all sorts of articles and videos from the internet, recommended to me through Twitter, Facebook, or other means. How do I do this?
+Although last ~10 years I'm very bad about reading books, **I go through tons of content every day**. It's all sorts of articles and videos from the internet, recommended to me through Twitter, Facebook, or other means. How do I do this?
 
 ![Reading]({static}/images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg)
 Photo by [Patrick Tomasso](https://unsplash.com/@impatrickt)
