@@ -2,6 +2,7 @@ Title: Testing in JavaScript and in Python
 Date: 2017-01-18 10:43:00
 Lang: en
 Translation-ID: testing-in-javascript-and-in-python
+HackerNews-Comments: https://news.ycombinator.com/item?id=13434134
 
 
 In this article, I'd like to share why I'm disappointed about testing server-side JavaScript. If you're not in the mood of reading [rants](http://www.urbandictionary.com/define.php?term=rant), I recommend you to choose a different article for your afternoon.
