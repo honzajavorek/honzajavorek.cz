@@ -16,7 +16,7 @@ It is also integrated into my favorite browser, [Firefox](https://www.mozilla.or
 
 ## Offline, without garbage
 
-Prague's metro doesn't have good cell phone signal coverage, and the same is true for some train routes in the Czech Republic, so it helps that **Pocket can download articles for offline reading**. Useful also on long flights.
+Prague's metro doesn't have a good cell phone signal coverage, and the same is true for some train routes in the Czech Republic, so it helps that **Pocket can download articles for offline reading**. Useful also on long flights.
 
 With today's state of the web, it also helps **Pocket strips off all the garbage surrounding the text I want to read**. It gives me purely the content of the article. No ads. No pop-ups. No tracking. No bullshit.
 
@@ -58,7 +58,7 @@ As you might have guessed already, I'm not into podcasts. Perhaps because I don'
 ![Starting a podcast in 2019]({static}/images/podcast-2019.gif)
 Starting a podcast in 2019 ([source](https://twitter.com/MCamerlengo/status/1185376018808430596))
 
-I think people like podcasts because they can listen to them while they do other stuff, like driving or walking. Doesn't work for me. I don't drive. I don't commute. I don't usually wear headphones while walking. I tried listening to a spoken word while I was washing dishes, but often I misheard something or my brain strode away and I needed to rewind, which is annoying.
+I think people like podcasts because they can listen to them while they do other stuff, like driving or walking. Doesn't work for me. I don't drive. I don't commute. I don't usually wear headphones while walking. I tried listening to a spoken word while I was washing dishes, but often I misheard something or my brain strode away and I needed to "rewind", which is annoying.
 
 **I do read while walking**. Perhaps if I switched to podcasts, I'd be less anti-social pedestrian, bumping into fewer people and ignoring less of my friends' greetings. Hmm. No. I think if I'm to wear headphones while walking, I'd rather pay for something which reads out loud polished texts. Listening to slowly-paced random chatters (with occasional coughing), which is what podcasts are, is just inefficient.
 
