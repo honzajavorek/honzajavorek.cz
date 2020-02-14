@@ -14,3 +14,6 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           zeit-token: ${{ secrets.ZEIT_TOKEN }}
           now-args: '--prod'
+      env:
+          NOW_ORG_ID: honzajavorek
+          NOW_PROJECT_ID: honzajavorek.cz
