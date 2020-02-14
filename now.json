@@ -1,8 +1,6 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "now.sh", "use": "@now/static-build", "config": { "distDir": "output" } }
-  ],
+  "cleanUrls": true,
+  "trailingSlash": true,
   "github": {
     "silent": true
   }

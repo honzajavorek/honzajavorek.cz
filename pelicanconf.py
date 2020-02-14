@@ -73,6 +73,7 @@ TAG_SAVE_AS = ''
 DIRECT_TEMPLATES = ['index', 'archives']
 
 # Generating
+OUTPUT_PATH = 'public/'  # aligns with ZEIT Now defaults
 IGNORE_FILES = [
     '.#*',
     '.DS_Store',

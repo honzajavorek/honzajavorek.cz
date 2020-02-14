@@ -6,5 +6,8 @@ venv/
 .envrc
 
 # Pelican
-/output/
+/public/
 /cache/
+
+# Now
+.now
