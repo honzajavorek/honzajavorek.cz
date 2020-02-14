@@ -15,5 +15,5 @@ jobs:
           zeit-token: ${{ secrets.ZEIT_TOKEN }}
           now-args: '--prod'
       env:
-          NOW_ORG_ID: honzajavorek
-          NOW_PROJECT_ID: honzajavorek.cz
+          NOW_ORG_ID: ${{ secrets.NOW_ORG_ID }}
+          NOW_PROJECT_ID: ${{ secrets.NOW_PROJECT_ID }}
