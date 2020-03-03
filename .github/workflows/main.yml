@@ -9,11 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: amondnet/now-deployment@v1
+    - uses: amondnet/now-deployment@v2
       with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           zeit-token: ${{ secrets.ZEIT_TOKEN }}
           now-args: '--prod'
-      env:
-          NOW_ORG_ID: ${{ secrets.NOW_ORG_ID }}
-          NOW_PROJECT_ID: ${{ secrets.NOW_PROJECT_ID }}
+          now-org-id: ${{ secrets.NOW_ORG_ID }}
+          now-project-id: ${{ secrets.NOW_PROJECT_ID }}
