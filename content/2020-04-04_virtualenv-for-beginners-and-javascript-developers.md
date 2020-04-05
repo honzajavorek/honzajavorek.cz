@@ -38,7 +38,7 @@ $ python -m venv venv
 
 > **Troubleshooting:** It's bundled with Python ≥ 3.3. If you're getting errors like `No module named venv`, you have unsupported Python version — at the time of writing this article, the oldest Python to be used is 3.5. Check your Python version with `python --version`, and find or install a newer one. If you're quite sure you already have a newer one somewhere, try `python3` instead of `python`. I know, [it's complicated](https://xkcd.com/1987/).
 
-The first `venv` is a name of a [built-in Python module for creating virtualenvs](https://docs.python.org/3/library/venv.html). It's always gonna be `venv`. The second `venv` is a name of a directory where the virtualenv should be created. It can be anything, but it's conventional to call it `venv`, and yes, it's a bit confusing. In fact, you could use `python -m venv ./venv` with the same effect.
+The first `venv` is the name of a [built-in Python module for creating virtualenvs](https://docs.python.org/3/library/venv.html). It's always gonna be `venv`. The second `venv` is the name of a directory where the virtualenv should be created. It can be anything, but it's conventional to call it `venv`, and yes, it's a bit confusing. In fact, you could use `python -m venv ./venv` with the same effect.
 
 The command won't print anything, but it creates a `./venv` subdirectory in your current working directory. It's gonna contain some infrastructure for the virtualenv itself (scripts, [symlinks](https://en.wikipedia.org/wiki/Symbolic_link)), and all dependencies you later install.
 
@@ -133,7 +133,7 @@ requests==2.23.0
 urllib3==1.25.8
 ```
 
-If you run `pip freeze` with the global `pip`, it prints your globally installed Python packages. For the above listed reasons, installing dependencies globally is not recommended. It's sometimes handy for programs (like [HTTPie](https://httpie.org/)), but only for those you want to access from anywhere in your system. Keep the list short!
+If you run `pip freeze` with the global `pip`, it prints your globally installed Python packages. For the above-listed reasons, installing dependencies globally is not recommended. It's sometimes handy for programs (like [HTTPie](https://httpie.org/)), but only for those you want to access from anywhere in your system. Keep the list short!
 
 > **JavaScript developers:** The `./venv/bin/` directory is similar to `./node_modules/.bin/`. Installing with `pip` is like `npm install --global` and installing with `./venv/bin/pip` is like `npm install`.
 
@@ -200,11 +200,11 @@ From now on, both `python` and `pip` are pointing back to the global commands, a
 
 ## Specifying dependencies
 
-You are maybe wondering how you could send your project to a friend in a way that they can run it with all dependencies installed. Should you send them the `./venv` directory? Should the `./venv` directory be commited to Git?
+You are maybe wondering how you could send your project to a friend in a way that they can run it with all dependencies installed. Should you send them the `./venv` directory? Should the `./venv` directory be committed to Git?
 
-Virtualenvs are ephemeral. You need one, you create one. Something's off? You can delete the directory and create a new virtualenv. They shouldn't be something you send anyone or share in Git. Actually, the best practice is to put the name of your virtualenv directory to the `.gitignore`, so it can never get picked up by Git.
+Virtualenvs are ephemeral. You need one, you create one. Something's off? You can delete the directory and create a new virtualenv. They shouldn't be something you send anyone or share in Git. The best practice is to put the name of your virtualenv directory to the `.gitignore`, so it can never get picked up by Git.
 
-But if virtualenvs are to be created and deleted on a regular basis, then re-creating one for a project with 20 dependencies might get quite deadening. That's why it's a good idea to record dependencies of your project in a file called, by convention, `requirements.txt`. Let's create one for our project with the following content:
+But if virtualenvs are to be created and deleted regularly, then re-creating one for a project with 20 dependencies might get quite deadening. That's why it's a good idea to record dependencies of your project in a file called, by convention, `requirements.txt`. Let's create one for our project with the following content:
 
 ```
 requests
@@ -228,11 +228,11 @@ Requirement already satisfied: requests ...
 Collecting pytest ...
 ```
 
-As you can see, `pip` goes line by line and installs every listed dependency. If it's already installed, it considers the requiement satisfied and moves on to the next one.
+As you can see, `pip` goes line by line and installs every listed dependency. If it's already installed, it considers the requirement satisfied and moves on to the next one.
 
 The `requirements.txt` file should be tracked by Git and distributed with your code. With the file at hand, anyone who has your project on their computer and wants to run it, can create their virtualenv and easily install all required dependencies into it.
 
-Perhaps first you've spotted the `pip freeze` command, you were wondering why it's called freeze and not list? That's because the primary purpose of it is to freeze your virtualenv — by generating a `requirements.txt` file! On Linux or macOS, you can save a command's output into file using the `>` character like this:
+Perhaps first you've spotted the `pip freeze` command, you were wondering why it's called freeze and not list? That's because the primary purpose of it is to freeze your virtualenv — by generating a `requirements.txt` file! On Linux or macOS, you can save a command's output into a file using the `>` character like this:
 
 ```
 $ ./venv/bin/pip freeze > ./requirements.txt
@@ -270,24 +270,24 @@ Requirement already satisfied ...
 
 If you keep `requirements.txt` file like this around your code, anyone can easily create a virtualenv with exactly the dependencies you used to develop your project. Of course, you need to update the file (freeze your virtualenv) every time you install or uninstall dependency in your virtualenv.
 
-> **Note:** Only dependencies installed by `pip` go to the `requirements.txt` file. If your project uses modules from the Python's standard library, such as `random` or `math`, those shouldn't be listed. They are always already present as they're bundled with Python, and don't need to be installed.
+> **Note:** Only dependencies installed by `pip` go to the `requirements.txt` file. If your project uses modules from Python's standard library, such as `random` or `math`, those shouldn't be listed. They are always already present as they're bundled with Python, and don't need to be installed.
 >
 > **JavaScript developers:** The `requirements.txt` is like `package-lock.json` or `yarn.lock`. If dependencies are specified without their version constraints, it can, kind of, work as `package.json`, too.
 
-Specifying dependencies using the `requirements.txt` is easy and it works well for scripts or web apps. However, it's good to know that there are also other ways to do this — libraries, for example, use `setup.py` files. There are also emerging new formats like `pyproject.toml`. Those are out of scope of this article though and it usually takes time until a beginner needs them. The [Python Packaging User Guide](https://packaging.python.org/) is a good resource to learn about that.
+Specifying dependencies using the `requirements.txt` is easy and it works well for scripts or web apps. However, it's good to know that there are also other ways to do this — libraries, for example, use `setup.py` files. There are also emerging new formats like `pyproject.toml`. Those are out of the scope of this article though and it usually takes time until a beginner needs them. The [Python Packaging User Guide](https://packaging.python.org/) is a good resource to learn about that.
 
 > **JavaScript developers:** The `setup.py` or `pyproject.toml` are like `package.json`.
 
 ## Multiple Python versions (macOS)
 
-This is only slightly related topic, so I'll cover it just briefly. Also I don't have much experience solving this elsewhere than on macOS, so this is gonna be specific to macOS.
+This is only a slightly related topic, so I'll cover it just briefly. Also I don't have much experience solving this elsewhere than on macOS, so this is gonna be specific to macOS.
 
 Sometimes you have an older project, which won't run with your latest Python version, or you just want to test whether your code works on various versions. On macOS, my Python setup looks like this:
 
 - `python` points to Python 2.7 which older macOS versions contain out of the box
 - `python3` points to the latest Python 3 — I install this by `brew install python` (see [Homebrew](https://brew.sh/))
 
-The limitation of this setup is that every time new Python is released, my `python3` gets updated to the latest version, and there's no way to keep the older ones. If I need some older ones, I use [pyenv](https://github.com/pyenv/pyenv) to download, install, and manage them. I get it using [Homebrew](https://brew.sh/): `brew install pyenv`. Then following should work:
+The limitation of this setup is that every time a new Python is released, my `python3` gets updated to the latest version, and there's no way to keep the older ones. If I need some older ones, I use [pyenv](https://github.com/pyenv/pyenv) to download, install, and manage them. I get it using [Homebrew](https://brew.sh/): `brew install pyenv`. Then the following should work:
 
 - `pyenv install ...` installs additional Python versions
 - `pyenv versions` lists what's available on your machine
@@ -305,7 +305,7 @@ $ ./venv/bin/python --version
 Python 3.5.5
 ```
 
-This approach also solves one inconvenience `brew` causes when it automatically updates my `python3` installation. When new Python version gets released, soon `brew` brings it to my computer and replaces my `python3` command with it. However, that breaks any virtualenv created with `python3 -m venv ./venv`, because suddenly these virtualenvs lost the Python version they were created with. I need to manually re-create them to fix them. That means all my virtualenvs get broken and unusable quite often, even when I'm getting insignificant patch upgrades, like from Python 3.7.6 to 3.7.7. Using only Python versions installed by `pyenv` solves this, because those won't go away until I explicitly say so. I know, [it's… complicated](https://xkcd.com/1987/)!
+This approach also solves one inconvenience `brew` causes when it automatically updates my `python3` installation. When a new Python version gets released, soon `brew` brings it to my computer and replaces my `python3` command with it. However, that breaks any virtualenv created with `python3 -m venv ./venv`, because suddenly these virtualenvs lost the Python version they were created with. I need to manually re-create them to fix them. That means all my virtualenvs get broken and unusable quite often, even when I'm getting insignificant patch upgrades, like from Python 3.7.6 to 3.7.7. Using only Python versions installed by `pyenv` solves this, because those won't go away until I explicitly say so. I know, [it's… complicated](https://xkcd.com/1987/)!
 
 > **Hint:** If you want to have virtualenv with an older version of Python just for the sake of running tests, take a look at a handy tool called [tox](https://pypi.org/project/tox/).
 
@@ -313,7 +313,7 @@ This approach also solves one inconvenience `brew` causes when it automatically 
 
 Usually, virtualenvs live in a directory right alongside your project, usually called `venv`, and you add the name of the directory to your `.gitignore` so it's not tracked by Git. You track dependencies in your `requirements.txt` file, which is also alongside your project, but tracked by Git. Thanks to this file you or anyone else can re-create the virtualenv and use the project with its dependencies.
 
-However, you should know there are several tools which build on top of virtualenvs (as if it wasn't complicated and confusing enough already) and they work in a bit different way. They are out of scope of this article, but you may see them out in the wild, and people enthusiastic about them will try to convince you that you should use them:
+However, you should know there are several tools which build on top of virtualenvs (as if it wasn't complicated and confusing enough already) and they work in a bit different way. They are out of the scope of this article, but you may see them out in the wild, and people enthusiastic about them will try to convince you that you should use them:
 
 - [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/) introduces a central location for all virtualenvs and adds more magical spells to save you more typing, such as `mkvirtualenv` or `workon`
 - [direnv](https://direnv.net/) allows you to drop `.envrc` files into your directories, which can activate or deactivate virtualenvs, environment variables, anything…
@@ -321,7 +321,7 @@ However, you should know there are several tools which build on top of virtualen
 
 It's up to everyone what they want to use, it's their workflow and their computer. As far as you have a virtualenv created, dependencies installed, and the project working, it's nobody's business if you achieved it with `python -m venv ./venv` or with `mkvirtualenv`. Although the above isn't entirely true for `pipenv`, because if a project you want to work on uses it for dependencies, you pretty much can't avoid learning it and using it.
 
-For a beginner in 2020, I personally think all of them are unnecessary magic, i.e. confusion. Stick with pure virtualenvs. You have plenty of time to learn any of the above later, when you properly understand what the basics are about.
+For a beginner in 2020, I think all of them are unnecessary magic, i.e. confusion. Stick with pure virtualenvs. You have plenty of time to learn any of the above later, when you properly understand what the basics are about.
 
 ## What is this other virtualenv I've found on the internet?
 
@@ -333,9 +333,9 @@ If you need official documentation on how virtual environments work, use [the on
 
 ## Summary
 
-As you've probably noticed, the article isn't as short as the [Git for Idiots (and Java developers)](https://trak3r.blogspot.com/2008/04/git-for-idiots-and-java-developers.html) was. That's partly because I'm a total failure when it comes to short articles, and partly because this isn't cheat sheet, this is a tutorial.
+As you've probably noticed, the article isn't as short as the [Git for Idiots (and Java developers)](https://trak3r.blogspot.com/2008/04/git-for-idiots-and-java-developers.html) was. That's partly because I'm a total failure when it comes to short articles, and partly because this isn't a cheat sheet, this is a tutorial.
 
-Of course, there are [existing tutorials](https://realpython.com/python-virtual-environments-a-primer/), but I decided to write my own, because I feel like the existing ones are either outdated, mixing things together, or starting with the magic instead of explaining the basics first.
+Of course, there are [existing tutorials](https://realpython.com/python-virtual-environments-a-primer/), but I decided to write my own, because I feel like the existing ones are either outdated, mixing things, or starting with the magic instead of explaining the basics first.
 
 I hope I helped you to understand Python's virtual environments! Here's the [**TL;DR** you can return to](#cheatsheet):
 
