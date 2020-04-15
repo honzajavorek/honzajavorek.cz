@@ -155,11 +155,14 @@ strong {
   padding: 0 .5rem;
 }
 
+.article-reviewers,
 .article-comments {
   margin: 6rem 0;
   text-align: center;
 }
 
+.article-reviewers h3,
+.article-reviewers p,
 .article-comments h3,
 .article-comments ul,
 .article-comments li {
@@ -170,6 +173,11 @@ strong {
   margin: 0;
 }
 
+.article-reviewers p {
+  font-weight: 600;
+}
+
+.article-reviewers h3::after,
 .article-comments h3::after {
   content: ":";
 }

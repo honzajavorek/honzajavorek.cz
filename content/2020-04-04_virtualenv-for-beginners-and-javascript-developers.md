@@ -1,4 +1,5 @@
 Title: Virtualenv for beginners (and JavaScript developers)
+Reviewers: Honza Král, Adéla Popelková, Míla Votradovec, Věroš Kaplan, Stařenka
 
 
 When I grappled with learning Git twelve years ago, I found an article titled [Git for Idiots (and Java developers)](https://trak3r.blogspot.com/2008/04/git-for-idiots-and-java-developers.html). I&nbsp;wasn't exactly a Java developer, but I've been using Eclipse and Subversion, so it worked very well for me. It became my favorite cheat sheet. I've used it many times myself and shared it with many friends.
@@ -7,7 +8,7 @@ Today I'd like to steal the title for an article addressing a topic I believe ma
 
 ## What is a virtualenv?
 
-A virtualenv, short for _virtual environment_, is a developer tool that allows you to have your project's dependencies isolated from the rest of the system. It starts to be handy when your project needs dependencies installed by `pip`, but it is especially useful when you work on multiple Python projects on one computer. Having a separate virtualenv for each of your projects prevents their dependencies to clash with your system or with each other.
+A virtualenv, short for _virtual environment_, is a developer tool that allows you to have your project's dependencies isolated from the rest of the system. It starts to be handy when your project needs dependencies installed by `pip`, but it is especially useful when you work on multiple Python projects on one computer. Having a separate virtualenv for each of your projects prevents their dependencies from clashing with your system or with each other.
 
 Virtualenvs are [terrariums](https://en.wikipedia.org/wiki/Terrarium) for your Python projects!
 
@@ -278,40 +279,9 @@ Specifying dependencies using the `requirements.txt` is easy and it works well f
 
 > **JavaScript developers:** The `setup.py` or `pyproject.toml` are like `package.json`.
 
-## Multiple Python versions (macOS)
-
-This is only a slightly related topic, so I'll cover it just briefly. Also I don't have much experience solving this elsewhere than on macOS, so this is gonna be specific to macOS.
-
-Sometimes you have an older project, which won't run with your latest Python version, or you just want to test whether your code works on various versions. On macOS, my Python setup looks like this:
-
-- `python` points to Python 2.7 which older macOS versions contain out of the box
-- `python3` points to the latest Python 3 — I install this by `brew install python` (see [Homebrew](https://brew.sh/))
-
-The limitation of this setup is that every time a new Python is released, my `python3` gets updated to the latest version, and there's no way to keep the older ones. If I need some older ones, I use [pyenv](https://github.com/pyenv/pyenv) to download, install, and manage them. I get it using [Homebrew](https://brew.sh/): `brew install pyenv`. Then the following should work:
-
-- `pyenv install ...` installs additional Python versions
-- `pyenv versions` lists what's available on your machine
-
-Then you can create virtualenvs like this:
-
-```
-$ ~/.pyenv/versions/3.5.5/bin/python -m venv ./venv
-```
-
-That command above takes Python 3.5.5 earlier installed by `pyenv` and hidden deep in its `~/.pyvenv/` directory, and creates a virtualenv in your current working directory, which is going to contain exactly that particular Python version:
-
-```
-$ ./venv/bin/python --version
-Python 3.5.5
-```
-
-This approach also solves one inconvenience `brew` causes when it automatically updates my `python3` installation. When a new Python version gets released, soon `brew` brings it to my computer and replaces my `python3` command with it. However, that breaks any virtualenv created with `python3 -m venv ./venv`, because suddenly these virtualenvs lost the Python version they were created with. I need to manually re-create them to fix them. That means all my virtualenvs get broken and unusable quite often, even when I'm getting insignificant patch upgrades, like from Python 3.7.6 to 3.7.7. Using only Python versions installed by `pyenv` solves this, because those won't go away until I explicitly say so. I know, [it's… complicated](https://xkcd.com/1987/)!
-
-> **Hint:** If you want to have virtualenv with an older version of Python just for the sake of running tests, take a look at a handy tool called [tox](https://pypi.org/project/tox/).
-
 ## Where do virtualenvs live?
 
-Usually, virtualenvs live in a directory right alongside your project, usually called `venv`, and you add the name of the directory to your `.gitignore` so it's not tracked by Git. You track dependencies in your `requirements.txt` file, which is also alongside your project, but tracked by Git. Thanks to this file you or anyone else can re-create the virtualenv and use the project with its dependencies.
+It's customary virtualenvs live in a directory right alongside your project, usually called `venv`, and you add the name of the directory to your `.gitignore` so it's not tracked by Git. You track dependencies in your `requirements.txt` file, which is also alongside your project, but tracked by Git. Thanks to this file you or anyone else can re-create the virtualenv and use the project with its dependencies.
 
 However, you should know there are several tools which build on top of virtualenvs (as if it wasn't complicated and confusing enough already) and they work in a bit different way. They are out of the scope of this article, but you may see them out in the wild, and people enthusiastic about them will try to convince you that you should use them:
 
@@ -347,7 +317,7 @@ I hope I helped you to understand Python's virtual environments! Here's the [**T
 4. Create a virtualenv: `python -m venv ./venv` (or `python3 -m venv ./venv`)
 5. Activate the virtualenv: `source ./venv/bin/activate` (or `.\env\Scripts\activate`)
 7. Do what you need to do with the project
-8. Every time you (un)install new package by `pip`, make sure to update the `requirements.txt` file either manually or by `pip freeze`
+8. Every time you (un)install a new package by `pip`, make sure to update the `requirements.txt` file either manually or by `pip freeze`
 9. When you're done, close your terminal or type `deactivate`
 
 ### Cloning a project from GitHub
@@ -367,5 +337,5 @@ I hope I helped you to understand Python's virtual environments! Here's the [**T
 1. Go to the project directory, e.g. `cd ~/Projects/my-project/`
 5. Activate the existing virtualenv: `source ./venv/bin/activate` (or `.\env\Scripts\activate`)
 7. Do what you need to do with the project
-8. Every time you (un)install new package by `pip`, make sure to update the `requirements.txt` file either manually or by `pip freeze`
+8. Every time you (un)install a new package by `pip`, make sure to update the `requirements.txt` file either manually or by `pip freeze`
 9. When you're done, close your terminal or type `deactivate`

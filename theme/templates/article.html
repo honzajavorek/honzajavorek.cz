@@ -109,6 +109,21 @@
 
     {{ article.content }}
   </div>
+  {% if article.reviewers %}
+  <div class="article-reviewers">
+    <h3>
+      {%- if article.lang == 'cs' -%}
+        Zvláštní poděkování za revizi článku
+      {%- else -%}
+        Special thanks to the reviewers
+      {%- endif -%}
+    </h3>
+    <p>
+      {{ article.reviewers }}
+    </p>
+  </div>
+  {% endif %}
+
   {% if article.comments %}
   <div class="article-comments">
     <h3>
