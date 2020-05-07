@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/courting-haskell/">
+    <title>Courting Haskell &mdash; Honza Javorek</title>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1316071-6"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-1316071-6');
+      </script>
+
+    <meta property="og:title" content="Courting Haskell &mdash; Honza Javorek">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/courting-haskell/">
+    <meta name="twitter:creator" content="@honzajavorek">
+    <meta name="twitter:site" content="@honzajavorek">
+
+    <meta property="og:image" content="https://honzajavorek.cz/images/pawel-czerwinski-LEbkdsB8OMg-unsplash.jpg">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/pawel-czerwinski-LEbkdsB8OMg-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Honza Javorek &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-01-14T00:00:00+01:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <div class="content">
+<article class="article">
+  <header class="article-header">
+    <h1>
+      <a href="https://honzajavorek.cz/blog/courting-haskell" rel="bookmark">
+        Courting Haskell
+      </a>
+    </h1>
+  </header>
+  <footer class="article-info">
+    <ul>
+      <li class="article-published">
+        <small>
+          <time datetime="2020-01-14T00:00:00+01:00">
+            Jan 14, 2020
+          </time>
+        </small>
+      </li>
+      <li class="article-author">
+        <small>
+          <a href="#author">Honza Javorek</a>
+        </small>
+      </li>
+    <ul>
+  </footer>
+  <div class="article-content">
+
+    <div><p>In the past two months I've been trying to learn the Haskell programming language. It's vastly different from anything I know, so it served me also as a way how to empathize with complete beginners to coding. This is a diary from my journey.</p>
+<figure><img alt="Triangles" src="https://honzajavorek.cz/images/pawel-czerwinski-LEbkdsB8OMg-unsplash.jpg"><figcaption>
+Photo by <a href="https://unsplash.com/@pawel_czerwinski">Paweł Czerwiński</a></figcaption></figure>
+<h2 id="first-sight-love">First sight love<small class="permalink"><a href="#first-sight-love" title="Permanent link to this heading">#</a></small></h2>
+<p>I spent my university years juggling studying, freelancing, and partying. To accommodate all three, some sleep included, I decided to reframe courses as "tours into potentially interesting topics". Regardless whether I liked a course or not, I formally finished it with E, which was satisfactory to continue the school. E as in EFFICIENT.</p>
+<p>Personally, I categorized the topics into three sets. Respectable ones, which are noble and beautiful, but too hard for me to get my head around them (e.g. math). Intriguing ones, which I wished to dive into later in my life (compilers, functional programming…). And finally, topics I never wished to see again, ever (e.g. hardware).</p>
+<p>A superficial experience with Haskell programming language in one of the courses got stuck in my head as a divine encounter. Since then I have secretly desired to explore it further. It seemed to be as noble and pure as math, but unlike math, I felt there is a chance I could be able to actually learn how to do it without too much pain.</p>
+<h2 id="what-is-haskell">What is Haskell?<small class="permalink"><a href="#what-is-haskell" title="Permanent link to this heading">#</a></small></h2>
+<blockquote>
+<p>Haskell is a statically typed, purely functional programming language with type inference and lazy evaluation.</p>
+<p>— <a href="https://en.wikipedia.org/wiki/Haskell_(programming_language)">Wikipedia</a></p>
+</blockquote>
+<p>My first useful experience with programming was with PHP 4. Later I learned PHP 5 and its object-oriented programming concepts, dreaming about switching to Java one day. But then I've encountered Python and it changed everything. Unlike PHP, it seemed to be "purer" and "nicer". At that time, <a href="https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/">PHP was a mess</a>. Also, unlike Java or PHP (which at that time started to converge to Java), it seemed to be "simpler". It wasn't forcing me into so many <a href="https://sw-samuraj.cz/2019/02/remcani-proti-jave/">unnecessary layers and abstractions</a> (and types and classes). In my eyes, Python was noble, pure, divine.</p>
+<p>Over time I learned about Python's warts and imperfections, and my old memory of Haskell from university years gave me an irrational expectation that these things wouldn't happen there, because <em>Haskell is without compromises, it's divine, for real, it's the purest of all programming languages, invented by scientists…!</em></p>
+<blockquote>
+<p>As of September 2019, Haskell was the 23rd most popular programming language in terms of Google searches for tutorials and made up less than 1% of active users on the GitHub source code repository.</p>
+<p>— <a href="https://en.wikipedia.org/wiki/Haskell_(programming_language)">Wikipedia</a></p>
+</blockquote>
+<p>Haskell isn't exactly popular. It's partly because it's exclusively <a href="https://en.wikipedia.org/wiki/Functional_programming">functional</a>. Most programmers start with imperative languages, perhaps spiced with object-oriented programming here and there. For someone coming from Python, Haskell is like from another world, which turns the learning into a tough experience. Another reason might be that unlike more mainstream functional languages, such as F# or Scala, it's not tied to any existing ecosystem, such as those of C# or Java.</p>
+<p>Some people also say it's so academically pure that it's impractical and that it's too math-like. It's, indeed, heavily founded on mathematical theories (category theory and lambda calculus). You'll stumble upon whiteboards with diagrams, and even the most basic materials won't avoid using strange terms, such as monoids, monads, or functors. Check <a href="https://www.youtube.com/user/DrBartosz/videos">videos from Bartosz Milewski</a> as an illustration of what I mean:</p>
+<figure><img alt="Bartosz Milewski's YouTube channel" src="https://honzajavorek.cz/images/bartosz-milewski.png"></figure>
+<p>I don't say theory and whiteboards are bad, but it's not the usual experience when learning a new programming language, and for many it can be a bit intimidating.</p>
+<p>This all causes people to think Haskell (perhaps <a href="https://twobithistory.org/2018/10/14/lisp.html">together with Lisp</a>) is some sort of sorcery. First, Haskell and Harry Potter both start with H. Second, nobody truly understands why it all works, perhaps only the most <del>mad matematicians</del> powerful wizards. Third, the apprentices (nerds, in the eyes of the majority society) are encouraged to use eerie <del>syntax</del> script and to <del>speak in mathematical terms</del> cast bizarre spells, such as <del><em>monad!</em></del> <em>alohomora!</em></p>
+<p>Being aware of these things, I kept my desire for Haskell as something I'll probably never really pursue and I focused on mastering Python and later JavaScript as my tools of trade.</p>
+<h2 id="fp-sneaking-into-my-life">FP sneaking into my life<small class="permalink"><a href="#fp-sneaking-into-my-life" title="Permanent link to this heading">#</a></small></h2>
+<p>I think it started in 2018, when <a href="https://twitter.com/vladimirgorej">Vladimir Gorej</a> joined <a href="https://apiary.io/">Apiary</a>. Vladimir is a functional programming aficionado with strong theoretical background, who introduced us to <a href="https://ramdajs.com/">Ramda</a> and <a href="https://char0n.github.io/ramda-adjunct/">Ramda Adjunct</a>, <a href="https://rxjs.dev/">RxJS</a>, and more. Suddenly, FP was all around me.</p>
+<p>We attended the <a href="https://www.lambdup.io/">LambdUp</a> conference. I started to write my imperative code with more pure functions, immutability, and with <em>maps</em>, <em>filters</em>, and <em>reduces</em> in mind. I started noticing how widespread Ramda is, how popular <a href="https://en.wikipedia.org/wiki/Elm_(programming_language)">Elm</a> is (I first heard about Elm at <a href="https://devel.cz/konference/2016">Devel.cz 2016</a> from <a href="https://twitter.com/rtfeldman">Richard Feldman</a>), and every day I kept being reminded about <a href="https://en.wikipedia.org/wiki/Clojure">Closure</a> on Twitter by <a href="https://twitter.com/alesroubicek/">Aleš Roubíček</a>. Moreover, one of my other colleagues, a C++ genius <a href="https://www.linkedin.com/in/tjanc/">Thomas Jandečka</a>, couldn't pass a kitchen small talk without mentioning how powerful Haskell is.</p>
+<h2 id="the-grand-budapest-hotel">The Grand Budapest Hotel<small class="permalink"><a href="#the-grand-budapest-hotel" title="Permanent link to this heading">#</a></small></h2>
+<p><small markdown="1">Yeah, <a href="https://www.imdb.com/title/tt2278388/reference">pun intended</a>!</small></p>
+<p>The last day of October 2019 was my last day in Apiary. I left to have a break from work for a few months and to have time to start <a href="https://junior.guru/">junior.guru</a>. Fresh to my sabbatical, in November I accompanied my wife on a business trip to Budapest. The weather was bad and I didn't feel entirely healthy, so while she was enjoying a conference, I ended up slacking in our hotel room. And I was quite in a mood to learn something new. What about finally learning <em>the real deal</em>?</p>
+<p>Yeah, I could have chosen something everyone else is learning, like React or Go, but I didn't feel like being actually productive. I had a unique opportunity to learn <em>anything</em>, regardless its usefulness. So I decided I'll finally take a look at Haskell. Also, where else to start learning an obscure language if not in <a href="https://en.wikipedia.org/wiki/Hungarian_language">Hungary</a>?</p>
+<p>So I started. I knew <a href="http://learnyouahaskell.com/">Learn You a Haskell</a> from the times of my university course, and I decided to give it a chance, because I remembered how the naive cartoons helped me to feel comfortable even around words like <em>functor</em>.</p>
+<figure><img alt="The list monster" src="https://honzajavorek.cz/images/listmonster.png"><figcaption>
+Cartoon by Miran Lipovača, taken from <a href="http://learnyouahaskell.com/starting-out#an-intro-to-lists">An intro to lists</a></figcaption></figure>
+<p>After a few hours of continuous reading, I felt like <a href="https://www.facebook.com/photo.php?fbid=10157585323962707&amp;set=a.10151458393497707&amp;type=3&amp;__xts__%5B0%5D=68.ARA6QiDX2SzA2lZQRzKzNWT-NzBLDOw8JT5fzoUKoe5ZbdOcmhEglED2Su6VjGPD72lra_A23zHOzLDgcA_Aen5v6kD1alSnZ832C0i1iHNrVMNpREbJ6Ou8aYo-00FM5jIdtNHwjfsh4ZVuDAvGqX3Jc8zDjyOqApY5fQKiDys4MeyqaIcz2Za6-3kJ1IWJeAq96QCxvWCkzxtlpKHAvxm_ISP6zzmxgKJKgmijHwJKqiIqKpDlN8f2oVO5dGPjLDrMaQ&amp;__tn__=-R">sharing my immense success</a> and as a true millennial, I concluded my day with writing more Facebook comments about how I learn Haskell than writing actual Haskell code.</p>
+<p>I didn't stop learning though. Even after returning from the trip, I tried to find some time here and there to continue with the book. And it was a strange experience. After quite long time I was back in learning something this intensively. Also, as Haskell is so different from anything I know, more and more I felt like I'm able to empathize with programming beginners. That's usually very hard for a person who's coding for ~20 years. Even though I'm spending my time around beginners, <a href="https://junior.guru/">helping them</a>, and mentoring them, I didn't ever get as close to their troubles as I did when learning Haskell.</p>
+<p>There are two types of materials for two types of learners. Some people like to first read and then try out stuff, some people require very practical, hands-on learning from the very start. I'm the reading type, so I didn't have any fundamental problem with <a href="http://learnyouahaskell.com/">LYAH</a> as a learning material, but I have to admit the fact that <a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program">Hello World</a> is in <a href="http://learnyouahaskell.com/input-and-output">Chapter 9</a> did feel a bit intimidating. It's not the book's fault though. Printing text is a <a href="https://en.wikipedia.org/wiki/Side_effect_(computer_science)">side effect</a> and in a strictly <a href="https://en.wikipedia.org/wiki/Pure_function">pure</a> language, you better read 8 chapters before you start with side effects!</p>
+<h2 id="advent-of-code">Advent of Code<small class="permalink"><a href="#advent-of-code" title="Permanent link to this heading">#</a></small></h2>
+<p>My friend <a href="https://twitter.com/MilaVot/">Míla</a> told me about <a href="https://adventofcode.com/">Advent of Code</a>, an advent calendar for puzzle solvers. Every day in December there's a programming puzzle and it's up to the solver how they come up with an answer, so it's a good opportunity for trying out new programming languages on small exercises. Programming puzzles aren't usually my thing, but this coincided with my Haskell learning, so why not? Apart from <a href="https://github.com/miiila/aoc2019">Míla with Scala</a>, I noticed other people joining: <a href="https://www.czechitas.cz/en/">Czechitas</a> director <a href="https://twitter.com/ditaprikrylova/status/1201177777011118080">Dita Přikrylová with Python</a>, my ex-colleague <a href="https://github.com/smizell/aoc/">Stephen Mizell with Racket</a>, and more. That motivated me to try it out. Except it was 2nd of December and I didn't even know how to print text in Haskell yet…</p>
+<figure><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Learning <a href="https://twitter.com/hashtag/Haskell?src=hash&amp;ref_src=twsrc%5Etfw">#Haskell</a>. My goal was to try it out in the <a href="https://twitter.com/hashtag/adventofcode?src=hash&amp;ref_src=twsrc%5Etfw">#adventofcode</a>, but I'll be happy if I get to printing stuff out to terminal within the end of the year.</p>— Honza Javorek (@honzajavorek) <a href="https://twitter.com/honzajavorek/status/1201608887302074373?ref_src=twsrc%5Etfw">December 2, 2019</a></blockquote>
+
+</figure><p>Albeit late, in the end I started with the puzzles. They usually contained some test inputs and expected outputs, so I thought about solving the puzzles in a test-driven way. I didn't want to dive into installing Haskell packages yet and I didn't find anything for testing in the standard library, so I decided to go with writing small CLI programs and verifying them with <a href="https://github.com/bats-core/bats-core">bats</a>. Bash tests also have the benefit that they will work with any language, if I decided to go with a different one later. Following the example of others, I've set up a <a href="https://github.com/honzajavorek/aoc/">repo with my solutions</a>.</p>
+<p>The first puzzles were okay. It was nice feeling to write my first Haskell program, and second, and third, and to practice the alien syntax and the functional approach. In the beginning, I felt like using Haskell for the puzzles is cheating. I just declaratively wrote down what I wanted and I got it. However, the puzzles got quickly harder and I found myself spending several hours per day solving them. And I don't think the language is to blame. I'd probably have the same issues when solving the problems with Python, which I know very well.</p>
+<p>As I mentioned, programming puzzles are not my thing, and usually they cause me more pain than joy. I used to play <a href="https://interlos.fi.muni.cz/">Interlos</a>, an online puzzle game organized by people from <a href="https://www.fi.muni.cz/">FI MUNI</a>, but I bailed out a few years back when I realized that each year, <em>despair</em> is the overwhelming emotion I'm getting from participating (in contrast with games for non-programmers such as <a href="http://www.hrasendvic.cz/">Sendvič</a>, which I can enjoy). I guess I'm not a "puzzle solver". I rather think of myself as a "project builder".</p>
+<p>Well, enough of excuses. The third day I spent 7 hours to solve the puzzle, and, despite my success, I felt like shit for the rest of the evening. I decided there are perhaps better ways to learn Haskell - or to spend my sabbatical, when we're at it. I dropped out from Advent of Code, and I soothed myself by reading <a href="https://functional.christmas">functional.christmas</a>, a nice resource <em>with no annoying puzzles!</em> someone sent me around that time.</p>
+<figure><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Although I enjoyed it as my first real experience with <a href="https://twitter.com/hashtag/haskell?src=hash&amp;ref_src=twsrc%5Etfw">#haskell</a>, I pretty much failed continuing <a href="https://twitter.com/hashtag/adventofcode?src=hash&amp;ref_src=twsrc%5Etfw">#adventofcode</a> as it was too time demanding.<br><br>This advent calendar though looks like something I could actually finish 🎄 <a href="https://twitter.com/hashtag/functionalprogramming?src=hash&amp;ref_src=twsrc%5Etfw">#functionalprogramming</a> <a href="https://twitter.com/hashtag/fp?src=hash&amp;ref_src=twsrc%5Etfw">#fp</a><br><br><a href="https://functional.christmas">functional.christmas</a></p>— Honza Javorek (@honzajavorek) <a href="https://twitter.com/honzajavorek/status/1204321603850366976?ref_src=twsrc%5Etfw">December 10, 2019</a></blockquote>
+
+</figure><p>Although I didn't continue with it, Advent of Code definitely gets credit for helping me to start writing my first Haskell programs. The first puzzles were exactly the sort of tasks I was able to solve with my very basic knowledge of the language.</p>
+<h2 id="first-real-world-project">First real-world project<small class="permalink"><a href="#first-real-world-project" title="Permanent link to this heading">#</a></small></h2>
+<p>I wasn't sure Haskell is going to be something I'll be doing from now on, but I didn't want to stop learning it until I build a real-world project. At least a small one, to really see how the language feels in practice.</p>
+<p>A few months ago my friend <a href="https://twitter.com/ikvasnica">Ivan Kvasnica</a>, who's proficient mainly with PHP, wanted to try out a new language. Python, or perhaps server-side JavaScript. I recommended him to learn syntax at <a href="https://learnxinyminutes.com/">Learn X in Y minutes</a> and to build a small project, as I think it's the most efficient way of learning (see the <a href="https://en.wikipedia.org/wiki/Project-based_learning">theory behind it</a>). In the end, Ivan implemented one of my silly ideas, and wrote a <a href="https://github.com/ikvasnica/bude-hezky">Bude Hezky? bot</a> in Python. It's a bot which checks weather and messages me 7pm every day if I should go cycling tomorrow.</p>
+<p>I'm so good in advising others! Well I wonder why I didn't start with Haskell at <a href="https://learnxinyminutes.com/docs/haskell/">Learn Haskell in Y minutes</a>?</p>
+<p>Anyway, I was looking for a small project idea. Some of my friends often forget when exactly the <a href="https://pyvo.cz/en/praha-pyvo/">Prague Python meetup</a> takes place (even though it's regularly on the third Wednesday of each month), so I decided to test my Haskell skills on a bot which would send out meetup reminders.</p>
+<p>The advantage of a project like this is that it's a small CLI app, and you don't need a sophisticated runtime to deploy it. <a href="https://circleci.com/">CircleCI</a> or <a href="https://github.com/features/actions">GitHub Actions</a> allow you to run code in basically any language, and they both support running your code on a schedule. So all you need to do is to put your code inside a GitHub repo and configure how, and how often your app should be executed. CircleCI has a <a href="https://circleci.com/docs/2.0/language-haskell/">ready-made tutorial on how to set up a Haskell project</a>, so it's easy to get started even with a language you don't know very well yet.</p>
+<p>Despite having the tutorial, I spent most of the time on understanding how to have a working project with <a href="https://docs.haskellstack.org/">Stack</a>. The tool is one of the most documented things I've encountered in Haskell ecosystem, and still, even after a lot of reading, I wasn't quite sure how it all works, and how to properly work with dependencies. Learning the packaging took away my excitement and I caught myself procrastinating the project. To be honest, I'd say learning Python packaging probably causes the same to people. Taking my hat off to <a href="https://www.npmjs.com/">npm</a>, which has an amazing developer experience, especially from the beginner's point of view.</p>
+<p><a href="https://junior.guru/practice/#opensource">I tell beginners to look for inspiration in Open Source</a>, and that's also what I tried when setting up my project. Unfortunately, as Haskell isn't very popular language, there is just about two real-world projects on GitHub: <a href="https://github.com/jgm/pandoc">Pandoc</a> and <a href="https://github.com/github/semantic">Semantic</a>. Perhaps I'm bad in searching GitHub, but I really couldn't find much else. I don't know where code of all the packages at <a href="https://hackage.haskell.org/">Hackage</a> is hosted.</p>
+<p>In the end, I got the best advice from the <a href="https://twitter.com/lexi_lambda">Alexis King</a>'s blog. There are <a href="https://lexi-lambda.github.io/tags/haskell.html">several articles tagged Haskell</a>, but I'd definitely point out <a href="https://lexi-lambda.github.io/blog/2018/02/10/an-opinionated-guide-to-haskell-in-2018/">An opinionated guide to Haskell in 2018</a> and <a href="https://lexi-lambda.github.io/blog/2016/06/12/four-months-with-haskell/">Four months with Haskell</a>. Later on when I was done with the app setup and I worked on processing dates &amp; time, <a href="https://two-wrongs.com/haskell-time-library-tutorial">A Haskell Time Library Tutorial</a> by Christoffer Stjernlöf served me as a great resource.</p>
+<figure><blockquote class="twitter-tweet"><p lang="en" dir="ltr">After failing to follow the <a href="https://twitter.com/hashtag/adventofcode?src=hash&amp;ref_src=twsrc%5Etfw">#adventofcode</a> I thought about making a small, real-world project in <a href="https://twitter.com/hashtag/Haskell?src=hash&amp;ref_src=twsrc%5Etfw">#Haskell</a> to test my skills. Here it's 😤 <br><br><a href="https://github.com/honzajavorek/pyvo_bot">https://github.com/honzajavorek/pyvo_bot</a></p>— Honza Javorek (@honzajavorek) <a href="https://twitter.com/honzajavorek/status/1208776915445792773?ref_src=twsrc%5Etfw">December 22, 2019</a></blockquote>
+
+</figure><p><a href="https://github.com/honzajavorek/pyvobot">It's done</a> and <a href="https://circleci.com/gh/honzajavorek/pyvo_bot/tree/master">it's working</a>, so if you use <a href="https://telegram.org/">Telegram</a> and you want to know that the next Prague Python meetup is about to be soon, subscribe to the <a href="https://t.me/pyvopraha">https://t.me/pyvopraha</a> Telegram channel.</p>
+<h2 id="how-does-haskell-feel">How does Haskell feel?<small class="permalink"><a href="#how-does-haskell-feel" title="Permanent link to this heading">#</a></small></h2>
+<p>Powerful! It takes just a few lines to implement your own clone of <a href="https://en.wikipedia.org/wiki/Vim_(text_editor)">Vim</a>:</p>
+<pre class="highlight"><code><span></span><span class="kr">import</span> <span class="nn">Control.Monad</span>
+
+<span class="nf">main</span> <span class="ow">=</span> <span class="kr">do</span>
+    <span class="n">line</span> <span class="ow">&lt;-</span> <span class="n">getLine</span>
+    <span class="n">when</span> <span class="p">(</span><span class="n">line</span> <span class="o">/=</span> <span class="s">":wq"</span><span class="p">)</span> <span class="o">$</span> <span class="n">main</span>
+</code></pre>
+
+
+<p><small markdown="1">
+    To run this on macOS, first run <code>brew install ghc</code> to install Haskell. Save the code as <code>vim.hs</code>, then execute <code>runhaskell vim.hs</code>. Done! You can type characters and finish each line with the return key. The program will keep confusing you until you <a href="https://github.com/hakluke/how-to-exit-vim/blob/master/README.md">exit</a> by typing <code>:wq</code>.
+</small></p>
+<h3 id="latin">Latin<small class="permalink"><a href="#latin" title="Permanent link to this heading">#</a></small></h3>
+<p>Okay, now seriously. Learning Haskell feels like if I was a Chinese and I decided to learn Latin. It's not very practical, but it gets me a strong foundation for learning almost any contemporary European language, and it gives me an intro to the cultural background. I'd say Haskell and Lisp are like Latin and Greek of functional programming. Many other functional languages adopt Haskell's theory, naming, syntax, type declarations, etc. At the LambdUp conference it felt like if an F# person wants to talk to a Closure person, they talk in Haskell. When I went through <a href="https://functional.christmas/2019/4">this issue</a> of <a href="https://functional.christmas/">functional.christmas</a>, I was surprised that the Elm code examples were almost valid Haskell.</p>
+<h3 id="math">Math<small class="permalink"><a href="#math" title="Permanent link to this heading">#</a></small></h3>
+<p>If SQL or Python read like an English sentence, then Haskell reads like math. Feels like math. It <em>is</em> math. It's like if someone copied a page of your university math course workbook using only ASCII letters, and saved it as <code>.hs</code>. The <code>/=</code> operator is much closer to ≠ than <code>!=</code>, which can be found in other languages. Naming functions <code>foo'</code> is completely normal in Haskell, even inside the standard library. You know what I mean. Basically, you see the code and automatically your head reads it with your math professor's voice:</p>
+<blockquote>
+<p><code>parseDay line</code> equals <code>fromGregorianValid y m d</code>, where <code>y</code> equals…, <code>m</code> equals…, and <code>d</code> equals…</p>
+</blockquote>
+<p>This can be a bit challenging for people who have always been bad at math, like me.</p>
+<h3 id="types">Types<small class="permalink"><a href="#types" title="Permanent link to this heading">#</a></small></h3>
+<p>One thing, which is very different from what I know, is types. It's a long time since I've been doing anything in C, C++, or Java. Most of my career I'm writing PHP, Python, or JavaScript. Haskell is a strongly typed language, and designing a program in such environment can get very different from what I'm used to do in Python. I didn't really play with TypeScript much and I'm yet to try out <a href="https://realpython.com/python-type-checking/">Python's type annotations</a>. In Haskell, types are everything. Read the <a href="https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/">Parse, don’t validate</a> article by Alexis King and you'll get what I mean. So far I'm a noob around this. I need more practice to learn how to use types as a powerful, active element of my program, not just as something I'm trying to get somehow right so my code compiles.</p>
+<h3 id="motto">Motto<small class="permalink"><a href="#motto" title="Permanent link to this heading">#</a></small></h3>
+<p>The same way Python has its <a href="https://www.python.org/dev/peps/pep-0020/">Zen</a>, Haskell seems to have the following motto:</p>
+<blockquote>
+<p>Worst practices should be hard</p>
+</blockquote>
+<p>I found a good explanation of the motto in an unsurprisingly titled article <a href="http://www.haskellforall.com/2016/04/worst-practices-should-be-hard.html">Worst practices should be hard</a> by Gabriel Gonzalez. To me, it feels like a very powerful concept not only when designing a programming language, but when designing virtually anything.</p>
+<h2 id="downsides">Downsides<small class="permalink"><a href="#downsides" title="Permanent link to this heading">#</a></small></h2>
+<p>Haskell definitely feels very powerful and elegant. There are some parts of it though which I found, ehm, suboptimal.</p>
+<p>The <code>String</code> vs <code>Text</code> dichotomy is very annoying. It's very well described in the chapter <strong>The String problem</strong> of the <a href="https://lexi-lambda.github.io/blog/2016/06/12/four-months-with-haskell/">Four months with Haskell</a>, so go an read it.</p>
+<p>The ecosystem feels like a mess. Cabal, Stack, packages, it all seems everything but straightforward. I couldn't get my head around how it works. Why Stack downloads half of the internet to my computer before installing any packages? Why it then refuses to install a package I found on <a href="https://hackage.haskell.org/">Hackage</a>? Very early I got into some version mismatches or whatever it was, without any luck finding out what's the problem and what is the preferred way to solve it.</p>
+<p>Which brings me to <em>no documentation</em>. And when I say no, I really mean none, nothing, nada. The most annoying downside! It seems Haskell people consider type declarations to be enough prose to be considered as documentation. That feels very, <em>very</em> uninviting. I'm fine reading type declarations, but sometimes I just need more explanation, perhaps even a tutorial. Well, most of the packages I found had nothing but a heading in their README! Not even a single usage example. Apart from trying to stumble upon random blog articles on the internet, I was basically left with reading code, or with trial and error. Some people tell me Python docs aren't sufficient. Well, from now on I'll be sending them to check out Haskell. They'll return crying and begging for forgiveness!</p>
+<p>Also, I'm super scared of the <a href="https://hackage.haskell.org/package/lens">lens</a> library. It's implementing the <a href="https://www.linkedin.com/pulse/functional-lenses-javascript-vladim%C3%ADr-gorej/">concept of lenses</a>, which I'm okay with, but in a way that it seems like a separate language within Haskell. Luckily, I didn't need to use it much.</p>
+<h2 id="try-haskell">Try Haskell<small class="permalink"><a href="#try-haskell" title="Permanent link to this heading">#</a></small></h2>
+<p>How can you start playing with Haskell? Installing Haskell on macOS is easy with <a href="https://brew.sh/">Homebrew</a>:</p>
+<pre class="highlight"><code><span></span>$ brew install ghc
+</code></pre>
+
+
+<p>Originally, I didn't know at all that Haskell can be also interpreted. You can run your first program in a similar manner as your first Python program:</p>
+<pre class="highlight"><code><span></span>$ runhaskell hello.hs
+</code></pre>
+
+
+<p>This helped me a lot in the beginning. Haskell also has a <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">REPL</a>, which you can run as follows:</p>
+<pre class="highlight"><code><span></span>$ ghci
+</code></pre>
+
+
+<p>If you only want to try Haskell without installing it, you can paste your code to <a href="http://tryhaskell.org/">tryhaskell.org</a>.</p>
+<h2 id="resources">Resources<small class="permalink"><a href="#resources" title="Permanent link to this heading">#</a></small></h2>
+<p>If I was to continue with learning Haskell, I'd probably dive into the following:</p>
+<ul>
+<li>I'd try to finish <a href="http://learnyouahaskell.com/">LYAH</a>,</li>
+<li>I'd take a look at <a href="http://book.realworldhaskell.org/read/">RWH</a> and <a href="http://www.happylearnhaskelltutorial.com/">HLHT</a>,</li>
+<li>I'd play around with the <a href="https://haskellhero.grifart.cz/">Haskell Hero</a> (Czech),</li>
+<li>I'd go through <a href="http://dev.stephendiehl.com/hask/">What I Wish I Knew When Learning Haskell</a>,</li>
+<li>and I'd make <a href="https://www.reddit.com/r/haskell/">/r/haskell</a> a central part of my life, as it seems to contain a lot of tips, answers, and good advice on books and projects. I'd proactively ask there about anything I'm confused about.</li>
+</ul>
+<h2 id="what-next">What next?<small class="permalink"><a href="#what-next" title="Permanent link to this heading">#</a></small></h2>
+<p>Honestly, I don't know if I'll continue learning Haskell. I didn't have a clear goal when I started with it. I wanted to get know better something I thought is divine for many years. I expected a hardcore intro to functional programming. I don't think anymore that Haskell is divine, and I definitely got a good intro to FP. I think I could have spent more time on playing with Haskell's types and properly handling all corner/error cases.</p>
+<p>Perhaps one day Haskell will compile to <a href="https://webassembly.org/">WebAssembly</a> and that will make it more popular, but meanwhile, I think I'll take a look at something else. Elm? Closure?</p>
+<figure><blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you like Java, program in Java. If you like C#, program in C#. If you like Ruby, Swift, Dart, Elixr, Elm, C++, Python, or even C; by all means use those languages. <br><br>But whatever you do, learn Clojure, and learn it well.</p>— Uncle Bob Martin (@unclebobmartin) <a href="https://twitter.com/unclebobmartin/status/1214906676840669184?ref_src=twsrc%5Etfw">January 8, 2020</a></blockquote>
+
+</figure><p>Perhaps courting Haskell won't work out in the end, but I'm pretty sure that I'm not about to stop courting functional programming any soon. Did you know there's a whole <a href="https://docs.python.org/3/howto/functional.html">page on functional programming in Python</a> in its documentation? I didn't!</p></div>
+  </div>
+  <div class="article-comments">
+    <h3>Comment&nbsp;at</h3>
+    <ul>
+      <li>
+        <a href="https://www.facebook.com/honzajavorek/posts/10157720662087707">
+          <i class="fa fa-facebook-official"></i>&nbsp;Facebook</a>
+      </li>
+      <li>
+        <a href="https://news.ycombinator.com/item?id=22044262">
+          <i class="fa fa-hacker-news"></i>&nbsp;Hacker News</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/posts/honzajavorek_courting-haskell-honza-javorek-activity-6625070791035756544-J3Hr">
+          <i class="fa fa-linkedin"></i>&nbsp;LinkedIn</a>
+      </li>
+      <li>
+        <a href="https://www.reddit.com/r/haskell/comments/eokuao/blog_post_courting_haskell_honza_javorek/">
+          <i class="fa fa-reddit"></i>&nbsp;Reddit</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/honzajavorek/status/1217065971707449345">
+          <i class="fa fa-twitter"></i>&nbsp;Twitter</a>
+      </li>
+    </ul>
+  </div>
+  <footer class="article-footer">
+    <div id="author" class="author">
+      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
+      <address>
+<a href="https://honzajavorek.cz">Honza Javorek</a> is a software engineer and
+a founder of <a href="https://junior.guru/">junior.guru</a>, a Czech project helping
+people to get their first job in tech. Since 2011 he's been helping
+to drive the growth and success
+of the <a href="https://python.cz/en/">Czech Python User&nbsp;Group</a>.      </address>
+    </div>
+    <p class="button">
+        <a href="https://honzajavorek.cz/blog/">
+          <i class="fa fa-list-ul"></i> Articles archive
+        </a>
+    </p>
+  </footer>
+</article>
+      </div>
+      <footer class="footer">
+        <address>
+          © Copyright 2007—2020
+          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+  </body>
+</html>

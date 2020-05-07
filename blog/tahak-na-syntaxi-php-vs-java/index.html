@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/tahak-na-syntaxi-php-vs-java/">
+    <title>Tahák na syntaxi: PHP VS. Java &mdash; Honza Javorek</title>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1316071-6"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-1316071-6');
+      </script>
+
+    <meta property="og:title" content="Tahák na syntaxi: PHP VS. Java &mdash; Honza Javorek">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/tahak-na-syntaxi-php-vs-java/">
+    <meta name="twitter:creator" content="@honzajavorek">
+    <meta name="twitter:site" content="@honzajavorek">
+
+          <meta property="og:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+      <meta name="twitter:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+      <meta name="twitter:card" content="summary">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Honza Javorek &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2008-03-30T18:05:00+02:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <div class="content">
+<article class="article">
+  <header class="article-header">
+    <h1>
+      <a href="https://honzajavorek.cz/blog/tahak-na-syntaxi-php-vs-java/" rel="bookmark">
+        Tahák na syntaxi: PHP VS. Java
+      </a>
+    </h1>
+  </header>
+  <footer class="article-info">
+    <ul>
+      <li class="article-published">
+        <small>
+          <time datetime="2008-03-30T18:05:00+02:00">
+            30. 3. 2008
+          </time>
+        </small>
+      </li>
+      <li class="article-author">
+        <small>
+          <a href="#author">Honza Javorek</a>
+        </small>
+      </li>
+    <ul>
+  </footer>
+  <div class="article-content">
+      <div class="article-warning">
+        <p>
+          <strong>Upozornění!</strong> Tento článek vyšel
+          před 12 lety.
+          Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
+          že dnes se Honza již nemusí s obsahem ztotožňovat.
+        </p>
+      </div>
+
+    <div><p>Ano, můžeme si otevřít knihy, můžeme zkoumat <a href="http://en.wikipedia.org/wiki/PHP_syntax_and_semantics">PHP syntaxi</a> nebo <a href="http://en.wikipedia.org/wiki/Java_syntax">Java syntaxi</a> na Wikipedii, číst si v referenčních webech… Ale to je zdlouhavé. Nabízím malý tahák pro stejně konvertované jako já – z PHP na Javu. Nesnažil jsem se o nic komplexního, Javu se z toho nenaučíte. Jde jen o výčet nejzákladnějších rozdílů v syntaxi, které se mohou plést, zvláště když jsou zažité…</p>
+<div class="table"><table>
+    <tr>
+        <th>
+            část syntaxe
+        </th>
+        <th>
+            PHP
+        </th>
+        <th>
+            Java
+        </th>
+    </tr>
+    <tr>
+        <td>
+            konstruktor
+        </td>
+        <td>
+            <code>__construct()</code>, <code>Class()</code>
+        </td>
+        <td>
+            <code>Class()</code>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            toString
+        </td>
+        <td>
+            <code>$object-&gt;__toString()</code>
+        </td>
+        <td>
+            <code>object.toString()</code>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            přístup ke statické proměnné/metodě
+        </td>
+        <td>
+            <code>Class::$name</code>, <code>Class::name()</code>
+        </td>
+        <td>
+            <code>Class.name</code>, <code>Class.name()</code>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            přístup k vlastní statické proměnné/metodě
+        </td>
+        <td>
+            <code>self::$name</code>, <code>self::name()</code>
+        </td>
+        <td>
+            <code>name</code>, <code>Class.name</code>, <code>name()</code>, <code>Class.name()</code>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            přístup k proměnné/metodě
+        </td>
+        <td>
+            <code>$object-&gt;name</code>, <code>$object-&gt;name()</code>
+        </td>
+        <td>
+            <code>object.name</code>, <code>object.name()</code>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            přístup k vlastní proměnné/metodě
+        </td>
+        <td>
+            <code>$this-&gt;name</code>, <code>$this-&gt;name()</code>
+        </td>
+        <td>
+            <code>name</code>, <code>this.name</code>, <code>name()</code>, <code>this.name()</code>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            (statická) konstanta
+        </td>
+        <td>
+            <code>const NAME</code>
+        </td>
+        <td>
+            <code>static final type NAME</code>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            přístup ke konstantě
+        </td>
+        <td>
+            <code>self::NAME</code>, <code>Class::NAME</code>
+        </td>
+        <td>
+            <code>NAME</code>, <code>Class.NAME</code>
+        </td>
+    </tr>
+</table>
+
+</div><p>Mimochodem, když jsem hledal něco takového jako tento článek na internetu, narazil jsem na <a href="http://www.blueshoes.org/en/developer/php_cheat_sheet/">pěkný tahák pro PHP</a>.</p></div>
+  </div>
+  <footer class="article-footer">
+    <div id="author" class="author">
+      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
+      <address>
+          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
+          a tvůrce projektu <a href="https://junior.guru/">junior.guru</a>,
+          pomáhajícího lidem získat svou první práci v IT. Od roku 2011
+          pomáhá budovat českou komunitu kolem jazyka
+          <a href="https://python.cz/">Python</a>.
+      </address>
+    </div>
+    <p class="button">
+        <a href="https://honzajavorek.cz/blog/">
+          <i class="fa fa-list-ul"></i> Archiv článků
+        </a>
+    </p>
+  </footer>
+</article>
+      </div>
+      <footer class="footer">
+        <address>
+          © Copyright 2007—2020
+          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+  </body>
+</html>

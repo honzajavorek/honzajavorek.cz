@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/parametry-firefoxu/">
+    <title>Parametry Firefoxu &mdash; Honza Javorek</title>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1316071-6"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-1316071-6');
+      </script>
+
+    <meta property="og:title" content="Parametry Firefoxu &mdash; Honza Javorek">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/parametry-firefoxu/">
+    <meta name="twitter:creator" content="@honzajavorek">
+    <meta name="twitter:site" content="@honzajavorek">
+
+          <meta property="og:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+      <meta name="twitter:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+      <meta name="twitter:card" content="summary">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Honza Javorek &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2008-01-23T11:58:00+01:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <div class="content">
+<article class="article">
+  <header class="article-header">
+    <h1>
+      <a href="https://honzajavorek.cz/blog/parametry-firefoxu/" rel="bookmark">
+        Parametry Firefoxu
+      </a>
+    </h1>
+  </header>
+  <footer class="article-info">
+    <ul>
+      <li class="article-published">
+        <small>
+          <time datetime="2008-01-23T11:58:00+01:00">
+            23. 1. 2008
+          </time>
+        </small>
+      </li>
+      <li class="article-author">
+        <small>
+          <a href="#author">Honza Javorek</a>
+        </small>
+      </li>
+    <ul>
+  </footer>
+  <div class="article-content">
+      <div class="article-warning">
+        <p>
+          <strong>Upozornění!</strong> Tento článek vyšel
+          před 12 lety.
+          Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
+          že dnes se Honza již nemusí s obsahem ztotožňovat.
+        </p>
+      </div>
+
+    <div><p><img alt="obrázek" class="right" src="https://honzajavorek.cz/images/37.jpg">Většina z nich klikne na ikonku modrého Exploreru. Většina z nás klikne na ikonku Firefoxu. Někteří z nás spustí <a href="https://honzajavorek.cz/blog/launchy/">Launchy</a> a na nic neklikají. Někteří se <a href="https://honzajavorek.cz/blog/png-a-internet-explorer/">nebojí příkazového řádku</a>.</p>
+<p>Firefox lze spouštět i z CLI, popřípadě jej obdařit parametry v zástupci. Co tím získáme? Můžeme vynutit nějaké chování nebo použít Firefox ve skriptech pro operační systém. Parametry samozřejmě fungují jak na Linuxu, tak ve Windows:</p>
+<pre class="highlight"><code><span></span>firefox -p
+</code></pre>
+
+
+<p>Samozřejmě vám musí Firefox stát „v cestě“, čehož docílíte nejlépe tak, že před něj přidáte cestu k jeho instalaci/binárce. Ve Windows toho lze využít při tvorbě zástupců.</p>
+<h2 id="uzitecne-paramtery">Užitečné paramtery<small class="permalink"><a href="#uzitecne-paramtery" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<ul>
+<li><code>-profile &lt;cesta&gt;</code> spustí se s předaným profilem</li>
+<li><code>-CreateProfile &lt;název&gt; &lt;cesta&gt;</code> vytvoří nový profil</li>
+<li><code>-ProfileManager</code> spustí se se správcem profilů</li>
+<li><code>&lt;internetová adresa&gt;</code> otevře stránku</li>
+<li><code>-new-window &lt;adresa&gt;</code> spustí v novém okně</li>
+<li><code>-new-tab &lt;adresa&gt;</code> spustí v novém panelu</li>
+<li><code>-search &lt;slova&gt;</code> vyhledá slova ve výchozím vyhledávači</li>
+<li><code>-chat</code> spustí se s IRC klientem ChatZillou, pokud jej máte</li>
+<li><code>-safe-mode</code> spustí se v záchranném režimu (bez rozšíření apod.)</li>
+<li><code>-height &lt;číslo&gt;</code> spustí se s předanou výškou okna</li>
+<li><code>-width &lt;číslo&gt;</code> spustí se s předanou šířkou okna</li>
+<li><code>-setDefaultBrowser</code> Firefox se nastaví jako výchozí browser</li>
+</ul>
+<p>Přesný seznam se všemi detaily lze samozřejmě najít <a href="http://developer.mozilla.org/en/docs/Command_Line_Options">v angličtině v dokumentaci Mozilly</a>.</p></div>
+  </div>
+  <footer class="article-footer">
+    <div id="author" class="author">
+      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
+      <address>
+          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
+          a tvůrce projektu <a href="https://junior.guru/">junior.guru</a>,
+          pomáhajícího lidem získat svou první práci v IT. Od roku 2011
+          pomáhá budovat českou komunitu kolem jazyka
+          <a href="https://python.cz/">Python</a>.
+      </address>
+    </div>
+    <p class="button">
+        <a href="https://honzajavorek.cz/blog/">
+          <i class="fa fa-list-ul"></i> Archiv článků
+        </a>
+    </p>
+  </footer>
+</article>
+      </div>
+      <footer class="footer">
+        <address>
+          © Copyright 2007—2020
+          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+  </body>
+</html>

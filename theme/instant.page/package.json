@@ -1,0 +1,57 @@
+{
+  "_args": [
+    [
+      "instant.page@3.0.0",
+      "/home/runner/work/honzajavorek.cz/honzajavorek.cz/theme"
+    ]
+  ],
+  "_from": "instant.page@3.0.0",
+  "_id": "instant.page@3.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-cWTCMZlMZ/CKtY7+Rf3ZgeNtNPP9Yv/glRyriOMym98OhF484N5dRES9qv8q2MgMPmNwUb6T9mEHMdffICbnzw==",
+  "_location": "/instant.page",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "instant.page@3.0.0",
+    "name": "instant.page",
+    "escapedName": "instant.page",
+    "rawSpec": "3.0.0",
+    "saveSpec": null,
+    "fetchSpec": "3.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/instant.page/-/instant.page-3.0.0.tgz",
+  "_spec": "3.0.0",
+  "_where": "/home/runner/work/honzajavorek.cz/honzajavorek.cz/theme",
+  "author": {
+    "name": "Alexandre Dieulot"
+  },
+  "bugs": {
+    "url": "https://github.com/instantpage/instant.page/issues"
+  },
+  "description": "Make your site’s pages instant in 1 minute and improve your conversion rate by 1%",
+  "directories": {
+    "test": "test"
+  },
+  "homepage": "https://instant.page/",
+  "keywords": [
+    "instant",
+    "performance"
+  ],
+  "license": "MIT",
+  "main": "instantpage.js",
+  "name": "instant.page",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/instantpage/instant.page.git"
+  },
+  "scripts": {
+    "minify": "uglifyjs ./instantpage.js --compress --mangle --toplevel --comments \"/^!/\" --output ./instantpage.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "3.0.0"
+}

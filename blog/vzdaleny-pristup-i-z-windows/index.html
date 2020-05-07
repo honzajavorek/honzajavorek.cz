@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/vzdaleny-pristup-i-z-windows/">
+    <title>Vzdálený přístup i z Windows &mdash; Honza Javorek</title>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1316071-6"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-1316071-6');
+      </script>
+
+    <meta property="og:title" content="Vzdálený přístup i z Windows &mdash; Honza Javorek">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/vzdaleny-pristup-i-z-windows/">
+    <meta name="twitter:creator" content="@honzajavorek">
+    <meta name="twitter:site" content="@honzajavorek">
+
+          <meta property="og:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+      <meta name="twitter:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+      <meta name="twitter:card" content="summary">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Honza Javorek &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2008-03-12T13:09:00+01:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <div class="content">
+<article class="article">
+  <header class="article-header">
+    <h1>
+      <a href="https://honzajavorek.cz/blog/vzdaleny-pristup-i-z-windows/" rel="bookmark">
+        Vzdálený přístup i z Windows
+      </a>
+    </h1>
+  </header>
+  <footer class="article-info">
+    <ul>
+      <li class="article-published">
+        <small>
+          <time datetime="2008-03-12T13:09:00+01:00">
+            12. 3. 2008
+          </time>
+        </small>
+      </li>
+      <li class="article-author">
+        <small>
+          <a href="#author">Honza Javorek</a>
+        </small>
+      </li>
+    <ul>
+  </footer>
+  <div class="article-content">
+      <div class="article-warning">
+        <p>
+          <strong>Upozornění!</strong> Tento článek vyšel
+          před 12 lety.
+          Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
+          že dnes se Honza již nemusí s obsahem ztotožňovat.
+        </p>
+      </div>
+
+    <div><p>Nemám Linux na počítači, nepohnul jsem CD/DVD mechanikou, flashka leží 30 cm od mého notebooku a přesto, přesto všechno jsem dnes na Linuxu kompiloval pár svých programů, spouštěl Firefox a četl PDF soubory. Jak jsem to dokázal? <strong>Vzdáleně jsem se připojil</strong> na školní server :) .</p>
+<h2 id="putty">PuTTY<small class="permalink"><a href="#putty" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Pokud se chce někdo <strong>z Windows připojit na Linux</strong> (či jinou mutaci UNIXu), má většinou v paměti šikovný prográmek, PuTTY. Jeden exe soubor a umí to divy. Více o PuTTY na <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">oficiálním webu</a>. Pokud se vám zdá původní PuTTY zaprášené a ohrané, zpestřete si život jeho <strong>sexy variací</strong> <a href="http://alian.info/index.php?option=com_content&amp;task=view&amp;id=1533">PuTTY Tray</a>.</p>
+<h2 id="ssh">SSH<small class="permalink"><a href="#ssh" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Chcete se připojovat z příkazového řádku ve Windows stejně jako to děláte na Linuxu? Chcete, aby vám stačilo pouhé</p>
+<pre class="highlight"><code><span></span>ssh &lt;server&gt; -l &lt;login&gt;
+</code></pre>
+
+
+<p>a mohli jste se hned poté oddávat orgiím v bashi uprostřed vod <code>cmd.exe</code>? Nainstalujte si <a href="http://sshwindows.sourceforge.net/">SSH pro Windows</a>. Příkaz <code>ssh</code> vám potom bude fungovat jednoduše i ve vašem okenním systému. Samozřejmě nemusíte SSH využívat jen pro připojení jinam, můžete si jednoduše <a href="http://pigtail.net/LRP/printsrv/cygwin-sshd.html">podle návodu</a> rozběhat <strong>svůj SSH server</strong> na Windows a vzdáleně se třeba ze školy <strong>připojovat na svůj počítač</strong> (pokud bude zapnutý :) ).</p>
+<h2 id="cygwin">Cygwin<small class="permalink"><a href="#cygwin" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Nestačí? Dobrá, dobrá… Přichází na řadu zabiják všech nedostatků Windows oproti UNIXům, <strong>Cygwin</strong>. Nebudu se rozepisovat co je <a href="http://www.cygwin.com/">Cygwin</a> nebo jak se instaluje. Psali o něm <a href="http://www.root.cz/clanky/cygwin-unix-ve-windows/">na Rootu</a>, snad docela srozumitelně <a href="http://www.jakpsatweb.cz/clanky/instalace-cygwin.html">na JPW</a> a samozřejmě <a href="http://myego.cz/item/cygwin-linux-pod-windows">se o něj otřel i Radek</a>. Cygwin je zabijákem především proto, že nemusíte instalovat do Windows všechny ony UNIXové věci zvlášť. Máte <strong>jeden balík emulující UNIX</strong>, z nějž odebíráte a do nějž přidáváte prográmky pomocí jednoho <code>setup.exe</code> a netrápíte se s instalací MinGW, SSHWindows atd. Když budete šikovní na <strong>stránce výběru aplikací</strong> během instalace Cygwinu, budete mít v systému <code>make</code>, <code>gcc</code>, <code>ssh</code>…</p>
+<p>Já jsem si navíc nainstaloval Cygwin na <code>C:\UNIX</code>, hned vedle <code>C:\WINDOWS</code> a složku <code>C:\UNIX\bin</code> jsem si přidal do PATH Windows, abych mohl cygwinovské prográmky spouštět odkudkoliv.</p>
+<h2 id="cygwinx">Cygwin/X<small class="permalink"><a href="#cygwinx" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Jak jsme si ale s Cygwinem polepšili ve vzdáleném připojení? Nu, nijak zvlášť ne – <code>ssh</code> je tam stejné jako v SSHWindows. Kouzelný Cygwin však přece nabízí něco navíc. Pokud při instalaci vyberete balík s portem <a href="http://www.x.org/">Xek</a> na Cygwin, takzvaným <a href="http://x.cygwin.com/">Cygwin/X</a>, můžete se připojit <strong>graficky</strong> (jestli vám to povolí server), pomocí <a href="http://en.wikipedia.org/wiki/X_display_manager#X_Display_Manager_Control_Protocol">XDMCP</a>. <a href="http://x.cygwin.com/docs/ug/using-remote-session.html">Oficiální návod</a> je samozřejmě k dispozici, ale pokusím se to vysvětlit lidsky.</p>
+<ol>
+<li>Na obrazovce <em>select packages</em> instalace Cygwinu klikejte na slovo <em>Default</em> u balíku X11 tak dlouho, až se místo něj objeví <em>Install</em>.</li>
+<li>Dokončíme instalaci.</li>
+<li>Spustíme si konzoli Cygwinu a zaútočíme na ni s následujícím příkazem: <code>XWin.exe -query &lt;server&gt;</code></li>
+<li>Měl by se vám začít vzdáleně spouštět desktop manager s přihlašovacím ok­nem.</li>
+</ol>
+<p>Jak to vypadá?</p>
+<figure><img alt="obrázek" src="https://honzajavorek.cz/images/55.jpg"></figure>
+<p>Popravdě, k ničemu jinému užitečnému Xka na Cygwinu využít nelze. Myslím si, že je to ale (alespoň pro mne) dostatečný přínos k jejich instalaci :) . Přeji příjemnou zábavu.</p>
+<h2 id="a-propos-co-fit">A propos, co FIT?<small class="permalink"><a href="#a-propos-co-fit" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Pro studenty FIT jen závěrečnou poznámku – osobně se mi takto graficky podařilo připojit jen na Merlina. Jiným se navíc nedaří připojovat se z míst mimo školní síť. Psal jsem e-mail administrátorům linuxových serverů a odpověď je takováto:</p>
+<blockquote>
+<p>…na eve nebezi XDMCP server, pristup na merlina je omezen na sit VUT protoze generuje znacny traffic a predevsim se jedna o nezabezpeceny datovy tok.</p>
+</blockquote>
+<p>Druhý den však přišla ještě odpověď od inženýra Lampy:</p>
+<blockquote>
+<p>Vzhledem k male bezpecnosti X protokolu a XDMCP se dnes obvykle pouziva pro vzdalene pripojeni ssh X11 forwarding.</p>
+</blockquote>
+<p>Na fórech po internetu jsem pak zjistil, jak na Cygwinu X11 forwarding rozběhat. Je to docela jednoduché…</p>
+<ol>
+<li>V terminálu Cygwinu napíšeme <code>xstart</code>, abychom si spustili svá lokální Xka.</li>
+<li>Ve spuštěném xtermu napíšeme upravený příkaz pro SSH (přepínač -Y) <code>ssh -Y &lt;server&gt; -l &lt;login&gt;</code>.</li>
+<li>Jsme na vzdáleném serveru a můžeme spouštět grafické aplikace. Podařilo se mi na zkoušku spustit <code>xterm</code>, <code>gvim</code>, <code>firefox</code>.</li>
+</ol>
+<p>A je to :) . Dle mého skromného názoru by toto mělo jet i mimo rozsah IP adres VUT Brno.</p></div>
+  </div>
+  <footer class="article-footer">
+    <div id="author" class="author">
+      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
+      <address>
+          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
+          a tvůrce projektu <a href="https://junior.guru/">junior.guru</a>,
+          pomáhajícího lidem získat svou první práci v IT. Od roku 2011
+          pomáhá budovat českou komunitu kolem jazyka
+          <a href="https://python.cz/">Python</a>.
+      </address>
+    </div>
+    <p class="button">
+        <a href="https://honzajavorek.cz/blog/">
+          <i class="fa fa-list-ul"></i> Archiv článků
+        </a>
+    </p>
+  </footer>
+</article>
+      </div>
+      <footer class="footer">
+        <address>
+          © Copyright 2007—2020
+          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+  </body>
+</html>

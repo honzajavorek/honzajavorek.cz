@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/hamachi-na-ubuntu/">
+    <title>Hamachi na Ubuntu &mdash; Honza Javorek</title>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1316071-6"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-1316071-6');
+      </script>
+
+    <meta property="og:title" content="Hamachi na Ubuntu &mdash; Honza Javorek">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/hamachi-na-ubuntu/">
+    <meta name="twitter:creator" content="@honzajavorek">
+    <meta name="twitter:site" content="@honzajavorek">
+
+          <meta property="og:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+      <meta name="twitter:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+      <meta name="twitter:card" content="summary">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Honza Javorek &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2010-11-08T18:11:00+01:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <div class="content">
+<article class="article">
+  <header class="article-header">
+    <h1>
+      <a href="https://honzajavorek.cz/blog/hamachi-na-ubuntu/" rel="bookmark">
+        Hamachi na Ubuntu
+      </a>
+    </h1>
+  </header>
+  <footer class="article-info">
+    <ul>
+      <li class="article-published">
+        <small>
+          <time datetime="2010-11-08T18:11:00+01:00">
+            8. 11. 2010
+          </time>
+        </small>
+      </li>
+      <li class="article-author">
+        <small>
+          <a href="#author">Honza Javorek</a>
+        </small>
+      </li>
+    <ul>
+  </footer>
+  <div class="article-content">
+      <div class="article-warning">
+        <p>
+          <strong>Upozornění!</strong> Tento článek vyšel
+          před 10 lety.
+          Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
+          že dnes se Honza již nemusí s obsahem ztotožňovat.
+        </p>
+      </div>
+
+    <div><p>Opět využiju svého blogísku jako zápisníku, kam utrousím věci, jež nechci zapomenout. Brzy mě čeká zase instalace Ubuntu a tak budu potřebovat vědět, že pokud na něm chci mít funkční Hamachi (kvůli klientovi), musím…</p>
+<h2 id="jak-nainstalovat-hamachi">Jak nainstalovat Hamachi<small class="permalink"><a href="#jak-nainstalovat-hamachi" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Stáhnout <a href="http://files.hamachi.cc/linux/hamachi-0.9.9.9-20-lnx.tar.gz">Hamachi pro Linux</a> a rozbalit. Potom:</p>
+<pre class="highlight"><code><span></span>$ sudo apt-get install build-essential   <span class="c1"># máme vše potřebné pro instalaci?</span>
+$ sudo make install   <span class="c1"># instalujeme</span>
+$ sudo tuncfg   <span class="c1"># nastavení tuneláže</span>
+$ hamachi-init -f   <span class="c1"># vytvoření metadat Hamachi v ~/</span>
+$ hamachi start   <span class="c1"># start Hamachi</span>
+$ hamachi login   <span class="c1"># přihlášení do Hamachi</span>
+</code></pre>
+
+
+<h2 id="jak-pouzivat-hamachi">Jak používat Hamachi<small class="permalink"><a href="#jak-pouzivat-hamachi" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Další práce s Hamachi, tedy nastavení jména, přihlášení do skupiny, nastavení online stavu a výpis toho co vidím:</p>
+<pre class="highlight"><code><span></span>$ hamachi set-nick <span class="o">[</span>nick<span class="o">]</span>
+$ hamachi join <span class="o">[</span>network<span class="o">]</span> <span class="o">[</span>password<span class="o">]</span>
+$ hamachi go-online <span class="o">[</span>network<span class="o">]</span>
+$ hamachi list
+</code></pre>
+
+
+<h2 id="zajimave-odkazy">Zajímavé odkazy<small class="permalink"><a href="#zajimave-odkazy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<ul>
+<li><a href="http://www.webupd8.org/2010/05/script-to-install-hamachi-with-gui-in.html">GUI pro Hamachi</a></li>
+<li><a href="http://www.supware.net/other-fun-stuff/hamachiubuntuhowto/">Poměrně komplexní návod na Hamachi</a> (vytisknout a přečíst v důchodu nebo na záchodě)</li>
+<li><a href="http://ubuntuforums.org/showthread.php?t=135036">Návod na UbuntuForums, Hamachi jako služba s VPN</a></li>
+<li><a href="http://logmeinwiki.com/wiki/Hamachi:Install_on_Linux">Oficiální návod</a></li>
+<li><a href="https://forums.hamachi.cc/viewforum.php?f=15">Oficiální fórum</a></li>
+<li><a href="http://logmeinwiki.com/wiki/Hamachi:Uninstall_on_Linux">Jak odinstalovat</a></li>
+</ul>
+<h2 id="zkusenost">Zkušenost<small class="permalink"><a href="#zkusenost" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Nejlepší způsob, jak používat Hamachi, je vyhnout se mu.</p></div>
+  </div>
+  <footer class="article-footer">
+    <div id="author" class="author">
+      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
+      <address>
+          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
+          a tvůrce projektu <a href="https://junior.guru/">junior.guru</a>,
+          pomáhajícího lidem získat svou první práci v IT. Od roku 2011
+          pomáhá budovat českou komunitu kolem jazyka
+          <a href="https://python.cz/">Python</a>.
+      </address>
+    </div>
+    <p class="button">
+        <a href="https://honzajavorek.cz/blog/">
+          <i class="fa fa-list-ul"></i> Archiv článků
+        </a>
+    </p>
+  </footer>
+</article>
+      </div>
+      <footer class="footer">
+        <address>
+          © Copyright 2007—2020
+          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+  </body>
+</html>

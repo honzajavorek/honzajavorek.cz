@@ -1,0 +1,79 @@
+{
+  "_args": [
+    [
+      "fork-awesome@1.1.7",
+      "/home/runner/work/honzajavorek.cz/honzajavorek.cz/theme"
+    ]
+  ],
+  "_from": "fork-awesome@1.1.7",
+  "_id": "fork-awesome@1.1.7",
+  "_inBundle": false,
+  "_integrity": "sha512-IHI7XCSXrKfUIWslse8c/PaaVDT1oBaYge+ju40ihL2ooiQeBpTr4wvIXhgTd2NuhntlvX+M5jYHAPTzNlmv0g==",
+  "_location": "/fork-awesome",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "fork-awesome@1.1.7",
+    "name": "fork-awesome",
+    "escapedName": "fork-awesome",
+    "rawSpec": "1.1.7",
+    "saveSpec": null,
+    "fetchSpec": "1.1.7"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/fork-awesome/-/fork-awesome-1.1.7.tgz",
+  "_spec": "1.1.7",
+  "_where": "/home/runner/work/honzajavorek.cz/honzajavorek.cz/theme",
+  "author": {
+    "name": "Fork Awesome Community"
+  },
+  "bugs": {
+    "url": "http://github.com/ForkAwesome/Fork-Awesome/issues"
+  },
+  "dependencies": {},
+  "description": "A fork of the iconic font and CSS framework",
+  "devDependencies": {
+    "all-contributors-cli": "^6.1.1",
+    "less": "^2.7.3",
+    "less-plugin-clean-css": "^1.5.1",
+    "svgo": "^1.1.1"
+  },
+  "engines": {
+    "node": ">=0.10.3"
+  },
+  "homepage": "https://forkawesome.github.io/Fork-Awesome",
+  "jsdelivr": "css/fork-awesome.min.css",
+  "keywords": [
+    "font",
+    "awesome",
+    "forkawesome",
+    "fontawesome",
+    "icon",
+    "bootstrap"
+  ],
+  "license": "(OFL-1.1 AND MIT)",
+  "main": [
+    "css/fork-awesome.min.css",
+    "fonts/forkawesome-webfont.eot",
+    "fonts/forkawesome-webfont.svg",
+    "fonts/forkawesome-webfont.ttf",
+    "fonts/forkawesome-webfont.woff",
+    "fonts/forkawesome-webfont.woff2"
+  ],
+  "name": "fork-awesome",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ForkAwesome/Fork-Awesome.git"
+  },
+  "scripts": {
+    "build": "bundle exec jekyll build",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate",
+    "dev": "bundle exec jekyll serve -w"
+  },
+  "style": "css/fork-awesome.css",
+  "version": "1.1.7"
+}

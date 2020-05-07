@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/reviving-my-blog/">
+    <title>Reviving my blog &mdash; Honza Javorek</title>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1316071-6"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-1316071-6');
+      </script>
+
+    <meta property="og:title" content="Reviving my blog &mdash; Honza Javorek">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/reviving-my-blog/">
+    <meta name="twitter:creator" content="@honzajavorek">
+    <meta name="twitter:site" content="@honzajavorek">
+
+          <meta property="og:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+      <meta name="twitter:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+      <meta name="twitter:card" content="summary">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Honza Javorek &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2019-12-31T14:36:00+01:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <div class="content">
+<article class="article">
+  <header class="article-header">
+    <h1>
+      <a href="https://honzajavorek.cz/blog/reviving-my-blog" rel="bookmark">
+        Reviving my blog
+      </a>
+    </h1>
+  </header>
+  <footer class="article-info">
+    <ul>
+      <li class="article-published">
+        <small>
+          <time datetime="2019-12-31T14:36:00+01:00">
+            Dec 31, 2019
+          </time>
+        </small>
+      </li>
+      <li class="article-author">
+        <small>
+          <a href="#author">Honza Javorek</a>
+        </small>
+      </li>
+    <ul>
+  </footer>
+  <div class="article-content">
+
+    <div><p>This blog hasn't seen a new article for almost a year and half now. <strong>It's not dead though</strong> - at least not on purpose. I still think about article ideas, and about finding time to sit down and publish new texts here. It's just that lately I was quite busy (getting married, leaving my job…) and blogging wasn't my priority. I'd like to get back to it now, with a few things changed.</p>
+<h2 id="so-old-that-its-cool-again">So old that it's cool again<small class="permalink"><a href="#so-old-that-its-cool-again" title="Permanent link to this heading">#</a></small></h2>
+<p>Sure, I know it's 2020 in a few hours. I know blogging is way past its original charm and in 2020 I should definitely go with a YouTube channel, SoundCloud podcast, or at least turn this into a Substack newsletter. Well, thanks but no. This blog has existed since 2007 and it's going to go on as it is - my personal, <strong>independent</strong> platform for sharing my thoughts in a written form. First, I like writing, and second, I like the fact that this site is just a boring text inside a boring HTML file, hosted on my own boring domain. Because that's how it survived 10+ years. It's a relict of the oldschool web, where sites were made for fun and not for profit.</p>
+<h2 id="purer">Purer<small class="permalink"><a href="#purer" title="Permanent link to this heading">#</a></small></h2>
+<p>I wanted to embrace this with my latest changes. <strong>I removed all share buttons, Twitter's scripts, Google's fonts. I removed Disqus comments.</strong> If you wish to react to my articles, use social network of your choice - it is their job to fascilitate discussions. I'm keeping backup of the original comments made here under the old articles and maybe one day I'll parse the backup and display the comments statically under the texts, but it's not on my list right now. Also, I'm still keeping Google Analytics, but perhaps in the future that will go as well.</p>
+<h2 id="simpler">Simpler<small class="permalink"><a href="#simpler" title="Permanent link to this heading">#</a></small></h2>
+<p>I got inspired by the <a href="https://jeffhuang.com/designed_to_last/">Manifesto for Preserving Content on the Web</a>. I made the design simpler. I removed a lot of complexity which got here over the years. Not so long ago I built a new homepage at <a href="https://honzajavorek.cz">honzajavorek.cz</a>, with a refreshed design and updated info, but I made it using a separate app written in <a href="http://flask.pocoo.org/">Flask</a> and deployed using <a href="https://pythonhosted.org/Frozen-Flask/">Flask-Frozen</a>, while the rest of the site was still using <a href="https://docs.getpelican.com/">Pelican</a>. Because I wanted to be cool, I made the homepage app very "automagic" and modern, which manifested mainly in using <a href="https://sass-lang.com/">SCSS</a> for the design or Gravatar for my photo instead of a simple JPEG file.</p>
+<p>Also, the blog wasn't using just Pelican. In the past I thought it's smart to create a package called <a href="https://github.com/honzajavorek/danube-delta/">danube-delta</a> with shared configuration, theme, and plugins. This has been used on my site as well as on two other blogs, including the <a href="http://blog.python.cz/">blog.python.cz</a>, effectively turning them all into a distributed maintenance nightmare. Also the deployment was a duct-taped piece of crap, which included custom scripts, <a href="https://circleci.com/">CircleCI</a> night builds, <a href="https://pages.github.com/">GitHub Pages</a>, and many more pieces making the whole thing complex in the first place. The package was also trying to "automagically" create thumbnails, or make many other implicit guesses.</p>
+<blockquote>
+<p>Beautiful is better than ugly.<br>
+Explicit is better than implicit.<br>
+Simple is better than complex.<br></p>
+<p>— <a href="https://www.python.org/dev/peps/pep-0020/">Zen of Python</a></p>
+</blockquote>
+<p>I migrated the site to use Pelican exclusively. I replaced <code>pipenv</code> with good old <code>pip</code>. I rewritten everything into plain HTML, plain CSS, and plain ES5 JavaScript. I created an updated design for the blog matching the new homepage. It is even simpler than the previous one which I thought is the simplest possible. I'm not using any CSS frameworks or even CSS resets! The basic browser styling works pretty well so far, I only adapted it. I'm using default fonts and static JPEG images, now manually optimized with <a href="https://github.com/imagemin/imagemin-cli">imagemin</a>. I'm not doing any "automagic" transformations. I still have a few Pelican plugins, but they only fix a few things in the markup. Instead of "automagically" guessing what should be an article's image for previews on social media, I'm setting it explicitly in the article's metadata. Instead of generating thumbnails for large photos, I check size of the linked photos and if they're too large, I simply fail the build to deal with it manually.</p>
+<p><strong>The danube-delta package needs to go.</strong> In a way, it was an attempt to make Pelican more user-friendly for non-developers, but I think if that's a requirement, Pelican shouldn't be used. We should use something else for <a href="http://blog.python.cz/">blog.python.cz</a>, something focused on users in the first place, and then perhaps just automatically backup the site as static HTML or as Markdown files.</p>
+<h2 id="using-github-actions-and-zeit-now">Using GitHub Actions and ZEIT Now<small class="permalink"><a href="#using-github-actions-and-zeit-now" title="Permanent link to this heading">#</a></small></h2>
+<p>I removed CircleCI in favor of built-in <a href="https://github.com/features/actions">GitHub Actions</a>, but I replaced GitHub Pages with <a href="https://zeit.co/">ZEIT Now</a>, my current favorite place for hosting static pages. It gives me CDN, HTTPS, automatic deploys of my GitHub branches for live previews, and many more, including dynamic lambdas if I ever need them. Pelican isn't supported directly, so I needed to write custom <code>now.json</code> and <code>now.sh</code> files (see <a href="https://github.com/honzajavorek/honzajavorek.cz">the code here</a>), but it still feels somewhat more straightforward than deploying to GitHub Pages with the <code>gh-pages</code> branch and the <code>gh-import</code> utility, which was the previous setup here. Since ZEIT Now requires me to use their DNS, I'm using <a href="https://improvmx.com/">ImprovMX</a> for e-mail forwarding now instead of WEDOS, my domain name registrar.</p>
+<h2 id="polyglot">Polyglot<small class="permalink"><a href="#polyglot" title="Permanent link to this heading">#</a></small></h2>
+<p>One completely new thing here is an <strong>explicit support for translations</strong>, which is available in Pelican <a href="https://docs.getpelican.com/en/stable/content.html#translations">out of the box</a>. I had to tweak it a bit so it was able to keep my old URLs, but otherwise it seems to work like a charm - see <a href="https://honzajavorek.cz/blog/testing-in-javascript-and-in-python">Testing in JavaScript and in Python</a> for example. Any article can now clearly declare in which language it is written and translations are nicely interlinked. This also brings me to the fact that from now on, this blog won't continue with the name "Javorové lístky" anymore as I want my new articles to be primarily in English.</p>
+<h2 id="hjs-blog">HJ's blog<small class="permalink"><a href="#hjs-blog" title="Permanent link to this heading">#</a></small></h2>
+<p>Yeah, dropping the original name makes me sentimental too, but that's life. I can't really translate the name literally (misguided <a href="https://www.nhl.com/mapleleafs/">Maple Leafs</a> fans would start hitting my articles) and I was lazy to come up with a new cool name. There's no need for a separate brand name. From now on, this is just "my blog". <strong>HJ's blog.</strong> One era ends, another begins.</p></div>
+  </div>
+  <div class="article-comments">
+    <h3>Comment&nbsp;at</h3>
+    <ul>
+      <li>
+        <a href="https://www.facebook.com/honzajavorek/posts/10157684811687707">
+          <i class="fa fa-facebook-official"></i>&nbsp;Facebook</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/posts/honzajavorek_reviving-my-blog-honza-javorek-activity-6618211942764949504-dq6D">
+          <i class="fa fa-linkedin"></i>&nbsp;LinkedIn</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/honzajavorek/status/1212446176903094273">
+          <i class="fa fa-twitter"></i>&nbsp;Twitter</a>
+      </li>
+    </ul>
+  </div>
+  <footer class="article-footer">
+    <div id="author" class="author">
+      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
+      <address>
+<a href="https://honzajavorek.cz">Honza Javorek</a> is a software engineer and
+a founder of <a href="https://junior.guru/">junior.guru</a>, a Czech project helping
+people to get their first job in tech. Since 2011 he's been helping
+to drive the growth and success
+of the <a href="https://python.cz/en/">Czech Python User&nbsp;Group</a>.      </address>
+    </div>
+    <p class="button">
+        <a href="https://honzajavorek.cz/blog/">
+          <i class="fa fa-list-ul"></i> Articles archive
+        </a>
+    </p>
+  </footer>
+</article>
+      </div>
+      <footer class="footer">
+        <address>
+          © Copyright 2007—2020
+          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+  </body>
+</html>
