@@ -97,7 +97,7 @@ Tento blog běží na [Pelikánovi](https://docs.getpelican.com/) a z nějakého
 
 Během přesunu DNS z Vercelu zpět na WEDOS jsem samozřejmě zapomněl, že mám na subdoméně [honzajavorek.cz](https://honzajavorek.cz/) i Vercel aplikaci s tím film2trello, takže jsem ji tím zabil a pokud si se ženou budeme chtít posílat ČSFD stránky do Trella, budu to muset v blízké době opravit.
 
-## Skript na poznámky
+### Skript na poznámky
 
 No a naprogramoval jsem si taky ještě [weeknotes.py](https://github.com/honzajavorek/honzajavorek.cz/blob/master/weeknotes.py), skript, který mi pomůže připravit článek na další týdenní poznámky.
 
