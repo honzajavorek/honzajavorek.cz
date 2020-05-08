@@ -58,6 +58,14 @@ To document where on social networks the article has been shared, add the URLs t
 
 By default, the Open Graph image is set to my photo. To set a different image, add it to the `content/images` directory and set the `Image` meta data property in the article to the path to the image, e.g. `Image: images/foo.jpg`.
 
+## 🗓 Weeknotes
+
+Inspired by [Simon Willison’s Weblog](https://simonwillison.net/), I decided to write regular weeknotes. To make the job easier, there is a script `weeknotes.py`, which generates a template article for the current week. It accepts the main topic as arguments (joins them with whitespace) or prompts for the topic interactively if not provided:
+
+```
+$ python weeknotes.py Třízení nabídek práce
+```
+
 ## 📦 Dependencies
 
 The npm dependencies of the theme are managed in a standard way, but the `package.json` is inside the `theme` directory and the dependencies are saved as exact versions (see `.npmrc`) as [@dependabot](https://dependabot.com/) takes care of upgrading (see `.dependabot`). Python dependencies are using plain old `requirements.txt`, but it's not used as a lockfile. Only the top-level dependencies which are truly needed are written and locked there, with the resulting tree being left unmanaged. Again, [@dependabot](https://dependabot.com/) takes care of upgrading.
@@ -70,11 +78,7 @@ As certain content on the homepage is dynamic, the site should be re-generated a
 
 ## 📪 Domain
 
-The site runs under custom domain `honzajavorek.cz`. The HTTPS is turned on in the GitHub Pages repository settings.
-
-The domain's DNS is managed by [WEDOS](https://www.wedos.cz/). E-mail redirecting is done by [ImprovMX](https://improvmx.com/).
-
-CSV export from WEDOS:
+The site runs under custom domain `honzajavorek.cz`. The HTTPS is turned on in the GitHub Pages repository settings. The domain's DNS is managed by [WEDOS](https://www.wedos.cz/). E-mail redirecting is done by [ImprovMX](https://improvmx.com/). CSV export from WEDOS:
 
 ```
 "";"název";"TTL";"typ";"data"
