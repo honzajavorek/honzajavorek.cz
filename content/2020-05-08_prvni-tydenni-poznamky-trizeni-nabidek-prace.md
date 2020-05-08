@@ -1,4 +1,4 @@
-Title: První týdenní poznámky: Třízení nabídek práce
+Title: První týdenní poznámky: Třídění nabídek práce
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
 
@@ -33,7 +33,7 @@ Poznámky budu psát česky. Chtěl jsem sice na blog psát už hlavně anglicky
 
 ## Poznámky
 
-### Třízení nabídek práce
+### Třídění nabídek práce
 
 Už nějakou dobu pracuji na tom, abych na [junior.guru/jobs/](https://junior.guru/jobs/) mohl zobrazovat i nabídky práce odjinud. Chtěl bych, aby stránka byla agregátorem co nejvíce juniorních nabídek v Česku a stala se tak hlavním místem, kam budou junioři chodit hledat práci. Nabídky, které firmy zadají přímo na JG budou mít zvýraznění nebo lepší umístění a dostanou se i do newsletteru apod.
 
