@@ -495,7 +495,8 @@ figure {
 
 iframe,
 object,
-figure > img {
+figure > img,
+figure .twitter-tweet img {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
