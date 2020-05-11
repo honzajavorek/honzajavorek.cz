@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/monitoring-performance-with-lighthouse-and-circleci/">
+    <title>Monitoring performance with Lighthouse and CircleCI &mdash; Honza Javorek</title>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1316071-6"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-1316071-6');
+      </script>
+
+    <meta property="og:title" content="Monitoring performance with Lighthouse and CircleCI &mdash; Honza Javorek">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/monitoring-performance-with-lighthouse-and-circleci/">
+    <meta name="twitter:creator" content="@honzajavorek">
+    <meta name="twitter:site" content="@honzajavorek">
+
+    <meta property="og:image" content="https://honzajavorek.cz/images/philippe-d-mAxfIDdiE7o-unsplash.jpg">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/philippe-d-mAxfIDdiE7o-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Honza Javorek &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-05-11T00:00:00+02:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <div class="content">
+<article class="article">
+  <header class="article-header">
+    <h1>
+      <a href="https://honzajavorek.cz/blog/monitoring-performance-with-lighthouse-and-circleci" rel="bookmark">
+        Monitoring performance with Lighthouse and CircleCI
+      </a>
+    </h1>
+  </header>
+  <footer class="article-info">
+    <ul>
+      <li class="article-published">
+        <small>
+          <time datetime="2020-05-11T00:00:00+02:00">
+            May 11, 2020
+          </time>
+        </small>
+      </li>
+      <li class="article-author">
+        <small>
+          <a href="#author">Honza Javorek</a>
+        </small>
+      </li>
+    <ul>
+  </footer>
+  <div class="article-content">
+
+    <div><p>I wanted to continuously monitor "frontend performance" of my website, so I could get notified about drops or improve the scores over time. This article is about how I hacked a custom solution using a tool called Lighthouse and a CI as a service I use, CircleCI. It's just quick notes, so no editing, no reviews, not many grammar checks, but hopefully it's gonna be useful nevertheless.</p>
+<figure><img alt="Reading" src="https://honzajavorek.cz/images/philippe-d-mAxfIDdiE7o-unsplash.jpg"><figcaption>
+Photo by <a href="https://unsplash.com/@filip42">Philippe D.</a></figcaption></figure>
+<h2 id="the-problem">The problem<small class="permalink"><a href="#the-problem" title="Permanent link to this heading">#</a></small></h2>
+<p>I'm working on a website for juniors in tech, <a href="https://junior.guru/">junior.guru</a> (the content is Czech only so far, I'm sorry). From the deployment perspective, it's a static website in the most traditional sense. It's just files, HTML, CSS, and a very little amount of vanilla JavaScript.</p>
+<p>As the website grows, I ponder about my options regarding JavaScript frameworks and deployment. However, whatever I choose, I want to be sure that my website stays slim, fast, and accessible.</p>
+<p>It's a small project in an early stage, so it's common for me to cut corners for the sake of getting things done. However, I honor the <a href="https://en.wikipedia.org/wiki/Golden_Rule">Golden rule</a>: "What you do not wish for yourself, do not do to others." I dislike advertisments and pop-ups, so there are none in my projects. I dislike slow and bloated websites, so I don't want my projects to fall in that category.</p>
+<p>Also, I believe that <em>performance and accessibility sells</em>. My project is a content website. I think fast and accessible content websites attract more visitors and potentially lead to more <a href="https://en.wikipedia.org/wiki/Conversion_marketing">conversions</a>.</p>
+<h2 id="idea-from-guillermo-rauch">Idea from Guillermo Rauch<small class="permalink"><a href="#idea-from-guillermo-rauch" title="Permanent link to this heading">#</a></small></h2>
+<p>I follow <a href="https://twitter.com/rauchg/">@rauchg</a> on Twitter and he often boasts in his tweets about how <a href="https://nextjs.org/">Next.js</a> is performant, using charts from some tool called Lighthouse.</p>
+<figure><blockquote class="twitter-tweet"><p lang="en" dir="ltr">So, <a href="https://twitter.com/datocms?ref_src=twsrc%5Etfw">@datocms</a> + Next.js + <a href="https://twitter.com/vercel?ref_src=twsrc%5Etfw">@vercel</a> is… glory <a href="https://t.co/CTj2aQvzQs">https://cms-datocms.now.sh/</a> <a href="https://t.co/frTHEFRJwM"><img src="https://honzajavorek.cz/images/nextjs.jpg"></a></p>— Guillermo Rauch (@rauchg) <a href="https://twitter.com/rauchg/status/1259701306387656704?ref_src=twsrc%5Etfw">May 11, 2020</a></blockquote>
+
+</figure><p>Ever since I started thinking about the problem presented above, seeing one of these charts always made me think: "Yes, I want this for my website! But as a contiunous monitoring."</p>
+<p>My idea was I could put this somehow to my <a href="https://en.wikipedia.org/wiki/Continuous_integration">CI</a> pipeline and check my website under each Pull Request, or more likely in a nightly build. Ideally, it would produce an HTML report, but also I could set limits for the numbers and if the scores drop, the build would fail.</p>
+<figure><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Is there an easy way I can put <a href="https://t.co/W9jS6atMWZ">https://web.dev/measure/</a> to my <a href="https://twitter.com/CircleCI?ref_src=twsrc%5Etfw">@CircleCI</a>? Nightly or weekly test which breaks the build if my site drops in performance, accessibility, etc.</p>— Honza Javorek (@honzajavorek) <a href="https://twitter.com/honzajavorek/status/1255430514942541826?ref_src=twsrc%5Etfw">April 29, 2020</a></blockquote>
+
+</figure><p>Today I had a few hours left at the end of day, so I decided I could develop a prototype of such monitoring.</p>
+<h2 id="solution-by-a-python-script">Solution by a Python script<small class="permalink"><a href="#solution-by-a-python-script" title="Permanent link to this heading">#</a></small></h2>
+<p><a href="https://github.com/GoogleChrome/lighthouse">I found the tool</a> and to my pleasant surprise, it's an Open Source tool one can install by <code>npm install lighthouse</code>. As simple as that! The fact that Lighthouse has support for multiple reporters and can report not only HTML, but JSON as well, was another pleasant surprise. I also found an <a href="https://kitconcept.com/blog/continuous-performance-analysis-with-lighthouse-and-jenkins/">article about how it can be ran in CI</a>. Great! Now it's just a matter of gluing things together with a bit of Python.</p>
+<p>First, prepare a directory for the reports. Standard library <code>pathlib</code> and <code>shutil</code> come handy:</p>
+<pre class="highlight"><code><span></span><span class="kn">import</span> <span class="nn">shutil</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+
+<span class="n">LIGHTHOUSE_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="s1">'lighthouse'</span>
+
+<span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">LIGHTHOUSE_DIR</span><span class="p">,</span> <span class="n">ignore_errors</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">LIGHTHOUSE_DIR</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre>
+
+
+<p>Now I need a list of URLs to check:</p>
+<pre class="highlight"><code><span></span><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+
+<span class="n">PUBLIC_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="s1">'public'</span>
+
+<span class="k">def</span> <span class="nf">html_path_to_url</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">public_dir</span><span class="p">):</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s1">'index.html'</span><span class="p">)</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="n">public_dir</span><span class="p">))</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">"https://junior.guru/</span><span class="si">{</span><span class="s1">''</span> <span class="k">if</span> <span class="n">path</span> <span class="o">==</span> <span class="s1">'.'</span> <span class="k">else</span> <span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s1">'/'</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span>
+
+<span class="k">def</span> <span class="nf">get_urls</span><span class="p">(</span><span class="n">public_dir</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">html_path_to_url</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">public_dir</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">Path</span><span class="p">(</span><span class="n">public_dir</span><span class="p">)</span><span class="o">.</span><span class="n">rglob</span><span class="p">(</span><span class="s1">'*.html'</span><span class="p">)</span>
+            <span class="k">if</span> <span class="s1">'/admin/'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">path</span><span class="p">)]</span>
+</code></pre>
+
+
+<p>The <code>get_urls()</code> function walks through <code>.html</code> files in the <code>public</code> directory, where the static site lives, and then generates production URL for each of them. Now there is a function which takes care of the check itself:</p>
+<pre class="highlight"><code><span></span><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">run</span>
+
+<span class="n">MIN_SCORES</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'performance'</span><span class="p">:</span> <span class="mi">75</span><span class="p">,</span>
+    <span class="s1">'accessibility'</span><span class="p">:</span> <span class="mi">60</span><span class="p">,</span>
+    <span class="s1">'best-practices'</span><span class="p">:</span> <span class="mi">90</span><span class="p">,</span>
+    <span class="s1">'seo'</span><span class="p">:</span> <span class="mi">85</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">check_url</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'[CHECK] </span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s1"> → </span><span class="si">{</span><span class="n">url_to_html_report_path</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="si">}</span><span class="s1">'</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">)</span>
+
+    <span class="n">outputs</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'--output=json'</span><span class="p">,</span> <span class="s1">'--output=html'</span><span class="p">,</span>
+               <span class="sa">f</span><span class="s1">'--output-path=</span><span class="si">{</span><span class="n">url_to_report_name</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="si">}</span><span class="s1">'</span><span class="p">]</span>
+    <span class="n">command</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'npx'</span><span class="p">,</span> <span class="s1">'lighthouse'</span><span class="p">,</span> <span class="s1">'--quiet'</span><span class="p">,</span> <span class="s1">'--chrome-flags=--headless'</span><span class="p">]</span>
+    <span class="n">command</span> <span class="o">+=</span> <span class="n">outputs</span> <span class="o">+</span> <span class="p">[</span><span class="n">url</span><span class="p">]</span>
+    <span class="n">run</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">check</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="n">report</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="n">url_to_json_report_path</span><span class="p">(</span><span class="n">url</span><span class="p">))</span><span class="o">.</span><span class="n">read_text</span><span class="p">())</span>
+    <span class="k">return</span> <span class="n">url</span><span class="p">,</span> <span class="n">get_scores</span><span class="p">(</span><span class="n">report</span><span class="p">[</span><span class="s1">'categories'</span><span class="p">])</span>
+
+<span class="k">def</span> <span class="nf">get_scores</span><span class="p">(</span><span class="n">categories</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">{</span><span class="n">score_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">category</span><span class="p">[</span><span class="s1">'score'</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">score_id</span><span class="p">,</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">categories</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">score_id</span> <span class="ow">in</span> <span class="n">MIN_SCORES</span><span class="o">.</span><span class="n">keys</span><span class="p">()}</span>
+</code></pre>
+
+
+<p>The function takes URL and prints it out so I have an idea of a progress when watching the script run. Then it composes a <code>npx lighthouse ...</code> command with all the parameters. It runs the command as a subprocess. Lighthouse generates an HTML report as well as JSON report. The Python script reads the JSON, finds the part with scores called <code>categories</code>, and reads the scores. Actually, only the scores for which I've set minimum values. The JSON carries the scores as floating point numbers, so they need to be multiplied with 100: <code>0.98</code> becomes <code>98</code></p>
+<p>Lighthouse deals with report formats and report output paths in some funky way, so I had to create a few helper functions to set the right values to the right places:</p>
+<pre class="highlight"><code><span></span><span class="kn">from</span> <span class="nn">slugify</span> <span class="kn">import</span> <span class="n">slugify</span>
+
+<span class="k">def</span> <span class="nf">url_to_report_name</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">LIGHTHOUSE_DIR</span> <span class="o">/</span> <span class="n">slugify</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s1">'https-'</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">url_to_json_report_path</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">url_to_report_name</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="si">}</span><span class="s1">.report.json'</span>
+
+
+<span class="k">def</span> <span class="nf">url_to_html_report_path</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">url_to_report_name</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="si">}</span><span class="s1">.report.html'</span>
+</code></pre>
+
+
+<p>Here I use <a href="https://github.com/un33k/python-slugify">python-slugify</a>, which is the only external dependency of the script. At this point, I'm ready to do the main job:</p>
+<pre class="highlight"><code><span></span><span class="n">checks</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">check_url</span><span class="p">,</span> <span class="n">get_urls</span><span class="p">(</span><span class="n">PUBLIC_DIR</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">''</span><span class="p">)</span>
+
+<span class="n">failing</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">passing</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">url</span><span class="p">,</span> <span class="n">scores</span> <span class="ow">in</span> <span class="n">checks</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">score_id</span><span class="p">,</span> <span class="n">min_score</span> <span class="ow">in</span> <span class="n">MIN_SCORES</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">scores</span><span class="p">[</span><span class="n">score_id</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">min_score</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'[FAIL] </span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">score_id</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">scores</span><span class="p">[</span><span class="n">score_id</span><span class="p">]</span><span class="si">}</span><span class="s1"> (min: </span><span class="si">{</span><span class="n">min_score</span><span class="si">}</span><span class="s1">)'</span><span class="p">)</span>
+            <span class="n">failing</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">passing</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="se">\n</span><span class="s1">Failing: </span><span class="si">{</span><span class="n">failing</span><span class="si">}</span><span class="se">\n</span><span class="s1">Passing: </span><span class="si">{</span><span class="n">passing</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span> <span class="k">if</span> <span class="n">failing</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+</code></pre>
+
+
+<p>For each check, I compare whether the scores are lower than my limits or not, and evaluate whether the page passes or fails. I print out failed pages and then a short summary. If there are any failed pages, I exit the script with a code <code>1</code>, which tells the operating system, and especially the CI, that something went wrong.</p>
+<p>Because the checks are very slow, the script could use a bit of parallelization. That's easy to achieve by replacing <code>map()</code> with <code>Pool().map()</code> from Python's <code>multiprocessing</code>. It automatically detects how many cores my processor has and spawns as many "workers" to process the items in parallel.</p>
+<pre class="highlight"><code><span></span><span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Pool</span>
+
+<span class="n">checks</span> <span class="o">=</span> <span class="n">Pool</span><span class="p">()</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">check_url</span><span class="p">,</span> <span class="n">get_urls</span><span class="p">(</span><span class="n">PUBLIC_DIR</span><span class="p">))</span>
+</code></pre>
+
+
+<p>Because I develop my project as Open Source, you can <a href="https://github.com/honzajavorek/junior.guru/commit/1a743557b0da587e9a9ae9d10cb078f91f2c73e5">see the whole script on GitHub</a>. The result looks like this:</p>
+<pre class="highlight"><code><span></span>$ python scripts/check_performance.py
+[CHECK] https://junior.guru/donate/ → lighthouse/junior-guru-donate.report.html
+[CHECK] https://junior.guru/ → lighthouse/junior-guru.report.html
+[CHECK] https://junior.guru/jobs/2a9bf335f621d61cbbe8cede61609f162900b5a066ffe8030e21ac73/ → lighthouse/junior-guru-jobs-2a9bf335f621d61cbbe8cede61609f162900b5a066ffe8030e21ac73.report.html
+[CHECK] https://junior.guru/jobs/ → lighthouse/junior-guru-jobs.report.html
+[CHECK] https://junior.guru/jobs/17b0e80e3289f1e4831a3d2f1fe108a80d6265e18ce48a982df68abe/ → lighthouse/junior-guru-jobs-17b0e80e3289f1e4831a3d2f1fe108a80d6265e18ce48a982df68abe.report.html
+[CHECK] https://junior.guru/privacy/ → lighthouse/junior-guru-privacy.report.html
+[CHECK] https://junior.guru/candidate/ → lighthouse/junior-guru-candidate.report.html
+[CHECK] https://junior.guru/jobs/f9981c1e511476da731df99b7f1acece29d7e7eb501279fa620e6475/ → lighthouse/junior-guru-jobs-f9981c1e511476da731df99b7f1acece29d7e7eb501279fa620e6475.report.html
+[CHECK] https://junior.guru/jobs/36088d5962e330d825212aa223a2fb90d836f275c44aaffdf5841201/ → lighthouse/junior-guru-jobs-36088d5962e330d825212aa223a2fb90d836f275c44aaffdf5841201.report.html
+[CHECK] https://junior.guru/jobs/b309e891a1b9e28e37325e394c366329498373cda2ebc0dd3f919cb2/ → lighthouse/junior-guru-jobs-b309e891a1b9e28e37325e394c366329498373cda2ebc0dd3f919cb2.report.html
+[CHECK] https://junior.guru/thanks/ → lighthouse/junior-guru-thanks.report.html
+[CHECK] https://junior.guru/learn/ → lighthouse/junior-guru-learn.report.html
+...
+[CHECK] https://junior.guru/jobs/eab9db6d183329cb84fa816b7780e1a05b4210c135da7b3ffcc067b5/ → lighthouse/junior-guru-jobs-eab9db6d183329cb84fa816b7780e1a05b4210c135da7b3ffcc067b5.report.html
+
+
+Failing: 0
+Passing: 176
+</code></pre>
+
+
+<h2 id="continuous-monitoring">Continuous monitoring<small class="permalink"><a href="#continuous-monitoring" title="Permanent link to this heading">#</a></small></h2>
+<p>My project uses <a href="https://circleci.com/gh/honzajavorek/junior.guru/tree/master">CircleCI</a> for building and various checks. I added one job to the configuration for my new Lighthouse check:</p>
+<pre class="highlight"><code><span></span><span class="nn">...</span>
+<span class="nt">executors</span><span class="p">:</span>
+  <span class="nt">python-js</span><span class="p">:</span>
+    <span class="nt">docker</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">circleci/python:3.7-node-browsers</span>
+    <span class="nt">working_directory</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">~/project</span>
+<span class="nn">...</span>
+
+<span class="nt">jobs</span><span class="p">:</span>
+  <span class="l l-Scalar l-Scalar-Plain">...</span>
+  <span class="l l-Scalar l-Scalar-Plain">check-performance</span><span class="p p-Indicator">:</span>
+    <span class="nt">executor</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python-js</span>
+    <span class="nt">steps</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">attach_workspace</span><span class="p">:</span>
+          <span class="nt">at</span><span class="p">:</span> <span class="s">"~"</span>
+      <span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pipenv run check-performance</span>
+      <span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span>
+          <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">tar -cvzf lighthouse.tar.gz ./lighthouse</span>
+          <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">always</span>
+      <span class="p p-Indicator">-</span> <span class="nt">store_artifacts</span><span class="p">:</span>
+          <span class="nt">path</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">./lighthouse.tar.gz</span>  <span class="c1"># HTML and JSON reports from lighthouse</span>
+<span class="nn">...</span>
+
+<span class="nt">workflows</span><span class="p">:</span>
+  <span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+  <span class="l l-Scalar l-Scalar-Plain">...</span>
+  <span class="nt">nightly_workflow</span><span class="p">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">...</span>
+    <span class="l l-Scalar l-Scalar-Plain">jobs</span><span class="p p-Indicator">:</span>
+      <span class="l l-Scalar l-Scalar-Plain">...</span>
+      <span class="l l-Scalar l-Scalar-Plain">- check-performance</span><span class="p p-Indicator">:</span>
+          <span class="nt">requires</span><span class="p">:</span>
+            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">deploy</span>
+</code></pre>
+
+
+<p>It's important I use the CircleCI's <code>python:3.7-node-browsers</code> Docker image, which contains Python as well as Node.js and browsers, because Lighthouse depends on having Google Chrome installed. In the job itself I run the script through <code>pipenv</code> (to be precise, through the <code>scripts</code> section of <code>Pipfile</code>), compress the directory with reports, and store it as an artifact. If the script fails the build and I won't be able to reproduce the problem locally, I can download the archive from CircleCI and inspect the actual reports made on CI. I've put the job into my nightly workflow, so that it runs every night, and I've set it to depend on my <code>deploy</code> job, which deploys the site to production as this is effectively a production check.</p>
+<p>If the job fails, it doesn't affect whether the site gets re-deployed or not, but I get notified by e-mail, which works great as poor man's monitoring. That's about it. Again, you can <a href="https://github.com/honzajavorek/junior.guru/commit/1a743557b0da587e9a9ae9d10cb078f91f2c73e5">see the whole change here</a>.</p>
+<h2 id="summary">Summary<small class="permalink"><a href="#summary" title="Permanent link to this heading">#</a></small></h2>
+<p>The <a href="https://github.com/GoogleChrome/lighthouse">Lighthouse's README</a> mentions various other projects and tools which could compete with my solution. For example, there's <a href="https://lighthouse-keeper.com/">Lighthouse Keeper</a>, which continuously monitors up to 3 URLs for free. I didn't want to depend on a 3rd party service when I've seen how easy is to setup my own thing, and my site already has more than 3 URLs to monitor.</p>
+<p>I've set the minimum scores to minimum values I observed during the first run of my new script, so the site should now always pass the check. However, with such check in place I get the following benefits:</p>
+<ul>
+<li>If I modify my website in any way, I'll know if performance, accessibility, or SEO drop.</li>
+<li>From time to time I can look at the reports, try to fix some of the problems, and then set the bars higher.</li>
+</ul>
+<p>I hope this article contributes to a better world, because now you have no excuse not to monitor how bloated and inaccessible <em>your</em> website is!</p></div>
+  </div>
+  <footer class="article-footer">
+    <div id="author" class="author">
+      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
+      <address>
+<a href="https://honzajavorek.cz">Honza Javorek</a> is a software engineer and
+a founder of <a href="https://junior.guru/">junior.guru</a>, a Czech project helping
+people to get their first job in tech. Since 2011 he's been helping
+to drive the growth and success
+of the <a href="https://python.cz/en/">Czech Python User&nbsp;Group</a>.      </address>
+    </div>
+    <p class="button">
+        <a href="https://honzajavorek.cz/blog/">
+          <i class="fa fa-list-ul"></i> Articles archive
+        </a>
+    </p>
+  </footer>
+</article>
+      </div>
+      <footer class="footer">
+        <address>
+          © Copyright 2007—2020
+          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+  </body>
+</html>
