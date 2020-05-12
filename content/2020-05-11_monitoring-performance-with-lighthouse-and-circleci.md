@@ -4,6 +4,7 @@ Twitter-Comments: https://twitter.com/honzajavorek/status/1260112226243022848
 Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10158104366372707
 HackerNews-Comments: https://news.ycombinator.com/item?id=23151520
 LinkedIn-Comments: https://www.linkedin.com/posts/honzajavorek_monitoring-performance-with-lighthouse-and-activity-6665879327550300160-M8Bf
+Reddit-Comments: https://www.reddit.com/r/webdev/comments/gi77ub/monitoring_website_performance_and_accessibility/
 
 
 I wanted to continuously monitor "frontend performance" of my website, so I could get notified about drops or improve the scores over time. This article is about how I hacked a custom solution using a tool called Lighthouse and a CI as a service I use, CircleCI. It's just quick notes, so no editing, no reviews, not many grammar checks, but hopefully it's gonna be useful nevertheless.
