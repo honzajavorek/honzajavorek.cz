@@ -74,6 +74,16 @@ figcaption a {
   background: #e05c1f;
 }
 
+.button-donate {
+  margin: 2rem 0 0 0;
+}
+
+.button-donate a {
+  background: var(--black);
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.35rem;
+}
+
 .button .fa {
   margin-right: .3rem;
 }
@@ -155,11 +165,14 @@ strong {
   padding: 0 .5rem;
 }
 
+.article-reviewers,
 .article-comments {
   margin: 6rem 0;
   text-align: center;
 }
 
+.article-reviewers h3,
+.article-reviewers p,
 .article-comments h3,
 .article-comments ul,
 .article-comments li {
@@ -170,6 +183,11 @@ strong {
   margin: 0;
 }
 
+.article-reviewers p {
+  font-weight: 600;
+}
+
+.article-reviewers h3::after,
 .article-comments h3::after {
   content: ":";
 }
