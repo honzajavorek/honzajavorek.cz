@@ -277,7 +277,7 @@ Runtime error encountered: spawnSync /bin/sh ENOMEM
 </code></pre>
 
 
-<p>Despite CircleCI declares 2 CPU, I decided to set the minimum pool size to 4, because if my extremely non-performant early 2015 laptop is able to spawn 4 parallel checks while simuntaneously running Firefox and Visual Studio Code, I bet the CircleCI container can do 4 too. And so far it seems it copes well! Now the job takes 2m 18s.</p>
+<p>Despite CircleCI declares 2 CPU, I decided to set the minimum pool size to 4, because if my extremely non-performant early 2015 laptop is able to spawn 4 parallel checks while simuntaneously running Firefox and Visual Studio Code, I bet the CircleCI container can do 4 too. And so far it seems to cope well! Now the job takes 2m 18s.</p>
 <h2 id="summary">Summary<small class="permalink"><a href="#summary" title="Permanent link to this heading">#</a></small></h2>
 <p>The <a href="https://github.com/GoogleChrome/lighthouse">Lighthouse's README</a> mentions various other projects and tools which could compete with my solution. For example, there's <a href="https://lighthouse-keeper.com/">Lighthouse Keeper</a>, which continuously monitors up to 3 URLs for free. I didn't want to depend on a 3rd party service when I've seen how easy is to setup my own thing, and my site already has more than 3 URLs to monitor.</p>
 <p>I've set the minimum scores to minimum values I observed during the first run of my new script, so the site should now always pass the check. However, with such check in place I get the following benefits:</p>
