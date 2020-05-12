@@ -95,7 +95,7 @@ Photo by &lt;a href="https://unsplash.com/@filip42"&gt;Philippe D.&lt;/a&gt;&lt;
 
 
 &lt;p&gt;Here I use &lt;a href="https://github.com/un33k/python-slugify"&gt;python-slugify&lt;/a&gt;, which is the only external dependency of the script. At this point, I'm ready to do the main job:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;checks&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;map&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;check_url&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;get_urls&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PUBLIC_DIR&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;checks&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;map&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;check_url&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;get_urls&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PUBLIC_DIR&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="n"&gt;failing&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
@@ -183,7 +183,37 @@ Passing: 176
 
 
 &lt;p&gt;It's important I use the CircleCI's &lt;code&gt;python:3.7-node-browsers&lt;/code&gt; Docker image, which contains Python as well as Node.js and browsers, because Lighthouse depends on having Google Chrome installed. In the job itself I run the script through &lt;code&gt;pipenv&lt;/code&gt; (to be precise, through the &lt;code&gt;scripts&lt;/code&gt; section of &lt;code&gt;Pipfile&lt;/code&gt;), compress the directory with reports, and store it as an artifact. If the script fails the build and I won't be able to reproduce the problem locally, I can download the archive from CircleCI and inspect the actual reports made on CI. I've put the job into my nightly workflow, so that it runs every night, and I've set it to depend on my &lt;code&gt;deploy&lt;/code&gt; job, which deploys the site to production as this is effectively a production check.&lt;/p&gt;
+&lt;figure&gt;&lt;img alt="CircleCI Pipeline" src="https://honzajavorek.cz/images/lighthouse-nightly.png"&gt;&lt;figcaption&gt;
+I want my lighthouse to work in the night, right?&lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;If the job fails, it doesn't affect whether the site gets re-deployed or not, but I get notified by e-mail, which works great as poor man's monitoring. That's about it. Again, you can &lt;a href="https://github.com/honzajavorek/junior.guru/commit/1a743557b0da587e9a9ae9d10cb078f91f2c73e5"&gt;see the whole change here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="memory-issues-on-circleci"&gt;Memory issues on CircleCI&lt;small class="permalink"&gt;&lt;a href="#memory-issues-on-circleci" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Soon I figured out the parallelization doesn't work well on CircleCI. The build interface declares my container is 2 CPU / 4 GB RAM, but I got Google Chrome timing out with some memory issues in the log when running a few of them in parallel by &lt;code&gt;Pool().map()&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;ENOMEM: not enough memory, read
+ENOMEM: not enough memory, read
+ENOMEM: not enough memory, read
+ENOMEM: not enough memory, read
+Runtime error encountered: spawnSync /bin/sh ENOMEM
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;I ended up with a silly hotfix, which tests whether there is a &lt;code&gt;CI&lt;/code&gt; environment variable set (CI services usually set it to allow detection like this). If the script is running on CI, it uses the &lt;code&gt;map()&lt;/code&gt; function, otherwise &lt;code&gt;Pool().map()&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
+
+&lt;span class="n"&gt;map_&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;map&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getenv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'CI'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="n"&gt;Pool&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;map&lt;/span&gt;
+&lt;span class="n"&gt;checks&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;map_&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;check_url&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;get_urls&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PUBLIC_DIR&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;I introduced the parallelization mainly to shorten the duration of the script locally. I don't really care how much time the CircleCI job takes, as it's gonna happen when I sleep, right? When I tried this version of the script, it passed! But it took 8 minutes. That's not great. What if I need to debug something and I want to retry the build a few times? What if my website gets 20 more pages?&lt;/p&gt;
+&lt;p&gt;Searching for the memory error message together with "CircleCI" and "Google Chrome" got me to a section &lt;a href="https://developers.google.com/web/tools/puppeteer/troubleshooting?hl=ja#running-puppeteer-on-circleci"&gt;Running Puppeteer on CircleCI&lt;/a&gt; in the Puppeteer docs. Puppeteer is a tool which allows Node.js programs to control (headless) Google Chrome, which is very likely exactly what Lighthouse does under the hood. The section gives a hint that usual detection mechanisms think that a CircleCI container has 36 cores, rather than the declared 2. And I was able to confirm that by &lt;code&gt;print('Cores:', multiprocessing.cpu_count())&lt;/code&gt; and running the script on CircleCI. Wow! Okay. This brought me to a better hotfix:&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;multiprocessing&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;cpu_count&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Pool&lt;/span&gt;
+
+&lt;span class="n"&gt;pool_size&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;min&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;cpu_count&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="c1"&gt;# CircleCI declares 2, but detection reads 36&lt;/span&gt;
+&lt;span class="n"&gt;checks&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Pool&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pool_size&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;map&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;check_url&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;get_urls&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PUBLIC_DIR&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Despite CircleCI declares 2 CPU, I decided to set the minimum pool size to 4, because if my extremely non-performant early 2015 laptop is able to spawn 4 parallel checks while simuntaneously running Firefox and Visual Studio Code, I bet the CircleCI container can do 4 too. And so far it seems it copes well! Now the job takes 2m 18s.&lt;/p&gt;
 &lt;h2 id="summary"&gt;Summary&lt;small class="permalink"&gt;&lt;a href="#summary" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;The &lt;a href="https://github.com/GoogleChrome/lighthouse"&gt;Lighthouse's README&lt;/a&gt; mentions various other projects and tools which could compete with my solution. For example, there's &lt;a href="https://lighthouse-keeper.com/"&gt;Lighthouse Keeper&lt;/a&gt;, which continuously monitors up to 3 URLs for free. I didn't want to depend on a 3rd party service when I've seen how easy is to setup my own thing, and my site already has more than 3 URLs to monitor.&lt;/p&gt;
 &lt;p&gt;I've set the minimum scores to minimum values I observed during the first run of my new script, so the site should now always pass the check. However, with such check in place I get the following benefits:&lt;/p&gt;
