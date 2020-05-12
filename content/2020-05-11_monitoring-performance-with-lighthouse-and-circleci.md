@@ -253,7 +253,7 @@ pool_size = min(cpu_count(), 4)  # CircleCI declares 2, but detection reads 36
 checks = Pool(pool_size).map(check_url, get_urls(PUBLIC_DIR))
 ```
 
-Despite CircleCI declares 2 CPU, I decided to set the minimum pool size to 4, because if my extremely non-performant early 2015 laptop is able to spawn 4 parallel checks while simuntaneously running Firefox and Visual Studio Code, I bet the CircleCI container can do 4 too. And so far it seems it copes well! Now the job takes 2m 18s.
+Despite CircleCI declares 2 CPU, I decided to set the minimum pool size to 4, because if my extremely non-performant early 2015 laptop is able to spawn 4 parallel checks while simuntaneously running Firefox and Visual Studio Code, I bet the CircleCI container can do 4 too. And so far it seems to cope well! Now the job takes 2m 18s.
 
 ## Summary
 
