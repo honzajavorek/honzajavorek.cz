@@ -119,7 +119,7 @@ def url_to_html_report_path(url):
 Here I use [python-slugify](https://github.com/un33k/python-slugify), which is the only external dependency of the script. At this point, I'm ready to do the main job:
 
 ```python
-checks = map(check_url, get_urls(PUBLIC_DIR))
+checks = list(map(check_url, get_urls(PUBLIC_DIR)))
 print('')
 
 failing = 0
@@ -212,7 +212,45 @@ workflows:
 
 It's important I use the CircleCI's `python:3.7-node-browsers` Docker image, which contains Python as well as Node.js and browsers, because Lighthouse depends on having Google Chrome installed. In the job itself I run the script through `pipenv` (to be precise, through the `scripts` section of `Pipfile`), compress the directory with reports, and store it as an artifact. If the script fails the build and I won't be able to reproduce the problem locally, I can download the archive from CircleCI and inspect the actual reports made on CI. I've put the job into my nightly workflow, so that it runs every night, and I've set it to depend on my `deploy` job, which deploys the site to production as this is effectively a production check.
 
+![CircleCI Pipeline]({static}/images/lighthouse-nightly.png)
+I want my lighthouse to work in the night, right?
+
 If the job fails, it doesn't affect whether the site gets re-deployed or not, but I get notified by e-mail, which works great as poor man's monitoring. That's about it. Again, you can [see the whole change here](https://github.com/honzajavorek/junior.guru/commit/1a743557b0da587e9a9ae9d10cb078f91f2c73e5).
+
+
+## Memory issues on CircleCI
+
+Soon I figured out the parallelization doesn't work well on CircleCI. The build interface declares my container is 2 CPU / 4 GB RAM, but I got Google Chrome timing out with some memory issues in the log when running a few of them in parallel by `Pool().map()`:
+
+```
+ENOMEM: not enough memory, read
+ENOMEM: not enough memory, read
+ENOMEM: not enough memory, read
+ENOMEM: not enough memory, read
+Runtime error encountered: spawnSync /bin/sh ENOMEM
+```
+
+I ended up with a silly hotfix, which tests whether there is a `CI` environment variable set (CI services usually set it to allow detection like this). If the script is running on CI, it uses the `map()` function, otherwise `Pool().map()`:
+
+```python
+import os
+
+map_ = map if os.getenv('CI') else Pool().map
+checks = list(map_(check_url, get_urls(PUBLIC_DIR)))
+```
+
+I introduced the parallelization mainly to shorten the duration of the script locally. I don't really care how much time the CircleCI job takes, as it's gonna happen when I sleep, right? When I tried this version of the script, it passed! But it took 8 minutes. That's not great. What if I need to debug something and I want to retry the build a few times? What if my website gets 20 more pages?
+
+Searching for the memory error message together with "CircleCI" and "Google Chrome" got me to a section [Running Puppeteer on CircleCI](https://developers.google.com/web/tools/puppeteer/troubleshooting?hl=ja#running-puppeteer-on-circleci) in the Puppeteer docs. Puppeteer is a tool which allows Node.js programs to control (headless) Google Chrome, which is very likely exactly what Lighthouse does under the hood. The section gives a hint that usual detection mechanisms think that a CircleCI container has 36 cores, rather than the declared 2. And I was able to confirm that by `print('Cores:', multiprocessing.cpu_count())` and running the script on CircleCI. Wow! Okay. This brought me to a better hotfix:
+
+```python
+from multiprocessing import cpu_count, Pool
+
+pool_size = min(cpu_count(), 4)  # CircleCI declares 2, but detection reads 36
+checks = Pool(pool_size).map(check_url, get_urls(PUBLIC_DIR))
+```
+
+Despite CircleCI declares 2 CPU, I decided to set the minimum pool size to 4, because if my extremely non-performant early 2015 laptop is able to spawn 4 parallel checks while simuntaneously running Firefox and Visual Studio Code, I bet the CircleCI container can do 4 too. And so far it seems it copes well! Now the job takes 2m 18s.
 
 ## Summary
 
