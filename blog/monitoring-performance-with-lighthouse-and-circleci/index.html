@@ -70,13 +70,13 @@ Photo by <a href="https://unsplash.com/@filip42">Philippe D.</a></figcaption></f
 <h2 id="the-problem">The problem<small class="permalink"><a href="#the-problem" title="Permanent link to this heading">#</a></small></h2>
 <p>I'm working on a website for juniors in tech, <a href="https://junior.guru/">junior.guru</a> (the content is Czech only so far, I'm sorry). From the deployment perspective, it's a static website in the most traditional sense. It's just files, HTML, CSS, and a very little amount of vanilla JavaScript.</p>
 <p>As the website grows, I ponder about my options regarding JavaScript frameworks and deployment. However, whatever I choose, I want to be sure that my website stays slim, fast, and accessible.</p>
-<p>It's a small project in an early stage, so it's common for me to cut corners for the sake of getting things done. However, I honor the <a href="https://en.wikipedia.org/wiki/Golden_Rule">Golden rule</a>: "What you do not wish for yourself, do not do to others." I dislike advertisments and pop-ups, so there are none in my projects. I dislike slow and bloated websites, so I don't want my projects to fall in that category.</p>
+<p>It's a small project in an early stage, so it's common for me to cut corners for the sake of getting things done. However, I honor the <a href="https://en.wikipedia.org/wiki/Golden_Rule">Golden rule</a>: "What you do not wish for yourself, do not do to others." I dislike advertisements and pop-ups, so there are none in my projects. I dislike slow and bloated websites, so I don't want my projects to fall in that category.</p>
 <p>Also, I believe that <em>performance and accessibility sells</em>. My project is a content website. I think fast and accessible content websites attract more visitors and potentially lead to more <a href="https://en.wikipedia.org/wiki/Conversion_marketing">conversions</a>.</p>
 <h2 id="idea-from-guillermo-rauch">Idea from Guillermo Rauch<small class="permalink"><a href="#idea-from-guillermo-rauch" title="Permanent link to this heading">#</a></small></h2>
 <p>I follow <a href="https://twitter.com/rauchg/">@rauchg</a> on Twitter and he often boasts in his tweets about how <a href="https://nextjs.org/">Next.js</a> is performant, using charts from some tool called Lighthouse.</p>
 <figure><blockquote class="twitter-tweet"><p lang="en" dir="ltr">So, <a href="https://twitter.com/datocms?ref_src=twsrc%5Etfw">@datocms</a> + Next.js + <a href="https://twitter.com/vercel?ref_src=twsrc%5Etfw">@vercel</a> is… glory <a href="https://t.co/CTj2aQvzQs">https://cms-datocms.now.sh/</a> <a href="https://t.co/frTHEFRJwM"><img src="https://honzajavorek.cz/images/nextjs.jpg"></a></p>— Guillermo Rauch (@rauchg) <a href="https://twitter.com/rauchg/status/1259701306387656704?ref_src=twsrc%5Etfw">May 11, 2020</a></blockquote>
 
-</figure><p>Ever since I started thinking about the problem presented above, seeing one of these charts always made me think: "Yes, I want this for my website! But as a contiunous monitoring."</p>
+</figure><p>Ever since I started thinking about the problem presented above, seeing one of these charts always made me think: "Yes, I want this for my website! But as a continuous monitoring."</p>
 <p>My idea was I could put this somehow to my <a href="https://en.wikipedia.org/wiki/Continuous_integration">CI</a> pipeline and check my website under each Pull Request, or more likely in a nightly build. Ideally, it would produce an HTML report, but also I could set limits for the numbers and if the scores drop, the build would fail.</p>
 <figure><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Is there an easy way I can put <a href="https://t.co/W9jS6atMWZ">https://web.dev/measure/</a> to my <a href="https://twitter.com/CircleCI?ref_src=twsrc%5Etfw">@CircleCI</a>? Nightly or weekly test which breaks the build if my site drops in performance, accessibility, etc.</p>— Honza Javorek (@honzajavorek) <a href="https://twitter.com/honzajavorek/status/1255430514942541826?ref_src=twsrc%5Etfw">April 29, 2020</a></blockquote>
 
@@ -111,7 +111,7 @@ Photo by <a href="https://unsplash.com/@filip42">Philippe D.</a></figcaption></f
 </code></pre>
 
 
-<p>The <code>get_urls()</code> function walks through <code>.html</code> files in the <code>public</code> directory, where the static site lives, and then generates production URL for each of them. Now there is a function which takes care of the check itself:</p>
+<p>The <code>get_urls()</code> function walks through <code>.html</code> files in the <code>public</code> directory, where the static site lives, and then generates a production URL for each of them. Now there is a function which takes care of the check itself:</p>
 <pre class="highlight"><code><span></span><span class="kn">import</span> <span class="nn">json</span>
 <span class="kn">import</span> <span class="nn">sys</span>
 <span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">run</span>
@@ -142,7 +142,7 @@ Photo by <a href="https://unsplash.com/@filip42">Philippe D.</a></figcaption></f
 </code></pre>
 
 
-<p>The function takes URL and prints it out so I have an idea of a progress when watching the script run. Then it composes a <code>npx lighthouse ...</code> command with all the parameters. It runs the command as a subprocess. Lighthouse generates an HTML report as well as JSON report. The Python script reads the JSON, finds the part with scores called <code>categories</code>, and reads the scores. Actually, only the scores for which I've set minimum values. The JSON carries the scores as floating point numbers, so they need to be multiplied with 100: <code>0.98</code> becomes <code>98</code></p>
+<p>The function takes a URL and prints it out so I have an idea of a progress when watching the script run. Then it composes a <code>npx lighthouse ...</code> command with all the parameters. It runs the command as a subprocess. Lighthouse generates an HTML report as well as JSON report. The Python script reads the JSON, finds the part with scores called <code>categories</code>, and reads the scores. Actually, only the scores for which I've set minimum values. The JSON carries the scores as floating point numbers, so they need to be multiplied with 100: <code>0.98</code> becomes <code>98</code></p>
 <p>Lighthouse deals with report formats and report output paths in some funky way, so I had to create a few helper functions to set the right values to the right places:</p>
 <pre class="highlight"><code><span></span><span class="kn">from</span> <span class="nn">slugify</span> <span class="kn">import</span> <span class="n">slugify</span>
 
@@ -279,7 +279,7 @@ Runtime error encountered: spawnSync /bin/sh ENOMEM
 
 <p>Despite CircleCI declares 2 CPU, I decided to set the minimum pool size to 4, because if my extremely non-performant early 2015 laptop is able to spawn 4 parallel checks while simuntaneously running Firefox and Visual Studio Code, I bet the CircleCI container can do 4 too. And so far it seems to cope well! Now the job takes 2m 18s.</p>
 <h2 id="summary">Summary<small class="permalink"><a href="#summary" title="Permanent link to this heading">#</a></small></h2>
-<p>The <a href="https://github.com/GoogleChrome/lighthouse">Lighthouse's README</a> mentions various other projects and tools which could compete with my solution. For example, there's <a href="https://lighthouse-keeper.com/">Lighthouse Keeper</a>, which continuously monitors up to 3 URLs for free. I didn't want to depend on a 3rd party service when I've seen how easy is to setup my own thing, and my site already has more than 3 URLs to monitor.</p>
+<p>The <a href="https://github.com/GoogleChrome/lighthouse">Lighthouse's README</a> mentions various other projects and tools which could compete with my solution. For example, there's <a href="https://lighthouse-keeper.com/">Lighthouse Keeper</a>, which continuously monitors up to 3 URLs for free. I didn't want to depend on a 3rd party service when I've seen how easy it is to setup my own thing, and my site already has more than 3 URLs to monitor.</p>
 <p>I've set the minimum scores to minimum values I observed during the first run of my new script, so the site should now always pass the check. However, with such check in place I get the following benefits:</p>
 <ul>
 <li>If I modify my website in any way, I'll know if performance, accessibility, or SEO drop.</li>
