@@ -18,7 +18,7 @@ I'm working on a website for juniors in tech, [junior.guru](https://junior.guru/
 
 As the website grows, I ponder about my options regarding JavaScript frameworks and deployment. However, whatever I choose, I want to be sure that my website stays slim, fast, and accessible.
 
-It's a small project in an early stage, so it's common for me to cut corners for the sake of getting things done. However, I honor the [Golden rule](https://en.wikipedia.org/wiki/Golden_Rule): "What you do not wish for yourself, do not do to others." I dislike advertisments and pop-ups, so there are none in my projects. I dislike slow and bloated websites, so I don't want my projects to fall in that category.
+It's a small project in an early stage, so it's common for me to cut corners for the sake of getting things done. However, I honor the [Golden rule](https://en.wikipedia.org/wiki/Golden_Rule): "What you do not wish for yourself, do not do to others." I dislike advertisements and pop-ups, so there are none in my projects. I dislike slow and bloated websites, so I don't want my projects to fall in that category.
 
 Also, I believe that _performance and accessibility sells_. My project is a content website. I think fast and accessible content websites attract more visitors and potentially lead to more [conversions](https://en.wikipedia.org/wiki/Conversion_marketing).
 
@@ -28,7 +28,7 @@ I follow [@rauchg](https://twitter.com/rauchg/) on Twitter and he often boasts i
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">So, <a href="https://twitter.com/datocms?ref_src=twsrc%5Etfw">@datocms</a> + Next.js + <a href="https://twitter.com/vercel?ref_src=twsrc%5Etfw">@vercel</a> is… glory <a href="https://t.co/CTj2aQvzQs">https://cms-datocms.now.sh/</a> <a href="https://t.co/frTHEFRJwM"><img src="{static}/images/nextjs.jpg"></a></p>&mdash; Guillermo Rauch (@rauchg) <a href="https://twitter.com/rauchg/status/1259701306387656704?ref_src=twsrc%5Etfw">May 11, 2020</a></blockquote>
 
-Ever since I started thinking about the problem presented above, seeing one of these charts always made me think: "Yes, I want this for my website! But as a contiunous monitoring."
+Ever since I started thinking about the problem presented above, seeing one of these charts always made me think: "Yes, I want this for my website! But as a continuous monitoring."
 
 My idea was I could put this somehow to my [CI](https://en.wikipedia.org/wiki/Continuous_integration) pipeline and check my website under each Pull Request, or more likely in a nightly build. Ideally, it would produce an HTML report, but also I could set limits for the numbers and if the scores drop, the build would fail.
 
@@ -70,7 +70,7 @@ def get_urls(public_dir):
             if '/admin/' not in str(path)]
 ```
 
-The `get_urls()` function walks through `.html` files in the `public` directory, where the static site lives, and then generates production URL for each of them. Now there is a function which takes care of the check itself:
+The `get_urls()` function walks through `.html` files in the `public` directory, where the static site lives, and then generates a production URL for each of them. Now there is a function which takes care of the check itself:
 
 ```python
 import json
@@ -102,7 +102,7 @@ def get_scores(categories):
             if score_id in MIN_SCORES.keys()}
 ```
 
-The function takes URL and prints it out so I have an idea of a progress when watching the script run. Then it composes a `npx lighthouse ...` command with all the parameters. It runs the command as a subprocess. Lighthouse generates an HTML report as well as JSON report. The Python script reads the JSON, finds the part with scores called `categories`, and reads the scores. Actually, only the scores for which I've set minimum values. The JSON carries the scores as floating point numbers, so they need to be multiplied with 100: `0.98` becomes `98`
+The function takes a URL and prints it out so I have an idea of a progress when watching the script run. Then it composes a `npx lighthouse ...` command with all the parameters. It runs the command as a subprocess. Lighthouse generates an HTML report as well as JSON report. The Python script reads the JSON, finds the part with scores called `categories`, and reads the scores. Actually, only the scores for which I've set minimum values. The JSON carries the scores as floating point numbers, so they need to be multiplied with 100: `0.98` becomes `98`
 
 Lighthouse deals with report formats and report output paths in some funky way, so I had to create a few helper functions to set the right values to the right places:
 
@@ -258,7 +258,7 @@ Despite CircleCI declares 2 CPU, I decided to set the minimum pool size to 4, be
 
 ## Summary
 
-The [Lighthouse's README](https://github.com/GoogleChrome/lighthouse) mentions various other projects and tools which could compete with my solution. For example, there's [Lighthouse Keeper](https://lighthouse-keeper.com/), which continuously monitors up to 3 URLs for free. I didn't want to depend on a 3rd party service when I've seen how easy is to setup my own thing, and my site already has more than 3 URLs to monitor.
+The [Lighthouse's README](https://github.com/GoogleChrome/lighthouse) mentions various other projects and tools which could compete with my solution. For example, there's [Lighthouse Keeper](https://lighthouse-keeper.com/), which continuously monitors up to 3 URLs for free. I didn't want to depend on a 3rd party service when I've seen how easy it is to setup my own thing, and my site already has more than 3 URLs to monitor.
 
 I've set the minimum scores to minimum values I observed during the first run of my new script, so the site should now always pass the check. However, with such check in place I get the following benefits:
 
