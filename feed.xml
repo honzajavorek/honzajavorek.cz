@@ -1,5 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>HJ's Blog</title><link href="http://localhost:8000/blog/" rel="alternate"></link><link href="https://honzajavorek.cz/feed.xml" rel="self"></link><id>https://honzajavorek.cz/</id><updated>2020-05-11T00:00:00+02:00</updated><author><name>Honza Javorek</name><email>mail@honzajavorek.cz</email><uri>http://localhost:8000</uri></author><rights>© Copyright 2007—2020 Honza Javorek &lt;http://localhost:8000&gt;</rights><entry><title>Monitoring performance with Lighthouse and CircleCI</title><link href="https://honzajavorek.cz/blog/monitoring-performance-with-lighthouse-and-circleci" rel="alternate"></link><published>2020-05-11T00:00:00+02:00</published><updated>2020-05-11T00:00:00+02:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2020-05-11:/blog/monitoring-performance-with-lighthouse-and-circleci</id><summary type="html">&lt;div&gt;&lt;p&gt;I wanted to continuously monitor "frontend performance" of my website, so I could get notified about drops or improve the scores over time. This article is about how I hacked a custom solution using a tool called Lighthouse and a CI as a service I use, CircleCI. It's just quick …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;p&gt;I wanted to continuously monitor "frontend performance" of my website, so I could get notified about drops or improve the scores over time. This article is about how I hacked a custom solution using a tool called Lighthouse and a CI as a service I use, CircleCI. It's just quick notes, so no editing, no reviews, not many grammar checks, but hopefully it's gonna be useful nevertheless.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>HJ's Blog</title><link href="http://localhost:8000/blog/" rel="alternate"></link><link href="https://honzajavorek.cz/feed.xml" rel="self"></link><id>https://honzajavorek.cz/</id><updated>2020-05-15T00:00:00+02:00</updated><author><name>Honza Javorek</name><email>mail@honzajavorek.cz</email><uri>http://localhost:8000</uri></author><rights>© Copyright 2007—2020 Honza Javorek &lt;http://localhost:8000&gt;</rights><entry><title>Týdenní poznámky: Maják a tunel</title><link href="https://honzajavorek.cz/blog/tydenni-poznamky-majak-a-tunel/" rel="alternate"></link><published>2020-05-15T00:00:00+02:00</published><updated>2020-05-15T00:00:00+02:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2020-05-15:/blog/tydenni-poznamky-majak-a-tunel/</id><summary type="html">&lt;div&gt;&lt;p&gt;Utekl další týden (11.5. — 15.5.) a tak stejně jako &lt;a href="https://honzajavorek.cz/blog/prvni-tydenni-poznamky-trizeni-nabidek-prace/"&gt;minule&lt;/a&gt; sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám &lt;a href="https://junior.guru/donate/"&gt;podporovatele&lt;/a&gt;, a ty by mohlo zajímat, jestli se neflákám. Taky je to …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;p&gt;Utekl další týden (11.5. — 15.5.) a tak stejně jako &lt;a href="https://honzajavorek.cz/blog/prvni-tydenni-poznamky-trizeni-nabidek-prace/"&gt;minule&lt;/a&gt; sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám &lt;a href="https://junior.guru/donate/"&gt;podporovatele&lt;/a&gt;, a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.&lt;/p&gt;
+&lt;figure&gt;&lt;img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"&gt;&lt;figcaption&gt;
+Fotka od &lt;a href="https://unsplash.com/@honza_kahanek"&gt;Honzy Kahánka&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h2 id="frontendovy-framework"&gt;Frontendový framework&lt;small class="permalink"&gt;&lt;a href="#frontendovy-framework" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;V různých volných chvílích jsem si o víkendu očima prošel celý &lt;a href="https://svelte.dev/tutorial/"&gt;tutoriál na Svelte&lt;/a&gt; a přihodil se mi názor, že to je abstrakce, kterou nepotřebuju. Napadlo mě během toho, jak by se dala udělat stránka s inzeráty i bez složitého JavaScriptu, a dokonce by to pomohlo i SEO.&lt;/p&gt;
+&lt;p&gt;Potom jsem si četl celé &lt;a href="https://github.com/turbolinks/turbolinks/blob/master/README.md"&gt;README Turbolinks&lt;/a&gt; a později se do nich shodou okolností pustil Aleš Roubíček na Twitteru, &lt;a href="https://twitter.com/honzajavorek/status/1260458654857338881"&gt;tak jsem se ho na ně vyptával&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="mereni-vykonnosti-a-pristupnosti"&gt;Měření výkonnosti a přístupnosti&lt;small class="permalink"&gt;&lt;a href="#mereni-vykonnosti-a-pristupnosti" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;V pondělí se mi nechtělo hned z ostra naběhnout do programování parseru nabídek práce a začal jsem menším úkolem. Říkal jsem si, že ať už bude na frontendu nakonec cokoliv, budu chtít, aby byl výkonný a přístupný. Už dřív jsem zahlídl nějaké nástroje, které to umí měřit, ale chtěl jsem je dostat přímo do CI. To se mi povedlo a napsal jsem o tom ve zbylém pondělním čase i &lt;a href="https://honzajavorek.cz/blog/monitoring-performance-with-lighthouse-and-circleci"&gt;rychlý článek&lt;/a&gt;. Škoda že to nefungovalo na první dobrou a jak kód, tak článek jsem řešil ještě i celé úterní dopoledne.&lt;/p&gt;
+&lt;p&gt;To mě nakonec trochu mrzelo. Taková blbost a rozlezlo se to hned na dva dny! Nasdílel jsem to tedy na všechny možné sociální sítě, aby z toho byla aspoň sláva. To mi vzalo další čas. Hlavně proto, že jak Facebook, tak Twitter najednou odmítají načítat náhledové obrázky u mých článků, dokud odkaz ručně neproženu přes &lt;a href="https://developers.facebook.com/tools/debug/"&gt;Facebookový debug&lt;/a&gt; nebo &lt;a href="https://cards-dev.twitter.com/validator"&gt;Twitter Card validátor&lt;/a&gt;. Tenhle problém jsem měl už dřív a podle toho, jak to časově lícuje, to vypadá na nějaký problém na straně GitHub Pages. Když blog hostuju tam, je s tímhle problém. Nevím, jak se toho ale zbavit. Každopádně další propálený čas.&lt;/p&gt;
+&lt;p&gt;A navíc žádná sláva nepřišla, jen pár lajků a k tomu můj hrdina &lt;a href="https://twitter.com/levelsio/"&gt;@levelsio&lt;/a&gt; shodou okolností zrovna celou středu tweetoval o tom, jak je tohle měření zbytečné.&lt;/p&gt;
+&lt;p&gt;Ve čtvrtek ale přišel s tím, že i přes všechno svoje hejtění předchozí den nakonec svůj projekt optimalizoval na skóre 99 ze 100 :D Na to jsem &lt;a href="https://twitter.com/honzajavorek/status/1260815778070265857"&gt;odpověděl&lt;/a&gt;, že jsem zrovna napsal článek o tom, jak to skóre udržet, a jemu se to líbilo natolik, že to retweetnul svým 82,1 tisícům sledujících. Jsem slavný! Psaní článku se tedy nakonec vyplatilo, radost se dostavila. Dokonce mi někdo poslal &lt;a href="https://github.com/honzajavorek/honzajavorek.cz/pull/96"&gt;Pull Request s opravou překlepů&lt;/a&gt;. Jupí!&lt;/p&gt;
+&lt;p&gt;Akorát pak teda někdo vytáhl, že existuje &lt;a href="https://github.com/GoogleChrome/lighthouse-ci"&gt;lighthouse-ci&lt;/a&gt;, nějaké udělátko přímo do CI, které jsem možná mohl přímo použít a nevynalézat kolo. Ach jo! Dál jsem se tomu však už nevěnoval a toto udělátko zatím blíže neprobádal.&lt;/p&gt;
+&lt;h2 id="trideni-nabidek-a-machine-learning"&gt;Třídění nabídek a Machine Learning&lt;small class="permalink"&gt;&lt;a href="#trideni-nabidek-a-machine-learning" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Pod minulými týdenními poznámkami jsem &lt;a href="https://www.facebook.com/honzajavorek/posts/10158091079317707"&gt;na FB probíral možnost třídit nabídky práce pomocí machine learningu&lt;/a&gt;. Rozhodl jsem se pro následující postup: Zkusím udělat prototyp základního porozumění tomu, co vyhodí lexer, tj. lidské věty klasifikovat na nějaké "flagy", třeba "Požadujeme minimálně 5 let zkušeností s Javou" na &lt;code&gt;minimal_experience_gt_1_year&lt;/code&gt;, protože pokud jsem schopen udělat to, zbytek už bude brnkačka. Jestliže se to bude jevit jako nekonečná a neuskutečnitelná práce, nechám toho a raději dopíšu nějaké další stahovače nabídek a doladím lexer, abych měl víc dat. Potom bych kamarády poprosil o pomoc zkusit na ta data poslat mašinky.&lt;/p&gt;
+&lt;h2 id="lexer-prorazeni-tunelu-tunelove-videni"&gt;Lexer: Prorážení tunelu, tunelové vidění&lt;small class="permalink"&gt;&lt;a href="#lexer-prorazeni-tunelu-tunelove-videni" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Jak jsem psal minule, rozdělil jsem si práci na třídění nabídek práce na:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Lexer,&lt;/li&gt;
+&lt;li&gt;sémantickou analýzu obsahu.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Tento týden se nesl ve znamení vylepšování lexeru. Byl téměř hotový z minulého týdne, jen ho chtělo trochu doladit a pak se posunout dál na tu sémantickou analýzu. Jestli vám minulá věta zní jako &lt;a href="https://en.wikipedia.org/wiki/Ninety-ninety_rule"&gt;ninety-ninety-rule&lt;/a&gt;, tak máte pravdu. Škoda, že jsem si toho na začátku týdne nevšiml já.&lt;/p&gt;
+&lt;p&gt;Každý den už to vypadalo, že lexer je hotový, ale vždy jsem našel nějakou chybu, nějaká data, na kterých to nefungovalo dobře. Bojoval jsem s nějakými šílenými bílymi znaky nebo třeba s tím, že v inzerátech jsou často prostě jen rozházené &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt; tagy, bez obalujícího &lt;code&gt;&amp;lt;ul&amp;gt;&lt;/code&gt;. Všechno jsem vyřešil, na všechno mám test, pro všechno jsem nakonec vymyslel geniální algoritmus. Naprosto mě to pohltilo a když to jen trochu přeženu, dalo by se říct, že jsem kromě programování akorát občas jedl, spal a čmáral pokusy o algoritmy na různé papíry. Když jsem se ze svého &lt;em&gt;mad scientist&lt;/em&gt; módu vynořil s hotovým lexerem, který rozklíčoval i nejzapeklitější formátování inzerátu, byl čtvrtek odpoledne.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hlavně si to všechno okomentuj a zdokumentuj, ať ten kód pochopíš i za týden.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Výrok mojí manželky, když mě viděla při práci na lexeru. A to není z IT! Takže jsem ještě velkou část čtvrtka dával kód lexeru do takové podoby, aby ho jednou šlo i číst.&lt;/p&gt;
+&lt;h3 id="tipy-na-psani-parseru"&gt;Tipy na psaní parseru&lt;small class="permalink"&gt;&lt;a href="#tipy-na-psani-parseru" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
+&lt;p&gt;Když zpracovávám změť HTML tagů nebo i čistého textu, kterou se na první pohled může zdát nemožné zpracovat, existují dvě zbraně, které jde použít. První je doménový kontext. Já vím, že v té změti je inzerát na práci, takže vím, co mám hledat. Můžu se dívat po konkrétní struktuře i po obsahu. Druhá zbraň je přepnout mozek a nedívat se na vstup jako stroj, nedejbože HTML parser, ale jako když se člověk dívá na to, co z té změti vykreslí prohlížeč. Člověku je jedno, jestli je něco &lt;code&gt;&amp;lt;h3&amp;gt;&lt;/code&gt; nebo &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;, vidí to tučně. Stejně tak &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; nebo &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;, je to nový řádek. Překřížené tagy? No a co. Parser se ve svém chápání vstupu musí co nejvíc přiblížit reprezentaci inzerátu v prohlížeči, nebo ještě lépe reprezentaci, kterou si člověk vytvoří v hlavě, když se na ten prohlížeč kouká. Důležité je, kde bude po vykreslení zalomený řádek, kde bude vizuální odrážka, atd. Takto se dá vyřešit spousta zdánlivě složitých problémů.&lt;/p&gt;
+&lt;h2 id="vymysleni-semanticke-analyzy"&gt;Vymýšlení sémantické analýzy&lt;small class="permalink"&gt;&lt;a href="#vymysleni-semanticke-analyzy" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Už během práce na lexeru jsem přemýšlel nad tím, jak bude vypadat sémantická analýza potom. Ve čtvrtek večer jsem se do toho pustil a během pátku prošel přes několik prototypů. No a nebudete věřit na co jsem přišel!&lt;/p&gt;
+&lt;p&gt;Já nejspíš ten lexer takhle složitý vůbec potřebovat nebudu, ani ta analýza nebude nakonec zřejmě tak složitá, jak jsem myslel. Když mi to došlo, nevěděl jsem, jestli se mám radovat, protože můžu smazat spoustu kódu a jsem mnohem blíž řešení, nebo jestli mám plakat, protože jsem propálil týden času.&lt;/p&gt;
+&lt;p&gt;Potřeba komplikovaného lexeru byla založena na hypotéze (říkejme jí hypotéza 1), že abych vyhodnotil nějakou větu v inzerátu, potřebuji znát její kontext. Pokud bude požadavek na univerzitní titul v seznamu "Požadavky" nebo v seznamu "Výhodou", tak to přece dost mění význam. Snažil jsem se tedy pochopit strukturu inzerátů a význam jednotlivých sekcí. Jenže po několika experimentech s analýzou jsem došel k tomu, že vliv kontextu jsem nejspíš dost přecenil a je velmi pravděpodobné, že o sekcích nemusím nakonec vědět nic a bude to stačit (hypotéza 2). No, je osm hodin v pátek večer a nechávám to přes víkend uležet v tomto stavu:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Třídit nabídky automaticky půjde, a nejspíš mnohem jednodušeji než jsem myslel.&lt;/li&gt;
+&lt;li&gt;Třetina lexeru se mi bude hodit tak jako tak, to určitě zbytečná práce nebyla.&lt;/li&gt;
+&lt;li&gt;Ještě jsem hypotézu 2 neprobádal dostatečně na to, abych hypotézu 1 mohl definitivně zahodit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="pouceni"&gt;Poučení&lt;small class="permalink"&gt;&lt;a href="#pouceni" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
+&lt;p&gt;Pozor na padání do &lt;em&gt;rabbit holes&lt;/em&gt;! Dělal jsem si srandu, že dělám něco, co nejde, ale já nevím že to nejde, takže se mi to udělat povede. Odhodlání překonat jakoukoliv nástrahu mě ale oslepilo a zbavilo nadhledu. Sice se mi povedlo provrtat hlavou skálu a udělat do ní tunel, ale když jsem se objevil na druhé straně kopce, zjistil jsem, že nejspíš existuje cestička kolem.&lt;/p&gt;
+&lt;h2 id="proc-tridim-nabidky"&gt;Proč třídím nabídky&lt;small class="permalink"&gt;&lt;a href="#proc-tridim-nabidky" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Nakonec jedna připomínka proč se vůbec snažím třídit nabídky. Stahuji je z několika různých míst. Na všech těchto místech mám vyfiltrováno na juniorní nabídky práce, někdy jsou dokonce přímo označené jako &lt;em&gt;entry level&lt;/em&gt;, což je přesnější popis té kategorie inzerátů, které chci na JG zobrazovat. A stejně mi tam úplně běžně padají věci jako tohle:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;BS in a technical discipline. MS desirable. At least 5 years experience in software quality.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Nebo tohle:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;At least 5 years’ experience as an iOS mobile developer.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Pokud se mi povede to vytřídit, nebude JG &lt;em&gt;nejlepší&lt;/em&gt; místo, kde junior sežene pohromadě relevantní inzeráty, ale prakticky &lt;em&gt;jediné&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id="jg-rank"&gt;JG rank&lt;small class="permalink"&gt;&lt;a href="#jg-rank" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Ve čtvrtek před spaním mě napadlo, že bude lepší nedělat třídění nabídek úplně černobílé, ale mít nějaké "skóre", které by určovalo jak moc je nabídka juniorní. Skóre by se potom mohlo nejen podílet na vyřazování nerelevantních nabídek, ale i na řazení nabídek ve výpisu. Pracovně jsem si to pojmenoval jako "JG rank". Mohl by být klidně transparentní a každý by hned viděl, proč je jaká nabídka považována za více nebo méně vhodnou pro juniory.&lt;/p&gt;
+&lt;h2 id="dalsi-poznamky"&gt;Další poznámky&lt;small class="permalink"&gt;&lt;a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Jeden mentorovací videohovor.&lt;/li&gt;
+&lt;li&gt;Zmínka o JG se &lt;a href="https://twitter.com/pavlina_speaks/status/1258734537254809600?s=21"&gt;poprvé objevila v tištěném médiu&lt;/a&gt; (pokud vím), a to v časopise Marie Claire. Juchů!&lt;/li&gt;
+&lt;li&gt;Hana Klimentová na &lt;a href="https://www.facebook.com/groups/pyonieri/"&gt;Pyonýry&lt;/a&gt; hodila &lt;a href="http://vyuka-programovani-pro-zacatecniky.hanka.one/public/test"&gt;dotazník&lt;/a&gt; pro začátečníky v programování, který zjišťuje učební styly. Koukal jsem na to, četl si o učebních stylech a celkově jsem s tím jeden den strávil docela dost času.&lt;/li&gt;
+&lt;li&gt;Potunil jsem Gulp tak, aby každý reload při vývoji byl trochu efektivnější.&lt;/li&gt;
+&lt;li&gt;Zahlédl jsem na Twitteru článek &lt;a href="https://macwright.org/2020/05/10/spa-fatigue.html"&gt;Second-guessing the modern web&lt;/a&gt; a zapsal jsem si pár nápadů na článek o frontendu, který chci už dlouho napsat.&lt;/li&gt;
+&lt;li&gt;Emma Bostian vydala &lt;a href="https://compiled.blog/blog/how-i-made-40000-dollars-on-a-book"&gt;článek o tom, jak vydělala $40000 na knížce pro juniory&lt;/a&gt;, ale ještě jsem to nečetl. Taky nemám 105,8 tisíc followerů na Twitteru, takže její strategii asi nebudu moci 1:1 obšlehnout.&lt;/li&gt;
+&lt;li&gt;Odebral jsem zatím z třídění nabídek práce podporu pro slovenské nabídky. Chci je tam do budoucna mít, ale teď v mých datech není ani jedna a na nulovém vzorku se těžko ladí nějaká sémantická analýza. Slovenštinu přidám zpět v budoucnu jako separátní úkol, i s nějakým zdrojem slovenských nabídek.&lt;/li&gt;
+&lt;li&gt;Vylepšil jsem jak se mi v testech načítají fixtures.&lt;/li&gt;
+&lt;li&gt;Napsal jsem si dekorátor, který mi pošle na macOS notifikaci a udělá zvuk, když obalená funkce skončí. Když spustím stahování nabídek práce, už to trvá celkem dlouho, a tohle mi pomáhá si všimnout, že data už jsou ready. Možná o tom napíšu samostatný článek.&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content><category term="blog"></category></entry><entry><title>Monitoring performance with Lighthouse and CircleCI</title><link href="https://honzajavorek.cz/blog/monitoring-performance-with-lighthouse-and-circleci" rel="alternate"></link><published>2020-05-11T00:00:00+02:00</published><updated>2020-05-11T00:00:00+02:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2020-05-11:/blog/monitoring-performance-with-lighthouse-and-circleci</id><summary type="html">&lt;div&gt;&lt;p&gt;I wanted to continuously monitor "frontend performance" of my website, so I could get notified about drops or improve the scores over time. This article is about how I hacked a custom solution using a tool called Lighthouse and a CI as a service I use, CircleCI. It's just quick …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;p&gt;I wanted to continuously monitor "frontend performance" of my website, so I could get notified about drops or improve the scores over time. This article is about how I hacked a custom solution using a tool called Lighthouse and a CI as a service I use, CircleCI. It's just quick notes, so no editing, no reviews, not many grammar checks, but hopefully it's gonna be useful nevertheless.&lt;/p&gt;
 &lt;figure&gt;&lt;img alt="Reading" src="https://honzajavorek.cz/images/philippe-d-mAxfIDdiE7o-unsplash.jpg"&gt;&lt;figcaption&gt;
 Photo by &lt;a href="https://unsplash.com/@filip42"&gt;Philippe D.&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
 &lt;h2 id="the-problem"&gt;The problem&lt;small class="permalink"&gt;&lt;a href="#the-problem" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
@@ -2529,182 +2591,4 @@ přímo ve ValMezu!&lt;/small&gt;&lt;/p&gt;&lt;/div&gt;</content><category term=
 &lt;h2 id="stereotyp"&gt;Stereotyp&lt;small class="permalink"&gt;&lt;a href="#stereotyp" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;Stereotyp mám mnohem více spojený s denním dojížděním do kanceláře, kde trávím 8 hodin od pondělí do pátku. Teď pracuji z domova a stereotyp je asi to poslední, co bych pociťoval. Dagi vysvětluje, že &lt;strong&gt;změna prostředí zvyšuje výkon&lt;/strong&gt;, s čímž zcela souhlasím. Kdybych teď zašel někam do kanceláře, budu se cítit velice produktivně, stejně jako jsem se cítil produktivně první dny doma. Jenže po čase si zvyknu a upadám do stereotypu, ať je to jedno nebo druhé, tak prostě člověk funguje. Mám-li si však vybrat, jednoznačně hlasuji pro &lt;strong&gt;možnost, jež mi změnu (a tedy návrat do produktivity) umožňuje&lt;/strong&gt;. Já si z domů do té kanceláře mohu zajít. Nebo si dám práci večer. Nebo v kavárně. Každé úterý chodím pracovat do kavárny, abych do stereotypu neupadal. Více jak jedno dopoledne bych tam nevydržel, ale v kontextu celého týdne je to velice osvěžující!&lt;/p&gt;
 &lt;h2 id="jaky-si-to-udelas"&gt;Jaký si to uděláš...&lt;small class="permalink"&gt;&lt;a href="#jaky-si-to-udelas" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;...takový to máš. Neříkám, že Dagi nemá pravdu, nebo že já ji mám, spíš jsem chtěl ukázat, že &lt;strong&gt;nad všemi těmito věcmi se dá polemizovat a záleží na konkrétním nastavení samotného člověka a jeho týmu&lt;/strong&gt;. Pokud není tým dostatečně a dobře distribuovaný (a podle toho také řízený), překážky v komunikaci určitě budou znatelné. Pokud má někdo rád pevné ukotvení dne, doma se neumí motivovat k práci, práce v kavárně jej děsí, chybí mu kontakt s kolegy a rád si čte v MHD, tak pro něj práce na dálku není a veškerá polemika jde stranou. Každý jsme přece z jiného těsta.&lt;/p&gt;&lt;/div&gt;</content><category term="blog"></category></entry><entry><title>Text o FIT VUT</title><link href="https://honzajavorek.cz/blog/text-o-fit-vut/" rel="alternate"></link><published>2013-03-05T15:32:09+01:00</published><updated>2013-03-05T15:32:09+01:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2013-03-05:/blog/text-o-fit-vut/</id><summary type="html">&lt;div&gt;&lt;p&gt;Tak přesně takto se jmenoval e-mail, který mi děkan fakulty FIT VUT v Brně, &lt;a href="http://www.fit.vutbr.cz/~zendulka/"&gt;Doc. Ing. Jaroslav Zendulka, CSc.&lt;/a&gt;, poslal 16. 12. 2010. Po tom, co David Grudl &lt;a href="http://www.latrine.cz/mrd-pardon-miluji-te-me-vut"&gt;publikoval text o své přednášce&lt;/a&gt; na FIT VUT, rozhodl jsem se i já zkusit po letech shrnout celou svou příhodu s fakultou …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;p&gt;Tak přesně takto se jmenoval e-mail, který mi děkan fakulty FIT VUT v Brně, &lt;a href="http://www.fit.vutbr.cz/~zendulka/"&gt;Doc. Ing. Jaroslav Zendulka, CSc.&lt;/a&gt;, poslal 16. 12. 2010. Po tom, co David Grudl &lt;a href="http://www.latrine.cz/mrd-pardon-miluji-te-me-vut"&gt;publikoval text o své přednášce&lt;/a&gt; na FIT VUT, rozhodl jsem se i já zkusit po letech shrnout celou svou příhodu s fakultou - hlavně proto, abych případnou &lt;em&gt;urban legend&lt;/em&gt; uvedl na pravou míru.&lt;/p&gt;
-&lt;p&gt;Ke konci roku 2010 se mi přestávalo čím dál tím více na fakultě líbit. Studium mě frustrovalo. Když jsem si navíc přečetl drby o některých rozhodnutích vedení fakulty, nakumulovalo se to ve mě a sepsal jsem článek &lt;strong&gt;FIT nebo FI?&lt;/strong&gt; na tento svůj blog, tehdy ještě na adrese &lt;em&gt;blog.javorek.net&lt;/em&gt;. Jak už to obvykle dělám, článek byl spíše jakýmsi "upuštěním vlastních myšlenek" - stejně jako Brumbál v Harry Potterovi ulehčoval hlavě odléváním do Myslánky (v originále &lt;em&gt;Pensieve&lt;/em&gt;), já ulehčuji svým šedým mozkovým závitům sepisováním myšlenek sem do článků na blogu. Jenže to pak občas způsobuje problémy, především pokud jsou ty myšlenky nesrovnané a nevyjasněné. Nejsem na ten text nijak hrdý, &lt;strong&gt;je to příšerný štěk&lt;/strong&gt;, ale rozhodl jsem se jej po letech zase spolu s tímto článkem &lt;a href="https://honzajavorek.cz/blog/fit-nebo-fi/"&gt;uvěřejnit&lt;/a&gt; v jeho originálním znění, aby byl jasný kontext celé věci.&lt;/p&gt;
-&lt;p&gt;Po vydání toho článku se stalo následující:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Článek začali studenti sdílet mezi sebou a &lt;strong&gt;stal se velice čteným a komentovaným&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Dostalo se ke mě postupně několik signálů, &lt;strong&gt;že si to přečetlo vedení školy&lt;/strong&gt; a chystá se na mě.
-    Přečetl jsem si tedy zákony o pomluvě apod. a čekal jsem, co se bude dít.&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Napsal mi &lt;strong&gt;děkan fakulty&lt;/strong&gt; Jaroslav Zendulka.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Vážený pan bakaláři,&lt;/p&gt;
-&lt;p&gt;Váš úvodní text "FIT nebo FI?" blogu http://blog.javorek.net/fit-nebo-fi/
-obsahuje ve vztahu k FIT VUT, jejímž jste studentem, řadu nepravdivých a
-zkreslených informací a urážek, které poškozují dobré jméno fakulty i
-některých konkrétních osob fakulty. Žádám  Vás proto o okamžité odstranění
-tohoto Vašeho příspěvku a reakcí, které na něj navazují.&lt;/p&gt;
-&lt;p&gt;Předpokládám, že jste coby člen akademické obce FIT VUT skládal
-imatrikulační slib, ve kterém jste mimo jiné slíbil, že "vždy budu
-vystupovat tak, abych nepoškodil vážnost své univerzity a fakulty" - viz
-příloha Statutu FIT VUT -
-http://www.fit.vutbr.cz/info/predpisy/statfit09.htm. Statut VUT v článku 39,
-odst. 4 říká, že "Složením povinného imatrikulačního slibu jsou studenti
-přijímáni do akademického společenství a nadále jsou tímto slibem vázáni."
-Vy jste tento slib evidentně nedodržel. Žádám Vás proto, abyste mne
-navštívil, a toto vysvětlil. Napište mi prosím, jestli byste se mohl
-zastavit v pondělí 20.12., pokud ne, pak který den na začátku ledna. Děkuji.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Má odpověď&lt;/strong&gt; byla následující:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Hezký den,&lt;/p&gt;
-&lt;p&gt;svůj článek jsem zatím stáhnul a nyní již není veřejně přístupný.&lt;/p&gt;
-&lt;p&gt;Předně bych chtěl vysvětlit, z jakého důvodu byl článek napsán,
-protože od toho se odvíjí vše ostatní. Napsal jsem jej, protože jsem
-byl subjektivně nespokojený se studiem magisterského programu naší
-fakulty. Nevěděl jsem delší dobu jak to řešit a prožíval jsem jakýsi
-vnitřní názorový boj. Dospěl jsem k tomu, že chci toto pnutí probrat s
-přáteli a tak jsem i učinil, byť ne šeptáním po chodbách naší fakulty
-nebo u piva v hospodě, nýbrž sepsáním článku na svůj osobní dlouholetý
-zápisník, kde jsem známé požádal o názory a o zpětnou vazbu.&lt;/p&gt;
-&lt;p&gt;Článek tedy nebyl sepsán jako nějaká investigativní sonda do nitra
-naší fakulty pro širokou veřejnost. Nebyl proto vydán v žádném
-magazínu, ale na soukromém blogu. Nebudu tedy obhajovat, že by
-obsahoval pravdy a fakta. Článek je sepsán z mé vlastní potřeby a
-proto odráží mé vlastní subjektivní pocity a názory. Otevřeně tedy
-opravdu přiznám, že je to snůška mých vlastních pocitů o životě a
-škole + pár špatně nebo vůbec nepodložených faktů. Celé okořeněno
-hovorovým studentským slangem. Takový článek nemohu seriózně
-obhajovat.&lt;/p&gt;
-&lt;p&gt;Zjevně však došlo k tomu, že se článek otřel o téma, které je v
-současné době mezi studenty trendem a přečetlo si jej mnoho lidí a
-mnoho lidí s ním souhlasilo, což dávali najevo i v komentářích. Tím se
-článek dostal do pozice, pro kterou však nebyl psán. Do pozice oné
-investigativní sondy zpravující svět o poměrech na FITu. Lidé si jej
-začali předávat mezi sebou a viděli v něm jim blízkou formou sepsané
-shrnutí jejich vlastních pocitů a názorů. Začali v něm vidět seriózní
-pamflet kritizující poměry na fakultě -- že seriózní není, na tom se
-shodneme. Pokud má probíhat reálná kritika fakulty, pak kvituji, že
-rozhodně jinou cestou, založenou na faktech a ne na dojmech a osobních
-nesympatiích. Nechci rozhodně vést tímto článkem žádný "boj proti
-fakultě", ačkoliv si to mnozí čtenáři toho článku mohou myslet. Já se
-totiž nestarám ani tolik o poměry na fakultě, jako spíš o sebe a o
-svou vlastní budoucnost. Nemám potřebu se angažovat, proto nejsem ve
-studentské unii, politické straně a ani v jiných sdruženích.&lt;/p&gt;
-&lt;p&gt;Stejným tónem, jakým jsem se vyjadřoval o naší fakultě, vyjadřoval
-jsem se na tomtéž blogu v minulosti i o jiných institucích --
-například mobilních operátorech. Stejně jako mě mohou oni žalovat za
-pomluvu, může mě má fakulta trestat za pošpinění jejího jména. Jsem si
-vědom, že jsem překročil hranici, která je mi dána imatrikulačním
-slibem a že jsem se choval neurvale. Přijde mi však, že jsem to udělal
-v situaci, v níž je to i trochu očekávatelné -- ve vlastní
-rozpolcenosti, jestli na naší fakultě zůstat, nebo odejít pryč.&lt;/p&gt;
-&lt;p&gt;Jestliže budete i po tomto písemném vysvětlení trvat na schůzce, mohu
-se za vámi v pondělí dostavit. V tom případě však prosím upřesněte čas
-schůzky.&lt;/p&gt;
-&lt;p&gt;Děkuji a pokud se nesejdeme, přeji už nyní pěkné a příjemné svátky,
-Honza Javorek&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Přetavil jsem tyto dva e-maily také v
-    &lt;a href="https://honzajavorek.cz/blog/sliby-se-maji-dodrzovat-i-o-vanocich/"&gt;další článek&lt;/a&gt;,
-    v němž jsem &lt;strong&gt;vysvětlil
-    svým čtenářům situaci a omluvil se&lt;/strong&gt; za to, že jsem kontroverzní, ale oblíbený a sdílený
-    článek stáhl. "Osudovou chybou" však bylo, že jsem v první větě odkázal na verzi
-    toho původního článku, kterou si nakešoval Google.&lt;/p&gt;
-&lt;p&gt;Kdo to neznáte, on si Google po nějakou &lt;strong&gt;uchovává kopie existujících stránek&lt;/strong&gt;. I když potom taková stránka
-náhodou zmizí z povrchu zemského, několik týdnů je většinou stále k nalezení právě v oné Google Cache. Stačí
-do vyhledávání zadat &lt;em&gt;cache:&lt;/em&gt; a adresu - třeba &lt;a href="https://www.google.com/?q=cache:www.centrum.cz"&gt;takto&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Je to tedy &lt;strong&gt;zásah třetí strany&lt;/strong&gt;, který nekontroluji. Je to totéž, jako by nějaký jiný student můj text vzal
-a bez svolení jej publikoval na jiném místě.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Děkan mi napsal následující. Mého druhého článku si zřejmě ještě nevšiml:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Dobrý den,&lt;/p&gt;
-&lt;p&gt;děkuji za informace. Uspokojivou odpověď na otázku, co Vás vedlo k
-prezentaci FIT, jejímž jste studentem, právě takovou formou a s vědomím, že
-porušujete imatrikulační slib, jsem ve Vašem dopisu bohužel nenašel. Stejně
-tak odpověď na otázku, čeho jste tím ve vztahu k FIT chtěl dosáhnout. Rovněž
-mne znepokojuje Vaše úvodní věta, ve které uvádíte, že jste článek "zatím
-stáhnul", tedy asi s ním máte nějaké další úmysly.&lt;/p&gt;
-&lt;p&gt;Z tohoto důvodu bych se s Vámi přece jenom rád setkal. Jsem si vědom toho,
-že výuková část semestru už skončila a nemusíte být v Brně. Pokud byste mohl
-v pondělí 20.12.2010 přijít, pak doporučuji čas 13.00 hod. u mne v kanceláři
-C204. Kdybyste už byl tou dobou mimo Brno, tak Vás žádám alespoň o
-vysvětlení toho "zatím stáhnul" a schůzku bychom mohli odložit na leden.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Byl jsem studenty upozorněn, že se o mé věci &lt;strong&gt;jednalo na kolegiu děkana&lt;/strong&gt;.
-    &lt;a href="https://honzajavorek.cz/files/zkd40-101216.pdf"&gt;Zápis z kolegia&lt;/a&gt; jsem si uschoval (strana 2, bod 2). Vyšel
-    až přesně v den naší schůzky. Tam jsem si přečetl, že &lt;strong&gt;můj druhý článek nebyl
-    pochopen úplně správně&lt;/strong&gt; a tak jsem se na to už předem mohl trochu připravit.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Přišel jsem na schůzku s děkanem. Myslel jsem, že půjde o debatu mezi čtyřma
-    očima, ale na místě byli ještě &lt;a href="http://www.fit.vutbr.cz/~matousp/"&gt;Ing. Petr Matoušek, Ph.D.&lt;/a&gt;
-    jako zástupce Akademického senátu a &lt;a href="http://www.fit.vutbr.cz/~pernica/"&gt;Mgr. Iveta Pernicová&lt;/a&gt;, právní zástupkyně fakulty.&lt;/p&gt;
-&lt;p&gt;Děkan mi vysvětlil, že se se mnou chtěl slušně bavit, ale po vydání onoho druhého
-článku po mne žádné vysvětlení už ani nechce a &lt;strong&gt;vlastně se mnou už nehodlá o ničem ani
-diskutovat&lt;/strong&gt;. Rozlítilo jej totiž, že jsem zveřejnil část korespondence, kterou se mnou
-vedl a ještě jsem přemístil starý článek na jiné místo a odkázal na něj.&lt;/p&gt;
-&lt;p&gt;Tedy uznávám, že článek je kompilátem těch dvou e-mailů, ale v podstatě se jedná jen
-o &lt;strong&gt;zopakování všech faktů&lt;/strong&gt;, ne o žádné zveřejňování korespondence. Přístupnost starého
-článku z Google Cache raději nekomentuji.&lt;/p&gt;
-&lt;p&gt;Děkan mi vysvětlil, že celá věc &lt;strong&gt;může mít právní dohru&lt;/strong&gt;, ale že na mě budou natolik hodní,
-že mě nechají v klidu celé lednové zkouškové (pokud ovšem nebudu dále aktivně provokovat).
-Já jsem byl v podstatě už dříve rozhodnutý ze školy odejít, takže mi to bylo poměrně jedno.
-Děkan několikrát zdůraznil, že na mne &lt;strong&gt;nechce vyvíjet žádné nátlaky&lt;/strong&gt; a jiné osoby jsou na schůzce
-přítomny především jako svědci toho, že vše proběhlo v poklidu a bez nějakých nepravostí. Což
-byla pravda, protože být to schůzka mezi čtyřma očima, mohl bych si o jejím průběhu vymyslet
-cokoliv by mě napadlo a on by neměl žádného dovolání - a samozřejmě platilo totéž i naopak.&lt;/p&gt;
-&lt;p&gt;Zendulka nechal vytisknout mé články a chtěl pouze, &lt;strong&gt;abych mu podepsal, že jsem jejich autorem
-a že jsou i po jeho žádosti oba přístupné z mé domény&lt;/strong&gt;. Pomiňme, že nevím, k čemu by mu taková věc byla dobrá - šlo zřejmě
-jen o jakési "bu bu bu" - důležitá byla nesmyslnost druhé části výroku. Odmítl jsem takovou formulaci
-podepsat, takže jsme se chvíli dohadovali. Překvapil jsem jej trochu svou
-znalostí zápisu z kolegia děkana, který visel na webu fakulty jen pár hodin, ale věc jsem mu vysvětlit
-nedokázal. Nebyla s ním žádná rozumná domluva, dokonce mi názorně klikáním myši "před svědky ukazoval", jak se z mého
-blogu přes odkaz dostane na onen Googlem nakešovaný původní článek.&lt;/p&gt;
-&lt;p&gt;Celá věc neměla konce, takže jsem nakonec přistoupil na to, že mu &lt;strong&gt;podepíšu autorství
-obou článků a vyjádření, které však sám formuluji&lt;/strong&gt;. Napsal jsem něco v tom smyslu, že
-jsem autorem obou článků, ale že jsem první z nich na žádost děkana stáhl ze svého webu a nezodpovídám
-nijak za kopie vytvořené třetími stranami.&lt;/p&gt;
-&lt;p&gt;Jelikož jsem se v původním článku navážel do &lt;a href="http://www.fit.vutbr.cz/~kolar/"&gt;Doc. Dr. Ing. Dušana Koláře&lt;/a&gt;
-a i sám Zendulka vedl jeden z předmětů, jež jsem měl zrovna zapsané a čekala mě z nich zkouška, byl jsem upozorněn,
-že pokud bych měl jakékoliv pochybnosti o svém hodnocení, mám právo domáhat se přezkoušení před komisí.&lt;/p&gt;
-&lt;p&gt;Kopie všech dokumentů sepsaných na tomto setkání jsem si musel zvlášť
-vyžádat. Poté jsme si všichni rozdali podpisy, popřáli si hezké svátky a rozešli se. Zde uveřejňuji vše, co jsem
-si ze schůzky odnesl domů:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://honzajavorek.cz/files/p1190068.jpg"&gt;Zápis z jednání&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://honzajavorek.cz/files/p1190069.jpg"&gt;Kopie článku &lt;strong&gt;FIT nebo FI?&lt;/strong&gt; s mým vyjádřením a podpisem&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://honzajavorek.cz/files/p1190070.jpg"&gt;Kopie článku &lt;strong&gt;Sliby se mají dodržovat i o Vánocích&lt;/strong&gt; s mým vyjádřením a podpisem&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Napsal jsem na blog
-    &lt;a href="https://honzajavorek.cz/blog/maly-tahak-k-prechodu-z-fit-na-fi/"&gt;tahák k přechodu z FIT na FI&lt;/a&gt;.
-    Jelikož jsem nijak už z pohledu vedení fakulty "nezlobil", udělal jsem v klidu zkouškové. Dokončil jsem během
-    zkouškového z principu i ty nejtěžší předměty, abych si dokázal, že na FIT mám a odcházím jen z přesvědčení, že
-    studium tam pro mne dále nemá smysl. Potom jsem &lt;strong&gt;na Valentýna odešel podáním běžné žádosti o ukončení studia a tentýž
-    den jsem se zapsal na FI MU&lt;/strong&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Rozhodl jsem se, že &lt;strong&gt;sepíšu pořádný článek o fakultě&lt;/strong&gt; - subjektivní, ale podložený všemi fakty a nenapadnutelný.
-    Sbíral jsem na něj rozličné podklady ze všech stran a dlouho jej doplňoval a přepisoval. Radil jsem se dokonce se studentskou unií FIT,
-    jestli v něm nevidí nějaké napadnutelné věci. Nakonec &lt;strong&gt;vyšel až v květnu 2011 pod názvem
-    &lt;a href="https://honzajavorek.cz/blog/byl-jsem-fit/"&gt;Byl jsem fit&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Celá věc měla dohru hlavně v tom, že &lt;strong&gt;SU FIT mohla udělat anketu mezi studenty o jejich nespokojenosti a pobavit se nad jejími závěry
-    s vedením školy&lt;/strong&gt;. Výsledky ankety jsem si uschoval a &lt;a href="https://honzajavorek.cz/files/souhrn.pdf"&gt;zde je zveřejňuji&lt;/a&gt;, stejně jako &lt;a href="https://honzajavorek.cz/files/stanovisko.pdf"&gt;stanovisko fakulty&lt;/a&gt;.
-    Myslím, že ani jedno nebylo v době jejich vydání zcela veřejně přístupné, ale když může &lt;a href="http://www.zitbrno.cz/salina-leaks"&gt;leakovat Šalina&lt;/a&gt;, můžu i já :-) Jestli se něco změnilo nebo ne, to už nevím. Jistý náznak popisu situace lze asi hledat v &lt;a href="https://honzajavorek.cz/blog/alma-mater/#comment-398474427"&gt;tomto komentáři&lt;/a&gt; z ledna 2012.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;No, a to je celé. Možná se traduje, že jsem napsal rozumný článek kritický ke své fakultě a došlo kvůli němu k nátlakům na mou osobu. Takové tvrzení by bylo nespravedlivé a jednostranné. &lt;strong&gt;Můj článek rozumný nebyl a žádost o jeho stáhnutí byla zcela oprávněná.&lt;/strong&gt; Nešlo o žádnou bitvu svobody slova se zastrašováním, původní text byl nepravdivý štěk sepsaný v afektu, jenž nemělo od prvního okamžiku smysl obhajovat.&lt;/p&gt;
-&lt;p&gt;Nešťastný byl však celý pozdější průběh &lt;strong&gt;komunikace s děkanem fakulty&lt;/strong&gt;. Myslím, že Zendulkovi chybělo především &lt;strong&gt;pochopení&lt;/strong&gt; a ukázalo se to na mnoha detailech celé záležitosti. Celou kauzu jsem bral i v době jejího průběhu spíše s humorem a nadhledem. Z fakulty bych odešel tak či tak a to kvůli rozhodně lepším důvodům, než byla nějaká krizová komunikace s děkanem. Dojmy ze studia na fakultě a důvody pro své rozhodnutí odejít jsem sepsal právě do onoho &lt;a href="https://honzajavorek.cz/blog/byl-jsem-fit/"&gt;posledního článku&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Dnes mám magisterský titul z Masarykovy Univerzity, ale FIT mám pořád svým způsobem &lt;a href="https://honzajavorek.cz/blog/alma-mater/"&gt;rád jako svou alma mater&lt;/a&gt;. Odchodu však nelituji. FI nebyla žádným růžovým sadem, ale viděl jsem posun v přístupu ke studentovi a variabilitě studia, což vyřešilo mé hlavní frustrace ze studia. Nejspíš jen díky tomu jsem pak byl schopen vše řádně dokončit.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Článek jsem aktualizoval 6. 3. 2013 - doplnil jsem ofocené dokumenty a několik detailů, na něž jsem si ještě vzpomněl.&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;</content><category term="blog"></category></entry></feed>
+&lt;p&gt;...takový to máš. Neříkám, že Dagi nemá pravdu, nebo že já ji mám, spíš jsem chtěl ukázat, že &lt;strong&gt;nad všemi těmito věcmi se dá polemizovat a záleží na konkrétním nastavení samotného člověka a jeho týmu&lt;/strong&gt;. Pokud není tým dostatečně a dobře distribuovaný (a podle toho také řízený), překážky v komunikaci určitě budou znatelné. Pokud má někdo rád pevné ukotvení dne, doma se neumí motivovat k práci, práce v kavárně jej děsí, chybí mu kontakt s kolegy a rád si čte v MHD, tak pro něj práce na dálku není a veškerá polemika jde stranou. Každý jsme přece z jiného těsta.&lt;/p&gt;&lt;/div&gt;</content><category term="blog"></category></entry></feed>
