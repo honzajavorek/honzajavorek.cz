@@ -1,5 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>HJ's Blog</title><link href="http://localhost:8000/blog/" rel="alternate"></link><link href="https://honzajavorek.cz/feed.xml" rel="self"></link><id>https://honzajavorek.cz/</id><updated>2020-05-15T00:00:00+02:00</updated><author><name>Honza Javorek</name><email>mail@honzajavorek.cz</email><uri>http://localhost:8000</uri></author><rights>© Copyright 2007—2020 Honza Javorek &lt;http://localhost:8000&gt;</rights><entry><title>Týdenní poznámky: Maják a tunel</title><link href="https://honzajavorek.cz/blog/tydenni-poznamky-majak-a-tunel/" rel="alternate"></link><published>2020-05-15T00:00:00+02:00</published><updated>2020-05-15T00:00:00+02:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2020-05-15:/blog/tydenni-poznamky-majak-a-tunel/</id><summary type="html">&lt;div&gt;&lt;p&gt;Utekl další týden (11.5. — 15.5.) a tak stejně jako &lt;a href="https://honzajavorek.cz/blog/prvni-tydenni-poznamky-trizeni-nabidek-prace/"&gt;minule&lt;/a&gt; sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám &lt;a href="https://junior.guru/donate/"&gt;podporovatele&lt;/a&gt;, a ty by mohlo zajímat, jestli se neflákám. Taky je to …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;p&gt;Utekl další týden (11.5. — 15.5.) a tak stejně jako &lt;a href="https://honzajavorek.cz/blog/prvni-tydenni-poznamky-trizeni-nabidek-prace/"&gt;minule&lt;/a&gt; sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám &lt;a href="https://junior.guru/donate/"&gt;podporovatele&lt;/a&gt;, a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>HJ's Blog</title><link href="http://localhost:8000/blog/" rel="alternate"></link><link href="https://honzajavorek.cz/feed.xml" rel="self"></link><id>https://honzajavorek.cz/</id><updated>2020-05-18T00:00:00+02:00</updated><author><name>Honza Javorek</name><email>mail@honzajavorek.cz</email><uri>http://localhost:8000</uri></author><rights>© Copyright 2007—2020 Honza Javorek &lt;http://localhost:8000&gt;</rights><entry><title>Notify yourself from Python</title><link href="https://honzajavorek.cz/blog/notify-yourself-from-python" rel="alternate"></link><published>2020-05-18T00:00:00+02:00</published><updated>2020-05-18T00:00:00+02:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2020-05-18:/blog/notify-yourself-from-python</id><summary type="html">&lt;div&gt;&lt;p&gt;Sharing a quick tip on how to get notification on macOS when a function in Python is done with its job.&lt;/p&gt;
+&lt;figure&gt;&lt;img alt="Reading" src="https://honzajavorek.cz/images/luis-perdigao-JMabq3k4gk8-unsplash.jpg"&gt;&lt;figcaption&gt;
+Photo by &lt;a href="https://unsplash.com/@scalabis"&gt;Luís Perdigão&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h2 id="the-problem"&gt;The problem&lt;small class="permalink"&gt;&lt;a href="#the-problem" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;I'm working on a website for juniors in tech, &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt; (the content is Czech only so far, I'm sorry). There is a …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;p&gt;Sharing a quick tip on how to get notification on macOS when a function in Python is done with its job.&lt;/p&gt;
+&lt;figure&gt;&lt;img alt="Reading" src="https://honzajavorek.cz/images/luis-perdigao-JMabq3k4gk8-unsplash.jpg"&gt;&lt;figcaption&gt;
+Photo by &lt;a href="https://unsplash.com/@scalabis"&gt;Luís Perdigão&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h2 id="the-problem"&gt;The problem&lt;small class="permalink"&gt;&lt;a href="#the-problem" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;I'm working on a website for juniors in tech, &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt; (the content is Czech only so far, I'm sorry). There is a component with web scrapers made in &lt;a href="https://docs.scrapy.org/"&gt;Scrapy&lt;/a&gt;, which helps me to download and aggregate job advertisments from other places.&lt;/p&gt;
+&lt;p&gt;I often run the scrapers on my local computer, but since it takes a few minutes until they're done, I couldn't stop myself from switching to Twitter or something while waiting. Then I often found myself watching funny cat gifs one hour later, only hardly realizing that the scrapers are probably done by then and I can resume my work.&lt;/p&gt;
+&lt;h2 id="notification"&gt;Notification&lt;small class="permalink"&gt;&lt;a href="#notification" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;If all you need to support is macOS, there are at least three simple ways how to notify yourself:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Terminal sound,&lt;/li&gt;
+&lt;li&gt;standard notification,&lt;/li&gt;
+&lt;li&gt;the &lt;code&gt;say&lt;/code&gt; command.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="say-say-say"&gt;Say say say&lt;small class="permalink"&gt;&lt;a href="#say-say-say" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
+&lt;p&gt;Oh, you didn't know about the &lt;code&gt;say&lt;/code&gt; command? I'm sorry for ruining your productivity today then. Type the following to your terminal with sound on and see what happens:&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;$ say 'Hello!'
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;And yes, it works for other languages, too:&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;$ say -v zuzana 'Dobrý den, jedno pivo prosím'
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;In Python, it's easy to run commands using the &lt;code&gt;subprocess.run()&lt;/code&gt; function, so in your script, one can do something like this:&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;subprocess&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt;
+
+&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="s1"&gt;'say'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'-v'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'zuzana'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'Jedno pivo prosím!'&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;This thing has one major disadvantage though. There is a significant potential it scares the shit out of me. Just imagine - you sit in a silent room, and just like that, out of nowhere, there is a human voice talking to you. It's really spooky.&lt;/p&gt;
+&lt;p&gt;So I've used the other two options, to have feedback on both screen (when I'm with sound off) and from speakers (when I leave the computer to e.g. brew myself a cup of coffee).&lt;/p&gt;
+&lt;h3 id="terminal-sound"&gt;Terminal sound&lt;small class="permalink"&gt;&lt;a href="#terminal-sound" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
+&lt;p&gt;Your terminal can make a sound. There's a dedicated &lt;a href="https://en.wikipedia.org/wiki/Bell_character"&gt;bell character&lt;/a&gt; you can print and if you didn't mute sounds in settings or something, your terminal should beep whenever the character is printed. In Python, it can be done like this:&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="se"&gt;\a&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Better, you can remove new line from behind the print, and you can flush the &lt;code&gt;stdout&lt;/code&gt; immediately:&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="se"&gt;\a&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;end&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;flush&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;If you don't know what's "flushing &lt;code&gt;stdout&lt;/code&gt;", search for keywords "output buffering python".&lt;/p&gt;
+&lt;h3 id="standard-macos-notification"&gt;Standard macOS notification&lt;small class="permalink"&gt;&lt;a href="#standard-macos-notification" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
+&lt;p&gt;With the &lt;a href="https://pypi.org/project/pync/"&gt;pync&lt;/a&gt; library, you can send native macOS notifications directly from your Python code:&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;$ pip install pync
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Then in your Python program:&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pync&lt;/span&gt;
+
+&lt;span class="n"&gt;pync&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Notifier&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;notify&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Hello!'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'Greeting'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Check out the library's README, there're more usage examples. My personal tip is to import it with exception handling, just in case someone wants to run your code somewhere else than on macOS:&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pync&lt;/span&gt;
+&lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="ne"&gt;ImportError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;pync&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;None&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;pync&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;pync&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Notifier&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;notify&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Hello!'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'Greeting'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2 id="decorator"&gt;Decorator&lt;small class="permalink"&gt;&lt;a href="#decorator" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Now I wanted to notify myself when a long-running function ends, but I didn't want to pollute the code of the function with printing bell characters or sending notifications. Also, what if there's an error and the function raises an exception? A solution is to have the code as a function decorator. Also, that way I can easily measure duration of the function and put the result into the notification:&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;functools&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;wraps&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;
+
+
+&lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pync&lt;/span&gt;
+&lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="ne"&gt;ImportError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;pync&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;None&lt;/span&gt;
+
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;notify&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;fn&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="nd"&gt;@wraps&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;fn&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;wrapper&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="n"&gt;t0&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+        &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;fn&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="k"&gt;finally&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="n"&gt;t&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;t0&lt;/span&gt;
+            &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="se"&gt;\a&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;end&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;flush&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;pync&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+                &lt;span class="n"&gt;fn_name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;fn&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="vm"&gt;__module__&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;.&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;fn&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="vm"&gt;__name__&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;()'&lt;/span&gt;
+                &lt;span class="n"&gt;pync&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Notifier&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;notify&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;60&lt;/span&gt;&lt;span class="si"&gt;:&lt;/span&gt;&lt;span class="s1"&gt;.1f&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;min'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+                                     &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'Finished: &lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;fn_name&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;wrapper&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;That funky thing near the end is &lt;a href="https://pyformat.info/#number"&gt;advanced formatting&lt;/a&gt; inside &lt;a href="https://realpython.com/python-f-strings/"&gt;f-strings&lt;/a&gt;. I have this code in a separate module, &lt;code&gt;timer.py&lt;/code&gt;. (Module &lt;code&gt;timer&lt;/code&gt;, function &lt;code&gt;notify&lt;/code&gt;… well I'm unsure about proper naming yet, but this is what I have so far.) It can be used as follows:&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;.timer&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;notify&lt;/span&gt;
+
+&lt;span class="nd"&gt;@notify&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;long_running_function&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="o"&gt;...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;When the function is done, my terminal beeps and a notification appears:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Finished: myproject.mymodule.long_running_function()&lt;/strong&gt;&lt;br&gt;
+3.5min&lt;br&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Because the notifying part is in the &lt;code&gt;finally&lt;/code&gt; block, it happens even if the function raises an exception. This is great, because if I make a typo in my code, run the scrapers, and muscle memory in my fingers immediately switches windows to Twitter, the sound and notification lets me know about the mistake immediately.&lt;/p&gt;
+&lt;h2 id="summary"&gt;Summary&lt;small class="permalink"&gt;&lt;a href="#summary" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Even if you don't need to notify yourself from a Python program, I hope this article gave you some inspiration for other problems you might be solving, or taught you some new tricks. Also, now that you know about it, find some &lt;a href="https://www.youtube.com/watch?v=uyV0IVItlM4"&gt;good use&lt;/a&gt; for the the &lt;code&gt;say&lt;/code&gt; program!&lt;/p&gt;&lt;/div&gt;</content><category term="blog"></category></entry><entry><title>Týdenní poznámky: Maják a tunel</title><link href="https://honzajavorek.cz/blog/tydenni-poznamky-majak-a-tunel/" rel="alternate"></link><published>2020-05-15T00:00:00+02:00</published><updated>2020-05-15T00:00:00+02:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2020-05-15:/blog/tydenni-poznamky-majak-a-tunel/</id><summary type="html">&lt;div&gt;&lt;p&gt;Utekl další týden (11.5. — 15.5.) a tak stejně jako &lt;a href="https://honzajavorek.cz/blog/prvni-tydenni-poznamky-trizeni-nabidek-prace/"&gt;minule&lt;/a&gt; sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám &lt;a href="https://junior.guru/donate/"&gt;podporovatele&lt;/a&gt;, a ty by mohlo zajímat, jestli se neflákám. Taky je to …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;p&gt;Utekl další týden (11.5. — 15.5.) a tak stejně jako &lt;a href="https://honzajavorek.cz/blog/prvni-tydenni-poznamky-trizeni-nabidek-prace/"&gt;minule&lt;/a&gt; sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám &lt;a href="https://junior.guru/donate/"&gt;podporovatele&lt;/a&gt;, a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.&lt;/p&gt;
 &lt;figure&gt;&lt;img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"&gt;&lt;figcaption&gt;
 Fotka od &lt;a href="https://unsplash.com/@honza_kahanek"&gt;Honzy Kahánka&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
 &lt;h2 id="frontendovy-framework"&gt;Frontendový framework&lt;small class="permalink"&gt;&lt;a href="#frontendovy-framework" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
@@ -2577,18 +2695,4 @@ a 18. 4. Rubyslava v Bratislavě. Ale nechoďte všude, protože v Brně jsme
 poslední a to by vám na to naše nejlepší setkání vůbec nezbyly síly! ;-)
 Pokud jste z Valašska a nikam se vám jezdit nechce, sledujte
 &lt;a href="http://lanyrd.com/series/tkalci-na-webu/"&gt;Tkalce&lt;/a&gt; - nový sraz o vývoji webu
-přímo ve ValMezu!&lt;/small&gt;&lt;/p&gt;&lt;/div&gt;</content><category term="blog"></category></entry><entry><title>RE: Práce z domova a její překážky</title><link href="https://honzajavorek.cz/blog/re-prace-z-domova-a-jeji-prekazky/" rel="alternate"></link><published>2013-03-18T11:40:52+01:00</published><updated>2013-03-18T11:40:52+01:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2013-03-18:/blog/re-prace-z-domova-a-jeji-prekazky/</id><summary type="html">&lt;div&gt;&lt;p&gt;Kamarád mi poslal odkaz na Dagiho článek &lt;a href="http://web.archive.org/web/20160407234607/https://dagblog.cz/2013/03/prace-z-domova-jeji-prekazky.html"&gt;Práce z domova a její překážky&lt;/a&gt; s tím, že s obsahem naprosto souhlasí a co že na to jako já.&lt;/p&gt;
-&lt;figure&gt;&lt;blockquote class="twitter-tweet"&gt;&lt;p&gt;Práce z domova a její překážky &lt;a href="http://t.co/AIlxqH07tp" title="http://www.dagblog.cz/2013/03/prace-z-domova-jeji-prekazky.html"&gt;dagblog.cz/2013/03/prace-…&lt;/a&gt; Uplny souhlas //cc @&lt;a href="https://twitter.com/honzajavorek"&gt;honzajavorek&lt;/a&gt;&lt;/p&gt;— Michal Svec (@svecmichal) &lt;a href="https://twitter.com/svecmichal/status/313566445177020416"&gt;March 18, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-&lt;/figure&gt;&lt;p&gt;Zkusím stručně …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;p&gt;Kamarád mi poslal odkaz na Dagiho článek &lt;a href="http://web.archive.org/web/20160407234607/https://dagblog.cz/2013/03/prace-z-domova-jeji-prekazky.html"&gt;Práce z domova a její překážky&lt;/a&gt; s tím, že s obsahem naprosto souhlasí a co že na to jako já.&lt;/p&gt;
-&lt;figure&gt;&lt;blockquote class="twitter-tweet"&gt;&lt;p&gt;Práce z domova a její překážky &lt;a href="http://t.co/AIlxqH07tp" title="http://www.dagblog.cz/2013/03/prace-z-domova-jeji-prekazky.html"&gt;dagblog.cz/2013/03/prace-…&lt;/a&gt; Uplny souhlas //cc @&lt;a href="https://twitter.com/honzajavorek"&gt;honzajavorek&lt;/a&gt;&lt;/p&gt;— Michal Svec (@svecmichal) &lt;a href="https://twitter.com/svecmichal/status/313566445177020416"&gt;March 18, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-&lt;/figure&gt;&lt;p&gt;Zkusím stručně napsat, jak to teda vidím:&lt;/p&gt;
-&lt;h2 id="kontext"&gt;Kontext&lt;small class="permalink"&gt;&lt;a href="#kontext" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;Kontext chybí pouze v tom případě, že existuje nějaké &lt;em&gt;společné dění, mimo které se nacházíte&lt;/em&gt;. To by ale ve správně &lt;a href="http://bob.mcwhirter.org/blog/2010/09/13/remote-worker-distributed-team/"&gt;distribuovaném týmu&lt;/a&gt; existovat nemělo. Distribuovaný tým není o tom, že dva lidi pracují doma a zbytek sedí v kanceláři a má &lt;a href="https://www.youtube.com/user/jonlajoie/videos?query=Watercooler+Conversations"&gt;watercooler conversations&lt;/a&gt;, o které ti dva přichází. &lt;strong&gt;V distribuovaném týmu sedí doma&lt;/strong&gt; všichni a tyto konverzace mají na IRC, na GitHubu, na Campfiru. Protože je technicky nemožné mít takovou konverzaci jinde, vede se prostě tam a nikdo o nic nepřichází. Pokud se dva lidi z týmu sejdou a sedí vedle sebe, vedou ty konverzace taky tam, protože tam je to &lt;em&gt;společné dění&lt;/em&gt; a soukromou konverzací by se z něj vyřadili. Správně to má tedy být přesně naopak.&lt;/p&gt;
-&lt;h2 id="komunikacni-bariery"&gt;Komunikační bariéry&lt;small class="permalink"&gt;&lt;a href="#komunikacni-bariery" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;S těmi je problém vždy a všude. Jde o to, že člověk chce pracovat a &lt;a href="http://blog.ninlabs.com/2013/01/programmer-interrupted/"&gt;eliminovat maximum všech vyrušení&lt;/a&gt;. Jeho cílem tedy je, aby s ním nikdo nekomunikoval, pokud zrovna nejde na oběd. Cílem druhých je však toho člověka odchytit a něco superdůležitého mu sdělit. Kancelář vidím jako extrém v dosažitelnosti (vyruší vás kdokoli, kdykoli), domov jako extrém v nedosažitelnosti (když nebudete chtít, nikdo se vás prostě nedovolá). Ideál je ale někde uprostřed - &lt;strong&gt;komunikaci umožnit, ale rušit minimálně&lt;/strong&gt;. Moc se mi líbí, &lt;a href="http://bigthink.com/videos/why-you-cant-work-at-work"&gt;jak to dělají v 37signals&lt;/a&gt;. Tam si píšou na jabber nebo mail, i kdyby měli sedět hned vedle sebe, protože příjemce má možnost si to nepřečíst hned a nenechat se vyrušit. Sem tam si ale zprávy vybere a odpoví. Normálnímu člověku to zní asi vadně, ale když je vaší prací přemýšlení a psaní kódu a ne zvedání telefonů a lepení obálek, časté vyrušení je pro vás prostě největší katastrofa. Neustálé vyrušování byl pro mne jeden hlavních důvodů, proč jsem začal nenávidět kancelář a nakonec z ní úplně odešel. Potřebuji klid na práci - &lt;em&gt;zalézt si do dílny a tvořit&lt;/em&gt;.&lt;/p&gt;
-&lt;h2 id="stereotyp"&gt;Stereotyp&lt;small class="permalink"&gt;&lt;a href="#stereotyp" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;Stereotyp mám mnohem více spojený s denním dojížděním do kanceláře, kde trávím 8 hodin od pondělí do pátku. Teď pracuji z domova a stereotyp je asi to poslední, co bych pociťoval. Dagi vysvětluje, že &lt;strong&gt;změna prostředí zvyšuje výkon&lt;/strong&gt;, s čímž zcela souhlasím. Kdybych teď zašel někam do kanceláře, budu se cítit velice produktivně, stejně jako jsem se cítil produktivně první dny doma. Jenže po čase si zvyknu a upadám do stereotypu, ať je to jedno nebo druhé, tak prostě člověk funguje. Mám-li si však vybrat, jednoznačně hlasuji pro &lt;strong&gt;možnost, jež mi změnu (a tedy návrat do produktivity) umožňuje&lt;/strong&gt;. Já si z domů do té kanceláře mohu zajít. Nebo si dám práci večer. Nebo v kavárně. Každé úterý chodím pracovat do kavárny, abych do stereotypu neupadal. Více jak jedno dopoledne bych tam nevydržel, ale v kontextu celého týdne je to velice osvěžující!&lt;/p&gt;
-&lt;h2 id="jaky-si-to-udelas"&gt;Jaký si to uděláš...&lt;small class="permalink"&gt;&lt;a href="#jaky-si-to-udelas" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;...takový to máš. Neříkám, že Dagi nemá pravdu, nebo že já ji mám, spíš jsem chtěl ukázat, že &lt;strong&gt;nad všemi těmito věcmi se dá polemizovat a záleží na konkrétním nastavení samotného člověka a jeho týmu&lt;/strong&gt;. Pokud není tým dostatečně a dobře distribuovaný (a podle toho také řízený), překážky v komunikaci určitě budou znatelné. Pokud má někdo rád pevné ukotvení dne, doma se neumí motivovat k práci, práce v kavárně jej děsí, chybí mu kontakt s kolegy a rád si čte v MHD, tak pro něj práce na dálku není a veškerá polemika jde stranou. Každý jsme přece z jiného těsta.&lt;/p&gt;&lt;/div&gt;</content><category term="blog"></category></entry></feed>
+přímo ve ValMezu!&lt;/small&gt;&lt;/p&gt;&lt;/div&gt;</content><category term="blog"></category></entry></feed>

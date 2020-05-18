@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/notify-yourself-from-python/">
+    <title>Notify yourself from Python &mdash; Honza Javorek</title>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1316071-6"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-1316071-6');
+      </script>
+
+    <meta property="og:title" content="Notify yourself from Python &mdash; Honza Javorek">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/notify-yourself-from-python/">
+    <meta name="twitter:creator" content="@honzajavorek">
+    <meta name="twitter:site" content="@honzajavorek">
+
+    <meta property="og:image" content="https://honzajavorek.cz/images/luis-perdigao-JMabq3k4gk8-unsplash.jpg">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/luis-perdigao-JMabq3k4gk8-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Honza Javorek &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-05-18T00:00:00+02:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <div class="content">
+<article class="article">
+  <header class="article-header">
+    <h1>
+      <a href="https://honzajavorek.cz/blog/notify-yourself-from-python" rel="bookmark">
+        Notify yourself from Python
+      </a>
+    </h1>
+  </header>
+  <footer class="article-info">
+    <ul>
+      <li class="article-published">
+        <small>
+          <time datetime="2020-05-18T00:00:00+02:00">
+            May 18, 2020
+          </time>
+        </small>
+      </li>
+      <li class="article-author">
+        <small>
+          <a href="#author">Honza Javorek</a>
+        </small>
+      </li>
+    <ul>
+  </footer>
+  <div class="article-content">
+
+    <div><p>Sharing a quick tip on how to get notification on macOS when a function in Python is done with its job.</p>
+<figure><img alt="Reading" src="https://honzajavorek.cz/images/luis-perdigao-JMabq3k4gk8-unsplash.jpg"><figcaption>
+Photo by <a href="https://unsplash.com/@scalabis">Luís Perdigão</a></figcaption></figure>
+<h2 id="the-problem">The problem<small class="permalink"><a href="#the-problem" title="Permanent link to this heading">#</a></small></h2>
+<p>I'm working on a website for juniors in tech, <a href="https://junior.guru/">junior.guru</a> (the content is Czech only so far, I'm sorry). There is a component with web scrapers made in <a href="https://docs.scrapy.org/">Scrapy</a>, which helps me to download and aggregate job advertisments from other places.</p>
+<p>I often run the scrapers on my local computer, but since it takes a few minutes until they're done, I couldn't stop myself from switching to Twitter or something while waiting. Then I often found myself watching funny cat gifs one hour later, only hardly realizing that the scrapers are probably done by then and I can resume my work.</p>
+<h2 id="notification">Notification<small class="permalink"><a href="#notification" title="Permanent link to this heading">#</a></small></h2>
+<p>If all you need to support is macOS, there are at least three simple ways how to notify yourself:</p>
+<ul>
+<li>Terminal sound,</li>
+<li>standard notification,</li>
+<li>the <code>say</code> command.</li>
+</ul>
+<h3 id="say-say-say">Say say say<small class="permalink"><a href="#say-say-say" title="Permanent link to this heading">#</a></small></h3>
+<p>Oh, you didn't know about the <code>say</code> command? I'm sorry for ruining your productivity today then. Type the following to your terminal with sound on and see what happens:</p>
+<pre class="highlight"><code><span></span>$ say 'Hello!'
+</code></pre>
+
+
+<p>And yes, it works for other languages, too:</p>
+<pre class="highlight"><code><span></span>$ say -v zuzana 'Dobrý den, jedno pivo prosím'
+</code></pre>
+
+
+<p>In Python, it's easy to run commands using the <code>subprocess.run()</code> function, so in your script, one can do something like this:</p>
+<pre class="highlight"><code><span></span><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">run</span>
+
+<span class="n">run</span><span class="p">([</span><span class="s1">'say'</span><span class="p">,</span> <span class="s1">'-v'</span><span class="p">,</span> <span class="s1">'zuzana'</span><span class="p">,</span> <span class="s1">'Jedno pivo prosím!'</span><span class="p">])</span>
+</code></pre>
+
+
+<p>This thing has one major disadvantage though. There is a significant potential it scares the shit out of me. Just imagine - you sit in a silent room, and just like that, out of nowhere, there is a human voice talking to you. It's really spooky.</p>
+<p>So I've used the other two options, to have feedback on both screen (when I'm with sound off) and from speakers (when I leave the computer to e.g. brew myself a cup of coffee).</p>
+<h3 id="terminal-sound">Terminal sound<small class="permalink"><a href="#terminal-sound" title="Permanent link to this heading">#</a></small></h3>
+<p>Your terminal can make a sound. There's a dedicated <a href="https://en.wikipedia.org/wiki/Bell_character">bell character</a> you can print and if you didn't mute sounds in settings or something, your terminal should beep whenever the character is printed. In Python, it can be done like this:</p>
+<pre class="highlight"><code><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\a</span><span class="s1">'</span><span class="p">)</span>
+</code></pre>
+
+
+<p>Better, you can remove new line from behind the print, and you can flush the <code>stdout</code> immediately:</p>
+<pre class="highlight"><code><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\a</span><span class="s1">'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre>
+
+
+<p>If you don't know what's "flushing <code>stdout</code>", search for keywords "output buffering python".</p>
+<h3 id="standard-macos-notification">Standard macOS notification<small class="permalink"><a href="#standard-macos-notification" title="Permanent link to this heading">#</a></small></h3>
+<p>With the <a href="https://pypi.org/project/pync/">pync</a> library, you can send native macOS notifications directly from your Python code:</p>
+<pre class="highlight"><code><span></span>$ pip install pync
+</code></pre>
+
+
+<p>Then in your Python program:</p>
+<pre class="highlight"><code><span></span><span class="kn">import</span> <span class="nn">pync</span>
+
+<span class="n">pync</span><span class="o">.</span><span class="n">Notifier</span><span class="o">.</span><span class="n">notify</span><span class="p">(</span><span class="s1">'Hello!'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">'Greeting'</span><span class="p">)</span>
+</code></pre>
+
+
+<p>Check out the library's README, there're more usage examples. My personal tip is to import it with exception handling, just in case someone wants to run your code somewhere else than on macOS:</p>
+<pre class="highlight"><code><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">pync</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="n">pync</span> <span class="o">=</span> <span class="kc">None</span>
+
+<span class="k">if</span> <span class="n">pync</span><span class="p">:</span>
+    <span class="n">pync</span><span class="o">.</span><span class="n">Notifier</span><span class="o">.</span><span class="n">notify</span><span class="p">(</span><span class="s1">'Hello!'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">'Greeting'</span><span class="p">)</span>
+</code></pre>
+
+
+<h2 id="decorator">Decorator<small class="permalink"><a href="#decorator" title="Permanent link to this heading">#</a></small></h2>
+<p>Now I wanted to notify myself when a long-running function ends, but I didn't want to pollute the code of the function with printing bell characters or sending notifications. Also, what if there's an error and the function raises an exception? A solution is to have the code as a function decorator. Also, that way I can easily measure duration of the function and put the result into the notification:</p>
+<pre class="highlight"><code><span></span><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">wraps</span>
+<span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">time</span>
+
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">pync</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="n">pync</span> <span class="o">=</span> <span class="kc">None</span>
+
+
+<span class="k">def</span> <span class="nf">notify</span><span class="p">(</span><span class="n">fn</span><span class="p">):</span>
+    <span class="nd">@wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">t0</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">finally</span><span class="p">:</span>
+            <span class="n">t</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">t0</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\a</span><span class="s1">'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">pync</span><span class="p">:</span>
+                <span class="n">fn_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">fn</span><span class="o">.</span><span class="vm">__module__</span><span class="si">}</span><span class="s1">.</span><span class="si">{</span><span class="n">fn</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s1">()'</span>
+                <span class="n">pync</span><span class="o">.</span><span class="n">Notifier</span><span class="o">.</span><span class="n">notify</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">t</span> <span class="o">/</span> <span class="mi">60</span><span class="si">:</span><span class="s1">.1f</span><span class="si">}</span><span class="s1">min'</span><span class="p">,</span>
+                                     <span class="n">title</span><span class="o">=</span><span class="sa">f</span><span class="s1">'Finished: </span><span class="si">{</span><span class="n">fn_name</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">wrapper</span>
+</code></pre>
+
+
+<p>That funky thing near the end is <a href="https://pyformat.info/#number">advanced formatting</a> inside <a href="https://realpython.com/python-f-strings/">f-strings</a>. I have this code in a separate module, <code>timer.py</code>. (Module <code>timer</code>, function <code>notify</code>… well I'm unsure about proper naming yet, but this is what I have so far.) It can be used as follows:</p>
+<pre class="highlight"><code><span></span><span class="kn">from</span> <span class="nn">.timer</span> <span class="kn">import</span> <span class="n">notify</span>
+
+<span class="nd">@notify</span>
+<span class="k">def</span> <span class="nf">long_running_function</span><span class="p">():</span>
+    <span class="o">...</span>
+</code></pre>
+
+
+<p>When the function is done, my terminal beeps and a notification appears:</p>
+<blockquote>
+<p><strong>Finished: myproject.mymodule.long_running_function()</strong><br>
+3.5min<br></p>
+</blockquote>
+<p>Because the notifying part is in the <code>finally</code> block, it happens even if the function raises an exception. This is great, because if I make a typo in my code, run the scrapers, and muscle memory in my fingers immediately switches windows to Twitter, the sound and notification lets me know about the mistake immediately.</p>
+<h2 id="summary">Summary<small class="permalink"><a href="#summary" title="Permanent link to this heading">#</a></small></h2>
+<p>Even if you don't need to notify yourself from a Python program, I hope this article gave you some inspiration for other problems you might be solving, or taught you some new tricks. Also, now that you know about it, find some <a href="https://www.youtube.com/watch?v=uyV0IVItlM4">good use</a> for the the <code>say</code> program!</p></div>
+  </div>
+
+  <footer class="article-footer">
+    <div id="author" class="author">
+      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
+      <address>
+<a href="https://honzajavorek.cz">Honza Javorek</a> is a software engineer and
+a founder of <a href="https://junior.guru/">junior.guru</a>, a Czech project helping
+people to get their first job in tech. Since 2011 he's been helping
+to drive the growth and success
+of the <a href="https://python.cz/en/">Czech Python User&nbsp;Group</a>.      </address>
+      <p class="button button-donate">
+        <a href="https://github.com/sponsors/honzajavorek/">
+          <i class="fa fa-github"></i> GitHub Sponsors
+        </a>
+        <a href="https://www.patreon.com/honzajavorek">
+          <i class="fa fa-patreon"></i> Patreon
+        </a>
+        <a href="https://junior.guru/donate/">
+          <i class="fa fa-credit-card"></i> other        </a>
+    </p>
+    </div>
+    <p class="button">
+        <a href="https://honzajavorek.cz/blog/">
+          <i class="fa fa-list-ul"></i> Articles archive
+        </a>
+    </p>
+  </footer>
+</article>
+      </div>
+      <footer class="footer">
+        <address>
+          © Copyright 2007—2020
+          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+  </body>
+</html>
