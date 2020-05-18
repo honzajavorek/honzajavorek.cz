@@ -147,3 +147,5 @@ Because the notifying part is in the `finally` block, it happens even if the fun
 ## Summary
 
 Even if you don't need to notify yourself from a Python program, I hope this article gave you some inspiration for other problems you might be solving, or taught you some new tricks. Also, now that you know about it, find some [good use](https://www.youtube.com/watch?v=uyV0IVItlM4) for the the `say` program!
+
+**Update:** If your program targets Linux as well, my friend [Vuyisile Ndlovu](https://vuyisile.com/) has written a [follow-up article](https://vuyisile.com/how-to-send-desktop-notifications-in-linux/) on how to send notifications on Ubuntu. Check it out!
