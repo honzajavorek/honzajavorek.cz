@@ -23,9 +23,16 @@ def process_media(content):
     if not isinstance(content, contents.Article):
         return
 
-    with modify_html(content) as html_tree:
-        content_dir = content.settings['PATH']
+    content_dir = content.settings['PATH']
 
+    if hasattr(content, 'image'):
+        width, height = check_img_src(content.image, content_dir,
+                                      max_px=content.settings['IMG_MAX_PX'],
+                                      max_mb=content.settings['IMG_MAX_MB'])
+        content.image_width, content.image_height = width, height
+        content.metadata.update(image_width=width, image_height=height)
+
+    with modify_html(content) as html_tree:
         for iframe in html_tree.xpath('//iframe'):
             iframe_to_figure(iframe)
 
@@ -39,10 +46,9 @@ def process_media(content):
             img_to_figure(img, content_dir)
 
         for img in html_tree.xpath('//img'):
-            check_img(img, content_dir, dict(
-                max_px=content.settings['IMG_MAX_PX'],
-                max_mb=content.settings['IMG_MAX_MB'],
-            ))
+            check_img_src(img.get('src'), content_dir,
+                          max_px=content.settings['IMG_MAX_PX'],
+                          max_mb=content.settings['IMG_MAX_MB'])
 
 
 def iframe_to_figure(iframe):
@@ -89,27 +95,29 @@ def create_figcaption(img, figure):
     figure.append(figcaption)
 
 
-def check_img(img, content_dir, options):
-    img_src = img.get('src')
+def check_img_src(img_src, content_dir, max_px, max_mb):
     logger.info('Checking %s', img_src)
 
     if img_src.startswith('http'):
         logger.error('Found remotely linked image: %s', img_src)
-    else:
-        filename = get_image_filename(content_dir, img_src)
-        try:
-            size_mb = filename.stat().st_size / 1024 / 1024
-            width, height = Image.open(filename).size
-            is_video = filename.suffix.lower() == '.gif'
-        except IOError:
-            logger.error('Found non-existing image: %s', img_src)
-        else:
-            if not is_video and size_mb > options['max_mb']:
-                logger.error('Image too large: %s (%dmb, max size: %dmb)', img_src, size_mb, options['max_mb'])
-            if width > options['max_px']:
-                logger.error('Image too large: %s (%dpx, max width: %dpx)', img_src, width, options['max_px'])
-            if height > options['max_px']:
-                logger.error('Image too large: %s (%dpx, max height: %dpx)', img_src, height, options['max_px'])
+        return None, None
+
+    filename = get_image_filename(content_dir, img_src)
+    try:
+        size_mb = filename.stat().st_size / 1024 / 1024
+        width, height = Image.open(filename).size
+        is_video = filename.suffix.lower() == '.gif'
+    except IOError:
+        logger.error('Image not found: %s', img_src)
+        return None, None
+
+    if not is_video and size_mb > max_mb:
+        logger.error('Image too large: %s (%dmb, max size: %dmb)', img_src, size_mb, max_mb)
+    if width > max_px:
+        logger.error('Image too large: %s (%dpx, max width: %dpx)', img_src, width, max_px)
+    if height > max_px:
+        logger.error('Image too large: %s (%dpx, max height: %dpx)', img_src, height, max_px)
+    return width, height
 
 
 def get_image_filename(content_dir, img_src):
