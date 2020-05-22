@@ -10,7 +10,12 @@ import pelicanconf
 
 
 TITLE_PREFIX = 'Týdenní poznámky: '
+CONTENT_PATH = Path(__file__).parent / pelicanconf.PATH
 
+
+is_weeknotes = lambda path: slugify(TITLE_PREFIX) in path.name
+weeknotes_paths = sorted(filter(is_weeknotes, CONTENT_PATH.glob('*.md')))
+last_weeknotes_path = str(weeknotes_paths[-1]).replace('content', '{filename}')
 
 if len(sys.argv) > 1:
     highlights = ' '.join(sys.argv[1:])
@@ -27,14 +32,14 @@ friday = today + timedelta(days=4 - today.weekday())
 friday_cz = f'{friday:%d}.'.lstrip('0') + f'{friday:%m}.'.lstrip('0')
 friday_iso = friday.isoformat()
 
-path = Path(__file__).parent / pelicanconf.PATH / f'{friday_iso}_{slug}.md'
+path = CONTENT_PATH / f'{friday_iso}_{slug}.md'
 path.write_text(f'''
 Title: {title}
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
 
 
-Utekl další týden ({monday_cz} — {friday_cz}) a tak sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekl další týden ({monday_cz} — {friday_cz}) a tak [stejně jako minule]({last_weeknotes_path}) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({{static}}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
