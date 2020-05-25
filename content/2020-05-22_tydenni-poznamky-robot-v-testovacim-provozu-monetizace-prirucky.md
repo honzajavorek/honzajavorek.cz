@@ -18,6 +18,8 @@ Během karantény jsme doma dělali nějaký ten úklid a postupně jsme nastř�
 
 V prezentaci jsem spíše přeskočil [stránku o učení](https://junior.guru/learn/), protože tu mají PyLadies za sebou, a snažil se dát důraz na [stránku o praxi](https://junior.guru/practice/). U [stránky s nabídkami práce](https://junior.guru/jobs/) jsem zmínil, že na jejím vylepšení teď aktivně pracuji, a také jsem zmínil **příručku pro juniory**, kterou mám rozepsanou. Na tu se mě potom ještě dále ptaly. Chtěly vědět, kdy ji vydám a jak se o tom dozví. Odpověď, "ze sociálních sítí" jim nepřišla dost dobrá, tak se někdo zeptal, jestli o tom dám vědět i v [JG newsletteru](https://eepurl.com/gyG8Bb). Řekl jsem, že jo, a pak jsem zjistil, že mám 9 nových odběratelů :D
 
+**Update:** Video z prezentace je nyní [dostupné na YouTube](https://youtu.be/zOWcQezeyIU?t=342).
+
 
 ## Příručka pro juniory
 
