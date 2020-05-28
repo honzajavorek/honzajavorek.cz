@@ -71,6 +71,12 @@ Utekl další týden ({monday_cz} — {friday_cz}) a tak [stejně jako minule]({
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
 
+## Poznámky
+
+-
+-
+
+
 ## Co mě zaujalo
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
