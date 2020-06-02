@@ -1,31 +1,31 @@
 {
   "_args": [
     [
-      "instant.page@5.0.1",
+      "instant.page@3.0.0",
       "/home/runner/work/honzajavorek.cz/honzajavorek.cz/theme"
     ]
   ],
-  "_from": "instant.page@5.0.1",
-  "_id": "instant.page@5.0.1",
+  "_from": "instant.page@3.0.0",
+  "_id": "instant.page@3.0.0",
   "_inBundle": false,
-  "_integrity": "sha512-nLcalIz9rplo5L4ISyLh4U5NbtfP50596DolHqOK5wMR14YIhTtuYrzxSV5D45mOPqMdQb2TbAGHc6fzMuUM3Q==",
+  "_integrity": "sha512-cWTCMZlMZ/CKtY7+Rf3ZgeNtNPP9Yv/glRyriOMym98OhF484N5dRES9qv8q2MgMPmNwUb6T9mEHMdffICbnzw==",
   "_location": "/instant.page",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "instant.page@5.0.1",
+    "raw": "instant.page@3.0.0",
     "name": "instant.page",
     "escapedName": "instant.page",
-    "rawSpec": "5.0.1",
+    "rawSpec": "3.0.0",
     "saveSpec": null,
-    "fetchSpec": "5.0.1"
+    "fetchSpec": "3.0.0"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/instant.page/-/instant.page-5.0.1.tgz",
-  "_spec": "5.0.1",
+  "_resolved": "https://registry.npmjs.org/instant.page/-/instant.page-3.0.0.tgz",
+  "_spec": "3.0.0",
   "_where": "/home/runner/work/honzajavorek.cz/honzajavorek.cz/theme",
   "author": {
     "name": "Alexandre Dieulot"
@@ -53,5 +53,5 @@
     "minify": "uglifyjs ./instantpage.js --compress --mangle --toplevel --comments \"/^!/\" --output ./instantpage.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "5.0.1"
+  "version": "3.0.0"
 }

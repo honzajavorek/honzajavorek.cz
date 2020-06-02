@@ -1,4 +1,4 @@
-/*! instant.page v5.0.1 - (C) 2019-2020 Alexandre Dieulot - https://instant.page/license */
+/*! instant.page v3.0.0 - (C) 2019 Alexandre Dieulot - https://instant.page/license */
 
 let mouseoverTimer
 let lastTouchTimestamp
@@ -9,14 +9,11 @@ const isSupported = prefetchElement.relList && prefetchElement.relList.supports 
 const allowQueryString = 'instantAllowQueryString' in document.body.dataset
 const allowExternalLinks = 'instantAllowExternalLinks' in document.body.dataset
 const useWhitelist = 'instantWhitelist' in document.body.dataset
-const mousedownShortcut = !('instantNoMousedownShortcut' in document.body.dataset)
-const DELAY_TO_NOT_BE_CONSIDERED_A_TOUCH_INITIATED_ACTION = 1111
 
 let delayOnHover = 65
 let useMousedown = false
 let useMousedownOnly = false
 let useViewport = false
-
 if ('instantIntensity' in document.body.dataset) {
   const intensity = document.body.dataset.instantIntensity
 
@@ -27,7 +24,7 @@ if ('instantIntensity' in document.body.dataset) {
     }
   }
   else if (intensity.substr(0, 'viewport'.length) == 'viewport') {
-    if (!(navigator.connection && (navigator.connection.saveData || (navigator.connection.effectiveType && navigator.connection.effectiveType.includes('2g'))))) {
+    if (!(navigator.connection && (navigator.connection.saveData || navigator.connection.effectiveType.includes('2g')))) {
       if (intensity == "viewport") {
         /* Biggest iPhone resolution (which we want): 414 × 896 = 370944
          * Small 7" tablet resolution (which we don’t want): 600 × 1024 = 614400
@@ -62,12 +59,8 @@ if (isSupported) {
   if (!useMousedown) {
     document.addEventListener('mouseover', mouseoverListener, eventListenersOptions)
   }
-  else if (!mousedownShortcut) {
-      document.addEventListener('mousedown', mousedownListener, eventListenersOptions)
-  }
-
-  if (mousedownShortcut) {
-    document.addEventListener('mousedown', mousedownShortcutListener, eventListenersOptions)
+  else {
+    document.addEventListener('mousedown', mousedownListener, eventListenersOptions)
   }
 
   if (useViewport) {
@@ -120,7 +113,7 @@ function touchstartListener(event) {
 }
 
 function mouseoverListener(event) {
-  if (performance.now() - lastTouchTimestamp < DELAY_TO_NOT_BE_CONSIDERED_A_TOUCH_INITIATED_ACTION) {
+  if (performance.now() - lastTouchTimestamp < 1100) {
     return
   }
 
@@ -157,33 +150,6 @@ function mouseoutListener(event) {
     clearTimeout(mouseoverTimer)
     mouseoverTimer = undefined
   }
-}
-
-function mousedownShortcutListener(event) {
-  if (performance.now() - lastTouchTimestamp < DELAY_TO_NOT_BE_CONSIDERED_A_TOUCH_INITIATED_ACTION) {
-    return
-  }
-
-  const linkElement = event.target.closest('a')
-
-  if (event.which > 1 || event.metaKey || event.ctrlKey) {
-    return
-  }
-
-  if (!linkElement) {
-    return
-  }
-
-  linkElement.addEventListener('click', function (event) {
-    if (event.detail == 1337) {
-      return
-    }
-
-    event.preventDefault()
-  }, {capture: true, passive: false, once: true})
-
-  const customEvent = new MouseEvent('click', {view: window, bubbles: true, cancelable: false, detail: 1337})
-  linkElement.dispatchEvent(customEvent)
 }
 
 function isPreloadable(linkElement) {
