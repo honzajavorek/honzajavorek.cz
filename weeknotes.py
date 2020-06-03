@@ -5,8 +5,8 @@ from datetime import date, timedelta
 from pathlib import Path
 
 from slugify import slugify
+import pocket_recommendations
 import requests
-from lxml import html
 
 sys.path.append(os.curdir)
 import pelicanconf
@@ -22,26 +22,13 @@ today = date.today()
 is_weeknotes = lambda path: slugify(TITLE_PREFIX) in path.name
 weeknotes_paths = sorted(filter(is_weeknotes, CONTENT_PATH.glob('*.md')))
 last_weeknotes_path = weeknotes_paths[-1]
-
-
 last_weeknotes_date = date.fromisoformat(last_weeknotes_path.name[:10])
-last_weeknotes_days_ago = (today - last_weeknotes_date).days
-
-def is_since_last_weeknotes(post_time):
-    return (
-        'day' in post_time and
-        int(re.search(r'\d+', post_time).group(0)) <= last_weeknotes_days_ago
-    )
 
 res = requests.get('https://getpocket.com/@honzajavorek')
 res.raise_for_status()
-html_tree = html.fromstring(res.content)
-articles = [(article.cssselect('.sprofile-article-title')[0].text_content(),
-             article.cssselect('.sprofile-post-time')[0].text_content(),
-             article.cssselect('.sprofile-article-link')[0].get('href'))
-            for article in html_tree.cssselect('.sprofile-post')]
-articles = [(title, post_time, link) for (title, post_time, link)
-            in articles if is_since_last_weeknotes(post_time)]
+articles = [a for a in pocket_recommendations.parse(res.content, today=today)
+            if a['pocket_recommended_at'] >= last_weeknotes_date]
+articles.reverse()
 
 if len(sys.argv) > 1:
     highlights = ' '.join(sys.argv[1:])
@@ -71,7 +58,7 @@ Utekl další týden ({monday_cz} — {friday_cz}) a tak [stejně jako minule]({
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
 
-## Poznámky
+## Další poznámky
 
 -
 -
@@ -82,8 +69,13 @@ Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
 '''.lstrip()
-for title, post_time, link in articles:
-    content += f'- [{title}]({link})\n'
+for article in articles:
+    content += f"- [{article['title']}]({article['pocket_url']})"
+    content += f" — {article['pocket_comment']}" if article['pocket_comment'] else ''
+    content += '\n'
+content += '''
+<small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small>
+'''
 
 if DEBUG:
     print('-' * 80)
