@@ -1,6 +1,8 @@
 Title: Není to závod
 Image: images/paolo-candelo-53B17GiIhTA-unsplash.jpg
 Lang: cs
+Twitter-Comments: https://twitter.com/honzajavorek/status/1268462245857591297
+Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10158174231727707
 
 
 Na konci každého týdne teď vydávám poznámky o tom, co jsem dělal a co zajímavého jsem se naučil. Píšete mi, že je čtete rádi, ale zároveň se svěřujete, že se po nich cítíte mizerně. Máte dojem, že jste oproti mě za ten týden vlastně nic nestihli. Zrovna včera mi to napsali hned dva lidi. Dost mě tento vedlejší efekt mrzí. Rozhodl jsem se tedy sepsat, proč se máte na ten dojem vykašlat.
