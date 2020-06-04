@@ -5,7 +5,7 @@ Twitter-Comments: https://twitter.com/honzajavorek/status/1268462245857591297
 Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10158174231727707
 
 
-Na konci každého týdne teď vydávám poznámky o tom, co jsem dělal a co zajímavého jsem se naučil. Píšete mi, že je čtete rádi, ale zároveň se svěřujete, že se po nich cítíte mizerně. Máte dojem, že jste oproti mě za ten týden vlastně nic nestihli. Zrovna včera mi to napsali hned dva lidi. Dost mě tento vedlejší efekt mrzí. Rozhodl jsem se tedy sepsat, proč se máte na ten dojem vykašlat.
+Na konci každého týdne teď vydávám poznámky o tom, co jsem dělal a co zajímavého jsem se naučil. Píšete mi, že je čtete rádi, ale zároveň se svěřujete, že se po nich cítíte mizerně. Máte dojem, že jste oproti mně za ten týden vlastně nic nestihli. Zrovna včera mi to napsali hned dva lidi. Dost mě tento vedlejší efekt mrzí. Rozhodl jsem se tedy sepsat, proč se máte na ten dojem vykašlat.
 
 ![Závod]({static}/images/paolo-candelo-53B17GiIhTA-unsplash.jpg)
 Fotka od [Paola Candelo](https://unsplash.com/@paolocandelo)
@@ -22,7 +22,7 @@ Poznámky většinou popisují, kam jsem se posunul s [junior.guru](https://juni
 
 Vstanu mezi osmou a devátou, posnídám, udělám si kafe a sednu si k počítači. Následně si křivím záda do oběda, kdy mě hlad vyžene o vchod vedle do Nepálské restaurace. U jídla si většinou něco čtu. Potom si křivím záda zhruba do šesti, ale někdy i do sedmi, do osmi večer. Manželka přijde z práce tak nějak podobně, dáme si večeři, a zbude nám už jen zlomek dne na společný program.
 
-Nic moc jiného než JG nestíhám. Poznámky zachycují to, co dělám ve svém hlavním pracovním čase. Jen vyjímečně se do nich dostane něco, co teď kvalifikuji jako volnočasovou aktivitu. O večerech i o víkendech si zakazuji na JG pracovat (zakazuji si na to i myslet, ale to jde hůř). Snažím se odpočívat a ničím „produktivním“ se už nezabývám. Např. moje práce pro Python komunitu je teď bohužel úplně na vedlejší koleji.
+Nic moc jiného než JG nestíhám. Poznámky zachycují to, co dělám ve svém hlavním pracovním čase. Jen výjimečně se do nich dostane něco, co teď kvalifikuji jako volnočasovou aktivitu. O večerech i o víkendech si zakazuji na JG pracovat (zakazuji si na to i myslet, ale to jde hůř). Snažím se odpočívat a ničím „produktivním“ se už nezabývám. Např. moje práce pro Python komunitu je teď bohužel úplně na vedlejší koleji.
 
 Ti z vás, kdo chodíte do normální práce, cestou domů se stavíte vyřídit něco s autem v servisu, v podvečer zalijete zahradu a potom ještě přečtete pohádku dětem, byste si měli dát do poznámek celý svůj den. Jasně, práci třeba nepočítáte jako něco, co jste „stihli“, protože prostě děláte to, co po vás chtějí. Ale o to větší nesmysl je srovnávat se s poznámkami o tom, co jsem já dělal při rozjíždění vlastního byznysu. Navíc — třeba toho stihnete míň, ale zase domů donesete několikanásobně víc peněz 😀 To mi nepřijde zas tak blbý!
 
