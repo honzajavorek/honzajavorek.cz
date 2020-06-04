@@ -64,6 +64,12 @@ Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 -
 
 
+## A co vy?
+
+Máte dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli? Mám pro vás skvělou zprávu!
+V klidu se na ten dojem [můžete vykašlat]({{filename}}/2020-06-04_neni-to-zavod.md). Není zač!
+
+
 ## Co mě zaujalo
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
