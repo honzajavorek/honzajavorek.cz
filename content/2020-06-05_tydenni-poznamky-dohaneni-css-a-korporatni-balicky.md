@@ -1,6 +1,8 @@
 Title: Týdenní poznámky: Dohánění CSS a korporátní balíčky
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
+Twitter-Comments: https://twitter.com/honzajavorek/status/1268968394050715649
+Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10158178601917707
 
 
 Utekl další týden (1.6. — 5.6.) a tak [stejně jako minule]({filename}/2020-05-29_tydenni-poznamky-horst-fuchs.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
