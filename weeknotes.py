@@ -77,7 +77,7 @@ Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocket
 '''.lstrip()
 for article in articles:
     content += f"- [{article['title']}]({article['pocket_url']})"
-    content += f" — {article['pocket_comment']}" if article['pocket_comment'] else ''
+    content += f"<br>{article['pocket_comment']}" if article['pocket_comment'] else ''
     content += '\n'
 content += '''
 <small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small>
