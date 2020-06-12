@@ -66,8 +66,7 @@ Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
 ## A co vy?
 
-Máte dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli? Mám pro vás skvělou zprávu!
-V klidu se na ten dojem [můžete vykašlat]({{filename}}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({{filename}}/2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo
