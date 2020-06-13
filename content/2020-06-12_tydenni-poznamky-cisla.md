@@ -23,7 +23,7 @@ Napsal jsem tvůrcům produktu pro HR velkých firem a ptal jsem se jich, jak s 
 
 ### Jak dostat statistiky k inzerentům
 
-Rozhodl jsem se ale, že by i JG samotné mělo mít nějak dostupná čísla, a to pro všechny svoje inzeráty. Nějaká čísla měřím pomocí Google Analytcs a prokliky z newsletterů jsou v MailChimpu, takže šlo jen o to, jak to dostat ke klientům. JG jsou statické stránky, takže nějaká administrace nepřichází v úvahu.
+Rozhodl jsem se ale, že by i JG samotné mělo mít nějak dostupná čísla, a to pro všechny svoje inzeráty. Nějaká čísla měřím pomocí Google Analytics a prokliky z newsletterů jsou v MailChimpu, takže šlo jen o to, jak to dostat ke klientům. JG jsou statické stránky, takže nějaká administrace nepřichází v úvahu.
 
 Napadlo mě ale, že bych mohl recruiterům statistiky posílat e-mailem. Stejně bych jim chtěl něco posílat v případě, že se blíží vypršení nabídky, takže jsem to spojil dohromady a budu všem inzerentům posílat každé pondělí e-mail s detaily o tom, jak se jejich inzerátu daří. Pak už jen doprogramuju, aby byl text tím naléhavější, čím se bude blížit datum vypršení inzerátu, a aby obsahoval informace o tom, jak lze inzerát prodloužit. Zatím jsem se rozhodl posílat tato čísla:
 
