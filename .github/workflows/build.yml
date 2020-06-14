@@ -30,6 +30,17 @@ jobs:
       - name: Install JS dependencies for the theme
         run: npm install --prefix=./theme
 
+      - name: Update links to comments
+        run: python comments.py
+
+      - uses: EndBug/add-and-commit@v4.0.1
+        with:
+          add: ./content
+          author_name: "GitHub Actions"
+          message: "update links to comments"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Remove drafts
         run: rm -r ./content/drafts
 
