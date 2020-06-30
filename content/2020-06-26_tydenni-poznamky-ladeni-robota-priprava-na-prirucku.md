@@ -1,6 +1,8 @@
 Title: Týdenní poznámky: Ladění robota, příprava na příručku
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
+Facebook-Comments: https://www.facebook.com/10156592446432707/posts/10158248549477707
+Twitter-Comments: https://twitter.com/honzajavorek/status/1277587291670749184
 
 
 Utekl další týden (22.6. — 26.6.) a tak [stejně jako minule]({filename}/2020-06-19_tydenni-poznamky-cisla-a-e-maily.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
