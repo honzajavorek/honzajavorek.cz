@@ -61,9 +61,11 @@ Ve středu jsem vymyslel statičtější a jednodušší přístup k ToC. Dokonc
 
 Zkoušel jsem si sice hrát chvíli s [History.pushState()](https://developer.mozilla.org/en-US/docs/Web/API/History/pushState) (aby se při scrollování měnila adresa v prohlížeči), ale hned jsem viděl, že to šťourá do přirozeného chování browseru a musel bych ošetřovat všelijaké speciální případy, takže jsem se na to vykašlal.
 
-Zmenšování nebo schovávání hlavičky jsem nakonec úplně vyhodil. Verze pro mobil se nakonec nějak vyloupla sama. Lištu pod hlavičkou, která ukazuje aktuální nadpis, jsem zachoval jen pro mobil, a když už tam bylo to tlačítko na otevírání obsahu, jen jsem jej předělal na odkaz a ten čtenáře pošle na ToC tak jak je na stránce. ToC na mobilu není nijak pozicovaná, je prostě na začátku dokumentu v rámci jeho flow. A přijde mi, že to funguje překvapivě dobře. A tak jednoduché to bylo!
+Zmenšování nebo schovávání hlavičky jsem nakonec úplně vyhodil. Myšlenka to byla hezká, ale stejně jako u samotné ToC, projevil se efekt toho, že to šťourá do přirozeného chování věcí na webové stránce. I když takové věci na první pohled mohou vypadat funkčně, člověk pak dny a týdny chodí a zjišťuje, v jakém dalším případě to způsobuje nějaký problém, a jen opravuje a opravuje.
 
-A hotovo. Vyřešil jsem akorát ještě bug, že se špatně detekoval aktuální nadpis v případě "schovaných" sekcí (např. [Co způsobí koronavirus?](https://junior.guru/learn/#covid19)) s podnadpisy. Nepřišel jsem úplně na příčinu, ale když jsem schované podnadpisy vyhodil z detekce aktuální pozice, tak to přestalo zlobit.
+Verze pro mobil se nakonec nějak vyloupla sama. Lištu pod hlavičkou, která ukazuje aktuální nadpis, jsem zachoval jen pro mobil, a když už tam bylo to tlačítko na otevírání obsahu, jen jsem jej předělal na odkaz a ten čtenáře pošle na ToC tak jak je na stránce. ToC na mobilu není nijak pozicovaná, je prostě na začátku dokumentu v rámci jeho flow. A přijde mi, že to funguje překvapivě dobře. A tak jednoduché to bylo!
+
+A hotovo. Vyřešil jsem akorát ještě bug, že se špatně detekoval aktuální nadpis v případě "schovaných" sekcí s podnadpisy (např. [Co způsobí koronavirus?](https://junior.guru/learn/#covid19)). Nepřišel jsem úplně na příčinu, ale když jsem schované podnadpisy vyhodil z detekce aktuální pozice, tak to přestalo zlobit.
 
 ### JG roste do šířky
 
@@ -76,8 +78,8 @@ Teď už jen vymyslet zobrazování log sponzorů a příručka bude připraven�
 
 - Udělal jsem něco málo na [docs.pyvec.org](https://docs.pyvec.org/)
 - Jedna mentoring session
-- Napsal jsem [skript](https://github.com/honzajavorek/junior.guru/blob/09eab071caeaefe3acb62dace6d3ffe7207af9af/scripts/generate_toc.py), který vezme HTML šablonu, zparsuje ji jako HTML, najde v ní nadpisy a vygeneruje HTML s ToC. Tu následně prostě copy-paste dám do oné šablony. Asi by se to mohlo generovat nějak dynamicky, ale přišlo mi, že tohle je dostatečné quick & dirty řešení pro to, jak mám ty šablony a obsah teď udělané (vše je v HTML). Aby se mi to nerozsynchronizovalo, napsal jsem i [kontrolní test](https://github.com/honzajavorek/junior.guru/blob/09eab071caeaefe3acb62dace6d3ffe7207af9af/tests/test_toc.py).
-- Pulsovací animaci jsem nakonec využil! Když se přesunu na nějaký nadpis, tak se skrze pulsující animaci mírně zvýrazní.
+- Napsal jsem [skript](https://github.com/honzajavorek/junior.guru/blob/09eab071caeaefe3acb62dace6d3ffe7207af9af/scripts/generate_toc.py), který vezme HTML šablonu, zparsuje ji jako HTML, najde v ní nadpisy a vygeneruje HTML s ToC. Tu následně prostě copy-paste dám do oné šablony. Asi by se to mohlo generovat nějak dynamicky, ale přišlo mi, že tohle je dostatečné _quick & dirty_ řešení pro to, jak mám ty šablony a obsah teď udělané (vše je v HTML). Aby se mi to nerozsynchronizovalo, napsal jsem i [kontrolní test](https://github.com/honzajavorek/junior.guru/blob/09eab071caeaefe3acb62dace6d3ffe7207af9af/tests/test_toc.py).
+- Pulsovací animaci jsem nakonec využil! Když se přesunu na nějaký nadpis, tak se skrze pulsující animaci mírně zvýrazní. Funguje to jen někde (třeba v Safari ne, tzn. ani na iOS).
 - Zjistil jsem, že existuje [vh](https://css-tricks.com/fun-viewport-units/) :D Užitečné, spoustu věcí to usnadňuje! Škoda, že jsem o tom nevěděl od začátku, co dělám JG.
 - Dolaďoval jsem "předmluvu" příručky.
 - Na [tip od Simona Willisona](https://twitter.com/simonw/status/1279212166571159552) jsem zkusil editor [Figma](https://www.figma.com/), abych upravil SVG pro ikonu ToC tlačítka. Spokojenost! Pro nějakou občasnou editaci vektorových věcí to vypadá o dost líp než Inkscape na macOS nebo cokoliv podobného.
