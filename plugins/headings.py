@@ -4,7 +4,7 @@ import sys
 from lxml import etree
 from pelican import signals, contents
 
-sys.path.append(os.curdir)
+sys.path.append(os.path.dirname(__file__))
 from utils import modify_html
 
 
