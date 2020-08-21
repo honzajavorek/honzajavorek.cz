@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/tydenni-poznamky-loga-firem-na-prirucce/">
+    <title>Týdenní poznámky: Loga firem na příručce &mdash; Honza Javorek</title>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1316071-6"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-1316071-6');
+      </script>
+
+    <meta property="og:title" content="Týdenní poznámky: Loga firem na příručce &mdash; Honza Javorek">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-loga-firem-na-prirucce/">
+    <meta name="twitter:creator" content="@honzajavorek">
+    <meta name="twitter:site" content="@honzajavorek">
+
+    <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="683">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Honza Javorek &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-08-21T00:00:00+02:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <div class="content">
+<article class="article">
+  <header class="article-header">
+    <h1>
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-loga-firem-na-prirucce/" rel="bookmark">
+        Týdenní poznámky: Loga firem na příručce
+      </a>
+    </h1>
+  </header>
+  <footer class="article-info">
+    <ul>
+      <li class="article-published">
+        <small>
+          <time datetime="2020-08-21T00:00:00+02:00">
+            21. 8. 2020
+          </time>
+        </small>
+      </li>
+      <li class="article-author">
+        <small>
+          <a href="#author">Honza Javorek</a>
+        </small>
+      </li>
+    <ul>
+  </footer>
+  <div class="article-content">
+
+    <div><p>Utekl další týden (17.8. — 21.8.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-konecne-spokojen-s-toc/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/donate/">podporovatele</a>, a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.</p>
+<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
+<p>Jak jsem psal minule, tento týden jsem pracoval jen pár dní, protože se mi sešlo jednak volno, jednak nějaké rodinné události. V neděli jsem uběhl <a href="https://www.facebook.com/events/252296662521351/">10 km v Kozojedech</a>, byl to prima závod a už se těším na příští ročník. Naposledy jsem činnost typu běh vykonával podle mých záznamů před rokem, a to jsem se šel ještě jen proběhnout za barák, takže už jen dokončení závodu považuji za velký úspěch. 10.82 km, čas 1:10, tempo 6:32, nastoupáno 175 m.</p>
+<h2 id="loga-firem">Loga firem<small class="permalink"><a href="#loga-firem" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Čtvrtek i pátek jsem více méně finišoval vzhled příručky a to hlavně proužku, který by měl zobrazovat loga firem. Prvotní nápad naštěstí celkem fungoval, ne jak u ToC (viz minulé poznámky), jen jsem si hrál s tím, jestli se mají loga nějak zvětšovat nebo přeskládávat, když člověk scrolluje. Nakonec jsem od všech animací a přesunů upustil, protože to v nějakém prohlížeči vždy nevypadalo dobře, chovalo se to divně, nebo to prostě celé působilo přeplácaně.</p>
+<p>Loga jsou <code>position: sticky</code> a s malou pomocí JavaScriptu při pozicování a detekci v jaké fázi scrollování člověk je, jsou celé v CSS. Kvůli proužku s logy se musel taky zvětšit "offset" pro odkazy "na kotvu", tzn. nárazník, který zaručuje, že když někdo jde v prohlížeči na <code>#odstavec</code>, tak nadpis a kus toho odstavce nebude skrytá pod všemi těmi proužky nahoře, ale bude odsazená od vrchu stránky. Bylo naštěstí jednodušší to vyřešit, než jsem čekal, stačilo pár dalších řádků JS a CSS.</p>
+<p>Nakonec jsem přidal reálná loga firem, které si je předplatily a zkoumal, jak to vypadá. Myslím, že to ujde.</p>
+<figure><img alt="Loga" src="https://honzajavorek.cz/images/loga.png"></figure>
+<p>Na obrázku vidíte loga v jednom proužku. Když se scrolluje, tento proužek se nalepí pod další vrchní proužky, dostane stín, a s nimi pak cestuje.</p>
+<p>Ještě jsem přidal nějaké to měření přes Google Analytics, jestli a kolik lidí na loga kliká, ať to pak můžu firmám posílat, a přidal automaticky UTM parametry k odkazům. K tomu jsem si napsal novou "knihovničku", která tohle bude umět dělat i jinde a lze ji instruovat skrze <code>data-</code> atributy v HTML, ale zatím jsem se neobtěžoval s tím předělávat na ni staré věci. Nějaké posílání statistik taky zatím nemám, na to bude čas po vydání příručky, ale hlavně aby se to od začátku měřilo.</p>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<ul>
+<li>Na JG se objevil <a href="https://junior.guru/jobs/d0175235aeab461c2adb9a0796f40cf8c54ca085fb657ce5b14c367b/">nový inzerát</a>, tak snad se to opravdu s podzimem zase rozjede.</li>
+<li>Upgradoval jsem závislosti na některých projektech Python komunity.</li>
+<li>Snažil jsem se na <a href="https://github.com/pyvec/docs.pyvec.org">docs.pyvec.org</a> vyřešit commitování do chráněné hlavní větve tak, že bych pomocí GitHub Actions automaticky vytvořil spíš Pull Request, ale zatím neúspěšně. Věnoval jsem tomu hodinku v pátek a zase se k tomu vrátím jindy.</li>
+<li>Na příručku jsem přidal datum, kdy byla naposledy aktualizovaná, aby lidi viděli, že text časem opravdu upravuju. Informace se vytahuje přímo z Gitu.</li>
+<li>Opravil jsem jeden (až dva) podivné bugy v zobrazování věcí v Safari.</li>
+<li>Napsal jsem Czechitas e-mail, jestli mají zájem nakouknout do příručky před jejím vydáním výměnou za to, že o ní něco napíšou na svůj blog.</li>
+<li>Po minulých neúspěších s různými pokusy o tiskovou zprávu jsem zatím zkusil něco, co mě stojí nejméně energie: <a href="https://twitter.com/honzajavorek/status/1296808683419193345">tweet</a>, kde se ptám, jestli někdo nechce přístup k příručce dřív, výměnou za publicitu. Sice jsem dal omylem mention na slovenské Nko, ale to se snese :) Tato výzva platí i pro jednotlivce, takže pokud máte blog nebo někde nějakých pár followers, napište mi a domluvíme se.</li>
+<li>Začínám si psát rozvrh činností, které musím postupně udělat v souvislosti s uvěřejněním příručky. Bude to maso.</li>
+<li>Poslal jsem první větší fakturu!</li>
+</ul>
+<figure><img alt="Peníze" src="https://honzajavorek.cz/images/faktura.jpg"><figcaption>
+Hluboký lidský příběh</figcaption></figure>
+<p>V grafu nejsou <a href="https://junior.guru/donate/">příspěvky přes GitHub Sponsors nebo Patreon</a>, s nimi by to vypadalo méně tragicky.</p>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
+<ul>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fmedium.com%2Fyoung-coder%2Fmozilla-the-greatest-tech-company-left-behind-9e912098a0e1&amp;h=5a11641d498e87918aaca84524bc33da48704949aee3f7eabf7abf132d5ad4fd">Mozilla: The Greatest Tech Company Left Behind</a><br>Mozilla propustila další várku lidí a tentokrát i z MDN nebo Serva (Rust). Tento článek je předčasný nekrolog. Za to, aby tyhle věci mohly pokračovat a Mozilla se nezhroutila jako domeček z karet, bych klidně platil nějaké předplatné, ale Mozilla si o to nikdy neřekla :(</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fvicki.substack.com%2Fp%2Fare-you-as-smart-as-a-toddler&amp;h=1f79a82304d9076e0e8b1f3a391db704f99e9f9b3a7d3e5308248f48c240318a">Are you as smart as a toddler?</a><br>Budoucnost AI, batolení, GPT-3, peníze.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwww.voxpot.cz%2Fa-to-pro-vas-ma-putin-poslat-specnaz-bizarni-pribeh-lodi-ktera-do-bejrutu-dovezla-vybusny-naklad%2F&amp;h=3ffe919283f765857945095f399cffeabaea44776cba3430649ac4400855b572">„A to pro vás má Putin poslat Specnaz?“ Bizarní příběh lodi, která do Bejrůtu dovezla výbušný náklad.</a><br>Spletitý příběh libanonských výbušnin</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fvicki.substack.com%2Fp%2Fgoogle-and-the-nothing&amp;h=4d1441ad0eca81fcc1f70d7f8dcd059d6ce61cad21ae2e6f64ccfb81c26cc968">Google and the Nothing</a><br>Jak Google požírá internet a doprovází ho neužitečná nicota. A jak všichni děláme weby tak, aby to pokračovalo, protože bez toho nemůžeme vydělat peníze.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwww.voxpot.cz%2Fobloha-po-muskovi-jak-zacal-novy-souboj-statu-a-korporaci-o-ovladnuti-nebe%2F&amp;h=7cf6b3b8eea0b1e17b774a7273d30f9bf372011f14efaa3696081ede042e9fd7">Obloha po Muskovi: Jak začal nový souboj států a korporací o ovládnutí nebe.</a><br>SpaceX privatizuje oblohu a zároveň prorůstá se státními zájmy USA</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fforklog.media%2Fafter-10-years-in-tech-isolation-im-now-outsider-to-things-i-once-had-mastered%2F&amp;h=48ec26889a7dfb2e80f941eb3ad7ff8fdbc3942b3098256d3759fe705f165433">After 10 Years in Tech Isolation, I’m Now Outsider to Things I Once Had Mastered</a><br>Hacker, který byl 10 let ve vězení bez kontaktu s realitou, píše o tom, jak se mu jeví dnešek</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fmxb.dev%2Fblog%2Fthe-return-of-the-90s-web%2F&amp;h=3f89706f184c646e45987ae56a647b8c7f12772a80d83658a96080e01da8653e">The Return of the 90s Web</a><br>Návrat do budoucnosti na webu :)</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwattenberger.com%2Fblog%2Fcss-percents&amp;h=fcf04e6b232c8154bd72f7b5ef143ff6dbe1f68d11e26431868583b211896aba">Amelia Wattenberger: What does 100% mean in CSS?</a><br>Přehled toho, jak v CSS fungují procenta</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Ft.co%2FD5ck6fzk72%3Fssr%3Dtrue&amp;h=7d206bfdef469a874f0f046122f41e04bea73fb679983529e0688fbb2a27b8dd">Effective testing for machine learning systems.</a><br>Zajímavý rozbor o tom, jak lze testovat ML modely. Klasicky píšeme logiku a testujeme pomocí příkladů. Tady na základě příkladů vznikne logika. Je možné ji testovat? Jak?</li>
+</ul>
+<p><small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small></p></div>
+  </div>
+
+  <footer class="article-footer">
+    <div id="author" class="author">
+      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
+      <address>
+          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
+          a tvůrce projektu <a href="https://junior.guru/">junior.guru</a>,
+          pomáhajícího lidem získat svou první práci v IT. Od roku 2011
+          pomáhá budovat českou komunitu kolem jazyka
+          <a href="https://python.cz/">Python</a>.
+      </address>
+      <p class="button button-donate">
+        <a href="https://github.com/sponsors/honzajavorek/">
+          <i class="fa fa-github"></i> GitHub Sponsors
+        </a>
+        <a href="https://www.patreon.com/honzajavorek">
+          <i class="fa fa-patreon"></i> Patreon
+        </a>
+        <a href="https://junior.guru/donate/">
+          <i class="fa fa-credit-card"></i> jiné        </a>
+    </p>
+    </div>
+    <p class="button">
+        <a href="https://honzajavorek.cz/blog/">
+          <i class="fa fa-list-ul"></i> Archiv článků
+        </a>
+    </p>
+  </footer>
+</article>
+      </div>
+      <footer class="footer">
+        <address>
+          © Copyright 2007—2020
+          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+  </body>
+</html>
