@@ -1,6 +1,8 @@
 Title: Týdenní poznámky: Loga firem na příručce
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
+Twitter-Comments: https://twitter.com/honzajavorek/status/1296850831602585601
+Facebook-Comments: https://www.facebook.com/10156592446432707/posts/10158396227362707
 
 
 Utekl další týden (17.8. — 21.8.) a tak [stejně jako minule]({filename}/2020-08-14_tydenni-poznamky-konecne-spokojen-s-toc.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
