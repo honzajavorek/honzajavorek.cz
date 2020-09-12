@@ -2,8 +2,8 @@ html {
   --white: #fff;
   --black: #111;
   --green: #457e31;
-  --grey: #666;
-  --light-grey: #b2b2b2;
+  --gray: #666;
+  --light-gray: #b2b2b2;
   --twitter-blue: #1da1f2;
 
   background: var(--white);
@@ -46,12 +46,12 @@ address {
 small,
 figcaption {
   font-size: 1.28rem;
-  color: var(--grey);
+  color: var(--gray);
 }
 
 small a,
 figcaption a {
-  color: var(--grey);
+  color: var(--gray);
   text-decoration: underline;
 }
 
@@ -377,13 +377,13 @@ strong {
 .footer {
   text-align: center;
   background: #222;
-  color: var(--light-grey);
+  color: var(--light-gray);
   padding: 6rem 2rem;
   line-height: 2rem;
 }
 
 .footer a {
-  color: var(--light-grey);
+  color: var(--light-gray);
   text-decoration: underline;
 }
 
@@ -449,14 +449,14 @@ strong {
 }
 
 .article-content .permalink a {
-  color: var(--light-grey);
+  color: var(--light-gray);
   text-decoration: none;
 }
 
 .permalink a:hover,
 .permalink a:focus,
 .permalink a:active {
-  color: var(--grey);
+  color: var(--gray);
   text-decoration: underline;
 }
 
@@ -489,7 +489,7 @@ strong {
 }
 
 .article-content blockquote ul > li::before {
-  color: var(--light-grey);
+  color: var(--light-gray);
 }
 
 .article-content ul > li {
@@ -560,7 +560,7 @@ pre code {
 }
 
 blockquote {
-  border: 0.15rem solid var(--light-grey);
+  border: 0.15rem solid var(--light-gray);
   border-radius: 0.5rem;
   color: #888;
   margin: 3rem 0;
@@ -611,4 +611,11 @@ th {
 
 tr:nth-of-type(even) {
   background: #f5f5f5;
+}
+
+hr {
+  height: 0;
+  border: 0;
+  border-top: 1px dotted var(--gray);
+  margin: 2em 0;
 }
