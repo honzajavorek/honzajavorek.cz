@@ -111,6 +111,7 @@ PLUGINS = [
     'tables',
     'headings',
     'media',
+    'pocket_feed',
 ]
 IMG_MAX_PX = 1024
 IMG_MAX_MB = 1

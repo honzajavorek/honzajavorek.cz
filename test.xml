@@ -1,0 +1,1642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Armin Ronacher's Thoughts and Writings</title>
+  <id>http://lucumr.pocoo.org/feed.atom</id>
+  <updated>2020-07-06T00:00:00Z</updated>
+  <link href="http://lucumr.pocoo.org/" />
+  <link href="http://lucumr.pocoo.org/feed.atom" rel="self" />
+  <subtitle type="text">Armin Ronacher's personal blog about programming, games and random thoughts that come to his mind.</subtitle>
+  <generator>Werkzeug</generator>
+  <entry xml:base="http://lucumr.pocoo.org/feed.atom">
+    <title type="text">USB-C Hubs and Ethernet</title>
+    <id>http://lucumr.pocoo.org/2020/7/6/usb-c-network-hubs</id>
+    <updated>2020-07-06T00:00:00Z</updated>
+    <link href="http://lucumr.pocoo.org/2020/7/6/usb-c-network-hubs" />
+    <author>
+      <name>Armin Ronacher</name>
+    </author>
+    <content type="html">&lt;p&gt;USB-C continues to be an exciting mess.  And by exciting I mean
+frustrating and by mess I mean omnishambles.  I already cycled through
+many, many USB-C hubs with various different degrees of success but the
+latest iteration of failure I think is pretty interesting that it's worth
+sharing.&lt;/p&gt;
+&lt;p&gt;For the most part my USB-C hub pains have been isolated to them just
+breaking eventually, overheating, not delivering the necessary power or
+just plain not working.  The most recent breakage is that I have three hubs
+where if I connect an ethernet cable to it and a USB-C charger but
+&lt;em&gt;disconnect&lt;/em&gt; my laptop, after about 30 seconds the network goes haywire
+and eventually more and more devices in it become unavailable.&lt;/p&gt;
+&lt;p&gt;The curious bit here is debugging this mess and why it happens.  Initially
+I thought it was a faulty switch because only devices behind a certain
+switch (A Netgear one) cut out, so I got it replaced but that did nothing.
+It's also weird that this behavior did not immediately surface.  I have
+been using these USB-C hubs for an extended period of time but only lately
+did it cause my network to completely go haywire.  My hunch is that it has
+something to do with generally having an additional two switches on the
+network and changed the overall topology slightly.&lt;/p&gt;
+&lt;p&gt;What I observed looked quite a bit like a broadcast storm so eventually I
+ended up Googling for that in conjunction with different devices I have on
+the network.  I was wondering if one of the devices I added to my network
+lately would do this.  Eventually I ran out of ideas and just tried to
+figure out if and how you can configure the spanning tree protocol on my
+Orbi.  This surfaced &lt;a class=&quot;reference external&quot; href=&quot;https://community.netgear.com/t5/Orbi/Spanning-Tree-problem-with-Orbi-RBR50/m-p/1941325/highlight/false&quot;&gt;a thread from earlier in the year&lt;/a&gt;
+where someone was explaining that their USB-C hub from AUKEY would cause
+the network to drop out when the laptop was disconnected.&lt;/p&gt;
+&lt;p&gt;This eventually explained what was going on.  Previously the USB-C hubs
+with the network adapter I used where powered off when the laptop was
+disconnected, as of recently they stay on due to some changes I made in
+how they are connected to the laptop.&lt;/p&gt;
+&lt;p&gt;The issue appears to be that if the USB-C hub with the embedded ethernet
+port stays powered on and a cable is plugged in, but the laptop stays
+disconnected eventually the network goes down.  I tried to Wireshark it
+but I haven't see anything funky actually going on on the network.
+Against earlier expectations it doesn't seem to cause a broadcast storm.&lt;/p&gt;
+&lt;p&gt;Here is what happens if I have a faulty USB-C hub connected (and I have
+two which show the same issue):&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;after about 20 seconds some wired ethernet devices &amp;quot;disconnect&amp;quot;&lt;/li&gt;
+&lt;li&gt;each of the affected devices can no longer be pinged, but they still
+show up with an IP address and they think a cable is connected.&lt;/li&gt;
+&lt;li&gt;wifi continues to function, so do two of the Orbi satellites I'm using&lt;/li&gt;
+&lt;li&gt;if the USB-C hub is disconnected from power / table network cable is
+removed the network comes back.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The USB hubs where this happen for me is a “FLYLAND” hub as well as an
+&amp;quot;AUKEY&amp;quot; one.  I also have a one here from a reputable brand that shows the
+same thing, but I'm not sure if that is not actually a fake that Amazon
+delivered.&lt;/p&gt;
+&lt;p&gt;In general though with all three hubs the same thing happens.  I haven't
+had too much time exploring what they actually do but different comments
+on the internet suggested different explanations.  One is that the
+ethernet card in the hub starts sending “PAUSE” flow control frames when
+the hub is powered but disconnected from the laptop at high intervals.&lt;/p&gt;
+&lt;p&gt;This frame apparently is not too common and there are other people
+reporting that sending pause frames from any device on the network can
+kill it (&lt;a class=&quot;reference external&quot; href=&quot;http://jeffq.com/blog/the-ethernet-pause-frame/&quot;&gt;Obscure Ethernet for $200 please&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;To quote that particular blog post:&lt;/p&gt;
+&lt;blockquote&gt;
+nodes sending PAUSE message to the special multicast address
+&lt;tt class=&quot;docutils literal&quot;&gt;01:80:C2:00:00:01&lt;/tt&gt; are instructing the switch to not send them any more
+frames.  My switch seems to honor this, but also forwards the frames to the
+other nodes on the network, in effect telling THEM to pause in sending
+frames, which would explain the observed behavior.&lt;/blockquote&gt;
+&lt;p&gt;So that to me makes a lot more sense than loops or broadcast storms,
+especially since I can't really observe this.  Generally if you punch some
+questions into your search engine of choice you find a surprising amount
+of information on the internet about related issues.  There is all kinds
+of consumer equipment which emits some funky PAUSE frames which wrecks
+havoc in some networks in some setups.  You can find reports of people
+having UniFi equipment that with certain setups &lt;a class=&quot;reference external&quot; href=&quot;https://community.netgear.com/t5/Smart-Plus-and-Smart-Pro-Managed/STP-Leak-using-Broadcast-packet-01-80-c2-00-00-1c/m-p/1235031&quot;&gt;caused Netgear switches
+to fall over&lt;/a&gt;
+or reports of TVs causing &lt;a class=&quot;reference external&quot; href=&quot;http://jeffq.com/blog/the-ethernet-pause-frame/&quot;&gt;TP-Link routers to break&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So where is the fault?  I'm not sure.  It sounds a lot like the issue is
+probably shared between the router (a Netgear Orbi) or one of the switches
+in the network (I'm using Netgear and TP-Link ones) and the USB-C hub.&lt;/p&gt;
+&lt;p&gt;So in any case I solved the issue for now by stopping to use any of these
+hubs for networking and instead use an Apple USB-C network adapter which
+does not seem to show this problem.  Not particularly satisfying but I
+only have so much time dealing with this.  If anyone has better ideas,
+please reach out to me.  Would be curious to learn more about it.&lt;/p&gt;
+</content>
+  </entry>
+  <entry xml:base="http://lucumr.pocoo.org/feed.atom">
+    <title type="text">My Standard Desktop</title>
+    <id>http://lucumr.pocoo.org/2020/5/24/my-standard-desktop</id>
+    <updated>2020-05-24T00:00:00Z</updated>
+    <link href="http://lucumr.pocoo.org/2020/5/24/my-standard-desktop" />
+    <author>
+      <name>Armin Ronacher</name>
+    </author>
+    <content type="html">&lt;p&gt;Like many others I'm spending a lot more time working from home now.  This
+in no way is a new situation for me, but I figured I might as well write a
+bit about how I work from home given the increased interest.  Mostly
+because after seeing so many complex dev setups recently I wanted to share
+something that's &lt;em&gt;largely&lt;/em&gt; bland.&lt;/p&gt;
+&lt;img alt=&quot;/static/desktop-2020.jpg&quot; src=&quot;/static/desktop-2020.jpg&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-s-there&quot;&gt;
+&lt;h2&gt;What's There&lt;/h2&gt;
+&lt;p&gt;Most of what I have here is from IKEA, like pretty much everything we own
+in this flat.  This is for a handful of reasons.  The first one is —&amp;nbsp;and
+that's quite consistent with my general approach to most things —&amp;nbsp;that
+it's standardized, mass produced and if something breaks you can get it
+repaired easily.&lt;/p&gt;
+&lt;p&gt;The most important items are the &lt;a class=&quot;reference external&quot; href=&quot;https://www.ikea.com/at/de/p/idasen-schreibtisch-sitz-steh-braun-dunkelgrau-s79280955/&quot;&gt;IDÅSEN&lt;/a&gt;
+standing desk and the &lt;a class=&quot;reference external&quot; href=&quot;https://www.ikea.com/at/de/p/markus-drehstuhl-vissle-dunkelgrau-70261150/&quot;&gt;MARKUS&lt;/a&gt;
+swivel chair.  Since it's a standing desk that is moving up and down close
+to the wall I attached a &lt;a class=&quot;reference external&quot; href=&quot;https://www.ikea.com/at/de/p/skadis-lochplatte-weiss-10321618/&quot;&gt;SKÅDIS&lt;/a&gt;
+pegboard behind it.  It use it partially for cable management, partially
+to make sure stuff does not roll down and can lean against.  There is also
+a &lt;a class=&quot;reference external&quot; href=&quot;https://www.ikea.com/at/de/p/galant-schubladenelement-auf-rollen-schwarz-gebeiztes-eschenfurnier-60365153/&quot;&gt;GALANT&lt;/a&gt;
+drawer unit for storing some things.&lt;/p&gt;
+&lt;p&gt;The monitor is on top of a &lt;a class=&quot;reference external&quot; href=&quot;https://www.ikea.com/at/de/p/sigfinn-monitorerhoehung-weiss-60467689/&quot;&gt;SIGFINN&lt;/a&gt;
+monitor stand which I painted black.  Below I store my &lt;a class=&quot;reference external&quot; href=&quot;https://www.diatec.co.jp/en/det.php?prod_c=763&quot;&gt;Filco Tenkeyless&lt;/a&gt; mechanical keyboard.
+I have both it and a normal Apple Magic Keyboard connected to it.  Like
+all other things I use a US keyboard layout there.&lt;/p&gt;
+&lt;p&gt;In total desk, drawer and chair and all the other stuff on it was under
+1000 Euro.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;docking-the-macbook&quot;&gt;
+&lt;h2&gt;Docking the Macbook&lt;/h2&gt;
+&lt;p&gt;I have a desktop PC too but I basically never use it.  Since I carry my
+Macbook Pro around most of the time I just hook it up at home with a
+monitor.  I'm trying to ensure that I can unplug it and continue working
+with very little interruption.  This turns out to be a shockingly complex
+endeavour still.&lt;/p&gt;
+&lt;p&gt;It turns out when it comes to USB-C hubs you either have &amp;quot;gives stable
+power&amp;quot; or &amp;quot;has lots of ports&amp;quot;.  So I ended up with a pretty
+straightforward Anker USB-C hub I use for power, and into it I plugged
+some Chinese off-brand multiport which I use for network, audio out, HDMI
+and various other things.  I intentionally do not link to the adapters I'm
+using because I'm in no way confident that others will have the same good
+experience with the same hubs.&lt;/p&gt;
+&lt;p&gt;It turns out in my case chaining multiple adapters is more stable than the
+alternatives.  Despite this I quite often end up plugging in the power
+into the laptop directly instead of the multiport.  While the power draw
+itself works pretty well now and I get enough watts from the plug, I'm
+running into issues with everything freaking out for a bit when I plug the
+laptop in and out.  I noticed things stabilize much quicker when the power
+is plugged in separately.&lt;/p&gt;
+&lt;p&gt;In the spirit of keeping as much as possible standardized and simple I am
+using a touchpad at home as well.  I also type pretty evenly split between
+my Apple magic keyboard and my mechanical one.  While I really like my
+mechanical keyboard, I'm for whatever reason feeling more comfortable on
+the Apple one for prolonged typing sessions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;keeping-it-boring&quot;&gt;
+&lt;h2&gt;Keeping it Boring&lt;/h2&gt;
+&lt;p&gt;Over the last few years my development setup has become more and more
+boring.  This has manifested itself in a few ways: the first one is that I
+no longer use more than one monitor.  I'm basically now largely working
+of either my Macbook Pro's builtin monitor or my external one.  In the
+latter case the Macbook's monitor is almost exclusively used for keeping
+Spotify open on it or something else I don't need to use much.&lt;/p&gt;
+&lt;p&gt;Another change is that I got rid of most of my more complex modifications.
+I used to have custom keyboard layouts and a ergonomic keyboard, but got
+rid of all that a while back.  This largely comes down to me not wanting
+to spend so much time on that any more.  First of all when you get used to
+that quite a bit, it annoys you when you no longer have that.  The second
+part is that I felt the need to have this with me on the go as well.&lt;/p&gt;
+&lt;p&gt;So I optimized towards getting the most out of the most widely available
+devices.  When my Mac breaks I can buy a new one quickly and get it
+recovered within a few hours from backups.  The keyboard I use the most
+(Apple keyboard) can be bought also anywhere quickly in the US keyboard
+layout I want.  Likewise when I work from the go it's all still the same,
+and I don't miss much.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;internet-and-wifi&quot;&gt;
+&lt;h2&gt;Internet and Wifi&lt;/h2&gt;
+&lt;p&gt;When we moved into this flat we wanted to have most of our stuff connected
+to Wifi. Having had issues with Wifi before, we settled for an &lt;a class=&quot;reference external&quot; href=&quot;https://www.netgear.com/orbi/rbr20.aspx&quot;&gt;Orbi&lt;/a&gt; mesh setup.  This turns out
+to be good enough for all of our rooms in the flat and the balcony and I
+don't have to fiddle too much around with it to make it work.&lt;/p&gt;
+&lt;p&gt;That said, I spent more time than I wish I had to on ensuring internet and
+Wifi work as well as they possibly can.  For almost two years I was
+exclusively working over Wifi and most of the stuff in the flat is
+connected by it.  I did however end up using wired Ethernet for my Macbook
+recently because it felt odd paying for more bandwidth than my Wifi
+supports.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;small-improvements&quot;&gt;
+&lt;h2&gt;Small Improvements&lt;/h2&gt;
+&lt;p&gt;On the other hand I'm obsessed with small improvements.  I already
+mentioned that I spent a lot of time making the docking/undocking
+experience work well.  This has manifested itself largely by trying out a
+ton of different USB-C adapters and devices sadly.  It seems like there is
+no magic solution that works for everybody.  When I plug my Macbook in the
+speakers, microphone and webcam switch automatically from built-in to the
+stuff standing on my desk.&lt;/p&gt;
+&lt;p&gt;There is also a lot of cable management going on.  Quite a few cables are
+fixed against the board in the back of the desk, some cables are in the
+net underneath, others are in a custom cable duct I added.  In the ideal
+world there would be less cables but unfortunately there is quite a bit.
+The trickiest bit is that some cables need to extend in length when the
+desk is moving up.&lt;/p&gt;
+&lt;p&gt;Lastly, the IKEA IDÅSEN desk has the disadvantage of neither remembering
+any positions nor does it have the ability to continue moving until you
+press a button again.  Considering how long it takes to move up and down
+this got old, so I wrote a script to automate this.  If I write &lt;cite&gt;sit-down&lt;/cite&gt;
+in the terminal it moves my desk to my preferred seating position and
+&lt;cite&gt;stand-up&lt;/cite&gt; brings it to standing position.  This is accomplished by a
+&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/mitsuhiko/idasen-control&quot;&gt;small node script&lt;/a&gt; which
+sends the necessary commands to the desk via bluetooth.  I also show the
+status of the desk in my shell prompt which will alert me gently if I have
+been sitting actively for more than 30 minutes.  This timer resets either
+when I take a break for 2 minutes or when I move the desk to standing.
+&lt;a class=&quot;reference external&quot; href=&quot;https://twitter.com/mitsuhiko/status/1264548621606965248&quot;&gt;This is what it looks like&lt;/a&gt;
+when the desk is moving up and down controlled by the shell.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="http://lucumr.pocoo.org/feed.atom">
+    <title type="text">Temporary Contact Number based Contact Tracing</title>
+    <id>http://lucumr.pocoo.org/2020/4/9/tcn-contact-tracing</id>
+    <updated>2020-04-09T00:00:00Z</updated>
+    <link href="http://lucumr.pocoo.org/2020/4/9/tcn-contact-tracing" />
+    <author>
+      <name>Armin Ronacher</name>
+    </author>
+    <content type="html">&lt;p&gt;I have already talked here before about &lt;a class=&quot;reference external&quot; href=&quot;../../3/contact-tracing/&quot;&gt;privacy preserving contact
+tracing&lt;/a&gt; to fight Covid-19 but I figured I
+give an update to this.  I have spent the last week now investigating
+different approaches to this and my view has changed quite a bit.&lt;/p&gt;
+&lt;p&gt;I strongly believe that contact tracing through phone apps is one of our
+best chances to return to normal and without losing our civil liberties.
+If you want to understand why, have a look at &lt;a class=&quot;reference external&quot; href=&quot;../../3/contact-tracing/&quot;&gt;previous post about this
+topic&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;two-fundamental-approaches&quot;&gt;
+&lt;h2&gt;Two Fundamental Approaches&lt;/h2&gt;
+&lt;p&gt;In the previous post I talked in favour of a partially centralized
+approach.  This was largely because I felt that one of the inherent
+problems of any privacy preserving contact tracing system could be
+somewhat mitigated.  That downside is that a person could always use any
+such contact tracing system in a way where they could determine that
+another person they met tested positive for covid-19 later.  With a
+system that has support from a central authority this still cannot be
+prevented, but such behavior could be detected as abusive.  However I am
+not quite convinced that this would just be security by obscurity and that
+the more correct way to deal with this is to just fundamentally
+communicate to users that this is an inherent property of the system.&lt;/p&gt;
+&lt;p&gt;So the disclaimer to any app has to be: if you do not want that other
+people discover when you will test positive for covid-19 you should not
+use any contact tracing apps.  Which is also why I strongly believe that
+any such system absolutely needs to be voluntary.&lt;/p&gt;
+&lt;p&gt;So if I no longer believe in favour of the centralized approach, what do I
+prefer then?  Quite simply put an approach based on temporary contact
+numbers, short &lt;a class=&quot;reference external&quot; href=&quot;https://tcn-coalition.org/&quot;&gt;TCNs&lt;/a&gt;.  These protocols are
+fundamentally decentralized and give us some other benefits.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;reality-on-the-ground&quot;&gt;
+&lt;h2&gt;Reality on the Ground&lt;/h2&gt;
+&lt;p&gt;What makes application based contact tracing very interesting is that they
+take advantage of working on top of a widely deployed piece of hardware:
+smart phones.  Specifically smartphones which support Bluetooth low
+energy (BLE).  If you hold an AirPods case close to your iPhone you will
+notice that something happens on your screen.  BLE is what enables that.&lt;/p&gt;
+&lt;p&gt;The downside of this is that BLE comes with some restrictions.  The two
+most relevant ones are the payload size.  BLE comes with different modes
+and different platforms call this in different ways but the most
+compatible and energy preserving modes restrict us to under 30 bytes of
+payload.  That's not enough to make fancy public key cryptography work
+which would be necessary for centralized approaches to play to their
+advantages.  This is also why systems that currently follow the
+centralized approach will typically exchange a short ID and the extra
+payload is then actually exchanged through the cloud or &lt;a class=&quot;reference external&quot; href=&quot;https://en.wikipedia.org/wiki/Bluetooth_Low_Energy#GATT_operations&quot;&gt;GATT&lt;/a&gt;.
+The former makes a system that could be somewhat decentralized much more
+centralized.&lt;/p&gt;
+&lt;p&gt;TCN based protocols instead will exchange just random identifiers instead.
+Most TCN based protocols currently suggest between 16 and 26 bytes of
+effectively random data which is easier to work with.&lt;/p&gt;
+&lt;p&gt;Another complexity is that at present iOS devices in background cannot
+discover each other.  This limitation might be solvable by Apple and it
+appears various groups are currently in contact with Apple to see what can
+be done.  Interestingly an iOS device with the app in background can be
+discovered by an Android device so there might be a way to fix this.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;tcn-strawman-protocol&quot;&gt;
+&lt;h2&gt;TCN Strawman Protocol&lt;/h2&gt;
+&lt;p&gt;The TCN strawman protocol is the most basic of all these protocols.  It
+was first written down by the &lt;a class=&quot;reference external&quot; href=&quot;https://www.coepi.org/&quot;&gt;Co-Epi project&lt;/a&gt;
+and is very easy to explain.&lt;/p&gt;
+&lt;ol class=&quot;arabic simple&quot;&gt;
+&lt;li&gt;all mobile phones randomly generate TCNs and remember and broadcast
+these.&lt;/li&gt;
+&lt;li&gt;all mobile phones check against a server which publishes TCNs that are
+known to be covid-19 positive.&lt;/li&gt;
+&lt;li&gt;all mobile phones check their local contact list against the downloaded
+list locally for an intersection.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Step 2 is the only one where a central system is necessary.  For instance
+this could be the server of the Austrian Red Cross which publishes TCNs.
+Since the TCNs of encounters are only stored on the devices they have to
+get on contact with covid-19 tested positive individuals first.&lt;/p&gt;
+&lt;p&gt;The strawman protocol wouldn't work in practice at the peak of the
+infection because of the sheer data requirements.  However there are
+various cryptographic tricks which are floating around to reduce the size
+of the data set.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;dp-3t&quot;&gt;
+&lt;h2&gt;DP-3T&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/DP-3T/documents/&quot;&gt;DP-3T&lt;/a&gt; is currently one of the
+most promising protocols here.  It has a low cost variant which satisfies
+most of the qualities of the strawman protocol while reducing the amount
+of data greatly (to around 1.5MB of data per day for a peak infection rate
+of 40.000 infections a day).  Additionally it comes with a protocol
+extension (“Unlinkable decentralized proximity tracing”) which improves on
+the simple protocol in a few important aspects.  Specifically it makes it
+significantly harder for an adversary to track or identify infected users
+at the cost of higher bandwidth requirements.&lt;/p&gt;
+&lt;p&gt;A simple version of the protocol is easily explained:&lt;/p&gt;
+&lt;ol class=&quot;arabic simple&quot;&gt;
+&lt;li&gt;A device generates a secret key.  Each day the user derives a new
+version of the secret key by feeding it into a ratchet like a SHA256
+hash function.&lt;/li&gt;
+&lt;li&gt;Each day the device generates TCNs out of the day's secret key for
+instance by using a AES in counter mode.  If for instance we want to
+switch TCNs every 15 minutes we would need to generate 4 * 24 * 16 bytes
+worth of TCNs to have enough for a day.&lt;/li&gt;
+&lt;li&gt;Devices now broadcast a random TCN for the day for 15 minutes each.&lt;/li&gt;
+&lt;li&gt;When a device encounters another person and they consider the contact
+long enough, they record the approximate time of day and the TCN
+encountered.&lt;/li&gt;
+&lt;li&gt;When a user tests covid-19 positive they upload the secret key of the
+first day of infection and generate a new secret key.&lt;/li&gt;
+&lt;li&gt;Other devices now download the secret key for that user and generate
+all possible TCNs locally and check for infection.  They only need to
+generate 14 derivations of the secret key and the 96 TCNs for each day.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In the more complex version the device uploads seeds of the secret keys
+for all time windows in the infection window.  On the backend server a
+&lt;a class=&quot;reference external&quot; href=&quot;https://en.wikipedia.org/wiki/Cuckoo_filter&quot;&gt;cuckoo filter&lt;/a&gt; is created
+every 4 hours and the seeds are inserted.  Because Cuckoo filters have a
+small probability of producing false positives parameters need to be
+selected appropriately to reduce this risk.  The upside is that the sets
+of identifiers used by the same user are hidden.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;pepp-pt-and-local-governments&quot;&gt;
+&lt;h2&gt;PEPP-PT and Local Governments&lt;/h2&gt;
+&lt;p&gt;So this leads us to &lt;a class=&quot;reference external&quot; href=&quot;https://www.pepp-pt.org/&quot;&gt;PEPP-PT&lt;/a&gt;.  It would
+appear that PEPP-PT is evaluating DP-3T as the reference protocol and
+they are going to open source the code with the idea to support local
+authorities in implementing their own version.  Officially they have not
+decided between centralized or TCN approaches yet, but there seems to be a
+high chance it will be the latter.  The concept is also very simple.
+Simple enough that if you want to explain this system to others, there is
+also a nice little &lt;a class=&quot;reference external&quot; href=&quot;https://ncase.me/contact-tracing/&quot;&gt;comic strip available&lt;/a&gt; that explains it.&lt;/p&gt;
+&lt;p&gt;If your local government is planning on implementing a covid tracing app
+it might be worth directing them towards &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/Co-Epi&quot;&gt;Co-Epi&lt;/a&gt;.  It already has an implementation
+of many of the same ideas in their GitHub repository.  If they do want a
+centralized approach the Singaporean government Open Sourced their
+application under GPL3 under the name &lt;a class=&quot;reference external&quot; href=&quot;https://bluetrace.io/&quot;&gt;BlueTrace&lt;/a&gt;.  It avoids largely unnecessary cloud
+infrastructure from what I can tell.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="http://lucumr.pocoo.org/feed.atom">
+    <title type="text">App Assisted Contact Tracing</title>
+    <id>http://lucumr.pocoo.org/2020/4/3/contact-tracing</id>
+    <updated>2020-04-03T00:00:00Z</updated>
+    <link href="http://lucumr.pocoo.org/2020/4/3/contact-tracing" />
+    <author>
+      <name>Armin Ronacher</name>
+    </author>
+    <content type="html">&lt;p&gt;I don't know how I thought the world would look like 10 years ago, but a
+pandemic that prevents us from going outside was not what I was picturing.
+It's about three weeks now that I and my family are spending at home in
+Austria instead of going to work or having the kids at daycare, two of
+those weeks were under mandatory social distancing because of SARS-CoV-2.&lt;/p&gt;
+&lt;p&gt;And as cute as &lt;a class=&quot;reference external&quot; href=&quot;https://en.wikipedia.org/wiki/Social_distancing&quot;&gt;social distancing&lt;/a&gt;
+and “flattening the curve” sounds at first, the consequences to our daily
+lives are beyond anything I could have imagined would happen in my
+lifetime.&lt;/p&gt;
+&lt;p&gt;What is still conveniently forgotten is that the curve really only stays
+flat if we're doing this for a very, very long time.  And quite frankly,
+I'm not sure for how long our society will be able to do this.  Even just
+closing restaurants is costing tens of thousands of jobs and closing
+schools is going to set back the lives of many children growing up.  Many
+people are currently separated from their loved ones with no easy way to
+get to them because international travel grinded to a halt.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;technology-to-the-rescue&quot;&gt;
+&lt;h2&gt;Technology to the Rescue&lt;/h2&gt;
+&lt;p&gt;So to cut a very long story short: we can get away without social
+distancing with the help of technology.  This is why: the most efficient
+way to fight the outbreak of a pandemic is isolating cases.  If you can
+catch them before they can infect others you can starve the virus.  Now
+the issue with this is obviously that you have people running around with
+the virus who can infect others but are not symptomatic.  So we can only
+do the second next best thing: if we can find all the people they had
+contact with when they finally become symptomatic, we can narrow down the
+search radius for tests.&lt;/p&gt;
+&lt;p&gt;So a very successful approach could be:&lt;/p&gt;
+&lt;ol class=&quot;arabic simple&quot;&gt;
+&lt;li&gt;find a covid-19 suspect&lt;/li&gt;
+&lt;li&gt;test the person&lt;/li&gt;
+&lt;li&gt;when they are positive, test all of their close contacts&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So how do we find their cases?  The tool of choice in many countries
+already are apps.  They send out a beacon signal and collect beacon
+signals of other users around.  When someone tests positive, healthcare
+services can notice contacts.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;avoiding-orwell&quot;&gt;
+&lt;h2&gt;Avoiding Orwell&lt;/h2&gt;
+&lt;p&gt;Now this is where it gets interesting.  Let's take Austria for instance
+where I live.  We have around 9 million residents here.  Let's assume
+we're aiming for 60% of resident using that app.  That sounds like a
+surveillance state and scalability nightmare for a country known for
+building scalable apps.&lt;/p&gt;
+&lt;p&gt;But let's think for a moment what is actually necessary to achieve our
+goal: it turns out we could largely achieve what we want without a
+centralized infrastructure.&lt;/p&gt;
+&lt;p&gt;Let's set the window of people we care about to something like 5 days.
+This means that if someone tests positive, that person's contacts of the
+last 5 days ideally get informed about a covid case they had contact with.
+How do we design such a system that it's not a privacy invading behemoth?&lt;/p&gt;
+&lt;p&gt;The app upon installation would roll a random ID and store it.  Then it
+encrypts the ID it just created with the public key of a central
+governmental authority and broadcasts it to other people around via
+bluetooth.  It then cycles this ID in regular intervals.&lt;/p&gt;
+&lt;p&gt;When another device (the infected person) sees this ID it measures signal
+strength and time observed.  When enough time was spent with the other
+person and that contact was “close enough” it records the broadcast
+(encrypted ID) on the device.  The device also just deletes records older
+than 5 days.&lt;/p&gt;
+&lt;p&gt;When person is identified as infected they need to export the contacts
+from their app and send it to the health ministry.  They could use their
+private key to decrypt the IDs and then get in contact with the
+potential contacts.&lt;/p&gt;
+&lt;p&gt;How do they do that?  One option does involve a system like a push
+notification service.  That would obviously require the device to register
+their unique ID with a central server and a push notification channel but
+this would not reveal much.&lt;/p&gt;
+&lt;p&gt;Another option could be to do the check in manually which would work for
+non connected IoT type of solutions.  You could implement such a system as
+a token you need to regularly bring to a place to check if you are now
+considered a contact person.  For instance one could deploy check-in
+stations at public transport hubs where you hold your token against and if
+one of your contacts was infected it would beep.&lt;/p&gt;
+&lt;p&gt;Either way the central authority would not know who you are.  Your only
+point of contact would be when you become a covid case.  Most importantly
+this system could be created in a way where it's completely useless for
+tracking people but still be useful for contact tracing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-phone-in-your-pocket&quot;&gt;
+&lt;h2&gt;The Phone in your Pocket&lt;/h2&gt;
+&lt;p&gt;I had conversations with a lot of people over the last few days about
+contact tracing apps and I noticed —&amp;nbsp;particularly from technically minded
+people — an aversion against the idea of contact tracing via apps.  This
+does not surprise me, because it's an emotional topic.  However it does
+hammer home a point that people are very good at misjudging data privacy.&lt;/p&gt;
+&lt;p&gt;Almost every person I know uses Google maps on their phone with location
+history enabled.  With that, they also participate in a large data
+collection project where their location is constantly being transmitted to
+Google.  They use this information to judge how fluid traffic is on the
+road, how many people are at stores, how busy public transit is etc.  All
+that data is highly valuable and people love to use this data.  I know I
+do.  I'm also apparently entirely okay with that, even though I know there
+is an associated risk.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-future&quot;&gt;
+&lt;h2&gt;The Future&lt;/h2&gt;
+&lt;p&gt;My point here is a simple one: contact tracing if done well is
+significantly less privacy infringing than what many tech companies
+already do where we're okay with.&lt;/p&gt;
+&lt;p&gt;I also believe that contact tracing via apps or hardware tokens is our
+best chance to return to a largely normal life without giving up all our
+civil liberties.  I really hope that we're going to have informed and
+reasonable technical discussions about how to do contact tracing right and
+give this a fair chance.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="http://lucumr.pocoo.org/feed.atom">
+    <title type="text">I'm not feeling the async pressure</title>
+    <id>http://lucumr.pocoo.org/2020/1/1/async-pressure</id>
+    <updated>2020-01-01T00:00:00Z</updated>
+    <link href="http://lucumr.pocoo.org/2020/1/1/async-pressure" />
+    <author>
+      <name>Armin Ronacher</name>
+    </author>
+    <content type="html">&lt;p&gt;Async is all the rage.  Async Python, async Rust, go, node, .NET, pick
+your favorite ecosystem and it will have some async going.  How good this
+async business works depends quite a lot on the ecosystem and the runtime
+of the language but overall it has some nice benefits.  It makes one thing
+really simple: to await an operation that can take some time to finish.
+It makes it so simple, that it creates innumerable new ways to blow ones
+foot off.  The one that I want to discuss is the one where you don't
+realize you're blowing your foot off until the system starts overloading
+and that's the topic of back pressure management.  A related term in
+protocol design is flow control.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-s-back-pressure&quot;&gt;
+&lt;h2&gt;What's Back Pressure&lt;/h2&gt;
+&lt;p&gt;There are many explanations for back pressure and a great one is
+&lt;a class=&quot;reference external&quot; href=&quot;https://medium.com/&amp;#64;jayphelps/backpressure-explained-the-flow-of-data-through-software-2350b3e77ce7&quot;&gt;Backpressure explained — the resisted flow of data through software&lt;/a&gt;
+which I recommend reading.  So instead of going into detail about what
+back pressure is I just want to give a very short definition and
+explanation for it: back pressure is resistance that opposes the flow of
+data through a system.  Back pressure sounds quite negative — who does not
+imagine a bathtub overflowing due to a clogged pipe — but it's here to
+save your day.&lt;/p&gt;
+&lt;p&gt;The setup we're dealing with here is more or less the same in all cases:
+we have a system composed of different components into a pipeline and that
+pipeline has to accept a certain number of incoming messages.&lt;/p&gt;
+&lt;p&gt;You could imagine this like you would model luggage delivery at airports.
+Luggage arrives, gets sorted, loaded into the aircraft and finally
+unloaded.  At any point an individual piece of luggage is thrown together
+with other luggage into containers for transportation.  When a container
+is full it will need to be picked up.  When no containers are left that's
+a natural example of back pressure.  Now the person that would want to
+throw luggage into a container can't because there is no container.  A
+decision has to be made now.  One option is to wait: that's often referred
+to as queueing or buffering.  The other option is to throw away some
+luggage until a container arrives — this is called dropping.  That sounds
+bad, but we will get into why this is sometimes important later.  However
+there is another thing that plays into here.  Imagine the person tasked
+with putting luggage into a container does not receive a container for an
+extended period of time (say a week).  Eventually if they did not end up
+throwing luggage away now they will have an awful lot of luggage standing
+around.  Eventually the amount of luggage they will have to sort through
+will be so enormous that they run out of physical space to store the
+luggage.  At that point they are better off telling the airport not to
+accept any more incoming luggage until their container issue is resolved.
+This is commonly referred to as &lt;a class=&quot;reference external&quot; href=&quot;https://en.wikipedia.org/wiki/Flow_control_(data)&quot;&gt;flow control&lt;/a&gt; and a crucial
+aspect of networking.&lt;/p&gt;
+&lt;p&gt;All these processing pipelines are normally scaled for a certain amount of
+messages (or in this case luggage) per time period.  If the number exceeds
+this —&amp;nbsp;or worst of all —&amp;nbsp;if the pipeline stalls terrible things can
+happen.  An example of this in the real world was the London Heathrow
+Terminal 5 opening where 42,000 bags failed to be routed correctly over 10
+days because the IT infrastructure did not work correctly.  They had to
+cancel more than 500 flights and for a while airlines chose to only permit
+carry-on only.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;back-pressure-is-important&quot;&gt;
+&lt;h2&gt;Back Pressure is Important&lt;/h2&gt;
+&lt;p&gt;What we learn from the Heathrow disaster is that being able to communicate
+back pressure is crucial.  In real life as well as in computing time is
+always finite.  Eventually someone gives up waiting on something.  In
+particular even if internally something would wait forever, externally it
+wouldn't.&lt;/p&gt;
+&lt;p&gt;A real life example for this: if your bag is supposed to be going via
+London Heathrow to your destination in Paris, but you will only be there
+for 7 days, then it is completely pointless for your luggage to arrive
+there with a 10 day delay.  In fact you want your luggage to be re-routed
+back to your home airport.&lt;/p&gt;
+&lt;p&gt;It's in fact better to admit defeat — that you're overloaded — than to
+pretend that you're operational and keep buffering up forever because at
+one point it will only make matters worse.&lt;/p&gt;
+&lt;p&gt;So why is back pressure all the sudden a topic to discuss when we wrote
+thread based software for years and it did not seem to come up?  A
+combination of many factors some of which are just the easy to shoot
+yourself into the foot.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;bad-defaults&quot;&gt;
+&lt;h2&gt;Bad Defaults&lt;/h2&gt;
+&lt;p&gt;To understand why back pressure matters in async code I want to give you
+a seemingly simple piece of code with Python's asyncio that showcases a
+handful of situations where we accidentally forgot about back pressure:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;asyncio&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start_server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;on_client_connected&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;writer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;readline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;writer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;srv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start_server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;on_client_connected&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;127.0.0.1&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8888&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;srv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;srv&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serve_forever&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you are new to the concept of async/await just imagine that at any
+point where await is called, the function suspends until the expression
+resolves.  Here the &lt;cite&gt;start_server&lt;/cite&gt; function that is provided by Python's
+&lt;cite&gt;asyncio&lt;/cite&gt; system runs a hidden &lt;cite&gt;accept&lt;/cite&gt; loop.  It listens on a socket and
+spawns an independent task running the &lt;cite&gt;on_client_connected&lt;/cite&gt; function for
+each socket that connects.&lt;/p&gt;
+&lt;p&gt;Now this looks pretty straightforward.  You could remove all the &lt;cite&gt;await&lt;/cite&gt;
+and &lt;cite&gt;async&lt;/cite&gt; keywords and you end up with code that looks very similar to
+how you would write code with threads.&lt;/p&gt;
+&lt;p&gt;However that hides one very crucial issue which is the root of all our
+issues here: and that are function calls that do not have an &lt;cite&gt;await&lt;/cite&gt; in
+front of it.  In threaded code any function can yield.  In async code only
+async functions can.  This means for instance that the &lt;cite&gt;writer.write&lt;/cite&gt;
+method cannot block.  So how does this work?  So it will try to write the
+data right into the operating system's socket buffer which is non
+blocking.  However what happens if the buffer is full and the socket would
+block?  In the threading case we could just block here which would be
+ideal because it means we're applying some back pressure.  However because
+there are not threads here we can't do that.  So we're left with buffering
+here or dropping data.  Because dropping data would be pretty terrible,
+Python instead chooses to buffer.  Now what happens if someone sends a lot
+of data in but does not read?  Well in that case the buffer will grow and
+grow and grow.  This API deficiency is why the Python documentation says
+not to use &lt;cite&gt;write&lt;/cite&gt; at all on it's own but to follow up with &lt;cite&gt;drain&lt;/cite&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;writer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;writer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;drain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Drain will drain some excess on the buffer.  It will not cause the entire
+buffer to flush out, but just enough to prevent things to run out of
+control.  So why is &lt;cite&gt;write&lt;/cite&gt; not doing an implicit &lt;cite&gt;drain&lt;/cite&gt;?  Well it's a
+massive API oversight and I'm not exactly sure how it happened.&lt;/p&gt;
+&lt;p&gt;An important part that is very important here is that most sockets are
+based on TCP and TCP has built-in flow control.  A writer will only write
+so fast as the reader is willing to accept (give or take some buffering
+involved).  This is hidden from you entirely as a developer because not
+even the BSD socket libraries expose this implicit flow control handling.&lt;/p&gt;
+&lt;p&gt;So did we fix our back pressure issue here?  Well let's see how this whole
+thing would look like in a threading world.  In a threading world our code
+most likely would have had a fixed number of threads running and the
+accept loop would have waited for a thread to become available to take
+over the request.  In our async example however we now have an unbounded
+number of connections we're willing to handle.  This similarly means
+we're willing to accept a very high number of connections even if it means
+that the system would potentially overload.  In this very simple example
+this is probably less of an issue but imagine what would happen if we were
+to do some database access.&lt;/p&gt;
+&lt;p&gt;Picture a database connection pool that will give out up to 50
+connections.  What good is it to accept 10000 connections when most of
+them will bottleneck on that connection pool?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;waiting-vs-waiting-to-wait&quot;&gt;
+&lt;h2&gt;Waiting vs Waiting to Wait&lt;/h2&gt;
+&lt;p&gt;So this finally leads me to where I wanted to go in the first place.  In
+most async systems and definitely in most of what I encountered in Python
+even if you fix all the socket level buffering behavior you end up in a
+world where you chain a bunch of async functions together with no regard
+of back pressure.&lt;/p&gt;
+&lt;p&gt;If we take our database connection pool example let's say there are only
+50 connections available.  This means at most we can have 50 concurrent
+database sessions for our code.  So let's say we want to let 4 times as
+many requests be processed as we're expecting that a lot of what the
+application does is independent of the database.  One way to go about it
+would be to make a semaphore with 200 tokens and to acquire one at the
+beginning.  If we're out of tokens we would start waiting for the
+semaphore to release a token.&lt;/p&gt;
+&lt;p&gt;But hold on.  Now we're back to queueing!  We're just queueing a bit
+earlier.  If we were to severely overload the system now we would queue all
+the way at the beginning.  So now everybody would wait for the maximum
+amount of time they are willing to wait and then give up.  Worse: the
+server might still process these requests for a while until it realizes
+the client has disappeared and is no longer interested in the response.&lt;/p&gt;
+&lt;p&gt;So instead of waiting straight away we would want some feedback.  Imagine
+you're in a post office and you are drawing a ticket from a machine that
+tells you when it's your turn.  This ticket gives you a pretty good
+indication of how long you will have to wait.  If the waiting time is too
+long you can decide to abandon your ticket and head out to try again
+later.  Note that the waiting time you have until it's your turn at the
+post office is independent of the waiting time you have for your request
+(for instance because someone needs to fetch your parcel, check documents
+and collect a signature).&lt;/p&gt;
+&lt;p&gt;So here is the naive version where we can only notice we're waiting:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;asyncio.sync&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Semaphore&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;semaphore&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Semaphore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;handle_request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;semaphore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;acquire&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;generate_response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;finally&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;semaphore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;release&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For the caller of the &lt;cite&gt;handle_request&lt;/cite&gt; async function we can only see that
+we're waiting and nothing is happening.  We can't see if we're waiting
+because we're overloaded or if we're waiting because generating the
+response just takes so long.  We're basically endlessly buffering here
+until the server will finally run out of memory and crash.&lt;/p&gt;
+&lt;p&gt;The reason for this is that we have no communication channel for back
+pressure.  So how would we go about fixing this?  One option is to add a
+layer of indirection.  Now here unfortunately &lt;cite&gt;asyncio&lt;/cite&gt;'s semaphore is no
+use because it only lets us wait.  But let's imagine we could ask the
+semaphore how many tokens are left, then we could do something like this:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;hypothetical_asyncio.sync&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Semaphore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Service&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;semaphore&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Semaphore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;RequestHandlerService&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Service&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;handle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;semaphore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;acquire&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;generate_response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;finally&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;semaphore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;release&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@property&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;is_ready&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;semaphore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tokens_available&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now we have changed the system somewhat.  We now have a
+&lt;cite&gt;RequestHandlerService&lt;/cite&gt; which has a bit more information.  In particular
+it has the concept of readiness.  The service can be asked if it's ready.
+That operation is inherently non blocking and a best estimate.  It has to
+be, because we're inherently racy here.&lt;/p&gt;
+&lt;p&gt;The caller now would now turn from this:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;handle_request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Into this:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request_handler&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RequestHandlerService&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request_handler&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;is_ready&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status_code&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;503&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request_handler&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;handle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;There are multiple ways to skin the cat, but the idea is the same.  Before
+we're actually going to commit ourself to doing something we have a way to
+figure out how likely it is that we're going to succeed and if we're
+overloaded we're going to communicate this upwards.&lt;/p&gt;
+&lt;p&gt;Now the definition of the service I did not come up with.  The design of
+this comes from Rust's &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/tower-rs/tower&quot;&gt;tower&lt;/a&gt; and
+Rust's &lt;a class=&quot;reference external&quot; href=&quot;https://docs.rs/actix-service/&quot;&gt;actix-service&lt;/a&gt;.  Both have a
+very similar definition of the service trait which is similar to that.&lt;/p&gt;
+&lt;p&gt;Now there is still a chance to pile up on the semaphore because of how
+racy this is.  You can now either take that risk or still fail if &lt;cite&gt;handle&lt;/cite&gt;
+is being invoked.&lt;/p&gt;
+&lt;p&gt;A library that has solved this better than &lt;cite&gt;asyncio&lt;/cite&gt; is &lt;cite&gt;trio&lt;/cite&gt; which
+exposes the internal counter on the semaphore and a &lt;cite&gt;CapacityLimiter&lt;/cite&gt;
+which is a semaphore optimized for the purpose of capacity limiting which
+protects against some common pitfalls.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;streams-and-protocols&quot;&gt;
+&lt;h2&gt;Streams and Protocols&lt;/h2&gt;
+&lt;p&gt;Now the example above solves us RPC style situations.  For every call we
+can be informed well ahead of time if the system is overloaded.  A lot of
+these protocols have pretty straightforward ways to communicate that the
+server is at load.  In HTTP for instance you can emit a 503 which can also
+carry a &lt;cite&gt;retry-after&lt;/cite&gt; header that tells the client when it's a good idea
+to retry.  This retry adds a natural point to re-evaluate if what you want
+to retry with it still the same request or if something changed.  For
+instance if you can't retry in 15 seconds, maybe it's better to surface
+this inability to the user instead of showing an endless loading icon.&lt;/p&gt;
+&lt;p&gt;However request/response style protocols are not the only ones.  A lot of
+protocols have persistent connections open and let you stream a lot of
+data through.  Traditionally a lot of these protocols were based on TCP
+which as was mentioned earlier has built-in flow control.  This flow
+control is however not really exposed through socket libraries which is
+why high level protocols typically need to add their own flow control to
+it.  In HTTP 2 for instance a custom flow control protocol exists because
+HTTP 2 multiplexes multiple independent streams over a single TCP
+connection.&lt;/p&gt;
+&lt;p&gt;Coming from a TCP background where flow control is managed silently behind
+the scenes can set a developer down a dangerous path where one just reads
+bytes from a socket and assumes this is all there is to know.  However the
+TCP API is misleading because flow control is —&amp;nbsp;from an API perspective
+—&amp;nbsp;completely hidden from the user.  When you design your own streaming
+based protocol you will need to absolutely make sure that there is a
+bidirectional communication channel and that the sender is not just
+sending, but also reading to see if they are allowed to continue.&lt;/p&gt;
+&lt;p&gt;With streams concerns are typically different.  A lot of streams are just
+streams of bytes or data frames and you can't just drop packets in
+between.  Worse: it's often not easy for a sender to check if they should
+slow down.  In HTTP2 you need to interleave reads and writes constantly on
+the user level.  You absolutely must handle flow control there.  The
+server will send you (while you are writing) &lt;cite&gt;WINDOW_UPDATE&lt;/cite&gt; frames when
+you're allowed to continue writing.&lt;/p&gt;
+&lt;p&gt;This means that streaming code becomes a lot more complex because you need
+to write yourself a framework first that can act on incoming flow control
+information.  The &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/python-hyper/hyper-h2&quot;&gt;hyper-h2&lt;/a&gt;
+Python library for instance has a surprisingly complex &lt;a class=&quot;reference external&quot; href=&quot;https://python-hyper.org/projects/h2/en/stable/curio-example.html&quot;&gt;file upload server
+example with flow control&lt;/a&gt;
+based on curio and that example is not even complete.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;new-footguns&quot;&gt;
+&lt;h2&gt;New Footguns&lt;/h2&gt;
+&lt;p&gt;async/await is great but it encourages writing stuff that will behave
+catastrophically when overloaded.  On the one hand because it's just so
+easy to queue but also because making a function &lt;cite&gt;async&lt;/cite&gt; after the fact is
+an API breakage.  I can only assume this is why Python still has a non
+awaitable &lt;cite&gt;write&lt;/cite&gt; function on the stream writer.&lt;/p&gt;
+&lt;p&gt;The biggest reason though is that async/await lets you write code many
+people wouldn't have written with threads in the first place.  That's I
+think a good thing, because it lowers the barrier to actually writing
+larger systems.  The downside is that it also means many more developers
+who previously had little experience with distributed system now have many
+of the problems of a distributed system even if they only write a single
+program.  HTTP2 is a protocol that is complex enough due to the
+multiplexing nature that the only reasonable way to implement it is based
+on async/await as an example.&lt;/p&gt;
+&lt;p&gt;And it's not just async await code that is suffering from these issues.
+&lt;a class=&quot;reference external&quot; href=&quot;https://dask.org/&quot;&gt;Dask&lt;/a&gt; for instance is a parallelism library for
+Python used by data science programmers and despite not using async/await
+there are bug reports of the system running out of memory due to the lack
+&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/dask/distributed/issues/2602&quot;&gt;of back pressure&lt;/a&gt;.
+But these issues are rather fundamental.&lt;/p&gt;
+&lt;p&gt;The lack of back pressure however is a type of footgun that has the size of
+a bazooka.  If you realize too late that you built a monster it will be
+almost impossible to fix without major changes to the code base because
+you might have forgotten to make some functions async that should have
+been.  And a different programming environment does not help here.  The
+same issues people have in all programming environments including the
+latest additions like go and Rust.  It's not uncommon to find open issues
+about “handle flow control” or “handle back pressure” even on very popular
+projects that are open for a lengthy period of time because it turns out
+that it's really hard to add after the fact.  For instance go has an open
+issue from 2014 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/golang/go/issues/7903&quot;&gt;about adding a semaphore to all filesystem IO&lt;/a&gt; because it can overload the
+host.  aiohttp has &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/aio-libs/aiohttp/issues/1368&quot;&gt;an issue dating back to 2016&lt;/a&gt; about clients being
+able to break the server due to insufficient back pressure.  There are
+many, many more examples.&lt;/p&gt;
+&lt;p&gt;If you look at the Python hyper-h2 docs there are a shocking amount of
+examples that say something along the lines of “does not handle flow
+control”, “It does not obey HTTP/2 flow control, which is a flaw, but it
+is otherwise functional” etc.  I believe the fact flow control is very
+complex once it shows up in the surface and it's easy to just pretend it's
+not an issue, is why we're in this mess in the first place.  Flow control
+also adds a significant overhead and doesn't look good in benchmarks.&lt;/p&gt;
+&lt;p&gt;So for you developers of async libraries here is a new year's resolution
+for you: give back pressure and flow control the importance they deserve
+in documentation and API.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="http://lucumr.pocoo.org/feed.atom">
+    <title type="text">Open Source Migrates With Emotional Distress</title>
+    <id>http://lucumr.pocoo.org/2019/12/28/open-source-migrates</id>
+    <updated>2019-12-28T00:00:00Z</updated>
+    <link href="http://lucumr.pocoo.org/2019/12/28/open-source-migrates" />
+    <author>
+      <name>Armin Ronacher</name>
+    </author>
+    <content type="html">&lt;p&gt;Legacy code is bad and if you keep using it, it's really your own fault.
+There are many variations of the same thing floating around in Open Source
+communities and it always comes down to the same thing: at one point
+something is being declared old and it has to be replaced by something
+newer which is better.  That better typically has some really good
+arguments on its side: we learned from our mistakes, it was wrong to begin
+with or something along the lines of it being impure or that it propagated
+bad ideas.  Maybe that new thing only supports the newest TLS/SSL and you
+really should not longer be using the old versions because they are
+insecure.&lt;/p&gt;
+&lt;p&gt;Some communities as a whole for instance are suffering from this a whole
+lot.  Every few years a library or the entire ecosystem of that community
+is thrown away and replaced by something new and support for the old one
+ends abruptly and arbitrarily.  This has happened to the packaging
+ecosystem, the interpreter itself, modules in the standard library etc.
+How well this works out depends.  Zope for instance never really recovered
+from it's Zope 2 / Zope 3 split.  Perl didn't manage it's 5 / 6 split
+either.  Both of those projects ended up with two communities as a result.&lt;/p&gt;
+&lt;p&gt;Many open source communities behave exactly the same way: they are
+replacing something with something else without a clear migration path.
+However some communities manage to survive some transitions like this.&lt;/p&gt;
+&lt;p&gt;This largely works because the way open source communities are managing
+migrations is by cheating and the currency of payment is emotional
+distress.  Since typically money is not involved (at least not in the
+sense that a user would pay for the product directly) there is no obvious
+monetary impact of people not migrating.  So if you cause friction in the
+migration process it won't hurt you as a library maintainer.  If anything
+the churn of some users might actually be better in the long run because
+the ones that don't migrate are likely also some of the ones that are the
+most annoying in the issue tracker.  In fact Open Source ecosystems manage
+these migrations largely by trading their general clout for support of a
+large part of their user base to become proponents for a migration to the
+updated ecosystems.  Open Source projects nowadays often measure their
+popularity through some package download counts, Github stars or other
+indicators.  All of these are trending upwards generally and it takes a
+really long time for projects to lose traction because all the users count
+against it, even the ones that are migrating off frustratedly.&lt;/p&gt;
+&lt;p&gt;The cheat is to convince the community as a whole that the migration is
+very much worth it.  However the under-delivery to what is promised then
+sets up the community for another one of these experiences later.  I have
+seen how GTK migrated from 1, to 2 and then later to 3.  At any point it
+was painful and when most apps finally were on the same version, the next
+big breaking change was coming up.&lt;/p&gt;
+&lt;p&gt;Since the migration causes a lot of emotional distress, the cheat is
+carried happily by the entire community.  The big Python 3 migration is a
+good example of this: A lot of users of the language started a community
+effort to force participants in the ecosystem to migrate.  Suffering
+together does not feel as bad, and putting yourself on the moral right
+side (the one that migrates vs the ones that are holding off) helps even
+more.  That Python 3 effort was less based on reasonable arguments but on
+emotions.  While the core of the argument was correct and a lot of stuff
+was better on Python 3, it took many iterations not to regress in many
+other aspects. Yet websites were started like a big &amp;quot;wall of shame&amp;quot; for
+libraries that did not undergo the migration yet.  The community is very
+good at pushing through even the most controversial of changes.  This tour
+de force then became something of a defining characteristic of the
+community.&lt;/p&gt;
+&lt;p&gt;A big reason why this all happens in the first place is because as an Open
+Source maintainer the standard response which works against almost all
+forms of criticism is “I'm not paid for this and I no longer want to
+maintain the old version of X”.  And in fact this is a pretty good
+argument because it's both true, and very few projects actually are large
+enough that a fork by some third party would actually survive.  Python for
+instance currently has a fork of 2.7 called &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/naftaliharris/tauthon&quot;&gt;Tauthon&lt;/a&gt; which got very little
+traction.&lt;/p&gt;
+&lt;p&gt;There are projects which are clearly managing such forceful transitions,
+but I think what is often forgotten is that with that transition many
+people love the community who do not want to participate in it or can't.
+Very often a backwards incompatible replacement without clear migration
+might be able to guide the majority of people but they will lose out on
+many on the fringes and those people might be worthwhile investment into
+the future.  For a start such a reckless deprecation path will likely
+alienate commercial users.  That might be fine for a project (since many
+are non profit efforts in the first place) and very successful projects
+will likely still retain a lot of commercial users but with that user base
+reduced there will be reduced investments by those too.&lt;/p&gt;
+&lt;p&gt;I honestly believe a lot of Open Source projects would have an easier time
+existing if they would acknowledge that these painful migrations are
+painful for everybody involved.  Writing a new version that fixes all
+known issues might be fun for a developer in the first place, but if they
+then need to spend their mental and emotional capacity to convince their
+user base that migrating is worth the effort it takes out all the
+enjoyment in the process.  I have been a part of the Python 3 migration
+and I can tell you that it sucked out all my enjoyment of being a part of
+that community.  No matter on which side you were during that migration I
+heard very little positive about that experience.&lt;/p&gt;
+&lt;p&gt;Setting good migration paths rewards you and there are many projects to
+learn from for how to manage this.  It's lovely as a user to be able to
+upgrade to a new version of a project and the upgrade is smooth.  Not only
+that, it also encourages me as a user to give back valuable contributions
+because there is a high chance that I can use it without having to be
+afraid that upgrading is going to break all my stuff.&lt;/p&gt;
+&lt;p&gt;It's also important to realize that many projects outside the Open Source
+world just do not have the luxury to break backwards compatibility this
+easily.  Especially when you work in an environment where hundreds of
+systems have to be interoperable migrations are really hard and you
+sometimes have to make decisions which seem bad.  The open source
+community was much quicker in dropping support for older TLS standards
+than many others because they did not have to live with the consequences
+of that change really as they force everybody to upgrade.  That's just not
+always possible for everybody else at the speeds envisioned.&lt;/p&gt;
+&lt;p&gt;I'm writing this because we're a few days away from the end of life of
+Python 2 at which point the community is also going to stop maintaining a
+lot of valuable tools like pytest, &lt;span class=&quot;strike&quot;&gt;pip&lt;/span&gt; &lt;a class=&quot;footnote-reference&quot; href=&quot;#id2&quot; id=&quot;id1&quot;&gt;[1]&lt;/a&gt; and others for Python 2.
+Yet the user base of the language has only migrated to ~50%.  My own
+libraries which are now maintained by the &lt;a class=&quot;reference external&quot; href=&quot;https://palletsprojects.com/&quot;&gt;pallets&lt;/a&gt; community are joining in on this
+something I can understand but don't agree with.  I really wish the Python
+community all the best but I hope that someone does a post-mortem on all
+of this, because there are lots of things to be learned from all of this.&lt;/p&gt;
+&lt;table class=&quot;docutils footnote&quot; frame=&quot;void&quot; id=&quot;id2&quot; rules=&quot;none&quot;&gt;
+&lt;colgroup&gt;&lt;col class=&quot;label&quot; /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign=&quot;top&quot;&gt;
+&lt;tr&gt;&lt;td class=&quot;label&quot;&gt;&lt;a class=&quot;fn-backref&quot; href=&quot;#id1&quot;&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;it has correctly been pointed out that pip is not deprecating
+Python 2 support &lt;a class=&quot;reference external&quot; href=&quot;https://pip.pypa.io/en/stable/development/release-process/#python-2-support&quot;&gt;any time soon&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content>
+  </entry>
+  <entry xml:base="http://lucumr.pocoo.org/feed.atom">
+    <title type="text">Open Source, SaaS and Monetization</title>
+    <id>http://lucumr.pocoo.org/2019/11/4/open-source-and-saas</id>
+    <updated>2019-11-04T00:00:00Z</updated>
+    <link href="http://lucumr.pocoo.org/2019/11/4/open-source-and-saas" />
+    <author>
+      <name>Armin Ronacher</name>
+    </author>
+    <content type="html">&lt;p&gt;When you're reading this blog post &lt;a class=&quot;reference external&quot; href=&quot;https://sentry.io/&quot;&gt;Sentry&lt;/a&gt; which I
+have been working on for the last few years has undergone a license
+change.  Making money with Open Source has always been a complex topic and
+over the years my own ideas of how this should be done have become less and
+less clear.  The following text is an attempt to summarize my thoughts on
+it an to put some more clarification on how we ended up picking the &lt;a class=&quot;reference external&quot; href=&quot;https://mariadb.com/bsl11/&quot;&gt;BSL
+license&lt;/a&gt; for Sentry.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;making-money-with-open-source&quot;&gt;
+&lt;h2&gt;Making Money with Open Source&lt;/h2&gt;
+&lt;p&gt;My personal relationship with Open Source and monetization is pretty
+clear cut: I never wanted money to be involved in libraries but I always
+encouraged people to monetize applications.  This is also why I was always
+very liberal with my own choice of license (BSD, MIT, Apache) and
+encouraged others to do the same.  Open Source libraries under permissive
+licenses helps us all as developers.&lt;/p&gt;
+&lt;p&gt;I understand that there are many developers out there who are trying to
+monetize libraries but I have no answer to that.  Money and Open Source
+libraries is a tricky territory to which I have nothing to add.&lt;/p&gt;
+&lt;p&gt;However when it comes to monetizing Open Source applications I see many
+different approaches.  One of them is what we did at Sentry: we Open
+Sourced our server and client libraries and monetized our SaaS
+installation.  This from where I stand is a pretty optimal solution
+because it allows developers to use the software on their own and
+contribute to it, but also allows you to monetize the value you provide
+through the SaaS installation.  In the case of Sentry it has worked out
+very well for us and there is very little I would change about that.&lt;/p&gt;
+&lt;p&gt;But there is a catch …&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-saas-problem&quot;&gt;
+&lt;h2&gt;The SaaS Problem&lt;/h2&gt;
+&lt;p&gt;Obviously there is an issue with this which is why we're playing around
+with changing the license.  We love Open Source and continue to do so, but
+at one point someone has to make money somewhere and that better be done
+in the most clear way possible.  I don't want a company that runs on
+donations or has a business model that just happens to run by accident.
+For SaaS businesses there is always the risk that it could turn into a
+margin business.  What stops someone from taking the Sentry code and
+compete with the sentry.io installation not investing any development
+efforts into it?&lt;/p&gt;
+&lt;p&gt;This is not a new problem and many companies have faced it before.  This
+is where a pragmatic solution is necessary.&lt;/p&gt;
+&lt;p&gt;The goal is to ensure that companies like Sentry can exist, can produce
+Open Source code but prevent competition on it's core business from its
+own forks.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;open-source-eventually&quot;&gt;
+&lt;h2&gt;Open Source — Eventually&lt;/h2&gt;
+&lt;p&gt;Open Source is pretty clear cut: it does not discriminate.  If you get the
+source, you can do with it what you want (within the terms of the
+license) and no matter who you are (within the terms of the license).
+However as Open Source is defined —&amp;nbsp;and also how I see it — Open Source
+comes with no strings attached.  The moment we restrict what you can do
+with it — like not compete — it becomes something else.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://blog.sentry.io/2019/11/06/relicensing-sentry&quot;&gt;The license of choice is the BSL&lt;/a&gt;.  We looked at
+many opens and the idea of putting a form of natural delay into our
+releases looked the most appealing.  The BSL does that.  We make sure that
+if time passes all we have, becomes Open Source again but until that point
+it's almost Open Source but with strings attached.  This means for as long
+as we innovate there is some natural disadvantage for someone competing
+with the core product while still ensuring that our product stays around
+and healthy in the Open Source space.&lt;/p&gt;
+&lt;p&gt;If enough time passes everything becomes available again under the Apache
+2 license.&lt;/p&gt;
+&lt;p&gt;This ensures that no matter what happens to Sentry the company or product,
+it will always be there for the Open Source community.  Worst case, it
+just requires some time.&lt;/p&gt;
+&lt;p&gt;I'm personally really happy with the BSL.  I cannot guarantee that after
+years no better ideas came around but this is the closest I have seen that
+I feel very satisfied with where I can say that I stand behind it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;money-and-libraries&quot;&gt;
+&lt;h2&gt;Money and Libraries&lt;/h2&gt;
+&lt;p&gt;The situation is much more complex however with libraries, frameworks and
+everything like this.  The BSL would not solve anything here, it would
+cause a lot of friction with reusing code.  For instance if someone wants
+to pull reusable code out of Sentry they would have to wait for the
+license conversion to kick in, find an older version that is already open
+source or reach out to us to get a snippet converted earlier.  All of this
+would be a problem for libraries.&lt;/p&gt;
+&lt;p&gt;At Sentry we very purposefully selected what falls under the license.
+For instance we chose not to BSL license for components where we believe
+that pulling efforts together is particularly important.  For instance our
+native symbolication libraries and underlying service (&lt;a class=&quot;reference external&quot; href=&quot;https://blog.sentry.io/2019/11/06/relicensing-sentry&quot;&gt;symbolicator&lt;/a&gt;) will not get
+the BSL because we want to encourage others to contribute to it and bundle
+efforts.  Symbolicator like symbolic are components that are very similar
+to libraries.  They are not products by themselves.  I could not monetize
+Flask, Jinja or anything like this this way and I have absolutely no
+desire to do so.&lt;/p&gt;
+&lt;p&gt;At the same time I cannot count how many mails I got over the years from
+people asking why I don't monetize my stuff, questions from people about
+how they should go about monetizing their code.&lt;/p&gt;
+&lt;p&gt;I do not have an answer.&lt;/p&gt;
+&lt;p&gt;I feel like there is no answer to this.  I remember too many cases of
+people that tried to do dual licensing with code and ended up regretting
+it after ownership was transferred or they had a fall out with other
+partners.&lt;/p&gt;
+&lt;p&gt;I however want to continue evaluating if there are ways libraries can be
+monetized.  For now the best I have is the suggestion for people to build
+more Open Source companies with an Open Source (maybe BSL licensed)
+product and encourage true open source contributions to underlying
+libraries that become popular.  Open Source companies dedicating some of
+their revenue to help libraries is a good thing from where I stand.  We
+should do more of that.&lt;/p&gt;
+&lt;p&gt;I would however love to hear how others feel about money and Open Source.
+Reach out to me in person, by mail, twitter or whatever else.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="http://lucumr.pocoo.org/feed.atom">
+    <title type="text">Updated Thoughts on Trust Scaling</title>
+    <id>http://lucumr.pocoo.org/2019/7/29/dependency-scaling</id>
+    <updated>2019-07-29T00:00:00Z</updated>
+    <link href="http://lucumr.pocoo.org/2019/7/29/dependency-scaling" />
+    <author>
+      <name>Armin Ronacher</name>
+    </author>
+    <content type="html">&lt;p&gt;A few years back I wrote down my thoughts on the problem of &lt;a class=&quot;reference external&quot; href=&quot;/2016/3/24/open-source-trust-scaling/&quot;&gt;micropackages
+and trust scaling&lt;/a&gt;.  In the
+meantime the problem has only gotten worse.  Unfortunately my favorite
+programming language Rust is also starting to suffer from dependency
+explosion and how risky dependencies have become.  Since I wrote about
+this last I have learned a few more things about this and I have some new
+ideas of how this could potentially be managed.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-problem-summarized&quot;&gt;
+&lt;h2&gt;The Problem Summarized&lt;/h2&gt;
+&lt;p&gt;Every dependency comes with a cost.  It pulls in code and a license and it
+needs to be pulled from somewhere.  One of the things that has generally
+improved over the last few years is that package registries have become
+largely immutable.  Once published it's there forever and at the very
+least it cannot be replaced by different code.  So if you depend on a
+precise version of a library you will no longer be subject to the risk of
+someone putting something else in place there.  We are still however
+dealing with having to download, compile and link the thing.  The number
+and size of dependencies has been particularly frustrating for me in
+JavaScript but it's also definitely a concern in Rust where even the
+smallest app quickly has north of 100 dependencies.&lt;/p&gt;
+&lt;p&gt;Our &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/getsentry/symbolicator&quot;&gt;symbolicator&lt;/a&gt; project
+written in Rust currently has 303 unique dependencies.  Some of these are
+duplicates due to different versions being used.  For instance we depend
+on &lt;cite&gt;rand 0.4&lt;/cite&gt; &lt;a class=&quot;footnote-reference&quot; href=&quot;#id2&quot; id=&quot;id1&quot;&gt;[1]&lt;/a&gt;, &lt;cite&gt;rand 0.5&lt;/cite&gt;, &lt;cite&gt;rand 0.6&lt;/cite&gt; and &lt;cite&gt;rand 0.7&lt;/cite&gt; and there a few more
+cases like this.  But even if we remove all of this we still have 280
+unique package names involved.&lt;/p&gt;
+&lt;p&gt;Currently I'm in the situation that I can just pray that when I run &lt;cite&gt;cargo
+update&lt;/cite&gt; the release is clean.  There is no realistic way for me to audit
+this at all.&lt;/p&gt;
+&lt;table class=&quot;docutils footnote&quot; frame=&quot;void&quot; id=&quot;id2&quot; rules=&quot;none&quot;&gt;
+&lt;colgroup&gt;&lt;col class=&quot;label&quot; /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign=&quot;top&quot;&gt;
+&lt;tr&gt;&lt;td class=&quot;label&quot;&gt;&lt;a class=&quot;fn-backref&quot; href=&quot;#id1&quot;&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;One thing of note here is that rand is a bit special in that some
+older rand versions will depend on newer ones so that they use the same
+internals.  This is a trick that is also used by the libc library in
+Rust.  For the purpose of the number of dependencies this optimization
+however does not help much.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;why-we-have-dependencies&quot;&gt;
+&lt;h2&gt;Why we have Dependencies&lt;/h2&gt;
+&lt;p&gt;We use dependencies because they are useful in general.  For instance
+symbolicator would not exist if it could not benefit from a huge number of
+code written by other people, a lot we contribute to.  This means the
+entire community benefits from this.  Rust probably some of the best DWARF
+and PDB libraries in existence now as a result of many different people
+contributing to the same cause.  Those libraries in turn are sitting on
+top of very powerful binary reading and manipulation libraries which are a
+good thing not to be reinvented all over the place.&lt;/p&gt;
+&lt;p&gt;A quite heated discussion &lt;a class=&quot;footnote-reference&quot; href=&quot;#id4&quot; id=&quot;id3&quot;&gt;[2]&lt;/a&gt; on Twitter emerged the last few days about the
+danger and cost of dependencies among some Rust developers.  One of the
+arguments that was brought up in support of dependencies was that software
+for non English speakers is mostly so terrible because people chose to
+reinvent the world instead of using third party libraries that handle
+things like localization and text input.  I absolutely agree with this —
+some problems are just too large not to be put into a common dependency.&lt;/p&gt;
+&lt;p&gt;So clearly dependencies are something we do not want to get rid of.  But
+we also need to live with the downsides they bring.&lt;/p&gt;
+&lt;table class=&quot;docutils footnote&quot; frame=&quot;void&quot; id=&quot;id4&quot; rules=&quot;none&quot;&gt;
+&lt;colgroup&gt;&lt;col class=&quot;label&quot; /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign=&quot;top&quot;&gt;
+&lt;tr&gt;&lt;td class=&quot;label&quot;&gt;&lt;a class=&quot;fn-backref&quot; href=&quot;#id3&quot;&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;The thread on twitter with various different view points on this
+issue can be found here: &lt;a class=&quot;reference external&quot; href=&quot;https://twitter.com/pcwalton/status/1155881388106821632&quot;&gt;https://twitter.com/pcwalton/status/1155881388106821632&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-goal-auditing&quot;&gt;
+&lt;h2&gt;The Goal: Auditing&lt;/h2&gt;
+&lt;p&gt;The number of dependencies and the automatic way by which people generally
+update them through semver in minor releases introduces a lot of unchecked
+code changes.  It's not realistic to think that everything can be reviewed
+but compared to our Python code base we bump dependencies in Rust (and
+JavaScript) a lot more freely and without a lot of care because that's
+what the ecosystem is optimized towards.&lt;/p&gt;
+&lt;p&gt;My current proposal to deal with this would be to establish a secondary
+system where auditors can be established that you can pin groups of
+packages against.  Such an auditor would audit new releases of packages
+monitor primarily for just one property: that what's on Github is what's
+in the package that made it to the registry.&lt;/p&gt;
+&lt;p&gt;Here a practical example of how this could work: symbolicator currently
+has 18 &lt;cite&gt;tokio-*&lt;/cite&gt; dependencies.  Imagine all of these were audited by a
+&amp;quot;tokio auditor&amp;quot;.  An imaginary workflow could be something like having a
+registry of auditors and their packages stored on a registry (in this case
+crates.io).  In addition to a lock file there would be an audit file (eg:
+&lt;cite&gt;Cargo.audit&lt;/cite&gt;) which contains the list of all used auditors and for which
+packages they are used.  Then whenever the dependency resolution algorithm
+runs it only accepts packages up to the latest audited version and it
+skips over versions that were never audited.&lt;/p&gt;
+&lt;p&gt;This could reduce the total amount of people one needs to trust
+tremendously.  For instance all the tokio packages could be audited by one
+group.  Now how is this different than the current de-facto world where
+all tokio packages are published by the same group of people anyways?  The
+biggest difference immediately would be that that just because a package
+starts with &lt;cite&gt;tokio-&lt;/cite&gt; does not mean it comes from the tokio developers.
+Additionally one does not have to trust just this group.  For instance
+larger companies could run their own audits centrally for all packages
+that they use which can then be used across the organization.&lt;/p&gt;
+&lt;p&gt;What matters here is the user experience.  Rust has an amazing packaging
+tool with &lt;cite&gt;cargo&lt;/cite&gt; and what makes it so convenient are all the helpers
+around it.  If we have an auditing tool where auditing our dependencies
+becomes an interactive process which gives us all the dependencies
+currently involved which are not audited, can link us to the release in
+github, show us the differences in the published cargo package compared to
+the source repository and more I would feel a lot less worried about the
+dependency count.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;secondary-goal-understanding-micro-dependencies&quot;&gt;
+&lt;h2&gt;Secondary Goal: Understanding Micro-Dependencies&lt;/h2&gt;
+&lt;p&gt;That however is only half the solution in my book.  The second one is the
+cognitive overhead of all those micro-dependencies.  They come with an extra
+problem which is that every one of them carries a license, even if they
+are only a single line.  If you want to distribute code to an end user you
+need to ship all those licenses even though it's not quite sure if a
+function like &lt;cite&gt;left-pad&lt;/cite&gt; even constitutes enough intellectual property to
+carry a license file.&lt;/p&gt;
+&lt;p&gt;I wonder if the better way to deal with those micro-dependencies is to call
+them out for what they are and add a separate category of these.  It's
+quite uninformative to hear that one's application has 280 dependencies
+because that does not account for much if it each of these dependencies
+can be a single line or a hundred thousand line behemoth.  If instead we
+would start breaking down our packages into categories at installation and
+audit time this could help us understand our codebases better.&lt;/p&gt;
+&lt;p&gt;Ideally the audit and installation/compilation process can tell us how
+many packages are leaf packages, how many are below a certain line count,
+how many use unsafe in their own codebase and tag them appropriately.
+This could give us a better understanding of what we're dealing with and
+how to deal with updates.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;why-do-we-update&quot;&gt;
+&lt;h2&gt;Why do we update?&lt;/h2&gt;
+&lt;p&gt;Overall most of the reasons why I update dependencies in Python have been:
+bug fixed or security issue encountered.  I never proactively upgraded
+packages.  In Rust and JavaScript on the other hand for some reason I
+started upgrading the whole time.  The biggest reason for this has been
+inter-package dependencies and without upgrading everything to latest one
+ends up dragging multiple versions of the same library around.&lt;/p&gt;
+&lt;p&gt;This is what worries me the most.  We started to update dependencies
+because it's easy, not because it's a good idea.  One should update
+dependencies but an update should have a cost.&lt;/p&gt;
+&lt;p&gt;For instance for micro-dependencies I really do not want to install updates
+ever.  The chance that there is a security vulnerability in &lt;cite&gt;isArray&lt;/cite&gt; that
+is fixed in an update is impossibly small.  As such I would like to skip
+them entirely in updates unless a CVE is filed against it, in which case I
+probably want to be notified about it.&lt;/p&gt;
+&lt;p&gt;On the other hand large and very important direct dependencies in my
+system (like frameworks) I probably do want to update regularly.  The
+thought process here is that skipping versions typically makes it harder
+to upgrade later and security fixes will only go into some of the newer
+versions.  Staying on old versions for too long has clear disadvantages.&lt;/p&gt;
+&lt;p&gt;Understanding best practices for reviewing and updating might be
+interesting to analyze and could tell us write better tools to work with
+dependencies.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;hacking-the-package-manager&quot;&gt;
+&lt;h2&gt;Hacking The Package Manager&lt;/h2&gt;
+&lt;p&gt;One of the things that might be interesting for toying around would be to
+make the dependency resolution process in package managers hook-able.  For
+instance it would be very interesting if &lt;cite&gt;cargo&lt;/cite&gt; or &lt;cite&gt;yarn&lt;/cite&gt; could shell out
+to a configured tool which takes the resolved dependencies which are in
+the registry and can blacklist some.  That way separate tools could be
+developed that try various approaches for auditing dependencies without
+those having to become part of the core package manager until the
+community has decided on best practices.&lt;/p&gt;
+&lt;p&gt;Theoretically one could do this entirely separately from the package
+manager by using third party tools to emit lock files but considering how
+the main build chain overrides lock files if the source dependencies
+change it might be too easy to get this wrong accidentally.&lt;/p&gt;
+&lt;p&gt;Such a hook for instance could already be used to automatically consult
+&lt;a class=&quot;reference external&quot; href=&quot;https://crates.io/crates/rustsec&quot;&gt;rustsec&lt;/a&gt; to blacklist package
+versions with security vulnerabilities.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="http://lucumr.pocoo.org/feed.atom">
+    <title type="text">Python</title>
+    <id>http://lucumr.pocoo.org/2018/7/13/python</id>
+    <updated>2018-07-13T00:00:00Z</updated>
+    <link href="http://lucumr.pocoo.org/2018/7/13/python" />
+    <author>
+      <name>Armin Ronacher</name>
+    </author>
+    <content type="html">&lt;p&gt;Guido van Rossum &lt;a class=&quot;reference external&quot; href=&quot;https://mail.python.org/pipermail/python-committers/2018-July/005664.html&quot;&gt;announced that he's stepping down as BDFL&lt;/a&gt;.
+It made me think.  The Python programming language has left a profound
+impact on my life.  It's my home, it gave me many of my friendships and
+acquaintances.  It gave me my work, supplied me with many invaluable
+experiences and it even made me meet my now wife.&lt;/p&gt;
+&lt;p&gt;As most readers of this blog might know, I have a
+ambivalent relationship with the language as of a few years ago.  I
+learned a lot through Python and one of the things I learned is also
+which mistakes one can make in language and interpreter design.  Since I
+know Python in and out it's not hard for me to see all the things that did
+not go well.  However nothing is perfect.  The things that might be ugly in
+the language or implementation also have some unexpected benefits.
+Python has a pretty weak story on package distribution and imports, yet at
+the same time this has made the Python community more cautious about API
+breakage.  The simplistic nature of the interpreter has cultivated an
+environment of countless C extensions that expanded the Python community
+in ways that few people would have expected.&lt;/p&gt;
+&lt;p&gt;Python is Guido van Rossum.  While there have been many contributors over
+the years it's without doubt his creation.  You can go back to the
+earliest versions of the language and it still feels similar.  The
+interpreter design is still the same and so were the influences of the
+language.  Python has achieved something that few languages did: it
+enabled absolute beginners to start with a language that is fun to pick up
+and it stays relevant and useful into ones professional life.&lt;/p&gt;
+&lt;p&gt;In case you are reading this Guido: I cannot express enough how much I owe to
+you.  For all the strong disagreements I had with some of your decisions
+over the years please do not forget that I always appreciated it.&lt;/p&gt;
+</content>
+  </entry>
+  <entry xml:base="http://lucumr.pocoo.org/feed.atom">
+    <title type="text">You can't Rust that</title>
+    <id>http://lucumr.pocoo.org/2018/3/31/you-cant-rust-that</id>
+    <updated>2018-03-31T00:00:00Z</updated>
+    <link href="http://lucumr.pocoo.org/2018/3/31/you-cant-rust-that" />
+    <author>
+      <name>Armin Ronacher</name>
+    </author>
+    <content type="html">&lt;p&gt;The last year has been fun because I could build a lot for really nice
+stuff for &lt;a class=&quot;reference external&quot; href=&quot;https://sentry.io/&quot;&gt;Sentry&lt;/a&gt; in Rust and for the first time
+the development experience was without bigger roadblocks.  While we have
+been using Rust before it now feels different because the ecosystem is so
+much more stable and we ran less against language or tooling issues.&lt;/p&gt;
+&lt;p&gt;However talking to people new to Rust (and even brainstorming APIs with
+coworkers) it's hard to get rid of the feeling that Rust can be a mind
+bending adventure and that the best way to have a stress free experience
+is knowing upfront what you cannot (or should not attempt to) do.  Knowing
+that certain things just cannot be done helps putting your mind back back
+on the right track.&lt;/p&gt;
+&lt;p&gt;So here are things not to do in Rust and what to do instead which I think
+should be better known.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;things-move&quot;&gt;
+&lt;h2&gt;Things Move&lt;/h2&gt;
+&lt;p&gt;The biggest difference between Rust and C++ for me is the address-of
+operator (&lt;cite&gt;&amp;amp;&lt;/cite&gt;).  In C++ (like C) that thing just returns the address of
+whatever its applied to and while the language might put some restrictions
+on you when doing so is a good idea, there is generally nothing stopping
+you from taking an address of a value and then using it.&lt;/p&gt;
+&lt;p&gt;In Rust this is just usually not useful.  First of all the moment you
+take a reference in Rust the borrow checker looms over your code and
+prevents you from doing anything stupid.  More importantly however is that
+even if it's safe to take a reference it's not nearly as useful as you
+might think.  The reason for this is that objects in Rust generally move
+around.&lt;/p&gt;
+&lt;p&gt;Just take how objects are typically constructed in Rust:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;: &lt;span class=&quot;kt&quot;&gt;u32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;: &lt;span class=&quot;kt&quot;&gt;u32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;impl&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;: &lt;span class=&quot;kt&quot;&gt;u32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;: &lt;span class=&quot;kt&quot;&gt;u32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;-&amp;gt; &lt;span class=&quot;nc&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here the &lt;cite&gt;new&lt;/cite&gt; method (not taking &lt;cite&gt;self&lt;/cite&gt;) is a static method on the
+implementation.  It also returns &lt;cite&gt;Point&lt;/cite&gt; here by value.  This is
+&lt;em&gt;generally&lt;/em&gt; how values are constructed.  Because of this taking a
+reference in the function does not do anything useful as the value is
+potentially moved to a new location on calling.  This is very different to
+how this whole thing works in C++:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;uint32_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;uint32_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;uint32_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint32_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;A constructor in C++ is already operating on an allocated piece of memory.
+Before the constructor even runs something already provided the memory
+where &lt;cite&gt;this&lt;/cite&gt; points to (typically either somewhere on the stack or through
+the &lt;cite&gt;new&lt;/cite&gt; operator on the heap).  This means that C++ code can generally
+assume that an instance does not move around.  It's not uncommon that C++
+code does really stupid things with the &lt;cite&gt;this&lt;/cite&gt; pointer as a result (like
+storing it in another object).&lt;/p&gt;
+&lt;p&gt;This difference might sound very minor but it's one of the most
+fundamental ones that has huge consequences for Rust programmers.  In
+particular it is one of the reasons you cannot have self referential
+structs.  While there is talk about expressing types that cannot be moved
+in Rust there is no reasonable workaround for this at the moment (The
+future direction &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rust-lang/rfcs/pull/2349&quot;&gt;is the pinning system from RFC 2349&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;So what do we do currently instead?  This depends a bit on the situation
+but generally the answer is to replace pointers with some form of Handle.
+So instead of just storing an absolute pointer in a struct one would
+instead store the offset to some reference value.  Later if the pointer
+is needed it's calculated on demand.&lt;/p&gt;
+&lt;p&gt;For instance we use a pattern like this to work with memory mapped data:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;use&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;::&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;marker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mem&lt;/span&gt;::&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transmute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size_of&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;borrow&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;Cow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;#[repr(C)]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Slice&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;offset&lt;/span&gt;: &lt;span class=&quot;kt&quot;&gt;u32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;len&lt;/span&gt;: &lt;span class=&quot;kt&quot;&gt;u32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;phantom&lt;/span&gt;: &lt;span class=&quot;nc&quot;&gt;marker&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;PhantomData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;#[repr(C)]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Header&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;targets&lt;/span&gt;: &lt;span class=&quot;nc&quot;&gt;Slice&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;u32&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;&amp;#39;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bytes&lt;/span&gt;: &lt;span class=&quot;nc&quot;&gt;Cow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;&amp;#39;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;u8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;impl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;&amp;#39;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;&amp;#39;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;: &lt;span class=&quot;nb&quot;&gt;Into&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Cow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;&amp;#39;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;u8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bytes&lt;/span&gt;: &lt;span class=&quot;nc&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;-&amp;gt; &lt;span class=&quot;nc&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;&amp;#39;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bytes&lt;/span&gt;: &lt;span class=&quot;nc&quot;&gt;bytes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;into&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;get_target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;: &lt;span class=&quot;kt&quot;&gt;usize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;-&amp;gt; &lt;span class=&quot;kt&quot;&gt;u32&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load_slice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;targets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;bytes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;: &lt;span class=&quot;kt&quot;&gt;usize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;len&lt;/span&gt;: &lt;span class=&quot;kt&quot;&gt;usize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;-&amp;gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;u8&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bytes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;as_ptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;-&amp;gt; &lt;span class=&quot;kp&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Header&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;unsafe&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transmute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bytes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size_of&lt;/span&gt;::&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Header&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;load_slice&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;: &lt;span class=&quot;kp&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Slice&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;-&amp;gt; &lt;span class=&quot;kp&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size_of&lt;/span&gt;::&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;as&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;usize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bytes&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bytes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;offset&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;as&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;usize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;unsafe&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;slice&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;from_raw_parts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bytes&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;as&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;as&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;usize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In this case &lt;cite&gt;Data&amp;lt;'a&amp;gt;&lt;/cite&gt; only holds a copy-on-write reference to the
+backing byte storage (an owned &lt;cite&gt;Vec&amp;lt;u8&amp;gt;&lt;/cite&gt; or a borrowed &lt;cite&gt;&amp;amp;[u8]&lt;/cite&gt; slice).
+The byte slice starts with the bytes from &lt;cite&gt;Header&lt;/cite&gt; and they are resolved
+on demand when &lt;cite&gt;header()&lt;/cite&gt; is called.  Likewise a single slice is resolved
+similarly by the call to &lt;cite&gt;load_slice()&lt;/cite&gt; which takes a stored slice and
+then looks it up by offsetting on demand.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;To recap: instead of storing a pointer to an object itself, store some
+information so that you can calculate the pointer later.  This is also
+commonly called using “handles”.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;refcounts-are-not-dirty&quot;&gt;
+&lt;h2&gt;Refcounts are not Dirty&lt;/h2&gt;
+&lt;p&gt;Another quite interesting case that is surprisingly easy to run into also
+has to do with the borrow checker.  The borrow checker doesn't let you do
+stupid things with data you do not own and sometimes that can feel like
+running into a wall because you think you know better.  In many of those
+cases the answer is just one &lt;cite&gt;Rc&amp;lt;T&amp;gt;&lt;/cite&gt; away however.&lt;/p&gt;
+&lt;p&gt;To make this less mysterious let's look at the following piece of C++
+code:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;thread_local&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;debug_mode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current_config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;current_config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;debug_mode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current_config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;debug_mode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// do something&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This seems pretty innocent but it has a problem: nothing stops you from
+borrowing a field from &lt;cite&gt;current_config&lt;/cite&gt; and then passing it somewhere
+else.  This is why in Rust the direct equivalent of that looks
+significantly more complicated:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;#[derive(Default)]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Config&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;debug_mode&lt;/span&gt;: &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;thread_local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;static&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CURRENT_CONFIG&lt;/span&gt;: &lt;span class=&quot;nc&quot;&gt;Config&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Default&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CURRENT_CONFIG&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;// here we can *immutably* work with config&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;debug_mode&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;            &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;// do something&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This should make it immediately obvious that this API is not fun.  First
+of all the config is immutable.  Secondly we can only access the config
+object within the closure passed to the &lt;cite&gt;with&lt;/cite&gt; function.  Any attempt of
+trying to borrow from this config object and have it outlive the closure
+will fail (probably with something like “cannot infer an appropriate
+lifetime”).  There is no way around it!&lt;/p&gt;
+&lt;p&gt;This API is clearly objectively bad.  Imagine we want to look up more of
+those thread local variables.  So let's look at both of those issues
+separately.  As hinted above ref counting is generally a really nice
+solution to deal with the underlying issue here: it's unclear who the
+owner is.&lt;/p&gt;
+&lt;p&gt;Let's imagine for a second this config object just happens to be bound to
+the current thread but is not really owned by the current thread.  What
+happens if the config is passed to another thread but the current thread
+shuts down?  This is a typical example where one can think of logically
+the config having multiple owners.  Since we might want to pass from one
+thread to another we want an atomically reference counted wrapper for our
+config: an &lt;cite&gt;Arc&amp;lt;Config&amp;gt;&lt;/cite&gt;.  This lets us increase the refcount in the with
+block and return it.  The refactored version looks like this:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;use&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;sync&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;Arc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;#[derive(Default)]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Config&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;debug_mode&lt;/span&gt;: &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;impl&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Config&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;-&amp;gt; &lt;span class=&quot;nc&quot;&gt;Arc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CURRENT_CONFIG&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;thread_local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;static&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CURRENT_CONFIG&lt;/span&gt;: &lt;span class=&quot;nc&quot;&gt;Arc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Arc&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Default&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Config&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;// here we can *immutably* work with config&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;debug_mode&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;// do something&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The change here is that now the thread local holds a reference counted
+config.  As such we can introduce a function that returns an
+&lt;cite&gt;Arc&amp;lt;Config&amp;gt;&lt;/cite&gt;.  In the closure from the TLS we increment the refcount with
+the &lt;cite&gt;clone()&lt;/cite&gt; method on the &lt;cite&gt;Arc&amp;lt;Config&amp;gt;&lt;/cite&gt; and return it.  Now any caller
+to &lt;cite&gt;Config::current&lt;/cite&gt; gets that refcounted config and can hold on to it for
+as long as necessary.  For as long as there is code holding the Arc, the
+config within it is kept alive.  Even if the originating thread died.&lt;/p&gt;
+&lt;p&gt;So how do we make it mutable like in the C++ version?  We need something
+that provides us with interior mutability.  There are two options for
+this.  One is to wrap the &lt;cite&gt;Config&lt;/cite&gt; in something like an &lt;cite&gt;RwLock&lt;/cite&gt;.  The
+second one is to have the &lt;cite&gt;Config&lt;/cite&gt; use locking internally.  For instance
+one &lt;em&gt;might&lt;/em&gt; want to do this:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;use&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;sync&lt;/span&gt;::&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Arc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RwLock&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;#[derive(Default)]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ConfigInner&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;debug_mode&lt;/span&gt;: &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Config&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inner&lt;/span&gt;: &lt;span class=&quot;nc&quot;&gt;RwLock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ConfigInner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;impl&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Config&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;-&amp;gt; &lt;span class=&quot;nc&quot;&gt;Arc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Arc&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Config&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inner&lt;/span&gt;: &lt;span class=&quot;nc&quot;&gt;RwLock&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Default&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;-&amp;gt; &lt;span class=&quot;nc&quot;&gt;Arc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CURRENT_CONFIG&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;debug_mode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;-&amp;gt; &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;unwrap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;debug_mode&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;set_debug_mode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;: &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;unwrap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;debug_mode&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;thread_local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;static&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CURRENT_CONFIG&lt;/span&gt;: &lt;span class=&quot;nc&quot;&gt;Arc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Config&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Config&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_debug_mode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;debug_mode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;// do something&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you do not need this type to work with threads you can also replace
+&lt;cite&gt;Arc&lt;/cite&gt; with &lt;cite&gt;Rc&lt;/cite&gt; and &lt;cite&gt;RwLock&lt;/cite&gt; with &lt;cite&gt;RefCell&lt;/cite&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;To recap: when you need to borrow data that outlives the lifetime of
+something you need refcounting.  Don't be afraid of using `Arc` but be
+aware that this locks you to immutable data.  Combine with interior
+mutability (like `RwLock`) to make the object mutable.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;kill-all-setters&quot;&gt;
+&lt;h2&gt;Kill all Setters&lt;/h2&gt;
+&lt;p&gt;But the above pattern of effectively having &lt;cite&gt;Arc&amp;lt;RwLock&amp;lt;Config&amp;gt;&amp;gt;&lt;/cite&gt; can be a
+bit problematic and swapping it for &lt;cite&gt;RwLock&amp;lt;Arc&amp;lt;Config&amp;gt;&amp;gt;&lt;/cite&gt; can be
+significantly better.&lt;/p&gt;
+&lt;p&gt;Rust done well is a liberating experience because if programmed well it's
+shockingly easy to parallelize your code after the fact.  Rust encourages
+immutable data and that makes everything so much easier.  However in the
+previous example we just introduced interior mutability.  Imagine we have
+multiple threads running, all referencing the same config but one flips a
+flag.  What happens to concurrently running code that now is not expecting
+the flag to randomly flip?  Because of that interior mutability should be
+used carefully.  Ideally an object once created does not change its state
+in such a way.  In general I think such a type of setter should be an anti
+pattern.&lt;/p&gt;
+&lt;p&gt;So instead of doing this what about we take a step back to where we were
+earlier where configs were not mutable?  What if we never mutate the
+config after we created it but we add an API to promote another config to
+current.  This means anyone who is currently holding on to a config can
+safely know that the values won't change.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;use&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;sync&lt;/span&gt;::&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Arc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RwLock&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;#[derive(Default)]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Config&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;debug_mode&lt;/span&gt;: &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;impl&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Config&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;-&amp;gt; &lt;span class=&quot;nc&quot;&gt;Arc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CURRENT_CONFIG&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;unwrap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;make_current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CURRENT_CONFIG&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;unwrap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Arc&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;thread_local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;static&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CURRENT_CONFIG&lt;/span&gt;: &lt;span class=&quot;nc&quot;&gt;RwLock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Arc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RwLock&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Default&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Config&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;debug_mode&lt;/span&gt;: &lt;span class=&quot;nc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;make_current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Config&lt;/span&gt;::&lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;debug_mode&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;// do something&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now configs are still initialized automatically by default but a new
+config can be set by constructing a &lt;cite&gt;Config&lt;/cite&gt; object and calling
+&lt;cite&gt;make_current&lt;/cite&gt;.  That will move the config into an &lt;cite&gt;Arc&lt;/cite&gt; and then bind it
+to the current thread.  Callers to &lt;cite&gt;current()&lt;/cite&gt; will get that &lt;cite&gt;Arc&lt;/cite&gt; back
+and can then again do whatever they want.&lt;/p&gt;
+&lt;p&gt;Likewise you can again switch &lt;cite&gt;Arc&lt;/cite&gt; for &lt;cite&gt;Rc&lt;/cite&gt; and &lt;cite&gt;RwLock&lt;/cite&gt; for &lt;cite&gt;RefCell&lt;/cite&gt; if
+you do not need this to work with threads.  If you are just working with
+thread locals you can also combine &lt;cite&gt;RefCell&lt;/cite&gt; with &lt;cite&gt;Arc&lt;/cite&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;To recap: instead of using interior mutability where an object changes
+its internal state, consider using a pattern where you promote new state
+to be current and current consumers of the old state will continue to hold
+on to it by putting an `Arc` into an `RwLock`.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;in-conclusion&quot;&gt;
+&lt;h2&gt;In Conclusion&lt;/h2&gt;
+&lt;p&gt;Honestly I wish I would have learned the above three things earlier than I
+did.  Mostly because even if you know the patterns you might not
+necessarily know when to use them.  So I guess the following mantra is now
+what I want to print out and hang somewhere:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Handles, not self referential pointers&lt;/li&gt;
+&lt;li&gt;Reference count your way out of lifetime / borrow checker hell&lt;/li&gt;
+&lt;li&gt;Consider promoting new state instead of interior mutability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>
+
