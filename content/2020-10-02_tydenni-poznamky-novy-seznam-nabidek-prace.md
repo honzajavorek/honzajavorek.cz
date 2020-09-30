@@ -3,7 +3,7 @@ Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
 
 
-Utekl další týden (28.9. — 2.10.) a tak [stejně jako minule]({filename}/2020-09-18_tydenni-poznamky-tabulky-grafy-a-vymysleni-novych-nabidek-prace.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekl další týden (21.9. — 25.9.) a tak [stejně jako minule]({filename}/2020-09-18_tydenni-poznamky-tabulky-grafy-a-vymysleni-novych-nabidek-prace.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
