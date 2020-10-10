@@ -13,7 +13,7 @@ import pelicanconf
 
 
 DEBUG = os.getenv('DEBUG')
-TITLE_PREFIX = 'Týdenní poznámky: '
+TITLE_PREFIX = 'Týdenní poznámky'
 CONTENT_PATH = Path(__file__).parent / pelicanconf.PATH
 
 
@@ -24,6 +24,9 @@ weeknotes_paths = sorted(filter(is_weeknotes, CONTENT_PATH.glob('*.md')))
 last_weeknotes_path = weeknotes_paths[-1]
 last_weeknotes_date = date.fromisoformat(last_weeknotes_path.name[:10])
 
+number = len(weeknotes_paths) + 1
+prefix = f'{TITLE_PREFIX} #{number}: '
+
 res = requests.get('https://getpocket.com/@honzajavorek')
 res.raise_for_status()
 articles = [a for a in pocket_recommendations.parse(res.content, today=today)
@@ -33,9 +36,9 @@ articles.reverse()
 if len(sys.argv) > 1:
     highlights = ' '.join(sys.argv[1:])
 else:
-    highlights = input(TITLE_PREFIX)
+    highlights = input(prefix)
 
-title = TITLE_PREFIX + highlights
+title = f'{prefix}{highlights}'
 slug = slugify(title)
 
 monday = today - timedelta(today.weekday())
