@@ -1,6 +1,7 @@
 Title: Týdenní poznámky: Loga firem na příručce
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
+Home: False
 Twitter-Comments: https://twitter.com/honzajavorek/status/1296850831602585601
 Facebook-Comments: https://www.facebook.com/10156592446432707/posts/10158396227362707
 

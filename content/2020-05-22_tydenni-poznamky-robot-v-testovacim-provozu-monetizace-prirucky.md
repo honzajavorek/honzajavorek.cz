@@ -1,6 +1,7 @@
 Title: Týdenní poznámky: Robot v testovacím provozu, monetizace příručky
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
+Home: False
 Twitter-Comments: https://twitter.com/honzajavorek/status/1264045979961118720
 Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10158138561087707
 

@@ -1,6 +1,7 @@
 Title: První týdenní poznámky: Třídění nabídek práce
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
+Home: False
 
 
 Rozhodl jsem se začít s pravidelnými týdenními poznámkami o tom, co jsem dělal a co zajímavého jsem se naučil. V listopadu 2019 jsem odešel z [Apiary](https://byznys.ihned.cz/c1-65593630-oracle-kupuje-za-miliardy-korun-cesky-start-up-apiary-zakladatele-ve-firme-zustavaji) na volnou nohu a začal jsem pracovat na svém vlastním projektu, [junior.guru](https://junior.guru/). Více o projektu se můžete dovědět v [rozhovoru](https://kafemlejnek.tv/dil-52-junior-guru/), který se mnou nedávno vyšel. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.

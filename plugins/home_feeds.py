@@ -61,6 +61,7 @@ def load_feeds(article_generator):
             alternates=[],
         )
         for article in articles
+        if getattr(article, 'home', '').lower() != 'false'
     ]
 
     # create a lookup mapping of alternate entries

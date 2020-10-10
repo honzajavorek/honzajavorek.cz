@@ -1,6 +1,7 @@
 Title: Týdenní poznámky: Dovolenkování, přípravy příručky
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
+Home: False
 Facebook-Comments: https://www.facebook.com/10156592446432707/posts/10158350562002707
 Twitter-Comments: https://twitter.com/honzajavorek/status/1290276368475799554
 
