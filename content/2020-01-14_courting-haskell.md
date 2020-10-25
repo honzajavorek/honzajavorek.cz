@@ -50,7 +50,7 @@ Being aware of these things, I kept my desire for Haskell as something I'll prob
 
 I think it started in 2018, when [Vladimir Gorej](https://twitter.com/vladimirgorej) joined [Apiary](https://apiary.io/). Vladimir is a functional programming aficionado with strong theoretical background, who introduced us to [Ramda](https://ramdajs.com/) and [Ramda Adjunct](https://char0n.github.io/ramda-adjunct/), [RxJS](https://rxjs.dev/), and more. Suddenly, FP was all around me.
 
-We attended the [LambdUp](https://www.lambdup.io/) conference. I started to write my imperative code with more pure functions, immutability, and with _maps_, _filters_, and _reduces_ in mind. I started noticing how widespread Ramda is, how popular [Elm](https://en.wikipedia.org/wiki/Elm_(programming_language)) is (I first heard about Elm at [Devel.cz 2016](https://devel.cz/konference/2016) from [Richard Feldman](https://twitter.com/rtfeldman)), and every day I kept being reminded about [Closure](https://en.wikipedia.org/wiki/Clojure) on Twitter by [Aleš Roubíček](https://twitter.com/alesroubicek/). Moreover, one of my other colleagues, a C++ genius [Thomas Jandečka](https://www.linkedin.com/in/tjanc/), couldn't pass a kitchen small talk without mentioning how powerful Haskell is.
+We attended the [LambdUp](https://www.lambdup.io/) conference. I started to write my imperative code with more pure functions, immutability, and with _maps_, _filters_, and _reduces_ in mind. I started noticing how widespread Ramda is, how popular [Elm](https://en.wikipedia.org/wiki/Elm_(programming_language)) is (I first heard about Elm at [Devel.cz 2016](https://devel.cz/konference/2016) from [Richard Feldman](https://twitter.com/rtfeldman)), and every day I kept being reminded about [Clojure](https://en.wikipedia.org/wiki/Clojure) on Twitter by [Aleš Roubíček](https://twitter.com/alesroubicek/). Moreover, one of my other colleagues, a C++ genius [Thomas Jandečka](https://www.linkedin.com/in/tjanc/), couldn't pass a kitchen small talk without mentioning how powerful Haskell is.
 
 ## The Grand Budapest Hotel
 
@@ -129,7 +129,7 @@ main = do
 
 ### Latin
 
-Okay, now seriously. Learning Haskell feels like if I was a Chinese and I decided to learn Latin. It's not very practical, but it gets me a strong foundation for learning almost any contemporary European language, and it gives me an intro to the cultural background. I'd say Haskell and Lisp are like Latin and Greek of functional programming. Many other functional languages adopt Haskell's theory, naming, syntax, type declarations, etc. At the LambdUp conference it felt like if an F# person wants to talk to a Closure person, they talk in Haskell. When I went through [this issue](https://functional.christmas/2019/4) of [functional.christmas](https://functional.christmas/), I was surprised that the Elm code examples were almost valid Haskell.
+Okay, now seriously. Learning Haskell feels like if I was a Chinese and I decided to learn Latin. It's not very practical, but it gets me a strong foundation for learning almost any contemporary European language, and it gives me an intro to the cultural background. I'd say Haskell and Lisp are like Latin and Greek of functional programming. Many other functional languages adopt Haskell's theory, naming, syntax, type declarations, etc. At the LambdUp conference it felt like if an F# person wants to talk to a Clojure person, they talk in Haskell. When I went through [this issue](https://functional.christmas/2019/4) of [functional.christmas](https://functional.christmas/), I was surprised that the Elm code examples were almost valid Haskell.
 
 ### Math
 
@@ -199,8 +199,10 @@ If I was to continue with learning Haskell, I'd probably dive into the following
 
 Honestly, I don't know if I'll continue learning Haskell. I didn't have a clear goal when I started with it. I wanted to get know better something I thought is divine for many years. I expected a hardcore intro to functional programming. I don't think anymore that Haskell is divine, and I definitely got a good intro to FP. I think I could have spent more time on playing with Haskell's types and properly handling all corner/error cases.
 
-Perhaps one day Haskell will compile to [WebAssembly](https://webassembly.org/) and that will make it more popular, but meanwhile, I think I'll take a look at something else. Elm? Closure?
+Perhaps one day Haskell will compile to [WebAssembly](https://webassembly.org/) and that will make it more popular, but meanwhile, I think I'll take a look at something else. Elm? Clojure?
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you like Java, program in Java. If you like C#, program in C#. If you like Ruby, Swift, Dart, Elixr, Elm, C++, Python, or even C; by all means use those languages. <br><br>But whatever you do, learn Clojure, and learn it well.</p>&mdash; Uncle Bob Martin (@unclebobmartin) <a href="https://twitter.com/unclebobmartin/status/1214906676840669184?ref_src=twsrc%5Etfw">January 8, 2020</a></blockquote>
 
 Perhaps courting Haskell won't work out in the end, but I'm pretty sure that I'm not about to stop courting functional programming any soon. Did you know there's a whole [page on functional programming in Python](https://docs.python.org/3/howto/functional.html) in its documentation? I didn't!
+
+**Update:** Commenters also mentioned [simplehaskell.org](https://www.simplehaskell.org/), [Practical Haskell: A Real World Guide to Programming](https://www.amazon.com/Practical-Haskell-World-Guide-Programming/dp/1484244796), and [Haskell Programming: From First Principles](https://haskellbook.com/).
