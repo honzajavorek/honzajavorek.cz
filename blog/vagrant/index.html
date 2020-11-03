@@ -104,10 +104,10 @@ od mého ubohého uživatelského OS. To druhé jsem dostal, to první ne.</p>
 <p>V podstatě mám ty virtuálky hlavně na databáze, jen na jedné mám nějaké to PHP, Apache, apod. Fajn
 je, že pokud člověk striktně dodrží čistotu a ve vlastním OS opravdu žádné takové služby nemá,
 vše lze jednoduše udělat tak, aby to po spuštění <strong>vypadalo jako místní služba</strong>:</p>
-<pre class="highlight"><code><span></span><span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">network</span> <span class="s2">"forwarded_port"</span><span class="p">,</span> <span class="ss">guest</span><span class="p">:</span> <span class="mi">5432</span><span class="p">,</span> <span class="ss">host</span><span class="p">:</span> <span class="mi">5432</span>  <span class="c1"># PostgreSQL</span>
+<pre class="highlight"><code><span></span><code><span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">network</span> <span class="s2">"forwarded_port"</span><span class="p">,</span> <span class="ss">guest</span><span class="p">:</span> <span class="mi">5432</span><span class="p">,</span> <span class="ss">host</span><span class="p">:</span> <span class="mi">5432</span>  <span class="c1"># PostgreSQL</span>
 <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">network</span> <span class="s2">"forwarded_port"</span><span class="p">,</span> <span class="ss">guest</span><span class="p">:</span> <span class="mi">6379</span><span class="p">,</span> <span class="ss">host</span><span class="p">:</span> <span class="mi">6379</span>  <span class="c1"># Redis</span>
 <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">network</span> <span class="s2">"forwarded_port"</span><span class="p">,</span> <span class="ss">guest</span><span class="p">:</span> <span class="mi">9200</span><span class="p">,</span> <span class="ss">host</span><span class="p">:</span> <span class="mi">9200</span>  <span class="c1"># ElasticSearch</span>
-</code></pre>
+</code></code></pre>
 
 
 <p>Má to ale i své háčky - např. PostgreSQL takto logicky nepojede přes socket a spolu s dalšími se

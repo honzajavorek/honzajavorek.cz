@@ -79,25 +79,25 @@
 <h2 id="php">PHP<small class="permalink"><a href="#php" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Bo su mimo jiné i PHP programátor, musel jsem po čase pokojného deklarování XML řešit jistý nedostatek symbiózy mezi jazykem a právě oním prvním řádkem dokumentu.</p>
 <p>Zápis</p>
-<pre class="highlight"><code><span></span><span class="cp">&lt;?xml version="1.0" encoding="utf-8" ?&gt;</span>
-</code></pre>
+<pre class="highlight"><code><span></span><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8" ?&gt;</span>
+</code></code></pre>
 
 
 <p>prostě není úplně ono, protože ty špičaté závorky a otazníčky PHP bere na sebe a server vám vrátí něco podivného, asi <strong>parse error</strong>.</p>
 <h2 id="reseni">Řešení<small class="permalink"><a href="#reseni" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Řešení je zřejmé…</p>
-<pre class="highlight"><code><span></span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="s2">"&lt;?xml version=</span><span class="se">\"</span><span class="s2">1.0</span><span class="se">\"</span><span class="s2"> encoding=</span><span class="se">\"</span><span class="s2">utf-8</span><span class="se">\"</span><span class="s2"> ?&gt;</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x"></span>
-</code></pre>
+<pre class="highlight"><code><span></span><code><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="s2">"&lt;?xml version=</span><span class="se">\"</span><span class="s2">1.0</span><span class="se">\"</span><span class="s2"> encoding=</span><span class="se">\"</span><span class="s2">utf-8</span><span class="se">\"</span><span class="s2"> ?&gt;</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x"></span>
+</code></code></pre>
 
 
 <p>Nebo třeba</p>
-<pre class="highlight"><code><span></span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="s1">'&lt;?xml version="1.0" encoding="utf-8" ?&gt;'</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x"></span>
-</code></pre>
+<pre class="highlight"><code><span></span><code><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="s1">'&lt;?xml version="1.0" encoding="utf-8" ?&gt;'</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x"></span>
+</code></code></pre>
 
 
 <p>Jak je ale vidět, zřejmá řešení problémů nejsou ani hezká, ani elegantní. Předkládám proto jedno ne zcela zřejmé, ale geniální řešení, které je hezké, elegantní a navíc rychlé – nepotřebuje prakticky žádný výkon PHP.</p>
-<pre class="highlight"><code><span></span><span class="x">&lt;</span><span class="cp">&lt;?php</span> <span class="cp">?&gt;</span><span class="x">?xml version="1.0" encoding="utf-8" ?&gt;</span>
-</code></pre>
+<pre class="highlight"><code><span></span><code><span class="x">&lt;</span><span class="cp">&lt;?php</span> <span class="cp">?&gt;</span><span class="x">?xml version="1.0" encoding="utf-8" ?&gt;</span>
+</code></code></pre>
 
 
 <p>A je to! Že se tu zabývám blbostmi? No jistě že ano! Ale proč netrávit čas psaním a čtením článků o roztomilých maličkostech ;) . A že to šlo napsat v jedné větě? Ale no tak… Jako byste mě neznali! :D</p></div>

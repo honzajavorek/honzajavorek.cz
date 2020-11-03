@@ -77,20 +77,20 @@
 <p>Co ale dělat, když máme nějaký starý projekt napsaný se zapnutými register_globals? Určitě je jednodušší je zapnout a případně si pohlídat bezpečnostní rizika, než přepisovat celý kód. Máme tři možnosti:</p>
 <h2 id="apache">Apache<small class="permalink"><a href="#apache" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Serveru řekneme co potřebujeme v souboru <code>.htaccess</code>.</p>
-<pre class="highlight"><code><span></span><span class="nb">php_flag</span> register_globals <span class="m">1</span>
-</code></pre>
+<pre class="highlight"><code><span></span><code><span class="nb">php_flag</span> register_globals <span class="m">1</span>
+</code></code></pre>
 
 
 <h2 id="zmena-nastaveni-primo-v-php">Změna nastavení přímo v PHP<small class="permalink"><a href="#zmena-nastaveni-primo-v-php" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Použijeme <a href="http://cz2.php.net/manual/en/function.ini-set.php">ini_set</a>.</p>
-<pre class="highlight"><code><span></span><span class="x">ini_set('register_globals','on');</span>
-</code></pre>
+<pre class="highlight"><code><span></span><code><span class="x">ini_set('register_globals','on');</span>
+</code></code></pre>
 
 
 <h2 id="nastaveni-na-serveru-nelze-zmenit">Nastavení na serveru nelze změnit<small class="permalink"><a href="#nastaveni-na-serveru-nelze-zmenit" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>V tomto případě nám nezbyde, než si ručně proměnné vytvořit.</p>
-<pre class="highlight"><code><span></span><span class="x">extract($_REQUEST);</span>
-</code></pre></div>
+<pre class="highlight"><code><span></span><code><span class="x">extract($_REQUEST);</span>
+</code></code></pre></div>
   </div>
 
   <footer class="article-footer">

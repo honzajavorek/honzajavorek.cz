@@ -128,12 +128,12 @@ Cartoon by Miran Lipovača, taken from <a href="http://learnyouahaskell.com/star
 </figure><p><a href="https://github.com/honzajavorek/pyvobot">It's done</a> and <a href="https://circleci.com/gh/honzajavorek/pyvo_bot/tree/master">it's working</a>, so if you use <a href="https://telegram.org/">Telegram</a> and you want to know that the next Prague Python meetup is about to be soon, subscribe to the <a href="https://t.me/pyvopraha">https://t.me/pyvopraha</a> Telegram channel.</p>
 <h2 id="how-does-haskell-feel">How does Haskell feel?<small class="permalink"><a href="#how-does-haskell-feel" title="Permanent link to this heading">#</a></small></h2>
 <p>Powerful! It takes just a few lines to implement your own clone of <a href="https://en.wikipedia.org/wiki/Vim_(text_editor)">Vim</a>:</p>
-<pre class="highlight"><code><span></span><span class="kr">import</span> <span class="nn">Control.Monad</span>
+<pre class="highlight"><code><span></span><code><span class="kr">import</span> <span class="nn">Control.Monad</span>
 
 <span class="nf">main</span> <span class="ow">=</span> <span class="kr">do</span>
     <span class="n">line</span> <span class="ow">&lt;-</span> <span class="n">getLine</span>
     <span class="n">when</span> <span class="p">(</span><span class="n">line</span> <span class="o">/=</span> <span class="s">":wq"</span><span class="p">)</span> <span class="o">$</span> <span class="n">main</span>
-</code></pre>
+</code></code></pre>
 
 
 <p><small markdown="1">
@@ -163,18 +163,18 @@ Cartoon by Miran Lipovača, taken from <a href="http://learnyouahaskell.com/star
 <p>Also, I'm super scared of the <a href="https://hackage.haskell.org/package/lens">lens</a> library. It's implementing the <a href="https://www.linkedin.com/pulse/functional-lenses-javascript-vladim%C3%ADr-gorej/">concept of lenses</a>, which I'm okay with, but in a way that it seems like a separate language within Haskell. Luckily, I didn't need to use it much.</p>
 <h2 id="try-haskell">Try Haskell<small class="permalink"><a href="#try-haskell" title="Permanent link to this heading">#</a></small></h2>
 <p>How can you start playing with Haskell? Installing Haskell on macOS is easy with <a href="https://brew.sh/">Homebrew</a>:</p>
-<pre class="highlight"><code><span></span>$ brew install ghc
-</code></pre>
+<pre class="highlight"><code><span></span><code>$ brew install ghc
+</code></code></pre>
 
 
 <p>Originally, I didn't know at all that Haskell can be also interpreted. You can run your first program in a similar manner as your first Python program:</p>
-<pre class="highlight"><code><span></span>$ runhaskell hello.hs
-</code></pre>
+<pre class="highlight"><code><span></span><code>$ runhaskell hello.hs
+</code></code></pre>
 
 
 <p>This helped me a lot in the beginning. Haskell also has a <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">REPL</a>, which you can run as follows:</p>
-<pre class="highlight"><code><span></span>$ ghci
-</code></pre>
+<pre class="highlight"><code><span></span><code>$ ghci
+</code></code></pre>
 
 
 <p>If you only want to try Haskell without installing it, you can paste your code to <a href="http://tryhaskell.org/">tryhaskell.org</a>.</p>

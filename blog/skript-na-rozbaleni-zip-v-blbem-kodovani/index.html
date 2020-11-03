@@ -76,10 +76,10 @@
     <div><p>.zip je dost primitivní formát a pokud v něm zabalíme složky a soubory <strong>s diakritikou</strong> na Windows a budeme rozbalovat jinde (kdekoliv, kde nebude kódování windows-1250), tak si na tom grafický rozbalovač vyláme zuby a <code>unzip</code> z terminálu rozbalí vše, ale s podivnými znaky (takže se soubory nejde nic dělat, musí se nejdříve přejmenovat). Podobný problém bude asi fungovat i opačným směrem – pokud já zabalím něco v Linuxu do .zip, pravděpodobně se to podobně rozbije ve Windows.</p>
 <p>Už dlouhou dobu (i na Windows) mám nejraději <a href="http://www.7-zip.org/">7zip</a>, asi nejlepší program na archivy vůbec. Má vlastní formát .7z, který je hodně parametrizovatelný a má skvělou kompresi. Rozbalí i zabalí .zip, .rar a spoustu jiných dalších typů archivů. <strong>Navíc je zadarmo a je na všechny platformy.</strong> Když můžu, používám ho místo .zip a nemám žádné problémy.</p>
 <p>Pokud ale nějaký .zip přijde, nedá se nic dělat. Napsal jsem skript, který problém řeší:</p>
-<pre class="highlight"><code><span></span><span class="ch">#!/bin/bash</span>
+<pre class="highlight"><code><span></span><code><span class="ch">#!/bin/bash</span>
 <span class="nv">dirname</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> <span class="p">|</span> sed -e <span class="s1">'s/\(.\+\)\.zip/\1/'</span><span class="sb">`</span>
 unzip <span class="nv">$1</span> convmv -f cp1250 -t utf8 -r <span class="nv">$dirname</span> --notest
-</code></pre>
+</code></code></pre>
 
 
 <p>Pokud jej uložíme jako třeba <code>unzip-win</code>, rozbalíme archiv jako <code>./unzip-win bidny-kojot.zip</code>. Přeji bezproblémové rozbalování

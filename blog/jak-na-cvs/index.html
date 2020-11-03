@@ -84,36 +84,36 @@
 <p>Já osobně využívám CVSNT na jednom počítači jako server i klient a tím se řídí můj návod. Pokud to potřebujete jinak, musíte se s tím nějak poprat. CVSNT při tomto mém nastavení využívá uživatelské účty ve Windows.</p>
 <p>Ve složce, kam jsme umístili repository se vytvořil adresář <strong>CVSROOT</strong>. Zde je milion souborů, které není radno editovat a pár souborů, jejichž editace může mít docela vlídné následky :) . Např. soubor admin definuje administrátory repository. Na každém řádku má být jméno administrátora, takže tam přidejte název svého Windows účtu (u mě soubor obsahuje dvě písmena, a to lm).</p>
 <p>Pak v příkazové řádce Windows zadejte</p>
-<pre class="highlight"><code><span></span><span class="k">set</span> <span class="nv">CVSROOT</span><span class="p">=</span>:pserver:adminlogin@localhost:/cvs
-</code></pre>
+<pre class="highlight"><code><span></span><code><span class="k">set</span> <span class="nv">CVSROOT</span><span class="p">=</span>:pserver:adminlogin@localhost:/cvs
+</code></code></pre>
 
 
 <p>nebo, pokud jste měnili port,</p>
-<pre class="highlight"><code><span></span><span class="k">set</span> <span class="nv">CVSROOT</span><span class="p">=</span>:pserver:adminlogin@localhost:0000:/cvs
-</code></pre>
+<pre class="highlight"><code><span></span><code><span class="k">set</span> <span class="nv">CVSROOT</span><span class="p">=</span>:pserver:adminlogin@localhost:0000:/cvs
+</code></code></pre>
 
 
 <p>Místo adminlogin pište svůj administrátorský login (já lm), místo 0000 svůj port a místo /cvs název repository (ten vypisuje Control Panel v přehledu repositories v prvním sloupci tabulky). Pak už si můžete hrát s účty (přidávat a měnit hesla):</p>
-<pre class="highlight"><code><span></span>cvs passwd -a nejakylogin
-</code></pre>
+<pre class="highlight"><code><span></span><code>cvs passwd -a nejakylogin
+</code></code></pre>
 
 
 <p>Zeptá se na nové heslo, to zašifruje a spolu s loginem plácne do souboru <strong>passwd</strong> v CVSROOT. Dále domapujeme uživatele Windows k CVS a to poeditováním passwd do následující podoby:</p>
-<pre class="highlight"><code><span></span>&lt;login&gt;:&lt;heslo&gt;:&lt;windows user&gt;
-</code></pre>
+<pre class="highlight"><code><span></span><code>&lt;login&gt;:&lt;heslo&gt;:&lt;windows user&gt;
+</code></code></pre>
 
 
 <p>Je hotovo. Teď už se jen připojit. Na všechno jsou příkazy v CLI, ale zkušenější člověk se s tím nemusí párat a může poeditovat nějaký ten soubor ručně, když k tomu má přístup nevzdáleně a ví co dělá. Akorát heslo je třeba tvořit přes příkazovou řádku, protože se šifruje.</p>
 <h2 id="vzdaleny-pristup-pro-kolegy">Vzdálený přístup pro kolegy<small class="permalink"><a href="#vzdaleny-pristup-pro-kolegy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Protože je provázanost mezi uživateli vašeho systému a CVS, vytvořte si lokálního fiktivního uživatele ve Windows, např. <em>cvsuser</em> nebo <em>cvs</em>. Nemusí se k němu jít ani přihlásit, měl by mít omezená práva apod. Jinak se s tím zápasí pod Windows XP Proffesional (je na to GUI) a jinak pod Windows XP Home (buď necháte jako běžného usera, nebo nakonfigurujete přes CLI stejně jako byste to dělali v Proffesional přes GUI), ale jde to všude. Na tohoto uživatele můžeme mapovat všechny spolupracovníky.</p>
 <p>Uživatele pak přidáte úplně stejně jako výše, <strong>akorát jej namapujete v passwd na Windows fiktivního uživatele pro cvs</strong>. Kolega se pak připojí nějak takto:</p>
-<pre class="highlight"><code><span></span>:pserver:jehoskvelylogin@vaseipadresa:port:repository
-</code></pre>
+<pre class="highlight"><code><span></span><code>:pserver:jehoskvelylogin@vaseipadresa:port:repository
+</code></code></pre>
 
 
 <p>Například:</p>
-<pre class="highlight"><code><span></span>:pserver:karkulka@0.255.0.255:/work/cvs
-</code></pre>
+<pre class="highlight"><code><span></span><code>:pserver:karkulka@0.255.0.255:/work/cvs
+</code></code></pre>
 
 
 <p>a musíte mu samozřejmě napsat i přidělené heslo. Místo IP můžete použít i DNS adresu, pokud nějakou máte.</p>

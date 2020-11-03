@@ -78,8 +78,8 @@
 <p>Většina webu se zabývá v souvislosti s PNG a IE <strong>průhledností</strong>, s níž má Explorer velké potíže. Jsou již na světe samozřejmě způsoby, jak to obejít, a rozumnému člověku stačí k jejich odhalení <a href="http://www.google.cz/search?q=png+internet+explorer">Google</a>. O čem se však téměř nikde nepíše (alespoň tedy česky), je také zvláštní zpracování <strong>gamma</strong> hodnot obrázků PNG v IE. Pokud tentýž obrázek PNG zobrazíš ve Firefoxu, Opeře a IE, zjistíš (a to i v IE7), že nejrozšířenější browser holt grafiku zobrazí s mírně <strong>odlišnými odstíny barev</strong>. Jedná-li se o obrázek uprostřed textu, zřejmě ti to bude docela fuk. Jestliže potřebuješ obrázek zasadit do přesného pixelového layoutu, zjistíš, že ti nesedí do barev vykreslovaných prohlížečem pomocí CSS nebo barev ostatních souborů.</p>
 <h2 id="spasa-drcenim">Spása drcením<small class="permalink"><a href="#spasa-drcenim" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Řešení? Existuje program <a href="http://pmt.sourceforge.net/pngcrush/">PNGcrush</a>, jenž si umí s formáty PNG a MNG docela slušně pohrát. Jedna z věcí, které dokáže, je právě optimalizace gamma hodnoty tak, aby se s ním popral i IE. Program je ke stažení i pod Windows – jedna <em>exe binárka</em>, nemusí se samozřejmě instalovat a spouští se z příkazového řádku. Soubor <strong>pngcrush.exe</strong> si tedy nahraj do adresáře se všemi <em>postiženými</em> obrázky a pak za hlubokých meditací prones magickou formuli</p>
-<pre class="highlight"><code><span></span>pngcrush -rem alla -d out *.png
-</code></pre>
+<pre class="highlight"><code><span></span><code>pngcrush -rem alla -d out *.png
+</code></code></pre>
 
 
 <h2 id="vysledek">Výsledek?<small class="permalink"><a href="#vysledek" title="Trvalý odkaz na tento nadpis">#</a></small></h2>

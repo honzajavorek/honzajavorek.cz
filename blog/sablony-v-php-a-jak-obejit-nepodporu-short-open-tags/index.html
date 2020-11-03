@@ -83,9 +83,9 @@
 <p>Napíšete si <strong>jednu třídu v PHP, která vám vytvoří plně funkční šablony</strong> a místo pseudojazyka v nich použijete PHP. Zní to zvláštně, ale opravdu to jde a dle mého názoru je to nejelegantnější řešení. Nesmíte samozřejmě tahat logiku aplikace do šablon, ač je to možné – v šabloně použijete PHP jen k nějakému tomu echo a foreach. Alternativní syntaxe PHP jako <em>short open tags</em> nebo <em>if/endif</em> přímo k takovému použití vybízí. Více <a href="http://massassi.com/php/articles/template_engines/">třeba zde</a>.</p>
 <h2 id="ano-zlata-stredni">Ano, zlatá střední<small class="permalink"><a href="#ano-zlata-stredni" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Ve vodách internetu najdete neplodné, plodné, těhotné a i jinak objemné diskuse o tom, jestli použít PHP jako šablonovací jazyk, nebo nasadit moloch typu Smarty. Asi jak na co. Já mám zatím jasno – jsem zastáncem <strong>hbitých a chytrých řešení</strong> a tyto požadavky splňuje ona střední cesta, jak jsem ji vylíčil v předešlém odstavci. Nechci se hádat co je lepší – prostě jen napíšu, že pro mě je lepší tato varianta a proto mám rád takové ty na první pohled obskurní věci, jako například short open tags:</p>
-<pre class="highlight"><code><span></span><span class="cp">&lt;?</span><span class="o">=</span> <span class="nv">$var</span> <span class="cp">?&gt;</span><span class="x"> je totez jako konvencni </span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$var</span> <span class="cp">?&gt;</span><span class="x"></span>
+<pre class="highlight"><code><span></span><code><span class="cp">&lt;?</span><span class="o">=</span> <span class="nv">$var</span> <span class="cp">?&gt;</span><span class="x"> je totez jako konvencni </span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$var</span> <span class="cp">?&gt;</span><span class="x"></span>
 <span class="cp">&lt;?</span> <span class="o">...</span> <span class="cp">?&gt;</span><span class="x"> je totez jako delsi </span><span class="cp">&lt;?php</span> <span class="o">...</span> <span class="cp">?&gt;</span><span class="x"></span>
-</code></pre>
+</code></code></pre>
 
 
 <p>V běžném PHP je to celkem na uškrcení, ale v šablonách dle mého názoru k nezaplacení.</p>
@@ -94,7 +94,7 @@
 <p>Čím je ale zvláštní? Funkcí <code>fetch</code>. Ta je jádrem zpracování a jde v ní běžně o to, že se do aktuálního kontextu rozbalí proměnné uložené do šablony (funkce <a href="http://cz.php.net/manual/en/function.extract.php">extract</a>), začne se odchytávat výstup na obrazovku (<a href="http://cz.php.net/manual/en/ref.outcontrol.php">ob_… funkce</a>) a vloží se (obyčejný include) soubor se šablonou jako PHP. V něm se použijí rozbalené lokální proměnné a vše se poslušně vytiskne ven. No ven úplně ne, protože výstup samozřejmě odchytáváme, takže vše co jde ven hezky sbalíme do <em>output control pytle</em> a necháme uložené jako string v nějaké proměnné, kterou vrátíme jako výsledek funkce (a obsah pak v aplikaci vytiskneme později kdykoliv chceme).</p>
 <h2 id="pro-zmenu-short-open-tags">Pro změnu… Short open tags!<small class="permalink"><a href="#pro-zmenu-short-open-tags" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>„Takové krásné šablony,“ řekli byste. Ale pak to nahrajete na první hosting a <strong>celé se vám rozsypou</strong>, protože tam mají <strong>vypnutou podporu short open tags</strong>, které samozřejmě hojně a s radostí používáte. Co s tím? Buď je nepoužívat (což je škoda), nebo přidat jeden <em>požadavek</em> navíc a snížit tak možnost nasazení aplikace. Nebo vymyslet něco chytrého ;) .</p>
-<pre class="highlight"><code><span></span><span class="x">if (!ini_get('short_open_tag')) {</span>
+<pre class="highlight"><code><span></span><code><span class="x">if (!ini_get('short_open_tag')) {</span>
 <span class="x">    // explicit short open tags support</span>
 <span class="x">    eval('?&gt;' . preg_replace(</span>
 <span class="x">            array('~&lt;\\?(\\s)~', '~&lt;\\?=~'),</span>
@@ -106,7 +106,7 @@
 <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
     <span class="k">include</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">tpl</span><span class="o">-&gt;</span><span class="na">file</span><span class="p">);</span> <span class="c1">// include the file</span>
 <span class="p">}</span>
-</code></pre>
+</code></code></pre>
 
 
 <p>První větev testuje, jestli jsou krátké značky vypnuty. Jestli ne, přejde plynule do <code>else</code>, kde proběhne zpracování přes <code>include</code> běžným způsobem. Pokud jsou vypnuty (tzn. server je tvrdohlavý a nepovolí je i přesto, že je v .htaccess a <a href="http://cz.php.net/manual/en/function.ini-set.php">ini_set</a> nastaveno aby zapnuty byly), dojde na slušné využití jedné z tabuizovaných funkcí v PHP, <a href="http://cz2.php.net/manual/en/function.eval.php">eval</a> :) . Už ten název…</p>

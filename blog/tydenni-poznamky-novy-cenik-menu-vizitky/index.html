@@ -101,14 +101,14 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 </blockquote>
 <p>Bohužel jsem zjistil, že pyflakes <a href="https://github.com/microsoft/vscode-python/issues/9315">nemá přímou podporu ve VS Code</a> (WTF? lintery jsou tam hardcoded?). Řešení bylo ale jednoduché - prostě jsem použil <a href="https://gitlab.com/pycqa/flake8">flake8</a>, který pyflakes obaluje, a <a href="https://github.com/microsoft/vscode-python/issues/9315#issuecomment-629831988">nastavil jej</a> tak, aby nic jiného než pyflakes nereportoval.</p>
 <p>Následně jsem opravil všechny chyby, které to zahlásilo. Většina byla <em>unused import</em>, ale našlo to i dvě poměrně závažné chyby. Jedna z nich dokonce něco, co by se velmi brzy projevilo a poslalo zákazníkům e-mailem, takže dost dobrý. Hlavní problém byl v tom, že jsem občas omylem rozkopíroval testy, ale nezměnil jejich název:</p>
-<pre class="highlight"><code><span></span><span class="k">def</span> <span class="nf">test_verify_a</span><span class="p">():</span>
+<pre class="highlight"><code><span></span><code><span class="k">def</span> <span class="nf">test_verify_a</span><span class="p">():</span>
     <span class="n">a</span> <span class="o">=</span> <span class="mi">42</span>
     <span class="k">assert</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">1</span>
 
 <span class="k">def</span> <span class="nf">test_verify_a</span><span class="p">():</span>
     <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span>
     <span class="k">assert</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">2</span>
-</code></pre>
+</code></code></pre>
 
 
 <p>Tenhle kód projde, protože druhá funkce se jmenuje stejně jako první a přepíše ji. První se nikdy nepustí a pytestu to nijak nevadí. Měl jsem tedy několik testů, které jsem myslel, že se pouští a procházejí, ale nebylo tomu tak a kód nefungoval správně.</p>

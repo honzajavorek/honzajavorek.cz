@@ -76,22 +76,22 @@
     <div><p>Opět využiju svého blogísku jako zápisníku, kam utrousím věci, jež nechci zapomenout. Brzy mě čeká zase instalace Ubuntu a tak budu potřebovat vědět, že pokud na něm chci mít funkční Hamachi (kvůli klientovi), musím…</p>
 <h2 id="jak-nainstalovat-hamachi">Jak nainstalovat Hamachi<small class="permalink"><a href="#jak-nainstalovat-hamachi" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Stáhnout <a href="http://files.hamachi.cc/linux/hamachi-0.9.9.9-20-lnx.tar.gz">Hamachi pro Linux</a> a rozbalit. Potom:</p>
-<pre class="highlight"><code><span></span>$ sudo apt-get install build-essential   <span class="c1"># máme vše potřebné pro instalaci?</span>
+<pre class="highlight"><code><span></span><code>$ sudo apt-get install build-essential   <span class="c1"># máme vše potřebné pro instalaci?</span>
 $ sudo make install   <span class="c1"># instalujeme</span>
 $ sudo tuncfg   <span class="c1"># nastavení tuneláže</span>
 $ hamachi-init -f   <span class="c1"># vytvoření metadat Hamachi v ~/</span>
 $ hamachi start   <span class="c1"># start Hamachi</span>
 $ hamachi login   <span class="c1"># přihlášení do Hamachi</span>
-</code></pre>
+</code></code></pre>
 
 
 <h2 id="jak-pouzivat-hamachi">Jak používat Hamachi<small class="permalink"><a href="#jak-pouzivat-hamachi" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Další práce s Hamachi, tedy nastavení jména, přihlášení do skupiny, nastavení online stavu a výpis toho co vidím:</p>
-<pre class="highlight"><code><span></span>$ hamachi set-nick <span class="o">[</span>nick<span class="o">]</span>
+<pre class="highlight"><code><span></span><code>$ hamachi set-nick <span class="o">[</span>nick<span class="o">]</span>
 $ hamachi join <span class="o">[</span>network<span class="o">]</span> <span class="o">[</span>password<span class="o">]</span>
 $ hamachi go-online <span class="o">[</span>network<span class="o">]</span>
 $ hamachi list
-</code></pre>
+</code></code></pre>
 
 
 <h2 id="zajimave-odkazy">Zajímavé odkazy<small class="permalink"><a href="#zajimave-odkazy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>

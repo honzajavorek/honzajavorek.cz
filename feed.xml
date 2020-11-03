@@ -855,14 +855,14 @@ Fotka od &lt;a href="https://unsplash.com/@honza_kahanek"&gt;Honzy Kahánka&lt;/
 &lt;/blockquote&gt;
 &lt;p&gt;Bohužel jsem zjistil, že pyflakes &lt;a href="https://github.com/microsoft/vscode-python/issues/9315"&gt;nemá přímou podporu ve VS Code&lt;/a&gt; (WTF? lintery jsou tam hardcoded?). Řešení bylo ale jednoduché - prostě jsem použil &lt;a href="https://gitlab.com/pycqa/flake8"&gt;flake8&lt;/a&gt;, který pyflakes obaluje, a &lt;a href="https://github.com/microsoft/vscode-python/issues/9315#issuecomment-629831988"&gt;nastavil jej&lt;/a&gt; tak, aby nic jiného než pyflakes nereportoval.&lt;/p&gt;
 &lt;p&gt;Následně jsem opravil všechny chyby, které to zahlásilo. Většina byla &lt;em&gt;unused import&lt;/em&gt;, ale našlo to i dvě poměrně závažné chyby. Jedna z nich dokonce něco, co by se velmi brzy projevilo a poslalo zákazníkům e-mailem, takže dost dobrý. Hlavní problém byl v tom, že jsem občas omylem rozkopíroval testy, ale nezměnil jejich název:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_verify_a&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_verify_a&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
     &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;42&lt;/span&gt;
     &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
 
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_verify_a&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
     &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
     &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;Tenhle kód projde, protože druhá funkce se jmenuje stejně jako první a přepíše ji. První se nikdy nepustí a pytestu to nijak nevadí. Měl jsem tedy několik testů, které jsem myslel, že se pouští a procházejí, ale nebylo tomu tak a kód nefungoval správně.&lt;/p&gt;
@@ -1105,7 +1105,7 @@ Fotka od &lt;a href="https://unsplash.com/@honza_kahanek"&gt;Honzy Kahánka&lt;/
 &lt;p&gt;Do pátečního večera jsem skript vyrobil, odladil HTML podobu e-mailu, a zapojil to celé do nightly buildu na CircleCI. Zatím tam jsem jako příjemce všude já, abych to otestoval, a není to omezeno na pondělky, takže mi teď o víkendu asi přijde hodně e-mailů :D No ale co je na konci dne na produkci, to se počítá! Mám radost.&lt;/p&gt;
 &lt;h2 id="trik-s-generatory"&gt;Trik s generátory&lt;small class="permalink"&gt;&lt;a href="#trik-s-generatory" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;Během programování stahování metrik z Google Analytics jsem narazil na to, že dotaz do API byl seznam "report requests", kde každý "report request" byl dotaz na data k jedné metrice, kterou chci sledovat. Pak mi přišel zpět seznam dat, které jsem zase musel nějak mapovat zpět a zpracovávat podle té které metriky. Pseudokód:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;&lt;span class="s1"&gt;'report_requests'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;&lt;span class="s1"&gt;'report_requests'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
     &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;  &lt;span class="c1"&gt;# složitý objekt, dotaz pro data ze kterých vypočítám metriku A&lt;/span&gt;
     &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;  &lt;span class="c1"&gt;# složitý objekt pro metriku B&lt;/span&gt;
     &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;  &lt;span class="c1"&gt;# složitý objekt pro metriku C&lt;/span&gt;
@@ -1114,12 +1114,12 @@ Fotka od &lt;a href="https://unsplash.com/@honza_kahanek"&gt;Honzy Kahánka&lt;/
 &lt;span class="n"&gt;metric_A&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;sum_everything&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;span class="n"&gt;metric_B&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;calculate_something&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;span class="n"&gt;metric_C&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;aggregate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;Moc se mi to nelíbilo a s více metrikami už to bylo i hodně nepřehledné. Navíc byl kód pro jednotlivé metriky na různých místech a uprostřed všeho byl nějaký dotaz na API, který jakožto side-effect velmi znepříjemňuje testování.&lt;/p&gt;
 &lt;p&gt;Použil jsem tedy trik s generátory, který mi umožnil dát kód pro každou metriku na jedno místo:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;metric_A&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;metric_A&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="n"&gt;report&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;yield&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;  &lt;span class="c1"&gt;# složitý objekt pro metriku A&lt;/span&gt;
     &lt;span class="k"&gt;yield&lt;/span&gt; &lt;span class="n"&gt;sum_everything&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;report&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
@@ -1130,11 +1130,11 @@ Fotka od &lt;a href="https://unsplash.com/@honza_kahanek"&gt;Honzy Kahánka&lt;/
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;metric_C&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="n"&gt;report&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;yield&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;  &lt;span class="c1"&gt;# složitý objekt pro metriku C&lt;/span&gt;
     &lt;span class="k"&gt;yield&lt;/span&gt; &lt;span class="n"&gt;aggregate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;report&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;Každá metrika je teď jednoduchá funkce, kde je vše hezky na jednom místě pro každou metriku a která nemá žádný side-effect, takže ji mohu i krásně testovat. Použije se takto:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;  &lt;span class="c1"&gt;# argumenty pro každou z funkcí, jen příklad&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;args&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;  &lt;span class="c1"&gt;# argumenty pro každou z funkcí, jen příklad&lt;/span&gt;
 &lt;span class="n"&gt;metric_fns&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;fn&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;fn&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;metric_A&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;metric_B&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;metric_C&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt;
 
 &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;&lt;span class="s1"&gt;'report_requests'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nb"&gt;next&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;fn&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;fn&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;metric_fns&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
@@ -1145,7 +1145,7 @@ Fotka od &lt;a href="https://unsplash.com/@honza_kahanek"&gt;Honzy Kahánka&lt;/
     &lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;fn&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;send&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
     &lt;span class="n"&gt;metrics&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;metrics&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="c1"&gt;# {'A': 123, 'B': 345, 'C': 678}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;Je to méně explicitní a pro méně zkušeného programátora zřejmě dost kryptické, ale zbytek kódu se zase se dost zjednodušil, hlavně psaní samotných funkcí pro metriky.&lt;/p&gt;
@@ -1398,63 +1398,63 @@ Photo by &lt;a href="https://unsplash.com/@scalabis"&gt;Luís Perdigão&lt;/a&gt
 &lt;/ul&gt;
 &lt;h3 id="say-say-say"&gt;Say say say&lt;small class="permalink"&gt;&lt;a href="#say-say-say" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
 &lt;p&gt;Oh, you didn't know about the &lt;code&gt;say&lt;/code&gt; command? I'm sorry for ruining your productivity today then. Type the following to your terminal with sound on and see what happens:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;$ say 'Hello!'
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ say 'Hello!'
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;And yes, it works for other languages, too:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;$ say -v zuzana 'Dobrý den, jedno pivo prosím'
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ say -v zuzana 'Dobrý den, jedno pivo prosím'
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;In Python, it's easy to run commands using the &lt;code&gt;subprocess.run()&lt;/code&gt; function, so in your script, one can do something like this:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;subprocess&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;subprocess&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt;
 
 &lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="s1"&gt;'say'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'-v'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'zuzana'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'Jedno pivo prosím!'&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;This thing has one major disadvantage though. There is a significant potential it scares the shit out of me. Just imagine - you sit in a silent room, and just like that, out of nowhere, there is a human voice talking to you. It's really spooky.&lt;/p&gt;
 &lt;p&gt;So I've used the other two options, to have feedback on both screen (when I'm with sound off) and from speakers (when I leave the computer to e.g. brew myself a cup of coffee).&lt;/p&gt;
 &lt;h3 id="terminal-sound"&gt;Terminal sound&lt;small class="permalink"&gt;&lt;a href="#terminal-sound" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
 &lt;p&gt;Your terminal can make a sound. There's a dedicated &lt;a href="https://en.wikipedia.org/wiki/Bell_character"&gt;bell character&lt;/a&gt; you can print and if you didn't mute sounds in settings or something, your terminal should beep whenever the character is printed. In Python, it can be done like this:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="se"&gt;\a&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="se"&gt;\a&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;Better, you can remove new line from behind the print, and you can flush the &lt;code&gt;stdout&lt;/code&gt; immediately:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="se"&gt;\a&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;end&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;flush&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="se"&gt;\a&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;end&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;flush&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;If you don't know what's "flushing &lt;code&gt;stdout&lt;/code&gt;", search for keywords "output buffering python".&lt;/p&gt;
 &lt;h3 id="standard-macos-notification"&gt;Standard macOS notification&lt;small class="permalink"&gt;&lt;a href="#standard-macos-notification" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
 &lt;p&gt;With the &lt;a href="https://pypi.org/project/pync/"&gt;pync&lt;/a&gt; library, you can send native macOS notifications directly from your Python code:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;$ pip install pync
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ pip install pync
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;Then in your Python program:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pync&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pync&lt;/span&gt;
 
 &lt;span class="n"&gt;pync&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Notifier&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;notify&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Hello!'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'Greeting'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;Check out the library's README, there're more usage examples. My personal tip is to import it with exception handling, just in case someone wants to run your code somewhere else than on macOS:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pync&lt;/span&gt;
 &lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="ne"&gt;ImportError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;pync&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;None&lt;/span&gt;
 
 &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;pync&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;pync&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Notifier&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;notify&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Hello!'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'Greeting'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;h2 id="decorator"&gt;Decorator&lt;small class="permalink"&gt;&lt;a href="#decorator" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;Now I wanted to notify myself when a long-running function ends, but I didn't want to pollute the code of the function with printing bell characters or sending notifications. Also, what if there's an error and the function raises an exception? A solution is to have the code as a function decorator. Also, that way I can easily measure duration of the function and put the result into the notification:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;functools&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;wraps&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;functools&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;wraps&lt;/span&gt;
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;
 
 
@@ -1478,16 +1478,16 @@ Photo by &lt;a href="https://unsplash.com/@scalabis"&gt;Luís Perdigão&lt;/a&gt
                 &lt;span class="n"&gt;pync&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Notifier&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;notify&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;60&lt;/span&gt;&lt;span class="si"&gt;:&lt;/span&gt;&lt;span class="s1"&gt;.1f&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;min'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
                                      &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'Finished: &lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;fn_name&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;wrapper&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;That funky thing near the end is &lt;a href="https://pyformat.info/#number"&gt;advanced formatting&lt;/a&gt; inside &lt;a href="https://realpython.com/python-f-strings/"&gt;f-strings&lt;/a&gt;. I have this code in a separate module, &lt;code&gt;timer.py&lt;/code&gt;. (Module &lt;code&gt;timer&lt;/code&gt;, function &lt;code&gt;notify&lt;/code&gt;… well I'm unsure about proper naming yet, but this is what I have so far.) It can be used as follows:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;.timer&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;notify&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;.timer&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;notify&lt;/span&gt;
 
 &lt;span class="nd"&gt;@notify&lt;/span&gt;
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;long_running_function&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
     &lt;span class="o"&gt;...&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;When the function is done, my terminal beeps and a notification appears:&lt;/p&gt;
@@ -1580,18 +1580,18 @@ Photo by &lt;a href="https://unsplash.com/@filip42"&gt;Philippe D.&lt;/a&gt;&lt;
 &lt;h2 id="solution-by-a-python-script"&gt;Solution by a Python script&lt;small class="permalink"&gt;&lt;a href="#solution-by-a-python-script" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://github.com/GoogleChrome/lighthouse"&gt;I found the tool&lt;/a&gt; and to my pleasant surprise, it's an Open Source tool one can install by &lt;code&gt;npm install lighthouse&lt;/code&gt;. As simple as that! The fact that Lighthouse has support for multiple reporters and can report not only HTML, but JSON as well, was another pleasant surprise. I also found an &lt;a href="https://kitconcept.com/blog/continuous-performance-analysis-with-lighthouse-and-jenkins/"&gt;article about how it can be ran in CI&lt;/a&gt;. Great! Now it's just a matter of gluing things together with a bit of Python.&lt;/p&gt;
 &lt;p&gt;First, prepare a directory for the reports. Standard library &lt;code&gt;pathlib&lt;/code&gt; and &lt;code&gt;shutil&lt;/code&gt; come handy:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;shutil&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;shutil&lt;/span&gt;
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pathlib&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Path&lt;/span&gt;
 
 &lt;span class="n"&gt;LIGHTHOUSE_DIR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Path&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="vm"&gt;__file__&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parent&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parent&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="s1"&gt;'lighthouse'&lt;/span&gt;
 
 &lt;span class="n"&gt;shutil&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rmtree&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;LIGHTHOUSE_DIR&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ignore_errors&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;LIGHTHOUSE_DIR&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mkdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;parents&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;Now I need a list of URLs to check:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pathlib&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Path&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pathlib&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Path&lt;/span&gt;
 
 &lt;span class="n"&gt;PUBLIC_DIR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Path&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="vm"&gt;__file__&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parent&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parent&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="s1"&gt;'public'&lt;/span&gt;
 
@@ -1604,11 +1604,11 @@ Photo by &lt;a href="https://unsplash.com/@filip42"&gt;Philippe D.&lt;/a&gt;&lt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;html_path_to_url&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;public_dir&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
             &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;path&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;Path&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;public_dir&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rglob&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'*.html'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
             &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="s1"&gt;'/admin/'&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;The &lt;code&gt;get_urls()&lt;/code&gt; function walks through &lt;code&gt;.html&lt;/code&gt; files in the &lt;code&gt;public&lt;/code&gt; directory, where the static site lives, and then generates a production URL for each of them. Now there is a function which takes care of the check itself:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;json&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;json&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;sys&lt;/span&gt;
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;subprocess&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt;
 
@@ -1635,12 +1635,12 @@ Photo by &lt;a href="https://unsplash.com/@filip42"&gt;Philippe D.&lt;/a&gt;&lt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;score_id&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;category&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'score'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
             &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;score_id&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;category&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;categories&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;items&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
             &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;score_id&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;MIN_SCORES&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;keys&lt;/span&gt;&lt;span class="p"&gt;()}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;The function takes a URL and prints it out so I have an idea of a progress when watching the script run. Then it composes a &lt;code&gt;npx lighthouse ...&lt;/code&gt; command with all the parameters. It runs the command as a subprocess. Lighthouse generates an HTML report as well as JSON report. The Python script reads the JSON, finds the part with scores called &lt;code&gt;categories&lt;/code&gt;, and reads the scores. Actually, only the scores for which I've set minimum values. The JSON carries the scores as floating point numbers, so they need to be multiplied with 100: &lt;code&gt;0.98&lt;/code&gt; becomes &lt;code&gt;98&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Lighthouse deals with report formats and report output paths in some funky way, so I had to create a few helper functions to set the right values to the right places:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;slugify&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;slugify&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;slugify&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;slugify&lt;/span&gt;
 
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;url_to_report_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;url&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;LIGHTHOUSE_DIR&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;slugify&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;url&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;lstrip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'https-'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -1652,11 +1652,11 @@ Photo by &lt;a href="https://unsplash.com/@filip42"&gt;Philippe D.&lt;/a&gt;&lt;
 
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;url_to_html_report_path&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;url&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;url_to_report_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;url&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;.report.html'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;Here I use &lt;a href="https://github.com/un33k/python-slugify"&gt;python-slugify&lt;/a&gt;, which is the only external dependency of the script. At this point, I'm ready to do the main job:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;checks&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;map&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;check_url&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;get_urls&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PUBLIC_DIR&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;checks&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;map&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;check_url&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;get_urls&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PUBLIC_DIR&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="n"&gt;failing&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
@@ -1671,19 +1671,19 @@ Photo by &lt;a href="https://unsplash.com/@filip42"&gt;Philippe D.&lt;/a&gt;&lt;
 
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s1"&gt;Failing: &lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;failing&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s1"&gt;Passing: &lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;passing&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;exit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;failing&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;For each check, I compare whether the scores are lower than my limits or not, and evaluate whether the page passes or fails. I print out failed pages and then a short summary. If there are any failed pages, I exit the script with a code &lt;code&gt;1&lt;/code&gt;, which tells the operating system, and especially the CI, that something went wrong.&lt;/p&gt;
 &lt;p&gt;Because the checks are very slow, the script could use a bit of parallelization. That's easy to achieve by replacing &lt;code&gt;map()&lt;/code&gt; with &lt;code&gt;Pool().map()&lt;/code&gt; from Python's &lt;code&gt;multiprocessing&lt;/code&gt;. It automatically detects how many cores my processor has and spawns as many "workers" to process the items in parallel.&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;multiprocessing&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Pool&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;multiprocessing&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Pool&lt;/span&gt;
 
 &lt;span class="n"&gt;checks&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Pool&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;map&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;check_url&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;get_urls&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PUBLIC_DIR&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;Because I develop my project as Open Source, you can &lt;a href="https://github.com/honzajavorek/junior.guru/commit/1a743557b0da587e9a9ae9d10cb078f91f2c73e5"&gt;see the whole script on GitHub&lt;/a&gt;. The result looks like this:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;$ python scripts/check_performance.py
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ python scripts/check_performance.py
 [CHECK] https://junior.guru/donate/ → lighthouse/junior-guru-donate.report.html
 [CHECK] https://junior.guru/ → lighthouse/junior-guru.report.html
 [CHECK] https://junior.guru/jobs/2a9bf335f621d61cbbe8cede61609f162900b5a066ffe8030e21ac73/ → lighthouse/junior-guru-jobs-2a9bf335f621d61cbbe8cede61609f162900b5a066ffe8030e21ac73.report.html
@@ -1701,12 +1701,12 @@ Photo by &lt;a href="https://unsplash.com/@filip42"&gt;Philippe D.&lt;/a&gt;&lt;
 
 Failing: 0
 Passing: 176
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;h2 id="continuous-monitoring"&gt;Continuous monitoring&lt;small class="permalink"&gt;&lt;a href="#continuous-monitoring" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;My project uses &lt;a href="https://circleci.com/gh/honzajavorek/junior.guru/tree/master"&gt;CircleCI&lt;/a&gt; for building and various checks. I added one job to the configuration for my new Lighthouse check:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nn"&gt;...&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nn"&gt;...&lt;/span&gt;
 &lt;span class="nt"&gt;executors&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
   &lt;span class="nt"&gt;python-js&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="nt"&gt;docker&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
@@ -1739,7 +1739,7 @@ Passing: 176
       &lt;span class="l l-Scalar l-Scalar-Plain"&gt;- check-performance&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;
           &lt;span class="nt"&gt;requires&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
             &lt;span class="p p-Indicator"&gt;-&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;deploy&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;It's important I use the CircleCI's &lt;code&gt;python:3.7-node-browsers&lt;/code&gt; Docker image, which contains Python as well as Node.js and browsers, because Lighthouse depends on having Google Chrome installed. In the job itself I run the script through &lt;code&gt;pipenv&lt;/code&gt; (to be precise, through the &lt;code&gt;scripts&lt;/code&gt; section of &lt;code&gt;Pipfile&lt;/code&gt;), compress the directory with reports, and store it as an artifact. If the script fails the build and I won't be able to reproduce the problem locally, I can download the archive from CircleCI and inspect the actual reports made on CI. I've put the job into my nightly workflow, so that it runs every night, and I've set it to depend on my &lt;code&gt;deploy&lt;/code&gt; job, which deploys the site to production as this is effectively a production check.&lt;/p&gt;
@@ -1748,29 +1748,29 @@ I want my lighthouse to work in the night, right?&lt;/figcaption&gt;&lt;/figure&
 &lt;p&gt;If the job fails, it doesn't affect whether the site gets re-deployed or not, but I get notified by e-mail, which works great as poor man's monitoring. That's about it. Again, you can &lt;a href="https://github.com/honzajavorek/junior.guru/commit/1a743557b0da587e9a9ae9d10cb078f91f2c73e5"&gt;see the whole change here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="memory-issues-on-circleci"&gt;Memory issues on CircleCI&lt;small class="permalink"&gt;&lt;a href="#memory-issues-on-circleci" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;Soon I figured out the parallelization doesn't work well on CircleCI. The build interface declares my container is 2 CPU / 4 GB RAM, but I got Google Chrome timing out with some memory issues in the log when running a few of them in parallel by &lt;code&gt;Pool().map()&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;ENOMEM: not enough memory, read
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ENOMEM: not enough memory, read
 ENOMEM: not enough memory, read
 ENOMEM: not enough memory, read
 ENOMEM: not enough memory, read
 Runtime error encountered: spawnSync /bin/sh ENOMEM
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;I ended up with a silly hotfix, which tests whether there is a &lt;code&gt;CI&lt;/code&gt; environment variable set (CI services usually set it to allow detection like this). If the script is running on CI, it uses the &lt;code&gt;map()&lt;/code&gt; function, otherwise &lt;code&gt;Pool().map()&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
 
 &lt;span class="n"&gt;map_&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;map&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getenv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'CI'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="n"&gt;Pool&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;map&lt;/span&gt;
 &lt;span class="n"&gt;checks&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;map_&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;check_url&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;get_urls&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PUBLIC_DIR&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;I introduced the parallelization mainly to shorten the duration of the script locally. I don't really care how much time the CircleCI job takes, as it's gonna happen when I sleep, right? When I tried this version of the script, it passed! But it took 8 minutes. That's not great. What if I need to debug something and I want to retry the build a few times? What if my website gets 20 more pages?&lt;/p&gt;
 &lt;p&gt;Searching for the memory error message together with "CircleCI" and "Google Chrome" got me to a section &lt;a href="https://developers.google.com/web/tools/puppeteer/troubleshooting?hl=ja#running-puppeteer-on-circleci"&gt;Running Puppeteer on CircleCI&lt;/a&gt; in the Puppeteer docs. Puppeteer is a tool which allows Node.js programs to control (headless) Google Chrome, which is very likely exactly what Lighthouse does under the hood. The section gives a hint that usual detection mechanisms think that a CircleCI container has 36 cores, rather than the declared 2. And I was able to confirm that by &lt;code&gt;print('Cores:', multiprocessing.cpu_count())&lt;/code&gt; and running the script on CircleCI. Wow! Okay. This brought me to a better hotfix:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;multiprocessing&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;cpu_count&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Pool&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;multiprocessing&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;cpu_count&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Pool&lt;/span&gt;
 
 &lt;span class="n"&gt;pool_size&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;min&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;cpu_count&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="c1"&gt;# CircleCI declares 2, but detection reads 36&lt;/span&gt;
 &lt;span class="n"&gt;checks&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Pool&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pool_size&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;map&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;check_url&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;get_urls&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PUBLIC_DIR&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;Despite CircleCI declares 2 CPU, I decided to set the minimum pool size to 4, because if my extremely non-performant early 2015 laptop is able to spawn 4 parallel checks while simuntaneously running Firefox and Visual Studio Code, I bet the CircleCI container can do 4 too. And so far it seems to cope well! Now the job takes 2m 18s.&lt;/p&gt;
@@ -1878,8 +1878,8 @@ Photo by &lt;a href="https://unsplash.com/@impatrickt"&gt;Patrick Tomasso&lt;/a&
 &lt;p&gt;Sometimes I stumble upon a source of wisdom which I want to closely follow. I don't want to miss a single article or video. I'm old enough to remember &lt;a href="https://en.wikipedia.org/wiki/RSS"&gt;RSS&lt;/a&gt; and I'm not afraid to use it for its original purpose, even though the calendar says it's 2020. Pocket doesn't allow me to track RSS feeds (and such feature would probably make me pay for Pocket!), but &lt;strong&gt;luckily, there's &lt;a href="https://ifttt.com/"&gt;IFTTT&lt;/a&gt;&lt;/strong&gt;. It's like Zapier, but free. Every time I want to subscribe to a feed, I set up an applet there. &lt;strong&gt;When there is a new item published by the source, it automatically appears in my Pocket.&lt;/strong&gt;&lt;/p&gt;
 &lt;figure&gt;&lt;img alt="IFTTT as a RSS reader" src="https://honzajavorek.cz/images/pocket-ifttt.png"&gt;&lt;/figure&gt;
 &lt;p&gt;The cool thing is this way I can even subscribe to YouTube channels. E.g. channel &lt;code&gt;https://www.youtube.com/channel/UCdR-hKRaYAZUn2FAHb-xMcQ&lt;/code&gt; has a feed URL in the following format:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;https://www.youtube.com/feeds/videos.xml?channel_id=UCdR-hKRaYAZUn2FAHb-xMcQ
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;https://www.youtube.com/feeds/videos.xml?channel_id=UCdR-hKRaYAZUn2FAHb-xMcQ
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;I can subscribe to channels, but I don't need a YouTube account. Substack newsletters? The same story. I have one inbox where everything lands, lives, and which I can search.&lt;/p&gt;
@@ -1916,12 +1916,12 @@ Photo by &lt;a href="https://unsplash.com/@andasta"&gt;Andy Li&lt;/a&gt;&lt;/fig
 &lt;h2 id="content-heavy-websites"&gt;Content-heavy websites&lt;small class="permalink"&gt;&lt;a href="#content-heavy-websites" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;In case I need to deploy a website, which has mostly text and no dynamic features, I make sure it is a &lt;em&gt;static&lt;/em&gt; website. There's no reason why such a project shouldn't be a static website, and the fact it is one simplifies &lt;em&gt;everything&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Currently, my favorite place where I put my static websites is &lt;a href="https://zeit.co/"&gt;ZEIT Now&lt;/a&gt;. Quickstart:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;$ npm install now --global
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ npm install now --global
 $ mkdir hello
 $ &lt;span class="nb"&gt;cd&lt;/span&gt; hello
 $ &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Hello!"&lt;/span&gt; &amp;gt; index.html
 $ now  &lt;span class="c1"&gt;# done, you have the site deployed&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;That example above is pretty much how I made and deployed my wedding website. One thing I love about Now is their &lt;strong&gt;focus on simplicity&lt;/strong&gt;. The service provides me with easy solutions to my complicated problems. It allows me to specify redirects. It gives me live previews of my GitHub branches. It automatically handles HTTPS for me. My wedding website had HTTPS! Why? Because why not! I got it for free. And if I ever need something dynamic, Now works also as a serverless functions provider - but about that later.&lt;/p&gt;
@@ -1984,9 +1984,9 @@ The staticgen.com website is hosted and maintained by Netlify, so you may notice
 &lt;h2 id="e-mail"&gt;E-mail&lt;small class="permalink"&gt;&lt;a href="#e-mail" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;I use &lt;a href="https://improvmx.com/"&gt;ImprovMX&lt;/a&gt; to &lt;strong&gt;redirect my e-mails&lt;/strong&gt;. If you send something to &lt;code&gt;hello@junior.guru&lt;/code&gt;, it gets redirected to my personal GMail address. I only automatically flag it with a yellow label. I'm new to ImprovMX, but so far it seems to work reliably. I just hope they don't read all the messages and sell the data to the Russia, or worse, to Facebook. Or to Google. Oh, wait…&lt;/p&gt;
 &lt;p&gt;ZEIT Now requires me to use their DNS if I want a custom domain or HTTPS out of the box, so I use the Now CLI to set up ImprovMX where I need:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;$ now dns add junior.guru '@' MX mx1.improvmx.com 10
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ now dns add junior.guru '@' MX mx1.improvmx.com 10
 $ now dns add junior.guru '@' MX mx2.improvmx.com 20
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;h2 id="dependencies"&gt;Dependencies&lt;small class="permalink"&gt;&lt;a href="#dependencies" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
@@ -2061,12 +2061,12 @@ Cartoon by Miran Lipovača, taken from &lt;a href="http://learnyouahaskell.com/s
 &lt;/figure&gt;&lt;p&gt;&lt;a href="https://github.com/honzajavorek/pyvobot"&gt;It's done&lt;/a&gt; and &lt;a href="https://circleci.com/gh/honzajavorek/pyvo_bot/tree/master"&gt;it's working&lt;/a&gt;, so if you use &lt;a href="https://telegram.org/"&gt;Telegram&lt;/a&gt; and you want to know that the next Prague Python meetup is about to be soon, subscribe to the &lt;a href="https://t.me/pyvopraha"&gt;https://t.me/pyvopraha&lt;/a&gt; Telegram channel.&lt;/p&gt;
 &lt;h2 id="how-does-haskell-feel"&gt;How does Haskell feel?&lt;small class="permalink"&gt;&lt;a href="#how-does-haskell-feel" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;Powerful! It takes just a few lines to implement your own clone of &lt;a href="https://en.wikipedia.org/wiki/Vim_(text_editor)"&gt;Vim&lt;/a&gt;:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;Control.Monad&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;Control.Monad&lt;/span&gt;
 
 &lt;span class="nf"&gt;main&lt;/span&gt; &lt;span class="ow"&gt;=&lt;/span&gt; &lt;span class="kr"&gt;do&lt;/span&gt;
     &lt;span class="n"&gt;line&lt;/span&gt; &lt;span class="ow"&gt;&amp;lt;-&lt;/span&gt; &lt;span class="n"&gt;getLine&lt;/span&gt;
     &lt;span class="n"&gt;when&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;line&lt;/span&gt; &lt;span class="o"&gt;/=&lt;/span&gt; &lt;span class="s"&gt;":wq"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;$&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;&lt;small markdown="1"&gt;
@@ -2096,18 +2096,18 @@ Cartoon by Miran Lipovača, taken from &lt;a href="http://learnyouahaskell.com/s
 &lt;p&gt;Also, I'm super scared of the &lt;a href="https://hackage.haskell.org/package/lens"&gt;lens&lt;/a&gt; library. It's implementing the &lt;a href="https://www.linkedin.com/pulse/functional-lenses-javascript-vladim%C3%ADr-gorej/"&gt;concept of lenses&lt;/a&gt;, which I'm okay with, but in a way that it seems like a separate language within Haskell. Luckily, I didn't need to use it much.&lt;/p&gt;
 &lt;h2 id="try-haskell"&gt;Try Haskell&lt;small class="permalink"&gt;&lt;a href="#try-haskell" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;How can you start playing with Haskell? Installing Haskell on macOS is easy with &lt;a href="https://brew.sh/"&gt;Homebrew&lt;/a&gt;:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;$ brew install ghc
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ brew install ghc
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;Originally, I didn't know at all that Haskell can be also interpreted. You can run your first program in a similar manner as your first Python program:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;$ runhaskell hello.hs
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ runhaskell hello.hs
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;This helped me a lot in the beginning. Haskell also has a &lt;a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop"&gt;REPL&lt;/a&gt;, which you can run as follows:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;$ ghci
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ ghci
+&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;If you only want to try Haskell without installing it, you can paste your code to &lt;a href="http://tryhaskell.org/"&gt;tryhaskell.org&lt;/a&gt;.&lt;/p&gt;

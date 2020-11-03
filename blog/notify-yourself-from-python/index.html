@@ -81,63 +81,63 @@ Photo by <a href="https://unsplash.com/@scalabis">Luís Perdigão</a></figcaptio
 </ul>
 <h3 id="say-say-say">Say say say<small class="permalink"><a href="#say-say-say" title="Permanent link to this heading">#</a></small></h3>
 <p>Oh, you didn't know about the <code>say</code> command? I'm sorry for ruining your productivity today then. Type the following to your terminal with sound on and see what happens:</p>
-<pre class="highlight"><code><span></span>$ say 'Hello!'
-</code></pre>
+<pre class="highlight"><code><span></span><code>$ say 'Hello!'
+</code></code></pre>
 
 
 <p>And yes, it works for other languages, too:</p>
-<pre class="highlight"><code><span></span>$ say -v zuzana 'Dobrý den, jedno pivo prosím'
-</code></pre>
+<pre class="highlight"><code><span></span><code>$ say -v zuzana 'Dobrý den, jedno pivo prosím'
+</code></code></pre>
 
 
 <p>In Python, it's easy to run commands using the <code>subprocess.run()</code> function, so in your script, one can do something like this:</p>
-<pre class="highlight"><code><span></span><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">run</span>
+<pre class="highlight"><code><span></span><code><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">run</span>
 
 <span class="n">run</span><span class="p">([</span><span class="s1">'say'</span><span class="p">,</span> <span class="s1">'-v'</span><span class="p">,</span> <span class="s1">'zuzana'</span><span class="p">,</span> <span class="s1">'Jedno pivo prosím!'</span><span class="p">])</span>
-</code></pre>
+</code></code></pre>
 
 
 <p>This thing has one major disadvantage though. There is a significant potential it scares the shit out of me. Just imagine - you sit in a silent room, and just like that, out of nowhere, there is a human voice talking to you. It's really spooky.</p>
 <p>So I've used the other two options, to have feedback on both screen (when I'm with sound off) and from speakers (when I leave the computer to e.g. brew myself a cup of coffee).</p>
 <h3 id="terminal-sound">Terminal sound<small class="permalink"><a href="#terminal-sound" title="Permanent link to this heading">#</a></small></h3>
 <p>Your terminal can make a sound. There's a dedicated <a href="https://en.wikipedia.org/wiki/Bell_character">bell character</a> you can print and if you didn't mute sounds in settings or something, your terminal should beep whenever the character is printed. In Python, it can be done like this:</p>
-<pre class="highlight"><code><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\a</span><span class="s1">'</span><span class="p">)</span>
-</code></pre>
+<pre class="highlight"><code><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\a</span><span class="s1">'</span><span class="p">)</span>
+</code></code></pre>
 
 
 <p>Better, you can remove new line from behind the print, and you can flush the <code>stdout</code> immediately:</p>
-<pre class="highlight"><code><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\a</span><span class="s1">'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</code></pre>
+<pre class="highlight"><code><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\a</span><span class="s1">'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></code></pre>
 
 
 <p>If you don't know what's "flushing <code>stdout</code>", search for keywords "output buffering python".</p>
 <h3 id="standard-macos-notification">Standard macOS notification<small class="permalink"><a href="#standard-macos-notification" title="Permanent link to this heading">#</a></small></h3>
 <p>With the <a href="https://pypi.org/project/pync/">pync</a> library, you can send native macOS notifications directly from your Python code:</p>
-<pre class="highlight"><code><span></span>$ pip install pync
-</code></pre>
+<pre class="highlight"><code><span></span><code>$ pip install pync
+</code></code></pre>
 
 
 <p>Then in your Python program:</p>
-<pre class="highlight"><code><span></span><span class="kn">import</span> <span class="nn">pync</span>
+<pre class="highlight"><code><span></span><code><span class="kn">import</span> <span class="nn">pync</span>
 
 <span class="n">pync</span><span class="o">.</span><span class="n">Notifier</span><span class="o">.</span><span class="n">notify</span><span class="p">(</span><span class="s1">'Hello!'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">'Greeting'</span><span class="p">)</span>
-</code></pre>
+</code></code></pre>
 
 
 <p>Check out the library's README, there're more usage examples. My personal tip is to import it with exception handling, just in case someone wants to run your code somewhere else than on macOS:</p>
-<pre class="highlight"><code><span></span><span class="k">try</span><span class="p">:</span>
+<pre class="highlight"><code><span></span><code><span class="k">try</span><span class="p">:</span>
     <span class="kn">import</span> <span class="nn">pync</span>
 <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
     <span class="n">pync</span> <span class="o">=</span> <span class="kc">None</span>
 
 <span class="k">if</span> <span class="n">pync</span><span class="p">:</span>
     <span class="n">pync</span><span class="o">.</span><span class="n">Notifier</span><span class="o">.</span><span class="n">notify</span><span class="p">(</span><span class="s1">'Hello!'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">'Greeting'</span><span class="p">)</span>
-</code></pre>
+</code></code></pre>
 
 
 <h2 id="decorator">Decorator<small class="permalink"><a href="#decorator" title="Permanent link to this heading">#</a></small></h2>
 <p>Now I wanted to notify myself when a long-running function ends, but I didn't want to pollute the code of the function with printing bell characters or sending notifications. Also, what if there's an error and the function raises an exception? A solution is to have the code as a function decorator. Also, that way I can easily measure duration of the function and put the result into the notification:</p>
-<pre class="highlight"><code><span></span><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">wraps</span>
+<pre class="highlight"><code><span></span><code><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">wraps</span>
 <span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">time</span>
 
 
@@ -161,16 +161,16 @@ Photo by <a href="https://unsplash.com/@scalabis">Luís Perdigão</a></figcaptio
                 <span class="n">pync</span><span class="o">.</span><span class="n">Notifier</span><span class="o">.</span><span class="n">notify</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">t</span> <span class="o">/</span> <span class="mi">60</span><span class="si">:</span><span class="s1">.1f</span><span class="si">}</span><span class="s1">min'</span><span class="p">,</span>
                                      <span class="n">title</span><span class="o">=</span><span class="sa">f</span><span class="s1">'Finished: </span><span class="si">{</span><span class="n">fn_name</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">wrapper</span>
-</code></pre>
+</code></code></pre>
 
 
 <p>That funky thing near the end is <a href="https://pyformat.info/#number">advanced formatting</a> inside <a href="https://realpython.com/python-f-strings/">f-strings</a>. I have this code in a separate module, <code>timer.py</code>. (Module <code>timer</code>, function <code>notify</code>… well I'm unsure about proper naming yet, but this is what I have so far.) It can be used as follows:</p>
-<pre class="highlight"><code><span></span><span class="kn">from</span> <span class="nn">.timer</span> <span class="kn">import</span> <span class="n">notify</span>
+<pre class="highlight"><code><span></span><code><span class="kn">from</span> <span class="nn">.timer</span> <span class="kn">import</span> <span class="n">notify</span>
 
 <span class="nd">@notify</span>
 <span class="k">def</span> <span class="nf">long_running_function</span><span class="p">():</span>
     <span class="o">...</span>
-</code></pre>
+</code></code></pre>
 
 
 <p>When the function is done, my terminal beeps and a notification appears:</p>

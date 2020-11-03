@@ -83,8 +83,8 @@ Gmail. <strong>Takto můžeme spoustu e-mailových schránek sdružit pod jednu 
 <h2 id="preposilani">Přeposílání<small class="permalink"><a href="#preposilani" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Ve většině e-mailů je možnost <strong>přeposílat všechnu poštu někam jinam</strong>, nebo se dá alespoň nastavit takový filtr, který ovlivní všechny příchozí e-maily (ať už je to třeba podmínkou „předmět neobsahuje slovo <em>b\~v\~d\~ď\~g\~h\~z\~ž</em>“, kterou projdou všechny) a pošle je jinam. Školní mail ale nic takového nenabízí, ani ve svém <a href="https://email.fit.vutbr.cz/">webovém rozhraní</a>. Co s tím? No existuje trochu hackerské řešení: Přihlašte se na libovolný školní server a do svého <em>home</em> dejte soubor <code>.procmailrc</code> s následujícím
 obsahem:</p>
-<pre class="highlight"><code><span></span>:0 * !^FROM_MAILER ! lalok@gmail.com
-</code></pre>
+<pre class="highlight"><code><span></span><code>:0 * !^FROM_MAILER ! lalok@gmail.com
+</code></code></pre>
 
 
 <p>Tento kód zajistí, že všechna vaše pošta bude automaticky přeposílána na váš Gmailový účet <em><a href="mailto:lalok@gmail.com">lalok@gmail.com</a></em>.</p>

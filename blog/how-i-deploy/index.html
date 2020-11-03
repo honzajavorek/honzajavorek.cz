@@ -81,12 +81,12 @@ Photo by <a href="https://unsplash.com/@andasta">Andy Li</a></figcaption></figur
 <h2 id="content-heavy-websites">Content-heavy websites<small class="permalink"><a href="#content-heavy-websites" title="Permanent link to this heading">#</a></small></h2>
 <p>In case I need to deploy a website, which has mostly text and no dynamic features, I make sure it is a <em>static</em> website. There's no reason why such a project shouldn't be a static website, and the fact it is one simplifies <em>everything</em>.</p>
 <p>Currently, my favorite place where I put my static websites is <a href="https://zeit.co/">ZEIT Now</a>. Quickstart:</p>
-<pre class="highlight"><code><span></span>$ npm install now --global
+<pre class="highlight"><code><span></span><code>$ npm install now --global
 $ mkdir hello
 $ <span class="nb">cd</span> hello
 $ <span class="nb">echo</span> <span class="s2">"Hello!"</span> &gt; index.html
 $ now  <span class="c1"># done, you have the site deployed</span>
-</code></pre>
+</code></code></pre>
 
 
 <p>That example above is pretty much how I made and deployed my wedding website. One thing I love about Now is their <strong>focus on simplicity</strong>. The service provides me with easy solutions to my complicated problems. It allows me to specify redirects. It gives me live previews of my GitHub branches. It automatically handles HTTPS for me. My wedding website had HTTPS! Why? Because why not! I got it for free. And if I ever need something dynamic, Now works also as a serverless functions provider - but about that later.</p>
@@ -149,9 +149,9 @@ The staticgen.com website is hosted and maintained by Netlify, so you may notice
 <h2 id="e-mail">E-mail<small class="permalink"><a href="#e-mail" title="Permanent link to this heading">#</a></small></h2>
 <p>I use <a href="https://improvmx.com/">ImprovMX</a> to <strong>redirect my e-mails</strong>. If you send something to <code>hello@junior.guru</code>, it gets redirected to my personal GMail address. I only automatically flag it with a yellow label. I'm new to ImprovMX, but so far it seems to work reliably. I just hope they don't read all the messages and sell the data to the Russia, or worse, to Facebook. Or to Google. Oh, wait…</p>
 <p>ZEIT Now requires me to use their DNS if I want a custom domain or HTTPS out of the box, so I use the Now CLI to set up ImprovMX where I need:</p>
-<pre class="highlight"><code><span></span>$ now dns add junior.guru '@' MX mx1.improvmx.com 10
+<pre class="highlight"><code><span></span><code>$ now dns add junior.guru '@' MX mx1.improvmx.com 10
 $ now dns add junior.guru '@' MX mx2.improvmx.com 20
-</code></pre>
+</code></code></pre>
 
 
 <h2 id="dependencies">Dependencies<small class="permalink"><a href="#dependencies" title="Permanent link to this heading">#</a></small></h2>
