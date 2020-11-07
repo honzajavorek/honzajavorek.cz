@@ -34,7 +34,7 @@ Tento týden jsem se zabýval mnoha věcmi, ale tou nejdůležitější asi bylo
 
 Nestihl jsem poznámky před začátkem Tmou po sobě přečíst a vydat, takže vydávám až v sobotu o půl čtvrté. Skončili jsme kolem páté ráno u páté šifry na nádraží v České. Vypadala luštitelně, ale odpadli jsme silami. I když jsme v sobotu vstali až v jednu odpoledne, bolí mě hlava a jsem komplet rozbitý. Neumím si představit, že bychom to opravdu chodili v terénu, ale možná by nás to aspoň probralo. Zase kamarádka by u hraní venku asi nemohla během noci kojit. Všechno má svá pro a proti. Každopádně děkujeme organizátorům za pěknou hru, rozhraní s mapou bylo skvělé. Svou první Tmou v životě jsem si užil i z Prahy :)
 
-![Screenshot Tmou]({filename}/images/tmou.png)
+![Screenshot Tmou]({static}/images/tmou.png)
 
 
 ## A co vy?
