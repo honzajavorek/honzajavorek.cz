@@ -18,6 +18,7 @@ SCHEMA = yaml.Seq(
             'talk',
             'workshop',
             'interview',
+            'text',
         ]),
         yaml.Optional('url'): yaml.Url(),
         yaml.Optional('resources_type', default='slides'): yaml.Enum([
