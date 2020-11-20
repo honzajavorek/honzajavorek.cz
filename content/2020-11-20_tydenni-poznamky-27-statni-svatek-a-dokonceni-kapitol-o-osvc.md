@@ -1,0 +1,46 @@
+Title: Týdenní poznámky #27: Státní svátek a dokončení kapitol o OSVČ
+Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
+Lang: cs
+Home: False
+
+
+Utekl další týden (16.11. — 20.11.) a tak [stejně jako minule]({filename}/2020-11-13_tydenni-poznamky-26-clanek-na-hn-a-czechinvest.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+
+![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
+Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
+
+V pondělí jsem si vzal dovolenou a udělali jsme si prodloužený víkend. Riskli jsme jízdu vlakem (jak lze vidět na počtu přečtených a sdílených článků na konci poznámek) a provětrali jsme se prací a výlety v přírodě u rodiny na Zlínsku, což bylo dost osvěžující. Tento pracovní týden měl tedy jen středu, čtvrtek a pátek. Nic velkolepého jsem tudíž neudělal a zkusím psaní poznámek vměstnat do 15 minut. Než se uvaří vajíčka na večeři. Třeba se to povede. Většinou je píšu víc jak hodinu.
+
+- V průběhu středy jsem odpovídal na e-maily aj. zprávy od lidí, které jsem ignoroval během dovolené. Jak tu větu píšu, tak jsem si uvědomil, že některé pořád ještě ignoruji a měl bych jim odepsat 😱 Po obědě mi přišlo, že je venku příliš hezky na to, abych seděl doma, takže jsem se jel projet na kole 🤷‍♂️
+- Organizátoři brněnského Pyva se ozvali s tím, že už týden slibuju anotaci k přednášce, [tak jsem něco vyplodil](https://pyvo.cz/brno-pyvo/2020-11/). Bude to online, přijďte! Přednášku jsem ještě nezačal připravovat, to musím zvládnout příští týden.
+- Můj experimentální hlídač politických stran odchytil první zajímavou změnu. [LIST skončil.](https://twitter.com/honzajavorek/status/1329347842587156480)
+- Odstranil jsem výrazné sekce v příručce, které prosily lidi o to, aby mi [přispěli](https://junior.guru/donate/). Měly nulovou konverzi, nikdo mi i přes velkou návštěvnost příručky nepřispěl, takže jsem si řekl, že se na to asi musí jinak a takhle tam jen zabírají místo.
+- Anketu o Discordu (viz minulé poznámky) jsem [udělal i na Facebooku](https://www.facebook.com/groups/junior.guru/permalink/494820874774858/). Diskuse pod příspěvkem mě přesvědčila, že to mám asi fakt udělat.
+- Celý čtvrtek a pátek jsem pracoval na přepsání kapitol o OSVČ, které chci přidat do příručky (viz předminulé poznámky). Snažil jsem se zapracovat veškerou zpětnou vazbu a zároveň to pojmout i trochu jinak, aby text nebyl jen o tom, co za hrůzy na OSVČ všude číhá, ale poskytoval i nějaká konstruktivní řešení, pokud do toho člověk chce fakt jít. Snad už to v řádu jednotek dnů vydám.
+- V Europa Universalis IV. se mi podařilo vyřešit vzpouru Janičářů a konečně do své Osmanské říše anexovat Sýrii, která už mi přerůstala přes hlavu. Tím jsem vyřešil hromadu interních problémů a už mohu opět radostně ničit zbytek Evropy, Asie i Afriky.
+- Mezitím vším mě synovec na Duolingu předběhl v celkovém XP 🤨
+
+15 minut to nebylo, ale i ta půlhodina je asi dobrý výkon.
+
+
+## Co mě zaujalo
+
+Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
+
+- [Your Computer Isn't Yours 12 November 2020 ( 3892 words, approximately 21 minutes reading time. )](https://getpocket.com/redirect?&url=https%3A%2F%2Fsneak.berlin%2F20201112%2Fyour-computer-isnt-yours%2F&h=1ca11d5c8ffae8444fbf658e907e3f5ebb9dc59ddcb2a91959aef7c02d825230)<br>Toto mělo být představeno na Apple eventu jako hlavní novinky :)
+- [Apple s ARM procesory a PostPC éra](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.marigold.cz%2Fitem%2Fapple-s-arm-procesory-a-postpc-era&h=e803a37e770de6581445f01c54a85aeb386fef74de97c6920a15c5320272aa47)<br>Proč jsou nové Apply milníkem výpočetní techniky a možná byste o nich měli vědět i přesto, že se o Apple jinak nezajímáte.
+- [Měřit s mírou](https://getpocket.com/redirect?&url=https%3A%2F%2Fhoudekpetr.blogspot.com%2F2020%2F11%2Fmerit-s-mirou.html&h=62f0cb651b9693bb0efc7006bd8ffa6f987531345008cc4353d0a01cd695e538)<br>Pěkné připomenutí, že metriky jsou dobrý sluha, zlý pán. Když něco redukujete do metriky, budete “hrát” metriku a původní cíl zanedbáte.
+- [Deset mýtů o práci programátorů: pokud uvažujete o rekvalifikaci, neskočte na ně](https://getpocket.com/redirect?&url=https%3A%2F%2Fnazory.ihned.cz%2Fc7-66842510-ofofc-cf514314230baa8&h=15a68c2e90b4cd4d8163f6c1ee03490eea52f2a3064ff58d61e2bdde9a5e9532)<br>Pěkný článek, s autorem se v mnohém ztotožňuji :)
+- [Vše, co víme o koronaviru: nemění své chování, vytváří mikrosraženiny a chlad mu svědčí](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.irozhlas.cz%2Fzpravy-domov%2Fvse-o-koronaviru-covid-19-prehled-cesko-svet-studie-priznaky-leky-vakcina_2010180600_dok&h=74b53a93b076c4ce02c8493fd635aaf2847ead93f55c961a2b27b50999ce6049)<br>Dobré shrnutí
+- [Vakcína na dohled. Pojďme si to tedy co nejvíc zkomplikovat](https://getpocket.com/redirect?&url=https%3A%2F%2Ffinmag.penize.cz%2Fkaleidoskop%2F421424-vakcina-na-dohled-pojdme-si-to-tedy-co-nejvic-zkomplikovat&h=eccc0bfb83b8e0baa490d8757fb41b8b69183e541a75a78b3dbe58ab23f4b1aa)<br>I pokud bude vakcína, její distribuce bude nejspíš průšvih.
+- [Ruské mírotvorce tu nikdo nechtěl: Jak válka o Náhorní Karabach změnila svět](https://getpocket.com/redirect?&url=https%3A%2F%2Ft.co%2FtFfSUeSLec%3Fssr%3Dtrue&h=266e0a5d12c6bc966c3f9c9b4a02de26a060687c2d49334500b7b73cbb212db9)<br>Rozbor dosavadního výsledku konfliktu v Náhorním Karabachu.
+- [Does Apple really log every app you run? A technical look](https://getpocket.com/redirect?&url=https%3A%2F%2Fblog.jacopo.io%2Fen%2Fpost%2Fapple-ocsp%2F&h=0322f0ac68a2cf2a56504487dac42da4feedaca185f32702b86b669db2b5d9b3)<br>Další (hlubší) analýza toho, zda macOS “volá domů” a jak
+- [Exemplární střet zájmů: Ústecký kraj zastupuje v uhelné komisi muž Pavla Tykače](https://getpocket.com/redirect?&url=http%3A%2F%2Fgo.sparkpostmail.com%2Ff%2Fa%2FBS_V8m7K4vywHEnL7Rh8XA%7E%7E%2FAAA-fAA%7E%2FRgRhlLaMP0TraHR0cHM6Ly9kZW5pa3JlZmVyZW5kdW0uY3ovY2xhbmVrLzMxOTQ0LWV4ZW1wbGFybmktc3RyZXQtemFqbXUtdXN0ZWNreS1rcmFqLXphc3R1cHVqZS12LXVoZWxuZS1rb21pc2ktbXV6LXBhdmxhLXR5a2FjZT91dG1fc291cmNlPWVjb21haWwmdXRtX2NhbXBhaWduPTIwMjBfMTFfMTNfcm96ZXNpbGthX3JlcG9ydGVya3lfaV8xNjEwMjAyMCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV90ZXJtPTUxMTImZWNtaWQ9NDYxMFcDc3BjQgoAJ7Exsl-4NdgCUhRtYWlsQGhvbnphamF2b3Jlay5jelgEAABpUQ%7E%7E&h=18b97e312de397117a18becad8b01c6f1b221cb0925d34532088df22489caf81)<br>“Uhelné zájmy to v Ústeckém kraji s politiky vždycky uměly”
+- [Byla chyba, že Zelení běželi na míle před ostatními. Nebylo nám rozumět, říká Davis](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.info.cz%2Fpodcasty%2Finsider-podcast%2Fbyla-chyba-ze-zeleni-bezeli-na-mile-pred-ostatnimi-nebylo-nam-rozumet-rika-davis&h=b9a69301e0bd97101808568956d12309d13c417bc9f98f0dc208841d96d0455d)<br>Fajn podcast, kde se za vás moderátoři zeptali na všechny ty otázky, které vás ohledně Zelených zajímaly. Probírala se i energetika apod. Možná vás i samotné překvapí, jak moc dokážete s Magdalenou Davis souhlasit.
+- [K dodržování tří R by místo výhrůžek pomohla dvě VZ. Vzdělání a vzory](https://getpocket.com/redirect?&url=https%3A%2F%2Ft.co%2FDo5OH0n6Vg%3Fssr%3Dtrue&h=9eea954eb130a9a95e803f526d23328d55368bb48dc5e0ccdd26a9ee9bb325b0)<br>“Nedodržování hygienických opatření je největší problém současného Česka”
+- [Jaká je správná výslovnost slov WOMAN/WOMEN, COUNTRY a ANALYSIS? Další 3 v 1 je zde!](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D0PKtVzb2M4g&h=25885542016a96021fe4aecf95c102fc178f3b1eb261855add9e4d6937d0a451)<br>Víte, jak se správně vyslovuje "analysis"?
+- [Fenomén Masaryk - Michal Stehlík | Neurazitelny.cz | Večery na FF UK](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DXt0vLLTpJK8&h=2a56c32854e96354ee995acca37da1ea0efbb9e618fc64045413c51349f7c10b)<br>Super přednáška o Masarykovi. Fakt doporučuju!
+- [Apple's 15% Deflection Tactic](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.johnluxford.com%2Fblog%2Fapples-15-percent-deflection-tactic%2F&h=c9f6d3b1a3a1ba0f5c67f0bb0069f395d5512f0f6b8952cf1567bc3fc939e199)<br>100% souhlas
+- [Survival of the Richest](https://getpocket.com/redirect?&url=https%3A%2F%2Fonezero.medium.com%2Fsurvival-of-the-richest-9ef6cddd0cc1&h=c93dc1ee0c69376013341eb2b755a5f089c60ee81a4c55017b74e125858e6211)<br>“Být člověkem je týmový sport”
+
+<small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small>
