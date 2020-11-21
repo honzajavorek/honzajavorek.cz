@@ -19,6 +19,7 @@ V pondělí jsem si vzal dovolenou a udělali jsme si prodloužený víkend. Ris
 - Celý čtvrtek a pátek jsem pracoval na [přepsání kapitol o OSVČ](https://github.com/honzajavorek/junior.guru/pull/414), které chci přidat do příručky (viz předminulé poznámky). Už mi to leze i ušima. Snažil jsem se zapracovat veškerou zpětnou vazbu a zároveň to pojmout i trochu jinak, aby text nebyl jen o tom, co za hrůzy na OSVČ všude číhá, ale poskytoval i nějaká konstruktivní řešení, pokud do toho člověk chce fakt jít. Snad už to v řádu jednotek dnů vydám.
 - V Europa Universalis IV. se mi podařilo vyřešit vzpouru Janičářů a konečně do své Osmanské říše anexovat Sýrii, která už mi přerůstala přes hlavu. Tím jsem vyřešil hromadu interních problémů a už mohu opět radostně ničit zbytek Evropy, Asie i Afriky.
 - Mezitím vším mě synovec na Duolingu předběhl v celkovém XP 🤨
+- Koukal jsem na nové počítače. [Mára pobavil](https://www.youtube.com/watch?v=heGYlDrrRMM), z komentářů: "10:25 Ten pocit když zjistíš, že si vyhodil 100 000 Kč do kanálu". [Tady Filippo Valsorda dokumentuje](https://twitter.com/FiloSottile/status/1329093320207859717), co mu na nových Apple čipech funguje a co ne. Ještě mrknu na nějaká videa, ale kupovat staré Macy asi nedává smysl. Koupím nový Air a svůj současný MacBook 12" s odvařeným displejem si chvíli nechám jako zálohu, kdyby něco nejelo. Až tato doba pomine, nejspíš ho [prodám na náhradní díly](https://www.nbservis.cz/vykup/), jelikož displej měnit už nechci a s tímto je neprodejný i nedarovatelný.
 
 15 minut to nebylo, ale i ta půlhodina je asi dobrý výkon.
 
