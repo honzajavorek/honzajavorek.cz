@@ -62,13 +62,13 @@ Blbý je, že jak jsem začal přemýšlet nad tímhle, nechtělo se mi pak děl
 
 Tímto vydáním poznámek zavádím novou sekci, do níž budu umisťovat memy, které mi zaslali fanoušci. Za poslední dva týdny se jich urodilo mnoho, srdečně děkuji [Jakubu Mrozkovi](http://www.svetpatritemcoseneposerou.cz/) do Českého Těšína a posílám samolepku. Teda mě vlastně asi samolepky už došly, tak možná později. Můžu poslat vizitku, těch mám FAKT HODNĚ. No, to je jedno.
 
-![Mem 1]({static}/images/mem1.jpg)
+![Mem 1]({static}/images/mem01.jpg)
 
-![Mem 2]({static}/images/mem2.jpg)
+![Mem 2]({static}/images/mem02.jpg)
 
-![Mem 3]({static}/images/mem3.jpg)
+![Mem 3]({static}/images/mem03.jpg)
 
-![Mem 4]({static}/images/mem4.jpg)
+![Mem 4]({static}/images/mem04.jpg)
 
 
 ## A co vy?
