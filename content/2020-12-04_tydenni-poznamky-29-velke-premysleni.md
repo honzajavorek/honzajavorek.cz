@@ -22,6 +22,8 @@ Většinu času v tomto týdnu jsem strávil vymýšlením kam směřovat JG do 
 ## Další poznámky
 
 - Mám novou [podporovatelku na GitHub Sponsors](https://github.com/sponsors/honzajavorek/), [Martinu](https://github.com/MartinaHytychova)! Díky moc!
+- Přidání nových kapitol o OSVČ do příručky a jejich propagování na sociálních sítích mělo samé dobré ohlasy a vytvořilo mi v návštěvnosti velice slušný peak.
+- Zkoušel jsem, jestli by mělo smysl příručku překlopit do mého oblíbeného [Sphinxu](https://www.sphinx-doc.org/). Jednak by to lépe zapadlo do mého plánu, jednak se z toho dají generovat věci jako .epub nebo .pdf. Zatím jsem se nerozhodl a nikam daleko se v tom nedostal.
 - Vyšlo video mé přednášky pro brněnské Pyvo, takže jsem ještě dnes večer sepsal [handout tady na blog]({filename}/2020-12-04_tips-tricks-on-how-to-get-your-first-job-in-tech.md) a příští týden ho nějak zpropaguju.
 - Posunul jsem zase o kousek blíž k existenci seznam členů Pyvce na [webu Pyvce](https://pyvec.org/):
     - [Update info regarding GDPR, privacy policy, and the public member roster](https://github.com/pyvec/docs.pyvec.org/pull/178)
