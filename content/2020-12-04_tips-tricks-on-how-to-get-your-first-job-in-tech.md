@@ -9,8 +9,6 @@ I gave a talk last Thursday about getting an entry level job in tech for [Pyvo](
 
 There has been a very fruitful session of Q&A at the end of the talk. Before start I shared a Google Document with the attendees, where they could ask questions by simply writing them down to a prepared list (anoymously, if they liked). I also encouraged them to share any notes there if they like, and I provided some links to stuff I'll be talking about. A handout I compiled from this collaborative effort follows. I also tried to provide short written answers for all of the questions.
 
-<small>Thanks to [Simon Willison](https://simonwillison.net/2020/Nov/14/personal-data-warehouses/) for the Google Document idea.</small>
-
 ## Useful Links
 
 - [Junior Guru](https://junior.guru/) 🇨🇿
@@ -107,6 +105,6 @@ There has been a very fruitful session of Q&A at the end of the talk. Before sta
 -   **Q:** Which companies are the best teachers for juniors? In which company can a junior expect to learn best practices instead of learning to do things in the not so prefered way?<br>
     **A:** Great question! I think even seniors with they would be able to answer this with some level of generalization. The truth is, there's no way how to know this with a system of some simple rules of thumb. This is what the interview process is for. You observe the company, look for red flags, company culture, attitude to teaching and mentoring, attitude to technologies, and then you decide, if it's the right place for you. In the Czech Republic, you also have additional three more months of the probation period to figure this out. Do your homework and prepare good questions for the [reverse interview](https://junior.guru/candidate-handbook/#reverse-interview).
 
-<small>I didn't edit the questions, they're authentic questions asked by the audience, with all their grammar imperfections. The answers I share in this handout can be different from those I gave during the live questions as they're answers I'm typing now, not a transcript of what I said week ago.</small>
+I didn't edit the questions, they're authentic questions asked by the audience, with all their grammar imperfections. The answers I share in this handout can be different from those I gave during the live questions as they're answers I'm typing now, not a transcript of what I said week ago.
 
-Big thanks to the organizers for inviting me and thanks everyone for having me. I didn't expect so many questions and I'm very excited about such massive response! It was a very nice evening.
+Thanks to [Simon Willison](https://simonwillison.net/2020/Nov/14/personal-data-warehouses/) for the Google Document idea. Big thanks to the organizers for inviting me and thanks everyone for having me. I didn't expect so many questions and I'm very excited about such massive response! It was a very nice evening.
