@@ -21,9 +21,9 @@ Potom jsem se snažil vymyslet nějaký rozumný mix testovacích králíků, ab
 - [Your Code of Conduct](https://opensource.guide/code-of-conduct/)
 - [Building Welcoming Communities](https://opensource.guide/building-community/)
 
-Měl jsem otevřených asi 20 různých, ale nebyl jsem s nimi moc spokojený. Nakonec se mi zalíbil [CoC od Djanga](https://www.djangoproject.com/conduct/). Taky se mi líbilo [tohle](https://www.recurse.com/social-rules), ale to není CoC, spíš "měkká" doporučení, takže to třeba někdy někde použiju jindy. Napsal jsem tedy česká pravidla chování, z 90 % založená na těch od Djanga, a tak jak jsem je měl v Google Dokumentu, tak jsem je rovnou odkázal, ani jsem se neobtěžoval je přepisovat do HTML a dávat na web. Šetřím čas.
+Měl jsem otevřených asi 20 různých CoC, ale nebyl jsem s nimi moc spokojený. Nakonec se mi zalíbil [CoC od Djanga](https://www.djangoproject.com/conduct/). Taky se mi líbilo [tohle](https://www.recurse.com/social-rules), ale to není CoC, spíš "měkká" doporučení, takže to třeba někdy někde použiju jindy. Napsal jsem tedy česká pravidla chování, z 90 % založená na těch od Djanga, a tak jak jsem je měl v Google Dokumentu, tak jsem je rovnou odkázal, ani jsem se neobtěžoval je přepisovat do HTML a dávat na web. Šetřím čas.
 
-Pak už jsem jen polatil v novém produktu nějaké základní rozložení a uvítání lidí a začal jsem tam zvát první oběti mého experimentu. Zatím od všech dobrá odezva, od některých vyloženě nadšení. Nechám se ale překvapit, jaká bude odezva, až za to bude mít někdo platit :D
+Pak už jsem jen poladil v novém produktu nějaké základní rozložení a uvítání lidí a začal jsem tam zvát první oběti mého experimentu. Zatím od všech dobrá odezva, od některých vyloženě nadšení. Nechám se ale překvapit, jaká bude odezva, až za to bude mít někdo platit :D
 
 Teď musím vyřešit obchodní podmínky (poptal jsem u právníků, ale zatím mám jen jednu odpověď ze dvou), jak vyřeším placení, atd. Myslel jsem, že budu muset vytvořit prodejní stránku na tento nový produkt a k tomu ještě přepracovat homepage, ale pak mi došlo, že nemusím. Vytvořím jen tu prodejní stránku, napíšu tam beta, a ani na to nemusím dávat nikde zatím odkaz, homepage zůstane, jak je. Abych to sdílel na sociální sítě, na to mi stačí ta jediná nová stránka, kde bude produkt vysvětlený a půjde za něj zaplatit. Šetřím čas.
 
