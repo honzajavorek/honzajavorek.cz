@@ -73,7 +73,7 @@
         </p>
       </div>
 
-    <div><p>Stalo se tuším od jedné z podverzí PHP4 dobrým zvykem <strong>vypínat v PHP direktivu register_globals</strong>. Naštěstí. Díky tomu pak nemáme přístup k příchozím datům přes různě pojmenované proměnné, ale máme je hezky v globálních polích, třízena podle způsobu, jakým k nám přišla. To je nejen o dost přehlednější, ale také bezpečnější.</p>
+    <div><div><div><div><p>Stalo se tuším od jedné z podverzí PHP4 dobrým zvykem <strong>vypínat v PHP direktivu register_globals</strong>. Naštěstí. Díky tomu pak nemáme přístup k příchozím datům přes různě pojmenované proměnné, ale máme je hezky v globálních polích, třízena podle způsobu, jakým k nám přišla. To je nejen o dost přehlednější, ale také bezpečnější.</p>
 <p>Co ale dělat, když máme nějaký starý projekt napsaný se zapnutými register_globals? Určitě je jednodušší je zapnout a případně si pohlídat bezpečnostní rizika, než přepisovat celý kód. Máme tři možnosti:</p>
 <h2 id="apache">Apache<small class="permalink"><a href="#apache" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Serveru řekneme co potřebujeme v souboru <code>.htaccess</code>.</p>
@@ -90,7 +90,7 @@
 <h2 id="nastaveni-na-serveru-nelze-zmenit">Nastavení na serveru nelze změnit<small class="permalink"><a href="#nastaveni-na-serveru-nelze-zmenit" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>V tomto případě nám nezbyde, než si ručně proměnné vytvořit.</p>
 <pre class="highlight"><code><span></span><code><span class="x">extract($_REQUEST);</span>
-</code></code></pre></div>
+</code></code></pre></div></div></div></div>
   </div>
 
   <footer class="article-footer">
