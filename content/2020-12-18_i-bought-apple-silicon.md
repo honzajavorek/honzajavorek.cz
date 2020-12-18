@@ -26,7 +26,7 @@ When the first reviews were out, I waited for some more, but then it was just ob
 - [Why Is Apple’s M1 Chip So Fast?](https://debugger.medium.com/why-is-apples-m1-chip-so-fast-3262b158cba2) - how they made it and why competition won't be able to compete
 - [Intel’s Disruption is Now Complete](https://jamesallworth.medium.com/intels-disruption-is-now-complete-d4fa771f0f2c) - how Intel failed the same way it won in the beginning
 
-After that, I decided I'll buy the new Apple Silicon M1 MacBook Air, because it doesn't make sense to go for anything older if I plan to have the new computer for as many years as possible going forward.
+After that, I decided I'll buy the new Apple Silicon M1 MacBook Air, because it doesn't make sense to go for anything older if I plan to have the new computer for as many years as possible going forward. It's not _cheap_ cheap, but it's still huge performance for a reasonable price. Honestly, I'm surprised I happen to be buying a freshly released Mac announced just a few weeks ago, when so far I've been buying only second-hand Apple hardware, but it just felt like it makes sense to do this, all things considered.
 
 I decided I don't need more RAM than 8 GB, because nobody from the first reviewers managed to give the RAM a hard time. It seemed to me it's a different beast altogether and it doesn't make sense to just compare numbers and say that more is better. Apple allows you to buy a computer with more than 8 GB RAM, but I think it's just a trap how to satisfy and charge those who don't believe the reviews and just want more RAM whatever it takes.
 
