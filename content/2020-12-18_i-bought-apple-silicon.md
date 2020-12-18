@@ -23,8 +23,8 @@ When the first reviews were out, I waited for some more, but then it was just ob
 
 - [Apple Silicon M1: Black. Magic. Fuckery.](https://singhkays.com/blog/apple-silicon-m1-black-magic/) - compilation of various first impressions
 - [Yeah, Apple’s M1 MacBook Pro is powerful, but it’s the battery life that will blow you away](https://techcrunch.com/2020/11/17/yeah-apples-m1-macbook-pro-is-powerful-but-its-the-battery-life-that-will-blow-you-away/) - general review
-- [Why Is Apple’s M1 Chip So Fast?](https://debugger.medium.com/why-is-apples-m1-chip-so-fast-3262b158cba2) - how they made it
-- [Intel’s Disruption is Now Complete](https://jamesallworth.medium.com/intels-disruption-is-now-complete-d4fa771f0f2c) - why competition won't be able to compete
+- [Why Is Apple’s M1 Chip So Fast?](https://debugger.medium.com/why-is-apples-m1-chip-so-fast-3262b158cba2) - how they made it and why competition won't be able to compete
+- [Intel’s Disruption is Now Complete](https://jamesallworth.medium.com/intels-disruption-is-now-complete-d4fa771f0f2c) - how Intel failed the same way it won in the beginning
 
 After that, I decided I'll buy the new Apple Silicon M1 MacBook Air, because it doesn't make sense to go for anything older if I plan to have the new computer for as many years as possible going forward.
 
