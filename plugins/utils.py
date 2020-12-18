@@ -7,7 +7,7 @@ from lxml import html
 @contextlib.contextmanager
 def modify_html(content, prop='_content'):
     html_string = getattr(content, prop)
-    html_tree = html.fromstring(html_string)
+    html_tree = html.fragment_fromstring(html_string, create_parent=True)
 
     yield html_tree
 
