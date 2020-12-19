@@ -3,6 +3,7 @@ Image: images/apple-silicon.jpg
 Lang: en
 HackerNews-Comments: https://news.ycombinator.com/item?id=25472370
 Twitter-Comments: https://twitter.com/honzajavorek/status/1340068645708439553
+Reddit-Comments: https://www.reddit.com/r/apple/comments/kfx1yz/i_bought_apple_silicon/
 
 
 I bought the new M1 Apple Silicon MacBook Air, and this is an article about why I did it, what was my decision process, what are my first impressions, and how I've approached the initial setup. The artcile is just a quick brain dump for the purposes of sharing my experiences with my friends and other readers of my blog, so don't expect any benchmarks or anything like that, this is not a serious review.
