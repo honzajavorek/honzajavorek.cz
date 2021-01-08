@@ -4,6 +4,7 @@ Lang: en
 HackerNews-Comments: https://news.ycombinator.com/item?id=25472370
 Twitter-Comments: https://twitter.com/honzajavorek/status/1340068645708439553
 Reddit-Comments: https://www.reddit.com/r/apple/comments/kfx1yz/i_bought_apple_silicon/
+Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10158666148237707
 
 
 I bought the new M1 Apple Silicon MacBook Air, and this is an article about why I did it, what was my decision process, what are my first impressions, and how I've approached the initial setup. The artcile is just a quick brain dump for the purposes of sharing my experiences with my friends and other readers of my blog, so don't expect any benchmarks or anything like that, this is not a serious review.
@@ -159,4 +160,4 @@ When I've been setting up Homebrew, I worked a lot with the built-in macOS termi
 Well, yeah, sure, I'd totally recommend it. The computer is like a MIRACLE, especially if you upgrade from a potato machine. If nothing holds you back, like the lack of virtualization support, go for it. I hope it's gonna be this snappy for at least five years going forward. Given the little chance Intel or anyone else is going to keep up with this new level of performance, I believe this new laptop could be with me perhaps even longer, unless everyone else in the world buys it and developers start to create 10x bloated apps compared to today.
 
 Secretly, of course, I wish other manufacturers to be able to keep up with Apple, against all the odds. I wish they rolled their sleeves and came up with something awesome, too. Because the last thing anyone needs is another market where Apple has monopoly.
-  
+
