@@ -34,7 +34,7 @@ Vytyčenému cíli a jeho mantinelům se musí podřídit jak byznysová stránk
 
 Z možností reálně vypadává většina kusového prodeje produktů, protože jsem zatím neobjevil takové, které bych chtěl tvořit jak na běžícím páse a zároveň by měly dostatečně velké publikum, jenž by jednorázovými nákupy nasbíralo dostatečnou hodnotu. Třeba jednou najdu zálibu ve videích nebo podcastech, ale zatím mě to neláká. Jediné, co dělám opravdu rád, je psaní. Texty lze prodávat jako knihy, ale u těch nevychází ani základní kupecké počty, neuživilo by mě to. Navíc by jistě byly druhý den po vydání někde na Uložto. Přijde mi, že jednorázově placenými produkty se v Česku moc uživit nedá a lidé je tvoří buď jako hobby, nebo jako marketingový nástroj jiných svých aktivit. Třeba se ale mýlím.
 
-Snažím se ctít pravidlo, že nebudu ostatním dělat to, co sám nemám rád. Proto na webu nechci klasickou reklamu nebo paywall. Byť se snažím nějakým způsobem svůj obsah monetizovat inzercí (nabídky práce, umístění loga), klasickou generickou reklamu bych tam nikdy nedal, stejně jako si zatím nikde reklamu neplatím, a nad rámec počítání návštěv nesleduju lidi.
+Snažím se ctít pravidlo, že nebudu ostatním dělat to, co sám nemám rád. Proto na webu nechci klasickou reklamu nebo _paywall_. Byť se snažím nějakým způsobem svůj obsah monetizovat inzercí (nabídky práce, umístění loga), klasickou generickou reklamu bych tam nikdy nedal, stejně jako si zatím nikde reklamu neplatím, a nad rámec počítání návštěv nesleduju lidi.
 
 ### Nabídky práce
 
