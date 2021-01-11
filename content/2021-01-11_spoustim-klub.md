@@ -1,6 +1,9 @@
 Title: Spouštím klub
 Image: images/klub.jpg
 Lang: cs
+Twitter-Comments: https://twitter.com/honzajavorek/status/1348585517160554496
+LinkedIn-Comments: https://www.linkedin.com/posts/honzajavorek_spou%C5%A1t%C3%ADm-klub-honza-javorek-activity-6754350302645805056-Kdtn
+Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10158711762387707
 
 
 Do konce ledna 2021 bych chtěl na junior.guru spustit klub pro začátečníky v programování. Na [tomto blogu](https://honzajavorek.cz/blog/) už půl roku vychází mé týdenní poznámky, kde otevřeně popisuji rozjíždění svého podnikání. Spuštění klubu je **zásadní změna**, takže jsem se rozhodl vydat **článek, v němž popíšu, jak k ní došlo a proč**. Hodnotu bude mít hlavně pro ty, kdo mě sledují dlouhodobě.
