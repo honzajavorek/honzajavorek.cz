@@ -14,7 +14,7 @@ Poznámky teda tentokrát píšu až v neděli. Ve středu jsem nepracoval, byl 
 
 ## Práce na dálku
 
-Protože řádí COVID-19, rozhodl jsem se soustředit na [stránku s prací na dálku](https://junior.guru/jobs/remote/) s tím, že uvidím, co všechno se z ní dá vymáčknout. Pokud by na ní bylo dost nabídek práce, přidal bych i nějaké rady na práci na dálku a celé bych to pak zkusil propagovat mezi lidmi. V současné chvíli by to mohlo mít nějaký ohlas.
+Protože řádí covid-19, rozhodl jsem se soustředit na [stránku s prací na dálku](https://junior.guru/jobs/remote/) s tím, že uvidím, co všechno se z ní dá vymáčknout. Pokud by na ní bylo dost nabídek práce, přidal bych i nějaké rady na práci na dálku a celé bych to pak zkusil propagovat mezi lidmi. V současné chvíli by to mohlo mít nějaký ohlas.
 
 Přidal jsem tedy podporu pro [Remote OK](https://remoteok.io/), [WWR](https://weworkremotely.com/) a nabídky práce na dálku ze StackOverflow. Psal jsem i osobně na Pieteru Levelsovi na Twitteru, jestli mohu použít logo Remote OK, protože to vyžaduje v podmínkách, a dostal jsem svolení.
 
@@ -69,7 +69,7 @@ Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocket
 - [Programátorem za 365 dní a zadarmo? Tak určitě!](https://getpocket.com/redirect?&url=https%3A%2F%2Fblog.python.cz%2Fprogramatorem-za-365-dni-a-zadarmo-tak-urcite&h=dadd9f4f1df72d6bbcc0702a70268fce751caa9c5a61b363753d26f12eaeeba6)<br>Honza Kovanda píše o tom, jak se z něj do roka stal programátor a jak si vytvořil vlastní e-shop
 - [Citation Needed](https://getpocket.com/redirect?&url=http%3A%2F%2Fexple.tive.org%2Fblarg%2F2013%2F10%2F22%2Fcitation-needed%2F&h=0d3b6f4a049ec2aca73b29534b49443072e312fca237383bae8ff4fba6d771f2)<br>Proč indexujme pole/seznamy od nuly a ne od jedničky? Výlet do historie, ve kterém figuruje i jachtaření prezidenta IBM.
 - [Můžete si za to sami, vzkazuje Babiš kolabující zemi](https://getpocket.com/redirect?&url=https%3A%2F%2Fa2larm.cz%2F2020%2F10%2Fmuzete-si-za-to-sami-vzkazuje-babis-kolabujici-zemi%2F&h=74672978cc61ed225a3f84d4f5d5c96941ac8c238f8d056c7416749d9cc4991e)<br>“Zbyl jen smutný klaun uprostřed zhrouceného státu.”
-- [Covid v evropských městech nakopl cyklistiku. Praha uvízla v době jeskynní](https://getpocket.com/redirect?&url=https%3A%2F%2Ft.co%2FO5hqX7hdWk%3Fssr%3Dtrue&h=5b7db2d712c89a34c8cb20b701bf9eedde41ff1ec640afb897f8f912756dee17)<br>Rozdíl vidím v tom, že o těch západních politicích se dají napsat ty věty jako “co je jeho cílem” nebo “má plán”.
+- [Covid-19 v evropských městech nakopl cyklistiku. Praha uvízla v době jeskynní](https://getpocket.com/redirect?&url=https%3A%2F%2Ft.co%2FO5hqX7hdWk%3Fssr%3Dtrue&h=5b7db2d712c89a34c8cb20b701bf9eedde41ff1ec640afb897f8f912756dee17)<br>Rozdíl vidím v tom, že o těch západních politicích se dají napsat ty věty jako “co je jeho cílem” nebo “má plán”.
 
 <small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small>
 

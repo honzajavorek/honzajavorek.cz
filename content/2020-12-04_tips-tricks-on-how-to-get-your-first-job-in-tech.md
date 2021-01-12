@@ -45,7 +45,7 @@ There has been a very fruitful session of Q&A at the end of the talk. Before sta
 -   **Q:** Should you mention your education in your CV, even if it’s not IT-related?<br>
     **A:** I think yes. Definitely mention any university-level school, if you have it. If you used to be a doctor, mention it. Of course, it doesn't make much sense to list all the dentist certificates you collected, only a high-level overview of your education. Also it depends on the company you're trying to apply to. If you're applying to a company which focuses on software for hospitals, your healthcare education is actually super relevant.
 
--   **Q:** Despite the Covid context, should we accept remote jobs as juniors? I guess it’s not the best at the beginning:-(<br>
+-   **Q:** Despite the COVID-19 context, should we accept remote jobs as juniors? I guess it’s not the best at the beginning:-(<br>
     **A:** I've done some research and I asked both HR people and senior people about this. From the answers it seems that companies now hire even juniors remotely. Seniors claim it's not such an issue if people are able to communicate, jump on a quick call, and so on. The HR people were less amused, but had "what else can we do, it's the only way now, so we're trying to deal with it" attitude. As for whether it's the best start for the junior, I'd say it doesn't matter that much. Remotely joining a company, which is dedicated to help you grow, is much better than personally joining a company, which abandons you two days after onboarding and their seniors don't have time to answer your questions even though they sit next to you.
 
 -   **Q:** Do you have some experiences with online freelance jobs? How to become freelancer? Is Freelancing recommended for juniors?<br>

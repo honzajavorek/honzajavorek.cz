@@ -46,6 +46,6 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Covid v evropských městech nakopl cyklistiku. Praha uvízla v době jeskynní](https://getpocket.com/redirect?&url=https%3A%2F%2Ft.co%2FO5hqX7hdWk%3Fssr%3Dtrue&h=5b7db2d712c89a34c8cb20b701bf9eedde41ff1ec640afb897f8f912756dee17)<br>Rozdíl vidím v tom, že o těch západních politicích se dají napsat ty věty jako “co je jeho cílem” nebo “má plán”.
+- [Covid-19 v evropských městech nakopl cyklistiku. Praha uvízla v době jeskynní](https://getpocket.com/redirect?&url=https%3A%2F%2Ft.co%2FO5hqX7hdWk%3Fssr%3Dtrue&h=5b7db2d712c89a34c8cb20b701bf9eedde41ff1ec640afb897f8f912756dee17)<br>Rozdíl vidím v tom, že o těch západních politicích se dají napsat ty věty jako “co je jeho cílem” nebo “má plán”.
 
 <small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small>

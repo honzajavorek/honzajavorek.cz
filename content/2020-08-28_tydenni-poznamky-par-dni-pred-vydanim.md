@@ -62,7 +62,7 @@ Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocket
 
 - [Effective testing for machine learning systems.](https://getpocket.com/redirect?&url=https%3A%2F%2Ft.co%2FD5ck6fzk72%3Fssr%3Dtrue&h=7d206bfdef469a874f0f046122f41e04bea73fb679983529e0688fbb2a27b8dd)<br>Zajímavý rozbor o tom, jak lze testovat ML modely. Klasicky píšeme logiku a testujeme pomocí příkladů. Tady na základě příkladů vznikne logika. Je možné ji testovat? Jak?
 - [Plán B - Winter is coming... Cože? 🤷🏼‍♂️  [4K]](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D4jiYFHf3Js0&h=235e360d721d820d7325c8bd02575cfb3993e71f54d92de4928429133d945cf8)<br>Dobrý odhad toho, co se bude dít na podzim
-- [Václav Dejčmar](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.facebook.com%2Fdejcmar%2Fposts%2F10218934873304799&h=c11042dc38f78ab9d893e845f15c4cfc81f46d193904fff26c83ecc4d042a09d)<br>Pár důvodů proč se snažit COVID-19 nedostat: "Každý druhý nakažený hlásí nějaké neurologické problémy: Ztrátu čichu a chuti, bolest hlavy, pálení kůže, otupělost, únavu, problémy s koncentrací, závratě."
+- [Václav Dejčmar](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.facebook.com%2Fdejcmar%2Fposts%2F10218934873304799&h=c11042dc38f78ab9d893e845f15c4cfc81f46d193904fff26c83ecc4d042a09d)<br>Pár důvodů proč se snažit covid-19 nedostat: "Každý druhý nakažený hlásí nějaké neurologické problémy: Ztrátu čichu a chuti, bolest hlavy, pálení kůže, otupělost, únavu, problémy s koncentrací, závratě."
 
 <small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small>
 
