@@ -48,7 +48,7 @@ friday_cz = f'{friday:%d}.'.lstrip('0') + f'{friday:%m}.'.lstrip('0')
 friday_iso = friday.isoformat()
 
 path = CONTENT_PATH / f'{friday_iso}_{slug}.md'
-last_weeknotes_path = str(last_weeknotes_path).replace('content', '{filename}')
+last_weeknotes_path = '{filename}/' + str(last_weeknotes_path.relative_to(CONTENT_PATH))
 content = f'''
 Title: {title}
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
