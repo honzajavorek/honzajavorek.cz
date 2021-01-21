@@ -68,6 +68,15 @@ Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 -
 
 
+## Co plánuji
+
+Tři věci, které bych chtěl zvládnout udělat příště:
+
+1.
+2.
+3.
+
+
 ## A co vy?
 
 Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({{filename}}/2020-06-04_neni-to-zavod.md). Není zač!
