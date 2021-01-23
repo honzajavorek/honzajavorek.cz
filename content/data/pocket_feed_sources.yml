@@ -1,3 +1,7 @@
+####################################
+##  Random blogs and other feeds  ##
+####################################
+
 - href: https://devblogs.microsoft.com/python/feed/
 
 - href: https://raw.githubusercontent.com/honzajavorek/ih-interviews/main/feed.xml
@@ -10,8 +14,6 @@
 
 - href: https://medium.com/feed/@adent
 
-- href: https://www.youtube.com/feeds/videos.xml?channel_id=UCdR-hKRaYAZUn2FAHb-xMcQ
-
 - href: https://ptacihnizdo.8bit.cz/feed.xml
 
 - href: https://video.aktualne.cz/rss/zabijak-kamila-fily/
@@ -20,19 +22,13 @@
 
 - href: https://pruhovanaliska.cz/feed/
 
-- href: https://www.youtube.com/feeds/videos.xml?channel_id=UCPutWZNOp159koK7zpUALSQ
-
 - href: http://vsechnoomode.cz/feed/
 
 - href: https://cestavlakem.cz/feed/
 
 - href: https://simonwillison.net/atom/entries/
 
-- href: https://www.youtube.com/feeds/videos.xml?channel_id=UCkxMlA7rt-mnIc1AjbyAsPw
-
 - href: http://markething.cz/feed
-
-- href: https://www.youtube.com/feeds/videos.xml?channel_id=UCErSSa3CaP_GJxmFpdjG9Jw
 
 - href: https://overreacted.io/rss.xml
 
@@ -41,8 +37,6 @@
 - href: https://bigvilik.com/feed/
 
 - href: http://retailoko.cz/feed/
-
-- href: https://www.youtube.com/feeds/videos.xml?channel_id=UCloCfuOvIQJvxetXPlQVCmA
 
 - href: https://waitbutwhy.com/feed
 
@@ -58,8 +52,6 @@
 
 - href: http://feeds.feedburner.com/HeroutuvUcitelskyNotysek
 
-- href: https://www.youtube.com/feeds/videos.xml?channel_id=UC3XTzVzaHQEd30rQbuvCtTQ
-
 - href: http://smizell.com/feed
 
 - href: https://houdekpetr.blogspot.com/feeds/posts/default
@@ -72,3 +64,26 @@
 
 - href: https://prozeny.blesk.cz/rss
   if: Branky, body, kokoti
+
+
+########################
+##  YouTube channels  ##
+########################
+
+# Anglická výslovnost s Irenou
+- href: https://www.youtube.com/feeds/videos.xml?channel_id=UCdR-hKRaYAZUn2FAHb-xMcQ
+
+# Broňa
+- href: https://www.youtube.com/feeds/videos.xml?channel_id=UCPutWZNOp159koK7zpUALSQ
+
+# Sexplanations
+- href: https://www.youtube.com/feeds/videos.xml?channel_id=UCkxMlA7rt-mnIc1AjbyAsPw
+
+# Lessons from the Screenplay
+- href: https://www.youtube.com/feeds/videos.xml?channel_id=UCErSSa3CaP_GJxmFpdjG9Jw
+
+# StyleMate
+- href: https://www.youtube.com/feeds/videos.xml?channel_id=UCloCfuOvIQJvxetXPlQVCmA
+
+# LastWeekTonight
+- href: https://www.youtube.com/feeds/videos.xml?channel_id=UC3XTzVzaHQEd30rQbuvCtTQ
