@@ -1,5 +1,5 @@
 Title: Grafický manuál
-Image: images/visualbook.jpg
+Image: images/visualbook.png
 Lang: cs
 
 
