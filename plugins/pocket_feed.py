@@ -46,7 +46,7 @@ class Item():
         if value:
             try:
                 return datetime.fromtimestamp(time.mktime(value))
-            except OverflowError:
+            except (ValueError, OverflowError):
                 return None
         return None
 
