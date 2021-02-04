@@ -44,7 +44,10 @@ class Item():
     def _parse_datetime(self, entry, prop_name):
         value = getattr(entry, f'{prop_name}_parsed', None)
         if value:
-            return datetime.fromtimestamp(time.mktime(value))
+            try:
+                return datetime.fromtimestamp(time.mktime(value))
+            except OverflowError:
+                return None
         return None
 
     def get_content(self, base_url):
