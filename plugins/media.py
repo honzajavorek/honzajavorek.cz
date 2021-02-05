@@ -6,7 +6,7 @@ from pathlib import Path
 
 from lxml import etree
 from pelican import signals, contents
-from PIL import Image
+from PIL import Image, UnidentifiedImageError
 
 sys.path.append(os.path.dirname(__file__))
 from utils import modify_html, wrap_element
@@ -110,6 +110,11 @@ def check_img_src(img_src, content_dir, max_px, max_mb):
     except IOError:
         logger.error('Image not found: %s', img_src)
         return None, None
+    except UnidentifiedImageError:
+        if filename.suffix.lower() == '.svg':
+            logger.error('Image not supported by Pillow: %s', img_src)
+            return None, None
+        raise
 
     if not is_video and size_mb > max_mb:
         logger.error('Image too large: %s (%dmb, max size: %dmb)', img_src, size_mb, max_mb)
