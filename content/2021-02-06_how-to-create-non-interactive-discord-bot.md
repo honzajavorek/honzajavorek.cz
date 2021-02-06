@@ -3,6 +3,7 @@ Image: images/rock-n-roll-monkey-FTfjMijq-Ws-unsplash.jpg
 Lang: en
 Reddit-Comments: https://www.reddit.com/r/discordapp/comments/ldxi2l/how_to_create_a_noninteractive_discord_bot_honza/
 Twitter-Comments: https://twitter.com/honzajavorek/status/1358035919807385602
+HackerNews-Comments: https://news.ycombinator.com/item?id=26046309
 
 
 I recently started a [club for Czech & Slovak juniors in tech](https://junior.guru/club/), which runs on [Discord](https://discord.com/). To be able to do some record keeping, or create a dynamic showcase of current members on the club page, I wanted to create a script, which would connect to Discord's API on a daily basis, download some data, then terminate.
