@@ -91,6 +91,7 @@ Zatím jsem ale moc nepřišel na to, jak takové přebudování udělat jako _c
 - Naceňoval jsem nabídku pro jednu firmu. Dělal jsem to vždy večer a nasekal jsem v tom postupně různé chyby a pak jsem se omlouval. Poučení: Když už mi nejde ta matika, tak bych ji aspoň měl dělat ráno, nebo nevím. Dopadlo to dobře, faktura odeslána, roční členství v klubu a logo na příručce bude!
 - Koukal jsem na [piano](https://andrewsvk.github.io/piano/), které vytvořil jeden člen klubu.
 - Koupil jsem si běhací ledvinku na mobil, ale ještě jsem v ní nebyl. Při posledním běhu jsem uklouzl na bahně a spadl do šípkového keře, takže tento týden jsem nechával odpočinout kotník.
+- Zjistil jsem, že na světě existují dvě ikony pro sdílení a podle toho, jestli používáte Google nebo Apple jste velmi pravděpodobně zvyklí jen na jednu z nich a automaticky jí rozumíte, ale té druhé ne. Anketa [zde](https://twitter.com/honzajavorek/status/1360223114714611713). Někdo mi řekl "dej tam ikonu na sdílení, takové ty tři tečky spojené čárama, tomu rozumí každý". Vůbec jsem netušil, o čem je řeč!
 
 
 ## Co plánuji
