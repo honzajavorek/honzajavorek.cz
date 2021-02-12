@@ -80,6 +80,7 @@ Zatím jsem ale moc nepřišel na to, jak takové přebudování udělat jako _c
 
 ## Další poznámky
 
+- O víkendu jsem napsal [článek o tom, jak napsat neinteraktivního Discord bota]({filename}/2021-02-06_how-to-create-non-interactive-discord-bot.md).
 - Hned z kraje týdne se [rozbilo](https://twitter.com/honzajavorek/status/1358749770886619140) napojení na API [remoteok.io](https://remoteok.io/). Opravil jsem to tak, aby se má strana s chybou vyrovnala a prostě v takovém případě vyhodila nula nabídek. Teď koukám, že už to opravili.
 - Odstranil jsem Stripe z dependencies JG, protože jej nakonec nevyuživám napřímo, ale přes Memberful.
 - Vymysleli jsme v klubu jiný název pro hlavní hlasový kanál, aby se nepřekrýval s hlavním textovým a lidé se omylem nepřeklikávali.
