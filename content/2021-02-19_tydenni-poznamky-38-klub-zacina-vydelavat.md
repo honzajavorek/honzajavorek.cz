@@ -49,6 +49,7 @@ V pátek jsem si přece jenom ale zkusil ještě něco zjistit o MkDocs, četl j
 ## Další poznámky
 
 - Pročetl jsem si v klubu všechny příspěvky, kterými se nově příchozí představili. V souvislosti s tím mě napadla celá řada témat, které bych chtěl s lidmi v klubu probrat. Pár jsem jich už sem tam vytáhl.
+- Připadal jsem si [takhle](https://twitter.com/dzello/status/1361422560617922560).
 - Členka klubu [Martina Hytychová](https://martinahytychova.github.io/) napsala článek o tom, jak v [Česko.Digital](https://cesko.digital/) začala dobrovolničením sbírat praxi jako junior programátorka. Boží! Pracuji na tom, aby to mohlo vyjít na blogu Česko.Digital, případně jinde.
 - Petr Viktorin [rozjíždí online kurz Pythonu pro začátečníky](https://www.youtube.com/watch?v=so10Ud-YlKE). Propagoval jsem kurz na několika místech.
 - Na JG se objevilo pár nových nabídek práce, takže jsem se postaral o jejich uveřejnění na [stránce s inzeráty](https://junior.guru/jobs/) a fakturoval jsem.
