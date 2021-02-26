@@ -28,16 +28,16 @@ Nová stránka navazuje na odstavce, které byly dřív přímo na stránce [/le
 
 ## Další poznámky
 
-- Koukal jsem na [yablkovo nové video](https://www.youtube.com/watch?v=3-wsqhCK-wU), kde několikrát zmiňuje JG. [Láska!](https://twitter.com/honzajavorek/status/1365023949176909833). Napadlo mě, že slovenské nabídky práce napsané v angličtině bych vlastně mohl do JG přidat snadno. Naprogramovat podporu pro slovenčinu do mého filtrovacího robota je hodně práce, ale angličtinu už dávno umí, tak lepší než nic. Taky bych chtěl yablkova videa dát konečně na vhodná místa příručky, to už plánuju dlouho.
-- Dělal jsem Mílovi review [článku o pohovorech v IT](https://milavotradovec.cz/blog/pairing-makes-better-interviews-than-leetcode/). Téma se mi líbilo a přišlo mi hezky zpracované, takže jsem jej vyhajpoval, že bude mít určitě úspěch na HackerNews. Dostalo to [tři hlasy](https://news.ycombinator.com/item?id=26238905). Příště zkusíme titulek "I didn't buy Apple Silicon".
+- Koukal jsem na [yablkovo nové video](https://www.youtube.com/watch?v=3-wsqhCK-wU), kde několikrát zmiňuje JG. [Láska!](https://twitter.com/honzajavorek/status/1365023949176909833) Napadlo mě, že slovenské nabídky práce napsané v angličtině bych vlastně mohl do JG přidat snadno. Naprogramovat podporu pro slovenčinu do mého filtrovacího robota je hodně práce, ale angličtinu už dávno umí, tak lepší než nic. Taky bych chtěl yablkova videa dát konečně na vhodná místa příručky, to už plánuju dlouho.
+- Dělal jsem kamarádovi Mílovi review [článku o pohovorech v IT](https://milavotradovec.cz/blog/pairing-makes-better-interviews-than-leetcode/). Téma se mi líbilo a přišlo mi hezky zpracované, takže jsem jej vyhajpoval, že bude mít určitě úspěch na HackerNews. Dostalo to [tři hlasy](https://news.ycombinator.com/item?id=26238905). Nepomohl ani vzhled jeho blogu, který nápadně připomíná [Daring Fireball](https://daringfireball.net/). Příště zkusíme titulek "I didn't buy Apple Silicon".
 - Začal jsem na sociální sítě dávat první ohlasy lidí na klub (viz předešlé poznámky). Vytvořil jsem si v Keynote čtvercové slajdy, na kterých jsou citáty lidí a dole je zcela nevkusně vycentrovaný žlutý pruh s kuřetem a URL na klub. Pro každý výrok mám jeden slajd a pak to dávám exportovat do PNG obrázků. Z toho designu mi trochu krvácí oči, ale nechtěl jsem tomu zatím věnovat víc času.
-- Do podmenu příručky jsem vrátil čísla 1 2 3, která kvůli změnám v minulém týdnu zmizela. Nová stránka pak dostala číslo 0, na což mi investorka řekla, že je to takové hezky programátorské :D
+- Do podmenu příručky jsem vrátil čísla 1 2 3, která kvůli změnám v minulém týdnu zmizela. Nová stránka pak dostala číslo 0, na což mi investorka řekla, že je to takové hezky programátorské :)
 - Jedna personálka se mi ozvala, jestli spolu něco nevymyslíme. Tak jsem si s nimi psal a vymýšlím, co vymyslíme.
 - Psal jsem si s Vladlenou a vyzvídal, jak získala práci. Napsala totiž na Facebook „Díky junior.guru klubu jsem si za dva týdny sehnala práci ;) Děkuji!“ Z takovýchto úspěchů mám hroznou radost a dává mi to víru, že to co dělám, dává fakt smysl <3
 - Přidal jsem [svého bývalého kolegu z Apiary](https://www.podnikatel.cz/clanky/na-kvetinove-farme-vsazeji-na-cerstvost-a-lokalnost-jak-jejich-byznys-funguje/) do [příběhů](https://junior.guru/#stories).
 - Napsal jsem do Romea, že pokud by věděli o někom, komu by můj klub pomohl, tak ať dají vědět a domluvíme se.
-- Sem tam jsem mrknul na Slack Česko.Digital jak se to má s pozicemi nebo s článkem (viz předešlé poznámky). S článkem se to vyvíjí dobře, nejspíš opravdu vyjde u nich na blogu!
-- Poslal jsem [únorový newsletter](https://us3.campaign-archive.com/?u=7d3f89ef9b2ed953ddf4ff5f6&id=0084d29320), tentokrát dokonce už v únoru :D
+- Sem tam jsem mrknul na Slack [Česko.Digital](https://cesko.digital/) jak se to má s pozicemi nebo s článkem (viz předešlé poznámky). S článkem se to vyvíjí dobře, nejspíš opravdu vyjde u nich na blogu!
+- Poslal jsem dnes [únorový newsletter](https://us3.campaign-archive.com/?u=7d3f89ef9b2ed953ddf4ff5f6&id=0084d29320), tentokrát dokonce už v únoru :D
 
 
 ## Co plánuji
