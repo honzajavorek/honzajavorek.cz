@@ -11,7 +11,7 @@ Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
 Obskurní kombinace z titulku těchto poznámek je pouze kreativní způsob, jak popsat týden, v němž jsem toho popravdě zas tak moc nestihl.
 
-Zubaře mám na druhém konci republiky a návštěvu u něj jsem kvůli covidu-19 stále odsouval. Teď už jsme se se ženou konečně objednali, ale přišla nová omezení. Nakonec jsem se rozhodli cestu nezrušit, návštěva lékaře byla povolena a my už to fakt chtěli mít po tak dlouhé pauze za sebou. Vlaky byly prázdné, takže super, prohlášení po nás nikdo nechtěl, zuby máme zdravé.
+Zubaře mám na druhém konci republiky a návštěvu u něj jsem kvůli covidu-19 stále odsouval. Teď už jsme se se ženou konečně objednali, ale přišla nová omezení. Nakonec jsme se rozhodli cestu nezrušit, návštěva lékaře byla povolena a my už to fakt chtěli mít po tak dlouhé pauze za sebou. Vlaky prázdné, prohlášení nikdo nechtěl, zuby zdravé. Takže super.
 
 Jak už to tak někdy bývá, dlouho se neděje nic a pak se najednou děje všechno naráz. Takže hned druhý den přišli do našeho bytu týpci vyrubat a vyměnit okna. Během šesti hodin větrání, kdy se teplota v bytě ustálila na zhruba 12 stupňích, jsem se na práci moc soustředit nedokázal. Eskapismus mě zavedl na zajímavý [blog o středověku](https://going-medieval.com/), kde jsem přečetl asi deset článků (nasdílel jsem jen pár). Londýnská historička Eleanor Janega prolíná historii se současností, vyvrací různé mýty. Nebere si servítky a slova do článků z ní padají jak z naštvané raperky protestující proti celému světu. Pro někoho to asi nebude, mě to baví. Studovala Karla IV., Milíče z Kroměříže & _crew_, takže se v článcích občas objeví i něco přímo z naší historie.
 
