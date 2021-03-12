@@ -12,7 +12,7 @@ Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
 ## MDŽ
 
-Rozhodl jsem se udělat slevovou akci na MDŽ a různým komunitám pro ženy nabídnout 15 % slevový kupón na roční členství v klubu pro jejich členky. Smál jsem se, že mi nikdo neřekl, že když udělám službu nejlevnější jak jen to jde, tak se z ní pak nedají moc snadno dávat slevy. Ale budiž :)
+Rozhodl jsem se udělat slevovou akci na MDŽ a různým komunitám pro ženy nabídnout 15 % slevový kupón na roční členství v klubu pro jejich členky. Smál jsem se s kamarádem, že mi nikdo neřekl, že když udělám službu nejlevnější jak jen to jde, tak se z ní pak nedají moc snadno dávat slevy. Ale budiž :)
 
 Napsal jsem [Czechitas](https://www.czechitas.cz/) (rozhodly se nesdílet to), [Femme Palette](https://www.femmepalette.com/) (vyšlo), [CyberMagnolia](https://cybermagnolia.com/) (vyšlo), [#holkyzmarketingu](https://holkyzmarketingu.cz/) (poděkovaly, ale nevím, jestli to nakonec někde sdílely), [ReactGirls](https://reactgirls.cz/) (vyšlo), [PyLadies](https://pyladies.cz/) (vyšlo), Women of OCI/Oracle (reakce spíš nic), [Aj Ty v IT](https://ajtyvit.sk/) (ghostnuli mě, ale nezlobím se, neznáme se, nemám s nimi žádné další vztahy, mohl jsem působit jako náhodný internetový spam). Byť se to Czechitas rozhodly nesdílet skrze své hlavní kanály, dal jsem to aspoň do FB skupiny Czechitas Příležitosti, kde mi příspěvek schválili. Nutno také podotknout, že jsem většinu kontaktoval na poslední chvíli, tzn. zhruba 2-3 pracovní dny před akcí. Pokud jsou další komunity pro ženy, které jsem
 
