@@ -10,6 +10,7 @@ import requests
 
 sys.path.append(os.curdir)
 import pelicanconf
+import strava
 
 
 DEBUG = os.getenv('DEBUG')
@@ -32,6 +33,11 @@ res.raise_for_status()
 articles = [a for a in pocket_recommendations.parse(res.content, today=today)
             if a['pocket_recommended_at'] >= last_weeknotes_date]
 articles.reverse()
+
+activities_start_date = last_weeknotes_date + timedelta(days=1)
+activities = strava.get_activities(strava.get_access_token())
+activities_stats = strava.calc_stats(strava.filter_by_dates(activities, activities_start_date, today))
+activities_text = strava.stats_to_text(activities_start_date, today, activities_stats)
 
 if len(sys.argv) > 1:
     highlights = ' '.join(sys.argv[1:])
@@ -66,6 +72,7 @@ Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
 -
 -
+- {activities_text}
 
 
 ## Co plánuji
