@@ -18,9 +18,9 @@ STRAVA_CLIENT_ID = os.environ['STRAVA_CLIENT_ID']
 STRAVA_CLIENT_SECRET = os.environ['STRAVA_CLIENT_SECRET']
 ACTIVITIES_PER_PAGE = 200
 ACTIVITY_TYPES = {
-    'run': 'běhal',
-    'walk': 'se procházel',
-    'hike': 'chodil po túrách',
+    'run': 'naběhal',
+    'walk': 'při procházkách nachodil',
+    'hike': 'na túrách nachodil',
 }
 
 
@@ -96,7 +96,7 @@ def calc_stats(activities):
 
 def stats_to_text(start_date, end_date, stats):
     parts = [
-        f"{substats['count']}⨉ {ACTIVITY_TYPES[activity_type]} ({substats['distance']} km, {substats['time']} hodin)"
+        f"{ACTIVITY_TYPES[activity_type]} {substats['distance']} km"
         for activity_type, substats in stats.items()
     ]
 
