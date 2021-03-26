@@ -40,15 +40,19 @@ def get_access_token():
         strava_tokens = response.json()
         STRAVA_TOKENS_PATH.write_text(json.dumps(strava_tokens))
 
-    if strava_tokens['expires_at'] < time.time():
-        response = requests.post(url='https://www.strava.com/oauth/token',
-                                 data=dict(client_id=STRAVA_CLIENT_ID,
-                                           client_secret=STRAVA_CLIENT_SECRET,
-                                           code=strava_tokens['refresh_token'],
-                                           grant_type='refresh_token'))
-        response.raise_for_status()
-        strava_tokens = response.json()
-        STRAVA_TOKENS_PATH.write_text(json.dumps(strava_tokens))
+    try:
+        if strava_tokens['expires_at'] < time.time():
+            response = requests.post(url='https://www.strava.com/oauth/token',
+                                    data=dict(client_id=STRAVA_CLIENT_ID,
+                                            client_secret=STRAVA_CLIENT_SECRET,
+                                            code=strava_tokens['refresh_token'],
+                                            grant_type='refresh_token'))
+            response.raise_for_status()
+            strava_tokens = response.json()
+            STRAVA_TOKENS_PATH.write_text(json.dumps(strava_tokens))
+    except requests.RequestException:
+        STRAVA_TOKENS_PATH.unlink()
+        return get_access_token()
 
     return strava_tokens['access_token']
 
