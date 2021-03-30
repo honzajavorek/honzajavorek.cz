@@ -87,7 +87,6 @@
 <span class="cp">&lt;?</span> <span class="o">...</span> <span class="cp">?&gt;</span><span class="x"> je totez jako delsi </span><span class="cp">&lt;?php</span> <span class="o">...</span> <span class="cp">?&gt;</span><span class="x"></span>
 </code></code></pre>
 
-
 <p>V běžném PHP je to celkem na uškrcení, ale v šablonách dle mého názoru k nezaplacení.</p>
 <h2 id="jtemplate">JTemplate<small class="permalink"><a href="#jtemplate" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Ve svých projektech používám šablony postavené na vlastní třídě <a href="http://code.google.com/p/joss-cms/source/browse/trunk/class/JTemplate.php">JTemplate</a> (tady se vyplatí kliknout, vážně). Spolu s dalšími <strong>umí výstupy cachovat</strong> a tím razantně zvyšovat výkon aplikace. V zásadě je postavená na myšlence popsané ve výše odkazovaném článku Briana Loziera.</p>
@@ -107,7 +106,6 @@
     <span class="k">include</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">tpl</span><span class="o">-&gt;</span><span class="na">file</span><span class="p">);</span> <span class="c1">// include the file</span>
 <span class="p">}</span>
 </code></code></pre>
-
 
 <p>První větev testuje, jestli jsou krátké značky vypnuty. Jestli ne, přejde plynule do <code>else</code>, kde proběhne zpracování přes <code>include</code> běžným způsobem. Pokud jsou vypnuty (tzn. server je tvrdohlavý a nepovolí je i přesto, že je v .htaccess a <a href="http://cz.php.net/manual/en/function.ini-set.php">ini_set</a> nastaveno aby zapnuty byly), dojde na slušné využití jedné z tabuizovaných funkcí v PHP, <a href="http://cz2.php.net/manual/en/function.eval.php">eval</a> :) . Už ten název…</p>
 <p>Jeden kouzelný řádek totiž způsobí, že se vezme text zdrojového souboru šablony, regulárním výrazem se v něm nahradí krátké značky za klasické dlouhé s <code>&lt;?php</code> apod. a předhodí se funkci <code>eval</code>, která následně kód PHP vykoná. Ne, čistěji to nejde a přijde mi to jako oprávněné a elegantní využití této funkce, které řeší významný problém a stírá rozdíly v nastavení serverů. No jak by řekl Béda Trávníček: „A to se vyplatí!“</p>

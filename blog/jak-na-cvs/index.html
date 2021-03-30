@@ -87,21 +87,17 @@
 <pre class="highlight"><code><span></span><code><span class="k">set</span> <span class="nv">CVSROOT</span><span class="p">=</span>:pserver:adminlogin@localhost:/cvs
 </code></code></pre>
 
-
 <p>nebo, pokud jste měnili port,</p>
 <pre class="highlight"><code><span></span><code><span class="k">set</span> <span class="nv">CVSROOT</span><span class="p">=</span>:pserver:adminlogin@localhost:0000:/cvs
 </code></code></pre>
-
 
 <p>Místo adminlogin pište svůj administrátorský login (já lm), místo 0000 svůj port a místo /cvs název repository (ten vypisuje Control Panel v přehledu repositories v prvním sloupci tabulky). Pak už si můžete hrát s účty (přidávat a měnit hesla):</p>
 <pre class="highlight"><code><span></span><code>cvs passwd -a nejakylogin
 </code></code></pre>
 
-
 <p>Zeptá se na nové heslo, to zašifruje a spolu s loginem plácne do souboru <strong>passwd</strong> v CVSROOT. Dále domapujeme uživatele Windows k CVS a to poeditováním passwd do následující podoby:</p>
 <pre class="highlight"><code><span></span><code>&lt;login&gt;:&lt;heslo&gt;:&lt;windows user&gt;
 </code></code></pre>
-
 
 <p>Je hotovo. Teď už se jen připojit. Na všechno jsou příkazy v CLI, ale zkušenější člověk se s tím nemusí párat a může poeditovat nějaký ten soubor ručně, když k tomu má přístup nevzdáleně a ví co dělá. Akorát heslo je třeba tvořit přes příkazovou řádku, protože se šifruje.</p>
 <h2 id="vzdaleny-pristup-pro-kolegy">Vzdálený přístup pro kolegy<small class="permalink"><a href="#vzdaleny-pristup-pro-kolegy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
@@ -110,11 +106,9 @@
 <pre class="highlight"><code><span></span><code>:pserver:jehoskvelylogin@vaseipadresa:port:repository
 </code></code></pre>
 
-
 <p>Například:</p>
 <pre class="highlight"><code><span></span><code>:pserver:karkulka@0.255.0.255:/work/cvs
 </code></code></pre>
-
 
 <p>a musíte mu samozřejmě napsat i přidělené heslo. Místo IP můžete použít i DNS adresu, pokud nějakou máte.</p>
 <h2 id="_1">конец<small class="permalink"><a href="#_1" title="Trvalý odkaz na tento nadpis">#</a></small></h2>

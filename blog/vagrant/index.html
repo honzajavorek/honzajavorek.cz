@@ -109,7 +109,6 @@ vše lze jednoduše udělat tak, aby to po spuštění <strong>vypadalo jako mí
 <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">network</span> <span class="s2">"forwarded_port"</span><span class="p">,</span> <span class="ss">guest</span><span class="p">:</span> <span class="mi">9200</span><span class="p">,</span> <span class="ss">host</span><span class="p">:</span> <span class="mi">9200</span>  <span class="c1"># ElasticSearch</span>
 </code></code></pre>
 
-
 <p>Má to ale i své háčky - např. PostgreSQL takto logicky nepojede přes socket a spolu s dalšími se
 musí dodatečně nastavit, aby obsluhovala i dotazy z "venku". Pro virtuálku je totiž náš OS a z něj
 přicházející spojení vlastně jako <strong>jakýkoliv jiný klient někde z internetu</strong>. Zase si člověk díky tomu

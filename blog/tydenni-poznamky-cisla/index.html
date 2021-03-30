@@ -107,7 +107,6 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <span class="n">metric_C</span> <span class="o">=</span> <span class="n">aggregate</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
 </code></code></pre>
 
-
 <p>Moc se mi to nelíbilo a s více metrikami už to bylo i hodně nepřehledné. Navíc byl kód pro jednotlivé metriky na různých místech a uprostřed všeho byl nějaký dotaz na API, který jakožto side-effect velmi znepříjemňuje testování.</p>
 <p>Použil jsem tedy trik s generátory, který mi umožnil dát kód pro každou metriku na jedno místo:</p>
 <pre class="highlight"><code><span></span><code><span class="k">def</span> <span class="nf">metric_A</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
@@ -123,7 +122,6 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
     <span class="k">yield</span> <span class="n">aggregate</span><span class="p">(</span><span class="n">report</span><span class="p">)</span>
 </code></code></pre>
 
-
 <p>Každá metrika je teď jednoduchá funkce, kde je vše hezky na jednom místě pro každou metriku a která nemá žádný side-effect, takže ji mohu i krásně testovat. Použije se takto:</p>
 <pre class="highlight"><code><span></span><code><span class="n">args</span> <span class="o">=</span> <span class="o">...</span>  <span class="c1"># argumenty pro každou z funkcí, jen příklad</span>
 <span class="n">metric_fns</span> <span class="o">=</span> <span class="p">[</span><span class="n">fn</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="k">for</span> <span class="n">fn</span> <span class="ow">in</span> <span class="p">[</span><span class="n">metric_A</span><span class="p">,</span> <span class="n">metric_B</span><span class="p">,</span> <span class="n">metric_C</span><span class="p">]]</span>
@@ -137,7 +135,6 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
     <span class="n">metrics</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">metrics</span><span class="p">)</span>  <span class="c1"># {'A': 123, 'B': 345, 'C': 678}</span>
 </code></code></pre>
-
 
 <p>Je to méně explicitní a pro méně zkušeného programátora zřejmě dost kryptické, ale zbytek kódu se zase se dost zjednodušil, hlavně psaní samotných funkcí pro metriky.</p>
 <h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>

@@ -92,7 +92,6 @@ Photo by <a href="https://unsplash.com/@rocknrollmonkey">Rock'n Roll Monkey</a><
 <span class="n">client</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s1">'... token ...'</span><span class="p">)</span>
 </code></code></pre>
 
-
 <p>As you can see, this is an interactive bot, which prints out a message when it starts, then runs indefinitely and listens to messages, reacting to greetings. Under the hood, the code uses <a href="https://docs.python.org/3/library/asyncio.html">asyncio</a> to communicate with the API, and as soon as the <code>client.run()</code> happens, it runs in an asyncio loop forever. That's kind of cool, but we won't need any of that. We want to spin up the loop, do whatever we need, then immediately stop the loop and terminate the program.</p>
 <h2 id="creating-a-one-time-script">Creating a one-time script<small class="permalink"><a href="#creating-a-one-time-script" title="Permanent link to this heading">#</a></small></h2>
 <pre class="highlight"><code><span></span><code><span class="kn">import</span> <span class="nn">discord</span>
@@ -106,7 +105,6 @@ Photo by <a href="https://unsplash.com/@rocknrollmonkey">Rock'n Roll Monkey</a><
 <span class="n">client</span> <span class="o">=</span> <span class="n">NonInteractiveClient</span><span class="p">()</span>
 <span class="n">client</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s1">'... token ...'</span><span class="p">)</span>
 </code></code></pre>
-
 
 <p>The code above is very different, but part of it is because it takes a different approach to using the client. The previous program instantiated the client class and then used the <code>@client.event</code> decorators to register listeners to various events. This code inherits from the client class, implements the listeners as methods, and then runs this custom client's loop. I suspect these approaches are equivalent, but when I searched for solutions and asked around, this inheritance-based approach was what I got, so this is what I'm using in my solution.</p>
 <p>When <code>client.run()</code> executes, it spins up an endless loop. The <em>ready</em> event fires, which triggers the <code>on_ready()</code> method. In it, we use <code>self.wait_until_ready()</code> until everything is in place. Now we can do our non-interactive work, which is represented by the <code>print()</code> call in the example. When we're done, we explicitly close the client, which also stops the loop and lets the program to end, instead of hanging forever.</p>
@@ -128,7 +126,6 @@ Photo by <a href="https://unsplash.com/@rocknrollmonkey">Rock'n Roll Monkey</a><
 <span class="n">client</span> <span class="o">=</span> <span class="n">NonInteractiveClient</span><span class="p">()</span>
 <span class="n">client</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s1">'... token ...'</span><span class="p">)</span>
 </code></code></pre>
-
 
 <p>In the example above, we added an <code>on_error()</code> listener method, which by default eats errors, but we implemented it in a way that it re-raises them. This way we can work around the discord.py behavior, but it isn't enough for the program to crash on error, because the asyncio loop will still eat it.</p>
 <h3 id="working-around-asyncio">Working around asyncio<small class="permalink"><a href="#working-around-asyncio" title="Permanent link to this heading">#</a></small></h3>
@@ -159,7 +156,6 @@ Photo by <a href="https://unsplash.com/@rocknrollmonkey">Rock'n Roll Monkey</a><
 <span class="k">if</span> <span class="n">exc</span><span class="p">:</span>
     <span class="k">raise</span> <span class="n">exc</span>
 </code></code></pre>
-
 
 <p>So the <code>client.loop.set_exception_handler()</code> allows us to specify our own error handler. I've found it <a href="https://docs.python.org/3/library/asyncio-eventloop.html#asyncio.loop.set_exception_handler">deep in the Python docs</a>. It expects a <em>handler</em>. That's a fancy name for a function, which would be called in case an error occurs. In such case, it will be given the <em>loop</em> object as the first argument and something mysterious called <em>context</em> as the second. The docs say this:</p>
 <blockquote>
@@ -207,7 +203,6 @@ Photo by <a href="https://unsplash.com/@rocknrollmonkey">Rock'n Roll Monkey</a><
 <span class="k">if</span> <span class="n">exc</span><span class="p">:</span>
     <span class="k">raise</span> <span class="n">exc</span>
 </code></code></pre>
-
 
 <h2 id="closing-notes">Closing notes<small class="permalink"><a href="#closing-notes" title="Permanent link to this heading">#</a></small></h2>
 <p>This all took me a while to figure out. It's not very beautiful, but it seems to work as I need. If anyone knows of a better, shorter, nicer code, which achieves the same, I'd be happy if you share it with me in the comments. Also, thanks a lot to <a href="https://github.com/Rapptz">@Rapptz</a> for <a href="https://github.com/Rapptz/discord.py/discussions/6278">guiding me the right way</a>.</p></div></div></div></div>

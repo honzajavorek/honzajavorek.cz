@@ -136,7 +136,6 @@ Fotka od &lt;a href="https://unsplash.com/@honza_kahanek"&gt;Honzy Kahánka&lt;/
 &lt;span class="nb"&gt;alias&lt;/span&gt; &lt;span class="nv"&gt;pyenv&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"arch -x86_64 /usr/local/bin/pyenv"&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
-
 &lt;p&gt;Potom je pyenv schopen nainstalovat Python jaký potřebuju a pipenv je dokonce natolik inteligentní, že mu ani nemusím dávat žádné cesty a on si pro vytvoření virtuálního prostředí ten správný Python (tedy ten, který je specifikovaný v Pipfile) automaticky najde i v hloubi pyenvích adresářů. Tož to by bylo. Přeinstaloval jsem lokálně závislosti JG a vše funguje skvěle.&lt;/p&gt;
 &lt;h2 id="dopisovani"&gt;Dopisování&lt;small class="permalink"&gt;&lt;a href="#dopisovani" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;Tento týden jsem hodně času věnoval komunikaci a posouvání různých rozjednaných dohod vpřed. A to jsem se ani nezvládl ještě připomenout všem.&lt;/p&gt;
@@ -558,7 +557,6 @@ Photo by &lt;a href="https://unsplash.com/@rocknrollmonkey"&gt;Rock'n Roll Monke
 &lt;span class="n"&gt;client&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'... token ...'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
-
 &lt;p&gt;As you can see, this is an interactive bot, which prints out a message when it starts, then runs indefinitely and listens to messages, reacting to greetings. Under the hood, the code uses &lt;a href="https://docs.python.org/3/library/asyncio.html"&gt;asyncio&lt;/a&gt; to communicate with the API, and as soon as the &lt;code&gt;client.run()&lt;/code&gt; happens, it runs in an asyncio loop forever. That's kind of cool, but we won't need any of that. We want to spin up the loop, do whatever we need, then immediately stop the loop and terminate the program.&lt;/p&gt;
 &lt;h2 id="creating-a-one-time-script"&gt;Creating a one-time script&lt;small class="permalink"&gt;&lt;a href="#creating-a-one-time-script" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;discord&lt;/span&gt;
@@ -572,7 +570,6 @@ Photo by &lt;a href="https://unsplash.com/@rocknrollmonkey"&gt;Rock'n Roll Monke
 &lt;span class="n"&gt;client&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;NonInteractiveClient&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;client&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'... token ...'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
-
 
 &lt;p&gt;The code above is very different, but part of it is because it takes a different approach to using the client. The previous program instantiated the client class and then used the &lt;code&gt;@client.event&lt;/code&gt; decorators to register listeners to various events. This code inherits from the client class, implements the listeners as methods, and then runs this custom client's loop. I suspect these approaches are equivalent, but when I searched for solutions and asked around, this inheritance-based approach was what I got, so this is what I'm using in my solution.&lt;/p&gt;
 &lt;p&gt;When &lt;code&gt;client.run()&lt;/code&gt; executes, it spins up an endless loop. The &lt;em&gt;ready&lt;/em&gt; event fires, which triggers the &lt;code&gt;on_ready()&lt;/code&gt; method. In it, we use &lt;code&gt;self.wait_until_ready()&lt;/code&gt; until everything is in place. Now we can do our non-interactive work, which is represented by the &lt;code&gt;print()&lt;/code&gt; call in the example. When we're done, we explicitly close the client, which also stops the loop and lets the program to end, instead of hanging forever.&lt;/p&gt;
@@ -594,7 +591,6 @@ Photo by &lt;a href="https://unsplash.com/@rocknrollmonkey"&gt;Rock'n Roll Monke
 &lt;span class="n"&gt;client&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;NonInteractiveClient&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;client&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'... token ...'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
-
 
 &lt;p&gt;In the example above, we added an &lt;code&gt;on_error()&lt;/code&gt; listener method, which by default eats errors, but we implemented it in a way that it re-raises them. This way we can work around the discord.py behavior, but it isn't enough for the program to crash on error, because the asyncio loop will still eat it.&lt;/p&gt;
 &lt;h3 id="working-around-asyncio"&gt;Working around asyncio&lt;small class="permalink"&gt;&lt;a href="#working-around-asyncio" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
@@ -625,7 +621,6 @@ Photo by &lt;a href="https://unsplash.com/@rocknrollmonkey"&gt;Rock'n Roll Monke
 &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;exc&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="n"&gt;exc&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
-
 
 &lt;p&gt;So the &lt;code&gt;client.loop.set_exception_handler()&lt;/code&gt; allows us to specify our own error handler. I've found it &lt;a href="https://docs.python.org/3/library/asyncio-eventloop.html#asyncio.loop.set_exception_handler"&gt;deep in the Python docs&lt;/a&gt;. It expects a &lt;em&gt;handler&lt;/em&gt;. That's a fancy name for a function, which would be called in case an error occurs. In such case, it will be given the &lt;em&gt;loop&lt;/em&gt; object as the first argument and something mysterious called &lt;em&gt;context&lt;/em&gt; as the second. The docs say this:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -673,7 +668,6 @@ Photo by &lt;a href="https://unsplash.com/@rocknrollmonkey"&gt;Rock'n Roll Monke
 &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;exc&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="n"&gt;exc&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
-
 
 &lt;h2 id="closing-notes"&gt;Closing notes&lt;small class="permalink"&gt;&lt;a href="#closing-notes" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;This all took me a while to figure out. It's not very beautiful, but it seems to work as I need. If anyone knows of a better, shorter, nicer code, which achieves the same, I'd be happy if you share it with me in the comments. Also, thanks a lot to &lt;a href="https://github.com/Rapptz"&gt;@Rapptz&lt;/a&gt; for &lt;a href="https://github.com/Rapptz/discord.py/discussions/6278"&gt;guiding me the right way&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="blog"></category></entry><entry><title>Týdenní poznámky #36: První týden klubu</title><link href="https://honzajavorek.cz/blog/tydenni-poznamky-36-prvni-tyden-klubu/" rel="alternate"></link><published>2021-02-05T00:00:00+01:00</published><updated>2021-02-05T00:00:00+01:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2021-02-05:/blog/tydenni-poznamky-36-prvni-tyden-klubu/</id><summary type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Utekl další týden (1.2. — 5.2.) a tak &lt;a href="https://honzajavorek.cz/blog/tydenni-poznamky-35-obchodni-podminky-a-tak/"&gt;stejně jako minule&lt;/a&gt; sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám &lt;a href="https://junior.guru/donate/"&gt;podporovatele&lt;/a&gt;, a ty by mohlo zajímat, jestli se neflákám. Taky je to …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Utekl další týden (1.2. — 5.2.) a tak &lt;a href="https://honzajavorek.cz/blog/tydenni-poznamky-35-obchodni-podminky-a-tak/"&gt;stejně jako minule&lt;/a&gt; sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám &lt;a href="https://junior.guru/donate/"&gt;podporovatele&lt;/a&gt;, a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.&lt;/p&gt;
@@ -1269,7 +1263,6 @@ brew&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 &lt;span class="o"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
-
 &lt;p&gt;When I want to install an optimized GUI app, I can use &lt;code&gt;brew-arm install firefox&lt;/code&gt;. For anything else, I use &lt;code&gt;brew&lt;/code&gt;. The &lt;code&gt;HOMEBREW_NO_ENV_FILTERING=1&lt;/code&gt; is needed because I had some issues with the native Homebrew finding Git in the path. Maybe it was because I messed up with my setup too much, but whatever the reason, this has helped. I don't install CLI apps with the native Homebrew, so I don't have it in the &lt;code&gt;$PATH&lt;/code&gt;. I had issues with the binaries and various other things stepping on each other's toes.&lt;/p&gt;
 &lt;p&gt;I also have this handy bash function for upgrading stuff, which allows me not to forget about something. With this I only need to type &lt;code&gt;upgrade&lt;/code&gt; to my terminal from time to time:&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;upgrade&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
@@ -1282,24 +1275,20 @@ brew&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 &lt;span class="o"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
-
 &lt;h3 id="vs-code"&gt;VS Code&lt;small class="permalink"&gt;&lt;a href="#vs-code" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
 &lt;p&gt;Visual Studio Code is now optimized for Apple Silicon, or at least I was able to install it by &lt;code&gt;brew-arm install visual-studio-code&lt;/code&gt; and it works and it's snappy. I hated that app on my last laptop, it was very slow and bloated, and I've been considering switching to something else. Now I don't care enough to see whether it's actually optimized or not, it's faster than my brain and that's quite enough. Unlike the other GUI apps I have, this one I want to have accessible from the terminal. It has a simple solution though, I just needed to &lt;a href="https://code.visualstudio.com/docs/setup/mac#_alternative-manual-instructions"&gt;follow the official tutorial&lt;/a&gt; and put this to my &lt;code&gt;.bash_profile&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="nv"&gt;$PATH&lt;/span&gt;&lt;span class="s2"&gt;:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
-
 
 &lt;h3 id="python"&gt;Python&lt;small class="permalink"&gt;&lt;a href="#python" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
 &lt;p&gt;With Homebrew over Rosetta 2, installing Python 3 works just fine. It might work natively too, but as I mentioned, I decided not to mess with that yet. I usually also have &lt;code&gt;pipenv&lt;/code&gt; and &lt;code&gt;poetry&lt;/code&gt; installed globally, and over past years, by various trials and errors, I ended up installing those two by:&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ pip3 install --user poetry pipenv
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
-
 &lt;p&gt;Then it's necessary to put this into my &lt;code&gt;.bash_profile&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# pipenv, poetry&lt;/span&gt;
 &lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;python3 -m site --user-base&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;/bin:&lt;/span&gt;&lt;span class="nv"&gt;$PATH&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
-
 
 &lt;p&gt;I upgrade those two regulary whenever I upgrade Homebrew, so I lied to you, my function for upgrading actually looks like this:&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;upgrade&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
@@ -1313,7 +1302,6 @@ brew&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
   pip3 install --user pipenv poetry --upgrade
 &lt;span class="o"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
-
 
 &lt;p&gt;I hate it when new Python version gets released, Homebrew automatically upgrades it, all my virtual environments with their symlinks get broken, and I have to re-create them one by one. I was lazy to solve that issue on my previous laptop, but with the new one I wanted to do it in a smarter way, managing Python installations by &lt;code&gt;pyenv&lt;/code&gt;. However, I got errors. It seems &lt;code&gt;pyenv&lt;/code&gt;, although installed with Rosetta 2, has issues to get Pythons to Apple Silicon. So I gave up on that for now and I'm going to do it the old way, using Homebrew-managed Python 3, and swearing every time it upgrades system-wide.&lt;/p&gt;
 &lt;h3 id="terminal"&gt;Terminal&lt;small class="permalink"&gt;&lt;a href="#terminal" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
@@ -2666,7 +2654,6 @@ Fotka od &lt;a href="https://unsplash.com/@honza_kahanek"&gt;Honzy Kahánka&lt;/
     &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
-
 &lt;p&gt;Tenhle kód projde, protože druhá funkce se jmenuje stejně jako první a přepíše ji. První se nikdy nepustí a pytestu to nijak nevadí. Měl jsem tedy několik testů, které jsem myslel, že se pouští a procházejí, ale nebylo tomu tak a kód nefungoval správně.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Poučení:&lt;/strong&gt; Na formátování kódu kašlat, zvlášť když na projektu nedělá nikdo jiný než já. Ať už jde o kontrolu stylu nebo jeho vynucení přes věci jako &lt;a href="https://github.com/timothycrosley/isort/"&gt;isort&lt;/a&gt; nebo &lt;a href="https://github.com/psf/black"&gt;black&lt;/a&gt;, je to v začátku prostě zbytečná práce navíc. To ale neplatí pro věci, které hlídají opravdové chyby. &lt;a href="https://github.com/PyCQA/pyflakes"&gt;pyflakes&lt;/a&gt; jsem měl mít v projektu od prvního dne!&lt;/p&gt;
 &lt;h2 id="menu-a-novy-prouzek-pod-nim"&gt;Menu a nový proužek pod ním&lt;small class="permalink"&gt;&lt;a href="#menu-a-novy-prouzek-pod-nim" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
@@ -2918,7 +2905,6 @@ Fotka od &lt;a href="https://unsplash.com/@honza_kahanek"&gt;Honzy Kahánka&lt;/
 &lt;span class="n"&gt;metric_C&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;aggregate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
-
 &lt;p&gt;Moc se mi to nelíbilo a s více metrikami už to bylo i hodně nepřehledné. Navíc byl kód pro jednotlivé metriky na různých místech a uprostřed všeho byl nějaký dotaz na API, který jakožto side-effect velmi znepříjemňuje testování.&lt;/p&gt;
 &lt;p&gt;Použil jsem tedy trik s generátory, který mi umožnil dát kód pro každou metriku na jedno místo:&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;metric_A&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
@@ -2934,7 +2920,6 @@ Fotka od &lt;a href="https://unsplash.com/@honza_kahanek"&gt;Honzy Kahánka&lt;/
     &lt;span class="k"&gt;yield&lt;/span&gt; &lt;span class="n"&gt;aggregate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;report&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
-
 &lt;p&gt;Každá metrika je teď jednoduchá funkce, kde je vše hezky na jednom místě pro každou metriku a která nemá žádný side-effect, takže ji mohu i krásně testovat. Použije se takto:&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;args&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;  &lt;span class="c1"&gt;# argumenty pro každou z funkcí, jen příklad&lt;/span&gt;
 &lt;span class="n"&gt;metric_fns&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;fn&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;fn&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;metric_A&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;metric_B&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;metric_C&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt;
@@ -2948,7 +2933,6 @@ Fotka od &lt;a href="https://unsplash.com/@honza_kahanek"&gt;Honzy Kahánka&lt;/
     &lt;span class="n"&gt;metrics&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;metrics&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="c1"&gt;# {'A': 123, 'B': 345, 'C': 678}&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
-
 
 &lt;p&gt;Je to méně explicitní a pro méně zkušeného programátora zřejmě dost kryptické, ale zbytek kódu se zase se dost zjednodušil, hlavně psaní samotných funkcí pro metriky.&lt;/p&gt;
 &lt;h2 id="dalsi-poznamky"&gt;Další poznámky&lt;small class="permalink"&gt;&lt;a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
@@ -3203,18 +3187,15 @@ Photo by &lt;a href="https://unsplash.com/@scalabis"&gt;Luís Perdigão&lt;/a&gt
 &lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ say 'Hello!'
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
-
 &lt;p&gt;And yes, it works for other languages, too:&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ say -v zuzana 'Dobrý den, jedno pivo prosím'
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
-
 
 &lt;p&gt;In Python, it's easy to run commands using the &lt;code&gt;subprocess.run()&lt;/code&gt; function, so in your script, one can do something like this:&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;subprocess&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt;
 
 &lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="s1"&gt;'say'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'-v'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'zuzana'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'Jedno pivo prosím!'&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
-
 
 &lt;p&gt;This thing has one major disadvantage though. There is a significant potential it scares the shit out of me. Just imagine - you sit in a silent room, and just like that, out of nowhere, there is a human voice talking to you. It's really spooky.&lt;/p&gt;
 &lt;p&gt;So I've used the other two options, to have feedback on both screen (when I'm with sound off) and from speakers (when I leave the computer to e.g. brew myself a cup of coffee).&lt;/p&gt;
@@ -3223,11 +3204,9 @@ Photo by &lt;a href="https://unsplash.com/@scalabis"&gt;Luís Perdigão&lt;/a&gt
 &lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="se"&gt;\a&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
-
 &lt;p&gt;Better, you can remove new line from behind the print, and you can flush the &lt;code&gt;stdout&lt;/code&gt; immediately:&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="se"&gt;\a&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;end&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;flush&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
-
 
 &lt;p&gt;If you don't know what's "flushing &lt;code&gt;stdout&lt;/code&gt;", search for keywords "output buffering python".&lt;/p&gt;
 &lt;h3 id="standard-macos-notification"&gt;Standard macOS notification&lt;small class="permalink"&gt;&lt;a href="#standard-macos-notification" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
@@ -3235,13 +3214,11 @@ Photo by &lt;a href="https://unsplash.com/@scalabis"&gt;Luís Perdigão&lt;/a&gt
 &lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ pip install pync
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
-
 &lt;p&gt;Then in your Python program:&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pync&lt;/span&gt;
 
 &lt;span class="n"&gt;pync&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Notifier&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;notify&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Hello!'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'Greeting'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
-
 
 &lt;p&gt;Check out the library's README, there're more usage examples. My personal tip is to import it with exception handling, just in case someone wants to run your code somewhere else than on macOS:&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
@@ -3252,7 +3229,6 @@ Photo by &lt;a href="https://unsplash.com/@scalabis"&gt;Luís Perdigão&lt;/a&gt
 &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;pync&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;pync&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Notifier&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;notify&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Hello!'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'Greeting'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
-
 
 &lt;h2 id="decorator"&gt;Decorator&lt;small class="permalink"&gt;&lt;a href="#decorator" title="Permanent link to this heading"&gt;#&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;Now I wanted to notify myself when a long-running function ends, but I didn't want to pollute the code of the function with printing bell characters or sending notifications. Also, what if there's an error and the function raises an exception? A solution is to have the code as a function decorator. Also, that way I can easily measure duration of the function and put the result into the notification:&lt;/p&gt;
@@ -3282,7 +3258,6 @@ Photo by &lt;a href="https://unsplash.com/@scalabis"&gt;Luís Perdigão&lt;/a&gt
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;wrapper&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
-
 &lt;p&gt;That funky thing near the end is &lt;a href="https://pyformat.info/#number"&gt;advanced formatting&lt;/a&gt; inside &lt;a href="https://realpython.com/python-f-strings/"&gt;f-strings&lt;/a&gt;. I have this code in a separate module, &lt;code&gt;timer.py&lt;/code&gt;. (Module &lt;code&gt;timer&lt;/code&gt;, function &lt;code&gt;notify&lt;/code&gt;… well I'm unsure about proper naming yet, but this is what I have so far.) It can be used as follows:&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;.timer&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;notify&lt;/span&gt;
 
@@ -3290,7 +3265,6 @@ Photo by &lt;a href="https://unsplash.com/@scalabis"&gt;Luís Perdigão&lt;/a&gt
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;long_running_function&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
     &lt;span class="o"&gt;...&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
-
 
 &lt;p&gt;When the function is done, my terminal beeps and a notification appears:&lt;/p&gt;
 &lt;blockquote&gt;

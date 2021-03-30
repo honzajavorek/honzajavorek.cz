@@ -126,7 +126,6 @@ brew<span class="o">()</span> <span class="o">{</span>
 <span class="o">}</span>
 </code></code></pre>
 
-
 <p>When I want to install an optimized GUI app, I can use <code>brew-arm install firefox</code>. For anything else, I use <code>brew</code>. The <code>HOMEBREW_NO_ENV_FILTERING=1</code> is needed because I had some issues with the native Homebrew finding Git in the path. Maybe it was because I messed up with my setup too much, but whatever the reason, this has helped. I don't install CLI apps with the native Homebrew, so I don't have it in the <code>$PATH</code>. I had issues with the binaries and various other things stepping on each other's toes.</p>
 <p>I also have this handy bash function for upgrading stuff, which allows me not to forget about something. With this I only need to type <code>upgrade</code> to my terminal from time to time:</p>
 <pre class="highlight"><code><span></span><code>upgrade<span class="o">()</span> <span class="o">{</span>
@@ -139,24 +138,20 @@ brew<span class="o">()</span> <span class="o">{</span>
 <span class="o">}</span>
 </code></code></pre>
 
-
 <h3 id="vs-code">VS Code<small class="permalink"><a href="#vs-code" title="Permanent link to this heading">#</a></small></h3>
 <p>Visual Studio Code is now optimized for Apple Silicon, or at least I was able to install it by <code>brew-arm install visual-studio-code</code> and it works and it's snappy. I hated that app on my last laptop, it was very slow and bloated, and I've been considering switching to something else. Now I don't care enough to see whether it's actually optimized or not, it's faster than my brain and that's quite enough. Unlike the other GUI apps I have, this one I want to have accessible from the terminal. It has a simple solution though, I just needed to <a href="https://code.visualstudio.com/docs/setup/mac#_alternative-manual-instructions">follow the official tutorial</a> and put this to my <code>.bash_profile</code>:</p>
 <pre class="highlight"><code><span></span><code><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$PATH</span><span class="s2">:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"</span>
 </code></code></pre>
-
 
 <h3 id="python">Python<small class="permalink"><a href="#python" title="Permanent link to this heading">#</a></small></h3>
 <p>With Homebrew over Rosetta 2, installing Python 3 works just fine. It might work natively too, but as I mentioned, I decided not to mess with that yet. I usually also have <code>pipenv</code> and <code>poetry</code> installed globally, and over past years, by various trials and errors, I ended up installing those two by:</p>
 <pre class="highlight"><code><span></span><code>$ pip3 install --user poetry pipenv
 </code></code></pre>
 
-
 <p>Then it's necessary to put this into my <code>.bash_profile</code>:</p>
 <pre class="highlight"><code><span></span><code><span class="c1"># pipenv, poetry</span>
 <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="k">$(</span>python3 -m site --user-base<span class="k">)</span><span class="s2">/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
 </code></code></pre>
-
 
 <p>I upgrade those two regulary whenever I upgrade Homebrew, so I lied to you, my function for upgrading actually looks like this:</p>
 <pre class="highlight"><code><span></span><code>upgrade<span class="o">()</span> <span class="o">{</span>
@@ -170,7 +165,6 @@ brew<span class="o">()</span> <span class="o">{</span>
   pip3 install --user pipenv poetry --upgrade
 <span class="o">}</span>
 </code></code></pre>
-
 
 <p>I hate it when new Python version gets released, Homebrew automatically upgrades it, all my virtual environments with their symlinks get broken, and I have to re-create them one by one. I was lazy to solve that issue on my previous laptop, but with the new one I wanted to do it in a smarter way, managing Python installations by <code>pyenv</code>. However, I got errors. It seems <code>pyenv</code>, although installed with Rosetta 2, has issues to get Pythons to Apple Silicon. So I gave up on that for now and I'm going to do it the old way, using Homebrew-managed Python 3, and swearing every time it upgrades system-wide.</p>
 <h3 id="terminal">Terminal<small class="permalink"><a href="#terminal" title="Permanent link to this heading">#</a></small></h3>

@@ -83,14 +83,12 @@
 <span class="nb">RewriteRule</span> (.*) $0/ [R=301,NE,L]
 </code></code></pre>
 
-
 <h2 id="hezka-a-vselijaka-url-pro-aplikaci-v-php">Hezká a všelijaká URL pro aplikaci v PHP<small class="permalink"><a href="#hezka-a-vselijaka-url-pro-aplikaci-v-php" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Žádných složitých 50 regulárních výrazů na to, co vlastně s těmi adresami chceme… Stačí jeden kouzelný řádek, který úplně vše přesměruje na <code>index.php</code> a potom si adresu rozparsujeme přímo v PHP (dostupná v <code>$_SERVER['REQUEST_URI']</code>).</p>
 <pre class="highlight"><code><span></span><code><span class="nb">RewriteCond</span> %{REQUEST_FILENAME} !-f
 <span class="nb">RewriteCond</span> %{REQUEST_FILENAME} !-d
 <span class="nb">RewriteRule</span> . <span class="sx">/index.php</span> [L]
 </code></code></pre>
-
 
 <h2 id="presmerovani-rss-na-feedburner">Přesměrování RSS na FeedBurner<small class="permalink"><a href="#presmerovani-rss-na-feedburner" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Chcete <a href="http://www.feedburner.com">statistiky přístupů</a> na vaše RSS, ale nechcete obtěžovat odběratele článků se změnami adresy? Přesměrujte je. Není to tak snadné jak se zdá, protože přesměrování se nesmí provést, když se na váš <em>feed</em> snaží dostat samotný FeedBurner (to se pak logicky zacyklí). Sofistikovanější postupy pro WordPress najdete v <a href="http://www.askapache.com/htaccess/redirecting-wordpress-feeds-to-feedburner.html">článku na AskApache</a>, já jsem si vystačil s tímto:</p>
@@ -99,7 +97,6 @@
 <span class="nb">RewriteRule</span> ^feed/?$ http://feeds.feedburner.com/javorovelistky [R=302,L]
 </code></code></pre>
 
-
 <h2 id="chybove-stranky">Chybové stránky<small class="permalink"><a href="#chybove-stranky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Pokud zadáte relativní cestu, původní URL zůstane v adresním řádku prohlížeče a zobrazí se vám tato chybová stránka. Pokud zadáte absolutní, přesměruje se chyba zcela na soubor s chybovou stránkou (což podle mě není dobrý nápad).</p>
 <pre class="highlight"><code><span></span><code><span class="c">## errorpages</span>
@@ -107,12 +104,10 @@
 <span class="nb">ErrorDocument</span> <span class="m">403</span> <span class="sx">/joss/</span>?doc=_403
 </code></code></pre>
 
-
 <h2 id="taticek-htaccess">Tatíček .htaccess<small class="permalink"><a href="#taticek-htaccess" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Neodolal jsem a nakonec ještě přidám několik osvědčených kousků i pro samotný <code>.htaccess</code>. Někdy je dobré na web jen na oko zamezit přístup, alespoň přes hlavní stránku. Jelikož ta se většinou volá přes <code>index.php</code>, teoreticky stačí vložit do rootu webu <code>index.html</code> a něco do něj napsat. Toto zajistí, že se určitě bude HTML verze zobrazovat prioritně:</p>
 <pre class="highlight"><code><span></span><code><span class="nb">DirectoryIndex</span> index.html index.php
 </code></code></pre>
-
 
 <p>Skryté soubory by se neměly nikomu dostat do rukou. Správný server má toto už v globálním nastavení, ale člověk nikdy neví…</p>
 <pre class="highlight"><code><span></span><code><span class="nt">&lt;Files</span> <span class="s">~ "^[\.]"</span><span class="nt">&gt;</span>
@@ -122,13 +117,11 @@
 <span class="nt">&lt;/Files&gt;</span>
 </code></code></pre>
 
-
 <p>Nevíte jestli na cílovém serveru bude <code>mod_rewrite</code> a nechcete riskovat <em>Internal Server Error 500</em>? Stačí vše obalit podmínkou…</p>
 <pre class="highlight"><code><span></span><code><span class="nt">&lt;IfModule</span> <span class="s">mod_rewrite.c</span><span class="nt">&gt;</span>
     <span class="nb">RewriteEngine</span> <span class="k">on</span> ...
 <span class="nt">&lt;/IfModule&gt;</span>
 </code></code></pre>
-
 
 <p>A co tak si nastavit PHP?</p>
 <pre class="highlight"><code><span></span><code><span class="nt">&lt;IfModule</span> <span class="s">mod_php5.c</span><span class="nt">&gt;</span>
@@ -148,7 +141,6 @@
     <span class="nb">php_flag</span> default_charset utf-8
 <span class="nt">&lt;/IfModule&gt;</span>
 </code></code></pre>
-
 
 <h2 id="zaverem">Závěrem<small class="permalink"><a href="#zaverem" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Pokud byste měli nějaké další dobré tipy, podělte se v komentářích. Doufám, že se vám tyto útržky kódu budou hodit a usnadní vám život. Ne že bych byl expert na <code>mod_rewrite</code> nebo nastavení Apache přes <code>.htaccess</code>, ale už z toho co umím mohu usoudit, že jsou to opravdu silné a velmi užitečné nástroje, bez nichž bych si dneska pohyb po hostinzích nebo vlastním serveru představil jen stěží. Mnohdy je sice možné řešit totéž jiným způsobem, ale touto cestou je to mnohdy rychlejší, elegantnější a na pohled hezčí :) . Takže kdo s nimi ještě nezačal… Hurá do toho!</p></div></div></div></div>
