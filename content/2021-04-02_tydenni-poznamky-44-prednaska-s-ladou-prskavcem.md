@@ -33,7 +33,7 @@ Tím budiž stránka [/privacy/](https://junior.guru/privacy/) první stránkou,
 
 ## Machine Learning
 
-Kamarád Míla Votradovec se začal šťourat v ML a hledal data a projekt, na kterém by si to mohl vyzkoušet. Ptal se mě, jestli na JG něco nemám. No, mám. Mám robota na nabídky práce a je to dost ruční práce, je třídit. Jakože ne úplně ruční, ale je to hromada regulárů a je to hodně práce vyrobit, odladit, udržovat, opravovat.
+Kamarád [Míla Votradovec](https://milavotradovec.cz/) se začal šťourat v ML a hledal data a projekt, na kterém by si to mohl vyzkoušet. Ptal se mě, jestli na JG něco nemám. No, mám. Mám robota na nabídky práce a je to dost ruční práce, je třídit. Jakože ne úplně ruční, ale je to hromada regulárů a je to hodně práce vyrobit, odladit, udržovat, opravovat.
 
 Míla si už v předchozích týdnech s pomocí mého vedení stáhl nějaká historická data a začal na nich trénovat modely. Já tomu moc nerozumím, ale vrátil se s tím, že to celkem funguje. Takže jsme si zavolali a vymysleli další postup. Idealistická, naivní vize, kterou jsme vytvořili, je následující:
 
