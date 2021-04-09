@@ -24,7 +24,7 @@ O víkendu jsme se stěhovali a to poznamenalo tak nějak všechno, co jsem děl
 
 Jsem už v kontaktu se dvěma vzdělávacími agenturami (v těchto poznámkách zatím kódované jako ABC a XYZ), které chtějí navázat nějakou spolupráci s klubem. Chci, aby klub a celé JG zachovávaly nezávislý status, takže nehodlám žádné kurzy přímo doporučovat. Ani nemůžu, neprošel jsem jimi, nedokážu posoudit jejich kvalitu. Mohu lidem vysvětlit [rozdíl mezi kurzem a bootcampem](https://www.facebook.com/groups/1806114342948040/permalink/3581897008703089/?comment_id=3582808101945313), ale to je tak vše. Chci být průvodce, navigátor, advokát juniorů, prostředník, třeba i <em>influencer</em>, až zjistím co to je. Takže musím své aktivity kolem agentur s kurzy vyvažovat a je to tenký led. Lidi by neměli mít záminku zpochybňovat mou nezávislost nebo mít pocit, že klub slouží některé z agentur.
 
-Způsob, jakým na to chci jít, je ten, že s agenturami mohu navázat partnerství ve věcech, kde to s nezávislostí nekoliduje. Jedna taková věc je, že mohou ke nabídce pro své studenty přidat nabídku toho, že v rámci kurzovného student dostane i tři měsíce v mém klubu, aby si snadněji našel práci, udržel si motivaci, zapojil se do nějaké komunity, měl s kým konzultovat pohovory, atd. Takže jakmile někdo absolvuje kurz v XYZ, pokračuje u mě v klubu. Agentura může nabízet službu navíc a má méně práce s kariérním poradenstvím. Já dostanu tříměsíční členství proplaceno a ještě existuje naděje, že když se člověku bude v klubu líbit, začne si to pak platit sám a bude pokračovat.
+Způsob, jakým na to chci jít, je ten, že s agenturami mohu navázat partnerství ve věcech, kde to s nezávislostí nekoliduje. Jedna taková věc je, že mohou k nabídce pro své studenty přidat nabídku toho, že v rámci kurzovného student dostane i tři měsíce v mém klubu, aby si snadněji našel práci, udržel si motivaci, zapojil se do nějaké komunity, měl s kým konzultovat pohovory, atd. Takže jakmile někdo absolvuje kurz v XYZ, pokračuje u mě v klubu. Agentura může nabízet službu navíc a má méně práce s kariérním poradenstvím. Já dostanu tříměsíční členství proplaceno a ještě existuje naděje, že když se člověku bude v klubu líbit, začne si to pak platit sám a bude pokračovat.
 
 Další způsob, jak můžu spolupracovat, je přednášet „na půdě“ agentur, tvořit s nimi obsah jako články, rozhovory, videa, podcasty. Ale musí to být vyvážené, protože jakmile to začnu dělat příliš intenzivně pro jednu agenturu, další dají ruce pryč. Naopak si musím takových věcí domluvit na co nejvíc stran, aby bylo jasné, že k takové spolupráci má přístup kterákoliv z agentur. A musím si dávat pozor, aby bylo z obsahu jasné, že agenturu nedoporučuji, ale jen svými „moudry“ doplňuji jejich obsah o něco svého.
 
@@ -69,9 +69,11 @@ Takže pak jsem hned použil své první HTML v Makrdownu pomocí MkDocs Macros 
 
 Tři věci, které bych chtěl zvládnout udělat příště:
 
-1.
-2.
-3.
+1. Řešit následky stěhování, nedá se nic dělat.
+2. Dokončit PoC landing pages na klub.
+3. Poslat konečně DPFO.
+
+Bonus: Posunout se v domlouvání partnerství s agenturami.
 
 
 ## A co vy?
