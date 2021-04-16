@@ -39,7 +39,7 @@ Předávali jsme starý byt a při jeho uklízení a malování jsem se nadýcha
 
 - Na úřadě Prahy 3 jsem čekal 2 hodiny ve frontě na změnu trvalého pobytu.
 - Dal jsem lepší fotku k [příběhu Pavla z Olomouce](https://junior.guru/motivation/#stories).
-- Přidal jsem se na [Discord Elements of AI CZ](https://discord.com/invite/gbEyJEqwSD), o kterém se psalo někde na CzechCrunch, abych měl vlevo ve svém Discordu víc bublinek serverů a byl větší Discordový boss. Teda abych se podíval, jak mohou fungovat i jiné české Discordy o programování. Nic moc se tam neděje.
+- Přidal jsem se na [Discord Elements of AI CZ](https://discord.com/invite/gbEyJEqwSD), o kterém se psalo někde na CzechCrunch, ~~abych měl vlevo ve svém Discordu víc bublinek serverů a byl větší Discordový boss~~ abych se podíval, jak mohou fungovat i jiné české Discordy o programování. Nic moc se tam neděje.
 - Samotné Outreachy [retweetovalo můj tweet o rozhovoru s Lenkou Segura](https://twitter.com/outreachy/status/1380226212832800769). Juchů. Mají 13.7K followers, ale nikdo mě díky tomu sledovat nezačal, protože to zajímavé, co dělám, je jen česky. Tak snad aspoň pár lidí díky tomu přišlo na ten CyberMagnolia blog.
 - Poslal jsem daňové přiznání a přehledy pojišťovnám.
 - O víkendu se mi Adina ozvala, že má zdravotní nesnáz, který ji diskvalifikuje z přednášení, takže jsem úterní přednášku v pondělí přesunul o dva týdny. Internet jsem s tím už nespamoval, jen interně klub, což mělo za následek, že pak přednášku v původním termínu promovala DigiKoalice na FB, ale zachytil jsem to a nechal opravit. Adina tedy bude v klubu 27.4., těste se těšte, její přednáška bude totiž nejspíš i částečně interaktivní.
