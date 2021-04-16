@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl další týden (12.4. — 16.4.) a tak [stejně jako minule]({filename}/2021-04-09_tydenni-poznamky-45-stehovani-adina-mkdocs-macros.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub podporovatelů](https://junior.guru/club/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekl další týden (12.4. — 16.4.) a tak [stejně jako minule]({filename}/2021-04-09_tydenni-poznamky-45-stehovani-adina-mkdocs-macros.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -32,7 +32,7 @@ Do budoucna jsem chtěl mít na webu stránky pro různé technologie nebo profe
 
 ## Alergie na uklízení
 
-Předávali jsme starý byt a při jeho uklízení a malování jsem se nadýchal velkého množství prachu. Z toho jsem měl záchvat kašle, který se nelepšil. Navazovalo to na už zhruba týden trvající nalomení zdraví, které jsem pociťoval, ale vždy se nějak ztratilo (takže jsem si šel klidně o víkendu zaběhat a v pohodě). Následující noc jsem nemohl moc dýchat a kašlal jsem. Po probdělé noci jsem se diagnostikoval přes internet na bronchitidu, kterou ale umí způsobovat i covid-19, takže jsem šel hned na antigenní test a po telefonické konzultaci s doktorkou i na PCR. No, covid-19 nemám a to, co jsem měl, jsem následující dny vyležel. Ještě nejsem 100% ok, ale programovat se s tím dalo a domlouvat spolupráce taky.
+Předávali jsme starý byt a při jeho uklízení a malování jsem se nadýchal velkého množství prachu. Z toho jsem měl záchvat kašle, který se nelepšil. Navazovalo to na už zhruba týden trvající nalomení zdraví, které jsem pociťoval, ale vždy se nějak ztratilo (takže jsem si šel klidně o víkendu zaběhat a v pohodě). Do toho stres z vyjednávání a z odevzdávání bytu. Následující noc jsem nemohl moc dýchat a kašlal jsem. Po probdělé noci jsem se diagnostikoval přes internet na bronchitidu, kterou ale umí způsobovat i covid-19, takže jsem šel hned na antigenní test a po telefonické konzultaci s doktorkou i na PCR. No, covid-19 nemám a to, co jsem měl, jsem následující dny vyležel. Ještě nejsem 100% ok, ale programovat se s tím dalo a domlouvat spolupráce taky.
 
 
 ## Další poznámky
