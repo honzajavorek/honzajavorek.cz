@@ -105,9 +105,9 @@ Protože jsem přidal už třetí skript, který něco dělá s Discordem, přes
 
 Uspořádal jsem si Trello tudů tak, aby odráželo moje aktuální priority: Zvyšovat hodnotu klubu pro jeho členy a umět tu hodnotu vysvětlit na [stránce o klubu](https://junior.guru/club/). Tři věci, které bych chtěl zvládnout udělat příště:
 
-1.
-2.
-3.
+1. Doprogramovat robota na statistiky v klubu.
+2. Provést odloženou [přednášku s Adinou](https://junior.guru/events/).
+3. Naplánovat další událost a začít automatizovat věci kolem přednášek (výrobu plakátku, výpis na webu, apod.)
 
 Bonus: Možná bych po skoro dvou letech mohl aktualizovat všechny screenshoty webů na JG? Některé mi přijdou už trochu prošlé :/
 
