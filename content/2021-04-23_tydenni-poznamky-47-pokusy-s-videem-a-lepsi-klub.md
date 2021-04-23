@@ -25,14 +25,12 @@ Až budeme mít nějaké aspoň trochu použitelné pokusy, asi to dáme nejdř�
 
 Ověřoval jsem, že nejdůležitější instituce (ŽÚ, FÚ, ČSSZ, zdravotní pojišťovna) si všimly, že jsem změnil trvalý pobyt. Protože se mi nechtělo nikam chodit ani volat, napsal jsem všem e-mail.
 
-```
-Dobrý den,
-
-jsem OSVČ a přestěhoval jsem se. Chtěl bych ověřit, zda {INSTITUCE} zaznamenala z centrálních registrů změnu mého trvalého pobytu z {STARÁ ULICE ČÍSLO} na {NOVÁ ULICE ČÍSLO}, oboje Praha 3-Žižkov, 13000, případně jestli tuto změnu musím ještě dodatečně nějak oznamovat.
-
-Děkuji,
-Jan Javorek, IČO 74279858, tel. {TELEFON}
-```
+> Dobrý den,
+> 
+> jsem OSVČ a přestěhoval jsem se. Chtěl bych ověřit, zda {INSTITUCE} zaznamenala z centrálních registrů změnu mého trvalého pobytu z {STARÁ ULICE ČÍSLO} na {NOVÁ ULICE ČÍSLO}, oboje Praha 3-Žižkov, 13000, případně jestli tuto změnu musím ještě dodatečně nějak oznamovat.
+> 
+> Děkuji,
+> Jan Javorek, IČO 74279858, tel. {TELEFON}
 
 Prakticky do druhého dne mi všichni napsali nebo zavolali zpět, všichni milí a vše bez problémů. Vždy se to v pořádku zpropagovalo z rejstříku obyvatel, takže asi to fakt funguje :D Příště už tomu možná budu věřit natolik, že už nebudu psát ani ty e-maily.
 
