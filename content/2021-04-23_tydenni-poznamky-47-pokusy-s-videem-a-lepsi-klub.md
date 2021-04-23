@@ -64,7 +64,7 @@ Jako další věc chci udělat bota, který bude v klubu dělat nějakou statist
 
 Co jsem udělal první, je postování pár čísel do privátního kanálu. Budu se na to pár týdnů dívat a přemýšlet nad tím, jaké emoce to ve mě vyvolává nebo jak by se měly formulovat texty kolem toho. Jaký popsek by byl lepší, nebo jaká čísla tam asi radši vůbec nedávat. Toto mám rozpracované, ale nejprimitivnější verze s pár čísly už něco posílá.
 
-Protože jsem přidal už třetí skript, který něco dělá s Discordem, přestal jsem rozkopírovávat podpůrný kód a začal jej zobecňovat do nějakých abstrakcí. Vytvořil jsem si soubor s funkcemi společnými pro více skriptů a otestoval jsem si je. S tím jsem si hrál půlku čtvrtka.
+Protože jsem přidal už třetí skript ([pravidlo tří](https://andrewbrookins.com/technology/the-rule-of-three/) přebíjí [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)), který něco dělá s Discordem, přestal jsem rozkopírovávat podpůrný kód a začal jej zobecňovat do nějakých abstrakcí. Vytvořil jsem si soubor s funkcemi společnými pro více skriptů a otestoval jsem si je. S tím jsem si hrál půlku čtvrtka.
 
 
 ## Další poznámky
