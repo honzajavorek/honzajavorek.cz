@@ -24,7 +24,7 @@ Celou středu jsem věnoval domlouvání Jirkovy AMA, přípravě plakátku, dol
 
 ## Bitva o auto-merge v Dependabotu
 
-Probudil jsem se a v mailu jsem měl 14 notifikací o Pull Requestech, udělal [Dependabot](https://dependabot.com/) na mých repozitářích. Žádá mě, abych upgradoval z původního Dependabotu na verzi, kterou udělali už pod křídly GitHubu, jenž je před časem koupil. Jenže tato nová verze neumí auto-merge, který používám na 12 z 14 uvedených projektů.
+Probudil jsem se a v mailu jsem měl 14 notifikací o Pull Requestech, které udělal [Dependabot](https://dependabot.com/) na mých repozitářích. Žádá mě, abych upgradoval z původního Dependabotu na verzi, kterou udělali už pod křídly GitHubu, jenž je před časem koupil. Jenže tato nová verze neumí auto-merge, který používám na 12 z 14 uvedených projektů.
 
 [Tweetoval jsem](https://twitter.com/honzajavorek/status/1387691480375046145), proč se mi to nelíbí, ale u toho jsem nakonec nezůstal a začal i [komentovat a reagovat přímo v issue](https://github.com/dependabot/dependabot-core/issues/1973#issuecomment-829083554), kde se to řeší. Vypadá to, že s jejich názorem nikdo nepohne, ale do srpna, kdy se stará verze vypne, je ještě čas. Jejich argumenty mi přijdou nekonzistentní a nerozumím tomu, jak odebrání této funkce vyřeší cokoliv z toho, co oni si myslí, že to vyřeší.
 
@@ -40,7 +40,7 @@ Použil jsem díky meetupu taky poprvé [Around](https://www.around.co/). Auto-m
 
 Dokončil jsem robota, který počítá statistiky příspěvků jednotlivých členů klubu. Nakonec nikam statistiky neposílá jako čísla, ale uděluje Discord role. Některé jsou jen nenápadné štítky, některé jsou důležité a viditelné a obarvují lidi nebo je oddělují v seznamu členů.
 
-Nakonec mám lidi, kteří mají nejvíc příspěvků (od začátku existence klubu a za posledních 30 dní), potom lidi s nejvíce pozitivně hlasovanými příspěvky (od začátku existence klubu a za posledních 30 dní), lidi, kteří jsou v klubu krátce (do 15 dní), lidi, kteří mají profilovku a příspěvek, kde se představili. Plánuju i speciální roli pro speakery z akcí a pro sponzory klubu.
+Nakonec mám lidi, kteří mají nejvíc příspěvků (od začátku existence klubu a za posledních 30 dní), potom lidi s nejvíce pozitivně hlasovanými příspěvky (od začátku existence klubu a za posledních 30 dní), lidi, kteří jsou v klubu krátce (do 15 dní), lidi, kteří mají profilovku a příspěvek, kde se představili (takoví jakože „občani“, rozeznatelní). Plánuju i speciální roli pro speakery z akcí a pro sponzory klubu.
 
 ## Impulzivní láska
 
@@ -68,7 +68,6 @@ Tak tady je [březnový](https://us3.campaign-archive.com/?u=7d3f89ef9b2ed953ddf
 - Loga na [stránce klubu](https://junior.guru/club/) jsem rozdělil na firemní a komunitní.
 - Do komunitních log jsem přidal yablka. Poslal mi logo v PSD, tak jsem poprvé použil [Photopea](https://www.photopea.com/) a super.
 - Vyměkli jsme a přestali trápit náš aku šroubovák. Objednali jsme seriózní elektrický mlýnek na kafe. Tento čin v nás vyvolal smíšené pocity, zda jsme se tím nestali příliš seriózními a dospělými lidmi. Mele ovšem skvěle.
-- Věnoval jsem se propagaci na sociálních sítích.
 - Vítal jsem nové členy v klubu. Už je nás 143 členů za 3 měsíce provozu klubu. Na stránku klubu jsem napsal přesně takovouto větu. Předtím tam bylo 20 náhodných profilovek lidí z klubu a pak slova „a 123 dalších“, ale i mě samotnému se to strašně špatně vnímalo. Podle mě by nikoho nenapadlo to sčítat, vidí akorát číslo. Takže jsem tam nejdřív napsal přímo „143 členů“ a potom to ještě změnil na „143 členů za 3 měsíce provozu“, aby to číslo bylo v nějakém kontextu.
 - Během 7 dní od 24.4. do 30.4. jsem naběhal 8 km, při procházkách nachodil 16 km. Celkem jsem se hýbal 6 hodin a zdolal při tom 24 kilometrů.
 
