@@ -1,0 +1,29 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: weekly
+    day: tuesday
+    time: "08:00"
+    timezone: Europe/Prague
+  open-pull-requests-limit: 10
+  labels:
+  - dependencies
+- package-ecosystem: npm
+  directory: "/theme"
+  schedule:
+    interval: weekly
+    day: tuesday
+    time: "08:00"
+    timezone: Europe/Prague
+  open-pull-requests-limit: 10
+  labels:
+  - dependencies
+  ignore:
+  - dependency-name: instant.page
+    versions:
+    - "> 5.0.1, < 6"
+  - dependency-name: instant.page
+    versions:
+    - ">= 5.a, < 6"
