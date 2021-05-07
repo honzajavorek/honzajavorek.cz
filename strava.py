@@ -21,6 +21,7 @@ ACTIVITY_TYPES = {
     'run': 'naběhal',
     'walk': 'při procházkách nachodil',
     'hike': 'na túrách nachodil',
+    'ride': 'ujel na kole',
 }
 
 
