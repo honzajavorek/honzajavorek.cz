@@ -14,7 +14,7 @@ Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
 Májová sleva na klub dopadla tak, že se zaregistrovalo celkem 10 nových lidí. To nebylo špatné. Zřejmě to dost zregulovalo to, že byl víkend, státní svátek a minimálně v pátek i docela hezké počasí. Kupón jsem nakonec nechal funkční až do pondělí, zaregistrovali se ještě 3 opozdilci. Myslím, že ze všeho nejvíc to byl test mojí bubliny na sociálních sítích a toho, zda lidi vidí nějakou hodnotu v klubu z toho, co je o něm vidět za informace zvenku.
 
-Příště bych měl ale slevy dělat spíš s nějakou promyšlenou strategií. Našel jsem si k tomu [tento článek](blog.karsa-monitor.cz/nas-zakaznik-nas-pan-potrebuje-slevy-jak-na-ne/), ale ještě nečetl. Také jsem přemýšlel, že bych mohl ty kupóny sdílet v proužku na webu, jako to dělají eshopy, které jsem v poslední době viděl (např. Bonami, Zalando), a ne jen na sociálních sítích.
+Příště bych měl ale slevy dělat spíš s nějakou promyšlenou strategií. Našel jsem si k tomu [tento článek](http://blog.karsa-monitor.cz/nas-zakaznik-nas-pan-potrebuje-slevy-jak-na-ne/), ale ještě nečetl. Také jsem přemýšlel, že bych mohl ty kupóny sdílet v proužku na webu, jako to dělají eshopy, které jsem v poslední době viděl (např. Bonami, Zalando), a ne jen na sociálních sítích.
 
 
 ## Ceník pro firmy
