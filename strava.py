@@ -9,6 +9,7 @@ from pathlib import Path
 import time
 from datetime import date
 import math
+import webbrowser
 
 import requests
 
@@ -26,11 +27,14 @@ ACTIVITY_TYPES = {
 
 
 def get_access_token():
+    # TODO steal from https://github.com/Almad/weeknote-generator/blob/main/weekgen/strava.py
     try:
         strava_tokens = json.loads(STRAVA_TOKENS_PATH.read_text())
     except FileNotFoundError:
         print("Open the following link and copy the 'code' from URL after redirect:")
-        print(f"\nhttps://www.strava.com/oauth/authorize?client_id={STRAVA_CLIENT_ID}&response_type=code&redirect_uri=http://localhost/exchange_token&approval_prompt=force&scope=profile:read_all,activity:read_all\n")
+        url = f"https://www.strava.com/oauth/authorize?client_id={STRAVA_CLIENT_ID}&response_type=code&redirect_uri=http://localhost/exchange_token&approval_prompt=force&scope=profile:read_all,activity:read_all"
+        webbrowser.open(url)
+        print(f"\n{url}\n")
         strava_code = input('Code: ')
         response = requests.post(url='https://www.strava.com/oauth/token',
                                  data=dict(client_id=STRAVA_CLIENT_ID,
@@ -44,10 +48,10 @@ def get_access_token():
     try:
         if strava_tokens['expires_at'] < time.time():
             response = requests.post(url='https://www.strava.com/oauth/token',
-                                    data=dict(client_id=STRAVA_CLIENT_ID,
-                                            client_secret=STRAVA_CLIENT_SECRET,
-                                            code=strava_tokens['refresh_token'],
-                                            grant_type='refresh_token'))
+                                     data=dict(client_id=STRAVA_CLIENT_ID,
+                                               client_secret=STRAVA_CLIENT_SECRET,
+                                               code=strava_tokens['refresh_token'],
+                                               grant_type='refresh_token'))
             response.raise_for_status()
             strava_tokens = response.json()
             STRAVA_TOKENS_PATH.write_text(json.dumps(strava_tokens))
@@ -120,7 +124,7 @@ if __name__ == '__main__':
     try:
         start_date = date.fromisoformat(sys.argv[1])
     except IndexError:
-        start_date = input('Start date: ').strip()
+        start_date = date.fromisoformat(input('Start date: ').strip())
     try:
         end_date = date.fromisoformat(sys.argv[2])
     except IndexError:
