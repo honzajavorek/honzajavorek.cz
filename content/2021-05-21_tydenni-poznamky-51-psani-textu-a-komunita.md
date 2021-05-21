@@ -28,13 +28,13 @@ Vyhlásil jsem v klubu soutěž o lístky na [konferenci Frontendistů](https://
 
 ## Člen ze základky
 
-V klubu se mi mým vlastním nedopatřením objevilo dítě ze základní školy, které svým chováním dělá trochu vlny. Trochu řeším, co s ním. Jestli ho vychovávat, nebo poslat jinam, aby mi to tam nerozložilo. Zase bych jej tím fakt nerad odradil od programování. Zaměstnává mě to ve větších či menších chvilkách poslední dva dny a je to věc, která rozhodně ovlivnila tento můj týden, ale je to otevřená kauza, tak se o tom nebudu více rozepisovat.
+V klubu se mi mým vlastním nedopatřením objevilo dítě ze základní školy, které svým chováním dělá trochu vlny. Trochu řeším, co s ním. Jestli ho vychovávat, nebo poslat jinam, aby mi to tam nerozložilo. Zase bych jej fakt nerad odradil od programování. Zaměstnává mě to ve větších či menších chvilkách poslední dva dny a je to věc, která rozhodně ovlivnila tento můj týden, ale je to otevřená kauza, tak se o tom nebudu více rozepisovat.
 
-Akorát doplním, že si osobně při řešení té situace připadám dost neohrabaný, ale že mě v tomto podržel samotný klub tím, jak jsou tam všichni úžasní. Jeden člen dokonce se sám nabídl, že to pomůže nějak ukormidlovat. Jsem dojat :)
+Akorát doplním, že si osobně při řešení té situace připadám dost neohrabaný, ale že mě v tomto podržel samotný klub tím, jak jsou tam všichni úžasní. Jeden člen se dokonce sám nabídl, že to pomůže nějak ukormidlovat. Jsem dojat :)
 
 ## Dětské domovy
 
-Zkoumám možnost, jak by šlo spolupracovat s dětskými domovy. Na předešlé e-maily mi nikdo neodpověděl. Tentokrát jsem napsal mnohem kratší e-mail s jasnou call to action, aby věděli, co se mnou:
+Zkoumám možnost, jak by šlo spolupracovat s dětskými domovy. To může vzhledem k předchozímu odstavci znít zvláštně, ale v dětských domovech nejsou jen děti, jsou tam i dospívající a někdy skoro dospělí lidé. Na předešlé e-maily mi bohužel nikdo neodpověděl. Tentokrát jsem napsal mnohem kratší e-mail s jasnou _call to action_, aby věděli, co se mnou:
 
 > **Rozvoj dětí se zájmem o programování**
 >
@@ -48,7 +48,7 @@ Zkoumám možnost, jak by šlo spolupracovat s dětskými domovy. Na předešlé
 >
 > Honza Javorek
 >
-> https://www.linkedin.com/in/honzajavorek/
+> https://www.linkedin.com/in/honzajavorek/<br>
 > https://junior.guru/
 
 Napsal jsem [DDŠ](https://www.dejmedetemsanci.cz/), [NaD](https://www.nadaniadovednosti.cz/), [yourchance](http://www.yourchance.cz/), [FDD](http://www.fddcr.cz/). Opět zatím žádná odpověď. Nevím, co dělám špatně.
@@ -59,7 +59,7 @@ Udělalo mi radost, že sama komunita v klubu začala generovat tipy na to, co b
 
 > Keď možem a viem tak vždy rad pomožem, o tomto komunita ma byť, nie len aby tam bol admin a moderator ale som rad ze to tu je žive a su tu fakt super prispevky a podobne.
 
-Jedna z věcí, které jsme vymysleli, je připichování příspěvků, pokud se u nich objeví hodně emoji se špendlíky. Připíchnuté příspěvky lze pak snadno dohledat.
+Jedna z věcí, které jsme vymysleli, je připichování příspěvků, pokud se u nich objeví hodně emoji se špendlíky. Připíchnuté příspěvky lze pak snadno dohledat. Toto jsem ještě nenaprogramoval, ale přijde mi to fajn.
 
 ## Další poznámky
 
@@ -69,7 +69,7 @@ Jedna z věcí, které jsme vymysleli, je připichování příspěvků, pokud s
 - V klubu se rozběhly zajímavé diskuze o [GreenFox Academy](https://junior.guru/topics/greenfox/) nebo o Unicorn University. Jen houšť!
 - Byla schůze výboru Pyvce. Únava pandemií kulminuje, chvíli jsem myslel, že se vůbec nesejdeme. Posunuli jsme termín členské schůze, aby nebyl už za týden. Ten původní jsme si nějak nedokázali potvrdit a nikomu o něm říct. Tak třeba napodruhé o něm někomu říct dokážeme… Bylo by fakt super, kdybychom to dokázali, naučili členy spolku volit a mohli už přesluhující výbor vyměnit, aby to dostalo novej vítr. Samozřejmě nepomáhá, že i zbytek Python komunity je teď v pandemickém spánku a nic se neděje, nejsou konference, není nic. Smíšené pocity.
 - Přidal jsem na [stránku klubu](https://junior.guru/club/) logo Frontendistů a aktualizoval logo DigiKoalice.
-- [Povedlo se mi zjistit, co za písničku mají na Rohlík supportu.](https://twitter.com/honzajavorek/status/1394272249142730762) Jednak je Rohlíkový Twitter support fakt super, jednak mám radost, protože na jedné párty jsme s kamarády na tuhle písničku tančili a jsem rád, že ji teď mám jako mp3. I když bylo dost těžké ji sehnat. Na Spotify to bylo šedé. Na Amazonu mi to nešlo ani za nic koupit, zkoušel jsem to asi 4x, asi musím být z US, nevím. Na iTunes to je, ale Apple všude tlačí Apple Music a prosekat se pralesem upoutávek na to, že určitě nechci iTunes, ale chci Apple Music, bylo dost těžké. Apple Music ani iTunes nepoužívám, takže mi trvalo půl hodiny klikání, než jsem pochopil, že písničku nejde koupit na webu, ale asi jen v tom programu na macOS. Ten jsem otevřel, ale nepochopil. Nakonec jsem písničku našel a musel jsem do nějakého super skrytého kontextového menu, abych ji mohl koupit. Koupení naštěstí proběhlo OK. Mám mp3! Snad v tom souboru není deset DRM a nezmizí mi za chvíli disku, protože někdo někde něčemu nedá práva.
+- [Povedlo se mi zjistit, co za písničku mají na Rohlík supportu.](https://twitter.com/honzajavorek/status/1394272249142730762) Jednak je Rohlíkový Twitter support fakt super, jednak mám radost, protože na jedné párty jsme s kamarády na tuhle písničku tančili a jsem rád, že ji teď mám jako mp3. I když bylo dost těžké ji sehnat. Na Spotify to bylo šedé. Na Amazonu mi to nešlo ani za nic koupit, zkoušel jsem to asi 4x, asi musím být z US, nevím. Na iTunes to je, ale Apple všude tlačí Apple Music a prosekat se pralesem upoutávek na to, že určitě nechci iTunes, ale chci Apple Music, bylo dost těžké. Apple Music ani iTunes nepoužívám, takže mi trvalo půl hodiny klikání, než jsem pochopil, že písničku nejde koupit na webu, ale asi jen v tom programu na macOS. Ten jsem otevřel, ale nepochopil. Nakonec jsem písničku našel a musel jsem do nějakého super skrytého kontextového menu, abych ji mohl koupit. Koupení naštěstí proběhlo OK. Mám mp3! Snad v tom souboru není deset DRM a nezmizí mi za chvíli z disku, protože někdo někde něčemu nedá licenci, nebo protože se můj disk příliš dlouho nachází ve východní Evropě.
 - Jak jsem tady nedávno psal, že mám pocit, že mi stagnuje přísun členů, tak od té doby mám zase dojem, že se s nimi roztrhl pytel, ani netuším, odkud vlastně všichni chodí :D Nestíhám je vítat.
 - V klubu bylo tento týden dost živo, takže jsem strávil i dost času odpovídáním a čtením zpráv.
 - Komunikoval jsem s dvěma firmami, s kterými mám rozjednané členství v klubu.
