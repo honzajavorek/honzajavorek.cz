@@ -61,7 +61,7 @@ _Většinou je to jedno_<br>
 
 [Pusťte si!](https://www.youtube.com/watch?v=3MSXuX_p1v0)
 
-Měl jsem trochu depku, že se nikam neposouvám a nic nestíhám. Přemýšlel jsem, jestli se moc neutápím v každodenní administrativě a komunikaci s lidma, uzavírání nových partnerství apod. Jestli toho není tak moc, že při tom nestíhám dělat už nic jiného. Nakonec jsem si vsugeroval, že dělám ty materiály pro Engeto a to mi bere hodně času, i když to není zrovna teď nikde vidět, a že po pondělku bude už Engeto hotové. A že smlouvu s další agenturou nějak už doklepnu a uzavřu, a že pak bude čas konečně zas dělat na samotném webu JG a na příručce. Těším se na to.
+Měl jsem trochu depku, že se nikam neposouvám a nic nestíhám. Přemýšlel jsem, jestli se moc neutápím v každodenní administrativě a komunikaci s lidma, uzavírání nových partnerství apod. Jestli toho není tak moc, že při tom nestíhám dělat už nic jiného. Nakonec jsem si vsugeroval, že dělám ty materiály pro Engeto a to mi bere hodně času (hlavně ta prokrastinace psaní, ta toho času žere fakt hodně!), i když to není zrovna teď nikde vidět, a že po pondělku bude už Engeto hotové. A že smlouvu s další agenturou nějak už doklepnu a uzavřu, a že pak bude čas konečně zas dělat na samotném webu JG a na příručce. Těším se na to.
 
 Mám v hlavě dokonalou představu, jak by která část JG měla vypadat, jak chci přebudovat příručku, pracovní nabídky, jak bude vypadat nová úvodní stránka klubu, apod. Všechno to mám vymyšlené a myslím, že tak jak to chci, tak to dává perfektní smysl na dlouhé měsíce dopředu, nevěřím, že se to pak už bude nějak překotně měnit, spíš budu jen přidávat nový obsah. Teď už to jen celé teda překopat :D Bude to hodně práce, bude to chtít hodně času. Ale snad už s tím brzo teda začnu.
 
