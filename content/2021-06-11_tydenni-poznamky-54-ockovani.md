@@ -53,7 +53,7 @@ Komunikoval jsem s právničkou, abychom doladili ještě nějaké otázky ohled
 Mezitím jsem se snažil aspoň sám zjistit, co vlastně potřebuji. Přišel jsem na to, že asi něco jako „smlouvu s včleňovací doložkou“, ale nakonec je posudek právničky takový, že nemám dělat byrokrata, že úplně stačí nějaký obyč papír. To je poprvé, kdy mi právníci navrhují něco méně právnického, než navrhuji já sám :D Asi mě ten Oracle nakonec opravdu nějak poznamenal. No, teď mám už vše potřebné pro uzavření dohody, ale v pátek už jsem to nedokázal dotáhnout do konce.
 
 
-## Smutná
+## Smutný
 
 _Jsem smutná_<br>
 _Jsem veselá_<br>
