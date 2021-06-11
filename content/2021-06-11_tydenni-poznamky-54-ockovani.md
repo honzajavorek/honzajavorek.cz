@@ -94,7 +94,10 @@ Tři věci, které bych chtěl zvládnout udělat příště:
 2. Začít dělat novou úvodní stránku pro klub.
 3. Dokončit v pondělí to, co spolu podnikáme s Engetem.
 
-**Bonus:** Pověnovat se Python komunitě, uspořádat schůzi výboru, členskou schůzi, zajít na [první letošní Pyvo naživo](https://twitter.com/naPyvo/status/1403312699291938816). Pověnovat se [PyCon Namibia](https://na.pycon.org/), který je letos online, lístky [zde](https://na.pycon.org/tickets/).
+**Bonusy:**
+
+- Pověnovat se Python komunitě, uspořádat schůzi výboru, členskou schůzi, zajít na [první letošní Pyvo naživo](https://twitter.com/naPyvo/status/1403312699291938816).
+- Pověnovat se [PyCon Namibia](https://na.pycon.org/), který je letos online, lístky [zde](https://na.pycon.org/tickets/).
 
 
 ## A co vy?
