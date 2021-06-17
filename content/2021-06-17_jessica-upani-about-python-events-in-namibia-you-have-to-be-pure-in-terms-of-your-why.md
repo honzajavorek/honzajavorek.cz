@@ -1,6 +1,11 @@
 Title: Jessica Upani about Python events in Namibia: You have to be pure in terms of your why
 Image: images/jessica-upani-ewa-jodlowska.jpg
 Lang: en
+HackerNews-Comments: https://news.ycombinator.com/item?id=27539909
+Reddit-Comments: https://www.reddit.com/r/Namibia/comments/o1yjkw/programming_in_namibia_interview_with_jessica/
+Twitter-Comments: https://twitter.com/honzajavorek/status/1405532488504516617
+Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10159086459107707
+LinkedIn-Comments: https://www.linkedin.com/feed/update/urn:li:activity:6811300155074113536/
 
 
 It's 2017 and I'm at the [Write the Docs](https://www.writethedocs.org/) conference in Prague. I see [Daniele Procida](https://twitter.com/evildmp) talking about the [Python Africa](https://africa.python.org/) website and about [PyCon Namibia](https://na.pycon.org/). The seed has been planted to my head. Since then, I dreamed of visiting PyCon Namibia one day. In 2020, just before all the COVID-19 mayhem has started, a friend pushed me over the edge. We took our backpacks and spent February 2020 among some awesome people, within the [breathtaking nature of Namibian deserts](https://www.youtube.com/results?search_query=namibia).
