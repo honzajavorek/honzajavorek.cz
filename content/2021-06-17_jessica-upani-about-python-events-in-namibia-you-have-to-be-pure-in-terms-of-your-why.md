@@ -7,10 +7,10 @@ It's 2017 and I'm at the [Write the Docs](https://www.writethedocs.org/) confere
 
 When I returned back, I was full of ideas on how to collaborate with the Namibian Python community. We thought about inviting some speakers from Namibia to [PyCon CZ](https://cz.pycon.org/) that year, and other things. I wanted to write down an article about our journey, describe the amazing things we've seen, and first of all, the kind and good-hearted people we've met. But then, the pandemic has destroyed it all and took all my energy away. After more than a year, just a few days before the PyCon Namibia 2021 starts, I at least managed to get finished a quick interview with [Jessica Upani](https://twitter.com/JessicaUpani), the president of the [PyNam](https://pynamibia.herokuapp.com/) (Python programming society of Namibia).
 
-![Jessica Upani]({static}/images/jessica-upani-ewa-jodlowska.jpg)
-Jessica Upani with [Ewa Jodlowska](https://twitter.com/ewa_jodlowska) and [Lorena Mesa](https://twitter.com/loooorenanicole) at [PyCon Africa](https://africa.pycon.org/), photo by [KhoPhi](https://khophi.business.site/)
+![me, Jessica, and my friend]({static}/images/jessica-and-us.jpg)
+Me, Jessica, and my friend at PyCon NA 2020
 
-We talk about her beginnings, the programming community in Namibia, possible future for Namibian scholars, and about the hardships of organizing community events in a Southern-African country, especially in the time of COVID-19.
+In this interview we talk about her beginnings, the programming community in Namibia, possible future for Namibian scholars, and about the hardships of organizing community events in a Southern-African country, especially in the time of COVID-19.
 
 _Before you immerse into reading the interview, let me just quickly remind that [PyCon NA 2021](https://na.pycon.org/) takes place online, starting tomorrow - that is 18th-19th June. The standard [ticket](https://na.pycon.org/tickets/) is 640 CZK/29 USD/400 NAD, and it has a [one-track two-day programme](https://na.pycon.org/programme/) with talks about wide range of Python topics and speakers from all around the world. You can also follow the conference at [@PyConNA](https://twitter.com/pyconna)._
 
@@ -32,6 +32,9 @@ My journey started in 2016 when I attended the first ever Python conference in N
 I attended the conference, because it was free, and hence it meant free food, and the conference was just a few days before my classes started, so I had time. I was certainly not there for Python, because I had heard the worst about Python prior to the conference.
 
 I loved the community and the friends I made during the conference, and I was sold by the end of the 4 days. I wanted to give the experience I just had with more people. During the course of the conference, there was a talk about starting a society that would carry out the work of building the community after the conference. I joined and never looked back.
+
+![Jessica Upani]({static}/images/jessica-upani-ewa-jodlowska.jpg)
+Jessica Upani with [Ewa Jodlowska](https://twitter.com/ewa_jodlowska) and [Lorena Mesa](https://twitter.com/loooorenanicole) at [PyCon Africa](https://africa.pycon.org/), photo by [KhoPhi](https://khophi.business.site/)
 
 
 **During PyCon NA 2020, I remember you saying that you plan to start a PyLadies group, and I remember there was already a group for students, PyNam Scholars. But now when I check [your community website](https://pynamibia.herokuapp.com/group/), there are now seven different user groups! How did this happen? Does it mean the community is growing and more and more people are participating?**
