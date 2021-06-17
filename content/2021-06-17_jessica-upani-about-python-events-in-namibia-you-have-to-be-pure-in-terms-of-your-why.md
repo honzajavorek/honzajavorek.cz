@@ -8,7 +8,7 @@ It's 2017 and I'm at the [Write the Docs](https://www.writethedocs.org/) confere
 When I returned back, I was full of ideas on how to collaborate with the Namibian Python community. We thought about inviting some speakers from Namibia to [PyCon CZ](https://cz.pycon.org/) that year, and other things. I wanted to write down an article about our journey, describe the amazing things we've seen, and first of all, the kind and good-hearted people we've met. But then, the pandemic has destroyed it all and took all my energy away. After more than a year, just a few days before the PyCon Namibia 2021 starts, I at least managed to get finished a quick interview with [Jessica Upani](https://twitter.com/JessicaUpani), the president of the [PyNam](https://pynamibia.herokuapp.com/) (Python programming society of Namibia).
 
 ![Jessica Upani]({static}/images/jessica-upani-ewa-jodlowska.jpg)
-Jessica Upani with [Ewa Jodlowska](https://twitter.com/ewa_jodlowska) at [PyCon Africa](https://africa.pycon.org/), photo by [KhoPhi](https://khophi.business.site/)
+Jessica Upani with [Ewa Jodlowska](https://twitter.com/ewa_jodlowska) and [Lorena Mesa](https://twitter.com/loooorenanicole) at [PyCon Africa](https://africa.pycon.org/), photo by [KhoPhi](https://khophi.business.site/)
 
 We talk about her beginnings, the programming community in Namibia, possible future for Namibian scholars, and about the hardships of organizing community events in a Southern-African country, especially in the time of COVID-19.
 
