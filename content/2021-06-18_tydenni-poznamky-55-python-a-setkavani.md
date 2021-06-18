@@ -21,6 +21,8 @@ Hned v pondělí jsem vyrazil na otočku do Brna, abych navštívil [Engeto](htt
 
 Cestou vlakem z Brna jsem dokončil dokument, který sepisoval dohodu nad rámec obchodních podmínek. Tu jsme nakonec tento týden podepsali a tím jsem splnil dlouho táhnoucí se úkol, dokončil jsem přípravy na partnerství se [Software Development Academy](https://sdacademy.cz/), která nedávno na českém trhu otevřela pobočku. Těsně předtím, než jsem začal psát poznámky, jsem přidal jejich logo na stránku o klubu.
 
+Pokud jejich absolventi projeví zájem o dlouhodobější podporu při hledání práce a rozjezdu nové kariéry, SDA jim zajistí 3 měsíce v klubu. Podobnou spolupráci už mám i s Engetem a je otevřená i jiným vzdělávacím agenturám.
+
 
 ## Nové CSS a stránka o klubu
 
