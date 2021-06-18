@@ -17,7 +17,7 @@ Me, Jessica, and my friend at PyCon NA 2020
 
 In this interview we talk about her beginnings, the programming community in Namibia, possible future for Namibian scholars, and about the hardships of organizing community events in a Southern-African country, especially in the time of COVID-19.
 
-_Dear reader, before you immerse into the interview, let me just quickly remind you that [PyCon NA 2021](https://na.pycon.org/) takes place online, starting tomorrow - that is 18th-19th June. The standard [ticket](https://na.pycon.org/tickets/) is 640 CZK/29 USD/400 NAD, and it has a [one-track two-day programme](https://na.pycon.org/programme/) with talks about a wide range of Python topics and speakers from all around the world. You can also follow the conference at [@PyConNA](https://twitter.com/pyconna)._
+_Dear reader, before you immerse into the interview, let me just quickly remind you that [PyCon NA 2021](https://na.pycon.org/) takes place online, starting tomorrow — that is 18th-19th June. The standard [ticket](https://na.pycon.org/tickets/) is 640 CZK/29 USD/400 NAD, and it has a [one-track two-day programme](https://na.pycon.org/programme/) with talks about a wide range of Python topics and speakers from all around the world. You can also follow the conference at [@PyConNA](https://twitter.com/pyconna)._
 
 
 **Jessica, I know you’re one of the driving forces behind the growth and success of the Python community in Namibia. I know you especially as a co-organizer of [PyCon NA 2020](https://na.pycon.org/2020/), together with [Ngazetungue Muheue](https://twitter.com/muheuenga), [Daniele Procida](https://twitter.com/evildmp), and others, but I came across many clues that in fact you’re doing much more than “just” the conference. Could you list all the activities you’re participating in?**
@@ -126,6 +126,6 @@ You do not need to have it all together in terms of coding skills for you to sta
 And maybe, if you don't do it, no one else will. Just get started, the rest will work itself out, one step at a time.
 
 
-**I can't imagine a better closing. I know you're quite busy these days and I didn't really get in touch in good time, so thank you very much Jessica, for in the end, you were able to carve out a bit of time to answer these questions. Fingers crossed with organizing the conference, I'm sure it's gonna be awesome!**
+**I can't imagine a better closing. I know you're quite busy these days and I didn't really get in touch in a good time, so thank you very much Jessica, for in the end, you were able to carve out a bit of time to answer these questions. Fingers crossed with organizing the conference, I'm sure it's gonna be awesome!**
 
 It's super late, but you poked my mind in such a thought provoking way! It was nice to reflect on the past and the future. Thanks, Honza!
