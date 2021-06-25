@@ -14,20 +14,37 @@ V pondělí bylo strašné vedro, takže jsem téměř nedokázal pracovat. Měl
 
 ## Bootstrap
 
-Dál jsem pracoval na [nové stránce pro klub](https://junior.guru/club2/), kde ale nakonec dělám i nový design celého JG. Jak jsem psal minule, rozhodl jsem se využít Bootstrap, a to jak pro základ stylů a „atomy“, z nichž můžu složit vlastní komponenty pomocí `@extend` v SCSS, ale nakonec i jejich komponenty.
+Dál jsem pracoval na [nové stránce pro klub](https://junior.guru/club2/), kde ale nakonec dělám i nový design celého JG. Jak jsem psal minule, rozhodl jsem se využít Bootstrap, a to jak pro základ stylů a „atomy“, z nichž můžu složit vlastní komponenty pomocí `@extend` v SCSS, ale nakonec i pro jejich komponenty.
 
-Jedna z věcí, které jsem musel vyřešit jako první, byla sdílení [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties), které jsem v projektu vytvořil nedávno. Šlo o to, že jsem chtěl barvy a font uložit do CSS custom properties a ty pak využít jak v místě úplně mimo web (např. generátor plakátků k přednáškám nebo generátor `og:image` pro jednotlivé stránky), tak přímo na webu v CSS. Jenže teď jsem chtěl mít barvy zase v SCSS, abych je mohl nastavit do Bootstrapu. A taky jsem viděl, že je to čím dál větší nepořádek, že je to prostě moc zamotané do sebe. Takže jsem to všechno od sebe oddělil. Barvy jsou zvlášť v CSS pro generátor plakátků a náhledů, zvlášť ve starém SCSS pro web a zvlášť v novém SCSS pro web. Aby to drželo po hromadě, napsal jsem si [testy](https://github.com/honzajavorek/junior.guru/blob/master/tests/test_css_variables.py), které kontrolují, že je to vše konzistentní. Tímto způsobem je vše _decoupled_, ale nehrozí chaos. Když už jsem byl u toho, doplnil jsem i testy, které kontrolují, že SVG obrázky mají správnou barvu. Ty dokonce odhalily několik SVG s černou místo s tmavě šedou barvou, tak jsem je opravil. Až zase přidám SVG pro nějakou svou malůvku a nechám ho černé, místo abych barvu přepsal na `#343434`, spadnou testy a upozorní mě.
+
+### Rozplétání CSS proměnných
+
+Jedna z věcí, které jsem musel vyřešit jako první, byla sdílení [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties), které jsem v projektu vytvořil nedávno. Šlo o to, že jsem chtěl barvy a font uložit do CSS custom properties a ty pak využít jak v místě úplně mimo web (např. generátor plakátků k přednáškám nebo generátor `og:image` pro jednotlivé stránky), tak přímo na webu v CSS. Jenže teď jsem chtěl mít barvy zase v SCSS, abych je mohl nastavit do Bootstrapu. A taky jsem viděl, že je to čím dál větší nepořádek, že je to prostě moc zamotané do sebe. Ani to tady nejde pořádně popsat, abych vám to vysvětlil, to je vždycky dobrý ukazatel toho, jestli je něco zbytečně složité.
+
+Takže jsem to všechno od sebe oddělil, vše je _decoupled_. Barvy jsou zvlášť v CSS pro generátor plakátků a náhledů, zvlášť ve starém SCSS pro web a zvlášť v novém SCSS pro web. Aby to drželo po hromadě, napsal jsem si [testy](https://github.com/honzajavorek/junior.guru/blob/master/tests/test_css_variables.py), které kontrolují, že je to vše konzistentní. Když už jsem byl u toho, doplnil jsem i testy, které kontrolují, že SVG obrázky mají správnou barvu. Ty dokonce odhalily několik SVG s černou místo s tmavě šedou barvou, tak jsem je opravil. Až zase přidám SVG pro nějakou svou malůvku a nechám ho černé, místo abych barvu přepsal na `#343434`, spadnou testy a upozorní mě.
+
+
+### Past vedle pasti
 
 Protože jsem se učil nové věci, šlo to ddoosstt [ppoommaalluu](https://cs.wikipedia.org/wiki/Ppoommaalluu) a nadával jsem u toho. Nefungovaly mi nějaké třídy, pořád jsem něco hledal, nevěděl jsem co si mám tvořit sám a co můžu najít už hotové v Bootstrapu. Dokonce jsem využil vlastní klub na to, abych si nechal poradit, když jsem se zasekl. Na tom je krásně vidět, že „juniorství“ a „začátečnictví” není lineární záležitost, ale i já můžu být začátečníkem, když se pouštím do něčeho nového a i člověk, který je papírově junior, ale bude se tomu věnovat o několik měsíců déle než já, mi může dobře poradit.
 
 Nicméně výsledkem je, že místo tun vlastního CSS mám jen pár řádků nad rámec Bootstrapu a hotové je celé základní stylování textu a vrchní žlutý proužek, který je responzivní. Bál jsem se, že bez BEMu v tom bude chaos, ale jak vidím, ono nakonec možná nebudu toho vlastního CSS potřebovat dost na to, aby v tom nějaký chaos mohl vzniknout. Nechám se překvapit do budoucna, ale zatím to vypadá slibně!
 
+
+### Patička
+
 Dál jsem pracoval na rozmyšlení a otextování patičky webu. Bude tam hned několik sekcí. Očumoval jsem patičky jiných webů, třeba nového webu Czechitas, potom CzechCrunch, Engeta, DámeJídlo, Rohlíku… No, všude jsem se trochu inspiroval. Text bych měl, teď zbývá jej „oživit“ a nastylovat. Oživení znamená, že některé informace by se měly dynamicky vypisovat z reálných hodnot. V patičce webu by například mělo transparentně být číslo, kolik zrovna vydělávám měsíčně. Stejně se mě na to pořád někdo ptá :)
+
+Nová patička mi pomůže zbavit se [stránky pro média](https://junior.guru/press/) a zruším časem i [stránku prosící o dobrovolné příspěvky](https://junior.guru/donate/).
 
 
 ## Firmy
 
-Když jsem zrovna neměl hlavu zabořenou v CSS, komunikoval jsem s firmami. Nevím, čím to je, jestli se to sešlo náhodou, nebo jestli oznámení [partnerství s Mews](https://twitter.com/honzajavorek/status/1407583463159574528) v některých lidech vyvolalo [FOMO](https://cs.wikipedia.org/wiki/FOMO), nebo jestli je to tím, že mám teď [velmi úspěšný status na LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:6810811424017842176/) (130+ reakcí v době psaní tohoto článku), no každopádně teď domlouvám partnerství hned na několika frontách:
+Když jsem zrovna neměl hlavu zabořenou v CSS, komunikoval jsem s firmami. Nevím, čím to je, jestli se to sešlo náhodou, nebo zda oznámení [partnerství s Mews](https://twitter.com/honzajavorek/status/1407583463159574528) v některých lidech vyvolalo [FOMO](https://cs.wikipedia.org/wiki/FOMO)? Nebo je to tím, že mám teď [velmi úspěšný status na LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:6810811424017842176/) (130+ reakcí v době psaní tohoto článku)?
+
+<iframe width="640" height="360" src="//www.youtube.com/embed/GA8z7f7a2Pk" frameborder="0" allowfullscreen></iframe>
+
+No každopádně, domlouvám teď partnerství hned na několika frontách:
 
 - S Mews, SDAcademy a Engetem jsem hledal možnosti spolupráce na onom projektu pomáhání různým znevýhodněným lidem do IT.
 - Uzavřel jsem partnerství s [Pipetail](https://pipetail.io/), dnes jsem přidal jejich logo na web.
