@@ -44,7 +44,7 @@ Když jsem zrovna neměl hlavu zabořenou v CSS, komunikoval jsem s firmami. Nev
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/GA8z7f7a2Pk" frameborder="0" allowfullscreen></iframe>
 
-No každopádně, domlouvám teď partnerství hned na několika frontách:
+No, bylo by to krásné, ale podle mě je to teda spíš náhodou. Každopádně, domlouvám teď partnerství hned na několika frontách:
 
 - S Mews, SDAcademy a Engetem jsem hledal možnosti spolupráce na onom projektu pomáhání různým znevýhodněným lidem do IT.
 - Uzavřel jsem partnerství s [Pipetail](https://pipetail.io/), dnes jsem přidal jejich logo na web.
