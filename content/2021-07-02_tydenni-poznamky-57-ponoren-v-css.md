@@ -49,6 +49,8 @@ Kromě patičky jsem stihl ještě nastylovat dvě komponenty přímo z obsahu n
 
 Výsledek lze opět živě vidět [tady](https://junior.guru/club2/). S citacemi jsem celkem spokojen. Zkusil jsem přidat obrázky. Mnoho lidí si také stěžovalo, že citace, jak jsou na JG teď, se špatně čtou, protože jsou pouze velkými písmeny. To by mělo být s tímto novým designem vyřešeno.
 
+![Citace]({static}/images/blockquote.png)
+
 
 ## Další poznámky
 
