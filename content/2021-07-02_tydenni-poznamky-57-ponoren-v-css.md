@@ -18,12 +18,15 @@ Vrátil jsem se k [mkdocs-simple-hooks](https://github.com/aklajnert/mkdocs-simp
 
 Jinja2 template filters si teď můžu [deklarovat hezky v konfiguráku](https://github.com/honzajavorek/junior.guru/blob/94f994af55f9846b8509b18993c8bf1ea98ffb1a/juniorguru/mkdocs/mkdocs.yml#L32) a tvorbu kontextu pro šablony mám relativně [přehledně v jednom souboru](https://github.com/honzajavorek/junior.guru/blob/94f994af55f9846b8509b18993c8bf1ea98ffb1a/juniorguru/mkdocs/context.py), vždy zvlášť co je sdílené, co je přístupné jen v Markdownu a co je přístupné jen v šabloně patřící k „theme“ webu.
 
-Samozřejmě mě to celé zase trochu zdrželo, utopil jsem v tom minimálně den a hodnota žádná velká, je to jen přehazování kódu vidlema z hromádky na hromádku. Jenže s tím mkdocs_macros_plugin to prostě už delší dobu skřípalo a já jsem si řekl, že kduž už dělám v2 celého webu, měla by chvíli vydržet funkční a raději do toho říznu teď hned, než v tom tu v2 udělám celou a sotva vytvořím novou věc, budu z ní hned rozmrzelý. Teď jsem spokojený a mám opět dojem, že to jde všechno správným směrem a že vytvořím něco, co pak dlouho nebudu muset zase měnit :)
+Samozřejmě mě to celé zase trochu zdrželo, utopil jsem v tom minimálně den a hodnota žádná velká, je to jen přehazování kódu vidlema z hromádky na hromádku. Jenže s tím mkdocs_macros_plugin to prostě už delší dobu skřípalo a já jsem si řekl, že když už dělám v2 celého webu, měla by chvíli vydržet funkční a raději do toho říznu teď hned, než v tom tu v2 udělám celou a sotva vytvořím novou věc, budu z ní hned rozmrzelý. Teď jsem spokojený a mám opět dojem, že to jde všechno správným směrem a že vytvořím něco, co pak dlouho nebudu muset zase měnit :)
 
 
 ## Nová patička webu
 
 Snažil jsem se dokončit vzhled a obsah nové patičky webu. Výsledek lze živě vidět [tady](https://junior.guru/club2/). Několik dní jsem ležel v CSS a posouval věci o pár pixelů doleva a pak zase doprava. Ladil jsem barvy, nadpisy, responzivitu pro mobily, atd. Neříkám, že je to finální verze, ale už jsem s tím docela spokojený a nerad bych do toho už moc šťoural.
+
+![Patička]({static}/images/footer.png)
+
 
 ### Informace o výdělcích
 
@@ -63,6 +66,7 @@ Výsledek lze opět živě vidět [tady](https://junior.guru/club2/). S citacemi
 - Šel jsem s kamarádkou na kafe, s bývalými kolegy na krásný dlouhý oběd nezaměstnaných lidí a jeden celý večer jsem jiného kamaráda stěhoval z jediného správného bydliště (Žižkov) někam do Středočeského kraje (Bořislavka). Pokud mohu aproximovat podle dalších bývalých kamarádů-sousedů, tento tah způsobí, že od teď budeme vídat už maximálně čtvrtletně. Praha ¯\\\_(ツ)\_/¯
 - Na webu JG je věta, že ajťáci nejsou asociálové někde ve sklepním doupěti. Někdo mi doporučil, ať se [podívám](https://www.youtube.com/watch?v=xg7xv6adtmI), jak vlastně takové doupě vypadá, že mu to přijde sociální dost, akorát jinak, než je třeba běžné. Tak jsem se podíval a pravda, formulaci asi trochu upravím :)
 - Stále mi nechodily peníze z Patreonu, tak jsem se podíval na PayPal, co se děje. Děje se to, že na rozdíl od Stripe, který mi posílá peníze na účet sám, se u PayPalu musí kliknout na tlačítko a ručně si je poslat, na což jsem tak nějak zapomněl. Takže jsem klikl na tlačítko a mám zase o něco víc pěněz :)
+- Odebral jsem [minifikaci HTML](https://www.npmjs.com/package/gulp-html-minifier) na JG. Možná to ušetří pár bajtů, ale výsledné HTML neodpovídá tomu HTML, které mám při vývoji (což někdy vede k chybám, které zjistím až na produkci) a je nečitelné pro juniory, kteří by se třeba na JG chtěli podívat do kódu stránky a zjistit, jak je vyrobená. Já se učil HTML kdysi tak, že jsem zkoumal cizí weby a učil se z toho, jak tam mají co udělané. Nechci to zamezovat nové generaci.
 - V redakci Česko.Digital se konečně povedlo schválit a vydat [článek Martiny Hytychové](https://blog.cesko.digital/2021/06/zkuste-open-source) o tom, jak může i junior začít v Open Source, právě zrovna díky komunitě jako je č.d. Hurá! Nasázel jsem o tom příspěvky na sociální sítě, ale ještě bych jej chtěl časem taky odcitovat různě na webu, přidat do příběhů, atd.
 - [Benevity](https://www.benevity.com/) se ozvalo, že máme za Pyvec naklikat čestné prohlášení, že nejsme církev, politická strana ani teroristi, tak jsem to proklikal. Je potřeba to takhle vždycky udělat, mám pocit že zhruba jednou za rok. Některé firmy dávají možnost zaměstnancům přispívat na neziskovky s tím, že k tomu i něco přihodí. Benevity je systém, který na to občas používají. V minulosti nám takhle někdo už několikrát přispěl, tak to udržujeme při životě.
 - Fíha, nějak mi uniklo, že první poznámky jsem napsal 8.5.2020, to znamená už víc jak před rokem O_o A já se bál, že mi to vydrží tak dva týdny :D
