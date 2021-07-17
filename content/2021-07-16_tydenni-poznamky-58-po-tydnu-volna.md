@@ -87,7 +87,7 @@ Závěr týdne jsem bušil CSS na novou stránku pro klub. Pracoval jsem na komp
 
 Taky mi přišlo, že mám strašný binec ve whitespace kolem různých věcí, tak jsem vše předělal tak, aby komponenty neměly žádný margin okolo, kromě maličkého marginu dole, který kdyžtak později zvětším přes nějakou přídavnou třídu. Toto by mělo navazovat na to, jak je to i přímo v Bootstrapu.
 
-Pak jsem se chvíli díval na svůj výtvor a byl smutný z toho, že se s tím tak mažu a pořád to vypadá, jako bych ty věci k sobě stloukl kamenem, přitom normální podnikatel vezme první WordPress šablonu a má za 5 minut něco, co vypadá 700x lépe. Ale řekl jsem si, že aspoň ten web nevypadá jako všechny ostatní weby a bude trochu osobitý. Navíc budu schopen jej sám udržovat, doplňovat věci a nové komponenty, a tak. Věřím, že to k nějaké rozumné kráse a funkčnosti dotáhnu, i když to nebude ta největší trendy bomba. Aspoň to bude uvěřitelné a autentické!
+Pak jsem se chvíli [díval na svůj výtvor](https://junior.guru/club2/) a byl smutný z toho, že se s tím tak mažu a pořád to vypadá, jako bych ty věci k sobě stloukl kamenem, přitom normální podnikatel vezme první WordPress šablonu a má za 5 minut něco, co vypadá 700x lépe. Ale řekl jsem si, že aspoň ten web nevypadá jako všechny ostatní weby a bude trochu osobitý. Navíc budu schopen jej sám udržovat, doplňovat věci a nové komponenty, a tak. Věřím, že to k nějaké rozumné kráse a funkčnosti dotáhnu, i když to nebude ta největší trendy bomba. Aspoň to bude uvěřitelné a autentické!
 
 ![Wish]({static}/images/wish.png)
 
