@@ -21,12 +21,12 @@ Narazil jsem na články Petera Debnára a hned jsem jich několik sjel. Moje ne
 
 ## Po týdnu volna
 
-- Prošel jsem 50 mailů (= zhruba půlka jednoho pracovního dne)
-- Prošel jsem všechny zprávy v klubu za poslední týden a odpověděl tam, kde to dávalo smysl (= zhruba jeden celý pracovní den)
-- Poslal jsem maily firmám, se kterými komunikuji, že můžeme komunikovat dál
-- Poslal jsem volňásky na WebExpo lidem, kteří je vyhráli (někdo se mi neozýval v klubu, ale na mail už jo)
-- Prošel jsem všechny upgrady dependencies z Dependabota na několika repozitářích a vše pomergoval
-- Prošel jsem notifikace z [Frozen-Flask](https://github.com/Frozen-Flask/Frozen-Flask/)
+- Prošel jsem 50 mailů (= zhruba půlka jednoho pracovního dne).
+- Prošel jsem všechny zprávy v klubu za poslední týden a odpověděl tam, kde to dávalo smysl (= zhruba jeden celý pracovní den).
+- Poslal jsem maily firmám, se kterými komunikuji, že můžeme komunikovat dál.
+- Poslal jsem volňásky na WebExpo lidem, kteří je vyhráli (někdo se mi neozýval v klubu, ale na mail už jo).
+- Prošel jsem všechny upgrady dependencies z Dependabota na několika repozitářích a vše pomergoval.
+- Prošel jsem notifikace z [Frozen-Flask](https://github.com/Frozen-Flask/Frozen-Flask/).
 
 Hned v pondělí byl taky termín na dokončení připomínek k materiálům, které vytváříme s Engetem, takže jsem to hned takhle po dovolené celé prošel a do večera se to snažil dokončit, ať je to připraveno včas. Na výsledek se dost těším :)
 
@@ -61,11 +61,11 @@ Když už jsem se hrabal v repozitáři, přejmenoval jsem hlavní větev z `mas
 
 ### Poetry místo Pipenv
 
-Dále jsem se rozhodl přejít z pipenv na poetry, které je mi už nějaký ten čas sympatičtější. Už před časem jsem zmigroval `[scripts]` z `Pipfile` do `Makefile`, takže teď už nic nebránilo přechodu - kromě toho, že je to samozřejmě nejzbytečnější věc, kterou bych se měl v této fázi projektu zabývat, ale tak když už jsem měl takové odpoledne na přehazování kódu a konfiguráků vidlema z hromádky na hromádku, řekl jsem si proč ne. Zahlédl jsem nástroj [pipenv-poetry-migrate](https://pypi.org/project/pipenv-poetry-migrate/), tak jsem ho zkusil použít. Některé věci to zmigrovalo, některé ne, např. `allow-prereleases = true`. Učil jsem se, jak říct Poetry, který Python má použít. Blbnulo mi [gql](https://pypi.org/project/gql/), asi právě kvůli nastavené prereleases, které se z Pipfile nepřeneslo úplně dobře. Nakonec jsem po delším debugování zjistil, že původní nastavení, že má pipenv brát prereleases, pipenv zjevně nerespektoval a instaloval `gql==2`, ne `gql==3.0.0a6`. Takže když jsem v poetry nastavil prereleases a ono to začalo respektovat a instalovat `gql==3.0.0a6`, nefungovalo mi to :) Takže nakonec stačilo všechno kolem prereleases odebrat.
+Dále jsem se rozhodl přejít z pipenv na poetry, které je mi už nějaký ten čas sympatičtější. Už před časem jsem zmigroval `[scripts]` z `Pipfile` do `Makefile`, takže teď už nic nebránilo přechodu - kromě toho, že je to samozřejmě nejzbytečnější věc, kterou bych se měl v této fázi projektu zabývat, ale tak když už jsem měl takové odpoledne na přehazování kódu a konfiguráků vidlema z hromádky na hromádku, řekl jsem si proč ne. Zahlédl jsem nástroj [pipenv-poetry-migrate](https://pypi.org/project/pipenv-poetry-migrate/), tak jsem ho zkusil použít. Některé věci to zmigrovalo, některé ne, např. `allow-prereleases = true`. Učil jsem se, jak říct Poetry, který Python má použít. Blbnulo mi [gql](https://pypi.org/project/gql/), asi právě kvůli nastavení prereleases, které se z Pipfile nepřeneslo úplně dobře. Nakonec jsem po delším debugování zjistil, že původní nastavení, že má pipenv brát prereleases, pipenv zjevně nerespektoval a instaloval `gql==2`, ne `gql==3.0.0a6`. Takže když jsem v poetry nastavil prereleases a ono to začalo respektovat a instalovat `gql==3.0.0a6`, nefungovalo mi to :) Takže nakonec stačilo všechno kolem prereleases odebrat.
 
 ### GitHub Pages místo Vercel
 
-Rozhodl jsem se pomaličku začít pracovat na tom, že vyhodím [Vercel](https://vercel.com/). Na ten nasazuji stránky JG přes strašlivý hack od dob, co změnili svoje CLI a přestali umožňovat integraci s CI tím způsobem, že deploy se provede nad složkou se soubory přímo z CI mašiny. Teď preferují, aby se vše buildilo u nich, jenže zatímco CI mašinu si nastavím celou sám (instalace fontů, browserů…), nad Vercel mašinou nemám kontrolu a musel jsem vše hackovat do nějakého bash skriptu a ladit pokus omyl. Takže jsem to pak vzdal a funguje mi to teď tak, že na Vercelu mašina jen čeká, až skončí CircleCI, a poté si stáhne zazipovaný artefakt se soubory a ten rozbalí a prohlásí to za vysledek buildu :D No a vzhledem k tomu, že žádné další výhody Vercelu už ani neocením, už ani ty feature branches prakticky nedělám, že bych potřeboval náhledy na rozpracovaný PR, tak jsem se rozhodl Vercel vyhodit a přejít na GitHub Pages, stejně jako jsem to už dřív udělal tady s tím blogem.
+Rozhodl jsem se pomaličku začít pracovat na tom, že vyhodím [Vercel](https://vercel.com/). Na ten nasazuji stránky JG přes strašlivý hack od dob, co změnili svoje CLI a přestali umožňovat integraci s CI tím způsobem, že deploy se provede nad složkou se soubory přímo z CI mašiny. Teď preferují, aby se vše buildilo u nich, jenže zatímco CI mašinu si nastavím celou sám (instalace fontů, browserů…), nad Vercel mašinou nemám kontrolu a musel jsem vše hackovat do nějakého Bash skriptu a ladit pokus omyl. Takže jsem to pak vzdal a funguje mi to teď tak, že na Vercelu mašina jen čeká, až skončí CircleCI, a poté si stáhne zazipovaný artefakt se soubory a ten rozbalí a prohlásí to za vysledek buildu :D No a vzhledem k tomu, že žádné další výhody Vercelu už ani neocením, už ani ty feature branches prakticky nedělám, že bych potřeboval náhledy na rozpracovaný PR, tak jsem se rozhodl Vercel vyhodit a přejít na GitHub Pages, stejně jako jsem to už dřív udělal tady s tím blogem.
 
 Protože mám na Vercel navázaná i DNS a spoustu dalších věcí, rozhodl jsem se začít jemně a nejdřív vyřešit deployment z CircleCI na GitHub Pages a až potom dělat migraci. Už tento samotný duplicitní deployment na GHP byl plný spousty zjišťování a ladění:
 
@@ -95,9 +95,9 @@ Pak jsem se chvíli [díval na svůj výtvor](https://junior.guru/club2/) a byl 
 
 - Vyšel se mnou [rozhovor na .NET.CZ Podcastu!](https://twitter.com/dotnetcezet/status/1414499848250875904)
 - Volal jsem si s Mews, abychom posunuli naši iniciativu v tom, abychom podpořili znevýhodněné lidí v jejich vstupu do IT. [Jan Meissner](https://www.linkedin.com/in/jan-meissner/), s nímž to řeším, dostal fajn nápad sepsat si všechno do jednoho dokumentu, což nám dalo celkový přehled toho, co máme, co je potřeba ještě udělat a co jsou konkrétní další kroky. Call byl díky tomu velmi produktivní a měl jsem z něj velkou radost.
-- Pokusil jsem se naplánovat schůzi Pyvce, kterou jsme minule nějak zapomněli naplánovat
-- Opravil jsem odkaz v poznámkách ke stanovám Pyvce
-- Autor „Automate the Boring Stuff with Python“ [vydal knížku](https://twitter.com/AlSweigart/status/1415030015129919491), „The Big Book of Small Python Projects“
+- Pokusil jsem se naplánovat schůzi Pyvce, kterou jsme minule nějak zapomněli naplánovat.
+- Opravil jsem odkaz v poznámkách ke stanovám Pyvce.
+- Autor „Automate the Boring Stuff with Python“ [vydal knížku](https://twitter.com/AlSweigart/status/1415030015129919491), „The Big Book of Small Python Projects“.
 - Zaujal mně [seznam zajímavých lidí z oboru](https://twitter.com/danluu/status/724570756831567872), které se vyplatí sledovat a číst, od Dana Luu.
 - Během 15 dní od 3.7. do 17.7. jsem naběhal 10 km, při procházkách nachodil 5 km, ujel na kole 102 km. Celkem jsem se hýbal 15 hodin a zdolal při tom 117 kilometrů.
 
