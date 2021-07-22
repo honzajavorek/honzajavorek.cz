@@ -36,7 +36,7 @@ No a potom je důležité se nezaseknout jen na učení, na kurzech, knihách, a
 Abych to shrnul:
 
 - Trhy se liší i mezi městy, natož mezi státy či světadíly (v Brně je díky Red Hatu větší poptávka po Pythonu a Linuxu, na Slovensku nefrčí Nette). I kdyby vše, co týpek ve videu říká, byla pravda, nemusí to být pravda použitelná v českém kontextu.
-- Kontraktorské práce u nás dělají spíš senioři. Vy si budete velmi pravděpodobně hledat _entry level_ práci jako zaměstnanec v nějakém startupu nebo korporaci, kde se vlastně teprve vše doučíte. Na volnou nohu odejdete kdyžtak spíš až po letech.
+- Kontraktorské práce u nás dělají spíš senioři. Vy si budete velmi pravděpodobně hledat _entry level_ práci jako zaměstnanec v nějakém startupu nebo korporaci, kde se vlastně teprve vše doučíte. Na volnou nohu odejdete kdyžtak spíš až po letech. Python vám navíc umožňuje programovat ve své práci i bez změny práce a oboru.
 - Pro Python existuje hned několik _career paths_, minimálně v Česku určitě: webové aplikace, datová analýza, automatizace, sítě, DevOps, ops a Linux…
 - Porovnání s JavaScriptem je postavené na hlavu, protože tam si bez dalších 3 technologií ani neškrtnete, zatímco práci s čistým Pythonem sehnat lze.
 - Ne každý hned ví, jakým směrem se chce ubírat. Pro tyto lidi je Python skvělá volba.
