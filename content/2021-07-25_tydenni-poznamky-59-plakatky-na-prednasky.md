@@ -26,12 +26,13 @@ To se nestalo, protože plakátek neměl žádné CSS, tento soubor nebyl propoj
 
 Díky tomu všemu jsem ukrojil hned několik dalších úkolů ze [seznamu věcí, které musím kolem každé přednášky udělat](https://gist.github.com/honzajavorek/b1a77651e566cb6405a131bbf1fb0692). Automatizace pokračuje! Stránku s akcemi bych chtěl jednou celou předělat a udělat hezčí, teď je to spíš ostuda, ale teď to ještě musí bohužel počkat.
 
+Zabýval jsem se dále domlouváním a připravováním dalších přednášek. Po delší pauze jsem se dostal do opačného problému, přednáška teď bude skoro co týden :) Už se těším!
 
+![Nora Kořánová]({static}/images/talk-nora.png)
 
+![Petr Viktorin]({static}/images/talk-petr.png)
 
-## Přednášky
-
-
+![Ivana Hučková]({static}/images/talk-ivana.png)
 
 
 ## Nová klubová stránka
