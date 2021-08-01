@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/tydenni-poznamky-60-nova-stranka-pro-klub/">
+    <title>Týdenní poznámky #60: Nová stránka pro klub &mdash; Honza Javorek</title>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1316071-6"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-1316071-6');
+      </script>
+
+    <meta property="og:title" content="Týdenní poznámky #60: Nová stránka pro klub &mdash; Honza Javorek">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-60-nova-stranka-pro-klub/">
+    <meta name="twitter:creator" content="@honzajavorek">
+    <meta name="twitter:site" content="@honzajavorek">
+
+    <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="683">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Honza Javorek &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2021-07-30T00:00:00+02:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <div class="content">
+<article class="article">
+  <header class="article-header">
+    <h1>
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-60-nova-stranka-pro-klub/" rel="bookmark">
+        Týdenní poznámky #60: Nová stránka pro klub
+      </a>
+    </h1>
+  </header>
+  <footer class="article-info">
+    <ul>
+      <li class="article-published">
+        <small>
+          <time datetime="2021-07-30T00:00:00+02:00">
+            30. 7. 2021
+          </time>
+        </small>
+      </li>
+      <li class="article-author">
+        <small>
+          <a href="#author">Honza Javorek</a>
+        </small>
+      </li>
+    <ul>
+  </footer>
+  <div class="article-content">
+
+    <div><div><div><div><p>Utekl další týden (26.7. — 30.7.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-59-plakatky-na-prednasky/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/club/">klub</a>, a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.</p>
+<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
+<h2 id="dokonceni-nove-stranky-pro-klub">Dokončení nové stránky pro klub<small class="permalink"><a href="#dokonceni-nove-stranky-pro-klub" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Tento týden jsem konečně přehodil <code>/club2/</code> na <a href="https://junior.guru/club/">/club/</a>, byť jsem předtím značně osekal rozsah toho, co jsem chtěl mít dokončeno před finálním vypuštěním do světa. Už teď ale vím, že to bylo to nejlepší, co jsem mohl udělat. Při tvorbě této nové stránky jsem udělal dvě hlavní chyby:</p>
+<ol>
+<li>Neudělal jsem rychlý prototyp, který tak akorát projde testem „Je to lepší než to, co tam je teď?“, a který co nejrychleji předhodím lidem, abych jej pak podle zpětné vazby postupně vylepšoval.</li>
+<li>Spojil jsem tvorbu nové stránky s překopáváním technického zázemí webu, ať už šlo o přesun na MkDocs a hledání cest, jak v tomto novém systému budu celý web dělat, nebo o přesun na zcela nový systém psaní CSS.</li>
+</ol>
+<p>Druhou chybu jsem udělal záměrně. Vlastně to nebyla chyba, ale nějaký vědomý <em>tradeoff</em>, protože jsem si věc od začátku plně uvědomoval, vyhodnotil jsem si ji a vědomě jsem se rozhodl, že půjdu méně efektivní cestou za cenu toho, že budu mít z procesu větší radost a přiblížím se nové architektuře. Můj příjem je stále kolem 20.000 Kč, což není úplně špatné, takže jsem si nějakou tu neefektivitu prostě dovolil, i proto, že mi už trochu začínalo hrabat z toho, jak musí být všechno efektivní a chyběla mi radost ze „zahradničení“.</p>
+<figure><img alt="Stránka o klubu, první pokus" src="https://honzajavorek.cz/images/club-page-1.png"><figcaption>
+První pokus o ilustraci</figcaption></figure>
+<p>První chybu jsem udělal nevědomky a spálila mě. Stránku jsem dělal dlouho, ale ne pouze kvůli dvojce, což by bylo OK. Dělal jsem ji dlouho, protože jsem se mentálně přepnul do režimu „vytvářím něco dokonalého, co všechny ohromí, a až to bude hotové, tak to s velkou pompou spustím.“ Což tedy není ani <em>lean startup</em>, ani <em>continuous delivery</em>, není to prostě nic, za co bych se pochválil. Jak se tvorba stránky prodlužovala a týdny ubíhaly, začínal jsem mít pocit, že je to nekonečné a že nepřináším žádnou hodnotu, že si tam někde v závětří posouvám pixely jeden den 5 doleva a druhý den 10 doprava, a že nejsem prostě užitečný. To jsem se v tomto týdnu jal ukončit a rozhodl se, že to prostě do pátku vypustím ven.</p>
+<figure><img alt="Stránka o klubu, druhý pokus" src="https://honzajavorek.cz/images/club-page-1.png"><figcaption>
+Druhý pokus o ilustraci</figcaption></figure>
+<p>Většinu týdne jsem tedy pracoval na stránce a snažil se ji dokončit, ať už šlo o celodenní zápas s úvodní ilustrací, ladění textů, ladění CSS, celodenní zápas s FAQ, apod. Měl jsem k této stránce spoustu poznámek a kartiček v Trellu, které jsem opakovaně procházel a ujišťoval se, že stránka splňuje vytyčené cíle. FAQ jsem opravdu psal celý jeden den, snažil jsem se inspirovat <a href="https://nomadlist.com/faq">Nomad Listem</a>, ale nedokážu říct, jestli jsem s tím úplně spokojený. Ke konci týdne jsem už měl tu stránku vypálenou na sítnici a nebyl jsem schopen dát dohromady kloudnou větu, která by dávala smysl, ze všeho toho psaní a cizelování významů a zkracování vět. Nakonec jsem tedy v pátek v deset večer nahodil na <a href="https://junior.guru/club/">/club/</a> novou verzi a zeptal se různých lidí, včetně lidí v klubu, co si o tom myslí.</p>
+<figure><img alt="Stránka o klubu, třetí pokus" src="https://honzajavorek.cz/images/club-page-1.png"><figcaption>
+Třetí, zatím poslední pokus o ilustraci a celkově texty a uspořádání záhlaví stránky o klubu</figcaption></figure>
+<p>A hádejte co? Mám teď hromadu zpětné vazby a už v tento okamžik vím, že tam musím některé věci předělat. Kdybych na stránce nepracoval v závětří, ale ukázal ji lidem mnohem dřív, mohl jsem připomínky možná zapracovávat už v průběhu. Bude nejspíš ještě pěknou chvíli trvat, než tu novou stránku někde začnu propagovat, nejsem s ní zatím spokojený. Ale jo, je rozhodně lepší než to, co tam bylo doteď…</p>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<ul>
+<li>V úterý se odehrála přednáška s Norou Kořánovou o tom, co je to <em>technical writing</em>, a povedla se moc pěkně. Trochu jsem stresoval, protože dlouho žádná přednáška nebyla, ale vše bylo OK.</li>
+<li>Zkoumal jsem, jak je to s těmi poměry stran pro plakátky, když je chci mít jako <em>thumbnail</em> pro video na YouTube. No a došlo mi, že video je na YT, co se poměru stran týče, zřejmě tak velké, jak velké jsem ho nahrál. V mém případě to znamená, že je velké náhodně a pokaždé jinak. Od toho se pak odvíjí i potřebná velikost pro náhledové obrázky. Pokaždé jinak. Pokud bych tedy chtěl mít jednu velikost náhledových obrázků, musel bych překódovat všechna videa do nějakého jednotného rozměru. Kdybych dokázal z hlavy napsat příkaz do terminálu, který by to za mě udělal (a doplnil zbytek černou barvou), tak to snad i udělám, ale zatím jsem se na to vykašlal. Patlat se s tím ručně v iMovie, to se mi fakt nechce. Rozměr náhledů jsem nicméně upravil tak, aby nebyl u většiny videí oříznutý zvrchu a zespodu (protože pak zmizí kusy textu), ale aby spíš způsoboval to, že se po stranách při nesedícím rozměru objeví černé pruhy (protože pak nic důležitého nezmizí a pouze něco nedůležitého přebývá). Opět posílám velký dík <a href="https://www.vypocitejto.cz/trojclenka/">této stránce</a>, kde jsem mohl rychle měnit čísla a pak zkoušet, co bude jak vypadat.</li>
+<li>Dolaďoval jsem další přednášky a informace o nich. Dobré je, že si to už nemusím psát nikam do poznámek, ale mohu si to psát <a href="https://github.com/honzajavorek/junior.guru/blob/4fca99f06da40c11f8a67b5c0201924d7c123fda/juniorguru/data/events.yml">přímo do events.yml</a>. Když od speakera zjistím nějakou informaci, mohu ji hned doplnit. Pokud je informací zatím málo, <a href="https://github.com/honzajavorek/junior.guru/commit/7ebc3de7bfbb1db2ea3679b573e61ebe24a1d55a">akorát blok zakomentuji</a>. A speakeři mohou <a href="https://github.com/honzajavorek/junior.guru/pull/647">posílat PR</a>, nebo <a href="https://github.com/honzajavorek/junior.guru/commit/816a24b80a28e01897acdbe8d2f9394602ad6aa1">psát komentáře</a>.</li>
+<li>Dal jsem do kódu JG dva <a href="https://cs.wikipedia.org/wiki/Velikono%C4%8Dn%C3%AD_vaj%C3%AD%C4%8Dko_(virtu%C3%A1ln%C3%AD)">easter eggy</a>.</li>
+<li>Složil jsem nový gauč a starý gauč jsem rozložil a po kouskách odnosil po točitých schodech do sklepa.</li>
+<li>Zapracoval jsem nějaké změny do PR, který má implementovat strojové učení při třídění nabídek práce. Protože jsem ho nechal dlouho ležet a mezitím udělal dost změn v infrastruktuře kódu (třeba přechod na Makefile a Poetry), udělal jsem po domluvě s Mílou <a href="https://github.com/honzajavorek/junior.guru/pull/655">nový PR</a> se všemi změnami, na kterém může pak pohodlně pokračovat.</li>
+<li>Delší dobu pokukuji po <a href="https://simpleanalytics.com/">Simple Analytics</a> místo Google Analytics. Není to priorita, ale občas se k tomu vrátím. Tentokrát mě na to přivedl Jan Tichý <a href="https://www.linkedin.com/posts/jantichy_google-analytics-4-masterclass-od-honzy-tich%C3%A9ho-activity-6823300847833821184-t5dI">svým statusem na LinkedIn</a>. To, co jsme tam řešili, jsem si zkusil <a href="https://twitter.com/SimpleAnalytic/status/1419776056479952901">zjistit přes Twitter</a> a dostal jsem pěknou odpověď (už vidím, jak mi takhle odpoví někdo z GA, haha). No a potom s podobným tématem přišel zase Simon Willison <a href="https://twitter.com/simonw/status/1420798613412663307">na Twitteru</a>. U něj se objevil odkaz na <a href="https://plausible.io/">Plausible</a>, o kterém jsem předtím nevěděl. Až nadejde čas dát GA pá pá, budu si muset oboje pořádně projít a nějak si vybrat, oboje totiž vypadá dobře. Oboje je navíc vyráběno v EU, což se mi líbí. GA byly OK na rozjezd, jsou zadarmo, ale nelíbí se mi. Jsou pro mě zbytečně komplikované, přesnost jejich dat <a href="https://www.orbitmedia.com/blog/inaccurate-google-analytics-traffic-sources/">je stejná iluze</a> jako přesnost jakýchkoliv jiných měřidel, a protože je to sledovací a reklamní gigant Google. Pokud nemusím, nechci Google krmit svými návštěvníky.</li>
+<li>Diskutoval jsem v klubu a vítal nové členy. <a href="https://www.mews.com/">Mews</a> byli hodně aktivní ve zvaní členů. Mají šest vstupů a všechny poctivě využili, dokonce lidi vybrali dost pestře, aby mezi nimi byli junioři i senioři. Vzorový přístup! Snad to inspiruje i další firmy.</li>
+<li>Dočetl jsem <a href="https://www.goodreads.com/book/show/32200035-arrival">knihu povídek od Teda Chianga</a>. Podle jedné z nich byl natočen film <a href="https://www.imdb.com/title/tt2543164/">Arrival</a>, který se mi osobně dost líbil. Povídka je ale snad ještě lepší. Nejlepší ale je, že i všechny ty ostatní povídky jsou jedna podruhé každá opravdu šíleným, hlavurozebírajícím úletem. Při čtení mi vždycky vybuchla hlava a musel jsem často nad daným tématem dost přemýšlet a nebo si pročíst půl Wikipedie. Nečetl jsem nikdy moc žádné sci-fi, ani povídky, natož sci-fi povídky. Toto se mi ale dost líbilo. Doporučoval bych tuto četbu každému, ale není to lehké čtení a kniha nevyšla česky, na čemž se dost lidí zřejmě zasekne.</li>
+<li>Zjistil jsem, že <a href="https://junior.guru/membership/">stránku pro členy</a> patrně nikdo z členů nepoužívá. Což je skvělé, protože ji mohu tím pádem zrušit. Základní informace o klubu jsou přímo v klubu. Odkazy na nastavení a propojení s Discordem mohou být ve FAQ, nebo prostě někde bokem.</li>
+<li>Během 7 dní od 26.7. do 1.8. jsem při procházkách nachodil 3 km. Celkem jsem se hýbal 1 hodinu a zdolal při tom 3 kilometry.</li>
+</ul>
+<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Tři věci, které bych chtěl zvládnout udělat příště:</p>
+<ol>
+<li>Rozšířit tým.</li>
+<li>Vylepšovat stránku pro klub, zapracovat připomínky.</li>
+<li>Propagovat <a href="https://junior.guru/events/#planned">další naplánované přednášky</a> a naházet nové věci do fronty na sociální sítě, kde teď nic nemám.</li>
+</ol>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
+<ul>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwww.vox.com%2F2015%2F1%2F15%2F7551873%2Fjaywalking-history&amp;h=371350c0f306c15de11e352fb80850f2fd0d9926f2406f77de2c367c23756162">The forgotten history of how automakers invented the crime of "jaywalking"</a><br>Jak se automobilovému průmyslu podařilo přesvědčit lidi, že mají vyklidit veřejný prostor v ulicích a cesty přecházet pouze po přechodech. Nevzniklo to samo, šlo o lobby a PR.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwww.emilydamstra.com%2Fplease-enough-dead-butterflies%2F&amp;h=f65106c797666de277ba5ae552492b3862de9ac77450e3fe562947adfe5cc1a1">Please, enough with the dead butterflies!</a><br>Když kreslíte motýla, kreslíte ho mrtvého, nebo živého? :)</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fzpravy.aktualne.cz%2Fdomaci%2Ftenkrat-na-zizkove-unikatni-stare-fotografie-prazske-ctvrti%2Fr%7E75986ce4b3cd11ebb9860cc47ab5f122%2F&amp;h=ed9e17b3bfdf63e698022e2e08699cd3038a15d7a68288b7f0c7368a6a389c1d">Tenkrát na Žižkově. Unikátní staré fotografie pražské čtvrti, která slaví 140. výročí</a><br>Super foto série i s popisky</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fa2larm.cz%2F2021%2F07%2Fproc-ma-inspekce-prace-problemy-zjistovat-porusovani-zakoniku-prace%2F&amp;h=fa0e213874ea0b8751e4b92338d1c34275c6d8d8838ccdb7b4448e41dd089e49">Proč má inspekce práce problémy zjišťovat porušování zákoníku práce</a><br>Přesný popis toho, jak probíhá kontrola inspekce práce a proč tento systém v současné době příliš nefunguje.</li>
+</ul>
+<p><small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small></p></div></div></div></div>
+  </div>
+
+  <footer class="article-footer">
+    <div id="author" class="author">
+      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
+      <address>
+          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
+          a tvůrce projektu <a href="https://junior.guru/">junior.guru</a>,
+          pomáhajícího lidem získat svou první práci v IT. Od roku 2011
+          pomáhá budovat českou komunitu kolem jazyka
+          <a href="https://python.cz/">Python</a>.
+      </address>
+      <p class="button button-donate">
+        <a href="https://github.com/sponsors/honzajavorek/">
+          <i class="fa fa-github"></i> GitHub Sponsors
+        </a>
+        <a href="https://www.patreon.com/honzajavorek">
+          <i class="fa fa-patreon"></i> Patreon
+        </a>
+        <a href="https://junior.guru/donate/">
+          <i class="fa fa-credit-card"></i> jiné        </a>
+    </p>
+    </div>
+    <p class="button">
+        <a href="https://honzajavorek.cz/blog/">
+          <i class="fa fa-list-ul"></i> Archiv článků
+        </a>
+    </p>
+  </footer>
+</article>
+      </div>
+      <footer class="footer">
+        <address>
+          © Copyright 2007—2021
+          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+  </body>
+</html>
