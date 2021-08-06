@@ -1,4 +1,4 @@
-Title: Týdenní poznámky #61: Přírůstek týmu
+Title: Týdenní poznámky #61: Přírůstek
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
 Home: False
