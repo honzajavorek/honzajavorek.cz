@@ -57,7 +57,7 @@ Do brandu JG to sedí, protože už od prvních dní je na tom webu sekce „na 
 
 Mám „všechny rád”, ale okolo je čára lihovkou, kterou klidně dám na odiv, čímž se liším od ostatních, kteří mlží a do těchto hranic nejdou. Asi aby nebyli za neomarxisty nebo nevím proč, aby si nemuseli udělat názor, aby si nesnížili možnosti co se týče klientely. Já mám vnitřní kompas a na klientelu vlastně kašlu (vždycky najdu firmy nebo lidi, který mi něco pošlou, věřím že trh je velký), říkám co si myslím a můj otevřeně inkluzivní pohled na svět je ve veřejném diskurzu vlastně tak minoritní, že je to pak pro lidi zajímavý. Když Czechitas dají v každým rozhovoru větu „my nejsme žádné feministky“, protože se možná bojí, aby byly granty a aby v konzervativním česku nedělaly vlny, možná se chtějí zalíbit každýmu, tak já na to jdu jinak a říkám na plnou hubu „tady feminista a zastánce pravidel chování, jsem na to hrdej, ber nebo nech bejt“.
 
-> Super popsaná propozice na stránkách, odstrašující příklady komunikace na FB fakt žeru
+> Super popsaná propozice na stránkách, odstrašující příklady komunikace na FB fakt žeru.
 >
 > -- Jiří Vicherek
 
