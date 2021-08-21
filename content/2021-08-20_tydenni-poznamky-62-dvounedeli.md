@@ -61,6 +61,7 @@ Asi aby nebyli za neomarxisty nebo nevím proč, aby si nemuseli udělat názor,
 - Sledoval jsem běžící kampaně a přípravy na volby. Dost toho se promítlo i do přečtených článků, z nichž velké množství jsem sdílel, takže jsou klasicky dole tady v článku. Měl jsem tu několik dlouhých odstavců o volbách a o změně klimatu, ale rozhodl jsem se nakonec, že to vydám zvlášť a ne v rámci poznámek.
 - Zapnuli jsme v Discordu novou funkci, [thready](https://blog.discord.com/connect-the-conversation-with-threads-on-discord-3f5fa8b0f6b). Zatím jsem ale neměl energii to tam s těmi thready víc rozjet. Na mentoring to bude super. Znám thready ze Slacku a tam vůbec nejsem jejich fanoušek. Mnohem raději mám koncept jednoduchého odpovídání na zprávy, jako je na Telegramu nebo právě na Discordu. To, jak ale Discord vymyslel své nové thready vypadá slibně a rozhodně na tom jde vidět, že se fakt strašně snažili, aby ty thready nebyly na prd.
 - [Způsobil jsem](https://github.com/twbs/icons/issues/942), že v Bootstrapu bude ikona pro Stravu.
+- Rozebral jsem a složil kliku od venkovních dveří. [YouTube videa](https://www.youtube.com/results?search_query=jak+rozebrat+kliku+u+dve%C5%99%C3%AD) pomohla, ale trvalo by to o dvě hodiny méně, kdyby někdo dveře nenalakoval po nainstalování kliky a klika se k nim tím lakem nepřilepila.
 - Během 15 dní od 7.8. do 21.8. jsem při procházkách nachodil 36 km. Celkem jsem se hýbal 13 hodin a zdolal při tom 36 kilometrů.
 
 
