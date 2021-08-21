@@ -45,11 +45,15 @@ Na stránce jsem přeházel některé sekce, dodělal sekci o přednáškách v 
 
 Negativní citace na stránce klubu jsem zatím nevyhodil, přišlo mi že budí vášně tak akorát. Anonymizoval jsem autory citací, ať jim neničím život, a dal to červeně, aby bylo jasnější, že jsou to negativní příklady. Mají tři funkce:
 
-- Marketing, je to záměrně drsné vymezení, kde si neberu tak úplně servítky a díky tomu se o tom může mluvit, lidi to trkne, je to polarizující message podobně jako mívá Basecamp a DHH, prostě já to dělám takhle a za tím si stojím, nerozmělňuju ten přístup, nesnažím se CoC někam schovat, ale dávám jej vědomě na odiv.
+- Marketing, je to záměrně drsné vymezení, kde si neberu tak úplně servítky a díky tomu se o tom může mluvit, lidi to trkne, je to polarizující message podobně jako mívá Basecamp a [DHH](https://twitter.com/dhh), prostě já to dělám takhle a za tím si stojím, nerozmělňuju ten přístup, nesnažím se CoC někam schovat, ale dávám jej vědomě na odiv.
 - Vysvětlení _value proposition_ produktu, vymezuju se oproti „konkurenci“.
 - Filtrace členů už na vstupu: Kdo by tyhle vtípky chtěl dělat, hned si tam přečte, že tenhle produkt pro něj není, šetříme si vzájemně mrzení. Kdo do klubu jde a toto si přečetl, ví že je tam CoC a že se toto řeší, tak si dává bacha.
 
-Klub je opakem takových těch tradičních českých uslintaných komunit a stojím si za tím. Je to polarizující a je to tak záměrně a je to marketingový kalkul. DHH podobně protlačil Hey, musí ukázat na ostatní a říct „oni vás trackujou, v každým e-mailu, Mailchimp, Gmail, všichni vás trackujou, ale my ne. Protože _value_ „netrackujeme“ prostě nemusí stačit, pokud lidi neví, že všichni trackujou. Téma pak tvořím a vlastním ho.
+Klub je opakem takových těch tradičních českých uslintaných komunit a stojím si za tím. Je to polarizující a je to tak záměrně a [je to marketingový kalkul](https://basecamp.com/gettingreal/04.6-make-opinionated-software). DHH podobně protlačil Hey, musí ukázat na ostatní a říct „oni vás trackujou, v každým e-mailu, Mailchimp, Gmail, všichni vás trackujou, ale my ne. Protože _value_ „netrackujeme“ prostě nemusí stačit, pokud lidi neví, že všichni trackujou. Téma pak tvořím a vlastním ho.
+
+> The best software has a vision. The best software takes sides. When someone uses software, they’re not just looking for features, they’re looking for an approach. They’re looking for a vision. Decide what your vision is and run with it.
+>
+> -- [Your app should take sides](https://basecamp.com/gettingreal/04.6-make-opinionated-software), Getting Real
 
 Může to vyznít pateticky, pokud to pro lidi téma nebude, ale přijde mi, že se tím ten klub opravdu liší a současní členové to vnímají jako velkou hodnotu, takže se to snažím zvednout a použít a vysvětlit a zároveň je to věc, se kterou mám zkušenosti skrze 4x PyCon CZ a spoustu let a která mi osobně vadí na jiných českých komunitách a která mi vlastně vadí i obecně. Souzní to s tím, jak vnímám svět, takže jsem schopen jít a mluvit hodinu v podcastu na tohle téma… tzn. marketingově bych měl být schopen to použít.
 
