@@ -33,10 +33,6 @@ Výsledky studentských voleb v procentech získaných hlasů celkem, zdroj [web
 
 Koukněte se na výsledky studentských voleb, kde Zelení dostali skoro stejně procent jako ANO. Když si budete chtít jako občan, politik nebo novinář vysvětlit, jak je možné, že mají Zelení tolik, napadne vás prostě jen jedna jediná věc: Voličům, v tomto případě mladým, záleží na klimatu. Je možné, že tam spadlo pár hlasů i kvůli dalším aspektům programu Zelených, ale protože se volí podle ksichtů a hesel, ne podle programů, ten hlavní důvod je pro každého jasný jak facka, je to klima.
 
-> Po jedenácti letech pořádání Studentských voleb je zřejmé, že volební preference studentů naznačují, jak v dlouhodobější perspektivě dopadnou řádné volby. Strany, jejichž obliba u studentů trvale narůstala, se dostávají nahoru i ve skutečných volbách. A naopak, strany s opačnou trajektorií výsledků ve volbách nanečisto, jdou dolů ve volbách skutečných.
->
-> — Karel Strachota v článku na [Novinky.cz](https://www.novinky.cz/volby/do-poslanecke-snemovny/clanek/u-studentu-vyhrali-pirati-se-stan-ano-daleko-za-nimi-uspeli-by-zeleni-40372739)
-
 Teď si představte, že se takový sloupeček začne objevovat v průzkumech nebo dokonce ve výsledcích voleb. Je to nejpřímnější marketingový signál, jaký může volič dát všem politikům, že není zvědavý na jejich nerozhodnost v oblasti klimatu, že chce nějaký plán a že ho toto téma zajímá.
 
 
@@ -124,6 +120,10 @@ V Německu (s nímž jsme nejvíc ekonomicky provázaní) Zelení útočí na ka
 (Zajímavé mimochodem je, že hodně lidí kolem mě chce PirSTAN volit, ale často rozmrzele, ať už kvůli Pirátům, nebo kvůli STAN. Nakonec ty hlasy určitě posbírají, ale bojím se, že ta koalice shrábne tak neurčitou skupinu voličů, že následně svými rozhodnutími a kompromisy nebude schopna uspokojit vlastně nikoho.)
 
 Zelení shodou okolností zastávají hodnoty, které zastávám i já a na Praze 3, kde bydlím, dělají dobrou práci. Mám rád Berga (pro ajťáky pamětníky: svého času stál za Vsetínským a následně [Zlínským Barcampem](http://zlin.barcamp.cz/)) i Davis, jsou pro mě dlouhodobě věrohodní. Tak proč dělat kompromisy s vlastním svědomím. Dle klimatických predikcí a výsledků studentských voleb soudím, že se jednou za tuhle volbu před svými potomky stydět nebudu.
+
+> Po jedenácti letech pořádání Studentských voleb je zřejmé, že volební preference studentů naznačují, jak v dlouhodobější perspektivě dopadnou řádné volby. Strany, jejichž obliba u studentů trvale narůstala, se dostávají nahoru i ve skutečných volbách. A naopak, strany s opačnou trajektorií výsledků ve volbách nanečisto, jdou dolů ve volbách skutečných.
+>
+> — Karel Strachota v článku na [Novinky.cz](https://www.novinky.cz/volby/do-poslanecke-snemovny/clanek/u-studentu-vyhrali-pirati-se-stan-ano-daleko-za-nimi-uspeli-by-zeleni-40372739)
 
 Jak jsem ale už psal, smyslem není být 100% sladěný s tím, co Zelení chtějí a udělat z Davis premiérku. Ten hlavní záměr je vypáčit pomocí volby Zelených ekologickou agendu i ze stran, jako je ODS. Možná se smějete, ale ona to není úplná blbost! Mrk do Británie. Spojené království chce pod vedením Borise Johnsona dosáhnout snížení emisí o téměř 70 % do roku 2030. Třeba se jim to nepovede, ale doprdele, aspoň chce, má cíl, má plán! Každý druhý stát v Evropě vyhlašuje, do kdy bude uhlíkově neutrální a jak to provede. To není tím, že si všude zvolili Zelené, nebo že Brusel diktuje. To je tím, že je to téma, které prostě všichni řeší, ať už jsou vlevo nebo vpravo. A ty bystřejší tužky v penálu už dávno hledají příležitosti jak něco vymyslet první a ještě na té transformaci vydělat. O tom si v Česku můžeme zatím nechat jen zdát.
 
