@@ -1,6 +1,8 @@
 Title: Volím marketing
 Image: images/magdalena-davis.jpg
 Lang: cs
+Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10159261095427707
+Twitter-Comments: https://twitter.com/honzajavorek/status/1440737601514733574
 
 
 Volby jsou o marketingu. Už dávno se nevyhrávají programem. Ten před volbami nikdo nečte a po volbách nerespektuje. Strany jen nahazují ksichty a hesla, aby si do nich lidé promítali svá očekávání a aby se následně zcela pocitově rozhodli, komu z dostupného výběru to hodí. Musíme ale hrát tuhle hru? Já jsem se rozhodl, že to odehraju naopak. Vyberu si téma, které je pro mě důležité a pomocí marketingu ho odkomunikuji politikům.
