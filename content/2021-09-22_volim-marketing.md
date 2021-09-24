@@ -12,7 +12,7 @@ Volby jsou o marketingu. Už dávno se nevyhrávají programem. Ten před volbam
 Magdalena Davis. Obrázek jsem stáhl z webu [zeleni2021.cz](https://www.zeleni2021.cz/).
 
 
-Poznámka: Dovolil jsem si v tomto článku vyjímečně využít výrazů jako „srát“, „hovno“ nebo „dělat si prdel“. Pomohlo mi to určité věci popsat krátce a výstižně, byť délku článku to nezachránilo a je to opět na dlouhé čtení. Třeba čtení na záchodě, když už jsme teda zrovna u toho.
+Poznámka: Dovolil jsem si v tomto článku výjimečně využít výrazů jako „srát“, „hovno“ nebo „dělat si prdel“. Pomohlo mi to určité věci popsat krátce a výstižně, byť délku článku to nezachránilo a je to opět na dlouhé čtení. Třeba čtení na záchodě, když už jsme teda zrovna u toho.
 
 
 ## Marketing vůči politikům
