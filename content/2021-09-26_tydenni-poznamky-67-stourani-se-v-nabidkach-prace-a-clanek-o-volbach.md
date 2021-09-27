@@ -42,7 +42,7 @@ S Czechitas jsme si zavolali a byť jsem nějakými moudry přispěl, mohl jsem 
 
 Jak jsem už [popisoval před časem]({filename}/2021-08-29_tydenni-poznamky-63-analytics-a-pocatky-nove-prirucky.md), když mám nápad na článek a přijde slina, musím jít psát, jinak už to nikdy nenapíšu. To se mi přesně stalo, vstal jsem (na mě) brzo ráno a psal jsem až do večera. Výsledkem je [tenhle článek]({filename}/2021-09-26_tydenni-poznamky-67-stourani-se-v-nabidkach-prace-a-clanek-o-volbach.md), který následně [vydali i na serveru ekolist.cz](https://ekolist.cz/cz/publicistika/nazory-a-komentare/honza-javorek-volim-marketing). To je pro mě nové, takové věci se mi dřív staly asi jen [se Zdrojákem](https://zdrojak.cz/autori/honza-javorek/) :)
 
-Po vydání článku mi na několik dní vybuchly notifikace na Twitteru, takže jsem si nakonec musel zase zablokovat sociální sítě, abych taky něco udělal a nezbláznil se z toho. Čekal jsem mnohem víc hejtů na Twitteru a mnohem míň hejtů v komentářích na tom Ekolistu, lol!
+Po vydání článku mi na několik dní vybuchly notifikace na Twitteru, takže jsem si nakonec musel zase zablokovat sociální sítě, abych taky něco udělal a nezbláznil se z toho. Rodiče mi napsali, že článek je moc dlouhý na to, aby ho dnes kdokoliv četl (legit) a že mě nevychovali k takto sprostým slovům, které jsem tam použil. Měl jsem prý třeba napsat „vykašlali se“. No, každopádně čekal jsem mnohem víc hejtů na Twitteru a mnohem míň hejtů v komentářích na tom Ekolistu, lol!
 
 ![Čísla k článku Volím marketing]({static}/images/volim-marketing-analytics.png)
 Nejvíc lidí si to přečetlo ve čtvrtek
