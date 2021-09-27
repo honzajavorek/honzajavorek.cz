@@ -49,6 +49,7 @@ Vzhledem k číslům se obávám, že volby asi příliš neovlivním, ale třeb
 Po vydání článku mi na několik dní vybuchly notifikace na Twitteru, takže jsem si nakonec musel zase zablokovat sociální sítě, abych taky něco udělal a nezbláznil se z toho. Rodiče mi napsali, že článek je moc dlouhý na to, aby ho dnes kdokoliv četl (legit) a že mě nevychovali k takto sprostým slovům, které jsem tam použil. Měl jsem prý třeba napsat „vykašlali se“. No, každopádně čekal jsem mnohem víc hejtů na Twitteru a mnohem míň hejtů v komentářích na tom Ekolistu, lol!
 
 ![Jasánek-Javorek]({static}/images/jasanek-javorek.jpg)
+Tohle teda zrovna není hejt, tohle mi přišlo roztomilý.
 
 
 ## Další poznámky
