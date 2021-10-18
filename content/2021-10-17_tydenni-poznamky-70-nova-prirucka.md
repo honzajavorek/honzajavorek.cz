@@ -26,11 +26,15 @@ Markdown nyní generuje jiné kotvy k nadpisům, než původně byly. Vím, že 
 
 V rámci dolaďování designu jsem ještě upravoval vzhled bočního menu, šířku sloupců při různé šířce okna prohlížeče a ladil jsem ještě různé další drobné detaily, což si také vzalo nějaký čas. Dále jsem řešil několik problémů s [kartami](https://www.designui.cz/lekce/kartove-komponenty-v-ui), které beru z Bootstrapu, ale musel jsem si je přiohnout, aby plnily moje požadavky. Původně jsem také měl místo štítků jen ikony, ale nešlo vůbec poznat co je co, takže teď to jsou ikony a text. Dodělat jsem musel i komponentu na vypisování dvou tří nabídek práce na příhodných místech, což se používá právě v oné příručce o hledání první práce.
 
-Píšu to tady trochu zmateně, protože je pondělí deset večer a už se s těma poznámkama moc nemažu, ale věřte mi, mám to promyšlený! :D
+Píšu to tady trochu zmateně, protože je pondělí deset večer a už se s těma poznámkama moc nemažu, ale věřte mi, mám to promyšlený! Cílem bylo prostě přehodit vše tak jak je do nového designu a od toho se odrazit. Jediná nová věc je sloučení stránek pod _table of contents_ vlevo a souhrnný název „Příručka“. Ale musel jsem se strašně plácat přes prsty, abych nezačal přidávat stránky, aktualizovat texty, atd.
 
-Následně jsem zkontroloval ještě jednou celý text a všechny odkazy a pak jsem šel mazat. Smazal jsem velké množství starých věcí na webu, snad kromě starého CSS, do toho radši nerýpu, abych neovlivnil nějaké stránky, které zatím zůstávají. To je vám vždycky taková radost, když mažu nepotřebný kód! Čím víc, tím líp :)
+Než jsem to pustil ven, zkontroloval ještě jednou celý text a všechny odkazy a pak jsem šel mazat. Smazal jsem velké množství starých věcí na webu, snad kromě starého CSS, do toho radši nerýpu, abych neovlivnil nějaké stránky, které zatím zůstávají. To je vám vždycky taková radost, když mažu nepotřebný kód! Čím víc, tím líp :)
 
 ![Příručka před a po]({static}/images/prirucka-pred-po.png)
+
+Když jsem si to naposled procházel, ještě jsem se rozhodl udělat pár minimálních úprav v CSS starého hodního menu. Posunul jsem odkazy doleva, aby aspoň připomínaly novou hlavičku a místo tlačítka na klub jsem upravil jak se indikuje aktivní položka, opět aby to co nejvíc připomínalo novou navigaci, i když jsou jiné velikosti fontů apod. Snad to povede k lepšímu propojení starého a nového, než překlopím vše.
+
+No a teď už vlastně na webu zbývá jen pár ošklivých kačátek. Především úvodní stránka, stránka s eventy a pak jedna velká část, nabídky práce, ale ty přijdou na redesign asi až jako poslední. Pak odeberu nesmysly jako tiskové zprávy pro média nebo stránku [donate](https://junior.guru/donate/). Dobrovolné příspěvky už nechci propagovat, chci aby šli lidi spíš do klubu a podpořili mě tím.
 
 
 ## Příprava na časopis
