@@ -10,13 +10,6 @@ Utekl zase nějaký ten týden (18.10. — 24.10.) a tak [stejně jako minule]({
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
 
-## Dolaďování příručky
-
-- Zlepšil jsem (snad!) navigaci na stránkách příručky. Přidal jsem modrý jezdící proužek s odkazem na obsah. Obsah v dolní části stránky byl stručnější, než obsah na desktopu, tak jsem to teď udělal tak, aby byly zcela ekvivalentní. Jednou třeba přidám zobrazování aktuální kapitoly nebo vysouvání menu zleva pomocí JavaScriptu, ale teď to takhle stačí. A třeba to ani nikdy nebude potřeba?
-- Na radu Dana Srba jsem přidal `[id]{ scroll-margin-top: 1rem }` do CSS, aby odkazy na kotvy navigovaly na místo, které má trochu „rezervu“. S přidáním modrého `position: sticky` proužku na mobilu to navíc začala být nutnost.
-- Udělal jsem pár úprav v textech na webu. Například přidal slovo „zaokrouhleno“ u přehledu příjmů v patičce, aby mi lidi nepsali, že to v součtu nedává přesně 100 %. Vyhodil jsem zmínku o „solo entrepreneur“, protože v Česku stejně nikdo neví co to je. V textu je můj přístup vysvětlen dostatečně opisem.
-
-
 ## Zrušení starého ceníku a Simple Analytics
 
 Po překlopení příručky na Markdown a nový design mi přišlo nejlepší vyčistit oblast kolem stránky https://junior.guru/hire-juniors/, kde byl ceník pro jednorázové nabídky práce a pod ním ceník sponzorství příručky firemním logem. Tři čtvrtiny ceníku už nebyly tak úplně v platnosti, polovina textů nebyla zcela aktuální. Rozhodl jsem se stránku úplně odebrat. To spustilo jakýsi efekt padajících kostek domina, resp. stránek a kódu, které jsem mohl _konečně_ smazat.
@@ -71,6 +64,15 @@ Firmy, které si zaplatily za logo na příručce, jsem uchovával v Google Shee
 Časem jsem vytvořil nový list, „companies“, kde jsem evidoval veškerá partnerství firem s klubem, počty zaplacených členů atd. Měl jsem tam i sloupec, zda mají logo na příručce a postupně jsem začal web portovat na to, aby bral data z této tabulky. Jenže posílání emailů a statistiky byly stále napojené na starý model a tak to žilo nějaký čas vedle sebe.
 
 Tento týden jsem všem napsal a zeptal se jich, zda ty emaily čtou. Prý ne. Kdo se zmínil, že by se to snad mohlo hodit do budoucna, toho jsem uklidnil, že to kdyžtak vytáhnu ze statistik a že teď budou kompletně veřejné statistiky, kde si každý zjistí co chce. Tím bylo hotovo, tabulku jsem zrušil a s ní i všechno, co s tímto souviselo v kódu.
+
+
+## Dolaďování příručky
+
+- Zlepšil jsem (snad!) navigaci na stránkách příručky. Přidal jsem modrý jezdící proužek s odkazem na obsah. Obsah v dolní části stránky byl stručnější, než obsah na desktopu, tak jsem to teď udělal tak, aby byly zcela ekvivalentní. Jednou třeba přidám zobrazování aktuální kapitoly nebo vysouvání menu zleva pomocí JavaScriptu, ale teď to takhle stačí. A třeba to ani nikdy nebude potřeba?
+- Na radu Dana Srba jsem přidal `[id]{ scroll-margin-top: 1rem }` do CSS, aby odkazy na kotvy navigovaly na místo, které má trochu „rezervu“. S přidáním modrého `position: sticky` proužku na mobilu to navíc začala být nutnost.
+- Udělal jsem pár úprav v textech na webu. Například přidal slovo „zaokrouhleno“ u přehledu příjmů v patičce, aby mi lidi nepsali, že to v součtu nedává přesně 100 %. Vyhodil jsem zmínku o „solo entrepreneur“, protože v Česku stejně nikdo neví co to je. V textu je můj přístup vysvětlen dostatečně opisem.
+- Díky nové příručce a neexistenci staré stránky s ceníkem vznikla příležitost odebrat „podmenu“, takové to tečkované, které bylo na příručce a některých dalších stránkách. Neměl jsem jej moc rád a rozhodl jsem se jej odebrat, protože se díky všem těm čistkám používalo už jen na jednom místě, a to nedůležitém. Podmenu zaniklo a není! Radost ze smazaného kódu.
+- Další radost přišla s promazáváním JavaScriptu. Stále čekám, kdy budu potřebovat nějaký ten pokročilý framework, ale teď se mi stal spíše opak. Většina mého dosavadního JS kódu řešila různé nedokonalosti a složitosti v designu příručky nebo podmenu. Prošel jsem tedy soubory a dost z nich jsem mohl bez náhrady smazat. Některé budu moci smazat až později, ale pokud se mi to povede, nejspíš mi zbudou tak dva JS soubory o 20 řádcích ¯\\\_(ツ)\_/¯ Zas nebude React, no jo.
 
 
 ## Psaní pro Heroine
