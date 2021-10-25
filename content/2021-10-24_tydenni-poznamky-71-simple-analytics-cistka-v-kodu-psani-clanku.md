@@ -112,6 +112,7 @@ Nuže, teď už víc tuším co chci, co mi vyhovuje, jak vypadá v praxi integr
 - Hrál jsem si chvíli s [tímhle](https://csswizardry.com/ct/), ale pro svou hlavičku jsem z toho nic nevyvodil. Přednášku jsem si poslal do Pocketu.
 - Kolegyně z Czechitas, která pracuje s API na pracovní nabídky, mě poprosila o úpravu, která by zajistila stabilní počet sloupců apod. Nakonec jsme došli k tomu, že když to tlačí do Kebooly, tak se možná hodí to posílat spíš jako CSV a ne JSON. [Předělal jsem to](https://github.com/honzajavorek/junior.guru/commit/51c900f178b9124a6b81d2e3da0413fefd7626a9), díky [csv](https://docs.python.org/3/library/csv.html) přímo v Pythonu bylo to nakonec rychleji, než jsem čekal.
 - Protože spolupracujeme na datech z nabídek práce, přidal jsem na [stránku klubu](https://junior.guru/club/) logo Czechitas.
+- Povedlo se mi omylem napsat zase [tweet, který dostal stovky lajků](https://twitter.com/honzajavorek/status/1451116512824147968) a v době psaní těchto poznámek je stále ještě dostává. Opět nijak nesouvisí s mým podnikáním. Protože jde o tweet v angličtině, zkusil jsem pod něj místo klubu šoupnout aspoň svůj GitHub Sponsors profil, samozřejmě bez jakéhokoliv efektu :)
 - Během 7 dní od 18.10. do 24.10. jsem při procházkách nachodil 19 km. Celkem jsem se hýbal 7 hodin a zdolal při tom 19 kilometrů.
 
 
