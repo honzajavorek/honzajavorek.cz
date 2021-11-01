@@ -8,6 +8,6 @@ from pelicanconf import *
 
 
 DELETE_OUTPUT_DIRECTORY = True
-GOOGLE_ANALYTICS = 'UA-1316071-6'
+SIMPLE_ANALYTICS = True
 SITEURL = 'https://honzajavorek.cz'
 FEED_POCKET_ATOM = 'feed-pocket.xml'

@@ -81,7 +81,7 @@ As certain content on the homepage is dynamic, the site should be re-generated a
 The site runs under custom domain `honzajavorek.cz`. The HTTPS is turned on in the GitHub Pages repository settings. The domain's DNS is managed by [WEDOS](https://www.wedos.cz/). E-mail redirecting is done by [ImprovMX](https://improvmx.com/). CSV export from WEDOS:
 
 ```
-"";"název";"TTL";"typ";"data"
+"";"name";"TTL";"type";"data"
 "";"";"3600";"A";"185.199.110.153"
 "";"";"3600";"A";"185.199.111.153"
 "";"";"3600";"A";"185.199.108.153"
@@ -91,6 +91,10 @@ The site runs under custom domain `honzajavorek.cz`. The HTTPS is turned on in t
 "";"prazeni";"3600";"CNAME";"honzajavorek.github.io"
 "";"www";"3600";"CNAME";"honzajavorek.github.io"
 ```
+
+## 📊 Analytics
+
+The site uses privacy-focused Simple Analytics, with a public dashboard at [simpleanalytics.com/honzajavorek.cz](https://simpleanalytics.com/honzajavorek.cz).
 
 ## 👀 License
 
