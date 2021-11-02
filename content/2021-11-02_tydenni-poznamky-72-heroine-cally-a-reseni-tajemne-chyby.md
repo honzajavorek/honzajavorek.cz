@@ -82,10 +82,11 @@ Nejvtipnější bylo, že poslední výpis před tím, než se to zaseklo a ček
 Zvýšil jsem tedy logování v oblasti, kde se provádí geocoding adresy. Chtěl jsem zjistit, proč se vůbec posílá nějaký request při geokódování slova „Brno“, když na největší města mám zkratku, jež vůbec nesahá na API. Ze zvýšeného logování jsem zjistil, že o geokódování nejde a i když jsem tam přidal timeout (což je rozhodně dobře), nic to v tomto případě neovlivní. Nakonec jsem povolil logovat úplně všemu a díky tomu, že logovalo i `urllib3` jsem zjistil, čím to je.
 
 ```
-[juniorguru.sync.jobs.pipelines.locations] DEBUG: Geocoding 'Brno' [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.att.jobs:443
+[juniorguru.sync.jobs.pipelines.locations] DEBUG: Geocoding 'Brno'
+[urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.att.jobs:443
 ```
 
-Ano, je to tak. Přidané nabídky od AT&T to celé rozbily! Robot se snaží podívat na faviconu firemních stránek a udělat z ní logo nabídky práce. To ovšem trvá nekonečně dlouho. AT&T má zjevně na webu nějakou ochranu scrapování. Ještě aby ne, když to jsou takoví síťaři, asi to mají všechno pošéfované nejvíc overkill.
+Ano, je to tak. Přidané nabídky od AT&T to celé rozbily! Robot se snaží podívat na faviconu firemních stránek a udělat z ní logo nabídky práce. To ovšem trvá nekonečně dlouho. AT&T má zjevně na webu nějakou ochranu scrapování. Ještě aby ne, když to jsou takoví síťaři, asi to mají všechno pošéfované, nejvíc overkill.
 
 Knihovna [favicon](https://pypi.org/project/favicon/), která toto za mě dělá, není mou úplně oblíbenou, protože má synchronní `request.get()` natvrdo v sobě (takže se blbě testuje nebo zakomponovává do míst, kde je kód asynchronní), ale naštěstí jsem z dokumentace vyčetl, že mu lze aspoň předat nějaké parametry. Tak jsem nastavil timeout a tím se to celé opravilo.
 
@@ -106,7 +107,7 @@ Dnes večer při nightly buildu mě akorát překvapilo AT&T ještě jednou, a t
 
 ## Sluchátka
 
-Mám vítěze. Sluchátka Jabra 75t jsem si [okamžitě zamiloval](https://twitter.com/honzajavorek/status/1452761443187793923) a zatím jsem na nich nenašel jedinou nevýhodu.
+Mám vítěze. Sluchátka Jabra 75t jsem si [okamžitě zamiloval](https://twitter.com/honzajavorek/status/1452761443187793923) a zatím jsem na nich nenašel jedinou nevýhodu. Používám je teď při uspávání, ježdění s kočárem, při práci, je to paráda na všechny činnosti, na které jsem je chtěl.
 
 Oproti dražším AirPodům Pro neměly mít ANC, ale přišel mi nějaký SW update a napsalo mi to, že ANC to odteď podporuje a mohu si ho nastavit. Akorát že jsem to zatím nějak nastavit nestihl a sluchátka tlumí zvuky pasivně i bez ANC, takže tuto funkci mám ještě dokonce nevyzkoušenou. Každopádně mě to překvapilo :)
 
