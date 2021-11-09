@@ -44,7 +44,7 @@ Cílem je marketing pro JG. Časopis Heroine mě původně oslovil jako partnera
 
 Další výhodou je, že psaní článků mi pomáhá vylepšovat příručku. Píšu texty, které následně mohu nějakým způsobem recyklovat a využít v příručce, i kdyby to bylo promyšlení nějaké nové analogie nebo pár nových odstavců. Články pro média mě nutí ke stručnosti a mají termíny. Takto už to v minulosti bylo v případě [CzechCrunch](https://www.czechcrunch.cz/2020/10/boreni-mytu-a-uzitecne-rady-pro-kazdeho-zacatecnika-honza-javorek-vydava-prirucku-o-hledani-prvni-prace-v-it/) a [Hospodářek](https://nazory.ihned.cz/c7-66842510-ofofc-cf514314230baa8). Díky těmto článkům následně vznikla na webu celá nová [stránka o motivaci a mýtech](https://junior.guru/motivation/).
 
-Spuštěním projektu byla velká novina, což je příležitost napsat statusy do všech možných skupin na FB, kde jinak samozřejmě o svých aktivitách nespamuju. Jedná se o projekt pro ženy, takže příležitost napsat i do skupin pro PyLadies, Czechitas, apod. Do zprávě o spuštění projektu jsem nezapomněl dát odkazy na JG, abych lidem připomenul, že JG existuje, nebo na ně navedl někoho nového.
+Spuštění projektu byla velká novina, což je příležitost napsat statusy do všech možných skupin na FB, kde jinak samozřejmě o svých aktivitách nespamuju. Jedná se o projekt pro ženy, takže příležitost napsat i do skupin pro PyLadies, Czechitas, apod. Do zprávě o spuštění projektu jsem nezapomněl dát odkazy na JG, abych lidem připomenul, že JG existuje, nebo na ně navedl někoho nového.
 
 Všude to získalo nějaké lajky, ale neměřil jsem přímo jaký to mělo konkrétně zásah v návštěvnosti. Mohl bych k odkazům přidat utm parametry a koukat na to v Simple Analytics, ale takovéto kobercové postování dělám jen jednou za čas a nevím, co bych z čísel měl vyvodit. Tak či tak bych to udělal a to, jestli někdo díky tomu objevil můj web a za týden se rozhodne zkusit klub, to stejně nezměřím. Stačí mi tedy graf, kde vidím, že na web přišlo o trochu víc lidí a jsem spokojen.
 
@@ -66,10 +66,10 @@ Další věc, kterou jsem v rámci marketingu měl naplánovanou, byla předná�
 
 Dostal jsem poměrně dlouhý slot na přednášení, ale na přípravu jsem si nechal málo času. Vlastně jen pátek. Seběhl se mi totiž termín pro další článek Heroine a ten jsem nechtěl honit na poslední chvíli, plus všechny další úkoly, které jsem měl. Ten jeden den jsem tomu věnoval intenzivně a poctivě se bez prokrastinace připravoval, ale bylo to náročné. Nikdy jsem přednášku o JG z tohoto úhlu pohledu nedělal a napadaly mě u toho další a další zajímavé věci. Skončil jsem o půlnoci se 45 nebo kolika slajdy. Ještě jsem si to jednou trochu vyzkoušel a ve dvě ráno jsem šel spát. Byl jsem vyřízený, ale měl jsem hrozné nervy a stejně jsem nemohl usnout.
 
-Dítě se zrovna tu noc rozhodlo projevovat nějaký spánkový regres nebo co, takže se budilo tak co hodinu. Zdálo se mi o JG a o tom, že jsem v kuchyni a na dřevěnou podlahu jsem vylil 20 litrů vody a snažil se je nějak z té podlahy dostat. Přednáška byla v devět ráno, vstával jsem v osm. Na snídani jsem měl 5 lžiček vloček s mlíkem a Red Bull. Sekvence činností jako vzít nůž a namazat ženě chleba na snídani marmeládou a pak zavřít marmeládu jsem dělal ve špatném pořadí. Byl jsem prostě úplně mrtvej.
+Dítě se zrovna tu noc rozhodlo projevovat nějaký spánkový regres nebo co, takže se budilo tak co hodinu. Zdálo se mi o JG a o tom, že jsem v kuchyni na dřevěnou podlahu vylil 20 litrů vody a snažím se je nějak z té podlahy dostat. Přednáška byla v devět ráno, vstával jsem v osm. Na snídani jsem měl 5 lžic vloček s mlíkem a Red Bull. Sekvence činností jako vzít nůž a namazat ženě chleba na snídani marmeládou a pak zavřít marmeládu jsem dělal ve špatném pořadí. Byl jsem prostě úplně mrtvej.
 
 > Zněl jsi tak unaveně a vyčpěle, jinak než obvykle. Dítě musí dávat záhul asi :)<br>
-> -- kamarád
+> — kamarád
 
 Věděl jsem, že přednášku asi nestihnu v požadovaném čase, tak jsem hned po startu chtěl rychle začít mluvit, ale lidi si začali stěžovat na nekvalitní zvuk z mikrofonu. To vedlo k mému zmatkování a přepojování se na mikrofon u sluchátek. U toho se mi povedlo asi 3x omylem zapnout Apple Music a spustit písničku (AM nepoužívám, ale [jednu písničku jsem si tam v rámci absurdního humoru přes to kdysi koupil](https://twitter.com/honzajavorek/status/1394272249142730762), tak tam je, o to dadaističtější situace to byla). Každopádně jsem tím celým ztratil asi deset minut.
 
@@ -118,9 +118,9 @@ Můj neslaný nemastný a trochu utrápený a seškrtaný článek má jen 1000+
 
 Tři věci, které bych chtěl zvládnout udělat příště:
 
-1.
-2.
-3.
+1. Marketing: rozhovor se Smitio, účast na eventu od Jeanne, napsat do Engeta.
+2. Pověnovat se uspořádání klubu, kde už se delší dobu hromadí nápady na změny.
+3. Začít vylepšovat [stránku s přednáškami](https://junior.guru/events/) v klubu. Vymyslet, jak do ní zanést i pravidelné spontánní srazíky.
 
 
 ## A co vy?
