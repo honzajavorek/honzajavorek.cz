@@ -65,6 +65,8 @@ V klubu v úterý proběhla přednáška a otázky/odpovědi s Matějem Kotrbou,
 
 Členové klubu na YouTube objevili videa, která jsme natáčeli v létě s Engetem. Z Engeta mi zřejmě zapomněli napsat, že už je to venku. Nevadí, jal jsem se plnit svou stranu dohody a přidal videa do příručky. Mrk [třeba sem](https://junior.guru/candidate-handbook/#jak-dlouho-to-trva). Nastyloval jsem si k tomu speciální komponentu a použil ji i na jiná videa, která v příručce jsou, [například od yablka](https://junior.guru/candidate-handbook/#doprovodna-videa).
 
+Vkládat ta videa přímo kódem z YouTube nechci. Jednak to zpomaluje načítání, je to cizí prvek, blbě se to styluje a taky každý takový vložený prvek trackuje lidi přes svoje cookies.
+
 Celý kurz je [tady](https://www.youtube.com/playlist?list=PLrsbT5TVJXZa2daxo8_3NagDzPqHjBEpI). Minimálně co se týče obsahu si myslím, že je to kvalitní zdroj informací a těšilo mě na něm spolupracovat. Snažili jsme se to udělat tak, aby bylo jasné, že jsme to společně pouze vytvořili, ale že Engeto kurzy nikde vyloženě nedoporučuji, takže zůstávám nezávislý. Engeto si platí členství v klubu a toto jsme vyrobili jako společný projekt v rámci toho. Zatím jsem tomu ještě nedělal promo, to přijde později.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2Km3orTYFrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
