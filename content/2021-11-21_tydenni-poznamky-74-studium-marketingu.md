@@ -97,7 +97,7 @@ Tato praktika se zrovna teď vyplatila a člověk, který do klubu přišel, dok
 - Uzavřel jsem partnerství s firmou kamaráda Věroše, [wf tech](https://www.wftech.cz/)! Mají logo a jsou členy klubu.
 - Zúčastnil jsem se [eventu Jeanne Trojan](https://www.linkedin.com/posts/activity-6864514296039186432-khoW). Se spící dcerkou v nosítku na callu. Nikdo nemusí vědět, že ještě 3 minuty před začátkem řvala na celé kolo a poblila mi zrovna ruku. Účast na těchto eventech má vždy velkou networkingovou hodnotu, Jeanne si lidi pečlivě vybírá. Tentokrát jsem tam hned potkal někoho z firmy, s níž brzy nejspíš uzavřu partnerství.
 - Po delší době jsem si volal s Mews. Probrali jsme probíhající spolupráci a zase o malý kousíček posunuli naši ambici rozjet nějaký program pro znevýhodněné lidi.
-- Povedlo se mi ze dna kelímku od Ayranu vysoustruzit kolečko, kterým jsem poopravil myčku. Kdy jste naposledy použili kružítko vy?
+- Povedlo se mi ze dna kelímku od Ayranu vysoustružit kolečko, kterým jsem poopravil myčku. Kdy jste naposledy použili kružítko vy?
 - Během 12 dní od 10.11. do 21.11. jsem naběhal 3 km, při procházkách nachodil 27 km. Celkem jsem se hýbal 11 hodin a zdolal při tom 30 kilometrů.
 
 
