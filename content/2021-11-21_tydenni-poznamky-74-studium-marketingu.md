@@ -89,6 +89,7 @@ Tato praktika se zrovna teď vyplatila a člověk, který do klubu přišel, dok
 
 - Ke změnám v klubu, např. novým kanálům apod., jsem se zatím nedostal. Snažil jsem se ale mnohem víc klubu věnovat. Na vše jsem pravidelně odepisoval, díval jsem se na projekty, které lidi sdílí v kanálu s výrobky a poctivě vítal nové členy. Jeden den jsem třeba otevřel klub a bylo tam 100 nových zpráv v jednom kanálu, ale naštěstí jsem jel zrovna 3 hodiny vlakem, tak nebyl problém to přečíst. S [Danem](https://coreskill.tech/), který v klubu dělá moderátora, jsme si zavolali a probrali, jak se máme a co koho trápí.
 - Dopisoval jsem si s firmama.
+- Discord má parádní novou funkci [Events](https://support.discord.com/hc/en-us/articles/4409494125719-Scheduled-Events).
 - Volal jsem si se [Soňou Mištríkovou](https://www.linkedin.com/in/so%C5%88a/), členkou klubu a mentorkou z Mews, ohledně její přednášky v klubu o QA a testování. Sama se přihlásila, že by ji udělala. Byla to dokonce ona, která mi dohodila na přednášku Matěje.
 - Zavolali jsme si s Czechitas skrze data z pracovních nabídek. Mám tam bug. Ještě jsem ho neopravil. Další cally nebudou, postupné vylepšování budeme řešit už asynchronně.
 - Komunikoval jsem s AT&T kvůli inzerovaným nabídkám práce. Nepovolil jsem jim inzerovat další, které už mi přišly fakt mimo, tzn. nebyly dost juniorní.
