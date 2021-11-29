@@ -59,7 +59,7 @@ Výsledkem všech změn je, že se buildy projektu zkrátily z 60 minut na 25 mi
 
 ## Dokončování článku pro Heroine
 
-Místo prvního odstavce jsem měl u odevzdaného článku napsáno „bla bla bla, stejně redakce napíše lepší úvod“, ale to mi neprošlo, tak jsem to ještě v průběhu týdne dopisoval. Článek, který jsem se snažil [podpořit anketou na Twitteru](https://twitter.com/honzajavorek/status/1463589379390193664), vyšel v pátek: [Chcete začít programovat a nevíte kudy do toho?](https://www.heroine.cz/zeny-it/6682-chcete-zacit-programovat-a-nevite-kudy-do-toho) Potěšilo mě, že tentokrát se nemuselo seškrtat skoro nic a dokonce se do postranních boxíků vlezlo i to, co jsem myslel, že se nikam nevleze.
+Místo prvního odstavce jsem měl u předešlého odevzdaného článku napsáno „bla bla bla, stejně redakce napíše lepší úvod“, ale to mi neprošlo, tak jsem to ještě v průběhu týdne dopisoval. Článek, který jsem se snažil [podpořit anketou na Twitteru](https://twitter.com/honzajavorek/status/1463589379390193664), vyšel v pátek: [Chcete začít programovat a nevíte kudy do toho?](https://www.heroine.cz/zeny-it/6682-chcete-zacit-programovat-a-nevite-kudy-do-toho) Potěšilo mě, že tentokrát se nemuselo seškrtat skoro nic a dokonce se do postranních boxíků vlezlo i to, co jsem myslel, že se nikam nevleze.
 
 Taky jsem psal další článek. Psal jsem ho pozdě, měl termín v neděli, odevzdal jsem ho v úterý. Ale dovolil jsem si to, protože i vydávání článků mělo skluz. Nikdo neprotestoval. Kdy vyjde, to zatím nevím.
 
