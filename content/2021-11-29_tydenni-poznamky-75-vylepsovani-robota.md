@@ -61,14 +61,6 @@ Místo prvního odstavce jsem měl u odevzdaného článku napsáno „bla bla b
 
 Taky jsem psal další článek. Psal jsem ho pozdě, měl termín v neděli, odevzdal jsem ho v úterý. Ale dovolil jsem si to, protože i vydávání článků mělo skluz. Nikdo neprotestoval. Kdy vyjde, to zatím nevím.
 
-## Komunikace s firmami
-
-- Volal jsem si s CDN77 a vymýšleli jsme, jak budeme dál spolupracovat.
-- Byla schůze výboru [Pyvce](https://pyvec.org/).
-- Psal jsem si s Engetem kvůli videím a dalším věcem. Budeme si volat.
-- Psal jsem jedné firmě, zda chce prodloužit logo na příručce.
-- S Mews jsme řešili přikoupení dalšího vstupu pro dalšího člověka do klubu.
-
 ## Změna brandingu na sociálních sítích
 
 O víkendu jsem se rozhodl „relaxovat“ tím, že uvedu v realitu něco, co mi šťouralo už delší dobu v hlavě v návaznosti na mé předchozí studium marketingu. Řekl jsem si, že informace o JG přesunu víc na svoje osobní profily. JG je tak či tak pevně spjato s mou osobou a od začátku se nijak nebráním tomu, abych brand propojoval. Rozhodl jsem se to tedy propojit důrazněji.
@@ -92,6 +84,14 @@ Ještě musím lidi přesměrovat z firemních profilů na moje osobní. To bude
 Minule jsem psal, jak se navzájem dobíráme s [Jakubem Mrozkem](https://jakubmrozek.cz/). To dobírání si s sebou nese spoustu kontextu. Lidem, kteří nečtou naši soukromou Messenger konverzaci (ahoj Zucku), to může vyznít všelijak, tak bych tady chtěl jen zmínit, že já Jakubovi závidím, že může číst knihy jak na běžícím páse, nesměju se mu za to. Četl bych taky.
 
 Taky rozumím tomu, proč věci dělá tak jak je dělá, má k tomu své dobré důvody. Můžu se smát memům, ale mega mu držím palce. Kdyby existovala jedna cesta k úspěchu, tak JG neexistuje, protože po ní rozhodně od začátku nešlo, nedrželo se všech pouček. Vždy je potřeba dělat věci v kontextu, ne slepě opakovat poučky, i když na memu vypadají dobře. Já sám jsem se provinil hned několika věcmi, ze kterých si Dagobert dělá v memech srandu, přitom JG existuje a roste.
+
+## Komunikace s firmami
+
+- Volal jsem si s CDN77 a vymýšleli jsme, jak budeme dál spolupracovat.
+- Byla schůze výboru [Pyvce](https://pyvec.org/).
+- Psal jsem si s Engetem kvůli videím a dalším věcem. Budeme si volat.
+- Psal jsem jedné firmě, zda chce prodloužit logo na příručce.
+- S Mews jsme řešili přikoupení dalšího vstupu pro dalšího člověka do klubu.
 
 ## Další poznámky
 
