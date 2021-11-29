@@ -55,7 +55,7 @@ Když už jsem byl u optimalizací, zrychlil jsem i načítání avatarů (tam b
 
 Nakonec jsem si po všech těch změnách všiml, že bot uživateli Jarda odebral roli, kterou získá, když má představení a avatar. Přitom Jarda avatar i představení má. Toto jsem řešil půl hodiny, než jsem si všiml, že Jardové jsou v klubu dva. No nic.
 
-Výsledkem všech změn je, že se buildy projektu zkrátily z 60 minut na 25 minut. Během změn v botovi jsem upravil i způsob logování informací. Na CI jsem vypnul _debug_ výpisy. Ty mám zase zapnuté na lokálu, když vyvíjím. Do _debug_ si dovolím házet i nějaké specifické informace, například IDčka, názvy threadů a kanálů, atd., ale do _info_, které se zobrazuje na CI, už dávám pouze vágní nebo agregované info o tom, co se zhruba děje. Nechci, aby mi do CI logů zbytečně ucházela data z klubu.
+Výsledkem všech změn je, že se buildy projektu zkrátily z 60 minut na 25 minut. Během změn v botovi jsem upravil i způsob logování informací. Na CI jsem vypnul _debug_ výpisy. Ty mám zase zapnuté na lokálu, když vyvíjím. Do _debug_ si dovolím házet i nějaké specifické informace, například IDčka, názvy threadů a kanálů, atd., ale do _info_, které se zobrazuje na CI, už dávám pouze vágní nebo agregované info o tom, co se zhruba děje. Nechci, aby mi do CI logů zbytečně padala data z klubu, přece jenom je to veřejné, ale klub veřejný není.
 
 ## Dokončování článku pro Heroine
 
