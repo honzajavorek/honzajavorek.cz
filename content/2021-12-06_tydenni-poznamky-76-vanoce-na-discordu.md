@@ -63,7 +63,7 @@ Musím pořádně promyslet, jak má vypadat onboarding uživatele a co mu mám 
 
 Prošel jsem si různé nápady a chci nakonec v prosinci stihnout hlavně dvě věci. Dárkové poukázky a PFka pro firmy.
 
-Chtěl rozjet prodej dárkových kupónů na členství v klubu, aby někdo mohl někomu k Vánocům předplatit členství. To vymyslel kamarád [Petr](http://petrvacha.com/). Když jsme byli na kafi v Brně ve Spolku, říkal jsem mu, že plnohodnotný marketingový plán bude za delší dobu než jsem myslel, a že teď musím akorát rychle vymyslet nějakou vánoční akci, jen nevím jestě vůbec co. Okamžitě z něj vypadlo, že mám udělat dárkové poukázky. Parádní nápad! Bál jsem se, že to bude těžké zrealizovat, ale díky Memberful [asi nebude](https://memberful.com/help/how-to/offer-and-manage-gifts/). Také bych měl pak vyrobit opravdovou poukázku, třeba nakreslit, aby si ji lidi mohli vytisknout a někomu ji reálně pod stromečkem dát.
+Chci rozjet prodej dárkových kupónů na členství v klubu, aby někdo mohl někomu k Vánocům předplatit členství. To vymyslel kamarád [Petr](http://petrvacha.com/). Když jsme byli na kafi v Brně ve Spolku, říkal jsem mu, že plnohodnotný marketingový plán bude za delší dobu než jsem myslel, a že teď musím akorát rychle vymyslet nějakou vánoční akci, jen nevím jestě vůbec co. Okamžitě z něj vypadlo, že mám udělat dárkové poukázky. Parádní nápad! Bál jsem se, že to bude těžké zrealizovat, ale díky Memberful [asi nebude](https://memberful.com/help/how-to/offer-and-manage-gifts/). Také bych měl pak vyrobit opravdovou poukázku, třeba nakreslit, aby si ji lidi mohli vytisknout a někomu ji reálně pod stromečkem dát. To zase napadlo investorku.
 
 PFka firmám chci pojmout jinak, než to běžně bývá, ale potřebuji k tomu něco navrhnout a nechat vyrobit, takže už bych to neměl moc odkládat. Firem mě sponzoruje 14 a mám jejich adresy kvůli fakturaci, takže pak akorát ručně nabalím 14 obálek a zanesu na poštu, _no big deal_.
 
@@ -71,7 +71,7 @@ Taky mi napsal [Lumír](https://twitter.com/lumirbalhar) z Ostravy, jestli nemá
 
 ## Posun v brandingu
 
-Jak jsem psal minule, posunul jsem branding ze separátní značky JG víc směrem k mému osobnímu brandingu. V souvislosti s tím jsem upravil i web. Jednak jsem aktualizoval svou fotku na novou profilovku, jednak jsem v patičce vyměnil některé odkazy na sociální sítě z „firemních“ na moje profily. Také jsem všude změnil e-maily na webu z ahoj@junior.guru na honza@junior.guru.
+Jak jsem psal minule, posunul jsem branding ze separátní značky JG víc směrem k mému osobnímu brandingu. V souvislosti s tím jsem upravil i web. Jednak jsem aktualizoval svou fotku na novou profilovku, jednak jsem v patičce vyměnil některé odkazy na sociální sítě z „firemních“ na „osobní“ profily. Také jsem všude změnil e-maily na webu z ahoj@junior.guru na honza@junior.guru.
 
 Všiml jsem si, že můžu vlastně udělat ještě i cover image k profilu JG na FB (FB Page) a LinkedIn (Company Page), tak jsem je vyrobil. Pokusil se vytvořit něco, co by lidi spíš navedlo na můj osobní profil. Taky jsem vytvořil obrázky, které jsem nasdílel na jednotlivých „firemních“ profilech s tím, že by měly pocestným a fanouškům oznámit, že zábava se teď už bude odehrávat jinde. [Příklad z IG](https://www.instagram.com/p/CW5S1nMrSDq/). Minimálně na FB to celkem funguje, každý den mi chodí do notifikací, kolik nových lidí začalo sledovat můj profil, až mě to celkem i udivuje.
 
@@ -105,7 +105,7 @@ V souvislosti s tím jsem změnil i _call to action_ v [zápatí stránek](https
 
 ## Komentáře
 
-Mám nápad, že by každá stránka příručky mohla dole mít něco jako „komentáře“ a vlastně by to byla nějaká promyšlená reklama na klub, že by se tam vlastně dalo dané téma probrat. Takový hybrit mezi „komentářovou sekcí“ a [třeba takovýmhle lapačem na SEO](https://junior.guru/topics/mentoring/).
+Mám nápad, že by každá stránka příručky mohla dole mít něco jako „komentáře“ a vlastně by to byla nějaká promyšlená reklama na klub, že by se tam vlastně dalo dané téma probrat. Takový hybrid mezi „komentářovou sekcí“ a [třeba takovýmhle lapačem na SEO](https://junior.guru/topics/mentoring/).
 
 Dal jsem tomu několik hodin, abych pod příručku vrazil nějaký boxík, kam by tohle šlo dát, ale designově se mi nepovedlo udělat nic, co by se mi líbilo a sedělo to do aktuální CSS flex divočiny, kterou tam mám, na desktopu i na mobilu. Zápasil jsem s tím fakt dlouho a pak jsem to celé smazal. Nejdřív asi musím na mobilu odstrčit navigaci příručky do nějakého vysouvátka (_offcanvas_ přímo v Bootstrapu) a potom tam půjde dát něco dalšího.
 
