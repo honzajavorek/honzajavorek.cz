@@ -77,6 +77,7 @@ A taky nechci vydělávat zbytečně moc peněz (víc jak 80 tisíc měsíčně)
 - Odpovídal jsem lidem v klubu. Prošel jsem si projekty členů klubu, třeba [WeatherBoard](https://jakbude.herokuapp.com/) nebo RPG konfigurátor „[vytvořte si nového kolegu](https://www.robertbelan.com/)“. Snažil jsem se odpovídat na maily, ale ještě mi jich dost zbývá.
 - Vyzvedl jsem si čerstvý olivový olej u [Olive Hills](https://www.olivehills.cz/). Kupujte, než… no asi než ho vyprodají.
 - Koukal jsem na návrhy toho, [jak má vypadat Florenc](https://florenc21.eu/cs/navrhy/). Vlastně to dopadlo dobře. Dostavění bloku místo labyrintu s Billou a smradlavým náměstím s hodinami je skvělý tah.
+- Omg, teď to po sobě čtu a snad stokrát mám v těchto poznámkách slovo zdražit :D Uchvátil mě zlý kapitalistický mamon! Asi ta vánoční atmosféra nebo co. No jsem zvědav, jak se to bude vyvíjet, teď jsem trochu nad 20 tisíci měsíčně čistého a určitě budeme s koncem roku doma bilancovat nad rodinným rozpočtem. Faktury celkem posílám, všechno se postupně rozjíždí, život mám krásný a cítím, že je to celé na dobré cestě, tak třeba se to začne konečně nabalovat, různé věci s delší setrvačností se začnou zúročovat, a brzo budu aspoň na těch 35 čistého a přestanu to dotovat z úspor.
 - Během 6 dní od 14.12. do 19.12. jsem při procházkách nachodil 25 km. Celkem jsem se hýbal 11 hodin a zdolal při tom 25 kilometrů.
 
 
