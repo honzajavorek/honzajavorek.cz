@@ -60,7 +60,7 @@ Chci, aby lidi platili „stovku“, je to prostě psychologická hranice a taky
 
 Takhle to plánuji nechat, než se dostanu do situace, že bych musel regulovat počet členů v klubu, protože bych se jim nestíhal věnovat. Ale i to má pak svá úskalí. Jak říkala moje holička, „mohla bych si účtovat víc, ale to by mi pak sem chodili jen lidi, kteří dají za účes víc, a s těma by mě nebavilo se bavit“. Což je myslím velký moudro.
 
-A taky nechci vydělávat zbytečně moc peněz (víc jak 80 tisíc měsíčně), abych se nestal plátcem DPH. Sice s těmi penězi bych to už asi dokázal řešit, delegovat papírování a tak, ale proč si komplikovat život, když nemusím, že?
+A taky nechci vydělávat zbytečně moc peněz (víc jak 80 tisíc měsíčně), abych se nestal plátcem DPH. Sice s těmi penězi bych to už asi dokázal řešit, delegovat papírování a tak, ale proč si komplikovat život, když nemusím, že? No zatím čistá teorie, vydělávám 20 tisíc měsíčně, takže na rok 2022 si klidně můžu nadělit růst o 100 % :D
 
 ## Další poznámky
 
