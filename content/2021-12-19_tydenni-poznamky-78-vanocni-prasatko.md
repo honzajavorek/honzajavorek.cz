@@ -18,7 +18,7 @@ V úterý jsme měli schůzi výboru [Pyvce](https://pyvec.org/). V roce 2022 na
 
 ## Vánoční akce
 
-Vyrobil jsem odkaz na [stránku s dárkem](https://junior.guru/gift/). Na všechny stránky JG jsem přidal nahoru modrý pruh, tak jak jsem to viděl na eshopech a jinde. Nechám to tam do Vánoc a pak se rozhodnu, co se stránkou udělám. Lidi na to [trochu klikají](https://simpleanalytics.com/junior.guru?period=month&search=paths%3Agift) (počáteční zub je z propagace na sociálních sítích), ale dárek si stále koupila jen jedna osoba.
+Vyrobil jsem odkaz na [stránku s dárkem](https://junior.guru/gift/). Na všechny stránky JG jsem přidal nahoru modrý pruh, tak jak jsem to viděl na eshopech a jinde. Musel jsem při tom hrábnout i do starého designu a bylo to, jako bych něco lovil v bažinci, fuj. Hlavně dalo práci, aby pruh vypadal stejně v obou designových systémech, které jinak nemají vůbec nic společného. Nechám to tam do Vánoc a pak se rozhodnu, co se stránkou udělám. Lidi na to [trochu klikají](https://simpleanalytics.com/junior.guru?period=month&search=paths%3Agift) (počáteční zub je z propagace na sociálních sítích), ale dárek si stále koupila jen jedna osoba.
 
 Už mi taky přišlo asi 5 mailů od jiných firem a neziskovek, kde byla formulace „staň se Ježíškem a obdaruj”, což je přesně něco, co jsem někam napsal u té dárkové akce, nebo minimálně napsat zvažoval. Jen jsem se pleskl do čela, že jsem možná s celou tou vánoční akcí naletěl na [takyakci](https://bigvilik.com/2021/11/22/mm21-140-takybazen/) a [takyvánoce](https://bigvilik.com/2021/12/06/mm21-142-mezi-hlp-a-nkp/).
 
@@ -39,6 +39,8 @@ V pátek jsem šel k [Adině Foxové](https://adinafoxova.cz/) do studia natáč
 Zkouším si hrát se storíčky na IG/FB. Zatím mě to baví. Zrušil jsem předplatné [Bufferu](https://buffer.com/), jak jsem psal minule, nedávalo mi to už smysl.
 
 Blbé je, že s Bufferem jsem naplánoval příspěvky na ráno a bylo to, lidi si to přečetli třeba cestou do práce nebo u snídaně. Teď, než se dohrabu k napsání a publikování statusu, je 11 hodin, kdy nikdo nic nečte. Vstávat dřív zrovna kvůli sociálním sítím asi nebudu, ale přemýšlím, co s tím, protože zbytečně přicházím o engagement, když to dávám ven v nesmyslné časy. Možná se ale rozhodnu, že je mi to prostě jedno, jsem taky jenom člověk.
+
+Zase se aspoň nebude stávat to, že investorka otevře internety a uvidí tam moje energické ranní statusy, zatímco já ještě spím v posteli. To se mi občas celkem smála.
 
 ## Nové samolepky
 
