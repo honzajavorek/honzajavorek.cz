@@ -69,17 +69,17 @@
 pomocí <a href="http://cz2.php.net/manual/en/function.parse-ini-file.php">parse_ini_file</a>).</p>
 <h2 id="nastaveni-serveru-pres-htaccess">Nastavení serveru přes .htaccess<small class="permalink"><a href="#nastaveni-serveru-pres-htaccess" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Konfigurační <code>velikost-poprsi.txt</code> si například dáme do nějakého adresáře, do něhož umístíme i .htaccess soubor s obsahem</p>
-<pre class="highlight"><code><span></span><code><span class="nb">deny</span> from <span class="k">all</span>
+<pre class="highlight"><code><span></span><code><span class="nb">deny</span><span class="w"> </span>from<span class="w"> </span><span class="k">all</span><span class="w"></span>
 </code></code></pre>
 
 <p>Server pak <strong>všechny vnější požadavky</strong> na soubory ve složce <strong>zamítne</strong> (HTTP Error 403 – Forbidden).</p>
 <h2 id="nemame-htaccess">Nemáme .htaccess<small class="permalink"><a href="#nemame-htaccess" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Co když nemáme nastavení přes .htaccess k dispozici? Použijeme malý trik, kdy soubor přejmenujeme na <code>velikost-poprsi.php</code> a znemožníme přístup zvenčí okamžitým <strong>ukončením vykonávání skriptu</strong> hned na začátku. Aplikace soubor načítá lokálně, takže jí to nijak nemusí vadit, pokud samozřejmě PHP kód řádně zakomentujeme.</p>
-<pre class="highlight"><code><span></span><code><span class="c1">; &lt;?php exit; ?&gt; leve = A prave = C</span>
+<pre class="highlight"><code><span></span><code><span class="c1">; &lt;?php exit; ?&gt; leve = A prave = C</span><span class="w"></span>
 </code></code></pre>
 
 <p>Pro XML by mělo fungovat něco podobného.</p>
-<pre class="highlight"><code><span></span><code><span class="c">&lt;!-- &lt;?php exit; ?&gt; --&gt;</span> <span class="nt">&lt;conf&gt;</span> <span class="nt">&lt;const</span> <span class="na">name=</span><span class="s">"leve"</span><span class="nt">&gt;</span>A<span class="nt">&lt;/const&gt;</span> <span class="nt">&lt;const</span> <span class="na">name=</span><span class="s">"prave"</span><span class="nt">&gt;</span>C<span class="nt">&lt;/const&gt;</span> <span class="nt">&lt;/conf&gt;</span>
+<pre class="highlight"><code><span></span><code><span class="cm">&lt;!-- &lt;?php exit; ?&gt; --&gt;</span> <span class="nt">&lt;conf&gt;</span> <span class="nt">&lt;const</span> <span class="na">name=</span><span class="s">"leve"</span><span class="nt">&gt;</span>A<span class="nt">&lt;/const&gt;</span> <span class="nt">&lt;const</span> <span class="na">name=</span><span class="s">"prave"</span><span class="nt">&gt;</span>C<span class="nt">&lt;/const&gt;</span> <span class="nt">&lt;/conf&gt;</span>
 </code></code></pre>
 
 <p>Samozřejmě, pokud použijete XML deklaraci, přijde vám na pomoc také <a href="https://honzajavorek.cz/blog/xml-deklarace-a-php/">parse error</a>. <strong>Nelze se však na něj spoléhat</strong> a určitě je dobré vše pojistit oním PHP v komentáři, protože parse error může, ale nemusí nastat (nedojde ke kolizi, když má vaše PHP direktiva <code>short_open_tag</code> hodnotu <code>0</code>).</p></div></div></div></div>

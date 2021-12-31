@@ -69,7 +69,7 @@
 <p>Co ale dělat, když máme nějaký starý projekt napsaný se zapnutými register_globals? Určitě je jednodušší je zapnout a případně si pohlídat bezpečnostní rizika, než přepisovat celý kód. Máme tři možnosti:</p>
 <h2 id="apache">Apache<small class="permalink"><a href="#apache" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
 <p>Serveru řekneme co potřebujeme v souboru <code>.htaccess</code>.</p>
-<pre class="highlight"><code><span></span><code><span class="nb">php_flag</span> register_globals <span class="m">1</span>
+<pre class="highlight"><code><span></span><code><span class="nb">php_flag</span><span class="w"> </span>register_globals<span class="w"> </span><span class="m">1</span><span class="w"></span>
 </code></code></pre>
 
 <h2 id="zmena-nastaveni-primo-v-php">Změna nastavení přímo v PHP<small class="permalink"><a href="#zmena-nastaveni-primo-v-php" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
