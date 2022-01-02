@@ -14,46 +14,51 @@ Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
 Pan [Rozbité prasátko](https://rozbiteprasatko.cz/) mě pozval do podcastu, ale chtěl i nějakého juniora, tak jsem se zamýšlel nad tím, kdo by to mohl být a vyzval jsem i lidi v klubu, ať se mi třeba přihlásí sami (což samozřejmě v Česku znamená, že se sám nepřihlásí nikdo). Vytipoval jsem si nějaké lidi a kontaktoval je. Nakonec tam (asi) bude [Pavel](https://itnoob.cz/), který předtím dokonce i dělal ve finančnictví, což se do podcastu o financích může hodit.
 
-Samotné nahrávání rozhovoru jsme nějak zvládli. Bavilo mě to, ale samozřejmě mi teď celý zbytek dne v hlavě hučí možnosti, jak jsem něco mohl říct stručněji a lépe. No nic :) Přijde mi, že mi Jakub vždy otázkou v hlavě otevřel vesmír myšlenek a já ani nevěděl, kde začít, abych to všechno pojmul, místo abych se soustředil na pointu. Taky jsem tam neřekl nic o našem vlastním podcastu, který připravujeme, což je dost fail.
+Samotné nahrávání rozhovoru jsme nějak zvládli. Bavilo mě to, ale samozřejmě mi teď v hlavě hučí možnosti, jak jsem něco mohl říct stručněji a s větším tahem na branku. No nic :) Přijde mi, že mi Jakub vždy otázkou v hlavě otevřel vesmír myšlenek a já ani nevěděl, kde začít, abych to všechno pojmul, místo abych se soustředil na pointu. Taky jsem tam neřekl nic o našem vlastním podcastu, který připravujeme, což je dost fail.
 
 S Jakubem jsme pak ještě doladili jeho přednášku v klubu. Měla být čtvrtého, ale nakonec jsme to pro pohodlí všech posunuli až na 11.1. Informace o přednášce jsem zapsal do konfiguráků v kódu na JG, přidal Jakubovu fotku a logo jeho firmy.
+
+S Jakubem se nejspíš i setkáme na nějaké kafe, protože vždy, když si voláme, tak to vypadá, že bychom si mohli povídat donekonečna. Jakub chce Rozbité prasátko časem taky dotáhnout do _one-man show_, které by ho živilo, takže společných témat máme hodně a můžeme si třeba i radit.
 
 
 ## Junior Guru Podcast
 
-S [Pájou Froňkovou](https://www.linkedin.com/in/pavlinafronkova/) připravujeme Junior Guru Podcast. Než vydáme první díl, chtěl jsem ať máme _teaser_, tak jsme jej přes Vánoce natočili. Natáčení bylo strašlivé, protože mi nefungovala technika a neměl jsem to moc dobře připravené. Pak jsme si všimli, že co jsem nahrál v sobě má kaz, asi v tu chvíli škytla síť. Tak jsem svůj vstup nahrál zvlášť v Audacity a Páji to poslal. Jenže jsem si nevšiml, že to nahrávám mono, takže celý teaser je stereo, ale tento vstup je mono. Už to tak necháme, ale sranda, no :)
-
-Přečetl jsem [celý tento návod](https://www.smartpassiveincome.com/guide/how-to-start-a-podcast-tutorial-pat-flynn/), abych se zorientoval. Koukal jsem, jak řeší různé podcasty svůj titulní obrázek a jeden vánoční večer jsem splácal ten náš. Nakonec tam je akorát napsáno junior.guru a je tam kuře. Podcasty, které nebudují vlastní brand, ale staví na existujícím, to tak podle mě mají a dává mi to smysl. Stejně to jde kdykoliv změnit.
+S [Pájou Froňkovou](https://www.linkedin.com/in/pavlinafronkova/) připravujeme Junior Guru Podcast. Než vydáme první díl, chtěl jsem ať máme _teaser_, tak jsme jej přes Vánoce natočili. Natáčení bylo strašlivé, protože mi nefungovala technika a neměl jsem to moc dobře připravené. Pak jsme si všimli, že co jsem nahrál má v sobě kaz, asi v tu chvíli škytla síť. Tak jsem svůj vstup nahrál zvlášť v Audacity a Páji to poslal. Jenže jsem si nevšiml, že to nahrávám mono, takže celý teaser je stereo, ale tento vstup je mono. Už to tak necháme, ale tyjo, tolik práce, přitom taková blbost :)
 
 Pak už bylo vše připraveno k tomu, abychom to rozjeli. Respektive ze strany Páji bylo vše, teď byla řada na mně, abych to publikoval. K tomu potřebuji:
 
-- Hosting na mp3 soubory,
+- Obrázek pro podcast,
+- hosting na mp3 soubory,
 - RSS feed s odkazy na ty soubory a informacemi o epizodách,
 - ideálně i nějakou stránku na JG, která bude sloužit podcastu jako domov,
 - poslat to do všech podcastových platforem,
 - oznámit to na svých sítích a v klubu.
 
-[Adina](https://adinafoxova.cz/), která rozjíždí svůj podcast [Enter](https://enterpodcast.online/), mi poradila [Anchor](https://anchor.fm/), který spoustu z toho řeší a je zdarma. Jakub z Prasátka mi zase radil [Buzzsprout](https://www.buzzsprout.com/), který je ale placený. Řekl jsem si OK, pojďme to udělat zadáčo a až se to rozjede, můžeme přejít jinam a klidně za to platit, ale dokud je to jen experiment a netušíme, co z toho bude, nedává smysl do toho investovat. Jde i o to, že aby mi hosting soubory nesmazal, musel bych ho donekonečna dál platit, i kdybychom s podcastem pak přestali.
+Přečetl jsem [celý tento návod](https://www.smartpassiveincome.com/guide/how-to-start-a-podcast-tutorial-pat-flynn/), abych se zorientoval. Koukal jsem, jak řeší různé podcasty svůj titulní obrázek a jeden vánoční večer jsem splácal ten náš. Nakonec tam je akorát napsáno junior.guru a je tam kuře. Podcasty, které nebudují vlastní brand, ale staví na existujícím, to tak podle mě mají. A dává mi to smysl. Stejně to jde kdykoliv změnit.
 
-Jenže když jsem se o to začal zajímat, čím dál tím víc mi přišlo, že Anchor (vlastněný Spotify) mi přechod jinam neumožňuje. Během rešerše jsem o tom [napsal na Twitter](https://twitter.com/honzajavorek/status/1476450480045715456) a vznikla z toho nekonečná diskuze s Danielem Dočekalem, který měl dojem, že mi vše vysvětlí, protože tomu nerozumím, ale ve skutečnosti jsem měl pocit, že jsem to spíš nakonec vysvětloval já jemu. Tak či tak, dal jsem vědět Adině, ta našla ještě [tenhle článek](https://schoolofpodcasting.com/anchor-fm-review-read-before-using/) a oběma nám přišlo, že Anchor není to, čemu bychom chtěli své podcasty svěřit:
+[Adina](https://adinafoxova.cz/), která rozjíždí svůj podcast [Enter](https://enterpodcast.online/), mi poradila [Anchor](https://anchor.fm/), který řeší hosting a je zdarma. Jakub z Prasátka mi zase radil [Buzzsprout](https://www.buzzsprout.com/), který je placený, ale prý super. Řekl jsem si OK, pojďme to udělat zadáčo a až se to rozjede, můžeme přejít jinam a klidně za to platit, ale dokud je to jen experiment a netušíme, co z toho bude, nedává smysl do toho investovat. Jde i o to, že aby mi placený hosting soubory nesmazal, musel bych ho donekonečna dál platit, i kdybychom s podcastem pak přestali.
+
+Jenže když jsem se o to začal zajímat, čím dál tím víc mi přišlo, že Anchor (vlastněný Spotify) mi přechod jinam neumožňuje. Během rešerše jsem o tom [napsal na Twitter](https://twitter.com/honzajavorek/status/1476450480045715456) a vznikla z toho nekonečná diskuze s Danielem Dočekalem, který měl dojem, že mi vše vysvětlí, protože tomu nerozumím, ale ve skutečnosti jsem měl pocit, že jsem to spíš nakonec vysvětloval já jemu. Tak či tak, dal jsem vědět Adině, ta našla ještě [tenhle článek](https://schoolofpodcasting.com/anchor-fm-review-read-before-using/) a oběma nám přišlo, že Anchor není to, čemu bychom chtěli své podcasty svěřit…
 
 > ...kdyz udelam epizodu na anchoru tak mi to hned publishne na spotify ani se me nepta, a az potom mohu teprve zapnout nejaky RSS feed pro dalsi platformy. Takze kdybych chtel ten feed treba vzit a pretahnout pres svou domenu nez ho naladuju jinam, tak to muzu, ale na spotify to nejde, tam to jde primo z anchoru a kdybych chtel prejit jinam tak ztratim podle me spotify posluchace.
 >
 > Kdybych jednou nechtel pouzit anchor, ale chtel si jit treba platit soundcloud nebo buzzsprout, tak nemuzu prejit s hostingem jinam, protoze anchor vlastni nejen muj rss feed, ale dokonce obchazi rss feed a na spotify to dává přímo. Ted jsem zkusil jit na spotify a zmenit zdroj podcastu na jine URL a nejde to potom, musi se pres anchor zase.
 
-Ona nakonec skončila u [RSS.com](https://rss.com/). Nemění audio, jednoduchý ceník, 1TB bandwidth, bez limitu velikosti, podporují studenty a neziskovky, $13/mo. Někdo mi posílal odkaz na [Podsheets](https://medium.com/@jeffmeyerson/podsheets-open-source-podcasting-db4fabc01524), ale to mi zas přišel strašný kanón na vrabce.
+Adina nakonec skončila u [RSS.com](https://rss.com/). Nemění audio, jednoduchý ceník, 1TB bandwidth, bez limitu velikosti, podporují studenty a neziskovky, $13/mo. Někdo mi posílal odkaz na [Podsheets](https://medium.com/@jeffmeyerson/podsheets-open-source-podcasting-db4fabc01524), ale to mi zas přišel strašný kanón na vrabce.
 
 Vydal jsem se cestou DIY, čehož budu samozřejmě litovat, ale nedokázal jsem si prostě zabránit. Pokud to chápu správně, abych měl podcast někde hostovaný, stačí mi někam nahrát mp3 soubory, mít je dobře dostupné a vygenerovat si jedno XML.
 
-Kdybych někdy něco dělal s AWS a neděsil jsem se cloudových konzolí, jejich „pružného” pricingu a nevyřešitelného sudoku s názvem IAM, asi bych mp3 naházel na S3. Takhle jsem je naházel na GitHub Pages: [podcast.junior.guru](https://github.com/honzajavorek/podcast.junior.guru)
+Kdybych někdy něco dělal s AWS a neděsil jsem se cloudových konzolí, jejich „pružného” pricingu a nevyřešitelného sudoku s názvem IAM, asi bych ty mp3 naházel na S3. Takhle jsem je naházel na GitHub Pages: [podcast.junior.guru](https://github.com/honzajavorek/podcast.junior.guru)
 
-Je to prasárna? Je. Audio soubory do Gitu. Ale GitHub s tím nemá problém, podporuje soubory do 100 MB kus (jinak se [musí použít LFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage), ale to nepodporují GitHub Pages) a s repem mají problém až když má gigabajty. Než se dostaneme do takové situace, bude už jasnější, zda to má smysl řešit jinak. Repozitář podcast.junior.guru jsem měl vyrobený snad za 30 minut, a to i s nasměrováním subdomény.
+Bude to fungovat správně? Nemám tušení. Je to prasárna? Je. Audio soubory do Gitu, fuj! Ale GitHub s tím nemá problém, podporuje soubory do 100 MB/kus (jinak se [musí použít LFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage), ale to nepodporují GitHub Pages) a s repem mají problém až když má gigabajty. Než se dostaneme do takové situace, bude už jasnější, zda to má smysl řešit jinak. Repozitář podcast.junior.guru jsem měl vyrobený snad za 30 minut, a to i s nasměrováním subdomény. Samotná rešerše kolem Anchoru mi zabrala několikanásobně víc.
 
-I kdybychom chtěli zachovat nulové výdaje, akorát přesunu soubory z GitHub Pages do GitHub Releases, kde jsem [se dočetl](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases), že není žádný limit na velikost souborů a je to preferované místo, kam něco takového dávat. Navíc je infrastruktura Releases logicky optimalizovaná na stahování souborů.
+Kdyby GitHub Pages nestačili a chtěli bychom zachovat nulové výdaje, akorát přesunu soubory do GitHub Releases, kde jsem [se dočetl](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases), že není žádný limit na velikost souborů a je to preferované místo, kam něco takového dávat. Navíc je infrastruktura Releases logicky optimalizovaná na stahování souborů.
 
-Akorát jsem si na to udělal zvlášť repo, aby `git clone` repa s kódem JG netrval věčnost. Teď stačí dodělat část na straně webu JG, která bude generovat RSS s podcastem, a je to. Něco jako junior.guru/api/podcast.rss. Feed bude na mojí doméně a plně pod mou kontrolou. Pokud bych chtěl kdykoliv v budoucnu změnit poskytovatele hostingu mp3 souborů, můžu tak učinit bez toho, aby si toho musely všimnout podcastové platformy/aplikace nebo abychom přišli o nějaké posluchače.
+Udělal jsem si na to zvlášť repo, aby `git clone` kódu JG netrvalo věčnost. Teď stačí dodělat část na straně webu JG, která bude generovat RSS s podcastem, a je to. Něco jako `junior.guru/api/podcast.rss`. Feed bude na mojí doméně a plně pod mou kontrolou. Pokud bych chtěl kdykoliv v budoucnu změnit poskytovatele hostingu mp3 souborů, můžu tak učinit bez toho, aby si toho musely všimnout podcastové platformy/aplikace nebo abychom přišli o nějaké posluchače.
 
-Nebo bez toho, abychom byli otroky nějaké služby, která je sice zadarmo, ale brání nám svobodně manipulovat s podcastem. Služby poskytované gigantem, který se snaží podcasty centralizovat a monopolizovat.
+Nebo bez toho, abychom byli otroky nějaké služby, která je sice zadarmo, ale brání nám svobodně manipulovat s podcastem. Bez služby poskytované gigantem, který se snaží podcasty centralizovat a monopolizovat.
+
+Na podcast jsem udělal malý teaser do IG story a hned se mi přihlásila celebrita jako host do některého z dalších dílů :-O Takže paráda, ještě nic ani nezačalo existovat, ale už to má výsledky!
 
 
 ## Grafy na webu
@@ -83,7 +88,7 @@ Popravdě, jeden celý večer jsem strávil s tím, že jsem si hrál s barvičk
 
 ## Úklid v podcastech
 
-Vyhledal jsem ve [svém Pocketu](https://getpocket.com/@honzajavorek) vše, co jsem si tam kdy uložil a mělo to v názvu slovo „podcast”. Záznamy jsem buď archivoval, nebo jsem si epizody uložil přes [Overcast.fm](https://overcast.fm/), který teď na podcasty používám. Objevil jsem díky tomu zajímavé podcasty, třeba:
+Vyhledal jsem ve [svém Pocketu](https://getpocket.com/@honzajavorek) vše, co jsem si tam kdy uložil a mělo to v názvu slovo „podcast”. Epizody jsem si uložil přes [Overcast.fm](https://overcast.fm/), který teď na podcasty používám. Objevil jsem díky tomu zajímavé podcasty, třeba:
 
 - [2050](https://2050podcast.cz/) je dost dobře zpracovaný a zajímavý, teď ho sjíždím.
 - [The Changelog](https://changelog.com/) jsem ještě neslyšel, ale měl jsem z něj uložených v Pocketu hned několik epizod a vypadá zajímavě celý.
@@ -123,7 +128,7 @@ Každopádně jsem udělal průzkum a zjistil jsem, že zřejmě neexistuje žá
 
 Naučil jsem bota aspoň zakládat tyto události, takže hned jakmile domluvím třeba přednášku a bude o ní už [info v mém YAML souboru](https://github.com/honzajavorek/junior.guru/blob/main/juniorguru/data/events.yml), měla by se sama objevit ve _scheduled events_ na Discordu a lidi se na ni už mohou klikat. Párování probíhá pomocí času, takže pokud už událost se stejným datem a časem existuje, nezaloží ji. Původní upozorňovací zprávy týden před přednáškou, den před ní a v den konání, ty nechávám a mám s nimi ještě i nějaké další plány.
 
-V souvislosti se spuštěním podcastu Junior Guru mě napadlo, zda by stránka s událostmi v klubu nemla být víc jako _feed_ věcí, které se dějí, že by tam byly přednášky, podcasty, a další věci. Nebo jestli by neměla být na JG stránka, kde bude podcastů vhodných pro juniory víc a náš JG podcast bude jen jedním z nich. Dokonce jsem zvažoval i nějaký feed novinek přímo na homepage JG.
+V souvislosti se spuštěním podcastu Junior Guru mě napadlo, zda by stránka s událostmi v klubu neměla být víc jako _feed_ věcí, které se dějí, že by tam byly přednášky, podcasty, a další věci. Nebo jestli by neměla být na JG stránka, kde bude podcastů vhodných pro juniory víc a náš JG podcast bude jen jedním z nich. Dokonce jsem zvažoval i nějaký feed novinek přímo na homepage JG.
 
 Většinou mi podobná produktová rozhodnutí nezaberou tolik času a přemýšlení, ale tahle věc už mě trápí týdny a pořád zápasím s tím, jak to udělat, aby to do sebe všechno zapadlo. Navíc moje plány nejen v tomto směru opět komplikují navigaci na webu. Včera před spaním jsem se k tomu opět vrátil a snad už jsem to nějak rozsekl:
 
@@ -147,6 +152,17 @@ Návštěvnost z Heroine směrem na JG ke [konci prosince vystřelila jak raketa
 Aktuálně v návštěvnosti ohromně vystřelilo forum na Rootu. Asi lidi s koncem roku hledají kudy do IT a najdou vlákna v tom fóru, kde jsou odkazy na JG.
 
 
+## Anonymizace členů
+
+Psal jsem si s lidmi v klubu, ať už ve veřejných kanálech, nebo v soukromých zprávách, kterých se ke konci roku urodilo nějak víc.
+
+Jeden člen klubu mi napsal, že se už moc nevyjadřuje, protože přijal nabídku práce v klubu dříve inzerovanou. V klubu je tedy jeho šéf, což mění vztahovou dynamiku a brání mu psát úplně svobodně to, co chce, nebo ptát se na co chce.
+
+Nemá to žádná dobrá řešení. Tušil jsem, že se to dříve nebo později někomu stane a že to bude potřeba řešit. Možná má ten problém i víc lidí, ale nenapíšou mi, tak se to nedovím. Přijde mi užitečné spojovat v klubu juniory a firmy, nesmí to být _echo chamber_, ale má to přesně tuhle nevýhodu.
+
+Discord má tu vyhodu, že je anonymní. Nikdo kromě mě není schopen zjistit, kdo je kdo, pouze sociálním inženýrstvím. Řešení je tedy změnit si jméno a obrázek, nebo se se mnou domluvit a založit si, třeba i jen dočasně, nový účet. A neprozrazovat se. Nic moc, ale lepší než nic. Jsem zvědav, jestli to zrealizujeme a zda to bude fungovat.
+
+
 ## Další poznámky
 
 - Michal Lulco mě [začal podporovat](https://twitter.com/lulco/status/1475268180956401665) na GitHub Sponsors! Díky moc!
@@ -154,8 +170,6 @@ Aktuálně v návštěvnosti ohromně vystřelilo forum na Rootu. Asi lidi s kon
 - Dependabot na GitHubu mi začal [upgradovat několik knihoven najednou](https://github.com/honzajavorek/junior.guru/pull/755), protože spolu souvisí. Hustý!
 - Uvařil jsem konečně dýňovou polívku, kterou jsem chtěl uvařit už snad čtvrt roku. Naštěstí se dýně nekazí.
 - Nepochopil jsem novou kampaň Jobsů a [tento tweet](https://twitter.com/hanaelicharova/status/1471520092810723330) mě dost pobavil. Kampaň by se podle mě vyjímala v [této sbírce](https://twitter.com/honzajavorek/status/1477375429078048770).
-- Psal jsem si s lidmi v klubu, ať už ve veřejných kanálech, nebo v soukromých zprávách, kterých se ke konci roku urodilo nějak víc.
-- Člen klubu mi napsal, že se už moc nevyjadřuje, protože přijal nabídku práce v klubu dříve inzerovanou a teď je tam jeho šéf, což mění vztahovou dynamiku a brání mu psát úplně svobodně to, co chce, nebo ptát se na co chce. Nemá to žádná dobrá řešení. Tušil jsem, že se to dříve nebo později někomu stane a že to bude potřeba řešit. Možná má ten problém i víc lidí, ale nenapíšou mi, tak se to nedovím. Přijde mi užitečné spojovat v klubu juniory a firmy, nesmí to být _echo chamber_, ale má to přesně tuhle nevýhodu. Discord má tu vyhodu, že je anonymní. Nikdo kromě mě není schopen zjistit, kdo je kdo, pouze sociálním inženýrstvím. Řešení je tedy změnit si jméno a obrázek, nebo založit účet zvlášť a neprozrazovat, kdo jsem. Uvidíme.
 - Zkoušel jsem hrát [Prince of Persia](https://princejs.com/) v prohlížeči. Z dětství si už skoro nic nepamatuju a tak jsem se zatím nedostal ani za první level :D
 - Dohodl jsem se s [Adinou](https://adinafoxova.cz/), která rozjíždí svůj podcast [Enter](https://enterpodcast.online/), že si může dát statistiky návštěvnosti [ke mě](https://simpleanalytics.com/enterpodcast.online), než bude slavná a bohatá a udělá si jednou vlastní Simple Analytics tarif.
 - Rozečetl jsem [Knihu apokryfů](https://cs.wikisource.org/wiki/Kniha_apokryf%C5%AF) Karla Čapka. Přijde mi, jako by Čapek chodil na Facebook nebo Novinky a tamní diskuze přepisoval do sarkastických příběhů parodujících známé historické nebo mytologické události. Dýchá z toho pocit, že doba se mění, ale lidi jsou furt úplně stejně zabednění.
@@ -166,9 +180,9 @@ Aktuálně v návštěvnosti ohromně vystřelilo forum na Rootu. Asi lidi s kon
 
 Tři věci, které bych chtěl zvládnout udělat příště:
 
-1.
-2.
-3.
+1. Napsat článek pro Heroine.
+2. Publikovat JG podcast.
+3. Pokud mi ho už vyrobí, tak dořešit PFko.
 
 
 ## A co vy?
