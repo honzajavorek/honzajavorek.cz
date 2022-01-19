@@ -92,6 +92,8 @@ Novou [stránku o CV](https://junior.guru/handbook/cv/) jsem psal asi týden v k
 
 Předtím jsem vždy zpracoval téma pro článek a říkal jsem si, že časem totéž dopracuju do příručky. Teď jsem se rozhodl udělat to nejdřív do příručky a pak z toho umotat článek. Nechodil jsem skoro ven a psal a psal a psal.
 
+Celkem novinka bylo psaní za postupného publikování. Vždy, když jsem měl něco napsaného, commitnul jsem to a hned to bylo na webu. Nedopsané kapitoly jsem opatřil poznámkou, že je teprv píšu. Stránku celou jsem nahoře opatřil poznámkou, že ji teprv píšu. Takhle text vznikal jako _continuous delivery_, rovnou před očima náhodných návštěvníků. Doteď jsou třeba stránky o Gitu nebo LinkedIn podobným způsobem nedodělané. A nevadí to. Dokud stránky nezpropaguju na sítích, stejně si jich nikdo nevšimne, jen náhodní kolemjdoucí.
+
 Jako obvykle, krátká úderná stránka se proměnila v dlouhou nudli :( Jenže mi přijde, že tam jsou fakt ty podstatné věci a zkracovat to moc nejde. Je to návod, jsou tam vtípky a příklady, aby člověk neusnul při čtení. Fakt jsem se snažil, ale holt je to prostě výživné téma.
 
 A mám z toho teď radost. Téma CV bylo na JG dlouhodobě podceněné. Dřív jsem si říkal, že návodů na CV je na internetu dost a nemusím zabrušovat do všeho, ale časem jsem si víc a víc uvědomoval, že by přece jen mohl existovat návod, který je specifický pro IT juniory a sděluje něco, co v jiných návodech není.
