@@ -164,7 +164,7 @@ Poslal jsem to i některým firmám, se kterými se „kamarádím“, ale nespo
 
 Chtěl jsem posílat ještě komunitám, ale to jsem nakonec odložil. Nabalím a pošlu postupně podle toho, jak kde to bude spěchat nebo dávat smysl. Zvlášť teď, když se někde věci konají třeba i jen online.
 
-## wITaMY w IT
+## wITamy w IT
 
 Dawid Zamkowski z Polska se mi ozval:
 
@@ -190,6 +190,7 @@ Tolik k tomu, zda jsem udělal správné rozhodnutí, když jsem JG udělal čes
 - Generování MkDocs začalo trvat už nějak dlouho. Začalo to s tím, jak jsem přidal databázové dotazy pro [grafy](https://junior.guru/open/). Data se získávala z databáze vždy znova pro každou stránku. Vymýšlel jsem, jak to optimalizovat, když jsou různá data potřeba na různých místech a v různý čas sestavování stránky. Nechtěl jsem to úplně komplikovat. Nakonec jsem to rozdělil podle toho, že některé věci stačí připravit jednou a jiné jsou specifické pro každou stránku. Zatím OK, build se zkrátil z 6s na 2,5s a to zatím stačí.
 - Zkusil jsem dát na sociální sítě projekt jednoho z juniorů v klubu, [CV jako konfigurátor RPG postavy](https://www.robertbelan.com/). Protože se tam hýbou věci, zkusil jsem to natočit jako krátké screencastové video a koukal jsem, jak se takové video pak chová na jednotlivých sociálních sítích a kolik dostane pozornosti.
 - Svetlana udělala [nejúžasnější status na IG](https://www.instagram.com/p/CYe9jHuLg50/), kde popsala, jak miluje JG klub.
+- Připojil jsem se přes Zoom na schůzi Zelených z Prahy 3, abych se podíval, jak taková schůze vypadá a co tam je vlastně za lidi. Bylo to strašně pěkný, lidi to byli hrozně milí a trvalo to nekonečně dlouho, protože sestavovali (volili) kandidátku do voleb.
 - Byla schůze výboru [Pyvce](https://pyvec.org/). Určili jsme termín voleb do výboru a o kousek zase posunuli jejich přípravy.
 - Během 17 dní od 3.1. do 19.1. jsem při procházkách nachodil 39 km. Celkem jsem se hýbal 14 hodin a zdolal při tom 39 kilometrů.
 - Aktuální finanční výsledky, návštěvnost a další čísla k JG [mám přímo na webu](https://junior.guru/open/).
