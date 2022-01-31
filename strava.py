@@ -23,6 +23,7 @@ ACTIVITY_TYPES = {
     'walk': 'při procházkách nachodil',
     'hike': 'na túrách nachodil',
     'ride': 'ujel na kole',
+    'alpineski': 'sjel na lyžích',
 }
 
 
