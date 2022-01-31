@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/tydenni-poznamky-81-podovolenkovy-blazinec/">
+    <title>Týdenní poznámky #81: Podovolenkový blázinec &mdash; Honza Javorek</title>
+
+    <meta property="og:title" content="Týdenní poznámky #81: Podovolenkový blázinec &mdash; Honza Javorek">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-81-podovolenkovy-blazinec/">
+    <meta name="twitter:creator" content="@honzajavorek">
+    <meta name="twitter:site" content="@honzajavorek">
+
+    <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="683">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Honza Javorek &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2022-01-31T00:00:00+01:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <div class="content">
+<article class="article">
+  <header class="article-header">
+    <h1>
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-81-podovolenkovy-blazinec/" rel="bookmark">
+        Týdenní poznámky #81: Podovolenkový blázinec
+      </a>
+    </h1>
+  </header>
+  <footer class="article-info">
+    <ul>
+      <li class="article-published">
+        <small>
+          <time datetime="2022-01-31T00:00:00+01:00">
+            31. 1. 2022
+          </time>
+        </small>
+      </li>
+      <li class="article-author">
+        <small>
+          <a href="#author">Honza Javorek</a>
+        </small>
+      </li>
+    <ul>
+  </footer>
+  <div class="article-content">
+
+    <div><div><div><div><p>Utekl zase nějaký ten týden (20.1. — 31.1.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-80-spousteni-podcastu-a-psani-o-cv/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/club/">klub</a>, a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.</p>
+<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
+<h2 id="dohaneni-nepritomnosti">Dohánění nepřítomnosti<small class="permalink"><a href="#dohaneni-nepritomnosti" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Po dovolené jsem šel na sociální sítě, do mailu, na Pyvec Slack a do klubu. Snažil jsem se oddělit důležité od nedůležitého nebo dohnat resty, které jsem měl v mailech třeba i delší dobu. Bylo toho fakt hodně a zavalilo mě to natolik, že jsem i tento týden flákal trochu své vlastní postování na sociální sítě.</p>
+<p>V klubu jsem se snažil přečíst, co šlo, ale nějaké zamotané diskuze jsem přeskákal. Záda mi v době nepřítomnosti kryl <a href="https://coreskill.tech/">Dan Srb</a>, který v klubu dělá moderátora.</p>
+<h2 id="upgrade-gql">Upgrade gql<small class="permalink"><a href="#upgrade-gql" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Mergnul pull requesty od dependabota, co se nasbíraly. U knihovny gql se objevila nová major verze a testy neprošly, tak jsem zkoumal, čím to je.</p>
+<p>Nakonec jsem identifikoval dva problémy, <a href="https://github.com/graphql-python/gql/issues/290">tento</a> a <a href="https://github.com/graphql-python/gql/issues/290#issuecomment-1022425154">tento</a>. Oba jsem nakonec vyřešil a nešlo zřejmě o vadu nové verze knihovny.</p>
+<h2 id="zmeny-v-klubu">Změny v klubu<small class="permalink"><a href="#zmeny-v-klubu" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Po čase jsem došel k názoru, že už některé návrhy na změny v klubu časem uzrály a měl bych je udělat. Povolil jsem vlákna ve více kanálech. Změnil jsem ikonu pro roli hodně pomáhajících lidí, aby nebyla tak červená, protože to prý vypadá jako notifikace. Přejmenoval jsem některé kanály v klubu tak, aby lépe odpovídaly tomu, co se tam řeší.</p>
+<h2 id="komunikace-s-firmami">Komunikace s firmami<small class="permalink"><a href="#komunikace-s-firmami" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Komunikoval jsem s firmami a domlouval nové spolupráce. Zkoušíme se na něčem domluvit s Jetveo.</p>
+<p>S Appliftingem jsem měl sales call, kde jsem představil JG a ukázal, jak to funguje. Už bych k tomu měl konečně natočit screencast. Jak se ty sales cally opakují, už tuším, co by v něm mělo přesně být a na jaké otázky by měl odpovědět. Nicméně jsem líný to natáčet a zároveň mě baví povídat si reálně s lidmi, poznáme se na tom callu (osobnější), já si je pak přidám na LinkedIn, kde pak čtou moje statusy, apod.</p>
+<p>Je tedy otázka, do jaké míry to může škálovat. Zatím mě to asi nezatěžuje tolik, abych to urychleně musel nějak řešit.</p>
+<p>S Janem z Mews jsme si naplánovali společnou procházku s kočárkem. Vyřešili jsme pár provozních věcí a pokecali o spoustě zajímavých věcí.</p>
+<h2 id="podcast">Podcast<small class="permalink"><a href="#podcast" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Přečetl jsem si smlouvu od Seznamu ohledně podcasty.cz a poslal jim nějaké dotazy. Na první dojem to ale vypadá, že je to OK a jen ošetřují, aby mohli k obsahu přilepovat reklamy, vyplácet nám provizi a zaručit, že práva na obsah zůstávají nám.</p>
+<p>Amazon někde vychytal, že existuje náš podcast a poslal mi mail, ať to <a href="https://podcasters.amazon.com/">přidám do jejich služby</a>, kterou sice vůbec neznám, ale přidání na rozdíl od Seznamu vypadalo, že bude trvat 3 minuty, tak jsem to udělal.</p>
+<h2 id="firmy-v-klubu">Firmy v klubu<small class="permalink"><a href="#firmy-v-klubu" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Začal jsem pracovat na tom, aby byly firmy v klubu víc vidět. První krok byl generovat pro každou firmu botem roli, kterou přiřadím lidem z firmy a díky tomu půjde poznat, kdo je odkud. Doteď tam byla jen obecná role „sponzorujeme klub“.</p>
+<p>Protože už byl konec dne, nechal jsem to tak, aby bot role vždy smazal a vytvořil znova. Což jsem věděl, že není ideální, protože pokud udělám na roli mention nebo tak něco, druhý den už původní role nebude existovat a mention bude rozbitá, ačkoliv už bude existovat nová role se stejným názvem. Ale říkal jsem si, že pár dní to tak vydrží, než to opravím.</p>
+<p>Mezitím Dan zajásal, že jsou nové role a využil je pro správu kanálů, které využívá k provozu svého mentoringu. Bot mu tyto role druhý den smazal a chudák mi psal, že ztratil veškerá oprávnění ke všemu a vůbec, apokalypsa. Holt strasti <em>early adopters</em> :D Sice <em>known issue</em> ale byl bohužel <em>known</em> jen pro někoho.</p>
+<p>Takže tohle bych teď měl ještě opravit, než budu dělat něco dál.</p>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<ul>
+<li><a href="https://kompilator.cz/">Svetlana</a> mě začala <a href="https://github.com/sponsors/honzajavorek/">podporovat na GitHub Sponsors</a>. Díky moc!</li>
+<li>Udělal jsem balíčky samolepek a poslal je PyLadies do Ostravy, Olomouce a Plzně. Brno teď nic neorganizuje a v Praze si pro balíček přijde poslíček.</li>
+<li>Refaktoroval jsem mechaniku, kterou bot používá na kontrolu toho, zda už byla pravidelná zpráva postnutá nebo ještě ne a v tom případě ji postne. Vše jsem i otestoval. Tedy vše asi ne, protože souhrn nejdůležitějšího dění v klubu na konci týdne se postnul 5x za sebou. Zatím nevím proč.</li>
+<li>Propagoval jsem <a href="https://www.heroine.cz/zeny-it/7091-jak-si-napsat-dobre-cv-a-byt-videt-pri-hledani-prvni-prace-v-it">svůj článek na Heroine o CV</a>. Sice po týdnu od vydání, ale přece! Propagoval jsem i <a href="https://www.heroine.cz/zeny-it/7047-jak-si-vybudovat-portfolio-a-ukazat-co-uz-v-it-umite">článek Zuzany Pechové o portfoliu</a>, protože myslím, že <a href="https://twitter.com/honzajavorek/status/1486267371262291973">přináší zajímavou novou perspektivu</a>.</li>
+<li>Prošel jsem po snad dvou nebo třech týdnech konečně CV jednoho z členů klubu a kamaráda, které mi přišlo v soukromé zprávě. Snažím se odpovídat i soukromě na vše, co mi kdo píše, ale popravdě, někdy mi to prostě trvá. CV bylo parádní, takže nezbylo než komentovat drobnosti.</li>
+<li>Náhodou jsem v Discord helpu narazil na <a href="https://support.discord.com/hc/en-us/articles/4415163187607-Premium-Memberships-for-Servers">funkci pro placené členství</a>. Zatím je to nějaká beta, která není smrtelníkům přístupná, ale pro mě je to signál, že placené členství pro jednotlivé servery je něco, co chce Discord do budoucna podporovat. Zda bude vynucovat svůj platební systém místo např. <a href="https://memberful.com/">Memberful</a>, které používám, to je druhá věc, ale pozitivní je, že je můj byznys model zahrnut v jejich plánech a nechtějí to třeba zakázat.</li>
+<li><a href="https://blog.zvestov.cz/">Luboš</a> mě poprosil, zda bych v klubu mezi juniory nezpropagoval možnost podílet se na stránkách pro <a href="https://geomapa.lounovicepodblanikem.cz/">projekt geomapa</a>. Zatím se nikdo neozval, ale zkusím to v klubu ještě připomenout.</li>
+<li>Czechinvest inzeroval na JG, takže jsem to zpracoval a <a href="https://junior.guru/jobs/adbca516fcb8da745a785a98e74db6fd89f131506cce8d69434b6cbc/">nabídku publikoval</a>. Přijde mi dost na hranici toho, co já považuju za juniorní, ale přimhouřil jsem oko, protože lidi kolem PHP bývají i jako junioři celkem zběhlí ve více technologiích jako CSS, HTML, atd. (resp. nic jiného jim moc nezbývá, na rozdíl od Pythonistů, kteří si najdou práci prostě i jen s Pythonem a Gitem).</li>
+<li>Přečetl jsem si o <a href="https://meta.stackoverflow.com/questions/415293/sunsetting-jobs-developer-story">konci nabídek práce na Stack Overflow</a> a přemýšlel nad tím, že mi jednak zmizí jeden zdroj pro JG, jednak zda mohu něco z jejich <em>experience</em> využít v budoucnu u sebe.</li>
+<li>Během 12 dní od 20.1. do 31.1. jsem při procházkách nachodil 36 km, na túrách nachodil 11 km, sjel na lyžích 39 km. Celkem jsem se hýbal 18 hodin a zdolal při tom 86 kilometrů.</li>
+<li>Aktuální finanční výsledky, návštěvnost a další čísla k JG <a href="https://junior.guru/open/">mám přímo na webu</a>.</li>
+</ul>
+<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Tři věci, které bych chtěl zvládnout udělat příště:</p>
+<ol>
+<li>Pokračovat ve zvyšování viditelnosti firem v klubu.</li>
+<li>Ozvat se firmě, které členství končí. Udělat si upomínátko kdy které firmě končí roční členství v klubu.</li>
+<li>Připravovat přednášky v klubu.</li>
+</ol>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
+<ul>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwww.seznamzpravy.cz%2Fclanek%2Fkultura-chlapec-ktery-prezil-slavi-vyroci-zaujme-harry-potter-i-dalsi-generaci-186033&amp;h=7d38aedb927b5c2f7878df5187094867d89c4f8a6ea879608d40bc94efe2ec17">Kouzlo vyprchalo? Harry Potter stárne a jeho fanoušci s ním</a><br>„…co když Harry Potter přestane diváky zajímat? Co když zevšední mladším generacím?“</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dz8vz6GFZD1k&amp;h=3abab0a3968c787f190d8edf09acd09337ab9993b38d413924726a52fc828925">Kde se dá v Praze zaparkovat?</a><br>Souhlas</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fovercast.fm%2F%2Blh3KU6i_U&amp;h=3be4f4df342fbb0e4daa791c6c402fcbf4bf436fce683c583ea49b3e5ed63be5">Vysílač</a><br>Masakr. Jak to reálně vypadá, když se dostanete do Česka jako někdo, kdo tady žádá o azyl.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwarontherocks.com%2F2022%2F01%2Fputins-wager-in-russias-standoff-with-the-west%2F&amp;h=138e198a2985833dbcd22403a22316928d39a7ec900c43d9b6db830ee6bafce2">Putin’s Wager in Russia’s Standoff with the West</a><br>„Russian force posture can enable a range of choices, but it is difficult to see how Moscow accomplishes any lasting political gains without having to resort to maximalist options.“</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwww.hanakonecna.cz%2Fjak-jsem-totalne-zvorala-pohovor%2F&amp;h=b175b24d02522b97f5ef5025600b9bf39a09d361d986ac6aa52f678f50f5a6db">Jak jsem totálně zvorala pohovor</a><br>Článek o tom, jak se juniorka prodírá pohovorem a pokazí ho. Poučné pro juniory i pro ty, kdo pohovory připravují.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Farchiv.hn.cz%2Fc7-67024090-pp96p-98aa1daef1f2a59&amp;h=fd407ad729e7e0e86c9321074f2cb9b7c8741fa2555f2378cb2a3114e2020129">Jádro nikdo nezakazuje, bude s námi hodně dlouho, říká Čech, který v Bruselu napsal kritizovanou taxonomii</a><br>Vysvětlení toho, jak je myšleno nové klasifikování energetických zdrojů v EU.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Ffinmag.penize.cz%2Fveda-a-technika%2F431771-jak-pocitacova-mys-zatrasla-s-akademii-historie-a-budoucnost-plagiatorstvi&amp;h=4169d736eeea9f6e7542034fc4bb8093a505a7f44eea5caf0736131f79cb7a72">Jak počítačová myš zatřásla s akademií. Historie a budoucnost plagiátorství</a><br>Stručná historie plagiátorství a nastínění toho, jak to může vypadat do budoucna.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fovercast.fm%2F%2BUt4ShUzS4&amp;h=fd07b9c6037763f1fed039719ab90ccd1f228156fb8b21b06e513b8a4c5114f8">61 - Turkish Influence in Central Asia</a><br>Objevil jsem tento podcast o geopolitice a začal mě celkem bavit. V tomto díle se do detailu rozebírají pozice a plány Turecka. Přišlo mi to nesmírně zajímavé.</li>
+</ul>
+<p><small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small></p></div></div></div></div>
+  </div>
+
+  <footer class="article-footer">
+    <div id="author" class="author">
+      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
+      <address>
+          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
+          a tvůrce projektu <a href="https://junior.guru/">junior.guru</a>,
+          pomáhajícího lidem získat svou první práci v IT. Od roku 2011
+          pomáhá budovat českou komunitu kolem jazyka
+          <a href="https://python.cz/">Python</a>.
+      </address>
+      <p class="button button-donate">
+        <a href="https://github.com/sponsors/honzajavorek/">
+          <i class="fa fa-github"></i> GitHub Sponsors
+        </a>
+        <a href="https://www.patreon.com/honzajavorek">
+          <i class="fa fa-patreon"></i> Patreon
+        </a>
+        <a href="https://junior.guru/donate/">
+          <i class="fa fa-credit-card"></i> jiné        </a>
+    </p>
+    </div>
+    <p class="button">
+        <a href="https://honzajavorek.cz/blog/">
+          <i class="fa fa-list-ul"></i> Archiv článků
+        </a>
+    </p>
+  </footer>
+</article>
+      </div>
+      <footer class="footer">
+        <address>
+          © Copyright 2007—2022
+          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+
+      <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+  </body>
+</html>
