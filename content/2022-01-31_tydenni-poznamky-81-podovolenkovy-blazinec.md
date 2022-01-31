@@ -31,13 +31,11 @@ Po čase jsem došel k názoru, že už některé návrhy na změny v klubu čas
 
 ## Komunikace s firmami
 
-Komunikoval jsem s firmami a domlouval nové spolupráce. Zkoušíme se na něčem domluvit s Jetveo.
+Komunikoval jsem s firmami a domlouval nové spolupráce. Zkoušíme se na něčem domluvit s Jetveo. S Janem z Mews jsme si naplánovali společnou procházku s kočárkem. Vyřešili jsme pár provozních věcí a pokecali o spoustě zajímavých věcí.
 
 S Appliftingem jsem měl sales call, kde jsem představil JG a ukázal, jak to funguje. Už bych k tomu měl konečně natočit screencast. Jak se ty sales cally opakují, už tuším, co by v něm mělo přesně být a na jaké otázky by měl odpovědět. Nicméně jsem líný to natáčet a zároveň mě baví povídat si reálně s lidmi, poznáme se na tom callu (osobnější), já si je pak přidám na LinkedIn, kde pak čtou moje statusy, apod.
 
 Je tedy otázka, do jaké míry to může škálovat. Zatím mě to asi nezatěžuje tolik, abych to urychleně musel nějak řešit.
-
-S Janem z Mews jsme si naplánovali společnou procházku s kočárkem. Vyřešili jsme pár provozních věcí a pokecali o spoustě zajímavých věcí.
 
 
 ## Podcast
@@ -46,6 +44,8 @@ Přečetl jsem si smlouvu od Seznamu ohledně podcasty.cz a poslal jim nějaké 
 
 Amazon někde vychytal, že existuje náš podcast a poslal mi mail, ať to [přidám do jejich služby](https://podcasters.amazon.com/), kterou sice vůbec neznám, ale přidání na rozdíl od Seznamu vypadalo, že bude trvat 3 minuty, tak jsem to udělal.
 
+Pája už má připraven druhý díl podcastu. Soubor mám k dispozici, ale ještě jsem to neslyšel. Vyjde zřejmě kolem půlky února.
+
 
 ## Firmy v klubu
 
@@ -53,7 +53,7 @@ Začal jsem pracovat na tom, aby byly firmy v klubu víc vidět. První krok byl
 
 Protože už byl konec dne, nechal jsem to tak, aby bot role vždy smazal a vytvořil znova. Což jsem věděl, že není ideální, protože pokud udělám na roli mention nebo tak něco, druhý den už původní role nebude existovat a mention bude rozbitá, ačkoliv už bude existovat nová role se stejným názvem. Ale říkal jsem si, že pár dní to tak vydrží, než to opravím.
 
-Mezitím Dan zajásal, že jsou nové role a využil je pro správu kanálů, které využívá k provozu svého mentoringu. Bot mu tyto role druhý den smazal a chudák mi psal, že ztratil veškerá oprávnění ke všemu a vůbec, apokalypsa. Holt strasti _early adopters_ :D Sice _known issue_ ale byl bohužel _known_ jen pro někoho.
+Mezitím Dan zajásal, že jsou nové role a využil je pro správu kanálů, které využívá k provozu svého mentoringu. Bot mu tyto role druhý den smazal a chudák mi psal, že ztratil veškerá oprávnění ke všemu, apokalypsa. Holt strasti _early adopters_ :D Sice _known issue_, ale bylo bohužel _known_ jen pro mě.
 
 Takže tohle bych teď měl ještě opravit, než budu dělat něco dál.
 
@@ -61,14 +61,15 @@ Takže tohle bych teď měl ještě opravit, než budu dělat něco dál.
 ## Další poznámky
 
 - [Svetlana](https://kompilator.cz/) mě začala [podporovat na GitHub Sponsors](https://github.com/sponsors/honzajavorek/). Díky moc!
-- Udělal jsem balíčky samolepek a poslal je PyLadies do Ostravy, Olomouce a Plzně. Brno teď nic neorganizuje a v Praze si pro balíček přijde poslíček.
-- Refaktoroval jsem mechaniku, kterou bot používá na kontrolu toho, zda už byla pravidelná zpráva postnutá nebo ještě ne a v tom případě ji postne. Vše jsem i otestoval. Tedy vše asi ne, protože souhrn nejdůležitějšího dění v klubu na konci týdne se postnul 5x za sebou. Zatím nevím proč.
+- Udělal jsem balíčky samolepek a poslal je PyLadies do Ostravy, Olomouce a Plzně. Brno teď nic neorganizuje a v Praze si pro balíček přijde poslíček. Beztak mi už doma došly obálky.
+- Refaktoroval jsem kód, který bot používá na kontrolu toho, zda už byla pravidelná zpráva postnutá nebo ještě ne a v tom případě ji postne. Kód už se totiž opakoval v příliš mnoho skriptech, asi čtyřech. Vše jsem i otestoval. Tedy vše asi ne, protože souhrn nejdůležitějšího dění v klubu na konci týdne se postnul 5x za sebou. Zatím nevím proč.
 - Propagoval jsem [svůj článek na Heroine o CV](https://www.heroine.cz/zeny-it/7091-jak-si-napsat-dobre-cv-a-byt-videt-pri-hledani-prvni-prace-v-it). Sice po týdnu od vydání, ale přece! Propagoval jsem i [článek Zuzany Pechové o portfoliu](https://www.heroine.cz/zeny-it/7047-jak-si-vybudovat-portfolio-a-ukazat-co-uz-v-it-umite), protože myslím, že [přináší zajímavou novou perspektivu](https://twitter.com/honzajavorek/status/1486267371262291973).
-- Prošel jsem po snad dvou nebo třech týdnech konečně CV jednoho z členů klubu a kamaráda, které mi přišlo v soukromé zprávě. Snažím se odpovídat i soukromě na vše, co mi kdo píše, ale popravdě, někdy mi to prostě trvá. CV bylo parádní, takže nezbylo než komentovat drobnosti.
+- Prošel jsem po snad dvou nebo třech týdnech konečně CV jednoho kamaráda a člena klubu, které mi přišlo v soukromé zprávě. Snažím se odpovídat i soukromě na vše, co mi kdo píše, ale popravdě, někdy mi to prostě trvá. CV bylo parádní, takže nezbylo než komentovat drobnosti.
 - Náhodou jsem v Discord helpu narazil na [funkci pro placené členství](https://support.discord.com/hc/en-us/articles/4415163187607-Premium-Memberships-for-Servers). Zatím je to nějaká beta, která není smrtelníkům přístupná, ale pro mě je to signál, že placené členství pro jednotlivé servery je něco, co chce Discord do budoucna podporovat. Zda bude vynucovat svůj platební systém místo např. [Memberful](https://memberful.com/), které používám, to je druhá věc, ale pozitivní je, že je můj byznys model zahrnut v jejich plánech a nechtějí to třeba zakázat.
 - [Luboš](https://blog.zvestov.cz/) mě poprosil, zda bych v klubu mezi juniory nezpropagoval možnost podílet se na stránkách pro [projekt geomapa](https://geomapa.lounovicepodblanikem.cz/). Zatím se nikdo neozval, ale zkusím to v klubu ještě připomenout.
 - Czechinvest inzeroval na JG, takže jsem to zpracoval a [nabídku publikoval](https://junior.guru/jobs/adbca516fcb8da745a785a98e74db6fd89f131506cce8d69434b6cbc/). Přijde mi dost na hranici toho, co já považuju za juniorní, ale přimhouřil jsem oko, protože lidi kolem PHP bývají i jako junioři celkem zběhlí ve více technologiích jako CSS, HTML, atd. (resp. nic jiného jim moc nezbývá, na rozdíl od Pythonistů, kteří si najdou práci prostě i jen s Pythonem a Gitem).
 - Přečetl jsem si o [konci nabídek práce na Stack Overflow](https://meta.stackoverflow.com/questions/415293/sunsetting-jobs-developer-story) a přemýšlel nad tím, že mi jednak zmizí jeden zdroj pro JG, jednak zda mohu něco z jejich _experience_ využít v budoucnu u sebe.
+- Hledal jsem nějaké geopolitické podcasty. Pár jsem jich zkusil, ale většinu jsem zase zahodil. Kromě jednoho, který teď celkem sjíždím a baví mě: [The Red Line](https://www.theredlinepodcast.com/).
 - Během 12 dní od 20.1. do 31.1. jsem při procházkách nachodil 36 km, na túrách nachodil 11 km, sjel na lyžích 39 km. Celkem jsem se hýbal 18 hodin a zdolal při tom 86 kilometrů.
 - Aktuální finanční výsledky, návštěvnost a další čísla k JG [mám přímo na webu](https://junior.guru/open/).
 
