@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/tydenni-poznamky-82-skalovani/">
+    <title>Týdenní poznámky #82: Škálování &mdash; Honza Javorek</title>
+
+    <meta property="og:title" content="Týdenní poznámky #82: Škálování &mdash; Honza Javorek">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-82-skalovani/">
+    <meta name="twitter:creator" content="@honzajavorek">
+    <meta name="twitter:site" content="@honzajavorek">
+
+    <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="683">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Honza Javorek &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2022-02-15T00:00:00+01:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <div class="content">
+<article class="article">
+  <header class="article-header">
+    <h1>
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-82-skalovani/" rel="bookmark">
+        Týdenní poznámky #82: Škálování
+      </a>
+    </h1>
+  </header>
+  <footer class="article-info">
+    <ul>
+      <li class="article-published">
+        <small>
+          <time datetime="2022-02-15T00:00:00+01:00">
+            15. 2. 2022
+          </time>
+        </small>
+      </li>
+      <li class="article-author">
+        <small>
+          <a href="#author">Honza Javorek</a>
+        </small>
+      </li>
+    <ul>
+  </footer>
+  <div class="article-content">
+
+    <div><div><div><div><p>Utekl zase nějaký ten týden (1.2. — 15.2.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-81-podovolenkovy-blazinec/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/club/">klub</a>, a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.</p>
+<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
+<p>Jak jste si mohli všimnout, z týdenních poznámek se stávají dvou až třítýdenní. Napadlo mě, jestli by nemělo smysl změnit „oficiálně“ frekvenci vydávání poznámek a nehrnout to před sebou, ale dám tomu ještě šanci.</p>
+<h2 id="skalovani">Škálování?<small class="permalink"><a href="#skalovani" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Slovem škálování se v IT označuje situace, kdy jste zařízení na nějaký objem (je celkem jedno, jestli zakázek, klientů, e-mailů, zaměstnanců, serverů) a zjišťujete, že se objem zvyšuje a vy se potřebujete rychle zařídit tak, abyste ty vyšší objemy zvládli.</p>
+<p>Pokud třeba učíte angličtinu od hodiny, moc to neškáluje, protože jakmile vyplníte počet hodin v týdnu, můžete už jen navyšovat cenu nebo založit firmu a najmout další učitele. Pokud prodáváte PDF knížky, škáluje to skvěle, protože je dost jedno, zda knížku prodáte pěti lidem nebo pěti tisícům lidí. Pokud samozřejmě rukou nevypisujete účetní doklady a neposíláte je zákazníkům s osobním podpisem.</p>
+<p>Poslední týdny se u mě nesly ve znamení škálování, které potřebuji, aby proběhlo, ale nestíhám ho dělat. Jsem tedy veselý i smutný zároveň. JG možná na první pohled nevypadá jako něco, co škáluje dobře, přece jen je to dost závislé na mě jakožto jedné osobě, ale od začátku vše kolem něj vymýšlím tak, aby škálovat mohlo, když budu chtít.</p>
+<p>Myslel jsem, že věci, které dělám ručně, mohu časem naprogramovat a automatizovat. Chybou by bylo automatizovat je hned od začátku. Chybou ale bylo si myslet, že ta automatizace může proběhnout za odpoledne. Automatizovat vítání členů v klubu je programování na měsíc a když u toho stále ještě ty členy vítáte a je jich stále více, dostáváte se do problému.</p>
+<p>Je otázka, zda jsem ale měl prostor s tím něco dělat dřív. Mám tolik priorit, že vlastně dělám hlavně to, co zrovna hoří. To platí celý poslední rok, takže nevím, kdy jsem měl odhadnout, že lidí přibývá, přibývat bude, a že už mám začít automatizovat, zatímco něco jiného v aktuálním momentě hoří víc. Je to těžké.</p>
+<p>Každopádně jsem svůj únor začal tím, že se sesypaly hned tři věci:</p>
+<ul>
+<li>Druhý den měla být přednáška v klubu a já jsem stále neměl vyřešené, jak obejít limit na 25 lidí na videocallu v Discordu, pokud je zapnuté video.</li>
+<li>Robot na nabídky práce byl zahlcen nabídkami z LinkedIn a nebyl schopen dokončit svou práci v rozumném čase. Protože toto běží v rámci jednoho velkého skriptu, nedoběhlo ani nic dalšího, neaktualizovala se webová stránka, neprobíhaly všechny automatizované záležitosti v klubu, apod.</li>
+<li>Každý den chodilo do klubu pět až deset lidí za den. Dan i já jsme všechny osobně vítali, co nám síly stačily, ale i tak to bylo vyčerpávající.</li>
+</ul>
+<p>Svým způsobem to jsou krásné problémy, protože znamenají, že JG se daří a roste. Na <a href="https://junior.guru/open/">grafu výnosů</a> jde vidět, že v lednu jsem se flákal s fakturami firmám, ale příjmy z individuálního členství stouply téměř dvojnásobně.</p>
+<p>Na druhou stranu, pokud je nebudu schopen efektivně a rychle řešit, mohou se různé věci na JG pod náporem postupně udusit. Kormidluju skalnaté vody.</p>
+<h2 id="prednasky">Přednášky<small class="permalink"><a href="#prednasky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p><em>First things first</em>, jak se říká, takže hned v pondělí jsem se jal řešit problém s limitem 25 lidí na videocallu na Discordu. Napadlo mě, jak to obejít, ale nevěděl jsem, jak to vyrobit a jestli to bude fungovat.</p>
+<p>Návod na výrobu jsem našel tady: <a href="https://davidwalsh.name/browser-camera">Camera and Video Control with HTML5</a> Bylo to jednodušší, než jsem myslel. Prototyp byl hned, nejvíc času mi zabraly tlačítka okolo a CSS.</p>
+<p>Vytvořil jsem <a href="https://junior.guru/speaker/">stránku pro přednášející</a>, kde si mohou otevřít „zrcadlo“. Když pak nasdílí do callu svou plochu (což Discord nepočítá jako video), mohou ukazovat slajdy, prohlížeč, nebo třeba svou hlavu, skrze toto „zrcadlo“.</p>
+<p>Také jsem změnil hlasové kanály pro přednášení a v „přednáškárně“ jsem nastavil práva tak, aby mohl video a sdílení obrazovky využívat jen speaker. Bohužel nelze tyto dvě funkce rozdělit a zakázat video všem a speakerovi jen sdílení obrazovky, takže speaker když omylem klikne na video, zastropuje call na 25 lidí. Roli, která práva speakerům uděluje, zatím dávám lidem ručně, ale časem by to měl zvládnout i bot.</p>
+<p>Dodělával jsem to na poslední chvíli a Svetlana tedy neměla zrovna úžasný komfort pro přednášení, jelikož jsem ji postavil před hotovou věc těsně před přednáškou a celé to bylo nové i pro mě. Navíc jsem se tak soustředil na technické zázemí přednášky, že mě nějak zaskočilo uvádění a úplně jsem se u toho zablekotal a nebyl schopen dát dohromady souvislou větu. Tímto se Svetlaně ještě jednou omlouvám. Že mi během callu zase došla šťáva v noťasu a běhal jsem pro prodlužovačku, to už je skoro folklór, naštěstí to mívá na průběh minimální vliv.</p>
+<p>Její přednáška byla jinak super, lidi si ji velmi chválili, prolítli jsme všechny možné cesty jak vyrobit mobilní aplikaci, na co se připravit, co se učit a z čeho, no bylo to plné praktických tipů.</p>
+<p>Stránku pro speakery jsem po přednášce doplnil o další informace a poprosil o zpětnou vazbu v klubu. Dostal jsem spoustu dobrých připomínek, aby byla stránka použitelnější, ale ty musím ještě zapracovat.</p>
+<h2 id="predelavani-robota-na-nabidky-prace">Předělávání robota na nabídky práce<small class="permalink"><a href="#predelavani-robota-na-nabidky-prace" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Rozhodl jsem se, že po dlouhém odkládání nastal čas přepracovat robota na pracovní nabídky, když už se mi začal hroutit na hlavu.</p>
+<p>Aby fungoval zbytek bota a webu, pozastavil jsem stahování nabídek práce z LinkedIn, které proces nejvíc prodlužovalo a zatěžovalo. Jenže jsem zároveň zjistil, že StartupJobs mají chybu v exportu a nejdou teď od nich žádné nabídky. Zároveň <a href="https://meta.stackoverflow.com/questions/415293/sunsetting-jobs-developer-story">končí nabídky na StackOverflow</a>. Na SJ jsem napsal a prý to opraví, ale zatím to stále vrací chybu. Takže ze dne na den vypadly tři zdroje a na webu teď nemám skoro nic, jen vlastní nabídky přímo z JG.</p>
+<p>Vytvořil jsem si na svou práci větev na Gitu a <a href="https://github.com/honzajavorek/junior.guru/pull/780">rozpracovaný PR</a>, což moc často nedělám, dělám <em>continuous delivery</em>. Ale tady jsem se na to vybodl, protože mi bylo jasné, že pojedu buldozerem a za mnou zbude jen spoušť, kterou pak budu dávat horko těžko vůbec dohromady, natož abych to celé nějak průběžně dával na produkci a bylo to stále nějak funkční.</p>
+<p>Hodně mi pomohlo, že jsem se sešel na oběd s <a href="https://tomasvotruba.com/">Tomášem</a> a povídal jsem mu, co řeším za problém. Přivedl mě na zajímavé myšlenky, které jsme pak ještě <a href="https://github.com/TomasVotruba/friendsofphp.org/pull/185#discussion_r798387962">dodatečně řešili i na GitHubu</a>. Hlavní myšlenka, na kterou mě přivedl, je uložit prostě stažené nabídky práce po jednotlivých dnech do JSONu na disk a tam řešit uskladnění, retenci, případně offload na S3 či jinam. Až potom to zvlášť číst a nějak zpracovávat. To zase navazuje na slova <a href="https://twitter.com/jsuchal">Jana Suchala</a>, se kterým jsem kdysi za dob SynopsiTV seděl někde na obědě v Bratislavě a on říkal, že základ úspěchu se scrapery je uložit data ze scraperu tak jak jsou a čistit až potom. Když je to takto oddělené, snadněji se debuguje, co že to ty scrapery vlastně stáhly za data a případně se dá nad těmi daty pustit postprocessing znova a znova a ladit výsledek bez toho, aby se muselo vše opakovaně stahovat.</p>
+<p>Rozdělil jsem tedy scrapery a postprocessing. Scrapery stále řeší Scrapy, pak mám pár pipelines, které mě zbavují úplných nesmyslů, ale dál se to už jen uloží do <a href="https://jsonlines.org/">JSONL</a> přes <a href="https://docs.scrapy.org/en/latest/topics/feed-exports.html">FEEDS</a>. Lepší než JSON, protože pro velké objemy se dají na rozdíl od JSONu streamovat po řádcích.</p>
+<p>Rozdělil jsem build na CircleCI, aby nabídky práce mohly jet paralelně se zbytkem skriptů.</p>
+<p>Místo, aby si build stahoval předchozí zálohu a nějak složitě rozzipovával a načítal, rozhodl jsem se ukládat data prostě kumulativně po dnech na disk a jejich perzistenci zajistit přes CircleCI cache. Ta může být až 800 MB, ale samozřejmě by asi bylo lepší soubory časem ukládat jinam, třeba na S3 nebo někam na GitHub, to ještě vymyslím. Každopádně zlepšení, protože i kdyby se muselo něco stahovat ze sítě, JSONL soubor lze stahovat a zpracovávat zároveň, kdežto zazipovaný SQLite .db soubor moc teda ne.</p>
+<p>Smazal jsem scrapery na StackOverflow, protože stejně končí, a na DobrýŠéf, protože tam žádné nabídky práce nejsou, aspoň co já vím (kdyby zas někdy byly, vytáhnu snadno z historie Gitu). Odstranil jsem prozatím samotné JG jako zdroj nabídek, protože mám dojem, že se mi tam pletou jabka a hrušky, že JG musím prostě procesovat úplně zvlášť a necpat to do scraperů a tvářit se (čti „mít kód všude samý if/else“), že jsou moje vlastní nabídky totéž jako nabídky z LinkedIn.</p>
+<p>Z minulých pokusů o stahování záloh a načítání historie nabídek práce z nich jsem měl, díky <em>continuous delivery</em>, všude v kódu dva modely, starý Job a nový Employment, které se různě proplétaly a doufal jsem, že jednou to nějak celé sloučím a zmigruji. To jsem teď udělal, vše jsem smazal a model udělal znovu přesně tak, jak jej chci.</p>
+<p>Pak přišel na řadu postprocessing. Tam jsem se snažil, aby vše bylo co nejvíc efektivní. Nejdříve načíst věci z JSONL souborů, zparsovat, zpracovat, pak uložit do SQLite, mergnout duplicity, pak vytáhnout co se uložilo a udělat ještě postprocessing a uložit úpravy, které udělá. Nakonec z toho bylo několik dní s <a href="https://docs.python.org/3/library/multiprocessing.html">multiprocessing</a>. Už jsem byl poučen z dřívějška, že do SQLite by měl zapisovat ideálně jen jeden proces, takže jsem tam měl hned několik situací, které by se daly popsat jako <em>producer/consumer</em>. Nakonec jsem to vyřešil přes hned několik <code>multiprocessing.Queue()</code>. Zkoušel jsem i <code>multiprocessing.Pool()</code>, ale tam mi vždy vytekla nějak paměť nebo to zlobilo jiným způsobem. Mám <em>pool</em> rád na jednoduché věci, ale tady bylo fakt lepší si to pořešit sám těma frontama, už jen proto, že jsem měl kompletní kontrolu nad jednotlivými procesy a mohl si řídit např. připojení k databázi. Celé jsem to pak ještě párkrát optimalizoval a teď to teda nějak funguje, paměť nikde nevytéká a nekončí to na <em>segmentation fault</em>, nepíše mi to nic o <em>leaked semaphore objects</em> nebo <em>corrupted</em> databázi, megabyty JSONL souborů to zpracuje a uloží za necelou minutu. Většinu tohoto monstra jsem vytvořil během sezení v kavárně Atrium Žižkov s <a href="https://milavotradovec.cz/">Mílou</a> a chtěl bych je tímto politovat, že to se mnou museli vydržet.</p>
+<p>Funkce, které dělaly postprocessing stažených inzerátů, jsem přesunul ze Scrapy pipelines do tady tohoto mého nového systému.</p>
+<p>Pak už jsem stihl jen popřemýšlet nad tím, jestli nejsou vlastně megabajty JSONL souborů zbytečné plýtvání místem a rozhodnout se, že jsou. Místo do texťáku jsem tedy začal ukládat do gizpu a číst z gzipu. Ty největší soubory se díky tomu zmenšily i několikanásobně.</p>
+<p>A nakonec jsem to v kódu <a href="https://github.com/honzajavorek/junior.guru/pull/780/files#diff-e7b580346e4611dfc645a48ac25efe9a3dc1ea21c19b208d92f6c7a3b35d38b0">zdokumentoval</a>, abych to byl sám schopen ještě někdy pochopit. Čitatele jsem oslovil jako ve <a href="https://www.youtube.com/c/VivaLaDirtLeague">Viva La Dirt League</a>, <em>Hello, adventurer!</em>, abych nastavil ta správná očekávání.</p>
+<p>Blbé je, že jsem na tom dělal kdy jsem jen mohl, dva týdny jsou pryč a jsem teprve na začátku. Vlastně jsem projel přes kód tím buldozerem, postavil jsem tam malý nový domeček, ale všude okolo jsou přetrhané trubky a elektrika a já ještě ani nevím, jak to celé pozapojuju zpátky. A až potom to budu moct hodit na produkci.</p>
+<p>Ale zase to umožní dělat na spoustě nových krásných věcí, které by se ve staré prohnilé verzi dělaly dost těžko. Třeba s Mílou konečně uděláme to třídění inzerátů s využitím ML, nebo přidám nové zdroje inzerátů.</p>
+<h2 id="firmy">Firmy<small class="permalink"><a href="#firmy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Jedna firma se rozhodla neprodloužit členství, protože měli pocit, že nedokázali členství naplno využít tak, jak původně chtěli. Rozumím tomu a věřím, že se toto stávat prostě bude. I když neprodlouží, jsem firmám vděčný, že mě podržely v době, kdy to JG nejvíc potřebovalo.</p>
+<p>S jinou firmou jsme zase prodloužili spolupráci téměř přes SMSku :D</p>
+<p>S další si volám, protože po dlouhých měsících jednání na jejich straně se blížíme k uzavření kontraktu.</p>
+<p>Jednal jsem před lednem s více firmami a všechny mi slíbily, že budou něco chtít a že se mi ozvou, ale teď jen čekám. Nevím vlastně ani, jestli už je to dlouho, můj pojem o čase je dost narušený. S miminem mi nějak splývají dny a týdny. Taky mám pořád trochu jiné tempo rozvoje byznysu, například týden může být dlouho pro mě, ale v některých firmách si za takovou dobu ani neuprdnou.</p>
+<p>Nemám každopádně čas je uhánět, takže buď se vrátí a objednají, nebo holt přijdou firmy jiné… Nebo si třeba někdy ten čas najdu a těch pět emailů pošlu, ale teď mám prostě jiné priority, potřebuji škálovat byznys na jiných frontách.</p>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<ul>
+<li>Pozvali mě na natáčení podcastu <a href="https://www.programhrovani.cz/">ProgramHRování</a>. Připravoval jsem se na to, celkem poctivě, a nahrávání probíhalo v Holešovicích, kam jsem osobně jel.</li>
+<li>Týdenní souhrn se v klubu objevil pětkrát, to už jsem psal minule. Povedlo se mi to opravit. Bylo to zase chybou v odsazení, která vznikla, když jsem do kódu neopatrně šťoural. Něco bylo v cyklu, i když být nemělo.</li>
+<li>Prošel jsem se s Jakubem z <a href="https://rozbiteprasatko.cz/">Rozbitého prasátka</a> a hezky jsme si popovídali. Výhoda bydlení v Praze. Jakub už se <a href="https://twitter.com/RozbitePrasatko/status/1493266070450417668">na Twitteru rozcvičuje</a> před vydáním série dílů svého podcastu, které budou o práci a kde bude jeden díl i se mnou.</li>
+<li>Můj startupový guru Jakub Nešetřil <a href="https://twitter.com/jakubnesetril/status/1493214393601081352">projevil radost</a> nad tím, jak frčí junior guru :)</li>
+<li>Jeden člen klubu našel svého pravidelného mentora v jednom ze seniorů v klubu. Sice našel svou první práci jinde, ale tam se mu vůbec nevěnovali a tak si tihle dva psali tak dlouho, až mu ten senior řekl, ať jde teda pracovat k nim. Neuvěřitelná story, každopádně se teď setkali v Praze, aby se domluvili, a pak šli na pivo, tak jsem se tam taky stavil a přišel i další člen klubu a byl z toho ve čtyřech takový milý spontánní mini JG srazík.</li>
+<li>V <a href="https://cesko.digital/">Česko.Digital</a> to vypadá na nějaký konkrétní projekt vhodný i pro juniory, vyměnili jsme si tam k tomu pár zpráv, tak pokud to klapne, zpropaguju tuhle příležitost i v klubu.</li>
+<li><a href="https://www.linkedin.com/in/lukas-kubec/">Lukáš Kubec</a>, člen klubu, se na náš popud pustil do překládání <a href="https://jvns.ca/blog/good-questions/">How to ask good questions</a>. Měl to asi druhý den hotové, čímž mě trochu přistihl nepřipraveného. Nestihl jsem se na to ještě podívat, natož s tím dál něco udělat. V plánu by bylo včlenit to někam do JG a využít i přímo v klubu.</li>
+<li>Řešil jsem, proč se mi sluchátka na callu zblbnou a dělají samy od sebe <em>mute</em>, čímž se stávají nepoužitelnými. Zjistil jsem, že jde asi o bug v macOS Monterey (<a href="https://www.reddit.com/r/Jabra/comments/qw5hty/mac_monterey_automuting_issues/">Reddit</a>, <a href="https://www.reddit.com/r/Jabra/comments/rlu30y/jabra_elite_75t_mutedunmutedmutedunmuted/">Reddit</a>) a našel nějaké způsoby, jak to zatím řešit (<a href="https://richardbloomfield.blog/2021/12/my-ear-buds-keep-auto-muting-themselves/">nějaký blog</a>, nějaký <a href="https://chrome.google.com/webstore/detail/disable-automatic-gain-co/clpapnmmlmecieknddelobgikompchkk/related">doplněk do Chrome</a>, další <a href="https://codeandframes.com/audio/how-to-stop-google-meet-to-change-microphone-volume.html">blog</a>). Jako by nestačilo, že musím na Google Meet používat Chrome, protože ve Firefoxu to funguje napůl.</li>
+<li>Připravoval jsem přednášku s Nelou Slezákovou o tom, jak přežít cestu juniora po psychické stránce. Ladili jsme texty, fotku, logo, všechno. Dík <a href="https://coreskill.tech/">Danovi</a> za pomoc s převedením loga do SVG.</li>
+<li>Propagoval jsem na sociálních sítích přednášku Světlany a včera přednášku Nely, která bude za další týden 22.2.</li>
+<li>Volal jsem si s Jiřím Anděrou z Czechitas a probírali jsme naši spolupráci na datech z pracovních inzerátů a jaké jsou do budoucna možnosti v různých dalších směrech.</li>
+<li>Kousek od nás je ve vnitrodvorku úřadu bio popelnice, tak jsme tam začali nosit bio odpad z domácnosti. Osvědčilo se to, takže jsme se jali koupit nějaký koš na bio. Vybrat mi pomohl <a href="https://biom.cz/cz/odborne-clanky/je-mozne-separaci-bioodpadu-zvysit-komfort-a-hygienu-v-domacnostech">tento článek</a>.</li>
+<li>Pája s yablkem nahrála <a href="https://junior.guru/podcast/">nový díl podcastu</a>. Postaral jsem se o to, aby se správně publikoval, teď mě ještě čeká jeho propagace na sociálních sítích.</li>
+<li>S <a href="https://coreskill.tech/">Danem</a>, moderátorem v klubu, jsme různě řešili, jak by časem mohl vypadat <em>onboarding</em> a vítání nových členů, kdyby nám s tím pomáhal bot. Shodli jsme se, že než bude bot, upravíme a doplníme pravidla klubu, ať je tam co nejvíc praktických tipů, ale já jsem na to pak zapomněl, protože lidi chvíli chodili méně. Včera ale zase pět šest nových.</li>
+<li>V klubu se představilo <a href="https://jetveo.io/cs/blog/articles/jakub-interview">Jetveo</a>, <em>low-code</em> platforma pro C#, na které junioři můžou snadno začít vytvářet celé appky. Lidi měli zájem o demo, tak vybíráme termín a plánujeme to.</li>
+<li>Členovi klubu jsem dal podrobný feedback na jeho CV, v několika vlnách.</li>
+<li>Napsali mi z agentury, která řeší nabídky práce pro AT&amp;T a která si u mě před časem objednala pár inzerátů, že člověk, s nímž jsem komunikoval, už tam nepracuje a jestli jim u mě neco zbylo, třeba nějaké kredity. Odepsal jsem, že jim u mě zbyla nezaplacená faktura, tak jestli na to nechtějí mrknout.</li>
+<li>V klubu se rozjela řetězovka na způsob <a href="https://twitter.com/KateMihalikova/status/1491497856418693123">tohoto tweetu</a> a musím říct, že v místě, kde se to hemží <em>career switchery</em>, je to fakt zábava.</li>
+<li>Zapnul jsem <a href="http://headliner.app/">Headliner</a>, ale díl podcastu s Jiřím Psotkou dodatečně nezpracoval. Dnes zpracoval až druhý díl, s yablkem. Napsal jsem jim na support, ale ta aplikace je celá tak hrozná a nepřehledná, že uvažuju, že si to buď udělám nějak sám, nebo že teda asi smažu intro z YouTube a nastavím to raději celé znova. Čekám zatím co ten support, ale nedělám si vlastně vůbec iluze.</li>
+<li>Propagoval jsem na sociálních sítích projekt juniora <a href="https://www.linkedin.com/in/rvdvorak/">Romana Viktora Dvořáka</a>, <a href="https://jakbude.herokuapp.com/">Weather Board</a>.</li>
+<li>Skript, který vytváří role lidem z jednotlivých firmem, jsem změnil tak, aby role vždy nesmazal a nevytvořil znova. Teď kontroluje, jestli už existují a pokud ano, tak je nechává žít. Toto umožňuje role reálně využít, jelikož se už nemění každý den jejich IDčka a role, kterou člověk viděl včera, je tatáž „instance“, jakou vidí dnes.</li>
+<li>Dal jsem na sociální sítě <a href="https://www.hanakonecna.cz/jak-jsem-totalne-zvorala-pohovor/">článek Hany Konečné o zvoraném pohovoru</a> a mělo to celkem ohlasy.</li>
+<li>Několikrát jsem samozřejmě prošel celý klub a na vše možné odpověděl, všechny uvítal, atd. Sem tam jsem řešil, když se někdo zaseknul s přístupem do klubu, ale naštěstí nic závažného.</li>
+<li>Issue o tom, že písmo z Bootstrapu je příliš tenké všude jinde než na macOS, bylo <a href="https://github.com/twbs/bootstrap/issues/34813#issuecomment-1035876545">zavřeno</a>. <em>Closing as stale</em> si vykládám tak, že se neobjevilo víc lidí, které by to trápilo a pod tímto issue by se nějak vyjádřili.</li>
+<li>Během 15 dní od 1.2. do 15.2. jsem naběhal 6 km, při procházkách nachodil 32 km. Celkem jsem se hýbal 9 hodin a zdolal při tom 38 kilometrů.</li>
+<li>Aktuální finanční výsledky, návštěvnost a další čísla k JG <a href="https://junior.guru/open/">mám přímo na webu</a>.</li>
+</ul>
+<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Tři věci, které bych chtěl zvládnout udělat příště:</p>
+<ol>
+<li>Pracovat dál na botovi, který stahuje a třídí pracovní nabídky.</li>
+<li>Začít domlouvat, kdo bude přednášet po Nele.</li>
+<li>Propagovat nový díl podcastu.</li>
+</ol>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
+<ul>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fovercast.fm%2F%2BUt4TJt-zM&amp;h=30d16b59242c1fc00df91e50a592e0a7fbec02b6d072f9e7935effc71135f516">51 - Belarus: The Next Crimea?</a><br>Tři odborníci na téma aktuální a budoucí geopolitické role Běloruska.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwww.advojka.cz%2Farchiv%2F2022%2F2%2Fpod-stejnou-vlajkou&amp;h=2ffad67f38fb579c83b1293b54699abdd08b808ee9ce117a0340d4cf866c729b">Pod stejnou vlajkou</a><br>Pěkný rozhovor o pandemii, klimatu, antivax, o tom jak to všechno souvisí. Jak lidé (ne)vnímají politiku nebo jak se vědci nevnímají navzájem. Až si pro nás přijde klima, na pandemii budeme vzpomínat jak během maturity na písemku z páté třídy.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Ffinmag.penize.cz%2Fveda-a-technika%2F431481-nova-generace-baterii-prichazi-elektromobily-zmeni-vic-nez-si-myslite&amp;h=316b934b59db342f715cd12d402bfe5e1e1283eaace9db906d4847c5fe878f86">Nová generace baterií přichází. Elektromobily změní víc, než si myslíte</a><br>Budeme mít auta s „nekonečnou“ životností? Co by to změnilo na způsobu, jakým auta kupujeme a používáme?</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Ffinmag.penize.cz%2Fveda-a-technika%2F425328-eu-chce-zakazat-prodej-spalovacich-aut-proc-vam-to-muze-byt-burt&amp;h=09df4f29d376134f1b1297915ce657440a1b0dbeb98024b72effa0e54b6aec49">EU chce zakázat prodej spalovacích aut. Proč vám to může být buřt</a><br>„EU plánuje zákaz spalovacích aut tak, aby to mohlo vypadat, že něco změnila, i když se to reálně stane i bez jejího vlivu.“</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwww.devian.cz%2F2020%2Fkonec-mytu-o-skolnem-americke-studentske-pujcky%2F&amp;h=4d8d868971655c22602d2b1a1c4ffed44a99e9d7e24a3cbe8ebb899aacccf2b4">Konec mýtů o školném: americké studentské půjčky</a><br>Zajímavá kritika studentských půjček zprava.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwww.seznamzpravy.cz%2Fclanek%2Fdomaci-zivot-v-cesku-komentar-praha-parkoviste-evropy-170-tisic-mist-je-beznadejna-utopie-187217&amp;h=530a4e53bc35062946eeb583b8913c1c1c1741c06bfcb74d3dda39d145089037">Komentář: Praha, parkoviště Evropy. 170 tisíc míst je beznadějná utopie</a><br>„Pražská automobilová doprava zřejmě má být vlajkovou lodí programu ODS. Tento amatérský výkop je ale zcela mimo dopravní, urbanistickou i ekonomickou realitu. Jestli někdo z autorů textu strávil opoziční roky studiem dopravních témat, asi to bylo na vysoké škole života.“</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fovercast.fm%2F%2BUt4TwS_po&amp;h=382c75903aa11e0434185549364281e47875e2e2ffac22296a07c5278318e9d0">11 - The Libyan Civil War</a><br>Zajímavý díl o tom, v jak beznadějné situaci se nachází Libye.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fovercast.fm%2F%2BUt4SSjV7A&amp;h=6a2a0578769c2b9dfb4f3675459342cdf4b73edf42c6788500638fd08b596572">12 - The Vultures of Venezuela</a><br>Až někde zase uvidíte přirovnání založené na tom, že za rozvrat ve Venezuele může jen a pouze komunismus, tak si pusťte tohle.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fsecurityboulevard.com%2F2022%2F02%2F1passwords-blue-ocean-strategy%2F&amp;h=c9ce68c993e66dd4e334e8848c9d7c041ec4eeba59bc3e52ed002e84fdd3d895">1Password’s Blue Ocean Strategy</a><br>1Password dostal další investici a toto je článek, který rozebírá jejich market positioning, byznys model a co můžou chtít vyrobit do budoucna.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwww.wired.com%2Fstory%2Fwhat-happens-after-a-million-mile-battery-outlasts-the-car%2F&amp;h=9ccff33f36a70f2f9c062ceb80f3474cb6011c5fe663b59ca9c755043932c34c">What Happens After a ‘Million-Mile Battery’ Outlasts the Car?</a><br>Zajímavé zamyšlení nad tím, co se stane, až baterka natřikrát přežije auto. Na jednu stranu znovupoužitelnost, na druhou se nebudou vracet do oběhu materiály na výrobu baterií z jejich recyklace a bude potřeba mít jejich velké množství vytěženo ze Země.</li>
+</ul>
+<p><small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small></p></div></div></div></div>
+  </div>
+
+  <footer class="article-footer">
+    <div id="author" class="author">
+      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
+      <address>
+          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
+          a tvůrce projektu <a href="https://junior.guru/">junior.guru</a>,
+          pomáhajícího lidem získat svou první práci v IT. Od roku 2011
+          pomáhá budovat českou komunitu kolem jazyka
+          <a href="https://python.cz/">Python</a>.
+      </address>
+      <p class="button button-donate">
+        <a href="https://github.com/sponsors/honzajavorek/">
+          <i class="fa fa-github"></i> GitHub Sponsors
+        </a>
+        <a href="https://www.patreon.com/honzajavorek">
+          <i class="fa fa-patreon"></i> Patreon
+        </a>
+        <a href="https://junior.guru/donate/">
+          <i class="fa fa-credit-card"></i> jiné        </a>
+    </p>
+    </div>
+    <p class="button">
+        <a href="https://honzajavorek.cz/blog/">
+          <i class="fa fa-list-ul"></i> Archiv článků
+        </a>
+    </p>
+  </footer>
+</article>
+      </div>
+      <footer class="footer">
+        <address>
+          © Copyright 2007—2022
+          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+
+      <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+  </body>
+</html>
