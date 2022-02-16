@@ -43,7 +43,7 @@ Návod na výrobu jsem našel tady: [Camera and Video Control with HTML5](https:
 
 Vytvořil jsem [stránku pro přednášející](https://junior.guru/speaker/), kde si mohou otevřít „zrcadlo“. Když pak nasdílí do callu svou plochu (což Discord nepočítá jako video), mohou ukazovat slajdy, prohlížeč, nebo třeba svou hlavu, skrze toto „zrcadlo“.
 
-Také jsem změnil hlasové kanály pro přednášení a v „přednáškárně“ jsem nastavil práva tak, aby mohl video a sdílení obrazovky využívat jen speaker. Bohužel nelze tyto dvě funkce rozdělit a zakázat video všem a speakerovi jen sdílení obrazovky, takže speaker když omylem klikne na video, zastropuje call na 25 lidí. Roli, která práva speakerům uděluje, zatím dávám lidem ručně, ale časem by to měl zvládnout i bot.
+Také jsem změnil hlasové kanály pro přednášení a v „přednáškárně“ jsem nastavil práva tak, aby mohl video a sdílení obrazovky využívat jen speaker. Bohužel nelze tyto dvě funkce rozdělit a zakázat video všem a speakerovi povolit jen sdílení obrazovky, takže speaker když omylem klikne na video, zastropuje call na 25 lidí. Roli, která práva speakerům uděluje, zatím dávám lidem ručně, ale časem by to měl zvládnout i bot.
 
 Dodělával jsem to na poslední chvíli a Svetlana tedy neměla zrovna úžasný komfort pro přednášení, jelikož jsem ji postavil před hotovou věc těsně před přednáškou a celé to bylo nové i pro mě. Navíc jsem se tak soustředil na technické zázemí přednášky, že mě nějak zaskočilo uvádění a úplně jsem se u toho zablekotal a nebyl schopen dát dohromady souvislou větu. Tímto se Svetlaně ještě jednou omlouvám. Že mi během callu zase došla šťáva v noťasu a běhal jsem pro prodlužovačku, to už je skoro folklór, naštěstí to mívá na průběh minimální vliv.
 
