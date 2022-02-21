@@ -58,7 +58,7 @@ Nabídky jsou uložené v Google Spreadsheets a občas se mi stalo, že špatně
 
 Taky jsem vrátil hromadu testů zpátky do _codebase_. Ještě jsem nevrátil všechny, ale aspoň ty, které pokrývají samotné scrapery, už jsou zpět.
 
-Teď potřebuji vyřešit, jak stahovat loga firem. Původně se to dělo v rámci scrapy pipeline, ale tam to už nechci. Z uložených stovek nabídek totiž budu potřebovat stáhnout loga jen pro pár firem, navíc i pro firmy z inzerátů na JG, no prostě je to proces, který by měl být trochu nezávislý na zbytku a souvisí spíše s výběrem vhodných nabídek na web a jejich zobrazením, než s čímkoliv jiným.
+Teď potřebuji vyřešit, jak stahovat loga firem. Původně se to dělo v rámci Scrapy pipeline, ale tam to už nechci. Z uložených stovek nabídek totiž budu potřebovat stáhnout loga jen pro pár firem, navíc i pro firmy z inzerátů na JG, no prostě je to proces, který by měl být trochu nezávislý na zbytku a souvisí spíše s výběrem vhodných nabídek na web a jejich zobrazením, než s čímkoliv jiným.
 
 Scrapy využiju, protože je tam pěkná [media pipeline](https://docs.scrapy.org/en/latest/topics/media-pipeline.html), ale navržené to ještě nemám. Popravdě mě to trochu zaskočilo, když jsem si uvědomil, že musím rozbombardovat i tohle. Pro většinu věcí jsem měl v hlavě nějaký plán, ale tady si to vezme ještě pár procházek s kočárkem a sprch, než přijdu na dobré řešení.
 
@@ -74,7 +74,7 @@ Díky tomuto všemu se únorový sloupeček v [grafu](https://junior.guru/open/)
 
 ## Organizace práce a života
 
-Rozhodl jsem se, že je aktuálně moje práce příliš chaotická a zkusím tomu dát nějaké mantinely. Prozatím chci využít _timeboxingu_ různých činností na určité dny. Ten daný den prostě stihnu z určitého balíku věcí co stihnu a hotovo. Nebudu se tím pak dál trápit. Pokud nepůjde o něco urgentního, nebudu si rozbíjet další dny.
+Rozhodl jsem se, že je aktuálně moje práce příliš chaotická a zkusím tomu dát nějaké mantinely. Prozatím chci využít _timeboxingu_ různých činností na určité dny. Ten daný den prostě stihnu z určitého balíku věcí jen to, co stihnu, a hotovo. Nebudu se tím pak dál trápit. Pokud nepůjde o něco urgentního, nebudu si rozbíjet další dny.
 
 V pondělí chci řešit různou administrativní a komunikační agendu, psaní poznámek, apod. Na středu bych si rád dával cally a pokud by to nešlo, tak aspoň na pondělí. V úterý, čtvrtky a pátky chci mít soustředěnou práci. V pondělky a čtvrtky mám hodinu na sociální sítě, ale to možná rozhodím jinak. A když je večer akce v klubu, nebudu ten den dopoledne pracovat, abych vynahradil večerní ztrátu rodině.
 
@@ -90,7 +90,7 @@ Moje CircleCI buildy ne a ne procházet. Vždy se najde něco, kvůli čemu to s
 
 I když jsem všechno tohle vyřešil, spadlo mi to zase třikrát po sobě na nějaké chybě v _asyncio_, že prý task nemá tu správnou _loop_ nebo co. Já mám totiž hromadu skriptů, které něco dělají. Spustí se, něco dělají a pak skončí. Ty pak mám naházené do jednoho velkého, všechno běží v jednom procesu (pokud se to přes [multiprocessing](https://docs.python.org/3/library/multiprocessing.html) nějak nerozdělí) a všechno shora dolů sekvenčně, jedno po druhém. A tohle se vůbec nedá dělat, když máte něco asynchronní, protože to spustí nějakou tu svou slavnou smyčku a neskončí to, dokud smyčku nezabijete. Ale ta potom už nejde restartovat, prostě šmitec. Takže když máte 10 skriptů imperativního synchronního kódu a pak 5 skriptů, které každý izolovaně něco řeší, ale jsou asynchronní (protože knihovna na práci s Discordem je asynchronní), nemůžete to prostě nasázet za sebe a spustit.
 
-A před časem jsem vymyslel, jak to u té knihovny na Discord udělat a jak si spustit vždy novou smyčku. Pak jsem tam měl scrapery a ty jedou na Scrapy, které jede na Twisted a tam je zase nějaký Twisted reaktor, zase smyčka, ale ta teda spustit ani znova vytvořit nejde, ani za nic. Takže už tam jsem narazil a musel to vytáhnout do procesu vedle přes [multiprocessing](https://docs.python.org/3/library/multiprocessing.html). Tenhle vedlejší proces si jede se smyčkou asyncrhonně a hotovo, pak to skončí, původní proces neposkvrněn žádným asynchronním bincem:
+A před časem jsem vymyslel, jak to u té knihovny na Discord udělat a jak si spustit vždy novou smyčku. Pak jsem tam měl scrapery a ty jedou na Scrapy, které jede na Twisted a tam je zase nějaký Twisted reaktor, zase smyčka, ale ta teda spustit ani znova vytvořit nejde, ani za nic. Takže už tam jsem narazil a musel to vytáhnout do procesu vedle přes [multiprocessing](https://docs.python.org/3/library/multiprocessing.html). Tenhle vedlejší proces si jede se smyčkou asynchronně a hotovo, pak to skončí, původní proces neposkvrněn žádným asynchronním bincem:
 
 ```python
 process = Process(target=_task, args=[...])
@@ -100,10 +100,10 @@ if process.exitcode != 0:
     raise RuntimeError(f'Process for running async code finished with non-zero exit code: {process.exitcode}')
 
 def _task(...):
-    pass
+    pass  # tady jsou asynchronní věci
 ```
 
-No a delší dobu jsem pozoroval, jak mi asi zlobí i to řešení pro Discord. Že prý task nemá tu správnou _loop_, i když mít měl. Prostě jsem to vzdal. Ta _loop_ prostě asi není na tohle dělaná. Tak jsem si řekl ok, vytáhnu to zase do procesu vedle, na hodinu práce.
+No a delší dobu jsem pozoroval, jak mi asi zlobí i to řešení pro Discord. Že prý task nemá tu správnou _loop_, i když mít měl. A teď se to nasbíralo a popadalo. Tak jsem to vzdal. Ta _loop_ prostě asi není na tohle dělaná. Tak jsem si řekl ok, vytáhnu to zase do procesu vedle, na hodinu práce.
 
 Houby! Celý den jsem to dělal. Zjistil jsem, že [do procesu nejde poslat nic, co má dekorátor](https://stackoverflow.com/questions/9336646/python-decorator-with-multiprocessing-fails). Jenže já přes dekorátory řeším připojení k databázi a vůbec, chtěl jsem se od té blbosti abstrahovat a ne řešit, jestli někde můžu dát dekorátor nebo nemůžu.
 
@@ -158,8 +158,8 @@ Nevím, dál. Buildy přestaly failovat, to je teď hlavní :)
 - Odpovídal jsem na různé věci v klubu a vítal občánky, kteří přišli. Rozjela se zajímavá diskuze o zakládání startupů nebo o tom, jestli pracovat na IČO nebo ne. Taky bokem trochu řešíme cyklistiku.
 - Pustil jsem cvičně `poetry update` a zjistil, že to updatuje víc věcí, než které mi pohlídal dependabot na GitHubu. Tak jsem to commitnul a začalo mi všechno fungovat nějak napůl a padat. Tak jsem to revertnul a udělám to později, jednu knihovnu po druhé :D
 - Kontaktoval jsem dalšího speakera, který by si měl připravit přednášku do klubu.
-- Odelal jsem po poslíčkovi samolepky pro pražské PyLadies.
-- Zkusil jsem zábavu z klubu [přenést na Twitter](https://twitter.com/honzajavorek/status/1493599032635281410), ale nemělo to žádné reakce ani pokračovatele :D
+- Odeslal jsem po poslíčkovi samolepky pro pražské PyLadies.
+- Zkusil jsem zábavu z klubu [přenést na Twitter](https://twitter.com/honzajavorek/status/1493599032635281410), ale nemělo to žádné reakce ani pokračovatele :D Teda brácha myslím pokračoval, tak pokračovatele to teda jednoho mělo.
 - Během 6 dní od 16.2. do 21.2. jsem naběhal 9 km, při procházkách nachodil 19 km. Celkem jsem se hýbal 9 hodin a zdolal při tom 28 kilometrů.
 - Aktuální finanční výsledky, návštěvnost a další čísla k JG [mám přímo na webu](https://junior.guru/open/).
 
