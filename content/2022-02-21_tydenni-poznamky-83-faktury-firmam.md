@@ -70,6 +70,8 @@ Scrapy využiju, protože je tam pěkná [media pipeline](https://docs.scrapy.or
 - Juicymo prodloužilo své nabídky práce na JG: [Učenlivý junior Ruby on Rails vývojář](https://junior.guru/jobs/4187002b6a511f690f8827c3d6811f362fc73c0fa31682f38c67d5ae/), [Učenlivý junior analytik/architekt](https://junior.guru/jobs/a48eb9ba324ddbbb1c7fc291128d7727246aef32b13e8808cf0c9f0a/), [Učenlivý Android vývojář](https://junior.guru/jobs/5d41b691a09b074c0324a3fb86031903c2756ca668725ea3e3162187/)
 - V neposlední řadě bych chtěl na tomto místě poděkovat svému nejvěrnějšímu podporovateli, který mi na účet s železnou pravidelností posílá 6 Kč se zprávou „ať se daří“. Miluju tě!
 
+Díky tomuto všemu se únorový sloupeček v [grafu](https://junior.guru/open/) hezky zvedl a já poprvé přesáhl magickou hranici 30.000 Kč čistého měsíčně!
+
 ## Organizace práce a života
 
 Rozhodl jsem se, že je aktuálně moje práce příliš chaotická a zkusím tomu dát nějaké mantinely. Prozatím chci využít _timeboxingu_ různých činností na určité dny. Ten daný den prostě stihnu z určitého balíku věcí co stihnu a hotovo. Nebudu se tím pak dál trápit. Pokud nepůjde o něco urgentního, nebudu si rozbíjet další dny.
