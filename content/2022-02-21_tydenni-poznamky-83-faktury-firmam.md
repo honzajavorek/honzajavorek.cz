@@ -52,7 +52,7 @@ Jenže na kupóny mám navázány i další věci, např. role na Discordu atd.,
 
 S robotem na nabídky práce jsem se bohužel moc neposunul. Vyřešil jsem akorát jak se budou řešit nabídky přímo z JG. Dostanou svou vlastní, úplně oddělenou tabulku v databázi. Pak udělám nějakou další, třetí tabulku, kde bude samotný výběr inzerátů, které se mají zobrazit na JG a ten pak bude 1:1 odkazovat na řádky z tabulek pro inzeráty z JG a pro inzeráty stažené odjinud. Nebo se informace při výběru položek překopírují, jako se to dělá v eshopech, když se vytváří objednávka, to už je asi jedno.
 
-Překopal jsem opět skripty na synchronizaci a napsal nový, který se stará o nabídky z JG. Ty tedy vůbec nepůjdou přes scrapery a nebudou se tvářit, že jsou totéž, jako inzerát stažený ze StartupJobs.
+Překopal jsem opět skripty na synchronizaci a napsal nový, který se stará o nabídky z JG. Ty tedy vůbec nepůjdou přes scrapery a nebudou se tvářit, že jsou totéž, jako inzerát stažený např. ze StartupJobs.
 
 Nabídky jsou uložené v Google Spreadsheets a občas se mi stalo, že špatně zadané URL probublalo až na web. Např. začínalo www a ne https. Tak jsem na to rovnou udělal kontrolu a když tam taková blbost bude, mělo by to spadnout.
 
