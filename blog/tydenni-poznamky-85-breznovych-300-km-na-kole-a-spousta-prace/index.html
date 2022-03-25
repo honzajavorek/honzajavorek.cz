@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/tydenni-poznamky-85-breznovych-300-km-na-kole-a-spousta-prace/">
+    <title>Týdenní poznámky #85: Březnových 300 km na kole a spousta práce &mdash; Honza Javorek</title>
+
+    <meta property="og:title" content="Týdenní poznámky #85: Březnových 300 km na kole a spousta práce &mdash; Honza Javorek">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-85-breznovych-300-km-na-kole-a-spousta-prace/">
+    <meta name="twitter:creator" content="@honzajavorek">
+    <meta name="twitter:site" content="@honzajavorek">
+
+    <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="683">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Honza Javorek &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2022-03-25T00:00:00+01:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <div class="content">
+<article class="article">
+  <header class="article-header">
+    <h1>
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-85-breznovych-300-km-na-kole-a-spousta-prace/" rel="bookmark">
+        Týdenní poznámky #85: Březnových 300 km na kole a spousta práce
+      </a>
+    </h1>
+  </header>
+  <footer class="article-info">
+    <ul>
+      <li class="article-published">
+        <small>
+          <time datetime="2022-03-25T00:00:00+01:00">
+            25. 3. 2022
+          </time>
+        </small>
+      </li>
+      <li class="article-author">
+        <small>
+          <a href="#author">Honza Javorek</a>
+        </small>
+      </li>
+    <ul>
+  </footer>
+  <div class="article-content">
+
+    <div><div><div><div><p>Utekl zase nějaký ten týden (1.3. — 25.3.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-84-akce-v-klubu-a-ukrajina/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/club/">klub</a>, a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.</p>
+<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
+<p>Tak tentokrát zase po delší době. Říkal jsem si, že napíšu poznámky až těsně před dovolenou. To jsem nestihl. Po dovolené zas bylo pořád co dělat, takže nakonec to píšu až dnes. Vím, že to slibuju v poslední době pokaždé, ale polepším se! Chtěl bych se nějak fakt vrátit k týdennímu rytmu.</p>
+<h2 id="robot-na-nabidky-prace">Robot na nabídky práce<small class="permalink"><a href="#robot-na-nabidky-prace" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Jak jsem psal dříve, jsem teď v procesu překopávání robota na stahování nabídek práce, protože jsem na něm dlouhodobě neřešil různé nedostatky a postupně to celé uhnilo, až se to jednoho dne prostě rozpadlo.</p>
+<p>Těžko říct, zda tady detailně popisovat vše, co jsem na tom udělal a jaké myšlenkové pochody se mi při tom honily hlavou. Zkusím to nějak stručně:</p>
+<ul>
+<li>Navrhoval jsem nové modely. Nakonec mám zvlášť modely pro nabídky stažené odjinud a nabídky zadané na samotném JG. Pak mám ještě třetí model, který se tvoří z těch dvou a slouží pro nabídky, které se mají zobrazit na webu, případně na Discordu.</li>
+<li>Z rozdělení modelů na několik a jednotlivých skriptů na spoustu oddělených fází jsem zatím nadšený. Je teď mnohem jasnější, kdy se má co dít a je to i efektivnější, protože se věci mohou dít jen tehdy a jen pro ta data, kdy to má nějaký význam. Je rozdíl, jestli spouštím geolokaci nebo stahování obrázků pro 300 nabídek, nebo jen pro těch 30, které nakonec chci zobrazit na webu.</li>
+<li>Do robota jsem vrátil vyhodnocování juniornosti nabídky. To se dělá přes spoustu regulárních výrazů a jednou by to měl dělat machine learning, ale zatím jsem se snažil jen překlopit to, co bylo, do nové architektury a nesahat na to moc.</li>
+<li>Změnil a zjednodušil jsem řazení nabídek práce na webu.</li>
+<li>Zrušil jsem admina. Byly to statické stránky na „tajné“ adrese, s vygenerovanými informacemi o tom, co vše robot uložil nebo vyhodil. V patičce bylo napsáno, že pokud nejste administrátor stránek, tak máte odejít pryč :D Zabezpečení, které doteď stačilo. Do budoucna místo toho plánuji využít nějak <a href="https://datasette.io/">Datasette</a> pro nahlížení do produkční databáze a zároveň si posílat nějaké statistiky přímo na Discord.</li>
+<li>Pracoval jsem na tom, abych dokázal efektivně určovat lokaci k nabídkám práce. To už v původním robotovi bylo, ale teď jsem to musel trochu předělat. Velké zlepšení je, že lokaci stahuji jen k nabídkám, u kterých ji potom fakt využiju.</li>
+<li>Zjistil jsem, že když bylo umístění pracovní nabídky „Czechia“, „Česko“, apod., tak si s tím můj geocoding neporadil a udělal mi z toho Číhošť v Jihlavském kraji. To by vysvětlovalo, proč bylo v Číhošti tolik nabídek. Opravil jsem to.</li>
+<li>Povedlo se mi dotáhnout překopávání robota až k tomu, že jsem konečně dokázal nabídky zobrazit i na webu. To byl skvělý pocit, po měsících koukání do terminálu konečně vidět ta data i v HTML.</li>
+<li>Pracoval jsem na tom, abych dokázal efektivně stahovat loga k nabídkám práce. To už v původním robotovi bylo, ale teď jsem to celé změnil tak, aby se to dělalo jen pro těch pár nabídek, které chci fakt ten den zobrazit, a aby to bylo celé rychlé a efektivní. Myslel jsem, že na to použiju Scrapy a <a href="https://docs.scrapy.org/en/latest/topics/media-pipeline.html">Media Pipeline</a>, ale nakonec jsem si to udělal úplně ve vlastním skriptu a funguje to perfektně. Žádná data už neukládám do EXIFu, což jsem v Media Pipeline dělat musel, abych tím cosi obešel. Smazal jsem spoustu složitostí. Skvěle do toho zapadlo i hledání faviconů, pokud logo firmy nemám k dispozici. Algoritmus, který vybírá nejvhodnější logo z různých kandidátů, na ten jsem vyloženě hrdý. Skoro jako něco z Advent of Code.</li>
+<li>Zajistil jsem, aby i po všech změnách fungovalo správně API, které jsem dříve vyrobil pro Czechitas. Udělal jsem v něm ale nějaké změny v tom, jak funguje, abych měl život jednodušší. Oznámil jsem je druhé straně a vše bylo přijato jako že to je v pohodě, takže paráda.</li>
+<li>Vyhodil jsem z webu sledování počtu klikání na tlačítka na nabídkách práce přímo na JG. Čísla se posílala inzerentům v mailech. Měřilo se to přes Google Analytics eventy a myslel jsem, že to předělám na <a href="https://simpleanalytics.com/junior.guru">Simple Analytics</a> eventy. Jenže pak jsem na to nějak neměl náladu a řekl jsem si, že to zkusím prostě smazat a když si inzerenti nevšimnou, tak to bude prostě smazané :D Mě to chybět nebude. Běžné statistiky návštěvnosti mít budou a počty „kandidátů“ stejně ví nejlépe oni sami a ne já z toho, co pochybně naměřím JavaScriptem na webu. Díky tomuto kroku jsem mohl už definitivně z kódu smazat vše kolem Google Analytics.</li>
+<li>Posílání emailů inzerentům jsem přesunul do fáze „synchronizace“. Původně byly fáze „fetch“, kde se stahovaly data a „send“, kde se posílaly emaily. Toto už ale dávno neplatí, „fetch“ se změnilo na „sync” a dělají se tam i věci, které něco posílají, třeba do Discordu. Takže je zbytečné, aby emaily byly někde bokem. Potřeboval jsem ale zajistit, aby se nikdy neposlaly dvakrát. Takže si do txt souboru vždy uložím, kdy se poslaly naposled a dávám to do CircleCI cache, aby to přežilo mezi buildy.</li>
+<li>Zatím jsem úplně odstranil monitoring toho, zda se při scrapování nebo zpracovávání inzerátů něco pokazilo. Taky jsem vrátil jen zlomek původních testů a nenapsal skoro žádné nové. Nepočítám s tím, že to dodělám, než všechny změny mergnu. Udělám to později, protože už teď bude i tento nemonitorovaný kód mít lepší výsledek, než co dělá bot na produkci teď, i kdyby v tom byly chyby. <em>What could go wrong.</em></li>
+<li>Přešel jsem od Makefile k <a href="https://www.pyinvoke.org/">invoke</a> a změnil jsem podle toho některé komentáře a dokumentaci. Ne že bych teda nějakou dokumentaci velmi měl.</li>
+<li>Zjistil jsem, že ačkoliv jsem vše udělal paralelní a konkurentní a na fáze a super efektivní, tak stahování nabídek práce z nejmenovaného serveru, říkejme mu třeba LI, stejně zabere strašně moc času. Prostě klidně půl hodiny, hodinu. A to proto, že to stahuju skrze nějaké náhodné proxy, jelikož rozsah IP adres, v němž se nachází moje CircleCI buildy, zřejmě apriori blokují (z domova mi to normálně funguje i bez proxy). No a s tím se nedalo nic moc dělat, než to ladit, ladit a ladit. Našel jsem jiný zdroj těch proxy (místo scrapování <a href="https://free-proxy-list.net/">free-proxy-list.net</a> jsem našel API na <a href="https://docs.proxyscrape.com/">proxyscrape.com</a>), zkoušel různé timeouty, různé strategie, různé rotování, atd. Nakonec jsem to nějak vyřešil, chybou bylo mít krátký timeout, abych roztřídil proxy, které fungují, od těch, které nefungují. Zdá se, že větší timeout je lepší, protože může trvat třeba 10-15s první připojení, ale pak už to frčí rychle. Pak stačí nějaký inteligentní algoritmus vybírání těch proxy a vypadá to, že ze 40 minut jsem na 10 minutách. To je naprosto zásadní, protože pokud bych toto nevyřešil, tak nemá smysl nového robota vůbec nasazovat, nebo později pouštět se do přidávání dalších zdrojů nabídek práce.</li>
+<li>Poslední dva dny ladím různé chyby, které se postupně objevují a stojí v cestě tomu, abych to celé poslal už na produkci. Sem tam nějaký edge case, sem tam nějaká exception. Ale už mi to i celé prošlo a build byl zelený, ladím už fakt jen detaily.</li>
+<li>Žongluju ještě s přesným nastavením cache na CircleCI a toho, jak jdou věci za sebou. Třeba jsem zjistil, že když má cache stejný klíč, tak se nepřepíše, ale zahodí, jakože už existuje. To mi udělalo čáru přes rozpočet. Ale pak jsem zjistil, že <code>restore_cache</code> umí obnovit podle prefixu klíče, ne jen podle celého klíče, a tím jsem to zase vyřešil.</li>
+</ul>
+<p>Jen poznámka. Celý robot je věc, která mi negeneruje žádné peníze. Ano, využívám to jako backfill inzerátů na svůj portál s nabídkami práce, kde firmy inzerují za peníze, tzn. je tam pak třeba 5 placených inzerátů a 30 stažených odjinud, aby to nevypadalo blbě.</p>
+<p>Jenže ty placené inzeráty mě živí teď minimálně, reálně je to 2-5 % mých příjmů. Takže kvůli tomu to fakt nedělám. A i kdyby, existuje samozřejmě deset jiných zdrojů nabídek práce než LI, kde je stáhnu prakticky bez práce. Nemusel bych ani řešit žádné velké objemy nabídek, prostě bych jich stáhl pár, třeba deset.</p>
+<p>Dělám to celé ze stejného důvodu, jako třeba příručku. Má to být služba juniorům. Chci, aby měli místo, kam můžou jít a budou vědět, že tam jsou pouze juniorní nabídky práce, ze všech běžných zdrojů, kde by je stejně hledali. To je můj primární cíl do budoucna. Služba juniorům, usnadnit jim hledání práce. Zároveň se nabídky propisují nejen na web, ale i do klubu, takže se dá říct, že je ten robot součástí produktu „klub”, nabídky tam lidem chodí díky tomu až pod nos, což dělá z klubu zas o něco užitečnější místo.</p>
+<p>Takže byť moje konání vypadá nesmyslně, příliš mnoho práce pro nic, tak bych chtěl upozornit, že totéž se dá říct o příručce (příliš pracného psaní pro nic), ale holt to jsou vlastně ty hlavní věci, které chci tvořit, dát světu zdarma k dispozici, a které mi má pomáhat klub financovat.</p>
+<h2 id="pyvec">Pyvec<small class="permalink"><a href="#pyvec" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Výbor <a href="https://pyvec.org/">Pyvce</a> dosluhuje. 4 lidi z 5 (kromě mě) tu práci dělají 10 let. Já 5 let. Tak tak jsme to dokázali doklepat do voleb, v posledních týdnech nám upřímně dělalo problém se i sejít na videohovoru a připravit samotné volby.</p>
+<p>Nakonec nás zahchránili samotní členové na Členské schůzi. Vzali si různé úkoly, které nám pomohly volby uspořádat. Bylo to strašně super najednou vidět všechny aktivně něco dělat a spolupracovat. Taky Pyvec Slack zase po dlouhých covidových měsících (rocích?) trochu ožil.</p>
+<p>Před volbami jsem oznámil, že budu do příštího výboru kandidovat jen pokud dostanu aspoň tři nominace, což se následně i stalo. Sepsal jsem i své nominace pro lidi, kteří si myslím, že jsou do výboru vhodní. Nakonec budeme volit 5 lidí z 6 kandidátů! Takže to bude i napínavé :)</p>
+<p>Po vzoru PSF nakonec hlasujeme přes <a href="https://vote.heliosvoting.org/">Helios</a>. V současné chvíli se hlasuje, volby jsme udělali tak, aby trvaly týden a odhlasovat měl šanci opravdu každý. Jsem zvědavý, jak to dopadne.</p>
+<h2 id="kupony-pro-studenty-z-kurzu">Kupóny pro studenty z kurzů<small class="permalink"><a href="#kupony-pro-studenty-z-kurzu" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Některé vzdělávací agentury mi posílají své studenty do klubu s tím, že jim proplatí první 3 měsíce členství. Ze začátku to drhlo a moc jich nechodilo, ale teď se to nějak rozjelo a už dávno jsem to měl fakturovat. A když jsem se o to pokusil, tak jsem si uvědomil, že abych mohl fakturovat, potřebuji si někde poznačit, koho jsem už vyúčtoval a koho ne a že to není v mé současné evidenci tak triviální, jak jsem myslel.</p>
+<p>Napsal jsem na support Memberful, jestli je možnost přes API vytáhnout privátní poznámku u členů, ale nejde to. Mají ovšem nějaké jiné políčko, kam jde něco uložit, bohužel k němu není zase UI, takže bych si to tam musel poznačit nějak přes to API, tedy asi přes nějaký skript. Vymýšlením řešení jsem strávil skoro celý jeden den.</p>
+<p>No nebude to jednoduché a zatím jsem pouze napsal do agentury e-mail, že na tom dělám a jaký je přibližný stav, a že se ještě ozvu. Aby to nebylo dlouhé mlčení a pak najednou buch, velká faktura. Odložil jsem to a budu to řešit, až dořeším robota na nabídky práce.</p>
+<h2 id="dovolena">Dovolená<small class="permalink"><a href="#dovolena" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>S kamarádem <a href="https://milavotradovec.cz/">Mílou</a> jsme se relativně spontánně rozhodli, že pojedeme na kole 300 km, z Prahy do <a href="https://www.facebook.com/kozojedsky.dvur.nitkovice/">Kozojedského dvora</a>, kde jsem měl svatbu a rád se tam vracím. Takové cesty jsem dřív už absolvoval v nejrůznějších podobách a délkách, ale vždy v létě. Teď to mělo být v březnu a měla být dost zima. Rozhodli jsme se pro <em>credit card touring</em> místo stanu, ale i tak byl oříšek zabalit se tak, abychom zvládli zimu a vítr. Naši cestu jsme dokumentovali <a href="https://twitter.com/300ukozojed">polotajným deníkem na Twitteru</a>.</p>
+<p>Twitter jsme zvolili jako něco, kam lze psát, dávat obrázky a videa, co je veřejné a co můžeme dát kamarádům a rodině, aby věděli kde jsme. Bohužel Twitter už dnes veřejný není, což jsme si neuvědomili. Všichni si stěžovali, že po přečtení pár tweetů to po nich chtělo založit účet. Kde jsou naše staré dobré internety, na které člověk něco napsal a druhý si to mohl přečíst? :(</p>
+<p>Dovolená to byla náročná, ale jedním z účelů bylo vyčistit si hlavu. Na klasické dovolené, kde se člověk fláká, mi trvá týden, než přestanu myslet na práci. Na takovýchto náročných cestách se mi líbí, že vyčištění hlavy zabere většinou nanejvýš pár hodin prvního dne.</p>
+<p>Cesta se i přes různé nesnáze povedla a v cíli jsme dokonce zahráli na kytaru lidem z Ukrajiny, kteří byli na dvoře nouzově ubytovaní, takže to bylo takové hezké. Hlavu jsem si vyčistil. Zdravotní následky snad žádné permanentní mít nebudu :D</p>
+<p>Po dovolené jsem měl 20+ notifikací na FB, 10+ na Twitteru, 20+ notifikací na LinkedIn, 80+ emailů. V klubu toho taky bylo dost, ale nebylo to nakonec tak hrozné, protože ještě trval útlum aktivity po tom, co začala válka na Ukrajině. Všechno jsem nějak dohnal více méně za jeden den, takže se to dalo.</p>
+<p>Horší to bylo s fyzickým vyčerpáním, které mi zabránilo po příjezdu do Prahy doplazit se na první <a href="https://pyvo.cz/">pražské Pyvo</a>, které se po dlouhé době konalo živě a ne online.</p>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<ul>
+<li>Účastnil jsem se mezikomunitního sdílení, probírali jsme mentoring. Přínosné!</li>
+<li>Oslovil jsem svého účetního, že bychom měli udělat daňové přiznání. Během několika týdnů jsem mu postupně posílal různé podklady. Dnes mi poslal hotové přiznání do mailu, ale ještě jsem to neodevzdal. Přidal jsem do <a href="https://junior.guru/open/">grafu výdajů</a> barvičku na účetnictví, ať mám trochu přehled, kolik mě vlastně relativně k ostatním věcem externí zpracovávání daní stojí. Dělat se mi to ale fakt nechce, takže je to spíš orientační, outsourcoval bych to za každou cenu :D</li>
+<li>Zřídil jsem si datovou schránku, abych mohl daňové přiznání poslat digitálně. Doteď jsem datovku neměl a přiznání posílal jako papír v obálce, ale začíná to být těžší, než datovku mít a papíry neposílat. Díky MojeID mám jakou si tu eIdentitu občana, nebo jak se to jmenuje, takže to bylo na dva kliky, což mě překvapilo. Myslel jsem, že budu muset jít na poštu. Dostal jsem radu, že jako OSVČ vše vyřídím i pouze s osobní datovkou, tak jsem si zřídil jen tu a tu podnikatelskou ne. První dojmy z datovky jsou spíš pozitivní. Možná jsem nemusel být takový zpátečník tak dlouho.</li>
+<li>Vydal jsem nový díl podcastu. Pája jej nahrála včas, ale já byl na dovolené, tak to vyšlo později, než to vyjít mělo. Svět se nezbořil.</li>
+<li>Propojil jsem Páju s dalším hostem do podcastu. Funguje nám to skvěle. Pája nadhodí téma nebo charakteristiku někoho, koho by si ráda pozvala. Já pak sáhnu do paměti a do své široké sítě kontaktů a vytáhnu nějaké vhodné kandidáty, ze kterých si vybere. Nebo přijde i s konkrétním jménem a já je můžu aspoň propojit, protože toho člověka znám a hned je vše jednodušší :)</li>
+<li>Domlouval jsem další přednášky v klubu, které přijdou po delší pauze. Jedna by měla být o práci na dálku, druhá o Next.js. Poprvé se stane, že se zopakuje speaker.</li>
+<li>Na MDŽ jsem hejtil <a href="https://twitter.com/honzajavorek/status/1501136417723928582">na Twitteru</a> i <a href="https://www.facebook.com/groups/967870373283278/posts/7058376260899295/">na Facebooku</a> fakt, že je v Česku nejmenší procento žen v IT vůbec v Evropě.</li>
+<li>Domlouval jsem si call s firmou, která projevila zájem o firemní členství v klubu.</li>
+<li>Vyšly se mnou hned dva podcasty, kde jsem byl hostem. <a href="https://rozbiteprasatko.cz/">Rozbité prasátko</a> a <a href="https://www.programhrovani.cz/">ProgramHRování</a>. Zatím jsem ani jedno nestihl pořádně zpropagovat na svých sociálních sítích.</li>
+<li>Přidal jsem na web nahoru lištu, která poukazuje lidi na web <a href="https://www.stojimezaukrajinou.cz">stojimezaukrajinou.cz</a> od Česko.Digital. Není to nic světoborného, ale třeba to někdo uvidí, třeba na to klikne a třeba díky tomu někomu pomůže. Barvy jsem na ukrajinské změnit nemohl, protože JG už žluté a modré dávno je :)</li>
+<li>Řešil jsem různé náhodné problémy s členstvím, tu něco s kartou, tam nějaký dotaz ohledně placení a tak. Zase se mě někdo ptal, jestli může za klub platit i jinak, než kartou. Nemůže. Musím to dát už do FAQ, ať to nekopíruju a nesepisuju pořád dokola.</li>
+<li>Připojil jsem se na první sraz dobrovolníků nové komunity pro <em>technical writers</em>, <a href="https://www.twguild.cz/">TWguild</a>. Dávali jsme si vědět, jak se můžeme vzájemně podpořit.</li>
+<li>Dostal se ke mě kontakt na kluka, který je v ideálním kandidátem na stipendium, jež jsme chtěli už dlouho rozjet s Mews. Dokopal jsem se tedy konečně k tomu, abych připravil formulář na žádost o stipendium a dal ho na třetí tlačítko dole na <a href="https://junior.guru/club/">stránce klubu</a>. Nehledě na formulář jsem si s klukem a jeho tátou zavolal a ještě si to musím nechat potvrdit z Mews, ale myslím, že je podpoříme. Kromě kluka už to vyplnili další dva lidi, které budu muset nějak ještě vyhodnotit.</li>
+<li>Chtěl jsem ten videohovor udělat klukovi jednoduchý, tak jsem svolil k použití MS Teams, které má ve škole. Stejně s tím občas chtějí volat i některé firmy, tak jsem si říkal, že si v tom udělám pořádek. No řeknu vám…! Už dlouho jsem takhle nenadával. To je tak strašná aplikace. A Microsoft mi udělal účet ze Skypu a ještě z čehosi. Prostě udělat si v těch účtech pořádek a zalogovat se do těch Teamsů a nepřijít u toho o nervy, to bylo fakt něco. Hodina života. Pak že musím mít nastavený telefon. Ale z MS Teams aplikace mi to neposlalo kód. Musel jsem jít na web a nechat si to poslat tam. A takové… No ještě teď z toho teču.</li>
+<li>Měla mi po třech letech vypršet <a href="https://www.cd.cz/jizdne/in-karta/default.htm">InKarta</a>, tak jsem si ji koupil na další tři roky přes aplikaci Můj vlak. Překvapilo mě, že to bylo na dva kliky, Apple Pay, cink, hotovo. Dřív se muselo na nádraží pro plastovou kartičku :D</li>
+<li>Volal jsem si s paní ze systému na evidenci dodavatelů jedné korporace, aby ověřili, že já jsem já. Zmátlo je, že neplatím DPH, nebo že neexistuje žádný jiný zaměstnanec mé firmy, který by mohl potvrdit mou existenci. Tak snad už proplatí fakturu a bude to konečně hotovo. Tihleti korporáti, to je někdy fakt za trest. Asi zavedu, že firmy level korporát budou mít ceník o 10k dražší jen z toho titulu, že vyžadují zbytečnou byrokracii a komunikaci.</li>
+<li>Syn partnerky bratrance mé ženy potřeboval doučit HTML do školy, tak jsem ho přidal do klubu. Jsem zvědav, jestli to bude efektivní pomoc, nebo to bude k ničemu.</li>
+<li>Procházel jsem pravidelně klub, vítal nové členy, odpovídal na věci. Prošel jsem v klubu jedno CVčko, ohodnotil nějaké výrobky…</li>
+<li>Možná budu přednášet na příštím <a href="https://pyvo.cz/">pražském Pyvu</a> a možná tam bude i Pája s lightning talkem o podcastu.</li>
+<li>Nastříhal jsem verzi přednášky s Nelou o duševním zdraví, kterou budeme chtít uveřejnit na web a poslal to Nele na kontrolu. iMovie FTW, vždycky si připadám jak Spielberg u toho.</li>
+<li>S dvěma firmami nejspíš brzo doklepneme partnerství a vyměňuji si s nimi tedy dost mailů.</li>
+<li>Opravil jsem skript, který lidem v klubu přiděluje role. Měl jsem na jednom místě špatné slovo, spouštěl se ve skutečnosti úplně jiný skript (naštěstí zrovna nějaký neškodný).</li>
+<li>Knihovna <a href="https://pypi.org/project/py-cord/">py-cord</a> začala vydávat už nějaké pre-relase verze, tak jsem přešel z instalace z gitu na instalaci z PyPI. Pak jsem si dokonce všiml, že se snad obnovil i vývoj na původním <a href="https://pypi.org/project/discord.py/">discord.py</a>, ale to jsem nějak nestihl zatím prozkoumat.</li>
+<li>Povedlo se mi značně zrychlit začátek buildu na CI díky tomu, že jsem nastavil git clone na shallow clone. Pomohla mi tato <a href="https://discuss.circleci.com/t/checkout-is-taking-way-too-long/39787/2">diskuze</a> a využil jsem <a href="https://circleci.com/developer/orbs/orb/guitarrapc/git-shallow-clone">tento CircleCI Orb</a>.</li>
+<li>Mergoval jsem spoustu PR s upgrady knihoven na Pyvec repozitářích od <a href="https://github.com/features/security">dependabota</a>.</li>
+<li>Sekalo se mi VS Code a už jsem toho měl plné zuby, tak jsem hledal, jak to můžu zrychlit. Našel jsem <a href="https://mikebifulco.com/posts/make-vs-code-load-faster-mac-apple-silicon">tenhle článek</a> a zjistil, že z nějakého důvodu nemám verzi VS Code pro M1, ale Inteláckou. Tak jsem to přeinstaloval, updatoval systém, restartoval. A už dobrý.</li>
+<li>Pár firem inzerovalo nabídky práce přímo na JG, takže jsem díky tomu poslal pár faktur.</li>
+<li>Flákal jsem dost sociální sítě, protože jsem na ně neměl moc náladu (válka, dovolená). Párkrát se mi ale něco postnout povedlo: oznámení o ukrajinské liště na webu, spolupráce s <a href="https://jetveo.io/cs/blog/articles/jakub-interview">Jetveo</a>, nový díl <a href="https://junior.guru/podcast/">JG podcastu</a> nebo o tom, že o podcastu napsali v tištěném časopise Computer.</li>
+<li>Podepsal jsem smlouvu se Seznamem, aby mohli dát náš podcast na <a href="https://podcasty.cz/">podcasty.cz</a>. Zatím to tam myslím ale není.</li>
+<li>Během 25 dní od 1.3. do 25.3. jsem při procházkách nachodil 40 km, na túrách nachodil 10 km, ujel na kole 370 km. Celkem jsem se hýbal 63 hodin a zdolal při tom 420 kilometrů.</li>
+<li>Aktuální finanční výsledky, návštěvnost a další čísla k JG <a href="https://junior.guru/open/">mám přímo na webu</a>.</li>
+</ul>
+<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Tři věci, které bych chtěl zvládnout udělat příště:</p>
+<ol>
+<li>Dokončit bota, který stahuje a třídí pracovní nabídky.</li>
+<li>Řešit lidi, kteří žádají o stipendium.</li>
+<li>Podat daňové přiznání.</li>
+</ol>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
+<ul>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwww.mall.tv%2Fgebrian-plus-minus%2Fskatepark-vltavska-skvele-vyuziti-verejneho-prostoru-ktere-nestalo-majlant&amp;h=e2ea7869577bccab37260b47d79a4319c1b803be596ecbe3393f1712a67a58e1">Skatepark Vltavská – skvělé využití veřejného prostoru, které nestojí majlant</a><br>Tohle je super, že to někdo zrealizoval!</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwww.mall.tv%2Fgebrian-plus-minus%2Ftak-krasnou-atmosferu-by-na-narodni-tride-cekal-jen-malokdo&amp;h=d46ad26a728acb6b26f22730c5a7f6a5ea02a68fbe4513dcad04ce094c758c45">Místo s tak krásnou atmosférou by na Národní třídě čekal jen málokdo</a><br>Krása! A ty studny, to je boží :D</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fa2larm.cz%2F2022%2F03%2Fruska-spolecnost-v-drtivem-sevreni-moralni-apely-na-tamni-opozici-jsou-naivni%2F&amp;h=a915c831aed45209528a9c6b37a3cdb620e2593d4ead260218b14b70747ad6f8">Ruská společnost v drtivém sevření. Morální apely na tamní opozici jsou naivní</a><br>Co se právě teď ďeje v Rusku? Děje se tam něco? A co se tam teprve dít bude? Jsou Rusové schopni svrhnout Putina? Jak vnímají sankce?</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Funherd.com%2F2022%2F03%2Fa-no-fly-zone-in-ukraine-will-backfire%2F&amp;h=7ea68fb103a33f9b6f07852584eadf1cf18907b31571328fbda1ffacd4065d30">A no-fly zone in Ukraine will backfire</a><br>Proč by No-Fly Zone nad Ukrajinou jednak vyústila akorát v eskalaci konfliktu, jednak nic nevyřešila.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fa2larm.cz%2F2022%2F02%2Fvalka-na-ukrajine-je-sousto-kterym-se-putin-zadavi-rika-politolog-barsa%2F&amp;h=b9f26a197465939bc81d75227d342a474ae809436c11b9834b030587d5359573">Válka na Ukrajině je sousto, kterým se Putin zadáví, říká politolog Barša</a><br>Baršu si vždycky rád přečtu.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwww.forum24.cz%2Fbezletova-zona-nad-ukrajinou-uz-nemuze-byt-tabu-reseni-existuje%2F&amp;h=d2f2e9685f80d1797b544438e3a1975591ed480fcd4d40ed4b921fb8c160c7a1">Bezletová zóna nad Ukrajinou už nemůže být tabu – řešení existuje</a><br>Zajímavý nápad.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwww.foreignaffairs.com%2Farticles%2Fukraine%2F2022-03-04%2Fwhat-if-russia-loses&amp;h=82efe1a8a42d463a8518f230bc2d3ffaf32e4b055d23cdea99b09b4d5ae2ea6d">What If Russia Loses?</a><br>„Nobody inside or outside Russia should want Putin to win his war in Ukraine. It is better that he lose. Yet a Russian defeat would offer little cause for celebration.“</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fdenikn.cz%2F825574%2Fkym-je-putin-z-pohledu-mezinarodniho-prava-a-kdy-za-zlociny-odpovida-vojak-vysvetluje-expertka%2F%3Fcst%3Dd2d0a5d9e866ef1a6e3493dfad738501a78d74ab&amp;h=29ab6bf1e131e015d79201695261e652860ac01f6f5a4772180671039cf41fb8">Kým je Putin z pohledu mezinárodního práva? A kdy za zločiny odpovídá voják? Vysvětluje expertka</a><br>Ujasnění pojmů. Agrese, genocida, kdo má vlastně zodpovědnost a za co?</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fblog.nic.cz%2F2022%2F03%2F08%2Fjak-blizko-jsme-rozstepeni-internetu%2F&amp;h=723c65c1eef6b88a77b9dea3d0250e09f92dd7c6c4e285fdfd652fdda2f27acd">Jak blízko jsme rozštěpení Internetu?</a><br>Může mít Rusko svůj internet?</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fmarkething.cz%2Frusko-ukrajinsky-konflikt&amp;h=c8d0edd90f82ef7c401144597c346dd63fc6a4cfc867ea2635754ddef56adb8c">Vedle raket i propaganda, aneb moderní konflikt neprobíhá jen na frontě</a><br>Podléháme propagandě, ať už Ruské nebo Ukrajinské. Média skoro nic neověřují a ono to skoro ani nejde. Retweetuje se vše, co se (ne)líbí. Ukrajinský prezident je hvězda, vojáci na ostrově, atd., to vše drží morálku a vzbuzuje sympatie na Západě. Ukrajina si buduje mýtus, aby se ubránila. Nedělejme si však iluze, že nejde o propagand. Aspoň novináři a média by nemuseli „posílat dál“ úplně cokoliv jako zaručenou věc…</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fmobile.twitter.com%2Fkamilkazani%2Fstatus%2F1498377757536968711&amp;h=05ae22f5f14c275cfed63fcd1ef663e3e975317d9681c7a45e2a720bca3cbfda">Kamil Galeev</a><br>Tento týpek je generátor zajímavých dlouhých vláken, které se zabývají historickým, dějinným, ekonomickým a dalším kontextem k aktuální situaci na Ukrajině. Někdy je s věcmi (soudy, příčinami a důsledky…) hotový rychleji, než by mi bylo milé, ale tak zas je to jen Twitter, ne kniha. Je zajímavé si to po večerech pročítat.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fkamilkazani2.substack.com%2Fp%2Fhow-did-russia-get-so-big%3Fs%3Dr&amp;h=76ff55ccc215a7c5e38250cbd3db71358a0aefd891f091496a52f8f2c64767c2">How did Russia get so big?</a><br>Nesmírně zajímavá historie rozšiřování Moskevského státu.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fcepa.org%2Fthe-next-10-days-will-decide-this-war%2F&amp;h=3feda880144b42ee896c64b6f5bf837d103cac987348d6b0d294badecd949cb3">The Next 10 Days Will Decide This War</a><br>Co si myslí bývalý americký generál o situaci na Ukrajině.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fovercast.fm%2F%2Blh3KUU0wU&amp;h=0fc641d3cf93c29fda5506e2a1f1c4e2b07423513a1f8f666b8653ae0b26e2db">Vysílač</a><br>Přehlcenost sociálními médii. Jak bojovat s instant gratification monkey? A je vlastně doomscrolling problém? Jde mozek přeučit, nebo je to už problém na vždy?</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Ftailscale.com%2Fblog%2Ffree-plan%2F&amp;h=5009f543d5e235db0116fffa3341196bb1e74c8d0d6c41dde7bd1f228764715b">How our free plan stays free</a><br>Upřímnost, která se jen tak nevidí. Kéž by víc startupů bylo schopno popsat svůj byznys takhle, bez bulšitů.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwww.heroine.cz%2Fzeny-it%2F7677-u-budoucich-ajtaku-je-nejdulezitejsi-touha-nespokojit-se-s-prvnim-resenim-rika-lektor-programovani-pro-deti&amp;h=ca3d39c1f8d25e7c2837c52a9f71896d37f98e93c8ef4a346f990f0a8c865f2e">U budoucích ajťáků je nejdůležitější touha nespokojit se s prvním řešením, říká lektor programování pro děti</a><br>Luboš píše na Heroine! Jak je to s programováním a dětmi?</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Ffinmag.penize.cz%2Fpenize%2F432670-geopolitika-bitcoinu-kde-se-tezi-hlavni-kryptomena-sveta&amp;h=f93170b31c7130b383b974761ea80f7a13079392610bbc9b6856b9238c08000d">Geopolitika bitcoinu. Kde se těží hlavní kryptoměna světa?</a><br>„Zvláštní případ souhry ekonomických a politických vlivů představuje Rusy okupovaná část Gruzie, tedy Abcházie. Autonomní republika nedávno přehodnotila svůj odmítavý přístup ke kryptoměnám a plánuje těžbu efektivněji regulovat. Podstatnou část elektrické energie čerpá, podobně jako Gruzie, z obří vodní elektrárny Enguri. Elektřina je zde zhruba desetkrát levnější než v Gruzii (0,005 dolaru = 0,11 Kč za kWh), což vedlo kolem roku 2016 ke skutečnému kryptoměnovému boomu.“</li>
+</ul>
+<p><small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small></p></div></div></div></div>
+  </div>
+
+  <footer class="article-footer">
+    <div id="author" class="author">
+      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
+      <address>
+          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
+          a tvůrce projektu <a href="https://junior.guru/">junior.guru</a>,
+          pomáhajícího lidem získat svou první práci v IT. Od roku 2011
+          pomáhá budovat českou komunitu kolem jazyka
+          <a href="https://python.cz/">Python</a>.
+      </address>
+      <p class="button button-donate">
+        <a href="https://github.com/sponsors/honzajavorek/">
+          <i class="fa fa-github"></i> GitHub Sponsors
+        </a>
+        <a href="https://www.patreon.com/honzajavorek">
+          <i class="fa fa-patreon"></i> Patreon
+        </a>
+        <a href="https://junior.guru/donate/">
+          <i class="fa fa-credit-card"></i> jiné        </a>
+    </p>
+    </div>
+    <p class="button">
+        <a href="https://honzajavorek.cz/blog/">
+          <i class="fa fa-list-ul"></i> Archiv článků
+        </a>
+    </p>
+  </footer>
+</article>
+      </div>
+      <footer class="footer">
+        <address>
+          © Copyright 2007—2022
+          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+
+      <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+  </body>
+</html>
