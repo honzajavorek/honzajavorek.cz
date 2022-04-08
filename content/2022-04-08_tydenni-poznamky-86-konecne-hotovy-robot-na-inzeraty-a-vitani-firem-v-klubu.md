@@ -35,9 +35,9 @@ Bylo to už na spadnutí, no konečně jsem to dodělal. Už zbývalo poladit je
 
 To, co mám, jsem vyhodnotil za lepší, než to, co je na produkci, takže proč to nemergnout, že? Udělal jsem si Trello kartičky na věci, které chci pak ještě dodělat. Hlavně musím vrátit zpátky do codebase spoustu testů. Zatím to funguje a jsem s tím spokojený. Nejviditelnější změnou navenek je, že se stahují nabídky práce z více zdrojů.
 
-V jeden den se objevila chyba, kterou jsem nepochopil a neměl jsem čas ji odladit a zjistit příčinu. Nechal jsem to na další den, ale to už se neprojevila a ani nikdy potom. Tak nevím, jestli erupce na slunci, ale zatím jsem se na to tedy vykašlal a budu to řešit, až když se objeví znovu.
+Po tom, co jsem to konečně mergnul, tak jsem počkal, jestli vše funguje, a potom jsem na JG upgradoval spoustu knihoven, které jsem do té chvíle upgradovat kvůli merge konfliktům nechtěl.
 
-Po tom, co jsem konečně to mergnul, tak jsem počkal, jestli vše funguje, a potom jsem na JG upgradoval spoustu knihoven, které jsem do té chvíle upgradovat kvůli merge konfliktům nechtěl.
+V jeden den se objevila chyba, kterou jsem nepochopil a neměl jsem čas ji odladit a zjistit příčinu. Nechal jsem to na další den, ale to už se neprojevila a ani nikdy potom. Tak nevím, jestli erupce na slunci, ale zatím jsem se na to tedy vykašlal a budu to řešit, až když se objeví znovu.
 
 ## Vítání firem v klubu
 
@@ -96,6 +96,7 @@ Pouze potřebuji do budoucna vyřešit způsob, jak označit lidi, kterým se pr
 - Ozvala se mi [Jessica]({filename}/2021-06-17_jessica-upani-about-python-events-in-namibia-you-have-to-be-pure-in-terms-of-your-why.md), jestli nevím o vhodných speakerkách pro jejich meetup, tak jsem se pokusil nějaké dohodit.
 - Volali jsme si s Nelou a dohodli [zveřejnění přednášky](https://youtu.be/6G4TKGQICw0) a ladili podobu nové stránky na JG, která se bude zabývat psychickým zdravím. Dělali jsme hlavně několik koleček revize budoucího textu. Přednášku jsem následně propagoval na sociálních sítích a upravoval jsem kód stránek, aby se dal zvlášť evidovat veřejný a klubový odkaz na video, protože tato přednáška má dvě verze (v klubovém záznamu je navíc záverečná diskuze s členy).
 - Uzavřeli jsme partnerství spolu s STRV a Pure Storage. Ladíme detaily a rozjíždíme dohodnuté věci.
+- Proběhly volby do rady [Pyvce](https://pyvec.org/) a zvolili mě :) Zůstávají dva původní členové výboru, tři budou noví. Paráda! Čerstvá krev! Aktuálně probíhá pomalé „předávání moci”. Podílel jsem se hodně na oživení spolku před pěti lety a jsem rád, že jsme to dotáhli až k volbám a tomu, že si spolek přebírá nová generace :)
 - Prošel jsem dosavadní žádosti o stipendium a vyhodnotil.
 - Volal jsem si s kamarádem z Red Hatu a bavili jsme se o tom, jak by mohli členství v klubu využívat víc naplno.
 - Ozvala se šéfredaktorka z Heroine, jestli dodám poslední článek. Tak asi budu muset dodat. V klubu jsem otevřel brainstorming o tom, jak ten článek pojmout, protože jsem nikdy nic takového nepsal.
