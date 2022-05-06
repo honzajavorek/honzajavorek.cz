@@ -26,7 +26,7 @@ Zatímco na webu je mi přednější rychlost načítání než hraní si s font
 No samozřejmě, že ne. Aby mi při generování obrázků fungovalo kompilování SCSS apod., dějou se tam čachry s temporary adresářem a kopírování věcí sem a tam. Přidat do toho fonty byl hrozný guláš a zabralo mi celé jedno dopoledne odladit to tak, aby se v těch náhledech dal použít jak font z Bootstrap Icons, tak tenhle Inter. CSS v těch fontových balíčcích používají relativní cesty k .woff souborům. Ty cesty se ale při importu do SCSS přenesou do výsledného CSS souboru tak jak jsou, takže pak by font musel být „na produkci“ ve stejně pojmenovaném adresáři a ve stejné struktuře, což by způsobilo strašný nepořádek. Nakonec jsem prostě nakopíroval soubory a to CSS regulárem přepsal, nic lepšího mě nenapadlo.
 
 
-## Plakátky epizod podcastu
+## Oznámení epizod podcastu v klubu
 
 K těm fontům jsem se dostal tak, že jsem pracoval na plakátcích k jednotlivým epizodám podcastu. Chtěl jsem je dát do XML podcastu, ale nelíbilo se mi, jak vypadají. Když jsem měl fonty vyřešené, zase jsem si uvědomil, že se tam ty plakátky moc nehodí a nakonec jsem do XML k epizodám dal zatím jen obrázky jednotlivých hostů :) Ty jsem přidal i na [stránku podcastu](https://junior.guru/podcast/), ať se v jednotlivých dílech lépe vizuálně orientuje.
 
