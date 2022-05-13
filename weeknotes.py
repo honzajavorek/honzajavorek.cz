@@ -65,7 +65,8 @@ Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
 ## Další poznámky
 
--
+- Sociální sítě:
+- Klub, maily, a tak dále.
 - {activities_text}
 - Aktuální finanční výsledky, návštěvnost a další čísla k JG [mám přímo na webu](https://junior.guru/open/).
 
