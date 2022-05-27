@@ -56,6 +56,7 @@ Udělal jsem při tom chybu v kódu a zpráva se posílala vždy, když se spust
 
 ## Další poznámky
 
+- Ve středu mě pár členů klubu vytáhlo v Praze na pivo. Nakonec přišlo i pár lidí navíc, další lidi jsme náhodně potkali, a byla z toho moc pěkná párty. Na živo jsem potkal lidi, které jsem doteď znal jen z klubu, a taky jsem haluzí potkal CEO [Skillmea](https://skillmea.cz/) (ex-Learn2Code), kterého jsem zrovna nedávno u vaření [slyšel v podcastu](https://streetofcode.sk/podcast/skillmea/), a možná z toho něco bude :D
 - Chtěl bych z klubu vyčistit mrtvé účty z dob, kdy úplně začínal jeho provoz, protože mám kvůli nim složitější kód a nesmyslnější grafy a čísla. Zjistil jsem ale, že jedna uživatelka má dva účty a nějak prapodivně propojené. Zeptal jsem se na Memberful supportu, jak to vyřešit, poradili mi a teď čekám, kdy se ona dostane k tomu, aby klikla. Potom zbytek vyčistím.
 - Firmám, se kterými ještě řeším prodloužení členství v klubu, začal bot posílat maily o tom, že vyprší členství a lidi že mají zadat kartu. Tak jsem to lidem vysvětlil a firemní členství prodloužil o rok už teď, i když fakturu ještě poslat nemůžu, jelikož řešíme detaily.
 - Zahlasoval jsem v anketě [Podcast roku](https://www.podcastroku.cz/).
