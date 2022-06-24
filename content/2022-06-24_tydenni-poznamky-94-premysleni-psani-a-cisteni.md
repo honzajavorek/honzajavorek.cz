@@ -46,8 +46,8 @@ Toto přemýšlení nepovažuji za dokončené, naopak mám dojem, že jsem skor
 - Smazal jsem vánoční stránku s dárkovým členstvím v klubu. Smazal jsem animaci padajícího sněhu. Tolik práce to bylo a přineslo to nakonec 3 členství v klubu. Trvalo mi půl roku, než jsem se dokázal vypořádat s tím, že to nejlepší, co mohu v této věci udělat, je smazat to z kódu a už takové blbiny nikdy nedělat.
 - Promazal jsem staré archivované kanály v klubu. Většina z nich tam byla rok pouze pro čtení a jejich hodnota byla už nulová.
 - Smazal jsem stránku `/donate/` a zatím přesměroval na `/open/`. Mám nějaký nápad, jak by se to dalo jednou udělat lépe, ale teď jsem chtěl hlavně odstranit dávno neaktuální prosbu o dobrovolné příspěvky.
-- Překopal jsem svoje profily na GitHub Sponsors a Patreonu. Původní texty jsem si [uložil sem](https://gist.github.com/honzajavorek/ed2036751a65c6e6820e4c813b9d950d). Oba profily jsem předělal do angličtiny a napsal jsem tam jednotný text, kde vysvětluji co zhruba teď dělám a že nikomu nebudu bránit mě podporovat, ale že si mohou taky normálně koupit členství v [klubu](https://junior.guru/club/). Výsledek bude zhruba stejný, ale z peněz se strhne méně poplatků. U jednotlivých částek jsem dal jasně najevo, že za to podporující nic na oplátku nedostává.
-- Členům, kteří už mě nepodporují ani na GitHub Sponsors ani na Patreonu jsem odebral kupón, který jim zajišťuje členství v klubu zdarma. Většina z nich jej stejně nevyužívala a členství měla jen nominálně.
+- Překopal jsem svoje profily na GitHub Sponsors a Patreonu. Původní texty jsem si [uložil sem](https://gist.github.com/honzajavorek/ed2036751a65c6e6820e4c813b9d950d). Oba profily jsem předělal do angličtiny a napsal jsem tam jednotný text, kde vysvětluji co zhruba teď dělám a že nikomu nebudu bránit mě podporovat, ale že si mohou taky normálně koupit členství v [klubu](https://junior.guru/club/). Výsledek bude zhruba stejný, ale z peněz se strhne méně poplatků. U jednotlivých částek jsem dal jasně najevo, že za to podporující nic na oplátku nedostává. Nikdo totiž nikdy nic reálně nechtěl realizovat ani z těch „výhod“, které jsem tam doteď měl.
+- Členům, kteří už mě nepodporují ani na GitHub Sponsors ani na Patreonu jsem odebral kupón, který jim zajišťuje členství v klubu zdarma. Většina z nich jej stejně nevyužívala a členství měla jen nominálně. Nepotřebuji nafukovat čísla mrtvými dušemi.
 
 ## Další poznámky
 
@@ -55,7 +55,7 @@ Toto přemýšlení nepovažuji za dokončené, naopak mám dojem, že jsem skor
 - Domluvil jsem se s [Martinem](https://www.vzhurudolu.cz/), jak budeme distribuovat výtisky jeho nové knihy členům klubu. Mohu rozdat pět knih. Teď už jen vymyslet, jak to udělám. Přijde mi asi škoda to zase nějak náhodně losovat, chtělo by to nějakou reálnou soutěž nebo to použít jako cenu za něco, no ještě uvidím.
 - Na základě předchozích poznámek mi bylo doporučeno [toto video](https://www.youtube.com/watch?app=desktop&v=0DyWG1JiDYk) na protahování rukou. Zkusil jsem.
 - Ozval se mi starý kamarád z dalekých krajů, že je zrovna v Praze. Vzal jsem si den volno a strávil s ním pěkné odpoledne.
-- Narazil jsem článek o [jednoduchém triku, jak psát úderně stručně](https://sive.rs/1s). Třeba ho někdy dočtu a začnu to praktikovat.
+- Narazil jsem článek o [jednoduchém triku, jak psát úderně a stručně](https://sive.rs/1s). Třeba ho někdy dočtu a začnu to praktikovat.
 - Během 4 dní od 21.6. do 24.6. jsem naběhal 10 km. Celkem jsem se hýbal 2 hodin a zdolal při tom 10 kilometrů.
 - Aktuální finanční výsledky, návštěvnost a další čísla k JG [mám přímo na webu](https://junior.guru/open/).
 
