@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/tydenni-poznamky-95-opravy-cisel-a-premysleni/">
+    <title>Týdenní poznámky #95: Opravy čísel a přemýšlení &mdash; Honza Javorek</title>
+
+    <meta property="og:title" content="Týdenní poznámky #95: Opravy čísel a přemýšlení &mdash; Honza Javorek">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-95-opravy-cisel-a-premysleni/">
+    <meta name="twitter:creator" content="@honzajavorek">
+    <meta name="twitter:site" content="@honzajavorek">
+
+    <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="683">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Honza Javorek &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2022-07-01T00:00:00+02:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <div class="content">
+<article class="article">
+  <header class="article-header">
+    <h1>
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-95-opravy-cisel-a-premysleni/" rel="bookmark">
+        Týdenní poznámky #95: Opravy čísel a přemýšlení
+      </a>
+    </h1>
+  </header>
+  <footer class="article-info">
+    <ul>
+      <li class="article-published">
+        <small>
+          <time datetime="2022-07-01T00:00:00+02:00">
+            1. 7. 2022
+          </time>
+        </small>
+      </li>
+      <li class="article-author">
+        <small>
+          <a href="#author">Honza Javorek</a>
+        </small>
+      </li>
+    <ul>
+  </footer>
+  <div class="article-content">
+
+    <div><div><div><div><p>Utekl zase nějaký ten týden (25.6. — 1.7.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-94-premysleni-psani-a-cisteni/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/club/">klub</a>, a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.</p>
+<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
+<h2 id="opravovani-chyb-v-grafech">Opravování chyb v grafech<small class="permalink"><a href="#opravovani-chyb-v-grafech" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Snažil jsem se opravit různé chyby na <a href="https://junior.guru/open/">stránce s grafy</a>. Neseděl mi počet členů z API a počet členů na Discordu. Nelíbilo se mi, že poslední měsíc vždy vypadal nějak divně. Na něco jsem přišel, něco jsem spíš jenom pochopil proč tak je a vysvětlení jsem si dopsal do textu u grafu. Rozdělil jsem grafy s příchody a odchody. Přidal jsem do grafů procentuální <em>churn</em>, konečně. Opravil jsem graf s délkou setrvání v klubu.</p>
+<p>Zjistil jsem, že se mi nezapočítávají lidi, kteří jsou na dárkovém předplatném (taková ta vánoční akce). Vzhledem k tomu, že s těmito dárky do budoucna nepočítám, rozhodl jsem se místo debugování tyto zhruba tři lidi v Memberful konvertovat na standardní roční členství a to dárkové jsem smazal ¯\_(ツ)_/¯</p>
+<h2 id="vypomoc-na-marketing">Výpomoc na marketing<small class="permalink"><a href="#vypomoc-na-marketing" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p><a href="https://honzajavorek.cz/blog/vypomoc-na-socialni-site/">Inzerát na marketingovou výpomoc</a> jsem nad rámec tohoto blogu nebo klubu záměrně nikde nepropagoval. Ozvalo se mi několik lidí. Pár lidí mi někoho doporučilo a já se pokusil ty doporučené lidi kontaktovat.</p>
+<p>Nakonec jsem to ale spíš pozastavil, protože inzerát jsem sice sepsal hezký, ale v důsledku díky hledání člověka na výpomoc vyvstala spousta otázek, na které si ve skutečnosti neumím odpovědět. Kolik na to mám peněz? Hledám profíka, který bude přicházet s vlastními nápady a řešeními, nebo čistě výpomoc, kterou třeba i zaučím? Jak důležitý je pro mě marketing na sociálních sítích? Za jakým účelem ho dělám a jak bych popsal „úspěch“ této své činnosti?</p>
+<p>Ve výsledku nejenže neumím vybrat člověka, který by zaplácl mou nechuť dělat dál marketing na sociálních sítích sám, ale spadla na mě i tíha všech otázek výše a nechuť je řešit. Pak někde někdo nasdílel <a href="https://slideslive.com/webexpo/webexpo-2022">videa z letošního WebExpa</a> a já tam zahlédl přednášku <a href="https://slideslive.com/38984420/outsourcing-your-marketing-do-your-homework-first">Outsourcing Your Marketing? Do Your Homework First</a> od Jany Dolejšové. Podíval jsem se na <a href="https://www.janadolejsova.cz/">její web</a> a uvědomil jsem si, že to, co nabízí, je nejspíš přesně něco, co potřebuju. Chci jednorázovou konzultaci od profíka, která by mi pomohla uspořádat si myšlenky, nastavit strategii, případně i vybrat člověka na výpomoc nebo změnit, jak to celé dělám.</p>
+<p>Aktuálně pracuji na tom, abych taková konzultace proběhla a pak se uvidí. Do té doby budu stále rád za tipy na výpomoc, ale samotné „výběrové řízení“ jsem tímto ze své strany pozastavil.</p>
+<h2 id="vykop-onboardingu">Výkop onboardingu<small class="permalink"><a href="#vykop-onboardingu" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Začal jsem realizovat onboarding nových členů v klubu. Vytvořil jsem skript, který umí vyrobit nový privátní kanál na Discordu a dát do něj oprávnění určitým rolím nebo lidem.</p>
+<p>Předtím jsem se ještě podíval na skript, který analyzuje obsah Discordu. Zefektivnil jsem jeho průběh a místo 4.5min teď trvá 3.7min. Udělal jsem to tak, že se už klub neanalyzuje v rámci celé své historie, ale jen za poslední rok. Některé kanály navíc nově přeskakuji úplně, některé jsem omezil na pouhý měsíc zpět. Tím by se také mělo zabránit narůstání délky trvání tohoto skriptu.</p>
+<h2 id="co-muzu-zrusit">Co můžu zrušit<small class="permalink"><a href="#co-muzu-zrusit" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Pokračoval jsem s přemýšlením, co můžu do budoucna zefektivnit, zrušit, nebo dělat jednodušeji a jinak. Už minule jsem psal:</p>
+<ul>
+<li>Nebudu už vzdělávacím agenturám nabízet program pro jejich studenty</li>
+<li>Nejsem zatím přesvědčen o tom, že má smysl dělat nějaké velkolepé plány kolem stipendia</li>
+<li>Omezím režii kolem dobrovolných příspěvků</li>
+<li>Zkusím delegovat nějakou práci na marketingu na sociálních sítích</li>
+</ul>
+<p>Dále mě napadlo:</p>
+<ul>
+<li>Zrušit outbound marketing kromě Q&amp;A pro komunity a podcastů, kde je dobrý poměr cena/výkon</li>
+<li>Zjednodušit ceník pro firmy</li>
+<li>Mít spolupráce s firmami a komunitami jasně zabalené jako balíčky, které jsou pro všechny stejné a mají jasné mantinely a není kolem nich žádná „speciální“ komunikace</li>
+<li>Možná zavést <em>free plan</em> pro firmy, které nechtějí členství, ale nabízí nějaký <em>barter</em> (sleva pro klub, marketing) a dát tomu opět jasné podmínky a mantinely</li>
+<li>Automatizovat některé maily firmám</li>
+<li>Natočit screencast jako demo toho, jak vypadá klub a co se v něm dá dělat, což zjednoduší nebo zruší „sales cally“</li>
+<li>Umět na většinu mailů odpovědět odkazem někam do FAQ</li>
+<li>Zrušit spreadsheet, kde mám seznam členů klubu - důvody, proč jej mám, lze myslím už plně řešit přímo přes admina Memberful</li>
+</ul>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<ul>
+<li>Domlouvám se s jedním mentorem, že si zavoláme a řekne mi feedback z mentorování v klubu.</li>
+<li>Uzavřeli jsme spolupráci s Engetem. Bude to mít více úrovní, ale pomůžu jim s propagací jedné věci a společně připravíme průzkum mezi juniory.</li>
+<li>Řešil jsem faktury s několika dalšími firmami.</li>
+<li>Domlouval jsem přednášku v klubu od Codeac, na září.</li>
+<li>Byl jsem na dentální hygieně.</li>
+<li>Koukal jsem se na možnosti půjčení vozíku na dítě za kolo (chariot).</li>
+<li>Uměle jsem prodloužil členství hned několika firem až do 1.9., ať s nimi nemusím komunikovat teď v létě, kdy jsou všichni na dovolené, a ať mám přes léto trochu klid na práci. Navíc od září chci mít už i jiný ceník.</li>
+<li>Přidal jsem se do <a href="https://www.facebook.com/groups/karieroviporadci/">skupiny pro kariérové poradce</a>.</li>
+<li>Řešil jsem stipendium pro jednu členku.</li>
+<li>Sepsali jsme spolu s Jakubem z Processandu <a href="https://junior.guru/jobs/dbbb7bf406b3c33aeba36cae817919d44bfb368a08fb1b4899dba130/">inzerát</a>. Ještě na ten text sbírám feedback i v klubu mezi juniory, ale už jsme to dali ven, ladit to můžeme za pochodu.</li>
+<li>Sešel jsem se s <a href="https://lucie.vaclavkova.com/">Lucií Václavkovou</a> a povídali jsme si o svých byznysech.</li>
+<li>Na zanedbanou <a href="https://junior.guru/events/">stránku s přednáškami</a> jsem aspoň doplnil jména přednášejících a opravil jeden odkaz.</li>
+<li>Jeli jsme do zookoutku v Milíčově.</li>
+<li>Zvýšil jsem svou základní poslechovou rychlost pro většinu podcastů na 2,5x</li>
+<li>Vyzvedl jsem si oblek v čistírně</li>
+<li>Sociální sítě: Propagoval jsem <a href="https://www.programhrovani.cz/1843229/10874390-dev-stories-4-paja-fronkova-z-pyladies-do-irska-a-zase-zpatky">podcast s Pájou</a>.</li>
+<li>Klub, maily, a tak dále.</li>
+<li>Během 7 dní od 25.6. do 1.7. jsem naběhal 11 km, při procházkách nachodil 7 km. Celkem jsem se hýbal 6 hodin a zdolal při tom 18 kilometrů.</li>
+<li>Aktuální finanční výsledky, návštěvnost a další čísla k JG <a href="https://junior.guru/open/">mám přímo na webu</a>.</li>
+</ul>
+<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Tři věci, které bych chtěl zvládnout udělat příště:</p>
+<ol>
+<li>Programovat onboarding.</li>
+<li>Vymyslet nový ceník.</li>
+<li>Seznam co zrušit, delegovat, nebo automatizovat přeměnit na konkrétní úkoly.</li>
+</ol>
+<p><strong>Bonus:</strong> Naplánovat si pořádnou dovolenou.</p>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
+<ul>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Ft.co%2Faz0WjVgkYN%3Fssr%3Dtrue&amp;h=7fd47fbeefc5f9fcb8d4fe92452fb5a8f7638024c18734e842e755f277a8277f">The Left-NIMBY canon</a><br>Různé pohledy na řešení krize bydlení. Levicové NIMBY vs YIMBY.</li>
+</ul>
+<p><small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small></p></div></div></div></div>
+  </div>
+
+  <footer class="article-footer">
+    <div id="author" class="author">
+      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
+      <address>
+          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
+          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
+          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
+          pomáhá budovat českou komunitu kolem jazyka
+          <a href="https://python.cz/">Python</a>.
+      </address>
+      <p class="button button-donate">
+        <a href="https://github.com/sponsors/honzajavorek/">
+          <i class="fa fa-github"></i> GitHub Sponsors
+        </a>
+        <a href="https://www.patreon.com/honzajavorek">
+          <i class="fa fa-patreon"></i> Patreon
+        </a>
+    </p>
+    </div>
+    <p class="button">
+        <a href="https://honzajavorek.cz/blog/">
+          <i class="fa fa-list-ul"></i> Archiv článků
+        </a>
+    </p>
+  </footer>
+</article>
+      </div>
+      <footer class="footer">
+        <address>
+          © Copyright 2007—2022
+          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+
+      <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+  </body>
+</html>
