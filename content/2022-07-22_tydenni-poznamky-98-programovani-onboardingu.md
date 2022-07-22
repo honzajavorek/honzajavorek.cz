@@ -1,4 +1,4 @@
-Title: Týdenní poznámky #98: Programování onboardingu
+Title: Týdenní poznámky #98: Kandidatura a programování onboardingu
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
 Home: False
