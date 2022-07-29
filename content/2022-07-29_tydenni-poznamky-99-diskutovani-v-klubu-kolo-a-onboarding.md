@@ -1,4 +1,4 @@
-Title: Týdenní poznámky #99: Diskutování v klubu, ježdění na kole a onboarding
+Title: Týdenní poznámky #99: Diskutování v klubu, kolo a onboarding
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
 Home: False
