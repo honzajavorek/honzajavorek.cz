@@ -40,6 +40,7 @@ Na základě jednoho dotazu jsem se podíval do dokumentace Slacku a zjistil, ž
 ## Další poznámky
 
 - Zkoumal jsem, proč můj build na CircleCI zase trvá skoro 40 minut a identifikoval minimálně tři věci, které bych mohl optimalizovat.
+- Na LinkedIn mě oslovila [Sena Şahin](https://www.linkedin.com/in/senanursahin/) a ptala se, jestli nevím někde po Praze, kde by ji mohli vzít, když teď dokončila školu (informatiku) a zaměřuje se na AI a ML. Zaujalo mě, jak má promakané CVčko, motivační dopis, tady má [blog](https://medium.com/@xenagarage), no prostě většina juniorů co znám, by se od ní mohla učit. Tak jsem jí odepsal a snažil se jí poradit, kam může napsat a kde to může zkusit. Taky jsem to její CVčko hodil kamarádovi do firmy, která s AI dělá. Blbé je, že Sena potřebuje vízum, protože je z Turecka. Držím jí palce, aby si místo našla a aby to s ní nějaká firma zkusila, vypadá už jen tou proaktivitou hodně šikovně. Kdybyste o něčem věděli, napište jí (nebo mně a já jí to pošlu).
 - Psal jsem si s Lukášem Augustou, který tvoří [Designui](https://www.designui.cz/), což je projekt, který mi je hodně sympatický a dokonce jsem se tam spoustu věcí i naučil. Bavili jsme se o tom, že si asi taky začne psát poznámky.
 - Jedno zaslané stipendium jsem zamítl s tím, že žadatelka nevyplnila dostatečně formulář tak, abych se dokázal jakkoliv rozhodnout o tom, jestli stipendium udělit, nebo ne. Věty o čtyřech slovech opravdu nestačí.
 - Zkusil jsem vyrobit [toust s kozím sýrem](https://zlin.rozhlas.cz/toust-s-kozim-syrem-8157157) a bylo to dobré.
