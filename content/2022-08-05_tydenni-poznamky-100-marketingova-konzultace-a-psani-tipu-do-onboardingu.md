@@ -26,7 +26,7 @@ Lukáš Augusta, který tvoří [Designui](https://www.designui.cz/), se mě pta
 
 Pro všechny z vás, kterým by to taky vrtalo hlavou, já jsem týdenní poznámky fakt nevynalezl :) Nejvíc mě k tomu inspiroval [Simon Willison](https://simonwillison.net/), ale už kdysi jsem podobně sledoval [blog Davida Nogola](https://www.nogol.cz/blog/), když v roce 2012 sekl s programováním a začal fotit. Psal, jak nemá na nájem, apod. Nevím, jestli to tam ještě někde má, nebo už je to jen ve webarchivech, jsem líný to hledat, ale hodně mě to tenkrát bavilo číst. Stejně tak jsem kdysi sledoval, [jak vzniká eshop u Marka Prokopa](https://dokosiku.blogspot.com/), ze kterého se pak vyklubal [Čaj týdne](https://cajtydne.cz/), nebo jsem si četl [o počátcích podnikání Johna Vanhary](https://www.podnikanivusa.com/).
 
-No a někteří kamarádi píšou, možná i trochu po mém vzoru, poznámky taky: [Lukáš Linhart _aka_ Almad](https://almad.blog/notes/), [Stephen Mizell](https://smizell.com/categories/weeknotes/) Takže kdo chcete psát poznámky, klidně je pište, svolení ode mě určitě nepotřebujete.
+No a někteří kamarádi píšou, možná i trochu po mém vzoru, poznámky taky: [Lukáš Linhart _aka_ Almad](https://almad.blog/notes/), nebo [Stephen Mizell](https://smizell.com/categories/weeknotes/). Takže kdo chcete psát poznámky, klidně je pište, svolení ode mě určitě nepotřebujete.
 
 Třeba tak vznikne další pěkný záznam o tom, jak reálně vypadá cesta za nějakým cílem, ať už je tím cílem cokoliv. Já třeba nevěřím na jednoduché cesty a jednoduchá řešení. Podle mě je realita vždy složitější, než to, co jde vidět navenek. Až jednou budu na obálce Forbesu a oni se mě budou ptát na recept na úspěch, nebudu si muset vymýšlet žádné zjednodušující moudro. Prostě řeknu: „Přečtěte si mých 5873 týdenních poznámek a budete mít jasnější obrázek o tom, jak se mi to povedlo.“
 
@@ -37,7 +37,7 @@ Držím Lukášovi Augustovi palce. Jeho první poznámky najdete pod názvem [t
 
 Tento týden se odehrála moje konzultace u [Jany Dolejšové](https://www.janadolejsova.cz/). Než jsme si zavolali, poslala mi dotazník, který jsem půl dne vyplňoval. Jednak jsem si u toho i sám uspořádal myšlenky, jednak jsem chtěl dodat co nejvíc kontextu, protože moje podnikání je myslím dost specifické a má různé ne úplně standardní hodnoty, kterých se chci držet. Také jsem to, zcela nečekaně, ehm, pojal trochu jako diplomku. Řekla mi, že nikdo jiný jí to tak detailně nevyplnil, ale usmívala se u toho a zdálo se mi, že za to byla spíš ráda.
 
-Ve středu jsme si zavolali a bylo to fakt super. Nejde o to, že by mi říkala nějaká marketingová tajemství, nebo že by mi za hodinu vyrobila marketingový strategický plán. Okomentovala mou situaci, poradila mi, co můžu dělat, co bych si měl prioritně ujasnit, kde bych měl posbírat v zásadě primitivná, ale dostatečná data, která mi strašně pomohou s rozhodováním. Navrhla mi, jak si mohu zorganizovat sociální sítě, nebo jak mohu své marketingové aktivity osekat a podle jakého klíče. Mám hromadu poznámek a ještě to stále vstřebávám, ale bylo to, minimálně pro můj účel, strašně užitečné! Vlastně jsem si přesně tohle představoval a přesně tohle jsem doufal, že dostanu.
+Ve středu jsme si zavolali a bylo to fakt super. Nejde o to, že by mi říkala nějaká marketingová tajemství, nebo že by mi za hodinu vyrobila marketingový strategický plán. Okomentovala mou situaci, poradila mi, co můžu dělat, co bych si měl prioritně ujasnit, kde bych měl posbírat v zásadě primitivní, ale dostatečná data, která mi strašně pomohou s rozhodováním. Navrhla mi, jak si mohu zorganizovat sociální sítě, nebo jak mohu své marketingové aktivity osekat a podle jakého klíče. Mám hromadu poznámek a ještě to stále vstřebávám, ale bylo to, minimálně pro můj účel, strašně užitečné! Vlastně jsem si přesně tohle představoval a přesně tohle jsem doufal, že dostanu.
 
 Mám z toho radost. Je fakt rozdíl, když dostanu nápad a je to jen jeden z mnoha nápadů, které mám, nebo když jsem ten nápad řekl jí a ona mi hned odpověděla „jasně, tohle většinou funguje hodně dobře, toto nevyužíváte dostatečně a určitě se do toho pusťte, můžete udělat ještě to a to a to“. Je to jako bych si zaplatil hodinu a díky té hodině přeskočil půl roku nebo rok nějakých pokus-omylů.
 
@@ -75,11 +75,11 @@ Pak jsem se snažil psát tipy pro onboarding do Google dokumentu a probírat to
 
 ## Co plánuji
 
-Tři věci, které bych chtěl zvládnout udělat příště:
+Tři věci, které bych chtěl zvládnout udělat příště? Stejné jako minule :(
 
-1.
-2.
-3.
+1. Dodělat první verzi zpráv pro onboarding a pustit je do první testovací skupiny lidí.
+2. Zpracovat poznámky z hovoru s mentorem a prodiskutovat je s ostatními mentory.
+3. Dorazit kapitolu o psychice při změně kariéry do příručky.
 
 
 ## A co vy?
