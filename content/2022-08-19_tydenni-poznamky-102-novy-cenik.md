@@ -47,7 +47,7 @@ Rozhodně neplánuju mít takový ten VIP tarif, kde je „kontaktujte naše sal
 
 ### Ceník stále jako sdílený dokument
 
-Ceník je stále pouze v Google Docs, jednak protože nemám čas na HTML, jednak protože ho mohu podle potřeby snadno upravovat. Zkusil jsem nový „pageless“ formát dokumentu, ale Docs o tomto formátu bohužel nepochopitelně říkají každému návštěvníkovi dokumentu, i když je to jen pro čtení, takže to je trochu fail, ale předělávat to teď už nebudu, možná později. Ceník je také stále velmi ukecaný a je tam spousta vysvětlujícího textu, ale to je zčásti i proto, že to není v HTML a měl by být i tak přehlednější, než ten starý ceník. Snad to takhle prostě bude _good enough_. Do starého ceníku jsem nakonec dal ještě výrazný odkaz na nový ceník, kdyby měl někdo někde schovaný původní URL.
+Ceník je stále pouze v Google Docs, jednak protože nemám čas na HTML, jednak protože ho mohu podle potřeby snadno upravovat. Zkusil jsem nový „pageless“ formát dokumentu, ale Docs o tomto formátu bohužel nepochopitelně říkají každému návštěvníkovi dokumentu, i když je to jen pro čtení, takže to je trochu fail, ale předělávat to teď už nebudu, možná později. Ceník je také stále velmi ukecaný a je tam spousta vysvětlujícího textu, ale to je zčásti i proto, že to není v HTML a měl by být i tak přehlednější, než ten starý ceník. Snad to takhle prostě bude _good enough_. Do starého ceníku jsem nakonec dal ještě výrazný odkaz na nový ceník, kdyby měl někdo někde schované původní URL.
 
 
 ## Další poznámky
