@@ -9,7 +9,20 @@ Utekl zase nějaký ten týden (3.9. — 12.9.) a tak [stejně jako minule]({fil
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
-Píšu až v pondělí večer, protože v pátek jsem to prostě nějak nestihl a o víkendu se mi nechtělo.
+Byl to trochu blázinec. Předtím covid, teď jsem zase odjel do Zlína, takže co bylo potřeba v Praze zařídit, to se natěsnalo do toho minulého týdne:
+
+- V pondělí jsem šel natáčet podcast [(re)štarty v IT](https://restarty.dev/), pak jsme s Alicí dali oběd, pak jsem šel k holičce, pak jsem měl pokec u kafe s Šárkou z WebExpa.
+- Ve středu jsem se věnoval klubu a sdílel jsem [dotazník](https://bit.ly/3QwBMvu), který jsme spustili spolu s Ataccamou, abychom věděli, jak by měl ideálně vypadat event pro juniory, který se chystáme uspořádat. Pak jsem pracoval na letáčku pro Red Hat, ve čtyři odpoledne jsem natáčel podcast [Street of Code](https://streetofcode.sk/) a potom jsem běžel na Jiřího z Poděbrad na stánek Zelených, pomoct s kampaní. Moc jsem toho ale už nestihl, stánek se spíš už balil.
+- Ve čtvrtek jsem se zúčastnil [eventu organizovaného Jeanne Trojan](https://www.linkedin.com/posts/jeannetrojan_community-facetoface-people-activity-6973594677732098049-acIF?utm_source=share&utm_medium=member_desktop). Diskutovali jsme práci z domů, hybridní práci, full remote, apod. Potom jsme šli s děckem na vítání občánků na radnici. Bylo z toho hned několik vtipných momentů. Jeden jsem [rozmázl na Twitteru](https://twitter.com/honzajavorek/status/1567909426186670081).
+
+
+## Kampaň!
+
+V pátek jsem se opět přihlásil na stánek [Zelených](https://praha3.zeleni.cz/) a večer bylo na Jiřáku vinobraní, takže jsme šli zase tam. Tentokrát jsem tam byl několik hodin a odcházeli jsme až za tmy. Rozdal jsem nějaké ty Zelené noviny a promlouval s lidmi. Máme tam vždycky položenou velkou mapu Prahy 3 a u toho puntíky co se povedlo, co je v procesu, a co plánujeme.
+
+Protože sleduju dění na Praze 3, dokázal jsem se spoustou lidí vést konverzaci o tom, co se kde plánuje, poradit jim, že existuje aplikace [Čistá Trojka](https://www.cistatrojka.cz/), nebo že mají svůj dům přidat do [antigrafitti programu](https://www.praha3.cz/projekty/antigraffiti-program). Hned několik lidí mi řeklo, že nás bude určitě volit.
+
+Jsem rád, že moje osobní kampaň postoupila do další úrovně a po desítkách lidí v mém okolí, které jsem přesvědčil a volili by mě, ale nebydlí na Praze 3, se mi konečně povedlo mluvit i s lidmi, kteří tu bydlí :D Ale taky se mi teda povedlo dlouho mluvit s lidmi, kteří jen přišli na vinobraní a na Praze 3 nebydlí :D
 
 
 ## CoreSkill
@@ -60,16 +73,11 @@ Možná ze mě nakonec ještě bude ten militantní městský cyklista, a ne pou
 
 ## Další poznámky
 
-- V pondělí jsem šel natáčet podcast [(re)štarty v IT](https://restarty.dev/), pak jsme s Alicí dali oběd, pak jsem šel k holičce, pak jsem měl pokec u kafe s Šárkou z WebExpa. Celý den fuč.
-- Ve středu jsem se věnoval klubu a sdílel jsem [dotazník](https://bit.ly/3QwBMvu), který jsme spustili spolu s Ataccamou, abychom věděli, jak by měl ideálně vypadat event pro juniory, který se chystáme uspořádat. Pak jsem pracoval na letáčku pro Red Hat, ve čtyři odpoledne jsem natáčel podcast [Street of Code](https://streetofcode.sk/) a potom jsem běžel na Jiřího z Poděbrad na stánek Zelených, pomoct s kampaní. Moc jsem toho ale už nestihl, stánek se spíš už balil.
-- V pátek jsem se opět přihlásil na stánek a večer bylo na Jiřáku vinobraní, takže jsme šli zase tam. Tentokrát jsem tam byl několik hodin a odcházeli jsme až za tmy. Rozdal jsem nějaké ty Zelené noviny a promlouval s lidmi. Protože sleduju dění na Praze 3, dokázal jsem se spoustou lidí vést konverzaci o tom, co se kde plánuje, poradit jim, že existuje aplikace Čistá Trojka, nebo že mají svůj dům přidat do antigrafitti programu. Hned několik lidí mi řeklo, že nás bude určitě volit. Jsem rád, že moje osobní kampaň postoupila do další úrovně a po desítkách lidí v mém okolí, které jsem přesvědčil a volili by mě, ale nebydlí na Praze 3, se mi konečně povedlo mluvit i s lidmi, kteří tu bydlí :D
 - V průběhu týdne jsem se věnoval klubu, vítal lidi, odpovídal, dělal review CVčka, koukal na projekty členů klubu, pozval do klubu [Luboše](https://blog.zvestov.cz/), ukecával ho na přednášku o Javě, vyřídil hromady mailů, posunul dál jedno stipendium, a tak dále.
 - Konečně jsem přišel na to, jak poslat na Discord zprávu tak, aby se nezobrazil náhled vloženého URL. Není to ani `embed=None`, ani `embeds=[]`, ale je to `suppress=True`. Ty dvě předchozí varianty mi s pycordem dřív fungovaly, o třetí jsem doteď nevěděl. Tak snad na desátý pokus už bude tahle věc fungovat správně.
 - Začaly mi sem tam padat nějaké věci okolo stahování nabídek práce. Zatím jsem přidal logování, opravil jednu drobnou chybu s kódováním textu a parsováním HTML a uvidím, kdy se zase nějaká chyba objeví. Snad potom budu mít díky tomu logování víc informací a najdu příčinu problémů.
 - Narazil jsem na web s [evropskými alternativami amerických služeb](https://european-alternatives.eu/). Škoda, že když cokoliv z toho použiju a zaplatím za to ze svého podnikatelského účtu, tak mi to zkomplikuje daně. Jsem OSVČ, nejsem plátce DPH a kvůli zbytečné byrokracii nechci být ani identifikovaná osoba, dokud to bude možné. Za tyto služby se platí v řádu stokorun a kvůli tomu se zvýšit byrokracii v minimalistickém podnikání opravdu nevyplatí. Když nakoupím služby u firem z USA, nic z toho řešit nemusím. Ach jo, Evropo!
 - Odstranil jsem workaround z nastavení instalace JG pomocí Poetry. Řešil [toto issue](https://github.com/python-poetry/poetry/issues/3336), ale to už zavřeli, tak zkouším, jestli to bude OK. Musel jsem ovšem zajistit, abych měl všude co nejnovější verzi Poetry.
-- Zúčastnil jsem se [eventu organizovaného Jeanne Trojan](https://www.linkedin.com/posts/jeannetrojan_community-facetoface-people-activity-6973594677732098049-acIF?utm_source=share&utm_medium=member_desktop). Diskutovali jsme práci z domů, hybridní práci, full remote, apod.
-- Šli jsme s děckem na vítání občánků na radnici. Bylo z toho hned několik vtipných momentů. Jeden jsem [rozmázl na Twitteru](https://twitter.com/honzajavorek/status/1567909426186670081).
 - Opravil jsem kapající kohoutek v kuchyni. Rozebral jsem baterii, našel prasklé těsnění, obul jsem si boty, zašel pěšky pro těsnění do instalatérských potřeb kousek od našeho domu, vrátil se a dodělal to. [Město krátkých vzdáleností!]({filename}/2021-08-28_bez-auta.md) Mám to tady fakt rád.
 - Během 10 dní od 3.9. do 12.9. jsem naběhal 8 km, při procházkách nachodil 5 km. Celkem jsem se hýbal 4 hodin a zdolal při tom 13 kilometrů.
 - Aktuální finanční výsledky, návštěvnost a další čísla k JG [mám přímo na webu](https://junior.guru/open/).
@@ -77,10 +85,12 @@ Možná ze mě nakonec ještě bude ten militantní městský cyklista, a ne pou
 
 ## Co plánuji
 
-Tři věci, které bych chtěl zvládnout udělat příště:
+Čtyři věci, které bych chtěl zvládnout udělat příště:
 
-1. Pracovat dál na onboardingu.
+1. Pracovat dál na onboardingu nových členů do klubu.
 2. Běhat, abych uběhl [Kozojedskou desítku](https://www.facebook.com/events/340873144838343).
+3. Ozvat se firmám, které mají prodloužit členství.
+4. Plánovat přednášky v klubu.
 
 
 ## A co vy?
