@@ -9,7 +9,7 @@ Utekl zase nějaký ten týden (3.9. — 12.9.) a tak [stejně jako minule]({fil
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
-Byl to trochu blázinec. Předtím covid, teď jsem zase odjel do Zlína, takže co bylo potřeba v Praze zařídit, to se natěsnalo do toho minulého týdne:
+Byl to trochu blázinec. Předtím covid, teď jsme zase odjeli do Zlína k babičce, takže co bylo potřeba v Praze zařídit, to se natěsnalo do toho minulého týdne:
 
 - V pondělí jsem šel natáčet podcast [(re)štarty v IT](https://restarty.dev/), pak jsme s Alicí dali oběd, pak jsem šel k holičce, pak jsem měl pokec u kafe s Šárkou z WebExpa.
 - Ve středu jsem se věnoval klubu a sdílel jsem [dotazník](https://bit.ly/3QwBMvu), který jsme spustili spolu s Ataccamou, abychom věděli, jak by měl ideálně vypadat event pro juniory, který se chystáme uspořádat. Pak jsem pracoval na letáčku pro Red Hat, ve čtyři odpoledne jsem natáčel podcast [Street of Code](https://streetofcode.sk/) a potom jsem běžel na Jiřího z Poděbrad na stánek Zelených, pomoct s kampaní. Moc jsem toho ale už nestihl, stánek se spíš už balil.
@@ -22,14 +22,14 @@ V pátek jsem se opět přihlásil na stánek [Zelených](https://praha3.zeleni.
 
 Protože sleduju dění na Praze 3, dokázal jsem se spoustou lidí vést konverzaci o tom, co se kde plánuje, poradit jim, že existuje aplikace [Čistá Trojka](https://www.cistatrojka.cz/), nebo že mají svůj dům přidat do [antigrafitti programu](https://www.praha3.cz/projekty/antigraffiti-program). Hned několik lidí mi řeklo, že nás bude určitě volit.
 
-Jsem rád, že moje osobní kampaň postoupila do další úrovně a po desítkách lidí v mém okolí, které jsem přesvědčil a volili by mě, ale nebydlí na Praze 3, se mi konečně povedlo mluvit i s lidmi, kteří tu bydlí :D Ale taky se mi teda povedlo dlouho mluvit s lidmi, kteří jen přišli na vinobraní a na Praze 3 nebydlí :D
+Jsem rád, že moje osobní kampaň postoupila do další úrovně a po desítkách lidí v mém okolí, které jsem přesvědčil a volili by mě, ale nebydlí na Praze 3, se mi konečně povedlo mluvit i s lidmi, kteří tu bydlí :D Ale taky se mi teda povedlo dlouze mluvit s lidmi, kteří jen přišli na vinobraní a na Praze 3 nebydlí :D
 
 
 ## CoreSkill
 
 V pátek před týdnem jsem se sešel naživo s [Danem](https://coreskill.tech/). Měli jsme čas pokecat o práci, ale i o úplně nesouvisejících věcech. Bavili jsme se o Danově marketingu ([hledá nové klienty](https://twitter.com/coreskilltech/status/1567421934404501505), tak kdo chcete umět frontend, šup za ním!) a myslím, že jsem mu poradil něco, co se mu líbilo. Co se týče JG, řešili jsme zase tipy pro nové členy a vymýšleli, jak by to mohlo ideálně fungovat.
 
-Dal mi kafe a vzájemně jsme se, věřím, nabili trochou energie a přátelstvím. S Danem máme symbiózu, kdy CoreSkill využívá klub jako platformu pro učení a Dan mi tam pomáhá moderovat a radí lidem. Aby to dobře fungovalo, nemůžeme spolu trávit čas jen řešením provozních věcí. Je potřeba se někdy i jen tak sejít, bez agendy, a pokecat o životě, sladit vlny. Bylo to fajn.
+Vzájemně jsme se, věřím, nabili trochou energie a přátelstvím. S Danem máme symbiózu, kdy CoreSkill využívá klub jako platformu pro učení a Dan mi tam pomáhá moderovat a radí lidem. Aby to dobře fungovalo, nemůžeme spolu trávit čas jen řešením provozních věcí. Je potřeba se někdy i jen tak sejít, bez agendy, a pokecat o životě, sladit vlny. Bylo to fajn.
 
 
 ## Letáček
@@ -38,29 +38,31 @@ Z Red Hatu mě poprosili, zda bych pro [Red Hat Research Day 2022](https://resea
 
 Vzpomněl jsem si, že hodně lidí tyto věci dělá v [Canvě](https://canva.com/) a že i lidé, kteří maji minimum DTP znalostí, z toho dokážou vyprodukovat obstojné věci. Poprvé jsem se s tím setkal, když v tom myslím [Daria](https://dariagrudzien.com/) kreslila logo pro [CyberMagnolia](https://cybermagnolia.com/). Pak s tím vždy přišel někdo další, naposledy jsem si všiml, že je v tom grafika pro účely kampaně Zelených na Praze 3. Takže jsem to chtěl už delší dobu vyzkoušet.
 
-O víkendu jsem spojil příjemné s užitečným a udělal jeden domácí úkol. Během prvního roku života jsme každý měsíc vyfotili naše dítě. Teď bylo potřeba to poskládat do nějaké koláže. Zkusil jsem Canvu a bylo to za hodinku hotové. Bylo tedy jasné, že letáček vyrobím v tom a taky se tak během týdne stalo. Výsledek [tady](https://www.canva.com/design/DAFLjAmrIxw/-7N1cgk5s8-L9cbV-r1vLQ/view?utm_content=DAFLjAmrIxw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
+O víkendu jsem spojil příjemné s užitečným a udělal jeden domácí úkol. Během prvního roku života jsme každý měsíc vyfotili naše dítě s jedním a tím samým plyšákem, aby šlo vidět, jak roste. Teď bylo potřeba to poskládat do nějaké koláže. Zkusil jsem Canvu a bylo to za hodinku hotové. Bylo tedy jasné, že letáček vyrobím v tom a taky se tak během týdne stalo. Výsledek [tady](https://www.canva.com/design/DAFLjAmrIxw/-7N1cgk5s8-L9cbV-r1vLQ/view?utm_content=DAFLjAmrIxw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
 
 Celkově mi práce v Canvě přišla hodně podobná práci v Keynote, kterýžto už dlouho zneužívám na všechno možné, včetně přípravy podkladů pro tisk samolepek. Fajn je, že Canva umožňuje spolupráci více lidí a má hodně šablon a přednastavených nesmyslů. Fajn není, že když Canva zmizí z povrchu zemského, nemám na disku žádný zdrojový soubor pro svůj výrobek.
 
 
 ## Vylepšování zasílání tipů novým členům v klubu
 
-Týden předtím skončil smutnou příhodou o tom, jak jsem se zasekl o limity Discordu. Ty jsem zatím překročil vytvářením několika kategorií se stejným názvem a dál to neřešil. Plánuju kanály postupně mazat, ale zatím to bot neumí.
+Minulé poznámky skončily smutnou příhodou o tom, jak jsem se zasekl o limity Discordu. Ty jsem zatím překročil vytvářením několika kategorií se stejným názvem a dál to neřešil. Plánuju kanály postupně mazat, ale zatím to bot neumí.
 
 Zjistil jsem, že Discord [má způsob](https://stackoverflow.com/q/60764755/325365), jak poslat botem zprávu, ve které jsou mentions, a přitom jimi nezpůsobit notifikaci. Což je super. Mnoho tipů pro nováčky v sobě má mentions, ať už přímo na mě, na moderátory i na jiné role. Implementoval jsem to a je to mnohem lepší, když mi nechodí při každém takovém tipu notifikace. Udělal jsem to tak, aby k notifikaci vedly mentions jen onoho nováčka, pro kterého kanál s tipy vznikl. Pokud tedy první tip začíná „Ahoj @franta“, tak taková notifikace přijde, ale jiné ne. Nastavení platí jen pro zprávy poslané botem, takže když mi dá mention člověk, tak mi to přijde.
 
-Optimalizoval jsem, jak se ukládají emoji reakce do databáze. Původně se jen spočítaly pozitivní a negativní reakce a ke zprávám se uložil počet. Pak se speciálně řešily špendlíky (viz dále). Z různých důvodů se mi hodí, abych v databázi měl přehled o všech typech reakcí. Myslel jsem, že je prostě stáhnu a uložím, ale informace o tom, přesně od koho je které emoji, vyžaduje mnoho API callů a trvalo to věčně. Tak jsem zůstal u počítání emoji a konkrétní lidi se řeší jen u špendlíků.
+Optimalizoval jsem, jak se ukládají emoji reakce do databáze. Původně se jen spočítaly pozitivní a negativní reakce a ke zprávám se uložil počet. Pak se speciálně řešily špendlíky (viz dále). Z různých důvodů se mi hodí, abych v databázi měl přehled o všech typech reakcí. Myslel jsem, že je prostě stáhnu a uložím, ale informace o tom, přesně od koho je které emoji, vyžaduje mnoho API callů a trvalo to věčně. Tak jsem zůstal u toho, že ukládám akorát celkové počty těch emoji a konkrétní lidi se řeší jen u špendlíků.
 
 V souvislosti s tím jsem přepracoval špendlíky. Jde o funkci, která v klubu je od pradávna. Když někdo dal ke zprávě v klubu emoji špendlíku, bot mu ji „uložil“ do soukromých zpráv. Původně to fungovalo tak, že když bylo lidí se špendlíkem hodně, zpráva se připíchla v kanálu pro všechny přímo použitím funkce _pin_ na Discordu. Počet lidí, jejichž špendlík je ke globálnímu připnutí potřeba, se počítal jako nějaké procento z celkového počtu členů v klubu. Tento aspekt se ale prakticky nevyužíval, připínajících nikdy nebylo dost a _pin_ na Discordu stejně není něco, co by lidi zas tak moc využívali. Takže jsem celou tuhle věc odstranil. Dokonce jsem to ani nikde neoznamoval, protože myslím, že to nikomu fakt chybět nebude. Špendlíky stále fungují, ale pouze ukládají do soukromých zpráv. Text o připínání pro všechny zmizel a kód, který to obsluhoval, taky, což je pro bota drobná úleva. Celé špendlíky jedou teď skoro 6 minut a potřebuji od základu předělat, jak ten kód funguje, ale na to nemám zrovna teď čas, takže aspoň taková drobná úleva. Opravil jsem při tom ve špendlíkách pár chybek v textech, odkazech na místnosti, na lidi, a tak.
 
 Celou srandu s evidencí emoji reakcí jsem dělal hlavně proto, že nás s Danem napadlo, že lidi si budou muset kliknout, aby dostali další tip. Něco ve smyslu „pokud máš tento tip přečtený a chceš další, použij reakci zaškrtávátka pod zprávou a zítra dostaneš další“. Je to mazané, protože díky tomu vidíme, jestli to lidi čtou a je to nějaká drobná interakce, která lidi do klubu trochu vtahuje. Taky se neposílají zprávy těm, kdo o ně nestojí. Ať už proto, že do klubu jen nakoukli a zase odešli, nebo proto, že by je čtení tipů nebavilo. Kdo vše odškrtá, může nakonec za odměnu dostat i nějakou roli. To by předtím nešlo, protože takovou roli by dostal po nějakém čase každý, ať už by tipy četl, nebo ne. Z tohoto plánu se mi povedlo implementovat odškrtávání, roli žádnou zatím nemám. Ostatně nemám ani dopsány tipy, jsou tam zatím asi jen čtyři nebo kolik.
+
+Když jsem měl naimplementované zaškrtávání, uvědomil jsem si, že teď nepřijde žádný tip dosavadním nováčkům, protože něměli co zaškrtnout, ale bot nově zaškrtnutí vyžaduje. Naštěstí je zaškrtávání líně implementováno tak, že se neřeší, kdo konkrétně to zaškrtl, ale jen zda je zaškrtnuto. Hlídat kdo to zaškrtl mi přišlo jako overkill, protože v kanálu s tipy je jen nováček a my dva s Danem. Ale teď se tato nedokonalost hodila. Místo, abych musel dosavadní nováčky nějak speciálně řešit, prostě jsem prošel ručně jejich kanály a ty zaškrtávátka jim odklikal :D Další už si podle instrukcí odklikají sami.
 
 S jedním členem jsme se o tipech hezky zakecali a přivedl mě na to, že bych měl delší tipy dělit do víc odstavců s nadpisy. Hned jsem existující tipy trochu přepsal a vylepšil.
 
 
 ## Sdílená kola
 
-Během týdne jsem měl několik pochůzek ve větší vzdálenosti, kde nebylo tak dobré spojení MHD a nechtělo se mi to celé jít na Žižkov pěšky, i když většinou pěšky chodím rád. Karlín, náměstí Míru, a tak. Tak jsem vyzkoušel sdílená kola v rámci Lítačky.
+Během týdne jsem měl několik pochůzek ve větší vzdálenosti, kde nebylo tak dobré spojení MHD a nechtělo se mi to celé jít na Žižkov pěšky, i když většinou pěšky chodím rád. Karlín, náměstí Míru, a tak. Tak jsem vyzkoušel [sdílená kola v rámci Lítačky](https://pid.cz/prakticke-informace/sdilenakola/).
 
 Po prvním blbém zážitku s UX u Rekol jsem jim dal zase šanci. Otevřel jsem appku a objevila se čára kam mám jít a že nejbližší kolo je 5min ode mě. Tak jsem tam 5min šel. Na místě se koukám, že tam žádné kolo není. Dívám se znova do aplikace a tam vidím, že mě to neposlalo k nejbližšímu kolu, ale k nejbližšímu stojanu a nejbližší kolo je ve skutečnosti úplně jinde. Poslalo mě to ale do místa, kde byl zaparkovaný NextBike, takže jsem aplikaci zavřel, otevřel NextBike a za chvíli jsem byl doma.
 
