@@ -1,5 +1,9 @@
+import itertools
+from operator import itemgetter
 import os
+import random
 import sys
+import csv
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -31,6 +35,17 @@ start_date_cz = f'{start_date:%d}.'.lstrip('0') + f'{start_date:%m}.'.lstrip('0'
 
 number = len(weeknotes_paths) + 1
 prefix = f'{TITLE_PREFIX} #{number}: '
+
+res = requests.get('https://junior.guru/api/jobs.csv', stream=True)
+res.raise_for_status()
+jobs = [job for job in csv.DictReader(res.iter_lines(decode_unicode=True))
+        if job['url'].startswith('https://junior.guru')]
+jobs = sorted(jobs, key=itemgetter('company_name'))
+jobs = {company_name: random.choice(list(company_jobs))
+        for company_name, company_jobs
+        in itertools.groupby(jobs, key=itemgetter('company_name'))}
+jobs_text = "Nabídky práce pro juniory teď inzerují: "
+jobs_text += ', '.join([f"[{job['company_name']}]({job['url']})" for job in jobs.values()])
 
 res = requests.get('https://getpocket.com/@honzajavorek')
 res.raise_for_status()
@@ -65,10 +80,9 @@ Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
 ## Další poznámky
 
-- Sociální sítě:
-- Klub, maily, a tak dále.
+- Odpovídání v klubu, maily, a tak dále.
 - {activities_text}
-- Aktuální finanční výsledky, návštěvnost a další čísla k JG [mám přímo na webu](https://junior.guru/open/).
+- Aktuální finanční výsledky, návštěvnost a další čísla k JG [mám přímo na webu](https://junior.guru/open/). {jobs_text}
 
 
 ## Co plánuji
