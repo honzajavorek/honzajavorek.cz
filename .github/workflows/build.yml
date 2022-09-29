@@ -47,7 +47,7 @@ jobs:
         uses: FedericoCarboni/setup-ffmpeg@v1
 
       - name: DVTV Build
-        run: python dvtv.py && cp -r ./.dvtv ./public
+        run: python dvtv.py && cp -r ./.dvtv ./public && mv ./public/.dvtv ./public/dvtv
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
