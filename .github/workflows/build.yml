@@ -43,6 +43,9 @@ jobs:
           key: dvtv
           restore-keys: dvtv
 
+      - name: Setup FFmpeg
+        uses: FedericoCarboni/setup-ffmpeg@v1
+
       - name: DVTV Build
         run: python dvtv.py && cp -r ./.dvtv ./public
 

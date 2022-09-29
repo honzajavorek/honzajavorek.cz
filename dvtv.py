@@ -1,3 +1,4 @@
+import sys
 from operator import attrgetter
 from multiprocessing import Pool
 from pathlib import Path
@@ -23,8 +24,13 @@ def process_entry(entry):
         'noplaylist': True,
         'format': audio_file.suffix.lstrip('.'),
     }
-    with YoutubeDL(options) as yt_dlp:
-        yt_dlp.download([entry.link])
+    try:
+        with YoutubeDL(options) as yt_dlp:
+            yt_dlp.download([entry.link])
+    except Exception as e:
+        print(f'{e} - {entry.link}', file=sys.stderr)
+        return None
+
     return Episode(id=entry.id,
                    title=entry.title,
                    publication_date=entry.published,
@@ -53,6 +59,6 @@ if __name__ == '__main__':
     entries = sorted(rss.entries, key=attrgetter('published'), reverse=True)
     EPISODES_DIR.mkdir(exist_ok=True)
     with Pool() as pool:
-        for episode in pool.imap_unordered(process_entry, entries):
+        for episode in filter(None, pool.imap_unordered(process_entry, entries)):
             podcast.add_episode(episode)
     podcast.rss_file(str(PODCAST_FILE))
