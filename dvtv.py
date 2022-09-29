@@ -49,7 +49,7 @@ if __name__ == '__main__':
                       description='DVTV videa ve formě podcastu, pro osobní potřebu Honzy Javorka.',
                       language='cs',
                       website='https://video.aktualne.cz/dvtv/',
-                      feed_url='https://junior.guru/api/podcast.xml',
+                      feed_url='https://honzajavorek/dvtv/podcast.xml',
                       authors=[Person('Aktuálně.cz')],
                       web_master=Person('Honza Javorek', 'mail@honzajavorek.cz'),
                       generator='honzajavorek.cz (+https://github.com/honzajavorek/honzajavorek.cz)',
