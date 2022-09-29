@@ -53,6 +53,6 @@ if __name__ == '__main__':
     entries = sorted(rss.entries, key=attrgetter('published'), reverse=True)
     EPISODES_DIR.mkdir(exist_ok=True)
     with Pool() as pool:
-        for episode in pool.imap_unordered(process_entry, entries[:1]):
+        for episode in pool.imap_unordered(process_entry, entries):
             podcast.add_episode(episode)
     podcast.rss_file(str(PODCAST_FILE))

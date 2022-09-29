@@ -44,7 +44,7 @@ jobs:
           restore-keys: dvtv
 
       - name: DVTV Build
-        run: python dvtv.py && mv ./.dvtv ./public/dvtv
+        run: python dvtv.py && cp -r ./.dvtv ./public
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
