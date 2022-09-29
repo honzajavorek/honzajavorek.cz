@@ -30,7 +30,7 @@ def process_entry(entry):
                    publication_date=entry.published,
                    link=entry.link,
                    summary=entry.summary,
-                   media=Media(f"https://honzajavorek.cz/dvtv/{audio_file}",
+                   media=Media(f"https://honzajavorek.cz/dvtv/{audio_file.name}",
                                size=audio_file.stat().st_size,
                                type='audio/m4a'))
 
