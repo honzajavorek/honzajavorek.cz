@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/tydenni-poznamky-106-onboarding-clenu-volby-a-pulmaraton/">
+    <title>Týdenní poznámky #106: Onboarding členů, volby a půlmaraton &mdash; Honza Javorek</title>
+
+    <meta property="og:title" content="Týdenní poznámky #106: Onboarding členů, volby a půlmaraton &mdash; Honza Javorek">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-106-onboarding-clenu-volby-a-pulmaraton/">
+    <meta name="twitter:creator" content="@honzajavorek">
+    <meta name="twitter:site" content="@honzajavorek">
+
+    <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="683">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Honza Javorek &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2022-09-30T00:00:00+02:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <div class="content">
+<article class="article">
+  <header class="article-header">
+    <h1>
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-106-onboarding-clenu-volby-a-pulmaraton/" rel="bookmark">
+        Týdenní poznámky #106: Onboarding členů, volby a půlmaraton
+      </a>
+    </h1>
+  </header>
+  <footer class="article-info">
+    <ul>
+      <li class="article-published">
+        <small>
+          <time datetime="2022-09-30T00:00:00+02:00">
+            30. 9. 2022
+          </time>
+        </small>
+      </li>
+      <li class="article-author">
+        <small>
+          <a href="#author">Honza Javorek</a>
+        </small>
+      </li>
+    <ul>
+  </footer>
+  <div class="article-content">
+
+    <div><div><div><div><p>Utekl zase nějaký ten týden (20.9. — 30.9.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-105-zlinsko-a-nastenka/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/club/">klub</a>, a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.</p>
+<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
+<p>Byl nějaký ten státní svátek, volby a tak různě, takže píšu až po dvou týdnech. Aby se to dalo číst, zkusím to tentokrát fakt stručně a dávám si na psaní maximálně hodinu.</p>
+<h2 id="chyba-s-vytvarenim-kategorii-na-discordu">Chyba s vytvářením kategorií na Discordu<small class="permalink"><a href="#chyba-s-vytvarenim-kategorii-na-discordu" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Jak jsem psal v některých předchozích poznámkách, jedna kategorie na Discordu může mít maximálně 50 kanálů a tak musím kanály s tipy pro nové členy v klubu rozdělovat do víc kategorií. Způsob rozdělování měl ale chyby a padalo mi to.</p>
+<p>Zkusil jsem to naprogramovat jinak, ale po celém dni předělávání jsem došel opět k řešení, které mělo nějaké vady a nefungovalo dobře. Protože jede práce na tipech paralelně a dělá rovnou změny na Discordu, nedařilo se mi ani najít jednoduchý způsob, jak algoritmus izolovat od I/O, abych ho mohl nějak neprůstřelně otestovat.</p>
+<p>Nakonec jsem do toho prostě bušil tak dlouho, až jsem vynalezl něco, co vypadá, že funguje.</p>
+<h2 id="vitani-novych-clenu">Vítání nových členů<small class="permalink"><a href="#vitani-novych-clenu" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Uvědomil jsem si, že mě nebaví vítat nové členy, protože je to vysilující. Spolu s Danem jsme hned u každého pod jeho přivítáním rozebrali kariérní možnosti a ptali se na otázky, které měly druhou stranu dovést k nějakému posunu. Jenže to neškáluje a cítil jsem, že já na tom vyhořívám a Dan na tom prokrastinuje, ale asi by časem taky vyhoříval. Navíc se nikdo další velmi nezapojoval, protože si netroufl předvádět tam podobné rozbory jako my s Danem.</p>
+<p>Přijde mi, že nemůžeme každému příchozímu hned rozebrat kariéru. Není to v našich silách a vlastně mi ani nedává smysl dávat každému, kdo zrovna nakoukne do klubu a má dva týdny zdarma, plný servis kariérového poradenství. Zároveň nechceme, aby vítání ztratilo lidský rozměr.</p>
+<p>Budeme se tedy s Danem snažit vítat „povrchněji“. Uvidíme, jak nám to půjde, protože nejen Dana, ale i mě, samozřejmě svrbí vždy prsty a hned bychom radili. Budeme prostě hlavně <strong>vítat</strong> a méně <strong>radit</strong>, případně lidi směrovat do kanálů, které je mohou zajímat. Toto je navíc činnost, se kterou nám může snadno kdokoliv pomoci.</p>
+<p>Pohrávám si s myšlenkou, že by bot pro každého nového člena losoval někoho ze stávajících členů - např. těch, kdo jsou v klubu už rok a déle a vědí, jak to tam chodí, a poprosil ho, aby se zapojil a napsal nově příchozímu třeba i jen jednu, klidně krátkou, ale hezkou lidskou větu. Vlastně skoro takový lehký <em>buddy</em> program.</p>
+<p>Lidé se pak sami mohou na cokoliv zeptat v příslušných kanálech, pokud chtějí. Donutí je to možná zformulovat obecnější dotaz a zároveň kanály čte víc lidí, takže se rozproudí diskuze, kde k tomu může něco říct víc členů.</p>
+<p>Píšu to tu jako hotovou věc, ale reálně mi trvalo třeba týden, než jsem si toto řešení v hlavě ujasnil. Probíral jsem to hodně s Danem, probíral jsem to s kamarádem na pivu, myslel jsem na to ve sprše, prostě si to vzalo hodně přemítání a ujasňování. Nakonec jsem to navrhl členům a ti mi stvrdili, že to je dobrý směr.</p>
+<h2 id="dva-tipy-pro-nove-cleny">Dva tipy pro nové členy<small class="permalink"><a href="#dva-tipy-pro-nove-cleny" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Konečně se mi povedlo pohnout i s dalšími tipy pro nové členy a dopsal jsem tip, který vysvětluje Discord role v klubu. Potom jsem začal psát tip, který se zabývá tím, jak mají lidi v klubu komunikovat a kam mají co psát, ale ten mě přivedl na myšlenku, že ještě před ním by měl jít tip o pravidlech chování a respektujícím a podporujícím prostředí v klubu. Takže ten jsem pak psal většinu dneška.</p>
+<h2 id="pulmaraton">Půlmaraton<small class="permalink"><a href="#pulmaraton" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Před několika měsíci mě kamarádi vyhecovali, abych se přihlásil na Půlmaraton Moravským krasem, který se běžel 28.9. v Blansku. O víkendu jsem si teda šel zaběhat a natáhl jsem to na 20 km, abych tušil, jestli na půlmaratonu teda spíš umřu, nebo spíš ne.</p>
+<p>Pak jsem sjel do Blanska, kam jezdí přímý vlak z Prahy, setkal se s kamarády, zaběhli jsme to, večer dali v Brně pivko, přespal jsem u kamaráda a odjel zpátky do Prahy. Autobusem, protože ten je teď bohužel výrazně méně zoufalý, než výlukový vlak přes Vysočinu. Autobusem jsem nejel hodně dlouho, všude jezdím vlakem, takže mě fascinovalo, jak tam sedíme jako sardinky a jak ta věc může jezdit i doleva nebo doprava a předjíždět jiné hýbající se věci.</p>
+<p>Závod mi sedl. Cítil jsem se strašně fajn, vtipkoval jsem se spoluběžci i s fanoušky podél trati, celou dobu se mi běželo dobře a cítil jsem se dobře. Bylo to na hranici mých sil, ale strašně jsem si to užil a v závěru jsem si ještě i zasprintoval. Neoficiální čas naměřený Stravou mám 1:49:16, délka byla 20.43 km, tempo 5:21 na km.</p>
+<h2 id="volby">Volby<small class="permalink"><a href="#volby" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Proběhly volby. Já sice kandidoval, ale záměrně na nevolitelném místě, pouze jsem chtěl Zelené na Praze 3 svou kandidaturou podpořit. Celkem jsem dostal 1.237 hlasů. Shrnutí voleb za sebe jsem <a href="https://www.facebook.com/honzajavorek/posts/pfbid02EbxJML2KR964jVYznvFcwdWqp779TsWWkgLozn65pz8Jaudh7FxM6RDLkcUnt13yl">napsal na Facebook</a>, zde kopie:</p>
+<blockquote>
+<p>Tak, a je to. Jsem rád, že mnou podporovaní <a href="https://praha3.zeleni.cz/">Zelení Praha 3</a> zůstávají na radnici a snad to dopadne dobře i se skládáním progresivní koalice.</p>
+<p>Vyzkoušel jsem si, jaké to je podpořit veřejně nějakou politickou stranu, jaké to je být na její kandidátce, jaké to je dostat od nich tričko a stát s nimi na ulici a bavit se s voliči.</p>
+<p>Překvapilo mě, že dění v městské části sleduji zjevně natolik, že jsem lidem byl schopen v pohodě říct, kde se co plánuje, kde bude jaká stavba, nebo že existuje <a href="https://www.cistatrojka.cz/">Čistá Trojka</a>, <a href="https://www.praha3.cz/projekty/antigraffiti-program">Antigrafitti program</a>, apod. Přitom jsem obyčejný občan a jen čtu sociální sítě, kam se tyhle věci dávají. Lidi, zajímejte se o svoje okolí! 🙂 Sledujte aspoň profily své městské části, jako je <a href="https://www.facebook.com/praha3.cz/">Praha 3</a>. Možná se budete méně divit, možná se o spoustě věcí dovíte mnohem dřív, než vám vyrostou za domem, možná k tomu budete moci i něco říct.</p>
+<p>Teď si snad dám od politiky zase chvíli klid. Volby přímo v místě, kde žiju, a které na další 4 roky ovlivňují, jak se nám tu bude bydlet, chodit po ulici, hrát na pískovišti, apod., pro mě byly nakonec hrozné nervy. Možná mi na výsledku záleželo až příliš, ačkoliv mě osobně o nic nešlo.</p>
+<p>Sice budou brzo volby prezidentské, ale ty jsou mi naštěstí dostatečně jedno a tak snad nebude problém si je co nejvíc vyblokovat a věnovat se teď zas víc tomu, co se děje v mojem podnikání, co aktuálně frčí na pískovištích a kdo vítězí na okruzích Formule 1.</p>
+</blockquote>
+<p>Pokud vím, koalice na Praze 3 ani na velké Praze nejsou zatím dojednány, takže výsledky voleb jsou sice známy, ale kdo bude vládnout, to jisté zatím vůbec není. Volby jsem sledoval s velkým napětím a nemohl jsem na to vůbec přestat přemýšlet. Stále jsem něco psal do sousedských aj. skupin na Facebooku, kde to taky různě vřelo, až jsem si v jeden moment musel sociální sítě vyloženě zablokovat, abych vůbec něco udělal.</p>
+<p>Po volbách jsem měl plnou hlavu myšlenek o tom, co se dalo udělat jinak nebo nad čím se zamyslet, včetně teorií, proč jaká místní strana dostala kolik hlasů. To jsem nakonec všechno napsal do polointerní skupiny pro příznivce Zelených na Praze 3 a tím jsem téma na chvíli ve své hlavě uzavřel a uložil k ledu, přesně jak jsem napsal do toho statusu na Facebooku. Zkusím si teď dát od politiky trochu detox.</p>
+<h2 id="chyby-ktere-neumim-vyresit">Chyby, které neumím vyřešit<small class="permalink"><a href="#chyby-ktere-neumim-vyresit" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Z ničeho nic mi začalo <code>gulp-purgecss</code> vyhazovat toto:</p>
+<pre class="highlight"><code><span></span><code>[18:26:01] 'minifyCSS' errored after 333 ms
+[18:26:01] Error in plugin "gulp-purgecss"
+Message:
+    Cannot read properties of undefined (reading 'hasOwnProperty')
+Details:
+    domainEmitter: [object Object]
+</code></code></pre>
+
+<p>Nepřišel jsem na to, jak to debugovat. Jak mám udělat, aby se vypsala celá stacktrace. Taky se to děje jen když to mám lokálně ve <em>watch</em> módu a ne při jednorázovém buildu nebo na produkci. Vzdal jsem to a minifikaci CSS jsem z <em>watch</em> módu zatím vyhodil.</p>
+<p>Další věc, chodí mi nějaké chyby kvůli emailům. Robot posílá inzerentům každé pondělí informace o inzerátu. Používá k tomu SMTP mého osobního mailu na Gmailu, <code>jan.javorek@gmail.com</code>. Do kopie dává <code>honza@junior.guru</code>, což je ale jen <a href="https://improvmx.com/">ImprovMX</a> alias pro tentýž Gmail. Aby mi ty maily taky přišly. Inzerentům to přijde, ale mě se to vrací s chybama:</p>
+<pre class="highlight"><code><span></span><code>There was a problem delivering your message to honza@junior.guru. See the technical details below, or try resending in a few minutes. From jan.javorek@gmail.com to honza@junior.guru:
+
+550 5.7.1 Message considered as SPAM (Score of 5.0/5 with DKIMWL_WL_MED, DKIM_SIGNED, DKIM_VALID, HTML_IMAGE_ONLY_24, HTML_MESSAGE, HTML_MIME_NO_HTML_TAG, MIME_HEADER_CTYPE_ONLY, MIME_HTML_ONLY, RCVD_IN_DNSWL_BLOCKED, SPF_PASS, T_REMOTE_IMAGE) - ImprovMX
+</code></code></pre>
+
+<p>Emailům nerozumím, takže nevím, co dělám špatně a co můžu opravit. ImprovMX si platím, nemám jejich free verzi.</p>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<ul>
+<li>Přidal jsem do hlavního menu na JG odkaz na Podcast jako na čtvrtou hlavní věc, kterou JG produkuje (tři další jsou Příručka, Práce, Klub). Dalo trochu práci to odladit v novém i starém designu a na malých obrazovkách.</li>
+<li>Publikoval jsem stránku <a href="https://junior.guru/handbook/mental-health/">Psychika na cestě do IT</a>, na které spolu s <a href="https://www.nelaprovazi.cz/">Nelou</a> děláme dlouhé měsíce a teď se nám ji konečně povedlo dodělat a dát ven. Zatím kolem toho nebudu dělat humbuk, takže jen větička tady, promo uděláme později.</li>
+<li>Upravil jsem skript, který mi generuje šablonu pro týdenní poznámky. Nyní do ní přidává odkazy na aktuální nabídky práce inzerované na junior.guru.</li>
+<li>Upgradoval jsem MkDocs a zjistil jsem, že věc, na kterou jsem měl plugin, <a href="https://github.com/mkdocs/mkdocs/pull/2978">dali přímo do jádra projektu</a>. Super! Plugin <a href="https://github.com/aklajnert/mkdocs-simple-hooks">mkdocs-simple-hooks</a> jsem odinstaloval a přešel na nativní řešení.</li>
+<li>V autobuse z Brna mě napadlo, že bych si mohl udělat skript, který přes RSS a youtube-dl stáhne díly jednoho video pořadu, kde jsou hlavně rozhovory a obraz tam není podstatný, vyseká jen zvuk a ten naservíruje přes podcastové RSS, které si přidám do <a href="https://overcast.fm/">Overcastu</a>. Díky tomu to budu moci poslouchat offline, v aplikaci, která mi vyhovuje a rychlostí, která mi vyhovuje (aktuálně 2,5x). Trvalo mi to trochu déle, než jsem chtěl, ale i tak jsem to měl hotové za pár hodin a sám se divím, ale funguje to. Akorát ty zvukové soubory hostuju na GitHub Pages a to asi není úplně ideální. A nejspíš to celé ani není legální, ale dělám to výhradně pro svou osobní potřebu, takže vám tu ani neřeknu, kde to celé je a co to je za pořad.</li>
+<li>Předal jsem jedné člence klubu a shodou okolností teď i spoluorganizátorce pražského Pyva projekt Telegram bota, který lidem oznamuje, že bude Pyvo. Měl jsem ho <a href="https://github.com/honzajavorek/pyvo_bot">napsaný v Haskellu</a> (viz <a href="https://honzajavorek.cz/blog/courting-haskell">článek o Haskellu tady na blogu</a>), neudržoval jsem ho a nedávno jsem ho dokonce vypnul. <a href="https://www.linkedin.com/in/mia-bajic/">Mia</a> ho chce přepsat do Pythonu v rámci <a href="https://hacktoberfest.com/">Hacktoberfestu</a>. Udělal jsem jí na to <a href="https://github.com/pyvec/pyvo-bot">repo na Pyvci</a>.</li>
+<li>Byl jsem na <a href="https://deepnote.com/">Deepnote</a> párty a potkal jsem tam hodně zajímavých lidí, nových i „starých“. Netlačil jsem na pilu, takže z toho vyloženě nejsou nějaké <em>dealy</em> s firmama, ale minimálně jsem si udělal některé důležité kontakty. Taky jsme tam nejspíš s kamarádkou upekli jeden z příštích dílů podcastu.</li>
+<li>Dověděl jsem se, že existuje nějaká profesní síť <a href="https://www.polywork.com/">Polywork</a>, jakože „LinkedIn, ale lepší“. Zatím jsem neměl čas to vůbec prozkoumat.</li>
+<li>Napsala mi docentka z University of Economics in Bratislava, že chce používat materiály na junior.guru ve výuce.</li>
+<li>Kamarád <a href="https://twitter.com/muheuenga/">Muheue</a>, pythonista z Namibie, pojede do Prahy na Ubuntu Summit a tak jsme řešili, jestli a jak se uvidíme.</li>
+<li>Vyrazili jsme se ženou na nákupy. Z lovu jsem si přinesl ponožky a bundu.</li>
+<li>Propagoval jsem nový díl podcastu: <a href="https://junior.guru/podcast/">#8 Michal Matuška (SUPERKODERS) o leadershipu a juniorech</a></li>
+<li>Sháněl jsem přednášející do klubu a domlouval termíny. Rozjel jsem takhle asi pět konverzací. V klubu se začaly šířit memy o tom, jak špatně kdo sedí, tak jsem zkusil najít někoho, kdo rozumí ergonomii. Expert, kterého jsem oslovil, nemá bohužel kapacitu, ale třeba najdu někoho jiného.</li>
+<li>Uspořádali jsme v <a href="https://www.kafeatrium.cz/">Atriu</a> se ženou společnou narozeninovou oslavu pro pár přátel. Myslel jsem, že u lidí, kteří mají děti, se musí počítat s tím, že nepřijdou, protože se z hodiny na hodinu může stát cokoliv. Nakonec, i když to mělo být tak půl na půl, skoro všichni lidi s dětmi dorazili a skoro nikdo bez dětí nedorazil. Takže z toho byla odpolední školka párty, ale užili jsme si to.</li>
+<li>Namontoval jsem žárovky do koupelny.</li>
+<li>Povedlo se mi na Facebook Marketu prodat monitor i se stojanem. Hurá! Několik hodin mi zabralo to celé připravit, natočit video že funguje, najít všechny šroubky.</li>
+<li>Potřebuji teď spát v místnosti, kde je celkem hluk a nemáme tam zatemňovací závěsy. Zjistil jsem, že se mi spí mnohem lépe, když si vezmu takovou tu škrabošku na oči z letadla a špunty do uší.</li>
+<li>Odpovídání v klubu, maily, a tak dále. Udělal jsem v klubu review jednoho celého juniorního projektu.</li>
+<li>Během 11 dní od 20.9. do 30.9. jsem naběhal 41 km. Celkem jsem se hýbal 5 hodin a zdolal při tom 41 kilometrů.</li>
+<li>Aktuální finanční výsledky, návštěvnost a další čísla k JG <a href="https://junior.guru/open/">mám přímo na webu</a>. Nabídky práce pro juniory teď inzerují: <a href="https://junior.guru/jobs/356c084cae33eaaffec2ab9c79fb583f7c1271f730acc612fa2dbfb8/">Credo Ventures</a>, <a href="https://junior.guru/jobs/2b1ab731247b03b291bd7c4a0177e052df5ae4a5937144b4f2ce9d11/">Monitora media, s.r.o.</a>, <a href="https://junior.guru/jobs/dbbb7bf406b3c33aeba36cae817919d44bfb368a08fb1b4899dba130/">Processand</a>, <a href="https://junior.guru/jobs/34fa3ec07892dd3ff64458e2ccbf12578e00860483427e9e7c4847bc/">Red Hat</a></li>
+</ul>
+<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Tři věci, které bych chtěl zvládnout udělat příště:</p>
+<ol>
+<li>Onboarding nových členů: Předělat mazání kanálů, doplnit další tipy.</li>
+<li>Propagovat <a href="https://junior.guru/handbook/mental-health/">novou kapitolu v příručce</a> a <a href="https://streetofcode.sk/podcast/juniorguru/">epizodu podcastu Street of Code</a>, kde vystupuju.</li>
+<li>Vymyslet klubovou soutěž, ve které rozdám knihu <a href="https://www.vzhurudolu.cz/css-layout/">CSS: moderní layout</a> od Martina Michálka.</li>
+</ol>
+<p><strong>Bonus:</strong> Dát si klid od politiky a od akcí. Zavřít se doma v teplákách, pít čaj, programovat. Všeho teď bylo nějak moc.</p>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
+<ul>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fovercast.fm%2F%2BWv2TLXxN0&amp;h=7af2b62a1f6dac13b5c43b26f3ac2b95de714d3eb1e06640f52b39f9facc8faf">Kopeček: Zeman byl dítě z rozvrácené rodiny, Dagmar zachránila Havlovi život, ale škodila jeho pověsti - Prostor X podcast</a><br>Zajímavý pokec o českých prezidentech.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwww.voxpot.cz%2Fkameny-klacky-a-konflikt-nejlidnatejsich-zemi-sveta%2F&amp;h=3eaf2079215d5aa36adff41e8d45b57a6eacd41c042fb63c647b1fcdc539e041">Kameny, klacky a desítky obětí: Rozhoří se doutnající konflikt mezi Čínou a Indií?</a><br>Vůbec jsem netušil, že Indie má tolik sporných území se svými sousedy. Neshody s Pákistánem ohledně Kašmíru jsou známé, ale je toho mnohem víc.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwww.jwz.org%2Fblog%2F2022%2F09%2Fthe-kids-have-killed-the-reply-gif%2F&amp;h=df114eca588628a0247212928250cb4b8ab2605e9f7c154967da87fbfcc68a14">The kids have killed the reply GIF</a><br>Gify vyšly z módy.</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fwww.novinky.cz%2Fclanek%2Fkultura-salon-stanislav-biler-brno-hrbitov-verejneho-prostoru-literarni-reportaz-z-cyklu-ceske-bolesti-40409035&amp;h=1c786a2c4408d65e71e0d9ba311ba46479cf180227715d7804b7a277aafd5729"></a><br>Je to spíš rant jak z nějakého postu na FB, ale pár vět by se tam dalo tesat: „Snižte svou perspektivu do výše očí dětí a náhle přestanete přes hradby aut vidět. Svět zmizí a veškerý výhled zablokují kapoty. Ze světa se stane obludné místo. Něco jako Brno.“ Nebo: „Jsou to hlavně auta, všechna ta auta, co činí veřejný prostor českých měst a maloměst nepoužitelným. Veřejným se stává jen nárazově či omylem. Když se někde něco takzvaně koná. Pivní slavnosti, jarmark, předvolební či protestní setkání. Mě ale zajímá jiný veřejný prostor. Prostor, ve kterém chcete být, protože je příjemný, přestože se v něm vůbec nic neděje. Třeba chodník před domem.“</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Ffinmag.penize.cz%2Fpolitika%2F436863-prazsky-okruh-vrchol-autosocialismu-silnice-kolem-mest-vubec-nic-neresi&amp;h=2d8d67d929771c86765163d8f54c83aa9b1818a2a78420636e6a9025126f2f89">Pražský okruh, vrchol autosocialismu. Silnice kolem měst vůbec nic neřeší</a><br>Bednár cupuje okruh. „Řada měst, která v minulosti okruhy stavěla, je nakonec raději nedokončila, částečně zbourala, obestavěla novými domy, zakopala je velmi draze pod zem nebo po nich poslala tramvaj.“</li>
+<li><a href="https://getpocket.com/redirect?&amp;url=https%3A%2F%2Fovercast.fm%2F%2BWv2SuRpn8&amp;h=01f03c4a1f1de28da4de39afae6e3ad228c14b7df5247d7375f515df55e4e44c">Byla to prohra, ale stálo to za to, říká po návratu z USA exposlanec Farský. Co se naučil a jak to využije Česko? - Prostor X podcast</a><br>Ukecaný, ale zajímavý rozhovor.</li>
+</ul>
+<p><small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small></p></div></div></div></div>
+  </div>
+
+  <footer class="article-footer">
+    <div id="author" class="author">
+      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
+      <address>
+          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
+          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
+          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
+          pomáhá budovat českou komunitu kolem jazyka
+          <a href="https://python.cz/">Python</a>.
+      </address>
+      <p class="button button-donate">
+        <a href="https://github.com/sponsors/honzajavorek/">
+          <i class="fa fa-github"></i> GitHub Sponsors
+        </a>
+        <a href="https://www.patreon.com/honzajavorek">
+          <i class="fa fa-patreon"></i> Patreon
+        </a>
+    </p>
+    </div>
+    <p class="button">
+        <a href="https://honzajavorek.cz/blog/">
+          <i class="fa fa-list-ul"></i> Archiv článků
+        </a>
+    </p>
+  </footer>
+</article>
+      </div>
+      <footer class="footer">
+        <address>
+          © Copyright 2007—2022
+          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+
+      <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+  </body>
+</html>
