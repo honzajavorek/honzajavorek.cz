@@ -9,14 +9,14 @@ Utekl zase nějaký ten týden (20.9. — 30.9.) a tak [stejně jako minule]({fi
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
-Byl nějaký ten státní svátek, volby a tak různě, takže píšu až po dvou týdnech. Aby se to dalo číst, zkusím to tentokrát fakt stručně a dávám si na psaní maximálně hodinu.
+Byl nějaký ten státní svátek, volby a tak různě, takže píšu až po dvou týdnech.
 
 
 ## Chyba s vytvářením kategorií na Discordu
 
 Jak jsem psal v některých předchozích poznámkách, jedna kategorie na Discordu může mít maximálně 50 kanálů a tak musím kanály s tipy pro nové členy v klubu rozdělovat do víc kategorií. Způsob rozdělování měl ale chyby a padalo mi to.
 
-Zkusil jsem to naprogramovat jinak, ale po celém dni předělávání jsem došel opět k řešení, které mělo nějaké vady a nefungovalo dobře. Protože jede práce na tipech paralelně a dělá rovnou změny na Discordu, nedařilo se mi ani najít jednoduchý způsob, jak algoritmus izolovat od I/O, abych ho mohl nějak neprůstřelně otestovat.
+Zkusil jsem to naprogramovat jinak, ale po celém dni předělávání jsem došel opět k řešení, které mělo nějaké vady a nefungovalo dobře. Protože se tipy posílají paralelně a dělá to rovnou změny na Discordu, nedařilo se mi ani najít jednoduchý způsob, jak algoritmus izolovat od I/O, abych ho mohl nějak neprůstřelně otestovat.
 
 Nakonec jsem do toho prostě bušil tak dlouho, až jsem vynalezl něco, co vypadá, že funguje.
 
@@ -43,7 +43,7 @@ Konečně se mi povedlo pohnout i s dalšími tipy pro nové členy a dopsal jse
 
 ## Půlmaraton
 
-Před několika měsíci mě kamarádi vyhecovali, abych se přihlásil na Půlmaraton Moravským krasem, který se běžel 28.9. v Blansku. O víkendu jsem si teda šel zaběhat a natáhl jsem to na 20 km, abych tušil, jestli na půlmaratonu teda spíš umřu, nebo spíš ne.
+Před několika měsíci mě kamarádi vyhecovali, abych se přihlásil na Půlmaraton Moravským krasem, který se běžel 28.9. v Blansku. O víkendu jsem si teda šel zaběhat a natáhl jsem to na 20 km, abych tušil, jestli na půlmaratonu spíš umřu, nebo spíš ne.
 
 Pak jsem sjel do Blanska, kam jezdí přímý vlak z Prahy, setkal se s kamarády, zaběhli jsme to, večer dali v Brně pivko, přespal jsem u kamaráda a odjel zpátky do Prahy. Autobusem, protože ten je teď bohužel výrazně méně zoufalý, než výlukový vlak přes Vysočinu. Autobusem jsem nejel hodně dlouho, všude jezdím vlakem, takže mě fascinovalo, jak tam sedíme jako sardinky a jak ta věc může jezdit i doleva nebo doprava a předjíždět jiné hýbající se věci.
 
@@ -66,7 +66,7 @@ Proběhly volby. Já sice kandidoval, ale záměrně na nevolitelném místě, p
 
 Pokud vím, koalice na Praze 3 ani na velké Praze nejsou zatím dojednány, takže výsledky voleb jsou sice známy, ale kdo bude vládnout, to jisté zatím vůbec není. Volby jsem sledoval s velkým napětím a nemohl jsem na to vůbec přestat přemýšlet. Stále jsem něco psal do sousedských aj. skupin na Facebooku, kde to taky různě vřelo, až jsem si v jeden moment musel sociální sítě vyloženě zablokovat, abych vůbec něco udělal.
 
-Po volbách jsem měl plnou hlavu myšlenek o tom, co se dalo udělat jinak nebo nad čím se zamyslet, včetně teorií, proč jaká místní strana dostala kolik hlasů. To jsem nakonec všechno napsal do polointerní skupiny pro příznivce Zelených na Praze 3 a tím jsem téma na chvíli ve své hlavě uzavřel a uložil k ledu, přesně jak jsem napsal do toho statusu na Facebooku. Zkusím si teď dát od politiky trochu detox.
+Po volbách jsem měl plnou hlavu myšlenek o tom, co se dalo udělat jinak nebo nad čím se zamyslet, včetně teorií, proč jaká místní strana dostala kolik hlasů. To jsem nakonec všechno napsal do napůl interní skupiny pro příznivce Zelených na Praze 3 a tím jsem téma na chvíli ve své hlavě uzavřel a uložil k ledu, přesně jak jsem napsal do toho statusu na Facebooku. Zkusím si teď dát od politiky trochu detox.
 
 
 ## Chyby, které neumím vyřešit
@@ -87,12 +87,17 @@ Nepřišel jsem na to, jak to debugovat. Jak mám udělat, aby se vypsala celá 
 Další věc, chodí mi nějaké chyby kvůli emailům. Robot posílá inzerentům každé pondělí informace o inzerátu. Používá k tomu SMTP mého osobního mailu na Gmailu, `jan.javorek@gmail.com`. Do kopie dává `honza@junior.guru`, což je ale jen [ImprovMX](https://improvmx.com/) alias pro tentýž Gmail. Aby mi ty maily taky přišly. Inzerentům to přijde, ale mě se to vrací s chybama:
 
 ```
-There was a problem delivering your message to honza@junior.guru. See the technical details below, or try resending in a few minutes. From jan.javorek@gmail.com to honza@junior.guru:
+There was a problem delivering your message to honza@junior.guru.
+See the technical details below, or try resending in a few minutes.
+From jan.javorek@gmail.com to honza@junior.guru:
 
-550 5.7.1 Message considered as SPAM (Score of 5.0/5 with DKIMWL_WL_MED, DKIM_SIGNED, DKIM_VALID, HTML_IMAGE_ONLY_24, HTML_MESSAGE, HTML_MIME_NO_HTML_TAG, MIME_HEADER_CTYPE_ONLY, MIME_HTML_ONLY, RCVD_IN_DNSWL_BLOCKED, SPF_PASS, T_REMOTE_IMAGE) - ImprovMX
+550 5.7.1 Message considered as SPAM (Score of 5.0/5 with DKIMWL_WL_MED,
+DKIM_SIGNED, DKIM_VALID, HTML_IMAGE_ONLY_24, HTML_MESSAGE,
+HTML_MIME_NO_HTML_TAG, MIME_HEADER_CTYPE_ONLY, MIME_HTML_ONLY,
+RCVD_IN_DNSWL_BLOCKED, SPF_PASS, T_REMOTE_IMAGE) - ImprovMX
 ```
 
-Emailům nerozumím, takže nevím, co dělám špatně a co můžu opravit. ImprovMX si platím, nemám jejich free verzi.
+Nastavení emailů nerozumím, takže nevím, co dělám špatně a co můžu opravit. ImprovMX si platím, nemám jejich free verzi.
 
 ## Další poznámky
 
@@ -101,10 +106,10 @@ Emailům nerozumím, takže nevím, co dělám špatně a co můžu opravit. Imp
 - Upravil jsem skript, který mi generuje šablonu pro týdenní poznámky. Nyní do ní přidává odkazy na aktuální nabídky práce inzerované na junior.guru.
 - Upgradoval jsem MkDocs a zjistil jsem, že věc, na kterou jsem měl plugin, [dali přímo do jádra projektu](https://github.com/mkdocs/mkdocs/pull/2978). Super! Plugin [mkdocs-simple-hooks](https://github.com/aklajnert/mkdocs-simple-hooks) jsem odinstaloval a přešel na nativní řešení.
 - V autobuse z Brna mě napadlo, že bych si mohl udělat skript, který přes RSS a youtube-dl stáhne díly jednoho video pořadu, kde jsou hlavně rozhovory a obraz tam není podstatný, vyseká jen zvuk a ten naservíruje přes podcastové RSS, které si přidám do [Overcastu](https://overcast.fm/). Díky tomu to budu moci poslouchat offline, v aplikaci, která mi vyhovuje a rychlostí, která mi vyhovuje (aktuálně 2,5x). Trvalo mi to trochu déle, než jsem chtěl, ale i tak jsem to měl hotové za pár hodin a sám se divím, ale funguje to. Akorát ty zvukové soubory hostuju na GitHub Pages a to asi není úplně ideální. A nejspíš to celé ani není legální, ale dělám to výhradně pro svou osobní potřebu, takže vám tu ani neřeknu, kde to celé je a co to je za pořad.
-- Předal jsem jedné člence klubu a shodou okolností teď i spoluorganizátorce pražského Pyva projekt Telegram bota, který lidem oznamuje, že bude Pyvo. Měl jsem ho [napsaný v Haskellu](https://github.com/honzajavorek/pyvo_bot) (viz [článek o Haskellu tady na blogu]({filename}/2020-01-14_courting-haskell.md)), neudržoval jsem ho a nedávno jsem ho dokonce vypnul. [Mia](https://www.linkedin.com/in/mia-bajic/) ho chce přepsat do Pythonu v rámci [Hacktoberfestu](https://hacktoberfest.com/). Udělal jsem jí na to [repo na Pyvci](https://github.com/pyvec/pyvo-bot).
+- Předal jsem člence klubu a shodou okolností teď i spoluorganizátorce pražského Pyva projekt Telegram bota, který lidem oznamuje, že bude Pyvo. Měl jsem ho [napsaný v Haskellu](https://github.com/honzajavorek/pyvo_bot) (viz [článek o Haskellu tady na blogu]({filename}/2020-01-14_courting-haskell.md)), neudržoval jsem ho a nedávno jsem ho dokonce vypnul. [Mia](https://www.linkedin.com/in/mia-bajic/) ho chce přepsat do Pythonu v rámci [Hacktoberfestu](https://hacktoberfest.com/). Udělal jsem jí na to [repo na Pyvci](https://github.com/pyvec/pyvo-bot).
 - Byl jsem na [Deepnote](https://deepnote.com/) párty a potkal jsem tam hodně zajímavých lidí, nových i „starých“. Netlačil jsem na pilu, takže z toho vyloženě nejsou nějaké _dealy_ s firmama, ale minimálně jsem si udělal některé důležité kontakty. Taky jsme tam nejspíš s kamarádkou upekli jeden z příštích dílů podcastu.
 - Dověděl jsem se, že existuje nějaká profesní síť [Polywork](https://www.polywork.com/), jakože „LinkedIn, ale lepší“. Zatím jsem neměl čas to vůbec prozkoumat.
-- Napsala mi docentka z University of Economics in Bratislava, že chce používat materiály na junior.guru ve výuce.
+- Napsala mi docentka z Ekonomické univerzity v Bratislavě, že chce používat materiály na junior.guru ve výuce.
 - Kamarád [Muheue](https://twitter.com/muheuenga/), pythonista z Namibie, pojede do Prahy na Ubuntu Summit a tak jsme řešili, jestli a jak se uvidíme.
 - Vyrazili jsme se ženou na nákupy. Z lovu jsem si přinesl ponožky a bundu.
 - Propagoval jsem nový díl podcastu: [#8 Michal Matuška (SUPERKODERS) o leadershipu a juniorech](https://junior.guru/podcast/)
@@ -141,7 +146,7 @@ Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocket
 - [Kopeček: Zeman byl dítě z rozvrácené rodiny, Dagmar zachránila Havlovi život, ale škodila jeho pověsti - Prostor X podcast](https://getpocket.com/redirect?&url=https%3A%2F%2Fovercast.fm%2F%2BWv2TLXxN0&h=7af2b62a1f6dac13b5c43b26f3ac2b95de714d3eb1e06640f52b39f9facc8faf)<br>Zajímavý pokec o českých prezidentech.
 - [Kameny, klacky a desítky obětí: Rozhoří se doutnající konflikt mezi Čínou a Indií?](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.voxpot.cz%2Fkameny-klacky-a-konflikt-nejlidnatejsich-zemi-sveta%2F&h=3eaf2079215d5aa36adff41e8d45b57a6eacd41c042fb63c647b1fcdc539e041)<br>Vůbec jsem netušil, že Indie má tolik sporných území se svými sousedy. Neshody s Pákistánem ohledně Kašmíru jsou známé, ale je toho mnohem víc.
 - [The kids have killed the reply GIF](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.jwz.org%2Fblog%2F2022%2F09%2Fthe-kids-have-killed-the-reply-gif%2F&h=df114eca588628a0247212928250cb4b8ab2605e9f7c154967da87fbfcc68a14)<br>Gify vyšly z módy.
-- [](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.novinky.cz%2Fclanek%2Fkultura-salon-stanislav-biler-brno-hrbitov-verejneho-prostoru-literarni-reportaz-z-cyklu-ceske-bolesti-40409035&h=1c786a2c4408d65e71e0d9ba311ba46479cf180227715d7804b7a277aafd5729)<br>Je to spíš rant jak z nějakého postu na FB, ale pár vět by se tam dalo tesat: „Snižte svou perspektivu do výše očí dětí a náhle přestanete přes hradby aut vidět. Svět zmizí a veškerý výhled zablokují kapoty. Ze světa se stane obludné místo. Něco jako Brno.“ Nebo: „Jsou to hlavně auta, všechna ta auta, co činí veřejný prostor českých měst a maloměst nepoužitelným. Veřejným se stává jen nárazově či omylem. Když se někde něco takzvaně koná. Pivní slavnosti, jarmark, předvolební či protestní setkání. Mě ale zajímá jiný veřejný prostor. Prostor, ve kterém chcete být, protože je příjemný, přestože se v něm vůbec nic neděje. Třeba chodník před domem.“
+- [Stanislav Biler: Brno, hřbitov veřejného prostoru. Literární reportáž z cyklu České bolesti](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.novinky.cz%2Fclanek%2Fkultura-salon-stanislav-biler-brno-hrbitov-verejneho-prostoru-literarni-reportaz-z-cyklu-ceske-bolesti-40409035&h=1c786a2c4408d65e71e0d9ba311ba46479cf180227715d7804b7a277aafd5729)<br>Je to spíš rant jak z nějakého postu na FB, ale pár vět by se tam dalo tesat: „Snižte svou perspektivu do výše očí dětí a náhle přestanete přes hradby aut vidět. Svět zmizí a veškerý výhled zablokují kapoty. Ze světa se stane obludné místo. Něco jako Brno.“ Nebo: „Jsou to hlavně auta, všechna ta auta, co činí veřejný prostor českých měst a maloměst nepoužitelným. Veřejným se stává jen nárazově či omylem. Když se někde něco takzvaně koná. Pivní slavnosti, jarmark, předvolební či protestní setkání. Mě ale zajímá jiný veřejný prostor. Prostor, ve kterém chcete být, protože je příjemný, přestože se v něm vůbec nic neděje. Třeba chodník před domem.“
 - [Pražský okruh, vrchol autosocialismu. Silnice kolem měst vůbec nic neřeší](https://getpocket.com/redirect?&url=https%3A%2F%2Ffinmag.penize.cz%2Fpolitika%2F436863-prazsky-okruh-vrchol-autosocialismu-silnice-kolem-mest-vubec-nic-neresi&h=2d8d67d929771c86765163d8f54c83aa9b1818a2a78420636e6a9025126f2f89)<br>Bednár cupuje okruh. „Řada měst, která v minulosti okruhy stavěla, je nakonec raději nedokončila, částečně zbourala, obestavěla novými domy, zakopala je velmi draze pod zem nebo po nich poslala tramvaj.“
 - [Byla to prohra, ale stálo to za to, říká po návratu z USA exposlanec Farský. Co se naučil a jak to využije Česko? - Prostor X podcast](https://getpocket.com/redirect?&url=https%3A%2F%2Fovercast.fm%2F%2BWv2SuRpn8&h=01f03c4a1f1de28da4de39afae6e3ad228c14b7df5247d7375f515df55e4e44c)<br>Ukecaný, ale zajímavý rozhovor.
 
