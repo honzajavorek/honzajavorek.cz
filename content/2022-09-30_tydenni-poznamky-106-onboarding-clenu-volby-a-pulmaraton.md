@@ -116,6 +116,7 @@ Nastavení emailů nerozumím, takže nevím, co dělám špatně a co můžu op
 - Sháněl jsem přednášející do klubu a domlouval termíny. Rozjel jsem takhle asi pět konverzací. V klubu se začaly šířit memy o tom, jak špatně kdo sedí, tak jsem zkusil najít někoho, kdo rozumí ergonomii. Expert, kterého jsem oslovil, nemá bohužel kapacitu, ale třeba najdu někoho jiného.
 - Uspořádali jsme v [Atriu](https://www.kafeatrium.cz/) se ženou společnou narozeninovou oslavu pro pár přátel. Myslel jsem, že u lidí, kteří mají děti, se musí počítat s tím, že nepřijdou, protože se z hodiny na hodinu může stát cokoliv. Nakonec, i když to mělo být tak půl na půl, skoro všichni lidi s dětmi dorazili a skoro nikdo bez dětí nedorazil. Takže z toho byla odpolední školka párty, ale užili jsme si to.
 - Namontoval jsem žárovky do koupelny.
+- Šel jsem na pivo s [Liborem Vaňkem](https://www.linkedin.com/in/liborvanekcz/) a kecali jsme o půlmaratonu a o JG.
 - Povedlo se mi na Facebook Marketu prodat monitor i se stojanem. Hurá! Několik hodin mi zabralo to celé připravit, natočit video že funguje, najít všechny šroubky.
 - Potřebuji teď spát v místnosti, kde je celkem hluk a nemáme tam zatemňovací závěsy. Zjistil jsem, že se mi spí mnohem lépe, když si vezmu takovou tu škrabošku na oči z letadla a špunty do uší.
 - Odpovídání v klubu, maily, a tak dále. Udělal jsem v klubu review jednoho celého juniorního projektu.
