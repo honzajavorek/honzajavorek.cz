@@ -18,7 +18,7 @@ Když se Pavel připojil, řekl mi, že pozval kolegyni, aby se připojila taky,
 
 Když jsme to vyřešili, zmáčkl jsem omylem ve stresu nahrávání místo streamování. Měl jsem tedy záznam, ale kdyby se připojilo více jak 25 lidí, bohužel by přednášku vidět nemohli. Také jsem tím spláchl asi půl hodiny příprav a přidělal si další půlhodinu nahrávání a upravování záznamu na YouTube po skončení přednášky.
 
-25 lidí nehrozilo, dorazilo jen pár lidí, což mě trochu mrzelo. Uvidím, jak se povede návštěvnost přednášek rozdmýchat v dalších týdnech. Vím, že si to hodně lidí pouští ze záznamu, ale i tak. Pavel si s tím dal práci, přednáška byla dobrá, jeho kolegyně Katka tam říkala hodně dobré věci, vlastně mi přišlo fajn, čekali na dotazy. Bohužel tohle prostě neovlivním, lidi na přednášky upozorňuji, řekl bych, až skoro nadměrně.
+25 lidí nehrozilo, dorazilo jen pár lidí, což mě trochu mrzelo. Uvidím, jak se povede návštěvnost přednášek rozdmýchat v dalších týdnech. Vím, že si to hodně lidí pouští ze záznamu, ale i tak. Pavel si s tím dal práci, přednáška byla dobrá, jeho kolegyně Katka tam říkala hodně dobré věci, celé to bylo fajn, čekali na dotazy. Bohužel tohle prostě neovlivním, lidi na přednášky upozorňuji, řekl bych, až skoro nadměrně.
 
 
 ## Práce na tipech pro nové členy
@@ -29,7 +29,7 @@ Napsal jsem dva tipy, jeden o tom, aby se lidi nebáli ptát na věci ve veřejn
 
 Jsem teď přesvědčený, že pokud chci, aby lidi víc psali veřejně, musím zapracovat na [psychological safety](https://en.wikipedia.org/wiki/Psychological_safety) v klubu a na institucionalizovaných příležitostech, kde půjde přispět i jednoduše a malinko.
 
-Náseledně jsem napsal ještě další dva tipy, jeden žádající lidi o feedback a druhý o placení v klubu. V tom prvním se ptám lidí na tři věci:
+Následně jsem napsal ještě další dva tipy, jeden žádající lidi o feedback a druhý o placení v klubu. V tom prvním se ptám lidí na tři věci:
 
 - Díky čemu nebo komu víš, že junior.guru existuje? Google? Doporučení? Sociální síť? Podcasty?
 - Co se ti tu líbí? Co tě příjemně překvapilo? Co si nejvíc užíváš?
@@ -38,6 +38,8 @@ Náseledně jsem napsal ještě další dva tipy, jeden žádající lidi o feed
 Tím se konečně dostávám k tomu, abych zjišťoval data, která potřebuji pro překopání svého marketingu. Zatím jich moc neodpovědělo. Mám podezření, že vlastně lidi ty tipy přestali trochu číst. Je to ale pouze pocit, možná kdybych měl nějaká čísla, tak to vidím jinak. Časem se musím zamyslet, jestli neposílat víc kratších tipů než méně delších, nebo jestli lidem tipy nepřipomenout, pokud o ně třeba týden nejeví zájem, protože je mohou ignorovat i omylem, nejen záměrně.
 
 Upravil jsem _allowed mentions_ v tipech tak, aby tam byli všichni, koho tipy označují (abych nějak řešil [problém popsaný tady](https://github.com/discord/discord-api-docs/issues/2126)), kromě moderátorů (aby nedostávali zbytečné notifikace). Nevím, jestli to pomohlo a v tipech se budou označení lidi zobrazovat jménem a ne číslem, nicméně víc už pro to udělat nemůžu.
+
+Pozitivní je, že jsem vlastně tento týden dokázal, i přes veškerou prokrastinaci a další úkoly, sepsat čtyři nové tipy.
 
 
 ## Šťourání do infrastruktury
@@ -50,7 +52,7 @@ Koukáním na buildy jsem zjistil, že se to asi děje každé pondělí. Děje 
 
 > You should not use traditional backup tools for SQLite (or any other database, for that matter), since they do not take into account the DB state information that is critical to ensure an uncorrupted database. Especially, copying the DB files in the middle of an insert transaction is a recipe for disaster...
 
-Přidal jsem několik debugovacích výpisů a teď asi nezbývá, než čekat na pondělí a celkově to víc pozorovat. Použil jsem [sqlite-utils](https://sqlite-utils.datasette.io/) od Simona, abych nad databázi pustil nějaké příkazy mimo svůj kód a abych ji optimalizoval před tím, než se bude zálohovat.
+Přidal jsem několik debugovacích výpisů a teď asi nezbývá, než čekat na pondělí a celkově to víc pozorovat. Použil jsem [sqlite-utils](https://sqlite-utils.datasette.io/) od svého oblíbence [Simona Willisona](https://simonwillison.net/), abych nad databází pustil nějaké příkazy mimo svůj kód a abych ji optimalizoval před tím, než se bude zálohovat.
 
 Při koukání na buildy jsem si všiml, že mi samo CircleCI radí, [abych si zvýšil _resourceclass_](https://circleci.com/docs/configuration-reference/#resourceclass), což jsem neznal. Zjednodušeně je to způsob, jak CircleCI říct, že má na určitý úkol pustit mašinu těžšího kalibru. Díky silnějšímu CPU a více paměti se pak věc stihne rychleji. Tak jsem to tam do několika míst dal. V souvislosti s tím jsem si všiml, jaké vymakané grafy teďka na CircleCI jsou, fakt dobrý:
 
@@ -77,7 +79,7 @@ Cílem změn bude, abych mohl:
 
 - Pustit například `jg sync podcast` a ono by mě to upozornilo, že tahle věc závisí na `jg sync club-content` a jestli náhodou nechci spustit nejdřív to, nebo ať si `podcast` teda na vlastní nebezpečí spustím bez toho, pokud si myslím, že data z `club-content` mám dost čerstvá. Toto je něco, co teď JG neumí a při vývoji mi to háže klacky pod nohy doslova každý den.
 - Pustit například `jg sync events --flush-images`, aby se přegenerovaly všechny plakátky k akcím v klubu. Tohle teď JG taky neumí a patlám to přes nějaké environment proměnné.
-- Automaticky paralelizovat i při výoji i na CI stahování věcí, které na sobě nezávisí, ale zároveň aby se dodržovalo pořadí věcí, které na sobě závisí. To znamená, že možná budu mít i separátní databáze pro každý skript a pak je budu nějak spojovat, ale kdo ví.
+- Automaticky paralelizovat při výoji i na CI stahování věcí, které na sobě nezávisí, ale zároveň aby se dodržovalo pořadí věcí, které na sobě závisí. To znamená, že možná budu mít i separátní databáze pro každý skript a pak je budu nějak spojovat, ale kdo ví.
 - Využít nějak [vestavěné paralelizace na CircleCI](https://circleci.com/blog/a-guide-to-test-splitting/)! Sice nepotřebuji paralelizovat testy, potřebuji to udělat se skripty, ale to by mohlo být celkem jedno, princip je stejný.
 
 Už mě nebaví, jak mi buildy jedou 40 minut. Jasně, něco by šlo optimalizovat a zrychlit, ale něco prostě zrychlit nepůjde, protože se tam stahuje hodně věcí, nebo se dělá hodně věcí přes Discord API. Potřebuji ty skripty pouštět vedle sebe a ne za sebou, jak jen to půjde.
@@ -94,7 +96,7 @@ Mia přepsala [mého Pyvo bota](https://github.com/honzajavorek/pyvo_bot) do Pyt
 
 ## Sociální sítě a Mimo agendu
 
-Přestávají mě bavit sociální sítě. Poslední hřebíček byl [článek Jakuba Zelenky](https://mimo-agendu.ghost.io/nasel-jsem-recept-na-twitter/), kvůli kterému jsem si dokonce konečně Mimo agendu předplatil. Při čtení dalších jeho článků jsem si uvědomil, jak mě vlastně nebaví ani zpravodajství. Celé to ještě zpracovávám, žádný závěr z toho nemám. Po nocích jsem četl další Jakubovy články, např. o TikToku a mám v hlavě spoustu myšlenek a otázek.
+Přestávají mě bavit sociální sítě. Poslední hřebíček byl [článek Jakuba Zelenky](https://mimo-agendu.ghost.io/nasel-jsem-recept-na-twitter/), kvůli kterému jsem si dokonce konečně Mimo agendu předplatil. Při čtení dalších jeho článků jsem si uvědomil, jak mě vlastně nebaví ani zpravodajství. Rezonoval se mnou i [rozhovor na Prostoru X](https://www.reflex.cz/clanek/prostor-x/114555/budar-herectvi-mi-prestalo-davat-smysl-ceske-komedie-me-nebavi-ani-jako-divaka-smrt-v-sobe-mame-vsichni.html), kde Budař mluví o tom, jak vůbec nesleduje politiku. Celé to ještě zpracovávám, žádný závěr z toho nemám. Po nocích jsem četl další Jakubovy články, např. o TikToku a mám v hlavě spoustu myšlenek a otázek. Debatoval jsem pak i s Jakubem a dalšími na jeho Discordu.
 
 Láká mě výrazně si sociální sítě omezit a z některých třeba úplně odejít. Zároveň to nemůžu udělat, protože sociální sítě jsou pilíř marketingu mého projektu. Junioři mě ještě možná najdou přes Google, ale firmy žhavím podle mě hlavně přes LinkedIn. Možná budu primárně používat ten a řešit tam jen práci?
 
@@ -105,6 +107,8 @@ Možná je to jen nějaké pokračování mého vyhoření ze sociálních sít�
 Zjistil jsem, že Instagram jde používat z webu na noťasu a konečně lze takto i nahrát obrázek. Dokonce, když jdu do devtools v prohlížeči a přepnu se jakoby na mobilní prohlížeč, tak mohu nahrát i storíčko. Nelze ale např. nasdílet svůj post jako storíčko apod. Bez ohledu na to jsem zajásal a IG si úplně odinstaloval z mobilu.
 
 Hlavně pro zlepšení produktivity jsem si začal sociální sítě během většiny dne blokovat přes `/etc/hosts`. Jsem zvědav, jak dlouho mi tohle vydrží.
+
+Aby to bylo kompletní, [objevil se](https://twitter.com/honzajavorek/status/1580656545003491328) jeden můj zarytý twitterový fanoušek. Je to myslím jeden ze tří lidí, které si tam blokuju. Pořád mi něco psali, aniž by to dávalo smysl, nebo aniž bych jich prosil o názor.
 
 
 ## Další poznámky
