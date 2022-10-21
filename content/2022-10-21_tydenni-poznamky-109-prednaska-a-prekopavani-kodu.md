@@ -12,7 +12,7 @@ Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
 ## Přednáška s Matějem Kotrbou
 
-[Matěj Kotrba](https://www.linkedin.com/in/mat%C4%9Bjkotrba/) měl v klubu přednášku a na rozdíl od minulého týdne se na akci přihlásilo skoro 50 lidí a přišlo 22. Asi téma „jak se připravit na pohovor“ holt táhlo víc. Návštěva minulé přednášky mě stále mrzí, ale na YouTube už má přes 30 shlédnutí, tak asi nakonec dobrý a jsem rád, že se lidi mezitím trochu rozhýbali a na Matěje dorazili, a to dokonce i přesto, že veřejně jsem jeho přednášku propagoval až den předem.
+[Matěj Kotrba](https://www.linkedin.com/in/mat%C4%9Bjkotrba/) měl v klubu přednášku a na rozdíl od minulého týdne se na akci přihlásilo skoro 50 lidí a přišlo 22. Asi téma „jak se připravit na pohovor“ holt táhlo víc. Slabá návštěva minulé přednášky mě stále mrzí, ale na YouTube už má přes 30 shlédnutí, tak asi nakonec dobrý a jsem rád, že se lidi mezitím trochu rozhýbali a na Matěje dorazili, a to dokonce i přesto, že veřejně jsem jeho přednášku propagoval až den předem.
 
 Hrozilo, že se dostaneme přes limit Discordu na účastníky video hovoru a že se použije online stream, který dělám na YouTube, ale nakonec jsme se vešli do 25 lidí a nepoužilo se to. Matěj měl velký prostor pro dotazy a ty pršely, takže to celé mělo skoro dvě hodiny.
 
@@ -76,6 +76,7 @@ A protože dělám _continuous delivery_, tak mi teď nefunguje CI a padá to a 
 - Můj oblíbený Aerovod se sloučil s [KVIFF.TV](https://kviff.tv/), což nevím, jestli je dobře nebo špatně, ale věnoval jsem 30 minut tomu, abych podle toho upravil svou aplikaci na evidenci filmů v Trellu, [film2trello](https://github.com/honzajavorek/film2trello).
 - Po přidání diagnostických příkazů do buildu na CircleCI se toto pondělí neopakovala chyba s porušenou databází. Ale pak jsem kód buildu stejně zase rozvrtal a databázi budu řešit všelijak jinak, takže je to už asi stejně bezpředmětné.
 - Odpovídání v klubu, maily, a tak dále. Tohle mi zabralo snad dva celé dny z tohoto týdne. V klubu se toho dělo nějak hodně.
+- Úspěšně jsem si většinu týdne blokoval sociální sítě a čas jsem na nich trávil zcela minimálně.
 - Během 7 dní od 15.10. do 21.10. jsem při procházkách nachodil 4 km, na túrách nachodil 17 km. Celkem jsem se hýbal 7 hodin a zdolal při tom 21 kilometrů.
 - Aktuální finanční výsledky, návštěvnost a další čísla k JG [mám přímo na webu](https://junior.guru/open/). Nabídky práce pro juniory teď inzerují: [Monitora media, s.r.o.](https://junior.guru/jobs/2b1ab731247b03b291bd7c4a0177e052df5ae4a5937144b4f2ce9d11/), [Processand](https://junior.guru/jobs/dbbb7bf406b3c33aeba36cae817919d44bfb368a08fb1b4899dba130/), [Red Hat](https://junior.guru/jobs/215426887eaaad9105ecf647d0ff24cf94de7c9eb47cc6f2c55e6921/)
 
