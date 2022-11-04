@@ -22,7 +22,7 @@ Prakticky celý předchozí týden jsem vymýšlel a pokus-omyl prozkoumával, j
 
 Jen připomenu, že CI build je pro JG produkce. Celý projekt funguje tak, že se jednou nebo víckrát denně spustí CI, tam se vše stáhne, vyhodnotí, synchronizuje, udělají se změny na Discordu, pošlou maily, vygeneruje se statická stránka a deployne, a hotovo. JG záměrně nemá žádný jiný runtime. A ano, znamená to, že bot na Discordu reaguje třeba i s denním zpožděním, nebo že nemůžu mít na webu žádný formulář. Výhoda je, že nepotřebuju řešit servery, databáze, uptime, produkční chyby, nic mi v noci nespadne a nezačne mi to pípat na mobilu.
 
-Asi nemá smysl v poznámkách zacházet do příliš mnoha detailů. Povedlo se mi několikrát za sebou omylem poslat tytéž maily, protože kontrolní mechanismus jsem změnami rozbil. Řešil jsem, jak paralelizovat celý build na CircleCI [pomocí funkcí, které nabízí](https://circleci.com/blog/how-to-boost-build-time-with-test-parallelism/). Šlo hlavně o to, jak mohu sloučit soubory a SQLite databázi po tom, co se běh rozdělí do několika paralelních. Rozbil jsem při tom i kumulativní keš dat kolem nabídek práce a budu je muset obnovit ze zálohy. Příruční [Datasette](https://sqlite-utils.datasette.io/) mi pomohlo zjistit, proč je moje databáze je najednou menší o 100 MB.
+Povedlo se mi několikrát za sebou omylem poslat tytéž maily, protože kontrolní mechanismus jsem změnami rozbil. Řešil jsem, jak paralelizovat celý build na CircleCI [pomocí funkcí, které nabízí](https://circleci.com/blog/how-to-boost-build-time-with-test-parallelism/). Šlo hlavně o to, jak mohu sloučit soubory a SQLite databázi po tom, co se běh rozdělí do několika paralelních. Rozbil jsem při tom i kumulativní keš dat kolem nabídek práce a budu je muset obnovit ze zálohy. Příruční [Datasette](https://sqlite-utils.datasette.io/) mi pomohlo zjistit, proč je moje databáze je najednou menší o 100 MB.
 
 Slučování dat jsem nakonec vyřešil tak, že mám skript, který projede vše, co je ve složce s JG a zapamatuje si časy poslední změny k jednotlivým souborům. Udělá tedy něco jako _snapshot_. Potom se spustí synchronizace a pak se zase spustí skript, který udělá nový _snapshot_, porovná je, a změněné soubory si odloží bokem tak, aby je šlo později přenést do další fáze buildu a sloučit. Slučovací skript se umí poprat s databází.
 
@@ -49,13 +49,15 @@ Některé věci se mi ještě nepovedlo dořešit. Nefunguje správně posílán
 
 Protože je u babičky špatný internet, jel jsem na přednášku v klubu ke švagrovi s tím, že tam pak i přespím, večer pokecáme a uděláme na zahradě druhý den nějakou práci. Bohužel jsem na místě zjistil, že má úplně stejně špatný internet, 10/1. S tímhle se fakt nedá streamovat na YouTube a vlastně je skoro i problém mít vůbec stabilní videohovor.
 
-Měl jsem fakt za to, že tam je internet rychlejší, ale jak se říká, myslet je hovno vědět. Nebo jak říkal jeden lektor v Londýně, ve slovo assumptions začíná slovem ass.
+Měl jsem fakt za to, že tam je internet rychlejší, ale jak se říká, myslet je hovno vědět. Nebo jak říkal jeden lektor v Londýně, slovo assumptions začíná slovem ass.
 
 Přednášku jsem tentokrát připravil skvěle a všechny úkony udělal správně, okna měl správně, tlačítka zmáčknul správně, ale co mi to pomohlo, když mi vypadával internet a speakera jsem ani neslyšel. Úplný fail. Odpojil jsem z wifi i svůj mobil, vypnul všechny ostatní programy, ale stejně, nepomohlo to. Stream rozhodně ne, ale ani záznam neměl moc smysl a po čase jsem to vypnul, protože by na záznamu bylo jen chrčení.
 
 Michala, přednášejícího, jsem na to před přednáškou upozornil a omluvil jsem se. Nabídl se, že může udělat záložní nahrávku u sebe, ale po přednášce jsme zjistili, že se mu nepovedlo nahrát zvuk :D Mám teď jeho soubor s nahrávkou a nějaké svoje, ale neměl jsem zatím čas to nějak poslepovat nebo analyzovat, zda má smysl z toho něco vůbec dělat. Jen jsem se omluvil lidem v klubu, že záznam nejspíš ani nebude.
 
-Měl jsem pak dost blbou náladu, ale nějak se spravila soutěží o knihu (viz dál) a večerním pokecem u vína. U švagra byl na přednášku aspoň v oddělené místnosti klid, protože u babičky není moc kam se takhle schovat. Ale pro příště vím, že buď si v našem Zlínském „letovisku“ zařídím lepší internet, nebo že odtamtud prostě přednášky dělat nemůžu. Ale investorku napadla ještě jedna věc, která možná není vůbec blbost: Měl bych najít někoho, kdo ty přednášky bude řídit za mě a bude to jeho jediná práce! Tím by se mi dost podstatně uvolnil i kalendář. Stejně jen klikám na tlačítka, uvádím speakera, atd. Je to perfektně delegovatelné.
+Měl jsem pak dost blbou náladu, ale nějak se spravila soutěží o knihu (viz dál) a večerním pokecem u vína. U švagra byl na přednášku aspoň v oddělené místnosti klid, protože u babičky není moc kam se takhle schovat. Ale pro příště vím, že buď si v našem Zlínském „letovisku“ zařídím lepší internet, nebo že odtamtud prostě přednášky dělat nemůžu.
+
+Ale investorku napadla ještě jedna věc, která možná není vůbec blbost: Měl bych najít někoho, kdo ty přednášky bude řídit za mě a bude to jeho jediná práce! Tím by se mi dost podstatně uvolnil i kalendář. Stejně jen klikám na tlačítka, uvádím speakera, atd. Je to perfektně delegovatelné.
 
 
 ## Soutěž o knihu
@@ -72,7 +74,7 @@ Vzniklo nádherné vlákno, užitečné všem. Jak samotným soutěžícím, tak
 
 Udělal jsem to trochu napínavé a že byli zrovna lidi online, tak se v den losování spustila lavina memů a gifů a mělo to perfektní atmosféru. [Natočil jsem video z losování](https://youtu.be/If8fVpUrzCM), schválně jako screencast toho, jak to losování programuju, aby to bylo poučné, a nahrával jsem ho pak na YouTube, ale jak jsem byl na strašně pomalém internetu, tak to trvalo věčnost a lidi byli o to víc napjatí. Chtěl jsem tam dát mp3 s „to sou nervy“ z [opravy traktoru](http://milujipraci.cz/), ale zjistil jsem, že je za tím ještě „ty pi*o“ :D tak jsem to ještě ořízl v Audacity a dal to do klubu bez toho, což sklidilo velký ohlas :D
 
-Některé to tak nabudilo, že i když knihu nevyhráli, šli si ji koupit :D Takže se to fakt celé moc hezky povedlo a mám z toho dost dobrou náladu.
+Některé to tak nabudilo, že i když knihu nevyhráli, šli si ji koupit :D Takže se to fakt celé moc hezky povedlo a měl jsem z toho pak dost dobrou náladu.
 
 
 ## ADHD
@@ -81,7 +83,7 @@ Kdysi jsem četl [článek](https://www.theguardian.com/society/commentisfree/20
 
 No ale teď přišlo ještě [tohle](https://www.mujrozhlas.cz/vinohradska-12/dospeli-adhd-nemate-ho-taky-snaz-se-pozna-lide-jsou-ochotnejsi-problemy-resit) a [tohle](https://denikn.cz/1000209/studio-n-jak-se-zije-s-adhd/) a dostala se ke mě [tahle příručka](http://nepozornidospeli.cz/images/ADHD_prowebFIN.pdf). Jak jsme byli u babičky, měl jsem konečně čas se tím trochu probrat a začínám mít fakt velmi vážné podezření, že je to přesně o mně! Jako by to vysvětlovalo celý můj život :D
 
-Nad tímhle rukou mávnout už nemůžu. Z toho co čtu, bylo by to nějak moc náhod najednou. Jsem vlastně už docela přesvědčený, že to mám, ale určitě zkusím vyhledat někoho, kdo by mi mohl udělat diagnózu. Nevím, kdy na to zase budu mít čas, ale zkusím svoje pátrání po kouskách posouvat dál.
+Nad tímhle rukou mávnout už nemůžu. Bylo by to nějak moc náhod najednou. Jsem vlastně už docela přesvědčený, že to mám, ale určitě zkusím vyhledat někoho, kdo by mi mohl udělat diagnózu. Nevím, kdy na to zase budu mít čas, ale zkusím svoje pátrání po kouskách posouvat dál.
 
 
 ## Další poznámky
@@ -91,7 +93,7 @@ Nad tímhle rukou mávnout už nemůžu. Z toho co čtu, bylo by to nějak moc n
 - Odpovídání v klubu, maily, a tak dále. V klubu se roztrhl pytel s CVčky a i když jsem jich postupně prošel snad 10, tak tam na mě dalších 10 čeká.
 - Koukal jsem na [diskcache](https://grantjenks.com/docs/diskcache/tutorial.html), jestli by mi nemohla pomoci s urychlením některých skriptů, ale přišlo mi to nějaké moc složité pro můj případ.
 - Koupil jsem si [Four Thousand Weeks](https://www.oliverburkeman.com/books), ale nedočetl jsem zatím ani úvod, vždycky jsem usnul.
-- S Matějem Kotrbou v návaznosti na přednášce v klubu připravujeme něco o věcech, které by firmy fakt neměly říkat lidem na pohovoru.
+- S Matějem Kotrbou v návaznosti na přednášku v klubu připravujeme něco o věcech, které by firmy fakt neměly říkat lidem na pohovoru.
 - Do svého osobního kalendáře přednášek jsem přidal automatický event týden před přednáškou, který mi připomene, že mám přednášku propagovat.
 - Měl jsem mít schůzku s někým, kdo chce založit vzdělávací byznys, ale nakonec to nevyšlo. Třeba příští týden.
 - Zjistil jsem, že existuje [SwitchUp](https://www.switchup.org/), neznal jsem.
@@ -100,7 +102,7 @@ Nad tímhle rukou mávnout už nemůžu. Z toho co čtu, bylo by to nějak moc n
 - Poslouchal jsem prima epizodu [ProgramHRování s Lumírem](https://www.programhrovani.cz/1843229/11599562-o-organizovani-meetupu-s-lumirem-balharem), který rozjel Python komunitu v Ostravě.
 - Prošel jsem si konečně [fotky z CBW 2022](https://photos.google.com/share/AF1QipNwruVI0RmvsKp3S34P8_OM_mAQJNaPoovZ5OraGDD-ncSDpEU6jIf_4ENItxoyXg?key=QllETmJUcm9sdExBWERfeWcxbWozZ01sRU5yUjB3) a zjistil jsem, že tam mám spoustu pěkných fotek!
 - Měli jsme schůzi výboru Pyvce. Řešily se hlavně účty na Google a jejich organizace. Pokusil jsem se zase o kousek posunout [práci na opravě chyby](https://github.com/pyvec/docs.pyvec.org/pull/292) v jednom Pyvec repozitáři a mám se ještě ozvat advokátce a něco jí připomenout.
-- S [Lukášem Augustou](https://www.designui.cz/landing-page-odshora-az-dolu?referral_code=31kql18) jsme si psali, že by bylo fajn, kdyby Memberful zavedl češtinu. Ze sportu jsem napsal do Memberful na support, jestli to stále ještě neplánují (už kdysi jsem to po nich chtěl a Lukáš taky, ale bez velkého efektu). Nejdřív odepsali zase něco neurčitého, ale pak napsali, že češtinu zavedou! Wow! To jsme fakt nečekali :D Takže z JG už konečně nebudou chodit maily, které jsou napůl anglicky a napůl česky. A registrace a administrace budou taky česky.
+- S [Lukášem Augustou](https://www.designui.cz/landing-page-odshora-az-dolu?referral_code=31kql18) jsme si psali, že by bylo fajn, kdyby [Memberful](https://memberful.com/) zavedl češtinu. Ze sportu jsem napsal do Memberful na support, jestli to stále ještě neplánují (už kdysi jsem to po nich chtěl a Lukáš prý taky, ale bez velkého efektu). Nejdřív odepsali zase něco neurčitého, ale pak napsali, že češtinu zavedou! Wow! To jsme fakt nečekali :D Takže z JG už konečně nebudou chodit maily, které jsou napůl anglicky a napůl česky. A registrace a administrace budou taky česky.
 - YouTube zavádí podporu pro handly, tak jsem si pro [kanál JG](https://www.youtube.com/channel/UCp-dlEJLFPaNExzYX079gCA) zaregistroval handle `@juniordotguru`, podobně jako na dalších sociálních sítích, kde nebylo volné přímo juniorguru.
 - Prošel jsem si sloupec v Trellu, který mám na administrativní úkoly a který už přetékal všelijakým bincem. Spoustu úkolů jsem smazal, seřadil jsem to podle priorit, roztřídil co patřilo jinam.
 - Koordinoval jsem návštěvu kamarádů z Namibie a Zimbabwe v Praze příští týden. Přijedou na The Ubuntu Summit a nejspíš se poprvé po více jak 2 letech od mé návštěvy [PyCon NA](https://na.pycon.org/) uvidíme!
