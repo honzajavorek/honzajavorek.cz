@@ -6,16 +6,16 @@ Home: False
 
 Utekl zase nějaký ten týden (5.11. — 11.11.) a tak [stejně jako minule]({filename}/2022-11-04_tydenni-poznamky-110-zapaseni-s-ci-prednaska-zlin.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
 
-![Kámoši z Afriky]({static}/images/afrika-kamosi.jpg)
+![Praha večer]({static}/images/praha-vecer.jpg)
 
 
 Drtivou většinu týdne jsem trávil tím, že jsem se věnoval [kamarádům z Afriky]({filename}/2021-06-17_jessica-upani-about-python-events-in-namibia-you-have-to-be-pure-in-terms-of-your-why.md), kteří do Prahy přijeli na [Ubuntu Summit](https://events.canonical.com/event/2/). Jeden večer jsme zařídili večeři, další večer jsme jim udělali zážitkovou prohlídku noční Prahy. Spousta organizačních věcí, někdo si zapomněl doma nabíječku a kupoval jsem rychle nějakou v Alze, někdo potřeboval invalidní vozík, spousta přesunů, apod., takže velká divočina. Měl jsem mít přes týden i nějaké schůzky, ale (aby organizace všeho výše nebyla moc jednoduchá), různě se přesouvaly nebo rušily.
 
-![Na Vítkově]({static}/images/afrika-vitkov.jpg)
+![Kámoši z Afriky]({static}/images/afrika-kamosi.jpg)
 
 [Muheue](https://twitter.com/muheuenga) zůstal ještě o den déle, tak jsme mu udělali i denní prohlídku Prahy a protože vyšlo krásně počasí, bylo to fakt super. Můj kamarád, který prohlídky dělal, to měl dost vymakané a já sám jsem někdy čuměl, co pěkného v tom Starém Městě nebo na Malé Straně vlastně je a co vůbec neznám. Můj osobní _highlight_ byli Maltézští rytíři a jejich areál. Máme spoustu nádherných zážitků a fotek a dojemných, dobrodružných i vtipných situací. Já osobně z toho mám i velký spánkový deficit. Ale myslím, že se to celé moc pěkně vydařilo.
 
-![Praha večer]({static}/images/praha-vecer.jpg)
+![Na Vítkově]({static}/images/afrika-vitkov.jpg)
 
 
 ## Spojování databází
