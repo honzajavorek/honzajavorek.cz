@@ -44,3 +44,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           cname: honzajavorek.cz
+
+      - name: Send to Telegram
+        run: poetry run telegram.py
