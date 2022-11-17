@@ -1,6 +1,6 @@
 # honzajavorek.cz
 
-[Honza Javorek](https://github.com/honzajavorek)'s personal site and blog. Powered by [Pelican](https://docs.getpelican.com/), a static site generator written in Python.
+[Honza Javorek](https://github.com/honzajavorek)'s personal website and blog. Powered by [Pelican](https://docs.getpelican.com/), a static site generator written in Python.
 
 ## 👩‍💻 Installation & Usage
 
