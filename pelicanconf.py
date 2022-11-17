@@ -73,7 +73,7 @@ TAG_SAVE_AS = ''
 DIRECT_TEMPLATES = ['index', 'archives']
 
 # Generating
-OUTPUT_PATH = 'public/'  # aligns with ZEIT Now defaults
+OUTPUT_PATH = 'public/'
 IGNORE_FILES = [
     '.#*',
     '.DS_Store',
@@ -111,7 +111,6 @@ PLUGINS = [
     'tables',
     'headings',
     'media',
-    'pocket_feed',
 ]
 IMG_MAX_PX = 1024
 IMG_MAX_MB = 1
