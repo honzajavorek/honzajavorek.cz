@@ -99,7 +99,7 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Lucka Gurellová: Dřív než uměla číst a psát, tak začala programovat](https://overcast.fm/+oxWiakock)<br>„Bylo mi 11, ale všechno pokročilé programování pro děcka začínalo až od 15…“ :D Hustý.
+- [Lucka Gurellová: Dřív než uměla číst a psát, tak začala programovat](https://soundcloud.com/czechitas/lucka-gurellova-driv-nez-umela-cist-a-psat-tak-zacala-programovat)<br>„Bylo mi 11, ale všechno pokročilé programování pro děcka začínalo až od 15…“ :D Hustý.
 - [Pod čarou : Radíte chudým, jak šetřit? Nejprve zjistěte, jak žijí.](https://seznam-zpravy.u.mailkit.eu/mc/VVCQVPWV/VVPFMXVSZGRZZYZJLB/CCIPMIIQMEC)<br>„Nejsou úspory jako úspory, a ekonomické strategie jedné společenské vrstvy se nedají automaticky aplikovat na jinou.“
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

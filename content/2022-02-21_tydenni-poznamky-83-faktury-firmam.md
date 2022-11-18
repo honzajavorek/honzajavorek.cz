@@ -184,6 +184,6 @@ Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocket
 
 - [Google Search Is Dying](https://dkb.io/post/google-search-is-dying)<br>Dává vám Google vlastně ještě nějaké užitečné výsledky, nebo na vás už sype jen reklamy a přeoptimalizované stránky?
 - [Pokud Biden neříká o Rusku pravdu, dozvíme se to. Putinovy lži ale nikdo nehlídá](https://nazory.aktualne.cz/komentare/new-york-times/r~30d496ea8fe211eca9b1ac1f6b220ee8/)<br>Komentář o tom, jak i Bílý dům může vypouštět účelové informace, ale na rozdíl od Putina pak dostane přes prsty od svobodných médií.
-- [Ukrajina mezi „šílenstvím“ Ruska a „hysterií“ Západu. Pohled zpravodaje listu Guardian z Kyjeva](https://overcast.fm/+RZMi-r8VU)<br>Pěkný komentář k aktuálnímu dění na Ukrajině.
+- [Ukrajina mezi „šílenstvím“ Ruska a „hysterií“ Západu. Pohled zpravodaje listu Guardian z Kyjeva](https://www.mujrozhlas.cz/rapi/view/episode/57920a85-e113-37a4-8191-c118e324e301)<br>Pěkný komentář k aktuálnímu dění na Ukrajině.
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

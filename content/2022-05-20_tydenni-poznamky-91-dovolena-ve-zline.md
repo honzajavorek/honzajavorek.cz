@@ -92,8 +92,8 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
 - [The 2022 Market Crash - Why is Everything Down?](https://www.youtube.com/watch?v=ddWr9dPGqDA)<br>Co se děje s trhy?
-- [Bořiči dezinformací. Dáváme lidem argumenty proti nesmyslům, vysvětlují autoři projektu Ověřovna](https://overcast.fm/+RZMiLLLVk)<br>Super.
+- [Bořiči dezinformací. Dáváme lidem argumenty proti nesmyslům, vysvětlují autoři projektu Ověřovna](https://www.mujrozhlas.cz/rapi/view/episode/0e1bf90d-12bb-3df9-95c8-3c738d170960)<br>Super.
 - [The Premium Mediocre Life of Maya Millennial](https://www.ribbonfarm.com/2017/08/17/the-premium-mediocre-life-of-maya-millennial/)<br>Tohle je nejlepší analýza městských mileniálů, kterou jsem kdy četl. Hodně meta, ale těch myšlenek, co tam řežou do živýho!
-- [Vážil jsem se čtyřikrát za noc. Moderátor Čestmír Strakatý přiznává souboj se svým tělem](https://overcast.fm/+0k77xlt5w)<br>Zaposlouchal jsem se do této podcastové série a rozjezd hodně dobrý.
+- [Vážil jsem se čtyřikrát za noc. Moderátor Čestmír Strakatý přiznává souboj se svým tělem](https://www.mujrozhlas.cz/rapi/view/episode/b78d8bac-074c-3ce4-b97e-aebcd6841ddd)<br>Zaposlouchal jsem se do této podcastové série a rozjezd hodně dobrý.
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

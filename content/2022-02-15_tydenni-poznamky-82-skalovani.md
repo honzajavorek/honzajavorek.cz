@@ -146,14 +146,14 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [51 - Belarus: The Next Crimea?](https://overcast.fm/+Ut4TJt-zM)<br>Tři odborníci na téma aktuální a budoucí geopolitické role Běloruska.
+- [51 - Belarus: The Next Crimea?](https://theredline.libsyn.com/51-belarus-the-next-crimea)<br>Tři odborníci na téma aktuální a budoucí geopolitické role Běloruska.
 - [Pod stejnou vlajkou](https://www.advojka.cz/archiv/2022/2/pod-stejnou-vlajkou)vnímají politiku nebo jak se vědci nevnímají navzájem. Až si pro nás přijde klima, na pandemii budeme vzpomínat jak během maturity na písemku z páté třídy.
 - [Nová generace baterií přichází. Elektromobily změní víc, než si myslíte](https://finmag.penize.cz/veda-a-technika/431481-nova-generace-baterii-prichazi-elektromobily-zmeni-vic-nez-si-myslite)<br>Budeme mít auta s „nekonečnou“ životností? Co by to změnilo na způsobu, jakým auta kupujeme a používáme?
 - [EU chce zakázat prodej spalovacích aut. Proč vám to může být buřt](https://finmag.penize.cz/veda-a-technika/425328-eu-chce-zakazat-prodej-spalovacich-aut-proc-vam-to-muze-byt-burt)<br>„EU plánuje zákaz spalovacích aut tak, aby to mohlo vypadat, že něco změnila, i když se to reálně stane i bez jejího vlivu.“
 - [Konec mýtů o školném: americké studentské půjčky](https://www.devian.cz/2020/konec-mytu-o-skolnem-americke-studentske-pujcky/)<br>Zajímavá kritika studentských půjček zprava.
 - [Komentář: Praha, parkoviště Evropy. 170 tisíc míst je beznadějná utopie](https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-komentar-praha-parkoviste-evropy-170-tisic-mist-je-beznadejna-utopie-187217)<br>„Pražská automobilová doprava zřejmě má být vlajkovou lodí programu ODS. Tento amatérský výkop je ale zcela mimo dopravní, urbanistickou i ekonomickou realitu. Jestli někdo z autorů textu strávil opoziční roky studiem dopravních témat, asi to bylo na vysoké škole života.“
-- [11 - The Libyan Civil War](https://overcast.fm/+Ut4TwS_po)<br>Zajímavý díl o tom, v jak beznadějné situaci se nachází Libye.
-- [12 - The Vultures of Venezuela](https://overcast.fm/+Ut4SSjV7A)<br>Až někde zase uvidíte přirovnání založené na tom, že za rozvrat ve Venezuele může jen a pouze komunismus, tak si pusťte tohle.
+- [11 - The Libyan Civil War](https://theredline.libsyn.com/episode-11-the-libyan-civil-war)<br>Zajímavý díl o tom, v jak beznadějné situaci se nachází Libye.
+- [12 - The Vultures of Venezuela](https://theredline.libsyn.com/episode-12-venezuela)<br>Až někde zase uvidíte přirovnání založené na tom, že za rozvrat ve Venezuele může jen a pouze komunismus, tak si pusťte tohle.
 - [1Password’s Blue Ocean Strategy](https://securityboulevard.com/2022/02/1passwords-blue-ocean-strategy/)<br>1Password dostal další investici a toto je článek, který rozebírá jejich market positioning, byznys model a co můžou chtít vyrobit do budoucna.
 - [What Happens After a ‘Million-Mile Battery’ Outlasts the Car?](https://www.wired.com/story/what-happens-after-a-million-mile-battery-outlasts-the-car/)<br>Zajímavé zamyšlení nad tím, co se stane, až baterka natřikrát přežije auto. Na jednu stranu znovupoužitelnost, na druhou se nebudou vracet do oběhu materiály na výrobu baterií z jejich recyklace a bude potřeba mít jejich velké množství vytěženo ze Země.
 

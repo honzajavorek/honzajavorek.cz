@@ -99,6 +99,6 @@ Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocket
 
 - [Dovolená je změna stavu mysli – nezáleží, kde jste, říká fotografka, která se rekreovala na Sídlišti Ďáblice](https://a2larm.cz/2021/09/dovolena-je-zmena-stavu-mysli-nezalezi-kde-jste-rika-fotografka-ktera-se-rekreovala-na-sidlisti-dablice/)
 - [The 2022 Market Crash - Why is Everything Down?](https://www.youtube.com/watch?v=ddWr9dPGqDA)<br>Co se děje s trhy?
-- [Bořiči dezinformací. Dáváme lidem argumenty proti nesmyslům, vysvětlují autoři projektu Ověřovna](https://overcast.fm/+RZMiLLLVk)<br>Super.
+- [Bořiči dezinformací. Dáváme lidem argumenty proti nesmyslům, vysvětlují autoři projektu Ověřovna](https://www.mujrozhlas.cz/rapi/view/episode/0e1bf90d-12bb-3df9-95c8-3c738d170960)<br>Super.
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

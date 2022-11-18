@@ -88,7 +88,7 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
 - [Back to the Future of Twitter](https://stratechery.com/2022/back-to-the-future-of-twitter/)<br>„…most people don’t get their news off of Twitter; the places they get their news, though, are driven by Twitter.“
-- [The Knights Templar](https://overcast.fm/+IPNxmIHV0)<br>Kdo byli Templáři?
+- [The Knights Templar](http://www.bbc.co.uk/programmes/m001cpwt)<br>Kdo byli Templáři?
 - [What to blog about](http://simonwillison.net/2022/Nov/6/what-to-blog-about/#atom-entries)<br>Ano!
 - [Spouštíme MastodonCzech.cz. Chcete vyzkoušet decentralizovanou obdobu Twitteru?](https://www.lupa.cz/clanky/spoustime-mastodonczech-cz-chcete-vyzkouset-decentralizovanou-obdobu-twitteru/)<br>„Vedle masových sociálních gigantů přitom existuje zajímavý svět decentralizovaných aplikací, které pro určitou, zatím malou, skupinu lidí představují kýžený únik ze světa algoritmicky řízených feedů a timeline, všudypřítomné reklamy a sledování jejich pohybu po internetu.“
 

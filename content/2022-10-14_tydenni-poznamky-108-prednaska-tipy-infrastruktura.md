@@ -145,7 +145,7 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Královec jako vtip i klíčové území. Pro NATO představuje problém, upozorňuje politický geograf](https://overcast.fm/+RZMhoz3EI)
+- [Královec jako vtip i klíčové území. Pro NATO představuje problém, upozorňuje politický geograf](https://www.mujrozhlas.cz/rapi/view/episode/7b559a7e-0704-3e68-9c32-b09f888b3bee)
 - [Z Hongkongu na Baltu přístavem v kleci. Jak se Kaliningrad ocitl na periferii Ruska a Evropy](https://www.voxpot.cz/z-hongkongu-na-baltu-pristavem-v-kleci-jak-se-kaliningrad-ocitl-na-periferii-ruska-a-evropy/)<br>Taky fajn komentář ke Královci.
 - [](https://ecfr.eu/article/the-case-for-a-confederal-europe/?amp=)<br>Tohle by se mi líbilo.
 - [„Lithium bude důležitější než zemní plyn.“ Evropa se probouzí do nové energetické geopolitiky](https://www.voxpot.cz/lithium-bude-dulezitejsi-nez-zemni-plyn-evropa-se-probouzi-do-nove-energeticke-geopolitiky/)<br>„Lithium a vzácné zeminy se brzy stanou důležitější než ropa a plyn. Jen naše potřeba vzácných zemin se do roku 2030 zpětinásobí.“

@@ -95,6 +95,6 @@ Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocket
 
 - [Jak méně číst, ale mít z toho víc](https://www.lifehacky.cz/jak-mene-cist/)<br>Zajímavý systém. Intuitivně vlastně dost z toho dělám. Vysvětlovalo by to i vznik některých, nebo možná většiny mých propracovanějších článků na blogu.
 - [Ceny bytů jsou šílené, hypotéka je sebevražda. Osudy Čechů bojujících s krizí bydlení](https://magazin.aktualne.cz/bydleni-za-vsechny-prachy/r~b9e2f570422c11ecbc3f0cc47ab5f122/)<br>Komplet jsem si prošel a pročetl, zajímavé. Příběhy lidí i rozhovory se sociology.
-- [Bulvár #14: Tomáš Hoření Samec - Mainstreamový narativ vytváří dojem, že hypotéky jsou samozřejmé](https://overcast.fm/+VbZfx4t_k)<br>Pustil jsem si ještě rozhovor s jedním z těch sociologů z článku na Aktuálně, zajímavě to tady s Apolenou probrali.
+- [Bulvár #14: Tomáš Hoření Samec - Mainstreamový narativ vytváří dojem, že hypotéky jsou samozřejmé](https://soundcloud.com/advojka2013/bulvar-14-tomas-horeni-samec-mainstreamovy-narativ-vytvari-dojem-ze-hypoteky-jsou-samozrejme)<br>Pustil jsem si ještě rozhovor s jedním z těch sociologů z článku na Aktuálně, zajímavě to tady s Apolenou probrali.
 
 <small>Upozorňuji, že to není vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

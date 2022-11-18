@@ -92,7 +92,7 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Dospělí a ADHD - nemáte ho taky? Snáz se pozná a lidé jsou ochotnější problémy řešit](https://overcast.fm/+RZMhhsqwI)<br>Hmmm…
+- [Dospělí a ADHD - nemáte ho taky? Snáz se pozná a lidé jsou ochotnější problémy řešit](https://www.mujrozhlas.cz/rapi/view/episode/f54259a8-34cb-39d0-bb61-a47bd7a3f6fe)<br>Hmmm…
 - [Gebrian: Zácpy způsobují pohodlní a bezohlední lidé, měli by platit mýtné, nebo neuvěřitelně drahé parkování - Prostor X podcast](https://overcast.fm/+Wv2Sr88zI)<br>Ano.
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

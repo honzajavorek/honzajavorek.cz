@@ -93,7 +93,7 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Vlevo dole](https://overcast.fm/+ahZjVt9Z0)<br>Kam se poděli Piráti?
+- [Vlevo dole](https://www.seznamzpravy.cz/clanek/196984)<br>Kam se poděli Piráti?
 - [Web scraping is legal, US appeals court reaffirms](https://techcrunch.com/2022/04/18/web-scraping-legal-court/)<br>Scrapování je prý legální.
 - [Vladimir 518: Praha ještě zazáří. Je třeba stavět, ale také pečovat o ikonické stavby z minulosti](https://overcast.fm/+Vf9THCkSA)<br>Rozhovor o architektuře a Praze, líbilo se mi to.
 

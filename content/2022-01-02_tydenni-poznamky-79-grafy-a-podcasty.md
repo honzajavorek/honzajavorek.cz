@@ -194,10 +194,10 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Ísť alebo neísť na vysokú školu?](https://overcast.fm/+xIxfkwLfk)<br>yablko rozebírá jestli má smysl jít na VŠ, když člověk uvažuje o IT. Dobrý podcast!
+- [Ísť alebo neísť na vysokú školu?](https://modernafirma.podbean.com/e/ist-alebo-neist-na-vysoku-skolu/)<br>yablko rozebírá jestli má smysl jít na VŠ, když člověk uvažuje o IT. Dobrý podcast!
 - [High Speed Trains are Killing the European Railway Network](https://solar.lowtechmagazine.com/2013/12/high-speed-trains-are-killing-the-european-railway-network.html)<br>Rychlovlaky likvidují staré trasy, nejezdí v noci, trvají déle než původní běžná vlaková spojení a hlavně, jsou mnohem dražší. Běžným lidem jsou méně dostupné než letadla. Ve dvou dílech si autor low tech magazínu stěžuje, že high tech rychlovlaky jsou vlastně na prd. Já osobně už delší dobu přemýšlím, zda se mám na VRT u nás vlastně těšit, nebo zda by nebylo lepší za tytéž peníze prostě jen dostavět a zrychlit stávající tratě. Třeba Brno-Přerov nebo Praha-Zlín.
 - [Vlakem přes půl světadílu? Nejen romantické retro, ale i bezuhlíková budoucnost](https://www.voxpot.cz/vlakem-pres-pul-svetadilu-neni-jen-romanticke-retro-ale-i-bezuhlikova-budoucnost/)<br>Jak to vypadá s vlakovou dopravou v Evropě a jaký kus cesty si historicky už ušla. Budeme mít nočních vlaků a dlouhých tras více, nebo méně?
 - [Božská komedie pro 21. století](https://www.dokrevue.cz/clanky/bozska-komedie-pro-21-stoleti)<br>Zajímavý rozhovor s režisérem filmu Síla o Kamilu Filovi. „Štěstí se přeceňuje, jeho hledání je často založeno na nezralých očekáváních a nevhodné definici.“
-- [Vytáhnem tě: Le Anh Viet Linh](https://overcast.fm/+jwU92oIvE).
+- [Vytáhnem tě: Le Anh Viet Linh](https://www.buzzsprout.com/1373539).
 
 <small>Upozorňuji, že to není vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

@@ -90,7 +90,7 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
 - [Pokud Biden neříká o Rusku pravdu, dozvíme se to. Putinovy lži ale nikdo nehlídá](https://nazory.aktualne.cz/komentare/new-york-times/r~30d496ea8fe211eca9b1ac1f6b220ee8/)<br>Komentář o tom, jak i Bílý dům může vypouštět účelové informace, ale na rozdíl od Putina pak dostane přes prsty od svobodných médií.
-- [Ukrajina mezi „šílenstvím“ Ruska a „hysterií“ Západu. Pohled zpravodaje listu Guardian z Kyjeva](https://overcast.fm/+RZMi-r8VU)<br>Pěkný komentář k aktuálnímu dění na Ukrajině.
-- [Propad českého hokeje? ‚Stále se hraje na dvě brány, ale je to jiný hokej než v Naganu,‘ připomíná reportér](https://overcast.fm/+RZMidsF3M)<br>Rozbor toho, proč český hokej dosáhl svého „dna“, jak to nedávno trefně pojmenoval novinář Radek Wiglasz na svém osobním Twitteru.
+- [Ukrajina mezi „šílenstvím“ Ruska a „hysterií“ Západu. Pohled zpravodaje listu Guardian z Kyjeva](https://www.mujrozhlas.cz/rapi/view/episode/57920a85-e113-37a4-8191-c118e324e301)<br>Pěkný komentář k aktuálnímu dění na Ukrajině.
+- [Propad českého hokeje? ‚Stále se hraje na dvě brány, ale je to jiný hokej než v Naganu,‘ připomíná reportér](https://www.mujrozhlas.cz/rapi/view/episode/366fa972-41e4-3cde-874a-7c7d81dbc671)<br>Rozbor toho, proč český hokej dosáhl svého „dna“, jak to nedávno trefně pojmenoval novinář Radek Wiglasz na svém osobním Twitteru.
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

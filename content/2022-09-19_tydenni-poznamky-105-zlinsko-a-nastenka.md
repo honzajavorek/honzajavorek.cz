@@ -99,7 +99,7 @@ Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocket
 - [„Bez vůdce to nejde.“ Omyl, který se o Ukrajině šíří Západem, připomíná expertka](https://www.voxpot.cz/bez-vudce-to-nejde-omyl-ktery-se-o-ukrajine-siri-zapadem-pripomina-expertka/) nenosím Zelenského na tričku – demokracie nemá černobílých hrdinů.
 - [Vysílač](https://overcast.fm/+lh3Lggi54)<br>Díl o konunálních volbách - smysl, co se řeší, jak významný bývá starosta, politické strany, atd.
 - [Pod čarou : Hra na dospělost nemá smysl. Mileniálové na to přišli jako první.](https://seznam-zpravy.u.mailkit.eu/mc/VVQWVPLV/UABNPZPTQVAWHKJBJR/CCLPUCLPIMP), a v nejisté situaci je prostě potřeba přijmout jiné životní strategie.“
-- [#18 - Stanou se geneticky upravené hyperinteligentní děti normou?](https://overcast.fm/+jBlMsFdhE)<br>Celkem husté, co dnes vlastně už umíme. Dokážeme modifikovat lidi, ale chybí nám k tomu etika a vůbec netušíme, co to muže všechno spustit.
+- [#18 - Stanou se geneticky upravené hyperinteligentní děti normou?](https://www.vut.cz/podcast)<br>Celkem husté, co dnes vlastně už umíme. Dokážeme modifikovat lidi, ale chybí nám k tomu etika a vůbec netušíme, co to muže všechno spustit.
 - [Kopeček: Zeman byl dítě z rozvrácené rodiny, Dagmar zachránila Havlovi život, ale škodila jeho pověsti - Prostor X podcast](https://overcast.fm/+Wv2TLXxN0)<br>Zajímavý pokec o českých prezidentech.
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

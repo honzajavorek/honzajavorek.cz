@@ -214,10 +214,10 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Vytáhnem tě](https://overcast.fm/+jwU92oIvE).
+- [Vytáhnem tě](https://www.buzzsprout.com/1373539).
 - [Rasty Turek: Přemlouval jsem investory, ať nám nedávají miliardu, ale jen milion](https://overcast.fm/+Vf9TZqZLM) Zajímavý rozhovor.
 - [Dita Formánková: Dostat ženy do IT je začátek. I v Avastu pracujeme na tom, aby rostly až do vedoucích pozic](https://overcast.fm/+Vf9QAOY-Y)<br>Ditu už jsem si dlouho nikde nečetl nebo nepouštěl, protože jí bylo „všude plno“ a nebavily mě výroky ve stylu „nejsme žádné feministky“. Tento rozhovor mě potěšil. Mluví o tom, co dělá na D&I pozici v Avastu, jak je to široké a důležité téma, co všechno zahrnuje. A co plánují nebo už dělají Czechitas. Držím palce!
-- [The Europeans](https://overcast.fm/+LB3caycJI)<br>Podcast o Evropě, epizoda o Africe a dekolonizaci a o tom, jestli už se odehrála nebo stále trvá a co to v dnešní době znamená.
+- [The Europeans](https://anchor.fm/the-europeans/episodes/Eurafrica-eatudm)<br>Podcast o Evropě, epizoda o Africe a dekolonizaci a o tom, jestli už se odehrála nebo stále trvá a co to v dnešní době znamená.
 - [Dependency Risk and Funding](http://lucumr.pocoo.org/2022/1/10/dependency-risk-and-funding)<br>„…we need to find a better way to assess impact of libraries than just how many people depend on this on npm or other package managers. Because that's by far not the whole picture.“
 - [Americká témata nezakrývají jen Česko, ale celý svět](https://www.mediar.cz/americka-temata-nezakryvaji-jen-cesko-ale-cely-svet/)<br>Chybí globální médium, s opravdu globální perspektivou.
 - [Proč místo vakcín nepoužívat léky?](https://www.nihilistanabalkonu.cz/l/proc-misto-vakcin-nepouzivat-leky/)<br>Průlet dezinformacemi o lécích, které mají fungovat na covid. Peruánci, Trump, ginové koktejly, Elon Musk, koně, Beran, močovina, Janeček, misionáři, Larry Ellison. Je tam všechno!

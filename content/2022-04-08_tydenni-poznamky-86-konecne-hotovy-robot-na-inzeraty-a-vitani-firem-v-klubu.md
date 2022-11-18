@@ -135,14 +135,14 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Rozbité prasátko: Epizoda 40](https://overcast.fm/+kY7Qswneo) Jako teď jsem si to pustil a přišlo mi to fakt dobrý! :D
+- [Rozbité prasátko: Epizoda 40](https://rozbiteprasatko.cz/epizoda40) Jako teď jsem si to pustil a přišlo mi to fakt dobrý! :D
 - [Na internetu sledujeme bolest druhých. Jak se vyrovnat s úzkostmi z války?](https://www.voxpot.cz/na-internetu-sledujeme-bolest-druhych-jak-se-vyrovnat-s-uzkostmi-z-valky/)<br>„…tragické zprávy v nás vyvolávají pocity ohrožení a ztráty kontroly. Navíc se přidává i bezmoc – nemůžeme tomu zabránit. Vše může vést k úzkosti nebo panickým atakám, a to i u lidí, kteří předtím žádné psychické problémy neměli.“
-- [Nohavica jako oběť? Mluvit o návratu komunismu je nehorázné, říká hudební publicista](https://overcast.fm/+RZMizSbh8)<br>Pěkný díl o kontroverzích kolem Nohavici.
+- [Nohavica jako oběť? Mluvit o návratu komunismu je nehorázné, říká hudební publicista](https://www.mujrozhlas.cz/rapi/view/episode/9fe68e69-ffd5-3c19-b62b-cbda69c1e7b3)<br>Pěkný díl o kontroverzích kolem Nohavici.
 - [Většina světa ruskou invazi neodsoudila: „Chcete po nás solidaritu s Evropou, ale kdy jste vy stáli za námi?“](https://www.voxpot.cz/evropsky-dvoji-metr-aneb-proc-vetsina-sveta-neodsoudila-ruskou-invazi/)<br>„Mimo Západ si také lidé začali všímat konsternace některých médií z toho, že v Evropě probíhá válka. Tento údiv narážel na mylnou a ahistorickou iluzi, že v civilizované Evropě se přeci neválčí. Představy o morální nadřazenosti starého kontinentu, který své spory řeší mírově, však neodpovídají jednak případům nedávných válek, například v bývalé Jugoslávii, ale i faktu, že zdejší mocnosti stále válčí, jen boje se přesunuly mimo náš světadíl.“
-- [Millennial History: Children of the Decree](https://overcast.fm/+LB3dG82w8)<br>Jak se žilo v Rumunsku za totality.
-- [O práci na dálku se Zuzkou Šumlanskou a Honzou Králem — Vzhůru dolů podcast — Overcast](https://overcast.fm/+Hlm0Bl5oI)
+- [Millennial History: Children of the Decree](https://anchor.fm/the-europeans/episodes/Millennial-History-Children-of-the-Decree-e1gc4ng)<br>Jak se žilo v Rumunsku za totality.
+- [O práci na dálku se Zuzkou Šumlanskou a Honzou Králem — Vzhůru dolů podcast — Overcast](https://anchor.fm/vzhuru-dolu-podcast/episodes/O-prci-na-dlku-se-Zuzkou-umlanskou-a-Honzou-Krlem-e1e0i6l)
 - [Stydíš se psát o podřadných genech? Vytáhni zeměpis. Za ruskou tyranii ale zima nemůže](https://www.voxpot.cz/stydis-se-psat-o-podradnych-genech-vytahni-zemepis-za-ruskou-tyranii-ale-zima-nemuze/)
-- [Ep. 37 – Junior vs. Mid vs. Senior](https://overcast.fm/+U67H-Wc10)<br>Líbí se mi, jak kluci tyhle pojmy probrali.
+- [Ep. 37 – Junior vs. Mid vs. Senior](https://wp.streetofcode.sk/podcast/ep-37-junior-vs-mid-vs-senior/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=ep-37-junior-vs-mid-vs-senior)<br>Líbí se mi, jak kluci tyhle pojmy probrali.
 - [Red is dead: Russian anti-war protesters fly a new flag for peace](https://www.theguardian.com/world/2022/apr/03/red-is-dead-russian-anti-war-protesters-fly-a-new-flag-for-peace)<br>Krásná, ne кра́сная.
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

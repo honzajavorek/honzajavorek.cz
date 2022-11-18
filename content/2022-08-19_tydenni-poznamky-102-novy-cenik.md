@@ -77,6 +77,6 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
 - [Europe’s Experiment: Treating Trains Like Planes](https://www.youtube.com/watch?v=U9jirFqex6g)<br>Zajímavé shrnutí toho, co jsou různé důvody, proč v Evropě vlaky nefungují jako letadla.
-- [Geoekolog: Turisté jsou jako kobylky. Jak chránit cenná místa před dopady overturismu?](https://overcast.fm/+RZMiTyA08)<br>Příliš mnoho turistů na jednom místě. Proč je to problém a co se s tím dá dělat?
+- [Geoekolog: Turisté jsou jako kobylky. Jak chránit cenná místa před dopady overturismu?](https://www.mujrozhlas.cz/rapi/view/episode/9c8e5cd6-eb21-3c3f-ac69-703e7ab927ab)<br>Příliš mnoho turistů na jednom místě. Proč je to problém a co se s tím dá dělat?
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

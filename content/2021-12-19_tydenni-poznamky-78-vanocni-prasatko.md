@@ -103,6 +103,6 @@ Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocket
 - [Oligarchův prezident: Jak dostal šéf ruských železnic důchodce Zemana na Hrad](https://www.voxpot.cz/oligarchuv-prezident-jak-sef-ruskych-zeleznic-vynesl-duchodce-zemana-na-hrad/)<br>Zajímavý příběh Zemanova návratu do politiky
 - [How I got stuck](https://itnoob.cz/articles/how-i-got-stuck/)<br>Pavel oživil blog a začal psát anglicky. Pěkný spontánní text, pokud se chcete vžít do kůže nováčka v oboru, který přežil své první měsíce ve firmě.
 - [Five Reasons You Should Delete Telegram from Your Phone](https://www.vice.com/en/article/jgqqv8/five-reasons-you-should-delete-telegram-from-your-phone)<br>Nevýhody Telegramu na jedné hromadě. Některé moc neřeším, s jinými těžko něco udělám :( Mám na Telegramu všechny kamarády a rodinu.
-- [Ísť alebo neísť na vysokú školu?](https://overcast.fm/+xIxfkwLfk)<br>yablko rozebírá jestli má smysl jít na VŠ, když člověk uvažuje o IT. Dobrý podcast!
+- [Ísť alebo neísť na vysokú školu?](https://modernafirma.podbean.com/e/ist-alebo-neist-na-vysoku-skolu/)<br>yablko rozebírá jestli má smysl jít na VŠ, když člověk uvažuje o IT. Dobrý podcast!
 
 <small>Upozorňuji, že to není vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

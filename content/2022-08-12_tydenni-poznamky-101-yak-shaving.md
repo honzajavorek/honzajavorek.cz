@@ -99,7 +99,7 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [#30 - s Marií Šabackou o klimatické změně](https://overcast.fm/+oPpc7R_ms)<br>Fajn rozhovor, celkem střízlivý pohled.
+- [#30 - s Marií Šabackou o klimatické změně](https://anchor.fm/heroine/episodes/30---s-Mari-abackou-o-klimatick-zmn-e1bo7iv)<br>Fajn rozhovor, celkem střízlivý pohled.
 - [Will Taiwan Trigger WW3 by 2027?](https://www.youtube.com/watch?v=p6sCsOdqXQw)
 - [Ukrajina tlačí na Rusko. Přebírá strategii a nutí Moskvu přemisťovat vojska, uvádí analýza](https://www.irozhlas.cz/zpravy-svet/online-valka-na-ukrajine-rusko-studium-pro-valku-vojska_2208051024_ban)<br>Naděje
 - [China's Catastrophic Oil & Gas Problem](https://www.youtube.com/watch?v=ISHHe1Hu6d4)<br>Tohle vysvětluje fakt hodně věcí, které se kolem Číny dějí.
