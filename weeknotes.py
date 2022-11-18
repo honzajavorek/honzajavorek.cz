@@ -8,8 +8,8 @@ from datetime import date, timedelta
 from pathlib import Path
 
 from slugify import slugify
-import pocket_recommendations
 import requests
+from telethon.sync import TelegramClient
 
 sys.path.append(os.curdir)
 import pelicanconf
@@ -19,6 +19,9 @@ import strava
 DEBUG = os.getenv('DEBUG')
 TITLE_PREFIX = 'Týdenní poznámky'
 CONTENT_PATH = Path(pelicanconf.PATH)
+TELEGRAM_CHANNEL_NAME = 'honzajavorekcz'
+TELEGRAM_APP_API_ID = int(os.environ['TELEGRAM_APP_API_ID'])
+TELEGRAM_APP_API_HASH = os.environ['TELEGRAM_APP_API_HASH']
 
 
 today = date.today()
@@ -28,7 +31,8 @@ today_iso = today.isoformat()
 is_weeknotes = lambda path: slugify(TITLE_PREFIX) in path.name
 weeknotes_paths = sorted(filter(is_weeknotes, CONTENT_PATH.glob('*.md')))
 last_weeknotes_path = weeknotes_paths[-1]
-last_weeknotes_date = date.fromisoformat(last_weeknotes_path.name[:10])
+last_weeknotes_date = date.fromisoformat(last_weeknotes_path.stem[:10])
+last_weeknotes_slug = last_weeknotes_path.stem[11:]
 
 start_date = last_weeknotes_date + timedelta(days=1)
 start_date_cz = f'{start_date:%d}.'.lstrip('0') + f'{start_date:%m}.'.lstrip('0')
@@ -47,11 +51,18 @@ jobs = {company_name: random.choice(list(company_jobs))
 jobs_text = "Nabídky práce pro juniory teď inzerují: "
 jobs_text += ', '.join([f"[{job['company_name']}]({job['url']})" for job in jobs.values()])
 
-res = requests.get('https://getpocket.com/@honzajavorek')
-res.raise_for_status()
-articles = [a for a in pocket_recommendations.parse(res.content, today=today)
-            if a['pocket_recommended_at'] >= last_weeknotes_date]  # intentionally repeating articles
-articles.reverse()
+articles = []
+with TelegramClient('weeknotes', TELEGRAM_APP_API_ID, TELEGRAM_APP_API_HASH) as telegram:
+    channel = telegram.get_entity(TELEGRAM_CHANNEL_NAME)
+    for message in telegram.iter_messages(channel):
+        if last_weeknotes_slug in message.message:
+            break
+        else:
+            article_url = message.media.webpage.url
+            article_comment = message.message.strip().rstrip(article_url).strip()
+            articles.append(dict(title=message.media.webpage.title,
+                                 url=article_url,
+                                 comment=article_comment))
 
 activities = strava.get_activities(strava.get_access_token())
 activities_stats = strava.calc_stats(strava.filter_by_dates(activities, start_date, today))
@@ -101,15 +112,15 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 ## Co mě zaujalo
 
-Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
+Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Telegramu](https://t.me/honzajavorekcz). Od posledních poznámek jsem sdílel toto:
 
 '''.lstrip()
 for article in articles:
-    content += f"- [{article['title']}]({article['pocket_url']})"
-    content += f"<br>{article['pocket_comment']}" if article['pocket_comment'] else ''
+    content += f"- [{article['title']}]({article['url']})"
+    content += f"<br>{article['comment']}" if article['comment'] else ''
     content += '\n'
 content += '''
-<small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>
+<small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal.</small>
 '''
 
 if DEBUG:
