@@ -1,3 +1,4 @@
+import re
 import itertools
 from operator import itemgetter
 import os
@@ -6,6 +7,7 @@ import sys
 import csv
 from datetime import date, timedelta
 from pathlib import Path
+from urllib.parse import urlparse
 
 from slugify import slugify
 import requests
@@ -51,6 +53,22 @@ jobs = {company_name: random.choice(list(company_jobs))
 jobs_text = "Nabídky práce pro juniory teď inzerují: "
 jobs_text += ', '.join([f"[{job['company_name']}]({job['url']})" for job in jobs.values()])
 
+def get_canonical_overcast_url(url):
+    response = requests.get(url, stream=True)
+    response.raise_for_status()
+    for line in response.iter_lines(decode_unicode=True):
+        if 'rel="canonical"' in line:
+            canonical_url = re.search(r'rel="canonical"\s+href="([^"]+)"', line).group(1)
+            parts = urlparse(canonical_url)
+            if (
+                parts.query or
+                parts.params or
+                parts.fragment or
+                parts.path != '/'
+            ):
+                return canonical_url
+    return url
+
 articles = []
 with TelegramClient('weeknotes', TELEGRAM_APP_API_ID, TELEGRAM_APP_API_HASH) as telegram:
     channel = telegram.get_entity(TELEGRAM_CHANNEL_NAME)
@@ -59,6 +77,8 @@ with TelegramClient('weeknotes', TELEGRAM_APP_API_ID, TELEGRAM_APP_API_HASH) as 
             break
         else:
             article_url = message.media.webpage.url
+            if 'overcast.fm' in article_url:
+                article_url = get_canonical_overcast_url(article_url)
             article_comment = message.message.strip().rstrip(article_url).strip()
             articles.append(dict(title=message.media.webpage.title,
                                  url=article_url,
