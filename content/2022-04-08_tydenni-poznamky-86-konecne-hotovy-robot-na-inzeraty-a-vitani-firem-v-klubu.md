@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl zase nějaký ten týden (26.3. — 8.4.) a tak [stejně jako minule]({filename}/2022-03-25_tydenni-poznamky-85-breznovych-300-km-na-kole-a-spousta-prace.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
+Utekl zase nějaký ten týden (26.3. — 8.4.) a tak [stejně jako minule]({filename}2022-03-25_tydenni-poznamky-85-breznovych-300-km-na-kole-a-spousta-prace.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -93,7 +93,7 @@ Pouze potřebuji do budoucna vyřešit způsob, jak označit lidi, kterým se pr
 - Na sociálních sítích jsem propagoval [nový díl našeho podcastu s Filipem z Appliftingu](https://junior.guru/podcast/) a svou [účast v podcastu ProgramHRování](https://www.programhrovani.cz/1843229/10212890-o-prvni-praci-v-it-s-honzou-javorkem).
 - Na [stránku našeho podcastu](https://junior.guru/podcast/) jsem přidal děkovací větu o tom, kdo nám na míru složil znělku.
 - Podal jsem přes datovku daňové přiznání.
-- Ozvala se mi [Jessica]({filename}/2021-06-17_jessica-upani-about-python-events-in-namibia-you-have-to-be-pure-in-terms-of-your-why.md), jestli nevím o vhodných speakerkách pro jejich meetup, tak jsem se pokusil nějaké dohodit.
+- Ozvala se mi [Jessica]({filename}2021-06-17_jessica-upani-about-python-events-in-namibia-you-have-to-be-pure-in-terms-of-your-why.md), jestli nevím o vhodných speakerkách pro jejich meetup, tak jsem se pokusil nějaké dohodit.
 - Volali jsme si s Nelou a dohodli [zveřejnění přednášky](https://youtu.be/6G4TKGQICw0) a ladili podobu nové stránky na JG, která se bude zabývat psychickým zdravím. Dělali jsme hlavně několik koleček revize budoucího textu. Přednášku jsem následně propagoval na sociálních sítích a upravoval jsem kód stránek, aby se dal zvlášť evidovat veřejný a klubový odkaz na video, protože tato přednáška má dvě verze (v klubovém záznamu je navíc záverečná diskuze s členy).
 - Uzavřeli jsme partnerství spolu s STRV a Pure Storage. Ladíme detaily a rozjíždíme dohodnuté věci.
 - Proběhly volby do rady [Pyvce](https://pyvec.org/) a zvolili mě :) Zůstávají dva původní členové výboru, tři budou noví. Paráda! Čerstvá krev! Aktuálně probíhá pomalé „předávání moci”. Podílel jsem se hodně na oživení spolku před pěti lety a jsem rád, že jsme to dotáhli až k volbám a tomu, že si spolek přebírá nová generace :)
@@ -128,7 +128,7 @@ Tři věci, které bych chtěl zvládnout udělat příště:
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

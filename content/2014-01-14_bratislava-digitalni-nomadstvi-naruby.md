@@ -40,7 +40,7 @@ Během pobytu jsem měl **tři hlavní agendy - práci, turistiku a setkávání
 
 Sice by to takto bylo obtížně dlouhodobě udržitelné, ale na druhou stranu jsem se cítil osvobozený od méně významných povinností a přišlo mi, že **čas využívám naplno a smysluplně** - žádné Twittery, Facebooky, maily, atd. Místo toho jsem běhal někde kolem Dunaje, pracoval, nebo se smál u piva. Proč to tak nedělám i doma? Síla změny prostředí? Přepne se mi mozek v zahraničí do režimu *musím toho za 24 hodin strašně moc stihnout*?
 
-Práce s kolegy v kanceláři byla příjemnou změnou, takže jsem byl **velice soustředěný**. (To je chvilkový efekt, který [moc dobře znám]({filename}/2013-03-18_re-prace-z-domova-a-jeji-prekazky.md#stereotyp), ale i tak mě to těšilo.) Na hostelu jsem se pracovat nesnažil, protože tam nebyly židle. Pokoj byl úplně nový, takže předpokládám, že je časem ještě doplní, ale my jsme prostě židle neměli a z postele jsem se pracovat nepokoušel.
+Práce s kolegy v kanceláři byla příjemnou změnou, takže jsem byl **velice soustředěný**. (To je chvilkový efekt, který [moc dobře znám]({filename}2013-03-18_re-prace-z-domova-a-jeji-prekazky.md#stereotyp), ale i tak mě to těšilo.) Na hostelu jsem se pracovat nesnažil, protože tam nebyly židle. Pokoj byl úplně nový, takže předpokládám, že je časem ještě doplní, ale my jsme prostě židle neměli a z postele jsem se pracovat nepokoušel.
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/MO04QczHF44" frameborder="0" allowfullscreen></iframe>
 

@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl zase nějaký ten týden (20.9. — 30.9.) a tak [stejně jako minule]({filename}/2022-09-19_tydenni-poznamky-105-zlinsko-a-nastenka.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
+Utekl zase nějaký ten týden (20.9. — 30.9.) a tak [stejně jako minule]({filename}2022-09-19_tydenni-poznamky-105-zlinsko-a-nastenka.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -106,7 +106,7 @@ Nastavení emailů nerozumím, takže nevím, co dělám špatně a co můžu op
 - Upravil jsem skript, který mi generuje šablonu pro týdenní poznámky. Nyní do ní přidává odkazy na aktuální nabídky práce inzerované na junior.guru.
 - Upgradoval jsem MkDocs a zjistil jsem, že věc, na kterou jsem měl plugin, [dali přímo do jádra projektu](https://github.com/mkdocs/mkdocs/pull/2978). Super! Plugin [mkdocs-simple-hooks](https://github.com/aklajnert/mkdocs-simple-hooks) jsem odinstaloval a přešel na nativní řešení.
 - V autobuse z Brna mě napadlo, že bych si mohl udělat skript, který přes RSS a youtube-dl stáhne díly jednoho video pořadu, kde jsou hlavně rozhovory a obraz tam není podstatný, vyseká jen zvuk a ten naservíruje přes podcastové RSS, které si přidám do [Overcastu](https://overcast.fm/). Díky tomu to budu moci poslouchat offline, v aplikaci, která mi vyhovuje a rychlostí, která mi vyhovuje (aktuálně 2,5x). Trvalo mi to trochu déle, než jsem chtěl, ale i tak jsem to měl hotové za pár hodin a sám se divím, ale funguje to. Akorát ty zvukové soubory hostuju na GitHub Pages a to asi není úplně ideální. A nejspíš to celé ani není legální, ale dělám to výhradně pro svou osobní potřebu, takže vám tu ani neřeknu, kde to celé je a co to je za pořad.
-- Předal jsem člence klubu a shodou okolností teď i spoluorganizátorce pražského Pyva projekt Telegram bota, který lidem oznamuje, že bude Pyvo. Měl jsem ho [napsaný v Haskellu](https://github.com/honzajavorek/pyvo_bot) (viz [článek o Haskellu tady na blogu]({filename}/2020-01-14_courting-haskell.md)), neudržoval jsem ho a nedávno jsem ho dokonce vypnul. [Mia](https://www.linkedin.com/in/mia-bajic/) ho chce přepsat do Pythonu v rámci [Hacktoberfestu](https://hacktoberfest.com/). Udělal jsem jí na to [repo na Pyvci](https://github.com/pyvec/pyvo-bot).
+- Předal jsem člence klubu a shodou okolností teď i spoluorganizátorce pražského Pyva projekt Telegram bota, který lidem oznamuje, že bude Pyvo. Měl jsem ho [napsaný v Haskellu](https://github.com/honzajavorek/pyvo_bot) (viz [článek o Haskellu tady na blogu]({filename}2020-01-14_courting-haskell.md)), neudržoval jsem ho a nedávno jsem ho dokonce vypnul. [Mia](https://www.linkedin.com/in/mia-bajic/) ho chce přepsat do Pythonu v rámci [Hacktoberfestu](https://hacktoberfest.com/). Udělal jsem jí na to [repo na Pyvci](https://github.com/pyvec/pyvo-bot).
 - Byl jsem na [Deepnote](https://deepnote.com/) párty a potkal jsem tam hodně zajímavých lidí, nových i „starých“. Netlačil jsem na pilu, takže z toho vyloženě nejsou nějaké _dealy_ s firmama, ale minimálně jsem si udělal některé důležité kontakty. Taky jsme tam nejspíš s kamarádkou upekli jeden z příštích dílů podcastu.
 - Dověděl jsem se, že existuje nějaká profesní síť [Polywork](https://www.polywork.com/), jakože „LinkedIn, ale lepší“. Zatím jsem neměl čas to vůbec prozkoumat.
 - Napsala mi docentka z Ekonomické univerzity v Bratislavě, že chce používat materiály na junior.guru ve výuce.
@@ -137,7 +137,7 @@ Tři věci, které bych chtěl zvládnout udělat příště:
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

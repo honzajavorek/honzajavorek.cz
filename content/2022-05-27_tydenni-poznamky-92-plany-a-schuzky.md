@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl zase nějaký ten týden (21.5. — 27.5.) a tak [stejně jako minule]({filename}/2022-05-20_tydenni-poznamky-91-dovolena-ve-zline.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
+Utekl zase nějaký ten týden (21.5. — 27.5.) a tak [stejně jako minule]({filename}2022-05-20_tydenni-poznamky-91-dovolena-ve-zline.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -24,7 +24,7 @@ Zatím jsem si říkal, že bych mohl zdražit od září, ale je možné, že s
 - Volal jsem si s Šárkou z [ProgramHRování](https://www.programhrovani.cz/), bavili jsme se o podcastech a spolupráci Ataccamy s JG.
 - Během psaní těchto poznámek jsem si zavolal s Veronikou z [Ataccamy](https://www.ataccama.com/) a dohodli jsme spolupráci s JG.
 - Sešel jsem se na kafe s [Petrou Kotuliakovou](https://www.linkedin.com/in/petra-kotuliakova/) z [Aj ty v IT](https://ajtyvit.sk/), byla zrovna v Praze. Prima pokec. Budu se s Aj ty v IT kamarádit a budeme si sdílet zkušenosti. Jedna z věcí, které zkusíme rozjet, je přidání SK nabídek práce na JG. Propojily mě s Profesia.sk, uvidíme co z toho bude.
-- Domlouval jsem se tak trochu s [TWguild.cz](https://www.twguild.cz/) na dalším postupu. Minimálně jsme si poslali loga a dali nebo dáme na weby. Opět jsem byl rád, že mám [VisualBook]({filename}/2021-01-28_graficky-manual.md).
+- Domlouval jsem se tak trochu s [TWguild.cz](https://www.twguild.cz/) na dalším postupu. Minimálně jsme si poslali loga a dali nebo dáme na weby. Opět jsem byl rád, že mám [VisualBook]({filename}2021-01-28_graficky-manual.md).
 - Šli jsme k právničce podepsat výsledek voleb do výboru Pyvce, ať se to může poslat na soud a je to oficiální.
 - Volal jsem si s [Nelou Slezákovou](https://www.nelaprovazi.cz/) ohledně připravované stránky na JG o duševním zdraví.
 - Ptal jsem se [Jirky](https://twitter.com/JirkaChadima) z Pure Storage, jestli nechce mít v klubu přednášku a řešili jsme termín.
@@ -83,7 +83,7 @@ Samozřejmě musím v pondělí ještě v klubu vylosovat a udělit dva lístky 
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

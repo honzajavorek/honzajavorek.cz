@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl další týden (22.3. — 26.3.) a tak [stejně jako minule]({filename}/2021-03-19_tydenni-poznamky-42-prvni-prednaska-dpfo-maily.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub podporovatelů](https://junior.guru/club/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekl další týden (22.3. — 26.3.) a tak [stejně jako minule]({filename}2021-03-19_tydenni-poznamky-42-prvni-prednaska-dpfo-maily.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub podporovatelů](https://junior.guru/club/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -94,7 +94,7 @@ No, takže taky nic. Nedostanu se ani na daňový portál, ani na ČSSZ. A toto 
 - Měl jsem videohovor s [Inuits](https://inuits.eu/), kteří měli zájem stát se členy klubu. Dohodli jsme se a faktura už je na cestě :) Bylo fajn zjistit, že jedna z účastnic hovoru JG už delší dobu [sleduje na LinkedIn](https://www.linkedin.com/company/juniorguru/) a fandí mi :)
 - Pozavíral jsem ty issues na GitHubu JG, které jsem kdysi vytvořil sám jako vlastní poznámky a nápady. Všechno kolem JG si třídím v Trellu, takže je zbytečné to mít ještě jinde. Issues nechám jen jako způsob, jak mi mohou lidé zaslat nápad nebo nahlásit chybu, pokud GitHub je zrovna ten způsob, který jim vyhovuje nejvíc.
 - Volal jsem si s jednou vzdělávací agenturou a brainstormovali jsme nad tím, jak můžeme spolupracovat bez toho, aby byla narušena nezávislost JG. Vymysleli jsme minimálně tři věci a už se těším, až něco z toho uvedeme do pohybu. Na mě ale bude podobné věci zkusit domluvit i s dalšími, právě proto, aby to bylo vyvážené a nikdo si nemyslel, že je JG „cinknuté“, že doporučuje hlavně kurzy toho a toho.
-- Během 7 dní od 20.3. do 26.3. jsem naběhal 28 km, při procházkách nachodil 5 km. Celkem jsem se hýbal 5 hodin a zdolal při tom 33 kilometrů. Zaběhl jsem přitom svůj nejdelší běh v životě, přes 20 km. Tolik jsem naposledy uběhl v roce 2008. Nejsem fanouškem promazávání starých článků, které jsem vyplodil jako nezkušený mladý kluk, jsem archivář. Takže vzhledem k tomu, že blog existuje od roku 2007, jsou tady ty staré běhy pěkně zdokumentované: [Půlmaraton. Skoro!]({filename}/2008-08-22_pulmaraton-skoro.md), [Dvakrát měř, jednou řež. Vyjde půlmaraton na třetí pokus?]({filename}/2008-09-11_dvakrat-mer-jednou-rez-vyjde-pulmaraton-na-treti-pokus.md) Třetí pokus nikdy nenastal, odjel jsem na Erasmus, začaly mě bolet kolena, do formy jsem se už nikdy nevrátil. Až teď, juchů! Každopádně moje schopnost uběhnout 20 km nijak neovlivnila mou neschopnost bez velkého přesvědčování se ujít prvních 20 cm z předsíně ven před dveře :)
+- Během 7 dní od 20.3. do 26.3. jsem naběhal 28 km, při procházkách nachodil 5 km. Celkem jsem se hýbal 5 hodin a zdolal při tom 33 kilometrů. Zaběhl jsem přitom svůj nejdelší běh v životě, přes 20 km. Tolik jsem naposledy uběhl v roce 2008. Nejsem fanouškem promazávání starých článků, které jsem vyplodil jako nezkušený mladý kluk, jsem archivář. Takže vzhledem k tomu, že blog existuje od roku 2007, jsou tady ty staré běhy pěkně zdokumentované: [Půlmaraton. Skoro!]({filename}2008-08-22_pulmaraton-skoro.md), [Dvakrát měř, jednou řež. Vyjde půlmaraton na třetí pokus?]({filename}2008-09-11_dvakrat-mer-jednou-rez-vyjde-pulmaraton-na-treti-pokus.md) Třetí pokus nikdy nenastal, odjel jsem na Erasmus, začaly mě bolet kolena, do formy jsem se už nikdy nevrátil. Až teď, juchů! Každopádně moje schopnost uběhnout 20 km nijak neovlivnila mou neschopnost bez velkého přesvědčování se ujít prvních 20 cm z předsíně ven před dveře :)
 
 
 ## Co plánuji
@@ -110,7 +110,7 @@ Bonus: Najít toho kurýra?! Bonus číslo dva: Uprosit konečně kamaráda, aby
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

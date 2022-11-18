@@ -38,7 +38,7 @@ I removed CircleCI in favor of built-in [GitHub Actions](https://github.com/feat
 
 ## Polyglot
 
-One completely new thing here is an **explicit support for translations**, which is available in Pelican [out of the box](https://docs.getpelican.com/en/stable/content.html#translations). I had to tweak it a bit so it was able to keep my old URLs, but otherwise it seems to work like a charm - see [Testing in JavaScript and in Python]({filename}/2017-01-18_testing-in-javascript-and-in-python.md) for example. Any article can now clearly declare in which language it is written and translations are nicely interlinked. This also brings me to the fact that from now on, this blog won't continue with the name "Javorové lístky" anymore as I want my new articles to be primarily in English.
+One completely new thing here is an **explicit support for translations**, which is available in Pelican [out of the box](https://docs.getpelican.com/en/stable/content.html#translations). I had to tweak it a bit so it was able to keep my old URLs, but otherwise it seems to work like a charm - see [Testing in JavaScript and in Python]({filename}2017-01-18_testing-in-javascript-and-in-python.md) for example. Any article can now clearly declare in which language it is written and translations are nicely interlinked. This also brings me to the fact that from now on, this blog won't continue with the name "Javorové lístky" anymore as I want my new articles to be primarily in English.
 
 ## HJ's blog
 

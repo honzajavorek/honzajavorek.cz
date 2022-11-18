@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl další týden (25.1. — 29.1.) a tak [stejně jako minule]({filename}/2021-01-22_tydenni-poznamky-34-eureka-clenstvi-vyreseno.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekl další týden (25.1. — 29.1.) a tak [stejně jako minule]({filename}2021-01-22_tydenni-poznamky-34-eureka-clenstvi-vyreseno.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -48,8 +48,8 @@ Paradoxně díky tomu, že kontakty mám do mobilu jen načtené z Google Contac
 - Otestoval jsem mezi prvními [2FA na Fakturoidu](https://www.fakturoid.cz/podpora/nastaveni/dvoufazove-overeni).
 - Četl jsem pár článků o tom, jak budovat komunity. Sleduji po očku také [Indie Hackers]() apod. Napadlo mě ale, že jsou to všechno nějací amíci a ti řeší prostě jiné problémy, než řeším já. Rád bych sledoval nějaké místní solo tvůrce, nebo aspoň nějaké ze střední/východní Evropy. Na [můj dotaz](https://twitter.com/honzajavorek/status/1354735756892319745) ale zatím nikdo neodpověděl :D Ach jo.
 - Poslechl jsem si nové fajn [video o pracovních pohovorech](https://twitter.com/yablko/status/1354079536078581765) od yablka. Chtěl bych časem nějaká jeho videa vložit i rovnou do příručky, ale teď to nestíhám.
-- Vytvořil jsem [repozitář pro grafický manuál](https://github.com/honzajavorek/logo.junior.guru) a zprovoznil jsem [logo.junior.guru](https://logo.junior.guru/). O tom jsem ale už napsal [samostatný článek]({filename}/2021-01-28_graficky-manual.md). Když jsem se koukal na stránku pro média, zapsal jsem si, že v budoucnu tam musím změnit texty, protože už mi přijdou zastaralé (vytvářel jsem ji myslím napodzim, hehe).
-- Začala mi padat performance na stránce o klubu ([kontroluju kontinuálně přes Lighthouse]({filename}/2020-05-11_monitoring-performance-with-lighthouse-and-circleci.md)), ale rozhodl jsem se, že to zatím nebudu řešit. Až mergnu úpravy, které mám teď ve větvi, tak to poladím.
+- Vytvořil jsem [repozitář pro grafický manuál](https://github.com/honzajavorek/logo.junior.guru) a zprovoznil jsem [logo.junior.guru](https://logo.junior.guru/). O tom jsem ale už napsal [samostatný článek]({filename}2021-01-28_graficky-manual.md). Když jsem se koukal na stránku pro média, zapsal jsem si, že v budoucnu tam musím změnit texty, protože už mi přijdou zastaralé (vytvářel jsem ji myslím napodzim, hehe).
+- Začala mi padat performance na stránce o klubu ([kontroluju kontinuálně přes Lighthouse]({filename}2020-05-11_monitoring-performance-with-lighthouse-and-circleci.md)), ale rozhodl jsem se, že to zatím nebudu řešit. Až mergnu úpravy, které mám teď ve větvi, tak to poladím.
 
 
 ## Co plánuji
@@ -65,7 +65,7 @@ A ještě bod-nebod: Neměnit hlavní stránku, neuklízet v patičce, nepřepis
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

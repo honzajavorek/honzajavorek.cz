@@ -10,12 +10,12 @@ Nechtěl jsem se do diskuse moc zapojovat, protože si myslím, že už bych moh
 
 Pro připomenutí nabízím seznam článků, z nichž lze zachytit postupné změny v mém pohledu na studium informatiky:
 
-- [FIT nebo FI]({filename}/2010-12-04_fit-nebo-fi.md) (souvisí s [Text o FIT VUT]({filename}/2013-03-05_text-o-fit-vut.md))
-- [Byl jsem fit]({filename}/2011-05-09_byl-jsem-fit.md) (souvisí s [Text o FIT VUT]({filename}/2013-03-05_text-o-fit-vut.md))
-- [Alma mater]({filename}/2011-12-25_alma-mater.md)
-- [Manifest zklamaného studenta]({filename}/2012-01-23_manifest-zklamaneho-studenta.md)
-- [A z jakého důvodu studuješ ty?]({filename}/2012-05-31_a-z-jakeho-duvodu-studujes-ty.md)
-- [Vysoké školy učí dějiny IT]({filename}/2012-06-06_vysoke-skoly-uci-dejiny-it.md)
+- [FIT nebo FI]({filename}2010-12-04_fit-nebo-fi.md) (souvisí s [Text o FIT VUT]({filename}2013-03-05_text-o-fit-vut.md))
+- [Byl jsem fit]({filename}2011-05-09_byl-jsem-fit.md) (souvisí s [Text o FIT VUT]({filename}2013-03-05_text-o-fit-vut.md))
+- [Alma mater]({filename}2011-12-25_alma-mater.md)
+- [Manifest zklamaného studenta]({filename}2012-01-23_manifest-zklamaneho-studenta.md)
+- [A z jakého důvodu studuješ ty?]({filename}2012-05-31_a-z-jakeho-duvodu-studujes-ty.md)
+- [Vysoké školy učí dějiny IT]({filename}2012-06-06_vysoke-skoly-uci-dejiny-it.md)
 
 Historie mého studia je asi takováto:
 

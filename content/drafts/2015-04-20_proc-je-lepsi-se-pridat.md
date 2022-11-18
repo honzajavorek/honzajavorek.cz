@@ -3,7 +3,7 @@ Date: 2015-04-20 11:52:13
 Lang: cs
 Status: draft
 
-Máme tady takovou neziskovku, [Czechitas](http://czechitas.cz/), která se snaží pomáhat ženám do IT. Proč je taková aktivita záslužná, to jsem [vysvětloval minule]({filename}/2015-04-19_proc-pomahat-holkam-do-it.md).
+Máme tady takovou neziskovku, [Czechitas](http://czechitas.cz/), která se snaží pomáhat ženám do IT. Proč je taková aktivita záslužná, to jsem [vysvětloval minule]({filename}2015-04-19_proc-pomahat-holkam-do-it.md).
 
 Holky s tím začaly hodně od srdíčka. Netušily, že ženy v IT jsou extrémně citlivé téma, které je potřeba komentovat obezřetně a pohybovat se v něm opatrně. Netušily, že je to černobílé, extrémně polarizující téma, v němž se diskuse nevedou argumenty, ale barvou dresu. Neměly ponětí, že i když jsou jejich dresy růžové, najdou se lidi, kteří budou kritizovat, že jejich dresy nejsou růžové dostatečně, nebo jsou růžové příliš.
 

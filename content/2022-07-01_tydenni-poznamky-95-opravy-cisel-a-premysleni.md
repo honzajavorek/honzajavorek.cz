@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl zase nějaký ten týden (25.6. — 1.7.) a tak [stejně jako minule]({filename}/2022-06-24_tydenni-poznamky-94-premysleni-psani-a-cisteni.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
+Utekl zase nějaký ten týden (25.6. — 1.7.) a tak [stejně jako minule]({filename}2022-06-24_tydenni-poznamky-94-premysleni-psani-a-cisteni.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -19,7 +19,7 @@ Zjistil jsem, že se mi nezapočítávají lidi, kteří jsou na dárkovém pře
 
 ## Výpomoc na marketing
 
-[Inzerát na marketingovou výpomoc]({filename}/2022-06-24_vypomoc-na-socialni-site.md) jsem nad rámec tohoto blogu nebo klubu záměrně nikde nepropagoval. Ozvalo se mi několik lidí. Pár lidí mi někoho doporučilo a já se pokusil ty doporučené lidi kontaktovat.
+[Inzerát na marketingovou výpomoc]({filename}2022-06-24_vypomoc-na-socialni-site.md) jsem nad rámec tohoto blogu nebo klubu záměrně nikde nepropagoval. Ozvalo se mi několik lidí. Pár lidí mi někoho doporučilo a já se pokusil ty doporučené lidi kontaktovat.
 
 Nakonec jsem to ale spíš pozastavil, protože inzerát jsem sice sepsal hezký, ale v důsledku vyvstala spousta otázek, na které si ve skutečnosti neumím odpovědět. Kolik na to mám peněz? Hledám profíka, který bude přicházet s vlastními nápady a řešeními, nebo čistě výpomoc, kterou třeba i zaučím? Jak důležitý je pro mě marketing na sociálních sítích? Za jakým účelem ho dělám a jak bych popsal „úspěch“ této své činnosti?
 
@@ -92,7 +92,7 @@ Tři věci, které bych chtěl zvládnout udělat příště:
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

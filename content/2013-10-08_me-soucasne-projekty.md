@@ -2,7 +2,7 @@ Title: Mé současné projekty
 Date: 2013-10-08 10:54:55
 Lang: cs
 
-Od mého lednového [restartu]({filename}/2012-11-04_restart.md) jsem prošel vícero projekty a mnohdy jsem z týdne na týden odpovídal na otázku *na čem teď vlastně děláš?* pokaždé jinak. Teď se situace (snad!) na chvíli opět ustálila, takže jsem se rozhodl, že zde sepíšu takové menší shrnutí.
+Od mého lednového [restartu]({filename}2012-11-04_restart.md) jsem prošel vícero projekty a mnohdy jsem z týdne na týden odpovídal na otázku *na čem teď vlastně děláš?* pokaždé jinak. Teď se situace (snad!) na chvíli opět ustálila, takže jsem se rozhodl, že zde sepíšu takové menší shrnutí.
 
 ## Co mám za sebou
 

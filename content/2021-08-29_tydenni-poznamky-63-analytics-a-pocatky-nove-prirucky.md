@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl další týden (23.8. — 27.8.) a tak [stejně jako minule]({filename}/2021-08-20_tydenni-poznamky-62-dvounedeli.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekl další týden (23.8. — 27.8.) a tak [stejně jako minule]({filename}2021-08-20_tydenni-poznamky-62-dvounedeli.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -38,7 +38,7 @@ Jenže ani tak nemám čas na psaní. Napsat takový článek, to je prostě 5 a
 
 Pokud nezareaguju, když přijde _slina_, tak se článek promění pouze v navždy odloženou Trello kartičku. Jejda, takových je! Pokud tomu chci zabránit, musím v ten okamžik sednout a psát a dopsat to. Takže tentokrát jsem sedl a psal jsem, dopil jsem studené kafe z odpoledne a dokončil jsem to ve tři ráno. Pak jsem šel spát a dopoledne jsem to ještě do oběda ladil a nebyla se mnou řeč, než jsem to publikoval. Před publikací to četla jen manželka.
 
-No [a je to]({filename}/2021-08-28_bez-auta.md). A má to nakonec dost reakcí, na to, jaká to je blbost. Celkem mě to překvapilo, [na Twitteru](https://twitter.com/honzajavorek/status/1431969184745918467) se mi dva dny nezastavily notifikace. 190+ lajků, tyjo, co bych za to dal na tom tweetu o klubu :D
+No [a je to]({filename}2021-08-28_bez-auta.md). A má to nakonec dost reakcí, na to, jaká to je blbost. Celkem mě to překvapilo, [na Twitteru](https://twitter.com/honzajavorek/status/1431969184745918467) se mi dva dny nezastavily notifikace. 190+ lajků, tyjo, co bych za to dal na tom tweetu o klubu :D
 
 Taky mě ale překvapilo, že se mnou lidi celkem souzní a že na to, jaký ten článek měl dosah, tak se ještě neozvali nějací hejtři. I když tomu možná brání to, že jsem vše formuloval dost subjektivně a nesnažil se ze svých pozorování vyvozovat obecnější závěry. To mi dost pomáhá překonat i ten autorský blok. Moje žitá zkušenost je prostě autentická a i když máte jinou, nemůžete ji příliš kritizovat, že.
 
@@ -89,7 +89,7 @@ A, ehm, vymyslet ten systém, při kterém zvládám zároveň pečovat o dítě
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

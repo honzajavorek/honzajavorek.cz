@@ -3,7 +3,7 @@ Date: 2012-05-31 08:51:16
 Lang: cs
 
 <div class="article-warning" markdown="1">
-**A ještě jedno upozornění!** Toto je historický text o studiu VŠ. Honzův aktuální názor na studium vysoké školy nejlépe vyjadřuje [tento článek]({filename}/2014-02-24_s-odstupem-o-studiu-informatiky.md).
+**A ještě jedno upozornění!** Toto je historický text o studiu VŠ. Honzův aktuální názor na studium vysoké školy nejlépe vyjadřuje [tento článek]({filename}2014-02-24_s-odstupem-o-studiu-informatiky.md).
 </div>
 
 Tak si to shrňme. Mě už se to moc netýká, [já mám jasno]({filename}2012-01-23_manifest-zklamaneho-studenta.md), ale co [vy ostatní](http://ksinan.blog.respekt.ihned.cz/c1-55669350-hnupove-vsech-zemi-vzdelejte-se), proč studujete?

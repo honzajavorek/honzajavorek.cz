@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekly nějaké ty týdny (19.12. — 8.1.) a já [stejně jako před Vánoci]({filename}/2020-12-18_tydenni-poznamky-31-novy-pocitac-a-novy-produkt.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekly nějaké ty týdny (19.12. — 8.1.) a já [stejně jako před Vánoci]({filename}2020-12-18_tydenni-poznamky-31-novy-pocitac-a-novy-produkt.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -44,7 +44,7 @@ Dokončil jsem [stránku, která na novou věc upozorňuje](https://junior.guru/
 
 ## Nový počítač a článek na #2 HN
 
-Před svátky jsem [napsal článek o tom, proč jsem si koupil nový Apple Silicon s M1 procesorem]({filename}/2020-12-18_i-bought-apple-silicon.md), a jaké jsou mé první dojmy. Odkaz na něj byl už v minulých poznámkách. Vydaný byl už v onen pátek, kdy poznámky vyšly, ale chtěl jsem ho začít propagovat až v pondělí, protože přes víkend bývá český internet mrtvý. Pod významnějšími články na blogu mívám odkazy na Facebook, Twitter, Reddit, nebo HackerNews, kde lidé mohou článek komentovat, protože jinak tady komentáře není jak přidat. Abych to měl připravené na pondělí, dal jsem už během onoho pátku odkaz na HackerNews a nalinkoval to z blogu. Stalo se, co jsem vůbec nečekal. Můj článek vystoupal na druhé místo přední stránky HackerNews a docela dlouho se tam držel.
+Před svátky jsem [napsal článek o tom, proč jsem si koupil nový Apple Silicon s M1 procesorem]({filename}2020-12-18_i-bought-apple-silicon.md), a jaké jsou mé první dojmy. Odkaz na něj byl už v minulých poznámkách. Vydaný byl už v onen pátek, kdy poznámky vyšly, ale chtěl jsem ho začít propagovat až v pondělí, protože přes víkend bývá český internet mrtvý. Pod významnějšími články na blogu mívám odkazy na Facebook, Twitter, Reddit, nebo HackerNews, kde lidé mohou článek komentovat, protože jinak tady komentáře není jak přidat. Abych to měl připravené na pondělí, dal jsem už během onoho pátku odkaz na HackerNews a nalinkoval to z blogu. Stalo se, co jsem vůbec nečekal. Můj článek vystoupal na druhé místo přední stránky HackerNews a docela dlouho se tam držel.
 
 ![HN]({static}/images/hackernews.jpg)
 
@@ -75,7 +75,7 @@ Kdybych měl posoudit, proč byl článek na HN tak úspěšný, tak bych řekl,
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač! Jo a vzhledem k aktuální situaci se mi teď líbilo ještě i tohle:
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač! Jo a vzhledem k aktuální situaci se mi teď líbilo ještě i tohle:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Lots of people are feeling unproductive. If you didn’t infect anyone today, you were productive.</p>&mdash; James Hamblin (@jameshamblin) <a href="https://twitter.com/jameshamblin/status/1346311867673796608?ref_src=twsrc%5Etfw">January 5, 2021</a></blockquote>
 

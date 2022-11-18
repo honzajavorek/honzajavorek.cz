@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl zase nějaký ten týden (22.11. — 29.11.) a tak [stejně jako minule]({filename}/2021-11-21_tydenni-poznamky-74-studium-marketingu.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
+Utekl zase nějaký ten týden (22.11. — 29.11.) a tak [stejně jako minule]({filename}2021-11-21_tydenni-poznamky-74-studium-marketingu.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -23,7 +23,7 @@ Já píšu příručku a programuju bota, který mé placené komunitě přidáv
 
 A to jsem teda pominul, že lidi mi prostě platí i jen za to, že existuje ta příručka, že jsem ji napsal a dal veřejně na web. Prostě na tom celém vidím, jak kvantita není kvalita a že z no-code a FB skupiny nebo Discordu se nedá jen tak lusknutím prstu vyvařit totéž, co mám já. A to i když opomenu svůj sociální kapitál, který jsem do toho všeho vložil a díky kterému třeba snadno sháním přednášející.
 
-Nasdíleli jsme si nějaké tipy, psal jsem mu o [svém pivotu]({filename}/2021-01-11_spoustim-klub.md). Byznys pro juniory, pokud neděláte kurzy, je minové pole. V Česku zmizelo levio.cz, v zahraničí zase s velkou pompou spouštěli entrylevel.io, ale teď tam vidím akorát rok staré nabídky. Newsletter juniorsintech.com taky skončil. Někomu se ale daří. [Ladybug](https://www.ladybug.dev/) běží, [Emma](https://twitter.com/emmabostian/) prodává [knížky](https://technicalinterviews.dev/). Ale prodávat knížku svému existujícímu obřímu publiku z celého světa, to je trochu specifické.
+Nasdíleli jsme si nějaké tipy, psal jsem mu o [svém pivotu]({filename}2021-01-11_spoustim-klub.md). Byznys pro juniory, pokud neděláte kurzy, je minové pole. V Česku zmizelo levio.cz, v zahraničí zase s velkou pompou spouštěli entrylevel.io, ale teď tam vidím akorát rok staré nabídky. Newsletter juniorsintech.com taky skončil. Někomu se ale daří. [Ladybug](https://www.ladybug.dev/) běží, [Emma](https://twitter.com/emmabostian/) prodává [knížky](https://technicalinterviews.dev/). Ale prodávat knížku svému existujícímu obřímu publiku z celého světa, to je trochu specifické.
 
 Myslím, že budeme s Dawidem kamarádi. Blbé je, že si asi nepřečte poznámky, které píšu česky, a překládat mu všechno do angličtiny, do soukromých zpráv, asi nebudu. Spíš si prostě občas napíšeme, jak se komu daří a co je nového. Zatím výsledek [tu](https://twitter.com/dawidzamkowski/status/1463057905985503233).
 
@@ -117,7 +117,7 @@ Tři věci, které bych chtěl zvládnout udělat příště:
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

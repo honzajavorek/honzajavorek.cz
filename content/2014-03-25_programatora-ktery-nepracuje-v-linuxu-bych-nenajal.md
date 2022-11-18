@@ -4,7 +4,7 @@ Lang: cs
 
 Pár tweetů a tolik povyku :) Abych nakonec nebyl za úplného debila, musím to nějak doplnit tady na blogu.
 
-Už před nedávnem [jsem začal na vývoj používat Vagrant]({filename}/2013-11-28_vagrant.md). Tedy udělátko do příkazové řádky, díky kterému snadno a rychle
+Už před nedávnem [jsem začal na vývoj používat Vagrant]({filename}2013-11-28_vagrant.md). Tedy udělátko do příkazové řádky, díky kterému snadno a rychle
 vytvoříte malé virtuálky (přitom backendy mohou být různé, např. VirtualBox). K čemu se to hodí? Můžete si tak vytvořit sandbox, v němž vyvíjíte a nešpiníte si přitom vlastní systém. Virtuálky můžete kopírovat, mazat, upravovat, rozběhnout si v nich Redis, PostgreSQL, MongoDB a klidně dvacet dalších služeb a pak je jedním příkazem vypnout (či pozastavit), až skončíte svou práci na onom konkrétním projektu. Já mívám většinou rozjetých více různých projektů (i během práce pro jednu firmu - dělá se na více věcech zároveň), každý má jiné závislosti atd., takže se mi to dost hodí.
 
 Jenomže Vagrant a virtuálky jsou, přiznejme si to, celkem těžkopádné (a hlavně často dost pomalé) řešení. Proto někdo přišel a vymyslel [Docker](https://www.docker.io/). To je něco jako *lightweight* virtuálka, ale je to implementované přímo v ekosystému Linuxového jádra využitím všelijakých zajímavých funkcí, jež tam byly už dávno, ale nikdo je moc nepoužíval, nevědělo se o nich moc, nebo prostě nikoho nenapadlo dát je dohromady a použít zrovna na tohle. Navíc je tam ještě nějaké "verzování" atd., ale tomu až zas tak nerozumím, tak si to vyčtěte jinde. Prostě je to teď úplně nejvíc nejcoolovější věc, co frčí mezi vývojáři a kdo nemá na deklu laptopu nalepenou velrybičku, jako by nebyl ;-)

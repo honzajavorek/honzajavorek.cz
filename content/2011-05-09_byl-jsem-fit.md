@@ -4,7 +4,7 @@ Lang: cs
 Tags: erasmus, názory, škola, vut fit
 
 <div class="article-warning" markdown="1">
-**A ještě jedno upozornění!** Tento konkrétní článek o VŠ má svůj příběh, který si můžete přečíst [zde]({filename}/2013-03-05_text-o-fit-vut.md). Shrnuje Honzovy pocity ze studia VUT FIT v květnu 2011. Jak VUT FIT funguje dnes, nemá Honza nejmenší tušení. Jeho aktuální názor na VŠ nejlépe vyjadřuje [tento článek]({filename}/2014-02-24_s-odstupem-o-studiu-informatiky.md).
+**A ještě jedno upozornění!** Tento konkrétní článek o VŠ má svůj příběh, který si můžete přečíst [zde]({filename}2013-03-05_text-o-fit-vut.md). Shrnuje Honzovy pocity ze studia VUT FIT v květnu 2011. Jak VUT FIT funguje dnes, nemá Honza nejmenší tušení. Jeho aktuální názor na VŠ nejlépe vyjadřuje [tento článek]({filename}2014-02-24_s-odstupem-o-studiu-informatiky.md).
 </div>
 
 Milý deníčku, sérii článků o ústavu jménem **Fakulta informačních technologií VUT v Brně** uzavírám tímto dlouhým příspěvkem. [Po setkání s děkanem fakulty]({filename}2010-12-17_sliby-se-maji-dodrzovat-i-o-vanocich.md) jsem se rozhodl, že původní článek, v němž se rozhoduji mezi FIT a FI, **nikdy už nezveřejním**. Rozhodl jsem se však nakonec přece jen studentům FIT VUT zanechat nějaký dárek na rozloučenou a sepsal jsem seriózní názor na fakultu podložený co nejvíce fakty, oproštěný od osobních „nesympatií“ a studentského slangu. Fakultu jsem se snažil popsat z dobré i špatné strany, prostě tak, jak jsem ji v průběhu let vnímal.

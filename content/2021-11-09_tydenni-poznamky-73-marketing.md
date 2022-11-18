@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl zase nějaký ten týden (3.11. — 9.11.) a tak [stejně jako minule]({filename}/2021-11-02_tydenni-poznamky-72-heroine-cally-a-reseni-tajemne-chyby.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
+Utekl zase nějaký ten týden (3.11. — 9.11.) a tak [stejně jako minule]({filename}2021-11-02_tydenni-poznamky-72-heroine-cally-a-reseni-tajemne-chyby.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -30,7 +30,7 @@ Akorát že vůbec! 1, 2 a 3 jsou marketing. 4 je přímo akce v klubu. Marketin
 
 V úterý večer se přednáška povedla, byť s drobnými nedostatky. Libor to pojmul interaktivně, ptal se lidí co je zajímá, ale potom to tedy vyústilo spíš v porovnání frameworků a vysvětlování frontendových architektur, než v pokračování případové studie.
 
-Na mé straně zas proběhlo hned několik failů. Sluchátka se mi několkrát v průběhu přednášky odpojily a zvuk se tak dostal do repráků noťasu, což mělo vliv na nahrávání. Předtím ani potom se mi to nestalo, takže to připisuji spíš neschopnosti macOS sluchátka udržet, když mu dochází energie. Tím se dostáváme k dalšímu failu, neuvědomil jsem si, že jsem noťas šťavil ve vlaku a má polovinu baterky. V místě, kde doma dělám přednášky, nemám zásuvku, [což díky M1 nevadí]({filename}/2020-12-18_i-bought-apple-silicon.md), ale tentokrát jsem musel doběhnout v polovině akce pro prodlužku a zachraňovat to na 5 %. Jeden z členů se připojil s nezamutovaným mikrofonem, tak jsem ho rychle jako moderátor mutnul, ale Discord má tuhle funkci rozdělenou na „mutnout ho jen pro sebe“ a „mutnout ho pro všechny“. Udělal jsem to první, zvuky jsem už neslyšel (nebudou aspoň na záznamu), ale speakera to dál rušilo a já o tom nevěděl.
+Na mé straně zas proběhlo hned několik failů. Sluchátka se mi několkrát v průběhu přednášky odpojily a zvuk se tak dostal do repráků noťasu, což mělo vliv na nahrávání. Předtím ani potom se mi to nestalo, takže to připisuji spíš neschopnosti macOS sluchátka udržet, když mu dochází energie. Tím se dostáváme k dalšímu failu, neuvědomil jsem si, že jsem noťas šťavil ve vlaku a má polovinu baterky. V místě, kde doma dělám přednášky, nemám zásuvku, [což díky M1 nevadí]({filename}2020-12-18_i-bought-apple-silicon.md), ale tentokrát jsem musel doběhnout v polovině akce pro prodlužku a zachraňovat to na 5 %. Jeden z členů se připojil s nezamutovaným mikrofonem, tak jsem ho rychle jako moderátor mutnul, ale Discord má tuhle funkci rozdělenou na „mutnout ho jen pro sebe“ a „mutnout ho pro všechny“. Udělal jsem to první, zvuky jsem už neslyšel (nebudou aspoň na záznamu), ale speakera to dál rušilo a já o tom nevěděl.
 
 Když už jsme u mutování, já sám mám dvě různé možnosti jak se vypnout, jednak tlačítko mikrofonu v Discordu, jednak se můžu zvlášť vypnout pro záznam v OBS. Většinou potřebuju vypnout nebo zapnout oboje, což snadno nejde. Vypínám se tedy v Discordu, jsem zticha a počítám s tím, že v OBS případný můj šum ze záznamu oříznou filtry. Jenže když jsem šel řešit prodlužku, vypnul jsem se i v OBS. Hádejte co, zapomněl jsem to zapnout a pak jsem mluvil, takže to sice šlo slyšet v Discordu, ale nebude to na záznamu.
 
@@ -125,7 +125,7 @@ Tři věci, které bych chtěl zvládnout udělat příště:
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl zase nějaký ten týden (3.9. — 12.9.) a tak [stejně jako minule]({filename}/2022-09-02_tydenni-poznamky-103-covid-a-spusteni-onboardingu.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
+Utekl zase nějaký ten týden (3.9. — 12.9.) a tak [stejně jako minule]({filename}2022-09-02_tydenni-poznamky-103-covid-a-spusteni-onboardingu.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -80,7 +80,7 @@ Možná ze mě nakonec ještě bude ten militantní městský cyklista, a ne pou
 - Začaly mi sem tam padat nějaké věci okolo stahování nabídek práce. Zatím jsem přidal logování, opravil jednu drobnou chybu s kódováním textu a parsováním HTML a uvidím, kdy se zase nějaká chyba objeví. Snad potom budu mít díky tomu logování víc informací a najdu příčinu problémů.
 - Narazil jsem na web s [evropskými alternativami amerických služeb](https://european-alternatives.eu/). Škoda, že když cokoliv z toho použiju a zaplatím za to ze svého podnikatelského účtu, tak mi to zkomplikuje daně. Jsem OSVČ, nejsem plátce DPH a kvůli zbytečné byrokracii nechci být ani identifikovaná osoba, dokud to bude možné. Za tyto služby se platí v řádu stokorun a kvůli tomu se zvýšit byrokracii v minimalistickém podnikání opravdu nevyplatí. Když nakoupím služby u firem z USA, nic z toho řešit nemusím. Ach jo, Evropo!
 - Odstranil jsem workaround z nastavení instalace JG pomocí Poetry. Řešil [toto issue](https://github.com/python-poetry/poetry/issues/3336), ale to už zavřeli, tak zkouším, jestli to bude OK. Musel jsem ovšem zajistit, abych měl všude co nejnovější verzi Poetry.
-- Opravil jsem kapající kohoutek v kuchyni. Rozebral jsem baterii, našel prasklé těsnění, obul jsem si boty, zašel pěšky pro těsnění do instalatérských potřeb kousek od našeho domu, vrátil se a dodělal to. [Město krátkých vzdáleností!]({filename}/2021-08-28_bez-auta.md) Mám to tady fakt rád.
+- Opravil jsem kapající kohoutek v kuchyni. Rozebral jsem baterii, našel prasklé těsnění, obul jsem si boty, zašel pěšky pro těsnění do instalatérských potřeb kousek od našeho domu, vrátil se a dodělal to. [Město krátkých vzdáleností!]({filename}2021-08-28_bez-auta.md) Mám to tady fakt rád.
 - Během 10 dní od 3.9. do 12.9. jsem naběhal 8 km, při procházkách nachodil 5 km. Celkem jsem se hýbal 4 hodin a zdolal při tom 13 kilometrů.
 - Aktuální finanční výsledky, návštěvnost a další čísla k JG [mám přímo na webu](https://junior.guru/open/).
 
@@ -97,7 +97,7 @@ Možná ze mě nakonec ještě bude ten militantní městský cyklista, a ne pou
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

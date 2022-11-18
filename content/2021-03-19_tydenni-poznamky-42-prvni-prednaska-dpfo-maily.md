@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl další týden (15.3. — 19.3.) a tak [stejně jako minule]({filename}/2021-03-12_tydenni-poznamky-41-mdz-yablko-a-pocitani-penez.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub podporovatelů](https://junior.guru/club/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekl další týden (15.3. — 19.3.) a tak [stejně jako minule]({filename}2021-03-12_tydenni-poznamky-41-mdz-yablko-a-pocitani-penez.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub podporovatelů](https://junior.guru/club/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -71,7 +71,7 @@ Naplánoval jsem nebo jsem rovnou sdílel všelijaké další noviny, které se 
 
 ## Nastavení Pythonu
 
-Už delší dobu jsem používal Python z Homebrew jako ten, ze kterého vytvářím virtuální prostředí, což [není dobrý nápad](https://justinmayer.com/posts/homebrew-python-is-not-for-you/). Bylo to proto, že na mojí [M1]({filename}/2020-12-18_i-bought-apple-silicon.md) ze začátku nějak nefungoval pyenv, tak jsem to pouze zalepil skrze `brew pin python@3.9`, aby se mi aspoň nerozbíjely virtuální prostředí.
+Už delší dobu jsem používal Python z Homebrew jako ten, ze kterého vytvářím virtuální prostředí, což [není dobrý nápad](https://justinmayer.com/posts/homebrew-python-is-not-for-you/). Bylo to proto, že na mojí [M1]({filename}2020-12-18_i-bought-apple-silicon.md) ze začátku nějak nefungoval pyenv, tak jsem to pouze zalepil skrze `brew pin python@3.9`, aby se mi aspoň nerozbíjely virtuální prostředí.
 
 Ale teď už mě to dohánělo na každém kroku. Chtěl jsem něco přes Homebrew nainstalovat a napsalo mi to, že ne-é, že to bych nejdřív musel upgradnout i Python, jenže ten je připíchnutý na konkrétní verzi, takže mám smůlu, dokud ho neodpíchnu. Třeba [spotify-tui](https://github.com/Rigellute/spotify-tui) nebo [magic-wormhole](https://github.com/magic-wormhole/magic-wormhole). Takže jsem se do toho pustil.
 
@@ -126,7 +126,7 @@ Tři věci, které bych chtěl zvládnout udělat příště:
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

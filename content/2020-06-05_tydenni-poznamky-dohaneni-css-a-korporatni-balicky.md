@@ -6,7 +6,7 @@ Twitter-Comments: https://twitter.com/honzajavorek/status/1268968394050715649
 Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10158178601917707
 
 
-Utekl další týden (1.6. — 5.6.) a tak [stejně jako minule]({filename}/2020-05-29_tydenni-poznamky-horst-fuchs.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekl další týden (1.6. — 5.6.) a tak [stejně jako minule]({filename}2020-05-29_tydenni-poznamky-horst-fuchs.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -60,7 +60,7 @@ Jednomu juniorovi, který si právě hledá práci v Ostravě, jsem pomohl s pr�
 
 ## Týdenní poznámky
 
-Dostal jsem na týdenní poznámky již několik ohlasů. Mnoho se točilo kolem toho, že to lidé rádi čtou, ale pak se cítí blbě. Sepsal jsem tedy kvůli tomu [separátní článek]({filename}/2020-06-04_neni-to-zavod.md). Poté jsem ještě přidal do svého [skriptu](https://github.com/honzajavorek/honzajavorek.cz/blob/master/weeknotes.py) na připravu poznámek odstavec, kde na ten článek budu z každých dalších poznámek odkazovat. Je zajímavé, že tento článek rezonoval spoustě lidí, jejichž komentáře nebo lajky pod svými články zas tak moc nevídám. Zřejmě se mi podařilo oslovit nějakou část lidí, kteří jsou většinou jen „tiší čtenáři“ 🙂
+Dostal jsem na týdenní poznámky již několik ohlasů. Mnoho se točilo kolem toho, že to lidé rádi čtou, ale pak se cítí blbě. Sepsal jsem tedy kvůli tomu [separátní článek]({filename}2020-06-04_neni-to-zavod.md). Poté jsem ještě přidal do svého [skriptu](https://github.com/honzajavorek/honzajavorek.cz/blob/master/weeknotes.py) na připravu poznámek odstavec, kde na ten článek budu z každých dalších poznámek odkazovat. Je zajímavé, že tento článek rezonoval spoustě lidí, jejichž komentáře nebo lajky pod svými články zas tak moc nevídám. Zřejmě se mi podařilo oslovit nějakou část lidí, kteří jsou většinou jen „tiší čtenáři“ 🙂
 
 Další ohlas byl tento:
 
@@ -97,7 +97,7 @@ Počínaje těmito poznámkami si tedy můžete u sdílených článků i přeč
 ## A co vy?
 
 Máte dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli? Mám pro vás skvělou zprávu!
-V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

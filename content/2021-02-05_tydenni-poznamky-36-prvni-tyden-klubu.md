@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl další týden (1.2. — 5.2.) a tak [stejně jako minule]({filename}/2021-01-29_tydenni-poznamky-35-obchodni-podminky-a-tak.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekl další týden (1.2. — 5.2.) a tak [stejně jako minule]({filename}2021-01-29_tydenni-poznamky-35-obchodni-podminky-a-tak.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -14,7 +14,7 @@ Tento týden jsem si převážně chatoval s lidmi v klubu, psal e-maily a posí
 
 ## Spuštení klubu
 
-V pondělí se mi konečně podařilo spustit [klub]({filename}/2021-01-11_spoustim-klub.md). Právnička mi poslala poslední verzi obchodních podmínek a textu o ochraně osobních údajů. Zřejmě na tom pracovala o víkendu. Půl dne jsem texty přepisoval na web do HTML, upravil ještě nějaká přesměrování a nastavení v Google Analytics a zhruba ve tři odpoledne jsem klub potichu spustil. Až jsem na prvních jednotkách lidí otestoval, že vše funguje, odvážil jsem se o spuštění napsat na internety. Udělal jsem lednový newsletter (1.2., ehm) a do něj dal informaci, že klub je spuštěný. Během úterý jsem to pak propagoval i na zbytku internetu. Většinu týdne jsem pak strávil v klubu, abych rozdmýchával a nasměrovával vznikající společenství. Objevilo se hned několik ohlasů, hezky si je tady poznamenám:
+V pondělí se mi konečně podařilo spustit [klub]({filename}2021-01-11_spoustim-klub.md). Právnička mi poslala poslední verzi obchodních podmínek a textu o ochraně osobních údajů. Zřejmě na tom pracovala o víkendu. Půl dne jsem texty přepisoval na web do HTML, upravil ještě nějaká přesměrování a nastavení v Google Analytics a zhruba ve tři odpoledne jsem klub potichu spustil. Až jsem na prvních jednotkách lidí otestoval, že vše funguje, odvážil jsem se o spuštění napsat na internety. Udělal jsem lednový newsletter (1.2., ehm) a do něj dal informaci, že klub je spuštěný. Během úterý jsem to pak propagoval i na zbytku internetu. Většinu týdne jsem pak strávil v klubu, abych rozdmýchával a nasměrovával vznikající společenství. Objevilo se hned několik ohlasů, hezky si je tady poznamenám:
 
 - [@gingo33](https://twitter.com/gingo33/status/1356323890121863177)
 - [@MstrsObserver](https://twitter.com/MstrsObserver/status/1356333451465674753)
@@ -85,7 +85,7 @@ Tři věci, které bych chtěl zvládnout udělat příště:
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

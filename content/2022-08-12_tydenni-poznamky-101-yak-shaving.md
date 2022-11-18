@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl zase nějaký ten týden (6.8. — 12.8.) a tak [stejně jako minule]({filename}/2022-08-05_tydenni-poznamky-100-marketingova-konzultace-a-psani-tipu-do-onboardingu.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
+Utekl zase nějaký ten týden (6.8. — 12.8.) a tak [stejně jako minule]({filename}2022-08-05_tydenni-poznamky-100-marketingova-konzultace-a-psani-tipu-do-onboardingu.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -22,7 +22,7 @@ Z Regiojetu tam a zpět jsem měl trochu smíšené pocity, ale o tom napíšu t
 
 Několikadenní dovolená s ročním děckem byla hodně o tom, jakou náladu mělo zrovna děcko a jestli chtělo usnout nebo ne, ale i tak jsme si to myslím užili. Žena má teď nohu v ortéze a kdyby byla pohyblivější, asi bychom si to užili víc, ale i tak se to dalo, cestování s kočárkem, batohama a berlema vlakem bylo nakonec jednodušší, než to původně znělo.
 
-Povedla se nám zlomit nějaká tenká tyčka na kočáru, asi proto, že jsme ho po roce poprvé nějak víc skládali a rozkládali a neuměli jsme to ve spěchu udělat správně ([nemáme auto]({filename}/2021-08-28_bez-auta.md), tak kočár skládat v 99 % nepotřebujeme). Výrobce (X-Lander) hned napsal, že nám to opraví, což je fajn.
+Povedla se nám zlomit nějaká tenká tyčka na kočáru, asi proto, že jsme ho po roce poprvé nějak víc skládali a rozkládali a neuměli jsme to ve spěchu udělat správně ([nemáme auto]({filename}2021-08-28_bez-auta.md), tak kočár skládat v 99 % nepotřebujeme). Výrobce (X-Lander) hned napsal, že nám to opraví, což je fajn.
 
 
 ## Psaní tipů na onboarding
@@ -92,7 +92,7 @@ Dvě věci, které bych chtěl zvládnout udělat příště:
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

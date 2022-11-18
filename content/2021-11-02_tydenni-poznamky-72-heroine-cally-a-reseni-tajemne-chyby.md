@@ -4,14 +4,14 @@ Lang: cs
 Home: False
 
 
-Utekl zase nějaký ten týden (25.10. — 2.11.) a tak [stejně jako minule]({filename}/2021-10-24_tydenni-poznamky-71-simple-analytics-cistka-v-kodu-psani-clanku.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
+Utekl zase nějaký ten týden (25.10. — 2.11.) a tak [stejně jako minule]({filename}2021-10-24_tydenni-poznamky-71-simple-analytics-cistka-v-kodu-psani-clanku.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
 Poznámky píšu v úterý, protože jsme byli mimo domov a nějak jsem je dřív napsat nestíhal. Teď je píšu až ve vlaku zpátky, kde je času naopak dost, stav železnic mi dal na psaní dokonce krásných 30 minut navíc. (Update: Hodinu navíc, něco mimořádného u Kolína, ale aspoň jsme viděli stovky nových škodovek ve dvou patrech odstavených na vagonech… že by takhle čekaly na čipy?).
 
-Když už jsem u vlaku, jak jsem psal už dřív, [máme mimino, nemáme auto]({filename}/2021-08-28_bez-auta.md). Teď jsme konečně mohli odzkoušet dálkovou cestu vlakem, 3-4 hodiny. Druhou cestu nemáme ještě za sebou, ale zatím to vypadá na velkou pohodu, s nosítkem a pár hračkami se to dá a dítě to prospí. Jsem zvědav, jak se to bude časem měnit, ale i tak mi přijde, že ve vlaku se zabavíme pořád lépe než držením volantu a sezením v autosedačce. Díky mojí flexibilitě můžeme navíc jet v dobu, kdy moc jiných lidí nejede, takže teď máme třeba celé kupé pro sebe.
+Když už jsem u vlaku, jak jsem psal už dřív, [máme mimino, nemáme auto]({filename}2021-08-28_bez-auta.md). Teď jsme konečně mohli odzkoušet dálkovou cestu vlakem, 3-4 hodiny. Druhou cestu nemáme ještě za sebou, ale zatím to vypadá na velkou pohodu, s nosítkem a pár hračkami se to dá a dítě to prospí. Jsem zvědav, jak se to bude časem měnit, ale i tak mi přijde, že ve vlaku se zabavíme pořád lépe než držením volantu a sezením v autosedačce. Díky mojí flexibilitě můžeme navíc jet v dobu, kdy moc jiných lidí nejede, takže teď máme třeba celé kupé pro sebe.
 
 
 ## Spouštění Heroine: Ženy v IT
@@ -138,7 +138,7 @@ Taky se mi líbí, že mají opravdová tlačítka, u kterých vím, jestli jsem
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

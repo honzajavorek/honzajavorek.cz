@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl další týden (19.7. — 25.7.) a tak [stejně jako minule]({filename}/2021-07-16_tydenni-poznamky-58-po-tydnu-volna.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekl další týden (19.7. — 25.7.) a tak [stejně jako minule]({filename}2021-07-16_tydenni-poznamky-58-po-tydnu-volna.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -73,7 +73,7 @@ Jenže to nebylo tak jednoduché jako importovat si Pythoní Markdown parser a u
 - Řešil jsem trochu vztahy a chování v klubu. Snad to bude OK. „Založil si komunitu a chodili mu tam lidi“ ;) S tímhle se holt musí počítat. Vztahy mezi lidmi a komunitní dynamika jsou velkými riziky mého podnikání. Ovlivním je jen o něco málo víc, než zemědělec ovlivní počasí. Mám [CoC](http://junior.guru/coc) a nesmím váhat při jeho dodržování, jinak se jedna z hlavních výhod klubu, tj. přátelské prostředí, rozplyne, ani nebudu vědět jak. To ode mne vyžaduje umět jít příkladem, nastavovat správná očekávání, vysílat správné signály na správná místa, umět občas udělat špinavou práci a vyřešit i méně příjemné věci, než se rozjedou k nezastavení.
 - Rozmnožili se v klubu lidi, kteří se učí C#, tak jsem jim k tomu vytvořil dedikovanou místnost.
 - Zjišťoval jsem, jak fungují kredity na [Italki](https://www.italki.com/), protože uvažujeme s Mews o tom, zda bychom je nemohli určitým lidem dávat na zlepšení angličtiny. Italki mi přijde lepší než kurz, protože kurzů je hodně a jsou i zdarma, ale málokdo se do toho dokope. Když si na Italki vybere lektorku nebo lektora a budou mít hodinu týdně, prostě se k tomu podle mě dokope a ještě to bude mít větší dopad (sebevědomí, mluvení…).
-- Napsal jsem tady na blog reakci na jedno video: [Proč se neučit Python v roce 2021]({filename}/2021-07-21_proc-se-neucit-python-v-roce-2021.md)
+- Napsal jsem tady na blog reakci na jedno video: [Proč se neučit Python v roce 2021]({filename}2021-07-21_proc-se-neucit-python-v-roce-2021.md)
 - Czechitas chtějí analyzovat nabídky práce pro juniory, tak jsem se nabídl, že scraping mám _de facto_ hotový a data bych mohl poskytnout. Následně jsme si volali a nejspíš z toho bude spolupráce :)
 - Všiml jsem si, že už je v klubu skoro 200 lidí a samotného mě to překvapilo :D
 - Pomáhal jsem jednomu členovi klubu s motivačním dopisem a CV před tím, než se zkusí přihlásit na inzerát.
@@ -96,7 +96,7 @@ Tři věci, které bych chtěl zvládnout udělat příště:
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

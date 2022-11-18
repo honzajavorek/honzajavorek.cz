@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl další týden (8.2. — 12.2.) a tak [stejně jako minule]({filename}/2021-02-05_tydenni-poznamky-36-prvni-tyden-klubu.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekl další týden (8.2. — 12.2.) a tak [stejně jako minule]({filename}2021-02-05_tydenni-poznamky-36-prvni-tyden-klubu.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -80,7 +80,7 @@ Zatím jsem ale moc nepřišel na to, jak takové přebudování udělat jako _c
 
 ## Další poznámky
 
-- O víkendu jsem napsal [článek o tom, jak napsat neinteraktivního Discord bota]({filename}/2021-02-06_how-to-create-non-interactive-discord-bot.md).
+- O víkendu jsem napsal [článek o tom, jak napsat neinteraktivního Discord bota]({filename}2021-02-06_how-to-create-non-interactive-discord-bot.md).
 - Hned z kraje týdne se [rozbilo](https://twitter.com/honzajavorek/status/1358749770886619140) napojení na API [remoteok.io](https://remoteok.io/). Opravil jsem to tak, aby se má strana s chybou vyrovnala a prostě v takovém případě vyhodila nula nabídek. Teď koukám, že už to opravili.
 - Odstranil jsem Stripe z dependencies JG, protože jej nakonec nevyuživám napřímo, ale přes Memberful.
 - Vymysleli jsme v klubu jiný název pro hlavní hlasový kanál, aby se nepřekrýval s hlavním textovým a lidé se omylem nepřeklikávali.
@@ -105,7 +105,7 @@ Tři věci, které bych chtěl zvládnout udělat příště:
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

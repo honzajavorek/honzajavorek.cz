@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl zase nějaký ten týden (9.4. — 22.4.) a tak [stejně jako minule]({filename}/2022-04-08_tydenni-poznamky-86-konecne-hotovy-robot-na-inzeraty-a-vitani-firem-v-klubu.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
+Utekl zase nějaký ten týden (9.4. — 22.4.) a tak [stejně jako minule]({filename}2022-04-08_tydenni-poznamky-86-konecne-hotovy-robot-na-inzeraty-a-vitani-firem-v-klubu.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -83,7 +83,7 @@ Jinak nic nového vyhledávat nebudu, především nic náročného, jako je psa
 
 ## Další poznámky
 
-- Snažil jsem se najít speakerky na Python meetup v Namibii, ale nakonec jsem nikoho nenašel. Zprvu nebyly úplně jasné instrukce, pak už to zase bylo dost narychlo, navíc byly Velikonoce a hodně lidí mělo už jiné plány. Meetupy budou pokračovat a přemýšlíme s [Jessicou]({filename}/2021-06-17_jessica-upani-about-python-events-in-namibia-you-have-to-be-pure-in-terms-of-your-why.md), že zkusíme sehnat speakery z Česka aspoň na nějaké ty další. Příští bude někdy v květnu nebo červnu. Pokud byste měli zájem podpořit jednu strašně milou komunitu v Africe, připravit si pro ně přednášku a připojit se za nimi přes MS Teams, ozvěte se mi prosím.
+- Snažil jsem se najít speakerky na Python meetup v Namibii, ale nakonec jsem nikoho nenašel. Zprvu nebyly úplně jasné instrukce, pak už to zase bylo dost narychlo, navíc byly Velikonoce a hodně lidí mělo už jiné plány. Meetupy budou pokračovat a přemýšlíme s [Jessicou]({filename}2021-06-17_jessica-upani-about-python-events-in-namibia-you-have-to-be-pure-in-terms-of-your-why.md), že zkusíme sehnat speakery z Česka aspoň na nějaké ty další. Příští bude někdy v květnu nebo červnu. Pokud byste měli zájem podpořit jednu strašně milou komunitu v Africe, připravit si pro ně přednášku a připojit se za nimi přes MS Teams, ozvěte se mi prosím.
 - Doplnil jsem do kódu nějaké testy.
 - Povedlo se nám díky Anežce Müller domluvit společný call, kde starý výbor Pyvce předá moc nově zvolenému výboru Pyvce. Měl by proběhnout dnes večer.
 - Domlouvám s Engeto naši další spolupráci.
@@ -117,7 +117,7 @@ Tři věci, které bych chtěl zvládnout udělat příště:
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

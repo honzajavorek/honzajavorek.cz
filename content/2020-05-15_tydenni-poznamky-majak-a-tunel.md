@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl další týden (11.5. — 15.5.) a tak stejně jako [minule]({filename}/2020-05-08_prvni-tydenni-poznamky-trizeni-nabidek-prace.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekl další týden (11.5. — 15.5.) a tak stejně jako [minule]({filename}2020-05-08_prvni-tydenni-poznamky-trizeni-nabidek-prace.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -18,7 +18,7 @@ Potom jsem si četl celé [README Turbolinks](https://github.com/turbolinks/turb
 
 ## Měření výkonnosti a přístupnosti
 
-V pondělí se mi nechtělo hned z ostra naběhnout do programování parseru nabídek práce a začal jsem menším úkolem. Říkal jsem si, že ať už bude na frontendu nakonec cokoliv, budu chtít, aby byl výkonný a přístupný. Už dřív jsem zahlídl nějaké nástroje, které to umí měřit, ale chtěl jsem je dostat přímo do CI. To se mi povedlo a napsal jsem o tom ve zbylém pondělním čase i [rychlý článek]({filename}/2020-05-11_monitoring-performance-with-lighthouse-and-circleci.md). Škoda že to nefungovalo na první dobrou a jak kód, tak článek jsem řešil ještě i celé úterní dopoledne.
+V pondělí se mi nechtělo hned z ostra naběhnout do programování parseru nabídek práce a začal jsem menším úkolem. Říkal jsem si, že ať už bude na frontendu nakonec cokoliv, budu chtít, aby byl výkonný a přístupný. Už dřív jsem zahlídl nějaké nástroje, které to umí měřit, ale chtěl jsem je dostat přímo do CI. To se mi povedlo a napsal jsem o tom ve zbylém pondělním čase i [rychlý článek]({filename}2020-05-11_monitoring-performance-with-lighthouse-and-circleci.md). Škoda že to nefungovalo na první dobrou a jak kód, tak článek jsem řešil ještě i celé úterní dopoledne.
 
 To mě nakonec trochu mrzelo. Taková blbost a rozlezlo se to hned na dva dny! Nasdílel jsem to tedy na všechny možné sociální sítě, aby z toho byla aspoň sláva. To mi vzalo další čas. Hlavně proto, že jak Facebook, tak Twitter najednou odmítají načítat náhledové obrázky u mých článků, dokud odkaz ručně neproženu přes [Facebookový debug](https://developers.facebook.com/tools/debug/) nebo [Twitter Card validátor](https://cards-dev.twitter.com/validator). Tenhle problém jsem měl už dřív a podle toho, jak to časově lícuje, to vypadá na nějaký problém na straně GitHub Pages. Když blog hostuju tam, je s tímhle problém. Nevím, jak se toho ale zbavit. Každopádně další propálený čas.
 

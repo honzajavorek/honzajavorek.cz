@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl další týden (14.6. — 18.6.) a tak [stejně jako minule]({filename}/2021-06-11_tydenni-poznamky-54-ockovani.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekl další týden (14.6. — 18.6.) a tak [stejně jako minule]({filename}2021-06-11_tydenni-poznamky-54-ockovani.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -76,7 +76,7 @@ Tento týden se to všechno sešlo a poměrně dost jsem se po dlouhé době pov
 
 Z Pyva jsem se vrátil za rozbřesku, takže čtvrtek byl náročnější, ale stálo to jednoznačně za to. Přišla hromada lidí, některé jsem neviděl snad i roky, bylo strašně příjemné se zase vidět naživo, popovídat si, potkat se. Přišli i někteří členové JG klubu, což je strašně super, protože takhle se začátečníci zapojí do dalších programátorských komunit a nasbírají víc kontaktů a kamarádů v oboru, než kdyby byli jen v klubu. Jeden člen byl tak hladový po setkávání s lidmi, že přijel na otočku vlakem z Hodonína.
 
-Jak jsem psal už dřív, chtěl jsem udělat rozhovor s [Jessicou Upani](https://twitter.com/JessicaUpani), hlavní organizátorkou Python komunity v Namibii, ale bylo to složité, protože jsem s tím vyrukoval dost na poslední chvíli a ona fakt neměla vůbec čas se tomu věnovat. Nakonec mi poslala odpovědi ve čtvrtek ráno, takže skoro celý čtvrtek jsem strávil tím, že jsem dával dohromady ten rozhovor, editoval to, vybíral fotky, atd. Snažil jsem se to stihnout vydat do odpoledne, abych chytil Evropany ještě „živé“ a Amíky „už vzhůru”, tzn. aby měl článek co největší dopad. Samozřejmě to má zafungovat nejen jako rozhovor, ale i jako reklama na PyCon NA, na jejich Patreon, apod. Nakonec se to povedlo a vydal jsem to: [Jessica Upani about Python events in Namibia: You have to be pure in terms of your why]({filename}/2021-06-17_jessica-upani-about-python-events-in-namibia-you-have-to-be-pure-in-terms-of-your-why.md). Článek na začátku popisuje i můj vztah k Namibii.
+Jak jsem psal už dřív, chtěl jsem udělat rozhovor s [Jessicou Upani](https://twitter.com/JessicaUpani), hlavní organizátorkou Python komunity v Namibii, ale bylo to složité, protože jsem s tím vyrukoval dost na poslední chvíli a ona fakt neměla vůbec čas se tomu věnovat. Nakonec mi poslala odpovědi ve čtvrtek ráno, takže skoro celý čtvrtek jsem strávil tím, že jsem dával dohromady ten rozhovor, editoval to, vybíral fotky, atd. Snažil jsem se to stihnout vydat do odpoledne, abych chytil Evropany ještě „živé“ a Amíky „už vzhůru”, tzn. aby měl článek co největší dopad. Samozřejmě to má zafungovat nejen jako rozhovor, ale i jako reklama na PyCon NA, na jejich Patreon, apod. Nakonec se to povedlo a vydal jsem to: [Jessica Upani about Python events in Namibia: You have to be pure in terms of your why]({filename}2021-06-17_jessica-upani-about-python-events-in-namibia-you-have-to-be-pure-in-terms-of-your-why.md). Článek na začátku popisuje i můj vztah k Namibii.
 
 Zatím samé nadšené ohlasy, tak snad to trochu pomůže! PyCon NA je online a je i v sobotu, takže i když jste třeba promeškali dnešek, můžete se připojit ještě zítra. Pokud chcete pomoci se sdílením, pod článkem jsou odkazy na sociální sítě, třeba [tweet](https://twitter.com/honzajavorek/status/1405532488504516617) a tak.
 
@@ -109,7 +109,7 @@ Třetí bod není, chci se soustředit na tyto dvě věci a hlavně tu první na
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

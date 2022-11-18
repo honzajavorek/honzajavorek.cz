@@ -6,7 +6,7 @@ Twitter-Comments: https://twitter.com/honzajavorek/status/1271510681947443211
 Facebook-Comments: https://www.facebook.com/10156592446432707/posts/10158199180067707
 
 
-Utekl další týden (8.6. — 12.6.) a tak [stejně jako minule]({filename}/2020-06-05_tydenni-poznamky-dohaneni-css-a-korporatni-balicky.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekl další týden (8.6. — 12.6.) a tak [stejně jako minule]({filename}2020-06-05_tydenni-poznamky-dohaneni-css-a-korporatni-balicky.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -16,7 +16,7 @@ Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
 V tomto týdnu jsem se soustředil především na to, aby JG splnilo představy velkých firem o spolupráci. Řekl jsem si, že než toto vyřeším, nemá ani moc smysl oslovovat další firmy.
 
-Zpětnou vazbu mám sice z jedné konkrétní velké firmy, ale jednak o ni dost stojím, jednak si neřekli o nic, co bych stejně nemusel řešit i pro jakoukoliv jinou větší firmu (viz [předešlé poznámky]({filename}/2020-06-05_tydenni-poznamky-dohaneni-css-a-korporatni-balicky.md)). Ze tří bodů jsem dva vyřešil už minule, takže jsem se soustředil na třetí problém, a to měření úspěšnosti inzerátů.
+Zpětnou vazbu mám sice z jedné konkrétní velké firmy, ale jednak o ni dost stojím, jednak si neřekli o nic, co bych stejně nemusel řešit i pro jakoukoliv jinou větší firmu (viz [předešlé poznámky]({filename}2020-06-05_tydenni-poznamky-dohaneni-css-a-korporatni-balicky.md)). Ze tří bodů jsem dva vyřešil už minule, takže jsem se soustředil na třetí problém, a to měření úspěšnosti inzerátů.
 
 
 ### Měření skrze korporátní software
@@ -125,7 +125,7 @@ Je to méně explicitní a pro méně zkušeného programátora zřejmě dost kr
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

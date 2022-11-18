@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl další týden (12.4. — 16.4.) a tak [stejně jako minule]({filename}/2021-04-09_tydenni-poznamky-45-stehovani-adina-mkdocs-macros.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekl další týden (12.4. — 16.4.) a tak [stejně jako minule]({filename}2021-04-09_tydenni-poznamky-45-stehovani-adina-mkdocs-macros.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -52,7 +52,7 @@ Z videí mám trému a tak si je sám přivozuji jen velmi nerad, ideální je, 
 - O víkendu se mi Adina ozvala, že má zdravotní nesnáz, který ji diskvalifikuje z přednášení, takže jsem úterní přednášku v pondělí přesunul o dva týdny. Internet jsem s tím už nespamoval, jen interně klub, což mělo za následek, že pak přednášku v původním termínu promovala DigiKoalice na FB, ale zachytil jsem to a nechal opravit. Adina tedy bude v klubu 27.4., těste se těšte, její přednáška bude totiž nejspíš i částečně interaktivní.
 - Domlouvám do klubu první AMA session s recruiterem. Myslel jsem, že bych to nějak nacpal do příštího týdne, aby se něco dělo než bude Adina, ale jak jsem řešil jiné věci a chorobu, tak jsem to nezvládl a nebude nic. Bude to někdy později. Domlouvám taky přednášku na téma „Život HTTP(s) požadavku“, která bude na témata jako text vs binární protokol, DNS, TLS, TCP, UDP, IP, OSI model, wifi, ethernet, prostě síťové základy, které se mohou hodit každému, kdo se sítí něco někdy dělá, ať už je to frontend, backend, testování…
 - Prošel jsem a okomentoval kamarádův byznys plán pro jeho plánovanou mobilní aplikaci.
-- Zjistil jsem, že když v jednom procesu spustím a ukončím asyncio event loop (viz článek tady na blogu [How to create a non-interactive Discord bot]({filename}/2021-02-06_how-to-create-non-interactive-discord-bot.md)) a potom to chci udělat znova, jsem nahraný, protože loop je už ukončená. Jenže ve svých skriptech, které stahují data z Discordu, potřebuji přesně tohle udělat. Nakonec to vyřešilo použití `asyncio.new_event_loop()`, viz [commit](https://github.com/honzajavorek/junior.guru/commit/d82b2a869f43b28bd1fd5ea48e8494f958e25080).
+- Zjistil jsem, že když v jednom procesu spustím a ukončím asyncio event loop (viz článek tady na blogu [How to create a non-interactive Discord bot]({filename}2021-02-06_how-to-create-non-interactive-discord-bot.md)) a potom to chci udělat znova, jsem nahraný, protože loop je už ukončená. Jenže ve svých skriptech, které stahují data z Discordu, potřebuji přesně tohle udělat. Nakonec to vyřešilo použití `asyncio.new_event_loop()`, viz [commit](https://github.com/honzajavorek/junior.guru/commit/d82b2a869f43b28bd1fd5ea48e8494f958e25080).
 - Na JG jsem přijal novou nabídku práce, kterou někdo poslal. Tentokrát neplacenou, komunitní. Pokud byste to náhodou nevěděli, na JG [můžete přidávat nabídky práce i zadarmo](https://junior.guru/hire-juniors/), pokud jste třeba jen malá firmička, tým studentů, je to nějaká stážička, brigáda, máte nějakou spolupráci s PyLadies, apod.
 - Díky předchozím poznámkám se ozval známý s tím, že by si rád přečetl co připravuju s certifikátama, že by k tomu třeba taky měl nějaké moudro. Tak možná to nakonec nějak s lidma poskládám, i když o tom sám vím teď spíš prd :)
 - Naučil jsem se slovní spojení [mat prsy](https://www.facebook.com/groups/967870373283278/permalink/5287774447959494/?comment_id=5288090741261198).
@@ -79,7 +79,7 @@ Bonus: Přidat někam na JG kapitolku o tom, jestli jde programovat na mobilu.
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

@@ -7,7 +7,7 @@ Pracuji pro [Apiary](https://apiary.io/), což je bývalý český startup. Vytv
 
 V Apiary vedu malý tým, který zodpovídá za všechny nástroje kolem testování API. Jedním z nich je třeba [Dredd](https://github.com/apiaryio/dredd) s více jak 2000 [hvězdičkami na GitHubu](https://github.com/thepracticaldev/orly-full-res/blob/master/choosingbasedongithubstars-big.png). Snažíme se být [Open Source](https://opensource.guide/) _first_, testovat jak se má, psát dokumentaci jak se má.
 
-Máme velké plány, které ovšem ve dvou nezvládneme. A protože jde nejen o nástroje do terminálu, ale i o webové aplikace, které poběží uživatelům pod rukama přímo na apiary.io, v současném složení týmu to nezvládneme už vůbec. Zatímco [Michal](https://github.com/michalholasek) je renesanční osobnost a všeumětel (tedy _full stack_), tak já, jakožto [přeběhlík z Pythonu]({filename}/2014-05-29_proc-python.md) do Node.js, jsem na frontend úplný lempl.
+Máme velké plány, které ovšem ve dvou nezvládneme. A protože jde nejen o nástroje do terminálu, ale i o webové aplikace, které poběží uživatelům pod rukama přímo na apiary.io, v současném složení týmu to nezvládneme už vůbec. Zatímco [Michal](https://github.com/michalholasek) je renesanční osobnost a všeumětel (tedy _full stack_), tak já, jakožto [přeběhlík z Pythonu]({filename}2014-05-29_proc-python.md) do Node.js, jsem na frontend úplný lempl.
 
 ![Honza a Michal]({static}/images/sjs-2017.png)
 
@@ -35,7 +35,7 @@ Karlín je v centru města a v centru dění. Navíc je to skvělá pozorovateln
 V kancelářích máme prostor pro meetupy. Kromě toho, že pořádáme vlastní [Hive Talks](https://www.meetup.com/apiaryio/), hostíme občas i nějaké jiné srazy (na fotce [Symfonisti](https://pehapkari.cz/)) a pravidelně u nás něco pořádá i Python komunita - hlavně [PyWorking](https://pyworking.cz/) a [PyLadies](http://pyladies.cz/).
 
 ![Review]({static}/images/wtf-review.jpg)
-V Apiary samozřejmě poctivě dodržujeme všechno, o čem tak zapáleně píšu tady na blogu. Třeba na této fotce můžete vidět důkaz, jak příkladně následujeme rady z [článku o code review]({filename}/2017-11-05_code-review.md).
+V Apiary samozřejmě poctivě dodržujeme všechno, o čem tak zapáleně píšu tady na blogu. Třeba na této fotce můžete vidět důkaz, jak příkladně následujeme rady z [článku o code review]({filename}2017-11-05_code-review.md).
 
 ![Soužití]({static}/images/ora.png)
 Byrokracie v Oracle nějaká je, ale upřímně, ta nejotravnější je spíš kvůli českým zákonům, než že by si ji vymyslela firma sama. Je potřeba mít smysl pro meta humor a umět se nad určité věci povznést. Výhodou je, že vše co potřebujete je automatizované a můžete to někde samoobslužně naklikat. Nevýhodou je, že většinou nevíte kde. Budujeme si dokumentaci.<br>_Vlevo - reálný, psychedelický Oracle swag. Vpravo - moje výplatnice po tom, co jsem neuváženě žertoval s interními systémy._
@@ -47,7 +47,7 @@ Už v Apiary jsme lítali do San Francisca na zkušenou. Toto se s Oracle moc ne
 Když jsem na [PyCon SK 2017](https://2017.pycon.sk/) říkal, že se pokusíme korporaci změnit zevnitř a něco ji naučit, smáli se mi. Nyní máme podíl třeba na tom, že Oracle začal používat Slack. Koupili nás i proto, aby se uměli změnit. Novoty někdy trvají a bolí, ale mají podporu shora.
 
 ![People of Apiary]({static}/images/people-of-apiary.jpg)
-Apiary vzniklo jako startup s mezinárodními ambicemi. Proto se u nás velmi brzy plně přešlo na psanou i mluvenou angličtinu. Náš tým je smíšený kolektiv, v němž najdete [mladé i starší]({filename}/2017-01-11_mlady-kolektiv.md), ženy i muže, domácí i zahraniční.
+Apiary vzniklo jako startup s mezinárodními ambicemi. Proto se u nás velmi brzy plně přešlo na psanou i mluvenou angličtinu. Náš tým je smíšený kolektiv, v němž najdete [mladé i starší]({filename}2017-01-11_mlady-kolektiv.md), ženy i muže, domácí i zahraniční.
 
 ![Čaj, káva]({static}/images/tea-coffee.jpg)
 Se smíšeným kolektivem se pojí i nulová diskriminace víry. Jsme schopni mezi sebe přijmout kohokoliv - jak roztěkané kávové fundamentalisty, tak zenově vyklidněné milovníky čaje. Jen tedy musí být váš čaj dostatečně temný.

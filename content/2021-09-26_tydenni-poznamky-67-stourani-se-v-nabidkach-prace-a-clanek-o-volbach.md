@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl zase nějaký ten týden (20.9. — 26.9.) a tak [stejně jako minule]({filename}/2021-09-19_tydenni-poznamky-66-kousky-prirucky-v-markdownu-data-z-inzeratu-v-api.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
+Utekl zase nějaký ten týden (20.9. — 26.9.) a tak [stejně jako minule]({filename}2021-09-19_tydenni-poznamky-66-kousky-prirucky-v-markdownu-data-z-inzeratu-v-api.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -20,7 +20,7 @@ Byť by to jednoznačně mělo synergie s JG a přispělo by to výrazně do roz
 
 Navíc si teď fakt užívám volnost, kterou mám díky tomu, že můžu dělat na JG jen tak náhodně v průběhu dne a týdne, většinou bez callů, bez pevných závazků, a střídat to s rodinou. Připomenul jsem si, že záměrně dělám JG tím způsobem, jak ho dělám, abych měl nezávislost a pohodu. Aby moje pracovní hodiny neměly žádný matematický vztah k mému výdělku. Abych si nemusel počítat pracovní hodiny. Abych pracoval z domů nebo odkudkoliv, na vlastním byznysu, dělal co mě naplňuje, neměl pravidelné meetingy, sessions ve vydychaných zesedačkých, abych neřešil problémy jiných lidí a byznysů jiných lidí. Abych mohl vstát v 11, když chci. Abych mohl jít do parku s kočárem kdy chci. Přesně jak [píše Levels](https://levels.io/async/), práce na dálku není ono, dokud není zároveň asynchronní.
 
-Tuto nezávislost a asynchronicitu jsem získal vědomě tím, že jsem po opuštění Apiary spoustu věcí odmítl, spokojil se s málem a vymyslel jsem něco, co se vleze do velmi přísných mantinelů. Nedávalo by smysl to rozbourat, pokud jsem s tím spokojený. Sice JG ještě nevydělává tolik, kolik bych si představoval, ale mám díky němu nejlepší dny, jaké si můžu přát. Tak proč do toho házet vidle? Mám omezenou dobu, po kterou jde takový život provozovat: Dojdou peníze, dítě půjde do školy a hodí do toho vidle nějaká instituce, [klimatická změna omezí možnosti]({filename}/2021-09-26_tydenni-poznamky-67-stourani-se-v-nabidkach-prace-a-clanek-o-volbach.md), [začneme potřebovat auto]({filename}2021-08-28_bez-auta.md) a to nám sežere rodinný rozpočet :D, budeme chtít koupit [dům uprostřed polí](https://finmag.penize.cz/penize/419465-hybaj-do-poli) a budeme na to chtít hypo. Nevím, jsou různé důvody, proč to může skončit. Každé období v životě má omezené trvání. Proto si tohle musím užít, dokud to jde.
+Tuto nezávislost a asynchronicitu jsem získal vědomě tím, že jsem po opuštění Apiary spoustu věcí odmítl, spokojil se s málem a vymyslel jsem něco, co se vleze do velmi přísných mantinelů. Nedávalo by smysl to rozbourat, pokud jsem s tím spokojený. Sice JG ještě nevydělává tolik, kolik bych si představoval, ale mám díky němu nejlepší dny, jaké si můžu přát. Tak proč do toho házet vidle? Mám omezenou dobu, po kterou jde takový život provozovat: Dojdou peníze, dítě půjde do školy a hodí do toho vidle nějaká instituce, [klimatická změna omezí možnosti]({filename}2021-09-26_tydenni-poznamky-67-stourani-se-v-nabidkach-prace-a-clanek-o-volbach.md), [začneme potřebovat auto]({filename}2021-08-28_bez-auta.md) a to nám sežere rodinný rozpočet :D, budeme chtít koupit [dům uprostřed polí](https://finmag.penize.cz/penize/419465-hybaj-do-poli) a budeme na to chtít hypo. Nevím, jsou různé důvody, proč to může skončit. Každé období v životě má omezené trvání. Proto si tohle musím užít, dokud to jde.
 
 Cílem je mít pomalý a pohodový život s rodinou. K tomu naplňující práci, která ale umožňuje to pomalé a pohodové tempo. JG tou prací je, dokonce s přesahem, se společenským dopadem, akorát musím jeho ohýnek trochu přifouknout, aby z toho šlo v Praze žít. Pokud bych si přidal půlúvazek, ubral bych si možnosti byznys přifoukávat a můj život už by nebyl pomalý a jistě by byl i méně asynchronní. Byť jsem lepší nabídku od dob Apiary asi nedostal (ne z hlediska financí, ale souznění), tak si myslím, že můj vztah k JG je natolik unikátní, že prostě nakonec všechno trumfuje.
 
@@ -40,7 +40,7 @@ S Czechitas jsme si zavolali a byť jsem nějakými moudry přispěl, mohl jsem 
 
 ## Psaní článku o volbách
 
-Jak jsem už [popisoval před časem]({filename}/2021-08-29_tydenni-poznamky-63-analytics-a-pocatky-nove-prirucky.md), když mám nápad na článek a přijde slina, musím jít psát, jinak už to nikdy nenapíšu. To se mi přesně stalo, vstal jsem (na mě) brzo ráno a psal jsem až do večera. Výsledkem je [tenhle článek]({filename}/2021-09-26_tydenni-poznamky-67-stourani-se-v-nabidkach-prace-a-clanek-o-volbach.md), který následně [vydali i na serveru ekolist.cz](https://ekolist.cz/cz/publicistika/nazory-a-komentare/honza-javorek-volim-marketing). To je pro mě nové, takové věci se mi dřív staly asi jen [se Zdrojákem](https://zdrojak.cz/autori/honza-javorek/) :)
+Jak jsem už [popisoval před časem]({filename}2021-08-29_tydenni-poznamky-63-analytics-a-pocatky-nove-prirucky.md), když mám nápad na článek a přijde slina, musím jít psát, jinak už to nikdy nenapíšu. To se mi přesně stalo, vstal jsem (na mě) brzo ráno a psal jsem až do večera. Výsledkem je [tenhle článek]({filename}2021-09-26_tydenni-poznamky-67-stourani-se-v-nabidkach-prace-a-clanek-o-volbach.md), který následně [vydali i na serveru ekolist.cz](https://ekolist.cz/cz/publicistika/nazory-a-komentare/honza-javorek-volim-marketing). To je pro mě nové, takové věci se mi dřív staly asi jen [se Zdrojákem](https://zdrojak.cz/autori/honza-javorek/) :)
 
 ![Čísla k článku Volím marketing]({static}/images/volim-marketing-analytics.png)
 
@@ -76,7 +76,7 @@ Tři věci, které bych chtěl zvládnout udělat příště:
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

@@ -6,7 +6,7 @@ Twitter-Comments: https://twitter.com/honzajavorek/status/1283827499298938881
 Facebook-Comments: https://www.facebook.com/10156592446432707/posts/10158301883642707
 
 
-Utekl další týden (13.7. — 17.7.) a tak [stejně jako minule]({filename}/2020-07-10_tydenni-poznamky-novy-cenik-menu-vizitky.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekl další týden (13.7. — 17.7.) a tak [stejně jako minule]({filename}2020-07-10_tydenni-poznamky-novy-cenik-menu-vizitky.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -21,7 +21,7 @@ Tento týden jsem hlavně ladil všechno možné na frontendu JG:
 - [Dan Srb](https://coreskill.tech/) důsledně prošel celou [stránku pro firmy](https://junior.guru/hire-juniors/) a poslal mi hromadu připomínek. Některé jsem jedno celé dopoledne opravoval, k některým jsem se ještě nedostal, každopádně díky!
 - [Michal Wiglasz](https://twitter.com/kacer/status/1281662611352887302) i Dan mi pomohli odladit poskakování skrývacího menu. Zase jsem ho trochu předělal a teď už snad žádné problémy nemá. Předešlá věta moc dobře neilustruje, jak moc jsem se s tím nadřel, takže: NADŘEL.
 - Celkově jsem laděním hlavičky a frontendu strávil vlastně několik dní. Vždy jsem něco opravil a tím jsem vytvořil 5 bugů a ty jsem pak opravil a vytvořil 5 nových :D
-- Spadl mi CircleCI build, který [hlídá frontend JG pomocí Lighthouse]({filename}/2020-05-11_monitoring-performance-with-lighthouse-and-circleci.md). Opravil jsem tedy na pár věcí. Přečetl jsem si, [jak se dělají neblokující skripty](https://www.vzhurudolu.cz/prirucka/html-script) a poladil jsem to. Doplnil jsem `alt="text"` k některým obrázkům.
+- Spadl mi CircleCI build, který [hlídá frontend JG pomocí Lighthouse]({filename}2020-05-11_monitoring-performance-with-lighthouse-and-circleci.md). Opravil jsem tedy na pár věcí. Přečetl jsem si, [jak se dělají neblokující skripty](https://www.vzhurudolu.cz/prirucka/html-script) a poladil jsem to. Doplnil jsem `alt="text"` k některým obrázkům.
 - Přidal jsem do proužku v menu odkaz na obsah stránky. Mám s ním další plány, ale zatím jen kotvou vede na obsah tak jak už na JG v minulosti byl. Do budoucna mám vymyšleno, že na širším displeji bude napravo od textu permanentní ToC (_table of contents_) a na mobilech že by se to dalo nějak rozkliknout právě přes ten Obsah odkaz.
 - Abych mohl pokračovat a vrtat do layoutu stránky kvůli ToC, zjistil jsem, že nejlepší bude, když převedu co nejvíce věcí ze starých špaget do [BEMu](https://www.vzhurudolu.cz/prirucka/bem). A tak jsem převáděl. A protože jsem měl dny rozkouskované schůzkami, cvičením, mentorováním a pitím piva na [Pyvu](https://pyvo.cz/praha-pyvo/), tohle už jsem dělal v mezičasech celý zbytek týdne.
 - V proužku v menu se objevuje vždy aktuální nadpis podle scrollování. Odladil jsem ho tak, aby se vyrovnal i s tím, pokud je fakt dlouhý a nevleze se do proužku (třeba na malém mobilu). Klíčové CSS: [text-overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow), [white-space](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space)
@@ -37,7 +37,7 @@ Další poznámky budou až za dva týdny.
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl zase nějaký ten týden (21.6. — 24.6.) a tak [stejně jako minule]({filename}/2022-06-20_tydenni-poznamky-93-konference-a-dalsi-akce.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
+Utekl zase nějaký ten týden (21.6. — 24.6.) a tak [stejně jako minule]({filename}2022-06-20_tydenni-poznamky-93-konference-a-dalsi-akce.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -30,7 +30,7 @@ Toto přemýšlení nepovažuji za dokončené, naopak mám dojem, že jsem skor
 
 ## Psaní
 
-- Napsal jsem [inzerát na marketingovou výpomoc]({filename}/2022-06-24_vypomoc-na-socialni-site.md), kterou začínám hledat. Budu rád, když mi někoho doporučíte, nebo se sami ozvete, pokud vás to zaujme.
+- Napsal jsem [inzerát na marketingovou výpomoc]({filename}2022-06-24_vypomoc-na-socialni-site.md), kterou začínám hledat. Budu rád, když mi někoho doporučíte, nebo se sami ozvete, pokud vás to zaujme.
 - Společně s datovým analytikem z [Processand](https://www.processand.com/) jsem připravoval jejich inzerát pro juniory na [junior.guru/jobs](https://junior.guru/jobs/). Ještě jsme jej nepublikovali, možná v pondělí.
 - Na sociálních sítích jsem propagoval [nový díl podcastu s Markétou Willis](https://junior.guru/podcast/). Protože Markéta lektoruje v Czechitas, nacpal jsem to i do všech FB skupin Czechitas. Bál jsem se, že mi to pomažou, ale místo toho se mi ozvala adminka ostravské skupiny, o které jsem ani nevěděl, jestli bych to tam nedal taky.
 - Klub, maily, a tak dále. Komunikoval jsem hlavně ohledně stipendií a firemních členství.
@@ -73,7 +73,7 @@ Tři věci, které bych chtěl zvládnout udělat příště jsou stejné jako m
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

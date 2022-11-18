@@ -15,7 +15,7 @@ Díky tomu, že mám teď na vizuální styl separátní webovku, mohl jsem [ud�
 
 ![Google Drive]({static}/images/visualbook-gdrive.png)
 
-Jak moc je Visualbook ve skutečnosti praktický nebo ne, jsem měl šanci si vyzkoušet překvapivě brzy. Během ledna dělám co můžu, abych mohl v rámci junior.guru [otevřít zájmový placený klub]({filename}/2021-01-11_spoustim-klub.md). To zahrnovalo například nastavení platební brány [Stripe](https://stripe.com/) nebo hotového řešení pro správu členství [Memberful](https://memberful.com/). Obě tyto služby mají možnost přizpůsobit branding tak, aby jejich uživatelské rozhraní zapadalo do mého webu a působilo na lidi povědomě, důvěryhodně. Ostatně, stejnou věc jsem už dřív nastavoval pro [newsletter](https://eepurl.com/gyG8Bb), který zase řeším přes [MailChimp](https://mailchimp.com/).
+Jak moc je Visualbook ve skutečnosti praktický nebo ne, jsem měl šanci si vyzkoušet překvapivě brzy. Během ledna dělám co můžu, abych mohl v rámci junior.guru [otevřít zájmový placený klub]({filename}2021-01-11_spoustim-klub.md). To zahrnovalo například nastavení platební brány [Stripe](https://stripe.com/) nebo hotového řešení pro správu členství [Memberful](https://memberful.com/). Obě tyto služby mají možnost přizpůsobit branding tak, aby jejich uživatelské rozhraní zapadalo do mého webu a působilo na lidi povědomě, důvěryhodně. Ostatně, stejnou věc jsem už dřív nastavoval pro [newsletter](https://eepurl.com/gyG8Bb), který zase řeším přes [MailChimp](https://mailchimp.com/).
 
 ![Stripe]({static}/images/visualbook-stripe.png)
 Nastavování vzhledu ve službě Stripe

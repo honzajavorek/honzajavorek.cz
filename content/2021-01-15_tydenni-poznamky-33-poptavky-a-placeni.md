@@ -4,12 +4,12 @@ Lang: cs
 Home: False
 
 
-Utekl další týden (11.1. — 15.1.) a tak [stejně jako minule]({filename}/2021-01-08_tydenni-poznamky-32-slava-na-hn-pripravy-na-spusteni.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekl další týden (11.1. — 15.1.) a tak [stejně jako minule]({filename}2021-01-08_tydenni-poznamky-32-slava-na-hn-pripravy-na-spusteni.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
-V pondělí jsem vydal [článek o spuštění klubu]({filename}/2021-01-11_spoustim-klub.md) a potom jsem se několik dní potýkal s "následky" :) Kromě ohlasů a poptávek to byla i zcela roztříštěná pozornost, která mi bránila efektivně dělat cokoliv jiného. V noci jsem nemohl spát a myslel na to, jak udělám placení za klub. Ve dne jsem byl zase spánkově deprimovaný a roztěkaný ze všech notifikací, takže jsem nedokázal nic pořádného udělat. Aspoň na ty poptávky jsem se snažil odpovídat a videohovory s lidmi byly taky užitečné. V závěru týdne jsem se snažil vyřešit jak budu od lidí sbírat peníze.
+V pondělí jsem vydal [článek o spuštění klubu]({filename}2021-01-11_spoustim-klub.md) a potom jsem se několik dní potýkal s "následky" :) Kromě ohlasů a poptávek to byla i zcela roztříštěná pozornost, která mi bránila efektivně dělat cokoliv jiného. V noci jsem nemohl spát a myslel na to, jak udělám placení za klub. Ve dne jsem byl zase spánkově deprimovaný a roztěkaný ze všech notifikací, takže jsem nedokázal nic pořádného udělat. Aspoň na ty poptávky jsem se snažil odpovídat a videohovory s lidmi byly taky užitečné. V závěru týdne jsem se snažil vyřešit jak budu od lidí sbírat peníze.
 
 
 ## Článek o spuštení klubu
@@ -77,7 +77,7 @@ Když jsem viděl, jak [yablko vydal nový kurz](https://twitter.com/yablko/stat
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

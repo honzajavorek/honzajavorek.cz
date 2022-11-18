@@ -4,7 +4,7 @@ Lang: cs
 Tags: fail, názory, škola, vut fit
 
 <div class="article-warning" markdown="1">
-**A ještě jedno upozornění!** Toto je historický text o studiu VŠ. Honzův aktuální názor na studium vysoké školy nejlépe vyjadřuje [tento článek]({filename}/2014-02-24_s-odstupem-o-studiu-informatiky.md).
+**A ještě jedno upozornění!** Toto je historický text o studiu VŠ. Honzův aktuální názor na studium vysoké školy nejlépe vyjadřuje [tento článek]({filename}2014-02-24_s-odstupem-o-studiu-informatiky.md).
 </div>
 
 Vyvrcholení mého rozhořčení. Zatímco v **bakalářském studiu na [FIT VUT](http://www.fit.vutbr.cz) jsem spatřoval určitý smysl a bavilo mě**, magisterské mě nijak neuspokojuje. Kdysi jsem rozepsal článek, který měl být oslavou této školy, protože se mi na ní fakt líbilo. Můj vztah ke škole je však již zcela chladný a mé studijní zapálení minimální. Mám za to, že si za to může sama a zkusím krátce nastínit proč.

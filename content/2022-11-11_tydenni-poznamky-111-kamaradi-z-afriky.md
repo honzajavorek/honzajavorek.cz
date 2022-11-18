@@ -5,12 +5,12 @@ Home: False
 Telegram-Comments: https://t.me/honzajavorekcz/15
 
 
-Utekl zase nějaký ten týden (5.11. — 11.11.) a tak [stejně jako minule]({filename}/2022-11-04_tydenni-poznamky-110-zapaseni-s-ci-prednaska-zlin.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
+Utekl zase nějaký ten týden (5.11. — 11.11.) a tak [stejně jako minule]({filename}2022-11-04_tydenni-poznamky-110-zapaseni-s-ci-prednaska-zlin.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
 
 ![Praha večer]({static}/images/praha-vecer.jpg)
 
 
-Drtivou většinu týdne jsem trávil tím, že jsem se věnoval [kamarádům z Afriky]({filename}/2021-06-17_jessica-upani-about-python-events-in-namibia-you-have-to-be-pure-in-terms-of-your-why.md), kteří do Prahy přijeli na [Ubuntu Summit](https://events.canonical.com/event/2/). Jeden večer jsme zařídili večeři, další večer jsme jim udělali zážitkovou prohlídku noční Prahy. Spousta organizačních věcí, někdo si zapomněl doma nabíječku a kupoval jsem rychle nějakou v Alze, někdo potřeboval invalidní vozík, spousta přesunů, apod., takže velká divočina. Měl jsem mít přes týden i nějaké schůzky, ale (aby organizace všeho výše nebyla moc jednoduchá), různě se přesouvaly nebo rušily.
+Drtivou většinu týdne jsem trávil tím, že jsem se věnoval [kamarádům z Afriky]({filename}2021-06-17_jessica-upani-about-python-events-in-namibia-you-have-to-be-pure-in-terms-of-your-why.md), kteří do Prahy přijeli na [Ubuntu Summit](https://events.canonical.com/event/2/). Jeden večer jsme zařídili večeři, další večer jsme jim udělali zážitkovou prohlídku noční Prahy. Spousta organizačních věcí, někdo si zapomněl doma nabíječku a kupoval jsem rychle nějakou v Alze, někdo potřeboval invalidní vozík, spousta přesunů, apod., takže velká divočina. Měl jsem mít přes týden i nějaké schůzky, ale (aby organizace všeho výše nebyla moc jednoduchá), různě se přesouvaly nebo rušily.
 
 ![Kámoši z Afriky]({static}/images/afrika-kamosi.jpg)
 
@@ -80,7 +80,7 @@ Dvě věci, které bych chtěl zvládnout udělat příště:
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

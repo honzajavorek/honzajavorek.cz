@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl další týden (14.12. — 18.12.) a tak [stejně jako minule]({filename}/2020-12-11_tydenni-poznamky-30-boleni-hlavy.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekl další týden (14.12. — 18.12.) a tak [stejně jako minule]({filename}2020-12-11_tydenni-poznamky-30-boleni-hlavy.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -32,7 +32,7 @@ Cíl je, abych to byl schopný začít lidem nabízet během ledna a co nejdří
 
 ## Další poznámky
 
-- Tento týden mi konečně dorazil nový počítač. Napsal jsem o tom [článek zvlášť]({filename}/2020-12-18_i-bought-apple-silicon.md). Nastavováním počítače jsem se zabýval velkou část úterý a pátku.
+- Tento týden mi konečně dorazil nový počítač. Napsal jsem o tom [článek zvlášť]({filename}2020-12-18_i-bought-apple-silicon.md). Nastavováním počítače jsem se zabýval velkou část úterý a pátku.
 - O víkendu jsem se naučil dělat stop motion video. Byla to sranda.
 - Účastnil jsem se domlouvání ohledně vzniku materiálů na téma "trochu teoretičtější informatika pro juniory".
 - Ve středu jsem měl call s jednou velkou firmou, která mě našla přes mou spolupráci s [Kariérko.cz](https://karierko.cz/). Líbilo se jim celé JG a v podstatě mi nadiktovali, co všechno si chtějí koupit :D Velká radost! V lednu bude faktura. Tož kdyby se takové sales cally děly častěji, to by mi vůbec nevadilo. Ani takový způsob sales, kdy jednám s už přesvědčeným zákazníkem a jen jej ujistím, že můj ceník chápou správně :)
@@ -44,7 +44,7 @@ Cíl je, abych to byl schopný začít lidem nabízet během ledna a co nejdří
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo

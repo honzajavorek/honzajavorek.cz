@@ -5,7 +5,7 @@ Home: False
 Facebook-Comments: https://www.facebook.com/10156592446432707/posts/10158154451272707
 
 
-Utekl další týden (25.5. — 29.5.) a tak [stejně jako minule]({filename}/2020-05-22_tydenni-poznamky-robot-v-testovacim-provozu-monetizace-prirucky.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat. Tentokrát to teda píšu už ve čtvrtek, protože zítra si beru volno.
+Utekl další týden (25.5. — 29.5.) a tak [stejně jako minule]({filename}2020-05-22_tydenni-poznamky-robot-v-testovacim-provozu-monetizace-prirucky.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat. Tentokrát to teda píšu už ve čtvrtek, protože zítra si beru volno.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -15,12 +15,12 @@ Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
 Poznámky nesou podtitulek [Horst Fuchs](https://cs.wikipedia.org/wiki/Horst_Fuchs), protože jsem se soustředil hlavně na roztočení koleček prodeje. Jelikož nejsem zrovna rozený obchodník a ze všech různých činností mi jde prodej nejhůř, odsouval jsem dlouho potřebné kroky v tomto směru, ale jednou to přijít muselo.
 
-Impulz nastal ve chvíli, kdy mi jeden z lidí, které jsem žádal o radu ohledně monetizace příručky (viz [minulé poznámky]({filename}/2020-05-22_tydenni-poznamky-robot-v-testovacim-provozu-monetizace-prirucky.md#prirucka-pro-juniory)), napsal, že by se mnou chtěl projít mou nabídku a třeba i koupit, co prodávám. A pokud by shledal nějaké nedostatky, že to zkusíme společně poladit. To mě konečně nakoplo a začal jsem okamžitě tvořit [stránku pro firmy](https://junior.guru/hire-juniors/), kde vysvětluji, co lze na JG koupit, za kolik, a proč. Pracoval jsem na tom skoro dva dny. Hrobý náčrt jsem měl vymyšlený od prvního dne, co JG existuje, ale až teď se to nějak sešlo a opravdu jsem ji vyrobil. Při psaní textů mi byl Horst Fuchs velkým vzorem. První ohlasy jsou skvělé, takže snad by ze mě měl i radost. Nyní se budou peníze už jen sypat :D
+Impulz nastal ve chvíli, kdy mi jeden z lidí, které jsem žádal o radu ohledně monetizace příručky (viz [minulé poznámky]({filename}2020-05-22_tydenni-poznamky-robot-v-testovacim-provozu-monetizace-prirucky.md#prirucka-pro-juniory)), napsal, že by se mnou chtěl projít mou nabídku a třeba i koupit, co prodávám. A pokud by shledal nějaké nedostatky, že to zkusíme společně poladit. To mě konečně nakoplo a začal jsem okamžitě tvořit [stránku pro firmy](https://junior.guru/hire-juniors/), kde vysvětluji, co lze na JG koupit, za kolik, a proč. Pracoval jsem na tom skoro dva dny. Hrobý náčrt jsem měl vymyšlený od prvního dne, co JG existuje, ale až teď se to nějak sešlo a opravdu jsem ji vyrobil. Při psaní textů mi byl Horst Fuchs velkým vzorem. První ohlasy jsou skvělé, takže snad by ze mě měl i radost. Nyní se budou peníze už jen sypat :D
 
 
 ## Příručka
 
-Jak [je vidět i z prodejní stránky](https://junior.guru/hire-juniors/#sponsor-handbook), příručku jsem se rozhodl zkusit monetizovat třetí možností (viz [minulé poznámky]({filename}/2020-05-22_tydenni-poznamky-robot-v-testovacim-provozu-monetizace-prirucky.md), tedy skrze sponzorství firem. Teď, když mám "prospekt" v podobě prodejní stránky, mohu začít chodit za vytipovanými firmami, a nabízet jim možnost se prezentovat v záhlaví budoucí příručky.
+Jak [je vidět i z prodejní stránky](https://junior.guru/hire-juniors/#sponsor-handbook), příručku jsem se rozhodl zkusit monetizovat třetí možností (viz [minulé poznámky]({filename}2020-05-22_tydenni-poznamky-robot-v-testovacim-provozu-monetizace-prirucky.md), tedy skrze sponzorství firem. Teď, když mám "prospekt" v podobě prodejní stránky, mohu začít chodit za vytipovanými firmami, a nabízet jim možnost se prezentovat v záhlaví budoucí příručky.
 
 ![Sponzorství příručky]({static}/images/sponzorstvi-prirucky.png)
 Dobová fotografie zachycuje, jak jsem si v květnu 2020 myslel, že bych mohl vydělávat.
@@ -69,7 +69,7 @@ Díky všem za odpovědi! Nakonec to vypadá, že by mi měl s většinou nesmys
 
 ## Pocket v týdenních poznámkách
 
-Už dřív jsem [psal o tom, jak používám Pocket]({filename}/2020-02-04_how-i-consume-content.md) a že přes něj rád doporučuji obsah, ale bohužel služba funguje tak, že se moje doporučení vlastně k nikomu moc nedostane. A tapetovat s každým článkem, který přečtu, sociální sítě… To se mi nějak nechce. Napadlo mě ale, že když už někdo čte moje týdenní poznámky a dokonce se při jejich čtení dostane až na úplný konec článku, asi je to opravdu věrný fanoušek a mohlo by ho tedy i zajímat, co čtu a co se mi líbilo.
+Už dřív jsem [psal o tom, jak používám Pocket]({filename}2020-02-04_how-i-consume-content.md) a že přes něj rád doporučuji obsah, ale bohužel služba funguje tak, že se moje doporučení vlastně k nikomu moc nedostane. A tapetovat s každým článkem, který přečtu, sociální sítě… To se mi nějak nechce. Napadlo mě ale, že když už někdo čte moje týdenní poznámky a dokonce se při jejich čtení dostane až na úplný konec článku, asi je to opravdu věrný fanoušek a mohlo by ho tedy i zajímat, co čtu a co se mi líbilo.
 
 Do svého `weeknotes.py` skriptu, jímž si poznámky vždy připravuji ([na GitHubu](https://github.com/honzajavorek/honzajavorek.cz/blob/master/weeknotes.py)), jsem tedy přidal pár řádků, které sem vytáhnou, co jsem na Pocketu sdílel. Moc jsem se s tím nemazlil, takže kód skriptu začíná být už docela prasárna, ale účel to plní. Budu rád, když mi dáte vědět, jestli se vám tato sekce poznámek líbí, nebo je to blbost.
 

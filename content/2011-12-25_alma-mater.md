@@ -4,7 +4,7 @@ Lang: cs
 Tags: fi mu, názory, škola, vut fit
 
 <div class="article-warning" markdown="1">
-**A ještě jedno upozornění!** Toto je historický text o studiu VŠ. Honzův aktuální názor na studium vysoké školy nejlépe vyjadřuje [tento článek]({filename}/2014-02-24_s-odstupem-o-studiu-informatiky.md).
+**A ještě jedno upozornění!** Toto je historický text o studiu VŠ. Honzův aktuální názor na studium vysoké školy nejlépe vyjadřuje [tento článek]({filename}2014-02-24_s-odstupem-o-studiu-informatiky.md).
 </div>
 
 Někdy se zamýšlím nad tím, komu bych fandil na [vysokoškolském hokeji](http://hokejovysouboj.cz/). Jestli VUT nebo MU. Která z univerzit mi více přirostla k srdci? Která je pro mě větším domovem?

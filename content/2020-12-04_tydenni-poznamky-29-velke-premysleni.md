@@ -4,7 +4,7 @@ Lang: cs
 Home: False
 
 
-Utekl další týden (30.11. — 4.12.) a tak [stejně jako minule]({filename}/2020-11-27_tydenni-poznamky-28-prednasky.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
+Utekl další týden (30.11. — 4.12.) a tak [stejně jako minule]({filename}2020-11-27_tydenni-poznamky-28-prednasky.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({static}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -24,7 +24,7 @@ Většinu času v tomto týdnu jsem strávil vymýšlením kam směřovat JG do 
 - Mám novou [podporovatelku na GitHub Sponsors](https://github.com/sponsors/honzajavorek/), [Martinu](https://github.com/MartinaHytychova)! Díky moc!
 - Přidání nových kapitol o OSVČ do příručky a jejich propagování na sociálních sítích mělo samé dobré ohlasy a vytvořilo mi v návštěvnosti velice slušný peak.
 - Zkoušel jsem, jestli by mělo smysl příručku překlopit do mého oblíbeného [Sphinxu](https://www.sphinx-doc.org/). Jednak by to lépe zapadlo do mého plánu, jednak se z toho dají generovat věci jako .epub nebo .pdf. Zatím jsem se nerozhodl a nikam daleko se v tom nedostal.
-- Vyšlo video mé přednášky pro brněnské Pyvo, takže jsem ještě dnes večer sepsal [handout tady na blog]({filename}/2020-12-04_tips-tricks-on-how-to-get-your-first-job-in-tech.md) a příští týden ho nějak zpropaguju.
+- Vyšlo video mé přednášky pro brněnské Pyvo, takže jsem ještě dnes večer sepsal [handout tady na blog]({filename}2020-12-04_tips-tricks-on-how-to-get-your-first-job-in-tech.md) a příští týden ho nějak zpropaguju.
 - Posunul jsem zase o kousek blíž k existenci seznam členů Pyvce na [webu Pyvce](https://pyvec.org/):
     - [Update info regarding GDPR, privacy policy, and the public member roster](https://github.com/pyvec/docs.pyvec.org/pull/178)
     - [Fix key name, this makes the link invisible](https://github.com/pyvec/pyvec.org/pull/189)
@@ -60,7 +60,7 @@ Opět srdečně děkuji [Jakubu Mrozkovi](http://www.svetpatritemcoseneposerou.c
 
 ## A co vy?
 
-Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}/2020-06-04_neni-to-zavod.md). Není zač!
+Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({filename}2020-06-04_neni-to-zavod.md). Není zač!
 
 
 ## Co mě zaujalo
