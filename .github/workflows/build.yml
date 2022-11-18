@@ -46,7 +46,7 @@ jobs:
           cname: honzajavorek.cz
 
       - name: Send to Telegram
-        run: poetry run telegram.py
+        run: poetry run python telegram.py
 
       - name: Save to Git
         uses: EndBug/add-and-commit@v9
