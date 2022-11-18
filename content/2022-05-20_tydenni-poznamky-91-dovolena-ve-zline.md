@@ -91,9 +91,9 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [The 2022 Market Crash - Why is Everything Down?](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DddWr9dPGqDA&h=f344f5407913c81e36f57fd78713b238157025b74a3d3b45b641ac73797bc6a2)<br>Co se děje s trhy?
-- [Bořiči dezinformací. Dáváme lidem argumenty proti nesmyslům, vysvětlují autoři projektu Ověřovna](https://getpocket.com/redirect?&url=https%3A%2F%2Fovercast.fm%2F%2BRZMiLLLVk&h=4b7ccc4b28d011bbb4ae8ac1fe86c3bcaf9332933e5fc2b27ef0bf45ebae8ff2)<br>Super.
-- [The Premium Mediocre Life of Maya Millennial](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.ribbonfarm.com%2F2017%2F08%2F17%2Fthe-premium-mediocre-life-of-maya-millennial%2F&h=a59ff44e36e1b708ce97c808da1965603c231fdc81763eb0689f8931f3cfeece)<br>Tohle je nejlepší analýza městských mileniálů, kterou jsem kdy četl. Hodně meta, ale těch myšlenek, co tam řežou do živýho!
-- [Vážil jsem se čtyřikrát za noc. Moderátor Čestmír Strakatý přiznává souboj se svým tělem](https://getpocket.com/redirect?&url=https%3A%2F%2Fovercast.fm%2F%2B0k77xlt5w&h=0c2d6f513551db7f46c182d8ffc57eae89fe36532fa3d263ed79e13b3d07d227)<br>Zaposlouchal jsem se do této podcastové série a rozjezd hodně dobrý.
+- [The 2022 Market Crash - Why is Everything Down?](https://www.youtube.com/watch?v=ddWr9dPGqDA)<br>Co se děje s trhy?
+- [Bořiči dezinformací. Dáváme lidem argumenty proti nesmyslům, vysvětlují autoři projektu Ověřovna](https://overcast.fm/+RZMiLLLVk)<br>Super.
+- [The Premium Mediocre Life of Maya Millennial](https://www.ribbonfarm.com/2017/08/17/the-premium-mediocre-life-of-maya-millennial/)<br>Tohle je nejlepší analýza městských mileniálů, kterou jsem kdy četl. Hodně meta, ale těch myšlenek, co tam řežou do živýho!
+- [Vážil jsem se čtyřikrát za noc. Moderátor Čestmír Strakatý přiznává souboj se svým tělem](https://overcast.fm/+0k77xlt5w)<br>Zaposlouchal jsem se do této podcastové série a rozjezd hodně dobrý.
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

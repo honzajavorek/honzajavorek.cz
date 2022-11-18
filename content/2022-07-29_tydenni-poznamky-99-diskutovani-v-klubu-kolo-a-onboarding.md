@@ -69,11 +69,11 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Are forum platforms dead?](https://getpocket.com/redirect?&url=https%3A%2F%2Frosie.land%2Fposts%2Fare-forum-platforms-dead%2F&h=d34394b2453ad2cf93eb66559ec7b77f5577646593036dffda00f16d5bd96e59)<br>Zajímavý článek o tom, jestli jsou fóra definitivně mrtvá, nebo ne.
-- [A guide to community flywheels](https://getpocket.com/redirect?&url=https%3A%2F%2Frosie.land%2Fposts%2Fa-rosieland-guide-to-build-community-flywheels%2F&h=897f26abd85830e17cca6a983122c5a8d9033772e189ddeee6a54f50d339c63c)<br>Dobrý článek o tom, jak stavět komunity a jak k tomu přistupovat. Teoretický framework tak trochu.
-- [Sunset of the social network](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.axios.com%2F2022%2F07%2F25%2Fsunset-social-network-facebook-tiktok&h=937ed2b11a0749c9aa0cdb061bc5fcde32ff91c85bf756b395101253d83252cd)<br>Zajímavé změny na Facebooku.
-- [You should take more screenshots](https://getpocket.com/redirect?&url=https%3A%2F%2Falexwlchan.net%2F2022%2F07%2Fscreenshots%2F&h=04abff7a0d93966ac10c8ca079c4c00f861ba0e311e58a12b1449ac02202cc86)<br>Přesně tak. Taky dělám poslední dobou víc a víc screenshotů, čistě pro archivní účely. Škoda, že jsem s tím nezačal dříve.
-- [Dospělí a ADHD - nemáte ho taky? Snáz se pozná a lidé jsou ochotnější problémy řešit](https://getpocket.com/redirect?&url=https%3A%2F%2Fovercast.fm%2F%2BRZMhhsqwI&h=07d855d89db26af9a20d9e058b451ffa6131dc3854723e7adda129f8636e4477)<br>Hmmm…
-- [Gebrian: Zácpy způsobují pohodlní a bezohlední lidé, měli by platit mýtné, nebo neuvěřitelně drahé parkování - Prostor X podcast](https://getpocket.com/redirect?&url=https%3A%2F%2Fovercast.fm%2F%2BWv2Sr88zI&h=0fa2eeb04a2d3c349e294c3bd4a17c691cc0cf0d78b275959689895db7d0476b)<br>Ano.
+- [Are forum platforms dead?](https://rosie.land/posts/are-forum-platforms-dead/)<br>Zajímavý článek o tom, jestli jsou fóra definitivně mrtvá, nebo ne.
+- [A guide to community flywheels](https://rosie.land/posts/a-rosieland-guide-to-build-community-flywheels/)<br>Dobrý článek o tom, jak stavět komunity a jak k tomu přistupovat. Teoretický framework tak trochu.
+- [Sunset of the social network](https://www.axios.com/2022/07/25/sunset-social-network-facebook-tiktok)<br>Zajímavé změny na Facebooku.
+- [You should take more screenshots](https://alexwlchan.net/2022/07/screenshots/)<br>Přesně tak. Taky dělám poslední dobou víc a víc screenshotů, čistě pro archivní účely. Škoda, že jsem s tím nezačal dříve.
+- [Dospělí a ADHD - nemáte ho taky? Snáz se pozná a lidé jsou ochotnější problémy řešit](https://overcast.fm/+RZMhhsqwI)<br>Hmmm…
+- [Gebrian: Zácpy způsobují pohodlní a bezohlední lidé, měli by platit mýtné, nebo neuvěřitelně drahé parkování - Prostor X podcast](https://overcast.fm/+Wv2Sr88zI)<br>Ano.
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

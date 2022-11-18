@@ -93,8 +93,8 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Vlevo dole](https://getpocket.com/redirect?&url=https%3A%2F%2Fovercast.fm%2F%2BahZjVt9Z0&h=29a6f90aac668a55d7e04855d2725f34a3411eb2fe2fd80b4b59acdb4afd4ab6)<br>Kam se poděli Piráti?
-- [Web scraping is legal, US appeals court reaffirms](https://getpocket.com/redirect?&url=https%3A%2F%2Ftechcrunch.com%2F2022%2F04%2F18%2Fweb-scraping-legal-court%2F&h=5af35d1fe077ba8d6d4711c8c0bd4e3df4fb36a00baf2d3f873f190f1d2559b0)<br>Scrapování je prý legální.
-- [Vladimir 518: Praha ještě zazáří. Je třeba stavět, ale také pečovat o ikonické stavby z minulosti](https://getpocket.com/redirect?&url=https%3A%2F%2Fovercast.fm%2F%2BVf9THCkSA&h=e264023b98432a491b2cc175d62511e0680ee063ac0a30883653f319cb58987d)<br>Rozhovor o architektuře a Praze, líbilo se mi to.
+- [Vlevo dole](https://overcast.fm/+ahZjVt9Z0)<br>Kam se poděli Piráti?
+- [Web scraping is legal, US appeals court reaffirms](https://techcrunch.com/2022/04/18/web-scraping-legal-court/)<br>Scrapování je prý legální.
+- [Vladimir 518: Praha ještě zazáří. Je třeba stavět, ale také pečovat o ikonické stavby z minulosti](https://overcast.fm/+Vf9THCkSA)<br>Rozhovor o architektuře a Praze, líbilo se mi to.
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

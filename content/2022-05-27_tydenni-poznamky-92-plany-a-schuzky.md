@@ -90,6 +90,6 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [The community engagement trap](https://getpocket.com/redirect?&url=https%3A%2F%2Frosie.land%2Fposts%2Fthe-community-engagement-trap%2F&h=5834e5ca7aeec6c517264ff4a4681eec316ccff0768f336c805cf6f36968a1e6)<br>Dobré postřehy o tom, že aktivitu v komunitě není dobré brát jako jediné měřítko úspěšnosti komunity a vede ke „gejmování“ metriky kvůli číslům, ke škodě všech.
+- [The community engagement trap](https://rosie.land/posts/the-community-engagement-trap/)<br>Dobré postřehy o tom, že aktivitu v komunitě není dobré brát jako jediné měřítko úspěšnosti komunity a vede ke „gejmování“ metriky kvůli číslům, ke škodě všech.
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

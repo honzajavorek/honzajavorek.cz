@@ -84,7 +84,7 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Fila: Krutost ilegálního potratu. Kontroverzní film je znovu aktuální](https://getpocket.com/redirect?&url=https%3A%2F%2Fmagazin.aktualne.cz%2Fkultura%2Ffilm%2Fjak-kruty-je-ilegalni-potrat-ocenovany-film-je-opet-aktualni%2Fr%7E895c35d2204111ebb1110cc47ab5f122%2F%3Futm_source%3Dmediafed%26utm_medium%3Drss%26utm_campaign%3Dmediafed&h=d530e76e07efbd9ccf7600db408f4df879c6487fc4737cff78153ced093321b5)<br>Když jsem šel před hromadou let poprvé v životě do artového kina, dávali tam právě tento film. A je skvělý.
-- [The Impact of AI on Journalism](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.forbes.com%2Fsites%2Fcalumchace%2F2020%2F08%2F24%2Fthe-impact-of-ai-on-journalism%2F&h=86070aadea678985481b20e3ca6ac62a9241352d754cf9b9e80cb7d6a63c9a8a)<br>Jak AI už dnes píše články do novin
+- [Fila: Krutost ilegálního potratu. Kontroverzní film je znovu aktuální](https://magazin.aktualne.cz/kultura/film/jak-kruty-je-ilegalni-potrat-ocenovany-film-je-opet-aktualni/r~895c35d2204111ebb1110cc47ab5f122/?utm_source=mediafed&utm_medium=rss&utm_campaign=mediafed)<br>Když jsem šel před hromadou let poprvé v životě do artového kina, dávali tam právě tento film. A je skvělý.
+- [The Impact of AI on Journalism](https://www.forbes.com/sites/calumchace/2020/08/24/the-impact-of-ai-on-journalism/)<br>Jak AI už dnes píše články do novin
 
 <small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small>

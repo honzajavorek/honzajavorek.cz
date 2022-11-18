@@ -80,8 +80,8 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Twenty years of my blog](https://getpocket.com/redirect?&url=http%3A%2F%2Fsimonwillison.net%2F2022%2FJun%2F12%2Ftwenty-years%2F%23atom-entries&h=ca4f550019d1bc801e67699b9b0107f7ea902e99346e3638f7efc55258404be3)<br>Boží průlet Simonovou historií.
-- [Lanyrd: from idea to exit - the story of our startup](https://getpocket.com/redirect?&url=https%3A%2F%2Fblog.natbat.net%2Fpost%2F61658401806%2Flanyrd-from-idea-to-exit&h=b6f474917857bbfac380b7ee4b225feb41cfdf60c2459c16066c425734c9d4d5)<br>Proč nezakládám firmu, v jedné větě: „We moved from building the product to building the machine that builds the product. This meant hiring a team and designing a company.“
-- [The Left-NIMBY canon](https://getpocket.com/redirect?&url=https%3A%2F%2Ft.co%2Faz0WjVgkYN%3Fssr%3Dtrue&h=7fd47fbeefc5f9fcb8d4fe92452fb5a8f7638024c18734e842e755f277a8277f)<br>Různé pohledy na řešení krize bydlení. Levicové NIMBY vs YIMBY.
+- [Twenty years of my blog](http://simonwillison.net/2022/Jun/12/twenty-years/#atom-entries)<br>Boží průlet Simonovou historií.
+- [Lanyrd: from idea to exit - the story of our startup](https://blog.natbat.net/post/61658401806/lanyrd-from-idea-to-exit)<br>Proč nezakládám firmu, v jedné větě: „We moved from building the product to building the machine that builds the product. This meant hiring a team and designing a company.“
+- [The Left-NIMBY canon](https://t.co/az0WjVgkYN?ssr=true)<br>Různé pohledy na řešení krize bydlení. Levicové NIMBY vs YIMBY.
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

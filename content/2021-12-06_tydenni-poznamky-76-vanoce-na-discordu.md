@@ -135,7 +135,7 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Co dělá copywriter, když nepřichází múza?](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.sibiranka.cz%2Fblog%2Fcopywriting-a-muzy%2F&h=38df654aa5e39660372968f92bb261370fc6f2f514bd395440e468c7b1b3e295)<br>Nejen copywriter, pro mě to platí taky.
-- [Firefox is the Only Alternative](https://getpocket.com/redirect?&url=https%3A%2F%2Fbatsov.com%2Farticles%2F2021%2F11%2F28%2Ffirefox-is-the-only-alternative%2F&h=ea19a5bef25864f899db4cbdc37c5c9a5ec46b5dd2e976d55d2f50865830d7be)<br>Chrome je nový Internet Explorer, jak ho pamatujeme deset let zpět. Neexistují alternativy k jeho jádru, Google má kontrolu nad webovými standardy. Jediná alternativa je Firefox.
+- [Co dělá copywriter, když nepřichází múza?](https://www.sibiranka.cz/blog/copywriting-a-muzy/)<br>Nejen copywriter, pro mě to platí taky.
+- [Firefox is the Only Alternative](https://batsov.com/articles/2021/11/28/firefox-is-the-only-alternative/)<br>Chrome je nový Internet Explorer, jak ho pamatujeme deset let zpět. Neexistují alternativy k jeho jádru, Google má kontrolu nad webovými standardy. Jediná alternativa je Firefox.
 
 <small>Upozorňuji, že to není vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

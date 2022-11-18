@@ -182,8 +182,8 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Google Search Is Dying](https://getpocket.com/redirect?&url=https%3A%2F%2Fdkb.io%2Fpost%2Fgoogle-search-is-dying&h=c4a5144c491457555df711bf042bb9c747619fe08e0ad1d5c967b1a2eea585d7)<br>Dává vám Google vlastně ještě nějaké užitečné výsledky, nebo na vás už sype jen reklamy a přeoptimalizované stránky?
-- [Pokud Biden neříká o Rusku pravdu, dozvíme se to. Putinovy lži ale nikdo nehlídá](https://getpocket.com/redirect?&url=https%3A%2F%2Fnazory.aktualne.cz%2Fkomentare%2Fnew-york-times%2Fr%7E30d496ea8fe211eca9b1ac1f6b220ee8%2F&h=9232d7ddf48bf63ae9e5635ad5b678c8564aeabf8e3325e1728f95847b593aaf)<br>Komentář o tom, jak i Bílý dům může vypouštět účelové informace, ale na rozdíl od Putina pak dostane přes prsty od svobodných médií.
-- [Ukrajina mezi „šílenstvím“ Ruska a „hysterií“ Západu. Pohled zpravodaje listu Guardian z Kyjeva](https://getpocket.com/redirect?&url=https%3A%2F%2Fovercast.fm%2F%2BRZMi-r8VU&h=553008e007f96f1abdab9722d58733c17f9b36743dd3a646fc876b37319c96b0)<br>Pěkný komentář k aktuálnímu dění na Ukrajině.
+- [Google Search Is Dying](https://dkb.io/post/google-search-is-dying)<br>Dává vám Google vlastně ještě nějaké užitečné výsledky, nebo na vás už sype jen reklamy a přeoptimalizované stránky?
+- [Pokud Biden neříká o Rusku pravdu, dozvíme se to. Putinovy lži ale nikdo nehlídá](https://nazory.aktualne.cz/komentare/new-york-times/r~30d496ea8fe211eca9b1ac1f6b220ee8/)<br>Komentář o tom, jak i Bílý dům může vypouštět účelové informace, ale na rozdíl od Putina pak dostane přes prsty od svobodných médií.
+- [Ukrajina mezi „šílenstvím“ Ruska a „hysterií“ Západu. Pohled zpravodaje listu Guardian z Kyjeva](https://overcast.fm/+RZMi-r8VU)<br>Pěkný komentář k aktuálnímu dění na Ukrajině.
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

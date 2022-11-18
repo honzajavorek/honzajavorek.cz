@@ -77,10 +77,10 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Taking photographs ruins the memory, research finds](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.telegraph.co.uk%2Fnews%2Fscience%2Fscience-news%2F10507146%2FTaking-photographs-ruins-the-memory-research-finds.html&h=29b8362b41dbd73c0fc9c54e2d073761f34ae4a9262ed87512eac9b6ea160fe1)<br>Když už si věci fotíte, měli byste si fotky taky někdy procházet
-- [Hiring and the market for lemons](https://getpocket.com/redirect?&url=http%3A%2F%2Fdanluu.com%2Fhiring-lemons%2F&h=f903483334f906160a7a098a0be6bd4800d83c61fc77f9fe09535cb7bb6bba22)<br>Skvělý (jako vždycky) Dan Luu o pracovním trhu v IT
-- [Anti-Flow](https://getpocket.com/redirect?&url=http%3A%2F%2Frandsinrepose.com%2Farchives%2Fanti-flow%2F&h=9c1046eaaabf903dc0e81bea9f635bc08ff15bda3c432da6f6c36f94057dcb37)<br>Taky mám nejlepší nápady ve sprše
-- [UTC is Enough for Everyone, Right?](https://getpocket.com/redirect?&url=https%3A%2F%2Fzachholman.com%2Ftalk%2Futc-is-enough-for-everyone-right&h=39ec219b5b7ee28aa1ff4746d34436bc2207f3d906b15412ccc97b27af4d8e40)<br>Hezké shrnutí toho, na co si dávat pozor při práci s časem na webu
-- [Všechno zrušit?](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.jestevetsikritik.cz%2Fkomentare%2F1045-vsechno-zrusit&h=b2e1735f4960e13d1b41487d1a36afb7a3f156d9267add5c1a0cdb940e144446)<br>Poctivý rozbor toho, proč teď některá díla mizí z Netflixu a spol.
+- [Taking photographs ruins the memory, research finds](https://www.telegraph.co.uk/news/science/science-news/10507146/Taking-photographs-ruins-the-memory-research-finds.html)<br>Když už si věci fotíte, měli byste si fotky taky někdy procházet
+- [Hiring and the market for lemons](http://danluu.com/hiring-lemons/) Dan Luu o pracovním trhu v IT
+- [Anti-Flow](http://randsinrepose.com/archives/anti-flow/)<br>Taky mám nejlepší nápady ve sprše
+- [UTC is Enough for Everyone, Right?](https://zachholman.com/talk/utc-is-enough-for-everyone-right)<br>Hezké shrnutí toho, na co si dávat pozor při práci s časem na webu
+- [Všechno zrušit?](https://www.jestevetsikritik.cz/komentare/1045-vsechno-zrusit)<br>Poctivý rozbor toho, proč teď některá díla mizí z Netflixu a spol.
 
 <small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small>

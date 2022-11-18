@@ -132,12 +132,12 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [There Are No Bugs, Just TODOs](https://getpocket.com/redirect?&url=https%3A%2F%2Falmad.blog%2Fessays%2Fno-bugs-just-todos%2F&h=2f994af5d6fb1f55d3b38d1d91f307755a06bfad5efa43961b51eb67daee71ab)<br>Souhlas, že dělit úkoly na bugy a fičury by mělo být správně zbytečné, a že vývoj by měl být jeden ToDo seznam
-- [7 Ways to Retain More of Every Book You Read](https://getpocket.com/redirect?&url=http%3A%2F%2Fjamesclear.com%2Freading-comprehension-strategies&h=cd4d804a2c96d3926b86884f70dd759faa6ebbd4c8fc2eb0d8a9908b70740ae7)<br>Fajn tipy, tak snad bych zase mohl něco konečně přečíst
-- [Be a good mentor, not a dickhead](https://getpocket.com/redirect?&url=https%3A%2F%2Fdev.to%2Fmortoray%2Fbe-a-good-mentor-not-a-dickhead&h=1e969067c6a99b0cbbc67925ec8fe6793c488f80e981a766c3258ff0e9dd9d52)<br>Souhlas
-- [A Five-Minute Guide to Better Typography](https://getpocket.com/redirect?&url=http%3A%2F%2Fpierrickcalvez.com%2Fjournal%2Fa-five-minutes-guide-to-better-typography&h=809370b78b93e6911db75dc68f4dcdf58836a0d61da0461bab0e04d6f4b68912)<br>Pár praktických rad — a je to
-- [1:1, nejdůležitější nástroj team leadera](https://getpocket.com/redirect?&url=http%3A%2F%2Fwww.sw-samuraj.cz%2F2017%2F10%2F11-nejdulezitejsi-nastroj-team-leadera.html%3Fspref%3Dtw%26m%3D1&h=f8885a103e22da62316e497d087faab883989356762e07a7227cb3b6f1508688)<br>V Apiary jsme 1:1 poctivě dělali a už bych nikdy nechtěl jinak
-- [Questions for our first 1:1](https://getpocket.com/redirect?&url=http%3A%2F%2Flarahogan.me%2Fblog%2Ffirst-one-on-one-questions%2F&h=0fc76d4db1ea50dbbc0585323cb6742cd725779583943a02a4be45f5aa3c4ee2)<br>Skvělé otázky na 1:1
-- [Klid a mír na konci světa](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.respekt.cz%2Ftydenik%2F2017%2F17%2Fklid-a-mir-na-konci-sveta&h=e376b5791579cd9568049ed5cfb92ece1b8f62cee477609257934291cbbb50df)<br>Pokračování příběhu pro ty, kdo viděli seriál Narcos
+- [There Are No Bugs, Just TODOs](https://almad.blog/essays/no-bugs-just-todos/)<br>Souhlas, že dělit úkoly na bugy a fičury by mělo být správně zbytečné, a že vývoj by měl být jeden ToDo seznam
+- [7 Ways to Retain More of Every Book You Read](http://jamesclear.com/reading-comprehension-strategies)<br>Fajn tipy, tak snad bych zase mohl něco konečně přečíst
+- [Be a good mentor, not a dickhead](https://dev.to/mortoray/be-a-good-mentor-not-a-dickhead)<br>Souhlas
+- [A Five-Minute Guide to Better Typography](http://pierrickcalvez.com/journal/a-five-minutes-guide-to-better-typography)<br>Pár praktických rad — a je to
+- [1:1, nejdůležitější nástroj team leadera](http://www.sw-samuraj.cz/2017/10/11-nejdulezitejsi-nastroj-team-leadera.html?spref=tw&m=1)<br>V Apiary jsme 1:1 poctivě dělali a už bych nikdy nechtěl jinak
+- [Questions for our first 1:1](http://larahogan.me/blog/first-one-on-one-questions/)<br>Skvělé otázky na 1:1
+- [Klid a mír na konci světa](https://www.respekt.cz/tydenik/2017/17/klid-a-mir-na-konci-sveta)<br>Pokračování příběhu pro ty, kdo viděli seriál Narcos
 
 <small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small>

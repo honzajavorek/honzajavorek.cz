@@ -99,11 +99,11 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [#30 - s Marií Šabackou o klimatické změně](https://getpocket.com/redirect?&url=https%3A%2F%2Fovercast.fm%2F%2BoPpc7R_ms&h=51fe7ff8d46f9bb488868598ba20b07f0b812eb5807916ab7f06685a3e2b80cf)<br>Fajn rozhovor, celkem střízlivý pohled.
-- [Will Taiwan Trigger WW3 by 2027?](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dp6sCsOdqXQw&h=eae82c7ab9d4e32a7cba24051daf0e1c57e95c0d8b1fd47e66befc3066bfbe07)
-- [Ukrajina tlačí na Rusko. Přebírá strategii a nutí Moskvu přemisťovat vojska, uvádí analýza](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.irozhlas.cz%2Fzpravy-svet%2Fonline-valka-na-ukrajine-rusko-studium-pro-valku-vojska_2208051024_ban&h=d7bc7860242ca7683cf3ffd3be9a64b85f23eee0c67d08638cafa0afab297574)<br>Naděje
-- [China's Catastrophic Oil & Gas Problem](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DISHHe1Hu6d4&h=ca8025446f44cee7ea5b7f54a5ad42b931615877d79af2306eab3e9bfe02978a)<br>Tohle vysvětluje fakt hodně věcí, které se kolem Číny dějí.
-- [Čínská armáda je na nohou a cvičí kolem Tchaj-wanu. O jaké vojsko jde?](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.voxpot.cz%2Fcinska-armada-je-na-nohou-a-cvici-kolem-tchaj-wanu-o-jake-vojsko-jde%2F&h=f6a1d7c568913942cab242f48b9d53ea6d7ba53a30b8a68b464f12935d59f33b)
-- [Productivity Porn](https://getpocket.com/redirect?&url=https%3A%2F%2Fcalebschoepp.com%2Fblog%2F2022%2Fproductivity-porn%2F&h=88bfc289c126171c3bc8385cf286c1aa461a6f61d698969cc1c8dda28d5ac8b4)<br>„I just learned something new, you tell yourself. And while this is true, you never actually did the thing you were setting out to do in the first place.“
+- [#30 - s Marií Šabackou o klimatické změně](https://overcast.fm/+oPpc7R_ms)<br>Fajn rozhovor, celkem střízlivý pohled.
+- [Will Taiwan Trigger WW3 by 2027?](https://www.youtube.com/watch?v=p6sCsOdqXQw)
+- [Ukrajina tlačí na Rusko. Přebírá strategii a nutí Moskvu přemisťovat vojska, uvádí analýza](https://www.irozhlas.cz/zpravy-svet/online-valka-na-ukrajine-rusko-studium-pro-valku-vojska_2208051024_ban)<br>Naděje
+- [China's Catastrophic Oil & Gas Problem](https://www.youtube.com/watch?v=ISHHe1Hu6d4)<br>Tohle vysvětluje fakt hodně věcí, které se kolem Číny dějí.
+- [Čínská armáda je na nohou a cvičí kolem Tchaj-wanu. O jaké vojsko jde?](https://www.voxpot.cz/cinska-armada-je-na-nohou-a-cvici-kolem-tchaj-wanu-o-jake-vojsko-jde/)
+- [Productivity Porn](https://calebschoepp.com/blog/2022/productivity-porn/)<br>„I just learned something new, you tell yourself. And while this is true, you never actually did the thing you were setting out to do in the first place.“
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

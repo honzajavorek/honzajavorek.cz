@@ -92,7 +92,7 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Dospělí a ADHD - nemáte ho taky? Snáz se pozná a lidé jsou ochotnější problémy řešit](https://getpocket.com/redirect?&url=https%3A%2F%2Fovercast.fm%2F%2BRZMhhsqwI&h=07d855d89db26af9a20d9e058b451ffa6131dc3854723e7adda129f8636e4477)<br>Hmmm…
-- [Gebrian: Zácpy způsobují pohodlní a bezohlední lidé, měli by platit mýtné, nebo neuvěřitelně drahé parkování - Prostor X podcast](https://getpocket.com/redirect?&url=https%3A%2F%2Fovercast.fm%2F%2BWv2Sr88zI&h=0fa2eeb04a2d3c349e294c3bd4a17c691cc0cf0d78b275959689895db7d0476b)<br>Ano.
+- [Dospělí a ADHD - nemáte ho taky? Snáz se pozná a lidé jsou ochotnější problémy řešit](https://overcast.fm/+RZMhhsqwI)<br>Hmmm…
+- [Gebrian: Zácpy způsobují pohodlní a bezohlední lidé, měli by platit mýtné, nebo neuvěřitelně drahé parkování - Prostor X podcast](https://overcast.fm/+Wv2Sr88zI)<br>Ano.
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

@@ -116,9 +116,9 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Další ženy promluvily o traumatizujících zážitcích s Dominikem Ferim. Problémy měla i nezletilá](https://getpocket.com/redirect?&url=https%3A%2F%2Fa2larm.cz%2F2021%2F06%2Fdalsi-zeny-promluvily-o-traumatizujicich-zazitcich-s-dominikem-ferim-problemy-mela-i-nezletila%2F&h=b8b808f5bd51f31885b2875a08f1ef9a27bedbdddcc92e267ad5fad013451b51)
-- [Don’t Feed the Thought Leaders](https://getpocket.com/redirect?&url=https%3A%2F%2Fearthly.dev%2Fblog%2Fthought-leaders%2F&h=d65099e40101b282e981390fa5644b7c6f7a0b3bba962d46df3743c2fd261a19)<br>Jak si nechat radit od druhých - čí rady brát s rezervou a čí následovat?
-- [Do You Need Redis? PostgreSQL Does Queuing, Locking, & Pub/Sub](https://getpocket.com/redirect?&url=https%3A%2F%2Fspin.atomicobject.com%2F2021%2F02%2F04%2Fredis-postgresql%2F&h=b1d18e35733e38f9475fe9b5ec0f8335e55408020fac88d05e3abde9f3b7d641)<br>Potřebujete pro své use-cases Redis? Nestačilo by vám PosgreSQL?
-- [In Support of the Fifteenth Standard](https://getpocket.com/redirect?&url=https%3A%2F%2Fsmizell.com%2Fposts%2F2021%2F06%2Fin-support-of-the-fifteenth-standard%2F&h=cd8df7dcf597665af33f5f29c7c5a643d70d85278b49a29f5d530f65edbf1451)<br>Až vám zase někdo pošle XKCD 927, odpovězte odkazem na tento článek.
+- [Další ženy promluvily o traumatizujících zážitcích s Dominikem Ferim. Problémy měla i nezletilá](https://a2larm.cz/2021/06/dalsi-zeny-promluvily-o-traumatizujicich-zazitcich-s-dominikem-ferim-problemy-mela-i-nezletila/)
+- [Don’t Feed the Thought Leaders](https://earthly.dev/blog/thought-leaders/)<br>Jak si nechat radit od druhých - čí rady brát s rezervou a čí následovat?
+- [Do You Need Redis? PostgreSQL Does Queuing, Locking, & Pub/Sub](https://spin.atomicobject.com/2021/02/04/redis-postgresql/)<br>Potřebujete pro své use-cases Redis? Nestačilo by vám PosgreSQL?
+- [In Support of the Fifteenth Standard](https://smizell.com/posts/2021/06/in-support-of-the-fifteenth-standard/)<br>Až vám zase někdo pošle XKCD 927, odpovězte odkazem na tento článek.
 
 <small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small>

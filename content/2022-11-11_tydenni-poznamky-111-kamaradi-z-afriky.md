@@ -87,9 +87,9 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Back to the Future of Twitter](https://getpocket.com/redirect?&url=https%3A%2F%2Fstratechery.com%2F2022%2Fback-to-the-future-of-twitter%2F&h=685b3babf30d8cdb4eafc3e426d45ea70334754b58d16a772af535e574ed770a)<br>„…most people don’t get their news off of Twitter; the places they get their news, though, are driven by Twitter.“
-- [The Knights Templar](https://getpocket.com/redirect?&url=https%3A%2F%2Fovercast.fm%2F%2BIPNxmIHV0&h=eac5158fbef8d62c5850042da89144361d33a235eb164f66e472e012a81e8d25)<br>Kdo byli Templáři?
-- [What to blog about](https://getpocket.com/redirect?&url=http%3A%2F%2Fsimonwillison.net%2F2022%2FNov%2F6%2Fwhat-to-blog-about%2F%23atom-entries&h=8df7013286a4d7cd66a86ddc762dcde628b10f1102299a97334c20591b1d7113)<br>Ano!
-- [Spouštíme MastodonCzech.cz. Chcete vyzkoušet decentralizovanou obdobu Twitteru?](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.lupa.cz%2Fclanky%2Fspoustime-mastodonczech-cz-chcete-vyzkouset-decentralizovanou-obdobu-twitteru%2F&h=e684235b1f8c182e944839081aaf78ba1a0c4164da25741ef4fb5b7b4b4684ac)<br>„Vedle masových sociálních gigantů přitom existuje zajímavý svět decentralizovaných aplikací, které pro určitou, zatím malou, skupinu lidí představují kýžený únik ze světa algoritmicky řízených feedů a timeline, všudypřítomné reklamy a sledování jejich pohybu po internetu.“
+- [Back to the Future of Twitter](https://stratechery.com/2022/back-to-the-future-of-twitter/)<br>„…most people don’t get their news off of Twitter; the places they get their news, though, are driven by Twitter.“
+- [The Knights Templar](https://overcast.fm/+IPNxmIHV0)<br>Kdo byli Templáři?
+- [What to blog about](http://simonwillison.net/2022/Nov/6/what-to-blog-about/#atom-entries)<br>Ano!
+- [Spouštíme MastodonCzech.cz. Chcete vyzkoušet decentralizovanou obdobu Twitteru?](https://www.lupa.cz/clanky/spoustime-mastodonczech-cz-chcete-vyzkouset-decentralizovanou-obdobu-twitteru/)<br>„Vedle masových sociálních gigantů přitom existuje zajímavý svět decentralizovaných aplikací, které pro určitou, zatím malou, skupinu lidí představují kýžený únik ze světa algoritmicky řízených feedů a timeline, všudypřítomné reklamy a sledování jejich pohybu po internetu.“
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

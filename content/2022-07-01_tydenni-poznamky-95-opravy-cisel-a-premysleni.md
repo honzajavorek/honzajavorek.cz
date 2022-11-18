@@ -99,6 +99,6 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [The Left-NIMBY canon](https://getpocket.com/redirect?&url=https%3A%2F%2Ft.co%2Faz0WjVgkYN%3Fssr%3Dtrue&h=7fd47fbeefc5f9fcb8d4fe92452fb5a8f7638024c18734e842e755f277a8277f)<br>Různé pohledy na řešení krize bydlení. Levicové NIMBY vs YIMBY.
+- [The Left-NIMBY canon](https://t.co/az0WjVgkYN?ssr=true)<br>Různé pohledy na řešení krize bydlení. Levicové NIMBY vs YIMBY.
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

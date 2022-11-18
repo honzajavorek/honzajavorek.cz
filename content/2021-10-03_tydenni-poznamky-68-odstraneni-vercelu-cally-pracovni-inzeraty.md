@@ -83,7 +83,7 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Pět důvodů, proč odstoupení Zelených z voleb nedává smysl](https://getpocket.com/redirect?&url=https%3A%2F%2Fberg.blog.respekt.cz%2Fodstoupeni%2F&h=0a4b5f735ff108839d6241d33d6ce6f04f016679f9717c835a8e5bed45ef2084)<br>Proč jsou výkřiky o odstoupení Zelených z voleb nesmysl. A odkazuje i nejlepší článek na světě!
-- [Česko je skanzen, chováme se jako blázni, úředníci jsou odtržení od reality, říká šéf IPR Boháč](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DyjjUQ_NB3wE&h=292ec3b894372cc52e00ced16656bc8e224ce59cc0729b307643b6b76dea1659)<br>Perfektní rozhovor o bytech, dopravě, urbanismu, městě.
+- [Pět důvodů, proč odstoupení Zelených z voleb nedává smysl](https://berg.blog.respekt.cz/odstoupeni/)<br>Proč jsou výkřiky o odstoupení Zelených z voleb nesmysl. A odkazuje i nejlepší článek na světě!
+- [Česko je skanzen, chováme se jako blázni, úředníci jsou odtržení od reality, říká šéf IPR Boháč](https://www.youtube.com/watch?v=yjjUQ_NB3wE)<br>Perfektní rozhovor o bytech, dopravě, urbanismu, městě.
 
 <small>Upozorňuji, že to není vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

@@ -109,9 +109,9 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Jiří Rostecký: MladýPodnikatel.cz](https://getpocket.com/redirect?&url=https%3A%2F%2Fovercast.fm%2F%2Bi0WtkAqRE&h=1a2c1d093d690735af5b5878f802a1c1993599dd68c3c921a7cbdbd350cad63b)<br>Super rozhovor, kde se řeší hodně věcí, které teď v marketingu zrovna řeším.
-- [České zbrojovky jely 24/7, zatímco USA se bály eskalace. Bylo to frustrující, říká náměstek Kopečný](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.voxpot.cz%2Fceske-zbrojovky-jely-24-7-zatimco-usa-se-baly-eskalace-jak-frustrujici-rika-namestek-ministryne-obrany-kopecny%2F&h=c53fc1b0f071eb464302474b140f3085ce48c634d9cd4b468c5d1ddc2f32cc33)<br>Zajímavý vhled do věcí.
-- [Pieter Levels: Making $2.7M A Year With No Employees](https://getpocket.com/redirect?&url=https%3A%2F%2Fovercast.fm%2F%2BrTsX1IG4s&h=884ea5255776b69e46adb04ff5449a6d3c97cd87778d8dcbce6b99ba60f882fd)<br>Ojedinělý podcast s P. Levelsem o tom, jak startupuje v jednom člověku a žije si život jaký chce.
-- [Konvalinka: Letní vlna je největší za celou dobu, nemá smysl čekat na nové vakcíny](https://getpocket.com/redirect?&url=https%3A%2F%2Fovercast.fm%2F%2BRZMhp8V1I&h=033c39c38d0e8af5ebf705b89da520bf331f42780607de10bc22e892c8a21c2c)<br>Blíží se další vlna covidu? Užitečné shrnutí.
+- [Jiří Rostecký: MladýPodnikatel.cz](https://overcast.fm/+i0WtkAqRE)<br>Super rozhovor, kde se řeší hodně věcí, které teď v marketingu zrovna řeším.
+- [České zbrojovky jely 24/7, zatímco USA se bály eskalace. Bylo to frustrující, říká náměstek Kopečný](https://www.voxpot.cz/ceske-zbrojovky-jely-24-7-zatimco-usa-se-baly-eskalace-jak-frustrujici-rika-namestek-ministryne-obrany-kopecny/)<br>Zajímavý vhled do věcí.
+- [Pieter Levels: Making $2.7M A Year With No Employees](https://overcast.fm/+rTsX1IG4s)<br>Ojedinělý podcast s P. Levelsem o tom, jak startupuje v jednom člověku a žije si život jaký chce.
+- [Konvalinka: Letní vlna je největší za celou dobu, nemá smysl čekat na nové vakcíny](https://overcast.fm/+RZMhp8V1I)<br>Blíží se další vlna covidu? Užitečné shrnutí.
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

@@ -99,7 +99,7 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Lucka Gurellová: Dřív než uměla číst a psát, tak začala programovat](https://getpocket.com/redirect?&url=https%3A%2F%2Fovercast.fm%2F%2BoxWiakock&h=3c28c73d42de218b87def01bcde008f1988c9c1da2adffba54ce8996fa7a0ff7)<br>„Bylo mi 11, ale všechno pokročilé programování pro děcka začínalo až od 15…“ :D Hustý.
-- [Pod čarou : Radíte chudým, jak šetřit? Nejprve zjistěte, jak žijí.](https://getpocket.com/redirect?&url=https%3A%2F%2Fseznam-zpravy.u.mailkit.eu%2Fmc%2FVVCQVPWV%2FVVPFMXVSZGRZZYZJLB%2FCCIPMIIQMEC&h=12e97483803d2b63ddaf06dedaea946f3865ee29da006fb08c5e450b593ff615)<br>„Nejsou úspory jako úspory, a ekonomické strategie jedné společenské vrstvy se nedají automaticky aplikovat na jinou.“
+- [Lucka Gurellová: Dřív než uměla číst a psát, tak začala programovat](https://overcast.fm/+oxWiakock)<br>„Bylo mi 11, ale všechno pokročilé programování pro děcka začínalo až od 15…“ :D Hustý.
+- [Pod čarou : Radíte chudým, jak šetřit? Nejprve zjistěte, jak žijí.](https://seznam-zpravy.u.mailkit.eu/mc/VVCQVPWV/VVPFMXVSZGRZZYZJLB/CCIPMIIQMEC)<br>„Nejsou úspory jako úspory, a ekonomické strategie jedné společenské vrstvy se nedají automaticky aplikovat na jinou.“
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

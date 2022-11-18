@@ -78,12 +78,12 @@ Do svého `weeknotes.py` skriptu, jímž si poznámky vždy připravuji ([na Git
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Body shaming: historie a narozeninová fotka Adele](http://getpocket.com/redirect?&url=http%3A%2F%2Fmarkething.cz%2Fbody-shaming&h=6e3931b9295c348c83ad00d2b464c116a29ad86e1715294faa1754c597d2b938)
-- [We Don't Know What an Employment Is](http://getpocket.com/redirect?&url=https%3A%2F%2Falmad.blog%2Fessays%2Fwhat-is-employment%2F&h=ef4216c9df41763fa900b12815a280bf790f50960468a45ebed5f3682156dc6a)
-- [Today’s Javascript, from an outsider’s perspective](http://getpocket.com/redirect?&url=http%3A%2F%2Flea.verou.me%2F2020%2F05%2Ftodays-javascript-from-an-outsiders-perspective%2F&h=e69f5b7c962488ef76c820e52b0678d138ad91afa2cb6397b408b07acc3c3105)
-- [Lady Gaga “The Edge of Glory” on the Howard Stern Show](http://getpocket.com/redirect?&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dr0X7PodqDSE%26feature%3Dshare&h=f73977feb49f7aef12140b047f4a41513475534bd258dd25c22aabf4d1d48eec)
-- [Angelina Jolie's Perfect Game](http://getpocket.com/redirect?&url=https%3A%2F%2Fwww.buzzfeed.com%2Fannehelenpetersen%2Fangelina-jolies-perfect-game&h=16079c4694654cb8b7e47970f4bfdfe711042bf3ed051858b66142aa93b4e693)
-- [Being an example to others](http://getpocket.com/redirect?&url=https%3A%2F%2Fwww.drmaciver.com%2F2019%2F09%2Fbeing-an-example-to-others%2F&h=2d42f08a8deb4f2562e3a40293f8512fe532bee9faea71f61b735ce5d17929d7)
-- [The One About Your GitHub Account](http://getpocket.com/redirect?&url=https%3A%2F%2Fdariagrudzien.com%2Fposts%2Fthe-one-about-your-github-account%2F&h=a619ed3821c33f1f7ae8b87aca789b7773284ab0a4820aa68ad7cab52b62c0ad)
-- [How To Navigate The Beginnings Of Your Career In Web Development - Junioring 101](http://getpocket.com/redirect?&url=https%3A%2F%2Fwww.codingbootcamp.cz%2Fblog%2Falumni-stories%2Fhow-to-navigate-the-beginnings-of-your-career-in-web-development---junioring-101&h=93647faffb17df398c9f20c16cc0f753e60d2c2353c86b71bca3ae76f51143b4)
-- [Using SQL to find my best photo of a pelican according to Apple Photos](http://getpocket.com/redirect?&url=https%3A%2F%2Fsimonwillison.net%2F2020%2FMay%2F21%2Fapple-photos-sqlite%2F&h=e4df7c368b6541e3e5ae14176781976945d7a29fb5436cc47bc33112944a9514)
+- [Body shaming: historie a narozeninová fotka Adele](http://markething.cz/body-shaming)
+- [We Don't Know What an Employment Is](https://almad.blog/essays/what-is-employment/)
+- [Today’s Javascript, from an outsider’s perspective](http://lea.verou.me/2020/05/todays-javascript-from-an-outsiders-perspective/)
+- [Lady Gaga “The Edge of Glory” on the Howard Stern Show](https://www.youtube.com/watch?v=r0X7PodqDSE&feature=share)
+- [Angelina Jolie's Perfect Game](https://www.buzzfeed.com/annehelenpetersen/angelina-jolies-perfect-game)
+- [Being an example to others](https://www.drmaciver.com/2019/09/being-an-example-to-others/)
+- [The One About Your GitHub Account](https://dariagrudzien.com/posts/the-one-about-your-github-account/)
+- [How To Navigate The Beginnings Of Your Career In Web Development - Junioring 101](https://www.codingbootcamp.cz/blog/alumni-stories/how-to-navigate-the-beginnings-of-your-career-in-web-development---junioring-101)
+- [Using SQL to find my best photo of a pelican according to Apple Photos](https://simonwillison.net/2020/May/21/apple-photos-sqlite/)

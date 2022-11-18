@@ -97,8 +97,8 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Dovolená je změna stavu mysli – nezáleží, kde jste, říká fotografka, která se rekreovala na Sídlišti Ďáblice](https://getpocket.com/redirect?&url=https%3A%2F%2Fa2larm.cz%2F2021%2F09%2Fdovolena-je-zmena-stavu-mysli-nezalezi-kde-jste-rika-fotografka-ktera-se-rekreovala-na-sidlisti-dablice%2F&h=d4e378d87e6a8d65b58e5a10fded00aeec4b727165674ad05ed728136e3d2331)<br>Třeba někdy zkusím :))
-- [The 2022 Market Crash - Why is Everything Down?](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DddWr9dPGqDA&h=f344f5407913c81e36f57fd78713b238157025b74a3d3b45b641ac73797bc6a2)<br>Co se děje s trhy?
-- [Bořiči dezinformací. Dáváme lidem argumenty proti nesmyslům, vysvětlují autoři projektu Ověřovna](https://getpocket.com/redirect?&url=https%3A%2F%2Fovercast.fm%2F%2BRZMiLLLVk&h=4b7ccc4b28d011bbb4ae8ac1fe86c3bcaf9332933e5fc2b27ef0bf45ebae8ff2)<br>Super.
+- [Dovolená je změna stavu mysli – nezáleží, kde jste, říká fotografka, která se rekreovala na Sídlišti Ďáblice](https://a2larm.cz/2021/09/dovolena-je-zmena-stavu-mysli-nezalezi-kde-jste-rika-fotografka-ktera-se-rekreovala-na-sidlisti-dablice/)
+- [The 2022 Market Crash - Why is Everything Down?](https://www.youtube.com/watch?v=ddWr9dPGqDA)<br>Co se děje s trhy?
+- [Bořiči dezinformací. Dáváme lidem argumenty proti nesmyslům, vysvětlují autoři projektu Ověřovna](https://overcast.fm/+RZMiLLLVk)<br>Super.
 
 <small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

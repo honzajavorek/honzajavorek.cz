@@ -41,9 +41,9 @@ Pracoval jsem prakticky jen pondělí až středa a co si budeme povídat, moc j
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Praha chystá cykloobousměrky, Brno je ruší. Policie je považuje za nebezpečné, data ale ukazují opak](https://getpocket.com/redirect?&url=https%3A%2F%2Ft.co%2Fk0ICbaUfsx%3Fssr%3Dtrue&h=0c43ee34861ce5b4c1b0168286654eaaf816e4b1dfcded6f602d87bbdf665af4)<br>Plánuje se plánuje, ale nerealizuje se nic
-- [Proti všem. V Bruselu jsme dnes prohráli. Naštěstí. Naše zájmy hájili jiní](https://getpocket.com/redirect?&url=https%3A%2F%2Fnazory.aktualne.cz%2Fproti-vsem-v-bruselu-jsme-dnes-prohrali-nastesti-nase-zajmy%2Fr%7E11aa3ea2cb4711eaa7deac1f6b220ee8%2F&h=9dd2ab14ad0b07b25e8f16179a631a2b73c348dcfc96d791ccb897dacfe8b5a9)<br>Když prohrát znamená zvítězit… Sním o tom, že jednou budou Češi normálním, profesionálním hráčem v EU, který vyjednává, má spojence, zvládá konstruktivní politiku. Jenže my ze sebe stále děláme lojzíky se slámou v botech.
-- [Deník N : MeToo v Česku](https://getpocket.com/redirect?&url=https%3A%2F%2Ft.co%2FcMgqw9pObf%3Fssr%3Dtrue&h=7b219f19dd48b6a8b222f9f0a6d1ba8d6f67edd5b6997071f7b17d200f58a458)<br>Skvělý rozhovor
-- [The Third Age of JavaScript](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.swyx.io%2Fwriting%2Fjs-third-age%2F&h=d27abfd43e8cbaf3ee493d1cef1a40eece317db4a6e50a3876c2d3bb6590f9da)<br>Vstupujeme do třetí — a poslední — éry JavaScriptu?
+- [Praha chystá cykloobousměrky, Brno je ruší. Policie je považuje za nebezpečné, data ale ukazují opak](https://t.co/k0ICbaUfsx?ssr=true)<br>Plánuje se plánuje, ale nerealizuje se nic
+- [Proti všem. V Bruselu jsme dnes prohráli. Naštěstí. Naše zájmy hájili jiní](https://nazory.aktualne.cz/proti-vsem-v-bruselu-jsme-dnes-prohrali-nastesti-nase-zajmy/r~11aa3ea2cb4711eaa7deac1f6b220ee8/)<br>Když prohrát znamená zvítězit… Sním o tom, že jednou budou Češi normálním, profesionálním hráčem v EU, který vyjednává, má spojence, zvládá konstruktivní politiku. Jenže my ze sebe stále děláme lojzíky se slámou v botech.
+- [Deník N : MeToo v Česku](https://t.co/cMgqw9pObf?ssr=true)<br>Skvělý rozhovor
+- [The Third Age of JavaScript](https://www.swyx.io/writing/js-third-age/)<br>Vstupujeme do třetí — a poslední — éry JavaScriptu?
 
 <small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small>

@@ -88,9 +88,9 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Studio N: Krvavý konflikt o Karabach může eskalovat ve válku](https://getpocket.com/redirect?&url=https%3A%2F%2Fdenikn.cz%2F452462%2Fstudio-n-krvavy-konflikt-o-karabach-muze-eskalovat-ve-valku%2F%3Fref%3Dlist&h=ba47c181ad57d7b5a043168f3ddfba737db69211507857f65fc43a84717ebd21)<br>Vysvětlení situace
-- [Bláha: Vládní politici celou dobu lžou. Data z nemocnic byla tajná i před zdravotníky](https://getpocket.com/redirect?&url=https%3A%2F%2Fvideo.aktualne.cz%2Fdvtv%2Fblaha-vladni-politici-celou-dobu-lzou-data-z-nemocnic-byla-t%2Fr%7E3f29d4f8042411ebb115ac1f6b220ee8%2F&h=e769466a84e0a897f4e06abf7068658e4687e56d243b89bac1e175036b1f5473)<br>Super rozhovor, díky za update ohledně toho, jak kvalitně se teď na zvládnutí covidu-19 pracuje
-- [How One Guy Ruined #Hacktoberfest2020 #Drama](https://getpocket.com/redirect?&url=https%3A%2F%2Fjoel.net%2Fhow-one-guy-ruined-hacktoberfest2020-drama&h=4c175e25be6cee8b1e5a724ed4da186dee0b0f5d84ee939b7965567b9fd9ad04)<br>Proč lidi letos nadávají na Hacktoberfest
-- [Karanténa, den čtvrtý: volá hygiena!](https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.irozhlas.cz%2Fkomentare%2Fcovid-koronavirus-karantena-hygienicka-stanice-erouska_2010012215_jab&h=c6233a527f0add8d5877222e174701e0a4829ee1f475ae27ba570aab8cf5291f)<br>“Tím, kdo v posledních týdnech s covidem-19 bojuje, jsou – ostatně stejně jako na jaře – Češi. Ne Česko.”
+- [Studio N: Krvavý konflikt o Karabach může eskalovat ve válku](https://denikn.cz/452462/studio-n-krvavy-konflikt-o-karabach-muze-eskalovat-ve-valku/?ref=list)<br>Vysvětlení situace
+- [Bláha: Vládní politici celou dobu lžou. Data z nemocnic byla tajná i před zdravotníky](https://video.aktualne.cz/dvtv/blaha-vladni-politici-celou-dobu-lzou-data-z-nemocnic-byla-t/r~3f29d4f8042411ebb115ac1f6b220ee8/)<br>Super rozhovor, díky za update ohledně toho, jak kvalitně se teď na zvládnutí covidu-19 pracuje
+- [How One Guy Ruined #Hacktoberfest2020 #Drama](https://joel.net/how-one-guy-ruined-hacktoberfest2020-drama)<br>Proč lidi letos nadávají na Hacktoberfest
+- [Karanténa, den čtvrtý: volá hygiena!](https://www.irozhlas.cz/komentare/covid-koronavirus-karantena-hygienicka-stanice-erouska_2010012215_jab)<br>“Tím, kdo v posledních týdnech s covidem-19 bojuje, jsou – ostatně stejně jako na jaře – Češi. Ne Česko.”
 
 <small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small>
