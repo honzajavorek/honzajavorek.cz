@@ -25,11 +25,11 @@ jobs:
         run: poetry install
 
       - name: Setup Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: latest
+          node-version: "latest"
           cache: "npm"
-          cache-dependency-path: ./theme/package-lock.json
+          cache-dependency-path: "./theme/package-lock.json"
 
       - name: Install JS dependencies for the theme
         run: npm install --prefix=./theme
