@@ -46,6 +46,8 @@ jobs:
           cname: honzajavorek.cz
 
       - name: Send to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: poetry run python telegram.py
 
       - name: Save to Git
