@@ -59,7 +59,7 @@ By default, the Open Graph image is set to my photo. To set a different image, a
 Inspired by [Simon Willison’s Weblog](https://simonwillison.net/), I decided to write regular weeknotes. To make the job easier, there is a script `weeknotes.py`, which generates a template article for the current week. It accepts the main topic as arguments (joins them with whitespace) or prompts for the topic interactively if not provided:
 
 ```
-$ python weeknotes.py Třízení nabídek práce
+$ python weeknotes.py Dovolená
 ```
 
 ## 📦 Dependencies
@@ -71,6 +71,12 @@ The npm dependencies of the theme are managed in a standard way, but the `packag
 Each commit to `main` runs a [GitHub Actions](https://github.com/features/actions) build which automatically deploys the site to [GitHub Pages](https://pages.github.com/). The configuration is in `.github/workflows/build.yml`.
 
 As certain content on the homepage is dynamic, the site should be re-generated at least once a day. This is achieved using a scheduled workflow (see `.github/workflows/build.yml`).
+
+## ✉️ Telegram Integration
+
+There is a Telegram channel at [t.me/honzajavorekcz](https://t.me/honzajavorekcz). GitHub Actions build (see `.github/workflows/build.yml`) runs the `telegram.py` script. The script checks whether the last article has been already posted to the Telegram channel. If not, it posts it there (Telegram bot account) and records the link to the article as `Telegram-Comments` meta data. This is also how next time the script knows that the article is already posted. The change is persisted by a next step in GitHub Actions, which commits the information back to the source and pushes to the repository.
+
+Honza also uses the channel for sharing links to stuff he finds interesting. The `weeknotes.py` script then checks the channel history (Telegram API account), collects links shared since the last weeknotes, and persists them as a list at the bottom of the weeknotes article. This has been previously handled by [Pocket](https://getpocket.com/) and the [pocket-recommendations](https://github.com/honzajavorek/pocket-recommendations) library, but Honza doesn't fancy those anymore.
 
 ## 📪 Domain
 
