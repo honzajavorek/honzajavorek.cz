@@ -53,7 +53,7 @@ MARKDOWN = {
 # URL and save paths
 SITEURL = 'http://localhost:8000'
 RELATIVE_URLS = False
-ARTICLE_URL = 'blog/{slug}'
+ARTICLE_URL = 'blog/{slug}/'
 ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
 ARCHIVES_URL = 'blog/'
 ARCHIVES_SAVE_AS = 'blog/index.html'

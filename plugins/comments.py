@@ -7,6 +7,7 @@ from pelican import signals
 
 SOCIAL_NETWORKS = {
     # https://forkaweso.me/Fork-Awesome/icons/#brand
+    't.me': dict(name='Telegram', icon='telegram'),
     'facebook.com': dict(name='Facebook', icon='facebook-official'),
     'twitter.com': dict(name='Twitter', icon='twitter'),
     'linkedin.com': dict(name='LinkedIn', icon='linkedin'),

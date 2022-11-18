@@ -28,6 +28,7 @@ ACTIVITY_TYPES = {
 
 
 def get_access_token():
+    # TODO use https://github.com/sladkovm/stravaio
     # TODO steal from https://github.com/Almad/weeknote-generator/blob/main/weekgen/strava.py
     try:
         strava_tokens = json.loads(STRAVA_TOKENS_PATH.read_text())

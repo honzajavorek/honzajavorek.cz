@@ -47,3 +47,13 @@ jobs:
 
       - name: Send to Telegram
         run: poetry run telegram.py
+
+      - name: Save to Git
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: ./content
+          author_name: "Telegram Bot"
+          author_email: "telegram@honzajavorek.cz"
+          message: "add link to comments 💬"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

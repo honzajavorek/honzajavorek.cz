@@ -1,5 +1,5 @@
 Title: Týdenní poznámky #111: Kamarádi z Afriky
-Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
+Image: images/praha-vecer.jpg
 Lang: cs
 Home: False
 

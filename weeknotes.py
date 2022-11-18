@@ -18,7 +18,7 @@ import strava
 
 DEBUG = os.getenv('DEBUG')
 TITLE_PREFIX = 'Týdenní poznámky'
-CONTENT_PATH = Path(__file__).parent / pelicanconf.PATH
+CONTENT_PATH = Path(pelicanconf.PATH)
 
 
 today = date.today()
