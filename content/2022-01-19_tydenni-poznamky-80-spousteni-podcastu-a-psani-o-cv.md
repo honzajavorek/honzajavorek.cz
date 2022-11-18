@@ -214,7 +214,7 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocketu](https://getpocket.com/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
-- [Vytáhnem tě](https://www.buzzsprout.com/1373539).
+- [Vytáhnem tě: #20 IT s Le Anh Viet Linh](https://www.buzzsprout.com/1373539/8257030-20-it-s-le-anh-viet-linh).
 - [Rasty Turek: Přemlouval jsem investory, ať nám nedávají miliardu, ale jen milion](https://overcast.fm/+Vf9TZqZLM) Zajímavý rozhovor.
 - [Dita Formánková: Dostat ženy do IT je začátek. I v Avastu pracujeme na tom, aby rostly až do vedoucích pozic](https://overcast.fm/+Vf9QAOY-Y)<br>Ditu už jsem si dlouho nikde nečetl nebo nepouštěl, protože jí bylo „všude plno“ a nebavily mě výroky ve stylu „nejsme žádné feministky“. Tento rozhovor mě potěšil. Mluví o tom, co dělá na D&I pozici v Avastu, jak je to široké a důležité téma, co všechno zahrnuje. A co plánují nebo už dělají Czechitas. Držím palce!
 - [The Europeans](https://anchor.fm/the-europeans/episodes/Eurafrica-eatudm)<br>Podcast o Evropě, epizoda o Africe a dekolonizaci a o tom, jestli už se odehrála nebo stále trvá a co to v dnešní době znamená.
