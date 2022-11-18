@@ -1,7 +1,7 @@
 Title: Týdenní poznámky #107: Rozjíždění přednášek, opravy všeho možného
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Home: False
+Tags: týdenní poznámky
 
 
 Utekl zase nějaký ten týden (1.10. — 7.10.) a tak [stejně jako minule]({filename}2022-09-30_tydenni-poznamky-106-onboarding-clenu-volby-a-pulmaraton.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.

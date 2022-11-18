@@ -1,7 +1,7 @@
 Title: Týdenní poznámky #110: Zápasení s CI, přednáška, Zlín
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Home: False
+Tags: týdenní poznámky
 
 
 Utekl zase nějaký ten týden (22.10. — 4.11.) a tak [stejně jako minule]({filename}2022-10-21_tydenni-poznamky-109-prednaska-a-prekopavani-kodu.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.

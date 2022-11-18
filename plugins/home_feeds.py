@@ -61,7 +61,7 @@ def load_feeds(article_generator):
             alternates=[],
         )
         for article in articles
-        if getattr(article, 'home', '').lower() != 'false'
+        if 'týdenní poznámky' not in [tag.name for tag in getattr(article, 'tags', [])]
     ]
 
     # create a lookup mapping of alternate entries

@@ -1,7 +1,7 @@
 Title: Týdenní poznámky #25: Nové kapitoly o práci na volné noze
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Home: False
+Tags: týdenní poznámky
 
 
 Utekl další týden (2.11. — 6.11.) a tak [stejně jako minule]({filename}2020-10-30_tydenni-poznamky-24-nabidky-prace-na-dalku-a-scraping.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.

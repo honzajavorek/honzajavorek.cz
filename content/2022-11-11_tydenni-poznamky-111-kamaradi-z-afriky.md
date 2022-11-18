@@ -1,7 +1,7 @@
 Title: Týdenní poznámky #111: Kamarádi z Afriky
 Image: images/praha-vecer.jpg
 Lang: cs
-Home: False
+Tags: týdenní poznámky
 Telegram-Comments: https://t.me/honzajavorekcz/15
 
 

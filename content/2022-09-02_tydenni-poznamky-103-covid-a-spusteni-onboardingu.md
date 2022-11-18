@@ -1,7 +1,7 @@
 Title: Týdenní poznámky #103: Covid a spuštění onboardingu
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Home: False
+Tags: týdenní poznámky
 
 
 Utekl zase nějaký ten týden (20.8. — 2.9.) a tak [stejně jako minule]({filename}2022-08-19_tydenni-poznamky-102-novy-cenik.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.

@@ -1,7 +1,7 @@
 Title: Týdenní poznámky: Rýmička a menu
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Home: False
+Tags: týdenní poznámky
 Twitter-Comments: https://twitter.com/honzajavorek/status/1279105167753973764
 Facebook-Comments: https://www.facebook.com/10156592446432707/posts/10158264382662707
 

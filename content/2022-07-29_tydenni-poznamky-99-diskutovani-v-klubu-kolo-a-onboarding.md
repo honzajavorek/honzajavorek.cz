@@ -1,7 +1,7 @@
 Title: Týdenní poznámky #99: Diskutování v klubu, kolo a onboarding
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Home: False
+Tags: týdenní poznámky
 
 
 Utekl zase nějaký ten týden (23.7. — 29.7.) a tak [stejně jako minule]({filename}2022-07-22_tydenni-poznamky-98-kandidatura-a-programovani-onboardingu.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.

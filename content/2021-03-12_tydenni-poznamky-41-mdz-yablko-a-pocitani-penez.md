@@ -1,7 +1,7 @@
 Title: Týdenní poznámky #41: MDŽ, yablko a počítání peněz
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Home: False
+Tags: týdenní poznámky
 
 
 Utekl další týden (8.3. — 12.3.) a tak [stejně jako minule]({filename}2021-03-05_tydenni-poznamky-40-zubar-stredovek-a-novy-uvod-do-programovani.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub podporovatelů](https://junior.guru/club/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.

@@ -1,7 +1,7 @@
 Title: Týdenní poznámky #47: Pokusy s videem a lepší klub
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Home: False
+Tags: týdenní poznámky
 
 
 Utekl další týden (19.4. — 23.4.) a tak [stejně jako minule]({filename}2021-04-16_tydenni-poznamky-46-vyjednavani-lapace-hledajicich-alergie-na-uklizeni.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.
