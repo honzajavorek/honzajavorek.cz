@@ -106,16 +106,20 @@ def calc_stats(activities):
 
 
 def stats_to_text(start_date, end_date, stats):
+    total_days = (end_date - start_date).days + 1
+    text = f"Během {total_days} dní od {start_date.day}.{start_date.month}. do {end_date.day}.{end_date.month}. "
+
+    if not stats:
+        return text + 'jsem se nevěnoval žádné sportovní aktivitě.'
+
     parts = [
         f"{ACTIVITY_TYPES[activity_type]} {substats['distance']} km"
         for activity_type, substats in stats.items()
     ]
 
-    total_days = (end_date - start_date).days + 1
     total_distance = sum(int(substats['distance']) for substats in stats.values())
     total_time = sum(int(substats['time']) for substats in stats.values())
 
-    text = f"Během {total_days} dní od {start_date.day}.{start_date.month}. do {end_date.day}.{end_date.month}. "
     text += f"jsem {', '.join(parts)}."
     text += f" Celkem jsem se hýbal {total_time} hodin a zdolal při tom {total_distance} kilometrů."
     return text
