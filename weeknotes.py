@@ -69,6 +69,15 @@ def get_canonical_overcast_url(url):
                 return canonical_url
     return url
 
+def get_title(url):
+    response = requests.get(url, stream=True)
+    response.raise_for_status()
+    for line in response.iter_lines(decode_unicode=True):
+        match = re.search(r'<title>([^<]+)', str(line), re.I)
+        if match:
+            return match.group(1).strip()
+    return '(bez titulku)'
+
 articles = []
 with TelegramClient('weeknotes', TELEGRAM_APP_API_ID, TELEGRAM_APP_API_HASH) as telegram:
     channel = telegram.get_entity(TELEGRAM_CHANNEL_NAME)
@@ -76,13 +85,19 @@ with TelegramClient('weeknotes', TELEGRAM_APP_API_ID, TELEGRAM_APP_API_HASH) as 
         if last_weeknotes_slug in message.message:
             break
         else:
-            article_url = message.media.webpage.url
+            try:
+                article_url = message.media.webpage.url
+                article_title = message.media.webpage.title
+            except AttributeError:
+                article_url = re.search(r'https?://\S+', message.message).group(0)
+                article_title = get_title(article_url)
             if 'overcast.fm' in article_url:
                 article_url = get_canonical_overcast_url(article_url)
             article_comment = message.message.strip().rstrip(article_url).strip()
-            articles.append(dict(title=message.media.webpage.title,
+            articles.append(dict(title=article_title,
                                  url=article_url,
                                  comment=article_comment))
+
 
 activities = strava.get_activities(strava.get_access_token())
 activities_stats = strava.calc_stats(strava.filter_by_dates(activities, start_date, today))
