@@ -27,7 +27,9 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: "19"
+          node-version: latest
+          cache: "npm"
+          cache-dependency-path: ./theme/package-lock.json
 
       - name: Install JS dependencies for the theme
         run: npm install --prefix=./theme
@@ -57,6 +59,6 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           add: ./content
-          message: "add link to comments 💬 [skip ci]"
+          message: "add link to comments 💬"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
