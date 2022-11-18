@@ -3,7 +3,6 @@ from datetime import datetime
 
 # Author
 AUTHOR = 'Honza Javorek'
-TWITTER_USERNAME = 'honzajavorek'
 
 # Site
 SITENAME = AUTHOR

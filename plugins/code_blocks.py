@@ -8,7 +8,7 @@ from utils import modify_html
 
 
 def register():
-    signals.content_object_init.connect(process_code_blocks)
+    signals.all_generators_finalized.connect(process_code_blocks)
 
 
 def process_code_blocks(content):

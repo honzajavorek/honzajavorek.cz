@@ -15,7 +15,7 @@ TITLES = {
 
 
 def register():
-    signals.content_object_init.connect(enhance_headings)
+    signals.all_generators_finalized.connect(enhance_headings)
 
 
 def enhance_headings(content):

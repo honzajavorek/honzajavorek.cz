@@ -20,7 +20,7 @@ VECTOR_SUFFIXES = ['.svg']
 
 
 def register():
-    signals.content_object_init.connect(process_media)
+    signals.all_generators_finalized.connect(process_media)
 
 
 def process_media(content):

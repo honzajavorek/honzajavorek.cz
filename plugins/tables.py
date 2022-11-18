@@ -9,7 +9,7 @@ from utils import modify_html, wrap_element
 
 
 def register():
-    signals.content_object_init.connect(enhance_tables)
+    signals.all_generators_finalized.connect(enhance_tables)
 
 
 def enhance_tables(content):
