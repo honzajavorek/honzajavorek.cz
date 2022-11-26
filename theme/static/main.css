@@ -335,7 +335,7 @@ small {
   font-size: var(--bs-body-font-size);
 }
 
-.article-title .permalink a,
+.title .permalink a,
 .article-content .permalink a {
   color: var(--hj-muted);
   text-decoration: none;
