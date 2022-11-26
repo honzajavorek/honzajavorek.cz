@@ -53,7 +53,7 @@ Klub je opakem takových těch tradičních českých uslintaných komunit a sto
 
 > The best software has a vision. The best software takes sides. When someone uses software, they’re not just looking for features, they’re looking for an approach. They’re looking for a vision. Decide what your vision is and run with it.
 >
-> -- [Your app should take sides](https://basecamp.com/gettingreal/04.6-make-opinionated-software), Getting Real
+> — [Your app should take sides](https://basecamp.com/gettingreal/04.6-make-opinionated-software), Getting Real
 
 Může to vyznít pateticky, pokud to pro lidi téma nebude, ale přijde mi, že se tím ten klub opravdu liší a současní členové to vnímají jako velkou hodnotu, takže se to snažím zvednout a použít a vysvětlit a zároveň je to věc, se kterou mám zkušenosti skrze 4x PyCon CZ a spoustu let a která mi osobně vadí na jiných českých komunitách a která mi vlastně vadí i obecně. Souzní to s tím, jak vnímám svět, takže jsem schopen jít a mluvit hodinu v podcastu na tohle téma… tzn. marketingově bych měl být schopen to použít.
 
@@ -63,7 +63,7 @@ Mám „všechny rád”, ale okolo je čára lihovkou, kterou klidně dám na o
 
 > Super popsaná propozice na stránkách, odstrašující příklady komunikace na FB fakt žeru.
 >
-> -- Jiří Vicherek
+> — Jiří Vicherek
 
 
 ## Další poznámky

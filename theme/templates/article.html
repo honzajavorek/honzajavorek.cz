@@ -38,71 +38,91 @@
 
 {% block content %}
 <article class="article{% if article.style %} article-poetry{% endif %}">
-  <header class="article-header">
-    <h1>
-      <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark">
-        {{ article.title }}
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="{{ SITEURL }}" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="{{ SITEURL }}/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">{{ AUTHOR }}</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
+  <h1 class="title display-5">
+    {{ article.title }}
+    <small class="permalink">
+      <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="{% if article.lang == 'cs' %}Odkaz na tento článek{% else %}Link to this article{% endif %}">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="{{ article.date.isoformat() }}">
+          {{ article.locale_date }}
+        </time>
+      </li>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        {{ article.readtime }}
+        {% if article.lang == 'cs' %}
+          min čtení
+        {% else %}
+          min of reading
+        {% endif %}
+      </li>
       {% if article.translations %}
-      <li class="article-translations">
-        <small>
-            {% if article.lang == 'cs' %}
-              Překlady:
-            {% else %}
-              Translations:
-            {% endif %}
-            {% for translation in article.translations %}
-              <a href="{{ SITEURL }}/{{ translation.url }}" hreflang="{{ translation.lang }}">{{ translation.lang }}</a>
-            {% endfor %}
-        </small>
+      <li class="info-translations">
+        <i class="bi bi-globe"></i>
+        {% if article.lang == 'cs' %}
+          Překlady:
+        {% else %}
+          Translations:
+        {% endif %}
+        {% for translation in article.translations %}
+          <a href="{{ SITEURL }}/{{ translation.url }}" hreflang="{{ translation.lang }}">{{ translation.lang|upper }}</a>
+        {% endfor %}
       </li>
       {% endif %}
       {% if article.alternates %}
-      <li class="article-alternates">
-        <small>
-            {% if article.lang == 'cs' %}
-              Vydáno také na:
-            {% else %}
-              Published also at:
-            {% endif %}
-            {% for alternate in article.alternates %}
-              <a href="{{ alternate.url }}">{{ alternate.name }}</a>
-              {%- if not loop.last -%}, {% endif -%}
-            {%- endfor %}
-        </small>
+      <li class="info-alternates">
+        <i class="bi bi-arrow-left-right"></i>
+        {% if article.lang == 'cs' %}
+          Vydáno také na:
+        {% else %}
+          Published also at:
+        {% endif %}
+        {% for alternate in article.alternates %}
+          <a href="{{ alternate.url }}">{{ alternate.name }}</a>
+          {%- if not loop.last -%}, {% endif -%}
+        {%- endfor %}
       </li>
       {% endif %}
-      <li class="article-published">
-        <small>
-          <time datetime="{{ article.date.isoformat() }}">
-            {{ article.locale_date }}
-          </time>
-        </small>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3A{{ article.url.rstrip('/')|urlencode }}&interval=week&start={{ article.date.isoformat() }}&end=today">
+          {% if article.lang == 'cs' %}
+            Návštěvnost
+          {% else %}
+            Stats
+          {% endif %}
+        </a>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">{{ AUTHOR }}</a>
-        </small>
-      </li>
-    <ul>
+    </ul>
   </footer>
-  <div class="article-content">
+  <main class="article-content">
     {% if (NOW.year - article.date.year) > OUTDATED_ARTICLE_YEARS %}
-      <div class="article-warning">
+      <div class="alert alert-warning article-warning" role="alert">
         <p>
+          <i class="bi bi-exclamation-triangle-fill"></i>
         {% if article.lang == 'cs' %}
-          <strong>Upozornění!</strong> Tento článek vyšel
-          před {{ NOW.year - article.date.year }} lety.
+          Tento článek vyšel
+          <strong>před {{ NOW.year - article.date.year }} lety</strong>.
           Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
           že dnes se Honza již nemusí s obsahem ztotožňovat.
         {% else %}
-          <strong>Warning!</strong> This article has been published
-          {{ NOW.year - article.date.year }} years ago. If you're into internet
-          archeology, read it &mdash; but at your own risk. Honza doesn't
+          This article has been published
+          <strong>{{ NOW.year - article.date.year }} years ago</strong>.
+          If you're into internet
+          archeology, read it — but at your own risk. Honza doesn't
           have to necessarily agree with the content by now.
         {% endif %}
         </p>
@@ -110,76 +130,125 @@
     {% endif %}
 
     {{ article.content }}
-  </div>
-  {% if article.reviewers %}
-  <div class="article-reviewers">
-    <h3>
-      {%- if article.lang == 'cs' -%}
-        Zvláštní poděkování za revizi článku
-      {%- else -%}
-        Special thanks to the reviewers
-      {%- endif -%}
-    </h3>
-    <p>
-      {{ article.reviewers }}
-    </p>
-  </div>
-  {% endif %}
+    </main>
 
   {% if article.comments %}
-  <div class="article-comments">
-    <h3>
-      {%- if article.lang == 'cs' -%}
-        Komentáře&nbsp;na
-      {%- else -%}
-        Comment&nbsp;at
-      {%- endif -%}
-    </h3>
-    <ul>
-    {% for comments in article.comments %}
-      <li>
-        <a href="{{ comments.url }}">
-          <i class="fa fa-{{ comments.icon }}"></i>&nbsp;{{ comments.name -}}
-        </a>
-      </li>
-    {% endfor %}
-    </ul>
-  </div>
+  <section id="comments" class="article-comments comments">
+    {% set telegram_comments = article.comments|selectattr('name', 'equalto', 'Telegram')|first %}
+    {% if telegram_comments %}
+      <div class="comments-telegram">
+        <script>
+          function comments(button) {
+            button.setAttribute('disabled', '');
+            const div = document.createElement('div');
+            div.classList.add('comments-frame');
+            const script = document.createElement('script');
+            script.setAttribute('src', 'https://telegram.org/js/telegram-widget.js?21');
+            script.dataset.telegramDiscussion = {{ telegram_comments.url|replace('https://t.me/', '')|tojson }};
+            script.dataset.commentsLimit = 50;
+            script.dataset.color = 212529;
+            div.append(script);
+            button.parentNode.append(div);
+            button.remove();
+          }
+        </script>
+        <button class="btn btn-primary btn-lg" onclick="comments(this);">
+          <i class="bi bi-chat-dots"></i>
+          {% if article.lang == 'cs' %}
+            Komentáře
+          {% else %}
+            Comments
+          {% endif %}
+        </button>
+      </div>
+    {% else %}
+      <h3 class="comments-heading">
+        {%- if article.lang == 'cs' -%}
+          Komentáře na
+        {%- else -%}
+          Comments at
+        {%- endif -%}
+      </h3>
+      <ul class="comments-list">
+      {% for comments in article.comments %}
+        <li class="comments-item">
+          <i class="bi bi-{{ comments.icon }}"></i>
+          <a href="{{ comments.url }}">
+            {{ comments.name -}}
+          </a>
+        </li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+  </section>
   {% endif %}
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="{{ SITEURL }}/images/home/honza.jpg">
-      <address>
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="{{ SITEURL }}/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
         {% if article.lang == 'cs' %}
-          <a href="{{ SITEURL }}">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už {{ NOW.year - BLOG_FOUNDED_YEAR }} let.
         {% else %}
-          {% include "honza.html" %}
+          Originally software engineer, now more of an enterpreneur.
+          Creator of <a href="https://junior.guru/">junior.guru</a>, a project for Czech and Slovak beginners in coding.
+          Long-term volunteer and <a href="https://pyvec.org/en/#members">official</a> in the <a href="https://python.cz/en/">Czech Python community</a>.
+          This is my blog for {{ NOW.year - BLOG_FOUNDED_YEAR }} years now.
         {% endif %}
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="{{ SITEURL }}">{% if article.lang == 'cs' %}Osobní web{% else %}Personal site{% endif %}</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-      {% if article.lang == 'cs' %}
-        <a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-      {% else %}
-        <a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">
-          <i class="fa fa-list-ul"></i> Articles archive
-        </a>
-      {% endif %}
-    </p>
   </footer>
 </article>
 {% endblock %}
+
+
+{% block promo %}
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="{{ SITEURL }}/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+{% endblock promo %}

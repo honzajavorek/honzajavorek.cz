@@ -1,5 +1,7 @@
 Title: Courting Haskell
 Image: images/pawel-czerwinski-LEbkdsB8OMg-unsplash.jpg
+Lang: en
+Tags: highlight
 Twitter-Comments: https://twitter.com/honzajavorek/status/1217065971707449345
 Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10157720662087707
 HackerNews-Comments: https://news.ycombinator.com/item?id=22044262

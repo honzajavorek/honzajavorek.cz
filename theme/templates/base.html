@@ -8,35 +8,38 @@
 
     <meta property="og:title" content="{{ self.title() }}">
     <meta property="og:url" content="{{ self.url() }}">
-    <meta name="twitter:creator" content="@{{ TWITTER_USERNAME }}">
-    <meta name="twitter:site" content="@{{ TWITTER_USERNAME }}">
 
     {% block image %}
-      <meta property="og:image" content="{{ SITEURL }}/images/home/honza.jpg">
-      <meta name="twitter:image" content="{{ SITEURL }}/images/home/honza.jpg">
+      <meta property="og:image" content="{{ SITEURL }}/images/theme/honza.jpg">
+      <meta name="twitter:image" content="{{ SITEURL }}/images/theme/honza.jpg">
       <meta name="twitter:card" content="summary">
     {% endblock %}
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/main.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/fork-awesome/css/fork-awesome.min.css">
   {% endblock %}
   </head>
   <body>
     {% block body %}
-      <div class="content">
+      {% block navigation %}
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="{{ SITEURL }}/{{ ARCHIVES_URL }}" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      {% endblock %}
+      <div class="content container">
         {% block content %}{% endblock %}
       </div>
+      {% block promo %}{% endblock promo %}
       <footer class="footer">
-        {% block footer %}
-        <address>
-          {{ COPYRIGHT }}
-          <a href="{{ SITEURL }}">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          {{ COPYRIGHT }} Honza Javorek
         </address>
-        {% endblock %}
       </footer>
     {% endblock %}
-    <script defer src="{{ SITEURL }}/theme/main.js"></script>
     <script defer src="{{ SITEURL }}/theme/instant.page/instantpage.js"></script>
 
     {% if SIMPLE_ANALYTICS %}

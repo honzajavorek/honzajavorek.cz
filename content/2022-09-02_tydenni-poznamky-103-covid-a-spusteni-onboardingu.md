@@ -121,4 +121,4 @@ Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocket
 - [Stable Diffusion is a really big deal](http://simonwillison.net/2022/Aug/29/stable-diffusion/#atom-entries)<br>Že nebudou jako první mít co žrát ilustrátoři, grafici a jiní umělci, to asi od uměle inteligence čekal málokdo.
 - [Uspěchaná ukrajinská ofenziva u Chersonu může skončit katastrofou](https://www.tydenikhrot.cz/clanek/ukrajinska-ofenziva-u-chersonu-muze-skoncit-katastrofou)
 
-<small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>
+<small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu jsem použil vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

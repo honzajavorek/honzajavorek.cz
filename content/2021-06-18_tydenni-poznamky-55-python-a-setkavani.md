@@ -60,7 +60,7 @@ Jedna z věcí, které umí pipenv a [Poetry](https://github.com/python-poetry/p
 Jediné, na co jsem narazil, je neohrabanost přidávání dalších parametrů (např. nemohu udělat `make test -- -vvx`, aby se spustil `pytest -vvx`, musím tam šaškovat s nějakou proměnnou `make test TESTOPTS=-vvx`, což mi jako klukovi z 21. století prostě přijde takové moc… fousaté…
 
 > Neví někdo o nějakém návodu na Makefile, který nevytvořili C/C++ programátoři před 50 lety tesáním do hliněných tabulek, ale vypadá jako moderní a čitelná dokumentace pro lidi?<br>
-> -- Honza Javorek v [klubu junior.guru](https://junior.guru/club/)
+> — Honza Javorek v [klubu junior.guru](https://junior.guru/club/)
 
 Odložím si tady [jediný existující pěkný návod na Makefile na internetu](https://www.gnu.org/software/make/manual/make.html#Simple-Makefile), za odkaz děkuji [Petrovi Messnerovi](https://www.messa.cz/).
 

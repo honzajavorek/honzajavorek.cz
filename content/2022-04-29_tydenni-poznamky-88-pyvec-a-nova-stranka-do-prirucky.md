@@ -97,4 +97,4 @@ Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocket
 - [Web scraping is legal, US appeals court reaffirms](https://techcrunch.com/2022/04/18/web-scraping-legal-court/)<br>Scrapování je prý legální.
 - [Vladimir 518: Praha ještě zazáří. Je třeba stavět, ale také pečovat o ikonické stavby z minulosti](https://overcast.fm/+Vf9THCkSA)<br>Rozhovor o architektuře a Praze, líbilo se mi to.
 
-<small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>
+<small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu jsem použil vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

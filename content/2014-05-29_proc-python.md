@@ -1,6 +1,7 @@
 Title: Proč Python?
 Date: 2014-05-29 01:56:30
 Lang: cs
+Tags: highlight
 
 Občas se mě někdo zeptá, proč vlastně "kopu za Python". Co že je na něm tak úžasného. Zkusím to nějak sepsat.
 

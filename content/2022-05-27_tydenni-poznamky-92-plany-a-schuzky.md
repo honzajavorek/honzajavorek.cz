@@ -92,4 +92,4 @@ Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocket
 
 - [The community engagement trap](https://rosie.land/posts/the-community-engagement-trap/)<br>Dobré postřehy o tom, že aktivitu v komunitě není dobré brát jako jediné měřítko úspěšnosti komunity a vede ke „gejmování“ metriky kvůli číslům, ke škodě všech.
 
-<small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>
+<small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu jsem použil vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

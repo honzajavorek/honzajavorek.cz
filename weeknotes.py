@@ -27,7 +27,7 @@ TELEGRAM_APP_API_HASH = os.environ['TELEGRAM_APP_API_HASH']
 
 
 today = date.today()
-today_cz = f'{today:%d}.'.lstrip('0') + f'{today:%m}.'.lstrip('0')
+today_cz = f'{today:%d}. '.lstrip('0') + f'{today:%m}.'.lstrip('0')
 today_iso = today.isoformat()
 
 is_weeknotes = lambda path: slugify(TITLE_PREFIX) in path.name
@@ -37,7 +37,7 @@ last_weeknotes_date = date.fromisoformat(last_weeknotes_path.stem[:10])
 last_weeknotes_slug = last_weeknotes_path.stem[11:]
 
 start_date = last_weeknotes_date + timedelta(days=1)
-start_date_cz = f'{start_date:%d}.'.lstrip('0') + f'{start_date:%m}.'.lstrip('0')
+start_date_cz = f'{start_date:%d}. '.lstrip('0') + f'{start_date:%m}.'.lstrip('0')
 
 number = len(weeknotes_paths) + 1
 prefix = f'{TITLE_PREFIX} #{number}: '
@@ -115,10 +115,10 @@ content = f'''
 Title: {title}
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Tags: týdenní poznámky
+Tags: {pelicanconf.WEEKNOTES_TAG}
 
 
-Utekl zase nějaký ten týden ({start_date_cz} — {today_cz}) a tak [stejně jako minule]({last_weeknotes_path}) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
+Utekl zase nějaký ten týden ({start_date_cz} až {today_cz}) a tak [stejně jako minule]({last_weeknotes_path}) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
 
 ![Poznámky]({{static}}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
 Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -126,7 +126,7 @@ Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
 ## Další poznámky
 
-- Odpovídání v klubu, maily, a tak dále.
+- Odpovídání v klubu, maily, Pyvec Slack, a tak dále. Upgradování závislostí na vlastních i Pyvec projektech (zpracovávání Pull Requestů, které průběžně posílá Dependabot).
 - {activities_text}
 - Aktuální finanční výsledky, návštěvnost a další čísla k JG [mám přímo na webu](https://junior.guru/open/). {jobs_text}
 
@@ -147,16 +147,13 @@ Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týde
 
 ## Co mě zaujalo
 
-Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Telegramu](https://t.me/honzajavorekcz). Od posledních poznámek jsem sdílel toto:
+Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Telegramu](https://t.me/honzajavorekcz). Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. Od posledních poznámek jsem sdílel toto:
 
 '''.lstrip()
 for article in articles:
     content += f"- [{article['title']}]({article['url']})"
     content += f"<br>{article['comment']}" if article['comment'] else ''
     content += '\n'
-content += '''
-<small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal.</small>
-'''
 
 if DEBUG:
     print('-' * 80)

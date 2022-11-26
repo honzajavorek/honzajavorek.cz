@@ -8,16 +8,20 @@ AUTHOR = 'Honza Javorek'
 SITENAME = AUTHOR
 
 # Custom data
-BLOGNAME = "HJ's Blog"
+BLOGNAME = 'Javorové lístky'
 OUTDATED_ARTICLE_YEARS = 3
 NOW = datetime.now()
-DREDD_STARS_RAISE = round(3200 / 650)  # stars after / stars before
-COPYRIGHT = f'© Copyright 2007—{NOW.year}'
+BLOG_FOUNDED_YEAR = 2007
+JG_FOUNDED_YEAR = 2019
+PYVO_FOUNDED_YEAR = 2011
+COPYRIGHT = f'© Copyright {BLOG_FOUNDED_YEAR}—{NOW.year}'
+WEEKNOTES_TAG = 'týdenní poznámky'
+HIGHLIGHT_TAG = 'highlight'
 
 # Timezone, language
 TIMEZONE = 'Europe/Prague'
 LOCALE = 'en_US.UTF-8'  # influences the %b below
-DEFAULT_LANG = 'en'
+DEFAULT_LANG = 'cs'
 DEFAULT_DATE_FORMAT = '%b\u00A0%-d,\u00A0%Y'
 DATE_FORMATS = {'cs': '%-d.\u00A0%-m.\u00A0%Y'}
 
@@ -99,9 +103,7 @@ THEME_STATIC_PATHS = [
 # Plugins
 PLUGIN_PATHS = ['plugins']
 PLUGINS = [
-    'home_appearances',
-    'home_feeds',
-    'home_projects',
+    'appearances',
     'custom_translation_id',
     'custom_feed_meta',
     'code_blocks',
@@ -110,13 +112,14 @@ PLUGINS = [
     'tables',
     'headings',
     'media',
+    'readtime',
 ]
 IMG_MAX_PX = 1024
 IMG_MAX_MB = 1
 CUSTOM_FEED_META = {
     'title': BLOGNAME,
     'link': f'{SITEURL}/{ARCHIVES_URL}',
-    'description': "Honza Javorek's Blog",
+    'description': 'Blog Honzy Javorka',
     'author_email': 'mail@honzajavorek.cz',
     'author_name': AUTHOR,
     'author_link': SITEURL,

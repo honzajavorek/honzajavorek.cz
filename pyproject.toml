@@ -12,7 +12,6 @@ python = "3.10.*"
 pelican = {version = "4.8.0", extras = ["markdown"]}
 strictyaml = "1.6.2"
 requests = "2.28.1"
-feedparser = "6.0.10"
 lxml = "4.9.1"
 cssselect = "1.2.0"
 pillow = "9.3.0"
@@ -21,6 +20,7 @@ python-slugify = "7.0.0"
 yt-dlp = "2022.10.4"
 pod2gen = "1.0.3"
 telethon = "^1.25.4"
+beautifulsoup4 = "^4.11.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

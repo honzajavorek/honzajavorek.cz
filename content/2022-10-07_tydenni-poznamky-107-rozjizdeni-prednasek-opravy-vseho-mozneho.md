@@ -78,4 +78,4 @@ Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocket
 
 - [Cesty Zdopravy - Petr Borecký](https://omny.fm/shows/zdopravy/cesty-zdopravy-petr-boreck)<br>Rozhovor o dopravě ve Středočeském kraji.
 
-<small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>
+<small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu jsem použil vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

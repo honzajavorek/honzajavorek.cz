@@ -200,4 +200,4 @@ Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocket
 - [Božská komedie pro 21. století](https://www.dokrevue.cz/clanky/bozska-komedie-pro-21-stoleti)<br>Zajímavý rozhovor s režisérem filmu Síla o Kamilu Filovi. „Štěstí se přeceňuje, jeho hledání je často založeno na nezralých očekáváních a nevhodné definici.“
 - [Vytáhnem tě: Le Anh Viet Linh](https://www.buzzsprout.com/1373539).
 
-<small>Upozorňuji, že to není vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>
+<small>Upozorňuji, že to není vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu jsem použil vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

@@ -1,6 +1,7 @@
 Title: Jessica Upani about Python events in Namibia: You have to be pure in terms of your why
 Image: images/jessica-upani-ewa-jodlowska.jpg
 Lang: en
+Tags: highlight
 HackerNews-Comments: https://news.ycombinator.com/item?id=27539909
 Reddit-Comments: https://www.reddit.com/r/Namibia/comments/o1yjkw/programming_in_namibia_interview_with_jessica/
 Twitter-Comments: https://twitter.com/honzajavorek/status/1405532488504516617

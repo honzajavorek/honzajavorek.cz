@@ -143,4 +143,4 @@ Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocket
 - [Jak se žije s ADHD](https://denikn.podbean.com/e/jak-se-zije-s-adhd/)<br>Naprosto přesně já :-|
 - [Sebrali lidem kvůli parkování kus chodníku, nepomohli nikomu. Víc míst = víc aut](https://denikn.cz/994039/sebrali-lidem-kvuli-parkovani-kus-chodniku-nepomohli-nikomu-vic-mist-vic-aut/?cst=7331f61dd1abdd4a7b3c1bfa750e4eaad81cd26c)
 
-<small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>
+<small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu jsem použil vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

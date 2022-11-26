@@ -1,6 +1,8 @@
 Title: Senior Engineer
 Date: 2018-07-27 15:02:00
+Image: images/img_8717.jpg
 Lang: en
+Tags: highlight
 Medium-URL: https://medium.com/@honzajavorek/senior-engineer-680f46d04686
 DevTo-URL: https://dev.to/honzajavorek/senior-engineer-39b0
 

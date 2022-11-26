@@ -1,6 +1,7 @@
 Title: I bought Apple Silicon
 Image: images/apple-silicon.jpg
 Lang: en
+Tags: highlight
 HackerNews-Comments: https://news.ycombinator.com/item?id=25472370
 Twitter-Comments: https://twitter.com/honzajavorek/status/1340068645708439553
 Reddit-Comments: https://www.reddit.com/r/apple/comments/kfx1yz/i_bought_apple_silicon/

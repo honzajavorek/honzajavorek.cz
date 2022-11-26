@@ -17,7 +17,7 @@ Minulé týdny jsem špatně usínal a přišlo mi, že se to jen zhoršuje. Tak
 Jenže, ač jsem dřív už kafe a čaj různě vysazoval a bez následků, tentokrát byly následky dost silné. Přesně jak se píše ve všech článcích, první den se nic neděje (ale zase jsem byl i tak poměrně nepoužitelný, protože jsem byl dost nevyspaný). Druhý a třetí den jsem sice vyspaný byl, ale bolela mě dost hlava a nemohl jsem u toho prakticky nic dělat. Posunul jsem i některé meetingy a na nic jsem nikomu neodpovídal. V úterý mě to vyřadilo z provozu úplně a poslalo do silné deprese i psychicky (tma, počasí, pandemie, pořád doma, stres z pivotu JG, atd.), ve středu mě to trápilo ještě půl dne. Než jsem si v úterý přečetl vše o bolení hlavy při vysazení kávy, tak to odpoledne prakticky přešlo a už nemělo moc smysl s tím nic dělat. Ale produktivní jsem ani tak moc nebyl, zbytek týdne jsem skoro strávil jen tím, že jsem doháněl výpadek v komunikaci.
 
 > Pokud se opakované dodávání kofeinu náhle přeruší, dochází ke vzniku abstinenčních příznaků – ty se projevují právě bolestí hlavy, dále pak únavou, problémy s koncentrací, nevolností a dalšími symptomy podobnými migréně.<br>
-> -- [Migréna? Řekněte NE kofeinu!](https://www.lecba-bolesti.cz/aktualne/migrena-reknete-ne-kofeinu-152)
+> — [Migréna? Řekněte NE kofeinu!](https://www.lecba-bolesti.cz/aktualne/migrena-reknete-ne-kofeinu-152)
 
 Jsem detoxový amatér a tak jsem nevěděl, že si to lidi kdyžtak plánují na víkend, nebo že bolest hlavy zmizí i při minimální dávce kávy. Můj cíl nebylo bojovat s nějakou závislostí na kávě, ale zlepšit spaní, takže jsem si klidně mohl dát každé ráno čtvrtinu kafe jen proto, abych se vyhnul bolení hlavy. No, příště budu vědět.
 

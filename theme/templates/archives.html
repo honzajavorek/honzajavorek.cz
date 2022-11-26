@@ -10,41 +10,95 @@
   {% endif %}
 {% endblock %}
 
+{% block navigation %}{% endblock %}
+
 {% block content %}
 <div class="archives">
-  <h1>{{ BLOGNAME }}</h1>
-
-  <footer class="author">
-    <img alt="Honza Javorek's photo" src="{{ SITEURL }}/images/home/honza.jpg">
-    <address>
-      {% include "honza.html" %}
-    </address>
-  </footer>
-
-  {% if FEED_ALL_ATOM %}
-  <p class="button button-orange">
-      <a href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}">
-        <i class="fa fa-feed"></i> Articles feed
-      </a>
+  <h1 class="title display-5">{{ BLOGNAME }}</h1>
+  <p class="follow">
+    <a class="btn btn-rss" href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}" role="button">
+      <i class="bi bi-rss-fill"></i> RSS
+    </a>
+    <a class="btn btn-telegram" href="https://t.me/honzajavorekcz" role="button">
+      <i class="bi bi-telegram"></i> Telegram
+    </a>
   </p>
-  {% endif %}
 
-  <nav class="archives-nav">
-      {% for year_group in dates|groupby('date.year')|reverse %}
-          <a href="#archives-{{ year_group.grouper }}">{{ year_group.grouper }}</a>
-          {% if not loop.last -%}&middot;{%- endif -%}
+  <section class="mb-5">
+  <p>
+    Ahoj! Jsem <a href="{{ SITEURL }}">Honza Javorek</a> a tohle je můj osobní blog. Píšu ho jen tak pro radost, už <strong>{{ NOW.year - BLOG_FOUNDED_YEAR }} let</strong>. Je tady celkem <strong>{{ articles|length }} článků</strong>, z toho <strong>{{ articles|selectattr('lang', 'equalto', 'en')|list|length }} anglicky</strong>.
+  </p>
+  <p>
+    Dřív neexistoval ani Facebook, ani TikTok. Kdo chtěl světu něco říct, psal si blog. Jako kluk jsem sledoval weblogy.cz, kde byly zápisníky největších borců z oboru tvorby webů. Založil jsem tenhle blog a snil jsem o tom, že jednou určitě bude tak slavný, že ho na weblogy.cz zařadí. To se nikdy nestalo.
+  </p>
+  <p>
+    Se sociálními sítěmi éra blogů skončila. Autoři blogů začali publikovat jinde a jinak, nebo měli lepší věci na práci. Projekt weblogy.cz dnes už nikdo nezná. Sociální sítě nakonec taky různě odcházejí a přicházejí nové. <strong>Javorové lístky</strong> jsou tu však stále!
+  </p>
+  <p>
+    Za roky psaní se mi povedlo vydat pár zajímavých textů. Je tady třeba článek, který vidělo přes <strong>18.000 lidí z celého světa</strong>. Nebo výkřik, kterým jsem proti sobě poštval vedení fakulty.
+  </p>
+  <p>
+    Ze začátku jsem psal často a za většinu těch článků se dnes už spíš stydím. Archiv ale nepromazávám, historie je historie.
+  </p>
+  <p>
+    Po škole jsem psal méně a při práci ve startupu jsem téměř přestal. Nápady byly, ale čas moc ne. Navíc jsem si dal tak vysokou laťku na kvalitu, že mi každý článek zabral snad týden. Některé jsem sice napsal, ale nedokázal jsem je pak dotáhnout a vydat.
+  </p>
+  <p>
+    K pravidelnému psaní jsem se nakonec vrátil tak, že jsem laťku snížil na minimum. Když jsem začal v jednom člověku podnikat a pracovat z domova, zkusil jsem publikovat <strong>týdenní poznámky</strong>, které needituji. Jak to ze mě padá, tak to je. Dnes je jich
+    {% for tag, articles in tags %}
+      {% if tag.name == WEEKNOTES_TAG %}{{ articles|length }}{% endif %}
+    {% endfor -%}.
+  </p>
+  <p>
+    Rád bych tady kromě poznámek častěji publikoval i texty na jiná témata, ale zatím se to děje jen nahodile. Napojil jsem blog na <strong>Telegram</strong>, kam lze reagovat na nové články, a zkouším se stáhnout ze sociálních sítí, abych měl víc času a mentální kapacity na hodnotnější věci.
+  </p>
+  <p>
+    Velká část mého nynějšího podnikání je o psaní, ať už jde o <a href="https://junior.guru/handbook/">příručku</a> nebo <a href="https://nazory.ihned.cz/c7-66842510-o6u82-1feb79267e3aa75">články do médií</a>. A psát jsem se naučil tady na blogu. Takže díky, blogísku! Budu o tebe pečovat dál.
+  </p>
+  </section>
+
+  <section class="mb-5">
+  <h2 class="mb-4">Největší pecky</h2>
+  {% for tag, highlights in tags %}
+    {% if tag.name == HIGHLIGHT_TAG %}
+      {% for article in highlights %}
+        <div class="highlight">
+          {% if article.image %}
+            <img src="{{ SITEURL }}/{{ article.image }}" class="highlight-image" alt="Úvodní obrázek článku {{ article.title }}" width="100" height="100">
+          {% else %}
+            <div class="highlight-image"></div>
+          {% endif %}
+          <div class="highlight-body">
+            <h5 class="highlight-title">
+              <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+            </h5>
+            <p class="highlight-text">{{ article.content|striptags|truncate(200) }}</p>
+          </div>
+        </div>
       {% endfor %}
+    {% endif %}
+  {% endfor %}
+  </div>
+  </section>
+
+  <h2>Kompletní archiv</h2>
+  <nav class="archives-nav">
+    {% for year_group in dates|groupby('date.year')|reverse %}
+        <a href="#archives-{{ year_group.grouper }}">{{ year_group.grouper }}</a>
+        {% if not loop.last -%}&middot;{%- endif -%}
+    {% endfor %}
   </nav>
+
   <ul class="archives-list">
   {% for year_group in dates|groupby('date.year')|reverse %}
       <li class="archives-year">
-          <h2 id="archives-{{ year_group.grouper }}">
+          <h3 id="archives-{{ year_group.grouper }}">
               {{ year_group.grouper }}
-          </h2>
+          </h3>
           <ul class="archives-year-list">
           {% for article in year_group.list %}
               <li class="archives-article">
-                  <time datetime="{{ article.date.isoformat() }}">{{ article.date|strftime('%b\u00A0%-d') }}</time>
+                  <time datetime="{{ article.date.isoformat() }}">{{ article.date|strftime('%-d. %-m.') }}</time>
                   <span>
                     <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
                     {% if article.lang != DEFAULT_LANG -%}

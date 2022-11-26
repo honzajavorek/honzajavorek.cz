@@ -4,12 +4,12 @@ import re
 import logging
 from pathlib import Path
 
-from lxml import etree
-from pelican import signals, contents
+from lxml import html
+from pelican import signals
 from PIL import Image
 
 sys.path.append(os.path.dirname(__file__))
-from utils import modify_html, wrap_element
+from utils import parse_html, wrap_element, get_articles
 
 
 logger = logging.getLogger(__name__)
@@ -23,65 +23,91 @@ def register():
     signals.all_generators_finalized.connect(process_media)
 
 
-def process_media(content):
-    if not isinstance(content, contents.Article):
-        return
+def process_media(generators):
+    for article in get_articles(generators):
+        content_dir = article.settings['PATH']
 
-    content_dir = content.settings['PATH']
+        if hasattr(article, 'image'):
+            width, height = check_img_src(article.image, content_dir,
+                                        max_px=article.settings['IMG_MAX_PX'],
+                                        max_mb=article.settings['IMG_MAX_MB'])
+            article.image_width, article.image_height = width, height
+            article.metadata.update(image_width=width, image_height=height)
 
-    if hasattr(content, 'image'):
-        width, height = check_img_src(content.image, content_dir,
-                                      max_px=content.settings['IMG_MAX_PX'],
-                                      max_mb=content.settings['IMG_MAX_MB'])
-        content.image_width, content.image_height = width, height
-        content.metadata.update(image_width=width, image_height=height)
+        with parse_html(article, modify=True) as html_tree:
+            for img in html_tree.xpath('//img'):
+                check_img_src(img.get('src'), content_dir,
+                            max_px=article.settings['IMG_MAX_PX'],
+                            max_mb=article.settings['IMG_MAX_MB'])
 
-    with modify_html(content) as html_tree:
-        for iframe in html_tree.xpath('//iframe'):
-            iframe_to_figure(iframe)
+            for iframe in html_tree.xpath('//iframe'):
+                iframe_to_figure(iframe)
 
-        for object_ in html_tree.xpath('//object'):
-            object_to_figure(object_)
+            for object_ in html_tree.xpath('//object'):
+                object_to_figure(object_)
 
-        for blockquote in html_tree.xpath('//blockquote'):
-            tweet_to_figure(blockquote)
+            for blockquote in html_tree.xpath('//blockquote'):
+                blockquote_to_figure(blockquote)
 
-        for img in html_tree.xpath('//p[count(img) = 1]/img'):
-            img_to_figure(img, content_dir)
+            for img in html_tree.xpath('//p[count(img) = 1]/img'):
+                img_to_figure(img)
 
-        for img in html_tree.xpath('//img'):
-            check_img_src(img.get('src'), content_dir,
-                          max_px=content.settings['IMG_MAX_PX'],
-                          max_mb=content.settings['IMG_MAX_MB'])
+            for img in html_tree.xpath('//p[count(a) = 1]/a[count(img) = 1]/img'):
+                img_to_figure(img)
 
 
 def iframe_to_figure(iframe):
-    wrap_element(iframe, etree.Element('figure'))
+    wrap_element(iframe, element('figure', ['figure', 'figure-embed']))
 
 
 def object_to_figure(object_):
-    wrap_element(object_, etree.Element('figure'))
+    wrap_element(object_, element('figure', ['figure', 'figure-embed']))
 
 
-def img_to_figure(img, content_dir):
+def img_to_figure(img):
     if 'left' in img.classes or 'right' in img.classes:
         return
+    img.classes.update(['img-fluid', 'figure-img', 'rounded'])
 
-    figure = img.getparent()
+    if img.getparent().tag == 'a':
+        img.getparent().classes.add('figure-link')
+
+    figure = next(img.iterancestors(tag='p'))
     figure.tag = 'figure'
+    figure.classes.add('figure')
 
-    create_figcaption(img, figure)
-
-
-def tweet_to_figure(blockquote):
-    if 'twitter-tweet' not in blockquote.classes:
-        return
-
-    wrap_element(blockquote, etree.Element('figure'))
+    create_figcaption(img)
 
 
-def create_figcaption(img, figure):
-    figcaption = etree.Element('figcaption')
+def blockquote_to_figure(blockquote):
+    figure = element('figure', classes=['figure', 'figure-blockquote'])
+    wrap_element(blockquote, figure)
+
+    if 'twitter-tweet' in blockquote.classes:
+        figure.classes.add('figure-tweet')
+        blockquote.classes.add('blockquote-tweet')
+    blockquote.classes.add('blockquote')
+
+    last_p = next(blockquote.iterchildren(tag='p', reversed=True))
+    if 'twitter-tweet' in blockquote.classes:
+        assert last_p.tail.startswith('—')
+        last_a = next(blockquote.iterchildren(tag='a', reversed=True))
+        figcaption = element('figcaption', classes=['blockquote-footer'])
+        figcaption.text = last_p.tail.lstrip('—')
+        figcaption.append(last_a)
+        figure.append(figcaption)
+        last_p.tail = None
+    else:
+        last_line = last_p.text_content() or ''
+        if last_line.startswith('—'):
+            last_p.text = last_p.text.lstrip('—')
+            last_p.tag = 'figcaption'
+            last_p.classes.add('blockquote-footer')
+            figure.append(last_p)
+
+
+def create_figcaption(img):
+    figcaption = element('figcaption', classes=['figure-caption'])
     create = False
 
     if img.tail:
@@ -96,7 +122,7 @@ def create_figcaption(img, figure):
     if not create:
         return
 
-    figure.append(figcaption)
+    img.getparent().append(figcaption)
 
 
 def check_img_src(img_src, content_dir, max_px, max_mb):
@@ -130,3 +156,10 @@ def check_img_src(img_src, content_dir, max_px, max_mb):
 
 def get_image_filename(content_dir, img_src):
     return Path(content_dir) / re.sub(r'.*/images/', 'images/', img_src)
+
+
+def element(tag, classes=None):
+    el = html.HtmlElement()
+    el.tag = tag
+    el.classes.update(classes or [])
+    return el

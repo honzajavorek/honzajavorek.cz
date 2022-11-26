@@ -5,14 +5,14 @@ from operator import itemgetter
 from pelican import signals
 
 
-SOCIAL_NETWORKS = {
-    # https://forkaweso.me/Fork-Awesome/icons/#brand
-    't.me': dict(name='Telegram', icon='telegram'),
-    'facebook.com': dict(name='Facebook', icon='facebook-official'),
-    'twitter.com': dict(name='Twitter', icon='twitter'),
-    'linkedin.com': dict(name='LinkedIn', icon='linkedin'),
-    'reddit.com': dict(name='Reddit', icon='reddit'),
-    'news.ycombinator.com': dict(name='Hacker News', icon='hacker-news'),
+# https://icons.getbootstrap.com/
+COMMENTS_PLACES = {
+    't.me': dict(priority=1, name='Telegram', icon='telegram'),
+    'linkedin.com': dict(priority=2, name='LinkedIn', icon='linkedin'),
+    'reddit.com': dict(priority=3, name='Reddit', icon='reddit'),
+    'twitter.com': dict(priority=4, name='Twitter', icon='twitter'),
+    'facebook.com': dict(priority=5, name='Facebook', icon='facebook'),
+    'news.ycombinator.com': dict(priority=6, name='Hacker News', icon='chat'),
 }
 
 
@@ -22,13 +22,13 @@ def register():
 
 def set_comments(article_generator, metadata):
     comments = list(sorted((
-        {**item, **SOCIAL_NETWORKS.get(item['name'])}
+        {**item, **COMMENTS_PLACES.get(item['name'])}
         for item in (
-            dict(name=get_name(value), url=value, icon='comment-o')
+            dict(name=get_name(value), url=value, icon='chat')
             for key, value in metadata.items()
             if key.endswith('-comments')
         )
-    ), key=itemgetter('name')))
+    ), key=itemgetter('priority')))
 
     metadata.setdefault('comments', comments)
 

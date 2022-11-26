@@ -4,7 +4,7 @@ Lang: cs
 
 
 > Naděje není to přesvědčení, že něco dobře dopadne, ale jistota, že má něco smysl - bez ohledu na to, jak to dopadne.
-> -- Václav Havel
+> — Václav Havel
 
 Pokud se nám nelíbí nějaké události ve veřejném životě, neměli bychom se za žádnou cenu vzdávat. Vidíme-li někoho, jak beztrestně profituje na lži nebo krádeži, neměli bychom lámat hůl nad vším, čemu jsme věřili. Nesmíme svou víru odepsat a posouvat ji mezi nesplnitelné, naivní ideály. Rezignací se dostaneme jen do stavu, kdy budeme svůj veřejný život žít *od televize k volební urně*.
 

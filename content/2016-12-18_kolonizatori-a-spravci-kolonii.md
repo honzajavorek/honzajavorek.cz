@@ -1,6 +1,7 @@
 Title: Kolonizátoři a správci kolonií
 Date: 2016-12-18 13:43:00
 Lang: cs
+Tags: highlight
 Zdrojak-URL: https://www.zdrojak.cz/clanky/kolonizatori-spravci-kolonii/
 
 

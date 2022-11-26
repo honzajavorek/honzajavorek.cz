@@ -153,4 +153,4 @@ Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Pocket
 - [Bitcoin drops below $20,000, Ether cracks $1,000 — what this means](https://davidgerard.co.uk/blockchain/2022/06/18/bitcoin-drops-below-20000-ether-cracks-1000-what-this-means/)<br>Ha ha ha.
 - [Twenty years of my blog](http://simonwillison.net/2022/Jun/12/twenty-years/#atom-entries)<br>Boží průlet Simonovou historií.
 
-<small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>
+<small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu jsem použil vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small>

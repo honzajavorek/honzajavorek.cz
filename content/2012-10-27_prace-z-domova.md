@@ -1,6 +1,7 @@
 Title: Práce z domova
 Date: 2012-10-27 20:56:44
 Lang: cs
+Tags: highlight
 
 Zajímám se o práci z domova - nejen proto, že jsem mnoho let takto pracoval, ale také protože nyní pracuji v kanceláři. Jaké jsou výhody a nevýhody práce z domova? Na co si dát pozor? Z čeho se radovat? Co je digitální nomádství? Rozhodl jsem se napsat článek, který by nějak **shrnul informace z mnoha zdrojů**, jež jsem pročetl.
 

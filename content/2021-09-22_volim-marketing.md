@@ -1,6 +1,7 @@
 Title: Volím marketing
 Image: images/magdalena-davis.jpg
 Lang: cs
+Tags: highlight
 Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10159261095427707
 Twitter-Comments: https://twitter.com/honzajavorek/status/1440737601514733574
 
