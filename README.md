@@ -26,7 +26,7 @@ For the personal site (the index template) to work properly, there is a plugin `
 
 The `alternates` plugin looks for meta data ending with `-url` in the articles and provides a list of alternate places where the article has been published. As an example, `Zdrojak-URL: https://zdrojak.cz/my-article` would appear as an alternate in the article's meta data.
 
-The `readtime` plugin calculates estimated reading time for each article.
+The `readtime` plugin calculates estimated reading time for each article. The `seealso` plugin generates other recommended articles for each article.
 
 The `comments` plugin looks for meta data ending with `-comments` in the articles and provides a list of places where the article has been shared and where people can discuss it. As an example, `Twitter-Comments: https://twitter.com/honzajavorek/status/1a2b3c4d5` would appear in the `comments` list in the article's meta data.
 

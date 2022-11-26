@@ -130,7 +130,7 @@
     {% endif %}
 
     {{ article.content }}
-    </main>
+  </main>
 
   {% if article.comments %}
   <section id="comments" class="article-comments comments">
@@ -182,7 +182,7 @@
     {% endif %}
   </section>
   {% endif %}
-  <footer class="article-footer">
+  <footer class="article-footer mb-5">
     <div id="bio" class="article-bio bio">
       <header class="bio-header">
         <img class="bio-avatar" alt="Honza Javorek" src="{{ SITEURL }}/images/theme/honza.jpg" width="100" height="100" loading="lazy">
@@ -222,6 +222,38 @@
 
 
 {% block promo %}
+<aside class="promo seealso">
+  <div class="promo-content container">
+    <h3 class="promo-heading fs-1">
+      {%- if article.lang == 'cs' -%}
+        Další Honzovy články
+      {%- else -%}
+        Read more by Honza
+      {%- endif -%}
+    </h3>
+    <ul class="list-unstyled mb-0">
+    {% for other_article in article.seealso %}
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        {{ other_article.date.year }} —
+        <a href="{{ SITEURL }}/{{ other_article.url }}">
+          {{ other_article.title -}}
+        </a>
+      </li>
+    {% endfor %}
+      <li>
+        <i class="bi bi-search"></i>
+        <a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">
+          {%- if article.lang == 'cs' -%}
+            Archiv blogu
+          {%- else -%}
+            Blog archive
+          {%- endif -%}
+        </a>
+      </li>
+    </ul>
+  </div>
+</aside>
 <aside class="promo jg">
   <div class="promo-content container">
     <img class="promo-logo" alt="junior.guru" src="{{ SITEURL }}/images/theme/chick.svg" width="100" loading="lazy">

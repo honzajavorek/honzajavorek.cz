@@ -113,6 +113,7 @@ PLUGINS = [
     'headings',
     'media',
     'readtime',
+    'seealso',
 ]
 IMG_MAX_PX = 1024
 IMG_MAX_MB = 1
