@@ -7,17 +7,16 @@
 
     <meta property="og:title" content="Python komunita a já &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/python-komunita-a-ja/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
-          <meta property="og:image" content="https://honzajavorek.cz/images/home/honza.jpg">
-      <meta name="twitter:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+          <meta property="og:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+      <meta name="twitter:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
       <meta name="twitter:card" content="summary">
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -30,36 +29,54 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/python-komunita-a-ja/" rel="bookmark">
-        Python komunita a já
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2017-09-12T22:02:00+02:00">
-            12. 9. 2017
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Python komunita a já
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/python-komunita-a-ja/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2017-09-12T22:02:00+02:00">
+          12. 9. 2017
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        3
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/python-komunita-a-ja&interval=week&start=2017-09-12T22:02:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
-      <div class="article-warning">
+  <main class="article-content">
+      <div class="alert alert-warning article-warning" role="alert">
         <p>
-          <strong>Upozornění!</strong> Tento článek vyšel
-          před 5 lety.
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          Tento článek vyšel
+          <strong>před 5 lety</strong>.
           Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
           že dnes se Honza již nemusí s obsahem ztotožňovat.
         </p>
@@ -75,7 +92,7 @@
 <li>Myslím si, že je potřeba, abych si jasně stanovil, na čem chci pracovat a co přenechám jiným.</li>
 </ul>
 <p>Když jsem se rozhodoval ohledně druhého bodu, snažil jsem se upřednostnit věci, které by co nejvíc pomohly v tom prvním.</p>
-<h2 id="cim-se-chci-zabyvat">Čím se chci zabývat<small class="permalink"><a href="#cim-se-chci-zabyvat" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="cim-se-chci-zabyvat">Čím se chci zabývat<small class="permalink"><a href="#cim-se-chci-zabyvat" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Seřazeno podle priorit.</p>
 <ol>
 <li>Pomáhat Martinu Bílkovi (předseda Pyvce) v tom, aby se Pyvec transformoval z občanského sdružení na spolek a hlavně na něco, co bude lépe škálovat a lépe sloužit současným potřebám komunity.</li>
@@ -90,57 +107,87 @@
 <li>Mít čas psát i technické články o tom, jak co v Pythonu udělat, ať už na blog nebo někam na <a href="https://www.zdrojak.cz/">Zdroják.cz</a>. Sepsat třeba materiály pro workshop o API apod.</li>
 </ol>
 <p>Správce znamená, že bych rád nějak vedl směřování, kterým se webová stránka ubírá, a rád bych nad ní měl ochrannou ruku, ale na jejím vývoji by se ideálně podílel tým lidí. Mou prací by také mělo být hledání začátečníků, kteří mohou pomoci se snadnějšími úkoly, a s jejich mentorováním.</p>
-<h2 id="co-bych-delal-rad-ale-nemam-to-jak-stihnout">Co bych dělal rád, ale nemám to jak stihnout<small class="permalink"><a href="#co-bych-delal-rad-ale-nemam-to-jak-stihnout" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-bych-delal-rad-ale-nemam-to-jak-stihnout">Co bych dělal rád, ale nemám to jak stihnout<small class="permalink"><a href="#co-bych-delal-rad-ale-nemam-to-jak-stihnout" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>K následujícím věcem mám nějaký vztah a bavily by mě, ale řekl jsem si, že mají menší prioritu nebo že jsem v nich zastupitelný. Popřípadě že v nich mohu vystupovat nanejvýš jako poradce, mentor nebo koordinátor.</p>
 <ul>
 <li><a href="https://github.com/pyvec/zapojse/issues/63">Překládat přednášku o mentorování</a>.</li>
 <li>Být hnací silou za zhotovením <a href="https://github.com/pyvec/zapojse/issues/35">job boardu pro PyLadies</a>.</li>
 <li>Vyvíjet <a href="http://blog.python.cz">blog.python.cz</a>, dokumentovat jeho používání a opravovat na něm chyby (tzn. issues <a href="https://github.com/pyvec/blog.python.cz/issues">pyvec/blog.python.cz</a> a <a href="https://github.com/honzajavorek/danube-delta/issues">honzajavorek/danube-delta</a>).</li>
 </ul>
-<h2 id="co-nechci-delat">Co nechci dělat<small class="permalink"><a href="#co-nechci-delat" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-nechci-delat">Co nechci dělat<small class="permalink"><a href="#co-nechci-delat" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <ul>
 <li>Organizovat brněnské (a nejspíš ani žádné jiné) Pyvo. Sbohem, a díky za všechny ryby!</li>
 <li>Být zodpovědný za propagaci či organizaci jiných věcí, než je PyCon CZ.</li>
 </ul>
-<h2 id="co-to-cele-znamena">Co to celé znamená?<small class="permalink"><a href="#co-to-cele-znamena" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-to-cele-znamena">Co to celé znamená?<small class="permalink"><a href="#co-to-cele-znamena" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Není to žádná velká změna. Mně to pomůže ujasnit si, čím se chci zabývat a s jakou důležitostí. Svůj volný čas dělím mezi mnoho aktivit, takže chci, aby ten, který věnuji komunitě, měl co největší dopad.</p>
 <p>Bohužel pár věcí, o které jsem se staral, nebo to vypadalo, že se o ně postarám, ostrouhají. Ale je to tak lepší, protože přestanu blokovat cestu jiným lidem v tom, aby je udělali. A já sám budu víc soustředěný.</p></div></div></div></div>
-  </div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

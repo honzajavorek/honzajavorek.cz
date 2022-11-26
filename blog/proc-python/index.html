@@ -7,17 +7,16 @@
 
     <meta property="og:title" content="Proč Python? &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/proc-python/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
-          <meta property="og:image" content="https://honzajavorek.cz/images/home/honza.jpg">
-      <meta name="twitter:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+          <meta property="og:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+      <meta name="twitter:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
       <meta name="twitter:card" content="summary">
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -30,36 +29,54 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/proc-python/" rel="bookmark">
-        Proč Python?
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2014-05-29T01:56:30+02:00">
-            29. 5. 2014
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Proč Python?
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/proc-python/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2014-05-29T01:56:30+02:00">
+          29. 5. 2014
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        8
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/proc-python&interval=week&start=2014-05-29T01:56:30+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
-      <div class="article-warning">
+  <main class="article-content">
+      <div class="alert alert-warning article-warning" role="alert">
         <p>
-          <strong>Upozornění!</strong> Tento článek vyšel
-          před 8 lety.
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          Tento článek vyšel
+          <strong>před 8 lety</strong>.
           Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
           že dnes se Honza již nemusí s obsahem ztotožňovat.
         </p>
@@ -74,61 +91,91 @@
 <li>Líbilo se mi, že je systematický a nemá takový bordel ve standardní knihovně apod. Dávalo to holt tak nějak všechno větší smysl a lépe to do sebe zapadalo. Já jsem přece jenom v určitých věcech detailista, takže toto mi dost imponovalo.</li>
 <li>Python je víceúčelový jazyk. Jasně, všichni dneska děláme webíky, je to free, cool a in, ale kdo ví co bude za pár let? Python tady <a href="https://twitter.com/spazef0rze/status/471316103793475584">byl</a>, je a nejspíš bude. PHP je "dobré" jen na jednu věc - na web. Se skřípěním zubů z něho vydojíte nějakou CLI aplikaci, ale tím to končí, není to víceúčelový jazyk. Ruby je na tom lépe - je navržené jako víceúčelový jazyk, ale realita je taková, že se proslavilo díky Rails, tzn. webovému frameworku, a jeho ekosystém AFAIK jen málokdy překročí hranici světa webů a CLI prográmků. V Pythonu je třetina Linuxu, celý Dropbox, je out-of-box přítomen na každém serveru (skriptování), napíšete v něm GUI aplikaci stejně dobře a rychle jako IRC bota nebo tu webovou stránku. Říkal jsem si, že když budu umět Python, může se svět ubírat kudy chce a já se neztratím. Mimochodem, znáte třeba <a href="http://www.raspberrypi.org/tag/python/">RapsberryPi</a>? Co myslíte, bude se vám hodit spíš PHP, nebo spíš Python, až se sem přižene Internet of Things?</li>
 </ul>
-<figure><blockquote class="twitter-tweet" lang="en"><p>taky umíte ovládat svou mikrovlnku pomocí pythonu? <a href="http://t.co/bEQDZvqtK4">pic.twitter.com/bEQDZvqtK4</a> od <a href="https://twitter.com/domix">@domix</a></p>— Michal Illich (@michalillich) <a href="https://twitter.com/michalillich/statuses/466676410178760704">May 14, 2014</a></blockquote>
+<figure class="figure figure-blockquote figure-tweet"><blockquote class="twitter-tweet blockquote-tweet blockquote" lang="en"><p>taky umíte ovládat svou mikrovlnku pomocí pythonu? <a href="http://t.co/bEQDZvqtK4">pic.twitter.com/bEQDZvqtK4</a> od <a href="https://twitter.com/domix">@domix</a></p></blockquote>
 
-</figure><ul>
+<figcaption class="blockquote-footer"> Michal Illich (@michalillich) <a href="https://twitter.com/michalillich/statuses/466676410178760704">May 14, 2014</a></figcaption></figure><ul>
 <li>Ztotožnil jsem se s myšlenkama, které dělají Python Pythonem. Sedly mi. Říká se tomu <a href="http://legacy.python.org/dev/peps/pep-0020/">Zen of Python</a> a mě se to prostě fakt hodně líbí. Každý jazyk má svůj způsob, jakým řeší problémy. Když to uděláte v souladu s těmi způsoby, píšete tzv. <em>idiomatic</em> kód. Typicky, když jste Java vývojář a napíšete něco v Ruby, nebude to <em>idiomatic</em>, protože sice píšete Ruby, ale přemýšlíte v Javě - pro Rubystu bude takový kód hrozně kostrbatý a nepřirozený, byť bude fungovat a bude vlastně správně. Abyste napsali <em>idiomatic</em> Ruby, musíte mu navyknout a přemýšlet v Ruby. No a takové "typické přemýšlení v Pythonu" někdo sepsal a pojmenoval to Zen of Python. Projděte si to, je to asi 20 krátkých vět ve stylu <em>simple is better than complex, complex is better than complicated...</em></li>
 </ul>
-<figure><blockquote class="twitter-tweet" lang="en"><p>Můj oblíbený způsob jak nabootovat do nového jazyka nebo ekosystému: vygooglit si "idiomatic &lt;název jazyka&gt;"</p>— Honza Javorek (@honzajavorek) <a href="https://twitter.com/honzajavorek/statuses/458983315778048000">April 23, 2014</a></blockquote>
+<figure class="figure figure-blockquote figure-tweet"><blockquote class="twitter-tweet blockquote-tweet blockquote" lang="en"><p>Můj oblíbený způsob jak nabootovat do nového jazyka nebo ekosystému: vygooglit si "idiomatic &lt;název jazyka&gt;"</p></blockquote>
 
-</figure><p>Osobně mi opravdu vyhovuje řešení problémů ve stylu Zen of Python. Dalo by se říct, že věřím v Zen of Python :) Když píšu v jiném jazyce, dejme tomu v Ruby, dokážu se přizpůsobit a napsat <em>idiomatic</em> Ruby, ale netěší mě to tolik. Nenadchnu se pro to, protože věřím, že způsob, jakým by se to řešilo v Pythonu, mi vyhovuje víc.</p>
-<figure><blockquote class="twitter-tweet" lang="en"><p>Az bude zase scitani lidu, muzu uvest do kolonky pro vyznani PEP20?</p>— Honza Javorek (@honzajavorek) <a href="https://twitter.com/honzajavorek/statuses/463299299091419136">May 5, 2014</a></blockquote>
+<figcaption class="blockquote-footer"> Honza Javorek (@honzajavorek) <a href="https://twitter.com/honzajavorek/statuses/458983315778048000">April 23, 2014</a></figcaption></figure><p>Osobně mi opravdu vyhovuje řešení problémů ve stylu Zen of Python. Dalo by se říct, že věřím v Zen of Python :) Když píšu v jiném jazyce, dejme tomu v Ruby, dokážu se přizpůsobit a napsat <em>idiomatic</em> Ruby, ale netěší mě to tolik. Nenadchnu se pro to, protože věřím, že způsob, jakým by se to řešilo v Pythonu, mi vyhovuje víc.</p>
+<figure class="figure figure-blockquote figure-tweet"><blockquote class="twitter-tweet blockquote-tweet blockquote" lang="en"><p>Az bude zase scitani lidu, muzu uvest do kolonky pro vyznani PEP20?</p></blockquote>
 
-</figure><p>Takže tak to je. Python mi prostě sedl a proto ho mám rád a spjal jsem s ním i kus svého života. Můžu se naučit nové jazyky, můžu se nechat třeba zaměstnat v <a href="http://apiary.io/">Apiary</a>, kde se (zatím! :-D ) v Pythonu třeba vůbec neprogramuje. Stejně se ale budu ztotožňovat se Zen of Python a věřit v to, že takhle se mají problémy řešit. To mi prostě nikdo nesebere, protože to souzní s tím, co jsem si myslel nebo co se mi líbilo dlouho před tím, než jsem vůbec o nějaký Python zakopnul.</p>
-<figure><blockquote class="twitter-tweet" lang="en"><p>Otevřete si tuhle stránku a hledejte slovo Python ;) <a href="http://t.co/GbUY77FmN8">http://t.co/GbUY77FmN8</a></p>— Honza Javorek (@honzajavorek) <a href="https://twitter.com/honzajavorek/statuses/470947836251881472">May 26, 2014</a></blockquote>
+<figcaption class="blockquote-footer"> Honza Javorek (@honzajavorek) <a href="https://twitter.com/honzajavorek/statuses/463299299091419136">May 5, 2014</a></figcaption></figure><p>Takže tak to je. Python mi prostě sedl a proto ho mám rád a spjal jsem s ním i kus svého života. Můžu se naučit nové jazyky, můžu se nechat třeba zaměstnat v <a href="http://apiary.io/">Apiary</a>, kde se (zatím! :-D ) v Pythonu třeba vůbec neprogramuje. Stejně se ale budu ztotožňovat se Zen of Python a věřit v to, že takhle se mají problémy řešit. To mi prostě nikdo nesebere, protože to souzní s tím, co jsem si myslel nebo co se mi líbilo dlouho před tím, než jsem vůbec o nějaký Python zakopnul.</p>
+<figure class="figure figure-blockquote figure-tweet"><blockquote class="twitter-tweet blockquote-tweet blockquote" lang="en"><p>Otevřete si tuhle stránku a hledejte slovo Python ;) <a href="http://t.co/GbUY77FmN8">http://t.co/GbUY77FmN8</a></p></blockquote>
 
-</figure><p>A proč Python propaguju? Co mě motivuje k tomu, abych ho ukazoval jiným lidem a nabízel jako možné řešení jejich problémů?</p>
+<figcaption class="blockquote-footer"> Honza Javorek (@honzajavorek) <a href="https://twitter.com/honzajavorek/statuses/470947836251881472">May 26, 2014</a></figcaption></figure><p>A proč Python propaguju? Co mě motivuje k tomu, abych ho ukazoval jiným lidem a nabízel jako možné řešení jejich problémů?</p>
 <p>No, jak už jsem naznačil, nedělám si iluze, že by byl Python řešením všech problémů světa. Ačkoliv je to víceúčelový jazyk, má svá pro a proti, tu se hodí více, tam méně. Přijde mi ale, že jsem v Pythonu objevil pěkný a silný nástroj, který přijde vhod často. Systematický. Snadný k naučení a přitom s obrovským ekosystémem. Přijde mi škoda, že se někde děcka učí programovat třeba v Pascalu nebo v C, když by se mohly stejně tak naučit rovnou Python, který má lidskou, čitelnou a rychle pochopitelnou syntaxi i pro začátečníka (na rozdíl od C), ale přitom se s ním (na rozdíl od Pascalu) píše produkční software, takže stačí prohloubit znalosti a hurá, je ze mě programátor s prakticky uplatnitelnou znalostí, kterého mohou hned někam zaměstnat.</p>
 <p>A proč psát třeba weby v Pythonu a ne v PHP? Upřímně, tady z ekonomického hlediska nevidím nějakou zásadní konkurenční výhodu Pythonu. Je tam lepší integrace s dalším serverovým softwarem, pružnější deployment, atd., na světě je milion Django appek a web na míru si z nich poskládáte jak z LEGO stavebnice... ale tohle nejspíš bude v PHP taky (<a href="http://symfony.com/">Symfony</a>?) masa programátorů a eroze většinu těch nejtrapnějších problémů v PHP časem plus mínus vyřešila a slušná aplikace se v tom asi nějak napsat dá. Trh s PHP programátory je obrovský, často jsou levní, komunita obrovská, hostingy všude, takže ekonomicky to určitě dává smysl. Kdo by si začal v Djangu psát na koleně CMS pro svůj blogísek, místo aby si někam naplácl WordPress, popřípadě Drupal, není z mého pohledu srdcař, ale někdo, kdo fakt neví co s časem. Takže proč psát weby v Pythonu? Nejspíš asi hlavně pro samotnou radost z onoho psaní. Všichni určitě známe <a href="http://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/">PHP: a fractal of bad design</a>... ;-) Psát PHP prostě není radost. Není. Ne. To už raději číst Perl. Pokud jste webový podnikatel, chcete PHP. Pokud jste programátor webových aplikací, chcete Ruby, Python, Node.js. (A samozřejmě, pokud jste banka, chcete Javu.)</p>
 <p>No a o čem je tedy vlastně má mise v oblasti propagace Pythonu? Jak chci dokázat, že si více lidí vybere Python, když tady zároveň tvrdím, že Python je jazyk jako každý jiný?</p>
 <p>Chtěl bych zlepšovat ekosystém okolo Pythonu, jakožto mého oblíbeného jazyka. Vytvořit a podporovat komunitu, psát články, točit videa, připravovat přednášky, odpovídat na dotazy. Ukazovat firmám, jak hledat Pythonisty a spojovat Pythonisty s firmami. Vytvořit u nás prostředí, které když nováček uvidí, tak si řekne - "týjo, mohl bych sice programovat v Node.js nebo Javě, nebo třeba v Go, ale když se naučím Python, bude kolem mě hromada lidí, kteří mi mohou pomoci, se kterými můžu na pivo, je tu spousta videí v češtině a článků a návodů a materiálů... a přitom to vypadá, že je i relativně dost pracovních nabídek, tak se pak nejspíš nebudu muset bát, že bych nezakopl o práci!" A firmy si zase řeknou, že díky komunitě se vyplatí na Python vsadit, protože mají kde hledat lidi a kam jít pro podporu...</p>
 <p>Takže tohle je moje mise a to bych chtěl :-) Aby komunita a ekosystém byli tím rozhodujícím závažím na vahách. Aby byl Python volbou pro víc a víc lidí ne proto, že si pár fanatiků myslí, že je to nejlepší jazyk na světě, ale proto, že spousta lidí od Aše po Karvinou má dojem, že programovat v Pythonu je zábava a tuto zábavu stojí za to sdílet mezi sebou.</p></div></div></div></div>
-  </div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

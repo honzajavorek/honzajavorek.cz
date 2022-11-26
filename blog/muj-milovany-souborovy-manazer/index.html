@@ -7,17 +7,16 @@
 
     <meta property="og:title" content="Můj milovaný souborový manažer &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/muj-milovany-souborovy-manazer/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
-          <meta property="og:image" content="https://honzajavorek.cz/images/home/honza.jpg">
-      <meta name="twitter:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+          <meta property="og:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+      <meta name="twitter:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
       <meta name="twitter:card" content="summary">
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -30,43 +29,61 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/muj-milovany-souborovy-manazer/" rel="bookmark">
-        Můj milovaný souborový manažer
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2009-10-23T12:21:00+02:00">
-            23. 10. 2009
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Můj milovaný souborový manažer
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/muj-milovany-souborovy-manazer/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2009-10-23T12:21:00+02:00">
+          23. 10. 2009
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        5
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/muj-milovany-souborovy-manazer&interval=week&start=2009-10-23T12:21:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
-      <div class="article-warning">
+  <main class="article-content">
+      <div class="alert alert-warning article-warning" role="alert">
         <p>
-          <strong>Upozornění!</strong> Tento článek vyšel
-          před 13 lety.
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          Tento článek vyšel
+          <strong>před 13 lety</strong>.
           Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
           že dnes se Honza již nemusí s obsahem ztotožňovat.
         </p>
       </div>
 
     <div><div><div><div><p>Včera jsem naznačil pomalou a postupnou konvergenci svých počítačových zvyků k Linuxu a hned se objevilo pár zajímavých témat k diskusi. Jsem rád, že se komentáře nezaplnily polemikou, ale spíš tipy na různé programy, které by mi mohly pomoci. Rád bych detailněji otevřel téma souborového manažeru.</p>
-<figure><img alt="obrázek" src="https://honzajavorek.cz/images/121.jpg"></figure>
+<figure class="figure"><img alt="obrázek" src="https://honzajavorek.cz/images/121.jpg" class="img-fluid figure-img rounded"></figure>
 <p>Používám
 <a href="http://www.altap.cz/salam_cz/">Altap (dříve Servant) Salamander</a>. Na Linuxu jsem vyzkoušel spoustu grafických manažerů, z KDE asi hlavně Krusader (protože KDE nemám rád a on jediný se zdál, že za to stojí), z GNOME spoustu nedodělků. Do konzolového mc jsem nikdy nepronikl, protože je konzolový a jeho interakce s okolním GUI je (téměř?) nulová. Na okénková-ikonková udělátka jsem si nezvykl ani ve Windows a pochybuji, že by měl některý z nich takovou auru, aby můj odpor k nim zlomil – jednoduše mi přijdou vrcholem nepřehlednosti.</p>
 <p>Nedělám si zcela žádné iluze, že bych používal byť 2 % funkcí Salamanderu. Prošel jsem jeho nabídky a zkusil sepsat seznam věcí, které v něm dělám (a jak). Co tedy ve svém souborovém manažeru používám a plně si s tím vystačím:</p>
@@ -98,42 +115,72 @@
 <p>Hlavně FTP, prohlížeč obrázků a integrovaná podpora archivů jsou pro mě fakt důležité a jejich absence u jiných manažerů mi dělá hrozné problémy. Na druhou stranu si myslím, že to nejsou hloupé požadavky – tyto funkce mi opravdu šetří hromadu práce, protože s obrázky, archivy a FTP pracuji milionkrát denně. Předem upozorňuji, že oddelený FTP manažer používat nechci, externí prohlížeč po stisku na enter taky ne (vždy trvá věčnost než se spustí, i kdyby zde věčnost měla být sekunda) a externí archivátory už vůbec ne, to bych se naprosto zbláznil (nehledě na to, že s externími pitomostmi fungujícími jako WinZIP, WinRAR apod. bych si připadal jak v roce 1997).</p>
 <p>Tak to je můj výčet funkcí. Nemyslím, že bych byl nějaký super-power-user. Jak říkám, z funkcí svého oblíbeného manažeru jich používám deset a mohlo by se zdát, že změna na jiný manažer nemusí být tak bolestivá. Jenže já žádný vyhovující za léta nenašel, takže jsem to vzal tak, že jestli chci na Linux, musím masochisticky přejít na mc a všechny věci, které Salamander dělá za mě, se naučit psát do příkazové řádky. Rozmluvíte-li mi to, budu jen rád.</p>
 <p>Když už otvírám téma souborového manažeru, říkám si, že dříve to byl jasný „operační systém operačního systému“. Podle mě dříve lidé nejvíce času trávili právě se souborovým manažerem a orientace v souborech pro ně znamenala hodně. Dnes mají lidé vyhledávání, knihovny a všelijaká udělátka, která je podporují v bordelářství a na uspořádání souborů nikdo nehledí. Naopak, když má uživatel něco na souborové bázi najít, děsí se toho, protože má většinou akorát nějaký obrovitý chuchvalec složek, obrázků, dokumentů a empétrojek v <em>My Documents</em>. A tím programem, kde trávíme nejvíc času, se stal internetový prohlížeč.</p></div></div></div></div>
-  </div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

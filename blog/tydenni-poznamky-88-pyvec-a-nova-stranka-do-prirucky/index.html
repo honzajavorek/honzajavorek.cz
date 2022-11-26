@@ -7,8 +7,6 @@
 
     <meta property="og:title" content="Týdenní poznámky #88: Pyvec a nová stránka do příručky &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-88-pyvec-a-nova-stranka-do-prirucky/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
     <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
     <meta property="og:image:width" content="1024">
@@ -17,8 +15,9 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -31,57 +30,74 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-88-pyvec-a-nova-stranka-do-prirucky/" rel="bookmark">
-        Týdenní poznámky #88: Pyvec a nová stránka do příručky
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2022-04-29T00:00:00+02:00">
-            29. 4. 2022
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Týdenní poznámky #88: Pyvec a nová stránka do příručky
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-88-pyvec-a-nova-stranka-do-prirucky/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2022-04-29T00:00:00+02:00">
+          29. 4. 2022
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        10
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-88-pyvec-a-nova-stranka-do-prirucky&interval=week&start=2022-04-29T00:00:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
+  <main class="article-content">
 
     <div><div><div><div><p>Utekl zase nějaký ten týden (23.4. — 29.4.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-87-stipendium-clanek-prednasky/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/club/">klub</a>, a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.</p>
-<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
 Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
-<h2 id="nova-stranka-na-prirucce">Nová stránka na příručce<small class="permalink"><a href="#nova-stranka-na-prirucce" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="nova-stranka-na-prirucce">Nová stránka na příručce<small class="permalink"><a href="#nova-stranka-na-prirucce" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>S <a href="https://www.nelaprovazi.cz/">Nelou Slezákovou</a> připravujeme novou stránku do <a href="https://junior.guru/handbook/">příručky</a>, která bude o duševním zdraví. Měli jsme už připravený nějaký základní text, tento týden jsem jej vysázel do příručky už přímo do HTML, tedy spíš do Markdownu.</p>
 <p>Tato nová stránka bude prototypem spolupráce JG s nějakým nezávislým profesionálem. Takovou spolupráci jsem měl už déle v hlavě a tady byla hezká příležitost to zkusit. Jsem (snad) schopen udržovat jádro příručky sám, ale byla by škoda se omezit jen na to, čemu rozumím já. Chtěl bych tam mít stránky psané a „garantované“ i jinými odborníky, které znám a kterým věřím, výměnou za to, že tam bude odkaz na něco, čím se zabývají. Není to bez práce, stále tam figuruji jako nějaký editor, ale aspoň nemusím dělat velkou rešerši nějakého tématu a mohu se opřít o expertízu někoho dalšího a už to společně „jen“ napsat.</p>
 <p>Takže ve spolupráci s Nelou píšeme tuto novou stránku a ona tam bude mít odkaz na sebe. Juniorům to pomůže, jí to pomůže, mě to pomůže. Win win win. Teď je to ve fázi že nám tam pár drobností ještě chybí v obsahu i designu. Obsah doplní Nela, já bych měl v CSS vymyslet, jak bude vypadat ten zvýrazněný odkaz na ni, aby bylo zřejmé, že to je nějaká spolupráce.</p>
-<h2 id="generovani-obrazku-pro-podcasty">Generování obrázků pro podcasty<small class="permalink"><a href="#generovani-obrazku-pro-podcasty" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="generovani-obrazku-pro-podcasty">Generování obrázků pro podcasty<small class="permalink"><a href="#generovani-obrazku-pro-podcasty" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Obrázky pro propagaci jednotlivých dílů podcastů jsem doteď „kreslil ručně“, tedy vždy splácal dohromady z nějakých obdélníčků v programu Keynote a exportoval jako PNG. Teď jsem to chtěl už automatizovat, protože to vypadá, že podcast bude chvíli ještě existovat :)</p>
 <p>Obrázky využiju při ruční propagaci. Mohu je použít i přímo v podcastovém feedu a budou se zobrazovat na jednotlivých platformách. Taky jsem chtěl naučit bota, aby díly oznamoval přímo v klubu a tam se opět bude obrázek hodit.</p>
-<h3 id="fotky-ucastniku-podcastu">Fotky účastníků podcastu<small class="permalink"><a href="#fotky-ucastniku-podcastu" title="Trvalý odkaz na tento nadpis">#</a></small></h3>
+<h3 id="fotky-ucastniku-podcastu">Fotky účastníků podcastu<small class="permalink"><a href="#fotky-ucastniku-podcastu" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>Potřeboval jsem vyřešit dvě věci. První byla přidávání fotek účastníků podcastu. Pavlína vždy do YAMLu jen poslala přes Pull Request detaily k novému dílu, zbytek jsem zajistil já. Teď tam bude nová položka, cesta k fotce hosta. Tu nebude muset vyplňovat, fotku zajistím já, ale bude potřeba ji mít v tom YAMLu, načíst, atd. Na podobné fotky jsem už měl složku k přednáškám, pro které se taky generují náhledy. Přišlo mi zbytečné mít složku pro každou takovou věc, zvlášť když se kryjí někteří speakeři s hosty v podcastu. Tedy jsem to trochu překopal. Taky jsem u přednášek změnil YAML tak, aby se musela cesta k fotce všude explicitně napsat a už to není vázáno na nějaké Discord ID jako předtím, bylo to zbytečné a omezující provázání.</p>
 <p>Teď mám tedy jednu složku s fotkami všech takových lidí a odkazuje na ni jak YAML pro přednášky, tak YAML pro podcast. Napsal jsem si kontroly, jestli mají fotky očekávaný tvar a velikost, aby skripty spadly, pokud nemají. To je nedokonalá ochrana (asi by to měl být spíš nějaký git hook) hlavně proti tomu, abych si necommitnul do Gitu omylem několikamegabytovou fotku, protože to by pak zůstalo v historii navěky.</p>
 <p>Přidal jsem i separátní skript, kterým mohu nové fotky doplňovat. Zeptá se mě na cestu k souboru a jméno člověka a postará se o zbytek. Nakopíruje fotku do příslušného adresáře, ověří že jde o čtverec, zmenší, správně pojmenuje.</p>
-<h3 id="scss-v-sablonach-pro-obrazky">SCSS v šablonách pro obrázky<small class="permalink"><a href="#scss-v-sablonach-pro-obrazky" title="Trvalý odkaz na tento nadpis">#</a></small></h3>
+<h3 id="scss-v-sablonach-pro-obrazky">SCSS v šablonách pro obrázky<small class="permalink"><a href="#scss-v-sablonach-pro-obrazky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>Další věcí bylo sjednocení CSS tak, abych v těchto obrázcích generovaných z HTML šablon mohl používat vše, co i na webu. Donutil mě k tomu barevný pás tlačítek na různé podcastové aplikace, který jsem měl na původním „ručním“ plakátku. Ten jsem tam původně vlepil jako screenshot z webu, ale teď jsem to chtěl mít hezky v HTML, s tím stejným CSS jako na webu. Abych mohl použít totéž CSS, musel bych mít v šablonách nějak přístupný Bootstrap a celé svoje SCSS a nějak by se muselo přegenerovávat na čisté CSS při tom, jak se obrázek renderuje. Tomu jsem se dlouho bránil, ale reálně jsem na to narážel už ve víc případech, jelikož pokud se snažím dodržovat nějaký podobný vizuální jazyk na plakátkách jako na webu, prostě pak musím sdílet minimálně nějaké SCSS proměnné a tak.</p>
 <p>Přesunul jsem tedy SCSS o několik složek výš, aby nebylo jen pro web, ale pro libovolný kód v rámci JG, stejně jako jsem to už dřív udělal s obrázky. Pak jsem do kódu, který generuje obrázky, přidal nějaké srandy, které jsou schopny si poradit i s tím SCSS. Bylo to celé jednodušší, než jsem čekal a navenek se ani nic moc nezměnilo, jen jsem pak přejmenoval .css soubory na .scss a vše stále fungovalo, ale s většími možnostmi. Staré plakáty jsem nijak nemigroval, nový už jsem napsal tak, že vychází z Bootstrapu a mého dalšího SCSS, takže jsem tam mohl snadno použít barvy, tlačítka apod. stejně jako když styluju web.</p>
-<h3 id="co-dal">Co dál?<small class="permalink"><a href="#co-dal" title="Trvalý odkaz na tento nadpis">#</a></small></h3>
+<h3 id="co-dal">Co dál?<small class="permalink"><a href="#co-dal" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>V pondělí jsem nově generovaný plakát rovnou použil při propagaci. Dál by bylo dobré naučit bota propagovat nové díly v klubu za mě a taky bych mohl plakátky přidat do XML podcastu, aby se objevovaly v podcastových aplikacích k jednotlivým dílům. S Pavlínou jsme se ještě bavili o vzhledu toho plakátu a máme nějaké nápady jak ho vylepšit, ale to se dá zase ladit klidně až v budoucnu.</p>
-<h2 id="prace-pro-pyvec">Práce pro Pyvec<small class="permalink"><a href="#prace-pro-pyvec" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="prace-pro-pyvec">Práce pro Pyvec<small class="permalink"><a href="#prace-pro-pyvec" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Po volbách do výboru Pyvce je nyní potřeba udělat spoustu věcí, tak jsem se tomu trochu věnoval. Dali jsme si společný call starý a nový výbor. Tam si nový výbor zvolil předsedkyni a pokladníka.</p>
 <p>Taky jsem upgradoval knihovny v Pyvec repozitářích přes dependabot, ale tak to dělám každý týden, asi nemá smysl to tu ani pořád psát. Následně jsem dával lidem přístupy do různých míst a oznamoval změny na Pyvec Slacku na různých místech (GitHub, Slack…). Inicioval jsem, aby se výbor poprvé sešel na pravidelné měsíční schůzi a vybíráme teď termín. Přihlásil jsem se dobrovolně k tomu, že kontaktuji právničku, aby nám udělala papíry k volbám a zanesla změny do rejstříku.</p>
 <p>Přišla nám hned nová žádost o členství ve spolku, tak až se sejdeme, můžeme se hned procvičit v hlasování.</p>
-<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <ul>
 <li>Začal se mi na CI dost projevovat <a href="https://github.com/python-poetry/poetry/issues/3336">tento problém s poetry</a>. Chvíli jsem to trpěl, ale teď už mě to přestalo bavit a obešel jsem to přes workaround zmíněný v tom issue, vypnul jsem něco, čemu říkají „new installer“.</li>
 <li>Volal jsem si s Engetem a vymýšleli jsme, jak můžeme spolupracovat na další rok. Byl z toho dlouhý call a je z toho spousta nápadů, které musím ještě promyslet.</li>
@@ -103,59 +119,89 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Během 7 dní od 23.4. do 29.4. jsem při procházkách nachodil 15 km. Celkem jsem se hýbal 6 hodin a zdolal při tom 15 kilometrů.</li>
 <li>Aktuální finanční výsledky, návštěvnost a další čísla k JG <a href="https://junior.guru/open/">mám přímo na webu</a>.</li>
 </ul>
-<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Tři věci, které bych chtěl zvládnout udělat příště:</p>
 <ol>
 <li>Naučit bota v klubu díly podcastu oznamovat za mě a přidat obrázky dílů do XML,</li>
 <li>zkusit streamování na YouTube,</li>
 <li>nastylovat odkaz na Nelu na nové stránce do příručky.</li>
 </ol>
-<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
-<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
 <ul>
 <li><a href="https://www.seznamzpravy.cz/clanek/196984">Vlevo dole</a><br>Kam se poděli Piráti?</li>
 <li><a href="https://techcrunch.com/2022/04/18/web-scraping-legal-court/">Web scraping is legal, US appeals court reaffirms</a><br>Scrapování je prý legální.</li>
 <li><a href="https://overcast.fm/+Vf9THCkSA">Vladimir 518: Praha ještě zazáří. Je třeba stavět, ale také pečovat o ikonické stavby z minulosti</a><br>Rozhovor o architektuře a Praze, líbilo se mi to.</li>
 </ul>
-<p><small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small></p></div></div></div></div>
-  </div>
+<p><small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu jsem použil vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small></p></div></div></div></div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

@@ -7,8 +7,6 @@
 
     <meta property="og:title" content="Týdenní poznámky #75: Vylepšování robota &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-75-vylepsovani-robota/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
     <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
     <meta property="og:image:width" content="1024">
@@ -17,8 +15,9 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -31,38 +30,55 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-75-vylepsovani-robota/" rel="bookmark">
-        Týdenní poznámky #75: Vylepšování robota
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2021-11-29T00:00:00+01:00">
-            29. 11. 2021
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Týdenní poznámky #75: Vylepšování robota
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-75-vylepsovani-robota/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2021-11-29T00:00:00+01:00">
+          29. 11. 2021
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        16
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-75-vylepsovani-robota&interval=week&start=2021-11-29T00:00:00+01:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
+  <main class="article-content">
 
     <div><div><div><div><p>Utekl zase nějaký ten týden (22.11. — 29.11.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-74-studium-marketingu/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/club/">klub</a>, a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.</p>
-<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
 Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
 <p>O víkendu se mi poznámky nechtělo napsat, tak mi to zas přeteklo do pondělí. Ach jo.</p>
-<h2 id="polsky-kolega">Polský kolega<small class="permalink"><a href="#polsky-kolega" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="polsky-kolega">Polský kolega<small class="permalink"><a href="#polsky-kolega" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Odebírám <a href="https://rosie.land/">Rosieland</a>. Nečtu to moc, ale tentokrát jsem to otevřel a bylo tam něco o Rosieland Discordu a pozvánka do něj. Tak tam jdu a v kanálu, kde se lidi představují, vidím hned jako posledního týpka z Polska, nějaký Dawid Zamkowski, který jako Indie Hacker provozuje <a href="https://www.juniorjobsonly.com/">Junior Jobs Only</a> :D Konečně někdo z východní Evropy a navíc <a href="https://twitter.com/dawidzamkowski/status/1427888791784759296">řeší úplně totéž</a>, jako já!</p>
 <p>Tak jsem mu napsal <a href="https://twitter.com/dawidzamkowski">na Twitteru</a> a půlku pondělí jsme si psali o tom, co děláme a jak nám to jde. Když jsem si původně prošel jeho web, přišlo mi, že to má všechno zmáknuté a je mnohem dál než já. Jenže z konverzace vyplynulo, že dokonce uvažuje nad prodejem projektu, protože na něm nedokáže vytvořit stabilní příjem. Má skupinu na FB, kde má 25 000+ členů, ale nedokáže to monetizovat, podobně jako se o to teď <a href="https://cc.cz/holky-z-marketingu-se-meni-na-firmu-z-facebookove-skupiny-je-projekt-ktery-na-pracovnim-trhu-pomaha-tisicum-zen/">pokouší</a> například #holkyzmarketingu (<a href="https://www.youtube.com/watch?v=pXn-WY-zXQY">podcast</a> o tom).</p>
 <p>Rozdíl je taky v tom, že není tvůrce obsahu (já píšu texty a dělám to rád) a snaží se stavět věci jen pomocí no-code, nechce programovat, chce ty věci kdyžtak radši koupit. A nevypadalo to, že by se mu chtělo tvořit content, ať už texty nebo videa. Bez programování taky určitě ušetří na prodebugovaných dnech a zbytečných fičurách. Jenže jak potom dát lidem něco unikátního, za co bude mít smysl platit? To upřímně nevím. Udělat pouze placenou komunitu, to mi nepřijde úplně samonosné.</p>
@@ -70,13 +86,13 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <p>A to jsem teda pominul, že lidi mi prostě platí i jen za to, že existuje ta příručka, že jsem ji napsal a dal veřejně na web. Prostě na tom celém vidím, jak kvantita není kvalita a že z no-code a FB skupiny nebo Discordu se nedá jen tak lusknutím prstu vyvařit totéž, co mám já. A to i když opomenu svůj sociální kapitál, který jsem do toho všeho vložil a díky kterému třeba snadno sháním přednášející.</p>
 <p>Nasdíleli jsme si nějaké tipy, psal jsem mu o <a href="https://honzajavorek.cz/blog/spoustim-klub/">svém pivotu</a>. Byznys pro juniory, pokud neděláte kurzy, je minové pole. V Česku zmizelo levio.cz, v zahraničí zase s velkou pompou spouštěli entrylevel.io, ale teď tam vidím akorát rok staré nabídky. Newsletter juniorsintech.com taky skončil. Někomu se ale daří. <a href="https://www.ladybug.dev/">Ladybug</a> běží, <a href="https://twitter.com/emmabostian/">Emma</a> prodává <a href="https://technicalinterviews.dev/">knížky</a>. Ale prodávat knížku svému existujícímu obřímu publiku z celého světa, to je trochu specifické.</p>
 <p>Myslím, že budeme s Dawidem kamarádi. Blbé je, že si asi nepřečte poznámky, které píšu česky, a překládat mu všechno do angličtiny, do soukromých zpráv, asi nebudu. Spíš si prostě občas napíšeme, jak se komu daří a co je nového. Zatím výsledek <a href="https://twitter.com/dawidzamkowski/status/1463057905985503233">tu</a>.</p>
-<h2 id="robot-na-pracovni-nabidky-a-ml">Robot na pracovní nabídky a ML<small class="permalink"><a href="#robot-na-pracovni-nabidky-a-ml" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="robot-na-pracovni-nabidky-a-ml">Robot na pracovní nabídky a ML<small class="permalink"><a href="#robot-na-pracovni-nabidky-a-ml" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Kamarád <a href="https://milavotradovec.cz/">Míla</a> se mi připomenul s ML na rozpoznávání juniorních nabídek, že prý kdy to bude dokončené. Napsal jsem mu, je to v zítřejším plánu, bod 34 hned po „naučit se portugalsky“.</p>
 <p>Domluvili jsme se, že bych mohl sepsat nějakou roadmapu věcí, které je potřeba udělat, aby ML bylo. A že mi s tím možná Míla pomůže. Že mu budu prostě zadávat práci a on to bude dělat. Tak jsem zvědavý, jak se nám to povede, samozřejmě od toho nic nečekám, ale budu se snažit, aby to bylo aspoň teoreticky možné.</p>
 <p>Založil jsem <a href="https://github.com/honzajavorek/junior.guru/issues/737">issue na GitHubu</a> pro koordinaci práce a rozpracoval tam postup. Pak jsem ho ještě několikrát rozpracoval do podrobnějších bodů. Při tom, když už jsem se zamyslel nad optimalizací načítání starých nabídek práce ze záloh, tak jsem to rovnou udělal.</p>
 <p>Po krátkém boji jsem zkrátil načítání z půl hodiny na minutu. Možná jsem to mohl udělat už dřív :D Ale až teď mi červenalo CircleCI častěji a zároveň se to sešlo s tím GitHub issue… no a prostě jakmile je něco promyšlené, někdy je už jednoduché to pak naprogramovat. Myšlení na celý den, programování na 4 řádky.</p>
 <p>Problém byl v tom, že aby vznikala kumulující se tabulka s pracovními nabídkami za celou historii JG, musí se stáhnout zálohy databáze z předchozích dní a z nich se nabídky práce přenést do aktuální databáze a napárovat. To je OK, ale záloh je mnoho a jsou velké. Doteď se to stahovalo všechno a trvalo to nekonečně dlouho. Teď jsem přidal podmínku, že když se to bere od nejnovějších po nejstarší, tak pokud už nové pracovní nabídky pocházející ze záloh nepřibývají, přestanou se stahovat další zálohy.</p>
-<h2 id="robot-na-discord">Robot na Discord<small class="permalink"><a href="#robot-na-discord" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="robot-na-discord">Robot na Discord<small class="permalink"><a href="#robot-na-discord" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Přeuspořádání místností v Discordu stále prokrastinuji, ale aspoň jsem kouknul na bota. Knihovna discord.py před časem umřela, tak jsem hledal žijící fork. <a href="https://zech.codes/moving-on-from-discordpy">Tento článek</a> mě nasměroval, nakonec jsem vybral pycord, ale vlastně upřímně ani moc nevím proč. Přišlo mi, že oba hlavní forky jsou na tom stejně, akorát pycord má možná větší following. Ještě jsem objevil <a href="https://www.hikari-py.dev/">hikari</a>, které existuje už dlouho a je dobře udržované, ale to by bylo na přepis všeho co mám.</p>
 <p>Přidal jsem se na pycord Discord a začal to sledovat i na Twitteru, ať jsem v obraze. Přece jenom je to teď dost blízko mému core businessu. Přeinstaloval jsem knihovnu a zjistil jsem, že abych měl nejnovější verzi, musím instalovat tzv. „alpha“ přímo z Gitu. Nějaký neoficiální návod jsem díky jejich Discordu našel <a href="https://namantech.me/pycord/">tady</a>. Tož dobrá, co se dá dělat, instaluju z Gitu.</p>
 <p>První fičura, kterou měl upgrade umožnit, bylo analyzování Discord threadů. Ty Discord přidal nedávno a můj bot, který běžel ještě na starém discord.py, je přeskakoval, takže v nich nenašel děkovačky ani špendlíky, což jsou zásadní funkce v klubu. Na threadech jsem pak ale spálil hodně času prostě proto, že mi nešlo vymyslet, jak se na ně mám vůbec dostat, hlavně i na archivované thready atd. SDK nebylo úplně přímočaré v tom, jak ze startovací zprávy získat thread, a to ani nemluvím o tom, že jsem si musel domyslet, že thread je pak vlastně totéž, jako kanál.</p>
@@ -85,10 +101,10 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <p>Když už jsem byl u optimalizací, zrychlil jsem i načítání avatarů (tam byla zase u pycord změna a dokonce i nějaké zjednodušení kódu, nemusím už ručně rozpoznávat, zda jde o výchozí Discord avatar, nebo nastavený). Naopak zpracovávání špendlíků se mi zrychlit nepovedlo, muselo by se to celé přepsat a na to jsem se teď vykašlal, jde jen o dvouminutový skript.</p>
 <p>Nakonec jsem si po všech těch změnách všiml, že bot uživateli Jarda odebral roli, kterou získá, když má představení a avatar. Přitom Jarda avatar i představení má. Toto jsem řešil půl hodiny, než jsem si všiml, že Jardové jsou v klubu dva. No nic.</p>
 <p>Výsledkem všech změn je, že se buildy projektu zkrátily z 60 minut na 25 minut. Během změn v botovi jsem upravil i způsob logování informací. Na CI jsem vypnul <em>debug</em> výpisy. Ty mám zase zapnuté na lokálu, když vyvíjím. Do <em>debug</em> si dovolím házet i nějaké specifické informace, například IDčka, názvy threadů a kanálů, atd., ale do <em>info</em>, které se zobrazuje na CI, už dávám pouze vágní nebo agregované info o tom, co se zhruba děje. Nechci, aby mi do CI logů zbytečně padala data z klubu, přece jenom je to veřejné, ale klub veřejný není.</p>
-<h2 id="dokoncovani-clanku-pro-heroine">Dokončování článku pro Heroine<small class="permalink"><a href="#dokoncovani-clanku-pro-heroine" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="dokoncovani-clanku-pro-heroine">Dokončování článku pro Heroine<small class="permalink"><a href="#dokoncovani-clanku-pro-heroine" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Místo prvního odstavce jsem měl u předešlého odevzdaného článku napsáno „bla bla bla, stejně redakce napíše lepší úvod“, ale to mi neprošlo, tak jsem to ještě v průběhu týdne dopisoval. Tento článek, který jsem se snažil <a href="https://twitter.com/honzajavorek/status/1463589379390193664">podpořit anketou na Twitteru</a>, vyšel v pátek: <a href="https://www.heroine.cz/zeny-it/6682-chcete-zacit-programovat-a-nevite-kudy-do-toho">Chcete začít programovat a nevíte kudy do toho?</a> Potěšilo mě, že tentokrát se nemuselo seškrtat skoro nic a dokonce se do postranních boxíků vlezlo i to, co jsem myslel, že se nikam nevleze.</p>
 <p>Taky jsem psal další článek. Psal jsem ho pozdě, měl termín v neděli, odevzdal jsem ho v úterý. Ale dovolil jsem si to, protože i vydávání článků mělo skluz. Nikdo neprotestoval. Kdy vyjde, to zatím nevím.</p>
-<h2 id="zmena-brandingu-na-socialnich-sitich">Změna brandingu na sociálních sítích<small class="permalink"><a href="#zmena-brandingu-na-socialnich-sitich" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="zmena-brandingu-na-socialnich-sitich">Změna brandingu na sociálních sítích<small class="permalink"><a href="#zmena-brandingu-na-socialnich-sitich" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>O víkendu jsem se rozhodl „relaxovat“ tím, že uvedu v realitu něco, co mi šťouralo už delší dobu v hlavě v návaznosti na mé předchozí studium marketingu. Řekl jsem si, že informace o JG přesunu víc na svoje osobní profily. JG je tak či tak pevně spjato s mou osobou a od začátku se nijak nebráním tomu, abych brand propojoval. Rozhodl jsem se to tedy propojit důrazněji.</p>
 <p>Nahrál jsem si na většinu sociálních sítí nový profilový obrázek. Použil jsem svou starou fotku z jedné ze svých přednášek, kterou jsem už stejně používal v záhlavích, tuším na Twitteru a LinkedIn. Ve <a href="https://www.photopea.com/">Photopea</a> jsem se vyřízl a udělal tam bílý okraj, na pozadí jsem dal žlutou barvu z JG. Výsledkem je moje fotka, neutrální, ale barvou brandovaná do JG. Podvědomě budu svou přítomností na sociálních sítích dělat JG reklamu, případně někoho bude zajímat, co je to za žlutého blázna, a můj profil si spíš rozklikne. Taková výrazná žlutá se totiž na profilovkách moc nevyskytuje, takže je to vidět a je to jasně rozpoznatelné.</p>
 <p>Taky jsem zapracoval na „cover“ obrázcích. Vytvořil jsem je všechny v Keynote jako slajdy a exportoval jako obrázky. U některých profilů si to vzalo dost ladění, tzn. opakované exportování, nahrávání na profil a další upravování. Části cover obrázku jsou na různých místech totiž zakryté, někdy je to i v různých kontextech na různých místech. FB zase k obrázkům zdola přidává jakýsi hnusný přechod, který funguje možná dobře na fotky, ale ne na jednobarevné věci s ilustracemi. O různých rozměrech všech těch pruhů ani nemluvím. Nejtěžší to bylo asi na LinkedIn, kde je velmi úzký pruh a na mém profilu je překrytý mou fotkou vlevo, ale jinde je fotka uprostřed. Takže jsem dal doprostřed kuře tak, aby se přesně na pixel zakrylo mou fotkou v tom druhém případě. Prostě piplačka.</p>
@@ -98,10 +114,10 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <p>O FB skupinu se nechci starat a moderovat ji, nebo tam budovat jakoukoliv komunitu. Na to mám klub. Zároveň ji nemůžu smazat. Je tam 800+ lidí, FB preferuje skupiny, interakce s novinkami o JG tam celkem je. A lidi tu skupinu hlavně nacházejí přes klíčová slova a sami se do ní přidávají. Je to vlastně takový SEO lapač, ale na FB. Tak jsem ji přepnul do „módu pro čtení“. Všechny příspěvky musím nejdřív schválit. Obrázek a popisek jsem změnil tak, aby jasně vedly na JG. Ještě bych mohl přidat nějaké oznámení jako uvítání nebo nějaká pravidla pro vstup, ale s tím si pohraju jindy. V podstatě bude skupina fungovat jako by měla fungovat FB stránka, ale na rozdíl od FB stránky moje posty FB aspoň zobrazí pár lidem.</p>
 <p>Svůj osobní profil na FB jsem pročistil a ve své hlavě jej mentálně přepnul spíš do něčeho, jako je můj Twitter. FB kdysi bylo místo, kde jsem se bavil se svými kamarády a dovídal se o tom, co dělají, ale už dlouho tím místem není. Využil jsem funkce archivace příspěvků a všechno před rokem 2019 jsem archivoval, tedy nesmazal, ale nejde to už vidět. Bylo to nekonečné klikání v administraci a objevil jsem při tom mnoho vzpomínek. Je škoda, že se z FB stalo co se z něj stalo, ale to už nejde vrátit. Část mých kamarádů už si jej smazala úplně. Já už delší dobu měním svůj přístup k tomu, co tam píšu. Tento víkend byl jen završením této změny. Nebude z toho „reklamní prostor“, normálně jsem tam pořád jako Honza Javorek, i když teď teda budu víc psát o JG i přímo na osobním profilu. Budou pokračovat ilustrované statusy o tom, jak něco sháním, stále budu diskutovat a normálně tu síť používat. Jen budu profil brát víc jako místo, kde mohu něco propagovat, než kde mám fotky z vysokoškolských párty. Jiné než veřejné příspěvky psát už nebudu. Jak jsem už psal, prostě jako Twitter.</p>
 <p>Ještě musím lidi přesměrovat z firemních profilů na moje osobní. To bude nejhorší na IG, kde mám 700 followerů, zatímco Honza Javorek má 150. Myslím ale, že je to dobrý tah a měl bych to udělat raději dříve než později. Např. i Heroine když propaguje články, propaguje tam můj profil, ne JG. Dává prostě smysl spojit to se mnou a informovat o JG na svém vlastním profilu jako o něčem, co dělám a případně přidat i něco ze zákulisí.</p>
-<h2 id="jakub-a-memy">Jakub a memy<small class="permalink"><a href="#jakub-a-memy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="jakub-a-memy">Jakub a memy<small class="permalink"><a href="#jakub-a-memy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Minule jsem psal, jak se navzájem dobíráme s <a href="https://jakubmrozek.cz/">Jakubem Mrozkem</a>. To dobírání si s sebou nese spoustu kontextu. Lidem, kteří nečtou naši soukromou Messenger konverzaci (ahoj Zucku), to může vyznít všelijak, tak bych tady chtěl jen zmínit, že já Jakubovi závidím, že může číst knihy jak na běžícím páse, nesměju se mu za to. Četl bych taky.</p>
 <p>Taky rozumím tomu, proč věci dělá tak jak je dělá, má k tomu své dobré důvody. Můžu se smát memům, ale mega mu držím palce. Kdyby existovala jedna cesta k úspěchu, tak JG neexistuje, protože po ní rozhodně od začátku nešlo, nedrželo se všech pouček. Vždy je potřeba dělat věci v kontextu, ne slepě opakovat poučky, i když na memu vypadají dobře. Já sám jsem se provinil hned několika věcmi, ze kterých si Dagobert dělá v memech srandu, přitom JG existuje a roste.</p>
-<h2 id="komunikace-s-firmami">Komunikace s firmami<small class="permalink"><a href="#komunikace-s-firmami" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="komunikace-s-firmami">Komunikace s firmami<small class="permalink"><a href="#komunikace-s-firmami" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <ul>
 <li>Volal jsem si s CDN77 a vymýšleli jsme, jak budeme dál spolupracovat.</li>
 <li>Byla schůze výboru <a href="https://pyvec.org/">Pyvce</a>.</li>
@@ -109,7 +125,7 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Psal jsem jedné firmě, zda chce prodloužit logo na příručce.</li>
 <li>S Mews jsme řešili přikoupení dalšího vstupu pro dalšího člověka do klubu.</li>
 </ul>
-<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <ul>
 <li>Řešil jsem s Czechitas nesrovnalost v API, kterým jim dávám data z pracovních nabídek. Druhá strana je v práci zaneprázdněna probíhajícím Black Friday, takže výsledek debugování se dovím později.</li>
 <li>Se Soňou jsme si domluvili <a href="https://junior.guru/events/#planned">detaily příští přednášky</a>.</li>
@@ -117,54 +133,84 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Zkoušel jsem dvě různé aplikace na podcasty s tím, že snad bude aspoň jedna méně blbá než Spotify: <a href="https://overcast.fm/">Overcast</a> a <a href="https://www.pocketcasts.com/">Pocket Casts</a>. Vítěze zatím nemám, ale méně blbé než Spotify jsou obě.</li>
 <li>Během 8 dní od 22.11. do 29.11. jsem při procházkách nachodil 11 km, na túrách nachodil 8 km. Celkem jsem se hýbal 7 hodin a zdolal při tom 19 kilometrů.</li>
 </ul>
-<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Tři věci, které bych chtěl zvládnout udělat příště:</p>
 <ol>
 <li>Pověnovat se uspořádání klubu, kde už se delší dobu hromadí nápady na změny. Nadělit klubu vánoční dárek.</li>
 <li>Doladit způsob, jakým budu propagovat věci na sociálních sítích a zpropagovat přednášku Soni.</li>
 <li>Napsat čtvrtý <a href="https://www.heroine.cz/zeny-it/">článek pro Heroine</a>.</li>
 </ol>
-<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
-<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Tento týden jsem nepřečetl nic, co bych <a href="https://getpocket.com/@honzajavorek">sdílel na Pocketu</a>. Toto se stalo poprvé! Snad se to nebude opakovat.</p>
 <p>Poslouchám teď dost podcasty, ale ty nikde nesdílím, i když se mi líbí. Zkusím ručně sepsat pár náhodných doporučení bez dalšího komentáře: Hlas Heroine, Prostor X, Moderná firma, Lepší města, Přepište dějiny, Bourání, Fall of Civilizations.</p></div></div></div></div>
-  </div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

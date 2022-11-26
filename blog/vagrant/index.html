@@ -7,17 +7,16 @@
 
     <meta property="og:title" content="Vagrant &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/vagrant/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
-          <meta property="og:image" content="https://honzajavorek.cz/images/home/honza.jpg">
-      <meta name="twitter:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+          <meta property="og:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+      <meta name="twitter:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
       <meta name="twitter:card" content="summary">
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -30,36 +29,54 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/vagrant/" rel="bookmark">
-        Vagrant
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2013-11-28T11:35:02+01:00">
-            28. 11. 2013
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Vagrant
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/vagrant/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2013-11-28T11:35:02+01:00">
+          28. 11. 2013
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        8
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/vagrant&interval=week&start=2013-11-28T11:35:02+01:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
-      <div class="article-warning">
+  <main class="article-content">
+      <div class="alert alert-warning article-warning" role="alert">
         <p>
-          <strong>Upozornění!</strong> Tento článek vyšel
-          před 9 lety.
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          Tento článek vyšel
+          <strong>před 9 lety</strong>.
           Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
           že dnes se Honza již nemusí s obsahem ztotožňovat.
         </p>
@@ -77,7 +94,7 @@ díváte na film.</p>
 PostgreSQL je běžné mít v systému uživatele pro každou roli v databázi, MongoDB zase po čase
 a určité zátěži vyžaduje změnu pár konfiguráků pro navýšení několika linuxových limitů. <em>Špína
 je zažraná.</em></p>
-<h2 id="reseni">Řešení<small class="permalink"><a href="#reseni" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="reseni">Řešení<small class="permalink"><a href="#reseni" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Když mě tohle celé štvalo, postěžoval jsem si na Twitter a tam mě poslali k <del>šípku</del> Vagrantu.
 <a href="http://vagrantup.com/">Vagrant</a> je takový <strong>obal nad VirtualBoxem či jiným správcem virtuálních mašin</strong>,
 který vám na pár příkazů do minuty vyrobí neekologickou, tedy velice spotřební virtuálku na vývoj.
@@ -85,14 +102,14 @@ Hodně lidí to má na zkoušní <a href="https://www.youtube.com/watch?v=LLCF7v
 hodí se to právě i na izolaci závislostí potřebných k vývoji.</p>
 <p>Další detaily o Vagrantu si zjistěte v jeho dokumentaci nebo si pusťte tohle video z Tkalců (sraz
 webařů z Valašského Meziříčí), na kterém jsem začal i já:</p>
-<figure><iframe width="640" height="480" src="//www.youtube.com/embed/EBKGHwJ6Jxs" frameborder="0" allowfullscreen></iframe>
+<figure class="figure figure-embed"><iframe width="640" height="480" src="//www.youtube.com/embed/EBKGHwJ6Jxs" frameborder="0" allowfullscreen></iframe>
 
-</figure><h2 id="dojmy">Dojmy<small class="permalink"><a href="#dojmy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+</figure><h2 id="dojmy">Dojmy<small class="permalink"><a href="#dojmy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Chtěl jsem něco, co mi <strong>spustí všechny závislosti když začnu pracovat na projektu</strong>
 a shodí je, když přestanu. Pak jsem chtěl něco, co <strong>izoluje všechny možné databáze a servery</strong> (prostě
 striktně cokoliv za hranicemi běžného <a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/">Pythoního virtualenvu</a>)
 od mého ubohého uživatelského OS. To druhé jsem dostal, to první ne.</p>
-<h3 id="lokalni-sluzby">Lokální služby<small class="permalink"><a href="#lokalni-sluzby" title="Trvalý odkaz na tento nadpis">#</a></small></h3>
+<h3 id="lokalni-sluzby">Lokální služby<small class="permalink"><a href="#lokalni-sluzby" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>V podstatě mám ty virtuálky hlavně na databáze, jen na jedné mám nějaké to PHP, Apache, apod. Fajn
 je, že pokud člověk striktně dodrží čistotu a ve vlastním OS opravdu žádné takové služby nemá,
 vše lze jednoduše udělat tak, aby to po spuštění <strong>vypadalo jako místní služba</strong>:</p>
@@ -110,7 +127,7 @@ prostředí v Nette</strong>. To si samozřejmě na virtuálce myslí, že je na
 s maňásky ve tvaru Davida Grudla se mi nepovedlo ho plně přesvědčit o něčem jiném (trochu jo,
 ale z debugbaru zmizela polovina panelů - eh, WTF?). Je to sice <em>legacy</em> projekt, je tam starší Nette,
 kdo ví jak je to dnes, ale stejně. Porod, práce navíc, otrava, nechuť, smutek, atakdále...</p>
-<h3 id="automatizace-workflow">Automatizace workflow<small class="permalink"><a href="#automatizace-workflow" title="Trvalý odkaz na tento nadpis">#</a></small></h3>
+<h3 id="automatizace-workflow">Automatizace workflow<small class="permalink"><a href="#automatizace-workflow" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>Kód, Python, atd. mám normálně u sebe - to mi nevadí, protože co se týče izolace, vystačím si s
 nástrojem <a href="http://virtualenvwrapper.readthedocs.org/en/latest/">virtualenvwrapper</a> a jeho
 <a href="http://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html#command-mkproject">konceptem pro projekty</a>.
@@ -141,7 +158,7 @@ ale toto řešení shořelo na tom, že <strong>životnost virtualenvu
 není rovna mé práci na projektu</strong> - během práce můžu mít otevřených i pět terminálů a v každém mít
 aktivovaný ten virtualenv. Navíc ani ten se nedeaktivuje (hook se nezavolá) automaticky při zavření
 terminálu, musel bych ručně napsat <code>deactivate</code>, abych vše zavřel - a jsme tam, kde jsme byli.</p>
-<h3 id="devops-provisioning">DevOps &amp; Provisioning<small class="permalink"><a href="#devops-provisioning" title="Trvalý odkaz na tento nadpis">#</a></small></h3>
+<h3 id="devops-provisioning">DevOps &amp; Provisioning<small class="permalink"><a href="#devops-provisioning" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>Co jsem v poslední době opravdu neměl moc rád a snažil jsem se tomu co nejpečlivěji vyhýbat, bylo
 <em>DevOps</em>, tedy <strong>správa serverů</strong>.</p>
 <p>Rok jsem měl koupené vlastní VPS u Wedosu a platil ho, ale stejně
@@ -162,7 +179,7 @@ apod. Spousta drbání navíc, které mě vůbec nebaví. Na druhou stranu, má 
 </ul>
 <p>Takže doufám, že mě ten automatizovaný provisioning jednou nezklame a bude to opravdu
 "DevOps pro blbečky a lenivce", jak si to představuju já.</p>
-<h2 id="zhodnoceni">Zhodnocení<small class="permalink"><a href="#zhodnoceni" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="zhodnoceni">Zhodnocení<small class="permalink"><a href="#zhodnoceni" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Co mi Vagrant přinesl:</p>
 <ul>
 <li>izolace vývojářského bordelu</li>
@@ -190,42 +207,72 @@ Nebo kdyby to aspoň bylo "pro blbečky" úplně stejně jako Vagrant a člověk
 studovat a hrát si s tím - přeci jen jsem placen za programování a nastavování OS k vývoji je pouze
 otravná, doprovodná činnost (ne, moje hobby to fakt není, hobby je v mých očích florbal nebo tancování).
 Díky za všechny tipy.</p></div></div></div></div>
-  </div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

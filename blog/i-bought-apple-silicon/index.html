@@ -7,8 +7,6 @@
 
     <meta property="og:title" content="I bought Apple Silicon &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/i-bought-apple-silicon/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
     <meta property="og:image" content="https://honzajavorek.cz/images/apple-silicon.jpg">
     <meta property="og:image:width" content="1024">
@@ -17,8 +15,9 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -31,41 +30,58 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/i-bought-apple-silicon/" rel="bookmark">
-        I bought Apple Silicon
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2020-12-18T00:00:00+01:00">
-            Dec 18, 2020
-          </time>
-        </small>
+  <h1 class="title display-5">
+    I bought Apple Silicon
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/i-bought-apple-silicon/" rel="bookmark" title="Link to this article">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2020-12-18T00:00:00+01:00">
+          Dec 18, 2020
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        13
+          min of reading
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/i-bought-apple-silicon&interval=week&start=2020-12-18T00:00:00+01:00&end=today">
+            Stats
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
+  <main class="article-content">
 
     <div><div><div><div><p>I bought the new M1 Apple Silicon MacBook Air, and this is an article about why I did it, what was my decision process, what are my first impressions, and how I've approached the initial setup. The artcile is just a quick brain dump for the purposes of sharing my experiences with my friends and other readers of my blog, so don't expect any benchmarks or anything like that, this is not a serious review.</p>
-<figure><img alt="Apple Silicon" src="https://honzajavorek.cz/images/apple-silicon.jpg"><figcaption>
+<figure class="figure"><img alt="Apple Silicon" src="https://honzajavorek.cz/images/apple-silicon.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
 Photo by me</figcaption></figure>
-<h2 id="why-i-bought-new-computer">Why I bought new computer<small class="permalink"><a href="#why-i-bought-new-computer" title="Permanent link to this heading">#</a></small></h2>
+<h2 id="why-i-bought-new-computer">Why I bought new computer<small class="permalink"><a href="#why-i-bought-new-computer" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>My computer's display started slowly dying this year, suffering from gradually more and more serious <a href="https://www.youtube.com/watch?v=sbR2VhHLuW0">ghosting</a>. By November it was so bad that I could barely read any letters after an hour or two of using the machine. It's MacBook 12" early 2015, which I bought a few years ago, second hand, refurbished.</p>
 <p>As far as I know, <em>refurbished</em> should mean that the computer was used as a sample machine somewhere, e.g. in an Apple Store. When they didn't need it anymore, it got checked for defects and sold for a cheaper price as a second hand product in a very good shape. My theory is that the computer was almost unused by the time I've bought it, but perhaps it was open with the display shining all the time in the shop, so durability of the pixels suffered a lot.</p>
 <p>Anyway, in addition to that, the machine's performance is a total potato these days. I have always appreciated its portability (size and weight of a magazine) and silence (has no fan), but I've spent most of this year at home, so I didn't care about portability, and the world got more bloated, so the minimum requirements for a smooth user experience are higher than in 2015. So by the summer 2020 I found myself wishing a new machine, and it just happened that Apple was about to release something with the new processors. I decided to wait, because I thought that (at the time) the latest machines would get cheaper if Apple releases something new.</p>
-<h2 id="how-i-decided-to-buy-apple-silicon">How I decided to buy Apple Silicon<small class="permalink"><a href="#how-i-decided-to-buy-apple-silicon" title="Permanent link to this heading">#</a></small></h2>
+<h2 id="how-i-decided-to-buy-apple-silicon">How I decided to buy Apple Silicon<small class="permalink"><a href="#how-i-decided-to-buy-apple-silicon" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>When the first reviews were out, I waited for some more, but then it was just obvious this is a big change, a revolutionary machine, which is going to destroy the consumer market. I've enjoyed the following:</p>
 <ul>
 <li><a href="https://singhkays.com/blog/apple-silicon-m1-black-magic/">Apple Silicon M1: Black. Magic. Fuckery.</a> - compilation of various first impressions</li>
@@ -77,21 +93,21 @@ Photo by me</figcaption></figure>
 <p>I decided I don't need more RAM than 8 GB, because nobody from the first reviewers managed to give the RAM a hard time. It seemed to me it's a different beast altogether and it doesn't make sense to just compare numbers and say that more is better. Apple allows you to buy a computer with more than 8 GB RAM, but I think it's just a trap how to satisfy and charge those who don't believe the reviews and just want more RAM whatever it takes.</p>
 <p>I also decided I want 512 GB drive, as I'm used to that size and I didn't want to downgrade. Also, I had serious capacity problems with my 16 GB iPhone SE and my wife still has serious capacity problems with her 128 GB old Air, so I really wanted to avoid that in the future.</p>
 <p>I decided I don't mind that Docker or any kind of virtualization isn't supported (yet), because I don't use it. I'm self-employed solo enterpreneur now and Docker or Kubernetes play no role in my dev stack, also I use no virtual machines, nothing like that. If I was about to get a regular job somewhere, I assume they'd provide me a dedicated work computer. Also, I think <a href="https://www.docker.com/blog/download-and-try-the-tech-preview-of-docker-desktop-for-m1/">it's gonna be resolved soon</a>.</p>
-<h2 id="first-impressions">First impressions<small class="permalink"><a href="#first-impressions" title="Permanent link to this heading">#</a></small></h2>
+<h2 id="first-impressions">First impressions<small class="permalink"><a href="#first-impressions" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>The new Air arrived this Tuesday, so as of writing this article, I work on it for 4 days. To be honest, upgrading from a years old machine with a dying display and a potato performance, to this shiny new beast, is… It's unbelievable.</p>
 <p>The change in responsivity is really significant and I totally love it. I don't think I've ever used anything faster. With my potato machine I got used to going to bloated websites from my phone, as it felt that iPhone X can deal with them much better, but now the phone feels slow. <a href="https://isapplesiliconready.com/">The optimized apps</a> are super snappy. Safari runs smooth and fast like crazy. Firefox the same. Spotify, Slack, Discord, Facebook, Twitter, LinkedIn, all the annoying bloated websites, which I used to hate so much for the past months, now run like if they were the most optimized websites on the internet. Honestly, I have problems to grasp the speed by my brain. It's just too much of a difference compared to my previous experience. It's like riding on a sloth and then suddenly switching to a super sonic rocket. I feel like I click on a tab in my browser and it happens instantly, and then it takes billion milliseconds until my brain realizes the action has been already performed and I can proceed to whatever else I wanted to do. I can now actually say when something needs network, because everything else is super fast. Whenever there's the slightiest lag, it's because network is involved, and because my network is slow.</p>
 <p>I wanted to go with clean installation, so I didn't do any kind of smart restore from backup or anything like that. Just setting up the new system and moving my files, installing a few programs, like in the old days. Thanks to fast USBs and SSDs on both the computers and my external drive, moving the data was very fast, took just a few minutes.</p>
 <p>I didn't upgrade to Catalina with my old laptop, because I wanted to play my 32bit Steam games, so macOS Big Sur is a quite a change for me now. A lot of setting up in the beginning, but all quite straightforward. A few surprises, such as zsh being the default shell in macOS now (change by <code>chsh -s /bin/bash</code>). Finally I can set Finder to sort by name AND have folders at the top, at the same time. For me as a person who switched to macOS from other systems, it has always felt so silly that this wasn't possible.</p>
-<h3 id="touchid">TouchID<small class="permalink"><a href="#touchid" title="Permanent link to this heading">#</a></small></h3>
+<h3 id="touchid">TouchID<small class="permalink"><a href="#touchid" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>Having TouchID as part of the computer is a nice surprise. As a person who has sweaty hands all the time, I didn't believe it's gonna work. But it's actually able to read my fingers without any problems. The iPhone SE couldn't deal with my fingers. It was a source of a lot of frustrations and one of a few major reasons why I switched to iPhone X in Feb 2020, which has FaceID (only if the pandemics didn't bring face masks right after that).</p>
 <p>It's very comfortable to use TouchID to login to the operating system, to 1Password, or to confirm a purchase in App Store (although that had to be first set up somewhere deep in the System Preferences, bah). Opening 1Password with a single finger touch is definitely a major productivity win for me.</p>
-<h3 id="battery">Battery<small class="permalink"><a href="#battery" title="Permanent link to this heading">#</a></small></h3>
+<h3 id="battery">Battery<small class="permalink"><a href="#battery" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>On Wednesday I tested the battery. 9am I unplugged the computer from electricity with 100% battery, and it started complaning about power only around 10pm. That's 13 hours. That said, during that day, I did mostly internet stuff, perhaps played some music, had 1 hour long call over MS Teams, 1 hour long call over Google Meet, and from 7pm to 10pm I attended an online meetup over Zoom. Before I connected to the meetup at 7pm, it still had almost 30 % battery left. Of course, no fan sound, as the machine has no fan, and it was only lukewarm between the keyboard and the display, cold everywhere else. Amazing!</p>
-<h3 id="games">Games<small class="permalink"><a href="#games" title="Permanent link to this heading">#</a></small></h3>
+<h3 id="games">Games<small class="permalink"><a href="#games" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>On Black Friday I bought <a href="https://store.steampowered.com/app/435150/Divinity_Original_Sin_2__Definitive_Edition/">Divinity: Original Sin 2</a>, but it would crash on my machine. On the Apple Silicon Air, even though I run the game through Rosetta 2, I've put all the sliders in the performance settings to the highest positions, and it runs so smooth that when moving the game camera I actually experience problems to get my head around so many details happening on my screen. It's beautiful. Of course, the machine makes no sound, as it has no fan.</p>
 <p>There is a <a href="https://applesilicongames.com/">list of games which are optimized</a>, but I just installed Steam using Rosetta 2, downloaded the games I wanted through it, and didn't bother further.</p>
-<h2 id="setup">Setup<small class="permalink"><a href="#setup" title="Permanent link to this heading">#</a></small></h2>
-<h3 id="homebrew">Homebrew<small class="permalink"><a href="#homebrew" title="Permanent link to this heading">#</a></small></h3>
+<h2 id="setup">Setup<small class="permalink"><a href="#setup" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
+<h3 id="homebrew">Homebrew<small class="permalink"><a href="#homebrew" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>Setting up and figuring up Homebrew was a major drag, especially because my connection isn't very fast and initializing Homebrew downloads a lot of stuff over git, so it's endless. Before I found out the ideal configuration, I had to do it several times. I don't like Apple Store very much, so I only use it for installing apps which are not available as Homebrew casks, e.g. <a href="https://sindresorhus.com/lungo">Lungo</a>. I install everything else using Homebrew.</p>
 <p>Homebrew suggests using it through Rosetta 2 (translation layer), which is fine, but I wanted to be able to also install apps which are already native to Apple Silicon. People post <a href="https://www.youtube.com/watch?v=nv2ylxro7rM">tutorials on how to have two Homebrew installations side by side</a>, but it still took me some time to figure everyhting out. My setup after some trial and error:</p>
 <ul>
@@ -130,12 +146,12 @@ brew<span class="o">()</span> <span class="o">{</span>
 <span class="o">}</span>
 </code></code></pre>
 
-<h3 id="vs-code">VS Code<small class="permalink"><a href="#vs-code" title="Permanent link to this heading">#</a></small></h3>
+<h3 id="vs-code">VS Code<small class="permalink"><a href="#vs-code" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>Visual Studio Code is now optimized for Apple Silicon, or at least I was able to install it by <code>brew-arm install visual-studio-code</code> and it works and it's snappy. I hated that app on my last laptop, it was very slow and bloated, and I've been considering switching to something else. Now I don't care enough to see whether it's actually optimized or not, it's faster than my brain and that's quite enough. Unlike the other GUI apps I have, this one I want to have accessible from the terminal. It has a simple solution though, I just needed to <a href="https://code.visualstudio.com/docs/setup/mac#_alternative-manual-instructions">follow the official tutorial</a> and put this to my <code>.bash_profile</code>:</p>
 <pre class="highlight"><code><span></span><code><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$PATH</span><span class="s2">:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"</span>
 </code></code></pre>
 
-<h3 id="python">Python<small class="permalink"><a href="#python" title="Permanent link to this heading">#</a></small></h3>
+<h3 id="python">Python<small class="permalink"><a href="#python" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>With Homebrew over Rosetta 2, installing Python 3 works just fine. It might work natively too, but as I mentioned, I decided not to mess with that yet. I usually also have <code>pipenv</code> and <code>poetry</code> installed globally, and over past years, by various trials and errors, I ended up installing those two by:</p>
 <pre class="highlight"><code><span></span><code>$ pip3 install --user poetry pipenv
 </code></code></pre>
@@ -159,67 +175,102 @@ brew<span class="o">()</span> <span class="o">{</span>
 </code></code></pre>
 
 <p>I hate it when new Python version gets released, Homebrew automatically upgrades it, all my virtual environments with their symlinks get broken, and I have to re-create them one by one. I was lazy to solve that issue on my previous laptop, but with the new one I wanted to do it in a smarter way, managing Python installations by <code>pyenv</code>. However, I got errors. It seems <code>pyenv</code>, although installed with Rosetta 2, has issues to get Pythons to Apple Silicon. So I gave up on that for now and I'm going to do it the old way, using Homebrew-managed Python 3, and swearing every time it upgrades system-wide.</p>
-<h3 id="terminal">Terminal<small class="permalink"><a href="#terminal" title="Permanent link to this heading">#</a></small></h3>
+<h3 id="terminal">Terminal<small class="permalink"><a href="#terminal" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>When I've been setting up Homebrew, I worked a lot with the built-in macOS terminal. It felt quite okay, and to be honest, I forgot the reasons why I've been using iTerm2. So I decided I'll give the built-in one a go and see whether it's sufficient for the stuff I do. So far it's okay.</p>
-<h2 id="would-i-recommend-it">Would I recommend it?<small class="permalink"><a href="#would-i-recommend-it" title="Permanent link to this heading">#</a></small></h2>
+<h2 id="would-i-recommend-it">Would I recommend it?<small class="permalink"><a href="#would-i-recommend-it" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Well, yeah, sure, I'd totally recommend it. The computer is like a MIRACLE, especially if you upgrade from a potato machine. If nothing holds you back, like the lack of virtualization support, go for it. I hope it's gonna be this snappy for at least five years going forward. Given the little chance Intel or anyone else is going to keep up with this new level of performance, I believe this new laptop could be with me perhaps even longer, unless everyone else in the world buys it and developers start to create 10x bloated apps compared to today.</p>
 <p>Secretly, of course, I wish other manufacturers to be able to keep up with Apple, against all the odds. I wish they rolled their sleeves and came up with something awesome, too. Because the last thing anyone needs is another market where Apple has monopoly.</p></div></div></div></div>
-  </div>
+    </main>
 
-  <div class="article-comments">
-    <h3>Comment&nbsp;at</h3>
-    <ul>
-      <li>
-        <a href="https://www.facebook.com/honzajavorek/posts/10158666148237707">
-          <i class="fa fa-facebook-official"></i>&nbsp;Facebook</a>
-      </li>
-      <li>
-        <a href="https://news.ycombinator.com/item?id=25472370">
-          <i class="fa fa-hacker-news"></i>&nbsp;Hacker News</a>
-      </li>
-      <li>
-        <a href="https://www.reddit.com/r/apple/comments/kfx1yz/i_bought_apple_silicon/">
-          <i class="fa fa-reddit"></i>&nbsp;Reddit</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/honzajavorek/status/1340068645708439553">
-          <i class="fa fa-twitter"></i>&nbsp;Twitter</a>
-      </li>
-    </ul>
-  </div>
+  <section id="comments" class="article-comments comments">
+      <h3 class="comments-heading">Comments at</h3>
+      <ul class="comments-list">
+        <li class="comments-item">
+          <i class="bi bi-reddit"></i>
+          <a href="https://www.reddit.com/r/apple/comments/kfx1yz/i_bought_apple_silicon/">
+            Reddit</a>
+        </li>
+        <li class="comments-item">
+          <i class="bi bi-twitter"></i>
+          <a href="https://twitter.com/honzajavorek/status/1340068645708439553">
+            Twitter</a>
+        </li>
+        <li class="comments-item">
+          <i class="bi bi-facebook"></i>
+          <a href="https://www.facebook.com/honzajavorek/posts/10158666148237707">
+            Facebook</a>
+        </li>
+        <li class="comments-item">
+          <i class="bi bi-chat"></i>
+          <a href="https://news.ycombinator.com/item?id=25472370">
+            Hacker News</a>
+        </li>
+      </ul>
+  </section>
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-<a href="https://honzajavorek.cz">Honza Javorek</a> is a software engineer and
-a founder of <a href="https://junior.guru/">junior.guru</a>, a Czech project helping
-people to get their first job in tech. Since 2011 he's been helping
-to drive the growth and success
-of the <a href="https://python.cz/en/">Czech Python User&nbsp;Group</a>.      </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Originally software engineer, now more of an enterpreneur.
+          Creator of <a href="https://junior.guru/">junior.guru</a>, a project for Czech and Slovak beginners in coding.
+          Long-term volunteer and <a href="https://pyvec.org/en/#members">official</a> in the <a href="https://python.cz/en/">Czech Python community</a>.
+          This is my blog for 15 years now.
+      </address>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Personal site</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Articles archive
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

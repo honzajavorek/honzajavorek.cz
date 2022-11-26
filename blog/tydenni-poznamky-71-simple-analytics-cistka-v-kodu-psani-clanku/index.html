@@ -7,8 +7,6 @@
 
     <meta property="og:title" content="Týdenní poznámky #71: Simple Analytics, čistka v kódu, psaní článku &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-71-simple-analytics-cistka-v-kodu-psani-clanku/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
     <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
     <meta property="og:image:width" content="1024">
@@ -17,8 +15,9 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -31,48 +30,65 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-71-simple-analytics-cistka-v-kodu-psani-clanku/" rel="bookmark">
-        Týdenní poznámky #71: Simple Analytics, čistka v kódu, psaní článku
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2021-10-24T00:00:00+02:00">
-            24. 10. 2021
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Týdenní poznámky #71: Simple Analytics, čistka v kódu, psaní článku
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-71-simple-analytics-cistka-v-kodu-psani-clanku/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2021-10-24T00:00:00+02:00">
+          24. 10. 2021
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        15
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-71-simple-analytics-cistka-v-kodu-psani-clanku&interval=week&start=2021-10-24T00:00:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
+  <main class="article-content">
 
     <div><div><div><div><p>Utekl zase nějaký ten týden (18.10. — 24.10.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-70-nova-prirucka/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/club/">klub</a>, a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.</p>
-<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
 Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
-<h2 id="zruseni-stareho-ceniku-a-simple-analytics">Zrušení starého ceníku a Simple Analytics<small class="permalink"><a href="#zruseni-stareho-ceniku-a-simple-analytics" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="zruseni-stareho-ceniku-a-simple-analytics">Zrušení starého ceníku a Simple Analytics<small class="permalink"><a href="#zruseni-stareho-ceniku-a-simple-analytics" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Po překlopení příručky na Markdown a nový design mi přišlo nejlepší vyčistit oblast kolem stránky https://junior.guru/hire-juniors/, kde byl ceník pro jednorázové nabídky práce a pod ním ceník sponzorství příručky firemním logem. Tři čtvrtiny ceníku už nebyly tak úplně v platnosti, polovina textů nebyla zcela aktuální. Rozhodl jsem se stránku úplně odebrat. To spustilo jakýsi efekt padajících kostek domina, resp. stránek a kódu, které jsem mohl <em>konečně</em> smazat.</p>
-<h3 id="simple-analytics">Simple Analytics<small class="permalink"><a href="#simple-analytics" title="Trvalý odkaz na tento nadpis">#</a></small></h3>
+<h3 id="simple-analytics">Simple Analytics<small class="permalink"><a href="#simple-analytics" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>Na stránce byla čísla o návštěvnosti. Rozhodl jsem se konečně zkusit <a href="https://referral.simpleanalytics.com/honza-javorek">Simple Analytics</a> a <a href="https://simpleanalytics.com/junior.guru">zveřejnit kompletně návštěvnost junior.guru</a>, nepatlat se s nějakými jednotlivými čísly. Jak jsem <a href="https://twitter.com/honzajavorek/status/1451243454558781449">psal na Twitteru</a>, konečně vidím na jeden klik jakou mám návštěvnost, nemusím řešit žádné cookies, mohu mít veřejnou nástěnku s grafy. A má to import z Google Analytics. Dokonce se mi povedlo nasměrovat měřící skript přes vlastní doménu, takže by jej teď už neměly blokovat adblocky (nejde o žádné trackování, jen zcela anonymní počítání návštěvnosti, navíc pokud si v prohlížeči zapnete <a href="https://en.wikipedia.org/wiki/Do_Not_Track">Do Not Track</a>, SA to respektují a nezapočítají nic). Zatím spokojenost. Pokud chcete vyzkoušet, s <a href="https://referral.simpleanalytics.com/honza-javorek">tímto odkazem</a> budete mít o měsíc delší trial.</p>
 <p>Google Analytics jsem zatím nevypnul, k tomu bych musel udělat ještě několik úkonů. Jejich API používám na různých místech a potřebuji ověřit, co mohu smazat a co mám předělat na Simple Analytics.</p>
 <p>Veřejné statistiky se mi také budou hodit pro nadcházející <a href="https://www.openalt.cz/2021/program_detail.php#event_7">přednášku na OpenAltu</a>.</p>
-<h3 id="cenik-v-google-docs">Ceník v Google Docs<small class="permalink"><a href="#cenik-v-google-docs" title="Trvalý odkaz na tento nadpis">#</a></small></h3>
+<h3 id="cenik-v-google-docs">Ceník v Google Docs<small class="permalink"><a href="#cenik-v-google-docs" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>Textové informace z původní stránky jsem zatím hodil na konec <a href="https://docs.google.com/document/d/1keFyO5aavfaNfJkKlyYha4B-UbdnMja6AhprS_76E7c/">aktuálního ceníku</a>, který mám v Google Docs. Přidal jsem i některé informace, jež bych chtěl na budoucím ceníku mít, jako např. jednu <em>case study</em>.</p>
 <p>Celkově jsem nynější ceník aktualizoval, např. místo natvrdo napsaných čísel tam přidal odkaz na veřejné Simple Analytics. Mám pocit, že některé části ceníku jsou teď ale zbytečně „ukecané“. Zestručním jindy.</p>
 <p>Na původní stránce byly <em>testimonials</em> lidí, kteří chválili příručku. Uložil jsem si je pro případ do Trella a některé přidal do aktuálního ceníku. Nechtěl jsem, aby jej příliš znepřehlednily, tak jsem si chvíli hrál s formátováním. Výsledek asi žádný úžas, ale zatím <em>good enough</em>.</p>
 <p>Uvažoval jsem, zda do ceníku přidat odkaz i na formulář pro zadávání jednorázových inzerátů a celkově zda se tam o tom zmínit pro úplnost, ale nakonec jsem se rozhodl to záměrně neudělat, protože chci firmy od těchto jednorázových inzerátů teď spíš odrazovat, než pracovní nabídky na JG přebuduji (viz dále).</p>
-<h3 id="zmena-zadavani-jednorazovych-inzeratu">Změna zadávání jednorázových inzerátů<small class="permalink"><a href="#zmena-zadavani-jednorazovych-inzeratu" title="Trvalý odkaz na tento nadpis">#</a></small></h3>
+<h3 id="zmena-zadavani-jednorazovych-inzeratu">Změna zadávání jednorázových inzerátů<small class="permalink"><a href="#zmena-zadavani-jednorazovych-inzeratu" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>Udělal jsem veletoč v oblasti zadávání jednorázových nabídek práce, který jsme před časem vymysleli s investorkou. Trápilo mě, že tarif Komunita, který byl zadarmo, využívala spousta standardních firem. Zavedl jsem jej proto, abych nalákal k zadávání i neziskovky a malé projekty a aby firmy, které spolupracují s PyLadies, inzerovaly zdarma. V reálu neziskovky <a href="https://cesko-digital.atlassian.net/wiki/spaces/CD/pages/87458200/Koho+te+hled+me">kromě Česko.Digital</a> žádné pozice nemají, malé projekty na mě kašlou a radši to napíšou někam do Facebookové skupiny, firem od PyLadies je minimum.</p>
 <p>Ze začátku jsem firmy konfrontoval s tím, zda mohou nějak prokázat, že si tarif Komunita zaslouží, ale poté jsem to vzdal, protože to bylo víc práce, než nabídku prostě přijmout a zkontrolovat pouze to, zda je opravdu juniorní a přeformátovat její text do Markdownu. Tato práce mě ale štvala, nebavila a i za cenu 500 Kč, což byl standardní placený inzerát, jsem ji vlastně nechtěl moc dělat.</p>
 <p>Nějaké roční paušály pro firmy také nikdo nevyužíval. S velkými firmami jsme našli lepší nástroj spíše v dlouhodobých inzerátech, které paušálně odchytávají zájemce, např. zde <a href="https://junior.guru/jobs/215426887eaaad9105ecf647d0ff24cf94de7c9eb47cc6f2c55e6921/">Red Hat</a> nebo <a href="https://junior.guru/jobs/356c084cae33eaaffec2ab9c79fb583f7c1271f730acc612fa2dbfb8/">Credo</a>.</p>
@@ -81,14 +97,14 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <p>Nabídky zdarma jsem vyřešil novým políčkem ve formuláři, kam lze zadat kupón se 100% slevou. Kupón jsem dal k dispozici PyLadies skrze Pyvec Slack. Tento kupón budu kontrolovat pouze ručně pohledem, ale myslím, že to bude stačit. Navíc takto mohu podpořit i jiné komunity.</p>
 <p>Mohl jsem dočasně přijímání nových nabídek úplně zavřít, ale říkal jsem si, že když se někde zavře krám, lidi si tam odvyknou chodit. A to bych nechtěl. Moje plány se zadáváním inzerátů přímo na JG počítají, i když v jiné a zjednodušené podobě. Tak zkusím co udělá, když to „nesmyslně“ zdražím.</p>
 <p>S výše uvednou změnou jsem také musel upravit kód, aby správně četl tabulku s odpověďmi z formuláře a správně vyhodnocoval na jakém tarifu je jaká nabídka, a to jak historicky, tak pro nové inzeráty.</p>
-<h3 id="formular-upsells-emaily">Formulář, upsells, emaily<small class="permalink"><a href="#formular-upsells-emaily" title="Trvalý odkaz na tento nadpis">#</a></small></h3>
+<h3 id="formular-upsells-emaily">Formulář, upsells, emaily<small class="permalink"><a href="#formular-upsells-emaily" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>Všude, kde se odkazovalo na stránku https://junior.guru/hire-juniors/ jsem začal odkazovat přímo na formulář pro zadávání inzerátů a důležité informace jsem dal přímo do něj. Navíc jsem do něj dal i otázku, zda si firma přeje stát se členy klubu a odkaz na aktuální ceník firemního členství. Tentýž tip jsem přidal na konec emailů se statistikami přístupů na vyvěšené nabídky práce, které chodí inzerentům. To je mimochodem jedno z míst, kde se používají Google Analytics, ale možná by i to šlo nahradit veřejnými čísly od Simple Analytics, stačilo by tam dávat <a href="https://simpleanalytics.com/junior.guru/jobs/215426887eaaad9105ecf647d0ff24cf94de7c9eb47cc6f2c55e6921?period=month">permalink s vyfiltrovanou konkrétní stránkou</a>. Uvidím, třeba to zjednoduším tak, že se nakonec úplně obejdu bez API, i když jej Simple Analytics poskytuje.</p>
 <p>Z emailů jsem také odebral formulář na „feedback“, který mi za celou historii vyplnili asi dva lidi v počátku a pak už nikdo. Ptal jsem se v něm, zda se firmě podařilo díky inzerátu na JG najmout nějaké lidi nebo k čemu jim to vlastně bylo. Zase o kousek historického balastu méně.</p>
-<h3 id="zruseni-logo-modelu-a-vseho-kolem">Zrušení „Logo“ modelu a všeho kolem<small class="permalink"><a href="#zruseni-logo-modelu-a-vseho-kolem" title="Trvalý odkaz na tento nadpis">#</a></small></h3>
+<h3 id="zruseni-logo-modelu-a-vseho-kolem">Zrušení „Logo“ modelu a všeho kolem<small class="permalink"><a href="#zruseni-logo-modelu-a-vseho-kolem" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>Firmy, které si zaplatily za logo na příručce, jsem uchovával v Google Sheetu, v tabulce „logos“. Z ní se data stahovala do modelu „Logo“ a ten se používal pro rozesílání pravidelných emailů o tom, jak se logu daří a kolik lidí jej vidělo. Také se z tabulky vypisovala samotná loga na staré příručce.</p>
 <p>Časem jsem vytvořil nový list, „companies“, kde jsem evidoval veškerá partnerství firem s klubem, počty zaplacených členů atd. Měl jsem tam i sloupec, zda mají logo na příručce a postupně jsem začal web portovat na to, aby bral data z této tabulky. Jenže posílání emailů a statistiky byly stále napojené na starý model a tak to žilo nějaký čas vedle sebe.</p>
 <p>Tento týden jsem všem napsal a zeptal se jich, zda ty emaily čtou. Prý ne. Kdo se zmínil, že by se to snad mohlo hodit do budoucna, toho jsem uklidnil, že to kdyžtak vytáhnu ze statistik a že teď budou kompletně veřejné statistiky, kde si každý zjistí co chce. Tím bylo hotovo, tabulku jsem zrušil a s ní i všechno, co s tímto souviselo v kódu.</p>
-<h2 id="doladovani-prirucky">Dolaďování příručky<small class="permalink"><a href="#doladovani-prirucky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="doladovani-prirucky">Dolaďování příručky<small class="permalink"><a href="#doladovani-prirucky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <ul>
 <li>Zlepšil jsem (snad!) navigaci na stránkách příručky. Přidal jsem modrý jezdící proužek s odkazem na obsah. Obsah v dolní části stránky byl stručnější, než obsah na desktopu, tak jsem to teď udělal tak, aby byly zcela ekvivalentní. Jednou třeba přidám zobrazování aktuální kapitoly nebo vysouvání menu zleva pomocí JavaScriptu, ale teď to takhle stačí. A třeba to ani nikdy nebude potřeba?</li>
 <li>Na radu Dana Srba jsem přidal <code>[id]{ scroll-margin-top: 1rem }</code> do CSS, aby odkazy na kotvy navigovaly na místo, které má trochu „rezervu“. S přidáním modrého <code>position: sticky</code> proužku na mobilu to navíc začala být nutnost.</li>
@@ -96,21 +112,21 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Díky nové příručce a neexistenci staré stránky s ceníkem vznikla příležitost odebrat „podmenu“, takové to tečkované, které bylo na příručce a některých dalších stránkách. Neměl jsem jej moc rád a rozhodl jsem se jej odebrat, protože se díky všem těm čistkám používalo už jen na jednom místě, a to nedůležitém. Podmenu zaniklo a není! Radost ze smazaného kódu.</li>
 <li>Další radost přišla s promazáváním JavaScriptu. Stále čekám, kdy budu potřebovat nějaký ten pokročilý framework, ale teď se mi stal spíše opak. Většina mého dosavadního JS kódu řešila různé nedokonalosti a složitosti v designu příručky nebo podmenu. Prošel jsem tedy soubory a dost z nich jsem mohl bez náhrady smazat. Některé budu moci smazat až později, ale pokud se mi to povede, nejspíš mi zbudou tak dva JS soubory o 20 řádcích ¯\_(ツ)_/¯ Zas nebude React, no jo.</li>
 </ul>
-<h2 id="psani-pro-heroine">Psaní pro Heroine<small class="permalink"><a href="#psani-pro-heroine" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="psani-pro-heroine">Psaní pro Heroine<small class="permalink"><a href="#psani-pro-heroine" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Jak jsem se zmiňoval v předchozích poznámkách, dostal jsem se do týmu externích autorů jednoho časopisu. Rozhodl jsem se to v těchto poznámkách už provalit, jde o časopis <a href="https://www.heroine.cz/">Heroine</a>. Domluvili jsme si pět článků, tento týden byl termín na první z nich.</p>
 <p>Kromě toho jsem v souvislosti s Heroine opět komunikoval s dalšími lidmi. Například jsem díky Heroine poznal <a href="https://www.linkedin.com/in/pavlaloka/">Pavlu Lokajovou</a> a ta mě poprosila o tipy na ženy, které by se mohly objevit jako ambasadorky v její připravované publikaci o ženách v ecommerce. Ženy jsem oslovoval a propojoval je s Pavlou, pokud o ambasadorství projevily zájem.</p>
 <p>Také mě kontaktovala ještě jedna členka týmu Heroine s prosbou o rady v oblasti obsahového rozhraní připravovaného projektu, s tím jsem také strávil nějaký čas.</p>
 <p>No ale k tomu hlavnímu. Psaní článku jsem samozřejmě prokrastinoval a <a href="https://twitter.com/honzajavorek/status/1451840188901208065">začal až den před termínem</a>. Po velkém úsilí v <a href="https://atriumzizkov.cz/kavarna">kavárně</a> mimo miminkem obývaný byt a následně ještě večer do jedné ranní se mi povedlo článek vytvořit, ale zjistil jsem, že je dvakrát delší, než měl být. Což je můj klasický problém, jak asi pravidelní čtenáři mých poznámek moc dobře vědí.</p>
 <p>Takže teď mě ještě čeká to nějak celé seškrtat a vlastně skoro napsat celé znova. Po sobotě jsem byl ale z psaní vyčerpaný a rozhodl jsem se, že bude lepší to dělat s odstupem v pondělí, že budu i na ten text nahlížet už jinak. Tak mi držte palce, ať to dopíšu aspoň den po termínu a ať vše dobře dopadne.</p>
 <p>Možná je neprofesionální dodávat dvakrát delší články a teprve po termínu je seškrtávat, ale co si budem, nejsem autor profesionál a tuhletu praxi, stručnost a disciplínu se musím teprve nějak za běhu naučit. Protože blog, JG, ani články zpětně přebrané redakcemi Zdrojáku či EkoListu mě tohle fakt nenaučily.</p>
-<h2 id="sluchatka">Sluchátka<small class="permalink"><a href="#sluchatka" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="sluchatka">Sluchátka<small class="permalink"><a href="#sluchatka" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Na základě <a href="https://www.facebook.com/honzajavorek/posts/10159276712692707">doporučení</a> a desítek odsledovaných YouTube recenzí jsem se rozhodl konečně rozseknout výběr sluchátek, která by měla zvýšit mou domácí produktivitu a těšit mě na procházkách s kočárem po parcích.</p>
 <p>Jednak Apple vydal nová, což teoreticky mohlo zlevnit nějaké starší modely, jednak mě kamarád přesvědčoval, že AirPods pecky mu drží v uších lépe než špunty AirPods Pro, což jsem považoval za zcela nemožné. Řekl jsem si tedy, že třeba Apple fakt vytvořil něco nadpřirozeného a prostě to zkusím. Když mi to bude stačit, ušetřím. Když ne, budu zase o něco chytřejší.</p>
 <p>Koupil jsem tedy AirPods 2019, bezdrátové pecky. Když jsem si je donesl domů, hned jsem je opatrně vybalil, nasadil si je a pustil hudbu. Držely, zvuk krásný, tak si říkám OK, pojďme se podívat, co se s tím dá dělat. Jak jsem přišel zvenku, měl jsem ještě na sobě svetr a začalo mi být horko, tak jsem jej začal podvědomě sundávat a v ten moment, asi 8 sekund po prvním nasazení sluchátek, mi levé odstřelilo někam daleko pod gauč, mezi nejvíc chucvalců. Naštěstí mám doma 2m dlouhou zářivku, která čeká (a bude nejspíš spolu se sklenicí rtuti z teploměru navždy čekat) na odnos do sběrného dvoru, takže jsem sluchátko dokázal vylovit. Tolik k prvním dojmům.</p>
 <p>Nebudu vás napínat, používám je už pár dní a dnes jsem si na Alze zaklikl, že je vracím. Párování s macOS i iOS je fajn. Přecházení mezi zařízeními ze začátku fungovalo dobře, ale potom už méně. Třeba dnes iPhone mi začal sluchátka krást, když jsem poslouchal na noťasu. Dělo se to každou chvíli, tak jsem na telefonu musel úplně vypnout BT a i potom sluchátka čas od času podivně vypadla a odpojila se.</p>
 <p>Vůbec mi to ale nesedí v uších. Levé se vysunuje skoro při každém větším pohybu, ale jinak se vysunují obě. Při rychlejší chůzi je musím zandávat zpět co 20 kroků, při rozhlížení se přes cestu mám strach, že skončí v kanálu. Když se směju nebo jím, leze to ven. Také jsem si nezvykl na „double tap“ na sluchátko. I když jsem se fakt snažil udělat to způsobem, jakým to zafungovalo minule, chytlo se to zhruba jednou z pěti pokusů. To mi fakt nepřijde jako dobrý design.</p>
 <p>Nuže, teď už víc tuším co chci, co mi vyhovuje, jak vypadá v praxi integrace Apple sluchátek s Apple zařízeními, atd. Jde se na druhý pokus. Tyto vrátím a pořizuji Jabra 75t, které mi v recenzích přišly stejné nebo lepší (záleží co je pro vás důležité) jako AirPods Pro a ještě jsou levnější. Místo přitroublých gest mají tlačítka, takový starý dobrý koncept, který by mi mohl vyhovovat více, také se mi víc líbí jejich design a mají údajně větší výdrž. Funkci, která jsem se bál, že mi bude chybět nejvíc, tedy inteligentní přecházení mezi zařízeními, doufám nahradí tzv. BT <em>multipoint</em>, což má Jabra jako jedna z mála na trhu, tedy připojení k dvěma zařízením zároveň. Třeba to bude fungovat i lépe než Applí kradení sluchátek telefonem ¯\_(ツ)_/¯ Pokud nebude fungovat ani to, tak už nevím. Rozhodně nechci klasický BT <em>hell</em>, kdy musím stále něco ručně připojovat a odpojovat a nikdy nevím, co je připojeno kde.</p>
-<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <ul>
 <li>Proběhla <a href="https://junior.guru/events/#2021-10-19T18-00-00">AMA s Honzou Králem na téma škálování</a>. Sám jsem se přiučil zajímavé věci. Nahrávku jsem dal hned pro členy klubu na YT.</li>
 <li>Prošel jsem emaily související s Pyvcem, udělal jsem malý úklid v <a href="https://github.com/pyvec/money">grantech</a>, zamergoval jsem nějaké dependabot pull requesty.</li>
@@ -120,7 +136,7 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Povedlo se mi omylem napsat zase <a href="https://twitter.com/honzajavorek/status/1451116512824147968">tweet, který dostal stovky lajků</a> a v době psaní těchto poznámek je stále ještě dostává. Opět nijak nesouvisí s mým podnikáním. Protože jde o tweet v angličtině, zkusil jsem pod něj místo klubu šoupnout aspoň svůj GitHub Sponsors profil, samozřejmě bez jakéhokoliv efektu :)</li>
 <li>Během 7 dní od 18.10. do 24.10. jsem při procházkách nachodil 19 km. Celkem jsem se hýbal 7 hodin a zdolal při tom 19 kilometrů.</li>
 </ul>
-<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Tři věci, které bych chtěl zvládnout udělat příště:</p>
 <ol>
 <li>Dokončit první článek pro Heroine.</li>
@@ -128,9 +144,9 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Učinit první pokus o cestování vlakem s miminem.</li>
 </ol>
 <p>Bonus: Vybrat si bezdrátová sluchátka, která si následně budu chtít i nechat.</p>
-<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
-<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
 <ul>
 <li><a href="https://dwheeler.com/essays/floss-license-slide.html">The Free-Libre / Open Source Software (FLOSS) License Slide</a><br>Užitečný graf!</li>
@@ -139,43 +155,73 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li><a href="https://m.youtube.com/watch?v=VJpJOiVLXro&amp;fbclid=IwAR2syAoUvFyBYqnfll2fJPtXk1ceHCKapi-1KG_Xk6MIahBedCLNSO7485s">Tomáš Vachuda: Chytrá práce je ta, která je udržitelná</a></li>
 <li><a href="https://www.baldurbjarnason.com/2021/100-things-every-web-developer-should-know/">136 facts every web dev should know before they burn out and turn to landscape painting or nude modelling</a><br>Bylo zábavné to číst a spousta bodů zarezonovala.</li>
 </ul>
-<p><small>Upozorňuji, že to není vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small></p></div></div></div></div>
-  </div>
+<p><small>Upozorňuji, že to není vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu jsem použil vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small></p></div></div></div></div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

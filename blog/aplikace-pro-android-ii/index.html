@@ -7,17 +7,16 @@
 
     <meta property="og:title" content="Aplikace pro Android II &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/aplikace-pro-android-ii/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
-          <meta property="og:image" content="https://honzajavorek.cz/images/home/honza.jpg">
-      <meta name="twitter:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+          <meta property="og:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+      <meta name="twitter:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
       <meta name="twitter:card" content="summary">
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -30,46 +29,64 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/aplikace-pro-android-ii/" rel="bookmark">
-        Aplikace pro Android II
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2011-01-22T11:48:00+01:00">
-            22. 1. 2011
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Aplikace pro Android II
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/aplikace-pro-android-ii/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2011-01-22T11:48:00+01:00">
+          22. 1. 2011
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        6
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/aplikace-pro-android-ii&interval=week&start=2011-01-22T11:48:00+01:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
-      <div class="article-warning">
+  <main class="article-content">
+      <div class="alert alert-warning article-warning" role="alert">
         <p>
-          <strong>Upozornění!</strong> Tento článek vyšel
-          před 11 lety.
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          Tento článek vyšel
+          <strong>před 11 lety</strong>.
           Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
           že dnes se Honza již nemusí s obsahem ztotožňovat.
         </p>
       </div>
 
     <div><div><div><div><p>Oproti <a href="https://honzajavorek.cz/blog/aplikace-pro-android/">poslednímu shrnutí Androida</a> se dost věcí změnilo. Protože mě okradli, pořizoval jsem nový telefon, černý <strong>HTC Hero</strong> (opět přes <a href="http://bazar.androidforum.cz/">bazar</a> a dokonce levněji než ten původní HTC Dream). Líbí se mi, že je lepší než ten předtím, že na něm jde docela psát i bez HW klávesnice, že je prost sr… srandiček od operátorů, že má od HTC vylepšené prostředí (HTC Sense).</p>
-<h2 id="co-je-na-pytel">Co je na pytel<small class="permalink"><a href="#co-je-na-pytel" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-je-na-pytel">Co je na pytel<small class="permalink"><a href="#co-je-na-pytel" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Nelíbí se mi, že je <strong>hrozně pomalý</strong>. Tento problém samozřejmě řeší koupě silnějšího stroje – viděl jsem nějaké HTC Desire a ty běhají jak namydlený blesk. Taky mě trochu mrzí, že <strong>použitelnost GUI je někdy dost tristní</strong>. Hlavně tlačítko zpět někdy vůbec nefunguje intuitivně a udělat některé operace je prostě zbytečně příliš složité. V tomto směru doufám ve vývoj OS, ale zase si taky myslím, že některé věci si Android s sebou ponese už navždy, třeba to podivné „zpět“. Taky mě štve, že na svůj telefon mi <strong>výrobce už nepošle aktualizaci na novější OS</strong>. To je však obecně problém Android telefonů, výrobci prostě neaktualizují a vám nezbyde než to hacknout (což výrobci nechtějí a ztěžují vám to), nebo si koupit novější model (po čemž výrobci naopak slintají).</p>
 <p>Také je zvláštní, že když telefon připojím jako „modem“ k PC, je internet v prohlížeči na PC úplně bleskově rychlý, ale když jej používám běžně v telefonu, tak má <strong>načtení čehokoliv ohromné prodlevy</strong>, bez ohledu jestli jedu na mobilním internetu nebo na wi-fi. Vysvětluji si to pomalostí samotného telefonu – zjevně můj internet už nezdržuje pomalost sítě, ale pomalost HW telefonu.</p>
-<h2 id="aplikace">Aplikace<small class="permalink"><a href="#aplikace" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="aplikace">Aplikace<small class="permalink"><a href="#aplikace" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Po čase si člověk přestane instalovat kdejakou blbost, ale začne přemýšlet nad tím, co je opravdu užitečné a co opravdu používá. Také se už dá u nás za aplikace platit, což předtím nešlo. Zde zmiňuji několik aplikací, které se mi zdají opravdu užitečné. Jinak kdybyste hledali web, kde si můžete brouzdat aplikacemi a zkoumat, které mezi ty užitečné patří, tak nejlepší se mi na to jeví <a href="http://www.appbrain.com/">AppBrain</a>. Z osobní zkušenosti dám ale spíš na doporučení přátel.</p>
 <ul>
 <li><strong>Advanced Task Manager</strong> – Zabíjí (krom definovaných výjimek) nevyužívané aplikace. Umí to na požádání nebo automaticky, když necháte zhasnout displej na předem daný počet minut. Šetří to dost baterku a taky uvidíte, kolik různých kravin se vám pořád spouští (hlavně teda kravin od HTC…). Po nainstalování tohoto programu jsem se rozhodl také všem aplikacím zakázat průběžnou kontrolu a synchronizaci (stejně mám všechny notifikace vypnuté – na maily apod., abych měl klid), což by mělo baterce také výrazně ulevit. Když data budu potřebovat, sesynchronizuji si je manuálně.</li>
@@ -88,42 +105,72 @@
 <li><strong>WordPress</strong> – Asi nemusím vysvětlovat, že pisálkům jako jsem já se přístup na blog z telefonu prostě hodí. Navíc umí oznamovat komentáře (to je pak už dost otravné, pokud píšete skandální články, které si čtou tisíce lidí a komentářů je přes 40).</li>
 </ul>
 <p>Z těch z minula bych za užitečné považoval už asi jen <strong>MortPlayer Music</strong> a bezkonkurenční <strong>Pubtran</strong>. Nuže, instalujte a zkoušejte a případně taky dejte tipy na něco zajímavého :) . Ale fakt žádné blbiny, na to už mě nějak neužije.</p></div></div></div></div>
-  </div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

@@ -7,8 +7,6 @@
 
     <meta property="og:title" content="Týdenní poznámky #110: Zápasení s CI, přednáška, Zlín &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-110-zapaseni-s-ci-prednaska-zlin/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
     <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
     <meta property="og:image:width" content="1024">
@@ -17,8 +15,9 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -31,40 +30,57 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-110-zapaseni-s-ci-prednaska-zlin/" rel="bookmark">
-        Týdenní poznámky #110: Zápasení s CI, přednáška, Zlín
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2022-11-04T00:00:00+01:00">
-            4. 11. 2022
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Týdenní poznámky #110: Zápasení s CI, přednáška, Zlín
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-110-zapaseni-s-ci-prednaska-zlin/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2022-11-04T00:00:00+01:00">
+          4. 11. 2022
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        17
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-110-zapaseni-s-ci-prednaska-zlin&interval=week&start=2022-11-04T00:00:00+01:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
+  <main class="article-content">
 
     <div><div><div><div><p>Utekl zase nějaký ten týden (22.10. — 4.11.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-109-prednaska-a-prekopavani-kodu/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/club/">klub</a>, a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.</p>
-<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
 Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
 <p>Minulý týden jsem nezvládl napsat poznámky. Bylo toho nějak moc. Taky jsme byli ve Zlíně u babičky a rozhodl jsem se, že si tam i trochu odpočinu, že to potřebuju, takže jsem třeba jeden celý den dělal něco na zahradě a nepracoval jsem.</p>
 <p>Nejlepší bylo, že jsem klikl na upgrade macOS Ventura a ten se nějak pokazil. Nikdy se mi to nestalo a proto jsem na to klikl i přesto, že jsem potřeboval pracovat a odjet druhý den vlakem na opačný konec republiky. Nejdřív se to stahovalo snad 10 hodin, potom se to sice nainstalovalo, ale blbě, padalo to do recovery módu a tam byl progress bar na dalších 10 nebo kolik hodin. Během toho jsem jel tím vlakem, ještě o 20 minut zpožděným už na příjezdu, a jen doufal, že se mi to povede ve Zlíně nějak rozjet. Nakonec se to fakt spravilo samo a dokonce i za méně hodin, než bylo na progress baru, ale byl jsem ve stresu a po několika dnech beznadějného programování (viz dále) to dost ovlivnilo můj psychický stav. Naštěstí jsem se mohl vypovídat investorce a odpočinout si pak o víkendu.</p>
 <p>Taky jsem se u babičky snad poprvé od narození dcery vyspal jednou do 11 hodin, což bylo osvěžující :)</p>
-<h2 id="zapaseni-s-ci">Zápasení s CI<small class="permalink"><a href="#zapaseni-s-ci" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="zapaseni-s-ci">Zápasení s CI<small class="permalink"><a href="#zapaseni-s-ci" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Prakticky celý předchozí týden jsem vymýšlel a pokus-omyl prozkoumával, jak by mohly po novém fungovat CI buildy na JG.</p>
 <p>Jen připomenu, že CI build je pro JG produkce. Celý projekt funguje tak, že se jednou nebo víckrát denně spustí CI, tam se vše stáhne, vyhodnotí, synchronizuje, udělají se změny na Discordu, pošlou maily, vygeneruje se statická stránka a deployne, a hotovo. JG záměrně nemá žádný jiný runtime. A ano, znamená to, že bot na Discordu reaguje třeba i s denním zpožděním, nebo že nemůžu mít na webu žádný formulář. Výhoda je, že nepotřebuju řešit servery, databáze, uptime, produkční chyby, nic mi v noci nespadne a nezačne mi to pípat na mobilu.</p>
 <p>Povedlo se mi několikrát za sebou omylem poslat tytéž maily, protože kontrolní mechanismus jsem změnami rozbil. Řešil jsem, jak paralelizovat celý build na CircleCI <a href="https://circleci.com/blog/how-to-boost-build-time-with-test-parallelism/">pomocí funkcí, které nabízí</a>. Šlo hlavně o to, jak mohu sloučit soubory a SQLite databázi po tom, co se běh rozdělí do několika paralelních. Rozbil jsem při tom i kumulativní keš dat kolem nabídek práce a budu je muset obnovit ze zálohy. Příruční <a href="https://sqlite-utils.datasette.io/">Datasette</a> mi pomohlo zjistit, proč je moje databáze je najednou menší o 100 MB.</p>
@@ -78,28 +94,28 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <p>Postupně jsem čas buildu dostal z 40min na 36min a potom dokonce až na 24min. Chtěl jsem spočítat, kolik to je ušetřeného času, ale pak jsem si všiml, že to píše přímo CircleCI ve svém UI, takže rovnou vidím, že je to celé zhruba o 35 % rychlejší.</p>
 <p>Teď můžu případně optimalizovat některé skripty, aby byly rychlejší, ale vlastně to ani nemá moc smysl dělat u všech. Jen u těch, které jsou nejdelší a zdržují celý paralelně běžící balík.</p>
 <p>Některé věci se mi ještě nepovedlo dořešit. Nefunguje správně posílání mailů a musel jsem ho na chvíli vypnout, aby se v pondělí neposlalo nějak moc mailů. Taky jsem ztratil historii nabídek práce a musím je nějak obnovit a možná celé vymyslet jinak.</p>
-<h2 id="prednaska-v-klubu">Přednáška v klubu<small class="permalink"><a href="#prednaska-v-klubu" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="prednaska-v-klubu">Přednáška v klubu<small class="permalink"><a href="#prednaska-v-klubu" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Protože je u babičky špatný internet, jel jsem na přednášku v klubu ke švagrovi s tím, že tam pak i přespím, večer pokecáme a uděláme na zahradě druhý den nějakou práci. Bohužel jsem na místě zjistil, že má úplně stejně špatný internet, 10/1. S tímhle se fakt nedá streamovat na YouTube a vlastně je skoro i problém mít vůbec stabilní videohovor.</p>
 <p>Měl jsem fakt za to, že tam je internet rychlejší, ale jak se říká, myslet je hovno vědět. Nebo jak říkal jeden lektor v Londýně, slovo assumptions začíná slovem ass.</p>
 <p>Přednášku jsem tentokrát připravil skvěle a všechny úkony udělal správně, okna měl správně, tlačítka zmáčknul správně, ale co mi to pomohlo, když mi vypadával internet a speakera jsem ani neslyšel. Úplný fail. Odpojil jsem z wifi i svůj mobil, vypnul všechny ostatní programy, ale stejně, nepomohlo to. Stream rozhodně ne, ale ani záznam neměl moc smysl a po čase jsem to vypnul, protože by na záznamu bylo jen chrčení.</p>
 <p>Michala, přednášejícího, jsem na to před přednáškou upozornil a omluvil jsem se. Nabídl se, že může udělat záložní nahrávku u sebe, ale po přednášce jsme zjistili, že se mu nepovedlo nahrát zvuk :D Mám teď jeho soubor s nahrávkou a nějaké svoje, ale neměl jsem zatím čas to nějak poslepovat nebo analyzovat, zda má smysl z toho něco vůbec dělat. Jen jsem se omluvil lidem v klubu, že záznam nejspíš ani nebude.</p>
 <p>Měl jsem pak dost blbou náladu, ale nějak se spravila soutěží o knihu (viz dál) a večerním pokecem u vína. U švagra byl na přednášku aspoň v oddělené místnosti klid, protože u babičky není moc kam se takhle schovat. Ale pro příště vím, že buď si v našem Zlínském „letovisku“ zařídím lepší internet, nebo že odtamtud prostě přednášky dělat nemůžu.</p>
 <p>Ale investorku napadla ještě jedna věc, která možná není vůbec blbost: Měl bych najít někoho, kdo ty přednášky bude řídit za mě a bude to jeho jediná práce! Tím by se mi dost podstatně uvolnil i kalendář. Stejně jen klikám na tlačítka, uvádím speakera, atd. Je to perfektně delegovatelné.</p>
-<h2 id="soutez-o-knihu">Soutěž o knihu<small class="permalink"><a href="#soutez-o-knihu" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="soutez-o-knihu">Soutěž o knihu<small class="permalink"><a href="#soutez-o-knihu" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p><a href="https://www.vzhurudolu.cz/">Martin Michálek</a> dal klubu pět svých knih <a href="https://www.vzhurudolu.cz/css-layout/">CSS: moderní layout</a>, abych je rozdal členům. Jeden kus mám doma s věnováním a mohu říct, že je to moc pěkná a užitečná kniha. Muselo to dát strašné práce! 440 stran, 904 gramů.</p>
 <p>Dlouho jsem přemýšlel, jak knihy rozdat. Nechtěl jsem dělat jen nějaké hlasování a losování. Trvalo mi měsíce něco vymyslet, ale s výsledkem jsem velmi spokojený. Lidi měli napsat, která oblast CSS jim dala nebo dává nejvíc zabrat - museli se ji složitě učit, nešla moc dobře pochopit, atd. Připojili větu o tom, proč to nešlo, co si myslí, že na tom bylo nejsložitější, nebo hodili odkaz na nějaký návod, díky kterému se to konečně naučili. Příklad ze života (mého):</p>
-<blockquote>
+<figure class="figure figure-blockquote"><blockquote class="blockquote">
 <p><strong>CSS flexbox</strong> - měl jsem zmatek ve všech těch vlastnostech a nepamatoval jsem si je. Procvičoval jsem je přes https://flexboxfroggy.com/, ale stejně mi to nepomáhalo. Nakonec mě vyučila až praxe, prostě jsem se to snažil použít. Nejvíc jsem čerpal z https://css-tricks.com/snippets/css/a-guide-to-flexbox/ a dodnes to mám v záložkách a pravidelně to při psaní CSS otevírám, nedám bez toho ani ránu.</p>
 </blockquote>
-<p>Z lidí, kteří takto odpoví, jsem losoval pět výherců, náhodně. Následně jsem je kontaktoval, dali mi korespondenční adresu a Martin jim knížku pošle. Nezáleželo na tom, jakou práci si s příspěvkem dali, ale věřil jsem, že se posnaží a pokusí se fakt rozepsat a přidat odkazy, abychom se všichni něco díky této soutěži naučili. A fakt se všichni snažili!</p>
+</figure><p>Z lidí, kteří takto odpoví, jsem losoval pět výherců, náhodně. Následně jsem je kontaktoval, dali mi korespondenční adresu a Martin jim knížku pošle. Nezáleželo na tom, jakou práci si s příspěvkem dali, ale věřil jsem, že se posnaží a pokusí se fakt rozepsat a přidat odkazy, abychom se všichni něco díky této soutěži naučili. A fakt se všichni snažili!</p>
 <p>Vzniklo nádherné vlákno, užitečné všem. Jak samotným soutěžícím, tak i Martinovi, který si z toho udělal poznámky na svoje další výukové činnosti a materiály. Soutěž jsem nechal běžet skoro měsíc a vyhodnocoval jsem ji 1.11. večer po přednášce.</p>
 <p>Udělal jsem to trochu napínavé a že byli zrovna lidi online, tak se v den losování spustila lavina memů a gifů a mělo to perfektní atmosféru. <a href="https://youtu.be/If8fVpUrzCM">Natočil jsem video z losování</a>, schválně jako screencast toho, jak to losování programuju, aby to bylo poučné, a nahrával jsem ho pak na YouTube, ale jak jsem byl na strašně pomalém internetu, tak to trvalo věčnost a lidi byli o to víc napjatí. Chtěl jsem tam dát mp3 s „to sou nervy“ z <a href="http://milujipraci.cz/">opravy traktoru</a>, ale zjistil jsem, že je za tím ještě „ty pi*o“ :D tak jsem to ještě ořízl v Audacity a dal to do klubu bez toho, což sklidilo velký ohlas :D</p>
 <p>Některé to tak nabudilo, že i když knihu nevyhráli, šli si ji koupit :D Takže se to fakt celé moc hezky povedlo a měl jsem z toho pak dost dobrou náladu.</p>
-<h2 id="adhd">ADHD<small class="permalink"><a href="#adhd" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="adhd">ADHD<small class="permalink"><a href="#adhd" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Kdysi jsem četl <a href="https://www.theguardian.com/society/commentisfree/2020/jan/15/a-new-life-being-diagnosed-with-adhd-in-my-40s-has-given-me-something-quite-magical">článek</a>, který mě trochu nalomil, ale pak jsem nad tím mávl rukou, že diagnostikovat se z internetu na takové věci je asi jako číst si horoskopy.</p>
 <p>No ale teď přišlo ještě <a href="https://www.mujrozhlas.cz/vinohradska-12/dospeli-adhd-nemate-ho-taky-snaz-se-pozna-lide-jsou-ochotnejsi-problemy-resit">tohle</a> a <a href="https://denikn.cz/1000209/studio-n-jak-se-zije-s-adhd/">tohle</a> a dostala se ke mě <a href="http://nepozornidospeli.cz/images/ADHD_prowebFIN.pdf">tahle příručka</a>. Jak jsme byli u babičky, měl jsem konečně čas se tím trochu probrat a začínám mít fakt velmi vážné podezření, že je to přesně o mně! Jako by to vysvětlovalo celý můj život :D</p>
 <p>Nad tímhle rukou mávnout už nemůžu. Bylo by to nějak moc náhod najednou. Jsem vlastně už docela přesvědčený, že to mám, ale určitě zkusím vyhledat někoho, kdo by mi mohl udělat diagnózu. Nevím, kdy na to zase budu mít čas, ale zkusím svoje pátrání po kouskách posouvat dál.</p>
-<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <ul>
 <li>Napsal jsem na Twitter <a href="https://twitter.com/honzajavorek/status/1588147581544239104">kritiku článku, který vyšel na Seznam Zprávách</a>.</li>
 <li>Řešil jsem, proč se moje loggery na JG jmenují každý jinak. Některé mají celou cestu k modulu, s tečkama, jiné mají jen název modulu. Pak jsem zjistil, že <code>__name__</code> <a href="https://docs.python.org/3/library/__main__.html#name-main">funguje jinak pro balíčky a jinak pro moduly</a> :-o Nikdy jsem si toho nevšiml. Takže jsem všude změnil, jak se loggery pojmenovávají a dělám to parsováním <code>__file__</code>, ať to mám všude stejně a tak, jak mi to vyhovuje.</li>
@@ -127,7 +143,7 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Během 14 dní od 22.10. do 4.11. jsem naběhal 19 km. Celkem jsem se hýbal 2 hodin a zdolal při tom 19 kilometrů.</li>
 <li>Aktuální finanční výsledky, návštěvnost a další čísla k JG <a href="https://junior.guru/open/">mám přímo na webu</a>. Nabídky práce pro juniory teď inzerují: <a href="https://junior.guru/jobs/dbbb7bf406b3c33aeba36cae817919d44bfb368a08fb1b4899dba130/">Processand</a>, <a href="https://junior.guru/jobs/215426887eaaad9105ecf647d0ff24cf94de7c9eb47cc6f2c55e6921/">Red Hat</a></li>
 </ul>
-<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Tři věci, které bych chtěl zvládnout udělat příště:</p>
 <ol>
 <li>Věnovat se kamarádům z Namibie a Zimbabwe, kteří přijedou do Prahy na konferenci.</li>
@@ -135,9 +151,9 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Vyřešit poslední nefunkčnosti týkající se CI buildu.</li>
 </ol>
 <p><strong>Bonus:</strong> Zadat práci kamarádovi, který se tváří, že by mohl dělat rozhovory s juniorama, které bychom pak publikovali na JG.</p>
-<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
-<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
 <ul>
 <li><a href="https://www.universitas.cz/osobnosti/9216-hodina-na-pocitaci-denne-je-prezita-technologie-uz-slouzi-detem-jinak-rikaji-autori-vyzkumu-o-digital-teens">Hodina na počítači denně je přežitá, technologie už slouží dětem jinak, říkají autoři výzkumu o digital teens</a><br>Zajímavý vhled do toho, jak se pracuje s technologiemi ve školách… a jak by se pracovat mohlo…</li>
@@ -148,43 +164,73 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li><a href="https://denikn.podbean.com/e/jak-se-zije-s-adhd/">Jak se žije s ADHD</a><br>Naprosto přesně já :-|</li>
 <li><a href="https://denikn.cz/994039/sebrali-lidem-kvuli-parkovani-kus-chodniku-nepomohli-nikomu-vic-mist-vic-aut/?cst=7331f61dd1abdd4a7b3c1bfa750e4eaad81cd26c">Sebrali lidem kvůli parkování kus chodníku, nepomohli nikomu. Víc míst = víc aut</a></li>
 </ul>
-<p><small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small></p></div></div></div></div>
-  </div>
+<p><small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu jsem použil vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small></p></div></div></div></div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

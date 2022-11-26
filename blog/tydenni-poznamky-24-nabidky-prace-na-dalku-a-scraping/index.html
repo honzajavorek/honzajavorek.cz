@@ -7,8 +7,6 @@
 
     <meta property="og:title" content="Týdenní poznámky #24: Nabídky práce na dálku a scraping &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-24-nabidky-prace-na-dalku-a-scraping/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
     <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
     <meta property="og:image:width" content="1024">
@@ -17,8 +15,9 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -31,43 +30,60 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-24-nabidky-prace-na-dalku-a-scraping/" rel="bookmark">
-        Týdenní poznámky #24: Nabídky práce na dálku a scraping
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2020-10-30T00:00:00+01:00">
-            30. 10. 2020
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Týdenní poznámky #24: Nabídky práce na dálku a scraping
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-24-nabidky-prace-na-dalku-a-scraping/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2020-10-30T00:00:00+01:00">
+          30. 10. 2020
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        6
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-24-nabidky-prace-na-dalku-a-scraping&interval=week&start=2020-10-30T00:00:00+01:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
+  <main class="article-content">
 
     <div><div><div><div><p>Utekl další týden (26.10. — 30.10.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-23-pribeh-na-blog-melouch-e-maily/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/donate/">podporovatele</a>, a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.</p>
-<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
 Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
 <p>Poznámky teda tentokrát píšu až v neděli. Ve středu jsem nepracoval, byl státní svátek.</p>
-<h2 id="prace-na-dalku">Práce na dálku<small class="permalink"><a href="#prace-na-dalku" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="prace-na-dalku">Práce na dálku<small class="permalink"><a href="#prace-na-dalku" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Protože řádí covid-19, rozhodl jsem se soustředit na <a href="https://junior.guru/jobs/remote/">stránku s prací na dálku</a> s tím, že uvidím, co všechno se z ní dá vymáčknout. Pokud by na ní bylo dost nabídek práce, přidal bych i nějaké rady na práci na dálku a celé bych to pak zkusil propagovat mezi lidmi. V současné chvíli by to mohlo mít nějaký ohlas.</p>
 <p>Přidal jsem tedy podporu pro <a href="https://remoteok.io/">Remote OK</a>, <a href="https://weworkremotely.com/">WWR</a> a nabídky práce na dálku ze StackOverflow. Psal jsem i osobně na Pieteru Levelsovi na Twitteru, jestli mohu použít logo Remote OK, protože to vyžaduje v podmínkách, a dostal jsem svolení.</p>
 <p>Na stahování nabídek z RSS se skvěle hodil <a href="https://github.com/kurtmckee/feedparser">feedparser</a>. Taky jsem zjistil, že když si potřebuju dojít pro některé informace až na stránku s inzerátem, je dobré zkontrolovat, jestli stejně jako JG nepodporuje <a href="https://schema.org/JobPosting">schema.org meta data</a>. V takovém případě se totiž nemusím trápit s čtením HTML, stačí vytáhnout ta meta data. No a zjistil jsem, že na to existuje prima knihovna <a href="https://github.com/scrapinghub/extruct/">extruct</a>.</p>
 <p>Výsledek ale nic moc, juniorní nabídky práce na dálku prostě nejsou. Sem tam něco, jasně, mám tam nějaké false positives i false negatives, OK, ale i když to všechno vezmu v úvahu, výsledek je spíš velké prd.</p>
-<h2 id="scrapovani">Scrapování<small class="permalink"><a href="#scrapovani" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="scrapovani">Scrapování<small class="permalink"><a href="#scrapovani" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Jeden pro mě důležitý zdroj nabídek práce blokuje HTTP requesty z IP adres CircleCI, kde se mi všechno spouští. Zkoušel jsem to <a href="https://www.khalidalnajjar.com/stealthy-crawling-using-scrapy-tor-and-privoxy/">řešit přes Tor</a>. Rozběhal jsem to lokálně, ale na CircleCI ne a nikdo mi neodpověděl ani na <a href="https://tor.stackexchange.com/questions/21677/signal-response-contained-unrecognized-status-code-514">StackExchange dotaz</a> (naopak mi napsali, že tohle dělat nemám…), takže jsem tuto cestu po dvou dnech průzkumu a debugování opustil.</p>
 <p>Jako další možnost jsem zvažoval Apify, ale nakonec se mi nechtělo scraper psát odznova a zkusil jsem najít nějakou proxy, která by věc řešila. Nejlevnější řešení jsem našel u <a href="https://scrapestack.com/">ScrapeStack</a>, ale po základním otestování jsem zjistil, že mnou scrapovaný web na requesty routované přes ně odpovídá úplně jiným contentem a vynucuje přihlášení. Zajímavé. Nepovedlo se mi to nijak vyřešit, takže tato možnost padla.</p>
 <p>Dále jsem zkoušel najít nějaký seznam proxy zdarma, které bych mohl rotovat a dělat requesty přes ně. Zkoušel jsem <a href="http://free-proxy.cz">free-proxy.cz</a>, koukal na věci jako <a href="https://proxybroker.readthedocs.io/en/latest/">proxybroker</a> (vypadá skvěle, ale je neudržovaný) nebo <a href="https://github.com/imWildCat/scylla">scylla</a>, studoval jsem seznam na <a href="https://github.com/lorien/awesome-web-scraping/blob/master/python.md">awesome-web-scraping</a>. Proxy různě fungují nebo nefungují, jsou různě blokovány nebo nejsou, no byl to velký boj a zase vydal tak na dva dny. V jednu chvíli jsem to vzdal a šel zkoumat to Apify, ale po dvou hodinách zkoušení a čtení dokumentace jsem došel k tomu, že to má stejný problém jako ten ScrapeStack, tedy že web na requesty odpoví přihlašovací stránkou a já nevím proč.</p>
@@ -82,7 +98,7 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <p>Chtěl jsem to vzdát a vykašlat se na to, ale nakonec mě napadlo ještě něco. Web funguje tak, že jejich HTML se dále na věci dotazuje nějakého neveřejného API. Můj scraper se dotazoval na nabídky práce skrze toto API a tento request, typicky první, většinou prošel. Jenže ty další, na jednotlivé nabídky práce, ty už byly blokované. No ale to byly requesty na samotné HTML stránky. Napadlo mě, jestli nejde i ty nabídky samotné tahat přes API a upravit scraper tak, aby šel se vším jen přes API. No a vypadá to, že toto je výsledná cesta, že tím se všechno vyřeší. Na API zřejmě nemají tak drsné ochrany a requestům se tam celkem daří.</p>
 <p>Zbývá doladit detaily a zjistit, jestli celá tahle věc nebude tak neefektivní, že bude trvat dve hodiny scrapnout 5 nabídek práce, ale zatím výsledek považuji za úspěch.</p>
 <p>Otázkou samozřejmě je, jak správné je toto všechno dělat, ale tož když si mohlo Kiwi oscrapovat půl internetu a založit si na tom byznys… Mým protějškem je obrovská monopolní mega korporace, se kterou se nikdy nedomluvím a jež nemá důvod se mnou spolupracovat. Jsou tam ale nabídky práce pro juniory a já je chci těm juniorům dát na podnose, aby se nemuseli přes jejich nesmyslné filtry prohrabávat tunou smetí.</p>
-<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <ul>
 <li>Seznam <a href="https://junior.guru/jobs/2c67d25adbae2c784a01bf97c8631963605086c5fbc9f055257f84b8/">zadal nabídku práce přímo na JG</a>, takže jsem jeho logo přidal mezi <a href="https://junior.guru/jobs/">firmy, které na JG někdy inzerovaly</a> (prestiž!).</li>
 <li>Dokončili jsme více méně můj melouch pro kamaráda.</li>
@@ -90,9 +106,9 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Radůza mi odepsala na e-mail a poděkovala za fajn rady :)</li>
 <li>Ještě dnes jdu vytvořit a poslat říjnový newsletter. Je prvního listopadu, takže asi nejvyšší čas.</li>
 </ul>
-<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
-<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
 <ul>
 <li><a href="https://t.co/DCnxXVAu7w?ssr=true">How Discord Won</a><br>Konečně mi někdo vysvětlil Discord</li>
@@ -108,42 +124,72 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li><a href="https://www.vutbr.cz/podcast">Technicky vzato</a>, podcast VUT v Brně. Dva díly o robotech nebo esportu. Líbí se mi, že jeden díl má 20 minut a ne sto hodin, jako u jiných podcastů.</li>
 <li><a href="https://fallofcivilizationspodcast.com/">Fall of Civilizations Podcast</a> je konečně něco na téma, které mě baví. Nevedou se tam rozhovory s lidmi, je to spíš dokumentární seriál.</li>
 </ul></div></div></div></div>
-  </div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

@@ -7,17 +7,16 @@
 
     <meta property="og:title" content="Nové Ubuntu Lucid Lynx mě nenadchlo &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/nove-ubuntu-lucid-lynx-me-nenadchlo/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
-          <meta property="og:image" content="https://honzajavorek.cz/images/home/honza.jpg">
-      <meta name="twitter:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+          <meta property="og:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+      <meta name="twitter:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
       <meta name="twitter:card" content="summary">
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -30,36 +29,54 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/nove-ubuntu-lucid-lynx-me-nenadchlo/" rel="bookmark">
-        Nové Ubuntu Lucid Lynx mě nenadchlo
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2010-05-11T16:56:00+02:00">
-            11. 5. 2010
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Nové Ubuntu Lucid Lynx mě nenadchlo
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/nove-ubuntu-lucid-lynx-me-nenadchlo/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2010-05-11T16:56:00+02:00">
+          11. 5. 2010
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        4
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/nove-ubuntu-lucid-lynx-me-nenadchlo&interval=week&start=2010-05-11T16:56:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
-      <div class="article-warning">
+  <main class="article-content">
+      <div class="alert alert-warning article-warning" role="alert">
         <p>
-          <strong>Upozornění!</strong> Tento článek vyšel
-          před 12 lety.
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          Tento článek vyšel
+          <strong>před 12 lety</strong>.
           Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
           že dnes se Honza již nemusí s obsahem ztotožňovat.
         </p>
@@ -67,53 +84,83 @@
 
     <div><div><div><div><p>Moje dojmy z nového systému jsou rozporuplné, protože změny jsou takové nějaké rozpačité a poloviční.</p>
 <p>Upgrade proběhl v pořádku, ale úvodní obrazovka při spuštění je pomalu v ASCII a prolítávají na ni výpisy spouštěných komponent. To asi autoři nezamýšleli. Fialová barva je mi ukradená, stejně ji vidím jen při spuštění a na ikonkách. Naběhnutí systému je asi rychlejší, ale koho to dnes trápí :)</p>
-<h2 id="panel">Panel<small class="permalink"><a href="#panel" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="panel">Panel<small class="permalink"><a href="#panel" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Změny na hlavním panelu se mi nelíbí. Messaging menu je k ničemu, pokud mám co nejvyšší tendenci nenechat se otravovat žádnými notifikacemi (maily, IM…). Odebrat nejde. Chápu, že nová oznamovací oblast má za úkol oddělit systémové prvky od aplikací, ale to se právě vůbec nepovedlo. Nezahrnuje wi-fi (to zůstalo v notifikacích) a nově je navíc v notifikacích indikátor klávesnice, který býval jako applet. Totální zmatek. Gwibber vypadá celkem fajn, ale nepochopil jsem, kam se spouští nebo schovává, takže nadále používám TwitterFox (aka Echofon) ve Firefoxu. Popisek v messaging menu „Broadcast“ mi přijde jako totální WTF. Globální změny statusu jsou hezká teorie, ale nulová praxe. Zřejmě bylo záměrem udělat jedno okýnko, kam napíšu status a pošlu do celého světa (Twitter, Facebook) a kde si nastavím stav a pošlu do všech aplikací (online, offline). No to jednak dělat nechci a jednak to nefunguje pro všechny (Skype?). Designově mi přijde nová verze Ubuntu dost rozpolceně. Polovina věcí je předesignovaných, polovina ne, někde design dost kulhá. Ovládací prvky na liště se jednou po zmáčknutí tváří jako tlačítko, jednou mají hezký černý podklad… Tuším jsem někde četl o tom, že bude i nový panel na datum a čas, který se mi vůbec nelíbil, ale buď to neprošlo, nebo mi záhadou zůstal starý GNOMEácký, za což jsem fakt rád. Také oceňuji, že si systém už konečně pamatuje nastavení klávesnice i po restartu.</p>
-<h2 id="quo-vadis-gnome">Quo vadis, GNOME?<small class="permalink"><a href="#quo-vadis-gnome" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="quo-vadis-gnome">Quo vadis, GNOME?<small class="permalink"><a href="#quo-vadis-gnome" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Tu horní oblast by mělo řešit přímo GNOME a né Afričani z Canonical. Co jsem ale koukal na GNOME 3, tak to je v nějaké mimozemské dimenzi od oka nepraktického shellu a nějaké automatické celosystémové knihovny zeitgeist (kterou budu zřejmě jako všechny jiné knihovny nenávidět), místo toho, aby řešilo aktuální problémy.</p>
-<h2 id="nautilus">Nautilus<small class="permalink"><a href="#nautilus" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="nautilus">Nautilus<small class="permalink"><a href="#nautilus" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Od nového Nautilu jsem čekal hodně, měl být konečně dvoupanelový. Jenže to by nebyl Nautilus, aby si nevymyslel nesmyslné klávesové zkratky a nikde je neumožnil změnit. I když ještě větší bolest než nemožnost ty zkratky změnit je jejich naprostá absence. V Nautilu s klávesnicí totiž neuděláte vůbec nic. Místo aby vyřešili tohle a zakomponovali Nautilus Elementary, tak se bijí v prsa možností rozdělit okno na dvě, což ale bez klávesnice nemá žádný význam. Záložky jsou navíc podivně přes celou délku aplikace – no čert to vem, ale hezké to není.</p>
-<h2 id="ovladaci-prvky">Ovládací prvky<small class="permalink"><a href="#ovladaci-prvky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="ovladaci-prvky">Ovládací prvky<small class="permalink"><a href="#ovladaci-prvky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>U okýnek se přesunuly ovládací prvky vlevo. Nevím, jestli je to další věc odkoukaná od Macu, každopádně v současné chvíli to fakt nemá žádný význam. Je mi to docela jedno kde budou (věřím, že si zvyknu), ale tak nějak nechápu, proč to bylo provedeno. Četl jsem něco o prostoru pro jakési rozšířené kontextové ovládací prvky napravo, ale ty nikde nejsou, takže ten přesun vyznívá do prázdna a je to co? Je to WTF.</p>
-<h2 id="programy-ktere-me-tesi">Programy, které mě těší<small class="permalink"><a href="#programy-ktere-me-tesi" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="programy-ktere-me-tesi">Programy, které mě těší<small class="permalink"><a href="#programy-ktere-me-tesi" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>No aspoň se budu těšit na nové verze Docky. To mi dost usnadnilo práci s aplikacemi a jen je škoda, že je takové nedodělané a má spoustu chyb. Takový Dock bych si dokázal v GNOME 3 představit. Musí se uznat, že jak nemám moc rád Apple, některé nápady mají dobré (teď nemyslím ty od Xeroxu ;D). Mac bych na kompu nechtěl (ne z přesvědčení, ale ze špatné zkušenosti), ale nějaké pěkné distro které od něho kopíruje nápady by se mi asi líbilo. Taky jsem narazil na Swiftfox, což je odnož Firefoxu kompilovaná přímo pro určité procesory. Jede rychleji, takže <a href="http://en.wikipedia.org/wiki/Red_Panda">panda</a> musela z domů a nahradila ji konečně tedy <a href="http://en.wikipedia.org/wiki/Swift_fox">liška</a>.</p>
 <p>Závěr? Aspoň nebudu trávit tolik času u PC. Hmmmh. Howgh. Jdu ven.</p></div></div></div></div>
-  </div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

@@ -7,8 +7,6 @@
 
     <meta property="og:title" content="Týdenní poznámky #98: Kandidatura a programování onboardingu &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-98-kandidatura-a-programovani-onboardingu/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
     <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
     <meta property="og:image:width" content="1024">
@@ -17,8 +15,9 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -31,38 +30,55 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-98-kandidatura-a-programovani-onboardingu/" rel="bookmark">
-        Týdenní poznámky #98: Kandidatura a programování onboardingu
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2022-07-22T00:00:00+02:00">
-            22. 7. 2022
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Týdenní poznámky #98: Kandidatura a programování onboardingu
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-98-kandidatura-a-programovani-onboardingu/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2022-07-22T00:00:00+02:00">
+          22. 7. 2022
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        11
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-98-kandidatura-a-programovani-onboardingu&interval=week&start=2022-07-22T00:00:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
+  <main class="article-content">
 
     <div><div><div><div><p>Utekl zase nějaký ten týden (16.7. — 22.7.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-97-debugovani-a-onboarding/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/club/">klub</a>, a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.</p>
-<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
 Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
 <p>Tak je zase pátek a já zase píšu z vlaku. Tentokrát bereme kromě dítěte v nosítku taky moje kolo. V poměru tři dospělí (my dva a babička) na jedno dítě se dá docela dobře zorganizovat si běhání skoro na každý večer, ale v těch vedrech co teď jsou moje motivace na běhání dost klesá. Popravdě, běhání v horku je humus a chci u něj spíš umřít než cokoliv jiného. Ráno nemám morál a stejně je vedro už brzo, večer je vedro i za tmy. Takže zkusím kolo, to by mohlo být v horku příjemnější a bude to změna. Na kole jsem od březnové jízdy napříč republikou prakticky neseděl.</p>
-<h2 id="onboarding">Onboarding<small class="permalink"><a href="#onboarding" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="onboarding">Onboarding<small class="permalink"><a href="#onboarding" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Většinu týdne jsem pracoval na onboardingu a lepším vítání nových členů v klubu.</p>
 <p>Ladil jsem trochu ještě zakládání a správu privátních kanálů na tipy, které bude dostávat každý nový člen. Upravil jsem kód tak, aby se kanál nesmazal aspoň ještě pár měsíců, pokud člen odejde z klubu. Často se stane, že lidem vyprší karta, nebo že z klubu na chvíli zmizí a pak se vrátí. Bylo by otravné, kdyby se jim restartoval celý onboarding a začaly jim chodit opět tytéž tipy.</p>
 <p>Rozšířil jsem skript, který už nyní zjišťoval, jestli se nově příchozí člen přidal poprvé, nebo v klubu už někdy byl. Takovým členům skript přidal k uvítací zprávě emoji s mávající rukou a s recyklujícími se špikami, abych to viděl a měl zhruba přehled.</p>
@@ -72,28 +88,28 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <p>Nakonec jsem ještě připravoval kód onboardingu tak, aby jednotlivé tipy nebyly pouhý text, ale byly to funkce vracející text, které dostávají nějaký kontext (např. objekt se členem, kterému se má tip poslat). Myslel jsem, že bych se s tím do začátku nepatlal, ale nakonec mi přijde, že to bude fakt potřeba, aby tipy byly víc užitečné než otravné a aby byly schopny se zformulovat aspoň trochu na míru situaci, ve které se člen nachází.</p>
 <p>Teď už chybí „jen“ navrhnout první texty tipů a můžu to spustit. Mám trochu pocit, že se mi to psát nechce a tak programuju co můžu a tím to prokrastinuju.</p>
 <p>Když už jsem u toho všeho byl, přidal jsem taky kód, který vítá sponzorující firmy i pomocí emoji, ne pouze zprávou.</p>
-<h2 id="debugovani-pycordu">Debugování pycordu<small class="permalink"><a href="#debugovani-pycordu" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="debugovani-pycordu">Debugování pycordu<small class="permalink"><a href="#debugovani-pycordu" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Podíval jsem se zase trochu na <a href="https://github.com/Pycord-Development/pycord/issues/1491">tenhle problém s pycordem</a> a zjistil jsem, že nový pycord mi failuje skoro na všech vláknech, ne pouze na nějakých obskurních. Skoro mám dojem, jako by to moc netestovali a vydali kód, který podle mě nemůže fungovat dobře na každém větším discord serveru, který víc používá vlákna.</p>
-<h2 id="auto-cancel-na-circleci">Auto-cancel na CircleCI<small class="permalink"><a href="#auto-cancel-na-circleci" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="auto-cancel-na-circleci">Auto-cancel na CircleCI<small class="permalink"><a href="#auto-cancel-na-circleci" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Občas se mi stalo, že jsem víckrát pushnul kód do hlavní větve na GitHubu a každý push spustil build na CircleCI. Ty pak jely v podstatě paralelně, ale nevěděly o sobě. Bohužel to pak znamená, že jeden build si přečte Discord, zanalyzuje jeho obsah a začne tam něco posílat, zatímco ten druhý si stihne přečíst Discord ještě předtím a začne tam posílat to samé podruhé.</p>
 <p>Než se budou posílat lidem tipy, chtěl jsem tohle vyřešit. Zjistil jsem, že CircleCI <a href="https://circleci.com/docs/skip-build#scope">má auto-cancel</a> a že ho mám dokonce zapnutý, ale mají tam explicitně napsáno, že pro hlavní větev to nefunguje a fungovat nebude ¯\_(ツ)_/¯ Což je super, když dělám <em>continuous deployment</em> a jiné větve téměř nepoužívám.</p>
 <p>Takže jsem hledal, jestli na to není Orb (předpřipravený krok na CircleCI, který už naprogramoval někdo jiný), ale spíš není. <a href="https://circleci.com/developer/orbs/orb/thinkful/cancel_previous_build_and_wait">Něco existuje</a>, ale vypadá to, že to je staré a nepovedlo se mi to použít tak, že by to fungovalo.</p>
 <p>Nakonec jsem si to prostě naprogramoval, nějak jsem to narychlo naprasil přes CircleCI API, ale bylo to celkem frustrující, především kvůli tomu jejich API. Lidi, nevytvářejte frustrující API! Přece když chci zjistit, jestli na stejné větvi nejede už nějaký další build, který bych mohl zrušit, tak bych na to neměl potřebovat dva vnořené cykly s requesty na API.</p>
 <p>Udělal jsem si z toho task a ten se pouští jako první věc po instalaci projektu. Takže když začne nový build, nainstaluje se vše potřebné a pak se pustí tento skript, který projde běžící buildy na téže větvi a zruší je. Potom tento nejnovější build běží dál.</p>
-<h2 id="marketing">Marketing<small class="permalink"><a href="#marketing" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="marketing">Marketing<small class="permalink"><a href="#marketing" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Sešel jsem se s Jakubem Nešetřilem a bylo to fajn. Povídali jsme si jen tak o životě, ale došlo i na moje dilema s marketingem. Odnesl jsem si z toho zajímavé závěry.</p>
 <p>Pokud mým cílem je vydělat zhruba 40 tisíc měsíčně čistého a tuto metu už jsem skoro splnil, aniž bych nějaký skvělý marketing na sociálních sítích měl, možná bych ho nemusel vůbec dělat. Jeho funkci bych mohl nahradit inbound marketingem na webu a jinými věcmi, které škálují. Mohl bych se soustředit na produkt atd., ale prostě možná není vůbec potřeba, abych se tolik věnoval sociálním sítím, když byznys nejspíš funguje tak či tak.</p>
 <p>Dává mi to smysl hned v několika rovinách. Jednou z nich je to, že svůj byznys jsem od začátku zakládal jako solo podnikatel s tím, že věci, které nedokážu naškálovat nebo automatizovat, prostě dělat nebudu nebo nemůžu. Není možné, abych dlouhodobě dělal <em>sales cally</em>, ale mohu udělat <em>pricing page</em> a screencast, kde všechno ukážu.</p>
 <p>Outsourcing je možnost, ale v tom, jak chci podnikat, je to <a href="https://twitter.com/ColinKeeley/status/1548286804192686081">poslední možnost, když není zbytí</a>. Tomuto přístupu bych se neměl zpronevěřovat a měl bych zkusit marketing na sociálních sítích buď aspoň částečně automatizovat, nebo úplně vypustit a nahradit něčím, co udělám jednou a funguje to samo. Například inbound marketing, nebo systém pro to, aby moji členové fungovali jako ambasadoři značky a sami doporučovali klub dál. Protože velká firma se bez sociálních sítí možná neobejde, ale já možná ano, protože mi stačí málo.</p>
 <p>Nechám si to ještě rozležet v hlavě a domluvím si asi stejně i tu schůzku s <a href="https://www.janadolejsova.cz/">Janou</a>, ať mám víc názorů a tím i podkladů pro vlastní rozhodování.</p>
-<h2 id="kandidatura-za-zelene">Kandidatura za Zelené<small class="permalink"><a href="#kandidatura-za-zelene" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="kandidatura-za-zelene">Kandidatura za Zelené<small class="permalink"><a href="#kandidatura-za-zelene" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Přišlo mi mailem „pošli prosím jednu větu, která vysvětluje, proč jsi se rozhodl kandidovat“, tak jsem to sepisoval. Jedna věta to nebyla, to neumím, ale něco jsem vyplodil a <a href="https://praha3.zeleni.cz/kandidat/jan-javorek">je to tady</a>. Pak jsem si to dal ještě <a href="https://www.facebook.com/honzajavorek/posts/10159769154357707:0">na FB</a>, <a href="https://www.instagram.com/p/CgKih9SLhGK/">na IG</a> a <a href="https://twitter.com/honzajavorek/status/1549099609041080327">na Twitter</a>. Když jsem zatím se Zelenými nezvládl vyrazit do ulic v rámci kampaně, zkouším nahnat hlasy aspoň na internetu - to ostatně umím stejně líp, než rozdávat letáky. Celý text:</p>
-<blockquote>
+<figure class="figure figure-blockquote"><blockquote class="blockquote">
 <p>Chci ulice, kde se neusmažím horkem, kde v pohodě projedu s kočárkem a kde najdu pítko nebo záchod. Chci přecházet silnici nebo posílat dítě samo do školy a nebát se. Chci nové byty, aby lidé mohli bydlet v Praze a měli většinu věcí za rohem jako já, místo aby dvakrát denně stáli pod mými okny v zácpách. A kandiduji za Zelené na Praze 3, protože chtít nestačí.</p>
 <p>Zelení byli na Praze 3 v koalici na radnici poslední 4 roky a moc se mi líbí, co tady prosazují. Toto je můj způsob, jak je můžu podpořit víc, než jen hlasem nebo lajkem na FB. Zatím nejsem ani členem strany, kandiduji jako nezávislý. Patnácté nebo kolikáté místo na kandidátce samozřejmě znamená, že nemám reálnou šanci být někam zvolen, ale budu rád, když třeba i díky mě dostanou místní Zelení nějaké hlasy.</p>
 </blockquote>
-<p>Čekal jsem, že bude tento <em>coming out</em> víc polarizující, ale asi mám dobrou bublinu a schytal jsem jen jeden plačící smajlík a jeden rozpačitý komentář, jinak spíš lajky a srdíčka. Převážně od lidí, kteří na Praze 3 samozřejmě nebydlí :D</p>
-<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+</figure><p>Čekal jsem, že bude tento <em>coming out</em> víc polarizující, ale asi mám dobrou bublinu a schytal jsem jen jeden plačící smajlík a jeden rozpačitý komentář, jinak spíš lajky a srdíčka. Převážně od lidí, kteří na Praze 3 samozřejmě nebydlí :D</p>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <ul>
 <li>Ve středu jsem byl na <a href="https://pyvo.cz/praha-pyvo/">pražském Pyvu</a>, které testovalo nový prostor v Hloubětíně.</li>
 <li>Upgradoval jsem na novější verzi Bootstrapu. Chtělo to pár změn i v SCSS kódu.</li>
@@ -106,7 +122,7 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Během 7 dní od 16.7. do 22.7. jsem naběhal 10 km, při procházkách nachodil 8 km, na túrách nachodil 9 km. Celkem jsem se hýbal 10 hodin a zdolal při tom 27 kilometrů.</li>
 <li>Aktuální finanční výsledky, návštěvnost a další čísla k JG <a href="https://junior.guru/open/">mám přímo na webu</a>.</li>
 </ul>
-<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Tři věci, které bych chtěl zvládnout udělat příště:</p>
 <ol>
 <li>Připravit první verzi zpráv pro onboarding a pustit je do první testovací skupiny lidí.</li>
@@ -114,9 +130,9 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Propagovat nový díl podcastu.</li>
 </ol>
 <p><strong>Bonus:</strong> Doplánovat si pořádnou dovolenou.</p>
-<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
-<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
 <ul>
 <li><a href="https://jaknasite.simplecast.com/episodes/jiri-rostecky-mladypodnikatelcz-xwCFefgz">Jiří Rostecký: MladýPodnikatel.cz</a><br>Super rozhovor, kde se řeší hodně věcí, které teď v marketingu zrovna řeším.</li>
@@ -124,43 +140,73 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li><a href="https://overcast.fm/+rTsX1IG4s">Pieter Levels: Making $2.7M A Year With No Employees</a><br>Ojedinělý podcast s P. Levelsem o tom, jak startupuje v jednom člověku a žije si život jaký chce.</li>
 <li><a href="https://www.mujrozhlas.cz/rapi/view/episode/30581361-7f8a-3317-be0a-0ea540b713c3">Konvalinka: Letní vlna je největší za celou dobu, nemá smysl čekat na nové vakcíny</a><br>Blíží se další vlna covidu? Užitečné shrnutí.</li>
 </ul>
-<p><small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small></p></div></div></div></div>
-  </div>
+<p><small>Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu jsem použil vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small></p></div></div></div></div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

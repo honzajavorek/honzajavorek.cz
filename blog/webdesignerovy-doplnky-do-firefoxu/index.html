@@ -7,17 +7,16 @@
 
     <meta property="og:title" content="Webdesignérovy doplňky do Firefoxu &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/webdesignerovy-doplnky-do-firefoxu/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
-          <meta property="og:image" content="https://honzajavorek.cz/images/home/honza.jpg">
-      <meta name="twitter:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+          <meta property="og:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+      <meta name="twitter:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
       <meta name="twitter:card" content="summary">
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -30,36 +29,54 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/webdesignerovy-doplnky-do-firefoxu/" rel="bookmark">
-        Webdesignérovy doplňky do Firefoxu
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2008-06-26T14:58:00+02:00">
-            26. 6. 2008
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Webdesignérovy doplňky do Firefoxu
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/webdesignerovy-doplnky-do-firefoxu/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2008-06-26T14:58:00+02:00">
+          26. 6. 2008
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        2
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/webdesignerovy-doplnky-do-firefoxu&interval=week&start=2008-06-26T14:58:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
-      <div class="article-warning">
+  <main class="article-content">
+      <div class="alert alert-warning article-warning" role="alert">
         <p>
-          <strong>Upozornění!</strong> Tento článek vyšel
-          před 14 lety.
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          Tento článek vyšel
+          <strong>před 14 lety</strong>.
           Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
           že dnes se Honza již nemusí s obsahem ztotožňovat.
         </p>
@@ -68,56 +85,86 @@
     <div><div><div><div><p><em>Článek disponuje zvýšeným výskytem vysvětlivek a neobsahuje skoro žádná tučná slova. Autor tím chce zamezit nerovnoprávnosti a dopřát možnost realizovat se i minoritním HTML tagům. Tuto aktivitu můžete podpořit také <a href="http://www.javorek.net/kontakt/">dary na jeho účet</a> nebo lobováním za dotace na tuto činnost z Evropských fon­dů.</em></p>
 <p>Když si pořizujeme <a href="http://firefox.czilla.cz/">zvířátko</a>, většinou nepočítáme příliš se změnami jeho přirozeného uspořádání. Dostaneme štěně a kromě toho, že občas přijde aktualizace na většího pejska, nemáme možnost přidat nožičku, měnit barvu očí, prodlužovat srst nebo ji přebarvit na barvu, která se nám líbí. Ubírat součásti sice můžeme, ale to většinou ke své vlastní škodě. A když jsme jednou kamarádce přesprejovali pejska na červeno, nadšená nebyla :D .</p>
 <p>V digitálním světě je to ale celé jinak. Stáhnete si pandu a hned potom, co přestanete spekulovat nad tím, proč se jmenuje jako liška, můžete přidávat nejen nožičky, ale třeba i chapadýlka. Vlastně máte zvířátko v LEGO edici. Já se pokusím naznačit, která z rozšíření pro mé oblíbené zvířátko se hodí člověku HTML a CSS znalému, protože o těch běžných jako <a href="http://adblockplus.org/en/">AdBlock Plus</a> nebo <a href="http://lifehacker.com/software/exclusive-lifehacker-download/better-gmail-2-firefox-extension-for-new-gmail-320618.php">Better Gmail 2</a> ví asi každý a těch pár specialitek jako <a href="http://trac.arantius.com/wiki/Extensions/TinyMenu">Tiny Menu</a> nikoho nezajímá ;) .</p>
-<h2 id="ie-netrenderer-ie-tab"><a href="https://addons.mozilla.org/en-US/firefox/addon/6455">IE NetRenderer</a>, <a href="https://addons.mozilla.org/cs/firefox/addon/1419">IE Tab</a><small class="permalink"><a href="#ie-netrenderer-ie-tab" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="ie-netrenderer-ie-tab"><a href="https://addons.mozilla.org/en-US/firefox/addon/6455">IE NetRenderer</a>, <a href="https://addons.mozilla.org/cs/firefox/addon/1419">IE Tab</a><small class="permalink"><a href="#ie-netrenderer-ie-tab" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Pomáhají při testování webů v IE. Já jsem nakonec dospěl k názoru, že asi nejobratnější a nejúčinnější řešení je udělat nějaký ten klik navíc a spustit si samostatně IE a kouknout se na web v něm.</p>
-<h2 id="firebug"><a href="https://addons.mozilla.org/en-US/firefox/addon/1843">Firebug</a><small class="permalink"><a href="#firebug" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="firebug"><a href="https://addons.mozilla.org/en-US/firefox/addon/1843">Firebug</a><small class="permalink"><a href="#firebug" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Nezbytnost. Kódovat webové šablony bez Firebugu je asi jako</p>
-<blockquote>
+<figure class="figure figure-blockquote"><blockquote class="blockquote">
 <p><em>[: Kdybych já ti musel kolíbku dělati,
 do dřeva netíti, :]
 [: ty bys mi musela košiličku šíti
 bez jehly a nití. :]</em></p>
 </blockquote>
-<p>Rozebere celou stránku, ukáže definice CSS, identifikuje všechny elementy, jejich okraje, marginy, paddingy, má konzoli na JavaScript a AJAX, …</p>
-<h2 id="web-developer"><a href="https://addons.mozilla.org/en-US/firefox/addon/60">Web developer</a><small class="permalink"><a href="#web-developer" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+</figure><p>Rozebere celou stránku, ukáže definice CSS, identifikuje všechny elementy, jejich okraje, marginy, paddingy, má konzoli na JavaScript a AJAX, …</p>
+<h2 id="web-developer"><a href="https://addons.mozilla.org/en-US/firefox/addon/60">Web developer</a><small class="permalink"><a href="#web-developer" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Jestliže Firebug rozebere stránku, Web Developer je především sada nástrojů na manipulaci se stránkou jako takovou. Od validačních linků přes vypínání obrázků až po informace, formuláře, změnu velikosti okna a různé nestandardní změny layoutu stránky. Málokdo ví, že lze lišta schovat do jednoho tlačítka, jímž lze vypnout a zapnout dle potřeby a ve vykonávání běžného NIČ potom Web Developer nepřekáží.</p>
 <p>Závěr? Odzkoušeno roky – jako webdesigner si člověk vystačí se dvěma rozšířeními. A pokud jde o ta mimo obor, platí asi ono univerzální pravidlo, že čím méně rozšíření mám, tím jednodušší mám život. Když tak na ta svá rozšíření koukám, zjišťuji že skoro většina z nich jsou slovníky :) .</p></div></div></div></div>
-  </div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

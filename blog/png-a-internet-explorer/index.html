@@ -7,17 +7,16 @@
 
     <meta property="og:title" content="PNG a Internet Explorer &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/png-a-internet-explorer/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
-          <meta property="og:image" content="https://honzajavorek.cz/images/home/honza.jpg">
-      <meta name="twitter:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+          <meta property="og:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+      <meta name="twitter:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
       <meta name="twitter:card" content="summary">
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -30,87 +29,135 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/png-a-internet-explorer/" rel="bookmark">
-        PNG a Internet Explorer
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2007-08-30T11:54:00+02:00">
-            30. 8. 2007
-          </time>
-        </small>
+  <h1 class="title display-5">
+    PNG a Internet Explorer
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/png-a-internet-explorer/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2007-08-30T11:54:00+02:00">
+          30. 8. 2007
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        2
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/png-a-internet-explorer&interval=week&start=2007-08-30T11:54:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
-      <div class="article-warning">
+  <main class="article-content">
+      <div class="alert alert-warning article-warning" role="alert">
         <p>
-          <strong>Upozornění!</strong> Tento článek vyšel
-          před 15 lety.
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          Tento článek vyšel
+          <strong>před 15 lety</strong>.
           Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
           že dnes se Honza již nemusí s obsahem ztotožňovat.
         </p>
       </div>
 
     <div><div><div><div><p>Tak pozor milý čtenáři! Avizoval jsem sice předem, že o tvorbě webu psát nechci a nebudu, ale protože jsem přišel na <strong>něco skvělého</strong>, prostě se podělit musím :) . Amerika ještě nebyla objevena celá, a to ani ve webdesignu! B)</p>
-<h2 id="alfa-beta-gamma">Alfa, béta, gamma<small class="permalink"><a href="#alfa-beta-gamma" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="alfa-beta-gamma">Alfa, béta, gamma<small class="permalink"><a href="#alfa-beta-gamma" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Většina webu se zabývá v souvislosti s PNG a IE <strong>průhledností</strong>, s níž má Explorer velké potíže. Jsou již na světe samozřejmě způsoby, jak to obejít, a rozumnému člověku stačí k jejich odhalení <a href="http://www.google.cz/search?q=png+internet+explorer">Google</a>. O čem se však téměř nikde nepíše (alespoň tedy česky), je také zvláštní zpracování <strong>gamma</strong> hodnot obrázků PNG v IE. Pokud tentýž obrázek PNG zobrazíš ve Firefoxu, Opeře a IE, zjistíš (a to i v IE7), že nejrozšířenější browser holt grafiku zobrazí s mírně <strong>odlišnými odstíny barev</strong>. Jedná-li se o obrázek uprostřed textu, zřejmě ti to bude docela fuk. Jestliže potřebuješ obrázek zasadit do přesného pixelového layoutu, zjistíš, že ti nesedí do barev vykreslovaných prohlížečem pomocí CSS nebo barev ostatních souborů.</p>
-<h2 id="spasa-drcenim">Spása drcením<small class="permalink"><a href="#spasa-drcenim" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="spasa-drcenim">Spása drcením<small class="permalink"><a href="#spasa-drcenim" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Řešení? Existuje program <a href="http://pmt.sourceforge.net/pngcrush/">PNGcrush</a>, jenž si umí s formáty PNG a MNG docela slušně pohrát. Jedna z věcí, které dokáže, je právě optimalizace gamma hodnoty tak, aby se s ním popral i IE. Program je ke stažení i pod Windows – jedna <em>exe binárka</em>, nemusí se samozřejmě instalovat a spouští se z příkazového řádku. Soubor <strong>pngcrush.exe</strong> si tedy nahraj do adresáře se všemi <em>postiženými</em> obrázky a pak za hlubokých meditací prones magickou formuli</p>
 <pre class="highlight"><code><span></span><code>pngcrush -rem alla -d out *.png
 </code></code></pre>
 
-<h2 id="vysledek">Výsledek?<small class="permalink"><a href="#vysledek" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="vysledek">Výsledek?<small class="permalink"><a href="#vysledek" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Výsledek skvostný :) . Vše se zobrazuje, jak má. Můžeme již jen provolat slávu Internet Exploreru, jelikož bez něj by byl náš webdesignerský život zcela <strong>nudný a nezáživný</strong>, rutinní… Měli bychom spoustu zbytečného času a hlavně, o dost méně práce. A to přece nikdo nechceme, vždyť nás tahle práce živí a <strong>baví</strong>… ;)</p></div></div></div></div>
-  </div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

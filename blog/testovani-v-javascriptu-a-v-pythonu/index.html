@@ -7,17 +7,16 @@
 
     <meta property="og:title" content="Testování v JavaScriptu a v Pythonu &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/testovani-v-javascriptu-a-v-pythonu/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
-          <meta property="og:image" content="https://honzajavorek.cz/images/home/honza.jpg">
-      <meta name="twitter:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+          <meta property="og:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+      <meta name="twitter:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
       <meta name="twitter:card" content="summary">
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -31,42 +30,59 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/testovani-v-javascriptu-a-v-pythonu/" rel="bookmark">
-        Testování v JavaScriptu a v Pythonu
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-translations">
-        <small>
-              Překlady:
-              <a href="https://honzajavorek.cz/blog/testing-in-javascript-and-in-python/" hreflang="en">en</a>
-        </small>
+  <h1 class="title display-5">
+    Testování v JavaScriptu a v Pythonu
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/testovani-v-javascriptu-a-v-pythonu/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2016-05-31T10:43:00+02:00">
+          31. 5. 2016
+        </time>
       </li>
-      <li class="article-published">
-        <small>
-          <time datetime="2016-05-31T10:43:00+02:00">
-            31. 5. 2016
-          </time>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        8
+          min čtení
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-translations">
+        <i class="bi bi-globe"></i>
+          Překlady:
+          <a href="https://honzajavorek.cz/blog/testing-in-javascript-and-in-python/" hreflang="en">EN</a>
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/testovani-v-javascriptu-a-v-pythonu&interval=week&start=2016-05-31T10:43:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
-      <div class="article-warning">
+  <main class="article-content">
+      <div class="alert alert-warning article-warning" role="alert">
         <p>
-          <strong>Upozornění!</strong> Tento článek vyšel
-          před 6 lety.
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          Tento článek vyšel
+          <strong>před 6 lety</strong>.
           Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
           že dnes se Honza již nemusí s obsahem ztotožňovat.
         </p>
@@ -79,7 +95,7 @@ propagátorem jazyka Python, mým účelem není napsat hejt na JavaScript a zd�
 že Python je nejlepší na světě. Chci pouze upozornit na nedostatek v jednom
 z těchto dvou ekosystémů. Příště klidně napíšu článek o tom, jak mě štve
 balíčkování v Pythonu a proč se mi mnohem víc líbí npm.</p>
-<h2 id="testovani-v-pythonu">Testování v Pythonu<small class="permalink"><a href="#testovani-v-pythonu" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="testovani-v-pythonu">Testování v Pythonu<small class="permalink"><a href="#testovani-v-pythonu" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Hodně lidí při psaní testů v Pythonu používá <a href="https://docs.python.org/3/library/unittest.html">unittest</a>,
 modul ze základní knihovny, který lidem umožňuje rychle vytáhnout nějaký ten <a href="https://en.wikipedia.org/wiki/XUnit">XUnit</a>
 způsob psaní testů, plný <code>class TestNěco</code>, <code>self.assertTamto()</code> a <code>setUp/tearDown</code>
@@ -116,7 +132,7 @@ Viz <a href="http://flask.pocoo.org/docs/0.12/testing/">Flask</a>, <a href="http
 ale i ten mi kód testů zjednoduší. Běžně je test jen na pár řádků, což šetří čas můj,
 mého kolegy, který dělá code review, i všech ostatních, kdo budou ty testy v budoucnu číst. Testy si spustím z jaké složky chci a snadno
 si spustím třeba jen ty, které mi posledně neprošly.</p>
-<h2 id="mocha">Mocha<small class="permalink"><a href="#mocha" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="mocha">Mocha<small class="permalink"><a href="#mocha" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Ve světě serverového JavaScriptu, s jakým jsem měl tu čest se v <a href="https://apiary.io/">Apiary</a> seznámit, je zlatým standardem <a href="http://mochajs.org/">Mocha</a>. Tvrzení <em>feature-rich</em> v podtitulku znamená, že si máte doinstalovat i ten <a href="http://chaijs.com/">assert</a>. Ne, teď vážně. V Mocha vypadají <em>killer features</em> takto:</p>
 <ul>
 <li>Spouští všechny testy a když někam napíšu <code>.only</code>, spustím jen ten daný test,</li>
@@ -155,13 +171,13 @@ to po ruce nemají, tak buď testy copy-pastují, nebo si pomůžou přes <code>
 a všude naplácejí nějaké funkce na sdílení assertů. Nevím, který z těch dvou
 přístupů je horší. První je čitelný, ale špatně spravovatelný, druhý je nečitelný,
 byť alespoň iluzorně o něco lépe spravovatelný.</p>
-<h2 id="npm-zachranuje-situaci-nebo-taky-ne">npm zachraňuje situaci - nebo taky ne<small class="permalink"><a href="#npm-zachranuje-situaci-nebo-taky-ne" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="npm-zachranuje-situaci-nebo-taky-ne">npm zachraňuje situaci - nebo taky ne<small class="permalink"><a href="#npm-zachranuje-situaci-nebo-taky-ne" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Člověk, který už nějakou chvíli s Node.js pracuje, by si řekl, že tohle všechno jde nejspíš doplnit přes balíčky na npm. Jak jsem už naznačil, kvůli chybějící poptávce to není úplně růžové. Když už balíčky vůbec existují, <a href="https://github.com/jpstevens/mocha-shared">mají do deseti commitů a posledním z nich proběhl před dvěma roky</a>. Autoři už nejspíš dávno píšou
 v <a href="http://elm-lang.org/">Elmu</a>, takže nové verze neřeší... Navíc se zdá, že balíčky pro Mochu v zásadě řeší spíš její nemoci a nedostatky. Nepřidávají vychytávky, které by vylepšovaly <em>developer experience</em>.</p>
 <p>V době psaní článku je <a href="https://github.com/rstacruz/mocha-clean">mocha-clean</a> nejvíce ohvězdičkovaný doplněk pro Mochu na GitHubu. Tedy z těch, které opravdu něco přidávají - přeskočil jsem integrace typu Mocha + React, Mocha + Mongo, Mocha + prohlížeč, apod. Opravuje <em>stacktraces</em>.</p>
 <p>Co jiného bych si představoval? Tak třeba <a href="https://github.com/tarpas/pytest-testmon/">pytest-testmon</a> je doplněk, který využívá code coverage k tomu, aby určil, jaké testy má spustit znova a jaké může nechat ležet ladem. Tzn. něco, co extrémně zvyšuje produktivitu. Žádné manuální <code>.only</code> nebo otrocké grepování.</p>
 <p>A co se týče ovládání spouštění testů nebo formátu výstupu, i kdybych nakonec na npm našel něco, co mi vysněné přepínače doplní, nebude to jedna standardní implementace, standardní konvence, kterou by znal i nově příchozí kolega.</p>
-<h2 id="trendy">Trendy<small class="permalink"><a href="#trendy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="trendy">Trendy<small class="permalink"><a href="#trendy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Článek jsem napsal jako vyústění dlouhodobé frustrace z toho, že se v JavaScriptu
 musí na poli testování nejen vynalézat znova kolo, ale že ho ani nikdo nevynalézá.
 Ani módní výstřelky typu <a href="https://github.com/avajs/ava">AVA</a> proti <a href="https://en.wikipedia.org/wiki/Spaghetti_code">špagetám</a> nebrojí. Už podle
@@ -174,7 +190,7 @@ Mocha s jinou syntaxí, ještě méně features (tzn. bude vyžadovat nový ekos
 vypadá to hodně dobře. Není tam jinak ale nic, co reálně ovlivňuje jednoduchost psaní složitějších testů. Autoři sice spálili hromadu času na tom, aby to jelo se všema Babelama a Reactama
 a TypeScriptem, ale to nejsou věci, které mi ušetří čas při psaní testů, to
 jsou šaškárny JavaScript ekosystému, za které nemůžu, a jako prostého uživatele mě moc nezajímají.</p>
-<h2 id="tldr">TL;DR<small class="permalink"><a href="#tldr" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="tldr">TL;DR<small class="permalink"><a href="#tldr" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Abych to shrnul, na testování v JavaScriptu mě štvou dvě věci:</p>
 <ul>
 <li>Asserty jako jsou v pytestu (nebo deklarativnost pomocí dekorátorů,
@@ -192,42 +208,72 @@ propagovat třídění odpadu v Súdánu.</li>
 <p><em>Tento článek jsem napsal z čiré frustrace, původně jen jako <a href="https://gist.github.com/honzajavorek/fc3279273dbffa7416ce384fa614cd1f">cár Markdownu, úplně mimo blog</a>.
 Sem byl přepsán v lednu 2017 a posléze přeložen do angličtiny jako <a href="https://honzajavorek.cz/blog/testing-in-javascript-and-in-python/">Testing in JavaScript
 and Python</a>.</em></p></div></div></div></div>
-  </div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

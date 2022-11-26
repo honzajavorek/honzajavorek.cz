@@ -7,8 +7,6 @@
 
     <meta property="og:title" content="Týdenní poznámky #50: Ladění AV a generování plakátků &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-50-ladeni-av-a-generovani-plakatku/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
     <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
     <meta property="og:image:width" content="1024">
@@ -17,8 +15,9 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -31,38 +30,55 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-50-ladeni-av-a-generovani-plakatku/" rel="bookmark">
-        Týdenní poznámky #50: Ladění AV a generování plakátků
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2021-05-17T00:00:00+02:00">
-            17. 5. 2021
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Týdenní poznámky #50: Ladění AV a generování plakátků
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-50-ladeni-av-a-generovani-plakatku/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2021-05-17T00:00:00+02:00">
+          17. 5. 2021
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        17
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-50-ladeni-av-a-generovani-plakatku&interval=week&start=2021-05-17T00:00:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
+  <main class="article-content">
 
     <div><div><div><div><p>Utekl další týden (10.5. — 16.5.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-49-cenik-ama-vylepsovani-klubu/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/club/">klub</a>, a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.</p>
-<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
 Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
 <p>Akorát že není pátek, je pondělí. Padesáté poznámky jsem nestihl napsat v pátek a o víkendu na to nějak nebyla chuť a čas.</p>
-<h2 id="audio-video">Audio video<small class="permalink"><a href="#audio-video" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="audio-video">Audio video<small class="permalink"><a href="#audio-video" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>S <a href="https://coreskill.tech/">Danem Srbem</a> jsme si jeden den spontánně zavolali, abychom si něco rychle řekli, ale vyústilo to v call na celé odpoledne, kde jsme řešili detaily nahrávání, učil mě pořádně ovládat a nastavovat <a href="https://obsproject.com/">OBS</a>, apod.</p>
 <p>Řešili jsme hlavně zvuk a to, aby se nestala stejná chyba, jako při AMA s Jirkou Psotkou. Nastavil jsem <a href="https://obsproject.com/forum/threads/%E2%80%9Capple-vt-h264-hardware-encoder-unlocked-for-apple-silicon-m1.138433/">Apple VT H264 Hardware Encoder</a>, který by měl být lepší pro M1, zvyšovali bitrate audia, koukali jsme na <a href="https://www.izotope.com/en/learn/audio-dynamics-101-compressors-limiters-expanders-and-gates.html">různé filtry</a>, které mi mohou pomoci ladit zvuk, předělali jsme způsob, jakým se posílá zvuk do <a href="https://github.com/ExistentialAudio/BlackHole/">BlackHole</a>. Předtím jsem měl multi-output device, kde audio z počítače bylo nastaveno tak, aby šlo do něj. Z něj šlo do mých sluchátek a do černé díry, na které poslouchalo OBS. Teď to bude tak, že v Discordu nastavím výstup na černou díru a v OBS budu mít zapnutý odposlech, takže ve sluchátkách uslyším přímo to, co se nahrává (kromě sebe, protože slyšet se mluvit, zatímco mluvím, není moc užitečné). Také díky tomu můžu přímo v OBS nastavovat hlasitost svoji a zvuku z Discordu, aby byla stejná. Změny jsem si hned poznačil do <a href="https://gist.github.com/honzajavorek/b1a77651e566cb6405a131bbf1fb0692">svého seznamu úkonů</a>. Zvažovali jsme i nahrávat do různých stop, aby šlo případně dělat postprocessing pro každý hlas zvlášť, ale nechci s tím trávit víc času, než je nutné. Bude muset stačit, že to nahraju na první dobrou prostě dobře.</p>
 <p>Dále jsem s Danem a bráchou a probíral mikrofony a sluchátka, poznačím si tady odkazy na věci, o kterých byla řeč:</p>
@@ -75,12 +91,12 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <p>Dan také pracoval na opravě zvuku u AMA s Jirkou Psotkou. Dohodli jsme se, že pokud to nepůjde automaticky, tak 2 hodiny záznamu ručně procházet nebude, řekne mi co a jak a já to jako dělník naklikám. Ale nakonec to udělal celé sám, za což bych mu chtěl ještě jednou velice poděkovat! V jednu chvíli mi poslal „opravený“ záznam, který jsme pak ale zjistili, že je nějaký vadný. Jenže mezitím jsem ho už nahrál na YouTube a dal členům klubu, takže pak jsme dělali ještě jedno kolečko. Trochu Pat a Mat, nicméně finální, třetí video je už opravdu to nejlepší, co z toho vyždímeme. Dali jsme tam i sekce, na které jde klikat.</p>
 <p>Záznamy běžně nikde neuveřejňuji, jsou jen pro členy klubu a jejich „kamarády“. To znamená, že je mohou volně poslat i někomu jinému, zhruba stejně, jako by odemykali článek v novinách za paywallem. AMA s Jirkou byla ale tak dobrá, že na ni <a href="https://www.youtube.com/watch?v=-POZC63Chuk">dám odkaz i tady</a>. Stejně ty moje grafomanské poznámky nikdo nečte, takže to nebude žádný velký leak. A kdo to čte, je můj kamarád. Asi.</p>
 <p>A pokud to leak bude, aspoň lidi uvidí, co se v klubu odehrává a budou chtít do něj. Nebo budou chtít svou firmu prezentovat podobně a bude z toho další hezká AMA!</p>
-<h2 id="umela-inteligence-pro-nabidky-prace">Umělá inteligence pro nabídky práce<small class="permalink"><a href="#umela-inteligence-pro-nabidky-prace" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="umela-inteligence-pro-nabidky-prace">Umělá inteligence pro nabídky práce<small class="permalink"><a href="#umela-inteligence-pro-nabidky-prace" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Nedávno jsem jel s <a href="https://milavotradovec.cz/">Mílou</a> na kole na výlet, abychom se domluvili, co dál s nabídkami práce. Plán byl, ale čekalo to na mě. Priorita to není, jenže když se čeká na maintainera moc dlouho, contributorům opadne nadšení a najdou si jiné vyžití. Machine learning se musí kout, dokud je Míla žhavý.</p>
 <p>Takže jsem se do toho pustil a připravil mu podhoubí pro jeho další změny. Vytvořil jsem tajnou místnost na Discordu, kam padají nabídky, na kterých se můj robot a Mílova ML magie neshodnou. Tam je můžu já a případně další dobrovolníci hodnotit pomocí palců nahoru dolu, jestli si myslíme, že jsou juniorní nebo ne. To bude zpětná vazba pro učení. Naprogramoval jsem posílání nabídek do místnosti a sosání palců zpět do databáze. Míla by to asi dokázal udělat taky, ale já už přesně věděl jak a co, protože jsem tyhle věci všechny nedávno dělal, takže jsem to měl docela rychle. Nejsem na to nějak hrdý, je to celkem naprasené, ale zatím to bude stačit a snad to zajistí, že Mílovo nadšení neuhasne.</p>
 <p>Následně vždy, když tam něco přibylo, tak jsem se to snažil poctivě rozklikávat a ohodnotit. Dobré je, že to jsou jen jednotky nebo desítky nabídek, takže je to v mých silách. Kdybych měl hodnotit vše, co můj robot vyřadí, tak to je třeba jen za dnešek 344 nabídek. To by mi trvalo projít celý den. To není odhad, to vím, protože když jsem robota programoval, tak jsem to fakt procházel a projít nízké stovky nabídek spolu s úpravami v robotovi mi trvalo zhruba jeden pracovní den.</p>
 <p>Při rozklikávání nabídek jsem si všiml, že LinkedIn u některých ukazuje i osobu, která nabídku zadala. Proaktivně jsem si osoby vždy rozkliknul přidal si je, když už jsem se na danou nabídku koukal. Pokud si mě přidají, budou se jim zobrazovat moje statusy o JG a třeba z toho bude byznys.</p>
-<h2 id="generovani-plakatku">Generování plakátků<small class="permalink"><a href="#generovani-plakatku" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="generovani-plakatku">Generování plakátků<small class="permalink"><a href="#generovani-plakatku" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Začal jsem pracovat na automatizaci úkonů, které dělám kolem každé přednášky. Ideální bylo začít automatickými zprávami, které budou upozorňovat na blížící se přednášku, protože bych je hned vyzkoušel na úterní přednášce s Vildou. Jenže to se mi nechtělo, tak jsem pracoval na generování plakátků, které teď nutně nepotřebuji.</p>
 <p>Díval jsem se, jak lze z HTML a CSS vygenerovat obrázek. Inspirovala mě k tomu zpráva, že Google Documents <a href="https://workspaceupdates.googleblog.com/2021/05/Google-Docs-Canvas-Based-Rendering-Update.html">se budou nově renderovat přes canvas</a>. Třeba existují nějaké voňavé nové technologie, které by mě zbavily nutnosti spouštět prohlížeč a dělat screenshot? Našel jsem <a href="https://stackoverflow.com/a/46243263/325365">tuto hezkou odpověď</a>, kde je spousta nástrojů a API. Různé jsem zkoušel, ale nakonec jsem došel k tomu, že nic není rychlejší, lepší nebo jednodušší než to, co už používám na náhledy stránek (tzv. <code>og:image</code>), tedy že vygeneruju HTML přes Jinja2 a uložím screenshot přes <a href="https://github.com/sindresorhus/pageres">pageres</a>. Takže jsem si hezky početl a pohrál, ale používám dál to, co už jsem dávno měl.</p>
 <p>Doplnil jsem <a href="https://github.com/honzajavorek/junior.guru/blob/master/juniorguru/data/events.yml">data o přednáškách</a> tak, aby z nich šlo generovat plakáty. Ještě se z nich negeneruje ani <a href="https://junior.guru/events/">tahle stránka</a>, ale jednou určitě bude. Plakáty jsou zábavnější!</p>
@@ -101,7 +117,7 @@ $ export CFLAGS="-falign-functions=8 ${CFLAGS}"
 <p>Hned bych to nahlásil maintainerům Frozen-Flask, kdybych nebyl maintainerem Frozen-Flask. Bezmoc. Aspoň jsem to pak trochu zdokumentoval <a href="https://github.com/Frozen-Flask/Frozen-Flask/issues/112#issuecomment-841629172">tady</a>. Mimochodem zrovna tento týden se mi ozval nějaký člověk, který se chce stát maintainerem Frozen-Flask, tak jsem mu odepisoval, že na to nemám čas, stejně jako všichni maintaineři přede mnou, tak ať se klidně přidá. Možná bych se mohl pověnovat aspoň tomuto zákeřnému bugu a napsat na něj test nebo jej lépe zdokumentovat, uvidíme.</p>
 <p>Když už jsem myslel, že jsem vše opravil, zjistil jsem, že jsem si sice hezky pohrál s CSS <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">custom properties</a> pro barvy, ale dal jsem je i do <code>linear-gradient()</code>, kde mi nefungují pro hex čísla, do <code>rgba()</code> musím dávat jednotlivé složky. Když jsem barvy měl původně v SCSS proměnných, fungovalo to.</p>
 <p>No jinými slovy, vše jsem rozbil a pak jsem to celý večer lepil a byl jsem následně zralý na velké klikání na <a href="http://milujipraci.cz/">Miluji práci</a>. Na poznámky nedošlo. Už jsem jen odpadl, pustili jsme si s investorkou seriál a šli spát. Super pátek. Naštěstí to vyvážila párty neděle, kdy se kamarádi stavili k nám na Žižkov na partičku <a href="http://www.bang.cz/">Bangu</a>.</p>
-<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <ul>
 <li>Zjistil jsem, že i když nemám nějak extra boostnutý Discord server, v základu můžeme mít 50 custom emojis. Pár jsem jich přidal a to dále spustilo lavinu všelijakých požadavků na emoji :D Máme <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">gumovou kachnu</a> i hlavu <a href="http://robweb.sk/">yablka</a>.</li>
 <li>Na <a href="https://python.cz/">python.cz</a> jsem opravil pokažený auto-deploy. Z nějakého důvodu se skriptu nedařilo přepsat <code>gh-pages</code> větev, tak jsem zkusil nějaký nový GitHub token a ještě jsem větev ručně smazal a vyrobil znova. To zabralo ¯\_(ツ)_/¯</li>
@@ -124,7 +140,7 @@ $ export CFLAGS="-falign-functions=8 ${CFLAGS}"
 <li>Vyprší mi lítačka a vlastně nevím, jestli chci novou, nebo ne. Mám pocit, že jsem nikam rok nejezdil a když už jsem někam jel, tak na kole. Bydlím na místě, kde vše zařídím pěšky. Zkusím to bez lítačky a nechám se překvapit.</li>
 <li>Během 10 dní od 8.5. do 17.5. jsem naběhal 26 km, při procházkách nachodil 37 km, na túrách nachodil 1 km. Celkem jsem se hýbal 17 hodin a zdolal při tom 64 kilometrů.</li>
 </ul>
-<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Tři věci, které bych chtěl zvládnout udělat příště:</p>
 <ol>
 <li>Pracovat na materiálu, který připravujeme společně s Engetem.</li>
@@ -132,9 +148,9 @@ $ export CFLAGS="-falign-functions=8 ${CFLAGS}"
 <li>Promovat dál <a href="https://frontendisti.cz/konference">konferu Frontendistů</a>.</li>
 </ol>
 <p><strong>Bonus:</strong> Shánět někoho dalšího na přednášku, ale možná si dám i chvilku pauzu, ať stíhám dělat i jiné věci. Chlapů mám pár v zásobě, bral bych spíš ženy.</p>
-<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
-<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
 <ul>
 <li><a href="https://a2larm.cz/2021/05/jak-to-maji-milenialove-s-bydlenim-casto-mizerne-rodice-jim-ale-vstipili-ze-stat-to-resit-nemusi/">Jak to mají mileniálové s bydlením? Často mizerně. Rodiče jim ale vštípili, že stát to řešit nemusí</a><br>„Zdejší mentalita, utvářená tradicí dědit byty po rodičích a přesvědčením, že každý se musí snažit a pomoct si sám, nedává mnoho prostoru pro hledání řešení, jež by pomohlo zlepšit kvalitu života velkého počtu lidí.“</li>
@@ -153,42 +169,72 @@ $ export CFLAGS="-falign-functions=8 ${CFLAGS}"
 <li><a href="https://sambleckley.com/writing/church-of-interruption.html">The Church of Interruption</a><br>Jak konverzujete vy? Já se na tuto otázku bojím odpovědět :(</li>
 </ul>
 <p><small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small></p></div></div></div></div>
-  </div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

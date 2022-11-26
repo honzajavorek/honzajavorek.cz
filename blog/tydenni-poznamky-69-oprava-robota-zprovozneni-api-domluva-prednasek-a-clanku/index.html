@@ -7,8 +7,6 @@
 
     <meta property="og:title" content="Týdenní poznámky #69: Oprava robota, zprovoznění API, domluva přednášek a článků &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-69-oprava-robota-zprovozneni-api-domluva-prednasek-a-clanku/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
     <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
     <meta property="og:image:width" content="1024">
@@ -17,8 +15,9 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -31,37 +30,54 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-69-oprava-robota-zprovozneni-api-domluva-prednasek-a-clanku/" rel="bookmark">
-        Týdenní poznámky #69: Oprava robota, zprovoznění API, domluva přednášek a článků
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2021-10-10T00:00:00+02:00">
-            10. 10. 2021
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Týdenní poznámky #69: Oprava robota, zprovoznění API, domluva přednášek a článků
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-69-oprava-robota-zprovozneni-api-domluva-prednasek-a-clanku/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2021-10-10T00:00:00+02:00">
+          10. 10. 2021
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        10
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-69-oprava-robota-zprovozneni-api-domluva-prednasek-a-clanku&interval=week&start=2021-10-10T00:00:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
+  <main class="article-content">
 
     <div><div><div><div><p>Utekl zase nějaký ten týden (4.10. — 10.10.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-68-odstraneni-vercelu-cally-pracovni-inzeraty/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/club/">klub</a>, a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.</p>
-<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
 Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
-<h2 id="vykonnost-synchronizace">Výkonnost synchronizace<small class="permalink"><a href="#vykonnost-synchronizace" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="vykonnost-synchronizace">Výkonnost synchronizace<small class="permalink"><a href="#vykonnost-synchronizace" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Když spustím <code>make sync</code>, stáhnou se všechna potřebná data z internetu do SQLite. Až potom mohu spustit <code>make build</code> nebo něco podobného a vygenerovat tím statický web JG. Onen <code>sync</code>, tedy synchronizace, se stará o vše, komunikaci s Discordem, stahování finančních výsledků, scrapování pracovních nabídek, apod.</p>
 <p>Jak jsem psal minule, tento týden jsem startoval s tím, že je tato část JG rozbitá. Jednak generovala příliš mnoho textu na výstupu jako logy, takže se na mě CircleCI už vyprdlo s tím, že by to ukládalo. Jednak už to po posledních změnách trvalo příliš dlouho, déle než půl hodiny.</p>
 <p>Velký objem textu padal ze Scrapy, jež ve výchozím stavu vypisuje každý scrapnutý kousek dat, který mu projde pod rukou. To jsem nakonec vyřešil jiným <code>__repr__()</code> pro <code>Item</code> objekty, aby se vypisoval třeba jen titulek a dvě tři další políčka, ale zbytek ne. Jak to funguje se můžete podívat <a href="https://github.com/honzajavorek/junior.guru/blob/main/tests/test_lib_repr.py">v testech</a>.</p>
@@ -70,15 +86,15 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <p>Řešením bylo pustit všechny scrapery v jednom procesu a nechat je prolínat se. Myslel jsem, že to snad se Scrapy ani nejde, o to víc mě překvapilo, že příklad, jak to udělat, byl <a href="https://docs.scrapy.org/en/latest/topics/practices.html">přímo v dokumentaci</a>. Buď je to nové, nebo jsem to dřív přehlídl. Každopádně potřeboval jsem to až teď a teď to tam bylo, tak že dobrý. Překvapilo mě, jak byl přechod na „Scrapy v jednom procesu“ okamžitý. Přepsal jsem 10 řádků kódu a vše fungovalo prakticky jako předtím, ale rychleji. O to víc mě pak zaskočil jiný problém, a to nemožnost restartovat Twisted reaktor v rámci jednoho procesu.</p>
 <p>Scrapy jede nad frameworkem Twisted, jenž je starý pomalu jak Python sám, ale stále se vyvíjí a na síťové věci je to prý stále pecka. Mě to vlastně nemusí moc zajímat, protože mám synchronní kód a Scrapy mě od Twisted všude odstiňuje. Jenže když jsem začal Scrapy pouštět v rámci svého vlastního programu spolu se spoustou dalších věcí, už to začal být trochu i můj problém, že Twisted má v sobě nějaký reaktor a je asynchronní apod. Podobnou věc jsem <a href="https://honzajavorek.cz/blog/how-to-create-non-interactive-discord-bot/">řešil už u Discord bota</a>, ale tam šlo o <code>asyncio</code>, u něhož se mi povedlo najít způsob, jak <em>loop</em> restartovat, resp. zahodit starou a použít novou. Díky tomu jsem mohl v jednom procesu (<code>make sync</code>) sekvenčně za sebou spouštět různé věci, z nichž některé byly v podobě asynchronního bota, jenž nastartuje, něco udělá, a poté skončí. Přičemž tyto věci o sobě neví navzájem a nesdílí žádnou <em>loop</em>, neví se kolik jich tam je, nic podobného. Toto, jak jsem pochopil, s Twisted reaktorem udělat nejde. V jednom procesu může existovat jen jednou. Dokud se nezastaví, tak ten proces blokuje. Jakmile se zastaví, už se nedá nikdy znova spustit.</p>
 <p>Nic dalšího jsem k tomu nenašel, takže jsem se s tím smířil a zkusil nejjednodušší možné řešení: Vyrobit vždy jeden jediný <code>multiprocessing.Process()</code>, v němž se spustí Scrapy se svým reaktorem, pak profrčí všechny scrapery, pak se reaktor zastaví a proces skončí. Rodičovský proces <code>make sync</code> na tento počká a jede si dál, přičemž celá věc se může následně zopakovat podruhé, nebo kolikrát chce. Je to sice malá režie navíc, ale popravdě, výroba nějakého jednoho procesu fakt není něco, co by ten <code>make sync</code> zdržovalo. Celé to teď trvá 15-20 minut, což není úžas, určitě by to šlo zlepšovat, ale není to ani 30+ minut jako předtím.</p>
-<h2 id="api-pro-czechitas">API pro Czechitas<small class="permalink"><a href="#api-pro-czechitas" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="api-pro-czechitas">API pro Czechitas<small class="permalink"><a href="#api-pro-czechitas" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Spolu s opravou <code>make sync</code> jsem byl už jen krůček od finalizace API pro Czechitas, stačilo opravit nějaké kritérium v databázovém dotazu. Pak jsem ještě zjednodušil určité věci, např. překopal jak se eviduje časový údaj o tom, kdy byl inzerát vidět na internetu, pak ještě odverzovat tabulku s inzeráty tak, aby vše respektovalo její aktuální schéma, a bylo to.</p>
 <p>Výsledný soubor je <a href="https://junior.guru/api/jobs.json">tady</a> a jsem zvědav, co se nám s tím povede vyrobit. Naštěstí jsem nebyl v našem akčním týmu sám, komu se povedlo za dva týdny akorát motat v kruzích, takže jsme čtvrteční call s domluvou „co a jak dál“ nakonec posunuli. Vygenerováním tohoto souboru bych si přál mít definitivně za sebou aktuální pasáž života s podtitulkem „Honza se nekonečně dlouho brodí přebudováváním datového modelu kolem pracovních inzerátů“, ale tak jednoduché to nebude.</p>
 <p>Tím, že jsem do inzerátů začal šťourat, přišel jsem totiž na nějaké objektivní a těžko ignorovatelné chyby. Už dřív jsem si všiml, že když mi přestane fungovat scraper, můj monitoring není schopen to chytit. Původně jsem si myslel, že by mi bot mohl do klubu do nějaké tajné místnosti reportovat každý den statistiky, ale nakonec jsem to vyřešil jednodušeji. Skript <code>make check-scrapers</code>, který vyhodnocuje statistiky ze scraperů a případně selže s tím, že neodpovídají očekáváním, jsem pouze obohatil o heuristiku, zda náhodou nějaký scraper neselhal. Funguje to tak, že pokud scraper vyhodí příliš velké procento nabídek z podezřelých důvodů, selže to. Velikost procenta budu asi muset ladit, teď tam mám 5 %, ale už teď je to záchranná síť, pokud by to selhalo celé, jako dřív scraper na LI.</p>
 <p>No a právě scraper na LI mi teď dělá velké starosti. Sice zase funguje, to jo, to je velké plus. Jenže funguje až moc. Pokud LI nenajde na slovo „programátor“ nebo „tester“ už nic zajímavého, začne mi vracet věci jako „operátor/ka vstřikolisu“ nebo „dělník na úseku pálených lupků“. Robot je přitom naučený rozpoznávat, jestli je inzerát juniorní nebo ne, ale pozice vůbec neřeší. Dřív se stalo, že do výběru spadl „projekťák“ a vrtěli jsme hlavami, jestli to tam patří nebo ne, ale teď to nabralo jiné obrátky. Je to bohužel věc, která lidi na denní bázi obtěžuje a bude potřeba ji vyřešit. Zároveň je to věc, kterou nevím, jak vyřešit jednoduše.</p>
 <p>Také jsem díky šťourání do inzerátů zjistil, že mi nejspíš celou věčnost správně nefungovaly typy práce u inzerátů přímo z JG. Když u mě někdo inzeroval, nejspíš se na web ani do klubu nezpropagovala informace, zda jde o vedlejší úvazek apod. To se mi tento týden taky povedlo opravit.</p>
-<h2 id="casopis">Časopis<small class="permalink"><a href="#casopis" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="casopis">Časopis<small class="permalink"><a href="#casopis" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Komunikoval jsem s časopisem, do kterého mám psát. Sestavili jsme minulý týden tým externích autorek a autorů. Každý měl do čtvrtka zpracovat nějaký svůj vklad, čemuž jsem se věnoval skoro celý jeden den. Zároveň jsem dal v různých komunitách vědět, že budu pro časopis psát, aby se mi případně zajímaví lidé se zajímavými nápady přihlásili sami. Nabídl jsem i propojení s obchodním oddělením časopisu lidem, kteří zastupují zajímavé firmy na trhu. Z toho já osobně nic nemám, ale karma a kontakty se taky počítají. Dověděl jsem se díky tomu např. o success story, kterou jsem hned přidal na web: <a href="https://medium.com/ataccama-life/unlimitedplayground-irenas-story-7fef75e8625">Irena, z asistentky na vedoucí bezpečnosti</a>. Na základě našich vstupů nakonec šéfredaktorka zavelela a rozdělila úkoly, takže teď je plán jasný a zbývá hlavně psát. Celkově byla tahle činnost hodně velká kopa komunikace a rešerší.</p>
-<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <ul>
 <li>Odstranil jsem <a href="https://honzajavorek.cz/blog/monitoring-performance-with-lighthouse-and-circleci/">automatickou kontrolu performance aj. věcí pomocí Lighthouse přímo na CI</a>. Začalo to padat a během 20 minut jsem nepřišel na to, co je příčinou. Dokonce to vypadalo na nějaký bug v Lighthouse, nebo podivnost v tom, jak jej spouštím. Jednak se na ty výsledky nedívám a limity mám podle mě dost nízko. Jednak jsem později zjistil, že existuje <a href="https://github.com/GoogleChrome/lighthouse-ci">Lighthouse CI</a>, který bych měl použít místo vlastního řešení. Nemám teď na nic takového čas, takže jsem to prostě smázl a Lighthouse CI přidal někam daleko do backlogu.</li>
 <li>Volal jsem si s komunitní manažerkou jedné firmy a domlouvali jsme se, co spolu můžeme v budoucnu podniknout.</li>
@@ -89,16 +105,16 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Volal jsem si s borcem z LI, který byl nadšený do pomáhání juniorům ze strany byznysu a HR. Takových lidí nemám v klubu zatím moc, alespoň těch aktivních, takže jsme se dohodli, že jej přidám a pak si napíšeme, co by se dalo společně vymyslet dál.</li>
 <li>Během 7 dní od 4.10. do 10.10. jsem při procházkách nachodil 7 km. Celkem jsem se hýbal 4 hodin a zdolal při tom 7 kilometrů.</li>
 </ul>
-<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Tři věci, které bych chtěl zvládnout udělat příště:</p>
 <ol>
 <li>Začít portovat příručku hledání práce do Markdownu.</li>
 <li>Domluvit další přednášky.</li>
 <li>Naučit robota filtrovat pozice? :(</li>
 </ol>
-<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
-<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=yjjUQ_NB3wE">Česko je skanzen, chováme se jako blázni, úředníci jsou odtržení od reality, říká šéf IPR Boháč</a><br>Perfektní rozhovor o bytech, dopravě, urbanismu, městě.</li>
@@ -107,43 +123,73 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li><a href="https://blog.wuwej.net/2021/10/03/blog-a-cookies.html">Blog a cookies</a><br>Nevěděl jsem, že Google Analytics jde nastavit do módu bez cookies. Zajímavé!</li>
 <li><a href="https://www.seznamzpravy.cz/clanek/pristi-volby-uz-budou-o-klimatu-mladi-premysleji-jinak-rika-exministr-176466">Příští volby už budou o klimatu, mladí přemýšlejí jinak, říká exministr</a><br>„Teze, že u nás není možné postavit energetický systém na obnovitelných zdrojích, není pravdivá.“</li>
 </ul>
-<p><small>Upozorňuji, že to není vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small></p></div></div></div></div>
-  </div>
+<p><small>Upozorňuji, že to není vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu jsem použil vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small></p></div></div></div></div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

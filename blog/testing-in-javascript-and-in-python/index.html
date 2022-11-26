@@ -7,17 +7,16 @@
 
     <meta property="og:title" content="Testing in JavaScript and in Python &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/testing-in-javascript-and-in-python/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
-          <meta property="og:image" content="https://honzajavorek.cz/images/home/honza.jpg">
-      <meta name="twitter:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+          <meta property="og:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+      <meta name="twitter:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
       <meta name="twitter:card" content="summary">
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -31,50 +30,68 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/testing-in-javascript-and-in-python/" rel="bookmark">
-        Testing in JavaScript and in Python
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-translations">
-        <small>
-              Translations:
-              <a href="https://honzajavorek.cz/blog/testovani-v-javascriptu-a-v-pythonu/" hreflang="cs">cs</a>
-        </small>
+  <h1 class="title display-5">
+    Testing in JavaScript and in Python
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/testing-in-javascript-and-in-python/" rel="bookmark" title="Link to this article">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2017-01-18T10:43:00+01:00">
+          Jan 18, 2017
+        </time>
       </li>
-      <li class="article-published">
-        <small>
-          <time datetime="2017-01-18T10:43:00+01:00">
-            Jan 18, 2017
-          </time>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        
+          min of reading
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-translations">
+        <i class="bi bi-globe"></i>
+          Translations:
+          <a href="https://honzajavorek.cz/blog/testovani-v-javascriptu-a-v-pythonu/" hreflang="cs">CS</a>
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/testing-in-javascript-and-in-python&interval=week&start=2017-01-18T10:43:00+01:00&end=today">
+            Stats
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
-      <div class="article-warning">
+  <main class="article-content">
+      <div class="alert alert-warning article-warning" role="alert">
         <p>
-          <strong>Warning!</strong> This article has been published
-          5 years ago. If you're into internet
-          archeology, read it &mdash; but at your own risk. Honza doesn't
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          This article has been published
+          <strong>5 years ago</strong>.
+          If you're into internet
+          archeology, read it — but at your own risk. Honza doesn't
           have to necessarily agree with the content by now.
         </p>
       </div>
 
-    <div><div><div><div><p>In this article, I'd like to share why I'm disappointed about testing server-side JavaScript. If you're not in the mood of reading <a href="http://www.urbandictionary.com/define.php?term=rant">rants</a>, I recommend you to choose a different article for your afternoon.</p>
+    <p>In this article, I'd like to share why I'm disappointed about testing server-side JavaScript. If you're not in the mood of reading <a href="http://www.urbandictionary.com/define.php?term=rant">rants</a>, I recommend you to choose a different article for your afternoon.</p>
 <p>I'm originally a Python person, so I'm going to compare <em>developer experience</em> of both languages to be clear about what exactly is bothering me. Although I'm a big fan of Python and I'm heavily involved in the <a href="http://python.cz/">Czech Python user group</a>, my intention isn't to write down hateful text on JavaScript and to say that Python is the best language in the world. I just want to point to certain flaws in one of the two ecosystems. Next time I'm completely okay to write a text about how I hate Python packaging and why npm feels much better.</p>
-<h2 id="testing-in-python">Testing in Python<small class="permalink"><a href="#testing-in-python" title="Permanent link to this heading">#</a></small></h2>
+<h2 id="testing-in-python">Testing in Python</h2>
 <p>Many folks use the <a href="https://docs.python.org/3/library/unittest.html">unittest</a> when writing tests in Python. It's a module of Python's standard library, which allows people to quickly jump into <a href="https://en.wikipedia.org/wiki/XUnit">XUnit</a> way of writing tests, full of <code>class TestSomething</code>, <code>self.assertThis()</code> and <code>setUp/tearDown</code> that.</p>
 <p>While unittest is able to find and run tests, when the test suite grows larger, people often get a alternative third-party test runner, for instance <a href="http://nose.readthedocs.io/en/latest/">nose</a>. The aim of having a dedicated test runner is to find and run tests in a smart way - e.g. just those, which previously failed.</p>
 <p>Thanks to the fact nose runs tests, it allows you to leave the XUnit style behind and offers some extra tricks how to make your tests better and simpler. Usually people don't use them though, because they don't know about them. However, in general, if you want to run a particular set of your tests or control the output of testing, test runner always has a smart command line option to do exactly that. That's very convenient primarily because it provides:</p>
@@ -87,7 +104,7 @@
 in Node.js</a>. However, pytest <a href="http://pybites.blogspot.co.at/2011/07/behind-scenes-of-pytests-new-assertion.html">leverages introspection to dive into bytecode of the Python interpreter</a> and enhances <a href="https://pytest.org/latest/assert.html">asserts</a> in such way they're able to recognize what they're comparing. This way even the basic assert statement can provide very nice output. And I don't need a cheatsheet to find the right <code>assert.whateverComparisonFunction</code>, I write plain Python code, using just built-in operators and types.</p>
 <p>I also like the fact frameworks usually provide sections about testing in their documentations and give me a hand (guides, tips, tools, classes to inherit from) so I could test my application in simpler and faster ways, without writing redundantly detailed <a href="https://en.wikipedia.org/wiki/Boilerplate_code">boilerplate code</a>. See <a href="http://flask.pocoo.org/docs/0.12/testing/">Flask</a>, <a href="https://docs.djangoproject.com/en/1.10/topics/testing/">Django</a>, <a href="https://doc.scrapy.org/en/latest/topics/contracts.html">Scrapy</a> (links to dedicated chapters in respective docs).</p>
 <p>At the end of the day, I feel very comfortable when writing tests in Python. I can write a website using a microframework, but even such stripped-down tool still gives me means to simplify writing tests. Often a test is just a few lines long, which saves my time, time of my code reviewer, and time of all other people reading the test suite in the future. I can easily run any set of tests I need, e.g. just those which didn't pass.</p>
-<h2 id="mocha">Mocha<small class="permalink"><a href="#mocha" title="Permanent link to this heading">#</a></small></h2>
+<h2 id="mocha">Mocha</h2>
 <p>In the world of server-side JavaScript, which I had the chance to meet in <a href="https://apiary.io/">Apiary</a> where I currently work, the golden standard is <a href="http://mochajs.org/">Mocha</a>. The <em>feature-rich</em> in their claim means that even the <a href="http://chaijs.com/">assert library</a> needs to be installed separately. Okay, now seriously. <em>Killer features</em> of Mocha look like this:</p>
 <ul>
 <li>It runs all tests and if I type <code>.only</code> in code of my tests, I can run just that particular test,</li>
@@ -117,66 +134,98 @@ in Node.js</a>. However, pytest <a href="http://pybites.blogspot.co.at/2011/07/b
 <li>in larger test suites their tests uncontrollably grow into 1000 lines long files full of boilerplate code, which are both hard to read and hard to be executed.</li>
 </ul>
 <p>If they could somewhere spot the existence of parametrization or management of fixtures, maybe they would embrace the concepts and they'd try to use them to write cleaner tests. But it's not available, so tests get often just copy-pasted, <a href="https://en.wikipedia.org/wiki/Don't_repeat_yourself">DRY</a>-ied out by <code>forEach</code>, or by ad-hoc functions to share assertions. I don't even know which of these approaches is worse. The former is readable, but non-manageable, the later is non-readable, but at least illusively more manageable.</p>
-<h2 id="npm-to-the-rescue-or-not">npm to the rescue - or not<small class="permalink"><a href="#npm-to-the-rescue-or-not" title="Permanent link to this heading">#</a></small></h2>
+<h2 id="npm-to-the-rescue-or-not">npm to the rescue - or not</h2>
 <p>A person who is familiar with Node.js knows that searching npm packages is usually the ultimate answer to solve everything. But as I already indicated, because of a missing demand, this is not completely true for this case. Even if the packages exist, <a href="https://github.com/jpstevens/mocha-shared">they often have up to 10 commits and the last one is 2 years old</a>. The authors probably already jumped on writing <a href="http://elm-lang.org/">Elm</a> exclusively, so they don't bother with new versions... Moreover, it seems like Mocha-related packages usually just fix what's broken, not add any cool new features to make the <em>developer experience</em> better.</p>
 <p>In the time of writing this article, <a href="https://github.com/rstacruz/mocha-clean">mocha-clean</a> is a Mocha extension with the most stars on GitHub. Well, among those which actually add something to Mocha - I've excluded integrations, such as Mocha + React, Mocha + Mongo, Mocha + browser, etc. You know what mocha-clean does? It fixes stack traces.</p>
 <p>What else I'd like to have? Look at <a href="https://github.com/tarpas/pytest-testmon/">pytest-testmon</a>. An extension, which leverages code coverage to execute just the tests which make sense to be ran again. I.e. something, which extremely improves productivity. No more manual <code>.only</code> or wearing grepping.</p>
 <p>And regarding controlling of which tests to run or how the output should look like, even if I found an npm package adding my desired command line options, it won't be a standard implementation, standard convention, which a new colleague would be automatically familiar with.</p>
-<h2 id="trends">Trends<small class="permalink"><a href="#trends" title="Permanent link to this heading">#</a></small></h2>
+<h2 id="trends">Trends</h2>
 <p>I'm writing this article as a result of a long-term frustration of the fact that when testing in JavaScript, you need to not only reinvent the wheel, but that nobody is actually even attempting to deliver the wheel. Not even new funky, shiny, fashionable, hyped, ... projects like <a href="https://github.com/avajs/ava">AVA</a> try to fight against <a href="https://en.wikipedia.org/wiki/Spaghetti_code">spaghetti</a> tests. Just reading the <code>README</code> I can't see anything which would be trying to solve any of the problems I mentioned. AVA looks like Mocha with a different syntax, even less features (i.e. it will require a brand new <code>ava-*</code> ecosystem of extensions) and just one and only <em>killer feature</em>, asynchronous tests (Promises, async/await). Of course, that's something which isn't available in pytest...</p>
 <p><a href="https://pypi.python.org/pypi/pytest-asyncio">Oh await!</a></p>
 <p>All right, I won't be that vicious. AVA clearly leads to isolation of tests and extremely speeds up runtime of the test suite. I admit, that looks really great. But there's nothing to help me to write complex tests in simple ways, to structure them better, and so on. The authors burned a lot of time to provide integrations with Babel and React and TypeScript, but that's not going to help me to save time when writing tests. Those are not features, it's just clowning of the JavaScript ecosystem, which doesn't bring any real value to me, a regular user.</p>
-<h2 id="tldr">TL;DR<small class="permalink"><a href="#tldr" title="Permanent link to this heading">#</a></small></h2>
+<h2 id="tldr">TL;DR</h2>
 <p>To sum it up, there are two main issues on testing in JavaScript, which disappoint me:</p>
 <ul>
 <li>Because of language limitations, no library can provide asserts like those in pytest (or declarative decorators, but that's something coming to JavaScript probably very soon).</li>
 <li>If AVA is a successor of Mocha and represents the future of JavaScript testing, then JavaScript testing frameworks are not pursuing simpler and more comfortable writing of tests, but faster execution thanks to parallelization (thumbs up) and <em>fashion as a feature</em> (grumpy cat). I can't see even smart test runner emerging, and that's something Python world was passionate about years ago and now it's a commodity. Today Python is buzzing with making tests structured, managable, more readable. In comparison with JavaScript, this sounds like very distant <em>first world problems</em>. I'm sad nobody in the ecosystem is missing it, but I understand it's similar to promoting waste recycling in Sudan.</li>
 </ul>
-<p><em>In the middle of 2016 I wrote this article from pure frustration, in my mother tongue (Czech). It's available as <a href="https://honzajavorek.cz/blog/testovani-v-javascriptu-a-v-pythonu/">Testování v JavaScriptu a v Pythonu</a>. In January 2017 I published this translation.</em></p></div></div></div></div>
-  </div>
+<p><em>In the middle of 2016 I wrote this article from pure frustration, in my mother tongue (Czech). It's available as <a href="https://honzajavorek.cz/blog/testovani-v-javascriptu-a-v-pythonu/">Testování v JavaScriptu a v Pythonu</a>. In January 2017 I published this translation.</em></p>
+    </main>
 
-  <div class="article-comments">
-    <h3>Comment&nbsp;at</h3>
-    <ul>
-      <li>
-        <a href="https://news.ycombinator.com/item?id=13434134">
-          <i class="fa fa-hacker-news"></i>&nbsp;Hacker News</a>
-      </li>
-    </ul>
-  </div>
+  <section id="comments" class="article-comments comments">
+      <h3 class="comments-heading">Comments at</h3>
+      <ul class="comments-list">
+        <li class="comments-item">
+          <i class="bi bi-chat"></i>
+          <a href="https://news.ycombinator.com/item?id=13434134">
+            Hacker News</a>
+        </li>
+      </ul>
+  </section>
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-<a href="https://honzajavorek.cz">Honza Javorek</a> is a software engineer and
-a founder of <a href="https://junior.guru/">junior.guru</a>, a Czech project helping
-people to get their first job in tech. Since 2011 he's been helping
-to drive the growth and success
-of the <a href="https://python.cz/en/">Czech Python User&nbsp;Group</a>.      </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Originally software engineer, now more of an enterpreneur.
+          Creator of <a href="https://junior.guru/">junior.guru</a>, a project for Czech and Slovak beginners in coding.
+          Long-term volunteer and <a href="https://pyvec.org/en/#members">official</a> in the <a href="https://python.cz/en/">Czech Python community</a>.
+          This is my blog for 15 years now.
+      </address>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Personal site</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Articles archive
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

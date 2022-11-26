@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
       <meta charset="utf-8">
     <link rel="canonical" href="https://honzajavorek.cz/blog/monitoring-performance-with-lighthouse-and-circleci/">
@@ -7,8 +7,6 @@
 
     <meta property="og:title" content="Monitoring performance with Lighthouse and CircleCI &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/monitoring-performance-with-lighthouse-and-circleci/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
     <meta property="og:image" content="https://honzajavorek.cz/images/philippe-d-mAxfIDdiE7o-unsplash.jpg">
     <meta property="og:image:width" content="1024">
@@ -17,8 +15,9 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -31,51 +30,68 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/monitoring-performance-with-lighthouse-and-circleci/" rel="bookmark">
-        Monitoring performance with Lighthouse and CircleCI
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2020-05-11T00:00:00+02:00">
-            May 11, 2020
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Monitoring performance with Lighthouse and CircleCI
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/monitoring-performance-with-lighthouse-and-circleci/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2020-05-11T00:00:00+02:00">
+          11. 5. 2020
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        10
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/monitoring-performance-with-lighthouse-and-circleci&interval=week&start=2020-05-11T00:00:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
+  <main class="article-content">
 
     <div><div><div><div><p>I wanted to continuously monitor "frontend performance" of my website, so I could get notified about drops or improve the scores over time. This article is about how I hacked a custom solution using a tool called Lighthouse and a CI as a service I use, CircleCI. It's just quick notes, so no editing, no reviews, not many grammar checks, but hopefully it's gonna be useful nevertheless.</p>
-<figure><img alt="Reading" src="https://honzajavorek.cz/images/philippe-d-mAxfIDdiE7o-unsplash.jpg"><figcaption>
+<figure class="figure"><img alt="Reading" src="https://honzajavorek.cz/images/philippe-d-mAxfIDdiE7o-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
 Photo by <a href="https://unsplash.com/@filip42">Philippe D.</a></figcaption></figure>
-<h2 id="the-problem">The problem<small class="permalink"><a href="#the-problem" title="Permanent link to this heading">#</a></small></h2>
+<h2 id="the-problem">The problem<small class="permalink"><a href="#the-problem" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>I'm working on a website for juniors in tech, <a href="https://junior.guru/">junior.guru</a> (the content is Czech only so far, I'm sorry). From the deployment perspective, it's a static website in the most traditional sense. It's just files, HTML, CSS, and a very little amount of vanilla JavaScript.</p>
 <p>As the website grows, I ponder about my options regarding JavaScript frameworks and deployment. However, whatever I choose, I want to be sure that my website stays slim, fast, and accessible.</p>
 <p>It's a small project in an early stage, so it's common for me to cut corners for the sake of getting things done. However, I honor the <a href="https://en.wikipedia.org/wiki/Golden_Rule">Golden rule</a>: "What you do not wish for yourself, do not do to others." I dislike advertisements and pop-ups, so there are none in my projects. I dislike slow and bloated websites, so I don't want my projects to fall in that category.</p>
 <p>Also, I believe that <em>performance and accessibility sells</em>. My project is a content website. I think fast and accessible content websites attract more visitors and potentially lead to more <a href="https://en.wikipedia.org/wiki/Conversion_marketing">conversions</a>.</p>
-<h2 id="idea-from-guillermo-rauch">Idea from Guillermo Rauch<small class="permalink"><a href="#idea-from-guillermo-rauch" title="Permanent link to this heading">#</a></small></h2>
+<h2 id="idea-from-guillermo-rauch">Idea from Guillermo Rauch<small class="permalink"><a href="#idea-from-guillermo-rauch" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>I follow <a href="https://twitter.com/rauchg/">@rauchg</a> on Twitter and he often boasts in his tweets about how <a href="https://nextjs.org/">Next.js</a> is performant, using charts from some tool called Lighthouse.</p>
-<figure><blockquote class="twitter-tweet"><p lang="en" dir="ltr">So, <a href="https://twitter.com/datocms?ref_src=twsrc%5Etfw">@datocms</a> + Next.js + <a href="https://twitter.com/vercel?ref_src=twsrc%5Etfw">@vercel</a> is… glory <a href="https://t.co/CTj2aQvzQs">https://cms-datocms.now.sh/</a> <a href="https://t.co/frTHEFRJwM"><img src="https://honzajavorek.cz/images/nextjs.jpg"></a></p>— Guillermo Rauch (@rauchg) <a href="https://twitter.com/rauchg/status/1259701306387656704?ref_src=twsrc%5Etfw">May 11, 2020</a></blockquote>
+<figure class="figure figure-blockquote figure-tweet"><blockquote class="twitter-tweet blockquote-tweet blockquote"><p lang="en" dir="ltr">So, <a href="https://twitter.com/datocms?ref_src=twsrc%5Etfw">@datocms</a> + Next.js + <a href="https://twitter.com/vercel?ref_src=twsrc%5Etfw">@vercel</a> is… glory <a href="https://t.co/CTj2aQvzQs">https://cms-datocms.now.sh/</a> <a href="https://t.co/frTHEFRJwM"><img src="https://honzajavorek.cz/images/nextjs.jpg"></a></p></blockquote>
 
-</figure><p>Ever since I started thinking about the problem presented above, seeing one of these charts always made me think: "Yes, I want this for my website! But as a continuous monitoring."</p>
+<figcaption class="blockquote-footer"> Guillermo Rauch (@rauchg) <a href="https://twitter.com/rauchg/status/1259701306387656704?ref_src=twsrc%5Etfw">May 11, 2020</a></figcaption></figure><p>Ever since I started thinking about the problem presented above, seeing one of these charts always made me think: "Yes, I want this for my website! But as a continuous monitoring."</p>
 <p>My idea was I could put this somehow to my <a href="https://en.wikipedia.org/wiki/Continuous_integration">CI</a> pipeline and check my website under each Pull Request, or more likely in a nightly build. Ideally, it would produce an HTML report, but also I could set limits for the numbers and if the scores drop, the build would fail.</p>
-<figure><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Is there an easy way I can put <a href="https://t.co/W9jS6atMWZ">https://web.dev/measure/</a> to my <a href="https://twitter.com/CircleCI?ref_src=twsrc%5Etfw">@CircleCI</a>? Nightly or weekly test which breaks the build if my site drops in performance, accessibility, etc.</p>— Honza Javorek (@honzajavorek) <a href="https://twitter.com/honzajavorek/status/1255430514942541826?ref_src=twsrc%5Etfw">April 29, 2020</a></blockquote>
+<figure class="figure figure-blockquote figure-tweet"><blockquote class="twitter-tweet blockquote-tweet blockquote"><p lang="en" dir="ltr">Is there an easy way I can put <a href="https://t.co/W9jS6atMWZ">https://web.dev/measure/</a> to my <a href="https://twitter.com/CircleCI?ref_src=twsrc%5Etfw">@CircleCI</a>? Nightly or weekly test which breaks the build if my site drops in performance, accessibility, etc.</p></blockquote>
 
-</figure><p>Today I had a few hours left at the end of day, so I decided I could develop a prototype of such monitoring.</p>
-<h2 id="solution-by-a-python-script">Solution by a Python script<small class="permalink"><a href="#solution-by-a-python-script" title="Permanent link to this heading">#</a></small></h2>
+<figcaption class="blockquote-footer"> Honza Javorek (@honzajavorek) <a href="https://twitter.com/honzajavorek/status/1255430514942541826?ref_src=twsrc%5Etfw">April 29, 2020</a></figcaption></figure><p>Today I had a few hours left at the end of day, so I decided I could develop a prototype of such monitoring.</p>
+<h2 id="solution-by-a-python-script">Solution by a Python script<small class="permalink"><a href="#solution-by-a-python-script" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p><a href="https://github.com/GoogleChrome/lighthouse">I found the tool</a> and to my pleasant surprise, it's an Open Source tool one can install by <code>npm install lighthouse</code>. As simple as that! The fact that Lighthouse has support for multiple reporters and can report not only HTML, but JSON as well, was another pleasant surprise. I also found an <a href="https://kitconcept.com/blog/continuous-performance-analysis-with-lighthouse-and-jenkins/">article about how it can be ran in CI</a>. Great! Now it's just a matter of gluing things together with a bit of Python.</p>
 <p>First, prepare a directory for the reports. Standard library <code>pathlib</code> and <code>shutil</code> come handy:</p>
 <pre class="highlight"><code><span></span><code><span class="kn">import</span> <span class="nn">shutil</span>
@@ -195,7 +211,7 @@ Failing: 0
 Passing: 176
 </code></code></pre>
 
-<h2 id="continuous-monitoring">Continuous monitoring<small class="permalink"><a href="#continuous-monitoring" title="Permanent link to this heading">#</a></small></h2>
+<h2 id="continuous-monitoring">Continuous monitoring<small class="permalink"><a href="#continuous-monitoring" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>My project uses <a href="https://circleci.com/gh/honzajavorek/junior.guru/tree/master">CircleCI</a> for building and various checks. I added one job to the configuration for my new Lighthouse check:</p>
 <pre class="highlight"><code><span></span><code><span class="nn">...</span><span class="w"></span>
 <span class="nt">executors</span><span class="p">:</span><span class="w"></span>
@@ -233,10 +249,10 @@ Passing: 176
 </code></code></pre>
 
 <p>It's important I use the CircleCI's <code>python:3.7-node-browsers</code> Docker image, which contains Python as well as Node.js and browsers, because Lighthouse depends on having Google Chrome installed. In the job itself I run the script through <code>pipenv</code> (to be precise, through the <code>scripts</code> section of <code>Pipfile</code>), compress the directory with reports, and store it as an artifact. If the script fails the build and I won't be able to reproduce the problem locally, I can download the archive from CircleCI and inspect the actual reports made on CI. I've put the job into my nightly workflow, so that it runs every night, and I've set it to depend on my <code>deploy</code> job, which deploys the site to production as this is effectively a production check.</p>
-<figure><img alt="CircleCI Pipeline" src="https://honzajavorek.cz/images/lighthouse-nightly.png"><figcaption>
+<figure class="figure"><img alt="CircleCI Pipeline" src="https://honzajavorek.cz/images/lighthouse-nightly.png" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
 I want my lighthouse to work in the night, right?</figcaption></figure>
 <p>If the job fails, it doesn't affect whether the site gets re-deployed or not, but I get notified by e-mail, which works great as poor man's monitoring. That's about it. Again, you can <a href="https://github.com/honzajavorek/junior.guru/commit/1a743557b0da587e9a9ae9d10cb078f91f2c73e5">see the whole change here</a>.</p>
-<h2 id="memory-issues-on-circleci">Memory issues on CircleCI<small class="permalink"><a href="#memory-issues-on-circleci" title="Permanent link to this heading">#</a></small></h2>
+<h2 id="memory-issues-on-circleci">Memory issues on CircleCI<small class="permalink"><a href="#memory-issues-on-circleci" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Soon I figured out the parallelization doesn't work well on CircleCI. The build interface declares my container is 2 CPU / 4 GB RAM, but I got Google Chrome timing out with some memory issues in the log when running a few of them in parallel by <code>Pool().map()</code>:</p>
 <pre class="highlight"><code><span></span><code>ENOMEM: not enough memory, read
 ENOMEM: not enough memory, read
@@ -261,7 +277,7 @@ Runtime error encountered: spawnSync /bin/sh ENOMEM
 </code></code></pre>
 
 <p>Despite CircleCI declares 2 CPU, I decided to set the minimum pool size to 4, because if my extremely non-performant early 2015 laptop is able to spawn 4 parallel checks while simuntaneously running Firefox and Visual Studio Code, I bet the CircleCI container can do 4 too. And so far it seems to cope well! Now the job takes 2m 18s.</p>
-<h2 id="summary">Summary<small class="permalink"><a href="#summary" title="Permanent link to this heading">#</a></small></h2>
+<h2 id="summary">Summary<small class="permalink"><a href="#summary" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>The <a href="https://github.com/GoogleChrome/lighthouse">Lighthouse's README</a> mentions various other projects and tools which could compete with my solution. For example, there's <a href="https://lighthouse-keeper.com/">Lighthouse Keeper</a>, which continuously monitors up to 3 URLs for free. I didn't want to depend on a 3rd party service when I've seen how easy it is to setup my own thing, and my site already has more than 3 URLs to monitor.</p>
 <p>I've set the minimum scores to minimum values I observed during the first run of my new script, so the site should now always pass the check. However, with such check in place I get the following benefits:</p>
 <ul>
@@ -269,66 +285,102 @@ Runtime error encountered: spawnSync /bin/sh ENOMEM
 <li>From time to time I can look at the reports, try to fix some of the problems, and then set the bars higher.</li>
 </ul>
 <p>I hope this article contributes to a better world, because now you have no excuse not to monitor how bloated and inaccessible <em>your</em> website is!</p></div></div></div></div>
-  </div>
+    </main>
 
-  <div class="article-comments">
-    <h3>Comment&nbsp;at</h3>
-    <ul>
-      <li>
-        <a href="https://www.facebook.com/honzajavorek/posts/10158104366372707">
-          <i class="fa fa-facebook-official"></i>&nbsp;Facebook</a>
-      </li>
-      <li>
-        <a href="https://news.ycombinator.com/item?id=23151520">
-          <i class="fa fa-hacker-news"></i>&nbsp;Hacker News</a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/posts/honzajavorek_monitoring-performance-with-lighthouse-and-activity-6665879327550300160-M8Bf">
-          <i class="fa fa-linkedin"></i>&nbsp;LinkedIn</a>
-      </li>
-      <li>
-        <a href="https://www.reddit.com/r/webdev/comments/gi77ub/monitoring_website_performance_and_accessibility/">
-          <i class="fa fa-reddit"></i>&nbsp;Reddit</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/honzajavorek/status/1260112226243022848">
-          <i class="fa fa-twitter"></i>&nbsp;Twitter</a>
-      </li>
-    </ul>
-  </div>
+  <section id="comments" class="article-comments comments">
+      <h3 class="comments-heading">Komentáře na</h3>
+      <ul class="comments-list">
+        <li class="comments-item">
+          <i class="bi bi-linkedin"></i>
+          <a href="https://www.linkedin.com/posts/honzajavorek_monitoring-performance-with-lighthouse-and-activity-6665879327550300160-M8Bf">
+            LinkedIn</a>
+        </li>
+        <li class="comments-item">
+          <i class="bi bi-reddit"></i>
+          <a href="https://www.reddit.com/r/webdev/comments/gi77ub/monitoring_website_performance_and_accessibility/">
+            Reddit</a>
+        </li>
+        <li class="comments-item">
+          <i class="bi bi-twitter"></i>
+          <a href="https://twitter.com/honzajavorek/status/1260112226243022848">
+            Twitter</a>
+        </li>
+        <li class="comments-item">
+          <i class="bi bi-facebook"></i>
+          <a href="https://www.facebook.com/honzajavorek/posts/10158104366372707">
+            Facebook</a>
+        </li>
+        <li class="comments-item">
+          <i class="bi bi-chat"></i>
+          <a href="https://news.ycombinator.com/item?id=23151520">
+            Hacker News</a>
+        </li>
+      </ul>
+  </section>
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-<a href="https://honzajavorek.cz">Honza Javorek</a> is a software engineer and
-a founder of <a href="https://junior.guru/">junior.guru</a>, a Czech project helping
-people to get their first job in tech. Since 2011 he's been helping
-to drive the growth and success
-of the <a href="https://python.cz/en/">Czech Python User&nbsp;Group</a>.      </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
+      </address>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Articles archive
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

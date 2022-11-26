@@ -7,8 +7,6 @@
 
     <meta property="og:title" content="Týdenní poznámky #39: Proč se učit programovat? &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-39-proc-se-ucit-programovat/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
     <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
     <meta property="og:image:width" content="1024">
@@ -17,8 +15,9 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -31,38 +30,55 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-39-proc-se-ucit-programovat/" rel="bookmark">
-        Týdenní poznámky #39: Proč se učit programovat?
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2021-02-26T00:00:00+01:00">
-            26. 2. 2021
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Týdenní poznámky #39: Proč se učit programovat?
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-39-proc-se-ucit-programovat/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2021-02-26T00:00:00+01:00">
+          26. 2. 2021
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        7
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-39-proc-se-ucit-programovat&interval=week&start=2021-02-26T00:00:00+01:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
+  <main class="article-content">
 
     <div><div><div><div><p>Utekl další týden (22.2. — 26.2.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-38-klub-zacina-vydelavat/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/club/">klub podporovatelů</a>, a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.</p>
-<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
 Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
 <p>Stejně jako minule se pokusím poznámky sepsat aspoň za hodinu. (Nakonec ještě za míň! Super.)</p>
-<h2 id="nova-stranka">Nová stránka<small class="permalink"><a href="#nova-stranka" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="nova-stranka">Nová stránka<small class="permalink"><a href="#nova-stranka" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Z několika předchozích týdenních poznámek šlo možná zachytit, že jsem do konce února slíbil napsat článek pro <a href="https://karierko.cz/">Kariérko.cz</a> a že jsem to trochu prokrastinoval. Poslední týden v únoru jsem se rozhodl, že budu prokrastinovat přidáním celé nové stránky na JG. Důvody:</p>
 <ol>
 <li>Obsah stránky by se měl významně překrývat s obsahem článku.</li>
@@ -71,7 +87,7 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <p><strong>Bod číslo jedna</strong> se splnil nádherně. Stránku jsem sice psal několik dní, ale díky tomu jsem během dneška onen věčně prokrastinovaný článek zhotovil za pár hodin a bez velkého odsouvání. Měl jsem totiž už jasnou představu, co tam chci dát a mohl jsem recyklovat myšlenky, které jsem si týden skládal v hlavě.</p>
 <p><strong>Bod číslo dvě</strong> se zatím moc nesplnil. Příběhy jsem <a href="https://github.com/honzajavorek/junior.guru/blob/master/juniorguru/data/stories.yml">oštítkoval podle různých témat</a>, abych je mohl podle štítků vypisovat přímo v kontextu jednotlivých odstavců nové stránky. To se mi dost líbí. Místo, kde by se ale příběhy vypisovaly všechny a kam by se přesunuly z úvodní stránky, zatím nevzniklo.</p>
 <p>Nová stránka navazuje na odstavce, které byly dřív přímo na stránce <a href="https://junior.guru/learn/">/learn/</a>. Tyto odstavce jsem tvořil jako jedny z úplně prvních, když jsem zakládal JG. Byly založené na <a href="https://honzajavorek.github.io/jak-se-naucit-programovat/jak-se-naucit-programovat/">mé dávné prezentaci</a> pro brněnské (<a href="https://www.youtube.com/watch?v=B8DYsKDz63Y">archivní video</a>) a později myslím i ostravské Pyvo. Bylo v rámci možností krátké a stručné, ale dnes to vidím spíš tak, že to bylo zkratkovité a víc textu si to prostě zasloužilo. Spojil jsem to s myšlenkami, které jsem už dřív formuloval do <a href="https://nazory.ihned.cz/c7-66842510-ofofc-cf514314230baa8">článku pro Hospodářky</a> a s dalšími svými poznámkami. Zpracoval jsem v krátkých kapitolách i „No Code“, Excel, <a href="https://junior.guru/motivation/#kids">programování pro děti</a> nebo programování CNC, aby byl jasnější kontext JG a lidé, kteří hledají možná trochu něco jiného, aby to našli. Jsem rád, že i po všech těchto úpravách se mi povedlo v textu zachovat slovo penis, které vím, že lidi vždy hned zaujalo, hlavně novináře. Psaní a úpravy těchto textů mi zabralo drtivou většinu tohoto týdne.</p>
-<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <ul>
 <li>Koukal jsem na <a href="https://www.youtube.com/watch?v=3-wsqhCK-wU">yablkovo nové video</a>, kde několikrát zmiňuje JG. <a href="https://twitter.com/honzajavorek/status/1365023949176909833">Láska!</a> Napadlo mě, že slovenské nabídky práce napsané v angličtině bych vlastně mohl do JG přidat snadno. Naprogramovat podporu pro slovenčinu do mého filtrovacího robota je hodně práce, ale angličtinu už dávno umí, tak lepší než nic. Taky bych chtěl yablkova videa dát konečně na vhodná místa příručky, to už plánuju dlouho.</li>
 <li>Dělal jsem kamarádovi Mílovi review <a href="https://milavotradovec.cz/blog/pairing-makes-better-interviews-than-leetcode/">článku o pohovorech v IT</a>. Téma se mi líbilo a přišlo mi hezky zpracované, takže jsem jej vyhajpoval, že bude mít určitě úspěch na HackerNews. Dostalo to <a href="https://news.ycombinator.com/item?id=26238905">tři hlasy</a>. Nepomohl ani vzhled jeho blogu, který nápadně připomíná <a href="https://daringfireball.net/">Daring Fireball</a>. Příště zkusíme titulek "I didn't buy Apple Silicon".</li>
@@ -84,16 +100,16 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Sem tam jsem mrknul na Slack <a href="https://cesko.digital/">Česko.Digital</a> jak se to má s pozicemi nebo s článkem (viz předešlé poznámky). S článkem se to vyvíjí dobře, nejspíš opravdu vyjde u nich na blogu!</li>
 <li>Poslal jsem dnes <a href="https://us3.campaign-archive.com/?u=7d3f89ef9b2ed953ddf4ff5f6&amp;id=0084d29320">únorový newsletter</a>, tentokrát dokonce už v únoru :D</li>
 </ul>
-<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Tři věci, které bych chtěl zvládnout udělat příště:</p>
 <ol>
 <li>Komunikovat s firmami. Připomenout se těm, se kterými jsem si psal dřív a nemám odezvu.</li>
 <li>Doladit sekci <a href="https://junior.guru/learn/#requirements">Co budeš potřebovat?</a> (Chystám se to trochu překopat. Mírně asi vykradu i Petrovy požadavky na kurz: <a href="https://naucse.python.cz/2021/online-jaro/adm/intro/">text</a>, <a href="https://www.youtube.com/watch?v=so10Ud-YlKE&amp;feature=youtu.be">video</a>).</li>
 <li>Pokračovat v marketingu, rozhýbávání klubu a přemýšlení nad novou úvodní stránkou JG.</li>
 </ol>
-<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
-<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
 <ul>
 <li><a href="https://paygo.media/p/25171">Why did I leave Google or, why did I stay so long?</a></li>
@@ -122,42 +138,72 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li><a href="http://feedproxy.google.com/~r/PythonSoftwareFoundationNews/~3/v6DGTOxHRDQ/python-developers-survey-2020-results.html">Python Developers Survey 2020 Results: Learn about the Community</a><br>Výsledky každoroční ankety mezi uživateli jazyka Python.</li>
 </ul>
 <p><small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small></p></div></div></div></div>
-  </div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

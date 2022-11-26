@@ -7,8 +7,6 @@
 
     <meta property="og:title" content="Týdenní poznámky: Nabídky práce podle regionu &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-nabidky-prace-podle-regionu/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
     <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
     <meta property="og:image:width" content="1024">
@@ -17,8 +15,9 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -31,38 +30,55 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-nabidky-prace-podle-regionu/" rel="bookmark">
-        Týdenní poznámky: Nabídky práce podle regionu
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2020-10-02T00:00:00+02:00">
-            2. 10. 2020
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Týdenní poznámky: Nabídky práce podle regionu
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-nabidky-prace-podle-regionu/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2020-10-02T00:00:00+02:00">
+          2. 10. 2020
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        14
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-nabidky-prace-podle-regionu&interval=week&start=2020-10-02T00:00:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
+  <main class="article-content">
 
     <div><div><div><div><p>Utekl další týden (28.9. — 2.10.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-novy-seznam-nabidek-prace/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/donate/">podporovatele</a>, a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.</p>
-<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
 Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
 <p>Tento týden jsem pracoval na tom, abych mohl mít samostatné stránky s inzeráty práce pro juniorní programátory pro každý region zvlášť.</p>
-<h2 id="normalizace-mista">Normalizace místa<small class="permalink"><a href="#normalizace-mista" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="normalizace-mista">Normalizace místa<small class="permalink"><a href="#normalizace-mista" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Nabídky práce z JG i odjinud mají většinou (pokud nejsou úplně na dálku) informaci o tom, odkud jsou. Už v této větě můžete odtušit hned několik problémů, které jsem musel vyřešit:</p>
 <ul>
 <li>Místo nabídky práce může být v libovolném formátu. Praha. Prague. Brno, Czechia. Káranice, Česká republika. Michálkovická 1137/197, 710 00 Ostrava - Slezská Ostrava, Czechia. Záleží na tom, co se autor nabídky rozhodl vepsat do políčka nebo odkud jsem nabídku převzal.</li>
@@ -109,22 +125,22 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Stránky pro jednotlivé regiony fungují i jako SEO lákadlo, takže jsem se pokusil pohrát s tím, aby v <code>&lt;title&gt;</code> stránek bylo něco, co lidi zkouší na internetu hledat.</li>
 <li>Vítězný pocit!</li>
 </ol>
-<h2 id="zmatky-a-zachranovani-produkce">Zmatky a zachraňování produkce<small class="permalink"><a href="#zmatky-a-zachranovani-produkce" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="zmatky-a-zachranovani-produkce">Zmatky a zachraňování produkce<small class="permalink"><a href="#zmatky-a-zachranovani-produkce" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Už to tak nějak vyplývá i z popisu toho klikatého postupu výše, ale ne vždy se daří. Mám však ještě jeden příběh.</p>
 <p>Ve středu byl poslední den v měsíci, což znamená, že jsem měl poslat <a href="http://eepurl.com/gyG8Bb">newsletter</a>. V podvečer jsem se dostal do fáze, kdy jsem měl jasně funkční geocoding přes OpenStreetMaps a říkám si, že to už jen pushnu a jdu psát ten newsletter. Jenže pak koukám, že to padá, že OSM si neporadí se spoustou adres na produkci. A že mám chyby v tom, jak se na JG inzerátech řeší a ukládá práce na dálku. Všechny JG inzeráty zcela zmizely z výpisu. Zběsile jsem to začal opravovat, ale s každým commitem jsem akorát zbrkle nadělal další chyby, nechal rozbité testy, apod.</p>
 <p>Vždy trvalo, než projde CI, a než zjistím, kde jsem zase přehlédl nějakou chybu. Takže jsem se rozhodl, že v mezičase bych mohl začít připravovat ten newsletter. Sice do něj ani nemůžu ještě dát nabídky práce, když mi zmizely, ale tak nějaký ten text už můžu začít připravovat. Vytvořil jsem v MailChimpu novou kampaň a… rázem mi všechno na CI zase spadlo. Mám totiž na JG skript, který se dívá na MailChimp do kampaní a ukládá informace o tom, jestli byla která nabídka práce už odeslána v nějakém newsletteru a kdy (to se pak posílá v pravidelných informacích inzerentům). Tento skript nepočítal s tím, že existuje kampaň, která nemá datum odeslání :D Takže jsem si akorát přidal další problémy: Kampaň jsem nemohl odeslat, dokud nemám funkční nabídky práce, a ty nebudu mít funkční, dokud bude existovat neodeslaná kampaň. Oprava na jeden řádek, jasně, ale nálada úplně v kýblu.</p>
 <p>Do toho mě donekonečna zlobil <code>pipenv</code>, protože střídavě z mě neznámého důvodu vytvářel lockfile s knihovnou <code>importlib-metadata</code> a bez ní, což mi už měsíce (?) střídavě a náhodně shazovalo CI a zasekávalo continuous deployment. V tuto chvíli už jsem vypěnil a zkusil vše přeinstalovat a updatovat, ale bez výsledku. Nakonec jsem zoufale zkusil upgrade projektu z Pythonu 3.7 na 3.8 a to záhadně (zatím!) zabralo. Uf, ok?!</p>
 <p>Nakonec jsem to celé nějak polepil, zachránil, hotfixoval, newsletter dokončil, odeslal a po sedmé večer dokonce s prací i přestal, ale jako… Já nevím no. JG je celé stavěné tak, aby se dalo spravovat v jednom člověku. Když spadne CI, mělo by být jedno, že to opravím až další den. Mělo by být jednoduché udělat revert v Gitu, vrátit se na funkční verzi a nechat opravy na ráno moudřejší večera. Jenže zvyk, že rozbitá produkce je průšvih a musí se řešit hned, je prostě asi silnější. Takhle to ale nejde :) Jsem jeden člověk a nemůžu se nechat stresovat tím, že někde pár hodin přes noc něco na JG chybí. Všem to je úplně jedno a mělo by to nechávat klidného i mě, když vím, že to můžu ráno v klidu opravit. Toto se musím ještě naučit.</p>
-<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <ul>
 <li>Vylepšil jsem (snad) trochu CSS štítků a log firem u nabídek práce.</li>
 <li>Upravil jsem váhy jednotlivých parametrů, které určují pořadí nabídek. Teď už to vypadá, že výsledek plus mínus dává nějaký smysl.</li>
 <li>Odepsal jsem na pár mailů a dořešil pár záležitostí, které jsem dlouho odkládal.</li>
 <li>Díky <a href="https://github.com/honzajavorek/junior.guru/issues/383">Mišo Belicovi</a> a <a href="https://www.skoumal.com/">Vláďovi Skoumalovi</a> jsem se <a href="https://twitter.com/honzajavorek/status/1311578638723297280">dověděl o WAL módu v SQLite</a> a o tom, <a href="https://www.skoumal.com/en/parallel-read-and-write-in-sqlite/">jak zapisovat efektivně</a>. Jak zmínil i <a href="https://github.com/kokes">Ondřej Kokeš</a> i v komentářích na FB pod minulými poznámkami, ideálně to řešit přes single writera - udělat lokální frontu, všechno mu posílat a zapisovat bude jen on. To je pro JG momentálně overkill (dělá to tak 10 retries), ale je super, že mi lidi takto radí po přečtení poznámek a rozhodně jsem se díky tomu naučil něco nového.</li>
 </ul>
-<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
-<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
 <ul>
 <li><a href="https://denikn.cz/452462/studio-n-krvavy-konflikt-o-karabach-muze-eskalovat-ve-valku/?ref=list">Studio N: Krvavý konflikt o Karabach může eskalovat ve válku</a><br>Vysvětlení situace</li>
@@ -133,42 +149,72 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li><a href="https://www.irozhlas.cz/komentare/covid-koronavirus-karantena-hygienicka-stanice-erouska_2010012215_jab">Karanténa, den čtvrtý: volá hygiena!</a><br>“Tím, kdo v posledních týdnech s covidem-19 bojuje, jsou – ostatně stejně jako na jaře – Češi. Ne Česko.”</li>
 </ul>
 <p><small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small></p></div></div></div></div>
-  </div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

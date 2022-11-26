@@ -7,17 +7,16 @@
 
     <meta property="og:title" content="Jak vytvořit použitelnou fakturu &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/jak-vytvorit-pouzitelnou-fakturu/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
-          <meta property="og:image" content="https://honzajavorek.cz/images/home/honza.jpg">
-      <meta name="twitter:image" content="https://honzajavorek.cz/images/home/honza.jpg">
+          <meta property="og:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+      <meta name="twitter:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
       <meta name="twitter:card" content="summary">
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -30,36 +29,54 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/jak-vytvorit-pouzitelnou-fakturu/" rel="bookmark">
-        Jak vytvořit použitelnou fakturu
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2009-08-20T12:07:00+02:00">
-            20. 8. 2009
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Jak vytvořit použitelnou fakturu
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/jak-vytvorit-pouzitelnou-fakturu/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2009-08-20T12:07:00+02:00">
+          20. 8. 2009
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        3
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/jak-vytvorit-pouzitelnou-fakturu&interval=week&start=2009-08-20T12:07:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
-      <div class="article-warning">
+  <main class="article-content">
+      <div class="alert alert-warning article-warning" role="alert">
         <p>
-          <strong>Upozornění!</strong> Tento článek vyšel
-          před 13 lety.
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          Tento článek vyšel
+          <strong>před 13 lety</strong>.
           Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
           že dnes se Honza již nemusí s obsahem ztotožňovat.
         </p>
@@ -68,48 +85,78 @@
     <div><div><div><div><p>Zkouším a začínám používat nástroj <a href="http://www.paymo.biz">Paymo.biz</a>, usnadňující především evidenci času stráveného prací na projektech. Jednou z funkcí Paymo.biz je
 také <strong>tvorba <a href="http://www.jakpodnikat.cz/faktury-doklady.php">faktur</a></strong>. To, co ale ze systému vyleze, je docela hrůza. Nejsem žádný <a href="http://jankorbel.cz/">superodborník na použitelnost</a>, ale vždy jsem se snažil aspoň <strong>maximálně ulehčit život lidem, kteří mají mou fakturu držet v ruce</strong>. Jak na to? Stačí, když se člověk bude snažit <strong>vcítit</strong> do plátce faktury.</p>
 <p>Koukněte se na mou vzorovou fakturu. Použil jsem ji, abych poslal do Paymo.biz několik návrhů na zlepšení, tak je anglicky. To ale nevadí, šablona mé faktury je z ní jasná. Udržuje <a href="http://www.slideshare.net/huer1278ft/grids-are-good-right">mřížku</a>, která zajišťuje určitou <strong>přehlednost</strong> (no dobrá, je to trochu <em>side effect</em>, fakturu jsem tvořil v OpenOffice Calc :)) ), ale hlavně <strong>vyzdvihuje informace</strong>, které plátce zajímají.</p>
-<figure><img alt="obrázek" src="https://honzajavorek.cz/images/115.jpg"></figure>
+<figure class="figure"><img alt="obrázek" src="https://honzajavorek.cz/images/115.jpg" class="img-fluid figure-img rounded"></figure>
 <p>Hlavní myšlenkou je zvýraznit informace, které jsou důležité pro mého partnera a jež chce ihned vidět a neopomenout informace, které by na faktuře měly být ze zákona. Všimněte si, že na mé faktuře je slovo <em>faktura</em> (<em>invoice</em>), ale je malé a na místě, kde si jej nikdo nevšimne (vedle variabilního symbolu/čísla faktury). Je to logické – <strong>každý přece ví, že dostal do ruky fakturu</strong> a nepotřebuje si to ještě číst, to jen zdržuje. Naopak nejzřetelnějším údajem je <strong>celková částka a variabilní symbol</strong>. Tučně je na dokumentu také mé číslo účtu a datum splatnosti. Přehledně by měl klient hned rozeznat od koho faktura je a pro koho je. Oblast s příjemcem je udělaná tak, aby když se faktura složí na třetiny a vloží do <strong>okénkové obálky</strong>, byl v okénku právě zrovna onen plátce.</p>
 <p>Využívám také <strong>barev</strong>. Ano, barvy jsou někdy nežádoucí při tisku, ale přiznejme si, papírovou fakturu jsem posílal za svůj život asi třikrát a i tak se černobílá tiskárna s barvičkami většinou popere. Z pohledu PDF je navíc hned vidět, kolik se má zaplatit a jaký je variabilní symbol. Nedoporučuji barvičkami příliš hýřit nebo používat je na něco jiného než účelné zvýraznění.</p>
 <p>Neříkám, že moje faktura je nejúžasnější na světě a že je to skvost použitelnosti, ale přijde mi, že alespoň <strong>trochu mým klientům život ulehčuje</strong>. Když tak nad tím uvažuji, vlastně ani nevím, jestli se nad touto problematikou vůbec kdy kdo zamyslel. Faktura je většinou zcela nepřehledný kus papíru vyplivnutý nějakým složitým účetním systémem, na němž většinou půl hodiny hledám i tak triviální informaci jako kolik mám zaplatit. Srovnejte třeba s tou vygenerovanou na Paymo.biz:</p>
-<figure><img alt="obrázek" src="https://honzajavorek.cz/images/116.jpg"></figure>
+<figure class="figure"><img alt="obrázek" src="https://honzajavorek.cz/images/116.jpg" class="img-fluid figure-img rounded"></figure>
 <p>Hledání chyb a hrůz (pomiňme, že postrádá místo pro některé věci užitečné pro ČR) v této faktuře nechám na vás. Jak jsem napsal výše, jde o to <strong>udělat placení vašich faktur příjemnějším</strong>. Proč se o to snažit, to vám už asi dojde samotným ;) .</p></div></div></div></div>
-  </div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

@@ -7,8 +7,6 @@
 
     <meta property="og:title" content="Týdenní poznámky #77: Sníh &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-77-snih/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
     <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
     <meta property="og:image:width" content="1024">
@@ -17,8 +15,9 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -31,38 +30,55 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-77-snih/" rel="bookmark">
-        Týdenní poznámky #77: Sníh
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2021-12-13T00:00:00+01:00">
-            13. 12. 2021
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Týdenní poznámky #77: Sníh
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-77-snih/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2021-12-13T00:00:00+01:00">
+          13. 12. 2021
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        12
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-77-snih&interval=week&start=2021-12-13T00:00:00+01:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
+  <main class="article-content">
 
     <div><div><div><div><p>Utekl zase nějaký ten týden (7.12. — 13.12.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-76-vanoce-na-discordu/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/club/">klub</a>, a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.</p>
-<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
 Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
 <p>Tak zase píšu původně „páteční“ poznámky až v úterý. Fúúúú.</p>
-<h2 id="darkovy-poukaz">Dárkový poukaz<small class="permalink"><a href="#darkovy-poukaz" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="darkovy-poukaz">Dárkový poukaz<small class="permalink"><a href="#darkovy-poukaz" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Minulý týden jsem se soustředil hlavně na spuštění stránky s dárkovým poukazem. Jak jsem psal, nápad přišel od kamaráda <a href="https://twitter.com/petr_vacha/">Petra</a>, detaily realizace jsme vymysleli s investorkou a vyrobil jsem to v první půlce týdne. Jeden den mi trvalo přidat stránku, hlavně kvůli psaní textů, druhý den jsem kreslil a editoval kresby. Taky jsem strávil nečekaně hodně času s padajícím sněhem.</p>
 <p>Nikdy bych netušil, že budu mít na jakémkoliv webu JavaScriptem animovaný padající sníh, ale stalo se. Celkem dlouho mi trvalo najít balíček na npm, který se mi bude ve všech ohledech líbit. Zkoušel jsem různé knihovny, ale každá měla nějaký problém, nebo to byl absolutní kanón založený na komponentách, kdežto můj současný „stack“ by se dal popsat jako „pět řádků vanilla JavaScriptu“.</p>
 <p>Nakonec jsem skončil u balíčku <a href="https://www.npmjs.com/package/magic-snowflakes">magic-snowflakes</a>, kde mi vadil jen tvar vloček, ale našel jsem v changelogu <a href="https://hcodes.github.io/snowflakes/examples/balls.html">schovaný příklad</a> toho, jak to jde změnit. Pak jsem zjistil, že to nefunguje úplně podle představ na mobilu, tak jsem <a href="https://github.com/hcodes/snowflakes/issues/51">zareportoval bug</a> a ještě jsem využil mentoring v klubu, kdyby náhodou někdo netušil, zda něco nedělám blbě. Do debugování se pustila <a href="https://twitter.com/KateMihalikova">Kate</a> a hodně mi pomohla, vymyslela hotfix. Nějaký den potom dokonce autor knihovny věc hned opravil a vydal novou verzi, takže paráda. Ne, že by to bylo jakkoliv podstatné teda, je to jen sníh, navíc bílý na žlutém pozadí, takže si ho stejně nikdo nevšimne :D</p>
@@ -72,18 +88,18 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <p>Technicky kupón <a href="https://memberful.com/help/integrate/services/wordpress/add-gift-link/">zajišťuje Memberful</a>. Bylo akorát potřeba vytvořit <em>plan</em>, který nemá <em>free trial</em>, jelikož takové pak nejdou dávat jako dárky. K měsíčnímu a ročnímu předplatnému jsem tedy přidal i roční dárkové. Jinak vše zatím fungovalo OK.</p>
 <p>Nově vzniklá stránka je na <a href="https://junior.guru/gift/">junior.guru/gift</a>. Zatím na ni neexistuje odkaz odjinud, ten jsem si říkal, že dodělám později. I tak na ni k dnešnímu dni <a href="https://simpleanalytics.com/junior.guru?period=month&amp;search=paths%3Agift">přišlo zhruba 150 lidí</a> a začal ji už indexovat Google. Nasdílel jsem to totiž na sociální sítě.</p>
 <p>K dnešnímu dni se prodal jeden dárkový poukaz. Jedna osoba mi přes Instagramu nadšeně napsala, že JG je boží a že si poukaz nadělila sama sobě, takže pokud si dám jedna a jedna dohromady, vychází mi z toho poměrně vtipný průběžný výsledek této vánoční akce :D Ale jak píšu níže v těchto poznámkách, akce nejspíš přispěla k tomu, že do klubu přišlo víc lidí standardní cestou a taky ještě není všem dnům konec. Měl bych zřejmě někam viditelně přidat na tuhle stránku odkaz, přímo na web.</p>
-<h2 id="socialni-site">Sociální sítě<small class="permalink"><a href="#socialni-site" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="socialni-site">Sociální sítě<small class="permalink"><a href="#socialni-site" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Se sociálními sítěmi teď pracuji jinak než dřív. Jak jsem psal, spojil jsem „firemní“ a osobní kanály, je to teď víc napojeno na mou osobu. Co mi dřív ani nedošlo, na osobních profilech mám víc kamarádů, kteří na tyto věci nadšeně reagují. Myslel jsem, že je informacemi o JG budu obtěžovat, ale místo toho lajkují jak diví nebo občas i komentují, a tím vyhánějí <em>engagement</em> na příspěvcích, takže je sociální sítě považují za oblíbenější, než tomu bylo dřív, a ukazují je více a více lidem (<em>reach</em>). To je dost příjemný efekt.</p>
 <p>Zároveň jsem nepřestal na sociální sítě dávat věci z osobního života. Naopak, s tím jak jsem se vrátil na Instagram, dávám nově občas i nějakou fotku, třeba z procházek s kočárkem. Samotné posty, pokud se týkají JG, píšu formou delších příběhů rozdělených na odstavce. Nevím, jestli to někdo čte, zkouším to. Každopádně je to forma, která funguje dobře pro všechny sítě kromě Twitteru, kam to musím vždy přespsat do něčeho mnohem, mnohem kratšího, případně rozdělit na víc tweetů. To je trochu otrava.</p>
 <p>Některé sítě penalizují odkazy, protože chtějí, aby lidé zůstali uvnitř a nechodili ven, např. na Instagramu do příspěvku žádný odkaz ani dát nejde, takže jsem začal u příspěvků už od začátku předpokládat, že tam odkaz žádný nebude. Na FB odkazy dávám, na Twitter taky. Na LinkedIn ne, odkaz dávám do kometntáře (to je takový <em>hack</em>, lidé znalí LinkedInu vědí), na Instagram taky ne.</p>
 <p>Začal jsem také používat přímo sociální sítě místo plánování příspěvků na <a href="https://buffer.com/">Bufferu</a>. Zatím jsem si ho nepřestal platit, zatím zkouším, jak to bude fungovat, ale místo fronty teď mám prostě dvakrát týdně vyhrazený časový slot na sociální sítě a na všechny to dávám ručně. Umožňuje mi to využívat je naplno, všechny jejich funkce. Například Buffer nepodporuje tagování lidí na LinkedIn nebo ve FB skupinách, což je dost zásadní, ani mi nedovolí plánovat příspěvky na osobní profil. Neudělám přes něj ani Twitter vlákno, nenaplánuji retweet, atd. Stejně jsem tedy často musel z Bufferu odejít a příspěvky dodatečně upravovat. Buffer může být dobrý pro hobby věci, kde stačí věci naplácat do fronty a neřešit, ale když chci sítě využívat naplno a v zásadě je to můj hlavní, nebo skoro jediný marketingový kanál, dává mi nakonec smysl používat je napřímo.</p>
 <p>Díky tomu mohu teď dělat i storíčka. Udělal jsem třeba storíčko, kde kuře vybalovalo z krabice salám junior. Ne každý to pochopil, ale kdo ano, smál se. Nikdy jsem žádná storíčka nedělal, připadám si na to už starý, ale pomalu tomu přicházím na chuť. Na Instagramu i Facebooku si je prohlíží až překvapivé množství lidí a hlavně na Instagramu je lze přesdílet, nebo na ně reagovat, což lidé s mými storíčky dělali. Například <a href="https://www.instagram.com/yablko/">yablko</a> a další přesdíleli moje storíčko o vánočním dárkovém poukazu a díky tomu mě myslím objevilo dost nových lidí. Je to zajímavý nový kanál. Nemám zatím žádný systém v jeho používání, ale používat ho budu. Oproti storíčkům jiných lidí si tedy připadám dost amatérsky, ale naštěstí to mohu zakomponovat do upřímného obrazu, jaký kolem sebe buduji. Prostě přiznám, že jsem trouba a neumím to, hotovo.</p>
-<h2 id="heroine">Heroine<small class="permalink"><a href="#heroine" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="heroine">Heroine<small class="permalink"><a href="#heroine" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Zatím jsem nestihl veřejně propagovat svůj další článek, který mi na Heroine vyšel. Mám už dva týdny po termínu na čtvrtý článek z pěti. Téma mělo být „jaké všelijaké pozice se v IT nacházejí“.</p>
 <p>Toto téma už jsme probírali v úvodu projektu na callu a mě se líbilo, jak <a href="https://www.heroine.cz/clanky/autor/70000224-zuzana-pechova">Zuzana Pechová</a> (další autorka) navrhovala, že by to mohlo být zpracováno jako příběh jak vzniká aplikace a na tom by byly pozice ilustrované, a ne jako suchý výčet. Přišlo mi to objektivně lepší a nabídl jsem jí tedy spolupráci na článku, abych jí ten nápad nekrad. Jenže včera jsme si k tomu volali a došli jsme k tomu, že oba upřímně chceme, aby to napsala ona, protože k tomu má super nápady a bude to mít nejlepší výsledek.</p>
 <p>Tak jsem kontaktoval šéfredaktorku s tím, že bych toto daroval Zuzaně a navrhl jsem jiné téma pro sebe. Zatím čekám na odpověď. Taky jsem s Heroine spojil <a href="https://blog.zvestov.cz/">Luboše Račanského</a>, aby mohlo vzniknout něco, co by stavělo na <a href="https://blog.zvestov.cz/tag/krou%C5%BEek-programov%C3%A1n%C3%AD/">jeho zkušenostech s programováním s dětmi</a>, ale taky teď čekáme na odpověď.</p>
 <p>Mezitím se čtení mých článků na Heroine trochu rozjelo a lidi začali dokonce i klikat, takže se Heroine vyšoupla v <a href="https://simpleanalytics.com/junior.guru">mých analytics</a> konečně i před tento můj blog a dostala se tak do vedoucí pozice mezi normálními weby, tzn. když nepočítám Gůgly, Fejsbůky, apod. To mi činí radost.</p>
-<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <ul>
 <li>Věnoval jsem se mnoha mailům a taky lidem v klubu.</li>
 <li>Pořídil jsem <a href="http://www.stooy.cz/">Stooy</a> a externí klávesnici atd. Konečně jsem si splatil dlouholetý dluh v podobě zdravějšího pracovního místa u sebe doma. Doteď jsem se různě hrbil v nevhodných pozicích, teď už to konečně připomíná něco, co by mohlo být aspoň trochu zdravé.</li>
@@ -100,59 +116,89 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Do klubu začalo v posledním týdnu chodit docela dost nových lidí. Upřímně si to neumím nějak jednoznačně vysvětlit. Může to být tím, že s určitou setrvačností chytily články v Heroine. Může to být tím, že lidi zahlédli tu vánoční akci s dárkovým poukazem a byť se dárků zatím moc neprodalo, tak se skrze to dověděli o JG a teď chodí do klubu normálně napřímo, bez dárku. Těžko říct, ale nestěžuju si. Akorát si teď trochu připadám možná až příliš jako „vítací typ“ :)</li>
 <li>Během 7 dní od 7.12. do 13.12. jsem při procházkách nachodil 29 km. Celkem jsem se hýbal 8 hodin a zdolal při tom 29 kilometrů.</li>
 </ul>
-<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Tři věci, které bych chtěl zvládnout udělat příště:</p>
 <ol>
 <li>Dodělat úkoly z vánočního „tudůčka”, kde mám ještě nějakou věc pro firmy a tak.</li>
 <li>Dořešit články s Lubošem a Zuzanou. Napsat čtvrtý <a href="https://www.heroine.cz/zeny-it/">článek pro Heroine</a>.</li>
 <li>Napsat nějakou dokumentaci pro Pyvec a zvládnout dobře schůzi Pyvce, kde se budeme připravovat na volby do výboru na jaře 2022.</li>
 </ol>
-<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
-<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
 <ul>
 <li><a href="https://www.lifehacky.cz/jak-mene-cist/">Jak méně číst, ale mít z toho víc</a><br>Zajímavý systém. Intuitivně vlastně dost z toho dělám. Vysvětlovalo by to i vznik některých, nebo možná většiny mých propracovanějších článků na blogu.</li>
 <li><a href="https://magazin.aktualne.cz/bydleni-za-vsechny-prachy/r~b9e2f570422c11ecbc3f0cc47ab5f122/">Ceny bytů jsou šílené, hypotéka je sebevražda. Osudy Čechů bojujících s krizí bydlení</a><br>Komplet jsem si prošel a pročetl, zajímavé. Příběhy lidí i rozhovory se sociology.</li>
 <li><a href="https://soundcloud.com/advojka2013/bulvar-14-tomas-horeni-samec-mainstreamovy-narativ-vytvari-dojem-ze-hypoteky-jsou-samozrejme">Bulvár #14: Tomáš Hoření Samec - Mainstreamový narativ vytváří dojem, že hypotéky jsou samozřejmé</a><br>Pustil jsem si ještě rozhovor s jedním z těch sociologů z článku na Aktuálně, zajímavě to tady s Apolenou probrali.</li>
 </ul>
-<p><small>Upozorňuji, že to není vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu používám vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small></p></div></div></div></div>
-  </div>
+<p><small>Upozorňuji, že to není vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu jsem použil vlastní knihovnu <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.</small></p></div></div></div></div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

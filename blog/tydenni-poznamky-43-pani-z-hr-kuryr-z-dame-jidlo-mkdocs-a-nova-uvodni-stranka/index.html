@@ -7,8 +7,6 @@
 
     <meta property="og:title" content="Týdenní poznámky #43: Paní z HR, kurýr z Dáme jídlo, MkDocs a nová úvodní stránka &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-43-pani-z-hr-kuryr-z-dame-jidlo-mkdocs-a-nova-uvodni-stranka/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
     <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
     <meta property="og:image:width" content="1024">
@@ -17,8 +15,9 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -31,43 +30,60 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-43-pani-z-hr-kuryr-z-dame-jidlo-mkdocs-a-nova-uvodni-stranka/" rel="bookmark">
-        Týdenní poznámky #43: Paní z HR, kurýr z Dáme jídlo, MkDocs a nová úvodní stránka
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2021-03-26T00:00:00+01:00">
-            26. 3. 2021
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Týdenní poznámky #43: Paní z HR, kurýr z Dáme jídlo, MkDocs a nová úvodní stránka
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-43-pani-z-hr-kuryr-z-dame-jidlo-mkdocs-a-nova-uvodni-stranka/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2021-03-26T00:00:00+01:00">
+          26. 3. 2021
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        16
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-43-pani-z-hr-kuryr-z-dame-jidlo-mkdocs-a-nova-uvodni-stranka&interval=week&start=2021-03-26T00:00:00+01:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
+  <main class="article-content">
 
     <div><div><div><div><p>Utekl další týden (22.3. — 26.3.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-42-prvni-prednaska-dpfo-maily/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/club/">klub podporovatelů</a>, a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.</p>
-<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
 Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
-<h2 id="twitter-pani-z-hr-kuryr-z-dame-jidlo">Twitter: Paní z HR, kurýr z Dáme jídlo<small class="permalink"><a href="#twitter-pani-z-hr-kuryr-z-dame-jidlo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="twitter-pani-z-hr-kuryr-z-dame-jidlo">Twitter: Paní z HR, kurýr z Dáme jídlo<small class="permalink"><a href="#twitter-pani-z-hr-kuryr-z-dame-jidlo" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Ač se snažím blokovat si sociální sítě, tento týden jsem se dost pohyboval na Twitteru. Začalo to tím, že mě někdo upozornil na diskuzi pod <a href="https://twitter.com/PaniZHR/status/1373922900294529025">statusem Paní z HR</a>. Protože to bylo velice relevantní téma k tomu, co dělám, prošel jsem celou diskuzi pod tím a trochu tam zaúřadoval s odpověďmi. Snad jsem to moc nepřehnal. Každopádně mi přijde, že se díky tomu o JG dovědělo zase pár lidí mimo moji bublinu, což vždy potěší. Přijde mi totiž, že se mi moc nedaří prorazit bublinu a statusy na sociálních sítích už masíruji pouze přesvědčené fanoušky, popřípadě otravuji ty, které JG nezajímá. Sítě jsou ale můj hlavní marketingový kanál, takže je v mém zájmu, aby zasahovali lidi víc a víc i mimo bublinu. Nechci zase nějak spamovat, doufám, že v diskuzi u @PaniZHR jsem psal přínosné věci.</p>
 <p>Další smršť přišla potom, co se mi ve čtvrtek večer stala neuvěřitelná příhoda s kurýrem Dáme jídlo. Během dne jsem poslal fakturu <a href="https://inuits.eu/">další firmě</a>, která se rozhodla stát se členem <a href="https://junior.guru/club/">klubu JG</a>, takže jsme si s manželkou řekli, že se večer rozšoupnem a večeři si necháme dovézt :D Naštvalo mě ale, že jsem si nemohl objednat z restaurace, do které jsem při hezkém počasí schopen dojít i pěšky, takže jsem Dáme jídlo na Twitteru <a href="https://twitter.com/honzajavorek/status/1375149272245661702">trochu vyhejtil</a>. Objednali jsme jinde, přijel kurýr, přebírám jídlo. A on pak říká: „Nemáte náhodou takový ten web, guru… junior? Já se teď učím Swift, no vy tam doporučujete ten Python, tak se na něj možná taky podívám… Uvažuju o tom vašem klubu, co jste spustil, ale ještě tam nejsem…“ No stál jsem tam před ním v teplákách a zíral jsem a jen jsem opakoval nějaké hloupé věty jako že to je fakt náhoda a byl jsem úplně vedle :D Nenapadlo mě vůbec nic rozumného. Vzít si na něj kontakt. Popřát mu, ať se mu daří. Dát mu samolepku, když už ho tam mám fyzicky. Ne, prostě jsem tam jen stál jak trubka a čuměl na něj :D Takže pokud toto, drahý kurýre, čteš, omlouvám se, že jsem tam stál jak trubka, ale věz, že mi to udělalo hroznou radost. Pokud se mi ozveš, něco spolu vymyslíme, taková náhoda se nemůže nechat jen tak :)</p>
 <p><a href="https://twitter.com/honzajavorek/status/1375157706999410690">Tweetnul</a> jsem o tom a k dnešnímu dni to má asi 250 lajků, což je snad nejvíc v mém životě, nevím :D Bublá mi to tam v notifikacích už druhý den, followují mě lidi, už jen čekám, kdy mi někdo napíše, že jsem si to celé vymyslel a jen doplní „a pak jsi zavřel dveře a <a href="https://www.facebook.com/APotomCelaTramvajVstalaATleskala/">celá tramvaj ti zatleskala</a>“. Každopádně mě potěšilo, že <a href="https://twitter.com/chovanecm/status/1375166841824411651">nejsem sám, kdo v takové chvíli jen zírá a neví</a>.</p>
 <p>To, že se něco takového stalo, je fakt haluz a samozřejmě mě těší, že to, o co se snažím, má až takto viditelné výsledky. Možná bych reálný dopad JG pociťoval víc, kdyby nebyla pandemie a já chodil na programátorské srazy a tam potkával lidi, kteří se díky JG dostali k programování, ale takto si je mohu jen představovat. Nemám vůbec tušení, kde všude se to používá. Jen náhodou se dovím o tom, <a href="https://twitter.com/dzarka/status/1375329550838722562">že si o JG říkají třeba na VŠB</a>. Nebo objednávám u právničky obchodní podmínky a ona mi řekne „Aha, to jste vy s tím junior.guru? O tom jsem už slyšela!“ :D Takové věci mi rozhodně dělají radost a dávají mi ohromnou motivaci pokračovat v tom, co dělám. Sice mě to zároveň děsí, protože jsem jen týpek v teplákách objednávající si pelmeně a ne celebrita, ale asi to prostě souvisí s tím, že JG spojuji se svým ksichtem. Jednak je to <em>one-man show</em> a přiznat, že jsem za tím jen já, je určitý druh transparentnosti, jednak mám nějaké předchozí komunitní zásluhy a JG se díky nim mohlo svézt na mém existujícím osobním brandu. Akorát mám teď dojem, že JG už asi veškeré mé předchozí zásluhy trumflo, je slavné samo o sobě a naopak teď můj osobní brand živí. Tak či tak, dokud mě nebudou lidi zdravit u pisoáru v hospodě, asi to pro dobro projektu a své kariéry přežiju.</p>
 <p>Že bude tweet tak úspěšný jsem netušil a osobně mi vrtá hlavou, proč to na lidi tak funguje. Mám z toho ale radost, objevila mě díky němu i spousta nových lidí a třeba se povědomí o JG ještě rozšíří.</p>
-<h2 id="poc-s-mkdocs">PoC s MkDocs<small class="permalink"><a href="#poc-s-mkdocs" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="poc-s-mkdocs">PoC s MkDocs<small class="permalink"><a href="#poc-s-mkdocs" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Rozhodl jsem se, že zkusím, zda by šlo postupně portovat JG z <a href="https://github.com/Frozen-Flask/Frozen-Flask/">Frozen-Flask</a> na <a href="https://www.mkdocs.org/">MkDocs</a>. Důvody jsou udržovatelnost, možnost aby přispívali i ostatní, atd. Frozen-Flask jsem vybral proto, že jsem jej znal z projektů pro Python komunitu. Tam jsme se k němu zase dostali tak, že jsme původně měli dynamické Flask appky a chtěli je předělat na statické weby. Do začátku to bylo v pohodě, zastával jsem hodně přístup, že udělám vše tím nejpřímějším možným způsobem, takže je doteď veškerý obsah JG prostě v HTML. Zjistil jsem, že mi dává maximální flexibilitu a i texty v něm jdou psát dostatečně rychle. Kdybych začal s Markdownem, každou chvíli bych řešil, že doprostřed textu potřebuji dát nějaký box s něčím a kdo ví co.</p>
 <p>No ale teď už jsem ve fázi, kdy fáze prototypování je nejspíš za mnou a především po pivotu byznys modelu už si dovedu představit, jaké řešení by stačilo na všechny moje potřeby, před pivotem, po něm, i do budoucna. A věřím v této chvíli po prvotním průzkumu tomu, že kdyby JG bylo na MkDocs, zvládlo by to vše, co potřebuji a zároveň by to byl mnohem jednodušší a přehlednější projekt. Což o to, já se v něm vyznám, ale kdybych chtěl, aby do toho začali přispívat i jiní, to by už bylo horší.</p>
 <p>Jenže jak to portovat? Jsem velkým zastáncem <em>continuous delivery</em>, takže rozhodně ne tak, že si to začnu někde plácat bokem, tam to budu připravovat půl roku a pak udělám VELKÉ PŘEPNUTÍ z verze na Flasku na verzi na MkDocs. Jen si to představím a hned bych vyjmenoval 10 důvodů, proč je to špatně, proč bych to nikdy nedokončil, proč by se mi zpomalil veškerý vývoj… Ne ne. Musí to umět existovat zároveň! Takže jsem tento týden vynalézal způsob, jak MkDocs nastavit a zakomponovat do projektu tak, aby dokázalo generovat stránky, které přepíšou stránky vygenerované Flaskem. Potom jsem si dal za úkol jednu z méně významných stránek postupně překlopit do MkDocs. Vyřešil jsem postupně všechny problémy a výsledkem je <a href="https://junior.guru/test/">tato stránka</a>. Negeneruje ji Flask, ale MkDocs. Je v designu webu, je odkazy propojená se zbytkem. Akorát mi chybí CSS obsahu, to musím ještě vymyslet, jak udělám. Potom tuto stránku přejmenuju z <code>/test/</code> na <code>/privacy/</code> a tu původní odeberu z Flasku. Srovnání zdrojáku stránky, aby bylo jasnější, proč to dělám: <a href="https://github.com/honzajavorek/junior.guru/blob/2857db7c0f61c84374a3f29661b99208923efa08/juniorguru/web/templates/privacy.html">před</a>, <a href="https://raw.githubusercontent.com/honzajavorek/junior.guru/2857db7c0f61c84374a3f29661b99208923efa08/juniorguru/mkdocs/docs/test.md">po</a>. Důležité zdroje:</p>
@@ -78,13 +94,13 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Jak se používá <code>|url</code> filtr v Jinja2 je hezky vidět <a href="https://github.com/mkdocs/mkdocs-basic-theme/blob/d70850298bf0dd80afa63ab93b8af2b8301c77cb/basic_theme/base.html">tady</a></li>
 </ul>
 <p>V rámci tohoto Proof of Concept jsem použil plugin do MkDocs <a href="https://github.com/aklajnert/mkdocs-simple-hooks">mkdocs-simple-hooks</a>, ale zjistil jsem, že je v něm nějaká chyba. <a href="https://github.com/aklajnert/mkdocs-simple-hooks/issues/4">Reportoval jsem ji</a> tedy a když autor souhlasil, že má výtka dává smysl a můžu poslat Pull Request, <a href="https://github.com/aklajnert/mkdocs-simple-hooks/pull/5">poslal jsem opravu</a>. Myslel jsem, že to bude oprava na dva řádky, ale nakonec jsem s tím celkem bojoval. Naučil jsem se při tom něco o Python importech. Zajímavostí budiž, že požadavek na 100 % coverage testů na projektu odhalil, že část kódu projektu se po mých změnách stane mrtvým kódem a může být smazán. Pochybuju, že bych si toho bez coverage všiml já nebo autor. Nejsem coverage fanatik, ale tohle bylo fajn! Autor se chce na PR podívat o víkendu, ale já ho netlačím, protože jsem si knihovnu nainstaloval z gitu ze svého repozitáře a takto ji mohu používat, dokud to nemergne.</p>
-<h2 id="nova-uvodni-stranka-jg">„Nová“ úvodní stránka JG<small class="permalink"><a href="#nova-uvodni-stranka-jg" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="nova-uvodni-stranka-jg">„Nová“ úvodní stránka JG<small class="permalink"><a href="#nova-uvodni-stranka-jg" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Začátek týdne jsem celý strávil tím, že jsem navrhoval novou úvodní stránku a novou stránku pro klub. Popsal jsem a pokreslil u toho asi 20 papírů a ladil jsem to do posledního detailu. Bylo to nádherné, krásné, dokonalé.</p>
 <p>Jenže vytvořit to by znamenalo udělat na JG podstatné změny. Hotové by to bylo minimálně až za několik týdnů. A to už jsem slevil z toho, že nejdřív celý web portuju na MkDocs a předělám celé CSS :D</p>
 <p>No, jak asi tušíte, nerealizoval jsem to. Když jsem byl na svém dlouhém běhu, došlo mi, že to nejpodstatnější, co chci dokázat, je dostat víc lidí do klubu, který na úvodní stránce nebyl skoro vůbec přítomný, ač je to teď to hlavní, co mi generuje příjem. Začal jsem přemýšlet nad tím, jestli nejde existující úvodní stránku zprasit tak, aby prostě jen lépe řešila ten konkrétní problém, a úplně novou že bych udělal později.</p>
 <p>Když jsem si to v hlavě rozložil, zjistil jsem, že by to bylo jednoduché. Hlavičku stačí nahradit tím menu, které je na všech ostatních stránkách. Na žluté části stačí přepsat text na něco, co vede na klub. Texty jsem měl už vymyšlené a vyladěné pro novou homepage, akorát bych je napsal do té existující a přejmenoval tlačítko. Sekce o nabídkách práce? Ty mi teď nevydělávají skoro nic. Když tam měsíc ta sekce nebude, stane se něco? Ne. Šup s ní zatím pryč. Sekce s odkazem na newsletter. Vydělává něco? Ne. Šup s ní zatím pryč. Pak stačilo sekci s kuřatama přebarvit z bílé na černou, trochu doladit texty a odkazy na příručku a bylo to. Jsem zvědav, jestli teď fakt víc lidí objeví klub.</p>
 <p>Jsem s novou homepage spokojen? Ani za nic. Nejradši bych to celé spláchl do záchodu a udělal tu novou, voňavou. Řeší ten problém, který měla ta předchozí? Je v tomto směru lepší? Je, mnohem. Byla hotová za dvě hodiny práce? Byla. A je to CSS kód, který jsem psal ještě předtím, než jsem začal dělat věci v <a href="https://www.vzhurudolu.cz/prirucka/bem">BEM</a>, takže babrat se v tom byla fakt prasárna. Ale i tak to bylo rychle. Úkol splněn. Předělávání úvodní stránky se odkládá, tohle teď bude stačit. A trvalo jen pár týdnů, než jsem přišel na to, jak to udělat za dvě hodiny :D</p>
-<h2 id="nahravani-zvuku-na-macos">Nahrávání zvuku na macOS<small class="permalink"><a href="#nahravani-zvuku-na-macos" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="nahravani-zvuku-na-macos">Nahrávání zvuku na macOS<small class="permalink"><a href="#nahravani-zvuku-na-macos" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Kvůli nahrávání klubových přednášek jsem řešil problém, kdy přes <a href="https://obsproject.com/">OBS</a> nelze ve výchozím stavu nahrávat audio z jiných aplikací:</p>
 <ol>
 <li>OBS <a href="https://obsproject.com/forum/resources/os-x-capture-audio-with-ishowu-audio-capture.505/">doporučuje iShowU Audio Capture</a>, ale tento program už neexistuje.</li>
@@ -93,18 +109,18 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Přes <a href="https://alternativeto.net/software/loopback/?platform=mac">AlternativeTo</a> jsem našel další podobné aplikace a našel jsem tak <a href="https://github.com/ExistentialAudio/BlackHole/">BlackHole</a>. To je open source a funguje a je to boží!</li>
 </ol>
 <p>Takže můžu přes OBS nahrávat přednášky, hurá. To abych teď naplánoval nějakou další :)</p>
-<h2 id="landing-pages-poc">Landing pages PoC<small class="permalink"><a href="#landing-pages-poc" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="landing-pages-poc">Landing pages PoC<small class="permalink"><a href="#landing-pages-poc" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Napadlo mě, že bych mohl vytvořit landing pages podle určitých klíčových slov, abych odchytal lidi z vyhledávačů na věci jako „recenze na PyLadies“ nebo „vyplatí se bootcamp“ a tak. Vytvořil bych stránky, které na tato spojení nějak cílí a tam by bylo napsáno, že přesně takové věci se řeší u nás v klubu a třeba i čísla („PyLadies někdo zmínil už 42krát“) nebo i nějaké anonymizované útržky, ukázky reálných diskuzí. Je to jen nápad a zatím jsem si jen zkusil vytvořit skript, který projde zprávy na Discordu a je schopen je vytřídit podle toho, jestli zmiňují nějaké klíčové slovo. Jestli to bude dál nějak použitelné, to uvidím. Snad to není nějaká black hat SEO technika, nevyznám se v tom :)</p>
-<h2 id="danove-priznani">Daňové přiznání<small class="permalink"><a href="#danove-priznani" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="danove-priznani">Daňové přiznání<small class="permalink"><a href="#danove-priznani" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Divili jste se, že DPFO nepodávám datovkou apod., ale chci jej doručovat poštou na papíře. Některé argumenty si můžete <a href="https://twitter.com/honzajavorek/status/1374086330167259139">projít na mém Twitteru</a>, ale pojďme tomu dát ještě šanci.</p>
 <p>Řekněme, že papíry mám od daňaře vyplněné v PDF a už jsem jej nechtěl dále otravovat. Tedy nechci po něm žádat, aby to podal za mě, nebo aby mi generoval nějaká další XML. Jsem ale ochotný jít a ručně z papírů čísla přepsat do formulářů online. Začněme něčím jednoduchým, třeba VZP. Přihlásím se a tam toto:</p>
-<figure><img alt="VZP web" src="https://honzajavorek.cz/images/vzp-web.png"></figure>
+<figure class="figure"><img alt="VZP web" src="https://honzajavorek.cz/images/vzp-web.png" class="img-fluid figure-img rounded"></figure>
 <p>To je jistě perfektní, pokud o DPFO nic nevím a nemám už v ruce vyplněný přehled, ale pokud jej mám, tak tato políčka se nejmenují jako nic, co je na tom papíře.</p>
-<figure><img alt="VZP PDF" src="https://honzajavorek.cz/images/vzp-pdf.png"></figure>
+<figure class="figure"><img alt="VZP PDF" src="https://honzajavorek.cz/images/vzp-pdf.png" class="img-fluid figure-img rounded"></figure>
 <p>Takže abych je vyplnil, musel bych pochopit, co přesně do nich patří, nemohu to jen 1:1 opsat. V praxi to znamená, že bych si daňaře platil zbytečně, protože kvůli neochotě chápat ten formulář a rozumět těm políčkům jsem si jej najal. Tak smůla, třeba za rok. Zkusím daně nebo sociálku. Je rok bankovní identity, třeba to půjde! Datovku nemám, takže mohu využít MojeID nebo banku. Jenže MojeID jsem stále ještě neaktivoval, jelikož to vyžadovalo jít na poštu. Pokud ale mám jít na poštu, to už tam rovnou mohu poslat ty papíry. Dobrá, zkusím banku. Jediná z mých bank, která umí tu novou identitu, je AirBank.</p>
-<figure><img alt="Airbank" src="https://honzajavorek.cz/images/airbank-id.png"></figure>
+<figure class="figure"><img alt="Airbank" src="https://honzajavorek.cz/images/airbank-id.png" class="img-fluid figure-img rounded"></figure>
 <p>No, takže taky nic. Nedostanu se ani na daňový portál, ani na ČSSZ. A toto je přesně ten důvod, proč při DPFO ty věci tisknu na papír a posílám poštou. Nenarážím při tom na žádné problémy. Nicméně celé toto cvičení má aspoň jeden pozitivní dopad, zjistil jsem, že mohu příště daňaře požádat, aby to všechno podal mým jménem. Tím pádem bych mohl příště delegovat i toto a nemusel o DPFO už napsat jediný tweet v životě.</p>
-<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <ul>
 <li>Po tom, co jsem minulý týden zjistil, že existuje SPF, přidal jsem jej i na svou osobní doménu a doménu manželky.</li>
 <li>Měl jsem videohovor s <a href="https://inuits.eu/">Inuits</a>, kteří měli zájem stát se členy klubu. Dohodli jsme se a faktura už je na cestě :) Bylo fajn zjistit, že jedna z účastnic hovoru JG už delší dobu <a href="https://www.linkedin.com/company/juniorguru/">sleduje na LinkedIn</a> a fandí mi :)</li>
@@ -112,7 +128,7 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Volal jsem si s jednou vzdělávací agenturou a brainstormovali jsme nad tím, jak můžeme spolupracovat bez toho, aby byla narušena nezávislost JG. Vymysleli jsme minimálně tři věci a už se těším, až něco z toho uvedeme do pohybu. Na mě ale bude podobné věci zkusit domluvit i s dalšími, právě proto, aby to bylo vyvážené a nikdo si nemyslel, že je JG „cinknuté“, že doporučuje hlavně kurzy toho a toho.</li>
 <li>Během 7 dní od 20.3. do 26.3. jsem naběhal 28 km, při procházkách nachodil 5 km. Celkem jsem se hýbal 5 hodin a zdolal při tom 33 kilometrů. Zaběhl jsem přitom svůj nejdelší běh v životě, přes 20 km. Tolik jsem naposledy uběhl v roce 2008. Nejsem fanouškem promazávání starých článků, které jsem vyplodil jako nezkušený mladý kluk, jsem archivář. Takže vzhledem k tomu, že blog existuje od roku 2007, jsou tady ty staré běhy pěkně zdokumentované: <a href="https://honzajavorek.cz/blog/pulmaraton-skoro/">Půlmaraton. Skoro!</a>, <a href="https://honzajavorek.cz/blog/dvakrat-mer-jednou-rez-vyjde-pulmaraton-na-treti-pokus/">Dvakrát měř, jednou řež. Vyjde půlmaraton na třetí pokus?</a> Třetí pokus nikdy nenastal, odjel jsem na Erasmus, začaly mě bolet kolena, do formy jsem se už nikdy nevrátil. Až teď, juchů! Každopádně moje schopnost uběhnout 20 km nijak neovlivnila mou neschopnost bez velkého přesvědčování se ujít prvních 20 cm z předsíně ven před dveře :)</li>
 </ul>
-<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Tři věci, které bych chtěl zvládnout udělat příště:</p>
 <ol>
 <li>Přestěhovat se o pár ulic vedle.</li>
@@ -120,9 +136,9 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Vymyslet co s CSS na MkDocs nebo dokončit PoC těch landing pages.</li>
 </ol>
 <p>Bonus: Najít toho kurýra?! Bonus číslo dva: Uprosit konečně kamaráda, aby prošel ty slovenské citace yablka, co jsem přidal na JG, a opravil mi v nich chyby.</p>
-<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
-<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
 <ul>
 <li><a href="https://alistapart.com/article/the-future-of-web-software-is-html-over-websockets/">The Future of Web Software Is HTML-over-WebSockets</a><br>Hezký. Konečně protiváha k Reactu, GraphQL apod. složitostem?</li>
@@ -137,42 +153,72 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li><a href="https://medium.com/hackernoon/web-fonts-when-you-need-them-when-you-dont-a3b4b39fe0ae">Web fonts: when you need them, when you don’t</a><br>Propracovaný článek o tom, kdy potřebujete načítat web font a kdy si vystačíte se systémovým. Nechci psát, že pokaždé, když zbytečně použijete webový font, zemře koťátko, ale… Ale vlastně je to tak :D Jako člověk s nějakým vizuálním citem mám fonty strašně rád, ale jako člověk, který ve vlaku čeká na stránku, až se načte, je nenávidím.</li>
 </ul>
 <p><small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small></p></div></div></div></div>
-  </div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

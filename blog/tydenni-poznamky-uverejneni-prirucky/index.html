@@ -7,8 +7,6 @@
 
     <meta property="og:title" content="Týdenní poznámky: Uveřejnění příručky &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-uverejneni-prirucky/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
     <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
     <meta property="og:image:width" content="1024">
@@ -17,8 +15,9 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -31,46 +30,63 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-uverejneni-prirucky/" rel="bookmark">
-        Týdenní poznámky: Uveřejnění příručky
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2020-09-04T00:00:00+02:00">
-            4. 9. 2020
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Týdenní poznámky: Uveřejnění příručky
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-uverejneni-prirucky/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2020-09-04T00:00:00+02:00">
+          4. 9. 2020
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        13
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-uverejneni-prirucky&interval=week&start=2020-09-04T00:00:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
+  <main class="article-content">
 
     <div><div><div><div><p>Utekl další týden (31.8. — 4.9.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-par-dni-pred-vydanim/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/donate/">podporovatele</a>, a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.</p>
-<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
 Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
-<h2 id="prirucka-je-venku">Příručka je venku<small class="permalink"><a href="#prirucka-je-venku" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="prirucka-je-venku">Příručka je venku<small class="permalink"><a href="#prirucka-je-venku" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>1.9., tedy v pondělí před půlnocí, jsem uveřejnil příručku. Vše jsem si připravil předem, takže v den uveřejnění jsem se tím ani tolik nezabýval a před spaním akorát z mobilu mergnul <a href="https://github.com/honzajavorek/junior.guru/pull/361">tenhle Pull Request</a>. Kdo je pozornější, jistě si všimne, že příručka byla celou dobu na webu, jen na tajné adrese a kdokoliv si ji mohl z GitHubu dávno přečíst. Dokonce i tajný náhled pro lidi z newsletteru fungoval akorát tak, že jsem lidi poprosil, ať to zatím nešíří. Statické stránky, žádné heslo, žádné složitosti. Tolik k tomu, že vám všichni ukradnou texty, nápady, nebo že na GitHubu se vám někdo dívá pod ruce. Pokud nejste slavní, všem je úplný šumák, co děláte, dokud tomu neuděláte pořádnou reklamu.</p>
 <p>Prvního jsem šel a nasdílel vydání příručky do 19 skupin na FB, na Twitter, na LinkedIn, na Instagram. Prošel jsem relevantní Slacky, ve kterých jsem, a hodil to i tam. Pro každé místo, kam jsem příručku sdílel, jsem vymyslel unikátní text, který se pro danou skupinu nejvíc hodil. Samozřejmě předmětem sdělení bylo vždy totéž, takže jsou podobné, ale přišlo mi, že to takto dává největší smysl, nechtěl jsem jen copy-pastovat a tapetovat nějakým spamem.</p>
 <p>V pátek ráno jsem myslel, že je po všem a že si budu už jen hrát se psaním tiskové zprávy, ale můj tweet ráno <a href="https://twitter.com/spazef0rze/status/1301773489041371136">poslal dál</a> Michal Špaček svým 10 000 followerům a to spustilo úplně novou vlnu zájmu, retweetů, připomínek, atd., takže během pátku jsem vůbec nevěděl co dělat dřív, byl to hukot. I tyhle poznámky píšu až teď v neděli.</p>
-<h2 id="tiskovka">Tiskovka<small class="permalink"><a href="#tiskovka" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="tiskovka">Tiskovka<small class="permalink"><a href="#tiskovka" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Původně jsem nechtěl psát žádným médiím a řekl jsem si, že <a href="https://twitter.com/honzajavorek/status/1296808683419193345">tweet</a> buďto bude stačit, nebo na to prostě kašlu. V dubnu jsem psal úplně všem možným médiím a byla to spousta úplně zbytečně vynaloženého času. Jenže teď jsem si vzpomněl, že na Root, Zdroják a Lupu se dá poslat zprávička přes formulář a oni to případně jen upraví a schválí. Otevřel jsem si formulář a uvědomil si, že potřebuju napsat text, který se nápadně podobá slohovému útvaru tisková zpráva a touto salámovou metodou jsem se teda dostal k tomu, že jsem ji nakonec přece jenom začal psát. První verzi jsem udělal podle <a href="https://cesko.digital/assets/tiskova-zprava.pdf">TZ Česko.Digital</a>, kterou linkují z patičky. Poslal jsem ji do CzechCrunche, abych se jim připomenul, a kámošovi, jestli na ni nemrknou jeho kámošky se zkušenostmi z PR. Taky jsem udělal <a href="http://junior.guru/press">stránku pro média</a> a odeslal ty zprávičky. Dvě publikovali prakticky hned, Lupa si dala trochu na čas.</p>
 <p>V pátek ráno jsem <a href="https://twitter.com/honzajavorek/status/1301766194425462784">zkusil</a> na Twitteru a LinkedIn otestovat, zda je TZ k ničemu, nebo ji můžu začít rozesílat. <a href="https://twitter.com/levelsio/">Levels</a> se radí se svým Twitterem o všem možném, tak mi to přišlo jako dobrý nápad. Reakce jsem dostal rozporuplné, na jednu stranu dobré rady a tipy jak to vylepšit, kde si přečíst <a href="https://prtipy.cz/">tipy o PR</a> nebo <a href="http://prciny.com/">jakou knížku si koupit</a>. Na druhou stranu se našli lidi, kteří mi naznačili, že toto je amatérský přístup, který dlouhodobě fungovat nebude a že bych si na to měl prostě někoho najít, ať už dobrovolníka nebo zaplatit. Dokud nenarazím do zdi, budu "solopreneur" a budu se radit s lidmi na Twitteru. Uvidíme :)</p>
 <p>Každopádně hned ráno mi Daniel Dočekal odpověděl, že TZ v PDF by ani neotevřel, že to je nejhorší formát. Takže jsem hned sedl a za hoďku to celé předělal na HTML stránky. Neuvědomil jsem si, že jsem tím ale rozbil odkaz na PDF, takže CzechCrunch i kámoš mi hned psali, že odkaz nefunguje :D Ale fajn bylo, že ani CzechCrunch, ani kámoše to neodradilo od toho se mnou něco podnikat, takže dobrý. Spolu s CzechCrunch nakonec něco asi vymyslíme a od kámoše, resp. kámošky kámoše, mi přišlo hodně dobrých připomínek, jak vylepšit tiskovou zprávu.</p>
 <p>Na tu mám ještě feedback, který jsem nestačil zpracovat. Dodělám v pondělí a pak už to rozešlu, ať je to jaké chce. Ještě upřímně ani nevím kam. Těžko říct, jestli se orientovat podle toho seznamu z dubna, tam byla mizerná odezva.</p>
-<h2 id="prvni-vysledky">První výsledky<small class="permalink"><a href="#prvni-vysledky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="prvni-vysledky">První výsledky<small class="permalink"><a href="#prvni-vysledky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <ul>
 <li>Od 1.9. do 6.9. mám 4000 návštěvníků a skoro 6000 zobrazení.</li>
 <li>Kolik lajků jsem dostal na těch 19 FB skupinách asi nikdy nespočítám, ale několik dní jsem měl notifikace v jednom ohni. K dnešnímu dni má <a href="https://twitter.com/honzajavorek/status/1300721910238654464">tweet o příručce</a> 71 RT a 137 lajků. Analytika na Twitteru udává 14000 "impresí" a 1500 interakcí.</li>
@@ -87,21 +103,21 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 </ul>
 <p>Je to úspěch? Jaký byl původní záměr s příručkou? Na začátku tohoto roku jsem si uvědomil, že na JG chodí dvě různé cílovky, a to lidi, kteří se chtějí naučit programovat, a lidi, kteří si chtějí hledat svou první práci v IT. Samozřejmě se překrývají, ale zatímco tu první nemohu se svým současným byznys modelem monetizovat, ta druhá je vlastně moje opravdová cílovka, pokud mě mají živit firmy a nabídky práce. Příručka tedy měla JG víc zacílit na tyto lidi, stáhnout jich na JG co nejvíc a vytvořit jim důvod tam chodit, doporučovat si tuhle stránku mezi sebou, apod. Zároveň jsem pak chtěl kultivovat juniory v ČR samotným obsahem příručky a mít možnost firmám říct, že junioři, kteří se naučili programovat díky JG, jsou kvalitní materiál, jenž chodí na pohovory připraven. To vše si myslím, že se tak nějak povedlo a ještě jako bonus jsem sehnal na příručku sponzory a dokázal lidi přesvědčit, že mě mají podporovat na GitHub Sponsors nebo Patreonu. Za úspěch to tedy považuji.</p>
 <p>I když… Do Dobrého rána s Českou televizí jsem se s tím zatím nedostal. Ale to je asi dobře, protože vlastně nerad vstávám brzo ráno.</p>
-<h2 id="priprava-socialnich-siti">Příprava sociálních sítí<small class="permalink"><a href="#priprava-socialnich-siti" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="priprava-socialnich-siti">Příprava sociálních sítí<small class="permalink"><a href="#priprava-socialnich-siti" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Než jsem vydal příručku, prošel jsem si svůj profil na Twitteru, LinkedIn a na Facebooku, abych měl všude v "about" věci, které dávají smysl a aby byl všude jasný odkaz na JG, kdyby si mě někdo lustroval nebo kdybych zaujal nějaké novináře, tak aby bylo propojení mé osoby a JG jednoznačné. Taky je to reklama na JG vůči lidem, kteří z nějakého důvodu objeví dřív můj profil než samotné JG.</p>
 <p>Taky jsem si rozmyslel název <a href="https://www.facebook.com/groups/junior.guru/">FB skupiny</a>. Ten jde měnit snad jen jednou za 100 nebo kolik dní. S tím aktuálním jsem nebyl spokojený, takže jsem jej změnil a myslel hlavně na klíčová slova, aby skupinu našel na FB třeba někdo, kdo hledá něco pro začátečníky v programování, ale i lidi, kteří přímo hledají JG.</p>
 <p>Do této chvíle jsem se bránil tomu, abych měl pro JG samostatnou FB stránku, existovala jen zmíněná skupina. Nechci tvořit žádný obsah na FB nebo na jiné sociální síti, vše chci směřovat na své domény honzajavorek.cz a junior.guru, kde mám nad obsahem kontrolu a nejsem otrokem cizích algoritmů. Nechci, aby pro obsah lidi chodili na FB, chci aby chodili na mé weby, a to ideálně přímo, bez prostředníků.</p>
 <p>Také jsem nechtěl trávit čas hloupostmi, proto třeba JG nemá vlastní Twitter účet. Na Twitteru ani není většina cílovky, dělal bych tam srandičky pro pár fanoušků a to je raději nechám sledovat můj vlastní účet. FB skupinu jsem založil jen na zkoušku, jako místo pro setkávání případné komunity a jako kanál, kam případně mohu automaticky posílat nabídky práce těm, kdo netouží odebírat newsletter, ale FB jim vyhovuje. Instagram jsem založil spíš ze srandy, abych si s tou sítí mohl hrát.</p>
 <p>To by asi stačilo pro kontext :D Prostě jsem se doteď bránil samostatné FB page, ale jednak jsem zjistil, že pokud si chci dát JG jako povolání na FB, musí mít vlastní stránku, jednak jsem narazil už dřív na hodně překážek, pokud tu FB stránku nemám (připojení <a href="https://publish.buffer.com/">Bufferu</a> na Instagram, mimo jiné). Takže jsem ji nakonec <a href="https://www.facebook.com/juniordotguru">vytvořil</a> a propojil s ní i původní skupinu. Můžete ji olajkovat, ale je mi to dost jedno, protože tam stejně jako v případě <a href="https://www.linkedin.com/company/26218444/">LinkedIn stránky</a> nic psát asi nebudu a nikde ji nebudu propagovat. Jmenuje se Junior Guru, protože FB nedovolí začít název stránky malým písmenem.</p>
 <p>Kdo chce vědět novinky o JG, ať sleduje newsletter nebo přímo mě, nebudu si hrát na deset profilů. Buduju si image tvůrce téhle služby a nechci trávit přehršel času správou profilů na sociálních sítích, ROI by podle mě bylo fakt hodně špatné. Stačí, že se starám o <a href="https://twitter.com/kredenecek">@kredenecek</a>.</p>
-<h2 id="nazev-junior-guru">Název Junior Guru<small class="permalink"><a href="#nazev-junior-guru" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="nazev-junior-guru">Název Junior Guru<small class="permalink"><a href="#nazev-junior-guru" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Už dřív jsem někde četl, že novináři a jiní běžní lidi mají velký problém s názvem, který se píše stylizovaně bez velkých písmen. Ani ten blbý Facebook nedovolí udělat stránku bez počátečního velkého písmena. Takže jsem se rozhodl, že v těchto kontextech budu JG psát jako Junior Guru, i když se mi to nelíbí a byl bych nejraději, kdyby se to všude jmenovalo a psalo junior.guru.</p>
-<h2 id="statistiky-tykajici-se-prirucky">Statistiky týkající se příručky<small class="permalink"><a href="#statistiky-tykajici-se-prirucky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="statistiky-tykajici-se-prirucky">Statistiky týkající se příručky<small class="permalink"><a href="#statistiky-tykajici-se-prirucky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Hned tento týden jsem začal průběžně připravovat skript, který z Google Analytics stahuje statistiky o příručce, abych je mohl posílat sponzorům příručky. Do toho si jeden inzerent přál, aby mu chodilo odkud lidi chodí na jeho nabídky práce, takže jsem řešil, jak to jde udělat. GA mají "dimenzi" region, což jsem nakonec zhodnotil jako nejlepší data v tomto ohledu, jelikož město není úplně relevantní (inzerentovi je celkem jedno, jestli lidi chodí z Brna, Adamova, nebo Ivančic, spíš mu jde o to, jestli lidi chodí z Jižní Moravy nebo z Prahy). Ještě to ale nemám hotové.</p>
 <p>Původně se mi návštěvnost na <a href="https://junior.guru/hire-juniors/">stránce pro firmy</a> počítala průměrně za poslední 4 kalendářní měsíce, ale toto se mi přestalo líbit, jelikož čísla z příručky by se v tom objevila až v říjnu. Proto jsem to trochu překopal a teď se to počítá pohyblivě od včerejšího dne mínus 4 měsíce a denní návštěvnost se přepočítává aby byla za měsíc. K něčemu ta matematika ze ZŠ nakonec přece jenom byla. Pak jsem to ale musel ještě opravit, protože si to původně neporadilo s tím, kdyby chyběly data pro nějaké dny, dělilo se počtem řádků v datech, ne počtem dní v rozsahu. Toto jsem zjistil hlavně když jsem pak začal podobné statistiky počítat u příručky, kde samozřejmě za poslední 4 měsíce nic není, jen za posledních pár dní.</p>
 <p>Tyto statistiky pro příručku jsem pak co nejdřív <a href="https://junior.guru/hire-juniors/#handbook">zobrazil na stránce pro firmy</a>: počet návštěvníků příručky, počet zobrazení sponzorských log, počet kliknutí na sponzorská loga a konverzi. Ještě budu potřebovat čísla pro jednotlivá loga, která bych firmám posílal e-mailem jako report, to musím teprve dodělat.</p>
 <p>Přidal jsem na totéž místo i "testimonials", tedy ohlasy na příručku. Začalo jich být brzy tolik, hlavně z Twitteru, že už nebylo moc dobré je zobrazovat vedle sebe. Vynalezl jsem tedy nějaké překlikávátko. Asi nic úžasného, ale prostě jsem to nějak narychlo vymyslel, aby to nějak fungovalo. Ohlasy jsem ani nestíhal přidávat, tak jsou zatím v úplně náhodném pořadí.</p>
-<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <ul>
 <li>Napsal jsem Romea o <a href="https://twitter.com/outreachy/status/1299378068218241024?s=12">stipendiích vypisovaných v Outreachy</a>.</li>
 <li>Den před vydáním příručky jsem ještě poslal newsletter, protože byl konec měsíce. Tam jsem opět zdůraznil, že "zítra" to vyjde.</li>
@@ -114,11 +130,11 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Upravil jsem skript kontrolující pokažené odkazy, aby ignoroval různé typy chyb, které nemůžu ovlivnit, a které mi v poslední době shazovaly CI.</li>
 <li>Všiml jsem si, že jména podporovatelů se neřadí správně podle příjmení, protože to nezvládá české řazení podle háčků apod. Použil jsem tedy <a href="https://pypi.org/project/czech-sort/">czech-sort</a> v Pythonu, protože se mi nepovedlo zjistit, jak to udělat s SQLite a Peewee.</li>
 </ul>
-<h2 id="co-dal">Co dál?<small class="permalink"><a href="#co-dal" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-dal">Co dál?<small class="permalink"><a href="#co-dal" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Musím dodělat statistiky příručky a jejich posílání mailem. Pak musím dát spoooustu lásky <a href="https://junior.guru/jobs/">nabídkám práce</a>. A musím dělat sales co to půjde. A pak si udělám excelovou tabulku a spočítám si, jak si vede můj "byznys" finančně, a jestli to má nějaký smysl dál.</p>
-<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
-<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
 <ul>
 <li><a href="https://www.novinky.cz/muzi/clanek/za-osm-dni-objel-na-kole-cesko-i-slovensko-denne-i-pres-600-kilometru-40334536">Za osm dní objel na kole Česko i Slovensko. Denně i přes 600 kilometrů</a><br>Pecka</li>
@@ -135,42 +151,72 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li><a href="https://www.wired.com/2011/02/transcript-of-reboot-11-speech-by-bruce-sterling-25-6-2009/">Transcript of Reboot 11 speech by Bruce Sterling, 25-6-2009</a><br>Skoro deset let starý projev o tom, jak budeme žít dnes. Technologie, způsob života, rozmělněný pokrok, ekologie a nakonec rady ala Marie Kondo. Hodně zvláštní text, který si budu muset asi přečíst víckrát, než ho plně vstřebám.</li>
 </ul>
 <p><small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small></p></div></div></div></div>
-  </div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

@@ -7,8 +7,6 @@
 
     <meta property="og:title" content="Týdenní poznámky #41: MDŽ, yablko a počítání peněz &mdash; Honza Javorek">
     <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-41-mdz-yablko-a-pocitani-penez/">
-    <meta name="twitter:creator" content="@honzajavorek">
-    <meta name="twitter:site" content="@honzajavorek">
 
     <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
     <meta property="og:image:width" content="1024">
@@ -17,8 +15,9 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
-    <link rel="stylesheet" href="https://honzajavorek.cz/theme/fork-awesome/css/fork-awesome.min.css">
 
 
   <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
@@ -31,49 +30,66 @@
   <meta property="article:author" content="https://honzajavorek.cz">
   </head>
   <body>
-      <div class="content">
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
 <article class="article">
-  <header class="article-header">
-    <h1>
-      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-41-mdz-yablko-a-pocitani-penez/" rel="bookmark">
-        Týdenní poznámky #41: MDŽ, yablko a počítání peněz
-      </a>
-    </h1>
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
   </header>
-  <footer class="article-info">
-    <ul>
-      <li class="article-published">
-        <small>
-          <time datetime="2021-03-12T00:00:00+01:00">
-            12. 3. 2021
-          </time>
-        </small>
+  <h1 class="title display-5">
+    Týdenní poznámky #41: MDŽ, yablko a počítání peněz
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-41-mdz-yablko-a-pocitani-penez/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2021-03-12T00:00:00+01:00">
+          12. 3. 2021
+        </time>
       </li>
-      <li class="article-author">
-        <small>
-          <a href="#author">Honza Javorek</a>
-        </small>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        12
+          min čtení
       </li>
-    <ul>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-41-mdz-yablko-a-pocitani-penez&interval=week&start=2021-03-12T00:00:00+01:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="article-content">
+  <main class="article-content">
 
     <div><div><div><div><p>Utekl další týden (8.3. — 12.3.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-40-zubar-stredovek-a-novy-uvod-do-programovani/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/club/">klub podporovatelů</a>, a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.</p>
-<figure><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"><figcaption>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
 Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
-<h2 id="mdz">MDŽ<small class="permalink"><a href="#mdz" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="mdz">MDŽ<small class="permalink"><a href="#mdz" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Rozhodl jsem se udělat slevovou akci na MDŽ a různým komunitám pro ženy nabídnout 15 % slevový kupón na roční členství v klubu pro jejich členky. Smál jsem se s kamarádem, že mi nikdo neřekl, že když udělám službu nejlevnější jak jen to jde, tak se z ní pak nedají moc snadno dávat slevy. Ale budiž :)</p>
 <p>Napsal jsem <a href="https://www.czechitas.cz/">Czechitas</a> (rozhodly se nesdílet to), <a href="https://www.femmepalette.com/">Femme Palette</a> (vyšlo), <a href="https://cybermagnolia.com/">CyberMagnolia</a> (vyšlo), <a href="https://holkyzmarketingu.cz/">#holkyzmarketingu</a> (poděkovaly, ale nevím, jestli to nakonec někde sdílely), <a href="https://reactgirls.cz/">ReactGirls</a> (vyšlo), <a href="https://pyladies.cz/">PyLadies</a> (vyšlo), Women of OCI/Oracle (reakce spíš nic), <a href="https://ajtyvit.sk/">Aj Ty v IT</a> (ghostnuli mě, ale nezlobím se, neznáme se, nemám s nimi žádné další vztahy, mohl jsem působit jako náhodný internetový spam). Byť se to Czechitas rozhodly nesdílet skrze své hlavní kanály, dal jsem to aspoň do FB skupiny Czechitas Příležitosti, kde mi příspěvek schválili. Nutno také podotknout, že jsem většinu kontaktoval na poslední chvíli, tzn. zhruba 2-3 pracovní dny před akcí. Pokud jsou další komunity pro ženy, na které jsem zapomněl, je to prostě jen proto, že je neznám.</p>
 <p>Aj Ty v IT jsem díky tomuto začal sledovat na LinkedIn a jsou naprosto boží. Kdysi jsem je zaznamenal na <a href="https://pycon.sk/">PyCon SK</a>, ale dále jsem je nesledoval. Teď občas zahlédnu jejich příspěvky a celkem mě to baví. Přijde mi, že netrpí oněmi drobnými nedostatky, které občas vidím <a href="https://www.facebook.com/groups/967870373283278/permalink/5032095890194019/">jinde</a>.</p>
 <p>Převážně díky této akci se do klubu přidalo plus mínus 25 lidí. Jestli všichni zůstanou i po dvou týdnech, to se samozřejmě teprve uvidí. Navíc to zažehlo užší spolupráci s <a href="https://cybermagnolia.com/">CyberMagnolia</a>. Chtěl jsem v <a href="https://junior.guru/club/">klubu</a> rozjet přednášky a tak jsme se rovnou domluvili, že první bude mít <a href="https://dariagrudzien.com/">Daria</a>.</p>
-<h2 id="prednasky-v-klubu">Přednášky v klubu<small class="permalink"><a href="#prednasky-v-klubu" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="prednasky-v-klubu">Přednášky v klubu<small class="permalink"><a href="#prednasky-v-klubu" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Po prvním pokusu o sraz v klubu jsem přemýšlel, jak to udělat lépe a možná jinak, než způsobem, jakým probíhají běžné srazy. Jednak jim nechci konkurovat, jednak je takový sraz náročný na organizaci a vlastně nevím, jestli se pro klub hodí. Chci, aby klub bylo takové to, co vám každý den bublá na pozadí, kde vám někdo odpoví na dotaz, tu a tam se dovíte něco nového… Napadlo mě, že nějaký koncept „jednorázových přednášek“, které budou odlehčenější a častější, mohl vyhovovat více. Prostě jednou za týden nebo dva bude večer přednáška, bude trvat hodinu maximálně a šmitec. Nenáročné na organizaci, nenáročné pro lidi. Ne každý chce celý večer strávit na srazu, takhle se něco doví a když bude chtít, může si pak podívat, ale oficiální program to už nebude.</p>
-<blockquote>
+<figure class="figure figure-blockquote"><blockquote class="blockquote">
 <p>Večerní tematické přednášky jsou vždy předem oznámeny na konkrétní datum a čas. Pokud chceš přednášku slyšet, připoj se v ten čas do hlasové místnosti #klubovna. Po skončení přednášky není žádný další oficiální program. Cílem je, aby přednášky byly spíše rychlé a časté, než plánované do celovečerních bloků. Tak nezaberou příliš mnoho času a můžeš se připojit, i když máš nabitý den, nebo prostě jen nechceš trávit celý večer na nějakém srazu.</p>
 <p>Pokud si chceš povídat, můžeš po přednášce zůstat v místnosti #klubovna, stejně jako to jde i kdykoliv jindy. Není to ale už součástí programu, takže tohoto povídání se nemusí účastnit organizátoři a diskuze není moderovaná.</p>
 </blockquote>
-<p>První přednáška bude v úterý v 18:00 večer, detaily jsou <a href="https://junior.guru/events/">tady</a>. To je mimochodem stránka, kterou jsem věděl, že chci vytvořit hezčí, ale plácal jsem se přes ruce, abych ji neudělal ani složitější na straně backendu, ani hezčí, protože jsem na to vlastně neměl vůbec tento týden čas. Chtěl jsem udělat YML soubor s daty, uložit to do databáze, vypisovat to na víc místech, mít tam fotku Darii. Ale to je moc práce. Zakázal jsem si to, YML soubor po 15 minutách jeho existence v mém editoru smazal, a stránku jsem vyrobil nejjednodušším způsobem - prostě jsem ji napsal jako čisté HTML. Vůbec s tím nejsem spokojený, ale je to hotové a informace tam jsou. Dále se tím můžu zabývat, až těch přednášek bude pět. Na stránku jsem dal také návod pro přednášející. Vlastně jsem jen sepsal věci, které jsem psal Darii a na které se mě sama ptala :)</p>
-<h2 id="yablko">yablko<small class="permalink"><a href="#yablko" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+</figure><p>První přednáška bude v úterý v 18:00 večer, detaily jsou <a href="https://junior.guru/events/">tady</a>. To je mimochodem stránka, kterou jsem věděl, že chci vytvořit hezčí, ale plácal jsem se přes ruce, abych ji neudělal ani složitější na straně backendu, ani hezčí, protože jsem na to vlastně neměl vůbec tento týden čas. Chtěl jsem udělat YML soubor s daty, uložit to do databáze, vypisovat to na víc místech, mít tam fotku Darii. Ale to je moc práce. Zakázal jsem si to, YML soubor po 15 minutách jeho existence v mém editoru smazal, a stránku jsem vyrobil nejjednodušším způsobem - prostě jsem ji napsal jako čisté HTML. Vůbec s tím nejsem spokojený, ale je to hotové a informace tam jsou. Dále se tím můžu zabývat, až těch přednášek bude pět. Na stránku jsem dal také návod pro přednášející. Vlastně jsem jen sepsal věci, které jsem psal Darii a na které se mě sama ptala :)</p>
+<h2 id="yablko">yablko<small class="permalink"><a href="#yablko" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Svérázný slovenský lektor <a href="http://robweb.sk">yablko</a> mi udělal super reklamu hned v několika videích a mě se líbí i jiná jeho videa, takže jsem vzal <a href="https://www.youtube.com/playlist?list=PLhB6F20C-jTPITEXEHus6fVZDfNxzRbv_">tento playlist</a> a přemýšlel, kam všude na JG by se dala jeho videa nacpat. Dělal jsem to po večerech v průběhu celého týdne.</p>
 <p>Mrkl jsem na <a href="https://www.youtube.com/watch?v=0v5K4GvK4Gs">video o Gitu</a> a taky se mi líbilo, takže jsem jej přidal do <a href="https://junior.guru/practice/">sekce o Gitu a GitHubu</a>. Jenže jak už jsem u té sekce byl, tak jsem ji musel celou přepsat. Nejsem s ní ještě úplně spokojený, ale asi je to lepší, než bylo.</p>
 <p>Další videa jsem dal do <a href="https://junior.guru/candidate-handbook/">příručky o hledání práce</a>. Na začátek jsem dal celý kolotoč jeho videí. Pak jsem chtěl dát různá videa do různých míst na webu, ale nevěděl jsem jak, protože to bylo vždy jedno video tu a jedno tam, a na to se úplně nehodí takový ten můj boxíkový seznam. Takže nakonec jsem to vyřešil tím, že jsem odcitoval různé yablkovy výroky a u nich jsou odkazy na jeho videa, plus jsem hodil občas nějaký odkaz i do textu.</p>
@@ -83,13 +99,13 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Stránky s YT videi se nedají moc screenshotovat a moje boxíky s odkazy jsou na screenshotech založené. Řešil jsem to už u odkazů <a href="https://brona.cz/">Broňova</a> videa, ale to bylo asi tak jedno video, tak jsem ho udělal ručně. Teď jsem toho potřeboval víc. Když se ale můj <a href="https://github.com/sindresorhus/pageres-cli">nástroj na sceenshoty</a> snaží vyfotit YT stránku, je tam spousta jakýchsi dialogů a do videa se navíc načte reklama místo yablka nebo Broni, takže je to úplně na nic. Naštěstí každé YT video má cover obrázek na adrese <code>"https://img.youtube.com/vi/&lt;KÓD VIDEA&gt;/maxresdefault.jpg"</code>, který je vlastně i mnohem lepší, než by byl screenshot. Takže jsem upravil svůj screenshotovací skript tak, aby se pro YT odkazy díval rovnou po tomto obrázku a je to super.</li>
 </ol>
 <p>P.S.: Napadlo mě, že člověk, který kontroluje, zda je text zapsaný správně slovensky, by se mohl nazývat <em>grammar kotleba</em>. No nic.</p>
-<h2 id="plzenske-pyvo">Plzeňské Pyvo<small class="permalink"><a href="#plzenske-pyvo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="plzenske-pyvo">Plzeňské Pyvo<small class="permalink"><a href="#plzenske-pyvo" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Během týdne mě oslovili z <a href="https://pyvo.cz/plzen-pyvo/">Plzeňského Pyva</a>, jestli nechci mít <em>lightning talk</em> o JG. Souhlasil jsem a tak jsem se poprvé konečně účastnil Pyva v Plzni. Připravoval jsem si to půl hodiny před začátkem a tak mě potěšilo, když mi řekli, že nemusím přísně dodržet limit 5 minut. Snad se to líbilo, vypíchl jsem hlavně to, že aby měl člověk praxi, musí hlavně programovat na reálných projektech a že by se měl obklopit lidmi, aby měl pomoc a motivaci. Sraz samotný byl fajn, 55+ účastníků, což je pecka.</p>
 <p>S online meetupy je problém v tom, že přednášky se často mění v uspávání hadů a člověk si nemůže odskočit za roh a povídat si tam s kamarády. Stejně tak je náročná následující diskuze, kde se nedají vytvořit „skupinky“ podle toho, co koho zajímá a kdo je komu sympatický. Nevydržel jsem do konce Plzeňského Pyva, ale koncept přednášek ve stylu „dialogu“ mě zaujal. Mintaka občas skočil do přednášky s otázkou nebo konentářem - jakože normálně by to bylo divný, ale v onlinu mi to překvapivě vůbec nevadí a působí to živěji, jako kdyby to mělo našlápnuto k rozhovoru nebo nějakýmu podcastu. Zajímavé koncepty, inspirace.</p>
-<h2 id="pocitani-penez">Počítání peněz<small class="permalink"><a href="#pocitani-penez" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="pocitani-penez">Počítání peněz<small class="permalink"><a href="#pocitani-penez" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Měl jsem furt nějakou depku z toho, že klub nevydělává dost a dost rychle. Byl jsem se s kafem v ruce projít do zimy s kamarádkou, kterou jsem dlouho neviděl a ta se mě zeptala, proč si to pořádně nespočítám. Nevěděl jsem. Měl jsem pocit, že to není důležité a nespěchá to, ale důležité to bylo, už jen kvůli psychické pohodě. Té nepomáhá, že čas mi totiž běží „startupově“ a já mám pocit, jako by už klub existoval rok, i když existuje měsíc a půl. Za ten měsíc a půl mám skoro 4000 Kč MRR čistě z klubu a zhruba 120 lidí v klubu, což není vůbec špatný.</p>
 <p>Spočítal jsem to ale všechno pořádně, včetně faktur firmám, donations atd. a opravil svou Google Sheets tabulku a teď jsem už o dost šťastnější a klidnější a veselejší. Mám před sebou ještě hromadu práce, ale myslím, že je to na dobré cestě. Jak mi GitHub Sponsors přestanou znásobovat příspěvky, tak mi odhadem asi o 3000 Kč spadne celkové MRR, které je teď kolem 8500 Kč, ale i tak je to MRR myslím už na pěkné cestě. A MRR je ten pevný každoměsíční základ, který je důležitý. Celkově jsem od začátku roku 2021 vydělal (čistého) 45900 Kč, což rozpočítáno na měsíce vychází na 20000 Kč, ale nedá se to tak úplně brát, protože v tom jsou třeba faktury za něco, co je jakože předplaceno na rok dopředu. Nevím úplně, jak je mám započítávat, protože se mi nechce u každé platby evidovat, na kolik měsíců se má rozpočítávat a od kdy do kdy, a pak to nějak složitě do té tabulky promítnout ve výpočtech. Takže výdělek zatím jen dělím počtem měsíců, ale je mi pak jasné, že to zkresluje čísla. I proto je to MRR prostě nejdůležitější číslo.</p>
-<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <ul>
 <li>V klubu jsem nadhodil, jaké otázky by mohly být v průzkumu mezi juniory, který bych mohl dělat se Smitio. Pokud by vás také něco napadlo, budu rád za nápady.</li>
 <li>Kamarád Jakub Mrozek, velký fanoušek těchto poznámek a <a href="https://jakubmrozek.cz/knihy.html">čtenář knih</a>, nakoukl do klubu a napsal mi: "Ty diskuze jsou úžasné. Když to lidi zaplatí, tak je tam úplně jiná diskuze. Extrémně kultivovaná, srozumitelná, každý příspěvek má smysl."</li>
@@ -100,16 +116,16 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li>Kamarád <a href="https://milavotradovec.cz/">Míla Votradovec</a>, který se učí ML, se mě zeptal, jestli nemám na JG nějaká data, která by mohl zkoumat. Mám, tak jsem mu napsal, kde je najde. Nic od toho ani jeden nečekáme, ale <a href="https://github.com/honzajavorek/junior.guru/pull/492">už posílá první Pull Requesty</a>, juch.</li>
 <li>Na Česko.Digital postupně zpracovávají a snad brzy vydají článek, který sepsala členka klubu <a href="https://martinahytychova.github.io/">Martina Hytychová</a> o přispívání do Open Source jako začátečnice.</li>
 </ul>
-<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Tři věci, které bych chtěl zvládnout udělat příště:</p>
 <ol>
 <li>Připravit podklady pro daňové přiznání.</li>
 <li>Připravit vše na úterní klubovou přednášku.</li>
 <li>Přiblížit se k redesignu úvodní stránky tak, aby naváděla lidi do klubu.</li>
 </ol>
-<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
-<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Trvalý odkaz na tento nadpis">#</a></small></h2>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
 <ul>
 <li><a href="https://www.info.cz/nazory/uz-to-zacina-byt-nuda-divat-se-dokola-jak-vsichni-hekaji-nadavaji-a-jsou-poboureni-pojdme-prestat-lamentovat-nad-dneskem-a-pripravme-se-na-zitrek">Už to začíná být nuda, dívat se dokola, jak všichni hekají, nadávají a jsou pobouření. Pojďme přestat lamentovat nad dneškem a připravme se na zítřek</a></li>
@@ -125,42 +141,72 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <li><a href="https://denikreferendum.cz/clanek/31014-pro-feminismus-je-koronavirus-katastrofou">Pro feminismus je koronavirus katastrofou</a><br>Stále existuje fenomén „druhé směny“. “Všude po světě odvedou ženy — a to včetně těch, které chodí normálně do zaměstnání — víc práce v domácnosti a mají méně volného času než jejich partneři.” Článek o druhé směně, o tom jak ženy během pandemie častěji zůstanou doma, o domácím násilí. Vracíme se o 50 let zpět.</li>
 </ul>
 <p><small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small></p></div></div></div></div>
-  </div>
+    </main>
 
   <footer class="article-footer">
-    <div id="author" class="author">
-      <img alt="Honza Javorek's photo" src="https://honzajavorek.cz/images/home/honza.jpg">
-      <address>
-          <a href="https://honzajavorek.cz">Honza Javorek</a> je programátor
-          a tvůrce <a href="https://junior.guru/">junior.guru</a>,
-          projektu pro ty, kdo se chtějí naučit programovat. Od roku 2011
-          pomáhá budovat českou komunitu kolem jazyka
-          <a href="https://python.cz/">Python</a>.
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
       </address>
-      <p class="button button-donate">
-        <a href="https://github.com/sponsors/honzajavorek/">
-          <i class="fa fa-github"></i> GitHub Sponsors
-        </a>
-        <a href="https://www.patreon.com/honzajavorek">
-          <i class="fa fa-patreon"></i> Patreon
-        </a>
-    </p>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
     </div>
-    <p class="button">
-        <a href="https://honzajavorek.cz/blog/">
-          <i class="fa fa-list-ul"></i> Archiv článků
-        </a>
-    </p>
   </footer>
 </article>
       </div>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
       <footer class="footer">
-        <address>
-          © Copyright 2007—2022
-          <a href="https://honzajavorek.cz">Honza&nbsp;Javorek</a>
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
         </address>
       </footer>
-    <script defer src="https://honzajavorek.cz/theme/main.js"></script>
     <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
 
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
