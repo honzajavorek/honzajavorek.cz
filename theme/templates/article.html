@@ -2,7 +2,7 @@
 
 {% block html_lang %}{{ article.lang }}{% endblock %}
 
-{% block title %}{{ article.title }} &mdash; {{ SITENAME }}{% endblock %}
+{% block title %}{{ article.title }} &mdash; {{ BLOGNAME }}{% endblock %}
 
 {% block image %}
   {% if article.image %}
@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="{{ SITEURL }}/theme/code.css">
 
   {% if FEED_ALL_ATOM %}
-    <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} &mdash; Atom Feed">
+    <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ BLOGNAME }} &mdash; Atom Feed">
   {% endif %}
 
   {% if article.translations %}
