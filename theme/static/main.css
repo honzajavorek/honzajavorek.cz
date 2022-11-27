@@ -19,7 +19,8 @@ body {
   border-top: 1rem var(--hj-green) solid;
 }
 
-small {
+small,
+.small {
   font-size: var(--hj-small-font-size);
 }
 
@@ -275,6 +276,7 @@ small {
 
 .figure {
   text-align: center;
+  width: 100%;
 }
 
 .figure-caption {
@@ -448,8 +450,8 @@ pre code {
 }
 
 .highlight-image,
-.highlight-icon,
-.highlight-placeholder {
+.highlight-placeholder,
+.highlight-date {
   display: block;
   border-radius: 100%;
   background-color: var(--hj-light-grey);
@@ -459,8 +461,8 @@ pre code {
   height: 5rem;
 }
 
-.highlight-icon,
-.highlight-placeholder {
+.highlight-placeholder,
+.highlight-date {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -474,7 +476,7 @@ pre code {
   color: var(--hj-muted);
 }
 
-.highlight-icon {
+.highlight-date {
   width: 4rem;
   height: 4rem;
 }
@@ -544,6 +546,6 @@ pre code {
   margin-right: 1rem;
 }
 
-.inline-section-item {
+.inline-section-item.nowrap {
   white-space: nowrap;
 }

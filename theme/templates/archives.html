@@ -58,13 +58,13 @@
   </section>
 
   <section class="mb-5">
-  <h2 class="mb-4">Největší pecky</h2>
+  <h2 id="highlights" class="mb-4">Největší pecky</h2>
   {% for tag, highlights in tags %}
     {% if tag.name == HIGHLIGHT_TAG %}
       {% for article in highlights %}
         <div class="highlight">
           {% if article.image %}
-            <img src="{{ SITEURL }}/{{ article.image }}" class="highlight-image" alt="Úvodní obrázek článku {{ article.title }}" width="100" height="100">
+            <img src="{{ SITEURL }}/{{ article.image }}" class="highlight-image" alt="Úvodní obrázek článku {{ article.title }}" width="100" height="100" loading="lazy">
           {% else %}
             <div class="highlight-placeholder">
               <i class="fs-3 bi bi-image"></i>
@@ -83,38 +83,53 @@
   </div>
   </section>
 
-  <h2>Kompletní archiv</h2>
-  <nav class="archives-nav">
+  <h2 id="archives">Kompletní archiv</h2>
+  <nav class="text-center mb-3">
     {% for year_group in dates|groupby('date.year')|reverse %}
-        <a href="#archives-{{ year_group.grouper }}">{{ year_group.grouper }}</a>
-        {% if not loop.last -%}&middot;{%- endif -%}
+      <a href="#archives-{{ year_group.grouper }}">{{ year_group.grouper }}</a>
+      {% if not loop.last -%}&middot;{%- endif -%}
     {% endfor %}
   </nav>
 
-  <ul class="archives-list">
+  <ul class="list-unstyled">
   {% for year_group in dates|groupby('date.year')|reverse %}
-      <li class="archives-year">
-          <h3 id="archives-{{ year_group.grouper }}">
-              {{ year_group.grouper }}
-          </h3>
-          <ul class="archives-year-list">
-          {% for article in year_group.list %}
-              <li class="archives-article">
-                  <time datetime="{{ article.date.isoformat() }}">{{ article.date|strftime('%-d. %-m.') }}</time>
-                  <span>
-                    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-                    {% if article.lang != DEFAULT_LANG -%}
-                      <small>({{ article.lang }})</small>
-                    {%- elif article.translations %}
-                      <small>({{ article.lang }}, {% for translation in article.translations -%}
-                        <a href="{{ SITEURL }}/{{ translation.url }}">{{ translation.lang }}</a>
-                      {%- endfor %})</small>
-                    {% endif %}
-                  </span>
-              </li>
-          {% endfor %}
-          </ul>
-      </li>
+    <li class="mb-4">
+      <h3 id="archives-{{ year_group.grouper }}">
+        {{ year_group.grouper }}
+      </h3>
+      <ul class="list-unstyled">
+      {% for article in year_group.list %}
+          <li class="highlight{% if not loop.last %} mb-3{% endif %}">
+            <div class="highlight-date">
+              <time datetime="{{ article.date.isoformat() }}">{{ article.date|strftime('%-d.%-m.') }}</time>
+            </div>
+            <div class="highlight-body">
+              <h4 class="highlight-title fs-5 mb-1">
+                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+              </h4>
+              <ul class="highlight-text inline-section-list">
+                <li class="inline-section-item nowrap">
+                  <i class="bi bi-stopwatch"></i>
+                  {{ article.readtime }} min čtení
+                </li>
+                {% for translation in article.translations %}
+                  <li class="inline-section-item">
+                    <i class="bi bi-globe"></i>
+                    <a href="{{ SITEURL }}/{{ translation.url }}">{{ translation.title }}</a>
+                  </li>
+                {%- endfor %}
+                {% for alternate in article.alternates %}
+                  <li class="inline-section-item">
+                    <i class="bi bi-arrow-left-right"></i>
+                    <a href="{{ alternate.url }}">{{ alternate.name }}</a>
+                  </li>
+                {%- endfor %}
+              </ul>
+            </div>
+          </li>
+      {% endfor %}
+      </ul>
+    </li>
   {% endfor %}
   </ul>
 </div>

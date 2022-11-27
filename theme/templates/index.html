@@ -40,7 +40,7 @@
 <section class="mb-5">
   <h2>Moje úspěchy</h2>
   <div class="highlight mt-4">
-    <img src="{{ SITEURL }}/images/theme/juniorguru.png" class="highlight-image" width="100" height="100">
+    <img src="{{ SITEURL }}/images/theme/juniorguru.png" class="highlight-image" width="100" height="100" loading="lazy">
     <div class="highlight-body">
       <h3 class="highlight-title fs-5">
         Vlastní podnikání
@@ -62,7 +62,7 @@
     </div>
   </div>
   <div class="highlight">
-    <img src="{{ SITEURL }}/images/theme/media.png" class="highlight-image" width="100" height="100">
+    <img src="{{ SITEURL }}/images/theme/media.png" class="highlight-image" width="100" height="100" loading="lazy">
     <div class="highlight-body">
       <h3 class="highlight-title fs-5">
         Spolupráce s médii
@@ -76,7 +76,7 @@
     </div>
   </div>
   <div class="highlight">
-    <img src="{{ SITEURL }}/images/theme/apiary.png" class="highlight-image" width="100" height="100">
+    <img src="{{ SITEURL }}/images/theme/apiary.png" class="highlight-image" width="100" height="100" loading="lazy">
     <div class="highlight-body">
       <h3 class="highlight-title fs-5">
         Úspěšný startup
@@ -89,7 +89,7 @@
     </div>
   </div>
   <div class="highlight">
-    <img src="{{ SITEURL }}/images/theme/python.svg" class="highlight-image" width="100" height="100">
+    <img src="{{ SITEURL }}/images/theme/python.svg" class="highlight-image" width="100" height="100" loading="lazy">
     <div class="highlight-body">
       <h3 class="highlight-title fs-5">
         Python komunita
@@ -105,7 +105,7 @@
     </div>
   </div>
   <div class="highlight">
-    <img src="{{ SITEURL }}/images/theme/makers-menders.svg" class="highlight-image" width="100" height="100">
+    <img src="{{ SITEURL }}/images/theme/makers-menders.svg" class="highlight-image" width="100" height="100" loading="lazy">
     <div class="highlight-body">
       <h3 class="highlight-title fs-5">
         Slavný článek
@@ -119,7 +119,7 @@
     </div>
   </div>
   <div class="highlight">
-    <img src="{{ SITEURL }}/images/theme/dredd.png" class="highlight-image" width="100" height="100">
+    <img src="{{ SITEURL }}/images/theme/dredd.png" class="highlight-image" width="100" height="100" loading="lazy">
     <div class="highlight-body">
       <h3 class="highlight-title fs-5">
         Správa open source projektu
@@ -203,65 +203,66 @@
   </p>
   <p>
     Celý <a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">archiv mého blogu</a> má {{ articles|length }} položek,
-    takže je tady jen ochutnávka v podobě několika vybraných článků, které buď z nějakého důvodu stojí za to,
+    takže z „Javorových lístků“ je tady pouze ochutnávka v podobě několika vybraných článků, které buď z nějakého důvodu stojí za to,
     nebo vyšly relativně nedávno.
   </p>
+  <nav class="text-center mb-3">
+    {% for year_group in appearances|groupby('date.year')|reverse %}
+      <a href="#archives-{{ year_group.grouper }}">{{ year_group.grouper }}</a>
+      {% if not loop.last -%}&middot;{%- endif -%}
+    {% endfor %}
+  </nav>
   <ul class="list-unstyled mt-4">
   {% for year_group in appearances|groupby('date.year')|reverse %}
     <li class="mb-4">
       <h3 id="appearances-{{ year_group.grouper }}" class="mb-3">
         {{ year_group.grouper }}
-        <small class="permalink">
-          <a href="#appearances-{{ year_group.grouper }}" title="Odkaz na rok {{ year_group.grouper }}">
-            <i class="bi bi-link-45deg"></i>
-          </a>
-        </small>
       </h3>
       <ul class="list-unstyled">
       {% for appearance in year_group.list %}
         <li class="highlight{% if not loop.last %} mb-3{% endif %}">
-          <div class="highlight-icon">
-            <i class="fs-4 bi bi-{% if appearance.type == 'talk' -%}
-              chat-dots
-            {%- elif appearance.type == 'workshop' -%}
-              code-slash
-            {%- elif appearance.type == 'interview' -%}
-              mic
-            {%- elif appearance.type == 'text' -%}
-              file-earmark-text
-            {%- endif %}"></i>
+          <div class="highlight-date">
+            <time datetime="{{ appearance.date.isoformat() }}">{{ appearance.date|strftime('%-d.%-m.') }}</time>
           </div>
-          <div>
-            <h3 class="highlight-title fs-5">
+          <div class="highlight-body">
+            <h4 class="highlight-title fs-5 mb-1">
+              {% if appearance.type == 'talk' -%}
+                Přednáška:
+              {%- elif appearance.type == 'workshop' -%}
+                Workshop:
+              {%- elif appearance.type == 'interview' -%}
+                Rozhovor:
+              {%- elif appearance.type == 'text' -%}
+                Text:
+              {%- endif %}
               {% if appearance.url %}
                 <a href="{{ appearance.url }}">{{ appearance.title }}</a>
               {% else %}
                 {{ appearance.title }}
               {% endif %}
-            </h3>
-            <div class="highlight-body">
-              <p class="mb-0">
-                {{ appearance.date|strftime('%b') }} {{ appearance.date.year }}
-                &mdash;
+            </h4>
+            <ul class="highlight-text inline-section-list mb-0">
+              <li class="inline-section-item">
+                <i title="Text" class="bi bi-house"></i>
                 {{ appearance.medium }}
-                {% if appearance.resources_url %}
-                  <br><small class="text-muted">
-                    <i title="{{ appearance.resources_type }}" class="bi bi-{% if appearance.resources_type == 'slides' -%}
-                      easel2
+              </li>
+              {% if appearance.resources_url %}
+                <li class="inline-section-item nowrap">
+                  <i class="bi bi-{% if appearance.resources_type == 'slides' -%}
+                    easel2
+                  {%- elif appearance.resources_type == 'text' -%}
+                    file-earmark-text
+                  {%- endif %}"></i>
+                  <a href="{{ appearance.resources_url }}">
+                    {% if appearance.resources_type == 'slides' -%}
+                      Slajdy
                     {%- elif appearance.resources_type == 'text' -%}
-                      file-earmark-text
-                    {%- endif %}" aria-hidden="true"></i>
-                    <a href="{{ appearance.resources_url }}">
-                      {% if appearance.resources_type == 'slides' -%}
-                        slajdy
-                      {%- elif appearance.resources_type == 'text' -%}
-                        textové materiály
-                      {%- endif %}
-                    </a>
-                  </small>
-                {% endif %}
-              </p>
-            </div>
+                      Materiály
+                    {%- endif %}
+                  </a>
+                </li>
+              {% endif %}
+            </ul>
           </div>
         </li>
       {% endfor %}

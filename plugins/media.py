@@ -28,17 +28,19 @@ def process_media(generators):
         content_dir = article.settings['PATH']
 
         if hasattr(article, 'image'):
-            width, height = check_img_src(article.image, content_dir,
-                                        max_px=article.settings['IMG_MAX_PX'],
-                                        max_mb=article.settings['IMG_MAX_MB'])
-            article.image_width, article.image_height = width, height
-            article.metadata.update(image_width=width, image_height=height)
+            attrs = check_img_src(article.image, content_dir,
+                                  max_px=article.settings['IMG_MAX_PX'],
+                                  max_mb=article.settings['IMG_MAX_MB'],
+                                  detect_dominant_color=True)
+            for attr_name, attr_value in attrs.items():
+                setattr(article, attr_name, attr_value)
+            article.metadata.update(attrs)
 
         with parse_html(article, modify=True) as html_tree:
             for img in html_tree.xpath('//img'):
                 check_img_src(img.get('src'), content_dir,
-                            max_px=article.settings['IMG_MAX_PX'],
-                            max_mb=article.settings['IMG_MAX_MB'])
+                              max_px=article.settings['IMG_MAX_PX'],
+                              max_mb=article.settings['IMG_MAX_MB'])
 
             for iframe in html_tree.xpath('//iframe'):
                 iframe_to_figure(iframe)
@@ -139,11 +141,12 @@ def check_img_src(img_src, content_dir, max_px, max_mb):
 
     try:
         size_mb = filename.stat().st_size / 1024 / 1024
-        width, height = Image.open(filename).size
+        with Image.open(filename) as img:
+            width, height = img.size
         is_video = filename.suffix.lower() in VIDEO_SUFFIXES
     except IOError:
         logger.error('Image not found: %s', img_src)
-        return None, None
+        return dict(width=None, height=None, color=None)
 
     if not is_video and size_mb > max_mb:
         logger.error('Image too large: %s (%dmb, max size: %dmb)', img_src, size_mb, max_mb)
@@ -151,7 +154,7 @@ def check_img_src(img_src, content_dir, max_px, max_mb):
         logger.error('Image too large: %s (%dpx, max width: %dpx)', img_src, width, max_px)
     if height > max_px:
         logger.error('Image too large: %s (%dpx, max height: %dpx)', img_src, height, max_px)
-    return width, height
+    return dict(image_width=width, image_height=height)
 
 
 def get_image_filename(content_dir, img_src):
