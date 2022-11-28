@@ -102,11 +102,7 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
         Tags: {settings_module.WEEKNOTES_TAG}
 
 
-        Utekl zase nějaký ten týden ({last_weeknotes_date_cz} až {today_cz}) a tak [stejně jako minule]({last_weeknotes_path})
-        sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/).
-        Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat,
-        jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem
-        přitom nestihl nic udělat.
+        Utekl zase nějaký ten týden ({last_weeknotes_date_cz} až {today_cz}) a tak [stejně jako minule]({last_weeknotes_path}) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.
 
         ![Poznámky]({{static}}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
         Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
@@ -114,11 +110,9 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
 
         ## Další poznámky
 
-        - Odpovídání v klubu, maily, Pyvec Slack, a tak dále. Upgradování závislostí na vlastních i Pyvec projektech
-          (zpracovávání Pull Requestů, které průběžně posílá Dependabot).
+        - Odpovídání v klubu, maily, Pyvec Slack, a tak dále. Upgradování závislostí na vlastních i Pyvec projektech (zpracovávání Pull Requestů, které průběžně posílá Dependabot).
         - {strava_text}
-        - Aktuální finanční výsledky, návštěvnost a další čísla k JG [mám přímo na webu](https://junior.guru/open/).
-          {jobs_text}
+        - Aktuální finanční výsledky, návštěvnost a další čísla k JG [mám přímo na webu](https://junior.guru/open/). {jobs_text}
 
 
         ## Co plánuji
@@ -132,15 +126,12 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
 
         ## A co vy?
 
-        Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás
-        skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({{filename}}2020-06-04_neni-to-zavod.md). Není zač!
+        Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem [můžete vykašlat]({{filename}}2020-06-04_neni-to-zavod.md). Není zač!
 
 
         ## Co mě zaujalo
 
-        Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Telegramu](https://t.me/honzajavorekcz).
-        Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. Od posledních poznámek
-        jsem sdílel toto:
+        Když si něco přečtu nebo poslechnu a líbí se mi to, [sdílím to na Telegramu](https://t.me/honzajavorekcz). Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. Od posledních poznámek jsem sdílel toto:
 
     ''').lstrip()
     for article in articles:
