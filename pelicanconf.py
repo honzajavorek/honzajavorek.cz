@@ -35,7 +35,6 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blog
-PATH = 'content'
 DEFAULT_PAGINATION = False
 DEFAULT_CATEGORY = 'blog'
 MARKDOWN = {
