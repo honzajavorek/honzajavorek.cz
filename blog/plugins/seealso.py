@@ -3,7 +3,7 @@ from itertools import islice
 
 from pelican import signals
 
-from honzajavorekcz.plugins.utils import get_articles
+from blog.plugins.utils import get_articles
 
 
 SEEALSO_LIMIT = 5

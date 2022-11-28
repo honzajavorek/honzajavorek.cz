@@ -1,14 +1,15 @@
 [tool.poetry]
-name = "honzajavorekcz"
+name = "blog"
 version = "0.0.0"
 description = "Honza Javorek's personal website and blog"
 authors = ["Honza Javorek <mail@honzajavorek.cz>"]
 readme = "README.md"
 homepage = "https://honzajavorek.cz/"
 repository = "https://github.com/honzajavorek/honzajavorek.cz/"
+classifiers = ["Private :: Do Not Upload"]
 
 [tool.poetry.scripts]
-blog = "honzajavorekcz:main"
+blog = "blog:main"
 
 [tool.poetry.dependencies]
 python = "3.10.*"

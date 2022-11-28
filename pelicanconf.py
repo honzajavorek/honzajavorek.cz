@@ -100,7 +100,7 @@ THEME_STATIC_PATHS = [
 ]
 
 # Plugins
-PLUGIN_PATHS = ['honzajavorekcz/plugins']
+PLUGIN_PATHS = ['blog/plugins']
 PLUGINS = [
     'appearances',
     'custom_translation_id',

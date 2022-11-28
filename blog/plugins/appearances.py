@@ -7,7 +7,7 @@ import itertools
 from pelican import signals
 import strictyaml as yaml
 
-from honzajavorekcz.plugins.utils import get_articles
+from blog.plugins.utils import get_articles
 
 
 SCHEMA = yaml.Seq(

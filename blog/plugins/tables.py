@@ -1,7 +1,7 @@
 from lxml import etree
 from pelican import signals
 
-from honzajavorekcz.plugins.utils import parse_html, wrap_element, get_articles
+from blog.plugins.utils import parse_html, wrap_element, get_articles
 
 
 def register():

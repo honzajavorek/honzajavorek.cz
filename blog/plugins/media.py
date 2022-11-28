@@ -6,7 +6,7 @@ from lxml import html
 from pelican import signals
 from PIL import Image
 
-from honzajavorekcz.plugins.utils import parse_html, wrap_element, get_articles
+from blog.plugins.utils import parse_html, wrap_element, get_articles
 
 
 logger = logging.getLogger(__name__)

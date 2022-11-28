@@ -1,6 +1,6 @@
 from pelican import signals
 
-from honzajavorekcz.plugins.utils import parse_html, get_articles
+from blog.plugins.utils import parse_html, get_articles
 
 
 def register():

@@ -7,8 +7,8 @@ import click
 import pytest
 from strava_offline.cli import cli as strava
 
-from honzajavorekcz.telegram import main as telegram
-from honzajavorekcz.weeknotes import main as weeknotes
+from blog.telegram import main as telegram
+from blog.weeknotes import main as weeknotes
 
 
 @click.group()
