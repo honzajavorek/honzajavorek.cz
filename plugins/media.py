@@ -30,8 +30,7 @@ def process_media(generators):
         if hasattr(article, 'image'):
             attrs = check_img_src(article.image, content_dir,
                                   max_px=article.settings['IMG_MAX_PX'],
-                                  max_mb=article.settings['IMG_MAX_MB'],
-                                  detect_dominant_color=True)
+                                  max_mb=article.settings['IMG_MAX_MB'])
             for attr_name, attr_value in attrs.items():
                 setattr(article, attr_name, attr_value)
             article.metadata.update(attrs)
