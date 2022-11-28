@@ -3,7 +3,7 @@ Date: 2017-09-12 22:02:00
 Lang: cs
 
 
-<div class="article-warning" markdown="1">
+<div class="alert alert-warning" role="alert" markdown="1">
 Článek původně vyšel na [blogu české Python komunity](http://blog.python.cz), ale po [uvážení](https://github.com/pyvec/blog.python.cz/pull/40#issuecomment-330665596) byl přemístěn sem a přepsán. Omlouvám se všem, na které původní článek působí sebestředně.
 </div>
 

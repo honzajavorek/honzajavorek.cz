@@ -3,7 +3,7 @@ Date: 2011-05-09 12:00:00
 Lang: cs
 Tags: erasmus, názory, škola, vut fit
 
-<div class="article-warning" markdown="1">
+<div class="alert alert-warning" role="alert" markdown="1">
 **A ještě jedno upozornění!** Tento konkrétní článek o VŠ má svůj příběh, který si můžete přečíst [zde]({filename}2013-03-05_text-o-fit-vut.md). Shrnuje Honzovy pocity ze studia VUT FIT v květnu 2011. Jak VUT FIT funguje dnes, nemá Honza nejmenší tušení. Jeho aktuální názor na VŠ nejlépe vyjadřuje [tento článek]({filename}2014-02-24_s-odstupem-o-studiu-informatiky.md).
 </div>
 

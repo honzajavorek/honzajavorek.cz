@@ -3,7 +3,7 @@ Date: 2010-12-04 23:08:00
 Lang: cs
 Tags: fi mu, názory, škola, vut fit
 
-<div class="article-warning" markdown="1">
+<div class="alert alert-warning" role="alert" markdown="1">
 **A ještě jedno upozornění!** Tento konkrétní článek byl uveřejněn v rámci transparentnosti, čistě z archivních důvodů. Celý jeho příběh si můžete přečíst [zde]({filename}2013-03-05_text-o-fit-vut.md).
 </div>
 

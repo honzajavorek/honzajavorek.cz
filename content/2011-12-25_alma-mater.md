@@ -3,7 +3,7 @@ Date: 2011-12-25 10:00:00
 Lang: cs
 Tags: fi mu, názory, škola, vut fit
 
-<div class="article-warning" markdown="1">
+<div class="alert alert-warning" role="alert" markdown="1">
 **A ještě jedno upozornění!** Toto je historický text o studiu VŠ. Honzův aktuální názor na studium vysoké školy nejlépe vyjadřuje [tento článek]({filename}2014-02-24_s-odstupem-o-studiu-informatiky.md).
 </div>
 

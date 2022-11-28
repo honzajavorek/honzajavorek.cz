@@ -2,7 +2,7 @@ Title: Vysoké školy učí dějiny IT
 Date: 2012-06-06 16:30:00
 Lang: cs
 
-<div class="article-warning" markdown="1">
+<div class="alert alert-warning" role="alert" markdown="1">
 **A ještě jedno upozornění!** Toto je historický text o studiu VŠ. Honzův aktuální názor na studium vysoké školy nejlépe vyjadřuje [tento článek]({filename}2014-02-24_s-odstupem-o-studiu-informatiky.md).
 </div>
 
