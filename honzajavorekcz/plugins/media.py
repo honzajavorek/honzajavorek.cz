@@ -1,5 +1,3 @@
-import os
-import sys
 import re
 import logging
 from pathlib import Path
@@ -8,8 +6,7 @@ from lxml import html
 from pelican import signals
 from PIL import Image
 
-sys.path.append(os.path.dirname(__file__))
-from utils import parse_html, wrap_element, get_articles
+from honzajavorekcz.plugins.utils import parse_html, wrap_element, get_articles
 
 
 logger = logging.getLogger(__name__)

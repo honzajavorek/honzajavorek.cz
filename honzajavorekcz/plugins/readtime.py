@@ -1,12 +1,9 @@
 import re
 import math
-import os
-import sys
 
 from pelican import signals
 
-sys.path.append(os.path.dirname(__file__))
-from utils import parse_html, get_articles
+from honzajavorekcz.plugins.utils import parse_html, get_articles
 
 
 WORDS_PER_MINUTE = 200

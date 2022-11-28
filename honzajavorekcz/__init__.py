@@ -32,7 +32,8 @@ def build(content_path, debug):
 
     args = ['pelican', content_path, '--settings=publishconf.py', '--fatal=warnings']
     args += extra_args
-    click.echo(shlex.join(args))
+    click.secho(shlex.join(args), fg='green', bold=True)
+    click.echo('')
     subprocess.run(args)
 
 
@@ -52,9 +53,11 @@ def dev(content_path, articles_count, debug):
     if debug:
         extra_args.append('--debug')
 
-    args = ['pelican', content_path, '--fatal=errors', '--listen', '--bind=localhost', '--autoreload']
+    args = ['pelican', content_path, '--fatal=errors',
+            '--listen', '--bind=localhost', '--autoreload', '--ignore-cache']
     args += extra_args
-    click.echo(shlex.join(args))
+    click.secho(shlex.join(args), fg='green', bold=True)
+    click.echo('')
     subprocess.run(args)
 
 

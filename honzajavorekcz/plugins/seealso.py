@@ -1,12 +1,9 @@
-import os
-import sys
 from operator import attrgetter
 from itertools import islice
 
 from pelican import signals
 
-sys.path.append(os.path.dirname(__file__))
-from utils import get_articles
+from honzajavorekcz.plugins.utils import get_articles
 
 
 SEEALSO_LIMIT = 5
