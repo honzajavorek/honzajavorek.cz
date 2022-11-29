@@ -9,6 +9,7 @@ from strava_offline.cli import cli as strava
 
 from blog.telegram import main as telegram
 from blog.weeknotes import main as weeknotes
+from blog.media import main as media
 
 
 @click.group()
@@ -18,6 +19,7 @@ def main():
 
 main.add_command(telegram, 'telegram')
 main.add_command(weeknotes, 'weeknotes')
+main.add_command(media, 'media')
 main.add_command(strava, 'strava')
 
 
@@ -41,7 +43,10 @@ def build(content_path, debug):
 @click.option('--path', 'content_path', default='content', type=click.Path(exists=True))
 @click.option('--articles', 'articles_count', default=1, type=int)
 @click.option('--debug/--no-debug', default=False)
-def dev(content_path, articles_count, debug):
+@click.pass_context
+def dev(context, content_path, articles_count, debug):
+    context.invoke(media)
+
     extra_args = []
 
     paths = sorted(Path(content_path).glob('*.md'), reverse=True)
