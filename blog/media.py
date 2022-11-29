@@ -14,7 +14,9 @@ IMG_MAX_PX = 1024
 
 IMG_MAX_MB = 1
 
-SKIP_SUFFIXES = ['.gif', '.svg']
+SKIP_FILES = ['.DS_Store']
+
+SKIP_RESIZE_SUFFIXES = ['.gif', '.svg']
 
 MEDIA_RE = re.compile(r'''
 (?P<media>
@@ -62,7 +64,9 @@ def main(content_path, images_path, overwrite, detect_unused, resize):
 
     # detect unused images
     if detect_unused:
-        for unused_image_path in (set(images_path.glob('*.*')) - images):
+        image_paths = set(image_path for image_path in images_path.glob('*.*')
+                          if image_path.name not in SKIP_FILES)
+        for unused_image_path in (image_paths - images):
             click.secho(f'Unused: {unused_image_path}', fg='red')
             if click.confirm('Delete?', default=True, prompt_suffix=''):
                 send2trash(unused_image_path)
@@ -70,7 +74,8 @@ def main(content_path, images_path, overwrite, detect_unused, resize):
     # resize images
     if resize:
         image_paths = (image_path for image_path in images_path.glob('*.*')
-                       if image_path.suffix.lower() not in SKIP_SUFFIXES)
+                       if (image_path.suffix.lower() not in SKIP_RESIZE_SUFFIXES
+                           and image_path.name not in SKIP_FILES))
         for image_path in image_paths:
             with Image.open(image_path) as img:
                 width, height = img.size
