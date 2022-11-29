@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/tydenni-poznamky-nabidky-prace-podle-regionu/">
+    <title>Týdenní poznámky: Nabídky práce podle regionu &mdash; Javorové lístky</title>
+
+    <meta property="og:title" content="Týdenní poznámky: Nabídky práce podle regionu &mdash; Javorové lístky">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-nabidky-prace-podle-regionu/">
+
+    <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta property="og:image:width" content="">
+    <meta property="og:image:height" content="">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#457E31">
+
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Javorové lístky &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-10-02T00:00:00+02:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
+<article class="article">
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
+  </header>
+  <h1 class="title display-5">
+    Týdenní poznámky: Nabídky práce podle regionu
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-nabidky-prace-podle-regionu/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2020-10-02T00:00:00+02:00">
+          2. 10. 2020
+        </time>
+      </li>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        14
+          min čtení
+      </li>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-nabidky-prace-podle-regionu&interval=week&start=2020-10-02T00:00:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <main class="article-content">
+
+    <div><div><div><div><p>Utekl další týden (28.9. — 2.10.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-novy-seznam-nabidek-prace/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/donate/">podporovatele</a>, a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.</p>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
+Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
+<p>Tento týden jsem pracoval na tom, abych mohl mít samostatné stránky s inzeráty práce pro juniorní programátory pro každý region zvlášť.</p>
+<h2 id="normalizace-mista">Normalizace místa<small class="permalink"><a href="#normalizace-mista" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Nabídky práce z JG i odjinud mají většinou (pokud nejsou úplně na dálku) informaci o tom, odkud jsou. Už v této větě můžete odtušit hned několik problémů, které jsem musel vyřešit:</p>
+<ul>
+<li>Místo nabídky práce může být v libovolném formátu. Praha. Prague. Brno, Czechia. Káranice, Česká republika. Michálkovická 1137/197, 710 00 Ostrava - Slezská Ostrava, Czechia. Záleží na tom, co se autor nabídky rozhodl vepsat do políčka nebo odkud jsem nabídku převzal.</li>
+<li>Existují nabídky práce, které žádné místo nemají.</li>
+</ul>
+<p>K tomu ještě:</p>
+<ul>
+<li>Některé nabídky jsou platné pro více míst. To se projeví tak, že se mi objeví v datech totožná nabídka s jiným místem, nebo že někdo napíše do políčka: Praha nebo Brno. Ostrava nebo na dálku.</li>
+<li>Některé nabídky mají místo, třeba kde je hlavní kancelář, ale jsou zároveň i na dálku.</li>
+</ul>
+<p>Základní věc, kterou jsem tedy musel udělat, bylo normalizovat nějak tato data. Popíšu to jako proces tak, jak šly moje pokusy za sebou. Nechť je to dokumentace toho, jak se někdy motám v kruzích a nejsem několik dní schopen něco kloudného vytvořit, protože overengineeruju nebo se sice snažím problém zjednodušit, ale špatným směrem.</p>
+<ol>
+<li>Už dříve jsem si dělal základní rešerši, jak by se to dalo řešit. Znám služby na geocoding, ale matně jsem si pamatoval, že jsou placené a tomu jsem se chtěl zatím vyhnout. Chtěl jsem najít nějakou "offline" variantu, do které můžu bušit libovolné množství požadavků. Také jsem se rozhodl, že budu nabídky dělit podle krajů, které ale pojmenuji podle jejich hlavních měst, plus sousední země. Region tedy v kontextu JG může být Praha (kraje Praha a SČ), Brno (JMK), nebo třeba Německo.</li>
+<li>Rešerše mi vyhodila projekt <a href="https://pypi.org/project/geograpy/">geograpy</a> a s tím jsem tedy i začal. Je postavený nad NLTK a potřebuje si tedy dodatečně stáhnout nějaká data (korpusy). Vše jsem v projektu připravil pro použití geograpy, ale měl jsem problém s instalací. <a href="https://github.com/somnathrakshit/geograpy3/issues/20">Založené issue na GitHubu</a> jsme nakonec vyřešili do rekordních 10 minut. Jenže když jsem knihovnu vyzkoušel na pár vstupech, zjistil jsem, že vůbec neví, která bije. Na většinu mi nevrátila nic a jednou jsem dokonce dostal něco jako <code>Praha, Slovakia</code>. Takže jsem to odinstaloval a všechny věci, co už jsem k tomu připravil, jsem smazal. <strong>Poučení:</strong> Nejdřív vyzkoušej, jestli knihovna vůbec funguje, než jí budeš dělat místečko ve svém projektu.</li>
+<li>Pořád jsem se držel pocitu, že chci tu normalizaci řešit "offline", už jen proto, že se nabídky práce většinou vyskytují jen v okolí několika větších měst. Toto ovšem nebylo zjednodušení problému, nýbrž jeho komplikace. Zkoušel jsem nějak ručně a jednoduše normalizovat adresy podle seznamu <a href="https://cs.wikipedia.org/wiki/Seznam_m%C4%9Bst_v_%C4%8Cesku_podle_po%C4%8Dtu_obyvatel">nejlidnatějších měst u nás</a> apod., ale nikam to nevedlo. Navíc stejně, co s adresami, které se do tohoto netrefí?</li>
+<li>Vytušil jsem, že se zase v něčem moc vrtám, když to jde řešit snadno a rychle, takže jsem sáhl po tom, co znám velmi dobře a už jsem to v minulosti několikrát použil: <a href="https://github.com/DenisCarriere/geocoder">geocoder</a>. Tento projekt umožňuje přeložit adresy na zeměpisné souřadnice pomocí různých veřejných API určených k tomuto účelu. <a href="https://geocoder.readthedocs.io/providers/OpenStreetMap.html">Nominatim</a> od OpenStreetMaps je zdarma, takže to byla jasná volba. Upravil jsem kód a bylo to.</li>
+<li>Zjistil jsem ale, že geocoder mi dává malou flexibilitu v tom, jaké parametry mohu OpenStreetMaps poslat. Chtěl jsem totiž ovlivnit, v jakém jazyce přijdou výsledky apod. Narazil jsem na knihovnu <a href="https://pypi.org/project/geopy/">geopy</a>, která vypadala jako ještě známější a používanější projekt. Takže jsem geocoder vyměnil za geopy.</li>
+<li>Záhy jsem si odzkoušel, že jazyk asi nakonec nastavovat nebudu, protože sice chci Německo místo Deutschland, ale nějak se mi příčilo mít Vratislav místo Wrocław, Lipsko místo Leipzig, a nedej bože, aby se mi tam objevila nabídka práce z Gratzu. Takže jazyk jsem nechal být a udělal si překladovou tabulku na těch pár hodnot, které mě zajímají. Stejně jsem tabulku potřeboval už na to, abych přejmenoval kraje z Vysočina na Jihlava.</li>
+<li>Nakonec jsem ale zjistil, že ani Nominatim nezvládá dobře některé zcela standardní adresy, např. na něco jako "Brno, South Moravia" to myslím bylo schopné vrátit cosi v Novém Jičíně. Už jsem to měl na produkci a byl to celkem problém (viz další kapitola těchto poznámek), ale naštěstí se zatím jen ukládala data a nikam se to nezobrazovalo, takže to nebylo nic, co by na noc nezachránil jeden <code>try/except/pass</code>.</li>
+<li>Chyby ve stávajícím kódu mě donutily, abych do JG přidal lepší podporu pro evidenci toho, zda jde v nabídce o práci na dálku nebo ne. U externích zdrojů nabídek to nebyl moc velký problém přidat (byť jeden zápas s XPath mě asi bude ještě chvíli budit ze sna). U JG to ale vyžadovalo změnit formulář na zadávání nabídek a tuto položku tam přidat, plus upravit stávající data. Snažil jsem se navíc nějak chytře pojmenovat políčka tak, aby mi lidé možnost o práci na dálku nepsali do místa. Skončil jsem u toho, že políčko pro práci na dálku je ano/ne, je povinné a je před políčkem pro místo. Políčko pro místo je nepovinné a nese název "Office location".</li>
+<li>Upravil jsem celý backend tak, aby počítal se změnami v datech. Jednak bylo potřeba začít všude evidovat práci na dálku, jednak se místo stalo nepovinnou položkou, což mě donutilo přeházet vidlema spoustu kódu a napsat spoustu testů. Informaci o tom, zda je pozice na dálku, jsem na webu zobrazil aspoň v podobě štítku. Taky se to zobrazuje i u místa. Pokud žádné není, je tam jen "na dálku", nebo se vypíše třeba "Brno, na dálku", pokud se zdá, že nabídka umožňuje oboje.</li>
+<li>Jal jsem se řešit nespolehlivost OpenStreetMaps pro geocoding českých míst. Nová rešerše. Google <a href="https://developers.google.com/maps/documentation/geocoding/usage-and-billing">stojí 5 USD za 1000 dotazů</a>, což samozřejmě není moc, ale já prostě nějak nemám dobrý pocit z toho, když Googlu do cloudu někam dávám kreditku a zapínám placenou službu. Asi je to jen psychologické, ale já se prostě bojím, že mi někde uteče nějaký token a s ním i spousta peněz. S Googlím supportem se nechci nikdy v životě dohadovat. Google navíc nebere <a href="https://revolut.com/referral/janh8pm">Revolut</a>, takže se to nedá nijak pošéfovat z mojí strany, abych měl klidnější spaní. Musel bych mít asi nějaký prázdný bankovní účet jen na tohle a k němu kartu, kam bych posílal tak akorát peněz. Prostě ne. Pokud můžu, placeným službám z takovýchto generických flexibilních cloudů (ať už je to Google, AWS, Microsoft…) se chci asi zatím vyhnout.</li>
+<li>Problém taky je, že spousta geocoding služeb na adresu odpoví zeměpisnými souřadnicemi, ale ty já vlastně vůbec nepotřebuji. Mě zajímá jen rozpad na jednotlivé administrativní celky, jako je město, kraj, země. To je u geocodingu vlastně doplňková věc, která je přímo ve výsledcích jen u některých služeb. Obejít se to dá reverse geocodingem (tzn. vložím souřadnice a dostanu, co všechno na nich je), ale to zase znamená dva dotazy na API pro každé místo.</li>
+<li>Pokukoval jsem dále po Mapboxu, který má dokonce <a href="https://www.mapbox.com/pricing/">geocoding do 100000 požadavků zdarma</a>. Na <a href="https://docs.mapbox.com/search-playground/">hřišti</a> to vypadalo dobře i pro ČR, ale problém zase je, že jejich podmínky použití vylučují ukládání výsledků. Musí to být interaktivní služba, v podstatě "napovídátko" pro uživatele k Mapboxí mapě, ně nějaký backendový robot. Geocoding pro taková použití mají, ale je to prémiová služba ("contact sales").</li>
+<li>
+<p>Následně se vynořila nějaká <a href="https://www.zdrojak.cz/clanky/api-k-ceskym-turistickym-mapam/">vzpomínka na mladá léta, kdy jsem dělal bakalářku a hrál jsem si s mapovými portály v ČR</a>. Nemá náhodou geocoding i Seznam? V jejich <a href="https://api.mapy.cz/">dokumentaci žádné API člověk nenajde</a>, ale <a href="https://github.com/Kdyby/GeocoderSeznamMaps/blob/master/src/SeznamMapsProvider.php">internet, Open Source a základní znalost PHP pomůže</a>:</p>
+<ul>
+<li><a href="https://api.mapy.cz/geocode?query=Brno,%20South%20Moravia,%20Czech%20Republic">Brno, South Moravia, Czech Republic</a></li>
+<li><a href="https://api.mapy.cz/rgeocode?lat=49.200221&amp;lon=16.607841">49.200221,16.607841</a></li>
+<li><a href="https://api.mapy.cz/geocode?query=Bratislava">Bratislava</a></li>
+<li><a href="https://api.mapy.cz/rgeocode?lat=48.13710786189762&amp;lon=11.575382173497758">48.13710786189762,11.575382173497758</a></li>
+</ul>
+</li>
+<li>
+<p>Podmínky použití zmiňují, že nesmím ručně či strojově dolovat data a ukládat je či stahovat, nicméně se řídím spíš záměrem odstavce, kde tuším ochranu proti krádeži databáze, než že bych to bral doslovně. Pokud by náhodou někomu vadilo co dělám, věřím, že se Seznamem se normálně domluvím. Ono já na JG vlastně nic ani kešovat tak úplně nemůžu, protože žádné persistentní úložiště kromě Google Sheets nemám. Moje SQLite se při každém CI běhu vytváří nanovo z lokálních YAML souborů a stažených dat.</p>
+</li>
+<li>Super je, že tenhle geocoding funguje přesně tak, jak potřebuji. V Česku má kvalitní data a pro zbytek světa bere data z OpenStreetMaps. Blbé je, že musím dělat ty dva dotazy, protože v první odpovědi nedostanu info o regionu a zemi. To se ale asi dá přežít. Nakonec já toto dělám jen pro nabídky, které se budou zobrazovat na webu, a těch jsou, ač vzniknou třízením stovek nabídek, zatím pouze desítky.</li>
+<li>Byť API není JSON, v Pythonu to bylo na pár řádků. A vyhodil jsem geopy. Kdo máte čas a chuť, můžete pro geopy napsat adaptér pro tohle Mapy.cz API, to by bylo určitě fajn.</li>
+<li>V této fázi jsem se už už chystal nějak normalizovat zemi, a to skrze knihovnu <a href="https://pypi.org/project/pycountry/">pycountry</a>, která vypadá fakt dobře. Hlavně ta funkce <code>search_fuzzy()</code>! Jenže ještě než jsem ji vůbec nainstaloval, tak jsem si uvědomil, že vlastně zemi vůbec na nic nepotřebuji, kromě určení regionu. Myslel jsem, že budu zobrazovat třeba "Berlin, DE" a u českých věcí jen "Brno" místo "Brno, CZ". Jenže to potom může vzniknout "Adamov, CZ". A každý neví, kde to je, nebo mohou být různé Adamovy v různých krajích. Ve skutečnosti dává mnohem větší smysl zobrazit "[město], [region]", pokud jsou to různé hodnoty, a jinak prostě "[město]". To řeší úplně všechno, ať už je to Brno, Berlín nebo Adamov. A stačí mi k tomu jen hodnota pro region, žádnou další informaci o zemi zvlášť už nepotřebuji.</li>
+<li>Ošetřil jsem, aby se vytvořily dvě a více nabídek práce, pokud mi někdo na JG zadá inzerát, kde je jako místo např. "Praha nebo Ostrava". Pokud někdo vymyslí něco ještě úplně jiného, mohu to v Google Sheets vždycky ručně upravit na variantu s "nebo".</li>
+<li>V tuto chvíli už vše funguje krásně, ale nevzdávám se myšlenky, že by mohlo mít smysl geocoding přece jen lokálně optimalizovat. Napsal jsem si tedy dekorátor pro geocoding funkci, který regulárem odchytá Prahu, Brno a Ostravu, což jsou nejčastější případy, a na tyto rovnou vrátí výsledek, API se vůbec neptá. Když už se ptá, obalí geocoding funkci přes <a href="https://docs.python.org/3/library/functools.html#functools.lru_cache">lru_cache()</a>, což je asi minimální pomoc, zvlášť když pouštím scrapery v několika procesech vedle sebe, ale zas jako proč ne. Pro mě je to jen pár znaků v kódu navíc a když to odchytá i blbých 5 adres, ušetří to 10 dotazů na API.</li>
+<li>Zbývá vytáhnout data na světlo světa. V rámci continuous deploymentu jsem samozřejmě celou dobu pushoval do masteru a házel vše na produkci, takže už několik dní má výpis nabídek práce štítky o tom, zda je nabídka na dálku, a hned jak jsem byl schopen normalizovat místo, jsem to normalizovaně ihned začal i zobrazovat. Teď ale k tomu hlavnímu, tedy vygenerování samostatných stránek pro jednotlivé regiony. Je pátek a já chtěl končit týden s vítězným pocitem, takže jsem se s tím moc nemazal.</li>
+<li>Vytvořil jsem si pevný seznam regionů, které chci zobrazovat, aby se web neřídil jen tím, co je v databázi, jinak by se stránky regionů náhodně zjevovaly a mizely podle toho, zda v nich zrovna jsou nějaké nabídky práce nebo ne. HTML kód stránek jsem vzal z hlavního výpisu a upravil zatím jen pár popisků. Ošetřil jsem jen případ, kdy v regionu zrovna žádné nabídky nejsou, ale na CSS už nebyl čas. Odkazy na regiony jsem dal zatím ošklivě jen tak pod seznam nabídek. Kdo si tam toho všimne, třeba ho to úplně neurazí a třeba mu to pomůže, než to udělám hezčí. Jo, je to naprasený, ale je to tam a nějak to funguje. Screenshot sem tentokrát ani nebudu dávat.</li>
+<li>Stránky pro jednotlivé regiony fungují i jako SEO lákadlo, takže jsem se pokusil pohrát s tím, aby v <code>&lt;title&gt;</code> stránek bylo něco, co lidi zkouší na internetu hledat.</li>
+<li>Vítězný pocit!</li>
+</ol>
+<h2 id="zmatky-a-zachranovani-produkce">Zmatky a zachraňování produkce<small class="permalink"><a href="#zmatky-a-zachranovani-produkce" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Už to tak nějak vyplývá i z popisu toho klikatého postupu výše, ale ne vždy se daří. Mám však ještě jeden příběh.</p>
+<p>Ve středu byl poslední den v měsíci, což znamená, že jsem měl poslat <a href="http://eepurl.com/gyG8Bb">newsletter</a>. V podvečer jsem se dostal do fáze, kdy jsem měl jasně funkční geocoding přes OpenStreetMaps a říkám si, že to už jen pushnu a jdu psát ten newsletter. Jenže pak koukám, že to padá, že OSM si neporadí se spoustou adres na produkci. A že mám chyby v tom, jak se na JG inzerátech řeší a ukládá práce na dálku. Všechny JG inzeráty zcela zmizely z výpisu. Zběsile jsem to začal opravovat, ale s každým commitem jsem akorát zbrkle nadělal další chyby, nechal rozbité testy, apod.</p>
+<p>Vždy trvalo, než projde CI, a než zjistím, kde jsem zase přehlédl nějakou chybu. Takže jsem se rozhodl, že v mezičase bych mohl začít připravovat ten newsletter. Sice do něj ani nemůžu ještě dát nabídky práce, když mi zmizely, ale tak nějaký ten text už můžu začít připravovat. Vytvořil jsem v MailChimpu novou kampaň a… rázem mi všechno na CI zase spadlo. Mám totiž na JG skript, který se dívá na MailChimp do kampaní a ukládá informace o tom, jestli byla která nabídka práce už odeslána v nějakém newsletteru a kdy (to se pak posílá v pravidelných informacích inzerentům). Tento skript nepočítal s tím, že existuje kampaň, která nemá datum odeslání :D Takže jsem si akorát přidal další problémy: Kampaň jsem nemohl odeslat, dokud nemám funkční nabídky práce, a ty nebudu mít funkční, dokud bude existovat neodeslaná kampaň. Oprava na jeden řádek, jasně, ale nálada úplně v kýblu.</p>
+<p>Do toho mě donekonečna zlobil <code>pipenv</code>, protože střídavě z mě neznámého důvodu vytvářel lockfile s knihovnou <code>importlib-metadata</code> a bez ní, což mi už měsíce (?) střídavě a náhodně shazovalo CI a zasekávalo continuous deployment. V tuto chvíli už jsem vypěnil a zkusil vše přeinstalovat a updatovat, ale bez výsledku. Nakonec jsem zoufale zkusil upgrade projektu z Pythonu 3.7 na 3.8 a to záhadně (zatím!) zabralo. Uf, ok?!</p>
+<p>Nakonec jsem to celé nějak polepil, zachránil, hotfixoval, newsletter dokončil, odeslal a po sedmé večer dokonce s prací i přestal, ale jako… Já nevím no. JG je celé stavěné tak, aby se dalo spravovat v jednom člověku. Když spadne CI, mělo by být jedno, že to opravím až další den. Mělo by být jednoduché udělat revert v Gitu, vrátit se na funkční verzi a nechat opravy na ráno moudřejší večera. Jenže zvyk, že rozbitá produkce je průšvih a musí se řešit hned, je prostě asi silnější. Takhle to ale nejde :) Jsem jeden člověk a nemůžu se nechat stresovat tím, že někde pár hodin přes noc něco na JG chybí. Všem to je úplně jedno a mělo by to nechávat klidného i mě, když vím, že to můžu ráno v klidu opravit. Toto se musím ještě naučit.</p>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<ul>
+<li>Vylepšil jsem (snad) trochu CSS štítků a log firem u nabídek práce.</li>
+<li>Upravil jsem váhy jednotlivých parametrů, které určují pořadí nabídek. Teď už to vypadá, že výsledek plus mínus dává nějaký smysl.</li>
+<li>Odepsal jsem na pár mailů a dořešil pár záležitostí, které jsem dlouho odkládal.</li>
+<li>Díky <a href="https://github.com/honzajavorek/junior.guru/issues/383">Mišo Belicovi</a> a <a href="https://www.skoumal.com/">Vláďovi Skoumalovi</a> jsem se <a href="https://twitter.com/honzajavorek/status/1311578638723297280">dověděl o WAL módu v SQLite</a> a o tom, <a href="https://www.skoumal.com/en/parallel-read-and-write-in-sqlite/">jak zapisovat efektivně</a>. Jak zmínil i <a href="https://github.com/kokes">Ondřej Kokeš</a> i v komentářích na FB pod minulými poznámkami, ideálně to řešit přes single writera - udělat lokální frontu, všechno mu posílat a zapisovat bude jen on. To je pro JG momentálně overkill (dělá to tak 10 retries), ale je super, že mi lidi takto radí po přečtení poznámek a rozhodně jsem se díky tomu naučil něco nového.</li>
+</ul>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
+<ul>
+<li><a href="https://denikn.cz/452462/studio-n-krvavy-konflikt-o-karabach-muze-eskalovat-ve-valku/?ref=list">Studio N: Krvavý konflikt o Karabach může eskalovat ve válku</a><br>Vysvětlení situace</li>
+<li><a href="https://video.aktualne.cz/dvtv/blaha-vladni-politici-celou-dobu-lzou-data-z-nemocnic-byla-t/r~3f29d4f8042411ebb115ac1f6b220ee8/">Bláha: Vládní politici celou dobu lžou. Data z nemocnic byla tajná i před zdravotníky</a><br>Super rozhovor, díky za update ohledně toho, jak kvalitně se teď na zvládnutí covidu-19 pracuje</li>
+<li><a href="https://joel.net/how-one-guy-ruined-hacktoberfest2020-drama">How One Guy Ruined #Hacktoberfest2020 #Drama</a><br>Proč lidi letos nadávají na Hacktoberfest</li>
+<li><a href="https://www.irozhlas.cz/komentare/covid-koronavirus-karantena-hygienicka-stanice-erouska_2010012215_jab">Karanténa, den čtvrtý: volá hygiena!</a><br>“Tím, kdo v posledních týdnech s covidem-19 bojuje, jsou – ostatně stejně jako na jaře – Češi. Ne Česko.”</li>
+</ul>
+<p><small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small></p></div></div></div></div>
+  </main>
+
+  <footer class="article-footer mb-5">
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
+      </address>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</article>
+      </div>
+<aside class="promo seealso">
+  <div class="promo-content container">
+    <h3 class="promo-heading fs-1">Další Honzovy články</h3>
+    <ul class="list-unstyled mb-0">
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2022 —
+        <a href="https://honzajavorek.cz/blog/tydenni-poznamky-111-kamaradi-z-afriky/">
+          Týdenní poznámky #111: Kamarádi z Afriky</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/volim-marketing/">
+          Volím marketing</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/bez-auta/">
+          Bez auta</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/spoustim-klub/">
+          Spouštím klub</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2016 —
+        <a href="https://honzajavorek.cz/blog/kolonizatori-a-spravci-kolonii/">
+          Kolonizátoři a správci kolonií</a>
+      </li>
+      <li>
+        <i class="bi bi-search"></i>
+        <a href="https://honzajavorek.cz/blog/">Archiv blogu</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+      <footer class="footer">
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+
+      <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+  </body>
+</html>

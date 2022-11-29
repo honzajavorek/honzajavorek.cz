@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/tydenni-poznamky-majak-a-tunel/">
+    <title>Týdenní poznámky: Maják a tunel &mdash; Javorové lístky</title>
+
+    <meta property="og:title" content="Týdenní poznámky: Maják a tunel &mdash; Javorové lístky">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-majak-a-tunel/">
+
+    <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta property="og:image:width" content="">
+    <meta property="og:image:height" content="">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#457E31">
+
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Javorové lístky &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-05-15T00:00:00+02:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
+<article class="article">
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
+  </header>
+  <h1 class="title display-5">
+    Týdenní poznámky: Maják a tunel
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-majak-a-tunel/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2020-05-15T00:00:00+02:00">
+          15. 5. 2020
+        </time>
+      </li>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        9
+          min čtení
+      </li>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-majak-a-tunel&interval=week&start=2020-05-15T00:00:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <main class="article-content">
+
+    <div><div><div><div><p>Utekl další týden (11.5. — 15.5.) a tak stejně jako <a href="https://honzajavorek.cz/blog/prvni-tydenni-poznamky-trizeni-nabidek-prace/">minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/donate/">podporovatele</a>, a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.</p>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
+Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
+<h2 id="frontendovy-framework">Frontendový framework<small class="permalink"><a href="#frontendovy-framework" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>V různých volných chvílích jsem si o víkendu očima prošel celý <a href="https://svelte.dev/tutorial/">tutoriál na Svelte</a> a přihodil se mi názor, že to je abstrakce, kterou nepotřebuju. Napadlo mě během toho, jak by se dala udělat stránka s inzeráty i bez složitého JavaScriptu, a dokonce by to pomohlo i SEO.</p>
+<p>Potom jsem si četl celé <a href="https://github.com/turbolinks/turbolinks/blob/master/README.md">README Turbolinks</a> a později se do nich shodou okolností pustil Aleš Roubíček na Twitteru, <a href="https://twitter.com/honzajavorek/status/1260458654857338881">tak jsem se ho na ně vyptával</a>.</p>
+<h2 id="mereni-vykonnosti-a-pristupnosti">Měření výkonnosti a přístupnosti<small class="permalink"><a href="#mereni-vykonnosti-a-pristupnosti" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>V pondělí se mi nechtělo hned z ostra naběhnout do programování parseru nabídek práce a začal jsem menším úkolem. Říkal jsem si, že ať už bude na frontendu nakonec cokoliv, budu chtít, aby byl výkonný a přístupný. Už dřív jsem zahlídl nějaké nástroje, které to umí měřit, ale chtěl jsem je dostat přímo do CI. To se mi povedlo a napsal jsem o tom ve zbylém pondělním čase i <a href="https://honzajavorek.cz/blog/monitoring-performance-with-lighthouse-and-circleci/">rychlý článek</a>. Škoda že to nefungovalo na první dobrou a jak kód, tak článek jsem řešil ještě i celé úterní dopoledne.</p>
+<p>To mě nakonec trochu mrzelo. Taková blbost a rozlezlo se to hned na dva dny! Nasdílel jsem to tedy na všechny možné sociální sítě, aby z toho byla aspoň sláva. To mi vzalo další čas. Hlavně proto, že jak Facebook, tak Twitter najednou odmítají načítat náhledové obrázky u mých článků, dokud odkaz ručně neproženu přes <a href="https://developers.facebook.com/tools/debug/">Facebookový debug</a> nebo <a href="https://cards-dev.twitter.com/validator">Twitter Card validátor</a>. Tenhle problém jsem měl už dřív a podle toho, jak to časově lícuje, to vypadá na nějaký problém na straně GitHub Pages. Když blog hostuju tam, je s tímhle problém. Nevím, jak se toho ale zbavit. Každopádně další propálený čas.</p>
+<p>A navíc žádná sláva nepřišla, jen pár lajků a k tomu můj hrdina <a href="https://twitter.com/levelsio/">@levelsio</a> shodou okolností zrovna celou středu tweetoval o tom, jak je tohle měření zbytečné.</p>
+<p>Ve čtvrtek ale přišel s tím, že i přes všechno svoje hejtění předchozí den nakonec svůj projekt optimalizoval na skóre 99 ze 100 :D Na to jsem <a href="https://twitter.com/honzajavorek/status/1260815778070265857">odpověděl</a>, že jsem zrovna napsal článek o tom, jak to skóre udržet, a jemu se to líbilo natolik, že to retweetnul svým 82,1 tisícům sledujících. Jsem slavný! Psaní článku se tedy nakonec vyplatilo, radost se dostavila. Dokonce mi někdo poslal <a href="https://github.com/honzajavorek/honzajavorek.cz/pull/96">Pull Request s opravou překlepů</a>. Jupí!</p>
+<p>Akorát pak teda někdo vytáhl, že existuje <a href="https://github.com/GoogleChrome/lighthouse-ci">lighthouse-ci</a>, nějaké udělátko přímo do CI, které jsem možná mohl přímo použít a nevynalézat kolo. Ach jo! Dál jsem se tomu však už nevěnoval a toto udělátko zatím blíže neprobádal.</p>
+<h2 id="trideni-nabidek-a-machine-learning">Třídění nabídek a Machine Learning<small class="permalink"><a href="#trideni-nabidek-a-machine-learning" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Pod minulými týdenními poznámkami jsem <a href="https://www.facebook.com/honzajavorek/posts/10158091079317707">na FB probíral možnost třídit nabídky práce pomocí machine learningu</a>. Rozhodl jsem se pro následující postup: Zkusím udělat prototyp základního porozumění tomu, co vyhodí lexer, tj. lidské věty klasifikovat na nějaké "flagy", třeba "Požadujeme minimálně 5 let zkušeností s Javou" na <code>minimal_experience_gt_1_year</code>, protože pokud jsem schopen udělat to, zbytek už bude brnkačka. Jestliže se to bude jevit jako nekonečná a neuskutečnitelná práce, nechám toho a raději dopíšu nějaké další stahovače nabídek a doladím lexer, abych měl víc dat. Potom bych kamarády poprosil o pomoc zkusit na ta data poslat mašinky.</p>
+<h2 id="lexer-prorazeni-tunelu-tunelove-videni">Lexer: Prorážení tunelu, tunelové vidění<small class="permalink"><a href="#lexer-prorazeni-tunelu-tunelove-videni" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Jak jsem psal minule, rozdělil jsem si práci na třídění nabídek práce na:</p>
+<ol>
+<li>Lexer,</li>
+<li>sémantickou analýzu obsahu.</li>
+</ol>
+<p>Tento týden se nesl ve znamení vylepšování lexeru. Byl téměř hotový z minulého týdne, jen ho chtělo trochu doladit a pak se posunout dál na tu sémantickou analýzu. Jestli vám minulá věta zní jako <a href="https://en.wikipedia.org/wiki/Ninety-ninety_rule">ninety-ninety-rule</a>, tak máte pravdu. Škoda, že jsem si toho na začátku týdne nevšiml já.</p>
+<p>Každý den už to vypadalo, že lexer je hotový, ale vždy jsem našel nějakou chybu, nějaká data, na kterých to nefungovalo dobře. Bojoval jsem s nějakými šílenými bílymi znaky nebo třeba s tím, že v inzerátech jsou často prostě jen rozházené <code>&lt;li&gt;</code> tagy, bez obalujícího <code>&lt;ul&gt;</code>. Všechno jsem vyřešil, na všechno mám test, pro všechno jsem nakonec vymyslel geniální algoritmus. Naprosto mě to pohltilo a když to jen trochu přeženu, dalo by se říct, že jsem kromě programování akorát občas jedl, spal a čmáral pokusy o algoritmy na různé papíry. Když jsem se ze svého <em>mad scientist</em> módu vynořil s hotovým lexerem, který rozklíčoval i nejzapeklitější formátování inzerátu, byl čtvrtek odpoledne.</p>
+<figure class="figure figure-blockquote"><blockquote class="blockquote">
+<p>Hlavně si to všechno okomentuj a zdokumentuj, ať ten kód pochopíš i za týden.</p>
+</blockquote>
+</figure><p>Výrok mojí manželky, když mě viděla při práci na lexeru. A to není z IT! Takže jsem ještě velkou část čtvrtka dával kód lexeru do takové podoby, aby ho jednou šlo i číst.</p>
+<h3 id="tipy-na-psani-parseru">Tipy na psaní parseru<small class="permalink"><a href="#tipy-na-psani-parseru" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
+<p>Když zpracovávám změť HTML tagů nebo i čistého textu, kterou se na první pohled může zdát nemožné zpracovat, existují dvě zbraně, které jde použít. První je doménový kontext. Já vím, že v té změti je inzerát na práci, takže vím, co mám hledat. Můžu se dívat po konkrétní struktuře i po obsahu. Druhá zbraň je přepnout mozek a nedívat se na vstup jako stroj, nedejbože HTML parser, ale jako když se člověk dívá na to, co z té změti vykreslí prohlížeč. Člověku je jedno, jestli je něco <code>&lt;h3&gt;</code> nebo <code>&lt;strong&gt;</code>, vidí to tučně. Stejně tak <code>&lt;p&gt;</code> nebo <code>&lt;br&gt;</code>, je to nový řádek. Překřížené tagy? No a co. Parser se ve svém chápání vstupu musí co nejvíc přiblížit reprezentaci inzerátu v prohlížeči, nebo ještě lépe reprezentaci, kterou si člověk vytvoří v hlavě, když se na ten prohlížeč kouká. Důležité je, kde bude po vykreslení zalomený řádek, kde bude vizuální odrážka, atd. Takto se dá vyřešit spousta zdánlivě složitých problémů.</p>
+<h2 id="vymysleni-semanticke-analyzy">Vymýšlení sémantické analýzy<small class="permalink"><a href="#vymysleni-semanticke-analyzy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Už během práce na lexeru jsem přemýšlel nad tím, jak bude vypadat sémantická analýza potom. Ve čtvrtek večer jsem se do toho pustil a během pátku prošel přes několik prototypů. No a nebudete věřit na co jsem přišel!</p>
+<p>Já nejspíš ten lexer takhle složitý vůbec potřebovat nebudu, ani ta analýza nebude nakonec zřejmě tak složitá, jak jsem myslel. Když mi to došlo, nevěděl jsem, jestli se mám radovat, protože můžu smazat spoustu kódu a jsem mnohem blíž řešení, nebo jestli mám plakat, protože jsem propálil týden času.</p>
+<p>Potřeba komplikovaného lexeru byla založena na hypotéze (říkejme jí hypotéza 1), že abych vyhodnotil nějakou větu v inzerátu, potřebuji znát její kontext. Pokud bude požadavek na univerzitní titul v seznamu "Požadavky" nebo v seznamu "Výhodou", tak to přece dost mění význam. Snažil jsem se tedy pochopit strukturu inzerátů a význam jednotlivých sekcí. Jenže po několika experimentech s analýzou jsem došel k tomu, že vliv kontextu jsem nejspíš dost přecenil a je velmi pravděpodobné, že o sekcích nemusím nakonec vědět nic a bude to stačit (hypotéza 2). No, je osm hodin v pátek večer a nechávám to přes víkend uležet v tomto stavu:</p>
+<ul>
+<li>Třídit nabídky automaticky půjde, a nejspíš mnohem jednodušeji než jsem myslel.</li>
+<li>Třetina lexeru se mi bude hodit tak jako tak, to určitě zbytečná práce nebyla.</li>
+<li>Ještě jsem hypotézu 2 neprobádal dostatečně na to, abych hypotézu 1 mohl definitivně zahodit.</li>
+</ul>
+<h3 id="pouceni">Poučení<small class="permalink"><a href="#pouceni" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
+<p>Pozor na padání do <em>rabbit holes</em>! Dělal jsem si srandu, že dělám něco, co nejde, ale já nevím že to nejde, takže se mi to udělat povede. Odhodlání překonat jakoukoliv nástrahu mě ale oslepilo a zbavilo nadhledu. Sice se mi povedlo provrtat hlavou skálu a udělat do ní tunel, ale když jsem se objevil na druhé straně kopce, zjistil jsem, že nejspíš existuje cestička kolem.</p>
+<h2 id="proc-tridim-nabidky">Proč třídím nabídky<small class="permalink"><a href="#proc-tridim-nabidky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Nakonec jedna připomínka proč se vůbec snažím třídit nabídky. Stahuji je z několika různých míst. Na všech těchto místech mám vyfiltrováno na juniorní nabídky práce, někdy jsou dokonce přímo označené jako <em>entry level</em>, což je přesnější popis té kategorie inzerátů, které chci na JG zobrazovat. A stejně mi tam úplně běžně padají věci jako tohle:</p>
+<figure class="figure figure-blockquote"><blockquote class="blockquote">
+<p>BS in a technical discipline. MS desirable. At least 5 years experience in software quality.</p>
+</blockquote>
+</figure><p>Nebo tohle:</p>
+<figure class="figure figure-blockquote"><blockquote class="blockquote">
+<p>At least 5 years’ experience as an iOS mobile developer.</p>
+</blockquote>
+</figure><p>Pokud se mi povede to vytřídit, nebude JG <em>nejlepší</em> místo, kde junior sežene pohromadě relevantní inzeráty, ale prakticky <em>jediné</em>.</p>
+<h2 id="jg-rank">JG rank<small class="permalink"><a href="#jg-rank" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Ve čtvrtek před spaním mě napadlo, že bude lepší nedělat třídění nabídek úplně černobílé, ale mít nějaké "skóre", které by určovalo jak moc je nabídka juniorní. Skóre by se potom mohlo nejen podílet na vyřazování nerelevantních nabídek, ale i na řazení nabídek ve výpisu. Pracovně jsem si to pojmenoval jako "JG rank". Mohl by být klidně transparentní a každý by hned viděl, proč je jaká nabídka považována za více nebo méně vhodnou pro juniory.</p>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<ul>
+<li>Jeden mentorovací videohovor.</li>
+<li>Zmínka o JG se <a href="https://twitter.com/pavlina_speaks/status/1258734537254809600?s=21">poprvé objevila v tištěném médiu</a> (pokud vím), a to v časopise Marie Claire. Juchů!</li>
+<li>Hana Klimentová na <a href="https://www.facebook.com/groups/pyonieri/">Pyonýry</a> hodila <a href="http://vyuka-programovani-pro-zacatecniky.hanka.one/public/test">dotazník</a> pro začátečníky v programování, který zjišťuje učební styly. Koukal jsem na to, četl si o učebních stylech a celkově jsem s tím jeden den strávil docela dost času.</li>
+<li>Potunil jsem Gulp tak, aby každý reload při vývoji byl trochu efektivnější.</li>
+<li>Zahlédl jsem na Twitteru článek <a href="https://macwright.org/2020/05/10/spa-fatigue.html">Second-guessing the modern web</a> a zapsal jsem si pár nápadů na článek o frontendu, který chci už dlouho napsat.</li>
+<li>Emma Bostian vydala <a href="https://compiled.blog/blog/how-i-made-40000-dollars-on-a-book">článek o tom, jak vydělala $40000 na knížce pro juniory</a>, ale ještě jsem to nečetl. Taky nemám 105,8 tisíc followerů na Twitteru, takže její strategii asi nebudu moci 1:1 obšlehnout.</li>
+<li>Odebral jsem zatím z třídění nabídek práce podporu pro slovenské nabídky. Chci je tam do budoucna mít, ale teď v mých datech není ani jedna a na nulovém vzorku se těžko ladí nějaká sémantická analýza. Slovenštinu přidám zpět v budoucnu jako separátní úkol, i s nějakým zdrojem slovenských nabídek.</li>
+<li>Vylepšil jsem jak se mi v testech načítají fixtures.</li>
+<li>Napsal jsem si dekorátor, který mi pošle na macOS notifikaci a udělá zvuk, když obalená funkce skončí. Když spustím stahování nabídek práce, už to trvá celkem dlouho, a tohle mi pomáhá si všimnout, že data už jsou ready. Možná o tom napíšu samostatný článek.</li>
+</ul></div></div></div></div>
+  </main>
+
+  <footer class="article-footer mb-5">
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
+      </address>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</article>
+      </div>
+<aside class="promo seealso">
+  <div class="promo-content container">
+    <h3 class="promo-heading fs-1">Další Honzovy články</h3>
+    <ul class="list-unstyled mb-0">
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2022 —
+        <a href="https://honzajavorek.cz/blog/tydenni-poznamky-111-kamaradi-z-afriky/">
+          Týdenní poznámky #111: Kamarádi z Afriky</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/volim-marketing/">
+          Volím marketing</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/bez-auta/">
+          Bez auta</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/spoustim-klub/">
+          Spouštím klub</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2016 —
+        <a href="https://honzajavorek.cz/blog/kolonizatori-a-spravci-kolonii/">
+          Kolonizátoři a správci kolonií</a>
+      </li>
+      <li>
+        <i class="bi bi-search"></i>
+        <a href="https://honzajavorek.cz/blog/">Archiv blogu</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+      <footer class="footer">
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+
+      <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+  </body>
+</html>

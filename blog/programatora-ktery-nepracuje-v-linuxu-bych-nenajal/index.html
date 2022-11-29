@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/programatora-ktery-nepracuje-v-linuxu-bych-nenajal/">
+    <title>Programátora, který nepracuje v Linuxu, bych nenajal &mdash; Javorové lístky</title>
+
+    <meta property="og:title" content="Programátora, který nepracuje v Linuxu, bych nenajal &mdash; Javorové lístky">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/programatora-ktery-nepracuje-v-linuxu-bych-nenajal/">
+
+        <meta property="og:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+    <meta name="twitter:card" content="summary">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#457E31">
+
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Javorové lístky &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2014-03-25T22:53:05+01:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
+<article class="article">
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
+  </header>
+  <h1 class="title display-5">
+    Programátora, který nepracuje v Linuxu, bych nenajal
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/programatora-ktery-nepracuje-v-linuxu-bych-nenajal/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2014-03-25T22:53:05+01:00">
+          25. 3. 2014
+        </time>
+      </li>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        6
+          min čtení
+      </li>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/programatora-ktery-nepracuje-v-linuxu-bych-nenajal&interval=week&start=2014-03-25T22:53:05+01:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <main class="article-content">
+      <div class="alert alert-warning" role="alert">
+        <p>
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          Tento článek vyšel
+          <strong>před 8 lety</strong>.
+          Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
+          že dnes se Honza již nemusí s obsahem ztotožňovat.
+        </p>
+      </div>
+
+    <div><div><div><div><p>Pár tweetů a tolik povyku :) Abych nakonec nebyl za úplného debila, musím to nějak doplnit tady na blogu.</p>
+<p>Už před nedávnem <a href="https://honzajavorek.cz/blog/vagrant/">jsem začal na vývoj používat Vagrant</a>. Tedy udělátko do příkazové řádky, díky kterému snadno a rychle
+vytvoříte malé virtuálky (přitom backendy mohou být různé, např. VirtualBox). K čemu se to hodí? Můžete si tak vytvořit sandbox, v němž vyvíjíte a nešpiníte si přitom vlastní systém. Virtuálky můžete kopírovat, mazat, upravovat, rozběhnout si v nich Redis, PostgreSQL, MongoDB a klidně dvacet dalších služeb a pak je jedním příkazem vypnout (či pozastavit), až skončíte svou práci na onom konkrétním projektu. Já mívám většinou rozjetých více různých projektů (i během práce pro jednu firmu - dělá se na více věcech zároveň), každý má jiné závislosti atd., takže se mi to dost hodí.</p>
+<p>Jenomže Vagrant a virtuálky jsou, přiznejme si to, celkem těžkopádné (a hlavně často dost pomalé) řešení. Proto někdo přišel a vymyslel <a href="https://www.docker.io/">Docker</a>. To je něco jako <em>lightweight</em> virtuálka, ale je to implementované přímo v ekosystému Linuxového jádra využitím všelijakých zajímavých funkcí, jež tam byly už dávno, ale nikdo je moc nepoužíval, nevědělo se o nich moc, nebo prostě nikoho nenapadlo dát je dohromady a použít zrovna na tohle. Navíc je tam ještě nějaké "verzování" atd., ale tomu až zas tak nerozumím, tak si to vyčtěte jinde. Prostě je to teď úplně nejvíc nejcoolovější věc, co frčí mezi vývojáři a kdo nemá na deklu laptopu nalepenou velrybičku, jako by nebyl ;-)</p>
+<p>Akorát že pro spoustu lidí je menším zklamáním, že pokud to chcete rozjet na Macu, tak si musíte udělat virtuálku s Linuxem a v ní si rozjet Docker, protože na Macu to prostě nefunguje, je potřeba fakt přímo to Linuxové jádro. Takže jsem napsal tenhle (uznávám, trochu tendenční) tweet:</p>
+<figure class="figure figure-blockquote figure-tweet"><blockquote class="twitter-tweet blockquote-tweet blockquote" lang="cs"><p>Tož ten slavný <a href="https://twitter.com/docker">@docker</a> je prý jen pro Linuxové jádro. Že by zas o důvod víc, proč je Linux pro profi vývojáře prostě nejlepší volbou?</p></blockquote>
+
+<figcaption class="blockquote-footer"> Honza Javorek (@honzajavorek) <a href="https://twitter.com/honzajavorek/statuses/448097739155730432">March 24, 2014</a></figcaption></figure><p>Já osobně používám na svém laptopu Linux, konkrétně <a href="http://xubuntu.org/">Xubuntu</a>. Je to můj pracovní i volnočasový laptop. Během práce fakt silně cítím, jak mi to usnadňuje život. Během čistě uživatelské činnosti si vždy vážím toho, jak je Xubuntu na linuxové poměry ještě poměrně funkční volbou, ale i tak se někdy chytám za hlavu nad tím, co mi dokáže tenhle systém připravit za překvapení. Nejsem žádný linuxový fanatik - jsem pragmatik. Mou hlavní misí na tomto světě je v současnosti především programování webových aplikací v Pythonu a Linux je akorát prostě z mého pohledu ten úplně nejlepší systém, na kterém se to dá dělat. Je to systém, na kterém to pak na serveru většinou i běží, takže během vývoje prostě nejsou žádné problémy (<a href="https://www.facebook.com/fczbkk/posts/10152380085217741">přečtěte si u Rikiho</a>, jaké problémy začíná mít s Windows, a to prosím neprogramuje backendy webových aplikací). V mém světě je prostě všechno vytvořeno pro Linux a až potom, kvůli vývojářům, portováno na ten zbytek.</p>
+<p>Měl jsem teď doma půl roku Mac od kamaráda na osahání. Zapnul jsem ho jednou. Byl to fajn systém, nic mi tam nevadilo, ale od Xubuntu se to v ničem nelišilo na první pohled natolik, abych měl motivaci si v tom systému zkusit pracovat nebo ho dlouhodobě používal. Neměl jsem motivaci zahájit změnu. Kdyby mě Linux štval, tak jo, ale já s ním vážnější problémy nemám, takže proč přecházet? Asi je to vymakanější, ale stojí to za tu cenu - čas strávený switchováním, peníze, atd.? Kdybych neprogramoval, tak bych se asi přeučil na Mac a používal ho. Ale takhle je pro mě prostě jednodušší přežít horší uživatelský prožitek, nic neřešit a užívat si toho, že ekosystém je na Linuxu odpradávna vyladěný pro programátora.</p>
+<p>Koneckonců, je to jen OS. Jedničky a nuly... Svět je venku, za oknem. Ještě nejsme v <a href="http://www.csfd.cz/film/312650-ona/">Her</a>, aby byl výběr OS fakt to nejdůležitější rozhodnutí v našem životě :) Už to, že tady o tom píšu článek, je pro mě vlastně ztráta času. V mé hlavě je problém výběru OS poměrně neemotivní věc a flamům na tohle téma se fakt směju. Mnohem raději se budu hádat o mezerách a tabulátorech, ale ještě radši si s váma budu povídat o výletu do Pobaltí a nejkratší délce sukní, které jsme kdo už toto jaro stihli vidět.</p>
+<p>V kontextu toho všeho a mého předešlého tweetu jsem si vzpomněl na <a href="http://www.30minut.cz/jakub-whitwa-krcmar-grafika-pracujiciho-ve-windows-bych-si-nenajal/">rozhovor s Jakubem Krčmářem</a>, kde se objevil "slavný" výrok:</p>
+<figure class="figure figure-blockquote"><blockquote class="blockquote">
+<p>Grafika pracujícího ve Windows bych si nenajal</p>
+</blockquote>
+</figure><p>Dokonce je přímo v nadpisu toho rozhovoru. Kdo to pamatujete, tehdy to vyvolalo strašné pozdvižení a Jakuba pak nějakou dobu pranýřovali na každém rohu českého internetu, takže toho asi zpětně litoval a myslím, že to pak snad i v nějakém ohlédnutí vzal později zpět (ale to už se mi dohledávat nechce). Samozřejmě mu byli předhazováni všichni grafici windowsáci, od <a href="http://www.jerrytvrdek.com/">Jerryho Tvrdka</a> až po nevímkoho.</p>
+<p>Napadl mě vtípek - ironický tweet, kde bych se na tuhle větu odkázal a udělal si z ní srandu tím, že ji přepíšu na vývojáře a Linux. Aby bylo jasnější, že jde o srandu, uvedl jsem to profláklým "Nejsem rasista, ale..." a pro jistotu přidal ještě mrkajícího smajlíka. Jenže pět let od rozhovoru je pět let, kauzu už asi nikdo nepamatuje a můj humor <a href="https://twitter.com/milancermak/status/448111199864225792">skoro</a> nikdo nezachytil.</p>
+<figure class="figure figure-blockquote figure-tweet"><blockquote class="twitter-tweet blockquote-tweet blockquote" lang="cs"><p>Nejsem rasista, ale... osobně bych programátora, který není na Linuxu, nenajal. (parafráze a vzpomínka na <a href="http://t.co/9TwFSQrL14">http://t.co/9TwFSQrL14</a> ;-) )</p></blockquote>
+
+<figcaption class="blockquote-footer"> Honza Javorek (@honzajavorek) <a href="https://twitter.com/honzajavorek/statuses/448104192037879808">March 24, 2014</a></figcaption></figure><p>Možná už mě zblbly metahumorné diskuse <a href="http://zitbrno.cz/">Žít Brna</a>, kde je ironické a sakrastické úplně všechno. Každopádně jakmile jsem si všiml, že se to nesetkalo s pochopením, byly už jen dvě možnosti - přilít olej do ohně, nebo polopatě vysvětlit, že jsem to nemyslel vážně. Neměl jsem náladu na to druhé, takže jsem přilil - dal jsem si ale záležet, aby už bylo nadevše jasné, že to celé myslím s nadsázkou. Ani notoricky vysmívaná věta "Já mám Linux a jsem v pohodě" ale nepomohla! Dostal jsem nabídku vyargumentovat své postoje v článku na <a href="http://www.zdrojak.cz/">Zdrojáku</a>!!1 8-) (Ano, i tu jedničku za vykřičníky jsem tam napsal schválně.)</p>
+<figure class="figure figure-blockquote figure-tweet"><blockquote class="twitter-tweet blockquote-tweet blockquote" lang="cs"><p><a href="https://twitter.com/honzajavorek">@honzajavorek</a> na twitteru to nelze odargumentovat. Troufl by sis do clanku? Radi vydame, kdyz to bude dobre!</p></blockquote>
+
+<figcaption class="blockquote-footer"> Zdroják.cz (@zdrojak) <a href="https://twitter.com/zdrojak/statuses/448132799636451328">March 24, 2014</a></figcaption></figure><p>Raději jsem nereagoval a netrolil dál - pochopil jsem, že se ode mne na Twitteru očekávají pouze seriózní příspěvky a nemám dostatek energie, abych tuhle kauzu živil až do 1. 4., kdy mají i seriózní média právo dělat si z lidí srandu a kdy bych mohl vše beztrestně zakončit hlasitým "Apríl!", aby to došlo opravdu všem.</p>
+<p>Pln výčitek a zodpovědnosti za fabulace jsem večer v krátké zprávě natvrdo odhalil o co celou dobu šlo, ale mám dojem, že tohle už nikdo nečetl. Aspoň jsem dostal hezké fiktivní tričko:</p>
+<figure class="figure figure-blockquote figure-tweet"><blockquote class="twitter-tweet blockquote-tweet blockquote" lang="cs"><p><a href="https://twitter.com/honzajavorek">@honzajavorek</a> A nasemu pozornemu divakovi do Brna posilame tricko <a href="https://twitter.com/search?q=%23trololobit&amp;src=hash">#trololobit</a> <a href="http://t.co/tiVACRykop">pic.twitter.com/tiVACRykop</a></p></blockquote>
+
+<figcaption class="blockquote-footer"> Ales Zoulek (@aleszoulek) <a href="https://twitter.com/aleszoulek/statuses/448212604452737025">March 24, 2014</a></figcaption></figure><p>Za tričko děkuju!</p></div></div></div></div>
+  </main>
+
+  <footer class="article-footer mb-5">
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
+      </address>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</article>
+      </div>
+<aside class="promo seealso">
+  <div class="promo-content container">
+    <h3 class="promo-heading fs-1">Další Honzovy články</h3>
+    <ul class="list-unstyled mb-0">
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2022 —
+        <a href="https://honzajavorek.cz/blog/tydenni-poznamky-111-kamaradi-z-afriky/">
+          Týdenní poznámky #111: Kamarádi z Afriky</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/volim-marketing/">
+          Volím marketing</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/bez-auta/">
+          Bez auta</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/spoustim-klub/">
+          Spouštím klub</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2016 —
+        <a href="https://honzajavorek.cz/blog/kolonizatori-a-spravci-kolonii/">
+          Kolonizátoři a správci kolonií</a>
+      </li>
+      <li>
+        <i class="bi bi-search"></i>
+        <a href="https://honzajavorek.cz/blog/">Archiv blogu</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+      <footer class="footer">
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+
+      <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+  </body>
+</html>

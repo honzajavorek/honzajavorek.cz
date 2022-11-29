@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/sablony-v-php-a-jak-obejit-nepodporu-short-open-tags/">
+    <title>Šablony v PHP a jak obejít nepodporu short open tags &mdash; Javorové lístky</title>
+
+    <meta property="og:title" content="Šablony v PHP a jak obejít nepodporu short open tags &mdash; Javorové lístky">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/sablony-v-php-a-jak-obejit-nepodporu-short-open-tags/">
+
+        <meta property="og:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+    <meta name="twitter:card" content="summary">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#457E31">
+
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Javorové lístky &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2008-08-09T16:26:00+02:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
+<article class="article">
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
+  </header>
+  <h1 class="title display-5">
+    Šablony v PHP a jak obejít nepodporu short open tags
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/sablony-v-php-a-jak-obejit-nepodporu-short-open-tags/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2008-08-09T16:26:00+02:00">
+          9. 8. 2008
+        </time>
+      </li>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        5
+          min čtení
+      </li>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/sablony-v-php-a-jak-obejit-nepodporu-short-open-tags&interval=week&start=2008-08-09T16:26:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <main class="article-content">
+      <div class="alert alert-warning" role="alert">
+        <p>
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          Tento článek vyšel
+          <strong>před 14 lety</strong>.
+          Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
+          že dnes se Honza již nemusí s obsahem ztotožňovat.
+        </p>
+      </div>
+
+    <div><div><div><div><p>Jestliže vás nalákal nadpis a nechcete číst širší úvod do problému šablon v PHP, poskočte o něco níže, tam už to tak široké není a článek lze ve zdraví přebrodit celkem rychle ;) .</p>
+<p>Píšete-li aplikaci v PHP a nejste-li v programování vepř, sele, prasnice nebo něco k tomu blízkého (vyjma kance, kanec být můžete), dříve či později pocítíte přinejmenším touhu <strong>oddělit prezentační vrstvu od zbytku</strong>. Nabízí se několik přístupů, co s touto touhou…</p>
+<h2 id="jamalalicha-paprtala-chanua-chanua-chanua">Jamalalicha, paprťála, chánua, chánua, chánua<small class="permalink"><a href="#jamalalicha-paprtala-chanua-chanua-chanua" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p><strong>Žádná</strong> prezentační vrstva. Napaprťálujem to všechno do jednoho klubka, PHP do HTML, XML do PHP, CSS nějak k tomu a budeme mít binec, ale budeme to mít za 40 minut. Pokud po nás někdo kód dostane do rukou, nemá šanci s ním něco provést. Jestliže chceme oslovit kodéra, aby dělal na projektu úpravy, platíme mu poté pobyt v Bohnicích nebo, pro jihomoravské, Černovicích. Člověk by se divil, ale na takovém přístupu dnes stojí velké procento existujících webů a to i takových, do nichž byste to při pohledu zvenčí ani neřekli (nebo by vás napadlo, že je to sebevražda). Autoři těchto projektů neřeší dilema Smarty vs. PHP (viz dále), protože většinou ani nevědí, že taková řešení existují.</p>
+<h2 id="kdyz-vrstva-tak-vrstva">Když vrstva, tak vrstva<small class="permalink"><a href="#kdyz-vrstva-tak-vrstva" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Použijete <strong>robustní šablonovací systém</strong>, který vytváří opravdovou vrstvu ve vaší aplikaci, možná bude větší než ona a dal by se označit jako takový pseudojazyk někde mezi HTML a PHP. Dle mého názoru nepříliš šťastná cesta, na můj vkus málo elegantní a minimalistická. Nicméně hojně používaná a má davy zastánců. Nejrozšířenějšími šablonami jsou <a href="http://www.smarty.net/">Smarty</a> (<a href="http://smarty.ronnieweb.net/">pěkný český návod</a>), ale existují desítky.</p>
+<h2 id="php-je-sablonovaci-system-zlata-stredni-cesta">PHP je šablonovací systém – zlatá střední cesta?<small class="permalink"><a href="#php-je-sablonovaci-system-zlata-stredni-cesta" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Napíšete si <strong>jednu třídu v PHP, která vám vytvoří plně funkční šablony</strong> a místo pseudojazyka v nich použijete PHP. Zní to zvláštně, ale opravdu to jde a dle mého názoru je to nejelegantnější řešení. Nesmíte samozřejmě tahat logiku aplikace do šablon, ač je to možné – v šabloně použijete PHP jen k nějakému tomu echo a foreach. Alternativní syntaxe PHP jako <em>short open tags</em> nebo <em>if/endif</em> přímo k takovému použití vybízí. Více <a href="http://massassi.com/php/articles/template_engines/">třeba zde</a>.</p>
+<h2 id="ano-zlata-stredni">Ano, zlatá střední<small class="permalink"><a href="#ano-zlata-stredni" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Ve vodách internetu najdete neplodné, plodné, těhotné a i jinak objemné diskuse o tom, jestli použít PHP jako šablonovací jazyk, nebo nasadit moloch typu Smarty. Asi jak na co. Já mám zatím jasno – jsem zastáncem <strong>hbitých a chytrých řešení</strong> a tyto požadavky splňuje ona střední cesta, jak jsem ji vylíčil v předešlém odstavci. Nechci se hádat co je lepší – prostě jen napíšu, že pro mě je lepší tato varianta a proto mám rád takové ty na první pohled obskurní věci, jako například short open tags:</p>
+<pre class="highlight"><code><span></span><code><span class="cp">&lt;?</span><span class="o">=</span> <span class="nv">$var</span> <span class="cp">?&gt;</span><span class="x"> je totez jako konvencni </span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$var</span> <span class="cp">?&gt;</span><span class="x"></span>
+<span class="cp">&lt;?</span> <span class="o">...</span> <span class="cp">?&gt;</span><span class="x"> je totez jako delsi </span><span class="cp">&lt;?php</span> <span class="o">...</span> <span class="cp">?&gt;</span><span class="x"></span>
+</code></code></pre>
+
+<p>V běžném PHP je to celkem na uškrcení, ale v šablonách dle mého názoru k nezaplacení.</p>
+<h2 id="jtemplate">JTemplate<small class="permalink"><a href="#jtemplate" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Ve svých projektech používám šablony postavené na vlastní třídě <a href="http://code.google.com/p/joss-cms/source/browse/trunk/class/JTemplate.php">JTemplate</a> (tady se vyplatí kliknout, vážně). Spolu s dalšími <strong>umí výstupy cachovat</strong> a tím razantně zvyšovat výkon aplikace. V zásadě je postavená na myšlence popsané ve výše odkazovaném článku Briana Loziera.</p>
+<p>Čím je ale zvláštní? Funkcí <code>fetch</code>. Ta je jádrem zpracování a jde v ní běžně o to, že se do aktuálního kontextu rozbalí proměnné uložené do šablony (funkce <a href="http://cz.php.net/manual/en/function.extract.php">extract</a>), začne se odchytávat výstup na obrazovku (<a href="http://cz.php.net/manual/en/ref.outcontrol.php">ob_… funkce</a>) a vloží se (obyčejný include) soubor se šablonou jako PHP. V něm se použijí rozbalené lokální proměnné a vše se poslušně vytiskne ven. No ven úplně ne, protože výstup samozřejmě odchytáváme, takže vše co jde ven hezky sbalíme do <em>output control pytle</em> a necháme uložené jako string v nějaké proměnné, kterou vrátíme jako výsledek funkce (a obsah pak v aplikaci vytiskneme později kdykoliv chceme).</p>
+<h2 id="pro-zmenu-short-open-tags">Pro změnu… Short open tags!<small class="permalink"><a href="#pro-zmenu-short-open-tags" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>„Takové krásné šablony,“ řekli byste. Ale pak to nahrajete na první hosting a <strong>celé se vám rozsypou</strong>, protože tam mají <strong>vypnutou podporu short open tags</strong>, které samozřejmě hojně a s radostí používáte. Co s tím? Buď je nepoužívat (což je škoda), nebo přidat jeden <em>požadavek</em> navíc a snížit tak možnost nasazení aplikace. Nebo vymyslet něco chytrého ;) .</p>
+<pre class="highlight"><code><span></span><code><span class="x">if (!ini_get('short_open_tag')) {</span>
+<span class="x">    // explicit short open tags support</span>
+<span class="x">    eval('?&gt;' . preg_replace(</span>
+<span class="x">            array('~&lt;\\?(\\s)~', '~&lt;\\?=~'),</span>
+<span class="x">            array('</span><span class="cp">&lt;?php</span><span class="nx">\\1</span><span class="s1">', '</span><span class="o">&lt;?</span><span class="nx">php</span> <span class="k">echo</span><span class="err">'</span><span class="p">),</span>
+            <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">tpl</span><span class="o">-&gt;</span><span class="na">content</span>
+        <span class="p">)</span>
+    <span class="p">);</span>
+
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="k">include</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">tpl</span><span class="o">-&gt;</span><span class="na">file</span><span class="p">);</span> <span class="c1">// include the file</span>
+<span class="p">}</span>
+</code></code></pre>
+
+<p>První větev testuje, jestli jsou krátké značky vypnuty. Jestli ne, přejde plynule do <code>else</code>, kde proběhne zpracování přes <code>include</code> běžným způsobem. Pokud jsou vypnuty (tzn. server je tvrdohlavý a nepovolí je i přesto, že je v .htaccess a <a href="http://cz.php.net/manual/en/function.ini-set.php">ini_set</a> nastaveno aby zapnuty byly), dojde na slušné využití jedné z tabuizovaných funkcí v PHP, <a href="http://cz2.php.net/manual/en/function.eval.php">eval</a> :) . Už ten název…</p>
+<p>Jeden kouzelný řádek totiž způsobí, že se vezme text zdrojového souboru šablony, regulárním výrazem se v něm nahradí krátké značky za klasické dlouhé s <code>&lt;?php</code> apod. a předhodí se funkci <code>eval</code>, která následně kód PHP vykoná. Ne, čistěji to nejde a přijde mi to jako oprávněné a elegantní využití této funkce, které řeší významný problém a stírá rozdíly v nastavení serverů. No jak by řekl Béda Trávníček: „A to se vyplatí!“</p>
+<p>Cachování samozřejmě zcela <strong>maže handicap většího potřebného výkonu</strong>. Navíc, narazit na tak tvrdohlavý server se jistě jen tak nepoštěstí… Ale za tu jistotu to samozřejmě stojí. Teď už si můžeme pohodlně psát short open tags, velmi rychle, přehledně a efektivně s nimi kódovat šablony a nemusíme se ohlížet na nic a nikoho.</p></div></div></div></div>
+  </main>
+
+  <footer class="article-footer mb-5">
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
+      </address>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</article>
+      </div>
+<aside class="promo seealso">
+  <div class="promo-content container">
+    <h3 class="promo-heading fs-1">Další Honzovy články</h3>
+    <ul class="list-unstyled mb-0">
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2022 —
+        <a href="https://honzajavorek.cz/blog/tydenni-poznamky-111-kamaradi-z-afriky/">
+          Týdenní poznámky #111: Kamarádi z Afriky</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/volim-marketing/">
+          Volím marketing</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/bez-auta/">
+          Bez auta</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/spoustim-klub/">
+          Spouštím klub</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2016 —
+        <a href="https://honzajavorek.cz/blog/kolonizatori-a-spravci-kolonii/">
+          Kolonizátoři a správci kolonií</a>
+      </li>
+      <li>
+        <i class="bi bi-search"></i>
+        <a href="https://honzajavorek.cz/blog/">Archiv blogu</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+      <footer class="footer">
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+
+      <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+  </body>
+</html>

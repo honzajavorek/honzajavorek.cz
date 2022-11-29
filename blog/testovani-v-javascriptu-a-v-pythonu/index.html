@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/testovani-v-javascriptu-a-v-pythonu/">
+    <title>Testování v JavaScriptu a v Pythonu &mdash; Javorové lístky</title>
+
+    <meta property="og:title" content="Testování v JavaScriptu a v Pythonu &mdash; Javorové lístky">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/testovani-v-javascriptu-a-v-pythonu/">
+
+        <meta property="og:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+    <meta name="twitter:card" content="summary">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#457E31">
+
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Javorové lístky &mdash; Atom Feed">
+
+      <link rel="alternate" hreflang="en" href="https://honzajavorek.cz/blog/testing-in-javascript-and-in-python/">
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2016-05-31T10:43:00+02:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
+<article class="article">
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
+  </header>
+  <h1 class="title display-5">
+    Testování v JavaScriptu a v Pythonu
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/testovani-v-javascriptu-a-v-pythonu/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2016-05-31T10:43:00+02:00">
+          31. 5. 2016
+        </time>
+      </li>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        8
+          min čtení
+      </li>
+      <li class="info-translations">
+        <i class="bi bi-globe"></i>
+          Překlady:
+          <a href="https://honzajavorek.cz/blog/testing-in-javascript-and-in-python/" hreflang="en">EN</a>
+      </li>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/testovani-v-javascriptu-a-v-pythonu&interval=week&start=2016-05-31T10:43:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <main class="article-content">
+      <div class="alert alert-warning" role="alert">
+        <p>
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          Tento článek vyšel
+          <strong>před 6 lety</strong>.
+          Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
+          že dnes se Honza již nemusí s obsahem ztotožňovat.
+        </p>
+      </div>
+
+    <div><div><div><div><p>Štve mě testování serverového JavaScriptu a v tomto článku vám napíšu proč. Pokud nemáte náladu na <a href="http://www.urbandictionary.com/define.php?term=rant">rant</a>, doporučuji si <a href="https://honzajavorek.cz/blog/">vybrat jiný článek</a>.</p>
+<p>Jelikož jsem člověk původně ze světa Pythonu, srovnám <em>developer experience</em>
+u obou jazyků, aby bylo jasnější, co přesně myslím. Ačkoliv jsem velkým
+propagátorem jazyka Python, mým účelem není napsat hejt na JavaScript a zdůraznit,
+že Python je nejlepší na světě. Chci pouze upozornit na nedostatek v jednom
+z těchto dvou ekosystémů. Příště klidně napíšu článek o tom, jak mě štve
+balíčkování v Pythonu a proč se mi mnohem víc líbí npm.</p>
+<h2 id="testovani-v-pythonu">Testování v Pythonu<small class="permalink"><a href="#testovani-v-pythonu" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Hodně lidí při psaní testů v Pythonu používá <a href="https://docs.python.org/3/library/unittest.html">unittest</a>,
+modul ze základní knihovny, který lidem umožňuje rychle vytáhnout nějaký ten <a href="https://en.wikipedia.org/wiki/XUnit">XUnit</a>
+způsob psaní testů, plný <code>class TestNěco</code>, <code>self.assertTamto()</code> a <code>setUp/tearDown</code>
+tohleto.</p>
+<p>Když je testů více, běžně si k tomu člověk vezme nějaký test runner,
+třeba <a href="http://nose.readthedocs.io/en/latest/">nose</a>. Test runner je něco, co umí
+inteligentně spouštět testy - např. jen ty, které posledně selhaly.</p>
+<p>Protože nose testy spouští, umožňuje vyběhnout z XUnit stylu a nabízí spoustu
+triků, jak můžete testy vylepšit a zjednodušit. Ty ale nikdo nepoužívá, protože
+o nich neví. Nicméně v zásadě platí, že pokud chci pustit jen nějakou podmnožinu
+testů, nebo chci upravit výstup testování, existuje na to chytrý přepínač. To je fajn především díky dvěma věcem:</p>
+<ul>
+<li>Konvence (kolega nemusí zjišťovat který konkrétní přepínač používám v tomto konkrétním projektu),</li>
+<li>pohodlí a uživatelská příjemnost (přepínač je po ruce i když ho potřebuju třikrát za život).</li>
+</ul>
+<p>No a pak je tady <a href="http://pytest.org/">pytest</a>, což je framework, který zvládne nejspíš vše co nose,
+ale navíc k trikům dává programátorům i úplně ulítlé možnosti, jak psát testy
+jednoduše. Ačkoliv se v Pythonu <a href="https://www.python.org/dev/peps/pep-0020/">razí spíš <em>be explicit</em> a <em>no magic</em></a>, na oblibě pytestu
+se ověřilo, že v případě testů je magie přijatelná a užitečná. Zvyšuje totiž
+deklarativnost a čitelnost testů.</p>
+<p>Protože za pytestem stojí i člověk, který napsal <a href="http://pypy.org/">PyPy</a>
+(překladač Pythonu napsaný v Pythonu), je ta magie na poměrně hluboké úrovni.
+Např. Python má klíčové slovo <code>assert</code>, které je ale v základu dost primitivní a umí akorát porovnat dvě
+hodnoty a vyhodit obecnou chybu, pokud hodnoty nesedí. Totéž co <a href="https://nodejs.org/api/assert.html">funkce assert
+v Node.js</a>. Co ale dělá pytest?
+<a href="http://pybites.blogspot.co.at/2011/07/behind-scenes-of-pytests-new-assertion.html">Pomocí introspekce se hrabe v mezikódu Python interpreteru</a> a <a href="https://pytest.org/latest/assert.html">obohatí asserty</a> tak,
+aby kontextově poznaly, co porovnávají, a podle toho vyhodily pěkné srovnání. Nepotřebuji tedy tahák na <code>assert.domysliSiSvojiPorovnávacíFunkci</code>, stačí mi používat
+normální opetátory a typy, které se nacházejí v jazyce.</p>
+<p>Také se mi líbí, že frameworky mají běžně v dokumentaci sekci o testování a nabízí mi
+pomocnou ruku (tipy jak na to, nástroje, třídy k podědění) v tom, abych mohl svůj kód otestovat
+snadněji, rychleji, a bez psaní zbytečně detailního <a href="https://en.wikipedia.org/wiki/Boilerplate_code">boilerplate kódu</a> okolo.
+Viz <a href="http://flask.pocoo.org/docs/0.12/testing/">Flask</a>, <a href="https://docs.djangoproject.com/en/1.10/topics/testing/">Django</a>, <a href="https://doc.scrapy.org/en/latest/topics/contracts.html">Scrapy</a> (odkazy na dedikované kapitoly v dokumentaci).</p>
+<p>Ve výsledku se při psaní testů cítím jako v bavlnce. Napíšu web v mikroframeworku,
+ale i ten mi kód testů zjednoduší. Běžně je test jen na pár řádků, což šetří čas můj,
+mého kolegy, který dělá code review, i všech ostatních, kdo budou ty testy v budoucnu číst. Testy si spustím z jaké složky chci a snadno
+si spustím třeba jen ty, které mi posledně neprošly.</p>
+<h2 id="mocha">Mocha<small class="permalink"><a href="#mocha" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Ve světě serverového JavaScriptu, s jakým jsem měl tu čest se v <a href="https://apiary.io/">Apiary</a> seznámit, je zlatým standardem <a href="http://mochajs.org/">Mocha</a>. Tvrzení <em>feature-rich</em> v podtitulku znamená, že si máte doinstalovat i ten <a href="http://chaijs.com/">assert</a>. Ne, teď vážně. V Mocha vypadají <em>killer features</em> takto:</p>
+<ul>
+<li>Spouští všechny testy a když někam napíšu <code>.only</code>, spustím jen ten daný test,</li>
+<li>umožňuje použít <em>glob patterns</em> pro výběr toho, jaké testy chci spouštět,</li>
+<li>umožňuje grepovat přes popisky testů (když grep chytí víc popisků, spustí se víc testů),</li>
+<li>jakože-<a href="https://en.wikipedia.org/wiki/Behavior-driven_development">BDD</a> přístup, který se skládá z <code>describe</code> a <code>it</code>,</li>
+<li>tuny boilerplate kódu v <code>before</code> nebo <code>beforeEach</code> (protože <a href="https://github.com/mochajs/mocha/wiki/Shared-Behaviours"><em>Mocha currently has no concept of a shared behaviour...</em></a>),</li>
+<li>když spadne test, někdy se ani nedovím, ve kterém souboru nastal problém,</li>
+<li>dokumentace k uzoufání jen o něco méně než ta od <a href="http://mongoosejs.com/">Mongoose</a>,</li>
+<li>vypisuje věci barvičkami a s unicode znakem ✔️, což je velmi cool,</li>
+<li>umožňuje používat jen jeden reporter zaráz (hodně štěstí s generováním test coverage nebo <code>xunit.xml</code>).</li>
+</ul>
+<p>Pro srovnání, pytest:</p>
+<ul>
+<li>Žádné XUnit třídy, žádné hry na BDD, prostě <a href="http://docs.pytest.org/en/latest/getting-started.html#our-first-test-run">jednoduché funkce</a> s obyčejnými <a href="http://pytest.org/latest/assert.html">asserty</a>,</li>
+<li>pomáhá odhalovat <a href="http://pytest.org/latest/example/reportingdemo.html">co se sakra děje</a>,</li>
+<li>automatická <a href="http://pytest.org/latest/capture.html">správa <code>stdout</code> během testů</a>,</li>
+<li>koncept <a href="http://pytest.org/latest/fixture.html">fixtures</a> pro psaní závislostí jednotlivých testů,</li>
+<li><a href="http://pytest.org/latest/parametrize.html">parametrizace testů</a>,</li>
+<li><a href="http://pytest.org/latest/xdist.html">distribuované testování</a>,</li>
+<li>umí spouštět jakékoliv testy Python světa včetně <a href="http://pytest.org/latest/example/nonpython.html">nepythoních</a> nebo <a href="https://docs.python.org/3/library/doctest.html">testů dokumentace</a>.</li>
+</ul>
+<p>Že se Mocha nebo <a href="http://chaijs.com/">Chai</a> pomocí introspekce nehrabou v nějakém mezikódu jim nemůžu vyčítat, protože JavaScript
+nemá ani introspekci, ani mezikód. Ten zbytek může Mocha nejspíš klidně naimplementovat, ale nedělá to. Je libo feature request na parametrizovatelnost testů (což považuji za základní
+funkci obecného test frameworku) i s rantem o tom, jak Mocha maintaineři
+nové features odmítají jako nepotřebné, nechávají je vyhnít, nedělají review apod.?
+<a href="https://github.com/mochajs/mocha/issues/1454">Prosím</a>.</p>
+<p>Jenže to není jen o maintainerech. Dobře, není nabídka, ale ona není ani poptávka. Z vyhledávání a issues na GitHubu mi přijde, že v Node.js ekosystému úplně chybí ambice takové funkce používat a požadovat. Většina pisatelů Mocha testů nejspíš ani neví, že tyto věci mohou existovat. Výsledkem je, že</p>
+<ul>
+<li>tyhle věci nenapíšou a nepošlou jako Pull Request nebo z toho neudělají balíček na npm,</li>
+<li>ve větších test suites jejich testy živelně přerostou do 1000řádkových souborů plných boilerplate kódu, které se nedají ani číst, ani spouštět.</li>
+</ul>
+<p>Kdyby někde zahlédli že existuje něco jako parametrizace nebo správa fixtures,
+třeba by je to trklo a zkusili by to použít, psát ty testy čistěji. Ale tím, že
+to po ruce nemají, tak buď testy copy-pastují, nebo si pomůžou přes <code>forEach</code>
+a všude naplácejí nějaké funkce na sdílení assertů. Nevím, který z těch dvou
+přístupů je horší. První je čitelný, ale špatně spravovatelný, druhý je nečitelný,
+byť alespoň iluzorně o něco lépe spravovatelný.</p>
+<h2 id="npm-zachranuje-situaci-nebo-taky-ne">npm zachraňuje situaci - nebo taky ne<small class="permalink"><a href="#npm-zachranuje-situaci-nebo-taky-ne" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Člověk, který už nějakou chvíli s Node.js pracuje, by si řekl, že tohle všechno jde nejspíš doplnit přes balíčky na npm. Jak jsem už naznačil, kvůli chybějící poptávce to není úplně růžové. Když už balíčky vůbec existují, <a href="https://github.com/jpstevens/mocha-shared">mají do deseti commitů a posledním z nich proběhl před dvěma roky</a>. Autoři už nejspíš dávno píšou
+v <a href="http://elm-lang.org/">Elmu</a>, takže nové verze neřeší... Navíc se zdá, že balíčky pro Mochu v zásadě řeší spíš její nemoci a nedostatky. Nepřidávají vychytávky, které by vylepšovaly <em>developer experience</em>.</p>
+<p>V době psaní článku je <a href="https://github.com/rstacruz/mocha-clean">mocha-clean</a> nejvíce ohvězdičkovaný doplněk pro Mochu na GitHubu. Tedy z těch, které opravdu něco přidávají - přeskočil jsem integrace typu Mocha + React, Mocha + Mongo, Mocha + prohlížeč, apod. Opravuje <em>stacktraces</em>.</p>
+<p>Co jiného bych si představoval? Tak třeba <a href="https://github.com/tarpas/pytest-testmon/">pytest-testmon</a> je doplněk, který využívá code coverage k tomu, aby určil, jaké testy má spustit znova a jaké může nechat ležet ladem. Tzn. něco, co extrémně zvyšuje produktivitu. Žádné manuální <code>.only</code> nebo otrocké grepování.</p>
+<p>A co se týče ovládání spouštění testů nebo formátu výstupu, i kdybych nakonec na npm našel něco, co mi vysněné přepínače doplní, nebude to jedna standardní implementace, standardní konvence, kterou by znal i nově příchozí kolega.</p>
+<h2 id="trendy">Trendy<small class="permalink"><a href="#trendy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Článek jsem napsal jako vyústění dlouhodobé frustrace z toho, že se v JavaScriptu
+musí na poli testování nejen vynalézat znova kolo, ale že ho ani nikdo nevynalézá.
+Ani módní výstřelky typu <a href="https://github.com/avajs/ava">AVA</a> proti <a href="https://en.wikipedia.org/wiki/Spaghetti_code">špagetám</a> nebrojí. Už podle
+<code>README</code> nevidím, že by se řešilo cokoliv z mnou nastíněných problémů. AVA vypadá jako
+Mocha s jinou syntaxí, ještě méně features (tzn. bude vyžadovat nový ekosystém
+<code>ava-*</code> balíčků na npm) a jednou jedinou <em>killer feature</em>, což jsou asynchronní testy
+(Promises, async/await). To samozřejmě pytest nemá...</p>
+<p><a href="https://pypi.python.org/pypi/pytest-asyncio">Oh await!</a></p>
+<p>No dobře, nebudu tak zlý. AVA vede k izolaci testů a extrémně zrychluje dobu běhu test suite. Uznávám,
+vypadá to hodně dobře. Není tam jinak ale nic, co reálně ovlivňuje jednoduchost psaní složitějších testů. Autoři sice spálili hromadu času na tom, aby to jelo se všema Babelama a Reactama
+a TypeScriptem, ale to nejsou věci, které mi ušetří čas při psaní testů, to
+jsou šaškárny JavaScript ekosystému, za které nemůžu, a jako prostého uživatele mě moc nezajímají.</p>
+<h2 id="tldr">TL;DR<small class="permalink"><a href="#tldr" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Abych to shrnul, na testování v JavaScriptu mě štvou dvě věci:</p>
+<ul>
+<li>Asserty jako jsou v pytestu (nebo deklarativnost pomocí dekorátorů,
+ale ty možná JavaScript už má nebo mít bude) nikdo neudělá kvůli omezením jazyka.</li>
+<li>Jestli je AVA následovníkem Mochy, tak JavaScriptové frameworky nesměřují
+k jednoduššímu a pohodlnějšímu psaní testů, ale k jejich rychlejšímu spouštění díky paralelizaci (palec nahoru) a
+<em>frikulínství as a feature</em> (palec dolů). Nikde na obzoru nevidím ani tak základní
+věc, jako je <em>namakanější spouštěč testů</em>, což bylo něco, čím Python žil před lety
+a dnes je to komodita. To, čím Python žije dnes - jak psát strukturovanější,
+spravovatelnější a čitelnější kód testů, vypadá ve srovnání s JavaScriptem jako velmi vzdálené
+<em>first world problems</em>. Jsem smutný, že to v JavaScriptu nikomu nechybí, ale chápu, že je to asi jako
+propagovat třídění odpadu v Súdánu.</li>
+</ul>
+<p><strong>Reklama:</strong> Většinu vědomostí o testování v Pythonu jsem načerpal na <a href="http://pyvo.cz/">Pyvech</a>, srazech Python programátorů, a to především na nedávném <a href="http://pyvo.cz/praha">pražském</a>, které bylo přímo na téma testování. Pokud chcete být tak chytří jako já, choďte na Pyvo.</p>
+<p><em>Tento článek jsem napsal z čiré frustrace, původně jen jako <a href="https://gist.github.com/honzajavorek/fc3279273dbffa7416ce384fa614cd1f">cár Markdownu, úplně mimo blog</a>.
+Sem byl přepsán v lednu 2017 a posléze přeložen do angličtiny jako <a href="https://honzajavorek.cz/blog/testing-in-javascript-and-in-python/">Testing in JavaScript
+and Python</a>.</em></p></div></div></div></div>
+  </main>
+
+  <footer class="article-footer mb-5">
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
+      </address>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</article>
+      </div>
+<aside class="promo seealso">
+  <div class="promo-content container">
+    <h3 class="promo-heading fs-1">Další Honzovy články</h3>
+    <ul class="list-unstyled mb-0">
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2022 —
+        <a href="https://honzajavorek.cz/blog/tydenni-poznamky-111-kamaradi-z-afriky/">
+          Týdenní poznámky #111: Kamarádi z Afriky</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/volim-marketing/">
+          Volím marketing</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/bez-auta/">
+          Bez auta</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/spoustim-klub/">
+          Spouštím klub</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2016 —
+        <a href="https://honzajavorek.cz/blog/kolonizatori-a-spravci-kolonii/">
+          Kolonizátoři a správci kolonií</a>
+      </li>
+      <li>
+        <i class="bi bi-search"></i>
+        <a href="https://honzajavorek.cz/blog/">Archiv blogu</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+      <footer class="footer">
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+
+      <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+  </body>
+</html>

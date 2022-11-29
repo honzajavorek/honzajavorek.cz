@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/hypermedia-a-json/">
+    <title>Hypermedia a JSON &mdash; Javorové lístky</title>
+
+    <meta property="og:title" content="Hypermedia a JSON &mdash; Javorové lístky">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/hypermedia-a-json/">
+
+        <meta property="og:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+    <meta name="twitter:card" content="summary">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#457E31">
+
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Javorové lístky &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2013-12-27T19:36:20+01:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
+<article class="article">
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
+  </header>
+  <h1 class="title display-5">
+    Hypermedia a JSON
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/hypermedia-a-json/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2013-12-27T19:36:20+01:00">
+          27. 12. 2013
+        </time>
+      </li>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        2
+          min čtení
+      </li>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/hypermedia-a-json&interval=week&start=2013-12-27T19:36:20+01:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <main class="article-content">
+      <div class="alert alert-warning" role="alert">
+        <p>
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          Tento článek vyšel
+          <strong>před 9 lety</strong>.
+          Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
+          že dnes se Honza již nemusí s obsahem ztotožňovat.
+        </p>
+      </div>
+
+    <div><div><div><div><p>Více lidí mě poprosilo, abych rozvedl tento tweet:</p>
+<figure class="figure figure-blockquote figure-tweet"><blockquote class="twitter-tweet blockquote-tweet blockquote" data-partner="tweetdeck"><p>Čím víc toho vím o hypermedia APIs, tím víc mám pocit, že JSON je na to fakt špatná volba. Kacířská myšlenka?! <a href="https://twitter.com/jirkakosek">@jirkakosek</a> by měl radost :)</p></blockquote>
+
+<figcaption class="blockquote-footer"> Honza Javorek (@honzajavorek) <a href="https://twitter.com/honzajavorek/statuses/416598629965504512">December 27, 2013</a></figcaption></figure><p>Nepovedlo se mi to napsat do 160 znaků, tak to zkusím stručně tady na blogu.</p>
+<p>Přijde mi, že <strong>síla formátu JSON je v tom, že je jednoduchý a přehledný</strong>. Myslím si, že je to hlavní důvod, proč jej spousta lidí začalo používat místo XML a oblíbilo si jej. Jakmile chceme ovšem JSON použít jako formát pro hypermedia API, zjistíme, že nám v něm chybí spousta věcí.</p>
+<p>Řešení? Přilepíme do něj co potřebujeme a vydáme jako speciální MIME type! Jenže ať koukám jak koukám, ani <a href="http://stateless.co/hal_specification.html">HAL</a>, ani <a href="http://amundsen.com/media-types/collection/">Collection+JSON</a>, ani <a href="https://github.com/kevinswiber/siren">Siren</a> už <strong>nejsou jednoduché a přehledné</strong> - stává se z toho stejně špatně čitelná "próza", jakou je ono zatracované XML.</p>
+<figure class="figure figure-blockquote figure-tweet"><blockquote class="twitter-tweet blockquote-tweet blockquote" data-conversation="none" data-cards="hidden" data-partner="tweetdeck"><p><a href="https://twitter.com/honzajavorek">@honzajavorek</a> <a href="https://twitter.com/jirkakosek">@jirkakosek</a> Proč? Holt už pak JSON odpověď není tak stručná, přehledná na první pohled :)</p></blockquote>
+
+<figcaption class="blockquote-footer"> Jan Žák (@zakjan) <a href="https://twitter.com/zakjan/statuses/416602887116959745">December 27, 2013</a></figcaption></figure><p>Jenže proč se potom vůbec trápit s JSONem? <strong>XML má přece všechny ty věci, kvůli kterým rozšiřujeme JSON.</strong> Nejen to - má mnohem víc, např. jmenné prostory nebo dotazovací jazyk. A má to všechno už dlouho, funguje kolem něj ekosystém vyladěných nástrojů, existují <a href="http://lxml.de/">připravené a rychlé parsery</a>, lze jej <a href="http://lucumr.pocoo.org/2013/2/13/moar-classes/">snadno streamovat</a>, atd.</p>
+<p>Nechápejte mě špatně - třeba tu nějaké skvělé důvody jsou, ale <strong>na první pohled</strong> mi to prostě smysl nedává. Pokud se mi líbí jízda na kole, protože s ním na rozdíl od auta můžu po chodníku, prokličkuji kolem kdejaké zácpy a zaparkuji ho u každé lampy, tak z něj přeci nezačnu stavět cykločtyřkolku při prvním zjištění, že na něm domů nepřevezu matraci z IKEA. Prostě si na to vezmu to auto, protože je k tomu dělané - existuje pro tento účel několik desítek let a pokud mě v něm třeba někdo srazí, mám velkou šanci přežít.</p>
+<p>Možná je má analogie nepovedená a myšlenka nedotažená - to je v pořádku. Myšlenka je to dost čerstvá a klidně je možné, že mě dobrým komentářem vyvedete z omylu. Snažím se jen pragmaticky uvažovat nad nástroji, jež máme k tvorbě API k dispozici a pokládat si záludné otázky :-) Nechtěl jsem o tom hned psát na blog, ale Twitter, což je to nejlepší místo pro podobně nezralá zamyšlení, mi na to byl už moc těsný.</p></div></div></div></div>
+  </main>
+
+  <footer class="article-footer mb-5">
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
+      </address>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</article>
+      </div>
+<aside class="promo seealso">
+  <div class="promo-content container">
+    <h3 class="promo-heading fs-1">Další Honzovy články</h3>
+    <ul class="list-unstyled mb-0">
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2022 —
+        <a href="https://honzajavorek.cz/blog/tydenni-poznamky-111-kamaradi-z-afriky/">
+          Týdenní poznámky #111: Kamarádi z Afriky</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/volim-marketing/">
+          Volím marketing</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/bez-auta/">
+          Bez auta</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/spoustim-klub/">
+          Spouštím klub</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2016 —
+        <a href="https://honzajavorek.cz/blog/kolonizatori-a-spravci-kolonii/">
+          Kolonizátoři a správci kolonií</a>
+      </li>
+      <li>
+        <i class="bi bi-search"></i>
+        <a href="https://honzajavorek.cz/blog/">Archiv blogu</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+      <footer class="footer">
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+
+      <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+  </body>
+</html>

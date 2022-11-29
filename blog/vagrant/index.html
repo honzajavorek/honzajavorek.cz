@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/vagrant/">
+    <title>Vagrant &mdash; Javorové lístky</title>
+
+    <meta property="og:title" content="Vagrant &mdash; Javorové lístky">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/vagrant/">
+
+        <meta property="og:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/theme/honza.jpg">
+    <meta name="twitter:card" content="summary">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#457E31">
+
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Javorové lístky &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2013-11-28T11:35:02+01:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
+<article class="article">
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
+  </header>
+  <h1 class="title display-5">
+    Vagrant
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/vagrant/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2013-11-28T11:35:02+01:00">
+          28. 11. 2013
+        </time>
+      </li>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        8
+          min čtení
+      </li>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/vagrant&interval=week&start=2013-11-28T11:35:02+01:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <main class="article-content">
+      <div class="alert alert-warning" role="alert">
+        <p>
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          Tento článek vyšel
+          <strong>před 9 lety</strong>.
+          Můžete si jej přečíst v rámci zkoumání minulosti, ale přepokládejte,
+          že dnes se Honza již nemusí s obsahem ztotožňovat.
+        </p>
+      </div>
+
+    <div><div><div><div><p>Znáte to. <strong>Děláte na pěti projektech</strong>, jeden potřebuje MongoDB, druhý PostgreSQL, třetí MySQL a Redis,
+čtvrtý je ještě na PHP s Apachem. Pátý je čistý Python. Po půl roce děláte na třech projektech, z nichž dva
+jsou nové, první chce ElasticSearch a druhý vás nutí zkoušet si na localhostu něco s Nginxem. Samozřejmě
+ty staré projekty sem tam nějak udržujete, takže je nemůžete jen tak smazat z disku a závislosti vyhodit.</p>
+<p>Na blogu běžně sprostý nebývám, ale berme to jako terminus technicus - po půl roce máte prostě svůj <strong>počítač
+<em>zasraný</em> vývojářskými věcmi</strong>. Pokud navíc máte nějakou odrůdu Ubuntu, služby se vám spouští samy - tzn.
+že vám jede MongoDB, PostgreSQL, MySQL, Redis, Apache, ElasticSearch a Nginx i během toho, co se jenom
+díváte na film.</p>
+<p>No a to jsem ani nezmínil, že kvůli některým věcem musíte docela <strong>zasahovat do OS</strong> - např. pro
+PostgreSQL je běžné mít v systému uživatele pro každou roli v databázi, MongoDB zase po čase
+a určité zátěži vyžaduje změnu pár konfiguráků pro navýšení několika linuxových limitů. <em>Špína
+je zažraná.</em></p>
+<h2 id="reseni">Řešení<small class="permalink"><a href="#reseni" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Když mě tohle celé štvalo, postěžoval jsem si na Twitter a tam mě poslali k <del>šípku</del> Vagrantu.
+<a href="http://vagrantup.com/">Vagrant</a> je takový <strong>obal nad VirtualBoxem či jiným správcem virtuálních mašin</strong>,
+který vám na pár příkazů do minuty vyrobí neekologickou, tedy velice spotřební virtuálku na vývoj.
+Hodně lidí to má na zkoušní <a href="https://www.youtube.com/watch?v=LLCF7vPanrY">atomových výbuchů</a>, ale
+hodí se to právě i na izolaci závislostí potřebných k vývoji.</p>
+<p>Další detaily o Vagrantu si zjistěte v jeho dokumentaci nebo si pusťte tohle video z Tkalců (sraz
+webařů z Valašského Meziříčí), na kterém jsem začal i já:</p>
+<figure class="figure figure-embed"><iframe width="640" height="480" src="//www.youtube.com/embed/EBKGHwJ6Jxs" frameborder="0" allowfullscreen></iframe>
+
+</figure><h2 id="dojmy">Dojmy<small class="permalink"><a href="#dojmy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Chtěl jsem něco, co mi <strong>spustí všechny závislosti když začnu pracovat na projektu</strong>
+a shodí je, když přestanu. Pak jsem chtěl něco, co <strong>izoluje všechny možné databáze a servery</strong> (prostě
+striktně cokoliv za hranicemi běžného <a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/">Pythoního virtualenvu</a>)
+od mého ubohého uživatelského OS. To druhé jsem dostal, to první ne.</p>
+<h3 id="lokalni-sluzby">Lokální služby<small class="permalink"><a href="#lokalni-sluzby" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
+<p>V podstatě mám ty virtuálky hlavně na databáze, jen na jedné mám nějaké to PHP, Apache, apod. Fajn
+je, že pokud člověk striktně dodrží čistotu a ve vlastním OS opravdu žádné takové služby nemá,
+vše lze jednoduše udělat tak, aby to po spuštění <strong>vypadalo jako místní služba</strong>:</p>
+<pre class="highlight"><code><span></span><code><span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">network</span> <span class="s2">"forwarded_port"</span><span class="p">,</span> <span class="ss">guest</span><span class="p">:</span> <span class="mi">5432</span><span class="p">,</span> <span class="ss">host</span><span class="p">:</span> <span class="mi">5432</span>  <span class="c1"># PostgreSQL</span>
+<span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">network</span> <span class="s2">"forwarded_port"</span><span class="p">,</span> <span class="ss">guest</span><span class="p">:</span> <span class="mi">6379</span><span class="p">,</span> <span class="ss">host</span><span class="p">:</span> <span class="mi">6379</span>  <span class="c1"># Redis</span>
+<span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">network</span> <span class="s2">"forwarded_port"</span><span class="p">,</span> <span class="ss">guest</span><span class="p">:</span> <span class="mi">9200</span><span class="p">,</span> <span class="ss">host</span><span class="p">:</span> <span class="mi">9200</span>  <span class="c1"># ElasticSearch</span>
+</code></code></pre>
+
+<p>Má to ale i své háčky - např. PostgreSQL takto logicky nepojede přes socket a spolu s dalšími se
+musí dodatečně nastavit, aby obsluhovala i dotazy z "venku". Pro virtuálku je totiž náš OS a z něj
+přicházející spojení vlastně jako <strong>jakýkoliv jiný klient někde z internetu</strong>. Zase si člověk díky tomu
+lépe odzkouší a uvědomí reálnou produkční architekturu, kde většinou není kód a databáze na jednom stroji.</p>
+<p>Velkým problémem, který jsem zatím nedořešil, je magická <strong>autodetekce produkčního a vývojového
+prostředí v Nette</strong>. To si samozřejmě na virtuálce myslí, že je na produkci a ani po různém woodoo
+s maňásky ve tvaru Davida Grudla se mi nepovedlo ho plně přesvědčit o něčem jiném (trochu jo,
+ale z debugbaru zmizela polovina panelů - eh, WTF?). Je to sice <em>legacy</em> projekt, je tam starší Nette,
+kdo ví jak je to dnes, ale stejně. Porod, práce navíc, otrava, nechuť, smutek, atakdále...</p>
+<h3 id="automatizace-workflow">Automatizace workflow<small class="permalink"><a href="#automatizace-workflow" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
+<p>Kód, Python, atd. mám normálně u sebe - to mi nevadí, protože co se týče izolace, vystačím si s
+nástrojem <a href="http://virtualenvwrapper.readthedocs.org/en/latest/">virtualenvwrapper</a> a jeho
+<a href="http://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html#command-mkproject">konceptem pro projekty</a>.
+Když chci ale "spustit" takový projekt, někdy pro to musím udělat celou kopu věcí:</p>
+<ul>
+<li>tunelovat přes SSH vývojový server</li>
+<li>spustit správné databázové aj. servery / spustit Vagrant</li>
+<li>spustit Sublime Text s příslušným projektem</li>
+<li>spustit development server s <code>PYTHONDONTWRITEBYTECODE=1</code> a pod příslušným virtualenvem</li>
+<li>spustit aspoň jeden nějaký terminál v rootu projektu, samozřejmě opět s <code>PYTHONDONTWRITEBYTECODE=1</code> a pod příslušným virtualenvem</li>
+<li>zapnout si v <a href="http://toggl.com/">Togglu</a>, že pracuju na příslušném projektu</li>
+</ul>
+<p>Jak vidíte, <strong>s tímto vším mi Vagrant vůbec nepomůže</strong> a přitom je fakt otrava
+tohle všechno pořád dokola dělat.</p>
+<p>To ani nemluvím o <strong>vypínání</strong>. Můžu mít na virtuálce databázové servery a na <code>vagrant up</code> je spustím, ale musím se zase stejně
+starat o to, abych je potom i vypnul přes <code>vagrant suspend</code>. Na což zapomínám, takže mi pak
+v paměti běží nejen databáze, ale i VirtualBox. Naštěstí tedy většinou aspoň jen z jednoho projektu,
+ale ani to není pravidlem, často mám takto zbytečně rozjeté i dvě virtuálky. V tomto ohledu to tedy
+moc velký posun od <code>service redis-server start</code> a <code>service redis-server stop</code> není.</p>
+<p>Pro práci na <a href="http://synopsi.tv/">Synopsi.TV</a> jsem si napsal
+bash skript (bez toho Togglu) a namapoval si ho na ikonku, ale není to teda nic moc.
+O nějakém vypínání se mi navíc může jen zdát - jedině že bych si udělal druhou ikonku, která to
+všechno shodí a pro jistotu bych si to vrazil i někam do <code>/usr/lib/pm-utils/</code>, aby se to provedlo
+vždy automaticky také před usnutím počítače.</p>
+<p>Zkoušel jsem ten svůj skript hodit někam do "po spuštění" ke konkrétnímu virtualenvu (<a href="http://virtualenvwrapper.readthedocs.org/en/latest/hooks.html">vitualenvwrapper
+má nějaké hooky</a>, podobně jako v gitu),
+ale toto řešení shořelo na tom, že <strong>životnost virtualenvu
+není rovna mé práci na projektu</strong> - během práce můžu mít otevřených i pět terminálů a v každém mít
+aktivovaný ten virtualenv. Navíc ani ten se nedeaktivuje (hook se nezavolá) automaticky při zavření
+terminálu, musel bych ručně napsat <code>deactivate</code>, abych vše zavřel - a jsme tam, kde jsme byli.</p>
+<h3 id="devops-provisioning">DevOps &amp; Provisioning<small class="permalink"><a href="#devops-provisioning" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
+<p>Co jsem v poslední době opravdu neměl moc rád a snažil jsem se tomu co nejpečlivěji vyhýbat, bylo
+<em>DevOps</em>, tedy <strong>správa serverů</strong>.</p>
+<p>Rok jsem měl koupené vlastní VPS u Wedosu a platil ho, ale stejně
+jsem vždy věnoval maximum úsilí tomu, aby vše co jsem vyrobil jelo i na free instanci na Heroku,
+kde byl potom deployment absolutně bez práce.</p>
+<p>Štítil jsem se jakékoliv instalace a nastavování. Dokonce mi ten server převzal do správy kamarád
+a řekl mi, že dokud tam budou neziskové projekty, že se o to postará, ale já jsem se ani tak neodhodlal
+tam za ten rok nahrát jediný bajt svého kódu.</p>
+<p>No a s Vagrantem to na mě skočilo ze zálohy jako krvelačná šelma. <strong>Aby na instanci něco jelo, musí
+se to tam nainstalovat a případně ještě nastavit</strong> - takže zase DevOps, zase provisioning. Navíc mi přišlo,
+že jsou v těch virtuálkách nějaké nestandardní haluze, např. jsem se dost pral se špatným locale
+apod. Spousta drbání navíc, které mě vůbec nebaví. Na druhou stranu, má to jednu výhodu a jedno řešení do budoucna:</p>
+<ul>
+<li><strong>Zapisuju si do souboru každý příkaz</strong>, kterým jsem na mašině něco nainstaloval nebo nastavil. Nebo tam přidám aspoň komentář, pokud
+  byla procedura moc interaktivní a nevím, jak bych ji udělal automatizovaně. Dělám si iluze, že tohle mi jednou pomůže
+  stejnou virtuálku nastavit v mžiku znova a stejně tak se dá ten kód verzovat, použít jako moje <em>knowledge base</em> pro skripty k jiným virtuálkám, atd.</li>
+<li>Bude-li mě ve své jednoduchosti otravovat předchozí bod, můžu se <strong>naučit nějaký nástroj na provisioning</strong> (byť mě děsí, že se co půl roku objeví nový, módnější) a <a href="http://docs.vagrantup.com/v2/provisioning/index.html">propojit ho s Vagrantem</a>. Slibuji si od toho, že tam jen napíšu nějaké "nastav mi locale na toto a udělej PostgreSQL uživatele na toto" a on to udělá magicky za mě, bez zkoumání samotných shellových příkazů.</li>
+</ul>
+<p>Takže doufám, že mě ten automatizovaný provisioning jednou nezklame a bude to opravdu
+"DevOps pro blbečky a lenivce", jak si to představuju já.</p>
+<h2 id="zhodnoceni">Zhodnocení<small class="permalink"><a href="#zhodnoceni" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Co mi Vagrant přinesl:</p>
+<ul>
+<li>izolace vývojářského bordelu</li>
+<li>lepší představa o produkční klient-server architektuře</li>
+<li>naučil jsem se něco nového a nejspíš mě to donutí proniknout do toho provisioningu, bez něhož to
+  stejně do budoucna asi moc nepůjde (fůůůj, blééé)</li>
+<li>naučil jsem se zapisovat si příkazy, kterými něco instaluji/nastavuji na serverech</li>
+<li>můžu mít virtuálku dost věrně kopírující produkční prostředí, bez ohledu na svůj vlastní OS
+  (mnohem lépe se z Windows nebo Macu vyvíjí pro Linuxový server apod.)</li>
+<li>mám stále k dispozici závislosti i ke starším projektům a přitom mi nezavazí v systému,
+  navíc i pokud bych virtuálku smazal a k projektu se vrátil po roce, můžu ji snadno obnovit pomocí
+  seznamu příkazů</li>
+</ul>
+<p>Co je na prd:</p>
+<ul>
+<li>neřeší mi to problém se vstupem do a výstupem z práce na konkrétním projektu</li>
+<li>je to práce navíc (ale stejně bych to všechno musel nějak nainstalovat u sebe)</li>
+<li>aplikace si myslí, že jsou na serveru a musí se dodatečně nastavovat, aby odpovídaly i "ven"</li>
+<li>konfigurák je v Ruby, které je pro mě někdy trochu jako hieroglyfy</li>
+<li>nelze se moc vyhnout DevOps, je <del>nutností</del> výhodou se naučit nějaký provisioning</li>
+</ul>
+<p>Kdybyste měli nápad na nějaký <strong>nástroj, který by řešil to zapnutí/vypnutí projektu</strong>, rád si nechám
+poradit. Úplně ideálně kdyby to byla nějaká skrytá feature věcí, které už dávno používám.
+Nebo kdyby to aspoň bylo "pro blbečky" úplně stejně jako Vagrant a člověk to nemusel dlouze
+studovat a hrát si s tím - přeci jen jsem placen za programování a nastavování OS k vývoji je pouze
+otravná, doprovodná činnost (ne, moje hobby to fakt není, hobby je v mých očích florbal nebo tancování).
+Díky za všechny tipy.</p></div></div></div></div>
+  </main>
+
+  <footer class="article-footer mb-5">
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
+      </address>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</article>
+      </div>
+<aside class="promo seealso">
+  <div class="promo-content container">
+    <h3 class="promo-heading fs-1">Další Honzovy články</h3>
+    <ul class="list-unstyled mb-0">
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2022 —
+        <a href="https://honzajavorek.cz/blog/tydenni-poznamky-111-kamaradi-z-afriky/">
+          Týdenní poznámky #111: Kamarádi z Afriky</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/volim-marketing/">
+          Volím marketing</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/bez-auta/">
+          Bez auta</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/spoustim-klub/">
+          Spouštím klub</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2016 —
+        <a href="https://honzajavorek.cz/blog/kolonizatori-a-spravci-kolonii/">
+          Kolonizátoři a správci kolonií</a>
+      </li>
+      <li>
+        <i class="bi bi-search"></i>
+        <a href="https://honzajavorek.cz/blog/">Archiv blogu</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+      <footer class="footer">
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+
+      <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+  </body>
+</html>

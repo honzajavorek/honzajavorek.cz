@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/tydenni-poznamky-tabulky-grafy-a-vymysleni-novych-nabidek-prace/">
+    <title>Týdenní poznámky: Tabulky, grafy a vymýšlení nových nabídek práce &mdash; Javorové lístky</title>
+
+    <meta property="og:title" content="Týdenní poznámky: Tabulky, grafy a vymýšlení nových nabídek práce &mdash; Javorové lístky">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-tabulky-grafy-a-vymysleni-novych-nabidek-prace/">
+
+    <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta property="og:image:width" content="">
+    <meta property="og:image:height" content="">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#457E31">
+
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Javorové lístky &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-09-18T00:00:00+02:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
+<article class="article">
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
+  </header>
+  <h1 class="title display-5">
+    Týdenní poznámky: Tabulky, grafy a vymýšlení nových nabídek práce
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-tabulky-grafy-a-vymysleni-novych-nabidek-prace/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2020-09-18T00:00:00+02:00">
+          18. 9. 2020
+        </time>
+      </li>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        8
+          min čtení
+      </li>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-tabulky-grafy-a-vymysleni-novych-nabidek-prace&interval=week&start=2020-09-18T00:00:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <main class="article-content">
+
+    <div><div><div><div><p>Utekl další týden (14.9. — 18.9.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-media-a-metriky-z-prirucky/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/donate/">podporovatele</a>, a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.</p>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
+Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
+<h2 id="jak-se-mi-dari">Jak se mi daří<small class="permalink"><a href="#jak-se-mi-dari" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Už delší dobu jsem měl v plánu udělat si konečně aspoň úplně jednoduchá čísla ohledně příjmů a výdajů. Prostě mít zcela základní přehled o tom, jak se mi daří a odkud plyne kolik příjmů.</p>
+<p>Pomocí své vlastní knihovny <a href="https://github.com/honzajavorek/fiobank">fiobank</a> jsem měl za jedno dopoledne hotový skript, který mi vytahá transakce z banky a vloží je do Google Sheets. Tohle se teď děje automaticky pravidelně každý den. V Google Sheets mám pak nějaké vzorce a primitivní graf. Zatím stačí. Vydělané peníze jsem rozpočítal na všechny letošní měsíce, tzn. od ledna. Sice jsem "bez práce" už od listopadu, ale řekněme, že do ledna jsem neměl ani ambice nijak vydělávat a dával jsem si něco jako pauzu. Vyšlo mi, že mám zatím čistý měsíční výdělek zhruba 10 000 Kč (nejsou v tom daně, ale je v tom zdrav a soc).</p>
+<figure class="figure"><img alt="Finance" src="https://honzajavorek.cz/images/finance.png" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
+Čísla neukážu, ale mám tady výborné koláčky. Vlevo podíly příjmů, vpravo podíly výdajů.</figcaption></figure>
+<p>Pokud se v rozumném čase dostanu na nějakých 20-30 000 Kč, budu považovat JG za životaschopné a pracovat na tom dál. Než toto budu ale vyhodnocovat, mám v plánu mnohem víc zapracovat na sales a překopat stránku s nabídkami práce. Zatím je tedy tabulka s grafy spíše orientační, než abych si stanovoval nějaké cíle, termíny, apod. Chtěl jsem prostě jen vědět, jak se zhruba věci mají a kolik je přede mnou ještě práce.</p>
+<h2 id="crm">CRM<small class="permalink"><a href="#crm" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Jak jsem psal výše, mám v plánu mnohem víc zapracovat na sales. Ideálně dostat se co nejvíc do povědomí firem a recruiterů, aby věděli, že JG vůbec existuje. Zároveň si prostě psát s firmami a prodávat - jak inzerci práce, tak loga na příručce na další měsíce.</p>
+<p>Doteď jsem si psal s pár firmami nebo recruitery, různými kanály (e-maily, LinkedIn messages, FB messages…) a s různým potenciálem to někam dotáhnout. Ale většinou jsem ani nezvládal udělat pořádný follow-up po delší době apod. Navíc jsem vše držel v hlavě a už jsem i zapomínal, kdo je z jaké firmy, nebo na kterém kanálu jsem s kým mluvil. Takže přišel čas na DIY "sales pipeline". Udělal jsem si jednoduché <a href="https://cs.wikipedia.org/wiki/%C5%98%C3%ADzen%C3%AD_vztah%C5%AF_se_z%C3%A1kazn%C3%ADky">CRM</a>. Je to další tabulka v Google Sheets, kde mám prostě sloupečky jako název firmy, kontaktní osoba, stav naší komunikace, kde se komunikace vede, atd. Celé jedno odpoledne jsem strávil tím, že jsem z hlavy vytahoval, kde jsem s kým komunikoval, a toto jsem zaznamenával do tabulky. Plus velké množství řádků pro firmy, které bych měl teprve oslovit. Pak jsem si rozplánoval do kalendáře, které dny se chci věnovat sales a marketingu.</p>
+<p>Cílem opět není být největším profesionálem na "customer relationship" a stát se nejlepším internetovým obchodníkem na Žižkově, ale prostě být schopen napsat do pár firem, prodat tam, kde se to nabízí ("low hanging fruit") a nezbláznit se z toho. Do budoucna by se mi samozřejmě líbilo, kdyby se JG prodávalo samo, protože to bude skvělý produkt, ale tam se teprve musím dostat a komunikace s firmami je důležitá věc, kterou nesmím opomíjet a která mě tam dovede.</p>
+<p>Zároveň musím lépe poznat cílovku. Věnoval jsem několik hodin rešerši toho, "kam chodí" lidé z HR - co je zajímá, jaké mají influencery, na jakých sociálních sítích jsou nejvíc, jaké mají konference, jaké jsou důležité firmy v oboru, atd. Škoda, že jsem to dělal den před tím, než vyšla <a href="https://www.startupjobs.cz/vzdelavani/pruvodce-hr-nejen-pro-juniory">tahle skvělá příručka pro HR juniory od StartupJobs</a>, kde je to všechno napsané :D Ale zase mě potěšilo, že se informace tam celkem překrývají s tím, co jsem na koleně sám zjistil.</p>
+<h2 id="nova-stranka-s-nabidkami-prace">Nová stránka s nabídkami práce<small class="permalink"><a href="#nova-stranka-s-nabidkami-prace" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Udělal jsem <a href="https://www.facebook.com/groups/junior.guru/permalink/450085692581710/?__cft__%5B0%5D=AZWXv5Y3rLA-8V-LERTjr5LdtflChy3vCamVIp20oogoYab5MDUNO0QkCw69NDZHfU7LBquzztHohOvVrQv4zKB5BEXGIR-ah960G7EYEJGQ9mI5U60vxgwh2SOr9YRM3ZRkW7ztoq4ECtoTRJy44-O-jOS_FDBI1QsD7oudiI6B6FOejyyjC2sRknr3FmyNRH4&amp;__tn__=%2CO%2CP-R">anketu na FB skupině</a>, kde lidi mohli hlasovat o tom, co je nejvíc na stránce s nabídkami práce štve. Většinu věcí vím, že jsou problém, ale podle počtu hlasů si teď můžu prioritizovat práci. V rámci příprav jsem si ještě prošel tento <a href="https://the-ux-mini-course.com/">mini kurz UX</a>, na který jsem kdysi kdesi narazil. Byl fajn, ale je zaměřený spíš na formuláře a těch já moc nemám a mít nebudu. Den po <a href="https://pyvo.cz/praha-pyvo/2020-09/">středečním pražském Pyvu</a> jsem byl funkční jen napůl, tak jsem si jen ujasňoval priority a kreslil, jak by mohly nové nabídky práce vypadat.</p>
+<figure class="figure"><img alt="Návrh nových nabídek práce" src="https://honzajavorek.cz/images/nabidky-prace-navrh.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
+Kdyby vás zajímalo, jak tyhle věci vznikají…</figcaption></figure>
+<p>Během pátku jsem potom vyřešil první velkou věc, která brzdila další rozvoj této stránky: Sloučil jsem seznam nabídek práce z JG a z externích zdrojů. Už tedy nejsou na stránce dva seznamy, ale jeden, a teď ho mohu začít vylepšovat, nějak chytře řadit, filtrovat, apod. Zdá se to jako blbost, ale byla to dost zásadní změna na backendu JG. Doteď se moje a externí nabídky řešily všude separátně, teď jsem ty svoje vrazil přímo do <a href="https://docs.scrapy.org/en/latest/topics/item-pipeline.html">Scrapy pipeline</a>. Musel jsem popřeházet spoustu souborů, změnit hromady testů, napsat nové, upravit chování na mnoha místech.</p>
+<p>Výhodou je, že některé informace, které jsem měl jen u externích nabídek, mám teď i u těch svých. Prozatím se nabídky práce řadí podle toho, jak moc se zdají být juniorní, ale moc dobré to není a budu to příští týden vylepšovat.</p>
+<h2 id="faux-pas-na-goodreads">Faux pas na GoodReads<small class="permalink"><a href="#faux-pas-na-goodreads" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Dělal jsem si pořádek v knížkách a zkusil zase používat <a href="https://www.goodreads.com/">GoodReads</a>. Dříve se mě někdo ptal, jestli na GoodReads bude oficiální záznam pro příručku, a má odpověď byla, že asi ne, protože to teď ani nepoužívám. No ale když jsem se k tomu tedy vrátil, <a href="https://www.goodreads.com/book/show/55336121-p-ru-ka-o-hled-n-prvn-pr-ce-v-it?from_search=true&amp;from_srp=true&amp;qid=GPhvAHV2jx&amp;rank=1">záznam jsem vytvořil</a>. Ale hned jsem to schytal, bez nějakého hezkého verzování podle ISBN to tam nepatří. ISBN jsem následně trochu zkoumal a klidně bych to pro příručku nějak vyřešil, ale nemohu se tím momentálně zabývat. Zatím jsem tam zápis nechal. Jestli jste pravidelní uživatelé GoodReads a taky se vám taky nelíbí, že tam příručka je, dejte mi vědět. Pokud vás bude víc a najdu tlačítko smazat, tak to udělám. Jinak to tam počká, než budu moci řešit ISBN.</p>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<ul>
+<li>Jak jsem trochu tajemně avizoval minule, Fakturoid se mnou udělal rozhovor a dnes v pátek <a href="https://www.fakturoid.cz/blog/2020/09/18/profil-zakaznika-junior-guru">to vyšlo</a>! <a href="https://twitter.com/honzajavorek/status/1306877321924808705">Retweetujte</a> :)</li>
+<li>Do <a href="https://junior.guru/press/">press kitu</a> jsem přidal nějaké fotky.</li>
+<li>Komunikoval jsem s jedním bootcampem a rozmýšleli jsme, jak si můžeme pomoci. Je to těžké: přednášky pro 20 lidí teď pro mě mají malé ROI, oni mají mezinárodní studenty a JG je jen česky, success stories z jejich stránek jen tak přebrat do nezávislého průvodce nemůžu (protože potom by to nebylo nezávislé a fér vůči jiným bootcampům apod., takže buď tyto přebírat nesmím, nebo se za ně musí transparentně platit, nebo je musím přebrat všechny).</li>
+<li>Pracoval jsem celé jedno odpoledne na tom, aby o mě napsalo ještě jedno místní internetové médium.</li>
+<li><a href="https://facebook.com/story.php?story_fbid=10157716805963862&amp;id=104175623861&amp;anchor_composer=false&amp;ref=m_notif">Na volné noze se zmínili o JG</a> na všech svých sociálních sítích. Nemám v tom vůbec prsty, takže mě to velmi potěšilo!</li>
+<li>Zjistil jsem, že <a href="https://twitter.com/honzajavorek/status/1306620863861620739">do mého telefonu jde česky diktovat</a> a se ženou jsme to použili k <a href="https://twitter.com/honzajavorek/status/1306621571751202819">přepisování starých cestovatelských deníků</a>.</li>
+<li>Nevyřešil jsem problém s tím, že nechodí e-maily k mým klientům. Udělal jsem support ticket u <a href="https://sendgrid.com/">SendGridu</a>, ale ti mě v podstatě poslali k šípku s tím, že IP adresy se prostě občas na blocklist dostanou a že mám počkat, až se z něj dostane pryč. WTF. I přesto, že mám 100% reputaci, kvůli sdílené odesílací IP nejsou moje e-maily doručeny. Ani upgrade mého účtu to neřeší, musel bych upgradovat o dva tarify výš, abych měl svou vlastní IP, ale platit za to 2000 Kč měsíčně se mi tedy zrovna nechce. Jaké jsou alternativy?</li>
+</ul>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
+<ul>
+<li><a href="https://nazory.aktualne.cz/stat-zkrachoval-kazdy-cech-se-stava-superministrem-sveho-vla/r~02071908f38711ea80e60cc47ab5f122/">Stát zkrachoval. Každý Čech se stává superministrem svého vlastního osudu</a><br>Stát DIY</li>
+<li><a href="https://www.builtinafrica.io/blog-post/vuyisile-ndlovu-pypi">Developer Hack: Creating a Portable PyPI Server for Offline Access</a><br>Jaké strasti mají programátoři v Africe? Rozhovor s mým kámošem Vuyem ze Zimbabwe.</li>
+<li><a href="https://denikn.cz/435936/chlapi-sobe-ceska-media-jsou-dlouhodobe-pod-nadvladou-muzu-jejich-vliv-nyni-jeste-roste/?ref=dnapp&amp;cst=9640c5a6e9ab98fbe3d8245f9a321d370c028a48&amp;fbclid=IwAR1Pr4YtW1FReWlEAf2FBIHZblo4g9xQ98gYSOsHn-tSDzQMI2xR648G4N0">Chlapi sobě. Česká média jsou dlouhodobě pod nadvládou mužů, jejich vliv nyní ještě roste</a><br>Komentář k sausage party v českých médiích</li>
+<li><a href="https://www.wsj.com/amp/articles/remote-work-is-reshaping-san-francisco-as-tech-workers-flee-and-rents-fall-11597413602#click=https://t.co/rUNGeV9Jyy">Remote Work Is Reshaping San Francisco, as Tech Workers Flee and Rents Fall</a></li>
+<li><a href="https://filmcolossus.com/single-post/2018/02/25/Explaining-the-end-of-THREE-BILLBOARDS-OUTSIDE-EBBING-MISSOURI-the-theme-of-moral-ambiguity-how-endings-inform-the-story-and-whether-or-not-Mildred-kills-the-soldier">Film Colossus: movie endings explained, filmmaker tools of the trade</a><br>Vysvětlení konce filmu Tři billboardy za Ebbingem. Pokud jste film neviděli, nic vám to nedá, jen spoilery. Já to viděl nedávno.</li>
+<li><a href="https://t.co/eXFh7o7En5?ssr=true">Oliver Burkeman's last column: the eight secrets to a (fairly) fulfilled life</a><br>Zajímavé rady, některé zarezonovaly</li>
+<li><a href="https://finmag.penize.cz/kaleidoskop/412998-samba-vychazejiciho-slunce-fascinujici-pribeh-japonskych-imigrantu-v-brazilii">Samba vycházejícího slunce: fascinující příběh japonských imigrantů v Brazílii</a><br>Jak se Japonci dostali do Brazílie</li>
+<li><a href="https://finmag.penize.cz/kaleidoskop/414362-od-conquistadoru-po-nacisty-nemci-v-jizni-americe">Od conquistadorů po nacisty. Němci v Jižní Americe</a><br>Vztah Němců k Jižní Americe byl složitější, než jen že se tam skrývali před Nacisty. Ono i k tomu skrývání musí být dobré podmínky, že…</li>
+<li><a href="https://medium.com/@adent/stat-neimprovizuje-fc50d4952fd6?source=rss-2d88645b5738------2">Stát neimprovizuje</a><br>Měnit stát je jako řídit tanker. Jde to hodně pomalu a zpětná vazba má velké zpoždění. Jde to, ale musí se vědět jak.</li>
+<li><a href="https://almad.blog/essays/bullshit-persuasion/">On Acurracy and Bullshit</a><br>Zajímavá klasifikace způsobů komunikace.</li>
+<li><a href="https://www.czechcrunch.cz/2020/09/gravitace-namisto-vodiku-automobilka-nikola-priznala-ze-jeji-tahac-nejel-na-palivo-budoucnosti-ale-jen-z-kopce/">Gravitace namísto vodíku. Automobilka Nikola přiznala, že její tahač nejel na palivo budoucnosti, ale jen z kopce</a><br>Jak se dneska dělá byznys</li>
+</ul>
+<p><small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small></p></div></div></div></div>
+  </main>
+
+  <footer class="article-footer mb-5">
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
+      </address>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</article>
+      </div>
+<aside class="promo seealso">
+  <div class="promo-content container">
+    <h3 class="promo-heading fs-1">Další Honzovy články</h3>
+    <ul class="list-unstyled mb-0">
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2022 —
+        <a href="https://honzajavorek.cz/blog/tydenni-poznamky-111-kamaradi-z-afriky/">
+          Týdenní poznámky #111: Kamarádi z Afriky</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/volim-marketing/">
+          Volím marketing</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/bez-auta/">
+          Bez auta</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/spoustim-klub/">
+          Spouštím klub</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2016 —
+        <a href="https://honzajavorek.cz/blog/kolonizatori-a-spravci-kolonii/">
+          Kolonizátoři a správci kolonií</a>
+      </li>
+      <li>
+        <i class="bi bi-search"></i>
+        <a href="https://honzajavorek.cz/blog/">Archiv blogu</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+      <footer class="footer">
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+
+      <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+  </body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/tydenni-poznamky-55-python-a-setkavani/">
+    <title>Týdenní poznámky #55: Python a setkávání &mdash; Javorové lístky</title>
+
+    <meta property="og:title" content="Týdenní poznámky #55: Python a setkávání &mdash; Javorové lístky">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-55-python-a-setkavani/">
+
+    <meta property="og:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta property="og:image:width" content="">
+    <meta property="og:image:height" content="">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#457E31">
+
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Javorové lístky &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2021-06-18T00:00:00+02:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
+<article class="article">
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
+  </header>
+  <h1 class="title display-5">
+    Týdenní poznámky #55: Python a setkávání
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-55-python-a-setkavani/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2021-06-18T00:00:00+02:00">
+          18. 6. 2021
+        </time>
+      </li>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        12
+          min čtení
+      </li>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-55-python-a-setkavani&interval=week&start=2021-06-18T00:00:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <main class="article-content">
+
+    <div><div><div><div><p>Utekl další týden (14.6. — 18.6.) a tak <a href="https://honzajavorek.cz/blog/tydenni-poznamky-54-ockovani/">stejně jako minule</a> sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet <a href="https://junior.guru/">junior.guru</a>. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám <a href="https://junior.guru/club/">klub</a>, a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.</p>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
+Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figcaption></figure>
+<p>Tento týden byl ve znamení outdoor akcí a potkávání lidí, ať už kvůli práci, na nějakém srazu, nebo i jen tak na oběd. Je velmi osvěžující zase vídat lidské tváře naživo a ne přes obrazovku počítače. Co osvěžující zas tak není je naše objevování faktu, že nový byt není zas tak moc odolný proti slunci, ačkoliv se zdálo, že je to starý, památkově chráněný pavlačák na náměstíčku, tak by v něm mohl být chládek. Nic takového, pečeme se za živa!</p>
+<h2 id="cesta-do-brna">Cesta do Brna<small class="permalink"><a href="#cesta-do-brna" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Hned v pondělí jsem vyrazil na otočku do Brna, abych navštívil <a href="https://engeto.com/">Engeto</a> a abychom tam udělali nahrávky toho, co jsme připravovali několik předchozích týdnů. Teď nás čeká postprocessing a snad do měsíce to bude venku, těšte se na tu parádu. Jsem vážně zvědavý, co z toho bude. Přinejhorším to někdo pak aspoň zremixuje do memů.</p>
+<h2 id="uzavreni-dohody-s-dalsi-vzdelavaci-agenturou">Uzavření dohody s další vzdělávací agenturou<small class="permalink"><a href="#uzavreni-dohody-s-dalsi-vzdelavaci-agenturou" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Cestou vlakem z Brna jsem dokončil dokument, který sepisoval dohodu nad rámec obchodních podmínek. Tu jsme nakonec tento týden podepsali a tím jsem splnil dlouho táhnoucí se úkol, dokončil jsem přípravy na partnerství se <a href="https://sdacademy.cz/">Software Development Academy</a>, která nedávno na českém trhu otevřela pobočku. Těsně předtím, než jsem začal psát poznámky, jsem přidal jejich logo na stránku o klubu.</p>
+<p>Pokud jejich absolventi projeví zájem o dlouhodobější podporu při hledání práce a rozjezdu nové kariéry, SDA jim zajistí 3 měsíce v klubu. Podobnou spolupráci už mám i s Engetem a je otevřená i jiným vzdělávacím agenturám.</p>
+<h2 id="nove-css-a-stranka-o-klubu">Nové CSS a stránka o klubu<small class="permalink"><a href="#nove-css-a-stranka-o-klubu" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Začal jsem vytvářet novou <a href="https://junior.guru/club/">stránku klubu</a>. Jedu <em>continuous deployment</em>, takže to, co jsem zatím vytvořil, je normálně na produkci, akorát na <a href="https://junior.guru/club2/">přísně utajené, zcela náhodné adrese</a>. Jeden celý den jsem se soustředil čistě na to, co na stránce bude za texty a jak bude vypadat a to jsem si kreslil na papíry.</p>
+<p>Stránku předělávám proto, že ta původní je z ledna a je dnes už prostě slabá. Když jsem ji dělal, klub prakticky ještě neexistoval a já jsem do té stránky spíše promítl svou představu, o čem by klub měl být. Dnes už je po měsících provozu vše jinak a mohu stránku vystavět s mnohem konkrétnější <em>value proposition</em>.</p>
+<p>Zároveň to beru jako příležitost udělat zase trochu něco pro přesun JG na MkDocs, takže nová stránka už bude tam. V souvislosti s tím jsem si vzpomněl, že plugin na makra do MkDocs už <a href="https://github.com/fralau/mkdocs_macros_plugin/issues/81">opravil jednu věc s tím, co je v jakém scope</a>, takže jsem překopal svoje makra, aby už jely podle nového systému, což je zjednodušilo.</p>
+<p>A aby toho nebylo málo, chci pro tuto novou stránku i zcela nové CSS. Dal jsem si call s <a href="https://coreskill.tech/">Danem Srbem</a> a bavili jsme se o tom, jak a co, protože má hodně zkušeností a ví, kam se vyvinul Bootstrap, který chci použít.</p>
+<p>Rozhodl jsem se, že chci určitě už použít nějaký CSS framework, protože převážně ruční způsob, jakým CSS dělám, už není úplně efektivní a udržitelný. Navíc, od frameworku si slibuji, že mi dá konvence a třeba i nějaké komponenty zadarmo. Zprvu jsem myslel, že Bootstrap použiju jen jako Tailwind, akorát tak trochu naopak, to znamená, že si do svého SCSS importuji reset, <a href="https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss">proměnné</a> a podkladovou vrstvu z Bootstrapu a <a href="https://getbootstrap.com/docs/5.0/customize/overview/">dál už si budu vše psát sám</a>, v BEMu a za využití proměnných z BS jako stavebních bloků, ale nakonec asi podlehnu zcela a využiju i komponent a dalších věcí z BS. Systém, jakým to budu dělat, si teprve sedá a bude se vyvíjet, ale víceméně jsem se už rozhodl, že opustím i ten BEM a podřídím se tomu, jak třídy dělá BS, <a href="https://github.com/getbem/getbem.com/issues/152">aby mi to prostě nikde nedřelo</a>, nechám si to hezky všechno nadiktovat.</p>
+<p>Pro ty, kterým se zdá, že BS žádné konvence nemá, tak to sice není tak promakané a praktické jako BEM, ale nějaké konvence má:</p>
+<ul>
+<li><a href="https://getbootstrap.com/docs/5.0/extend/approach/">Bootstrap: Approach</a></li>
+<li><a href="https://github.com/twbs/stylelint-config-twbs-bootstrap">twbs/stylelint-config-twbs-bootstrap</a> (Stylelint nastavení)</li>
+<li><a href="https://codeguide.co/">Code Guide</a> (od autora Bootstrapu)</li>
+</ul>
+<p>Rozhodl jsem se teda začít s CSS úplně nanovo, což jsem si už delší dobu přál. Upravil jsem Gulp a vše tak, aby mi to generovalo ze separátních SCSS souborů zvlášť bundle, který připojuji zatím pouze v této jediné nové stránce, ale později ji chci rozšířit postupně na všechny stránky, které už jedou pod MkDocs. Tam vytvořím zcela nové HTML s prvky z BS a ostyluji si je podle svého. Moc toho potřeba není: navbar, content, patička. To bude zatím stačit a potom budu přidávat, co budu potřebovat.</p>
+<p>Přidal jsem i <a href="https://stylelint.io/">Stylelint</a>, abych to všechno už psal hezky a podle BS konvencí. Sice jsem do teď na JG žádný linter de facto neměl, pouze na kontrolu vyložených chyb a ne stylu psaní kódu, aby mě to nezdržovalo, ale toto už bude vážně míněná verze JG, taková ta „druhá verze“, tak ať to má už kulturu.</p>
+<p>Abych náhodou nezvětšil CSS bundle, zapojil jsem i <a href="https://purgecss.com/">PurgeCSS</a>, ale jako minimalista a purista jsem zas nechtěl přidat těch npm balíčků moc najednou a tak jsem se zasekl a <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>, který se má s BS správně použít, jsem tam zatím nedal. Dan mě ukecává, ať ho tam dám, ale já to zatím nechávám uležet. Jednak vyžaduje mít v projektu ještě PostCSS, což je zase o nástroj víc, jednak bych byl raději, kdybych psal prostě pouze to CSS, které funguje všude a novějším věcem se prostě vyhnul. Viz <a href="https://www.facebook.com/groups/frontendisti/permalink/2746238622254311/?__cft__%5B0%5D=AZVZJuSpm7zGGaVDL8NhCXZVp5bZNa7GSIgdaqv38ktWV8hkiDgH8s4mD60_D_OP7Cedka39cf_ZU4PRfmLpHyUTAcEyvky-r_S4OsXOdslKcAYmA2uFM5ubpOeBRiQ3BO3GIOZHDt4QJqfQTVoRg7QJ&amp;__tn__=%2CO%2CP-R">starší diskuze na stejné téma o JS</a>. Pokud vám to přijde nepochopitelné, tak se nedá nic dělat, jsem už prostě takový svéráz, který počítá, kolik má npm balíčků v projektu, sestimsmiř. Co taky čekat od člověka, který píše HTML v Jinja2 a ne v Reactu, a který má na projektu tak nemoderní věc, jako je Gulp, že? No ale zatím jsem ten Autoprefixer úplně nevyloučil, jak jsem psal, nechávám to uležet.</p>
+<p>Abych mohl použít BS, musel jsem taky přejít ze starého parseru SCSS na nový. Ten starý stejně už dělá problémy (<a href="https://stackoverflow.com/a/67303155/325365">díky čemuž</a> jsem teda na StackOverflow za poslední týdny nabral snad stovky bodů a stále přibývají :D ), tak jsem ho konečně zahodil a pořídil si <a href="https://github.com/mattdsteele/gulp-dart-sass">gulp-dart-sass</a>.</p>
+<p>Taky bych si sem chtěl poznačit <a href="https://bootstrap.build/app">bootstrap.build/app</a>, který v klubu doporučila <a href="https://martinahytychova.github.io/">Martina Hytychová</a>, ale zatím jsem to teda nepoužil.</p>
+<h2 id="makefile">Makefile<small class="permalink"><a href="#makefile" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Jedna z věcí, které umí pipenv a <a href="https://github.com/python-poetry/poetry">Poetry</a> je neumí, jsou tzv. scripts, tedy sekce v konfiguračním souboru, kam lze napsat různé příkazy a lze je pak skrze pipenv spouštět. Vlastně totéž jako <a href="https://docs.npmjs.com/cli/v6/using-npm/scripts">npm scripts</a>. Osobně naprosto rozumím tomu, že Poetry to oficiálně považuje za „out of scope“ a budu raději, když udělají perfektní nástroj na instalaci a vývoj projektu a tímto se nebudou zatěžovat. Jednou bych chtěl na Poetry přejít, takže jsem tento týden udělal první krok a zkusil jsem místo pipenv scripts přejít na starý dobrý <a href="https://github.com/honzajavorek/junior.guru/blob/master/Makefile">Makefile</a>. Zatím mě to neuráží.</p>
+<p>Jediné, na co jsem narazil, je neohrabanost přidávání dalších parametrů (např. nemohu udělat <code>make test -- -vvx</code>, aby se spustil <code>pytest -vvx</code>, musím tam šaškovat s nějakou proměnnou <code>make test TESTOPTS=-vvx</code>, což mi jako klukovi z 21. století prostě přijde takové moc… fousaté…</p>
+<figure class="figure figure-blockquote"><blockquote class="blockquote">
+<p>Neví někdo o nějakém návodu na Makefile, který nevytvořili C/C++ programátoři před 50 lety tesáním do hliněných tabulek, ale vypadá jako moderní a čitelná dokumentace pro lidi?<br>
+— Honza Javorek v <a href="https://junior.guru/club/">klubu junior.guru</a></p>
+</blockquote>
+</figure><p>Odložím si tady <a href="https://www.gnu.org/software/make/manual/make.html#Simple-Makefile">jediný existující pěkný návod na Makefile na internetu</a>, za odkaz děkuji <a href="https://www.messa.cz/">Petrovi Messnerovi</a>.</p>
+<h2 id="python-komunita">Python komunita<small class="permalink"><a href="#python-komunita" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Tento týden se to všechno sešlo a poměrně dost jsem se po dlouhé době pověnoval Python komunitě, ať už české, pražské, nebo té v Namibii :)</p>
+<ul>
+<li>Schůze výboru <a href="https://pyvec.org/">Pyvce</a>, kde jsme se připravovali na</li>
+<li>historicky první členskou schůzi Pyvce, kde jsme trénovali scházení se, hlasování, dotazování,</li>
+<li>následně první <a href="https://pyvo.cz/praha-pyvo/">Pyvo v Praze</a>, které se odehrálo naživo, v parku na Štvanici,</li>
+<li>následně <a href="https://na.pycon.org/">PyCon NA</a>, který běží teď v pátek a sobotu.</li>
+</ul>
+<p>Z Pyva jsem se vrátil za rozbřesku, takže čtvrtek byl náročnější, ale stálo to jednoznačně za to. Přišla hromada lidí, některé jsem neviděl snad i roky, bylo strašně příjemné se zase vidět naživo, popovídat si, potkat se. Přišli i někteří členové JG klubu, což je strašně super, protože takhle se začátečníci zapojí do dalších programátorských komunit a nasbírají víc kontaktů a kamarádů v oboru, než kdyby byli jen v klubu. Jeden člen byl tak hladový po setkávání s lidmi, že přijel na otočku vlakem z Hodonína.</p>
+<p>Jak jsem psal už dřív, chtěl jsem udělat rozhovor s <a href="https://twitter.com/JessicaUpani">Jessicou Upani</a>, hlavní organizátorkou Python komunity v Namibii, ale bylo to složité, protože jsem s tím vyrukoval dost na poslední chvíli a ona fakt neměla vůbec čas se tomu věnovat. Nakonec mi poslala odpovědi ve čtvrtek ráno, takže skoro celý čtvrtek jsem strávil tím, že jsem dával dohromady ten rozhovor, editoval to, vybíral fotky, atd. Snažil jsem se to stihnout vydat do odpoledne, abych chytil Evropany ještě „živé“ a Amíky „už vzhůru”, tzn. aby měl článek co největší dopad. Samozřejmě to má zafungovat nejen jako rozhovor, ale i jako reklama na PyCon NA, na jejich Patreon, apod. Nakonec se to povedlo a vydal jsem to: <a href="https://honzajavorek.cz/blog/jessica-upani-about-python-events-in-namibia-you-have-to-be-pure-in-terms-of-your-why/">Jessica Upani about Python events in Namibia: You have to be pure in terms of your why</a>. Článek na začátku popisuje i můj vztah k Namibii.</p>
+<p>Zatím samé nadšené ohlasy, tak snad to trochu pomůže! PyCon NA je online a je i v sobotu, takže i když jste třeba promeškali dnešek, můžete se připojit ještě zítra. Pokud chcete pomoci se sdílením, pod článkem jsou odkazy na sociální sítě, třeba <a href="https://twitter.com/honzajavorek/status/1405532488504516617">tweet</a> a tak.</p>
+<p>Vtipné je, že kvůli slunci jsem v těchto dnech vytáhl i klobouk, který jsem v únoru 2020 pořídil na hlavní třídě ve Windhoeku před cestou do pouště. Funguje skvěle, v poušti i rozpálené Praze :)</p>
+<h2 id="dalsi-poznamky">Další poznámky<small class="permalink"><a href="#dalsi-poznamky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<ul>
+<li>Vyprázdnila se mi fronta v <a href="https://buffer.com/">Bufferu</a>, takže jsem se pověnoval sociálním sítím a dal tam věci aspoň na další dva týdny. Většina toho se točí kolem filmu <a href="https://www.csfd.cz/film/892942-nova-sichta/">Nová šichta</a>, který se teď konečně dostává do kin.</li>
+<li>Juchů! Mám novou <a href="https://junior.guru/donate/">sponzorku na GitHubu</a>! Tajnou, jméno nevyzradím. To je přímo funkce GitHub Sponsors, můžete tam někoho sponzorovat bez toho, aby to bylo veřejně vidět a sám už několik takových sponzorů mám. Sice tento způsob sponzorství už moc aktivně nepromuji, ale výzvy k tomu ještě jsou pod stránkami, které se přímo týkají příručky, tak to tam asi našla. Chci spíš, aby lidé šli do klubu a podpořili mě tam, ale je fakt, že přes GitHub Sponsors nebo Patreon mi člověk může poslat víc peněz než stovku měsíčně :) A když se mi povede sponzorujícího člověka kontaktovat, posílám mu link na členství do klubu, protože kdo mi jakýmkoliv kanálem pravidelně posílá peníze, nárok na členství prostě má.</li>
+<li>Někdo zjistil, proč Frozen-Flask nefunguje správně s Flaskem v2 a <a href="https://github.com/Frozen-Flask/Frozen-Flask/pull/115">poslal PR s opravou</a>. Tento týden jsem si našel čas, koukl na to a vydal <a href="https://pypi.org/project/Frozen-Flask/0.18/">novou verzi knihovny</a>, která už by tedy s Flask v2 fungovat měla.</li>
+<li><a href="https://twitter.com/honzajavorek/status/1404735521948147717">Zpropagoval jsem trochu WebExpo</a> a domlouváme se i dál na spolupráci, ze které by mohly plynout nějaké výhody pro členy klubu. Stay tuned!</li>
+<li>JetBrains inzerovali na JG nabídky letních stáží, tak jsem je zkusil oslovit, zda by nechtěli spolupracovat i nějak víc.</li>
+<li>Volal jsem si s Mílou ohledně jeho práce na AI robotovi na třídění pracovních nabídek. Připomenuli jsme si, co jsme zapomenuli a domluvili jsme se, co dál. Míla pak <a href="https://github.com/honzajavorek/junior.guru/pull/579">udělal PR</a>, ale ještě jsem se na něj nestihl podívat.</li>
+<li>Dávám si občas do kalendáře všelijaká obskurní data z vlastního života a pak na mě vyskakují jako výročí. Třeba tento týden to bylo 7 let, co mám řidičák. Skoro celou tu dobu je neplatný, protože záhy po jeho obdržení jsem se přestěhoval z Brna do Prahy a bylo mi zatěžko si jít pro nový jen proto, že se tam má změnit město. (Proč to tam vůbec je?) Použil jsem ho na skútru ve Vietnamu (kde neplatil už tuplem), na Mallorce a na Azorách. Jedinkrát jsem řídil auto přes 2 vesnice u Zlína, měsíc po obdržení řidičáku. Pak už jsem auto nikdy neřídil. Jsem zvědav, jestli se to někdy změní a případně kdy :)</li>
+<li>Našel jsem papíry s poznámkami z ledna, kdy jsem připravoval rozjetí klubu. Přišlo mi to najednou jako cesta do pravěku, úplná věčnost. Bylo strašně osvěžující číst si, co jsem měl za problémy a co jsem v té době řešil a nevěděl jak udělat. Všechny ty věci dnes mám už vyřešené a beru je jako automatické a že to tak i vždycky bylo. Možná bych si měl starší poznámky číst častěji :)</li>
+<li>Moc jsem tento týden nestíhal odpovídat na zprávy a maily, i klub jsem trochu zanedbával, ale v pátek jsem se to pokusil všechno dohnat.</li>
+<li>Během 7 dní od 12.6. do 18.6. jsem při procházkách nachodil 10 km. Celkem jsem se hýbal 4 hodiny a zdolal při tom 10 kilometrů.</li>
+</ul>
+<h2 id="co-planuji">Co plánuji<small class="permalink"><a href="#co-planuji" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Dvě věci, které bych chtěl zvládnout udělat příště:</p>
+<ol>
+<li>Pokračovat v budování nové stránky klubu.</li>
+<li>Naplánovat po pauze nějaké další přednášky v klubu.</li>
+</ol>
+<p>Třetí bod není, chci se soustředit na tyto dvě věci a hlavně tu první nabušit co nejdřív.</p>
+<h2 id="a-co-vy">A co vy?<small class="permalink"><a href="#a-co-vy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem <a href="https://honzajavorek.cz/blog/neni-to-zavod/">můžete vykašlat</a>. Není zač!</p>
+<h2 id="co-me-zaujalo">Co mě zaujalo<small class="permalink"><a href="#co-me-zaujalo" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Když si něco přečtu nebo poslechnu a líbí se mi to, <a href="https://getpocket.com/@honzajavorek">sdílím to na Pocketu</a>. Od posledních poznámek jsem sdílel toto:</p>
+<ul>
+<li><a href="https://a2larm.cz/2021/06/dalsi-zeny-promluvily-o-traumatizujicich-zazitcich-s-dominikem-ferim-problemy-mela-i-nezletila/">Další ženy promluvily o traumatizujících zážitcích s Dominikem Ferim. Problémy měla i nezletilá</a></li>
+<li><a href="https://earthly.dev/blog/thought-leaders/">Don’t Feed the Thought Leaders</a><br>Jak si nechat radit od druhých - čí rady brát s rezervou a čí následovat?</li>
+<li><a href="https://spin.atomicobject.com/2021/02/04/redis-postgresql/">Do You Need Redis? PostgreSQL Does Queuing, Locking, &amp; Pub/Sub</a><br>Potřebujete pro své use-cases Redis? Nestačilo by vám PosgreSQL?</li>
+<li><a href="https://smizell.com/posts/2021/06/in-support-of-the-fifteenth-standard/">In Support of the Fifteenth Standard</a><br>Až vám zase někdo pošle XKCD 927, odpovězte odkazem na tento článek.</li>
+</ul>
+<p><small>Vygenerováno pomocí <a href="https://pypi.org/project/pocket-recommendations/">pocket-recommendations</a>.</small></p></div></div></div></div>
+  </main>
+
+  <footer class="article-footer mb-5">
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Tohle je můj blog už 15 let.
+      </address>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</article>
+      </div>
+<aside class="promo seealso">
+  <div class="promo-content container">
+    <h3 class="promo-heading fs-1">Další Honzovy články</h3>
+    <ul class="list-unstyled mb-0">
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2022 —
+        <a href="https://honzajavorek.cz/blog/tydenni-poznamky-111-kamaradi-z-afriky/">
+          Týdenní poznámky #111: Kamarádi z Afriky</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/volim-marketing/">
+          Volím marketing</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/bez-auta/">
+          Bez auta</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/spoustim-klub/">
+          Spouštím klub</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2016 —
+        <a href="https://honzajavorek.cz/blog/kolonizatori-a-spravci-kolonii/">
+          Kolonizátoři a správci kolonií</a>
+      </li>
+      <li>
+        <i class="bi bi-search"></i>
+        <a href="https://honzajavorek.cz/blog/">Archiv blogu</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+      <footer class="footer">
+        <address class="footer-content container">
+          © Copyright 2007—2022 Honza Javorek
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+
+      <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+  </body>
+</html>
