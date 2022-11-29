@@ -41,7 +41,7 @@ def build(content_path, settings_module, debug):
     args += extra_args
     click.secho(shlex.join(args), fg='green', bold=True)
     click.echo('')
-    subprocess.run(args)
+    subprocess.run(args, check=True)
 
 
 @main.command()
@@ -85,7 +85,7 @@ def dev(context, content_path, articles_count, settings_module,
     click.secho(shlex.join(args), fg='green', bold=True)
     click.echo('')
     try:
-        subprocess.run(args)
+        subprocess.run(args, check=True)
     finally:
         if proc:
             proc.join()
