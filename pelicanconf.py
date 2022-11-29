@@ -114,8 +114,6 @@ PLUGINS = [
     'readtime',
     'seealso',
 ]
-IMG_MAX_PX = 1024
-IMG_MAX_MB = 1
 CUSTOM_FEED_META = {
     'title': BLOGNAME,
     'link': f'{SITEURL}/{ARCHIVES_URL}',

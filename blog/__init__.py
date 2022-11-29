@@ -48,14 +48,21 @@ def build(content_path, settings_module, debug):
 @click.option('--path', 'content_path', default='content', type=click.Path(exists=True))
 @click.option('--articles', 'articles_count', default=1, type=int)
 @click.option('--settings-module', default='pelicanconf', type=importlib.import_module)
+@click.option('--wait', 'wait_sec', default=10, type=int)
 @click.option('--open/--no-open', 'open_browser', default=True)
 @click.option('--ignore-cache/--no-ignore-cache', default=False)
 @click.option('--debug/--no-debug', default=False)
 @click.pass_context
-def dev(context, content_path, articles_count, settings_module, open_browser, ignore_cache, debug):
+def dev(context, content_path, articles_count, settings_module,
+        wait_sec, open_browser, ignore_cache, debug):
     context.invoke(media)
 
     extra_args = []
+
+    if debug:
+        extra_args.append('--debug')
+    if ignore_cache:
+        extra_args.append('--ignore-cache')
 
     paths = sorted(Path(content_path).glob('*.md'), reverse=True)
     if len(paths) > articles_count:
@@ -63,24 +70,25 @@ def dev(context, content_path, articles_count, settings_module, open_browser, ig
                                  for article in paths[:articles_count]])
         extra_args.extend(['-e', f'ARTICLE_PATHS={paths_json}'])
 
-    if debug:
-        extra_args.append('--debug')
-    if ignore_cache:
-        extra_args.append('--ignore-cache')
+    proc = None
     if open_browser:
         path = paths[0]
         slug = re.search(settings_module.FILENAME_METADATA, path.stem).group('slug')
         output_path = settings_module.ARTICLE_URL.format(slug=slug)
         proc = multiprocessing.Process(target=dev_open,
-                                       args=(output_path, 5))
+                                       args=(output_path, wait_sec))
         proc.start()
 
     args = ['pelican', content_path, '--fatal=errors',
-            '--listen', '--bind=localhost', '--autoreload']
+            '--listen', '--autoreload', '--bind=localhost']
     args += extra_args
     click.secho(shlex.join(args), fg='green', bold=True)
     click.echo('')
-    subprocess.run(args)
+    try:
+        subprocess.run(args)
+    finally:
+        if proc:
+            proc.join()
 
 
 def dev_open(path, wait_sec):

@@ -13,6 +13,7 @@ logger = logging.getLogger(__name__)
 
 
 VIDEO_SUFFIXES = ['.gif']
+
 VECTOR_SUFFIXES = ['.svg']
 
 
@@ -22,22 +23,7 @@ def register():
 
 def process_media(generators):
     for article in get_articles(generators):
-        content_dir = article.settings['PATH']
-
-        if hasattr(article, 'image'):
-            attrs = check_img_src(article.image, content_dir,
-                                  max_px=article.settings['IMG_MAX_PX'],
-                                  max_mb=article.settings['IMG_MAX_MB'])
-            for attr_name, attr_value in attrs.items():
-                setattr(article, attr_name, attr_value)
-            article.metadata.update(attrs)
-
         with parse_html(article, modify=True) as html_tree:
-            for img in html_tree.xpath('//img'):
-                check_img_src(img.get('src'), content_dir,
-                              max_px=article.settings['IMG_MAX_PX'],
-                              max_mb=article.settings['IMG_MAX_MB'])
-
             for iframe in html_tree.xpath('//iframe'):
                 iframe_to_figure(iframe)
 
@@ -121,40 +107,6 @@ def create_figcaption(img):
         return
 
     img.getparent().append(figcaption)
-
-
-def check_img_src(img_src, content_dir, max_px, max_mb):
-    logger.info('Checking %s', img_src)
-
-    if img_src.startswith('http'):
-        logger.error('Found remotely linked image: %s', img_src)
-        return None, None
-
-    filename = get_image_filename(content_dir, img_src)
-    if filename.suffix.lower() in VECTOR_SUFFIXES:
-        logger.info('Vector image: %s', img_src)
-        return None, None
-
-    try:
-        size_mb = filename.stat().st_size / 1024 / 1024
-        with Image.open(filename) as img:
-            width, height = img.size
-        is_video = filename.suffix.lower() in VIDEO_SUFFIXES
-    except IOError:
-        logger.error('Image not found: %s', img_src)
-        return dict(width=None, height=None, color=None)
-
-    if not is_video and size_mb > max_mb:
-        logger.error('Image too large: %s (%dmb, max size: %dmb)', img_src, size_mb, max_mb)
-    if width > max_px:
-        logger.error('Image too large: %s (%dpx, max width: %dpx)', img_src, width, max_px)
-    if height > max_px:
-        logger.error('Image too large: %s (%dpx, max height: %dpx)', img_src, height, max_px)
-    return dict(image_width=width, image_height=height)
-
-
-def get_image_filename(content_dir, img_src):
-    return Path(content_dir) / re.sub(r'.*/images/', 'images/', img_src)
 
 
 def element(tag, classes=None):

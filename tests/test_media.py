@@ -13,6 +13,6 @@ from blog.media import MEDIA_RE
 def test_media_re(source):
     assert MEDIA_RE.search(f'''
         Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. {source} [Proin](#proin) finibus ex erat,
-        et rhoncus tortor consectetur sed.
+        elit. [{source}{{: .right }}](https://example.com) [Proin](#proin)
+        finibus ex erat, et rhoncus tortor consectetur sed.
     ''').group(0) == source
