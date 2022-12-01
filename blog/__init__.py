@@ -50,18 +50,18 @@ def build(content_path, settings_module, debug):
 @click.option('--settings-module', default='pelicanconf', type=importlib.import_module)
 @click.option('--wait', 'wait_sec', default=10, type=int)
 @click.option('--open/--no-open', 'open_browser', default=True)
-@click.option('--ignore-cache/--no-ignore-cache', default=False)
+@click.option('--cache/--no-cache', default=True)
 @click.option('--debug/--no-debug', default=False)
 @click.pass_context
 def dev(context, content_path, articles_count, settings_module,
-        wait_sec, open_browser, ignore_cache, debug):
+        wait_sec, open_browser, cache, debug):
     context.invoke(media)
 
     extra_args = []
 
     if debug:
         extra_args.append('--debug')
-    if ignore_cache:
+    if not cache:
         extra_args.append('--ignore-cache')
 
     paths = sorted(Path(content_path).glob('*.md'), reverse=True)
