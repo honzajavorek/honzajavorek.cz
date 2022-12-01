@@ -19,20 +19,35 @@ SKIP_FILES = ['.DS_Store']
 SKIP_RESIZE_SUFFIXES = ['.gif', '.svg']
 
 MEDIA_RE = re.compile(r'''
-(?P<media>
+(?P<media_md>
     \!\[
         [^\]]*
     \]
     \(
-        (?P<path>
-            (?P<static>
+        (?P<path_md>
+            (?P<static_md>
                 \{static\}
             )?
             [^\s\]\{]+
         )
     \)
 )
-''', re.VERBOSE)
+|
+(?P<media_html>
+    <img
+        (\s[^>]*)?
+        \ssrc=
+            ["\']
+                (?P<path_html>
+                    (?P<static_html>
+                        \{static\}
+                    )?
+                    [^>]+
+                )
+            ["\']
+    >
+)
+''', re.VERBOSE | re.IGNORECASE)
 
 IMAGE_METADATA_RE = re.compile(r'Image: images/(?P<path>\S+)')
 
@@ -92,13 +107,15 @@ def main(content_path, images_path, overwrite, detect_unused, resize):
 
 
 def process_match(source_path, images_path, match, overwrite=False, images=None):
-    if match.group('static'):
-        image_path = Path(match.group('path').replace(f'{{static}}/{images_path.name}', str(images_path)))
+    groups = merge_match_groups(match.groupdict())
+
+    if groups['static']:
+        image_path = Path(groups['path'].replace(f'{{static}}/{images_path.name}', str(images_path)))
         assert image_path.exists()
         images.add(image_path)
-        return match.group('media')
+        return groups['media']
 
-    path = match.group('path')
+    path = groups['path']
     click.secho(f'Processing image {path} in {source_path}', bold=True, fg='yellow')
 
     if path.startswith('http'):
@@ -120,4 +137,13 @@ def process_match(source_path, images_path, match, overwrite=False, images=None)
 
     assert image_path.exists()
     images.add(image_path)
-    return match.group('media').replace(path, f'{{static}}/images/{image_path.name}')
+    return groups['media'].replace(path, f'{{static}}/images/{image_path.name}')
+
+
+def merge_match_groups(groups):
+    return {name: (
+                groups.get(f'{name}_html')
+                if groups['media_md'] is None
+                else groups[f'{name}_md']
+            )
+            for name in ['media', 'path', 'static']}
