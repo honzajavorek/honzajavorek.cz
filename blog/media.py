@@ -66,7 +66,6 @@ def main(content_path, images_path, overwrite, detect_unused, resize):
 
         # record images linked from metadata
         for match in IMAGE_METADATA_RE.finditer(source):
-            # TODO attrs
             images.add(images_path / match.group('path'))
 
         # find all linked images, copy them to the blog source
