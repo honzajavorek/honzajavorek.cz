@@ -12,11 +12,6 @@ from blog.plugins.utils import parse_html, wrap_element, get_articles
 logger = logging.getLogger(__name__)
 
 
-VIDEO_SUFFIXES = ['.gif']
-
-VECTOR_SUFFIXES = ['.svg']
-
-
 def register():
     signals.all_generators_finalized.connect(process_media)
 
