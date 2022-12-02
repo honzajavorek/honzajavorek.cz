@@ -83,7 +83,7 @@ Fotka od <a href="https://unsplash.com/@imattsmart">iMattSmart</a></figcaption><
 <p>Kdybych se snažil prorazit na celosvětovém trhu, asi by mělo smysl blog postupně posouvat blíž a blíž k angličtině jako k hlavnímu jazyku. Moje podnikání je ale pouze pro ty, kdo rozumí česky, a tak sem každý týden píšu v češtině týdenní poznámky, které nyní tvoří většinu obsahu zde vydaného.</p>
 <p>Celkem je tady přes 500 článků a anglicky je jich 16. I většina všeho ostatního, co kde dělám, je v češtině, např. vystupování v podcastech nebo publikování v médiích. Moje publikum je prostě české, případně slovenské.</p>
 <p>Velkou změnou na blogu je tedy rezignace na angličtinu jako výchozí jazyk. Neříkám, že občas nenapíšu anglický článek, ale výchozím jazykem bude čeština. Moje osobní stránka bude česky a úvodní stránka blogu taky.</p>
-<p>Minule jsem psal o tom, že tradiční název blogu, <strong>Javorové lístky</strong>, zahazuji, a bude to prostě <strong>HJ's blog</strong>. Tak teď se zase vracím k tradici! Javorové lístky jsou zpět :)</p>
+<p>Minule jsem psal o tom, že tradiční název blogu, <strong>Javorové lístky</strong>, zahazuji, a bude to prostě <strong>HJ's blog</strong>. Tak teď se vracím k tradici! Javorové lístky jsou zpět :)</p>
 <h2 id="uspechy-a-nejvetsi-pecky">Úspěchy a největší pecky<small class="permalink"><a href="#uspechy-a-nejvetsi-pecky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Na své osobní stránce i na hlavní stránce blogu jsem vypíchl nějaké hlavní věci, o které by se lidi měli zajímat, když sem přijdou. Na mé osobní stránce je takhle několik mých kariérních milníků a úspěchů.</p>
 <figure class="figure"><img alt="Moje úspěchy" class="img-thumbnail img-fluid figure-img rounded" src="https://honzajavorek.cz/images/screenshot-2022-12-01-at-20.42.16.png"></figure>
@@ -183,6 +183,29 @@ Commands:
 <p>Budu rád, když mi dáte vědět, jak se vám nová podoba blogu líbí a co je tady na prd. Třeba to opravím. Napište do komentářů, nebo <a href="https://github.com/honzajavorek/honzajavorek.cz/issues">založte issue</a> :)</p></div></div></div></div>
   </main>
 
+  <section id="comments" class="article-comments comments">
+      <div class="comments-telegram">
+        <script>
+          function comments(button) {
+            button.setAttribute('disabled', '');
+            const div = document.createElement('div');
+            div.classList.add('comments-frame');
+            const script = document.createElement('script');
+            script.setAttribute('src', 'https://telegram.org/js/telegram-widget.js?21');
+            script.dataset.telegramDiscussion = "honzajavorekcz/38";
+            script.dataset.commentsLimit = 50;
+            script.dataset.color = 212529;
+            div.append(script);
+            button.parentNode.append(div);
+            button.remove();
+          }
+        </script>
+        <button class="btn btn-primary btn-lg" onclick="comments(this);">
+          <i class="bi bi-chat-dots"></i>
+            Komentáře
+        </button>
+      </div>
+  </section>
   <footer class="article-footer mb-5">
     <div id="bio" class="article-bio bio">
       <header class="bio-header">
