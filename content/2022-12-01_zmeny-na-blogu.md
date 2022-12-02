@@ -1,6 +1,7 @@
 Title: Změny na blogu
 Image: images/imattsmart-sm0bkoj5bna-unsplash.jpg
 Lang: cs
+Telegram-Comments: https://t.me/honzajavorekcz/38
 
 
 Je to skoro dva roky od chvíle, kdy jsem naposledy předělával svou osobní stránku a blog. Většinou když to dělám, tak píšu článek o tom, co jsem změnil a proč. [Udělal jsem to minule]({filename}2019-12-31_reviving-my-blog.md) a dělám to i teď.
