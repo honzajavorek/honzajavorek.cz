@@ -17,7 +17,7 @@ Celkem je tady přes 500 článků a anglicky je jich 16. I většina všeho ost
 
 Velkou změnou na blogu je tedy rezignace na angličtinu jako výchozí jazyk. Neříkám, že občas nenapíšu anglický článek, ale výchozím jazykem bude čeština. Moje osobní stránka bude česky a úvodní stránka blogu taky.
 
-Minule jsem psal o tom, že tradiční název blogu, **Javorové lístky**, zahazuji, a bude to prostě **HJ's blog**. Tak teď se zase vracím k tradici! Javorové lístky jsou zpět :)
+Minule jsem psal o tom, že tradiční název blogu, **Javorové lístky**, zahazuji, a bude to prostě **HJ's blog**. Tak teď se vracím k tradici! Javorové lístky jsou zpět :)
 
 ## Úspěchy a největší pecky
 
