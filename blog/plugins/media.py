@@ -21,7 +21,7 @@ def process_media(generators):
     content_dir = Path(generators[0].settings['PATH'])
 
     for article in get_articles(generators):
-        if article.image:
+        if getattr(article, 'image', None):
             image_path = content_dir / article.image
             width, height = get_dimensions(image_path)
             article.metadata['image_width'] = width

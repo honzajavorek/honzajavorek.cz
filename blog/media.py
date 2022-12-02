@@ -1,10 +1,11 @@
 import re
 import shutil
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, unquote
 from functools import partial
 
 import click
+from slugify import slugify
 import requests
 from send2trash import send2trash
 from PIL import Image
@@ -128,11 +129,12 @@ def process_match(source_path, images_path, match, overwrite=False, images=None)
                 for chunk in progress:
                     f.write(chunk)
     else:
-        image_path = images_path / Path(path).name.lower()
+        unquoted_path = Path(unquote(path))
+        image_path = images_path / (slugify(unquoted_path.stem) + unquoted_path.suffix.lower())
         if not overwrite and image_path.exists():
             raise FileExistsError(str(image_path))
         click.echo(f'Copying to {image_path}')
-        shutil.copy2(source_path.parent / path, image_path)
+        shutil.copy2(source_path.parent / unquoted_path, image_path)
 
     assert image_path.exists()
     images.add(image_path)
