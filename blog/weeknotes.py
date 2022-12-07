@@ -59,9 +59,7 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
     last_weeknotes_date = date.fromisoformat(last_weeknotes_path.stem[:10])
     last_weeknotes_date_cz = f'{last_weeknotes_date:%-d}. {last_weeknotes_date:%-m}.'
     last_weeknotes_slug = last_weeknotes_path.stem[11:]
-
-    number = len(weeknotes_paths) + 1
-    prefix = f'{title_prefix} #{number}: '
+    prefix = f'{title_prefix}: '
 
     # jobs
     res = requests.get(jobs_api_url, stream=True)
