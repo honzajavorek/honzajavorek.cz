@@ -27,7 +27,10 @@ STRAVA_ACTIVITY_TYPES = {
 }
 
 TITLES = {
-    'www.facebook.com': '(něco na Facebooku)'
+    'www.facebook.com': '(něco na Facebooku)',
+    'facebook.com': '(něco na Facebooku)',
+    'twitter.com': '(něco na Twitteru)',
+    'mobile.twitter.com': '(něco na Twitteru)'
 }
 
 
@@ -113,16 +116,16 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
         - Finanční výsledky, návštěvnost a další čísla k JG [mám přímo na webu](https://junior.guru/open/). {jobs_text}
 
 
+        <div class="alert alert-warning" role="alert" markdown="1">
+        **Okénko duševního zdraví.** Máte dojem, že na rozdíl ode mně nic nestíháte? Buďte v klidu, [není to závod]({{filename}}2020-06-04_neni-to-zavod.md)!
+        </div>
+
+
         ## Plánuji
 
         1.
         2.
         3.
-
-
-        <div class="alert alert-warning" role="alert">
-        **Okénko duševního zdraví.** Máte dojem, že na rozdíl ode mně nic nestíháte? Buďte v klidu, [není to závod]({{filename}}2020-06-04_neni-to-zavod.md)!
-        </div>
 
 
         ## Zaujalo mě
@@ -148,6 +151,8 @@ def get_articles(last_weeknotes_slug, telegram_channel, telegram_app_api_id, tel
     with TelegramClient('weeknotes', telegram_app_api_id, telegram_app_api_hash) as telegram:
         channel = telegram.get_entity(telegram_channel)
         for message in telegram.iter_messages(channel):
+            if not message.message:
+                continue
             if last_weeknotes_slug in message.message:
                 break
             else:

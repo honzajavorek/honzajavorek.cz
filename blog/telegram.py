@@ -46,13 +46,12 @@ def main(bot_token, content_path, channel, repo, deployment_polling_interval, se
             if status['state'] in ['success', 'error', 'failure', 'inactive']:
                 break
             time.sleep(deployment_polling_interval)
+        time.sleep(3)  # arbitrary wait just to be sure
 
         click.echo(f"Posting {article_url} to Telegram")
         text = f"{article_title} {article_url}"
         url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
-        response = requests.get(url, params=dict(chat_id=f"@{channel}",
-                                                parse_mode='Markdown',
-                                                text=text))
+        response = requests.get(url, params=dict(chat_id=f"@{channel}", text=text))
         response.raise_for_status()
         data = response.json()
         assert data['ok'], data
