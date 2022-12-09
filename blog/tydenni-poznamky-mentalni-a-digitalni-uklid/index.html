@@ -174,7 +174,7 @@ Takhle to pak vypadá z pohledu uživatele. Prostě si nakliká, kde chce být a
 <li><a href="https://twitter.com/dagorenouf/status/1600135775651233792">(něco na Twitteru)</a><br>Škoda, že přesně tohle vůbec neumím.</li>
 <li><a href="https://simonwillison.net/2022/Dec/4/give-me-ideas-for-crimes-to-do/">A new AI game: Give me ideas for crimes to do</a><br>Jak přelstít umělou inteligenci a nechat ji vymýšlet třeba zločiny?</li>
 <li><a href="https://honzajavorek.cz/blog/zmeny-na-blogu/">Změny na blogu — Javorové lístky</a><br>Změny na blogu</li>
-<li><a href="https://streetofcode.sk/podcast/ne-vhodne-rady-pre-zacinajucich-programatorov">Ep. 93 – (Ne)vhodné rady pre začínajúcich programátorov | Street of Code</a><br>Nevhodné rady pro začínající programátory. Super epizoda! 💯</li>
+<li><a href="https://streetofcode.sk/podcast/ne-vhodne-rady-pre-zacinajucich-programatorov">Ep. 93 - (Ne)vhodné rady pre začínajúcich programátorov | Street of Code</a><br>Nevhodné rady pro začínající programátory. Super epizoda! 💯</li>
 <li><a href="https://nazory.aktualne.cz/komentare/drzme-muskovi-palce-at-twitter-znici-co-nejrychleji/r~8f7199bc6a7211edba5b0cc47ab5f122/?utm_source=mediafed&amp;utm_medium=rss&amp;utm_campaign=mediafed">Držme Muskovi palce, ať Twitter zničí co nejrychleji</a><br>Klimeš mi tímto článkem mluví z duše. A dokonce navazuje na Zelenku: „Ačkoli si toho drtivá většina lidí není vědoma, stal se v Česku Twitter snad nejtoxičtější sociální sítí. Z prostého důvodu. Má zde přes milion aktivních uživatelů, z nichž drtivá většina žije v Praze a několika málo dalších velkých městech. Tak koncentrovaná skupina je vysněným terčem politických marketérů.”</li>
 <li><a href="https://medium.com/@lenka.stawarczyk/pro%C4%8D-si-%C5%BEeny-p%C5%99i-hled%C3%A1n%C3%AD-pr%C3%A1ce-nev%C4%9B%C5%99%C3%AD-a-nejsou-sp%C3%AD%C5%A1-jen-vyb%C3%ADrav%C3%A9-a50c936fb805">Proč si ženy při hledání práce nevěří? A nejsou spíš jen vybíravé?</a><br>Skvěle napsaný a velmi přínosný článek demýtizující tzv. confidence gap: Že mužům stačí splnit 60 % požadavků v pracovním inzerátu a už se hlásí, zatímco ženy se nepřihlásí, dokud nemají 100 %. Text poskytuje zdroj statistiky, podrobnější rozbor problému, návrhy toho, co mohou firmy dělat. Ženy „…jsou trochu soudnější a zdrženlivější než muži. Nechtějí trávit čas a energii někde, kde nevěří, že můžou uspět.” Budu muset opravit příručku! Mnoho z věcí zmíněných v článku navíc platí i pro juniory v IT. Například popsat jasně a jednoznačně věci, které firma vyžaduje, a které jsou bonus, to je problém většiny juniorních nabídek.</li>
 <li><a href="https://houdekpetr.blogspot.com/2022/07/moje-tvoje-lzi.html">Moje a tvoje lži</a><br>„Morální fakta vnímáme za objektivní, zároveň je aplikujeme v závislosti na kontextu našich zájmů či zájmů vlastní skupiny. A psychologický výzkum ukazuje, že vlastní překročení pravidel omlouváme, lži naše či oblíbených politiků vnímáme za obhajitelné, zato lži druhých jsou jasnou známkou jejich morálního úpadku.“</li>
@@ -196,6 +196,29 @@ Takhle to pak vypadá z pohledu uživatele. Prostě si nakliká, kde chce být a
 </ul></div></div></div></div>
   </main>
 
+  <section id="comments" class="article-comments comments">
+      <div class="comments-telegram">
+        <script>
+          function comments(button) {
+            button.setAttribute('disabled', '');
+            const div = document.createElement('div');
+            div.classList.add('comments-frame');
+            const script = document.createElement('script');
+            script.setAttribute('src', 'https://telegram.org/js/telegram-widget.js?21');
+            script.dataset.telegramDiscussion = "honzajavorekcz/42";
+            script.dataset.commentsLimit = 50;
+            script.dataset.color = 212529;
+            div.append(script);
+            button.parentNode.append(div);
+            button.remove();
+          }
+        </script>
+        <button class="btn btn-primary btn-lg" onclick="comments(this);">
+          <i class="bi bi-chat-dots"></i>
+            Komentáře
+        </button>
+      </div>
+  </section>
   <footer class="article-footer mb-5">
     <div id="bio" class="article-bio bio">
       <header class="bio-header">
