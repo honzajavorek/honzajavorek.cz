@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Mentální a digitální úklid
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky
+Telegram-Comments: https://t.me/honzajavorekcz/42
 
 
 Utekl zas nějaký ten týden (11. 11. až 9. 12.) a tak [stejně jako minule]({filename}/2022-11-11_tydenni-poznamky-111-kamaradi-z-afriky.md) sepisuji, co jsem dělal a co jsem se naučil. Tvořím [junior.guru](https://junior.guru/) a nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/) a členy by mohlo zajímat, co dělám. Psaní poznámek mi taky pomáhá nezbláznit se a nepropadat pocitu, že je konec týdne a já jsem nestihl nic udělat.
