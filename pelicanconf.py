@@ -114,12 +114,12 @@ PLUGINS = [
     'readtime',
     'seealso',
 ]
-CUSTOM_FEED_META = {
-    'title': BLOGNAME,
-    'link': f'{SITEURL}/{ARCHIVES_URL}',
+CUSTOM_FEED_META = lambda settings: {
+    'title': settings['BLOGNAME'],
+    'link': f"{settings['SITEURL']}/{settings['ARCHIVES_URL']}",
     'description': 'Blog Honzy Javorka',
     'author_email': 'mail@honzajavorek.cz',
-    'author_name': AUTHOR,
-    'author_link': SITEURL,
-    'feed_copyright': f'{COPYRIGHT} {AUTHOR} <{SITEURL}>',
+    'author_name': settings['AUTHOR'],
+    'author_link': settings['SITEURL'],
+    'feed_copyright': f"{settings['COPYRIGHT']} {settings['AUTHOR']} <{settings['SITEURL']}>",
 }

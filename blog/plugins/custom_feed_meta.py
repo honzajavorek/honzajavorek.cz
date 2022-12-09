@@ -6,4 +6,5 @@ def register():
 
 
 def set_meta(context, feed):
-    feed.feed.update(context['CUSTOM_FEED_META'])
+    feed_meta = context['CUSTOM_FEED_META'](context)
+    feed.feed.update(feed_meta)
