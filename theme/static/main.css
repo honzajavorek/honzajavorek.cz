@@ -549,3 +549,7 @@ pre code {
 .inline-section-item.nowrap {
   white-space: nowrap;
 }
+
+.article-content .alert-warning a {
+  color: var(--bs-alert-color);
+}
