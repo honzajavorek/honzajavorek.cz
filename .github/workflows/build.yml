@@ -37,9 +37,6 @@ jobs:
       - name: Install JS dependencies for the theme
         run: npm install --prefix=./theme
 
-      - name: Remove drafts
-        run: rm -r ./content/drafts
-
       - name: Pelican Build
         run: poetry run blog build
 

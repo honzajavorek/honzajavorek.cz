@@ -79,7 +79,6 @@ OUTPUT_PATH = 'public/'
 IGNORE_FILES = [
     '.#*',
     '.DS_Store',
-    'drafts',
 ]
 DELETE_OUTPUT_DIRECTORY = False
 
