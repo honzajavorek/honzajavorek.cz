@@ -57,6 +57,7 @@ def load_appearances(generators):
         )
         for article in articles
         if (
+            article.status == 'published' and
             (settings['NOW'].year - article.date.year <= settings['OUTDATED_ARTICLE_YEARS']) and
             (settings['WEEKNOTES_TAG'] not in [tag.name for tag in getattr(article, 'tags', [])])
         ) or (

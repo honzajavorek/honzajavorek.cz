@@ -35,3 +35,8 @@ def get_articles(generators):
     for generator in generators:
         if isinstance(generator, ArticlesGenerator):
             yield from generator.articles
+            yield from generator.translations
+            yield from generator.hidden_articles
+            yield from generator.hidden_translations
+            yield from generator.drafts
+            yield from generator.drafts_translations

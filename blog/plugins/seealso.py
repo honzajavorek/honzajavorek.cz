@@ -16,7 +16,9 @@ def register():
 def set_seealso(generators):
     settings = generators[0].settings
 
-    articles = sorted(get_articles(generators), key=attrgetter('date'), reverse=True)
+    articles = [article for article in get_articles(generators)
+                if article.status == 'published']
+    articles = sorted(articles, key=attrgetter('date'), reverse=True)
     articles_by_lang = dict(cs=[a for a in articles if a.lang == 'cs'],
                             en=[a for a in articles if a.lang == 'en'])
 

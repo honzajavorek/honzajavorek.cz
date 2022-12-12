@@ -23,10 +23,18 @@ TELEGRAM_COMMENTS_KEY = 'Telegram-Comments'
 @click.option('--deployment-polling-interval', default=29, type=int, help='In seconds')
 @click.option('--settings-module', default='publishconf', type=importlib.import_module)
 def main(bot_token, content_path, channel, repo, deployment_polling_interval, settings_module):
-    article_path = sorted(content_path.glob('*.md'))[-1]
-    article_text = article_path.read_text()
-    article_metadata = METADATA_RE.search(article_text).group('metadata')
-    click.echo(f"Last article is {article_path}")
+    for article_path in sorted(content_path.glob('*.md'), reverse=True):
+        article_text = article_path.read_text()
+        article_metadata = METADATA_RE.search(article_text).group('metadata')
+        try:
+            status = [line.split(':')[1].strip()
+                      for line in article_metadata.splitlines()
+                      if line.lower().startswith('status:')][0]
+        except IndexError:
+            status = 'published'
+        if status == 'published':
+            click.echo(f"Last published article is {article_path}")
+            break
 
     if TELEGRAM_COMMENTS_KEY not in article_metadata:
         click.echo(f"Article doesn't seem to have Telegram comments")

@@ -62,7 +62,7 @@
       </li>
       <li class="info-readtime">
         <i class="bi bi-stopwatch"></i>
-        {{ article.readtime }}
+        {{ article.readtime|default('0') }}
         {% if article.lang == 'cs' %}
           min čtení
         {% else %}
