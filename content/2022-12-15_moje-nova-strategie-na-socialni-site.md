@@ -7,8 +7,7 @@ Telegram-Comments: https://t.me/honzajavorekcz/47
 Před rokem jsem studoval, [jak si mám vyladit marketing]({filename}2021-11-09_tydenni-poznamky-73-marketing.md).
 Sice jsem to nedotáhl, ale to mi nezabránilo začít systematicky propagovat [junior.guru](https://junior.guru/) na čtyřech sociálních sítích.
 Není divu, že mě to rychle omrzelo a začal jsem v červnu [hledat výpomoc na sociální sítě]({filename}/2022-06-24_vypomoc-na-socialni-site.md).
-Vysvětloval jsem, že se z toho stala nepříjemná režie, se kterou nevím, jak naložit.
-Jak to celé dopadlo?
+Vysvětloval jsem, že se z toho stala nepříjemná režie, se kterou nevím, jak naložit. Jak to celé dopadlo?
 
 
 ![Sociální sítě]({static}/images/dole777-EQSPI11rf68-unsplash.jpg)
