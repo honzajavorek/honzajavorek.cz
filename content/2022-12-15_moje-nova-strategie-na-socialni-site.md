@@ -1,6 +1,7 @@
 Title: Moje nová strategie na sociální sítě
 Image: images/dole777-EQSPI11rf68-unsplash.jpg
 Lang: cs
+Telegram-Comments: https://t.me/honzajavorekcz/47
 
 
 Před rokem jsem studoval, [jak si mám vyladit marketing]({filename}2021-11-09_tydenni-poznamky-73-marketing.md).
