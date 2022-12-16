@@ -116,11 +116,11 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
 
         ## Další
 
-        - Odpovídání v klubu, e-maily, [Pyvec Slack](https://docs.pyvec.org/operations/support.html#sit-kontaktu), atd.
-          Upgradování závislostí na vlastních i Pyvec projektech (zpracovávání Pull Requestů, které průběžně posílá Dependabot).
-        - {strava_text}
-        - Finanční výsledky, návštěvnost a další čísla k JG [mám přímo na webu](https://junior.guru/open/).
-          {jobs_text}
+        -   Odpovídání v klubu, e-maily, [Pyvec Slack](https://docs.pyvec.org/operations/support.html#sit-kontaktu), atd.
+            Upgradování závislostí na vlastních i Pyvec projektech (zpracovávání Pull Requestů, které průběžně posílá Dependabot).
+        -   {strava_text}
+        -   Finanční výsledky, návštěvnost a další čísla k JG [mám přímo na webu](https://junior.guru/open/).
+            {jobs_text}
 
 
         <div class="alert alert-warning" role="alert" markdown="1">
@@ -172,9 +172,9 @@ def get_articles(last_weeknotes_slug, telegram_channel, telegram_app_api_id, tel
                 except AttributeError:
                     article_url = re.search(r'https?://\S+', message.message).group(0)
                     article_title = get_title_from_url(article_url)
+                article_comment = message.message.strip().rstrip(article_url).strip()
                 if 'overcast.fm' in article_url:
                     article_url = get_canonical_overcast_url(article_url)
-                article_comment = message.message.strip().rstrip(article_url).strip()
                 articles.append(dict(title=article_title,
                                      url=article_url,
                                      comment=article_comment))
