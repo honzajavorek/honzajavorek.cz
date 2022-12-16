@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Vymýšlení strategií
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky
+Telegram-Comments: https://t.me/honzajavorekcz/49
 
 
 Utekl zas nějaký ten týden (9. 12. až 16. 12.) a tak [stejně jako minule]({filename}/2022-12-09_tydenni-poznamky-mentalni-a-digitalni-uklid.md) sepisuji, co jsem dělal a co jsem se naučil.
