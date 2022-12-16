@@ -269,7 +269,7 @@ A tak dále.
 
 ### Vylepším web
 
-Pokud junioři chodí z vyhledávače a z podcastu, tak bych se měl věnovat SEO a té části webu junior.guru, která se zabývá kurzy.
+Pokud junioři chodí z vyhledávače, tak bych se měl věnovat SEO a té části webu junior.guru, která se zabývá kurzy.
 SEO škáluje.
 Jedno odpoledne práce vydá na několik měsíců velké parády.
 Sociální sítě jsou příliš pracné na to, aby plnily pouze roli novinek.
