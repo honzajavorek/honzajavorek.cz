@@ -40,6 +40,7 @@ DEFAULT_CATEGORY = 'blog'
 MARKDOWN = {
     'extensions': [
         'markdown_del_ins',
+        'def_list',
     ],
     'extension_configs': {
         'markdown.extensions.codehilite': {
