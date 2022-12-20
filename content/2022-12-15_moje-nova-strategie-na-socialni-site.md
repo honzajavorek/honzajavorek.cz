@@ -80,7 +80,7 @@ Jinak jsem ale na profily nic navíc netlačil.
 
 
 Přemýšlel jsem nad tím, jaké provedu změny.
-Nechal jsem se přesvědčit, že přesunout propagaci junior.guru na osobní profily byla spíš blbost a že ji přesunu zpět na ty „firemní“. Hned to ale neudělám, aby to nevypadalo zmatečně. Spojím to s ostatními změnami.
+Nechal jsem se přesvědčit, že přesunout propagaci junior.guru na osobní profily má pro mě spíš nevýhody a že ji přesunu zpět na ty „firemní“. Hned to ale neudělám, aby to nevypadalo zmatečně. Spojím to s ostatními změnami.
 
 
 Co dál?
