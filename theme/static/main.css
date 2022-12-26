@@ -335,6 +335,12 @@ small,
   margin-right: auto;
 }
 
+.blockquote-tweet br + br {
+  content: "";
+  margin-top: .5rem;
+  display: block;
+}
+
 .figure-embed,
 .figure-embed iframe,
 .figure-embed object {
