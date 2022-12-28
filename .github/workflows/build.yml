@@ -62,5 +62,4 @@ jobs:
         with:
           add: ./content
           message: "add link to comments 💬"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          fetch: false
