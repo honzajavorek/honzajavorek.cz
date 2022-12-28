@@ -91,7 +91,12 @@ STATIC_PATHS = [
     'files',
 ]
 EXTRA_PATH_METADATA = {
-    'images/extra/favicon.ico': {'path': 'favicon.ico'},
+    'images/theme/favicon.ico': {'path': 'favicon.ico'},
+    'images/theme/favicon.svg': {'path': 'favicon.svg'},
+    'images/theme/apple-touch-icon.png': {'path': 'apple-touch-icon.png'},
+    'images/theme/android-chrome-192x192.png': {'path': 'android-chrome-192x192.png'},
+    'images/theme/android-chrome-512x512.png': {'path': 'android-chrome-512x512.png'},
+    'images/theme/site.webmanifest': {'path': 'site.webmanifest'},
 }
 
 # Theme
