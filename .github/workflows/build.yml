@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GH_PAT }}
+          token: 123 #${{ secrets.GH_PAT }}
 
       - name: Install Poetry
         run: pipx install poetry
@@ -45,7 +45,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_PAT }}
+          github_token: 123 #${{ secrets.GH_PAT }}
           publish_dir: ./public
           cname: honzajavorek.cz
 
@@ -58,11 +58,9 @@ jobs:
         run: poetry run blog telegram
 
       - name: Test
-        run: echo "test" > ./content/test.txt
+        run: echo "ouch" > ./content/test.txt
 
       - name: Save to Git
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         uses: EndBug/add-and-commit@v9
         with:
           add: ./content
