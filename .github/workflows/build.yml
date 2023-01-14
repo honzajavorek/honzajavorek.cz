@@ -45,7 +45,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_PAT }}
           publish_dir: ./public
           cname: honzajavorek.cz
 
@@ -57,9 +57,15 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: poetry run blog telegram
 
+      - name: Test
+        run: echo "test" > ./content/test.txt
+
       - name: Save to Git
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         uses: EndBug/add-and-commit@v9
         with:
           add: ./content
-          message: "add link to comments 💬"
+          #message: "add link to comments 💬"
+          message: "test"
           fetch: false
