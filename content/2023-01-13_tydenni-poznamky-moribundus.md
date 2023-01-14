@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Moribundus
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky
+Telegram-Comments: https://t.me/honzajavorekcz/82
 
 
 Utekl zas nějaký ten týden (16. 12. až 13. 1.) a tak [stejně jako minule]({filename}/2022-12-16_tydenni-poznamky-vymysleni-strategii.md) sepisuji, co jsem dělal a co jsem se naučil.
