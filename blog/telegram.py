@@ -18,7 +18,7 @@ TELEGRAM_COMMENTS_KEY = 'Telegram-Comments'
 @click.command()
 @click.argument('bot_token', envvar='TELEGRAM_BOT_TOKEN')
 @click.option('--path', 'content_path', default='content', type=click.Path(exists=True, path_type=Path))
-@click.option('--preflight-chat-id', default='119318534')
+@click.option('--preflight-chat-id', default='119318534')  # https://stackoverflow.com/a/37396871/325365
 @click.option('--channel', 'channel', default='honzajavorekcz')
 @click.option('--repo', 'repo', default='honzajavorek/honzajavorek.cz')
 @click.option('--deployment-polling-interval', default=29, type=int, help='In seconds')
