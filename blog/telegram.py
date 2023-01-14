@@ -57,17 +57,21 @@ def main(bot_token, content_path, channel, repo, deployment_polling_interval, se
         time.sleep(3)  # arbitrary wait just to be sure
 
         click.echo(f"Posting {article_url} to Telegram")
-        url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
-        response = requests.get(url, params=dict(chat_id=f"@honzajavorek", text=article_url))
-        response.raise_for_status()
-        data = response.json()
-        assert data['ok'], data
-        time.sleep(3)  # arbitrary wait just to be sure
-        text = f"{article_title} {article_url}"
-        response = requests.get(url, params=dict(chat_id=f"@{channel}", text=text))
-        response.raise_for_status()
-        data = response.json()
-        assert data['ok'], data
+        try:
+            url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+            response = requests.get(url, params=dict(chat_id=f"@honzajavorek", text=article_url))
+            response.raise_for_status()
+            data = response.json()
+            assert data['ok'], data
+            time.sleep(3)  # arbitrary wait just to be sure
+            text = f"{article_title} {article_url}"
+            response = requests.get(url, params=dict(chat_id=f"@{channel}", text=text))
+            response.raise_for_status()
+            data = response.json()
+            assert data['ok'], data
+        except requests.HTTPError as e:
+            click.echo(f'{e.response.json()!r}', err=True)
+            raise
 
         message_id = data['result']['message_id']
         message_url = f"https://t.me/{channel}/{message_id}"
