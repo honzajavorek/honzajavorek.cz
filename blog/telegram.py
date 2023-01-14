@@ -18,11 +18,12 @@ TELEGRAM_COMMENTS_KEY = 'Telegram-Comments'
 @click.command()
 @click.argument('bot_token', envvar='TELEGRAM_BOT_TOKEN')
 @click.option('--path', 'content_path', default='content', type=click.Path(exists=True, path_type=Path))
+@click.option('--preflight-chat-id', default='119318534')
 @click.option('--channel', 'channel', default='honzajavorekcz')
 @click.option('--repo', 'repo', default='honzajavorek/honzajavorek.cz')
 @click.option('--deployment-polling-interval', default=29, type=int, help='In seconds')
 @click.option('--settings-module', default='publishconf', type=importlib.import_module)
-def main(bot_token, content_path, channel, repo, deployment_polling_interval, settings_module):
+def main(bot_token, content_path, preflight_chat_id, channel, repo, deployment_polling_interval, settings_module):
     for article_path in sorted(content_path.glob('*.md'), reverse=True):
         article_text = article_path.read_text()
         article_metadata = METADATA_RE.search(article_text).group('metadata')
@@ -59,7 +60,7 @@ def main(bot_token, content_path, channel, repo, deployment_polling_interval, se
         click.echo(f"Posting {article_url} to Telegram")
         try:
             url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
-            response = requests.get(url, params=dict(chat_id=f"@honzajavorek", text=article_url))
+            response = requests.get(url, params=dict(chat_id=preflight_chat_id, text=article_url))
             response.raise_for_status()
             data = response.json()
             assert data['ok'], data
