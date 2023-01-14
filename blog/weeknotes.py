@@ -114,6 +114,13 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
         <!-- Honzo, piš jednu větu na řádek! https://sive.rs/1s -->
 
 
+        ## Povedlo se
+
+        Udělal jsem něco z [plánů na rok 2023]({{filename}}2022-12-26_strategie-na-2023.md)?
+
+        <!-- Koukni sem https://www.icloud.com/notes/092v6QG3aoSmpVOGHnpg0uIXQ -->
+
+
         ## Další
 
         -   Odpovídání v klubu, e-maily, [Pyvec Slack](https://docs.pyvec.org/operations/support.html#sit-kontaktu), atd.
