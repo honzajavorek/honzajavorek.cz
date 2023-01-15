@@ -60,7 +60,7 @@ jobs:
         run: poetry run blog telegram
 
       - name: Test
-        run: echo "ouch" > ./content/test.txt
+        run: echo "uuf" > ./content/test.txt
 
       - name: Save to Git
         uses: EndBug/add-and-commit@v9
