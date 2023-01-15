@@ -59,13 +59,9 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: poetry run blog telegram
 
-      - name: Test
-        run: echo "uuf" > ./content/test.txt
-
       - name: Save to Git
         uses: EndBug/add-and-commit@v9
         with:
           add: ./content
-          #message: "add link to comments 💬"
-          message: "test"
+          message: "add link to comments 💬"
           fetch: false
