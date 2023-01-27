@@ -47,11 +47,12 @@ TITLES = {
 @click.option('--strava-client-id', envvar='STRAVA_CLIENT_ID', prompt=True, hide_input=True)
 @click.option('--strava-client-secret', envvar='STRAVA_CLIENT_SECRET', prompt=True, hide_input=True)
 @click.option('--debug/--no-debug', default=False)
+@click.option('--open/--no-open', default=True)
 @click.pass_context
 def main(context, title, content_path, title_prefix, jobs_api_url, settings_module,
          telegram_channel, telegram_app_api_id, telegram_app_api_hash,
          strava_skip_sync, strava_client_id, strava_client_secret,
-         debug):
+         debug, open):
     today = date.today()
     today_cz = f'{today:%-d}. {today:%-m}.'
     today_iso = today.isoformat()
@@ -114,13 +115,6 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
         <!-- Honzo, piš jednu větu na řádek! https://sive.rs/1s -->
 
 
-        ## Povedlo se
-
-        Udělal jsem něco z [plánů na rok 2023]({{filename}}2022-12-26_strategie-na-2023.md)?
-
-        <!-- Koukni sem https://www.icloud.com/notes/092v6QG3aoSmpVOGHnpg0uIXQ -->
-
-
         ## Další
 
         -   Odpovídání v klubu, e-maily, [Pyvec Slack](https://docs.pyvec.org/operations/support.html#sit-kontaktu), atd.
@@ -128,6 +122,13 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
         -   {strava_text}
         -   Finanční výsledky, návštěvnost a další čísla k JG [mám přímo na webu](https://junior.guru/open/).
             {jobs_text}
+
+
+        ## Povedlo se
+
+        Udělal jsem něco z [plánů na rok 2023]({{filename}}2022-12-26_strategie-na-2023.md)?
+
+        <!-- Koukni sem https://www.icloud.com/notes/092v6QG3aoSmpVOGHnpg0uIXQ -->
 
 
         <div class="alert alert-warning" role="alert" markdown="1">
@@ -161,6 +162,8 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
         click.echo(content)
     else:
         path.write_text(content)
+        if open:
+            click.edit(filename=path)
 
 
 def get_articles(last_weeknotes_slug, telegram_channel, telegram_app_api_id, telegram_app_api_hash):

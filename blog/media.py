@@ -9,6 +9,7 @@ from slugify import slugify
 import requests
 from send2trash import send2trash
 from PIL import Image
+from pillow_heif import register_heif_opener
 
 
 IMG_MAX_PX = 1024
@@ -51,6 +52,9 @@ MEDIA_RE = re.compile(r'''
 ''', re.VERBOSE | re.IGNORECASE)
 
 IMAGE_METADATA_RE = re.compile(r'Image: images/(?P<path>\S+)')
+
+
+register_heif_opener()
 
 
 @click.command()
@@ -96,9 +100,8 @@ def main(content_path, images_path, overwrite, detect_unused, resize):
                 width, height = img.size
                 if width > IMG_MAX_PX or height > IMG_MAX_PX:
                     click.secho(f'Too large: {image_path} ({width}x{height}px, max {IMG_MAX_PX}px)', fg='red', err=True)
-                    if click.confirm('Resize?', default=True, prompt_suffix=''):
-                        img.thumbnail((IMG_MAX_PX, IMG_MAX_PX), Image.Resampling.LANCZOS)
-                        img.save(image_path, img.format)
+                    img.thumbnail((IMG_MAX_PX, IMG_MAX_PX), Image.Resampling.LANCZOS)
+                    img.save(image_path, img.format)
 
             size_mb = image_path.stat().st_size / 1024 / 1024
             if size_mb > IMG_MAX_MB:
@@ -137,6 +140,15 @@ def process_match(source_path, images_path, match, overwrite=False, images=None)
         shutil.copy2(source_path.parent / unquoted_path, image_path)
 
     assert image_path.exists()
+
+    if image_path.suffix in ['.heic', '.webp']:
+        click.secho(f'Converting {image_path}', bold=True, fg='yellow')
+        converted_image_path = image_path.with_suffix('.jpg')
+        with Image.open(image_path) as img:
+            img.save(converted_image_path, 'JPEG')
+        image_path.unlink()
+        image_path = converted_image_path
+
     images.add(image_path)
     return groups['media'].replace(path, f'{{static}}/images/{image_path.name}')
 

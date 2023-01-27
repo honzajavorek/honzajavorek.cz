@@ -278,16 +278,6 @@ Měl bych bota naučit, aby začal dělat aspoň takovéhle snapshoty klubu.
 Snad to [nějak půjde](https://docs.pycord.dev/en/stable/api/models.html#discord.Template).
 
 
-## Povedlo se
-
-Udělal jsem něco z [plánů na rok 2023]({filename}2022-12-26_strategie-na-2023.md)? **ANO!**
-
-- Zrealizoval jsem nejjednodušší možný způsob, jak zjišťovat, odkud do klubu přišli lidi.
-- Rozjel jsem newsletter, díky kterému lze odebírat tento blog e-mailem.
-- Našel jsem další moderátory.
-- Zdražil jsem členům klubu.
-
-
 ## Další
 
 -   S jednou firmou plánujeme udělat anketu mezi juniory.
@@ -343,6 +333,16 @@ Udělal jsem něco z [plánů na rok 2023]({filename}2022-12-26_strategie-na-202
     Celkem jsem se hýbal 1 hodin a zdolal při tom 3 kilometry.
 -   Finanční výsledky, návštěvnost a další čísla k JG [mám přímo na webu](https://junior.guru/open/).
     Aktuální nabídky práce pro juniory: [FYZIOklinika](https://junior.guru/jobs/b264ff2a02a50256a3f79075aa5392af08439d165e138ee99ef2df47/), [Processand](https://junior.guru/jobs/dbbb7bf406b3c33aeba36cae817919d44bfb368a08fb1b4899dba130/), [Red Hat](https://junior.guru/jobs/215426887eaaad9105ecf647d0ff24cf94de7c9eb47cc6f2c55e6921/)
+
+
+## Povedlo se
+
+Udělal jsem něco z [plánů na rok 2023]({filename}2022-12-26_strategie-na-2023.md)? **ANO!**
+
+- Zrealizoval jsem nejjednodušší možný způsob, jak zjišťovat, odkud do klubu přišli lidi.
+- Rozjel jsem newsletter, díky kterému lze odebírat tento blog e-mailem.
+- Našel jsem další moderátory.
+- Zdražil jsem členům klubu.
 
 
 <div class="alert alert-warning" role="alert" markdown="1">
