@@ -82,7 +82,7 @@ def main(bot_token, content_path, preflight_chat_id, channel, repo, deployment_p
                                                     f"{article_metadata}{TELEGRAM_COMMENTS_KEY}: {message_url}\n"))
 
 
-def arbitrary_wait(seconds=10):
+def arbitrary_wait(seconds=60):
     for _ in range(seconds):
         time.sleep(1)
         click.echo(f'Waiting {seconds}s…', err=True)
