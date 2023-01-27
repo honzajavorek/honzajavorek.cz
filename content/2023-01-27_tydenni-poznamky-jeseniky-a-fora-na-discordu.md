@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Jeseníky a fóra na Discordu
 Image: images/img-1577.jpg
 Lang: cs
 Tags: týdenní poznámky
+Telegram-Comments: https://t.me/honzajavorekcz/93
 
 
 Utekl zas nějaký ten týden (27. 1. až 27. 1.) a tak [stejně jako minule]({filename}/2023-01-27_tydenni-poznamky-jeseniky-a-fora-na-discordu.md) sepisuji, co jsem dělal a co jsem se naučil.
