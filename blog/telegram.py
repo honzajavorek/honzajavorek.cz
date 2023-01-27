@@ -54,8 +54,8 @@ def main(bot_token, content_path, preflight_chat_id, channel, repo, deployment_p
             click.echo(f"Deployment status: {status['state']}")
             if status['state'] in ['success', 'error', 'failure', 'inactive']:
                 break
-            time.sleep(deployment_polling_interval)
-        time.sleep(3)  # arbitrary wait just to be sure
+            arbitrary_wait(deployment_polling_interval)
+        arbitrary_wait()
 
         click.echo(f"Posting {article_url} to Telegram")
         try:
@@ -64,7 +64,7 @@ def main(bot_token, content_path, preflight_chat_id, channel, repo, deployment_p
             response.raise_for_status()
             data = response.json()
             assert data['ok'], data
-            time.sleep(3)  # arbitrary wait just to be sure
+            arbitrary_wait()
             text = f"{article_title} {article_url}"
             response = requests.get(url, params=dict(chat_id=f"@{channel}", text=text))
             response.raise_for_status()
@@ -80,3 +80,9 @@ def main(bot_token, content_path, preflight_chat_id, channel, repo, deployment_p
         click.echo(f"Saving {message_url} to {article_path}")
         article_path.write_text(article_text.replace(article_metadata,
                                                     f"{article_metadata}{TELEGRAM_COMMENTS_KEY}: {message_url}\n"))
+
+
+def arbitrary_wait(seconds=10):
+    for _ in range(seconds):
+        time.sleep(1)
+        click.echo(f'Waiting {seconds}s…', err=True)
