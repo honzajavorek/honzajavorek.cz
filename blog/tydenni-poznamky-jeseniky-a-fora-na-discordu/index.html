@@ -334,6 +334,29 @@ Od posledních poznámek jsem sdílel toto:</p>
 </ul></div></div></div></div>
   </main>
 
+  <section id="comments" class="article-comments comments">
+      <div class="comments-telegram">
+        <script>
+          function comments(button) {
+            button.setAttribute('disabled', '');
+            const div = document.createElement('div');
+            div.classList.add('comments-frame');
+            const script = document.createElement('script');
+            script.setAttribute('src', 'https://telegram.org/js/telegram-widget.js?21');
+            script.dataset.telegramDiscussion = "honzajavorekcz/91";
+            script.dataset.commentsLimit = 50;
+            script.dataset.color = 212529;
+            div.append(script);
+            button.parentNode.append(div);
+            button.remove();
+          }
+        </script>
+        <button class="btn btn-primary btn-lg" onclick="comments(this);">
+          <i class="bi bi-chat-dots"></i>
+            Komentáře
+        </button>
+      </div>
+  </section>
   <footer class="article-footer mb-5">
     <div id="bio" class="article-bio bio">
       <header class="bio-header">
