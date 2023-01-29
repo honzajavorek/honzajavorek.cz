@@ -1,7 +1,7 @@
 Title: Týdenní poznámky #42: První přednáška, DPFO, maily
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Tags: týdenní poznámky
+Tags: týdenní poznámky, junior.guru
 
 
 Utekl další týden (15.3. — 19.3.) a tak [stejně jako minule]({filename}2021-03-12_tydenni-poznamky-41-mdz-yablko-a-pocitani-penez.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub podporovatelů](https://junior.guru/club/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.

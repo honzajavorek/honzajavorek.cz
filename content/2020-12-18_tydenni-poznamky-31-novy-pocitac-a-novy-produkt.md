@@ -1,7 +1,7 @@
 Title: Týdenní poznámky #31: Nový počítač a nový produkt
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Tags: týdenní poznámky
+Tags: týdenní poznámky, junior.guru
 
 
 Utekl další týden (14.12. — 18.12.) a tak [stejně jako minule]({filename}2020-12-11_tydenni-poznamky-30-boleni-hlavy.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [podporovatele](https://junior.guru/donate/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.

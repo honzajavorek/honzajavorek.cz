@@ -1,7 +1,7 @@
 Title: Týdenní poznámky #43: Paní z HR, kurýr z Dáme jídlo, MkDocs a nová úvodní stránka
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Tags: týdenní poznámky
+Tags: týdenní poznámky, junior.guru
 
 
 Utekl další týden (22.3. — 26.3.) a tak [stejně jako minule]({filename}2021-03-19_tydenni-poznamky-42-prvni-prednaska-dpfo-maily.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub podporovatelů](https://junior.guru/club/), a ty by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase pátek a já jsem přitom nestihl nic udělat.

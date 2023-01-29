@@ -1,6 +1,7 @@
 Title: Grafický manuál
 Image: images/visualbook.png
 Lang: cs
+Tags: junior.guru
 
 
 Nevím, jak se to správně dělá, jsem influencer začátečník. Prý se má někam napsat **#spolupráce**, tak to sem píšu raději hned v prvním odstavci. Už nějakou dobu mám na junior.guru [stránku pro média](https://junior.guru/press/) se sekcí o logu, barvách, fontech, správném psaní názvu projektu. Kamarád [Jirka Chlebus](https://www.jirichlebus.cz/) si toho všiml, vyrobil přes Vánoce pro junior.guru profesionální grafický manuál a ten mi dal jako dárek. V krátkém článku napíšu, co se mi na tom líbí.

@@ -1,7 +1,7 @@
 Title: Týdenní poznámky: Mentální a digitální úklid
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Tags: týdenní poznámky
+Tags: týdenní poznámky, junior.guru
 Telegram-Comments: https://t.me/honzajavorekcz/42
 
 

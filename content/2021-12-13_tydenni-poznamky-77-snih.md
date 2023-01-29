@@ -1,7 +1,7 @@
 Title: Týdenní poznámky #77: Sníh
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Tags: týdenní poznámky
+Tags: týdenní poznámky, junior.guru
 
 
 Utekl zase nějaký ten týden (7.12. — 13.12.) a tak [stejně jako minule]({filename}2021-12-06_tydenni-poznamky-76-vanoce-na-discordu.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.

@@ -1,7 +1,7 @@
 Title: Týdenní poznámky #86: Konečně hotový robot na inzeráty a vítání firem v klubu
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Tags: týdenní poznámky
+Tags: týdenní poznámky, junior.guru
 
 
 Utekl zase nějaký ten týden (26.3. — 8.4.) a tak [stejně jako minule]({filename}2022-03-25_tydenni-poznamky-85-breznovych-300-km-na-kole-a-spousta-prace.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.

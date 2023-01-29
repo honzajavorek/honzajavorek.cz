@@ -1,7 +1,7 @@
 Title: Týdenní poznámky: Jeseníky a fóra na Discordu
 Image: images/img-1577.jpg
 Lang: cs
-Tags: týdenní poznámky
+Tags: týdenní poznámky, junior.guru
 Telegram-Comments: https://t.me/honzajavorekcz/93
 
 

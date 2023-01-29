@@ -1,6 +1,7 @@
 Title:  Tips & Tricks on How to Get Your First Job In Tech
 Image: images/tips-tricks-on-how-to-get-your-first-job-in-tech.jpg
 Lang: en
+Tags: junior.guru
 
 
 I gave a talk last Thursday about getting an entry level job in tech for [Pyvo](https://pyvo.cz/brno-pyvo/2020-11/), Brno's Python user group meetup. The talk happened online and is in English, but **it's specifically about how to get an entry level job in the Czech Republic**, in 2020. The market I describe may be very different from what you can experience in your region, and the advice I give could be irrelevant or just plain useless. You can find [the recording of the talk](https://www.youtube.com/watch?v=NRY1JJcTxko) at YouTube now, and the [slides](https://speakerdeck.com/honzajavorek/tips-and-tricks-on-how-to-get-your-first-job-in-tech) are published at my SpeakerDeck.

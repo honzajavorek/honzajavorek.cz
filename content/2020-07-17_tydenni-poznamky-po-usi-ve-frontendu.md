@@ -1,7 +1,7 @@
 Title: Týdenní poznámky: Po uši ve frontendu
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Tags: týdenní poznámky
+Tags: týdenní poznámky, junior.guru
 Twitter-Comments: https://twitter.com/honzajavorek/status/1283827499298938881
 Facebook-Comments: https://www.facebook.com/10156592446432707/posts/10158301883642707
 

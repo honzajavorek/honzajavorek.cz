@@ -1,7 +1,7 @@
 Title: Týdenní poznámky #108: Přednáška, tipy, infrastruktura
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Tags: týdenní poznámky
+Tags: týdenní poznámky, junior.guru
 
 
 Utekl zase nějaký ten týden (8.10. — 14.10.) a tak [stejně jako minule]({filename}2022-10-07_tydenni-poznamky-107-rozjizdeni-prednasek-opravy-vseho-mozneho.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.

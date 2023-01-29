@@ -1,7 +1,7 @@
 Title: Týdenní poznámky: Čísla a e-maily
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Tags: týdenní poznámky
+Tags: týdenní poznámky, junior.guru
 Twitter-Comments: https://twitter.com/honzajavorek/status/1274046841311629321
 Facebook-Comments: https://www.facebook.com/10156592446432707/posts/10158219052052707
 

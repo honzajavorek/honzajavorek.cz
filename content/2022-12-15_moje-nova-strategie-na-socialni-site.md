@@ -1,6 +1,7 @@
 Title: Moje nová strategie na sociální sítě
 Image: images/dole777-EQSPI11rf68-unsplash.jpg
 Lang: cs
+Tags: junior.guru
 Telegram-Comments: https://t.me/honzajavorekcz/47
 
 

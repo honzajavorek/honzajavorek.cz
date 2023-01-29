@@ -1,7 +1,7 @@
 Title: Týdenní poznámky: Vymýšlení strategií
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Tags: týdenní poznámky
+Tags: týdenní poznámky, junior.guru
 Telegram-Comments: https://t.me/honzajavorekcz/49
 
 

@@ -1,6 +1,7 @@
 Title: Není to závod
 Image: images/paolo-candelo-53B17GiIhTA-unsplash.jpg
 Lang: cs
+Tags: týdenní poznámky
 Twitter-Comments: https://twitter.com/honzajavorek/status/1268462245857591297
 Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10158174231727707
 

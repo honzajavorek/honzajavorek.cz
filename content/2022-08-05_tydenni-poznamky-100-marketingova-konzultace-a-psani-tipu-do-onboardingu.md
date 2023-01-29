@@ -1,7 +1,7 @@
 Title: Týdenní poznámky #100: Marketingová konzultace a psaní tipů do onboardingu
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Tags: týdenní poznámky
+Tags: týdenní poznámky, junior.guru
 
 
 Utekl zase nějaký ten týden (30.7. — 5.8.) a tak [stejně jako minule]({filename}2022-07-29_tydenni-poznamky-99-diskutovani-v-klubu-kolo-a-onboarding.md) sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet [junior.guru](https://junior.guru/). Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/), a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.

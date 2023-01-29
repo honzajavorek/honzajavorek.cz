@@ -101,7 +101,7 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
         Title: {title}
         Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
         Lang: cs
-        Tags: {settings_module.WEEKNOTES_TAG}
+        Tags: {settings_module.WEEKNOTES_TAG}, junior.guru
 
 
         Utekl zas nějaký ten týden ({last_weeknotes_date_cz} až {today_cz}) a tak [stejně jako minule]({last_weeknotes_path}) sepisuji, co jsem dělal a co jsem se naučil.

@@ -1,7 +1,7 @@
 Title: Týdenní poznámky: Dohánění CSS a korporátní balíčky
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Tags: týdenní poznámky
+Tags: týdenní poznámky, junior.guru
 Twitter-Comments: https://twitter.com/honzajavorek/status/1268968394050715649
 Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10158178601917707
 

@@ -1,7 +1,7 @@
 Title: Týdenní poznámky: Horst Fuchs
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
-Tags: týdenní poznámky
+Tags: týdenní poznámky, junior.guru
 Facebook-Comments: https://www.facebook.com/10156592446432707/posts/10158154451272707
 
 

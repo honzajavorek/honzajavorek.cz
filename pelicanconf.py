@@ -27,6 +27,7 @@ DATE_FORMATS = {'cs': '%-d.\u00A0%-m.\u00A0%Y'}
 
 # Feeds
 FEED_ALL_ATOM = 'feed.xml'
+TAG_FEED_ATOM = 'tag/{slug}.xml'
 FEED_MAX_ITEMS = 50
 FEED_ATOM = None
 CATEGORY_FEED_ATOM = None
