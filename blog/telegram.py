@@ -6,6 +6,7 @@ import importlib
 
 import requests
 import click
+from lxml import html
 
 
 ARTICLE_TITLE_RE = re.compile(r'Title:\s+(?P<title>[^\n]+)\s*')
@@ -24,6 +25,8 @@ TELEGRAM_COMMENTS_KEY = 'Telegram-Comments'
 @click.option('--deployment-polling-interval', default=29, type=int, help='In seconds')
 @click.option('--settings-module', default='publishconf', type=importlib.import_module)
 def main(bot_token, content_path, preflight_chat_id, channel, repo, deployment_polling_interval, settings_module):
+    telegram_api_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+
     for article_path in sorted(content_path.glob('*.md'), reverse=True):
         article_text = article_path.read_text()
         article_metadata = METADATA_RE.search(article_text).group('metadata')
@@ -57,16 +60,40 @@ def main(bot_token, content_path, preflight_chat_id, channel, repo, deployment_p
             arbitrary_wait(deployment_polling_interval)
         arbitrary_wait()
 
-        click.echo(f"Posting {article_url} to Telegram")
+        click.echo(f"Getting the image URL")
+        response = requests.get(article_url)
+        response.raise_for_status()
+        html_tree = html.fromstring(response.content)
+        image_url = html_tree.cssselect('meta[property="og:image"]')[0].get('content')
+        response = requests.head(image_url)
+        response.raise_for_status()
+
+        click.echo(f"Posting {image_url} to Honza's Telegram")
         try:
-            url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
-            response = requests.get(url, params=dict(chat_id=preflight_chat_id, text=article_url))
+            response = requests.get(telegram_api_url, params=dict(chat_id=preflight_chat_id, text=image_url))
             response.raise_for_status()
             data = response.json()
             assert data['ok'], data
             arbitrary_wait()
+        except requests.HTTPError as e:
+            click.echo(f'{e.response.json()!r}', err=True)
+            raise
+
+        click.echo(f"Posting {article_url} to Honza's Telegram")
+        try:
+            response = requests.get(telegram_api_url, params=dict(chat_id=preflight_chat_id, text=article_url))
+            response.raise_for_status()
+            data = response.json()
+            assert data['ok'], data
+            arbitrary_wait()
+        except requests.HTTPError as e:
+            click.echo(f'{e.response.json()!r}', err=True)
+            raise
+
+        click.echo(f"Posting {article_url} to Telegram group")
+        try:
             text = f"{article_title} {article_url}"
-            response = requests.get(url, params=dict(chat_id=f"@{channel}", text=text))
+            response = requests.get(telegram_api_url, params=dict(chat_id=f"@{channel}", text=text))
             response.raise_for_status()
             data = response.json()
             assert data['ok'], data
