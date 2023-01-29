@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Javorové lístky</title><link href="https://honzajavorek.cz/blog/" rel="alternate"></link><link href="https://honzajavorek.cz/tag/java.xml" rel="self"></link><id>https://honzajavorek.cz/</id><updated>2008-03-30T18:05:00+02:00</updated><author><name>Honza Javorek</name><email>mail@honzajavorek.cz</email><uri>https://honzajavorek.cz</uri></author><subtitle>Blog Honzy Javorka</subtitle><rights>© Copyright 2007—2023 Honza Javorek &lt;https://honzajavorek.cz&gt;</rights><entry><title>Tahák na syntaxi: PHP VS. Java</title><link href="https://honzajavorek.cz/blog/tahak-na-syntaxi-php-vs-java/" rel="alternate"></link><published>2008-03-30T18:05:00+02:00</published><updated>2008-03-30T18:05:00+02:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2008-03-30:/blog/tahak-na-syntaxi-php-vs-java/</id><summary type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Ano, můžeme si otevřít knihy, můžeme zkoumat &lt;a href="http://en.wikipedia.org/wiki/PHP_syntax_and_semantics"&gt;PHP syntaxi&lt;/a&gt; nebo &lt;a href="http://en.wikipedia.org/wiki/Java_syntax"&gt;Java syntaxi&lt;/a&gt; na Wikipedii, číst si v referenčních webech… Ale to je zdlouhavé. Nabízím malý tahák pro stejně konvertované jako já – z PHP na Javu. Nesnažil jsem se o nic komplexního, Javu se z toho nenaučíte. Jde jen o výčet …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Ano, můžeme si otevřít knihy, můžeme zkoumat &lt;a href="http://en.wikipedia.org/wiki/PHP_syntax_and_semantics"&gt;PHP syntaxi&lt;/a&gt; nebo &lt;a href="http://en.wikipedia.org/wiki/Java_syntax"&gt;Java syntaxi&lt;/a&gt; na Wikipedii, číst si v referenčních webech… Ale to je zdlouhavé. Nabízím malý tahák pro stejně konvertované jako já – z PHP na Javu. Nesnažil jsem se o nic komplexního, Javu se z toho nenaučíte. Jde jen o výčet nejzákladnějších rozdílů v syntaxi, které se mohou plést, zvláště když jsou zažité…&lt;/p&gt;
+&lt;div class="table-responsive"&gt;&lt;table class="table"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;
+            část syntaxe
+        &lt;/th&gt;
+        &lt;th&gt;
+            PHP
+        &lt;/th&gt;
+        &lt;th&gt;
+            Java
+        &lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            konstruktor
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;code&gt;__construct()&lt;/code&gt;, &lt;code&gt;Class()&lt;/code&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;code&gt;Class()&lt;/code&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            toString
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;code&gt;$object-&amp;gt;__toString()&lt;/code&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;code&gt;object.toString()&lt;/code&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            přístup ke statické proměnné/metodě
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;code&gt;Class::$name&lt;/code&gt;, &lt;code&gt;Class::name()&lt;/code&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;code&gt;Class.name&lt;/code&gt;, &lt;code&gt;Class.name()&lt;/code&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            přístup k vlastní statické proměnné/metodě
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;code&gt;self::$name&lt;/code&gt;, &lt;code&gt;self::name()&lt;/code&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;code&gt;name&lt;/code&gt;, &lt;code&gt;Class.name&lt;/code&gt;, &lt;code&gt;name()&lt;/code&gt;, &lt;code&gt;Class.name()&lt;/code&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            přístup k proměnné/metodě
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;code&gt;$object-&amp;gt;name&lt;/code&gt;, &lt;code&gt;$object-&amp;gt;name()&lt;/code&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;code&gt;object.name&lt;/code&gt;, &lt;code&gt;object.name()&lt;/code&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            přístup k vlastní proměnné/metodě
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;code&gt;$this-&amp;gt;name&lt;/code&gt;, &lt;code&gt;$this-&amp;gt;name()&lt;/code&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;code&gt;name&lt;/code&gt;, &lt;code&gt;this.name&lt;/code&gt;, &lt;code&gt;name()&lt;/code&gt;, &lt;code&gt;this.name()&lt;/code&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            (statická) konstanta
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;code&gt;const NAME&lt;/code&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;code&gt;static final type NAME&lt;/code&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            přístup ke konstantě
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;code&gt;self::NAME&lt;/code&gt;, &lt;code&gt;Class::NAME&lt;/code&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;code&gt;NAME&lt;/code&gt;, &lt;code&gt;Class.NAME&lt;/code&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;/div&gt;&lt;p&gt;Mimochodem, když jsem hledal něco takového jako tento článek na internetu, narazil jsem na &lt;a href="http://www.blueshoes.org/en/developer/php_cheat_sheet/"&gt;pěkný tahák pro PHP&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="blog"></category><category term="java"></category><category term="php"></category></entry></feed>
