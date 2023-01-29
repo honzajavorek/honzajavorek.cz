@@ -25,8 +25,6 @@ TELEGRAM_COMMENTS_KEY = 'Telegram-Comments'
 @click.option('--deployment-polling-interval', default=29, type=int, help='In seconds')
 @click.option('--settings-module', default='publishconf', type=importlib.import_module)
 def main(bot_token, content_path, preflight_chat_id, channel, repo, deployment_polling_interval, settings_module):
-    telegram_api_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
-
     for article_path in sorted(content_path.glob('*.md'), reverse=True):
         article_text = article_path.read_text()
         article_metadata = METADATA_RE.search(article_text).group('metadata')
@@ -69,44 +67,32 @@ def main(bot_token, content_path, preflight_chat_id, channel, repo, deployment_p
         response.raise_for_status()
 
         click.echo(f"Posting {image_url} to Honza's Telegram")
-        try:
-            response = requests.get(telegram_api_url, params=dict(chat_id=preflight_chat_id, text=image_url))
-            response.raise_for_status()
-            data = response.json()
-            assert data['ok'], data
-            arbitrary_wait()
-        except requests.HTTPError as e:
-            click.echo(f'{e.response.json()!r}', err=True)
-            raise
+        post_telegram_message(bot_token, preflight_chat_id, image_url)
 
         click.echo(f"Posting {article_url} to Honza's Telegram")
-        try:
-            response = requests.get(telegram_api_url, params=dict(chat_id=preflight_chat_id, text=article_url))
-            response.raise_for_status()
-            data = response.json()
-            assert data['ok'], data
-            arbitrary_wait()
-        except requests.HTTPError as e:
-            click.echo(f'{e.response.json()!r}', err=True)
-            raise
+        post_telegram_message(bot_token, preflight_chat_id, article_url)
 
         click.echo(f"Posting {article_url} to Telegram group")
-        try:
-            text = f"{article_title} {article_url}"
-            response = requests.get(telegram_api_url, params=dict(chat_id=f"@{channel}", text=text))
-            response.raise_for_status()
-            data = response.json()
-            assert data['ok'], data
-        except requests.HTTPError as e:
-            click.echo(f'{e.response.json()!r}', err=True)
-            raise
-
+        data = post_telegram_message(bot_token, f"@{channel}", f"{article_title} {article_url}")
         message_id = data['result']['message_id']
         message_url = f"https://t.me/{channel}/{message_id}"
 
         click.echo(f"Saving {message_url} to {article_path}")
         article_path.write_text(article_text.replace(article_metadata,
                                                     f"{article_metadata}{TELEGRAM_COMMENTS_KEY}: {message_url}\n"))
+
+
+def post_telegram_message(bot_token, chat_id, text):
+    api_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+    try:
+        response = requests.get(api_url, params=dict(chat_id=chat_id, text=text))
+        response.raise_for_status()
+        data = response.json()
+        assert data['ok'], data
+        return data
+    except requests.HTTPError as e:
+        click.echo(f'{e.response.json()!r}', err=True)
+        raise
 
 
 def arbitrary_wait(seconds=60):
