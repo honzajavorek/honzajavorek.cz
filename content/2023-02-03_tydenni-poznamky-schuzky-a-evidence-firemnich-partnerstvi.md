@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Schůzky a evidence firemních partnerství
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/102
 
 
 Utekl zas nějaký ten týden (27. 1. až 3. 2.) a tak [stejně jako minule]({filename}/2023-01-27_tydenni-poznamky-jeseniky-a-fora-na-discordu.md) sepisuji, co jsem dělal a co jsem se naučil.
