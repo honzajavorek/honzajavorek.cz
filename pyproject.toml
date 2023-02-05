@@ -28,6 +28,7 @@ strava-offline = "1.0.3"
 sqlite-utils = "3.30"
 send2trash = "1.8.0"
 pillow-heif = "0.9.3"
+icalendar = "5.0.4"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "7.2.0"

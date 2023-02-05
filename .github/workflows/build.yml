@@ -42,6 +42,9 @@ jobs:
       - name: Pelican Build
         run: poetry run blog build
 
+      - name: Kočárkino
+        run: poetry run blog kocarkino > ./public/kocarkino.ics
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:

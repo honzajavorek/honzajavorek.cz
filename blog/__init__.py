@@ -14,6 +14,7 @@ from strava_offline.cli import cli as strava
 from blog.telegram import main as telegram
 from blog.weeknotes import main as weeknotes
 from blog.media import main as media
+from blog.kocarkino import main as kocarkino
 
 
 @click.group()
@@ -25,6 +26,7 @@ main.add_command(telegram, 'telegram')
 main.add_command(weeknotes, 'weeknotes')
 main.add_command(media, 'media')
 main.add_command(strava, 'strava')
+main.add_command(kocarkino, 'kocarkino')
 
 
 @main.command()
