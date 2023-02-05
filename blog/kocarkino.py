@@ -38,6 +38,7 @@ def main():
             event.add('description', '\n'.join([title, url, csfd_url]))
             event.add('dtstart', starts_at)
             event.add('duration', timedelta(hours=2))
+            event.add('location', 'KC VOZOVNA, Koněvova 2687/164, 13000 Praha 3')
             calendar.add_component(event)
 
     click.echo(calendar.to_ical())
