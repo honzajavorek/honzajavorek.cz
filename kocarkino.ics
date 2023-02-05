@@ -5,15 +5,33 @@ BEGIN:VEVENT
 SUMMARY:Kočárkino: Hon za utopií
 DTSTART;TZID=Europe/Prague:20230208T100000
 DURATION:PT2H
-DESCRIPTION:Hon za utopií\nhttps://kcvozovna.cz/8347/kocarkino-hon-za-uto
- pii/\nhttps://www.csfd.cz/hledat/?q=Hon%20za%20utopi%C3%AD
+DESCRIPTION:https://kcvozovna.cz/8347/kocarkino-hon-za-utopii/\nhttps://ww
+ w.csfd.cz/hledat/?q=Hon%20za%20utopi%C3%AD
+LOCATION:KC VOZOVNA\, Koněvova 2687/164\, Praha 3
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Kočárkino: Manželství
 DTSTART;TZID=Europe/Prague:20230222T100000
 DURATION:PT2H
-DESCRIPTION:Manželství\nhttps://kcvozovna.cz/8349/kocarkino-manzelstvi/\
- nhttps://www.csfd.cz/hledat/?q=Man%C5%BEelstv%C3%AD
+DESCRIPTION:https://kcvozovna.cz/8349/kocarkino-manzelstvi/\nhttps://www.c
+ sfd.cz/hledat/?q=Man%C5%BEelstv%C3%AD
+LOCATION:KC VOZOVNA\, Koněvova 2687/164\, Praha 3
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Baby Bio: Víly z Inisherinu
+DTSTART;TZID="UTC+01:00":20230207T100000
+DURATION:PT2H
+DESCRIPTION:https://www.biooko.net/?projection=15800\nhttps://www.csfd.cz/
+ hledat/?q=V%C3%ADly%20z%20Inisherinu
+LOCATION:Bio Oko\, Františka Křížka 460/15\, Praha 7
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Baby Bio: Korzet
+DTSTART;TZID="UTC+01:00":20230214T100000
+DURATION:PT2H
+DESCRIPTION:https://www.biooko.net/?projection=16035\nhttps://www.csfd.cz/
+ hledat/?q=Korzet
+LOCATION:Bio Oko\, Františka Křížka 460/15\, Praha 7
 END:VEVENT
 END:VCALENDAR
 
