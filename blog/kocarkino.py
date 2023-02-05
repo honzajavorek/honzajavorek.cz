@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta
 from urllib.parse import quote
+from zoneinfo import ZoneInfo
 
 import click
 from icalendar import Calendar, Event
@@ -21,7 +22,9 @@ def main():
     calendar.add('version', '2.0')
 
     for event in html_tree.cssselect('[data-date]'):
-        starts_at = datetime.fromisoformat(event.get('data-date'))
+        starts_at = datetime \
+            .fromisoformat(event.get('data-date')) \
+            .replace(tzinfo=ZoneInfo('Europe/Prague'))
         link = event.cssselect('h2 a')[0]
         url = link.get('href')
 
