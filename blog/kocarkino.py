@@ -39,6 +39,7 @@ def main():
 
             event = Event()
             event.add('uid', sha256(url.encode('utf-8')).hexdigest())
+            event.add('dtstamp', datetime.utcnow())
             event.add('summary', f'Kočárkino: {title}')
             event.add('description', '\n'.join([url, csfd_url]))
             event.add('dtstart', starts_at)
@@ -57,6 +58,7 @@ def main():
 
         event = Event()
         event.add('uid', sha256(url.encode('utf-8')).hexdigest())
+        event.add('dtstamp', datetime.utcnow())
         event.add('summary', f"Baby Bio: {data['name']}")
         event.add('description', '\n'.join([data['url'], csfd_url]))
         event.add('dtstart', datetime \
