@@ -1,10 +1,12 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//kocarkino//honzajavorek.cz//
+UID:9c94f22dac26dce87134e19c4accb1d0c5cc32aa96e4161cd52d8d3a7119ea5c
 BEGIN:VEVENT
 SUMMARY:Kočárkino: Hon za utopií
 DTSTART;TZID=Europe/Prague:20230208T100000
 DURATION:PT2H
+UID:6b2102e8af02fa890cf2038a38e7cb52c456b6914a20dbaa78f1d770a60d1c06
 DESCRIPTION:https://kcvozovna.cz/8347/kocarkino-hon-za-utopii/\nhttps://ww
  w.csfd.cz/hledat/?q=Hon%20za%20utopi%C3%AD
 LOCATION:KC VOZOVNA\, Koněvova 2687/164\, Praha 3
@@ -13,6 +15,7 @@ BEGIN:VEVENT
 SUMMARY:Kočárkino: Manželství
 DTSTART;TZID=Europe/Prague:20230222T100000
 DURATION:PT2H
+UID:0462e38528d61132caef0d02650e9a6c8ab205acfcd81a632c7ba41c789c84f6
 DESCRIPTION:https://kcvozovna.cz/8349/kocarkino-manzelstvi/\nhttps://www.c
  sfd.cz/hledat/?q=Man%C5%BEelstv%C3%AD
 LOCATION:KC VOZOVNA\, Koněvova 2687/164\, Praha 3
@@ -21,6 +24,7 @@ BEGIN:VEVENT
 SUMMARY:Baby Bio: Víly z Inisherinu
 DTSTART;TZID=Europe/Prague:20230207T100000
 DURATION:PT2H
+UID:0d69f7506e05c9f74927843750b325d5fb1ef78d4a2a4b140999c9151d5fb50f
 DESCRIPTION:https://www.biooko.net/?projection=15800\nhttps://www.csfd.cz/
  hledat/?q=V%C3%ADly%20z%20Inisherinu
 LOCATION:Bio Oko\, Františka Křížka 460/15\, Praha 7
@@ -29,6 +33,7 @@ BEGIN:VEVENT
 SUMMARY:Baby Bio: Korzet
 DTSTART;TZID=Europe/Prague:20230214T100000
 DURATION:PT2H
+UID:0d69f7506e05c9f74927843750b325d5fb1ef78d4a2a4b140999c9151d5fb50f
 DESCRIPTION:https://www.biooko.net/?projection=16035\nhttps://www.csfd.cz/
  hledat/?q=Korzet
 LOCATION:Bio Oko\, Františka Křížka 460/15\, Praha 7
