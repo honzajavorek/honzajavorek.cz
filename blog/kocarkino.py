@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from urllib.parse import quote
 from zoneinfo import ZoneInfo
 from hashlib import sha256
@@ -28,7 +28,8 @@ def main():
     for row in html_tree.cssselect('[data-date]'):
         starts_at = datetime \
             .fromisoformat(row.get('data-date')) \
-            .replace(tzinfo=ZoneInfo('Europe/Prague'))
+            .replace(tzinfo=ZoneInfo('Europe/Prague')) \
+            .astimezone(timezone.utc)
         link = row.cssselect('h2 a')[0]
         url = link.get('href')
 
@@ -63,7 +64,8 @@ def main():
         event.add('description', '\n'.join([data['url'], csfd_url]))
         event.add('dtstart', datetime \
             .fromisoformat(data['startDate']) \
-            .replace(tzinfo=ZoneInfo('Europe/Prague')))
+            .replace(tzinfo=ZoneInfo('Europe/Prague')) \
+            .astimezone(timezone.utc))
         event.add('duration', timedelta(hours=2))
         event.add('location', 'Bio Oko, Františka Křížka 460/15, Praha 7')
         calendar.add_component(event)
