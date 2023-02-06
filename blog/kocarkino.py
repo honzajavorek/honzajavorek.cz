@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta
 from urllib.parse import quote
 from zoneinfo import ZoneInfo
+from hashlib import sha256
 
 import extruct
 import click
@@ -8,6 +9,8 @@ from icalendar import Calendar, Event
 import requests
 from lxml import html
 
+
+CALENDAR_UID_SEED = '4v6CadZyePtkN*ciL4w*9uVn62vKH8WPPy-44p8V'
 
 HEADING_PREFIX = 'Kočárkino: '
 
@@ -17,6 +20,7 @@ def main():
     calendar = Calendar()
     calendar.add('prodid', '-//kocarkino//honzajavorek.cz//')
     calendar.add('version', '2.0')
+    calendar.add('uid', sha256(CALENDAR_UID_SEED.encode('utf-8')).hexdigest())
 
     response = requests.get('https://kcvozovna.cz/program/')
     response.raise_for_status()
@@ -34,6 +38,7 @@ def main():
             csfd_url = f'https://www.csfd.cz/hledat/?q={quote(title)}'
 
             event = Event()
+            event.add('uid', sha256(url.encode('utf-8')).hexdigest())
             event.add('summary', f'Kočárkino: {title}')
             event.add('description', '\n'.join([url, csfd_url]))
             event.add('dtstart', starts_at)
@@ -51,6 +56,7 @@ def main():
         csfd_url = f"https://www.csfd.cz/hledat/?q={quote(data['name'])}"
 
         event = Event()
+        event.add('uid', sha256(url.encode('utf-8')).hexdigest())
         event.add('summary', f"Baby Bio: {data['name']}")
         event.add('description', '\n'.join([data['url'], csfd_url]))
         event.add('dtstart', datetime \
