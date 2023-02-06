@@ -53,7 +53,9 @@ def main():
         event = Event()
         event.add('summary', f"Baby Bio: {data['name']}")
         event.add('description', '\n'.join([data['url'], csfd_url]))
-        event.add('dtstart', datetime.fromisoformat(data['startDate']))
+        event.add('dtstart', datetime \
+            .fromisoformat(data['startDate']) \
+            .replace(tzinfo=ZoneInfo('Europe/Prague')))
         event.add('duration', timedelta(hours=2))
         event.add('location', 'Bio Oko, Františka Křížka 460/15, Praha 7')
         calendar.add_component(event)

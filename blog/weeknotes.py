@@ -108,6 +108,8 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
         Tvořím [junior.guru](https://junior.guru/) a nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/) a členy by mohlo zajímat, co dělám.
         Psaní poznámek mi taky pomáhá nezbláznit se a nepropadat pocitu, že je konec týdne a já jsem nestihl nic udělat.
 
+        <!-- Zkus najít obrázek na https://www.stockai.com/ -->
+
         ![Poznámky]({{static}}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
         Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
