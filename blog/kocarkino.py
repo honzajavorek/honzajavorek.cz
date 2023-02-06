@@ -57,7 +57,7 @@ def main():
         csfd_url = f"https://www.csfd.cz/hledat/?q={quote(data['name'])}"
 
         event = Event()
-        event.add('uid', sha256(url.encode('utf-8')).hexdigest())
+        event.add('uid', sha256(data['url'].encode('utf-8')).hexdigest())
         event.add('dtstamp', datetime.utcnow())
         event.add('summary', f"Baby Bio: {data['name']}")
         event.add('description', '\n'.join([data['url'], csfd_url]))
