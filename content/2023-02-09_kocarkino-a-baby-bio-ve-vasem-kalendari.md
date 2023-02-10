@@ -1,6 +1,7 @@
 Title: Kočárkino a Baby Bio ve vašem kalendáři
 Image: images/329913737-513213380935038-6597939849996854149-n.png
 Lang: cs
+Telegram-Comments: https://t.me/honzajavorekcz/110
 
 
 O víkendu jsem zhruba za hoďku vytvořil automatizovaný kalendář promítání pro rodiče s malými dětmi, která se konají v kinech blízko pražského Žižkova.
