@@ -56,10 +56,15 @@ def main(bot_token, content_path, preflight_chat_id, channel, repo, deployment_p
             if status['state'] in ['success', 'error', 'failure', 'inactive']:
                 break
             arbitrary_wait(deployment_polling_interval)
-        arbitrary_wait()
+
+        click.echo(f"Waiting for the article to appear online")
+        while True:
+            response = requests.get(article_url)
+            if response.status_code == 200:
+                break
+            arbitrary_wait(deployment_polling_interval)
 
         click.echo(f"Getting the image URL")
-        response = requests.get(article_url)
         response.raise_for_status()
         html_tree = html.fromstring(response.content)
         image_url = html_tree.cssselect('meta[property="og:image"]')[0].get('content')
