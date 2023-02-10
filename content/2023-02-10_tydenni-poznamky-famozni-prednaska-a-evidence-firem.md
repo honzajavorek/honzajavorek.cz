@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Famózní přednáška a evidence firem
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/111
 
 
 Utekl zas nějaký ten týden (3. 2. až 10. 2.) a tak [stejně jako minule]({filename}/2023-02-03_tydenni-poznamky-schuzky-a-evidence-firemnich-partnerstvi.md) sepisuji, co jsem dělal a co jsem se naučil.
