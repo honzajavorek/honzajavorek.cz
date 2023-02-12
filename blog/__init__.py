@@ -6,9 +6,12 @@ import subprocess
 import multiprocessing
 from pathlib import Path
 import importlib
+from textwrap import dedent
+from datetime import date
 
 import click
 import pytest
+from slugify import slugify
 from strava_offline.cli import cli as strava
 
 from blog.telegram import main as telegram
@@ -44,6 +47,38 @@ def build(content_path, settings_module, debug):
     click.secho(shlex.join(args), fg='green', bold=True)
     click.echo('')
     subprocess.run(args, check=True)
+
+
+@main.command()
+@click.argument('title')
+@click.option('--path', 'content_path', default='content', type=click.Path(exists=True, path_type=Path))
+@click.option('--settings-module', default='publishconf', type=importlib.import_module)
+@click.option('--debug/--no-debug', default=True)
+@click.option('--open/--no-open', default=True)
+def new(title, content_path, settings_module, debug, open):
+    today = date.today()
+    today_iso = today.isoformat()
+    content = dedent(f'''
+        Title: {title}
+        Image: images/???.jpg
+        Lang: cs
+
+        Něco.
+
+        ![{title}]({{static}}/images/???.jpg)
+        Fotka od [???](https://unsplash.com/@???)
+
+        Něco dalšího.
+    ''')
+    path = content_path / f'{today_iso}_{slugify(title)}.md'
+    if debug:
+        click.secho(path.name, bold=True)
+        click.echo('')
+        click.echo(content)
+    else:
+        path.write_text(content)
+        if open:
+            click.edit(filename=path)
 
 
 @main.command()
