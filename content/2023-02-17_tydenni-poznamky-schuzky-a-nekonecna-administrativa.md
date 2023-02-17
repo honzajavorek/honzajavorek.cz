@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Schůzky a nekonečná administrativa
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/118
 
 
 Utekl zas nějaký ten týden (10. 2. až 17. 2.) a tak [stejně jako minule]({filename}/2023-02-10_tydenni-poznamky-famozni-prednaska-a-evidence-firem.md) sepisuji, co jsem dělal a co jsem se naučil.
