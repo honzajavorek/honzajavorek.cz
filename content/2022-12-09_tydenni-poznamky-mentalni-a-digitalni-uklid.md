@@ -27,7 +27,7 @@ Byl to druhý záznam po sobě, který se mi nepovedl a propadl jsem velkému sp
 
 Nebyl jsem schopen pracovat na zjištění příčiny. Do dnešního dne pouze podezírám, že update macOS na Venturu [mohl ovlivnit chování OBS](https://obsproject.com/forum/threads/ventura.160961/). Ve skutečnosti jsem po akci nebyl schopen pracovat vůbec na ničem. Zmohl jsem se jen na výzvu v klubu, že bych uvítal pomoc se záznamy přednášek a že za to i zaplatím.
 
-Na tuto výzvu se mi (skrze svého bráchu) ozval jeden bývalý člen klubu. Dohodli jsme se a přednášku o Javě od [Luboše Račanského](https://blog.zvestov.cz/) už nahrával on. To byla nádhera! Vše předem vyzkoušel, vše se povedlo. Já se soustředil „jen“ na to, abych speakera uvedl, moderoval otázky a odpovědi, atd.
+Na tuto výzvu se mi (skrze svého bráchu) ozval jeden bývalý člen klubu, Tinuki. Dohodli jsme se a přednášku o Javě od [Luboše Račanského](https://blog.zvestov.cz/) už nahrával on. To byla nádhera! Vše předem vyzkoušel, vše se povedlo. Já se soustředil „jen“ na to, abych speakera uvedl, moderoval otázky a odpovědi, atd.
 
 ![Luboš Račanský na videu]({static}/images/screenshot-2022-12-09-at-18-05-33-lubos-racansky-posudme-javu-podle-obalu.png)
 

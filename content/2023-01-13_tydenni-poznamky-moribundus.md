@@ -236,7 +236,7 @@ Ale druhý den už jsem začal pracovat a od té doby jsem si to neotevřel.
 Před časem se mi brácha, analytik v bance, nabídl, že juniorům v klubu odpřednáší o této své profesi.
 Přišlo mi to jako super nápad a 10.1. přednáška v klubu proběhla.
 
-Opět mi záznam zajišťoval pomocník a bylo to úžasné.
+Opět mi záznam zajišťoval pomocník Tinuki a bylo to úžasné.
 Opravdu si užívám, že mohu jen moderovat a nemusím řešit streamování a záznam.
 Na jednotlivé přednášky jsem se začal zase těšit, stres úplně zmizel.
 

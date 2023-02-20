@@ -246,7 +246,7 @@ Když to bude vlažné, tak zkusím, co by mi poradili v [Česko.Digital](https:
 -   [Zeptal jsem se](https://github.com/crdoconnor/strictyaml/issues/191), jestli můj oblíbený strictyaml umí i něco jako Date, protože častěji potřebuji jen datum, než [datum a čas](https://hitchdev.com/strictyaml/using/alpha/scalar/datetime/).
 -   Měli jsme v klubu [přednášku s Týnou Doležalovou o Analýze geoprostorových dat, GIS a geospatial data science](https://www.linkedin.com/posts/honzajavorek_datascience-geospatial-geospatialdata-activity-7023236557289488384-8IQr?utm_source=share&utm_medium=member_desktop).
     Mě se moc líbila a vypadá to, že lidem taky a pouští si ji dost i ze záznamu.
-    O vytvoření záznamu se opět postaral můj pomocník a stále si strašně užívám, jak jednoduché pro mě teď ty přednášky jsou.
+    O vytvoření záznamu se opět postaral Tinuki a stále si strašně užívám, jak jednoduché pro mě teď ty přednášky jsou.
 -   Ozval se mi [Štefan Prokop](https://www.linkedin.com/in/stefanprokopdev/) a plánujeme přednášku na téma security.
 -   Napadlo mě, že by click mohl umět automaticky generovat tasky pro VS Code.
     Ale možná je to blbost.

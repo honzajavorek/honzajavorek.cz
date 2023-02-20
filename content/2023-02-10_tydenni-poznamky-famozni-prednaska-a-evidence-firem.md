@@ -32,12 +32,12 @@ A dověděl jsem se i dobré tipy, které by se daly dát časem na web.
 
 ![Plakát k přednášce]({static}/images/20230207-3f4025980ff02dba215a2a5c26de32b5dbc2f9e1a7bc3dcd44c45fc83495afc1.png){: .img-thumbnail }
 
-Co se týče techniky, tak záznam zajišťoval pomocník a opět vše skvěle klaplo.
+Co se týče techniky, tak záznam zajišťoval Tinuki a opět vše skvěle klaplo.
 Sice jsme dosáhli na strop účastníků, ale byl k dispozici online stream na YouTube, takže kdo by se chtěl ještě přidat, mohl přednášku aspoň sledovat.
 
 Při velké účasti se však hned několikrát stalo, že se připojili lidi se zapnutým mikrofonem, aniž by si to uvědomili, a způsobili tak nepříjemný ruch.
-Tohle s pomocníkem zkusíme vyřešit zapnutím _push-to-talk_ v přednáškárně pro běžné smrtelníky, ale nejdříve to chceme vyzkoušet.
-Také jsem dal pomocníkovi oprávnění vypínat druhým lidem mikrofon, pokud by byl rychlejší než já.
+Tohle s Tinukim zkusíme vyřešit zapnutím _push-to-talk_ v přednáškárně pro běžné smrtelníky, ale nejdříve to chceme vyzkoušet.
+Také jsem dal Tinukimu oprávnění vypínat druhým lidem mikrofon, pokud by byl rychlejší než já.
 
 
 ## Evidence firem

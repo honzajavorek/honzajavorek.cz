@@ -49,7 +49,7 @@ Já tady rok něco řeším a pak otevřu blog a prostě je to konečně vyřeš
 
 Trochu jsem přeskládal klub a přidal tam další kanály typu fórum.
 
--   Přidal jsem nového moderátora, „povýšil“ jsem do této role svého pomocníka na videa, protože byl proaktivní a zodpovědný a má klub rád a tak vůbec.
+-   Přidal jsem nového moderátora, „povýšil“ jsem do této role svého pomocníka na videa Tinukiho, protože byl proaktivní a zodpovědný a má klub rád a tak vůbec.
 -   Vytvořil jsem „fórum“ na „volná témata“ a vcucnul do něj kanály o kávě, F1, Minecraftu a dětech.
 -   Kanál o kurzech jsem předělal na „fórum“ a přidal spoustu emoji s logy kurzů (abych je mohl použít na tématické štítky).
 -   Vytvořil jsem kanál s deníčky.
