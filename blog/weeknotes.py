@@ -96,7 +96,7 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
     # generate weeknotes
     title = f'{prefix}{title}'
     path = content_path / f'{today_iso}_{slugify(title)}.md'
-    last_weeknotes_path = '{filename}/' + str(last_weeknotes_path.relative_to(content_path))
+    last_weeknotes_path = '{filename}' + str(last_weeknotes_path.relative_to(content_path))
     content = dedent(f'''
         Title: {title}
         Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg

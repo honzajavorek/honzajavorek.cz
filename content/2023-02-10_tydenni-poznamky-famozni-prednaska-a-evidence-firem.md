@@ -5,7 +5,7 @@ Tags: týdenní poznámky, junior.guru
 Telegram-Comments: https://t.me/honzajavorekcz/111
 
 
-Utekl zas nějaký ten týden (3. 2. až 10. 2.) a tak [stejně jako minule]({filename}/2023-02-03_tydenni-poznamky-schuzky-a-evidence-firemnich-partnerstvi.md) sepisuji, co jsem dělal a co jsem se naučil.
+Utekl zas nějaký ten týden (3. 2. až 10. 2.) a tak [stejně jako minule]({filename}2023-02-03_tydenni-poznamky-schuzky-a-evidence-firemnich-partnerstvi.md) sepisuji, co jsem dělal a co jsem se naučil.
 Tvořím [junior.guru](https://junior.guru/) a nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/) a členy by mohlo zajímat, co dělám.
 Psaní poznámek mi taky pomáhá nezbláznit se a nepropadat pocitu, že je konec týdne a já jsem nestihl nic udělat.
 

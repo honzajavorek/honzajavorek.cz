@@ -5,7 +5,7 @@ Tags: týdenní poznámky, junior.guru
 Telegram-Comments: https://t.me/honzajavorekcz/93
 
 
-Utekl zas nějaký ten týden (27. 1. až 27. 1.) a tak [stejně jako minule]({filename}/2023-01-27_tydenni-poznamky-jeseniky-a-fora-na-discordu.md) sepisuji, co jsem dělal a co jsem se naučil.
+Utekl zas nějaký ten týden (27. 1. až 27. 1.) a tak [stejně jako minule]({filename}2023-01-13_tydenni-poznamky-moribundus.md) sepisuji, co jsem dělal a co jsem se naučil.
 Tvořím [junior.guru](https://junior.guru/) a nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/) a členy by mohlo zajímat, co dělám.
 Psaní poznámek mi taky pomáhá nezbláznit se a nepropadat pocitu, že je konec týdne a já jsem nestihl nic udělat.
 
