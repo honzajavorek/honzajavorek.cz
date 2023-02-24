@@ -3,33 +3,43 @@ VERSION:2.0
 PRODID:-//kocarkino//honzajavorek.cz//
 UID:9c94f22dac26dce87134e19c4accb1d0c5cc32aa96e4161cd52d8d3a7119ea5c
 BEGIN:VEVENT
-SUMMARY:Kočárkino: Manželství
-DTSTART:20230222T090000Z
+SUMMARY:Kočárkino: Vylidněno
+DTSTART:20230308T090000Z
 DURATION:PT2H
-DTSTAMP:20230220T130918Z
-UID:0462e38528d61132caef0d02650e9a6c8ab205acfcd81a632c7ba41c789c84f6
-DESCRIPTION:https://kcvozovna.cz/8349/kocarkino-manzelstvi/\nhttps://www.c
- sfd.cz/hledat/?q=Man%C5%BEelstv%C3%AD
+DTSTAMP:20230224T154032Z
+UID:ce16fbccae2c3f08f9522f54859c896cc84bc657482dcdc2e9da581c578d0cf7
+DESCRIPTION:https://kcvozovna.cz/8490/kocarkino-vylidneno/\nhttps://www.cs
+ fd.cz/hledat/?q=Vylidn%C4%9Bno
 LOCATION:KC VOZOVNA\, Koněvova 2687/164\, Praha 3
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Baby Bio: Piargy
-DTSTART:20230221T090000Z
+SUMMARY:Kočárkino: A pak přišla láska…
+DTSTART:20230322T090000Z
 DURATION:PT2H
-DTSTAMP:20230220T130920Z
-UID:ed9903a901116aefed77cf6b5561150e10bf52280291bf18109a9471d90b010f
-DESCRIPTION:https://www.biooko.net/?projection=16205\nhttps://www.csfd.cz/
- hledat/?q=Piargy
-LOCATION:Bio Oko\, Františka Křížka 460/15\, Praha 7
+DTSTAMP:20230224T154032Z
+UID:0f2f3ce3b5e738c85dfcf8f45cc24a524abc3416ae4d2d3103dfd589ef100d34
+DESCRIPTION:https://kcvozovna.cz/8489/kocarkino-a-pak-prisla-laska/\nhttps
+ ://www.csfd.cz/hledat/?q=A%20pak%20p%C5%99i%C5%A1la%20l%C3%A1ska%E2%80%A6
+LOCATION:KC VOZOVNA\, Koněvova 2687/164\, Praha 3
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Baby Bio: Bez kalhot: Poslední tanec
 DTSTART:20230228T090000Z
 DURATION:PT2H
-DTSTAMP:20230220T130920Z
+DTSTAMP:20230224T154033Z
 UID:ab8c23fc3e67158c9a76df4c67ab2b46c4e3786bcc46cbc0ab207a6a998708f9
 DESCRIPTION:https://www.biooko.net/?projection=16478\nhttps://www.csfd.cz/
  hledat/?q=Bez%20kalhot%3A%20Posledn%C3%AD%20tanec
+LOCATION:Bio Oko\, Františka Křížka 460/15\, Praha 7
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Baby Bio: Velryba
+DTSTART:20230307T090000Z
+DURATION:PT2H
+DTSTAMP:20230224T154033Z
+UID:4902f874f7557f3a0452bf341b573b6b996b2ca2abfc2822cf89e70de51e304c
+DESCRIPTION:https://www.biooko.net/?projection=16602\nhttps://www.csfd.cz/
+ hledat/?q=Velryba
 LOCATION:Bio Oko\, Františka Křížka 460/15\, Praha 7
 END:VEVENT
 END:VCALENDAR
