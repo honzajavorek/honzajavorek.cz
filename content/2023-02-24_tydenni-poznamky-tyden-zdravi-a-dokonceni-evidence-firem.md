@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Týden zdraví a dokončení evidence firem
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/122
 
 
 Utekl zas nějaký ten týden (17. 2. až 24. 2.) a tak [stejně jako minule]({filename}2023-02-17_tydenni-poznamky-schuzky-a-nekonecna-administrativa.md) sepisuji, co jsem dělal a co jsem se naučil.
