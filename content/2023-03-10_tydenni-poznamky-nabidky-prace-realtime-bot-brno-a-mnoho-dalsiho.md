@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Nabídky práce, realtime bot, Brno a mnoho dalšíh
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/136
 
 
 Utekl zas nějaký ten týden (24. 2. až 10. 3.) a tak [stejně jako minule]({filename}2023-02-24_tydenni-poznamky-tyden-zdravi-a-dokonceni-evidence-firem.md) sepisuji, co jsem dělal a co jsem se naučil.
