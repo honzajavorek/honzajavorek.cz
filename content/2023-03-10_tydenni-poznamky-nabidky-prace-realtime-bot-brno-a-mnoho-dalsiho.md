@@ -311,7 +311,7 @@ Využil jsem to tedy k vyřešení několika drobných úkolů, které měly ní
     Nakoupil jsem nějaká Eura na dovolenou, protože jsou teď levná.
 -   Byli jsme v Brně na prodloužený víkend.
     Klasicky [vlakem]({filename}2021-08-28_bez-auta.md), tentokrát jsme vzali i kočár.
-    Měli jsme strašně nabitý program jak jsme se snažili vidět co nejvíc kamarádů a rodiny a stihnout co nejvíc akcí (běh, [Sendivč](https://www.hrasendvic.cz/), [koncert](https://www.artbar.club/events/mutanti-hledaj-vychodisko-don-juan-disco)).
+    Měli jsme strašně nabitý program jak jsme se snažili vidět co nejvíc kamarádů a rodiny a stihnout co nejvíc akcí (běh, [Sendvič](https://www.hrasendvic.cz/), [koncert](https://www.artbar.club/events/mutanti-hledaj-vychodisko-don-juan-disco)).
     Myslím, že jsme to trochu přehnali a měli jsme si to dát víc lážo plážo.
     Místy utrpělo naše zdraví i psychika.
 -   Účastnil jsem se uživatelského testování appky [RichBull](https://richbull.co/), nového nástroje pro trackování investic.
