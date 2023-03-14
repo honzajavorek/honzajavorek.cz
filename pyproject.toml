@@ -14,7 +14,7 @@ blog = "blog:main"
 [tool.poetry.dependencies]
 python = "3.10.*"
 pelican = {version = "4.8.0", extras = ["markdown"]}
-strictyaml = "1.6.2"
+strictyaml = "1.7.3"
 requests = "2.28.2"
 lxml = "4.9.2"
 cssselect = "1.2.0"
