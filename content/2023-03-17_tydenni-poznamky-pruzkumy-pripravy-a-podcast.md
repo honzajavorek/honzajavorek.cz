@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Průzkumy, přípravy a podcast
 Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/149
 
 
 Utekl zas nějaký ten týden (10. 3. až 17. 3.) a tak [stejně jako minule]({filename}2023-03-10_tydenni-poznamky-nabidky-prace-realtime-bot-brno-a-mnoho-dalsiho.md) sepisuji, co jsem dělal a co jsem se naučil.
