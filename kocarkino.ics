@@ -6,10 +6,30 @@ BEGIN:VEVENT
 SUMMARY:Kočárkino: A pak přišla láska…
 DTSTART:20230322T090000Z
 DURATION:PT2H
-DTSTAMP:20230318T001025Z
+DTSTAMP:20230321T083007Z
 UID:0f2f3ce3b5e738c85dfcf8f45cc24a524abc3416ae4d2d3103dfd589ef100d34
 DESCRIPTION:https://kcvozovna.cz/8489/kocarkino-a-pak-prisla-laska/\nhttps
  ://www.csfd.cz/hledat/?q=A%20pak%20p%C5%99i%C5%A1la%20l%C3%A1ska%E2%80%A6
+LOCATION:KC VOZOVNA\, Koněvova 2687/164\, Praha 3
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Kočárkino: Za hranicemi možností
+DTSTART:20230405T080000Z
+DURATION:PT2H
+DTSTAMP:20230321T083007Z
+UID:630a27a4b8ae265fa9777df95bf58e91c66cb511e69b3a6d07d9852e61fe4eee
+DESCRIPTION:https://kcvozovna.cz/8594/kocarkino-za-hranicemi-moznosti/\nht
+ tps://www.csfd.cz/hledat/?q=Za%20hranicemi%20mo%C5%BEnost%C3%AD
+LOCATION:KC VOZOVNA\, Koněvova 2687/164\, Praha 3
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Kočárkino: Velryba
+DTSTART:20230419T080000Z
+DURATION:PT2H
+DTSTAMP:20230321T083007Z
+UID:aea5abf377815ea32f0eb916d318327a4bf7cb50ba0e03eb2842561cefb31b8c
+DESCRIPTION:https://kcvozovna.cz/8595/kocarkino-velryba/\nhttps://www.csfd
+ .cz/hledat/?q=Velryba
 LOCATION:KC VOZOVNA\, Koněvova 2687/164\, Praha 3
 END:VEVENT
 END:VCALENDAR
