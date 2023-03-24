@@ -3,20 +3,10 @@ VERSION:2.0
 PRODID:-//kocarkino//honzajavorek.cz//
 UID:9c94f22dac26dce87134e19c4accb1d0c5cc32aa96e4161cd52d8d3a7119ea5c
 BEGIN:VEVENT
-SUMMARY:Kočárkino: A pak přišla láska…
-DTSTART:20230322T090000Z
-DURATION:PT2H
-DTSTAMP:20230321T083007Z
-UID:0f2f3ce3b5e738c85dfcf8f45cc24a524abc3416ae4d2d3103dfd589ef100d34
-DESCRIPTION:https://kcvozovna.cz/8489/kocarkino-a-pak-prisla-laska/\nhttps
- ://www.csfd.cz/hledat/?q=A%20pak%20p%C5%99i%C5%A1la%20l%C3%A1ska%E2%80%A6
-LOCATION:KC VOZOVNA\, Koněvova 2687/164\, Praha 3
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Kočárkino: Za hranicemi možností
 DTSTART:20230405T080000Z
 DURATION:PT2H
-DTSTAMP:20230321T083007Z
+DTSTAMP:20230324T170409Z
 UID:630a27a4b8ae265fa9777df95bf58e91c66cb511e69b3a6d07d9852e61fe4eee
 DESCRIPTION:https://kcvozovna.cz/8594/kocarkino-za-hranicemi-moznosti/\nht
  tps://www.csfd.cz/hledat/?q=Za%20hranicemi%20mo%C5%BEnost%C3%AD
@@ -26,11 +16,22 @@ BEGIN:VEVENT
 SUMMARY:Kočárkino: Velryba
 DTSTART:20230419T080000Z
 DURATION:PT2H
-DTSTAMP:20230321T083007Z
+DTSTAMP:20230324T170409Z
 UID:aea5abf377815ea32f0eb916d318327a4bf7cb50ba0e03eb2842561cefb31b8c
 DESCRIPTION:https://kcvozovna.cz/8595/kocarkino-velryba/\nhttps://www.csfd
  .cz/hledat/?q=Velryba
 LOCATION:KC VOZOVNA\, Koněvova 2687/164\, Praha 3
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Baby Bio: S rodinou půl roku v obytňáku po Balkáně
+DTSTART:20230404T080000Z
+DURATION:PT2H
+DTSTAMP:20230324T170410Z
+UID:4182ae0eecec528182ce8543d6c447b39eeef2fbd4b415227e3c2d90023009ed
+DESCRIPTION:https://www.biooko.net/?projection=17386\nhttps://www.csfd.cz/
+ hledat/?q=S%20rodinou%20p%C5%AFl%20roku%20v%20obyt%C5%88%C3%A1ku%20po%20Ba
+ lk%C3%A1n%C4%9B
+LOCATION:Bio Oko\, Františka Křížka 460/15\, Praha 7
 END:VEVENT
 END:VCALENDAR
 
