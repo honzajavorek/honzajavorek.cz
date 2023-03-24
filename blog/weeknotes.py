@@ -99,44 +99,34 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
     last_weeknotes_path = '{filename}' + str(last_weeknotes_path.relative_to(content_path))
     content = dedent(f'''
         Title: {title}
-        Image: images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg
+        Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
         Lang: cs
         Tags: {settings_module.WEEKNOTES_TAG}, junior.guru
 
+        Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
+        Od [posledních poznámek]({last_weeknotes_path}) už utekl nějaký ten týden ({last_weeknotes_date_cz} až {today_cz}), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
 
-        Utekl zas nějaký ten týden ({last_weeknotes_date_cz} až {today_cz}) a tak [stejně jako minule]({last_weeknotes_path}) sepisuji, co jsem dělal a co jsem se naučil.
-        Tvořím [junior.guru](https://junior.guru/) a nemám šéfa, kterému bych reportoval každý svůj krok, ale mám [klub](https://junior.guru/club/) a členy by mohlo zajímat, co dělám.
-        Psaní poznámek mi taky pomáhá nezbláznit se a nepropadat pocitu, že je konec týdne a já jsem nestihl nic udělat.
+        ![Poznámky]({{static}}/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg)
+        Fotil [Markus Spiske](https://unsplash.com/@markusspiske)
 
-        ![Poznámky]({{static}}/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg)
-        Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
+        <div class="alert alert-warning" role="alert" markdown="1">
+        **Čísla:** Finanční výsledky, návštěvnost a další čísla k junior.guru [mám přímo na webu](https://junior.guru/open/).
+        {jobs_text}
 
-
-        <!-- Honzo, piš jednu větu na řádek! https://sive.rs/1s -->
-
+        **Plány:** Četli jste, co [letos plánuji]({{filename}}2022-12-26_strategie-na-2023.md)?
+        Svůj postup zaznamenávám do [tabulky na GitHubu](https://github.com/orgs/juniorguru/projects/1/).
+        </div>
 
         ## Další
 
-        -   Odpovídání v klubu, e-maily, [Pyvec Slack](https://docs.pyvec.org/operations/support.html#sit-kontaktu), atd.
-            Upgradování závislostí na vlastních i Pyvec projektech (zpracovávání Pull Requestů, které průběžně posílá Dependabot).
+        -   E-maily, [klubový Discord](https://junior.guru/club/), [Pyvec Slack](https://docs.pyvec.org/operations/support.html#sit-kontaktu).
         -   {strava_text}
-        -   Finanční výsledky, návštěvnost a další čísla k JG [mám přímo na webu](https://junior.guru/open/).
-            {jobs_text}
-
-
-        ## Povedlo se
-
-        Udělal jsem něco z [plánů na rok 2023]({{filename}}2022-12-26_strategie-na-2023.md)?
-
-        <!-- Koukni sem https://www.icloud.com/notes/092v6QG3aoSmpVOGHnpg0uIXQ -->
-
 
         <div class="alert alert-warning" role="alert" markdown="1">
-        **Okénko duševního zdraví.**
+        **Okénko duševního zdraví:**
         Máte dojem, že na rozdíl ode mně nic nestíháte?
         Buďte v klidu, [není to závod]({{filename}}2020-06-04_neni-to-zavod.md)!
         </div>
-
 
         ## Plánuji
 
@@ -144,11 +134,10 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
         2.
         3.
 
-
         ## Zaujalo mě
 
         Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
-        Od posledních poznámek jsem sdílel toto:
+        Od posledních poznámek jsem sdílel:
 
     ''').lstrip()
     for article in articles:
@@ -251,7 +240,7 @@ def calc_strava_stats(activities):
 
 def strava_stats_to_text(start_date, end_date, stats):
     total_days = (end_date - start_date).days + 1
-    text = f"Během {total_days} dní od {start_date.day}. {start_date.month}. do {end_date.day}. {end_date.month}. "
+    text = f"Během {total_days} dní "
 
     if not stats:
         return text + 'jsem se nevěnoval žádné sportovní aktivitě.'
@@ -265,5 +254,5 @@ def strava_stats_to_text(start_date, end_date, stats):
     total_time = sum(int(substats['time']) for substats in stats.values())
 
     text += f"jsem {', '.join(parts)}."
-    text += f" Celkem jsem se hýbal {total_time} hodin a zdolal při tom {total_distance} kilometrů."
+    text += f" Celkem jsem se hýbal {total_time} h a zdolal při tom {total_distance} km."
     return text
