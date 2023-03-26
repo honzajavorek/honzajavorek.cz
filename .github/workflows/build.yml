@@ -46,6 +46,8 @@ jobs:
         run: poetry run blog kocarkino > ./public/kocarkino.ics
 
       - name: Reading
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
         run: poetry run blog reading > ./public/reading.xml
 
       - name: Deploy to GitHub Pages
