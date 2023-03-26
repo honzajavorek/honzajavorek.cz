@@ -31,7 +31,7 @@ pillow-heif = "0.10.0"
 icalendar = "5.0.4"
 extruct = "0.14.0"
 notion-client = "^2.0.0"
-feedparser = "^6.0.10"
+feedgen = "^0.9.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "7.2.2"

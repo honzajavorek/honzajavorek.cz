@@ -281,6 +281,21 @@ w3lib = "*"
 cli = ["requests"]
 
 [[package]]
+name = "feedgen"
+version = "0.9.0"
+description = "Feed Generator (ATOM, RSS, Podcasts)"
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "feedgen-0.9.0.tar.gz", hash = "sha256:8e811bdbbed6570034950db23a4388453628a70e689a6e8303ccec430f5a804a"},
+]
+
+[package.dependencies]
+lxml = "*"
+python-dateutil = "*"
+
+[[package]]
 name = "feedgenerator"
 version = "2.0.0"
 description = "Standalone version of django.utils.feedgenerator"
@@ -294,21 +309,6 @@ files = [
 
 [package.dependencies]
 pytz = ">=0a"
-
-[[package]]
-name = "feedparser"
-version = "6.0.10"
-description = "Universal feed parser, handles RSS 0.9x, RSS 1.0, RSS 2.0, CDF, Atom 0.3, and Atom 1.0 feeds"
-category = "main"
-optional = false
-python-versions = ">=3.6"
-files = [
-    {file = "feedparser-6.0.10-py3-none-any.whl", hash = "sha256:79c257d526d13b944e965f6095700587f27388e50ea16fd245babe4dfae7024f"},
-    {file = "feedparser-6.0.10.tar.gz", hash = "sha256:27da485f4637ce7163cdeab13a80312b93b7d0c1b775bef4a47629a3110bca51"},
-]
-
-[package.dependencies]
-sgmllib3k = "*"
 
 [[package]]
 name = "h11"
@@ -1283,17 +1283,6 @@ testing = ["build[virtualenv]", "filelock (>=3.4.0)", "flake8 (<5)", "flake8-202
 testing-integration = ["build[virtualenv]", "filelock (>=3.4.0)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "pytest", "pytest-enabler", "pytest-xdist", "tomli", "virtualenv (>=13.0.0)", "wheel"]
 
 [[package]]
-name = "sgmllib3k"
-version = "1.0.0"
-description = "Py3k port of sgmllib."
-category = "main"
-optional = false
-python-versions = "*"
-files = [
-    {file = "sgmllib3k-1.0.0.tar.gz", hash = "sha256:7868fb1c8bfa764c1ac563d3cf369c381d1325d36124933a726f29fcdaa812e9"},
-]
-
-[[package]]
 name = "six"
 version = "1.16.0"
 description = "Python 2 and 3 compatibility utilities"
@@ -1538,4 +1527,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "3.10.*"
-content-hash = "0f02e7f5238f051ceab81b244e0a5722f5a6e3335e167d02d31e89e0986767d9"
+content-hash = "cb7339b0e77ac6fd2ea9619e1ddc8edaa973785dd0b33d6f3152b6171b15bf42"
