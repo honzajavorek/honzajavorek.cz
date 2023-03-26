@@ -18,6 +18,7 @@ from blog.telegram import main as telegram
 from blog.weeknotes import main as weeknotes
 from blog.media import main as media
 from blog.kocarkino import main as kocarkino
+from blog.reading import main as reading
 
 
 @click.group()
@@ -30,6 +31,7 @@ main.add_command(weeknotes, 'weeknotes')
 main.add_command(media, 'media')
 main.add_command(strava, 'strava')
 main.add_command(kocarkino, 'kocarkino')
+main.add_command(reading, 'reading')
 
 
 @main.command()

@@ -45,6 +45,9 @@ jobs:
       - name: Kočárkino
         run: poetry run blog kocarkino > ./public/kocarkino.ics
 
+      - name: Reading
+        run: poetry run blog reading > ./public/reading.xml
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
