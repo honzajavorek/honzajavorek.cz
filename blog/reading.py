@@ -7,15 +7,13 @@ from notion_client.helpers import iterate_paginated_api
 from feedgen.feed import FeedGenerator
 
 
-FEED_ID = 'EVVcNQWvn9.QMwn6Z--KMTk4rmJnvNyABKRCcGM@'
-
-
 @click.command()
 @click.argument('notion_token', envvar='NOTION_TOKEN')
 @click.option('--database-id', default='6300c201957f499a81ebc9a097950fc8')
-def main(notion_token, database_id):
+@click.option('--feed-id', default='EVVcNQWvn9.QMwn6Z--KMTk4rmJnvNyABKRCcGM@')
+def main(notion_token, database_id, feed_id):
     feed = FeedGenerator()
-    feed.id(FEED_ID)
+    feed.id(feed_id)
     feed.title("HJ's Reading")
     notion = Client(auth=notion_token)
     for result in iterate_paginated_api(notion.databases.query, database_id=database_id):
