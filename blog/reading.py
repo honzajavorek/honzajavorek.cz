@@ -18,9 +18,12 @@ def main(notion_token, database_id, feed_id):
     notion = Client(auth=notion_token)
     for result in iterate_paginated_api(notion.databases.query, database_id=database_id):
         for item in result:
+            url = item['properties']['URL']['url']
+            title = item['properties']['Name']['title'][0]['plain_text']
+            created_at = item['created_time']
             entry = feed.add_entry()
-            entry.id('http://lernfunk.de/media/654321')
-            entry.title(item['properties']['Name']['title'][0]['plain_text'])
-            entry.link(href=item['properties']['URL']['url'])
-            entry.published(item['created_time'])
+            entry.id(url)
+            entry.title(title)
+            entry.link(href=url)
+            entry.published(created_at)
     click.echo(feed.atom_str())
