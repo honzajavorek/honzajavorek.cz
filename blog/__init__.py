@@ -55,7 +55,7 @@ def build(content_path, settings_module, debug):
 @click.argument('title')
 @click.option('--path', 'content_path', default='content', type=click.Path(exists=True, path_type=Path))
 @click.option('--settings-module', default='publishconf', type=importlib.import_module)
-@click.option('--debug/--no-debug', default=True)
+@click.option('--debug/--no-debug', default=False)
 @click.option('--open/--no-open', default=True)
 def new(title, content_path, settings_module, debug, open):
     today = date.today()
@@ -71,7 +71,7 @@ def new(title, content_path, settings_module, debug, open):
         Fotka od [???](https://unsplash.com/@???)
 
         Něco dalšího.
-    ''')
+    ''').lstrip()
     path = content_path / f'{today_iso}_{slugify(title)}.md'
     if debug:
         click.secho(path.name, bold=True)

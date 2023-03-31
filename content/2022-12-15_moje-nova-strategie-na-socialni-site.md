@@ -320,7 +320,7 @@ Pokud budu mít něco velkého, nebo zajímavého i pro jiné komunity, klidně 
 Kde budu sledovat novinky a zajímavosti já?
 Možná zkusím víc číst knihy.
 Nebo blogy, kde musel autor víc přemýšlet nad tím, co napíše.
-Našel jsem si [hezkou RSS čtečku](https://nnw.ranchero.com/) a sleduji přes ni i pár Twitter účtů.
+Našel jsem si [hezkou RSS čtečku](https://netnewswire.com/) a sleduji přes ni i pár Twitter účtů.
 Nemožnost na tweety reagovat, nebo číst diskuzi pod nimi, je přímo osvobozující.
 Pokud by mi to nestačilo, zkusím newslettery a Reddit.
 

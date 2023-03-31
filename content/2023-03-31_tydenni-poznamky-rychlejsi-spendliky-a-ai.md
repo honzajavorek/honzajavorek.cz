@@ -151,7 +151,7 @@ Jak jsem psal minule, [Pocket](https://getpocket.com/) nemá z více důvodů po
     Přečte odkazy a vygeneruje RSS.
     Jádro programu má přesně 15 řádků.
 -   Dal jsem si to na GitHub a jednou za čas se mi přes GitHub Actions vygeneruje RSS soubor.
-    Ten jsem si přidal do [NetNewsWire](https://nnw.ranchero.com/) a hotovo!
+    Ten jsem si přidal do [NetNewsWire](https://netnewswire.com/) a hotovo!
     Teď mohu chodit po internetu a posílat si náhodné články do RSS čtečky a ještě mám jejich databázi v Notionu.
 
 ![Notion]({static}/images/screenshot-2023-03-26-at-16-14-39.png)

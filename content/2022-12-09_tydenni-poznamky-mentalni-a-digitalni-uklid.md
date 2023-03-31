@@ -48,7 +48,7 @@ Nakonec jsem jel s dobrým kamarádem na víkend do Krkonoš, kde jsme si témě
 
 ![Výhled ze Sněžky na peřinu mračen]({static}/images/img-0754.jpg)
 
-Věci, které chci sledovat, jsem si dal do [RSS čtečky](https://nnw.ranchero.com/), která umí sledovat i Twitter účty. Pár jsem si jich nechal, např. [Levelse](https://twitter.com/levelsio/) nebo účet [Tomáše Borovského](https://twitter.com/TomBorovsk1), můj oblíbený středověký kousek internetu. Je osvobozující číst jen tweety a nevidět diskuzi pod nimi. Nemít možnost na nic klikat, odpovědět, lajkovat. Jak to popsal Oliver Burkeman v tom Four Thousand Weeks, místo FOMO (_fear of missing out_) si užívat [JOMO](https://twitter.com/honzajavorek/status/1600421050138775552) (_joy of missing out_).
+Věci, které chci sledovat, jsem si dal do [RSS čtečky](https://netnewswire.com/), která umí sledovat i Twitter účty. Pár jsem si jich nechal, např. [Levelse](https://twitter.com/levelsio/) nebo účet [Tomáše Borovského](https://twitter.com/TomBorovsk1), můj oblíbený středověký kousek internetu. Je osvobozující číst jen tweety a nevidět diskuzi pod nimi. Nemít možnost na nic klikat, odpovědět, lajkovat. Jak to popsal Oliver Burkeman v tom Four Thousand Weeks, místo FOMO (_fear of missing out_) si užívat [JOMO](https://twitter.com/honzajavorek/status/1600421050138775552) (_joy of missing out_).
 
 Účty na sociálních sítích jsem záměrně nezrušil, protože tam hodlám čas od času jít. Nemá to být [_infosuicide_](https://en.wikipedia.org/wiki/Mark_Pilgrim#%22Disappearance%22_from_the_Internet), jen úklid, vyjádření preference a přesměrování své energie jinam. Z oněch třech sítí jsem se však na všech zařízeních odhlásil. Připadá vám to jako popis nějaké odvykačky? Možná to tak je :)
 
