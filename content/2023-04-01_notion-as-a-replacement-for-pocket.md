@@ -2,6 +2,7 @@ Title: Notion as a replacement for Pocket
 Image: images/screenshot-2023-03-26-at-16-13-57.png
 Lang: en
 HackerNews-Comments: https://news.ycombinator.com/item?id=35394677
+Telegram-Comments: https://t.me/honzajavorekcz/171
 
 I know [Notion](https://www.notion.so/) exists, but until now I didn't pay much attention to it.
 With my recent transition from social media and [Pocket](https://getpocket.com/) to good old RSS feeds, I've been looking for a way to save random internet articles to a single feed, which I could then put to my RSS reader.
