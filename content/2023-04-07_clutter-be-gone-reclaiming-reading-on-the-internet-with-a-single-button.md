@@ -138,7 +138,7 @@ If you didn't put the ads all over that page, I wouldn't be motivated to block t
 If you didn't track me, there would be no cookie prompts to avoid.
 If you didn't prompt me to do five hops before I'm able to get to the content, I wouldn't be giving up on how you designed the site.
 
-My [junior.guru](https://junior.guru/) currently [earns $2.523 net profit per month](https://junior.guru/open/) and it doesn't have ads, tracking cookies, nor newsletter prompts.
+My [junior.guru](https://junior.guru/) currently [earns 2.322€ net profit per month](https://junior.guru/open/) and it doesn't have ads, tracking cookies, nor newsletter prompts.
 
 And yes, I do have some [analytics](https://simpleanalytics.com/junior.guru).
 Detailed analytics based on tracking people are overrated.
