@@ -1,5 +1,3 @@
-from pprint import pprint
-
 import click
 from notion_client import Client
 from notion_client.helpers import iterate_paginated_api
