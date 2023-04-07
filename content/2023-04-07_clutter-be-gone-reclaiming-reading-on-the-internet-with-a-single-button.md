@@ -2,6 +2,7 @@ Title: Clutter be gone: Reclaiming reading on the internet with a single button
 Image: images/screenshot-2023-04-07-at-11-18-52.png
 Lang: en
 Telegram-Comments: https://t.me/honzajavorekcz/182
+HackerNews-Comments: https://news.ycombinator.com/item?id=35480846
 
 Are you tired of reading through the clutter of cookie prompts, advertisements, and notification prompts?
 What if I told you there is a single magic button which gets you just the information you're interested in?
