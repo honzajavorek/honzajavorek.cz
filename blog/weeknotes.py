@@ -157,7 +157,7 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
 
 def get_articles(last_weeknotes_slug, telegram_channel, telegram_app_api_id, telegram_app_api_hash):
     articles = []
-    with TelegramClient('weeknotes', telegram_app_api_id, telegram_app_api_hash) as telegram:
+    with TelegramClient('_weeknotes', telegram_app_api_id, telegram_app_api_hash) as telegram:
         channel = telegram.get_entity(telegram_channel)
         for message in telegram.iter_messages(channel):
             if not message.message:
