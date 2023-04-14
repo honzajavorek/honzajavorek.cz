@@ -68,6 +68,8 @@ FILENAME_METADATA = r'(?P<date>\d{4}-\d{2}-\d{2})_(?P<slug>.*)'
 # Translations
 ARTICLE_LANG_URL = 'blog/{slug}/'
 ARTICLE_LANG_SAVE_AS = 'blog/{slug}/index.html'
+DRAFT_LANG_URL = ARTICLE_LANG_URL
+DRAFT_LANG_SAVE_AS = ARTICLE_LANG_SAVE_AS
 ARTICLE_TRANSLATION_ID = 'translation-id'  # comes from custom plugin
 
 # Turning off unused blog features
