@@ -69,5 +69,17 @@ Ještě jeden pokus.
 Ještě.
 A ještě jeden, teď už to musí vyjít…
 
+Taky jsem se přes Velikonoce hrabal ve starých fotkách a zkusil jsem upscalovat nějaké ze starých mobilů.
+Některé ty fotky jsou menší než 640×480px a na mojí retině vypadají jako malý obdélníček uprostřed obrazovky.
+Objevil jsem následující:
+
+-   [jpgHD](https://jpghd.com/), který je online a nad rámec dema za peníze.
+-   [upscayl](https://github.com/upscayl/upscayl), který je open source a jde nainstalovat a použít lokálně.
+
+Ten druhý jsem zkusil a na to, co jsem do toho dával, to mělo celkem obstojné výsledky.
+Možná by to ale šlo i líp.
+Možná by k tomu šlo použít i to Stable Diffusion!
+Jenže to jsem zatím nezkoumal.
+
 Pokud jste ve zkoušení dál než já, dejte vědět nějaké tipy!
 A jestli jste ještě Stable Diffusion nezkoušeli, třeba vám tenhle článek pomůže začít.
