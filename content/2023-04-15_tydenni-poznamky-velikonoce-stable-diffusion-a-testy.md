@@ -47,16 +47,18 @@ Jak jsem už psal, [hrál jsem si hodně se Stable Diffusion]({filename}2023-04-
 Ale hrál jsem si i s ChatGPT a myslím, že jsem vymyslel způsob, jak jej využít na vítání nových členů v klubu, nebo na třídění nabídek práce.
 Specifický způsob promptování mě napadl už dřív, ale až teď jsem to vyzkoušel a k mému velkému překvapení se zdá, že to funguje.
 
+![ChatGPT]({static}/images/screenshot-2023-04-15-at-10-03-14-chatgpt.png){: .img-thumbnail }
+
 ## Newsletter
 
 První z článků nějak záhadně přesvědčil MailChimp, že má poslat newsletter.
 
-![Newsletter]({static}/images/screenshot-2023-04-01-at-13-16-21.png)
+![Newsletter]({static}/images/screenshot-2023-04-01-at-13-16-21.png){: .img-thumbnail }
 
 To mě dost překvapilo, protože jsem měl za to, že to prostě nefunguje.
 V nastavení jsem vůbec nic neměnil.
-Poslalo to pak i druhý článek.
-Tak jsem zvědav, jestli to pošle i tyhle poznámky.
+Poslalo to pak i druhý a třetí článek.
+Tak jsem zvědav, jestli to pošle i tyhle poznámky!
 
 Pokud chcete, aby vám do mailu náhodně chodily nebo nechodily mé články, tak se [přihlašte zde](http://eepurl.com/ifI06H).
 
@@ -98,11 +100,14 @@ Pouhým okem mi přišlo, že počet nově příchozích do klubu se těsně př
 Jako fail by se jinak dalo počítat i to, že můj brácha v klubu šířil inzeráty na nějaké pozice u nich ve firmě a už měl i zájemce, ale ten z toho po mé Q&A vycouval, protože jsem tam juniorům nedoporučil do začátku práci „na IČO“.
 Ups!
 
+![Marc Rebillet]({static}/images/screenshot-2023-03-13-at-10-43-01-rainy-sunday-youtube.png){: .img-thumbnail }
+Přesně takhle vypadala moje Q&A s chatem na YouTube
+
 ## Zneužívání 14 dní zdarma
 
 Moderátoři a jeden další člen klubu mi nezávisle na sobě dali tip, že někdo nejspíš zneužívá 14 dní zdarma v klubu.
 Týpek s nápadně podobnými přezdívkami a nápadně podobnými dotazy.
-Vždy, když potřebuje něco vyřešit, udělá si nový účet, jde zdarma do klubu a využívá jej.
+Vždy, když potřebuje něco vyřešit, nejspíš dokonce do práce, udělá si nový účet, jde zdarma do klubu a využívá jej.
 
 Nechtěl jsem si kazit Velikonoce, tak jsem se na to pořádně podíval až v tomto týdnu.
 A fakt že jo.
@@ -165,6 +170,7 @@ Ve zbylém čase asi stihnu jen klub, nějakou režii, možná opravy chyb v kó
 Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
 Od posledních poznámek jsem sdílel:
 
+- [Programmer’s Guide to the Big Tech Companies 💻 | Zero To Mastery](https://zerotomastery.io/blog/programmers-guide-to-the-big-tech-companies/)<br>Jaké jsou motivace velkých firem jako Google nebo Apple?
 - [Jako Slovák mám po návštěvě Izraele vzkaz pro Čechy: Přestaňte už konečně s tím „malým národem“](https://cc.cz/jako-slovak-mam-po-navsteve-izraele-vzkaz-pro-cechy-prestante-uz-konecne-s-tim-malym-narodem/)<br>„…průměrný Čech je bohatší než průměrný Izraelec. K tomu ještě malá zajímavost. Česko má HDP na obyvatele vyšší i než Japonsko.“
 - [LLMs break the internet — The Changelog: Software Development, Open Source](https://changelog.com/podcast/534)<br>Rozhovor se Simonem Willisonem o LLMs (AI jako je GPT) a o tom co všechno to může do budoucna způsobit, co to už způsobuje, jak to využít, použít, jak s tím začít.
 - [The User is King (And Not)](https://nemil.com/2020/01/29/the-user-is-king-and-not/)<br>„You think the user is just like you. In some contexts—developer tools, open source software—you’re actually a pretty good proxy for the actual user. But especially today where tech is used by billions of people from all walks of life, you’re only one small group—and probably not the most important one.“ … „If you haven’t interacted with some of your users, you’re doing software wrong.“ A podle mě nejlepší způsob jak toho v běžné firmě dosáhnout je sednout si občas k user supportu a odpovídat.

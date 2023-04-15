@@ -1,4 +1,4 @@
-Title: Jak jsem si začal hrát s generováním obrázků pomocí AI
+Title: Jak jsem si začal hrát s generováním obrázků pomocí AI
 Image: images/screenshot-2023-04-14-at-21-39-47-diffusionbee-stable-diffusion-app-for-ai-art.png
 Lang: cs
 Telegram-Comments: https://t.me/honzajavorekcz/187
