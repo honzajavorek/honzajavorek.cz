@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Velikonoce, Stable Diffusion a testy
 Image: images/img-2845.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/189
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-03-31_tydenni-poznamky-rychlejsi-spendliky-a-ai.md) už utekl nějaký ten týden (31. 3. až 14. 4.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
