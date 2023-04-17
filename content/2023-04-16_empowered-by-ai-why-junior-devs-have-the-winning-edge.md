@@ -1,6 +1,7 @@
 Title: Empowered by AI: Why junior devs have the winning edge
 Image: images/woman-programming-on-her-laptop.jpg
 Lang: en
+Tags: highlight
 Status: draft
 
 I'm in the business of [helping people to switch careers and learn coding](https://junior.guru/).
