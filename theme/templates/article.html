@@ -132,56 +132,6 @@
     {{ article.content }}
   </main>
 
-  {% if article.comments %}
-  <section id="comments" class="article-comments comments">
-    {% set telegram_comments = article.comments|selectattr('name', 'equalto', 'Telegram')|first %}
-    {% if telegram_comments %}
-      <div class="comments-telegram">
-        <script>
-          function comments(button) {
-            button.setAttribute('disabled', '');
-            const div = document.createElement('div');
-            div.classList.add('comments-frame');
-            const script = document.createElement('script');
-            script.setAttribute('src', 'https://telegram.org/js/telegram-widget.js?21');
-            script.dataset.telegramDiscussion = {{ telegram_comments.url|replace('https://t.me/', '')|tojson }};
-            script.dataset.commentsLimit = 50;
-            script.dataset.color = 212529;
-            div.append(script);
-            button.parentNode.append(div);
-            button.remove();
-          }
-        </script>
-        <button class="btn btn-primary btn-lg" onclick="comments(this);">
-          <i class="bi bi-chat-dots"></i>
-          {% if article.lang == 'cs' %}
-            Komentáře
-          {% else %}
-            Comments
-          {% endif %}
-        </button>
-      </div>
-    {% else %}
-      <h3 class="comments-heading">
-        {%- if article.lang == 'cs' -%}
-          Komentáře na
-        {%- else -%}
-          Comments at
-        {%- endif -%}
-      </h3>
-      <ul class="comments-list">
-      {% for comments in article.comments %}
-        <li class="comments-item">
-          <i class="bi bi-{{ comments.icon }}"></i>
-          <a href="{{ comments.url }}">
-            {{ comments.name -}}
-          </a>
-        </li>
-      {% endfor %}
-      </ul>
-    {% endif %}
-  </section>
-  {% endif %}
   <footer class="article-footer mb-5">
     <div id="bio" class="article-bio bio">
       <header class="bio-header">
@@ -225,6 +175,27 @@
 
 {% block promo %}
 <aside class="promo seealso">
+  {% if article.comments %}
+  <div id="comments" class="promo-content container pb-0">
+    <h3 class="promo-heading fs-1">
+      {%- if article.lang == 'cs' -%}
+        Diskutuj o tomto článku
+      {%- else -%}
+        Discuss this article
+      {%- endif -%}
+    </h3>
+    <ul class="list-unstyled mb-0">
+      {% for comments in article.comments %}
+        <li class="mb-3">
+          <i class="bi bi-{{ comments.icon }}"></i>
+          <a href="{{ comments.url }}">
+            {{ comments.name -}}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
   <div class="promo-content container">
     <h3 class="promo-heading fs-1">
       {%- if article.lang == 'cs' -%}
