@@ -151,29 +151,6 @@ Jenže to jsem zatím nezkoumal.</p>
 A jestli jste ještě Stable Diffusion nezkoušeli, třeba vám tenhle článek pomůže začít.</p></div></div></div></div>
   </main>
 
-  <section id="comments" class="article-comments comments">
-      <div class="comments-telegram">
-        <script>
-          function comments(button) {
-            button.setAttribute('disabled', '');
-            const div = document.createElement('div');
-            div.classList.add('comments-frame');
-            const script = document.createElement('script');
-            script.setAttribute('src', 'https://telegram.org/js/telegram-widget.js?21');
-            script.dataset.telegramDiscussion = "honzajavorekcz/187";
-            script.dataset.commentsLimit = 50;
-            script.dataset.color = 212529;
-            div.append(script);
-            button.parentNode.append(div);
-            button.remove();
-          }
-        </script>
-        <button class="btn btn-primary btn-lg" onclick="comments(this);">
-          <i class="bi bi-chat-dots"></i>
-            Komentáře
-        </button>
-      </div>
-  </section>
   <footer class="article-footer mb-5">
     <div id="bio" class="article-bio bio">
       <header class="bio-header">
@@ -206,6 +183,16 @@ A jestli jste ještě Stable Diffusion nezkoušeli, třeba vám tenhle článek 
 </article>
       </div>
 <aside class="promo seealso">
+  <div id="comments" class="promo-content container pb-0">
+    <h3 class="promo-heading fs-1">Diskutuj o tomto článku</h3>
+    <ul class="list-unstyled mb-0">
+        <li class="mb-3">
+          <i class="bi bi-telegram"></i>
+          <a href="https://t.me/honzajavorekcz/187">
+            Telegram</a>
+        </li>
+    </ul>
+  </div>
   <div class="promo-content container">
     <h3 class="promo-heading fs-1">Další Honzovy články</h3>
     <ul class="list-unstyled mb-0">

@@ -88,7 +88,6 @@ small,
 
 .title,
 .article-content,
-.article-comments,
 .article-info,
 .article-bio {
   margin-bottom: 3rem;
@@ -146,43 +145,6 @@ small,
 
 .info-list .bi {
   margin-right: .1rem;
-}
-
-.comments-heading,
-.comments-list,
-.comments-item,
-.comments-item a {
-  display: inline;
-  padding: 0;
-  margin: 0;
-  font-size: var(--hj-small-font-size);
-  font-weight: var(--bs-body-font-weight);
-  color: var(--hj-muted);
-}
-
-.comments-heading,
-.comments-item {
-  margin-right: 1rem;
-}
-
-.comments-heading::after {
-  content: ":";
-}
-
-.comments-telegram {
-  text-align: center;
-}
-
-.comments-frame {
-  min-height: 5rem;
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16'><path d='M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z'/></svg>");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 3rem 3rem;
-}
-
-.comments-frame iframe {
-  background: var(--bs-white);
 }
 
 .bio {
