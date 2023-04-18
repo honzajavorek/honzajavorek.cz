@@ -2,6 +2,7 @@ Title: Empowered by AI: Why junior devs have the winning edge
 Image: images/woman-programming-on-her-laptop.jpg
 Lang: en
 Tags: highlight
+Telegram-Comments: https://t.me/honzajavorekcz/190
 
 
 Is the rise of AI in software engineering a threat or an opportunity? Many fear that AI will replace human software engineers or make it harder for junior programmers to break into the field.
