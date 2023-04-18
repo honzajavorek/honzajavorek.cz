@@ -3,7 +3,8 @@ Image: images/woman-programming-on-her-laptop.jpg
 Lang: en
 Tags: highlight
 Telegram-Comments: https://t.me/honzajavorekcz/190
-
+Reddit-Comments: https://www.reddit.com/r/ChatGPT/comments/12qubve/i_wrote_down_my_thoughts_on_whether_ai_will/
+HackerNews-Comments: https://news.ycombinator.com/item?id=35616051
 
 Is the rise of AI in software engineering a threat or an opportunity? Many fear that AI will replace human software engineers or make it harder for junior programmers to break into the field.
 But what if the truth is quite the opposite? As someone in the business of helping people switch careers and learn coding through my website [junior.guru](https://junior.guru/), I believe that in the age of AI, junior developers may actually hold the winning edge.
