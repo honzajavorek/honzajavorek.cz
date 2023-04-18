@@ -4,7 +4,9 @@ Lang: en
 Tags: highlight
 Status: draft
 
-I'm in the business of helping people switch careers and learn coding through my website, [junior.guru](https://junior.guru/). There is often _fear, uncertainty, and doubt_ surrounding the idea that AI will replace software engineers entirely or make it more challenging for junior programmers to enter the field. However, I believe quite the opposite is true! Junior developers actually have the winning edge.
+
+Is the rise of AI in software engineering a threat or an opportunity? Many fear that AI will replace human software engineers or make it harder for junior programmers to break into the field.
+But what if the truth is quite the opposite? As someone in the business of helping people switch careers and learn coding through my website [junior.guru](https://junior.guru/), I believe that in the age of AI, junior developers may actually hold the winning edge.
 
 ![Empowered by AI: Why junior devs have the winning edge]({static}/images/woman-programming-on-her-laptop.jpg)
 I found her on [Lexica.art](https://lexica.art/prompt/9be96fa9-4d86-40c7-bcb9-2ef287062032)
@@ -22,7 +24,7 @@ At any place, at any moment, I have easy access to most of the information colle
 ![Kniha Lidé a informace]({static}/images/img-2861.jpg)
 Book [People and information](https://www.databazeknih.cz/knihy/lide-a-informace-146195) by Vladimír Smetáček, 1981, photo by me
 
-I'm also way more ambitious with what I work on. With all the parallel conversations, tasks, and projects, I'm probably 100 times more effective and productive than my grandfather. I don't say this is only good; fetishizing productivity and trying to get more done in every second of our lives [has its own problems](https://www.oliverburkeman.com/posts), but the fact is that thanks to technological advancements augmenting my abilities, I _can_ do more than my ancestors.
+I'm also way more ambitious with what I work on. With all the parallel conversations, tasks, and projects, I'm probably 100 times more effective and productive than my grandfather. I don't say this is only good; fetishizing productivity and trying to get more done in every second of our lives [has its own problems](https://www.oliverburkeman.com/posts), but the fact is that thanks to technology augmenting my abilities, I _can_ do more than my ancestors.
 
 My smartphone or personal computer also compensate for my limitations. I'm so bad at math that I can't do 12 + 42 in my head without an embarrassing amount of effort. So I type even simple stuff like that into the calculator (to be precise, into the Spotlight or Google search fields). I might feel silly doing it, but at the same time, I know I can rely on it. Anytime. Thanks to that, I'm not afraid of adding. Not even multiplying! And with [WolframAlpha](https://www.wolframalpha.com/), I'm downright invincible.
 
@@ -30,7 +32,7 @@ My smartphone or personal computer also compensate for my limitations. I'm so ba
 
 Now, back to AI. Today, the terms AI and ChatGPT are often used interchangeably, but it's important to understand what AI actually means. Essentially, every time humans invent something that allows computers to do tasks they couldn't do before, we call it artificial intelligence.
 
-AI has been playing against us in single-player games since the early days of computers. It's behind the face detection in our cameras for better photos, the translations in Google Translate, and the spell check in Google Docs, to name just a few examples. AI is already all around us in various forms. As we become accustomed to its presence, the AI label shifts to something newer, which is more _wow_.
+AI has been playing against us in single-player games since the early days of computers. It's behind the face detection in our cameras for better photos, the translations in Google Translate, and the spell check in Google Docs, to name just a few examples. AI is already all around us in various forms. As we become accustomed to its presence, the AI label shifts to something newer, which is more _wow_. This is called the [AI effect](https://en.wikipedia.org/wiki/AI_effect).
 
 ![0 A.D. screenshot]({static}/images/screenshot-2023-04-15-at-22-15-20.png)
 AI in my favorite computer game, [0 A.D.](https://play0ad.com/)
@@ -39,7 +41,7 @@ Simon Willison describes [LLMs like GPT as calculators for words](https://simonw
 
 The first iPhone was released in 2007, when I was 20 years old. While smartphones have revolutionized many aspects of my life and given me seemingly unimaginable superpowers in the eyes of my ancestors, today the device is no longer _wow_, it's boring.
 
-With my tasks and projects, I have naturally transitioned to a higher level of abstraction. To find something, my grandfather had to rely on physical maps, understand how to locate himself on the map, and comprehend the intricacies of map usage. Today, I can simply type "kebab" into Google Maps, tap on an arrow, and a voice tells me where to go. I can focus on the task at hand and forget about the details.
+With my tasks and projects, I have naturally transitioned to a higher level of abstraction. To find something, my grandfather had to rely on paper maps, understand how to locate himself on the map, and comprehend the intricacies of map usage. Today, I can simply type "kebab" into Google Maps, tap on an arrow, and a voice tells me where to go. I can focus on the task at hand and forget about the details.
 
 ## LLMs are the next level of augmentation
 
@@ -55,15 +57,15 @@ See how last December, Simon Willison [used ChatGPT and GitHub Copilot to learn 
 
 ## Junior stands for 'less experience'
 
-Some say that ChatGPT or GitHub Copilot produces code that is already similar to what an entry-level software engineer would write. They conclude that this means junior devs won't be needed anymore.
+Some say that ChatGPT or GitHub Copilot produce code that is already similar to what an entry-level software engineer would write. They conclude that this means junior devs won't be needed anymore.
 
 First of all, being a junior is just a career phase. People try something, get better, become juniors, get better, become seniors. Tools can make the transition easier or faster, but they cannot replace juniors specifically.
 
-As far as I know, AI can't clone people yet. Although I've seen many companies neglecting the truth and spending immense money and resources on hiring seniors instead of raising juniors, the only way seniors can really reproduce is by teaching those who are less experienced.
+As far as I know, AI can't clone people yet. Although I've seen many companies neglecting the truth and spending immense money and resources on hiring seniors instead of nurturing junior talent, the only way seniors can really reproduce is by teaching those who are less experienced.
 
-It may seem obvious, but it needs to be stated: there are no seniors without juniors. Juniors are the future seniors, and all seniors were once juniors.
+It may seem obvious, but it apparently needs to be stated: there are no seniors without juniors. Juniors are the future seniors, and all seniors were once juniors.
 
-As I've mentioned, AI already makes the transition from junior to senior faster and easier. However, it cannot completely eliminate the difference between individuals with varying levels of experience in the job.
+As I've mentioned, AI already makes the transition from junior to senior faster and easier. However, it cannot eliminate the difference between individuals with varying levels of experience in the job.
 If the difference ceases to exist, it would imply that the job is unnecessary altogether.
 And I don't think that AI will render all devs obsolete (more on that later).
 
@@ -77,7 +79,6 @@ Better juniors and seniors!
 This is a bit silly chart, but you probably get how I think about it.
 It's gonna be the same as with personal computers.
 The accountants still exist, they just transformed into _personal computer operators_.
-The architects still exist.
 
 ![Design]({static}/images/screenshot-2023-04-15-at-15-52-25.png)
 
@@ -90,11 +91,13 @@ The AI revolution will disrupt the job market, but not necessarily in a way that
 
 Those who were studying accounting or architecture at that time were in a prime position. They had to do everything on paper during their studies, which may have been tedious if they had a sense that computers could automate those tasks. However, in their careers, they became the first operators of personal computers in their respective fields. As for those who were already established in their careers, they had to learn and adapt to computers, which became the new norm.
 
-The more savvy among beginner developers are already utilizing AI as their mentor. They won't have to alter their habits, routines, tools, or approach. They won't need to abandon their perfectionism and meticulous code crafting, as they are already accustomed to scanning through larger suggested code chunks with suspicion. They won't need to learn how to prompt ChatGPT or GitHub Copilot.
+The more savvy among beginner devs are already utilizing AI as their mentor. They won't have to alter their habits, routines, tools, or approach. They won't need to abandon their perfectionism and meticulous code crafting, as they are already accustomed to scanning through larger suggested code chunks with suspicion. They won't need to learn how to prompt ChatGPT or GitHub Copilot.
 For them, it will be natural.
-Soon, some juniors skilled in augmenting their capabilities with AI may even be preferred over senior developers who are resistant to working with these new tools.
+Soon, some juniors skilled in augmenting their capabilities with AI may even be preferred over senior devs who are resistant to working with these new tools.
 
 This is a true revolution. The old class system is collapsing, and a [new one is about to be established](https://youtu.be/EdddrKJgUJg?t=630). Those who quickly learn how to adapt will benefit from the shake-up, achieving successful careers and becoming respected authorities. On the other hand, those who cling to their old ways will be pushed aside.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">AI will not replace you. A person using AI will.</p>&mdash; Santiago (@svpino) <a href="https://twitter.com/svpino/status/1610984481342771200?ref_src=twsrc%5Etfw">January 5, 2023</a></blockquote>
 
 You may think this doesn't apply to you, right?
 It's about that old fart daily commuting to a cubicle in a big office building, [working on some Java 8 systems](https://vickiboykis.com/2019/05/10/it-runs-on-java-8/).
@@ -126,17 +129,17 @@ I believe this is, in essence, a problem of information discoverability. In the 
 
 While we have access to Google and Stack Overflow, when we are trying to solve tasks, we still need to know what to search for in order to augment our abilities with existing knowledge on the topic. Conducting our own research can be tedious, as it is challenging to distinguish between noise and signal without reliable sources.
 
-Asking questions in the right way can also be tedious. Effectively using Google is a skill that juniors need to be trained in. Asking questions on forums can be tricky as well. The [classical guide](http://www.catb.org/~esr/faqs/smart-questions.html) on how to ask questions on the internet without angering those being asked is a lengthy 65,825 characters long.
+Asking questions in the right way can also be tedious. Effectively using Google is a skill that juniors need to be trained in. Asking questions on forums can be tricky as well. The [classical guide](http://www.catb.org/~esr/faqs/smart-questions.html) on how to ask questions on the internet without angering those being asked is 65,825 characters long.
 
 Let's say I want to efficiently display billions of pins on a [Leaflet](https://leafletjs.com/) map. Basic tutorials are easy to read, but won't take me far enough. Hardcore academic papers, on the other hand, are hard to read (especially on a phone screen with two-column PDFs) and may go into too much detail. Moreover, my task may have some specific requirements that make many existing resources irrelevant or difficult to apply.
 
-That's where LLMs, like ChatGPT, come in as the missing piece. We can simply ask this calculator for advice on how to efficiently display billions of pins on a Leaflet map, and the ensuing conversation can provide us with various existing approaches and their names. This is big!
+That's where LLMs, like ChatGPT, come in as the missing piece. We can simply ask this calculator for advice on how to efficiently display billions of pins on a Leaflet map, and the ensuing conversation can provide us with various existing approaches and their names.
 
-The education system in my country has taken decades to acknowledge the existence of the internet. This is yet another blow to its outdated, 19th-century-like structure. It's high time for our society to truly contemplate what schools should be focusing on. But let's set aside this massive topic for now and shift our focus back to junior devs.
+Another example. You know some Python and want to write a program that detects the beats per minute (BPM) of songs or do other cool things with sound. Instead of spending a week on research, a single conversation with LLM can inform you about concepts like [Fourier transforms](https://en.wikipedia.org/wiki/Fourier_transform) and what they entail. It can help you to use Wolfram Alpha to calculate what you need and explain how these concepts are relevant to _your specific project_. And if you ask nicely, it can explain everything to you in simple terms, [like you're five](https://www.howtogeek.com/694298/what-does-eli5-mean-and-how-do-you-use-it/).
 
-The availability of a tool like ChatGPT is closing the gap in general overview between graduates and career switchers. While there may still be differences in other areas, such as opportunities, contacts, and networking, when it comes to solving challenging tasks, the divide is narrowing.
+This is big! The availability of tools like ChatGPT is closing the gap between graduates and career switchers in terms of gaining a general overview. While there may still be differences in other areas, such as opportunities, contacts, and networking, when it comes to solving challenging tasks, the divide is narrowing.
 
-For instance, let's say you know some Python and want to write a program that detects the beats per minute (BPM) of songs or do other cool things with sound waves. You can ask AI for guidance instead of spending a week on research. In a single conversation, the AI will inform you about concepts like [Fourier transforms](https://en.wikipedia.org/wiki/Fourier_transform) and what they entail. It can even suggest using Wolfram Alpha to calculate what you need and explain how these concepts are relevant to your specific project. And if you ask nicely, it can explain everything to you in simple terms, [like you're five](https://www.howtogeek.com/694298/what-does-eli5-mean-and-how-do-you-use-it/).
+The education system in my country has taken decades to acknowledge the existence of the internet. This is yet another blow to its outdated, 19th-century-like structure. It's high time for our society to truly contemplate what schools should be focusing on.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Since ChatGPT launched in Nov&#39;22, <a href="https://twitter.com/StackOverflow?ref_src=twsrc%5Etfw">@StackOverflow</a> traffic dropped 24% from peak, 13% from avg. What other categories of websites - other than technical forums - got affected ? <a href="https://t.co/rBctmGPPEW">pic.twitter.com/rBctmGPPEW</a></p>&mdash; Mohamed ElAdany (@mohadany) <a href="https://twitter.com/mohadany/status/1642544573137158144?ref_src=twsrc%5Etfw">April 2, 2023</a></blockquote>
 
@@ -148,13 +151,13 @@ As noted by Simon Willison in his article [In Defense of Prompt Engineering](htt
 
 If technical skills alone are insufficient for devs in today's world, I believe this will be even more true in the future. The question then arises: is it easier to teach coding to communicative individuals with backgrounds in art or psychology, or to enhance the communication skills of professional coders? I believe the former is more likely, and career switchers have a significant advantage in this regard.
 
-In [our latest podcast episode](https://junior.guru/podcast/#episode0015) (in Czech), Marián Kameništák also mentions that companies may start preferring domain knowledge over technical skills. We are already witnessing career transitions from accountants, artists, dentists, biologists, train drivers, bankers, chemists, and other diverse fields to the tech industry. These folks bring unique domain expertise as well as diverse backgrounds to the table.
+In [our latest podcast episode](https://junior.guru/podcast/) (in Czech), Marián Kameništák also mentions that companies may start preferring domain knowledge over technical skills. We are already witnessing career transitions from accountants, artists, dentists, biologists, train drivers, bankers, chemists, and other diverse fields to the tech industry. These folks bring unique domain expertise as well as diverse backgrounds to the table.
 
 We already know that solutions are better tailored to people's needs when they are developed by a diverse group of devs. Diversity in tech is not just about "women in tech", it goes as far as "single parents in tech", "remote mountain dwellers in tech," or "former dentists in tech". And I believe that in the era of AI-augmented software engineering, the importance of diversity in the industry will only become more apparent.
 
 ## LLMs are not replacing all devs
 
-Is it even worth learning coding anymore? What if AI becomes so advanced that it can not only generate basic "hello world" React components, but entire apps and complex systems? What if it becomes capable of understanding and maintaining all legacy codebases, ultimately making software engineers obsolete? Josh Comeau already wrote what I think about this, so let me quote from his article:
+But is it even worth learning coding anymore? What if AI becomes so advanced that it can not only generate basic "hello world" React components, but entire apps and complex systems? What if it becomes capable of understanding and maintaining all legacy codebases, ultimately making software engineers obsolete? Josh Comeau already wrote what I think about this, so let me quote from his article [The End of Front-End Development](https://www.joshwcomeau.com/blog/the-end-of-frontend-development/) (which is definitely worth reading in its entirety):
 
 > …there is an _enormous_ difference between generating a 50-line HTML document and spitting out a production-ready web application. (…)
 >
@@ -175,9 +178,9 @@ Moreover, I think that software engineering is about understanding peoples' need
 ![Commit Strip]({static}/images/strip-les-specs-cest-du-code-650-finalenglish.jpg)
 [A very comprehensive and precise spec](https://www.commitstrip.com/en/2016/08/25/a-very-comprehensive-and-precise-spec/), famous Commit Strip from 2016
 
-Code is the best representation of what should happen when,, and cannot be fully replaced by vaguely worded prompts. While code initially emerged as a set of technical instructions for computers, since the advent of [high-level programming languages](https://en.wikipedia.org/wiki/High-level_programming_language) we're stepping up the abstraction ladder. I believe that today, a majority of the code written is closer to describing [business logic](https://en.wikipedia.org/wiki/Business_logic) rather than to managing memory.
+Code is the best representation of what should happen when, and cannot be fully replaced by vaguely worded prompts. While code initially emerged as a set of technical instructions for computers, since the advent of [high-level programming languages](https://en.wikipedia.org/wiki/High-level_programming_language) we're gradually stepping up the abstraction ladder. I believe that today, a majority of the code written is closer to describing [business logic](https://en.wikipedia.org/wiki/Business_logic) rather than managing memory.
 
-As the role of code evolves, it is transforming from being a contract between humans and computers to a contract between humans themselves. While LLMs can indeed augment our ability to draft these contracts, I hold the belief that the essential task of understanding people's needs and accurately translating them into the spec cannot be fully automated. We will continue to perform the same job, just at a higher level of abstraction.
+Code is transforming from being a contract between humans and computers to a contract between humans themselves. While LLMs can indeed augment our ability to draft these contracts, I hold the belief that the essential task of understanding people's needs and accurately translating them into that _precise spec_ cannot be fully automated. We will continue to perform the same job, just at a higher level of abstraction.
 
 ## Devaluation of devs
 
@@ -197,8 +200,8 @@ AI not only makes the transition from junior to senior dev faster and easier, bu
 ## Insatiable demand for devs
 
 In one scenario, AI could potentially increase the supply of developers who are "good enough", which would help to balance out the seemingly insatiable demand. Such end of the scarcity would mean, first of all, drop of our high salaries.
-Perhaps also end to the elevated celebrity status of our ocuppation.
-This would be good for the society though, as developing software just becomes easier and cheaper.
+Perhaps also end to the elevated celebrity status of our occupation.
+This would be good for the society though, as developing software becomes easier and cheaper.
 
 Although we are currently experiencing an economic downturn, I believe that this is just a temporary detour caused by current geopolitical factors. According to a 2018 poll conducted by the [Czech Statistical Office](https://www.czso.cz/csu/czso/na-trhu-je-nedostatek-ict-odborniku), two-thirds of Czech companies reported difficulties in filling IT roles. Furthermore, the State of European Tech survey in 2018 revealed that [IT is growing five times faster than any other segment](https://2018.stateofeuropeantech.com/). In 2021, the same survey projected that a staggering [$100B has been invested to European IT in just one year](https://2021.stateofeuropeantech.com/), which is ten times more than when the survey started in 2015.
 
@@ -208,16 +211,17 @@ The question remains, how much would the supply of "good enough" developers need
 
 ## Induced demand for devs
 
-In another scenario, which I believe is more likely, there could be [induced demand](https://en.wikipedia.org/wiki/Induced_demand). For example, if an additional lane is added to a congested highway, it may initially seem like it would reduce congestion. However, as the paradox of induced demand describes, making commuting by car easier, more accessible, and more comfortable can actually lead to more people using cars and utilizing the new lane. Similarly, if cycling paths in a city are [unsafe or scarce](https://mestemnakole.cz/en/prague-cycle-route-system/), they won't be widely used. As soon as you make them easy to use, you suddenly [generate hundreds of cyclists](https://www.theguardian.com/lifeandstyle/2021/mar/12/europe-cycling-post-covid-recovery-plans) who didn't exist previously.
+In another scenario, which I believe is more likely, there will be [induced demand](https://en.wikipedia.org/wiki/Induced_demand).
+
+What is induced demand? If an additional lane is added to a congested highway, it may initially seem like it would reduce congestion. However, as the paradox of induced demand describes, making commuting by car easier, more accessible, and more comfortable can actually lead to more people using cars and utilizing the new lane. Similarly, if cycling paths in a city are [unsafe or scarce](https://mestemnakole.cz/en/prague-cycle-route-system/), they won't be widely used. As soon as you make them easy to use, you suddenly [generate hundreds of cyclists](https://www.theguardian.com/lifeandstyle/2021/mar/12/europe-cycling-post-covid-recovery-plans) who didn't exist previously.
 
 Anyone can make music, and that is awesome.
-You can flip a few buckets and play on them like the legendary [John Bonham](https://en.wikipedia.org/wiki/John_Bonham).
-Open source tools like [LMMS](https://lmms.io/) provide a similar experience to [FL Studio](https://www.image-line.com/fl-studio/), making digital music production accessible to the masses.
+Anyone can sing, [flip a few plastic buckets](https://www.youtube.com/results?search_query=bucket+drummer), or install [LMMS](https://lmms.io/).
 YouTube is filled of lessons and tutorials, making it easier than ever to learn to play musical instruments.
 Anyone can employ their creativity and make their own music.
-Did professional musicians disappear?
+Does it mean there are no professional musicians?
 No.
-Does it augment everyones' abilities and make us all more ambitious?
+Do LMMS and YouTube augment everyones' abilities and make us all more ambitious?
 Yes!
 
 Imagine what it took to be a photographer in the 19th century.
@@ -241,14 +245,11 @@ It opened up new opportunities and we could move to more ambitious projects, suc
 All professionals, be it musicians, photographers, or devs, possess one important quality:
 They know what they're doing, and why.
 The ease and accesibility of taking pictures didn't lead to wedding photographers going bankrupt.
-Rather, it enabled ordinary people to take pictures of their butt.
-Or coffee.
-Or a dog.
+Rather, it enabled ordinary people to take pictures of their butts.
+Or coffee cups.
+Or dogs.
 
-The paradox of induced demand applies to your personal life, too. Did washing machines, robot vacuums, or smartphones make you more relaxed than your ancestors? No. It allowed you to be more ambitious. Your ancestors knew they could fit two activities into their day and wished they could manage to get five done. You can fit 20 and wish you could manage to get 50 done.
-
-Guess what happens with LLMs like ChatGPT?
-Let me quote Simon Willison:
+The paradox of induced demand applies to your personal life, too. Did washing machines, robot vacuums, or smartphones make you more relaxed than your ancestors? No. It allowed you to be more ambitious. Your ancestors knew they could fit two activities into their day and wished they could manage to get five done. You can fit 20 and wish you could manage to get 50 done. Guess what happens with LLMs like ChatGPT? Let me quote Simon Willison:
 
 > As an experienced developer, ChatGPT (and GitHub Copilot) save me an enormous amount of “figuring things out” time. For everything from writing a for loop in Bash to remembering how to make a cross-domain CORS request in JavaScript—I don’t need to even look things up any more, I can just prompt it and get the right answer 80% of the time.
 >
@@ -264,9 +265,9 @@ The fact that AI-augmented Simon is as capable as a team of devs doesn't lead to
 
 ## More indie hackers
 
-There will definitely be a shakeup in the job market though. If a company needed 100 people to do something and now only 10 are enough, this will have a significant impact. In smart companies, the remaining 90 people will be reassigned to work on ambitious projects the company didn't think could be done before. In other companies, however, the 90 people may lose their jobs.
+There will definitely be a shake-up in the job market though. If a company needed 100 people to do something and now only 10 are enough, this will have a significant impact. In smart companies, the remaining 90 people will be reassigned to work on ambitious projects the company didn't think could be working on before. In other companies, however, the 90 people may lose their jobs.
 
-On the other hand, after a layoff, those people can now explore new opportunities that they probably wouldn't have even dreamed of before. Tim Ferriss' book, [The 4-Hour Workweek](https://en.wikipedia.org/wiki/The_4-Hour_Workweek), advises people to check their email only once a day and outsource small daily tasks to _virtual assistants_. I guess this option will now become more viable than ever, at least until the majority catches up with all the new technology.
+On the other hand, after a layoff, those people can now explore new opportunities that they probably wouldn't have even dreamed of before. Tim Ferriss' book, [The 4-Hour Workweek](https://en.wikipedia.org/wiki/The_4-Hour_Workweek), advises people to check their email only once a day and outsource small daily tasks to _virtual assistants_. Since 2007! I guess this option will now become more viable than ever, at least until the majority catches up with all the new technology.
 
 But let's say you want to add value to this world. New tools for content creators, such as YouTube or Substack, have greatly augmented people's abilities to the point that careers such as newsletter author, podcast host, beauty influencer, YouTube video producer, or Twitch streamer now seem viable. The same trend will likely happen with startups.
 
@@ -278,13 +279,15 @@ Just as YouTube disrupted TV production and made it possible for anyone to have 
 
 ## Keep your FOMO at bay
 
-Now, you might be concerned that if you're not keeping up with all the latest announcements, you're already falling behind. But let me reassure you that the majority of people in the world are not yet using ChatGPT.
+Now, you might be concerned that if you're not keeping up with all the latest announcements, you're already falling behind. But let me reassure you that the majority of people in the world are not yet using ChatGPT. Keep calm!
 
-Next time you commute on a tram, take a look around and consider how many of the people you see might have their own sophisticated ChatGPT or Stable Diffusion promptbook. This could potentially lead to significant societal division between those who have access to AI and those who don't. Remember how [we learned](https://cc.cz/sbirka-pocitacu-od-cesko-digital-pomohla-2-800-rodinam-s-online-vyukou-pod-kridla-ji-nove-bere-clovek-v-tisni/) during the pandemic, that many families in Czechia don't even have reliable access to computers?
+Next time you commute on a tram, take a look around and consider how many of the people you see might have their own sophisticated ChatGPT or Stable Diffusion promptbook. None? One? Two?
 
+This could potentially lead to significant societal division between those who have access to AI and those who don't. Remember how [we learned](https://cc.cz/sbirka-pocitacu-od-cesko-digital-pomohla-2-800-rodinam-s-online-vyukou-pod-kridla-ji-nove-bere-clovek-v-tisni/) during the pandemic, that many families in Czechia don't even have reliable access to computers?
 While there may be some opportunities for AI-induced social mobility, I'm afraid it could end up like it always does - with the rich getting richer and the privileged becoming even more privileged.
+We should be definitely worried about that.
 
-It's understandable to feel anxious about that. But don't succumb to the _fear of missing out_! The fact that you're reading this article likely means you're already among the top 0.1% of early adopters. If you've interacted with ChatGPT more than five times, you're probably among the top 0.001%.
+But don't succumb to the _fear of missing out_! The fact that you're reading this article likely means you're already among the top 0.1% of early adopters. If you've interacted with ChatGPT more than five times, you're probably among the top 0.001%.
 
 Check out this [weekly report on new developments in AI](https://www.reddit.com/r/ChatGPT/comments/12o29gl/gpt4_week_4_the_rise_of_agents_and_the_beginning/). Even experts in the field struggle to keep up. We're whitnessing a mass exploration of technology, which is easy to use and accessible to basically anyone, including children. However, much of what's out there is:
 
@@ -292,9 +295,14 @@ Check out this [weekly report on new developments in AI](https://www.reddit.com/
 -   Demos that break when faced with inputs slightly more complex than those shown in a screencast.
 -   Not as easy to use as it appears at first glance.
 
-Most of the stuff also isn't a proper product.
+![Sell me this pen]({static}/images/img-1750.jpg)
+
+## Waiting for products
+
+Most of the stuff announced also isn't a proper product.
 Not even the ChatGPT interface, which is officially labeled as a [research preview](https://openai.com/blog/chatgpt).
-I've tried experimenting with Stable Diffusion on my own machine, and I was quite surprised by how challenging it is to generate images that are even remotely as appealing as those showcased online.
+
+I've [tried experimenting with Stable Diffusion]({filename}2023-04-14_jak-jsem-si-zacal-hrat-s-generovanim-obrazku-pomoci-ai.md) on my own machine, and I was quite surprised by how challenging it is to generate images that are even remotely as appealing as those showcased online.
 It's possible, but far from simple or easy.
 The prompting process is convoluted, and there are numerous models, techniques, and complexities to navigate.
 While Stable Diffusion is a powerful and free tool, it's still a raw resource.
@@ -303,7 +311,7 @@ It feels like learning how to prompt now is akin to learning how to build an eng
 To effectively augment our capabilities, we need real, user-friendly products.
 Waiting for such products may mean missing out on the gold rush to create them, but it will make it much easier to utilize the new superpowers for other purposes.
 
-Every day, I contemplate ways to integrate AI into my products and workflow.
+Every day, I contemplate ways to integrate AI into my own products and workflow.
 If I hadn't spent so much time thinking and started working on it already, I would have been done by now.
 Yet, with each new announcement every week, it feels like getting the job done is becoming simpler and simpler.
 I've saved myself a lot of unnecessary work!
@@ -323,7 +331,7 @@ Based on the chart below, I believe I fall somewhere between the utopianist and 
 
 I'm an indie hacker in the business of helping more people learn coding.
 Perhaps I'm only seeing what I want to see.
-Maybe I've spent several days writing this, just to come up with a reasoning why AI won't render my work useless and negate everything I've been doing for decades.
+Maybe I've spent several days writing this just to come up with a reasoning why AI won't render my work useless and negate everything I've been doing for decades.
 
 This blog post is filled with various predictions, so it's likely to be outdated in about two weeks, if I'm lucky.
 That's also why I've decided to consolidate all my thoughts on the topic into a single post.
