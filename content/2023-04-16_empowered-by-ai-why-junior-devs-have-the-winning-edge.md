@@ -329,3 +329,5 @@ This blog post is filled with various predictions, so it's likely to be outdated
 That's also why I've decided to consolidate all my thoughts on the topic into a single post.
 If I were to split them, some of the individual posts could become outdated before I manage to publish them, and the whole thing wouldn't hold together anymore.
 This way, at least I can say this was my wishful thinking about AI in the middle of April 2023.
+
+_Thanks to Simon Willison, my internet idol, for all he does, and ChatGPT for [helping me with grammar and stylistics](https://github.com/honzajavorek/honzajavorek.cz/commit/37c375c5aac1aeec5ceac25a30fef0e106e8844a)._
