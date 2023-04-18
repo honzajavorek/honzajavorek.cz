@@ -6,6 +6,7 @@ Telegram-Comments: https://t.me/honzajavorekcz/190
 Reddit-Comments: https://www.reddit.com/r/ChatGPT/comments/12qubve/i_wrote_down_my_thoughts_on_whether_ai_will/
 HackerNews-Comments: https://news.ycombinator.com/item?id=
 LinkedIn-Comments: https://www.linkedin.com/posts/honzajavorek_empowered-by-ai-why-junior-devs-have-the-activity-7054129577920487425-Mpms
+Twitter-Comments: https://twitter.com/honzajavorek/status/1648414346500796417
 
 Is the rise of AI a threat or an opportunity for devs? Many fear that AI will replace human software engineers or make it harder for junior programmers to break into the field.
 But what if the truth is quite the opposite? As someone in the business of helping people switch careers and learn coding through my website [junior.guru](https://junior.guru/), I believe that in the age of AI, junior devs may actually hold the winning edge.
