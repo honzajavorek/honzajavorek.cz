@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Článek o AI, WebExpo a katalog kurzů
 Image: images/343228396-696432845571903-4561680607208791413-n.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/193
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-04-15_tydenni-poznamky-velikonoce-stable-diffusion-a-testy.md) už utekl nějaký ten týden (15. 4. až 28. 4.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
