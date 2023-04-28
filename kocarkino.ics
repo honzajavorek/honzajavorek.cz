@@ -3,33 +3,23 @@ VERSION:2.0
 PRODID:-//kocarkino//honzajavorek.cz//
 UID:9c94f22dac26dce87134e19c4accb1d0c5cc32aa96e4161cd52d8d3a7119ea5c
 BEGIN:VEVENT
-SUMMARY:Kočárkino: Velryba
-DTSTART:20230419T080000Z
-DURATION:PT2H
-DTSTAMP:20230418T195433Z
-UID:aea5abf377815ea32f0eb916d318327a4bf7cb50ba0e03eb2842561cefb31b8c
-DESCRIPTION:https://kcvozovna.cz/8595/kocarkino-velryba/\nhttps://www.csfd
- .cz/hledat/?q=Velryba
-LOCATION:KC VOZOVNA\, Koněvova 2687/164\, Praha 3
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Kočárkino: Sonita
 DTSTART:20230510T080000Z
 DURATION:PT2H
-DTSTAMP:20230418T195433Z
+DTSTAMP:20230428T163945Z
 UID:9418729360879c8c9149c199a2700bbec17a4a395c69b2e323fe88d98ae5cd24
 DESCRIPTION:https://kcvozovna.cz/8715/kocarkino-sonita/\nhttps://www.csfd.
  cz/hledat/?q=Sonita
 LOCATION:KC VOZOVNA\, Koněvova 2687/164\, Praha 3
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Baby Bio: Air: Zrození legendy
-DTSTART:20230425T080000Z
+SUMMARY:Baby Bio: Falcon Lake
+DTSTART:20230502T080000Z
 DURATION:PT2H
-DTSTAMP:20230418T195434Z
-UID:485d64f7d8e9e574fa44f9c4a767ab9270bd4e4385ef77dce8471b56fc7b2422
-DESCRIPTION:https://www.biooko.net/?projection=17957\nhttps://www.csfd.cz/
- hledat/?q=Air%3A%20Zrozen%C3%AD%20legendy
+DTSTAMP:20230428T163946Z
+UID:b313f6429128e4f3dcf2b39d080d6b84ed764e7f65c8640e0235e3f617d7cd6a
+DESCRIPTION:https://www.biooko.net/?projection=18092\nhttps://www.csfd.cz/
+ hledat/?q=Falcon%20Lake
 LOCATION:Bio Oko\, Františka Křížka 460/15\, Praha 7
 END:VEVENT
 END:VCALENDAR
