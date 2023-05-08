@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Propojení katalogu s partnery, Stable Diffusion
 Image: images/00009-457809728-4.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/201
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-04-28_tydenni-poznamky-clanek-o-ai-webexpo-a-katalog-kurzu.md) už utekl nějaký ten týden (28. 4. až 8. 5.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
