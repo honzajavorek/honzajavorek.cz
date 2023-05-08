@@ -64,6 +64,10 @@ Inspired by [Simon Willison’s Weblog](https://simonwillison.net/), I decided t
 $ python weeknotes.py Dovolená
 ```
 
+The script downloads some data from [Strava](). Their [guidelines](https://developers.strava.com/guidelines/) require me to have their logo here:
+
+<img src="strava.svg" width="300">
+
 ## 📦 Dependencies
 
 The npm dependencies of the theme are managed in a standard way, but the `package.json` is inside the `theme` directory and the dependencies are saved as exact versions (see `.npmrc`) as [@dependabot](https://dependabot.com/) takes care of upgrading (see `.github/dependabot.yml`). Python dependencies use [Poetry](https://python-poetry.org/). Again, [@dependabot](https://dependabot.com/) takes care of upgrading.
