@@ -121,6 +121,7 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
 
         -   E-maily, [klubový Discord](https://junior.guru/club/), [Pyvec Slack](https://docs.pyvec.org/operations/support.html#sit-kontaktu).
         -   {strava_text}
+            Detaily na [Strava](https://www.strava.com/athletes/31242569), jediné sociální síti, kde si napsání statusu musíte zasloužit.
 
         <div class="alert alert-warning" role="alert" markdown="1">
         **Okénko duševního zdraví:**
