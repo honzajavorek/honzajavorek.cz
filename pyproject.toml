@@ -15,7 +15,7 @@ blog = "blog:main"
 python = "3.10.*"
 pelican = {version = "4.8.0", extras = ["markdown"]}
 strictyaml = "1.7.3"
-requests = "2.29.0"
+requests = "2.30.0"
 lxml = "4.9.2"
 cssselect = "1.2.0"
 pillow = "9.5.0"
