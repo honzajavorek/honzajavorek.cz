@@ -3,23 +3,23 @@ VERSION:2.0
 PRODID:-//kocarkino//honzajavorek.cz//
 UID:9c94f22dac26dce87134e19c4accb1d0c5cc32aa96e4161cd52d8d3a7119ea5c
 BEGIN:VEVENT
-SUMMARY:Kočárkino: Sonita
-DTSTART:20230510T080000Z
-DURATION:PT2H
-DTSTAMP:20230509T162947Z
-UID:9418729360879c8c9149c199a2700bbec17a4a395c69b2e323fe88d98ae5cd24
-DESCRIPTION:https://kcvozovna.cz/8715/kocarkino-sonita/\nhttps://www.csfd.
- cz/hledat/?q=Sonita
-LOCATION:KC VOZOVNA\, Koněvova 2687/164\, Praha 3
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Baby Bio: Katedrála
 DTSTART:20230516T080000Z
 DURATION:PT2H
-DTSTAMP:20230509T162948Z
+DTSTAMP:20230512T202945Z
 UID:9e7cbb9c709befa83f65389114e3f234e816d55fe7053358c9013bc0a2ada2c0
 DESCRIPTION:https://www.biooko.net/?projection=18514\nhttps://www.csfd.cz/
  hledat/?q=Katedr%C3%A1la
+LOCATION:Bio Oko\, Františka Křížka 460/15\, Praha 7
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Baby Bio: Aftersun
+DTSTART:20230523T080000Z
+DURATION:PT2H
+DTSTAMP:20230512T202945Z
+UID:6f6ff14c3ac4ad3a386a921f9c09d109fd62fcef9ad847ccd5a858044b1af9ef
+DESCRIPTION:https://www.biooko.net/?projection=18730\nhttps://www.csfd.cz/
+ hledat/?q=Aftersun
 LOCATION:Bio Oko\, Františka Křížka 460/15\, Praha 7
 END:VEVENT
 END:VCALENDAR
