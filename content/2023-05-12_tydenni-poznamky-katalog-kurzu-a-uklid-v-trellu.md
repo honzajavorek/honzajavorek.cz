@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Katalog kurzů a úklid v Trellu
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/204
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-05-08_tydenni-poznamky-propojeni-katalogu-s-partnery-stable-diffusion.md) už utekl nějaký ten týden (8. 5. až 12. 5.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
