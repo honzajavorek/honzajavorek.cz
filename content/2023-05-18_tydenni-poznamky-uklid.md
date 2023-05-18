@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Úklid
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/210
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-05-12_tydenni-poznamky-katalog-kurzu-a-uklid-v-trellu.md) už utekl nějaký ten týden (12. 5. až 18. 5.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
