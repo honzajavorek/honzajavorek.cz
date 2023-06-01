@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Dovolené, spousta drobností a build frontendu
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/214
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-05-18_tydenni-poznamky-uklid.md) už utekl nějaký ten týden (18. 5. až 1. 6.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
