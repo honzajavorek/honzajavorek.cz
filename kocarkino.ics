@@ -6,20 +6,30 @@ BEGIN:VEVENT
 SUMMARY:Kočárkino: Trojúhelník smutku
 DTSTART:20230621T080000Z
 DURATION:PT2H
-DTSTAMP:20230601T132449Z
+DTSTAMP:20230612T124719Z
 UID:f7843d47186ddd15414a2b4911238666a3d3e2fe934d795e97c0eb9eeb195c8f
 DESCRIPTION:https://kcvozovna.cz/8911/kocarkino-trojuhelnik-smutku/\nhttps
  ://www.csfd.cz/hledat/?q=Troj%C3%BAheln%C3%ADk%20smutku
 LOCATION:KC VOZOVNA\, Koněvova 2687/164\, Praha 3
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Baby Bio: Sůl Země
-DTSTART:20230606T080000Z
+SUMMARY:Baby Bio: Erhart
+DTSTART:20230613T080000Z
 DURATION:PT2H
-DTSTAMP:20230601T132450Z
-UID:f7ef85253164c9a645350701905c5bbbbce2d9fb94d6e2938e221b7fc9d48e10
-DESCRIPTION:https://www.biooko.net/?projection=19128\nhttps://www.csfd.cz/
- hledat/?q=S%C5%AFl%20Zem%C4%9B
+DTSTAMP:20230612T124720Z
+UID:4b7504b5cd45a98b7d62f6c5f6ce80938953b5a10e45752b24b6b3659d1ecf9a
+DESCRIPTION:https://www.biooko.net/?projection=19253\nhttps://www.csfd.cz/
+ hledat/?q=Erhart
+LOCATION:Bio Oko\, Františka Křížka 460/15\, Praha 7
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Baby Bio: Muž\, který stál v cestě
+DTSTART:20230620T080000Z
+DURATION:PT2H
+DTSTAMP:20230612T124720Z
+UID:19b47625e0e4028c0d339f0bd2e4dc46217cd92f887ed99752f15eff88cc6e80
+DESCRIPTION:https://www.biooko.net/?projection=19264\nhttps://www.csfd.cz/
+ hledat/?q=Mu%C5%BE%2C%20kter%C3%BD%20st%C3%A1l%20v%20cest%C4%9B
 LOCATION:Bio Oko\, Františka Křížka 460/15\, Praha 7
 END:VEVENT
 END:VCALENDAR
