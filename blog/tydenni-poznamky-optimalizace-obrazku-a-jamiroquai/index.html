@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/tydenni-poznamky-optimalizace-obrazku-a-jamiroquai/">
+    <title>Týdenní poznámky: Optimalizace obrázků a Jamiroquai &mdash; Javorové lístky</title>
+
+    <meta property="og:title" content="Týdenní poznámky: Optimalizace obrázků a Jamiroquai &mdash; Javorové lístky">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-optimalizace-obrazku-a-jamiroquai/">
+
+    <meta property="og:image" content="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="683">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#457E31">
+    <link rel="icon" href="https://honzajavorek.cz/favicon.ico" sizes="any">
+    <link rel="icon" href="https://honzajavorek.cz/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="https://honzajavorek.cz/apple-touch-icon.png">
+    <link rel="manifest" href="https://honzajavorek.cz/site.webmanifest">
+
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Javorové lístky &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2023-06-23T00:00:00+02:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
+<article class="article">
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
+  </header>
+  <h1 class="title display-5">
+    Týdenní poznámky: Optimalizace obrázků a Jamiroquai
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-optimalizace-obrazku-a-jamiroquai/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2023-06-23T00:00:00+02:00">
+          23. 6. 2023
+        </time>
+      </li>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        7
+          min čtení
+      </li>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-optimalizace-obrazku-a-jamiroquai&interval=week&start=2023-06-23T00:00:00+02:00&end=today">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <main class="article-content clearfix">
+
+    <div><div><div><div><p>Jak se mi daří v jednom člověku provozovat a rozvíjet <a href="https://junior.guru/">junior.guru</a>?
+Od <a href="https://honzajavorek.cz/blog/tydenni-poznamky-strakovka-podcast-inboxy/">posledních poznámek</a> už utekl nějaký ten týden (16. 6. až 23. 6.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.</p>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
+Fotil <a href="https://unsplash.com/@markusspiske">Markus Spiske</a></figcaption></figure>
+<div class="alert alert-warning" role="alert">
+<p><strong>Čísla:</strong> Finanční výsledky, návštěvnost a další čísla k junior.guru <a href="https://junior.guru/open/">mám přímo na webu</a>.
+Aktuální nabídky práce pro juniory: <a href="https://junior.guru/jobs/aac817ee027512f150caf872e149e12ef9246815b1ecf880501b877d/">Red Hat</a></p>
+<p><strong>Plány:</strong> Četli jste, co <a href="https://honzajavorek.cz/blog/strategie-na-2023/">letos plánuji</a>?
+Svůj postup zaznamenávám do <a href="https://github.com/orgs/juniorguru/projects/1/">tabulky na GitHubu</a>.</p>
+</div>
+<p>O víkendu jsem byl s kamarády na chatě a vším, co jsem tam dělal, ať už to bylo požívání, běh, či tanec, jsem se zničil natolik, že jsem se z toho dostával až do úterního večera.
+Sešlo se to navíc s tím, že dceři rostly zuby, takže jsem nemohl nic v noci dospat a byla to úplná krize.</p>
+<p>Do toho různí doktoři a jiné pochůzky.
+V pondělí jsem šel na první návštěvu k psychiatrovi kvůli diagnostice ADHD.
+Byl to fajn pokec, ale ještě budeme mít několik sezení, než vydá verdikt.</p>
+<p>Ve čtvrtek jsme šli se ženou na Metronome festival.
+Cílem bylo sejít se s kamarády z Brna a vidět Jamiroquai, ale stihli jsme i Auroru a trochu Aiko.
+PSH jsme vzdali, protože budova, kde hráli, měla příšernou akustiku.
+Zvuk bolel v uších a ze slov nebylo rozumět nic, což zrovna u rapu celkem vadí.</p>
+<p>Bylo to poprvé od narození dcery, co jsme se s manželkou takhle pozdě večer někam vypravili.
+Babička přijela z Moravy a statečně se pokusila o uspání dítěte, které bez nás ještě nikdy neusnulo.
+A povedlo se to!
+Nám se zase pro změnu povedlo vyhnout se nějaké té příšerné bouřce, která se řítila na Prahu z Německa.</p>
+<figure class="figure"><img alt="Jamiroquai" src="https://honzajavorek.cz/images/img-4309.jpg" class="img-fluid figure-img rounded"></figure>
+<p>Tím se uzavírá můj divoký červen, do něhož se mi z důvodů koordinace všelijakých termínů vložily prakticky veškeré aktivity, které jsem chtěl letos v létě dělat.
+Jsem z toho poměrně vyčerpaný a těším se, že budu mít konečně nějaký týden, kdy budu jen v práci nebo doma.
+Myslím, že junior.guru se těší taky, protože teď bylo celkem zanedbáváno 😞</p>
+<h2 id="prednaska-s-nelou">Přednáška s Nelou<small class="permalink"><a href="#prednaska-s-nelou" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>V úterý večer byla v klubu po dlouhé době opět přednáška.
+Poprvé jsem si ji chtěl vzít z nové kanceláře.</p>
+<p>Minuty před začátkem jsem však zjistil, že byť mi jede Discord na chat, nejede mi na zvuk a video.
+Nepřipojí se.
+Naštěstí byl v kanceláři zrovna kamarád <a href="https://milavotradovec.cz/">Míla</a> s neomezeným internetem v mobilu a připojil mě přes LTE.
+Z toho jsem vzal nakonec celou přednášku.
+Co bych bez něj v tu chvíli dělal, to upřímně nevím.
+Takže Mílo, ještě jednou fakt díky!</p>
+<p>Další den jsme to pak vyřešili.
+Discord potřebuje na volání nějaké porty, které byly blokované na místním routeru.</p>
+<p>Nela měla pomalejší tempo vyprávění, ale jinak proběhlo všechno v pohodě.
+Přednáška to byla hezká, diskuze výživná.
+Záznam bude veřejný a dáme ho pak zase na stránku <a href="https://junior.guru/handbook/mental-health">Psychika na cestě do IT</a>, ale nejdřív musí Tinuki dokončit jeho stříhání ✂️</p>
+<figure class="figure"><img alt="Nela" class="img-thumbnail img-fluid figure-img rounded" src="https://honzajavorek.cz/images/20230620-8831c9f9d7408f8d23462a58fa6d6c0278db3046d79cbabb3f069d0cfdadf644-yt.png"></figure>
+<h2 id="optimalizace-obrazku">Optimalizace obrázků<small class="permalink"><a href="#optimalizace-obrazku" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Během týdne jsem se nepříjemně zamotal do optimalizace obrázků na junior.guru.
+Přemýšlím, že bych generované obrázky commitoval zpět do repozitáře, aby se tím kešovaly a nevytvářely pokaždé znova.
+Jednak se příliš nemění, občas akorát nějaký přibude, jednak jejich generování trvá dost dlouho.</p>
+<p>Jenže aby nezabíraly v Gitu moc místa, chtěl jsem je mít co nejmenší.
+A to lze docílit jen optimalizacemi.
+Jde o celkem dost obrázků a bude jich jen přibývat, takže rozdíly jsou v MB, možná desítkách MB, a to už se po čase při <code>git pull</code> pozná.</p>
+<p>Napadlo mě, zda bych se nemohl na všechny optimalizace vyprdnout a prostě použít třeba WebP, který má určitě vše už vyřešené.
+U screenshotů měl oproti JPEG celkem dobré výsledky, tak jsem to předělal.
+U generovaných PNG to ale nevycházelo líp a hlavně nejde WebP přetáhnout např. jako obrázek ke statusu na LinkedIn, což je pro mě problém.</p>
+<p><a href="https://pillow.readthedocs.io/en/stable/handbook/image-file-formats.html#png">Pillow má option</a> <code>optimize</code>, což jsem nevěděl, napověděl mi to při psaní GitHub Copilot. Moc velkou parádu to však neudělalo.</p>
+<p>Hodně se mi líbil <a href="https://pngquant.org/">pngquant</a> v kombinaci s <a href="https://github.com/shssoichiro/oxipng">oxipng</a>.
+Prakticky nerozeznatelné PNG mělo místo 300 kB třeba jen 70 kB.
+Jenže se mi nějak nepovedlo to jednoduše dostat na CI.
+Vyžadovalo to instalaci přes <code>apt-get</code>, což je vždy opruz a čas buildu navíc, a taky se mi nepovedlo najít adekvátní balíček pro oxipng.
+Hledal jsem, zda by to nešlo udělat nějak nativně v Pythonu a našel toto:</p>
+<ul>
+<li><a href="https://github.com/nfrasser/pyoxipng">pyoxipng</a></li>
+<li><a href="https://github.com/python-pillow/Pillow/pull/1889">Pillow quantize()</a>: <code>image.quantize(method=Image.Quantize.LIBIMAGEQUANT)</code></li>
+<li>Omezení palety pomocí Pillow: <code>image = image.convert('P', palette=Image.Palette.ADAPTIVE, colors=256)</code> Jenže jak je to jen 256 barev, tak to bylo dost hnusné.</li>
+</ul>
+<p>Několik dní jsem se v tom motal a zkoušel různá řešní.
+Ten <code>pyoxipng</code> mi třeba fungoval krásně lokálně, ale na CI se záhadně zasekával.</p>
+<p>Nakonec jsem to vzdal a obrázky se generují neoptimalizované.
+Budu jejich velikost muset řešit jinak.
+Buďto je zmenším před commitem lokálně, nebo je nebudu commitovat, ale využiju třeba <a href="https://circleci.com/docs/caching/">CircleCI cache</a>, nevím.
+Každopádně mám pocit, že na to, jaká je to blbost, jsem v tom utopil strašně moc času.</p>
+<p>Aspoň se mi povedlo na několika místech výrazně zrychlit generování obrázků i jinak:</p>
+<ul>
+<li>Místo dočasného adresáře pro každý generovaný obrázek se používá jeden jako sdílená keš.</li>
+<li>Místo toho, aby se pokaždé kompilovaly SCSS soubory a kopírovaly se fonty, děje se to jen jednou.</li>
+<li>Místo toho, aby se SCSS kompilovalo ručně, pak se ručně kopírovaly fonty a přepisovaly jejich cesty, dělá to teď speciálně nastavený <code>esbuild</code>.</li>
+</ul>
+<p>Ten poslední bod mě potrápil, protože <code>esbuild</code> se rozbije o relativní cesty k fontům v balíčku <a href="https://www.npmjs.com/package/@fontsource/inter">@fontsource/inter</a>.
+Procházel jsem nějaké pluginy, ale nakonec je řešením <code>precompile</code> přímo v rámci <a href="https://github.com/glromeo/esbuild-sass-plugin">SCSS pluginu</a>:</p>
+<pre class="highlight"><code><span></span><code><span class="k">await</span><span class="w"> </span><span class="nx">esbuild</span><span class="p">.</span><span class="nx">build</span><span class="p">({</span><span class="w"></span>
+<span class="w">  </span><span class="p">...</span><span class="w"></span>
+<span class="w">  </span><span class="nx">plugins</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="nx">sassPlugin</span><span class="p">({</span><span class="w"></span>
+<span class="w">      </span><span class="nx">precompile</span><span class="p">(</span><span class="nx">source</span><span class="p">,</span><span class="w"> </span><span class="nx">pathname</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">pathname</span><span class="p">.</span><span class="nx">endsWith</span><span class="p">(</span><span class="s1">'@fontsource/inter/index.css'</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="k">return</span><span class="w"> </span><span class="nx">source</span><span class="p">.</span><span class="nx">replaceAll</span><span class="p">(</span><span class="s1">'./files/'</span><span class="p">,</span><span class="w"> </span><span class="s1">'../../node_modules/@fontsource/inter/files/'</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">source</span><span class="w"></span>
+<span class="w">      </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">}),</span><span class="w"></span>
+<span class="w">  </span><span class="p">],</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+</code></code></pre>
+
+<p>Taky jsem při ladění nejrůznějších problémů dost překopal jak mi funguje logging.
+Objevil jsem třeba <a href="https://stackoverflow.com/a/57820456/325365">record_factory</a>, pomocí níž si loguji z jakého procesu je záznam, ale pouze pokud není v tom hlavním.
+Zrušil jsem logování do souboru, protože ho nepoužívám, a přidal jsem si <code>--debug</code> do CLI, které zapne detailnější logování.</p>
+<h2 id="dalsi">Další<small class="permalink"><a href="#dalsi" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<ul>
+<li>Pomáhal jsem <a href="https://cz.pycon.org/2023/">PyCon CZ</a> týmu propagovat <a href="https://cz.pycon.org/2023/cfp/">možnost přihlásit si na letošní konferenci přednášku nebo workshop</a>.
+    Výzvu jsem dal do asi desítky Facebookových skupin, ale zdá se mi, že nakonec ze všeho nejvíc frčí <a href="https://www.linkedin.com/posts/honzajavorek_python-cfp-pyconcz-activity-7077574515693645824-WkJA">můj status na LinkedIn</a>.
+    Vyhodnocuji si z toho pro osobní účely, že Facebook je už asi opravdu mrtvý.</li>
+<li>Sdílel jsem <a href="https://www.linkedin.com/posts/kveselovska_16-kate%C5%99ina-lesch-deloitte-o-um%C4%9Bl%C3%A9-inteligenci-activity-7071741104039047168-IxR-/">status Kateřiny Lesch</a> o tom, že byla u nás v podcastu.</li>
+<li>Přihlásil jsem se na podzimní půlmaraton v Blansku a nejspíš na jednu letní šifrovačku v Brně.</li>
+<li>Opravil jsem nějaké malé chybky na junior.guru.
+    Rozbité cesty k souborům, špatně generované adresy, atd.</li>
+<li>E-maily, <a href="https://junior.guru/club/">klubový Discord</a>, <a href="https://docs.pyvec.org/operations/support.html#sit-kontaktu">Pyvec Slack</a>.
+    Od dovolené jsem ještě stále ve skluzu co se týče čtení klubu.</li>
+<li>Během 8 dní jsem naběhal 19 km. Celkem jsem se hýbal 3 h a zdolal při tom 19 km.
+    Detaily na <a href="https://www.strava.com/athletes/31242569">Strava</a>, jediné sociální síti, kde si napsání statusu musíte zasloužit.</li>
+</ul>
+<div class="alert alert-warning" role="alert">
+<p><strong>Okénko duševního zdraví:</strong>
+Máte dojem, že na rozdíl ode mně nic nestíháte?
+Buďte v klidu, <a href="https://honzajavorek.cz/blog/neni-to-zavod/">není to závod</a>!</p>
+</div>
+<h2 id="planuji">Plánuji<small class="permalink"><a href="#planuji" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<ol>
+<li>Věnovat se v klidu rodině a práci a nic dalšího 🙏</li>
+<li>Dohnat všechny možné resty z posledních týdnů.</li>
+<li>Nějak uzavřít překopávání toho, jak se buildí frontend junior.guru.</li>
+</ol>
+<h2 id="zaujalo-me">Zaujalo mě<small class="permalink"><a href="#zaujalo-me" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Když na něco narazím a líbí se mi to, sdílím to <a href="https://t.me/honzajavorekcz">na Telegramu</a>.
+Od posledních poznámek jsem sdílel:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=xNvvK-gPXUo">Call for Proposals: Přihlaš si přednášku, workshop nebo sprint na PyCon CZ 23</a><br>A už jsem tady psal, že právě můžete poslat návrh na přednášku nebo workshop pro letošní PyCon CZ, českou Python konferenci? Letos tam bude i celá sekce pro začátečníky. Pusťte si Dana na videu, vysvětlí vám, jak to funguje 🙂 V popisku je pak odkaz přímo na formulář. A neváhejte, ten formulář nebude už otevřený moc dlouho.</li>
+<li><a href="https://www.youtube.com/watch?v=Cg1g27MUd_0">Gaming On Mac Just Got WAY Better - A Developer's Perspective</a><br>Áčkové hry na macOS? Wow.</li>
+<li><a href="https://overcast.fm/+1O3lj1Evs">O Pyvci s Bárou Drbohlavovou (Rohlík.cz) — ProgramHRování - váš HR průvodce světem IT</a><br>Konečně jsem si pustil tohle a super. Díky Báro za super promo pro Pyvec a Python komunitu ❤️ (jsem taky ve výboru)</li>
+<li><a href="https://www.wired.com/story/flawless-korea-beauty-elise-hu/">Digital Culture Is Literally Reshaping Women's Faces</a><br>„While fixing individuals reduces prejudice directed toward particular individuals, it increases prejudice in general.“ Nebo: „We assume that desire is objective or subjective, but in reality it rests on a third party who gives value to objects. This third party is usually the one who is closest, the neighbor. When the entire internet population is your neighbor, this is a recipe for conflict.”</li>
+</ul></div></div></div></div>
+  </main>
+
+  <footer class="article-footer mb-5">
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Podporovatel <a href="https://www.zeleni.cz/">Strany zelených</a>.
+          Tohle je můj blog už 16 let.
+      </address>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-telegram"></i> <a href="https://t.me/honzajavorekcz">Telegram</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</article>
+      </div>
+<aside class="promo seealso">
+  <div class="promo-content container">
+    <h3 class="promo-heading fs-1">Další Honzovy články</h3>
+    <ul class="list-unstyled mb-0">
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2023 —
+        <a href="https://honzajavorek.cz/blog/tydenni-poznamky-strakovka-podcast-inboxy/">
+          Týdenní poznámky: Strakovka, podcast, inboxy</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/volim-marketing/">
+          Volím marketing</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/bez-auta/">
+          Bez auta</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/spoustim-klub/">
+          Spouštím klub</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2016 —
+        <a href="https://honzajavorek.cz/blog/kolonizatori-a-spravci-kolonii/">
+          Kolonizátoři a správci kolonií</a>
+      </li>
+      <li>
+        <i class="bi bi-search"></i>
+        <a href="https://honzajavorek.cz/blog/">Archiv blogu</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+      <footer class="footer">
+        <address class="footer-content container">
+          © Copyright 2007—2023 Honza Javorek
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+
+      <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+  </body>
+</html>
