@@ -938,13 +938,13 @@ rdflib = "*"
 
 [[package]]
 name = "pytest"
-version = "7.3.2"
+version = "7.4.0"
 description = "pytest: simple powerful testing with Python"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "pytest-7.3.2-py3-none-any.whl", hash = "sha256:cdcbd012c9312258922f8cd3f1b62a6580fdced17db6014896053d47cddf9295"},
-    {file = "pytest-7.3.2.tar.gz", hash = "sha256:ee990a3cc55ba808b80795a79944756f315c67c12b56abd3ac993a7b8c17030b"},
+    {file = "pytest-7.4.0-py3-none-any.whl", hash = "sha256:78bf16451a2eb8c7a2ea98e32dc119fd2aa758f1d5d66dbf0a59d69a3969df32"},
+    {file = "pytest-7.4.0.tar.gz", hash = "sha256:b4bf8c45bd59934ed84001ad51e11b4ee40d40a1229d2c79f9c592b0a3f6bd8a"},
 ]
 
 [package.dependencies]
@@ -1423,4 +1423,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "3.10.*"
-content-hash = "e946ad5a32d37b5508e7e8e911f1073474ebded7020bfc1e0a5aa6a8cabf4b47"
+content-hash = "a230cb65d0a00e6af653a954b753d13db8fec5107f7f7f30dedbb7103f0a3f76"
