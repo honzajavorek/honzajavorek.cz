@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Smršť v klubu a programování lepšího týdenní
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/234
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-06-23_tydenni-poznamky-optimalizace-obrazku-a-jamiroquai.md) už utekl nějaký ten týden (23. 6. až 30. 6.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
