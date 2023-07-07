@@ -20,36 +20,53 @@ SKIP_FILES = ['.DS_Store']
 
 SKIP_RESIZE_SUFFIXES = ['.gif', '.svg']
 
-MEDIA_RE = re.compile(r'''
-(?P<media_md>
-    \!\[
-        [^\]]*
-    \]
-    \(
-        (?P<path_md>
-            (?P<static_md>
-                \{static\}
-            )?
-            [^\s\]\{]+
-        )
-    \)
-)
-|
-(?P<media_html>
-    <img
-        (\s[^>]*)?
-        \ssrc=
-            ["\']
-                (?P<path_html>
-                    (?P<static_html>
+MEDIA_RES = [
+    re.compile(r'''
+        (?P<media>
+            \!\[
+                [^\]]*
+            \]
+            \(
+                (?P<path>
+                    (?P<static>
                         \{static\}
                     )?
-                    [^>]+
+                    [^\s\]\{]+
                 )
-            ["\']
-    >
-)
-''', re.VERBOSE | re.IGNORECASE)
+            \)
+        )
+    ''', re.VERBOSE | re.IGNORECASE),
+    re.compile(r'''
+        (?P<media>
+            \!\[
+                [^\]]*
+            \]
+            \(
+                (?P<path>
+                    \<
+                    [^\>]+
+                    \>
+                )
+            \)
+        )
+    ''', re.VERBOSE | re.IGNORECASE),
+    re.compile(r'''
+        (?P<media>
+            <img
+                (\s[^>]*)?
+                \ssrc=
+                    ["\']
+                        (?P<path>
+                            (?P<static>
+                                \{static\}
+                            )?
+                            [^>]+
+                        )
+                    ["\']
+            >
+        )
+    ''', re.VERBOSE | re.IGNORECASE)
+]
 
 IMAGE_METADATA_RE = re.compile(r'Image: images/(?P<path>\S+)')
 
@@ -74,9 +91,10 @@ def main(content_path, images_path, overwrite, detect_unused, resize):
             images.add(images_path / match.group('path'))
 
         # find all linked images, copy them to the blog source
-        source_modified = MEDIA_RE.sub(partial(process_match, path, images_path,
-                                               images=images, overwrite=overwrite),
-                                       source)
+        source_modified = source
+        for media_re in MEDIA_RES:
+            replace = partial(process_match, path, images_path, images, overwrite=overwrite)
+            source_modified = media_re.sub(replace, source_modified)
         if source != source_modified:
             path.write_text(source_modified)
             source = source_modified
@@ -109,10 +127,10 @@ def main(content_path, images_path, overwrite, detect_unused, resize):
                 raise click.Abort()
 
 
-def process_match(source_path, images_path, match, images, overwrite=False):
-    groups = merge_match_groups(match.groupdict())
+def process_match(source_path, images_path, images, match, overwrite=False):
+    groups = match.groupdict()
 
-    if groups['static']:
+    if groups.get('static'):
         image_path = Path(groups['path'].replace(f'{{static}}/{images_path.name}', str(images_path)))
         assert image_path.exists()
         images.add(image_path)
@@ -132,6 +150,7 @@ def process_match(source_path, images_path, match, images, overwrite=False):
                 for chunk in progress:
                     f.write(chunk)
     else:
+        path = path.removeprefix('<').removesuffix('>')
         unquoted_path = Path(unquote(path))
         image_path = images_path / (slugify(unquoted_path.stem) + unquoted_path.suffix.lower())
         if not overwrite and image_path.exists():
@@ -151,12 +170,3 @@ def process_match(source_path, images_path, match, images, overwrite=False):
 
     images.add(image_path)
     return groups['media'].replace(path, f'{{static}}/images/{image_path.name}')
-
-
-def merge_match_groups(groups):
-    return {name: (
-                groups.get(f'{name}_html')
-                if groups['media_md'] is None
-                else groups[f'{name}_md']
-            )
-            for name in ['media', 'path', 'static']}
