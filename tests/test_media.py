@@ -1,6 +1,6 @@
 import pytest
 
-from blog.media import MEDIA_RE
+from blog.media import MEDIA_RES
 
 
 @pytest.mark.parametrize('source', [
@@ -9,10 +9,16 @@ from blog.media import MEDIA_RE
     '![Alt text](https://en.wikipedia.org/wiki/Scooter_(motorcycle))',
     '![Alt text](https://example/lorem+ipsum)',
     '![Alt text](https://example/lorem%20ipsum)',
+    '![Alt text](<../../../Downloads/Screenshot 2023-07-04 at 13.32.38.png>)',
 ])
 def test_media_re(source):
-    assert MEDIA_RE.search(f'''
-        Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. [{source}{{: .right }}](https://example.com) [Proin](#proin)
-        finibus ex erat, et rhoncus tortor consectetur sed.
-    ''').group(0) == source
+    matches = []
+    for media_re in MEDIA_RES:
+        matches.append(media_re.search(f'''
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. [{source}{{: .right }}](https://example.com) [Proin](#proin)
+            finibus ex erat, et rhoncus tortor consectetur sed.
+        '''))
+    match = next(filter(None, matches))
+
+    assert match.group(0) == source
