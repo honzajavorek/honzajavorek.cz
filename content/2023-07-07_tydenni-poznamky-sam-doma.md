@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Sám doma
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/238
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-06-30_tydenni-poznamky-smrst-v-klubu-a-programovani-lepsiho-tydenniho-shrnuti.md) už utekl nějaký ten týden (30. 6. až 7. 7.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
