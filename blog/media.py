@@ -75,7 +75,7 @@ def main(content_path, images_path, overwrite, detect_unused, resize):
 
         # find all linked images, copy them to the blog source
         source_modified = MEDIA_RE.sub(partial(process_match, path, images_path,
-                                               overwrite=overwrite, images=images),
+                                               images=images, overwrite=overwrite),
                                        source)
         if source != source_modified:
             path.write_text(source_modified)
@@ -109,7 +109,7 @@ def main(content_path, images_path, overwrite, detect_unused, resize):
                 raise click.Abort()
 
 
-def process_match(source_path, images_path, match, overwrite=False, images=None):
+def process_match(source_path, images_path, match, images, overwrite=False):
     groups = merge_match_groups(match.groupdict())
 
     if groups['static']:
