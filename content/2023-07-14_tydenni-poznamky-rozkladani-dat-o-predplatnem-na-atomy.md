@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Rozkládání dat o předplatném na atomy
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/247
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-07-07_tydenni-poznamky-sam-doma.md) už utekl nějaký ten týden (7. 7. až 14. 7.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
