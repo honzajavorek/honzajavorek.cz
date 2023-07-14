@@ -150,8 +150,7 @@ def process_match(source_path, images_path, images, match, overwrite=False):
                 for chunk in progress:
                     f.write(chunk)
     else:
-        path = path.removeprefix('<').removesuffix('>')
-        unquoted_path = Path(unquote(path))
+        unquoted_path = Path(unquote(path.removeprefix('<').removesuffix('>')))
         image_path = images_path / (slugify(unquoted_path.stem) + unquoted_path.suffix.lower())
         if not overwrite and image_path.exists():
             raise FileExistsError(str(image_path))
