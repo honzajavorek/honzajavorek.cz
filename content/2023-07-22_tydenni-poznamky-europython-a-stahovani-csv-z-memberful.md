@@ -2,6 +2,7 @@ Title: Týdenní poznámky: EuroPython a stahování CSV z Memberful
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/251
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-07-14_tydenni-poznamky-rozkladani-dat-o-predplatnem-na-atomy.md) už utekl nějaký ten týden (14. 7. až 22. 7.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
