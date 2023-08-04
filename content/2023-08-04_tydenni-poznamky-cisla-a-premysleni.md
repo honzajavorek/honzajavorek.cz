@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Čísla a přemýšlení
 Image: images/img-4733.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/262
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-07-22_tydenni-poznamky-europython-a-stahovani-csv-z-memberful.md) už utekl nějaký ten týden (22. 7. až 4. 8.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
