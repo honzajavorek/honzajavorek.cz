@@ -1,3 +1,4 @@
+import shutil
 import time
 import re
 import json
@@ -140,4 +141,17 @@ def dev_open(path, wait_sec):
 def test(pytest_args):
     code = pytest.main(list(pytest_args))
     if code:
+        raise click.Abort()
+
+
+@main.command()
+@click.option("--pull/--no-pull", default=True)
+def update(pull):
+    try:
+        if pull:
+            subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=True)
+        subprocess.run(["poetry", "install"], check=True)
+        subprocess.run(["npm", "install", "--prefix=./theme"], check=True)
+        shutil.rmtree("public", ignore_errors=True)
+    except subprocess.CalledProcessError:
         raise click.Abort()
