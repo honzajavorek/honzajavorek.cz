@@ -78,7 +78,7 @@ Většina z toho, co nabízím, je nějaká forma náboru či budování značky
 Nábor je fajn, pokud firma zrovna nabírá, ale juniory někteří partneři nechtěli ani v době konjunktury a spolupráci s junior.guru si zařadili spíš do [CSR](https://cs.wikipedia.org/wiki/Spole%C4%8Densk%C3%A1_odpov%C4%9Bdnost_firem).
 Skoro vše, co nabízím, přidělává firmám práci.
 Budování značky je fajn, ale málokterá firma pro to chce udělat i něco víc, než na to jen hodit peníze.
-Nikdo nemá čas se tomu věnovat a po roce nemají důvod partnerství prodloužit.
+Nikdo nemá čas se tomu věnovat a po roce nemusí mít dobrý důvod partnerství prodloužit.
 A když přijde krize, tak se nábor, CSR i marketing ořežou jako zbytné výdaje.
 
 Je fascinující, že ani po 3,5 letech existence junior.guru stále nemám pro firmy jasný produkt.
@@ -170,6 +170,8 @@ Když jsem si prošel [čísla a grafy](https://junior.guru/open/) shora dolů, 
 -   V únoru byl velký _churn_ (retence) 18 %, což se dalo čekat vzhledem k lednové špičce a zdražení.
     Pak se vrátil na 15 %, což je zhruba to, co měl klub celou dobu.
     V červenci skočil na 10 %, odešlo opravdu hodně málo lidí (a ještě méně lidí přišlo).
+-   Je možné, že s nízkou cenou klub lákal i méně relevantní lidi, zatímco teď se to víc „trefuje“, tzn. že sice spoustu lidí neosloví, ale když už je osloví, tak ty, kteří do svého rozvoje chtějí opravdu investovat a v klubu zůstanou?
+    To asi teď nezjistím, protože čísla jsou stále ještě dost ovlivněna samotným aktem zdražení.
 -   Podle ankety lidi neodcházejí nějak moc z toho důvodu, že by byl klub „drahý“.
     Kdo přichází nově, s cenou prostě počítá, takže toto pak není kritérium odchodu.
     Podle ankety lidi odcházejí, protože klub už nepotřebují, nebo jej potřebovali na omezenou dobu.
@@ -196,7 +198,7 @@ Když jsem si prošel [čísla a grafy](https://junior.guru/open/) shora dolů, 
 ## Tvrdé hodnoty
 
 Už jsem to trochu nastínil u firem, ale vlastně se to týká i klubu.
-Nedávno psala [Rosie](https://rosie.land/) tohle:
+Nedávno Rosie [psala tohle](https://rosie.land/posts/the-town-hall-analogy/):
 
 > Most people don't actually want to participate in Town Halls. They want to be served or make progress in their life. Find a job. Sign up to an event. Meet and connect with people. To see progress. To find ways to rally, support and contribute along the way. And to see problems solved. They are there because they are invested in the ecosystem and care about the space the community exists in.
 
@@ -226,13 +228,14 @@ Vilém onehdá [napsal tohle](https://bigvilik.com/2020/12/07/mm20-095-poznej-pa
 > 🤔 Zná i kupuje, ale ne od nás<br>
 > 👉 Odliš se, nebo zemři!
 
-Taky mi přijde, že by se dalo těch „tvrdých hodnot“ přidat.
+Kromě toho mi přijde, že by se dalo těch „tvrdých hodnot“ i přidat.
 Jak jsem psal, junior se chce naučit programovat a chce si sehnat práci v oboru.
 Můžu s tím nějak pomoci?
 Co jsou na tom ty složité věci?
 Podle mě vybírání kurzů a hledání práce.
 
 Ještě pár měsíců zpět neexistoval [katalog kurzů](https://junior.guru/courses/), teď už existuje.
+Zájem o něj vypadá nadějně jak u juniorů, tak u firem.
 Teď to akorát vylepšit a víc propojit s klubem.
 
 Hledání práce je to úplně nejtěžší.
@@ -267,10 +270,13 @@ Rozdělil jsem je do několika kategorií.
     (…z reklamy na Kinder Surprise)
 -   Zaškrtávátkový ceník, kde si každá firma namíchá to, co zrovna chce?
 
-### Konverze z doporučení
+### Další konverze
 
--   Zavedu podporu pro _refferals_.
+-   Zavedu podporu pro _referrals_.
     Člověk, který už v klubu je, by měl dostat slevu či nějaké výhody, pokud do klubu doporučí další lidi.
+-   Budu chodit na Facebook a budu tam trochu radit.
+-   Budu dál chodit do podcastů, když mě pozvou.
+    Možná můžu zkusit i pozvat se někam sám, ale vzhledem k už naplánovaným akcím to spíš nezvládnu.
 
 ### Konverze z vyhledávání
 
@@ -320,6 +326,7 @@ Zkusím to vylučovacím způsobem:
     Možná by nebylo moudré rozjíždět všechno najednou.
     Profily udělám příští rok.
 -   Navíc chci profily spojit s pracovními inzeráty a ty jsou na staré infrastruktuře.
+    Opět spousta práce.
     Třídit nabídky pomocí AI je důležitý krok, ale nějaké nabídky to vyhazuje i teď a je to _good enough_.
     Zlepšení by těžko ze dne na den změnilo toky členů do klubu.
     Inzeráty udělám příští rok.
@@ -341,7 +348,7 @@ Vychází mi z toho následující:
 2.  Mít na webu _call to action_ do klubu. Lepší úvodní stránka, klubová stránka.
     Mít hotovo do **20.11.**
 3.  Nový onboarding v klubu.
-4.  _Referrals_.
+4.  Podpořit doporučování nových členů stávajícími členy.
 5.  Kdybych se náhodou nudil, tak dodělávat katalog kurzů.
 
 Jaké benefity budou mít tyto body pro samotné juniory?
@@ -354,7 +361,8 @@ Jaké benefity budou mít tyto body pro samotné juniory?
     Bude jasnější, co a jak dělat.
     Možná se mi povede i sdružit nováčky v klubu, kteří přišli ve stejnou dobu, a trochu je propojit.
 -   Kdo už je v klubu, bude mít členství levnější nebo jinak obohacené, pokud někoho doporučí.
-    To je velké plus, protože už teď hodně lidí klub doporučuje, aniž by za to cokoliv měli.
+    To je velké plus.
+    Už teď hodně lidí klub doporučuje, aniž by za to cokoliv měli.
 -   Fanoušci junior.guru se už nebudou muset stydět někomu ukázat úvodní stránku junior.guru :D
 -   Katalog kurzů bude obsahovat více dat, na zakladě kterých půjde udělat kvalifikovanější rozhodnutí, jaký kurz si vybrat.
 
@@ -380,6 +388,6 @@ Taky si umím představit konzultace s odborníky, kteří by mohli vidět něco
 
 Ale tam zatím nejsem.
 Je úterý 8.8., 2023 našeho letopočtu.
-Nový plán [překreslený na GitHub](https://github.com/orgs/juniorguru/projects/3).
+Nový plán mám už taky [překreslený na GitHub](https://github.com/orgs/juniorguru/projects/3).
 Článek na blogu vydaný.
 Teď vyhrnout rukávy a makat.
