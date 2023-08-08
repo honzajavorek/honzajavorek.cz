@@ -1,7 +1,7 @@
 Title: Spouštím klub
 Image: images/klub.jpg
 Lang: cs
-Tags: highlight, junior.guru
+Tags: junior.guru, highlight
 Twitter-Comments: https://twitter.com/honzajavorek/status/1348585517160554496
 LinkedIn-Comments: https://www.linkedin.com/posts/honzajavorek_spou%C5%A1t%C3%ADm-klub-honza-javorek-activity-6754350302645805056-Kdtn
 Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10158711762387707

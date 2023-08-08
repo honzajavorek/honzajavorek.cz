@@ -1,5 +1,6 @@
 :root {
-  --hj-green: #457E31;
+  --hj-green: #457e31;
+  --hj-green-rgb: 69, 126, 49;
   --hj-muted: #6c757d;
   --hj-light-grey: #eeeeee;
   --hj-small-font-size: .8rem;
@@ -9,8 +10,11 @@
   --jg-blue: #0f62fe;
   --jg-black: #343434;
   --bs-primary: var(--hj-green);
+  --bs-primary-rgb: var(--hj-green-rgb);
   --bs-link-color: var(--hj-green);
+  --bs-link-color-rgb: var(--hj-green-rgb);
   --bs-link-hover-color: var(--hj-green);
+  --bs-link-hover-color-rgb: var(--hj-green-rgb);
   --bs-code-color: #0a58ca;
   --tw-blue: #1da1f2;
 }
