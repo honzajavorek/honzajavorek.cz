@@ -2,7 +2,6 @@ Title: Letní pit stop
 Image: images/pitstop.jpg
 Lang: cs
 Tags: junior.guru
-Status: draft
 
 Už několik měsíců po očku sleduji [čísla a grafy](https://junior.guru/open/) související s junior.guru a bohužel se stále potvrzuje můj pocit, že něco není v pořádku.
 Abych zvrátil nepříznivé trendy, potřebuji se na chvíli zastavit a promyslet, co dál.
@@ -270,10 +269,14 @@ Rozdělil jsem je do několika kategorií.
     (…z reklamy na Kinder Surprise)
 -   Zaškrtávátkový ceník, kde si každá firma namíchá to, co zrovna chce?
 
-### Další konverze
+### Podpora stávajících členů
 
+-   Lidem, kteří jsou v klubu déle než rok, bych mohl dát slevu, že si vážím jejich přízně.
 -   Zavedu podporu pro _referrals_.
     Člověk, který už v klubu je, by měl dostat slevu či nějaké výhody, pokud do klubu doporučí další lidi.
+
+### Další konverze
+
 -   Budu chodit na Facebook a budu tam trochu radit.
 -   Budu dál chodit do podcastů, když mě pozvou.
     Možná můžu zkusit i pozvat se někam sám, ale vzhledem k už naplánovaným akcím to spíš nezvládnu.
@@ -293,6 +296,9 @@ Rozdělil jsem je do několika kategorií.
     Vytvořím blog, do kterého přesunu existující _success stories_ posbírané z internetu.
     Postupně budu přidávat rozhovory s juniory, kteří prošli klubem, nebo doporučení pro juniory od lidí z klubu.
     Z těch doporučení vytvořím nástěnku na [PyCon CZ](https://cz.pycon.org/2023/), na kterém se podílím a kde bude nejspíš junior.guru dost vidět.
+-   Udělám si výzkum mezi členy, co jim klub přináší.
+    To mi pomůže na webu vysvětlit, co lidem v každé fázi jejich juniorství klub dává.
+    Pomůže mi to pochopit, co z funkcí klubu vnímají jeho členové jako nejhodnotnější.
 -   Udělám lepší _homepage_, protože už zcela jakákoliv by byla lepší, než co tam je teď.
     Nemusím na tom půl roku vyšívat a dělat z toho vědu.
     „Uváděj, ukazuj, nadchni!“
@@ -348,7 +354,7 @@ Vychází mi z toho následující:
 2.  Mít na webu _call to action_ do klubu. Lepší úvodní stránka, klubová stránka.
     Mít hotovo do **20.11.**
 3.  Nový onboarding v klubu.
-4.  Podpořit doporučování nových členů stávajícími členy.
+4.  Podpořím stávající členy a doporučování nových členů.
 5.  Kdybych se náhodou nudil, tak dodělávat katalog kurzů.
 
 Jaké benefity budou mít tyto body pro samotné juniory?
@@ -360,9 +366,7 @@ Jaké benefity budou mít tyto body pro samotné juniory?
 -   Zlepší se orientace v klubu po prvním přihlášení.
     Bude jasnější, co a jak dělat.
     Možná se mi povede i sdružit nováčky v klubu, kteří přišli ve stejnou dobu, a trochu je propojit.
--   Kdo už je v klubu, bude mít členství levnější nebo jinak obohacené, pokud někoho doporučí.
-    To je velké plus.
-    Už teď hodně lidí klub doporučuje, aniž by za to cokoliv měli.
+-   Kdo už je v klubu, bude mít členství levnější nebo jinak obohacené.
 -   Fanoušci junior.guru se už nebudou muset stydět někomu ukázat úvodní stránku junior.guru :D
 -   Katalog kurzů bude obsahovat více dat, na zakladě kterých půjde udělat kvalifikovanější rozhodnutí, jaký kurz si vybrat.
 
