@@ -2,6 +2,7 @@ Title: Letní pit stop
 Image: images/pitstop.jpg
 Lang: cs
 Tags: junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/265
 
 Už několik měsíců po očku sleduji [čísla a grafy](https://junior.guru/open/) související s junior.guru a bohužel se stále potvrzuje můj pocit, že něco není v pořádku.
 Abych zvrátil nepříznivé trendy, potřebuji se na chvíli zastavit a promyslet, co dál.
