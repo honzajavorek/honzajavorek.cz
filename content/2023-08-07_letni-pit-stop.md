@@ -376,12 +376,15 @@ Je to nejdelší článek v historii blogu, s odhadovanou dobou čtení 40 minut
 Později jsem plán [překreslil na GitHub](https://github.com/orgs/juniorguru/projects/1/views/1).
 
 ![Plán]({static}/images/screenshot-2023-08-08-at-10-25-00-2023-juniorguru.png){: .img-thumbnail }
+Původní plán na rok 2023
 
 Jenže plán je jenom plán.
 Doteď mi sloužil dobře, takže dík, ale situace se mění a je potřeba nový plán, aktuálnější.
-Osobně si myslím, že tento nový plán mi vydrží zhruba do konce roku, a potom to budu muset zase aktualizovat.
+Jak jde vidět z náhledu, ono se toho ve výsledku stejně zas tak moc nezmění.
+Dost podobné věci tam dávno jsou, dokonce jako priority, akorát jsem je doteď prokrastinoval.
 
-Pokud se čísla uklidní, třeba si ho zase poskládám podle klíče „tři vylepšení pro každou oblast junior.guru“.
+Myslím si, že nový plán mi vydrží zhruba do konce roku, a potom to budu muset zase aktualizovat.
+Pokud se čísla uklidní, třeba si ho opět poskládám podle klíče „tři vylepšení pro každou oblast junior.guru“.
 Jestliže se čísla neuklidní, možná přijde na řadu _go to the mattresses_.
 Vždy bych si určil jednu top prioritu, na té bych měsíc pracoval a pak sledoval, jestli se trendy obracejí a vyhodnocoval, co má přijít na řadu jako další.
 Taky si umím představit konzultace s odborníky, kteří by mohli vidět něco, co já nevidím.
