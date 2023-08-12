@@ -113,8 +113,8 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
         **Čísla:** Finanční výsledky, návštěvnost a další čísla k junior.guru [mám přímo na webu](https://junior.guru/open/).
         {jobs_text}
 
-        **Plány:** Četli jste, co [letos plánuji]({{filename}}2022-12-26_strategie-na-2023.md)?
-        Svůj postup zaznamenávám do [tabulky na GitHubu](https://github.com/orgs/juniorguru/projects/1/).
+        **Plány:** Četli jste, co [teď plánuji]({{filename}}2023-08-07_letni-pit-stop.md)?
+        Svůj postup zaznamenávám do [tabulky na GitHubu](https://github.com/orgs/juniorguru/projects/3/).
         </div>
 
         ## Další
