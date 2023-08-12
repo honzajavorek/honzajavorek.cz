@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Hemžení neuronů a e-mailů
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/268
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-08-04_tydenni-poznamky-cisla-a-premysleni.md) už utekl nějaký ten týden (4. 8. až 12. 8.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
