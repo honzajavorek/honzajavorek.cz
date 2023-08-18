@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Sekce s novinkami a Jinja
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/271
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-08-12_tydenni-poznamky-hemzeni-neuronu-a-e-mailu.md) už utekl nějaký ten týden (12. 8. až 18. 8.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
