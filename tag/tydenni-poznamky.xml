@@ -1,5 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Javorové lístky</title><link href="https://honzajavorek.cz/blog/" rel="alternate"></link><link href="https://honzajavorek.cz/tag/tydenni-poznamky.xml" rel="self"></link><id>https://honzajavorek.cz/</id><updated>2023-08-12T00:00:00+02:00</updated><author><name>Honza Javorek</name><email>mail@honzajavorek.cz</email><uri>https://honzajavorek.cz</uri></author><subtitle>Blog Honzy Javorka</subtitle><rights>© Copyright 2007—2023 Honza Javorek &lt;https://honzajavorek.cz&gt;</rights><entry><title>Týdenní poznámky: Hemžení neuronů a e-mailů</title><link href="https://honzajavorek.cz/blog/tydenni-poznamky-hemzeni-neuronu-a-e-mailu/" rel="alternate"></link><published>2023-08-12T00:00:00+02:00</published><updated>2023-08-12T00:00:00+02:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2023-08-12:/blog/tydenni-poznamky-hemzeni-neuronu-a-e-mailu/</id><summary type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Jak se mi daří v jednom člověku provozovat a rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;?
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Javorové lístky</title><link href="https://honzajavorek.cz/blog/" rel="alternate"></link><link href="https://honzajavorek.cz/tag/tydenni-poznamky.xml" rel="self"></link><id>https://honzajavorek.cz/</id><updated>2023-08-18T00:00:00+02:00</updated><author><name>Honza Javorek</name><email>mail@honzajavorek.cz</email><uri>https://honzajavorek.cz</uri></author><subtitle>Blog Honzy Javorka</subtitle><rights>© Copyright 2007—2023 Honza Javorek &lt;https://honzajavorek.cz&gt;</rights><entry><title>Týdenní poznámky: Sekce s novinkami a Jinja</title><link href="https://honzajavorek.cz/blog/tydenni-poznamky-sekce-s-novinkami-a-jinja/" rel="alternate"></link><published>2023-08-18T00:00:00+02:00</published><updated>2023-08-18T00:00:00+02:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2023-08-18:/blog/tydenni-poznamky-sekce-s-novinkami-a-jinja/</id><summary type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Jak se mi daří v jednom člověku provozovat a rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;?
+Od &lt;a href="https://honzajavorek.cz/blog/tydenni-poznamky-hemzeni-neuronu-a-e-mailu/"&gt;posledních poznámek&lt;/a&gt; už utekl nějaký ten týden (12. 8. až 18. 8.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.&lt;/p&gt;
+&lt;figure class="figure"&gt;&lt;img alt="Poznámky" src="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg" class="img-fluid figure-img rounded"&gt;&lt;figcaption class="figure-caption"&gt;
+Fotil &lt;a href="https://unsplash.com/@markusspiske"&gt;Markus Spiske&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;
+&lt;p&gt;&lt;strong&gt;Čísla:&lt;/strong&gt; Finanční výsledky, návštěvnost a další čísla k junior.guru &lt;a href="https://junior.guru/open/"&gt;mám přímo …&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Jak se mi daří v jednom člověku provozovat a rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;?
+Od &lt;a href="https://honzajavorek.cz/blog/tydenni-poznamky-hemzeni-neuronu-a-e-mailu/"&gt;posledních poznámek&lt;/a&gt; už utekl nějaký ten týden (12. 8. až 18. 8.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.&lt;/p&gt;
+&lt;figure class="figure"&gt;&lt;img alt="Poznámky" src="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg" class="img-fluid figure-img rounded"&gt;&lt;figcaption class="figure-caption"&gt;
+Fotil &lt;a href="https://unsplash.com/@markusspiske"&gt;Markus Spiske&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;
+&lt;p&gt;&lt;strong&gt;Čísla:&lt;/strong&gt; Finanční výsledky, návštěvnost a další čísla k junior.guru &lt;a href="https://junior.guru/open/"&gt;mám přímo na webu&lt;/a&gt;.
+Aktuální nabídky práce pro juniory: &lt;a href="https://junior.guru/jobs/ade40e530211c36a309fa370d270da7650ad18462c03c95b0b38de57/"&gt;Red Hat&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Plány:&lt;/strong&gt; Četli jste, co &lt;a href="https://honzajavorek.cz/blog/letni-pit-stop/"&gt;teď plánuji&lt;/a&gt;?
+Svůj postup zaznamenávám do &lt;a href="https://github.com/orgs/juniorguru/projects/3/"&gt;tabulky na GitHubu&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="sekce-s-novinkami"&gt;Sekce s novinkami&lt;small class="permalink"&gt;&lt;a href="#sekce-s-novinkami" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Minule jsem vytvořil novou sekci na webu, do které jsem přesunul podcast a klubové akce.
+Postupně ji osekávám do tvaru, jaký chci, stejně jako sochař osekává nějaký nevzhledný šutr.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Do novinek jsem přesunul příběhy juniorů.
+    Jejich kompletní výpis je na úvodní stránce webu, ale tam jednou nebude.
+    Další kompletní výpis byl úplně dole na &lt;a href="https://junior.guru/handbook/motivation/"&gt;stránce o motivaci&lt;/a&gt;.
+    Odtamtud jsem příběhy přesunul.&lt;/li&gt;
+&lt;li&gt;Odladil jsem menu na mobilu, aby nepřesahovalo mimo viewport.&lt;/li&gt;
+&lt;li&gt;Vymyslel jsem CSS komponentu, kartu, která je schopna člověku odprezentovat obsah typu přednáška, epizoda podcastu, nebo odkaz na &lt;em&gt;success story&lt;/em&gt;.
+    Docela jsem si s tím hrál a její design ještě v průběhu týdne měnil.
+    Tuto kartu jsem pak použil na výpis přednášek, podcastů, i příběhů.&lt;/li&gt;
+&lt;li&gt;Vytvářel jsem podstránky pro klubové akce a pro epizody podcastu.
+    Abych to mohl udělat, musel jsem každé akci přiřadit nějaké ID.
+    Přišlo mi to jako nejlepší řešení, protože vše ostatní se může měnit (název, datum a čas), nebo to není unikátní (např. přednášející).
+    Dřív se používal čas konání, ale šlo jen o kotvu na jedné dlouhé stránce.
+    Když se to změnilo, člověk se dostal na seznam přednášek, ne na 404ku.
+    U podcastu byl zase jakýsi zmatek v tom, co je vlastně ID, co je číslo, a co je nějaké technické unikátní označení.
+    Tento chaos jsem musel vyčistit.&lt;/li&gt;
+&lt;li&gt;Přidal jsem na podstránky &lt;em&gt;breadcrumbs&lt;/em&gt;.
+    Sjednotil jsem, jak vypadá navigace dole.
+    Použil jsem to pak i v katalogu kurzů.&lt;/li&gt;
+&lt;li&gt;Příběhy přebrané z jiných webů jsem předělal tak, aby se otvíraly do nového okna a přidal jsem jim UTM parametry.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class="figure"&gt;&lt;img alt="Příběhy" class="img-thumbnail img-fluid figure-img rounded" src="https://honzajavorek.cz/images/screenshot-2023-08-18-at-19-06-51-inspirativni-pribehy.png"&gt;&lt;figcaption class="figure-caption"&gt;
+Takhle nově vypadají odkazy na příběhy&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class="figure"&gt;&lt;img alt="Klubové akce" class="img-thumbnail img-fluid figure-img rounded" src="https://honzajavorek.cz/images/screenshot-2023-08-18-at-19-06-59-online-akce-pro-zacatecniky-v-programovani.png"&gt;&lt;figcaption class="figure-caption"&gt;
+Takhle nově vypadají odkazy na klubové akce&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class="figure"&gt;&lt;img alt="Podcast" class="img-thumbnail img-fluid figure-img rounded" src="https://honzajavorek.cz/images/screenshot-2023-08-18-at-19-07-41-podcast-pro-juniory-v-it.png"&gt;&lt;figcaption class="figure-caption"&gt;
+Takhle nově vypadají odkazy na epizody podcastu&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class="figure"&gt;&lt;img alt="Podstránka klubových akcí" class="img-thumbnail img-fluid figure-img rounded" src="https://honzajavorek.cz/images/screenshot-2023-08-18-at-19-08-08-marta-kirchgessner-dev-fiction-juniori-a-realita-vyvojarskeho-tymu-online-akce.png"&gt;&lt;figcaption class="figure-caption"&gt;
+Podstránka klubových akcí je zatím ošklivá, ale je tam…&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class="figure"&gt;&lt;img alt="Podstránka podcastu" class="img-thumbnail img-fluid figure-img rounded" src="https://honzajavorek.cz/images/screenshot-2023-08-18-at-19-07-56-anastazie-sedlakova-dnanexus-nejen-o-materstvi-a-kariere-v-it-epizoda-podcastu.png"&gt;&lt;figcaption class="figure-caption"&gt;
+Podstránka podcastových epizod je taky zatím ošklivá…&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Teď bych chtěl udělat novinkám úvodní stránku, která bude takovou „palubní deskou“.
+Nejnovější podcast, plánovaná přednáška, poslední přednáška…
+No a tahle palubní deska by měla mít potenciál stát se jednou obsahem pravidelného newsletteru.
+Až bude tahle úvodní stránka, odstraním nejspíš úplně ten modrý postranní navigační panel.
+Nějak mi to na ty novinky nesedí.
+Nechám lidi proklikat se jen z „palubní desky“ a rozšířím &lt;em&gt;breadcrumbs&lt;/em&gt; o jednu úroveň.&lt;/p&gt;
+&lt;h2 id="cache-busting"&gt;Cache busting&lt;small class="permalink"&gt;&lt;a href="#cache-busting" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Zjistil jsem, že když jsem začal používat &lt;a href="https://esbuild.github.io/"&gt;esbuild&lt;/a&gt;, vyhodil jsem tzv. &lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching#cache_busting"&gt;cache busting&lt;/a&gt;.
+To byl kousek kódu, který do HTML přidával za adresu k .css nebo .js souboru jeho verzi, aby prohlížeče načetly novou, pokud se soubor změnil.
+Doteď jsem nic v tomto směru velmi neměnil, tak to nevadilo, ale teď jsem začal do CSS dost sahat, tak to zlobilo.&lt;/p&gt;
+&lt;p&gt;Šlo by to nějak řešit přímo v esbuildu, ale já mám z historických důvodů složitý stack (přecházím z Flasku na MkDocs a stále ještě mám něco ve Flasku a něco v MkDocs), tak jsem si to &lt;a href="https://github.com/honzajavorek/junior.guru/blob/aab0ea34b9b9a0bde787a2c3745b48b6edf4121d/juniorguru/cli/web.py#L159"&gt;musel udělat po svém&lt;/a&gt;.
+Krátký skript, který pouštím těsně před deployem, a který projde vygenerované statické HTML a tohle do nich přidá.&lt;/p&gt;
+&lt;p&gt;Staromilsky chci mít HTML kód čitelný, neminifikovaný.
+Když jsem byl puberťák, čtením HTML kódu cizích webů jsem se naučil většinu věcí.
+Tohle bych chtěl umožnit i juniorům, kteří by se zajímali o to, jak junior.guru funguje.
+Napadlo mě, že když už mám ten postprocess skript, mohl by nad tím HTML rovnou pustit &lt;a href="https://prettier.io/"&gt;Prettier&lt;/a&gt;, aby to bylo vyloženě krásné.
+Ale na to teď nemám čas, tak třeba někdy, jednou 🙂&lt;/p&gt;
+&lt;h2 id="jinja"&gt;Jinja&lt;small class="permalink"&gt;&lt;a href="#jinja" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Při tvorbě nové sekce na webu jsem narazil na spoustu nepříjemností kolem toho, jak mám webovku udělanou.
+Jednou z věcí je chaotičnost Jinja šablon a maker.&lt;/p&gt;
+&lt;p&gt;Další z věcí je pomalost generování MkDocs.
+Ta je způsobena tím, že jsem do Markdownu narval ještě jednu Jinju.
+Taky to vytváří ještě větší chaos v tom, co je vlastně Markdown, co je HTML, co je šablona.&lt;/p&gt;
+&lt;p&gt;Hodně jsem nad tím přemýšlel a díval jsem se, co všechno existuje.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Prošel jsem si celý &lt;a href="https://github.com/mkdocs/catalog"&gt;MkDocs katalog&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Objevil jsem &lt;a href="https://jinjax.scaletti.dev/"&gt;JinjaX&lt;/a&gt;, komponenty v Jinje. Wow!&lt;/li&gt;
+&lt;li&gt;Zamyslel jsem se nad tím, kolik stránek je Markdown a kolik je v podstatě čistá Jinja.
+    Napadlo mě, že některé věci by šly řešit ne Jinjou, ale rozšířením přímo v Markdownu.&lt;/li&gt;
+&lt;li&gt;Objevil jsem &lt;a href="https://github.com/vokimon/markdown-customblocks"&gt;Customblocks&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Koukal jsem na expermentální &lt;a href="https://facelessuser.github.io/pymdown-extensions/extensions/blocks/"&gt;PyMdown blocks&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Objevil jsem formátovač Jinja šablon, &lt;a href="https://djlint.com/"&gt;djLint&lt;/a&gt;. Wow!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class="figure"&gt;&lt;img alt="JinjaX" src="https://honzajavorek.cz/images/screenshot-2023-08-18-at-19-06-26-jinjax-documentation.png" class="img-fluid figure-img rounded"&gt;&lt;figcaption class="figure-caption"&gt;
+&lt;em&gt;From chaos to clarity!&lt;/em&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Nějaké velké závěry z toho nemám.
+JinjaX se mi líbí hodně, rád bych to použil, ale &lt;a href="https://github.com/jpsca/jinjax/issues/17"&gt;nevím, jestli to za současného stavu vlastně jde&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Syntaxe a zpracování Customblocks se mi líbí víc než PyMdown blocks.
+Možná bych tím mohl vyřešit spoustu věcí, které teď do Markdownu plácám jako Jinja makra.&lt;/p&gt;
+&lt;p&gt;Napadlo mě, že jednu věc můžu udělat hned.
+Rozdělit explicitně co je Markdown s Jinjou a co je čistá Jinja.
+Půlka stránek na junior.guru je &lt;em&gt;content-heavy&lt;/em&gt;, zatímco druhá půlka je zase &lt;em&gt;custom&lt;/em&gt; a plná HTML značek a Jinja maker.
+U té druhé půlky by se dal Markdown úplně přeskočit.&lt;/p&gt;
+&lt;p&gt;Snažil jsem se najít, jak MkDocs rozšířit, abych mohl pro některé stránky Markdown vypnout, ale zrovna tohle bohužel nejde.
+Když jsem se dověděl, že to nejde oficiálně, tak jsem si přečetl kód a udělal to neoficiálně.
+Udělal jsem si &lt;a href="https://github.com/honzajavorek/junior.guru/blob/aab0ea34b9b9a0bde787a2c3745b48b6edf4121d/juniorguru/lib/mkdocs_jinja.py"&gt;knihovničku mkdocs_jinja.py&lt;/a&gt;, do které jsem jednak přesunul nějaké smetí, které už jsem měl různě jinde po souborech, jednak jsem si tam dal tzv. &lt;em&gt;monkey patching&lt;/em&gt;, který říká MkDocs, že soubory s koncovkou .jinja jsou taky dokumenty, a že pro tyto soubory má úplně přeskočit generování HTML z Markdownu.
+Překvapilo mě, jak to nebylo vůbec složité a skoro na první dobrou to zafungovalo!&lt;/p&gt;
+&lt;p&gt;Ne že bych do toho hned překlápěl všechny stránky, ale nějaké nové, např. podstránku podcastu, jsem udělal už jako .jinja.
+Zatím nepozoruji nějaké výrazné zrychlení generování MkDocs, ale to jsem popravdě ani moc nečekal.&lt;/p&gt;
+&lt;p&gt;Super je, že jsem ještě našel &lt;a href="https://marketplace.visualstudio.com/items?itemName=samuelcolvin.jinjahtml"&gt;Better Jinja&lt;/a&gt; doplněk do VS Code, a ten mi teď krásně obarvuje .jinja soubory.
+A obarvoval by i .md.jinja (jako mix Markdownu a Jinjy), kdybych je tak měl pojmenované.
+Nechápu, proč jsem tento doplněk nenašel a nezačal používat už dřív!&lt;/p&gt;
+&lt;p&gt;Dalším krokem by mohlo být použití Customblocks aj. rozšíření Markdownu.
+Tím by se možná docílilo toho, že bych ve spoustě dokumentech vůbec Jinju nepotřeboval.
+Nedělal jsem nějakou velkou analýzu, ale je možné, že by pak všechny &lt;em&gt;content-heavy&lt;/em&gt; dokumenty mohly být čistý Markdown a vedle toho by byly vyladěné (djLint? JinjaX?) .jinja soubory na ty &lt;em&gt;custom&lt;/em&gt; stránky.
+To už by pak nejspíš mohlo vést i ke zrychlení, protože pro jedny by se zcela přeskočilo generování Jinjou, a pro druhé by se zcela přeskočilo generování Markdownem.&lt;/p&gt;
+&lt;p&gt;Taky mě napadlo, že můj Jinja filtr &lt;code&gt;{{ 'balloon'|icon }}&lt;/code&gt;, kterým generuju &lt;code&gt;&amp;lt;i class="bi bi-balloon"&amp;gt;&amp;lt;/i&amp;gt;&lt;/code&gt;, aby se tam po načtení speciálního fontu zobrazila ikonka z &lt;a href="https://icons.getbootstrap.com/"&gt;Bootstrap Icons&lt;/a&gt;, by mohl stejně tak dobře generovat rovnou SVG těch ikon. Mohl bych pak úplně vyhodit ten font, který mi furt někde dělal starosti 😀 Tak to až se budu někdy nudit.&lt;/p&gt;
+&lt;h2 id="dalsi"&gt;Další&lt;small class="permalink"&gt;&lt;a href="#dalsi" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Hned v pondělí jsem své nové spolupracovnici připravil podklady pro rozhovory s juniory.
+    Všechno okamžitě rozjela a začala kontaktovat lidi.
+    Dva hned slíbili, že si na ni udělají čas.
+    Nejdřív se nedostala na Discord, ale už tam je a může si k jednotlivým lidem dočíst kontext.&lt;/li&gt;
+&lt;li&gt;Měl jsem call s další vzdělávací agenturou, která zvažuje partnerství, aby šla víc vidět v &lt;a href="https://junior.guru/courses/"&gt;katalogu&lt;/a&gt;.
+    Partnerství si nejspíš nezaplatí, ale mám zajímavé poznatky.
+    Jednak se jim líbí co dělám a hodně mi fandí a posílají mi na web lidi.
+    Jednak by chtěli mnohem víc nějakého filtrování v katalogu.
+    Jednak obhájit zaplacení něčeho takového zahraničním šéfům je složité, takže kdybych jim k té obhajobě předpřipravil nějaká data, čísla a informace, tak by se jim to mnohem víc chtělo obhajovat.
+    A rozhodně by neposílali studenty a absolventy do klubu, protože kariérové poradenství se snaží mít pod svými křídly.&lt;/li&gt;
+&lt;li&gt;Zapracoval jsem feedback od pokusných králíků.
+    Anketa mezi juniory je snad připravená ke spuštění.&lt;/li&gt;
+&lt;li&gt;Několik hodin jsem byl na kafi s Lukášem z &lt;a href="https://www.fakturoid.cz/"&gt;Fakturoidu&lt;/a&gt; a kecali jsme o podnikání a o životě.&lt;/li&gt;
+&lt;li&gt;Když už jsem se v MkDocs šťoural v generovaných stránkách, předělal jsem všechny permanentní redirecty tak, aby to nebyly soubory v repozitáři, ale aby se vygenerovaly.
+    Je super, že teď můžu ve VS Code hledat v souborech &lt;code&gt;learn&lt;/code&gt; a nenabídne se mi už &lt;code&gt;learn.md&lt;/code&gt; (redirect), ale jen &lt;code&gt;handbook/learn.md&lt;/code&gt;.
+    Na redirecty je nějaké &lt;a href="https://github.com/mkdocs/mkdocs-redirects"&gt;rozšíření&lt;/a&gt;, ale já to udělal přes &lt;a href="https://github.com/oprypin/mkdocs-gen-files"&gt;generování&lt;/a&gt;, které už tam stejně mám.
+    Nebylo to nic složitého a můžu to mít jak já chci (např. česky).&lt;/li&gt;
+&lt;li&gt;Dělal jsem &lt;a href="https://github.com/juniorguru/juniorguru-chick/pull/27"&gt;code review kamarádce&lt;/a&gt;.
+    Bylo osvěžující zase s někým spolupracovat a dělat code review!
+    Tatáž kamarádka, protože má zkušenosti z byznysu, mi ještě prošla grafy a sepsala mi, co si o nich myslí.
+    Měla zajímavé nápady.&lt;/li&gt;
+&lt;li&gt;V týdenním souhrnu v klubu se objevilo vlákno, které bylo privátní.
+    Opravil jsem souhrn, resp. stahovač obsahu klubu, aby taková vlákna přeskakoval.&lt;/li&gt;
+&lt;li&gt;Patička junior.guru by už chtěla trochu změnit, ale aspoň jsem v ní změnil tlačítko „Podpoř mě členstvím“ na „Grafy a čísla“.
+    Tohle tlačítko je vedle informace, že vydělávám 65.853 Kč měsíčně, tak mi přišlo blbé žádat o nějakou podporu.
+    Když jsem tam to tlačítko prvně dával, vydělával jsem tuším kolem 10.000 Kč 🙂&lt;/li&gt;
+&lt;li&gt;V jednu chvíli jsem se zasnil a přemýšlel jsem nad tím, jak bych programoval junior.guru, kdybych s ním začínal dnes.
+    Rozhodně bych vzal SQLAlchemy místo Peewee.
+    A rozhodně bych to celé udělal v asyncio, s tím, že do synchronního kódu bych &lt;a href="https://docs.python.org/3/library/asyncio-eventloop.html#asyncio.loop.run_in_executor"&gt;odskakoval&lt;/a&gt;, kdyby bylo potřeba.
+    Teď to mám naopak a je to &lt;em&gt;pain&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Šel jsem dceři ukázat Vltavu a lodě.&lt;/li&gt;
+&lt;li&gt;Chodil jsem po doktorech.&lt;/li&gt;
+&lt;li&gt;E-maily, &lt;a href="https://junior.guru/club/"&gt;klubový Discord&lt;/a&gt;, &lt;a href="https://docs.pyvec.org/operations/support.html#sit-kontaktu"&gt;Pyvec Slack&lt;/a&gt;, zprávy na LinkedIn.&lt;/li&gt;
+&lt;li&gt;Během 7 dní jsem ujel na kole 17 km. Celkem jsem se hýbal 8 h a zdolal při tom 17 km.
+    Detaily na &lt;a href="https://www.strava.com/athletes/31242569"&gt;Strava&lt;/a&gt;, jediné sociální síti, kde si napsání statusu musíte zasloužit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;
+&lt;p&gt;&lt;strong&gt;Okénko duševního zdraví:&lt;/strong&gt;
+Máte dojem, že na rozdíl ode mně nic nestíháte?
+Buďte v klidu, &lt;a href="https://honzajavorek.cz/blog/neni-to-zavod/"&gt;není to závod&lt;/a&gt;!&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="planuji"&gt;Plánuji&lt;small class="permalink"&gt;&lt;a href="#planuji" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Rozjet „přáníčka“ od juniorů pro juniory, což musím stihnout do PyConu.
+    Udělat jim vlastní sekci v novinkách.&lt;/li&gt;
+&lt;li&gt;Mít úvodní stránku pro Novinky, která bude mít potenciál stát se pravidelným obsahem newsletteru.&lt;/li&gt;
+&lt;li&gt;Naplánovat přednášky na podzim.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Bonus:&lt;/strong&gt; Jet na &lt;a href="https://blog.python.cz/Letni-sprinty-Python-komunity-v-Msenem"&gt;komunitní Python sprint&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="zaujalo-me"&gt;Zaujalo mě&lt;small class="permalink"&gt;&lt;a href="#zaujalo-me" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Když na něco narazím a líbí se mi to, sdílím to &lt;a href="https://t.me/honzajavorekcz"&gt;na Telegramu&lt;/a&gt;.
+Od posledních poznámek jsem sdílel:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=GQUl2ySyj9U"&gt;FullJourney - The EVERYTHING AI / Video, Images, Music, Text to Speech, Sound FX&lt;/a&gt;&lt;br&gt;Nestíháte sledovat novinky v AI? Tady je video o tom, jak si to můžete všechno rovnou vyzkoušet na jednom místě. Vygenerujte si bolywoodskou písničku, zvuk prdu, hlas, video…&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mediar.cz/media-se-pseudokriticnosti-obiraji-o-vlastni-vliv/"&gt;Média se pseudokritičností obírají o vlastní vliv&lt;/a&gt;&lt;br&gt;„Média svou pseudokritičností a přejímáním lobbistických příběhů připravila sebe samá o to nejcennější: schopnost nastavovat agendu. Spíš čím dál víc slouží jako jeden ze zdrojů contentu, který přináší jen o trochu jiný emoční vzruch než true crime podcast.“ Nebo: „Nejsou peníze, za které by se zaplatil dostatek kvalifikovaných lidí. Nešťastnou vyhladovělost státní aparát a média sdílí. Obě strany se drží ve vyčerpaném klinči, zatímco se stávají snadnou kořistí pro zájmové skupiny.“&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="blog"></category><category term="týdenní poznámky"></category><category term="junior.guru"></category></entry><entry><title>Týdenní poznámky: Hemžení neuronů a e-mailů</title><link href="https://honzajavorek.cz/blog/tydenni-poznamky-hemzeni-neuronu-a-e-mailu/" rel="alternate"></link><published>2023-08-12T00:00:00+02:00</published><updated>2023-08-12T00:00:00+02:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2023-08-12:/blog/tydenni-poznamky-hemzeni-neuronu-a-e-mailu/</id><summary type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Jak se mi daří v jednom člověku provozovat a rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;?
 Od &lt;a href="https://honzajavorek.cz/blog/tydenni-poznamky-cisla-a-premysleni/"&gt;posledních poznámek&lt;/a&gt; už utekl nějaký ten týden (4. 8. až 12. 8.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.&lt;/p&gt;
 &lt;figure class="figure"&gt;&lt;img alt="Poznámky" src="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg" class="img-fluid figure-img rounded"&gt;&lt;figcaption class="figure-caption"&gt;
 Fotil &lt;a href="https://unsplash.com/@markusspiske"&gt;Markus Spiske&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
@@ -6644,66 +6807,5 @@ Fotka od &lt;a href="https://unsplash.com/@honza_kahanek"&gt;Honzy Kahánka&lt;/
 &lt;li&gt;&lt;a href="https://protiproudu.libsyn.com/patrick-zandl-jak-eit-krizi-bydlen-o-technologich-padku-mdi-a-lokln-politice"&gt;Patrick Zandl: Jak řešit krizi bydlení? O technologiích, úpadku médií a lokální politice&lt;/a&gt;&lt;br&gt;Nejen o bydlení, ale o všem možném. Pěkný rozhovor k procházce s kočárkem.&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://arstechnica.com/gadgets/2021/08/a-decade-and-a-half-of-instability-the-history-of-google-messaging-apps/"&gt;A decade and a half of instability: The history of Google messaging apps&lt;/a&gt;&lt;br&gt;Velmi dlouhý článek, který jsem ale celý přečetl a užil si jej. Mnoho zajímavých popisů nezdařených produktů a produktových strategií. Kromě nostalgie a osvěžení paměti také soupis všech absurdit, o kterých jsem ani nevěděl, že existovaly. Ze všeho nejvíc to pro mě osobně má „Oracle vibes“, kde jsem podobné změny zaměření a priorit z roku na rok viděl taky.&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://wp.streetofcode.sk/podcast/dievcata-a-zeny-v-it/?utm_source=rss&amp;amp;utm_medium=rss&amp;amp;utm_campaign=dievcata-a-zeny-v-it"&gt;Ep. 82 – Dievčatá a ženy v IT – Aj Ty v IT&lt;/a&gt;&lt;br&gt;Pecka rozhovor, s každou větou jsem chtěl říct: „ANO! THIS!“ Některé obraty dokonce sám používám, když někde o juniorech mluvím. Už delší dobu mám dojem, že se můj přístup dost shoduje s tím, jaký razí Aj ty v IT a toto je jen potvrzení.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;small&gt;Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu jsem použil vlastní knihovnu &lt;a href="https://pypi.org/project/pocket-recommendations/"&gt;pocket-recommendations&lt;/a&gt;. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.&lt;/small&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="blog"></category><category term="týdenní poznámky"></category><category term="junior.guru"></category></entry><entry><title>Týdenní poznámky #88: Pyvec a nová stránka do příručky</title><link href="https://honzajavorek.cz/blog/tydenni-poznamky-88-pyvec-a-nova-stranka-do-prirucky/" rel="alternate"></link><published>2022-04-29T00:00:00+02:00</published><updated>2022-04-29T00:00:00+02:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2022-04-29:/blog/tydenni-poznamky-88-pyvec-a-nova-stranka-do-prirucky/</id><summary type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Utekl zase nějaký ten týden (23.4. — 29.4.) a tak &lt;a href="https://honzajavorek.cz/blog/tydenni-poznamky-87-stipendium-clanek-prednasky/"&gt;stejně jako minule&lt;/a&gt; sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám &lt;a href="https://junior.guru/club/"&gt;klub&lt;/a&gt;, a členy by mohlo zajímat, jestli se neflákám. Taky …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Utekl zase nějaký ten týden (23.4. — 29.4.) a tak &lt;a href="https://honzajavorek.cz/blog/tydenni-poznamky-87-stipendium-clanek-prednasky/"&gt;stejně jako minule&lt;/a&gt; sepisuji, co jsem dělal a co zajímavého jsem se naučil. Především se snažím rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;. Nemám šéfa, kterému bych reportoval každý svůj krok, ale mám &lt;a href="https://junior.guru/club/"&gt;klub&lt;/a&gt;, a členy by mohlo zajímat, jestli se neflákám. Taky je to způsob, jak se sám doma nezbláznit a nepropadat pocitu, že je zase konec týdne a já jsem přitom nestihl nic udělat.&lt;/p&gt;
-&lt;figure class="figure"&gt;&lt;img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"&gt;&lt;figcaption class="figure-caption"&gt;
-Fotka od &lt;a href="https://unsplash.com/@honza_kahanek"&gt;Honzy Kahánka&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;h2 id="nova-stranka-na-prirucce"&gt;Nová stránka na příručce&lt;small class="permalink"&gt;&lt;a href="#nova-stranka-na-prirucce" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;S &lt;a href="https://www.nelaprovazi.cz/"&gt;Nelou Slezákovou&lt;/a&gt; připravujeme novou stránku do &lt;a href="https://junior.guru/handbook/"&gt;příručky&lt;/a&gt;, která bude o duševním zdraví. Měli jsme už připravený nějaký základní text, tento týden jsem jej vysázel do příručky už přímo do HTML, tedy spíš do Markdownu.&lt;/p&gt;
-&lt;p&gt;Tato nová stránka bude prototypem spolupráce JG s nějakým nezávislým profesionálem. Takovou spolupráci jsem měl už déle v hlavě a tady byla hezká příležitost to zkusit. Jsem (snad) schopen udržovat jádro příručky sám, ale byla by škoda se omezit jen na to, čemu rozumím já. Chtěl bych tam mít stránky psané a „garantované“ i jinými odborníky, které znám a kterým věřím, výměnou za to, že tam bude odkaz na něco, čím se zabývají. Není to bez práce, stále tam figuruji jako nějaký editor, ale aspoň nemusím dělat velkou rešerši nějakého tématu a mohu se opřít o expertízu někoho dalšího a už to společně „jen“ napsat.&lt;/p&gt;
-&lt;p&gt;Takže ve spolupráci s Nelou píšeme tuto novou stránku a ona tam bude mít odkaz na sebe. Juniorům to pomůže, jí to pomůže, mě to pomůže. Win win win. Teď je to ve fázi že nám tam pár drobností ještě chybí v obsahu i designu. Obsah doplní Nela, já bych měl v CSS vymyslet, jak bude vypadat ten zvýrazněný odkaz na ni, aby bylo zřejmé, že to je nějaká spolupráce.&lt;/p&gt;
-&lt;h2 id="generovani-obrazku-pro-podcasty"&gt;Generování obrázků pro podcasty&lt;small class="permalink"&gt;&lt;a href="#generovani-obrazku-pro-podcasty" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;Obrázky pro propagaci jednotlivých dílů podcastů jsem doteď „kreslil ručně“, tedy vždy splácal dohromady z nějakých obdélníčků v programu Keynote a exportoval jako PNG. Teď jsem to chtěl už automatizovat, protože to vypadá, že podcast bude chvíli ještě existovat :)&lt;/p&gt;
-&lt;p&gt;Obrázky využiju při ruční propagaci. Mohu je použít i přímo v podcastovém feedu a budou se zobrazovat na jednotlivých platformách. Taky jsem chtěl naučit bota, aby díly oznamoval přímo v klubu a tam se opět bude obrázek hodit.&lt;/p&gt;
-&lt;h3 id="fotky-ucastniku-podcastu"&gt;Fotky účastníků podcastu&lt;small class="permalink"&gt;&lt;a href="#fotky-ucastniku-podcastu" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
-&lt;p&gt;Potřeboval jsem vyřešit dvě věci. První byla přidávání fotek účastníků podcastu. Pavlína vždy do YAMLu jen poslala přes Pull Request detaily k novému dílu, zbytek jsem zajistil já. Teď tam bude nová položka, cesta k fotce hosta. Tu nebude muset vyplňovat, fotku zajistím já, ale bude potřeba ji mít v tom YAMLu, načíst, atd. Na podobné fotky jsem už měl složku k přednáškám, pro které se taky generují náhledy. Přišlo mi zbytečné mít složku pro každou takovou věc, zvlášť když se kryjí někteří speakeři s hosty v podcastu. Tedy jsem to trochu překopal. Taky jsem u přednášek změnil YAML tak, aby se musela cesta k fotce všude explicitně napsat a už to není vázáno na nějaké Discord ID jako předtím, bylo to zbytečné a omezující provázání.&lt;/p&gt;
-&lt;p&gt;Teď mám tedy jednu složku s fotkami všech takových lidí a odkazuje na ni jak YAML pro přednášky, tak YAML pro podcast. Napsal jsem si kontroly, jestli mají fotky očekávaný tvar a velikost, aby skripty spadly, pokud nemají. To je nedokonalá ochrana (asi by to měl být spíš nějaký git hook) hlavně proti tomu, abych si necommitnul do Gitu omylem několikamegabytovou fotku, protože to by pak zůstalo v historii navěky.&lt;/p&gt;
-&lt;p&gt;Přidal jsem i separátní skript, kterým mohu nové fotky doplňovat. Zeptá se mě na cestu k souboru a jméno člověka a postará se o zbytek. Nakopíruje fotku do příslušného adresáře, ověří že jde o čtverec, zmenší, správně pojmenuje.&lt;/p&gt;
-&lt;h3 id="scss-v-sablonach-pro-obrazky"&gt;SCSS v šablonách pro obrázky&lt;small class="permalink"&gt;&lt;a href="#scss-v-sablonach-pro-obrazky" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
-&lt;p&gt;Další věcí bylo sjednocení CSS tak, abych v těchto obrázcích generovaných z HTML šablon mohl používat vše, co i na webu. Donutil mě k tomu barevný pás tlačítek na různé podcastové aplikace, který jsem měl na původním „ručním“ plakátku. Ten jsem tam původně vlepil jako screenshot z webu, ale teď jsem to chtěl mít hezky v HTML, s tím stejným CSS jako na webu. Abych mohl použít totéž CSS, musel bych mít v šablonách nějak přístupný Bootstrap a celé svoje SCSS a nějak by se muselo přegenerovávat na čisté CSS při tom, jak se obrázek renderuje. Tomu jsem se dlouho bránil, ale reálně jsem na to narážel už ve víc případech, jelikož pokud se snažím dodržovat nějaký podobný vizuální jazyk na plakátkách jako na webu, prostě pak musím sdílet minimálně nějaké SCSS proměnné a tak.&lt;/p&gt;
-&lt;p&gt;Přesunul jsem tedy SCSS o několik složek výš, aby nebylo jen pro web, ale pro libovolný kód v rámci JG, stejně jako jsem to už dřív udělal s obrázky. Pak jsem do kódu, který generuje obrázky, přidal nějaké srandy, které jsou schopny si poradit i s tím SCSS. Bylo to celé jednodušší, než jsem čekal a navenek se ani nic moc nezměnilo, jen jsem pak přejmenoval .css soubory na .scss a vše stále fungovalo, ale s většími možnostmi. Staré plakáty jsem nijak nemigroval, nový už jsem napsal tak, že vychází z Bootstrapu a mého dalšího SCSS, takže jsem tam mohl snadno použít barvy, tlačítka apod. stejně jako když styluju web.&lt;/p&gt;
-&lt;h3 id="co-dal"&gt;Co dál?&lt;small class="permalink"&gt;&lt;a href="#co-dal" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
-&lt;p&gt;V pondělí jsem nově generovaný plakát rovnou použil při propagaci. Dál by bylo dobré naučit bota propagovat nové díly v klubu za mě a taky bych mohl plakátky přidat do XML podcastu, aby se objevovaly v podcastových aplikacích k jednotlivým dílům. S Pavlínou jsme se ještě bavili o vzhledu toho plakátu a máme nějaké nápady jak ho vylepšit, ale to se dá zase ladit klidně až v budoucnu.&lt;/p&gt;
-&lt;h2 id="prace-pro-pyvec"&gt;Práce pro Pyvec&lt;small class="permalink"&gt;&lt;a href="#prace-pro-pyvec" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;Po volbách do výboru Pyvce je nyní potřeba udělat spoustu věcí, tak jsem se tomu trochu věnoval. Dali jsme si společný call starý a nový výbor. Tam si nový výbor zvolil předsedkyni a pokladníka.&lt;/p&gt;
-&lt;p&gt;Taky jsem upgradoval knihovny v Pyvec repozitářích přes dependabot, ale tak to dělám každý týden, asi nemá smysl to tu ani pořád psát. Následně jsem dával lidem přístupy do různých míst a oznamoval změny na Pyvec Slacku na různých místech (GitHub, Slack…). Inicioval jsem, aby se výbor poprvé sešel na pravidelné měsíční schůzi a vybíráme teď termín. Přihlásil jsem se dobrovolně k tomu, že kontaktuji právničku, aby nám udělala papíry k volbám a zanesla změny do rejstříku.&lt;/p&gt;
-&lt;p&gt;Přišla nám hned nová žádost o členství ve spolku, tak až se sejdeme, můžeme se hned procvičit v hlasování.&lt;/p&gt;
-&lt;h2 id="dalsi-poznamky"&gt;Další poznámky&lt;small class="permalink"&gt;&lt;a href="#dalsi-poznamky" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Začal se mi na CI dost projevovat &lt;a href="https://github.com/python-poetry/poetry/issues/3336"&gt;tento problém s poetry&lt;/a&gt;. Chvíli jsem to trpěl, ale teď už mě to přestalo bavit a obešel jsem to přes workaround zmíněný v tom issue, vypnul jsem něco, čemu říkají „new installer“.&lt;/li&gt;
-&lt;li&gt;Volal jsem si s Engetem a vymýšleli jsme, jak můžeme spolupracovat na další rok. Byl z toho dlouhý call a je z toho spousta nápadů, které musím ještě promyslet.&lt;/li&gt;
-&lt;li&gt;Poslaly se mi v pondělí dvakrát maily inzerentům. Zjistil jsem, že jsem měl celou dobu v CircleCI nastavenou špatnou cestu k souboru, který řídil cache, která zabraňovala opakovanému odeslání. Bohužel chybějící soubor, který by se měl kešovat, není důvodem k failnutí jobu, takže jsem to doteď nezjistil. Opravil jsem to a maily se poslaly potřetí. Protože byl stejný klíč pro cache, takže CircleCI novou cache neuložilo a nepřepsalo ono „nic“ z minula :D Počtvrté už se to povedlo správně a nic se už neposlalo, uf.&lt;/li&gt;
-&lt;li&gt;Opravil jsem si Stylelint ve VS Code, aby fungoval.&lt;/li&gt;
-&lt;li&gt;Domlouval jsem se s lidmi, jestli a kdy se někdy potkáme.&lt;/li&gt;
-&lt;li&gt;Vymýšleli jsme se StartupJobs, jak můžeme nějak víc spolupracovat, hlavně na obsahu jejich vzdělávací sekce.&lt;/li&gt;
-&lt;li&gt;Připomínal jsem se firmám, ať už s prodlužováním členství v klubu, nebo s dalšími kroky v naplňování závazků, které jsme si domluvili. S Pure Storage chceme rozjet nabídku mentoringu v klubu, ale stále ladíme detaily.&lt;/li&gt;
-&lt;li&gt;Domluvil jsem dvě až tři další přednášky do klubu. Juchů! Hned jsem si je nahodil do svého YAMLu a tentokrát jsem ani nečekal, až budou všechny detaily a napsal tam u všeho prostě jen „bude upřesněno“ a &lt;a href="https://junior.guru/events/"&gt;nechal to, ať se to zobrazí&lt;/a&gt;. Což ale způsobilo, že se vytvořily už i eventy na Discordu a klikají se na ně lidi. Nepamatuju si už ale, zda bot umí u těch eventů i aktualizovat popis, když se v budoucnu změní, tak snad jo, jinak to budu muset pak nějak editovat ručně, nebo nechat jak to je, se vším tím „bude upřesněno“ :D&lt;/li&gt;
-&lt;li&gt;Ověřil jsem, že se námi podporovaný kluk se stipendiem dostal do všech služeb a všechny přístupy mu fungují.&lt;/li&gt;
-&lt;li&gt;Vyšel mi (zatím) poslední článek na Heroine: &lt;a href="https://www.heroine.cz/zeny-it/8100-jak-jsem-se-stal-ambasadorem-zacatecniku-v-it-zakladatel-junior-guru-o-vyhodach-komunity-a-sdileni"&gt;Jak jsem se stal ambasadorem začátečníků v IT. Zakladatel junior.guru o výhodách komunity a sdílení&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Propagoval jsem &lt;a href="https://junior.guru/podcast/"&gt;nový díl JG podcastu s Terezou z ReactGirls&lt;/a&gt;. Propagoval jsem prodloužené partnerství s &lt;a href="https://lynt.cz/"&gt;Lynt&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Opravil jsem zase několik „rozbitých“ odkazů na webu, které nejsou ve skutečnosti rozbité, a &lt;a href="https://twitter.com/honzajavorek/status/1518864988991102976"&gt;zanadával jsem si o tom na Twitteru&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Tento týden se nakupila spousta mailů a další administrativy. Snažím se to omezovat na dva dny v týdnu, ale jde to těžko. Aktuálně mám například v inboxu 7 méně důležitých emailů, ke kterým se nejsem schopen dostat už několik měsíců a už tam vidím jeden další, kterému se to asi stane taky, protože obsahuje nekonečně mnoho textu a nelze z toho ani zjistit, co ten člověk vlastně chce.&lt;/li&gt;
-&lt;li&gt;Sešel jsem se s Alicou z podcastu &lt;a href="https://restarty.dev"&gt;(re)štarty v IT&lt;/a&gt; a povídali jsme si v rámci přípravy na samotné nahrávání.&lt;/li&gt;
-&lt;li&gt;Objevil jsem Mutanti hledaj východisko a nadchlo mě to.&lt;/li&gt;
-&lt;li&gt;Radoval jsem se z toho, že byl McLaren v Imole na bedně. Sice ještě nejsem po svém obnoveném zájmu o F1 po snad víc jak 10 letech naplno rozhodnutý, že fandím zrovna jim, ale pokukuju po nich. Kamarád fandí Ferrari a to třetí místo měli mít oni, kdyby neudělali chybu, takže o to víc mi dává smysl mít z toho radost :D&lt;/li&gt;
-&lt;li&gt;Prošel jsem několikrát klub a odpovídal lidem, ale popravdě jsem to tento týden trochu zanedbával, nestíhal jsem.&lt;/li&gt;
-&lt;li&gt;Během 7 dní od 23.4. do 29.4. jsem při procházkách nachodil 15 km. Celkem jsem se hýbal 6 hodin a zdolal při tom 15 kilometrů.&lt;/li&gt;
-&lt;li&gt;Aktuální finanční výsledky, návštěvnost a další čísla k JG &lt;a href="https://junior.guru/open/"&gt;mám přímo na webu&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="co-planuji"&gt;Co plánuji&lt;small class="permalink"&gt;&lt;a href="#co-planuji" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;Tři věci, které bych chtěl zvládnout udělat příště:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Naučit bota v klubu díly podcastu oznamovat za mě a přidat obrázky dílů do XML,&lt;/li&gt;
-&lt;li&gt;zkusit streamování na YouTube,&lt;/li&gt;
-&lt;li&gt;nastylovat odkaz na Nelu na nové stránce do příručky.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="a-co-vy"&gt;A co vy?&lt;small class="permalink"&gt;&lt;a href="#a-co-vy" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;Pokud byste čistě náhodou měli dojem, že jste oproti mě za uplynulý týden vůbec nic nestihli, tak mám pro vás skvělou zprávu! V klidu se na ten dojem &lt;a href="https://honzajavorek.cz/blog/neni-to-zavod/"&gt;můžete vykašlat&lt;/a&gt;. Není zač!&lt;/p&gt;
-&lt;h2 id="co-me-zaujalo"&gt;Co mě zaujalo&lt;small class="permalink"&gt;&lt;a href="#co-me-zaujalo" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;Když si něco přečtu nebo poslechnu a líbí se mi to, &lt;a href="https://getpocket.com/@honzajavorek"&gt;sdílím to na Pocketu&lt;/a&gt;. Od posledních poznámek jsem sdílel toto:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.seznamzpravy.cz/clanek/196984"&gt;Vlevo dole&lt;/a&gt;&lt;br&gt;Kam se poděli Piráti?&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://techcrunch.com/2022/04/18/web-scraping-legal-court/"&gt;Web scraping is legal, US appeals court reaffirms&lt;/a&gt;&lt;br&gt;Scrapování je prý legální.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://overcast.fm/+Vf9THCkSA"&gt;Vladimir 518: Praha ještě zazáří. Je třeba stavět, ale také pečovat o ikonické stavby z minulosti&lt;/a&gt;&lt;br&gt;Rozhovor o architektuře a Praze, líbilo se mi to.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;small&gt;Není to vše, co jsem přečetl, slyšel nebo viděl, ale jen zlomek, který mě zaujal. K vygenerování tohoto seznamu jsem použil vlastní knihovnu &lt;a href="https://pypi.org/project/pocket-recommendations/"&gt;pocket-recommendations&lt;/a&gt;. Věci, které jsem sdílel v den psaní minulých poznámek, se opakují i v těch dalších a je to záměr, ne chyba.&lt;/small&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="blog"></category><category term="týdenní poznámky"></category><category term="junior.guru"></category></entry></feed>
