@@ -98,11 +98,11 @@ Photo by <a href="https://unsplash.com/@andasta">Andy Li</a></figcaption></figur
 <h2 id="content-heavy-websites">Content-heavy websites<small class="permalink"><a href="#content-heavy-websites" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>In case I need to deploy a website, which has mostly text and no dynamic features, I make sure it is a <em>static</em> website. There's no reason why such a project shouldn't be a static website, and the fact it is one simplifies <em>everything</em>.</p>
 <p>Currently, my favorite place where I put my static websites is <a href="https://zeit.co/">ZEIT Now</a>. Quickstart:</p>
-<pre class="highlight"><code><span></span><code>$ npm install now --global
-$ mkdir hello
-$ <span class="nb">cd</span> hello
-$ <span class="nb">echo</span> <span class="s2">"Hello!"</span> &gt; index.html
-$ now  <span class="c1"># done, you have the site deployed</span>
+<pre class="highlight"><code><span></span><code>$<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>now<span class="w"> </span>--global
+$<span class="w"> </span>mkdir<span class="w"> </span>hello
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>hello
+$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">"Hello!"</span><span class="w"> </span>&gt;<span class="w"> </span>index.html
+$<span class="w"> </span>now<span class="w">  </span><span class="c1"># done, you have the site deployed</span>
 </code></code></pre>
 
 <p>That example above is pretty much how I made and deployed my wedding website. One thing I love about Now is their <strong>focus on simplicity</strong>. The service provides me with easy solutions to my complicated problems. It allows me to specify redirects. It gives me live previews of my GitHub branches. It automatically handles HTTPS for me. My wedding website had HTTPS! Why? Because why not! I got it for free. And if I ever need something dynamic, Now works also as a serverless functions provider - but about that later.</p>

@@ -145,11 +145,11 @@ Cartoon by Miran Lipovača, taken from <a href="http://learnyouahaskell.com/star
 <figcaption class="blockquote-footer"> Honza Javorek (@honzajavorek) <a href="https://twitter.com/honzajavorek/status/1208776915445792773?ref_src=twsrc%5Etfw">December 22, 2019</a></figcaption></figure><p><a href="https://github.com/honzajavorek/pyvobot">It's done</a> and <a href="https://circleci.com/gh/honzajavorek/pyvo_bot/tree/master">it's working</a>, so if you use <a href="https://telegram.org/">Telegram</a> and you want to know that the next Prague Python meetup is about to be soon, subscribe to the <a href="https://t.me/pyvopraha">https://t.me/pyvopraha</a> Telegram channel.</p>
 <h2 id="how-does-haskell-feel">How does Haskell feel?<small class="permalink"><a href="#how-does-haskell-feel" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Powerful! It takes just a few lines to implement your own clone of <a href="https://en.wikipedia.org/wiki/Vim_(text_editor)">Vim</a>:</p>
-<pre class="highlight"><code><span></span><code><span class="kr">import</span><span class="w"> </span><span class="nn">Control.Monad</span><span class="w"></span>
+<pre class="highlight"><code><span></span><code><span class="kr">import</span><span class="w"> </span><span class="nn">Control.Monad</span>
 
-<span class="nf">main</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="kr">do</span><span class="w"></span>
-<span class="w">    </span><span class="n">line</span><span class="w"> </span><span class="ow">&lt;-</span><span class="w"> </span><span class="n">getLine</span><span class="w"></span>
-<span class="w">    </span><span class="n">when</span><span class="w"> </span><span class="p">(</span><span class="n">line</span><span class="w"> </span><span class="o">/=</span><span class="w"> </span><span class="s">":wq"</span><span class="p">)</span><span class="w"> </span><span class="o">$</span><span class="w"> </span><span class="n">main</span><span class="w"></span>
+<span class="nf">main</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="kr">do</span>
+<span class="w">    </span><span class="n">line</span><span class="w"> </span><span class="ow">&lt;-</span><span class="w"> </span><span class="n">getLine</span>
+<span class="w">    </span><span class="n">when</span><span class="w"> </span><span class="p">(</span><span class="n">line</span><span class="w"> </span><span class="o">/=</span><span class="w"> </span><span class="s">":wq"</span><span class="p">)</span><span class="w"> </span><span class="o">$</span><span class="w"> </span><span class="n">main</span>
 </code></code></pre>
 
 <p><small markdown="1">

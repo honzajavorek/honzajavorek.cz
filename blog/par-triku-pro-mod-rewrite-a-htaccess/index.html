@@ -94,70 +94,70 @@
     <div><div><div><div><p>Velmi často je součástí webového serveru tzv. <code>mod_rewrite</code>, který nám povoluje přepisovat jakékoliv požadavky od uživatele na jiné. Například přepsat nebo přesměrovat adresu. Více o <code>mod_rewrite</code> a souboru <code>.htaccess</code>, jenž s ním úzce souvisí, najdete třeba na <a href="http://www.jakpsatweb.cz/server/htaccess.html">Jak psát web</a>. Ta nejlepší helpka je však velmi pěkně napsaný <a href="http://httpd.apache.org/docs/2.0/mod/mod_rewrite.html">originální manuál</a>. Já se zkusím podělit o několik užitečných <em>code snippets</em>, které jsem časem nashromáždil…</p>
 <h2 id="lomitka-na-koncich">Lomítka na koncích<small class="permalink"><a href="#lomitka-na-koncich" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Přesměruje adresy <code>tralala.com/venku/je/tma</code> na <code>tralala.com/venku/je/tma/</code>.</p>
-<pre class="highlight"><code><span></span><code><span class="c">## endslashes</span><span class="w"></span>
-<span class="nb">RewriteCond</span><span class="w"> </span>%{REQUEST_FILENAME}<span class="w"> </span>!-f<span class="w"></span>
-<span class="nb">RewriteCond</span><span class="w"> </span>%{ENV:REDIRECT_STATUS}<span class="w"> </span>^$<span class="w"></span>
-<span class="nb">RewriteCond</span><span class="w"> </span>%{REQUEST_URI}<span class="w"> </span>!\/$<span class="w"></span>
-<span class="nb">RewriteRule</span><span class="w"> </span>(.*)<span class="w"> </span>$0/<span class="w"> </span>[R=301,NE,L]<span class="w"></span>
+<pre class="highlight"><code><span></span><code><span class="c">## endslashes</span>
+<span class="nb">RewriteCond</span><span class="w"> </span>%{REQUEST_FILENAME}<span class="w"> </span>!-f
+<span class="nb">RewriteCond</span><span class="w"> </span>%{ENV:REDIRECT_STATUS}<span class="w"> </span>^$
+<span class="nb">RewriteCond</span><span class="w"> </span>%{REQUEST_URI}<span class="w"> </span>!\/$
+<span class="nb">RewriteRule</span><span class="w"> </span>(.*)<span class="w"> </span>$0/<span class="w"> </span>[R=301,NE,L]
 </code></code></pre>
 
 <h2 id="hezka-a-vselijaka-url-pro-aplikaci-v-php">Hezká a všelijaká URL pro aplikaci v PHP<small class="permalink"><a href="#hezka-a-vselijaka-url-pro-aplikaci-v-php" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Žádných složitých 50 regulárních výrazů na to, co vlastně s těmi adresami chceme… Stačí jeden kouzelný řádek, který úplně vše přesměruje na <code>index.php</code> a potom si adresu rozparsujeme přímo v PHP (dostupná v <code>$_SERVER['REQUEST_URI']</code>).</p>
-<pre class="highlight"><code><span></span><code><span class="nb">RewriteCond</span><span class="w"> </span>%{REQUEST_FILENAME}<span class="w"> </span>!-f<span class="w"></span>
-<span class="nb">RewriteCond</span><span class="w"> </span>%{REQUEST_FILENAME}<span class="w"> </span>!-d<span class="w"></span>
-<span class="nb">RewriteRule</span><span class="w"> </span>.<span class="w"> </span><span class="sx">/index.php</span><span class="w"> </span>[L]<span class="w"></span>
+<pre class="highlight"><code><span></span><code><span class="nb">RewriteCond</span><span class="w"> </span>%{REQUEST_FILENAME}<span class="w"> </span>!-f
+<span class="nb">RewriteCond</span><span class="w"> </span>%{REQUEST_FILENAME}<span class="w"> </span>!-d
+<span class="nb">RewriteRule</span><span class="w"> </span>.<span class="w"> </span><span class="sx">/index.php</span><span class="w"> </span>[L]
 </code></code></pre>
 
 <h2 id="presmerovani-rss-na-feedburner">Přesměrování RSS na FeedBurner<small class="permalink"><a href="#presmerovani-rss-na-feedburner" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Chcete <a href="http://www.feedburner.com">statistiky přístupů</a> na vaše RSS, ale nechcete obtěžovat odběratele článků se změnami adresy? Přesměrujte je. Není to tak snadné jak se zdá, protože přesměrování se nesmí provést, když se na váš <em>feed</em> snaží dostat samotný FeedBurner (to se pak logicky zacyklí). Sofistikovanější postupy pro WordPress najdete v <a href="http://www.askapache.com/htaccess/redirecting-wordpress-feeds-to-feedburner.html">článku na AskApache</a>, já jsem si vystačil s tímto:</p>
-<pre class="highlight"><code><span></span><code><span class="c">## feedburner</span><span class="w"></span>
-<span class="nb">RewriteCond</span><span class="w"> </span>%{HTTP_USER_AGENT}<span class="w"> </span>!^.*(FeedBurner|FeedValidator|Recent)<span class="w"> </span>[NC]<span class="w"></span>
-<span class="nb">RewriteRule</span><span class="w"> </span>^feed/?$<span class="w"> </span>http://feeds.feedburner.com/javorovelistky<span class="w"> </span>[R=302,L]<span class="w"></span>
+<pre class="highlight"><code><span></span><code><span class="c">## feedburner</span>
+<span class="nb">RewriteCond</span><span class="w"> </span>%{HTTP_USER_AGENT}<span class="w"> </span>!^.*(FeedBurner|FeedValidator|Recent)<span class="w"> </span>[NC]
+<span class="nb">RewriteRule</span><span class="w"> </span>^feed/?$<span class="w"> </span>http://feeds.feedburner.com/javorovelistky<span class="w"> </span>[R=302,L]
 </code></code></pre>
 
 <h2 id="chybove-stranky">Chybové stránky<small class="permalink"><a href="#chybove-stranky" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Pokud zadáte relativní cestu, původní URL zůstane v adresním řádku prohlížeče a zobrazí se vám tato chybová stránka. Pokud zadáte absolutní, přesměruje se chyba zcela na soubor s chybovou stránkou (což podle mě není dobrý nápad).</p>
-<pre class="highlight"><code><span></span><code><span class="c">## errorpages</span><span class="w"></span>
-<span class="nb">ErrorDocument</span><span class="w"> </span><span class="m">404</span><span class="w"> </span><span class="sx">/joss/</span>?doc=_404<span class="w"></span>
-<span class="nb">ErrorDocument</span><span class="w"> </span><span class="m">403</span><span class="w"> </span><span class="sx">/joss/</span>?doc=_403<span class="w"></span>
+<pre class="highlight"><code><span></span><code><span class="c">## errorpages</span>
+<span class="nb">ErrorDocument</span><span class="w"> </span><span class="m">404</span><span class="w"> </span><span class="sx">/joss/</span>?doc=_404
+<span class="nb">ErrorDocument</span><span class="w"> </span><span class="m">403</span><span class="w"> </span><span class="sx">/joss/</span>?doc=_403
 </code></code></pre>
 
 <h2 id="taticek-htaccess">Tatíček .htaccess<small class="permalink"><a href="#taticek-htaccess" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Neodolal jsem a nakonec ještě přidám několik osvědčených kousků i pro samotný <code>.htaccess</code>. Někdy je dobré na web jen na oko zamezit přístup, alespoň přes hlavní stránku. Jelikož ta se většinou volá přes <code>index.php</code>, teoreticky stačí vložit do rootu webu <code>index.html</code> a něco do něj napsat. Toto zajistí, že se určitě bude HTML verze zobrazovat prioritně:</p>
-<pre class="highlight"><code><span></span><code><span class="nb">DirectoryIndex</span><span class="w"> </span>index.html<span class="w"> </span>index.php<span class="w"></span>
+<pre class="highlight"><code><span></span><code><span class="nb">DirectoryIndex</span><span class="w"> </span>index.html<span class="w"> </span>index.php
 </code></code></pre>
 
 <p>Skryté soubory by se neměly nikomu dostat do rukou. Správný server má toto už v globálním nastavení, ale člověk nikdy neví…</p>
-<pre class="highlight"><code><span></span><code><span class="nt">&lt;Files</span><span class="w"> </span><span class="s">~ "^[\.]"</span><span class="nt">&gt;</span><span class="w"></span>
-<span class="w">    </span><span class="nb">Order</span><span class="w"> </span>allow,deny<span class="w"></span>
-<span class="w">    </span><span class="nb">Deny</span><span class="w"> </span>from<span class="w"> </span><span class="k">all</span><span class="w"></span>
-<span class="w">    </span><span class="nb">Satisfy</span><span class="w"> </span><span class="k">All</span><span class="w"></span>
-<span class="nt">&lt;/Files&gt;</span><span class="w"></span>
+<pre class="highlight"><code><span></span><code><span class="nt">&lt;Files</span><span class="w"> </span><span class="s">~ "^[\.]"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nb">Order</span><span class="w"> </span>allow,deny
+<span class="w">    </span><span class="nb">Deny</span><span class="w"> </span>from<span class="w"> </span><span class="k">all</span>
+<span class="w">    </span><span class="nb">Satisfy</span><span class="w"> </span><span class="k">All</span>
+<span class="nt">&lt;/Files&gt;</span>
 </code></code></pre>
 
 <p>Nevíte jestli na cílovém serveru bude <code>mod_rewrite</code> a nechcete riskovat <em>Internal Server Error 500</em>? Stačí vše obalit podmínkou…</p>
-<pre class="highlight"><code><span></span><code><span class="nt">&lt;IfModule</span><span class="w"> </span><span class="s">mod_rewrite.c</span><span class="nt">&gt;</span><span class="w"></span>
-<span class="w">    </span><span class="nb">RewriteEngine</span><span class="w"> </span><span class="k">on</span><span class="w"> </span>...<span class="w"></span>
-<span class="nt">&lt;/IfModule&gt;</span><span class="w"></span>
+<pre class="highlight"><code><span></span><code><span class="nt">&lt;IfModule</span><span class="w"> </span><span class="s">mod_rewrite.c</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nb">RewriteEngine</span><span class="w"> </span><span class="k">on</span><span class="w"> </span>...
+<span class="nt">&lt;/IfModule&gt;</span>
 </code></code></pre>
 
 <p>A co tak si nastavit PHP?</p>
-<pre class="highlight"><code><span></span><code><span class="nt">&lt;IfModule</span><span class="w"> </span><span class="s">mod_php5.c</span><span class="nt">&gt;</span><span class="w"></span>
-<span class="w">    </span><span class="c"># development setting</span><span class="w"></span>
-<span class="w">    </span><span class="nb">php_flag</span><span class="w"> </span>display_errors<span class="w"> </span><span class="m">1</span><span class="w"></span>
-<span class="w">    </span><span class="c"># safety</span><span class="w"></span>
-<span class="w">    </span><span class="nb">php_flag</span><span class="w"> </span>register_globals<span class="w"> </span><span class="m">0</span><span class="w"></span>
-<span class="w">    </span><span class="c"># allowed stealing from other websites ;)</span><span class="w"></span>
-<span class="w">    </span><span class="nb">php_flag</span><span class="w"> </span>allow_url_fopen<span class="w"> </span><span class="m">1</span><span class="w"></span>
-<span class="w">    </span><span class="c"># fu*king quotes...</span><span class="w"></span>
-<span class="w">    </span><span class="nb">php_flag</span><span class="w"> </span>magic_quotes_gpc<span class="w"> </span><span class="m">0</span><span class="w"></span>
-<span class="w">    </span><span class="nb">php_flag</span><span class="w"> </span>magic_quotes_runtime<span class="w"> </span><span class="m">0</span><span class="w"></span>
-<span class="w">    </span><span class="nb">php_flag</span><span class="w"> </span>magic_quotes_sybase<span class="w"> </span><span class="m">0</span><span class="w"></span>
-<span class="w">    </span><span class="c"># yes, I love short open tags!</span><span class="w"></span>
-<span class="w">    </span><span class="nb">php_flag</span><span class="w"> </span>short_open_tag<span class="w"> </span><span class="m">1</span><span class="w"></span>
-<span class="w">    </span><span class="c"># utf forever</span><span class="w"></span>
-<span class="w">    </span><span class="nb">php_flag</span><span class="w"> </span>default_charset<span class="w"> </span>utf-8<span class="w"></span>
-<span class="nt">&lt;/IfModule&gt;</span><span class="w"></span>
+<pre class="highlight"><code><span></span><code><span class="nt">&lt;IfModule</span><span class="w"> </span><span class="s">mod_php5.c</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="c"># development setting</span>
+<span class="w">    </span><span class="nb">php_flag</span><span class="w"> </span>display_errors<span class="w"> </span><span class="m">1</span>
+<span class="w">    </span><span class="c"># safety</span>
+<span class="w">    </span><span class="nb">php_flag</span><span class="w"> </span>register_globals<span class="w"> </span><span class="m">0</span>
+<span class="w">    </span><span class="c"># allowed stealing from other websites ;)</span>
+<span class="w">    </span><span class="nb">php_flag</span><span class="w"> </span>allow_url_fopen<span class="w"> </span><span class="m">1</span>
+<span class="w">    </span><span class="c"># fu*king quotes...</span>
+<span class="w">    </span><span class="nb">php_flag</span><span class="w"> </span>magic_quotes_gpc<span class="w"> </span><span class="m">0</span>
+<span class="w">    </span><span class="nb">php_flag</span><span class="w"> </span>magic_quotes_runtime<span class="w"> </span><span class="m">0</span>
+<span class="w">    </span><span class="nb">php_flag</span><span class="w"> </span>magic_quotes_sybase<span class="w"> </span><span class="m">0</span>
+<span class="w">    </span><span class="c"># yes, I love short open tags!</span>
+<span class="w">    </span><span class="nb">php_flag</span><span class="w"> </span>short_open_tag<span class="w"> </span><span class="m">1</span>
+<span class="w">    </span><span class="c"># utf forever</span>
+<span class="w">    </span><span class="nb">php_flag</span><span class="w"> </span>default_charset<span class="w"> </span>utf-8
+<span class="nt">&lt;/IfModule&gt;</span>
 </code></code></pre>
 
 <h2 id="zaverem">Závěrem<small class="permalink"><a href="#zaverem" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>

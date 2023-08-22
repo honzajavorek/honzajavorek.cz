@@ -94,20 +94,20 @@
     <div><div><div><div><p>Opět využiju svého blogísku jako zápisníku, kam utrousím věci, jež nechci zapomenout. Brzy mě čeká zase instalace Ubuntu a tak budu potřebovat vědět, že pokud na něm chci mít funkční Hamachi (kvůli klientovi), musím…</p>
 <h2 id="jak-nainstalovat-hamachi">Jak nainstalovat Hamachi<small class="permalink"><a href="#jak-nainstalovat-hamachi" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Stáhnout <a href="http://files.hamachi.cc/linux/hamachi-0.9.9.9-20-lnx.tar.gz">Hamachi pro Linux</a> a rozbalit. Potom:</p>
-<pre class="highlight"><code><span></span><code>$ sudo apt-get install build-essential   <span class="c1"># máme vše potřebné pro instalaci?</span>
-$ sudo make install   <span class="c1"># instalujeme</span>
-$ sudo tuncfg   <span class="c1"># nastavení tuneláže</span>
-$ hamachi-init -f   <span class="c1"># vytvoření metadat Hamachi v ~/</span>
-$ hamachi start   <span class="c1"># start Hamachi</span>
-$ hamachi login   <span class="c1"># přihlášení do Hamachi</span>
+<pre class="highlight"><code><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>build-essential<span class="w">   </span><span class="c1"># máme vše potřebné pro instalaci?</span>
+$<span class="w"> </span>sudo<span class="w"> </span>make<span class="w"> </span>install<span class="w">   </span><span class="c1"># instalujeme</span>
+$<span class="w"> </span>sudo<span class="w"> </span>tuncfg<span class="w">   </span><span class="c1"># nastavení tuneláže</span>
+$<span class="w"> </span>hamachi-init<span class="w"> </span>-f<span class="w">   </span><span class="c1"># vytvoření metadat Hamachi v ~/</span>
+$<span class="w"> </span>hamachi<span class="w"> </span>start<span class="w">   </span><span class="c1"># start Hamachi</span>
+$<span class="w"> </span>hamachi<span class="w"> </span>login<span class="w">   </span><span class="c1"># přihlášení do Hamachi</span>
 </code></code></pre>
 
 <h2 id="jak-pouzivat-hamachi">Jak používat Hamachi<small class="permalink"><a href="#jak-pouzivat-hamachi" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Další práce s Hamachi, tedy nastavení jména, přihlášení do skupiny, nastavení online stavu a výpis toho co vidím:</p>
-<pre class="highlight"><code><span></span><code>$ hamachi set-nick <span class="o">[</span>nick<span class="o">]</span>
-$ hamachi join <span class="o">[</span>network<span class="o">]</span> <span class="o">[</span>password<span class="o">]</span>
-$ hamachi go-online <span class="o">[</span>network<span class="o">]</span>
-$ hamachi list
+<pre class="highlight"><code><span></span><code>$<span class="w"> </span>hamachi<span class="w"> </span>set-nick<span class="w"> </span><span class="o">[</span>nick<span class="o">]</span>
+$<span class="w"> </span>hamachi<span class="w"> </span>join<span class="w"> </span><span class="o">[</span>network<span class="o">]</span><span class="w"> </span><span class="o">[</span>password<span class="o">]</span>
+$<span class="w"> </span>hamachi<span class="w"> </span>go-online<span class="w"> </span><span class="o">[</span>network<span class="o">]</span>
+$<span class="w"> </span>hamachi<span class="w"> </span>list
 </code></code></pre>
 
 <h2 id="zajimave-odkazy">Zajímavé odkazy<small class="permalink"><a href="#zajimave-odkazy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>

@@ -160,19 +160,19 @@ Každopádně mám pocit, že na to, jaká je to blbost, jsem v tom utopil stra�
 </ul>
 <p>Ten poslední bod mě potrápil, protože <code>esbuild</code> se rozbije o relativní cesty k fontům v balíčku <a href="https://www.npmjs.com/package/@fontsource/inter">@fontsource/inter</a>.
 Procházel jsem nějaké pluginy, ale nakonec je řešením <code>precompile</code> přímo v rámci <a href="https://github.com/glromeo/esbuild-sass-plugin">SCSS pluginu</a>:</p>
-<pre class="highlight"><code><span></span><code><span class="k">await</span><span class="w"> </span><span class="nx">esbuild</span><span class="p">.</span><span class="nx">build</span><span class="p">({</span><span class="w"></span>
-<span class="w">  </span><span class="p">...</span><span class="w"></span>
-<span class="w">  </span><span class="nx">plugins</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">    </span><span class="nx">sassPlugin</span><span class="p">({</span><span class="w"></span>
-<span class="w">      </span><span class="nx">precompile</span><span class="p">(</span><span class="nx">source</span><span class="p">,</span><span class="w"> </span><span class="nx">pathname</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">pathname</span><span class="p">.</span><span class="nx">endsWith</span><span class="p">(</span><span class="s1">'@fontsource/inter/index.css'</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">          </span><span class="k">return</span><span class="w"> </span><span class="nx">source</span><span class="p">.</span><span class="nx">replaceAll</span><span class="p">(</span><span class="s1">'./files/'</span><span class="p">,</span><span class="w"> </span><span class="s1">'../../node_modules/@fontsource/inter/files/'</span><span class="p">)</span><span class="w"></span>
-<span class="w">        </span><span class="p">}</span><span class="w"></span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">source</span><span class="w"></span>
-<span class="w">      </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">}),</span><span class="w"></span>
-<span class="w">  </span><span class="p">],</span><span class="w"></span>
-<span class="p">})</span><span class="w"></span>
+<pre class="highlight"><code><span></span><code><span class="k">await</span><span class="w"> </span><span class="nx">esbuild</span><span class="p">.</span><span class="nx">build</span><span class="p">({</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="w">  </span><span class="nx">plugins</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="nx">sassPlugin</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">precompile</span><span class="p">(</span><span class="nx">source</span><span class="p">,</span><span class="w"> </span><span class="nx">pathname</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">pathname</span><span class="p">.</span><span class="nx">endsWith</span><span class="p">(</span><span class="s1">'@fontsource/inter/index.css'</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="k">return</span><span class="w"> </span><span class="nx">source</span><span class="p">.</span><span class="nx">replaceAll</span><span class="p">(</span><span class="s1">'./files/'</span><span class="p">,</span><span class="w"> </span><span class="s1">'../../node_modules/@fontsource/inter/files/'</span><span class="p">)</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">source</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">    </span><span class="p">}),</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="p">})</span>
 </code></code></pre>
 
 <p>Taky jsem při ladění nejrůznějších problémů dost překopal jak mi funguje logging.

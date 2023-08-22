@@ -103,11 +103,11 @@
 <p>prostě není úplně ono, protože ty špičaté závorky a otazníčky PHP bere na sebe a server vám vrátí něco podivného, asi <strong>parse error</strong>.</p>
 <h2 id="reseni">Řešení<small class="permalink"><a href="#reseni" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Řešení je zřejmé…</p>
-<pre class="highlight"><code><span></span><code><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="s2">"&lt;?xml version=</span><span class="se">\"</span><span class="s2">1.0</span><span class="se">\"</span><span class="s2"> encoding=</span><span class="se">\"</span><span class="s2">utf-8</span><span class="se">\"</span><span class="s2"> ?&gt;</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x"></span>
+<pre class="highlight"><code><span></span><code><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="s2">"&lt;?xml version=</span><span class="se">\"</span><span class="s2">1.0</span><span class="se">\"</span><span class="s2"> encoding=</span><span class="se">\"</span><span class="s2">utf-8</span><span class="se">\"</span><span class="s2"> ?&gt;</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span> <span class="cp">?&gt;</span>
 </code></code></pre>
 
 <p>Nebo třeba</p>
-<pre class="highlight"><code><span></span><code><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="s1">'&lt;?xml version="1.0" encoding="utf-8" ?&gt;'</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x"></span>
+<pre class="highlight"><code><span></span><code><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="s1">'&lt;?xml version="1.0" encoding="utf-8" ?&gt;'</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span> <span class="cp">?&gt;</span>
 </code></code></pre>
 
 <p>Jak je ale vidět, zřejmá řešení problémů nejsou ani hezká, ani elegantní. Předkládám proto jedno ne zcela zřejmé, ale geniální řešení, které je hezké, elegantní a navíc rychlé – nepotřebuje prakticky žádný výkon PHP.</p>

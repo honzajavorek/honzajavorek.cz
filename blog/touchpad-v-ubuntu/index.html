@@ -96,12 +96,12 @@ Windows: Nainstalujte si ovladače pro Synaptics Touchpad, tam si to naklikejte 
 <p>Nastavení touchpadu je normálně v <em>System → Preferences → Mouse</em> na záložce <em>Touchpad</em>. Pokud toužíte po rozšířeném nastavení, tak pomůže instalace <em>gsynaptics</em> (pro GNOME). Ten je potom k nalezení pod <em>System → Preferences → Touchpad</em>. Jenže… Ačkoliv si můžete dopřát applovské triky a používat zoom nebo scrolling více prsty, pořád vám to nikde nedovolí nastavit ťapací oblasti. Já nutně potřebuji „prostřední tlačítko“ v pravém horním rohu.</p>
 <p>No a k tomu pomůže <a href="http://ubuntuforums.org/showthread.php?p=8403017">tato stránka</a>, kde je nejprve <a href="http://ubuntuforums.org/showpost.php?p=8261605&amp;postcount=3">řešení dočasné</a> (do prvního restartu, což moc ani nepovažuji za řešení) a pak <a href="http://ubuntuforums.org/showpost.php?p=8399228&amp;postcount=8">řešení permanentní</a>. Tedy přidat do <code>/etc/hal/fdi/policy</code> soubor <code>synaptics.fdi</code> a do něj hodit</p>
 <pre class="highlight"><code><span></span><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
-<span class="nt">&lt;deviceinfo</span> <span class="na">version=</span><span class="s">"0.2"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;device&gt;</span>
-        <span class="nt">&lt;match</span> <span class="na">key=</span><span class="s">"input.x11_driver"</span> <span class="na">string=</span><span class="s">"synaptics"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;merge</span> <span class="na">key=</span><span class="s">"input.x11_options.RTCornerButton"</span> <span class="na">type=</span><span class="s">"string"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/merge&gt;</span>
-        <span class="nt">&lt;/match&gt;</span>
-    <span class="nt">&lt;/device&gt;</span>
+<span class="nt">&lt;deviceinfo</span><span class="w"> </span><span class="na">version=</span><span class="s">"0.2"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;device&gt;</span>
+<span class="w">        </span><span class="nt">&lt;match</span><span class="w"> </span><span class="na">key=</span><span class="s">"input.x11_driver"</span><span class="w"> </span><span class="na">string=</span><span class="s">"synaptics"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;merge</span><span class="w"> </span><span class="na">key=</span><span class="s">"input.x11_options.RTCornerButton"</span><span class="w"> </span><span class="na">type=</span><span class="s">"string"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/merge&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/match&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/device&gt;</span>
 <span class="nt">&lt;/deviceinfo&gt;</span>
 </code></code></pre>
 

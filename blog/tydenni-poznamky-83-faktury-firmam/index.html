@@ -161,7 +161,7 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <span class="kn">from</span> <span class="nn">peewee</span> <span class="kn">import</span> <span class="n">Model</span><span class="p">,</span> <span class="n">SqliteDatabase</span> <span class="k">as</span> <span class="n">BaseSqliteDatabase</span><span class="p">,</span> <span class="n">ConnectionContext</span> <span class="k">as</span> <span class="n">BaseConnectionContext</span>
 
 <span class="k">class</span> <span class="nc">ConnectionContext</span><span class="p">(</span><span class="n">BaseConnectionContext</span><span class="p">):</span>
-    <span class="sd">"""Supports async functions when used as decorator"""</span>
+<span class="w">    </span><span class="sd">"""Supports async functions when used as decorator"""</span>
     <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fn</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">iscoroutinefunction</span><span class="p">(</span><span class="n">fn</span><span class="p">):</span>
             <span class="k">async</span> <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>

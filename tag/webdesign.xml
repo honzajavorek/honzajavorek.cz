@@ -156,70 +156,70 @@ akce?).&lt;/p&gt;
 &lt;p&gt;No, jak říkám… Ještě nevím pro co se rozhodnu a určitě i něco přibude (když jsem se teď díval, přibylo za poslední dejme tomu týden docela dost přednášek). Opravdu se těším :) .&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="blog"></category><category term="webdesign"></category><category term="zážitky"></category></entry><entry><title>Pár triků pro mod_rewrite a .htaccess</title><link href="https://honzajavorek.cz/blog/par-triku-pro-mod-rewrite-a-htaccess/" rel="alternate"></link><published>2008-08-27T08:10:00+02:00</published><updated>2008-08-27T08:10:00+02:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2008-08-27:/blog/par-triku-pro-mod-rewrite-a-htaccess/</id><summary type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Velmi často je součástí webového serveru tzv. &lt;code&gt;mod_rewrite&lt;/code&gt;, který nám povoluje přepisovat jakékoliv požadavky od uživatele na jiné. Například přepsat nebo přesměrovat adresu. Více o &lt;code&gt;mod_rewrite&lt;/code&gt; a souboru &lt;code&gt;.htaccess&lt;/code&gt;, jenž s ním úzce souvisí, najdete třeba na &lt;a href="http://www.jakpsatweb.cz/server/htaccess.html"&gt;Jak psát web&lt;/a&gt;. Ta nejlepší helpka je však velmi pěkně napsaný &lt;a href="http://httpd.apache.org/docs/2.0/mod/mod_rewrite.html"&gt;originální manuál …&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Velmi často je součástí webového serveru tzv. &lt;code&gt;mod_rewrite&lt;/code&gt;, který nám povoluje přepisovat jakékoliv požadavky od uživatele na jiné. Například přepsat nebo přesměrovat adresu. Více o &lt;code&gt;mod_rewrite&lt;/code&gt; a souboru &lt;code&gt;.htaccess&lt;/code&gt;, jenž s ním úzce souvisí, najdete třeba na &lt;a href="http://www.jakpsatweb.cz/server/htaccess.html"&gt;Jak psát web&lt;/a&gt;. Ta nejlepší helpka je však velmi pěkně napsaný &lt;a href="http://httpd.apache.org/docs/2.0/mod/mod_rewrite.html"&gt;originální manuál&lt;/a&gt;. Já se zkusím podělit o několik užitečných &lt;em&gt;code snippets&lt;/em&gt;, které jsem časem nashromáždil…&lt;/p&gt;
 &lt;h2 id="lomitka-na-koncich"&gt;Lomítka na koncích&lt;small class="permalink"&gt;&lt;a href="#lomitka-na-koncich" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;Přesměruje adresy &lt;code&gt;tralala.com/venku/je/tma&lt;/code&gt; na &lt;code&gt;tralala.com/venku/je/tma/&lt;/code&gt;.&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;## endslashes&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nb"&gt;RewriteCond&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;%{REQUEST_FILENAME}&lt;span class="w"&gt; &lt;/span&gt;!-f&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nb"&gt;RewriteCond&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;%{ENV:REDIRECT_STATUS}&lt;span class="w"&gt; &lt;/span&gt;^$&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nb"&gt;RewriteCond&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;%{REQUEST_URI}&lt;span class="w"&gt; &lt;/span&gt;!\/$&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nb"&gt;RewriteRule&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;(.*)&lt;span class="w"&gt; &lt;/span&gt;$0/&lt;span class="w"&gt; &lt;/span&gt;[R=301,NE,L]&lt;span class="w"&gt;&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;## endslashes&lt;/span&gt;
+&lt;span class="nb"&gt;RewriteCond&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;%{REQUEST_FILENAME}&lt;span class="w"&gt; &lt;/span&gt;!-f
+&lt;span class="nb"&gt;RewriteCond&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;%{ENV:REDIRECT_STATUS}&lt;span class="w"&gt; &lt;/span&gt;^$
+&lt;span class="nb"&gt;RewriteCond&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;%{REQUEST_URI}&lt;span class="w"&gt; &lt;/span&gt;!\/$
+&lt;span class="nb"&gt;RewriteRule&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;(.*)&lt;span class="w"&gt; &lt;/span&gt;$0/&lt;span class="w"&gt; &lt;/span&gt;[R=301,NE,L]
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id="hezka-a-vselijaka-url-pro-aplikaci-v-php"&gt;Hezká a všelijaká URL pro aplikaci v PHP&lt;small class="permalink"&gt;&lt;a href="#hezka-a-vselijaka-url-pro-aplikaci-v-php" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;Žádných složitých 50 regulárních výrazů na to, co vlastně s těmi adresami chceme… Stačí jeden kouzelný řádek, který úplně vše přesměruje na &lt;code&gt;index.php&lt;/code&gt; a potom si adresu rozparsujeme přímo v PHP (dostupná v &lt;code&gt;$_SERVER['REQUEST_URI']&lt;/code&gt;).&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;RewriteCond&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;%{REQUEST_FILENAME}&lt;span class="w"&gt; &lt;/span&gt;!-f&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nb"&gt;RewriteCond&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;%{REQUEST_FILENAME}&lt;span class="w"&gt; &lt;/span&gt;!-d&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nb"&gt;RewriteRule&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="sx"&gt;/index.php&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;[L]&lt;span class="w"&gt;&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;RewriteCond&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;%{REQUEST_FILENAME}&lt;span class="w"&gt; &lt;/span&gt;!-f
+&lt;span class="nb"&gt;RewriteCond&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;%{REQUEST_FILENAME}&lt;span class="w"&gt; &lt;/span&gt;!-d
+&lt;span class="nb"&gt;RewriteRule&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="sx"&gt;/index.php&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;[L]
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id="presmerovani-rss-na-feedburner"&gt;Přesměrování RSS na FeedBurner&lt;small class="permalink"&gt;&lt;a href="#presmerovani-rss-na-feedburner" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;Chcete &lt;a href="http://www.feedburner.com"&gt;statistiky přístupů&lt;/a&gt; na vaše RSS, ale nechcete obtěžovat odběratele článků se změnami adresy? Přesměrujte je. Není to tak snadné jak se zdá, protože přesměrování se nesmí provést, když se na váš &lt;em&gt;feed&lt;/em&gt; snaží dostat samotný FeedBurner (to se pak logicky zacyklí). Sofistikovanější postupy pro WordPress najdete v &lt;a href="http://www.askapache.com/htaccess/redirecting-wordpress-feeds-to-feedburner.html"&gt;článku na AskApache&lt;/a&gt;, já jsem si vystačil s tímto:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;## feedburner&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nb"&gt;RewriteCond&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;%{HTTP_USER_AGENT}&lt;span class="w"&gt; &lt;/span&gt;!^.*(FeedBurner|FeedValidator|Recent)&lt;span class="w"&gt; &lt;/span&gt;[NC]&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nb"&gt;RewriteRule&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;^feed/?$&lt;span class="w"&gt; &lt;/span&gt;http://feeds.feedburner.com/javorovelistky&lt;span class="w"&gt; &lt;/span&gt;[R=302,L]&lt;span class="w"&gt;&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;## feedburner&lt;/span&gt;
+&lt;span class="nb"&gt;RewriteCond&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;%{HTTP_USER_AGENT}&lt;span class="w"&gt; &lt;/span&gt;!^.*(FeedBurner|FeedValidator|Recent)&lt;span class="w"&gt; &lt;/span&gt;[NC]
+&lt;span class="nb"&gt;RewriteRule&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;^feed/?$&lt;span class="w"&gt; &lt;/span&gt;http://feeds.feedburner.com/javorovelistky&lt;span class="w"&gt; &lt;/span&gt;[R=302,L]
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id="chybove-stranky"&gt;Chybové stránky&lt;small class="permalink"&gt;&lt;a href="#chybove-stranky" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;Pokud zadáte relativní cestu, původní URL zůstane v adresním řádku prohlížeče a zobrazí se vám tato chybová stránka. Pokud zadáte absolutní, přesměruje se chyba zcela na soubor s chybovou stránkou (což podle mě není dobrý nápad).&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;## errorpages&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nb"&gt;ErrorDocument&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;404&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="sx"&gt;/joss/&lt;/span&gt;?doc=_404&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nb"&gt;ErrorDocument&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;403&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="sx"&gt;/joss/&lt;/span&gt;?doc=_403&lt;span class="w"&gt;&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;## errorpages&lt;/span&gt;
+&lt;span class="nb"&gt;ErrorDocument&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;404&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="sx"&gt;/joss/&lt;/span&gt;?doc=_404
+&lt;span class="nb"&gt;ErrorDocument&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;403&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="sx"&gt;/joss/&lt;/span&gt;?doc=_403
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id="taticek-htaccess"&gt;Tatíček .htaccess&lt;small class="permalink"&gt;&lt;a href="#taticek-htaccess" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;Neodolal jsem a nakonec ještě přidám několik osvědčených kousků i pro samotný &lt;code&gt;.htaccess&lt;/code&gt;. Někdy je dobré na web jen na oko zamezit přístup, alespoň přes hlavní stránku. Jelikož ta se většinou volá přes &lt;code&gt;index.php&lt;/code&gt;, teoreticky stačí vložit do rootu webu &lt;code&gt;index.html&lt;/code&gt; a něco do něj napsat. Toto zajistí, že se určitě bude HTML verze zobrazovat prioritně:&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;DirectoryIndex&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;index.html&lt;span class="w"&gt; &lt;/span&gt;index.php&lt;span class="w"&gt;&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;DirectoryIndex&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;index.html&lt;span class="w"&gt; &lt;/span&gt;index.php
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Skryté soubory by se neměly nikomu dostat do rukou. Správný server má toto už v globálním nastavení, ale člověk nikdy neví…&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;Files&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;~ "^[\.]"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;Order&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;allow,deny&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;Deny&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;from&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;all&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;Satisfy&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;All&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nt"&gt;&amp;lt;/Files&amp;gt;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;Files&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;~ "^[\.]"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;Order&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;allow,deny
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;Deny&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;from&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;all&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;Satisfy&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;All&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/Files&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Nevíte jestli na cílovém serveru bude &lt;code&gt;mod_rewrite&lt;/code&gt; a nechcete riskovat &lt;em&gt;Internal Server Error 500&lt;/em&gt;? Stačí vše obalit podmínkou…&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;IfModule&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;mod_rewrite.c&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;RewriteEngine&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;on&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;...&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nt"&gt;&amp;lt;/IfModule&amp;gt;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;IfModule&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;mod_rewrite.c&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;RewriteEngine&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;on&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;...
+&lt;span class="nt"&gt;&amp;lt;/IfModule&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;A co tak si nastavit PHP?&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;IfModule&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;mod_php5.c&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="c"&gt;# development setting&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;php_flag&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;display_errors&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="c"&gt;# safety&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;php_flag&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;register_globals&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="c"&gt;# allowed stealing from other websites ;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;php_flag&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;allow_url_fopen&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="c"&gt;# fu*king quotes...&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;php_flag&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;magic_quotes_gpc&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;php_flag&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;magic_quotes_runtime&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;php_flag&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;magic_quotes_sybase&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="c"&gt;# yes, I love short open tags!&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;php_flag&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;short_open_tag&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="c"&gt;# utf forever&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;php_flag&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;default_charset&lt;span class="w"&gt; &lt;/span&gt;utf-8&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nt"&gt;&amp;lt;/IfModule&amp;gt;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;IfModule&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;mod_php5.c&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="c"&gt;# development setting&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;php_flag&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;display_errors&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="c"&gt;# safety&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;php_flag&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;register_globals&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="c"&gt;# allowed stealing from other websites ;)&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;php_flag&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;allow_url_fopen&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="c"&gt;# fu*king quotes...&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;php_flag&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;magic_quotes_gpc&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;php_flag&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;magic_quotes_runtime&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;php_flag&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;magic_quotes_sybase&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="c"&gt;# yes, I love short open tags!&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;php_flag&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;short_open_tag&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="c"&gt;# utf forever&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;php_flag&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;default_charset&lt;span class="w"&gt; &lt;/span&gt;utf-8
+&lt;span class="nt"&gt;&amp;lt;/IfModule&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id="zaverem"&gt;Závěrem&lt;small class="permalink"&gt;&lt;a href="#zaverem" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
@@ -298,7 +298,7 @@ design.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content><cate
 &lt;p&gt;Většina webu se zabývá v souvislosti s PNG a IE &lt;strong&gt;průhledností&lt;/strong&gt;, s níž má Explorer velké potíže. Jsou již na světe samozřejmě způsoby, jak to obejít, a rozumnému člověku stačí k jejich odhalení &lt;a href="http://www.google.cz/search?q=png+internet+explorer"&gt;Google&lt;/a&gt;. O čem se však téměř nikde nepíše (alespoň tedy česky), je také zvláštní zpracování &lt;strong&gt;gamma&lt;/strong&gt; hodnot obrázků PNG v IE. Pokud tentýž obrázek PNG zobrazíš ve Firefoxu, Opeře a IE, zjistíš (a to i v IE7), že nejrozšířenější browser holt grafiku zobrazí s mírně &lt;strong&gt;odlišnými odstíny barev&lt;/strong&gt;. Jedná-li se o obrázek uprostřed textu, zřejmě ti to bude docela fuk. Jestliže potřebuješ obrázek zasadit do přesného pixelového layoutu, zjistíš, že ti nesedí do barev vykreslovaných prohlížečem pomocí CSS nebo barev ostatních souborů.&lt;/p&gt;
 &lt;h2 id="spasa-drcenim"&gt;Spása drcením&lt;small class="permalink"&gt;&lt;a href="#spasa-drcenim" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
 &lt;p&gt;Řešení? Existuje program &lt;a href="http://pmt.sourceforge.net/pngcrush/"&gt;PNGcrush&lt;/a&gt;, jenž si umí s formáty PNG a MNG docela slušně pohrát. Jedna z věcí, které dokáže, je právě optimalizace gamma hodnoty tak, aby se s ním popral i IE. Program je ke stažení i pod Windows – jedna &lt;em&gt;exe binárka&lt;/em&gt;, nemusí se samozřejmě instalovat a spouští se z příkazového řádku. Soubor &lt;strong&gt;pngcrush.exe&lt;/strong&gt; si tedy nahraj do adresáře se všemi &lt;em&gt;postiženými&lt;/em&gt; obrázky a pak za hlubokých meditací prones magickou formuli&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pngcrush -rem alla -d out *.png
+&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pngcrush&lt;span class="w"&gt; &lt;/span&gt;-rem&lt;span class="w"&gt; &lt;/span&gt;alla&lt;span class="w"&gt; &lt;/span&gt;-d&lt;span class="w"&gt; &lt;/span&gt;out&lt;span class="w"&gt; &lt;/span&gt;*.png
 &lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id="vysledek"&gt;Výsledek?&lt;small class="permalink"&gt;&lt;a href="#vysledek" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;

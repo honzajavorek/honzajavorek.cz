@@ -120,7 +120,7 @@ Photo by <a href="https://unsplash.com/@filip42">Philippe D.</a></figcaption></f
 <span class="k">def</span> <span class="nf">html_path_to_url</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">public_dir</span><span class="p">):</span>
     <span class="n">path</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s1">'index.html'</span><span class="p">)</span>
     <span class="n">path</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="n">public_dir</span><span class="p">))</span>
-    <span class="k">return</span> <span class="sa">f</span><span class="s2">"https://junior.guru/</span><span class="si">{</span><span class="s1">''</span> <span class="k">if</span> <span class="n">path</span> <span class="o">==</span> <span class="s1">'.'</span> <span class="k">else</span> <span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s1">'/'</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">"https://junior.guru/</span><span class="si">{</span><span class="s1">''</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'.'</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">(</span><span class="n">path</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">'/'</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span>
 
 <span class="k">def</span> <span class="nf">get_urls</span><span class="p">(</span><span class="n">public_dir</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">[</span><span class="n">html_path_to_url</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">public_dir</span><span class="p">)</span>
@@ -222,39 +222,39 @@ Passing: 176
 
 <h2 id="continuous-monitoring">Continuous monitoring<small class="permalink"><a href="#continuous-monitoring" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>My project uses <a href="https://circleci.com/gh/honzajavorek/junior.guru/tree/master">CircleCI</a> for building and various checks. I added one job to the configuration for my new Lighthouse check:</p>
-<pre class="highlight"><code><span></span><code><span class="nn">...</span><span class="w"></span>
-<span class="nt">executors</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">python-js</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">docker</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">circleci/python:3.7-node-browsers</span><span class="w"></span>
-<span class="w">    </span><span class="nt">working_directory</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">~/project</span><span class="w"></span>
-<span class="nn">...</span><span class="w"></span>
+<pre class="highlight"><code><span></span><code><span class="nn">...</span>
+<span class="nt">executors</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">python-js</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">docker</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">circleci/python:3.7-node-browsers</span>
+<span class="w">    </span><span class="nt">working_directory</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">~/project</span>
+<span class="nn">...</span>
 
-<span class="nt">jobs</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">...</span><span class="w"></span>
-<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">check-performance</span><span class="p p-Indicator">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">executor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python-js</span><span class="w"></span>
-<span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">attach_workspace</span><span class="p">:</span><span class="w"></span>
-<span class="w">          </span><span class="nt">at</span><span class="p">:</span><span class="w"> </span><span class="s">"~"</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pipenv run check-performance</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"></span>
-<span class="w">          </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tar -cvzf lighthouse.tar.gz ./lighthouse</span><span class="w"></span>
-<span class="w">          </span><span class="nt">when</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">always</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">store_artifacts</span><span class="p">:</span><span class="w"></span>
-<span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./lighthouse.tar.gz</span><span class="w">  </span><span class="c1"># HTML and JSON reports from lighthouse</span><span class="w"></span>
-<span class="nn">...</span><span class="w"></span>
+<span class="nt">jobs</span><span class="p">:</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">...</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">check-performance</span><span class="p p-Indicator">:</span>
+<span class="w">    </span><span class="nt">executor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python-js</span>
+<span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">attach_workspace</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">at</span><span class="p">:</span><span class="w"> </span><span class="s">"~"</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pipenv run check-performance</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tar -cvzf lighthouse.tar.gz ./lighthouse</span>
+<span class="w">          </span><span class="nt">when</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">always</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">store_artifacts</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./lighthouse.tar.gz</span><span class="w">  </span><span class="c1"># HTML and JSON reports from lighthouse</span>
+<span class="nn">...</span>
 
-<span class="nt">workflows</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span><span class="w"></span>
-<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">...</span><span class="w"></span>
-<span class="w">  </span><span class="nt">nightly_workflow</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">...</span><span class="w"></span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">jobs</span><span class="p p-Indicator">:</span><span class="w"></span>
-<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">...</span><span class="w"></span>
-<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">- check-performance</span><span class="p p-Indicator">:</span><span class="w"></span>
-<span class="w">          </span><span class="nt">requires</span><span class="p">:</span><span class="w"></span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deploy</span><span class="w"></span>
+<span class="nt">workflows</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">...</span>
+<span class="w">  </span><span class="nt">nightly_workflow</span><span class="p">:</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">...</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">jobs</span><span class="p p-Indicator">:</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">...</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">- check-performance</span><span class="p p-Indicator">:</span>
+<span class="w">          </span><span class="nt">requires</span><span class="p">:</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deploy</span>
 </code></code></pre>
 
 <p>It's important I use the CircleCI's <code>python:3.7-node-browsers</code> Docker image, which contains Python as well as Node.js and browsers, because Lighthouse depends on having Google Chrome installed. In the job itself I run the script through <code>pipenv</code> (to be precise, through the <code>scripts</code> section of <code>Pipfile</code>), compress the directory with reports, and store it as an artifact. If the script fails the build and I won't be able to reproduce the problem locally, I can download the archive from CircleCI and inspect the actual reports made on CI. I've put the job into my nightly workflow, so that it runs every night, and I've set it to depend on my <code>deploy</code> job, which deploys the site to production as this is effectively a production check.</p>

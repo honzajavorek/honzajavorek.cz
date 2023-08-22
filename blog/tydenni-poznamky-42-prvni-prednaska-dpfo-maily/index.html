@@ -137,9 +137,9 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <p>Už delší dobu jsem používal Python z Homebrew jako ten, ze kterého vytvářím virtuální prostředí, což <a href="https://justinmayer.com/posts/homebrew-python-is-not-for-you/">není dobrý nápad</a>. Bylo to proto, že na mojí <a href="https://honzajavorek.cz/blog/i-bought-apple-silicon/">M1</a> ze začátku nějak nefungoval pyenv, tak jsem to pouze zalepil skrze <code>brew pin python@3.9</code>, aby se mi aspoň nerozbíjely virtuální prostředí.</p>
 <p>Ale teď už mě to dohánělo na každém kroku. Chtěl jsem něco přes Homebrew nainstalovat a napsalo mi to, že ne-é, že to bych nejdřív musel upgradnout i Python, jenže ten je připíchnutý na konkrétní verzi, takže mám smůlu, dokud ho neodpíchnu. Třeba <a href="https://github.com/Rigellute/spotify-tui">spotify-tui</a> nebo <a href="https://github.com/magic-wormhole/magic-wormhole">magic-wormhole</a>. Takže jsem se do toho pustil.</p>
 <p>Nakonec tím nejzásadnějším zjistěním bylo, že pyenv funguje, ale musí se podobně jako brew explicitně pustit pod správnou architekturou, jestliže jej mám nainstalovaný jako intelácký. Takže řešení je zhruba takovéto:</p>
-<pre class="highlight"><code><span></span><code><span class="nb">alias</span> brew-arm<span class="o">=</span><span class="s2">"arch -arm64e /opt/homebrew/bin/brew"</span>
-<span class="nb">alias</span> <span class="nv">brew</span><span class="o">=</span><span class="s2">"arch -x86_64 /usr/local/bin/brew"</span>
-<span class="nb">alias</span> <span class="nv">pyenv</span><span class="o">=</span><span class="s2">"arch -x86_64 /usr/local/bin/pyenv"</span>
+<pre class="highlight"><code><span></span><code><span class="nb">alias</span><span class="w"> </span>brew-arm<span class="o">=</span><span class="s2">"arch -arm64e /opt/homebrew/bin/brew"</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">brew</span><span class="o">=</span><span class="s2">"arch -x86_64 /usr/local/bin/brew"</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">pyenv</span><span class="o">=</span><span class="s2">"arch -x86_64 /usr/local/bin/pyenv"</span>
 </code></code></pre>
 
 <p>Potom je pyenv schopen nainstalovat Python jaký potřebuju a pipenv je dokonce natolik inteligentní, že mu ani nemusím dávat žádné cesty a on si pro vytvoření virtuálního prostředí ten správný Python (tedy ten, který je specifikovaný v Pipfile) automaticky najde i v hloubi pyenvích adresářů. Tož to by bylo. Přeinstaloval jsem lokálně závislosti JG a vše funguje skvěle.</p>
