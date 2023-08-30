@@ -7,6 +7,7 @@ from pelican import signals
 
 # https://icons.getbootstrap.com/
 COMMENTS_PLACES = {
+    'mastodonczech.cz': dict(priority=1, name='Mastodon', icon='mastodon'),
     't.me': dict(priority=1, name='Telegram', icon='telegram'),
     'linkedin.com': dict(priority=2, name='LinkedIn', icon='linkedin'),
     'reddit.com': dict(priority=3, name='Reddit', icon='reddit'),
@@ -22,7 +23,7 @@ def register():
 
 def set_comments(article_generator, metadata):
     comments = list(sorted((
-        {**item, **COMMENTS_PLACES.get(item['name'])}
+        {**item, **COMMENTS_PLACES[item['name']]}
         for item in (
             dict(name=get_name(value), url=value, icon='chat')
             for key, value in metadata.items()
