@@ -18,6 +18,8 @@ Svůj postup zaznamenávám do [tabulky na GitHubu](https://github.com/orgs/juni
 </div>
 
 Píšu po dvou týdnech, tak je to dnes trochu hutnější!
+A mimochodem, minule jsem si ani nevšiml, že jsem napsal 550. článek na tento blog.
+Tenhle je 551.
 
 ## Sleva pro dlouhodobé členy klubu
 
