@@ -1,8 +1,5 @@
-import sys
-import os
 from pathlib import Path
 from operator import itemgetter
-import itertools
 
 from pelican import signals
 import strictyaml as yaml
