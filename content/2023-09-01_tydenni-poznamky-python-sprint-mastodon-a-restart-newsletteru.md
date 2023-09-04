@@ -3,6 +3,7 @@ Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
 Telegram-Comments: https://t.me/honzajavorekcz/280
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/111006913133888025
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-08-18_tydenni-poznamky-sekce-s-novinkami-a-jinja.md) už utekl nějaký ten týden (18. 8. až 1. 9.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
