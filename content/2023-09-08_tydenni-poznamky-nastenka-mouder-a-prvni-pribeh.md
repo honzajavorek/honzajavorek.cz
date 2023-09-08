@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Nástěnka mouder a první příběh
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/283
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-09-01_tydenni-poznamky-python-sprint-mastodon-a-restart-newsletteru.md) už utekl nějaký ten týden (1. 9. až 8. 9.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
