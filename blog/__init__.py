@@ -16,6 +16,7 @@ from slugify import slugify
 from strava_offline.cli import cli as strava
 
 from blog.telegram import main as telegram
+from blog.toots import main as toots
 from blog.weeknotes import main as weeknotes
 from blog.media import main as media
 from blog.kocarkino import main as kocarkino
@@ -28,6 +29,7 @@ def main():
 
 
 main.add_command(telegram, 'telegram')
+main.add_command(toots, 'toots')
 main.add_command(weeknotes, 'weeknotes')
 main.add_command(media, 'media')
 main.add_command(strava, 'strava')

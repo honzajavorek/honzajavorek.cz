@@ -39,6 +39,20 @@ jobs:
       - name: Install JS dependencies for the theme
         run: npm install --prefix=./theme
 
+      - name: Synchronize toots
+        env:
+          MASTODON_CLIENT_ID: ${{ secrets.MASTODON_CLIENT_ID }}
+          MASTODON_CLIENT_SECRET: ${{ secrets.MASTODON_CLIENT_SECRET }}
+          MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+        run: poetry run blog toots
+
+      - name: Save to Git
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: ./content/data/toots-honza.json
+          message: "sync toots 🐘"
+          fetch: false
+
       - name: Pelican Build
         run: poetry run blog build
 

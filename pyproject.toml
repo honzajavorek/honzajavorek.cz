@@ -31,7 +31,8 @@ pillow-heif = "0.13.0"
 icalendar = "5.0.7"
 extruct = "0.16.0"
 notion-client = "^2.0.0"
-feedgen = "^0.9.0"
+feedgen = "0.9.0"
+mastodon-py = "1.8.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "7.4.1"
