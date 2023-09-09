@@ -49,7 +49,7 @@ jobs:
       - name: Save to Git
         uses: EndBug/add-and-commit@v9
         with:
-          add: ./content/data/toots-honza.json
+          add: ./content/data
           message: "sync toots 🐘"
           fetch: false
 
