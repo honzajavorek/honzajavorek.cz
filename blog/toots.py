@@ -47,7 +47,8 @@ def main(client_id: str, client_secret: str, access_token: str, mastodon_server_
         article_index = {article['url']: article for article in articles}
     for toot in mastodon.account_statuses(account_id, limit=limit, tagged='blog', exclude_replies=True, exclude_reblogs=True):
         article_url = toot['card']['url']
-        reply_index = {reply['id']: reply for reply in article_index.get(article_url, [])}
+        replies = article_index.get(article_url, {'replies': []})['replies']
+        reply_index = {reply['id']: reply for reply in replies}
         context = mastodon.status_context(toot['id'])
         if descendants := context['descendants']:
             for reply in descendants:
