@@ -52,8 +52,11 @@ def main(client_id: str, client_secret: str, access_token: str, mastodon_server_
         if descendants := context['descendants']:
             for reply in descendants:
                 reply_index[reply['id']] = marshall_reply(reply)
-        article_index.setdefault(article_url, dict(url=article_url, created_at=toot['created_at'], replies=[]))
-        article_index[article_url]['replies'] = sorted(reply_index.values(), key=itemgetter('created_at'))
+        article = dict(url=article_url,
+                       created_at=toot['created_at'],
+                       favourites_count=toot['favourites_count'],
+                       replies=sorted(reply_index.values(), key=itemgetter('created_at')))
+        article_index[article_url] = article
     articles = sorted(article_index.values(), key=itemgetter('created_at'), reverse=True)
     contents = json.dumps(articles, indent=2, ensure_ascii=False, default=json_dumps_default)
     path_replies.write_text(contents)
