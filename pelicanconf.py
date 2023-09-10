@@ -122,6 +122,7 @@ PLUGINS = [
     'headings',
     'media',
     'readtime',
+    'replies',
     'seealso',
 ]
 CUSTOM_FEED_META = lambda settings: {

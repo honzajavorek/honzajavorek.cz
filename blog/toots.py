@@ -52,7 +52,9 @@ def main(client_id: str, client_secret: str, access_token: str, mastodon_server_
             for reply in descendants:
                 reply_index[reply['id']] = marshall_reply(reply)
         article = dict(url=article_url,
+                       slug=parse_slug(article_url),
                        created_at=toot['created_at'],
+                       toot_url=toot['url'],
                        favourites_count=toot['favourites_count'],
                        replies=sorted(reply_index.values(), key=itemgetter('created_at')))
         article_index[article_url] = article
@@ -79,3 +81,11 @@ def json_dumps_default(o: Any) -> Any:
         return o.isoformat()
     except AttributeError:
         raise TypeError(f'Object of type {o.__class__.__name__} is not JSON serializable')
+
+
+def parse_slug(url: str) -> str:
+    url = url.rstrip('/')
+    prefix = 'https://honzajavorek.cz/blog/'
+    if url.startswith(prefix) and url != prefix:
+        return url[len(prefix):]
+    raise ValueError(f'Invalid URL: {url}')
