@@ -8,12 +8,12 @@ from pelican import signals
 # https://icons.getbootstrap.com/
 COMMENTS_PLACES = {
     'mastodonczech.cz': dict(priority=1, name='Mastodon', icon='mastodon'),
-    't.me': dict(priority=1, name='Telegram', icon='telegram'),
-    'linkedin.com': dict(priority=2, name='LinkedIn', icon='linkedin'),
-    'reddit.com': dict(priority=3, name='Reddit', icon='reddit'),
-    'twitter.com': dict(priority=4, name='Twitter', icon='twitter'),
-    'facebook.com': dict(priority=5, name='Facebook', icon='facebook'),
-    'news.ycombinator.com': dict(priority=6, name='Hacker News', icon='chat'),
+    't.me': dict(priority=2, name='Telegram', icon='telegram'),
+    'linkedin.com': dict(priority=3, name='LinkedIn', icon='linkedin'),
+    'reddit.com': dict(priority=4, name='Reddit', icon='reddit'),
+    'twitter.com': dict(priority=5, name='Twitter', icon='twitter'),
+    'facebook.com': dict(priority=6, name='Facebook', icon='facebook'),
+    'news.ycombinator.com': dict(priority=7, name='Hacker News', icon='chat'),
 }
 
 
