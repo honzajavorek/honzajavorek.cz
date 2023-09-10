@@ -35,8 +35,6 @@ def main(client_id: str, client_secret: str, access_token: str, mastodon_server_
     contents = json.dumps(toots, indent=2, ensure_ascii=False, default=json_dumps_default)
     path_honza.write_text(contents)
 
-    from pprint import pprint
-
     click.echo("Synchronizing replies")
     path_replies = path / 'toots-replies.json'
     try:
