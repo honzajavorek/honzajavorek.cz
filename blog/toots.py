@@ -21,15 +21,15 @@ def main(client_id: str, client_secret: str, access_token: str, mastodon_server_
                         access_token=access_token)
     account_id = mastodon.me()['id']
 
-    click.echo("Synchronizing Honza's toots")
-    path_honza = path / 'toots-honza.json'
+    click.echo("Synchronizing links")
+    path_honza = path / 'toots-links.json'
     try:
         toots = json.loads(path_honza.read_text())
     except FileNotFoundError:
         toot_index = {}
     else:
         toot_index = {toot['id']: toot for toot in toots}
-    for toot in mastodon.account_statuses(account_id, limit=limit):
+    for toot in mastodon.account_statuses(account_id, limit=limit, tagged='links', exclude_replies=True, exclude_reblogs=True):
         toot_index[toot['id']] = marshall_toot(toot)
     toots = sorted(toot_index.values(), key=itemgetter('created_at'), reverse=True)
     contents = json.dumps(toots, indent=2, ensure_ascii=False, default=json_dumps_default)

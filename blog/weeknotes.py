@@ -1,21 +1,22 @@
+import json
 import re
 import itertools
 from pathlib import Path
 import importlib
 import math
-from datetime import date
+from datetime import date, datetime
 import csv
 from operator import itemgetter
 import random
 from urllib.parse import urlparse
 from textwrap import dedent
 
+from lxml import html
 import requests
 import click
 import sqlite_utils
 from strava_offline.cli import cli_sqlite as strava_to_sqlite
 from slugify import slugify
-from telethon.sync import TelegramClient
 
 
 STRAVA_ACTIVITY_TYPES = {
@@ -26,12 +27,12 @@ STRAVA_ACTIVITY_TYPES = {
     'alpineski': 'sjel na lyžích',
 }
 
-TITLES = {
-    'www.facebook.com': '(něco na Facebooku)',
-    'facebook.com': '(něco na Facebooku)',
-    'twitter.com': '(něco na Twitteru)',
-    'mobile.twitter.com': '(něco na Twitteru)'
-}
+# TITLES = {
+#     'www.facebook.com': '(něco na Facebooku)',
+#     'facebook.com': '(něco na Facebooku)',
+#     'twitter.com': '(něco na Twitteru)',
+#     'mobile.twitter.com': '(něco na Twitteru)'
+# }
 
 
 @click.command(context_settings={'ignore_unknown_options': True})
@@ -40,9 +41,7 @@ TITLES = {
 @click.option('--title-prefix', default='Týdenní poznámky')
 @click.option('--jobs-api-url', default='https://junior.guru/api/jobs.csv')
 @click.option('--settings-module', default='pelicanconf', type=importlib.import_module)
-@click.option('--telegram-channel', default='honzajavorekcz')
-@click.option('--telegram-app-api-id', envvar='TELEGRAM_APP_API_ID', prompt=True, hide_input=True, type=int)
-@click.option('--telegram-app-api-hash', envvar='TELEGRAM_APP_API_HASH', prompt=True, hide_input=True)
+@click.option('--links-path', default='content/data/toots-links.json', type=click.Path(exists=True, path_type=Path))
 @click.option('--strava-skip-sync', is_flag=True, default=False)
 @click.option('--strava-client-id', envvar='STRAVA_CLIENT_ID', prompt=True, hide_input=True)
 @click.option('--strava-client-secret', envvar='STRAVA_CLIENT_SECRET', prompt=True, hide_input=True)
@@ -50,8 +49,7 @@ TITLES = {
 @click.option('--open/--no-open', default=True)
 @click.pass_context
 def main(context, title, content_path, title_prefix, jobs_api_url, settings_module,
-         telegram_channel, telegram_app_api_id, telegram_app_api_hash,
-         strava_skip_sync, strava_client_id, strava_client_secret,
+         links_path, strava_skip_sync, strava_client_id, strava_client_secret,
          debug, open):
     today = date.today()
     today_cz = f'{today:%-d}. {today:%-m}.'
@@ -77,9 +75,8 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
     jobs_text = "Aktuální nabídky práce pro juniory: "
     jobs_text += ', '.join([f"[{job['company_name']}]({job['url']})" for job in jobs.values()])
 
-    # telegram articles
-    articles = get_articles(last_weeknotes_slug, telegram_channel,
-                            telegram_app_api_id, telegram_app_api_hash)
+    # mastodon links
+    links = get_links(last_weeknotes_date, json.loads(links_path.read_text()))
 
     # strava
     strava_defaults = {param.name: param.default for param
@@ -137,13 +134,13 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
 
         ## Zaujalo mě
 
-        Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+        Když na něco narazím a líbí se mi to, sdílím to na [svém Mastodonu](https://mastodonczech.cz/@honzajavorek).
         Od posledních poznámek jsem sdílel:
 
     ''').lstrip()
-    for article in articles:
-        content += f"- [{article['title']}]({article['url']})"
-        content += f"<br>{article['comment']}" if article['comment'] else ''
+    for link in links:
+        content += f"- [{link['title']}]({link['url']})"
+        content += f"<br>{link['comment']}" if link['comment'] else ''
         content += '\n'
 
     if debug:
@@ -156,46 +153,44 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
             click.edit(filename=path)
 
 
-def get_articles(last_weeknotes_slug, telegram_channel, telegram_app_api_id, telegram_app_api_hash):
-    articles = []
-    with TelegramClient('_weeknotes', telegram_app_api_id, telegram_app_api_hash) as telegram:
-        channel = telegram.get_entity(telegram_channel)
-        for message in telegram.iter_messages(channel):
-            if not message.message:
-                continue
-            if last_weeknotes_slug in message.message:
-                break
-            else:
-                try:
-                    article_url = message.media.webpage.url
-                    article_title = get_title_from_webpage(message.media.webpage)
-                except AttributeError:
-                    article_url = re.search(r'https?://\S+', message.message).group(0)
-                    article_title = get_title_from_url(article_url)
-                article_comment = message.message.strip().rstrip(article_url).strip()
-                if 'overcast.fm' in article_url:
-                    article_url = get_canonical_overcast_url(article_url)
-                articles.append(dict(title=article_title,
-                                     url=article_url,
-                                     comment=article_comment))
-    return articles
+def get_links(since_date: date, links: list):
+    for link in links:
+        if datetime.fromisoformat(link['created_at']).date() < since_date:
+            continue
+
+        card_url = link['card']['url']
+        if 'overcast.fm' in card_url:
+            url = get_canonical_overcast_url(card_url)
+        else:
+            url = card_url
+
+        html_tree = html.fromstring(link['content'])
+        for element in html_tree.cssselect(f'a[href^="{card_url}"]'):
+            element.getparent().remove(element)
+        for element in html_tree.cssselect('a[href^="https://mastodonczech.cz/tags/"]'):
+            element.getparent().remove(element)
+        comment = html_tree.text_content().strip()
+
+        yield dict(title=link['card']['title'],
+                    comment=comment,
+                    url=url)
 
 
-def get_title_from_webpage(webpage):
-    try:
-        return TITLES[urlparse(webpage.url).hostname]
-    except KeyError:
-        return webpage.title
+# def get_title_from_webpage(webpage):
+#     try:
+#         return TITLES[urlparse(webpage.url).hostname]
+#     except KeyError:
+#         return webpage.title
 
 
-def get_title_from_url(url):
-    response = requests.get(url, stream=True)
-    response.raise_for_status()
-    for line in response.iter_lines(decode_unicode=True):
-        match = re.search(r'<title>([^<]+)', str(line), re.I)
-        if match:
-            return match.group(1).strip()
-    return '(bez titulku)'
+# def get_title_from_url(url):
+#     response = requests.get(url, stream=True)
+#     response.raise_for_status()
+#     for line in response.iter_lines(decode_unicode=True):
+#         match = re.search(r'<title>([^<]+)', str(line), re.I)
+#         if match:
+#             return match.group(1).strip()
+#     return '(bez titulku)'
 
 
 def get_canonical_overcast_url(url):
