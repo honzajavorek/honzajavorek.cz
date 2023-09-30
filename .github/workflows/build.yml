@@ -51,9 +51,9 @@ jobs:
       - name: Save to Git
         uses: EndBug/add-and-commit@v9
         with:
+          fetch: false
           add: ./content/data
           message: "sync toots 🐘"
-          fetch: false
 
       - name: Pelican Build
         run: poetry run blog build
@@ -86,6 +86,6 @@ jobs:
       - name: Save to Git
         uses: EndBug/add-and-commit@v9
         with:
+          pull: --rebase
           add: ./content
           message: "add link to comments 💬"
-          fetch: false
