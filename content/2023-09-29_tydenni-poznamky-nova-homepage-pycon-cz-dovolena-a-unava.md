@@ -2,6 +2,7 @@ Title: Týdenní poznámky: Nová homepage, PyCon CZ, dovolená a únava
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/286
 Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/111150368673873389
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
