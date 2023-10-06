@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Tipy pro nováčky v klubu, v2
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/288
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/111189502006049049
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-09-29_tydenni-poznamky-nova-homepage-pycon-cz-dovolena-a-unava.md) už utekl nějaký ten týden (29. 9. až 6. 10.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
