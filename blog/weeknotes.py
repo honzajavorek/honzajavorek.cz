@@ -49,14 +49,20 @@ TITLES = {
 @click.option('--strava-skip-sync', is_flag=True, default=False)
 @click.option('--strava-client-id', envvar='STRAVA_CLIENT_ID', prompt=True, hide_input=True)
 @click.option('--strava-client-secret', envvar='STRAVA_CLIENT_SECRET', prompt=True, hide_input=True)
+@click.option('--mastodon-client_id', envvar='MASTODON_CLIENT_ID')
+@click.option('--mastodon-client_secret', envvar='MASTODON_CLIENT_SECRET')
+@click.option('--mastodon-access_token', envvar='MASTODON_ACCESS_TOKEN')
 @click.option('--debug/--no-debug', default=False)
 @click.option('--open/--no-open', default=True)
 @click.pass_context
 def main(context, title, content_path, title_prefix, jobs_api_url, settings_module,
          links_path, strava_skip_sync, strava_client_id, strava_client_secret,
+         mastodon_client_id, mastodon_client_secret, mastodon_access_token,
          debug, open):
     context.invoke(update_command)
-    context.invoke(toots_command)
+    context.invoke(toots_command, client_id=mastodon_client_id,
+                                  client_secret=mastodon_client_secret,
+                                  access_token=mastodon_access_token)
 
     today = date.today()
     today_cz = f'{today:%-d}. {today:%-m}.'
@@ -67,7 +73,6 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
     last_weeknotes_path = weeknotes_paths[-1]
     last_weeknotes_date = date.fromisoformat(last_weeknotes_path.stem[:10])
     last_weeknotes_date_cz = f'{last_weeknotes_date:%-d}. {last_weeknotes_date:%-m}.'
-    last_weeknotes_slug = last_weeknotes_path.stem[11:]
     prefix = f'{title_prefix}: '
 
     # jobs
