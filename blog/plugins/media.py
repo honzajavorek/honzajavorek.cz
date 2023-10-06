@@ -76,6 +76,9 @@ def img_to_figure(img):
 
 
 def blockquote_to_figure(blockquote):
+    if 'blockquote' in blockquote.classes:
+        return  # already processed or manually formatted
+
     figure = element('figure', classes=['figure', 'figure-blockquote'])
     wrap_element(blockquote, figure)
 
