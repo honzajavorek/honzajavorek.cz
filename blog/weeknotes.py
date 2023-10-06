@@ -11,6 +11,7 @@ import random
 from urllib.parse import urlparse
 from textwrap import dedent
 
+from lxml.html import soupparser as html_soup
 from lxml import html
 import requests
 import click
@@ -27,12 +28,12 @@ STRAVA_ACTIVITY_TYPES = {
     'alpineski': 'sjel na lyžích',
 }
 
-# TITLES = {
-#     'www.facebook.com': '(něco na Facebooku)',
-#     'facebook.com': '(něco na Facebooku)',
-#     'twitter.com': '(něco na Twitteru)',
-#     'mobile.twitter.com': '(něco na Twitteru)'
-# }
+TITLES = {
+    'www.facebook.com': '(něco na Facebooku)',
+    'facebook.com': '(něco na Facebooku)',
+    'twitter.com': '(něco na Twitteru)',
+    'mobile.twitter.com': '(něco na Twitteru)'
+}
 
 
 @click.command(context_settings={'ignore_unknown_options': True})
@@ -158,39 +159,53 @@ def get_links(since_date: date, links: list):
         if datetime.fromisoformat(link['created_at']).date() < since_date:
             continue
 
-        card_url = link['card']['url']
-        if 'overcast.fm' in card_url:
-            url = get_canonical_overcast_url(card_url)
-        else:
-            url = card_url
+        html_tree = html_soup.fromstring(link['content'])
+        title = None
 
-        html_tree = html.fromstring(link['content'])
-        for element in html_tree.cssselect(f'a[href^="{card_url}"]'):
+        if card := link['card']:
+            link_url = card['url']
+            title = card['title']
+        else:
+            link_url = html_tree.cssselect('a')[0].get('href')
+
+        if 'overcast.fm' in link_url:
+            url = get_canonical_overcast_url(link_url)
+        else:
+            url = link_url
+
+        if title is None:
+            title = get_title_from_url(link_url)
+
+        for element in html_tree.cssselect(f'a[href^="{link_url}"]'):
             element.getparent().remove(element)
         for element in html_tree.cssselect('a[href^="https://mastodonczech.cz/tags/"]'):
             element.getparent().remove(element)
         comment = html_tree.text_content().strip()
 
-        yield dict(title=link['card']['title'],
-                    comment=comment,
-                    url=url)
+        yield dict(title=title,
+                   comment=comment,
+                   url=url)
 
 
-# def get_title_from_webpage(webpage):
-#     try:
-#         return TITLES[urlparse(webpage.url).hostname]
-#     except KeyError:
-#         return webpage.title
+def get_title_from_webpage(webpage):
+    try:
+        return TITLES[urlparse(webpage.url).hostname]
+    except KeyError:
+        return webpage.title
 
 
-# def get_title_from_url(url):
-#     response = requests.get(url, stream=True)
-#     response.raise_for_status()
-#     for line in response.iter_lines(decode_unicode=True):
-#         match = re.search(r'<title>([^<]+)', str(line), re.I)
-#         if match:
-#             return match.group(1).strip()
-#     return '(bez titulku)'
+def get_title_from_url(url):
+    response = requests.get(url, stream=True, headers={'User-Agent': 'HonzaJavorekBot (+https://honzajavorek.cz)'})
+    try:
+        response.raise_for_status()
+    except requests.exceptions.HTTPError:
+        pass
+    else:
+        for line in response.iter_lines(decode_unicode=True):
+            match = re.search(r'<title>([^<]+)', str(line), re.I)
+            if match:
+                return match.group(1).strip()
+    return '(bez titulku)'
 
 
 def get_canonical_overcast_url(url):
