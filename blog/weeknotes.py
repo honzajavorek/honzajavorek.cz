@@ -19,6 +19,9 @@ import sqlite_utils
 from strava_offline.cli import cli_sqlite as strava_to_sqlite
 from slugify import slugify
 
+from blog.update import main as update_command
+from blog.toots import main as toots_command
+
 
 STRAVA_ACTIVITY_TYPES = {
     'run': 'naběhal',
@@ -52,6 +55,9 @@ TITLES = {
 def main(context, title, content_path, title_prefix, jobs_api_url, settings_module,
          links_path, strava_skip_sync, strava_client_id, strava_client_secret,
          debug, open):
+    context.invoke(update_command)
+    context.invoke(toots_command)
+
     today = date.today()
     today_cz = f'{today:%-d}. {today:%-m}.'
     today_iso = today.isoformat()

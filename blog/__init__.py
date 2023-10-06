@@ -21,6 +21,7 @@ from blog.weeknotes import main as weeknotes
 from blog.media import main as media
 from blog.kocarkino import main as kocarkino
 from blog.reading import main as reading
+from blog.update import main as update
 
 
 @click.group()
@@ -35,6 +36,7 @@ main.add_command(media, 'media')
 main.add_command(strava, 'strava')
 main.add_command(kocarkino, 'kocarkino')
 main.add_command(reading, 'reading')
+main.add_command(update, 'update')
 
 
 @main.command()
@@ -143,17 +145,4 @@ def dev_open(path, wait_sec):
 def test(pytest_args):
     code = pytest.main(list(pytest_args))
     if code:
-        raise click.Abort()
-
-
-@main.command()
-@click.option("--pull/--no-pull", default=True)
-def update(pull):
-    try:
-        if pull:
-            subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=True)
-        subprocess.run(["poetry", "install"], check=True)
-        subprocess.run(["npm", "install", "--prefix=./theme"], check=True)
-        shutil.rmtree("public", ignore_errors=True)
-    except subprocess.CalledProcessError:
         raise click.Abort()
