@@ -180,7 +180,7 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
 
 def get_jg_toots(since_date: date, toots: list):
     for toot in toots:
-        if datetime.fromisoformat(link['created_at']).date() < since_date:
+        if datetime.fromisoformat(toot['created_at']).date() < since_date:
             continue
         yield dict(content=toot['content'],
                    url=toot['url'])
