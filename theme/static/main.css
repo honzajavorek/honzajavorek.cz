@@ -6,6 +6,7 @@
   --hj-small-font-size: .8rem;
   --hj-telegram: #0088cc;
   --hj-mastodon: #563ACC;
+  --hj-twitter: #1da1f2;
   --hj-rss: #e05c1f;
   --jg-yellow: #fffa72;
   --jg-blue: #0f62fe;
@@ -17,7 +18,6 @@
   --bs-link-hover-color: var(--hj-green);
   --bs-link-hover-color-rgb: var(--hj-green-rgb);
   --bs-code-color: #0a58ca;
-  --tw-blue: #1da1f2;
 }
 
 body {
@@ -289,11 +289,19 @@ small,
 }
 
 .figure-tweet {
-  border-color: var(--tw-blue);
+  border-color: var(--hj-twitter);
 }
 
 .blockquote-tweet a {
-  color: var(--tw-blue);
+  color: var(--hj-twitter);
+}
+
+.figure-toot {
+  border-color: var(--hj-mastodon);
+}
+
+.blockquote-toot a {
+  color: var(--hj-mastodon);
 }
 
 .blockquote-tweet img {

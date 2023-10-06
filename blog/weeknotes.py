@@ -46,6 +46,7 @@ TITLES = {
 @click.option('--jobs-api-url', default='https://junior.guru/api/jobs.csv')
 @click.option('--settings-module', default='pelicanconf', type=importlib.import_module)
 @click.option('--links-path', default='content/data/toots-links.json', type=click.Path(exists=True, path_type=Path))
+@click.option('--jg-toots-path', default='content/data/toots-jg.json', type=click.Path(exists=True, path_type=Path))
 @click.option('--strava-skip-sync', is_flag=True, default=False)
 @click.option('--strava-client-id', envvar='STRAVA_CLIENT_ID', prompt=True, hide_input=True)
 @click.option('--strava-client-secret', envvar='STRAVA_CLIENT_SECRET', prompt=True, hide_input=True)
@@ -56,7 +57,8 @@ TITLES = {
 @click.option('--open/--no-open', default=True)
 @click.pass_context
 def main(context, title, content_path, title_prefix, jobs_api_url, settings_module,
-         links_path, strava_skip_sync, strava_client_id, strava_client_secret,
+         links_path, jg_toots_path,
+         strava_skip_sync, strava_client_id, strava_client_secret,
          mastodon_client_id, mastodon_client_secret, mastodon_access_token,
          debug, open):
     context.invoke(update_command)
@@ -89,6 +91,15 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
 
     # mastodon links
     links = get_links(last_weeknotes_date, json.loads(links_path.read_text()))
+
+    # mastodon jg
+    jg_toots = get_jg_toots(last_weeknotes_date, json.loads(jg_toots_path.read_text()))
+    jg_toots_text = '\n\n'.join([f"""
+<figure class="figure figure-blockquote figure-toot">
+<blockquote class="blockquote blockquote-toot">{toot['content']}</blockquote>
+<figcaption class="blockquote-footer">já <a href="{toot['url']}">na Mastodonu</a></figcaption>
+</figure>
+    """.strip() for toot in jg_toots])
 
     # strava
     strava_defaults = {param.name: param.default for param
@@ -125,6 +136,8 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
         **Plány:** Četli jste, co [teď plánuji]({{filename}}2023-08-07_letni-pit-stop.md)?
         Svůj postup zaznamenávám do [tabulky na GitHubu](https://github.com/orgs/juniorguru/projects/3/).
         </div>
+
+        {jg_toots_text}
 
         ## Další
 
@@ -163,6 +176,14 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
         path.write_text(content)
         if open:
             click.edit(filename=path)
+
+
+def get_jg_toots(since_date: date, toots: list):
+    for toot in toots:
+        if datetime.fromisoformat(link['created_at']).date() < since_date:
+            continue
+        yield dict(content=toot['content'],
+                   url=toot['url'])
 
 
 def get_links(since_date: date, links: list):

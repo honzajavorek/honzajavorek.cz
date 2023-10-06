@@ -22,9 +22,9 @@ def main(client_id: str, client_secret: str, access_token: str, mastodon_server_
     account_id = mastodon.me()['id']
 
     click.echo("Synchronizing links")
-    path_honza = path / 'toots-links.json'
+    path_links = path / 'toots-links.json'
     try:
-        toots = json.loads(path_honza.read_text())
+        toots = json.loads(path_links.read_text())
     except FileNotFoundError:
         toot_index = {}
     else:
@@ -33,7 +33,21 @@ def main(client_id: str, client_secret: str, access_token: str, mastodon_server_
         toot_index[toot['id']] = marshall_toot(toot)
     toots = sorted(toot_index.values(), key=itemgetter('created_at'), reverse=True)
     contents = json.dumps(toots, indent=2, ensure_ascii=False, default=json_dumps_default)
-    path_honza.write_text(contents)
+    path_links.write_text(contents)
+
+    click.echo("Synchronizing junior.guru toots")
+    path_jg = path / 'toots-jg.json'
+    try:
+        toots = json.loads(path_jg.read_text())
+    except FileNotFoundError:
+        toot_index = {}
+    else:
+        toot_index = {toot['id']: toot for toot in toots}
+    for toot in mastodon.account_statuses(account_id, limit=limit, tagged='juniorguru', exclude_replies=True, exclude_reblogs=True):
+        toot_index[toot['id']] = marshall_toot(toot)
+    toots = sorted(toot_index.values(), key=itemgetter('created_at'), reverse=True)
+    contents = json.dumps(toots, indent=2, ensure_ascii=False, default=json_dumps_default)
+    path_jg.write_text(contents)
 
     click.echo("Synchronizing replies")
     path_replies = path / 'toots-replies.json'
