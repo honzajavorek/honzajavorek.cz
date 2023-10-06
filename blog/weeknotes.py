@@ -95,10 +95,10 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
     # mastodon jg
     jg_toots = get_jg_toots(last_weeknotes_date, json.loads(jg_toots_path.read_text()))
     jg_toots_text = '\n\n'.join([f"""
-<figure class="figure figure-blockquote figure-toot">
-<blockquote class="blockquote blockquote-toot">{toot['content']}</blockquote>
-<figcaption class="blockquote-footer">já <a href="{toot['url']}">na Mastodonu</a></figcaption>
-</figure>
+        <figure class="figure figure-blockquote figure-toot">
+        <blockquote class="blockquote blockquote-toot">{toot['content']}</blockquote>
+        <figcaption class="blockquote-footer">já <a href="{toot['url']}">na Mastodonu</a></figcaption>
+        </figure>
     """.strip() for toot in jg_toots])
 
     # strava
