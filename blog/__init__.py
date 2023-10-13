@@ -1,4 +1,3 @@
-import shutil
 import time
 import re
 import json
@@ -22,6 +21,7 @@ from blog.media import main as media
 from blog.kocarkino import main as kocarkino
 from blog.reading import main as reading
 from blog.update import main as update
+from blog.wait import main as wait
 
 
 @click.group()
@@ -37,6 +37,7 @@ main.add_command(strava, 'strava')
 main.add_command(kocarkino, 'kocarkino')
 main.add_command(reading, 'reading')
 main.add_command(update, 'update')
+main.add_command(wait, 'wait')
 
 
 @main.command()
@@ -59,10 +60,9 @@ def build(content_path, settings_module, debug):
 @main.command()
 @click.argument('title')
 @click.option('--path', 'content_path', default='content', type=click.Path(exists=True, path_type=Path))
-@click.option('--settings-module', default='publishconf', type=importlib.import_module)
 @click.option('--debug/--no-debug', default=False)
 @click.option('--open/--no-open', default=True)
-def new(title, content_path, settings_module, debug, open):
+def new(title, content_path, debug, open):
     today = date.today()
     today_iso = today.isoformat()
     content = dedent(f'''

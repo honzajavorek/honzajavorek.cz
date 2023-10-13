@@ -1,5 +1,6 @@
 Title: Notify yourself from Python
 Image: images/luis-perdigao-JMabq3k4gk8-unsplash.jpg
+Lang: en
 Twitter-Comments: https://twitter.com/honzajavorek/status/1262378532476420096
 Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10158123579887707
 LinkedIn-Comments: https://www.linkedin.com/posts/honzajavorek_notify-yourself-from-python-honza-javorek-activity-6668143772011896832-9cRv

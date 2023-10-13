@@ -112,18 +112,19 @@ THEME_STATIC_PATHS = [
 # Plugins
 PLUGIN_PATHS = ['blog/plugins']
 PLUGINS = [
-    'appearances',
-    'custom_translation_id',
-    'custom_feed_meta',
-    'code_blocks',
     'alternates',
+    'appearances',
+    'code_blocks',
     'comments',
-    'tables',
+    'custom_feed_meta',
+    'custom_translation_id',
+    'database',
     'headings',
     'media',
     'readtime',
     'replies',
     'seealso',
+    'tables',
 ]
 CUSTOM_FEED_META = lambda settings: {
     'title': settings['BLOGNAME'],
@@ -134,3 +135,4 @@ CUSTOM_FEED_META = lambda settings: {
     'author_link': settings['SITEURL'],
     'feed_copyright': f"{settings['COPYRIGHT']} {settings['AUTHOR']} <{settings['SITEURL']}>",
 }
+DB_PATH = 'blog.db'

@@ -1,5 +1,6 @@
 Title: Monitoring performance with Lighthouse and CircleCI
 Image: images/philippe-d-mAxfIDdiE7o-unsplash.jpg
+Lang: en
 Twitter-Comments: https://twitter.com/honzajavorek/status/1260112226243022848
 Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10158104366372707
 HackerNews-Comments: https://news.ycombinator.com/item?id=23151520

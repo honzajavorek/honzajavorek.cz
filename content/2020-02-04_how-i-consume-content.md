@@ -1,5 +1,6 @@
 Title: How I consume content
 Image: images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg
+Lang: en
 Twitter-Comments: https://twitter.com/honzajavorek/status/1224766396044804096
 Facebook-Comments: https://www.facebook.com/honzajavorek/posts/10157783904067707
 
