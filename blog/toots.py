@@ -71,6 +71,7 @@ def main(client_id: str, client_secret: str, access_token: str, mastodon_server_
                        created_at=toot['created_at'],
                        toot_url=toot['url'],
                        favourites_count=toot['favourites_count'],
+                       reblogs_count=toot['reblogs_count'],
                        replies=sorted(reply_index.values(), key=itemgetter('created_at')))
         article_index[article_url] = article
     articles = sorted(article_index.values(), key=itemgetter('created_at'), reverse=True)

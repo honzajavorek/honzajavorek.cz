@@ -96,9 +96,42 @@
         {%- endfor %}
       </li>
       {% endif %}
+      {% if article.replies_url and article.replies_stars %}
+      <li class="info-stars">
+        <i class="bi bi-star"></i>
+        <a href="{{ article.replies_url }}" target="_blank" rel="noopener">
+          {{ article.replies_stars }}
+          {% if article.lang == 'cs' %}
+            hvězdič
+            {%- if article.replies_stars == 1 -%}
+              ka
+            {%- elif article.replies_stars > 1 and article.replies_stars < 5 -%}
+              ky
+            {%- else -%}
+              ek
+            {%- endif -%}
+          {% else %}
+            star{% if article.replies_stars != 1 %}s{% endif %}
+          {% endif %}
+        </a>
+      </li>
+      {% endif %}
+      {% if article.replies_url and article.replies_reblogs %}
+      <li class="info-reblogs">
+        <i class="bi bi-arrow-repeat"></i>
+        <a href="{{ article.replies_url }}" target="_blank" rel="noopener">
+          {{ article.replies_reblogs }}
+          {% if article.lang == 'cs' %}
+            sdílení
+          {% else %}
+            share{% if article.replies_reblogs != 1 %}s{% endif %}
+          {% endif %}
+        </a>
+      </li>
+      {% endif %}
       <li class="info-analytics">
         <i class="bi bi-graph-up"></i>
-        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3A{{ article.url.rstrip('/')|urlencode }}&interval=week&start={{ article.date.isoformat() }}&end=today">
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3A{{ article.url.rstrip('/')|urlencode }}&interval=week&start={{ article.date.isoformat() }}&end=today" target="_blank" rel="noopener">
           {% if article.lang == 'cs' %}
             Návštěvnost
           {% else %}
