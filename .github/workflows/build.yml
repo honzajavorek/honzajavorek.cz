@@ -86,6 +86,6 @@ jobs:
       - name: Save to Git
         uses: EndBug/add-and-commit@v9
         with:
-          pull: --rebase
+          pull: --rebase --autostash
           add: ./content
           message: "add link to comments 💬"
