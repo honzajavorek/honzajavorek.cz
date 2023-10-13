@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
   <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
       <meta charset="utf-8">
     <link rel="canonical" href="https://honzajavorek.cz/blog/how-i-deploy/">
@@ -55,7 +55,7 @@
   <h1 class="title display-5">
     How I deploy
     <small class="permalink">
-      <a href="https://honzajavorek.cz/blog/how-i-deploy/" rel="bookmark" title="Odkaz na tento článek">
+      <a href="https://honzajavorek.cz/blog/how-i-deploy/" rel="bookmark" title="Link to this article">
         <i class="bi bi-link-45deg"></i>
       </a>
     </small>
@@ -65,18 +65,18 @@
       <li class="info-published">
         <i class="bi bi-calendar"></i>
         <time datetime="2020-01-23T00:00:00+01:00">
-          23. 1. 2020
+          Jan 23, 2020
         </time>
       </li>
       <li class="info-readtime">
         <i class="bi bi-stopwatch"></i>
         18
-          min čtení
+          min of reading
       </li>
       <li class="info-analytics">
         <i class="bi bi-graph-up"></i>
-        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/how-i-deploy&interval=week&start=2020-01-23T00:00:00+01:00&end=today">
-            Návštěvnost
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/how-i-deploy&interval=week&start=2020-01-23T00:00:00+01:00&end=today" target="_blank" rel="noopener">
+            Stats
         </a>
       </li>
     </ul>
@@ -95,7 +95,7 @@ Photo by <a href="https://unsplash.com/@andasta">Andy Li</a></figcaption></figur
 <li><strong>Easy to maintain.</strong> If something breaks, I can fix it a week or two later, and the website stays up meanwhile.</li>
 </ul>
 <p>What I should probably also mention is that all of my projects are <strong>Open Source repositories hosted on GitHub</strong>. Even my most serious and partially commercial project, <a href="https://junior.guru/">junior.guru</a>, is <a href="https://github.com/honzajavorek/junior.guru">open to everyone</a>. It makes my life a lot easier as many services have a free offering for public projects. I have little to no experience with managing private personal projects, so I can't advise about that.</p>
-<h2 id="content-heavy-websites">Content-heavy websites<small class="permalink"><a href="#content-heavy-websites" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<h2 id="content-heavy-websites">Content-heavy websites<small class="permalink"><a href="#content-heavy-websites" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>In case I need to deploy a website, which has mostly text and no dynamic features, I make sure it is a <em>static</em> website. There's no reason why such a project shouldn't be a static website, and the fact it is one simplifies <em>everything</em>.</p>
 <p>Currently, my favorite place where I put my static websites is <a href="https://zeit.co/">ZEIT Now</a>. Quickstart:</p>
 <pre class="highlight"><code><span></span><code>$<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>now<span class="w"> </span>--global
@@ -109,13 +109,13 @@ $<span class="w"> </span>now<span class="w">  </span><span class="c1"># done, yo
 <p>Before I discovered Now, I used to put my projects to <a href="https://pages.github.com/">GitHub Pages</a>. There are multiple ways how to use them. They offer built-in <a href="https://jekyllrb.com/">Jekyll</a>, so it's probably <strong>the easiest way someone can make a website using GitHub, without messing with technology way too much</strong>. I recommended it to my brother when he wanted a solution for his <a href="https://github.com/javorekm/arduino-deti">small site with ideas on Arduino projects with children</a>, and I still recommend it for similar use cases.</p>
 <p>Another way to use GitHub Pages is to skip Jekyll and manage the files yourself. You push your static files to a branch in your GitHub repo and GitHub Pages put it to the internet as it is. This approach still survives in many projects I previously touched, but I find Now superior these days.</p>
 <p><a href="https://www.netlify.com/">Netlify</a> is, from what I understand, ZEIT's main competitor. I've never found time to try it out, and with Now in my toolbelt, I never really had a reason. Go and explore it for yourself.</p>
-<h2 id="dynamic-content-heavy-websites">Dynamic content-heavy websites<small class="permalink"><a href="#dynamic-content-heavy-websites" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<h2 id="dynamic-content-heavy-websites">Dynamic content-heavy websites<small class="permalink"><a href="#dynamic-content-heavy-websites" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>You may think that your website <strong>can't be static</strong> because it contains some dynamic elements. Well, some people find excuses, some people look for solutions. Let's say your website needs to download calendar data from multiple sources, and then display it aggregated. Something like our Czech Python user group <a href="https://python.cz/en/events/#events">events page</a>. That's pretty dynamic content, right?</p>
 <p>The key here is to realize <em>how much</em> dynamic you need the page to be. The events page? Do I need to serve every visitor of the website with freshly baked aggregated events? Every second? Nah! I'm okay if it gets <strong>refreshed daily</strong>.</p>
 <p>So you can have many projects as a static website, no problem. You need a <strong>static site generator</strong>, and you need to set up a <strong>scheduler</strong> to re-generate the website for you on the desired interval.</p>
 <p>I experiment with this approach since 2012 when I employed it as an affordable and minimalistic way to deploy my hobby project <a href="https://github.com/zitkino/zitkino.cz">Žít kino</a>. Today it's becoming a trendy new approach to design and deploy websites. Wow!</p>
 <figure class="figure"><img alt="Doge Meme" src="https://honzajavorek.cz/images/static-site-doge.png" class="img-fluid figure-img rounded"></figure>
-<h3 id="static-site-generators">Static site generators<small class="permalink"><a href="#static-site-generators" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
+<h3 id="static-site-generators">Static site generators<small class="permalink"><a href="#static-site-generators" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>There's a site full of static site generators, <a href="https://www.staticgen.com/">staticgen.com</a>. I already mentioned Jekyll, which you get with GitHub Pages out of the box. Go browse the list and choose something you like.</p>
 <figure class="figure"><img alt="StaticGen.com" src="https://honzajavorek.cz/images/staticgen.png" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
 The staticgen.com website is hosted and maintained by Netlify, so you may notice Netlify ads all over the content, but they're pretty noninvasive. Interestingly, <a href="https://staticgen.org">staticgen.org</a> leads to a ZEIT Now landing page :D I sense a subtle war.</figcaption></figure>
@@ -124,7 +124,7 @@ The staticgen.com website is hosted and maintained by Netlify, so you may notice
 <p>If you're a boring old fart like me or if you don't want to spend the rest of your life regularly upgrading your 4200 npm dependencies on each of your hobby projects (remember the <strong>Easy to maintain</strong> requirement?), skip it. I'd say the JavaScript ecosystem is great and it drives interesting innovations, but it's a nightmare to maintain if you can't attend to your projects on a very regular basis.</p>
 <p>What do I do instead? I create a <strong>good old Python website</strong> using <a href="https://flask.palletsprojects.com/">Flask</a>, and then I use <a href="https://pythonhosted.org/Frozen-Flask/">Frozen-Flask</a> to turn the app into a static website. I can write <strong>good old HTML</strong> using <a href="https://palletsprojects.com/p/jinja/">Jinja2</a>, which is what old farts like me enjoy to do, and despite developing a dynamic Python app, in the end, I have a directory full of static HTML, CSS, and images, which I can easily deploy anywhere.</p>
 <p>A lot of projects I started are using this approach, especially the ones I made for the Czech Python user group, such as <a href="https://github.com/pyvec/python.cz/">python.cz</a> or <a href="https://github.com/pyvec/pyvec.org/">pyvec.org</a>. As I mentioned, before I discovered ZEIT Now, I used to deploy to GitHub Pages, so that's what these projects use. I found <a href="https://github.com/davisp/ghp-import">ghp-import</a> to be a handy tool for getting your static files to GitHub. As the combination of Frozen-Flask and ghp-import started spreading across the Czech Python user group websites, my friends packaged the deployment process into a cute tool called <a href="https://github.com/pyvec/elsa/">Elsa</a>.</p>
-<h3 id="schedulers">Schedulers<small class="permalink"><a href="#schedulers" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
+<h3 id="schedulers">Schedulers<small class="permalink"><a href="#schedulers" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>You might have heard about <a href="https://en.wikipedia.org/wiki/Continuous_integration">continuous integration</a>, often shortened to CI. I won't go deep into explaining what it is, because in this case, I don't necessarily follow the <em>practice</em> of continuous integration. <strong>I take the CI tooling and abuse it so it works as a scheduler for me.</strong> You might have noticed the idea in my <a href="https://honzajavorek.cz/blog/courting-haskell/">previous article about learning Haskell</a>.</p>
 <p>My favorite service providing CI tooling is <a href="https://circleci.com/">CircleCI</a>. It has a very good free offering for Open Source projects, which now includes <a href="https://circleci.com/build-environments/windows/">Windows builds</a> (free for Open Source! OMG! I'm already <a href="https://github.com/honzajavorek/cojeapi/blob/d2ea2d9d928c46141e30fbd9fc5e1b4779f5f7ca/.circleci/config.yml#L24">using it</a>!), workflows, and whatnot. Moreover, they have excellent docs on everything. Despite the fact it gets configured by not-exactly-short YAML files, I happily play with it like I used to play with LEGO bricks in my childhood. Look, look, I built a castle!</p>
 <figure class="figure"><img alt="CircleCI madness" src="https://honzajavorek.cz/images/circleci-madness.png" class="img-fluid figure-img rounded"></figure>
@@ -134,26 +134,26 @@ The staticgen.com website is hosted and maintained by Netlify, so you may notice
 <p>In the past I used to roll with <strong>Travis CI</strong>, like everyone else in the Open Source world, but compared to CircleCI, it's now slow, unreliable, and the configuration is a pure hell of duct-taping random stuff together. Also, the <a href="https://docs.travis-ci.com/user/cron-jobs/">scheduler they provide</a> is not as flexible. They got acquired in 2019 and then <a href="https://twitter.com/ReinH/status/1098663375985229825">terminated a lot of people</a>, so who knows in which state the business is. RIP, I guess. Thanks for teaching the Open Source world what CI is!</p>
 <p>One brilliant thing about ZEIT Now or Netlify is that they offer a way to <strong>trigger a re-build of your website if something happens</strong>. This is usually called webhooks or <a href="https://zeit.co/docs/v2/more/deploy-hooks">deploy hooks</a>. So apart from having the site re-built at least once per day, you can integrate things so your project also gets re-built e.g. after someone tweets, submits a form, publishes an article, you name it.</p>
 <p>A convenient side-effect of this architecture is that if there's a bug or outage of a 3rd party service, your website stays resilient. Yes, your deploy fails, your build is red, <strong>the site won't get the latest update, but it's up!</strong> You have days, possibly weeks to fix it, while your users can still access the last successfully deployed version of your project.</p>
-<h2 id="blog">Blog<small class="permalink"><a href="#blog" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<h2 id="blog">Blog<small class="permalink"><a href="#blog" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>I consider a blog to be a special case of a static site, you just need to drop comments. Many <a href="https://www.staticgen.com/">static site generators</a> are in fact <strong>static blog generators</strong>, or at least they started as blog generators and then evolved (the same way WordPress did).</p>
 <p>They all work the same way. You have a directory where you put text files, each of them representing an article on your blog. Then you run a CLI program that reads the files and produces HTML, CSS, etc. into an output directory. Then you deploy the output directory as a static site.</p>
 <p><strong>I'm personally happy with <a href="https://docs.getpelican.com/">Pelican</a>.</strong> <a href="https://honzajavorek.cz/blog/reviving-my-blog/">Since December</a> I even use its <a href="https://docs.getpelican.com/en/stable/content.html#translations">unique feature for having articles in multiple languages</a>. While Pelican works well for my personal needs (<a href="https://github.com/honzajavorek/honzajavorek.cz">this whole website is Pelican!</a>), I wonder if there's something more beginner-friendly, or let's say user-friendly, which could be used for our community blog at <a href="https://blog.python.cz/">blog.python.cz</a>. Currently, it sports Pelican too, but I feel that it's not so welcoming to less tech-savvy people or just people who want to write articles but don't want to <code>git clone</code> repositories, install dependencies, and so on. I've noticed the following tweet and I hope it could lead to a nice solution, but I didn't have time yet to properly check it out.</p>
 <figure class="figure figure-blockquote figure-tweet"><blockquote class="twitter-tweet blockquote-tweet blockquote"><p lang="en" dir="ltr">Did you know that you can write blog posts for <a href="https://twitter.com/github?ref_src=twsrc%5Etfw">@GitHub</a> Pages using MS Word or Google Docs, including pasting images straight into your doc, and have it all synced to GitHub and included in your blog?<br><br>Here's how it's done! <a href="https://www.fast.ai/2020/01/18/gitblog/">https://www.fast.ai/2020/01/18/gitblog/</a></p></blockquote>
 
-<figcaption class="blockquote-footer"> Jeremy Howard (@jeremyphoward) <a href="https://twitter.com/jeremyphoward/status/1218662038752202753?ref_src=twsrc%5Etfw">January 18, 2020</a></figcaption></figure><h2 id="documentation">Documentation<small class="permalink"><a href="#documentation" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<figcaption class="blockquote-footer"> Jeremy Howard (@jeremyphoward) <a href="https://twitter.com/jeremyphoward/status/1218662038752202753?ref_src=twsrc%5Etfw">January 18, 2020</a></figcaption></figure><h2 id="documentation">Documentation<small class="permalink"><a href="#documentation" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Another special case of a static site is documentation. I happen to like writing documentation and <strong>I usually do it with <a href="https://www.sphinx-doc.org/">Sphinx</a></strong> covering my back. <a href="https://readthedocs.org/">ReadTheDocs</a> used to be my go-to solution for deployment, but lately, I feel ZEIT Now eats its lunch, at least from my point of view.</p>
 <p>I migrated my <a href="https://cojeapi.cz/">API materials for beginners</a> to Now and I have live previews of my GitHub branches and more control over the build process (e.g. I can stop it if my automated checks find something's wrong). The Czech Python user group documentation, <a href="https://docs.pyvec.org/">docs.pyvec.org</a>, still runs on ReadTheDocs, but already uses the ZEIT Now GitHub integration to get live previews under Pull Requests.</p>
 <figure class="figure"><img alt="ReadTheDocs &amp; docs.pyvec.org" src="https://honzajavorek.cz/images/readthedocs-pyvec.png" class="img-fluid figure-img rounded"></figure>
-<h2 id="apps">Apps<small class="permalink"><a href="#apps" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<h2 id="apps">Apps<small class="permalink"><a href="#apps" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>If you can't get away without a true server, there are still some solutions for you where you don't need to touch any Dockerfiles nor Nginx configs. There are at least two options: <strong>PaaS or FaaS</strong> (aka serverless).</p>
-<h3 id="platform-as-a-service">Platform as a Service<small class="permalink"><a href="#platform-as-a-service" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
+<h3 id="platform-as-a-service">Platform as a Service<small class="permalink"><a href="#platform-as-a-service" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>Before I discovered things like ZEIT Now and fully embraced the simplicity of static websites, I used to put all my projects to <a href="https://www.heroku.com/">Heroku</a>. It used to have a sensible free tier, a free scheduler for background jobs, and it allowed me to <code>git push</code> my code to their infrastructure while they took care of the rest. Then something happened to their free plan and I abandoned it. I don't remember exactly what was it, but I don't use it anymore. I have two hobby projects still hosted on Heroku and I don't touch them as I'm afraid they'd stop working. If they ever need my attention, I'll turn one of them into a static site and the second into something which runs on FaaS.</p>
-<h3 id="functions-as-a-service">Functions as a Service<small class="permalink"><a href="#functions-as-a-service" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
+<h3 id="functions-as-a-service">Functions as a Service<small class="permalink"><a href="#functions-as-a-service" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>FaaS is also called <em>functions</em> or <em>serverless</em>. It's been hype for a while, so you've probably heard about it. <del>It's PHP re-invented.</del> Every HTTP request to your application gets handled by an isolated piece of code, so-called <em>lambda</em> or <em>function</em>. That code <strong>starts its life with the request and ends its life with the response</strong>. That's it. Why it's so cool? First, you delegate all the ops stuff, yay! Second, it scales indefinitely. Third, you pay only for what runs. Main cons? You delegate all the ops (bad debugging, vendor lock-in), and you need to <a href="https://www.urbandictionary.com/define.php?term=BYO">BYO</a> databases, etc.</p>
 <p>It started with AWS Lambda, years ago, but today every cloud offers something like this, even <a href="https://alexolivier.me/posts/deploy-container-stateless-cheap-google-cloud-run-serverless">Google</a> or <a href="https://fnproject.io/">Oracle</a>. Of course, you can learn all the details for the provider of your choice and set up everything manually in your project, but… that sounds like ops work, right? Well, you can dodge it with a <strong>framework like <a href="https://github.com/Miserlou/Zappa">Zappa</a>, which does it all for you</strong>. Flask? Django? No problem.</p>
 <p>To be honest, I never tried out Zappa. I was so late to serverless that when I got to play with it, I had an even easier solution at my hand. As I mentioned earlier <strong>ZEIT Now also works as a FaaS provider</strong>. That's pretty awesome because it allows you to conveniently combine a static website with dynamic serverless code. Deploying a Python app to Now is <a href="https://zeit.co/blog/python-wsgi">quite simple</a>. They support both WSGI (Flask, Django, and everything else) and ASGI (all the shiny new async frameworks), so go an try it out with your next hobby app.</p>
 <p>I'm yet to explore this path fully myself, but I already use this option in my <a href="https://cojeapi.cz/">API materials for beginners</a> (Czech). When people follow the materials, they create their little API from scratch, and in the end, they deploy it to Now. It's nice, because this way they don't need to know any ops stuff to upload their project to the internet and to get a working public URL immediately. From time to time we organize a <a href="https://cojeapi.cz/workshop.html">workshop</a> based on these materials, and from what I've seen it works pretty well this way even with total beginners.</p>
-<h2 id="database">Database<small class="permalink"><a href="#database" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<h2 id="database">Database<small class="permalink"><a href="#database" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>If you checked out Heroku or the serverless solutions, you might have noticed that if you need anything else apart from static files and code, you need to get it from somewhere else. Databases are a prominent example.</p>
 <p>To be honest, <strong>I avoid databases</strong>. They can be kind of cool, but at the same time, they always felt like a pet that constantly needs attention. I think my projects are not large enough to <em>deserve</em> such a complex piece of software.</p>
 <p>If you work with databases daily, you might think - man, what's the deal? You probably don't see it anymore, but databases do require a lot of maintenance: They need to be backed up, thought through (should I put an index here? or there?), secured, accessible, installed on my dev machine, available to my prod app, upgraded, they need drivers, models, migrations, ORMs, blah blah blah… basically, <strong>they eat an enormous amount of time</strong>. On a small hobby project, that's a curse.</p>
@@ -162,20 +162,20 @@ The staticgen.com website is hosted and maintained by Netlify, so you may notice
 <figure class="figure"><img alt="Google Spreadsheets DB" src="https://honzajavorek.cz/images/google-spreadsheets-db.png" class="img-fluid figure-img rounded"></figure>
 <p>This is exactly how I power the job board at <a href="https://junior.guru/">junior.guru</a>. I get the data from Google using the <a href="https://github.com/burnash/gspread">gspread</a> library and that's it. Well, as the project grows, I introduced an intermediary <a href="https://sqlite.org/">SQLite</a>, where I put the data so I could comfortably query them in my app with <a href="http://docs.peewee-orm.com/">Peewee</a>, a minimalistic ORM. But that came only as the app continued to grow, and it still allows me to avoid a lot of hassle proper databases bring.</p>
 <p>I have to admit <strong>SQLite</strong>, a database working on top of a file or memory is a nice tool I've been overlooking and underestimating for a long time. It's dead simple, but <a href="https://github.com/simonw/datasette">powerful</a>. And <a href="https://docs.python.org/3/library/sqlite3.html">languages have it built in</a>!</p>
-<h2 id="e-mail">E-mail<small class="permalink"><a href="#e-mail" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<h2 id="e-mail">E-mail<small class="permalink"><a href="#e-mail" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>I use <a href="https://improvmx.com/">ImprovMX</a> to <strong>redirect my e-mails</strong>. If you send something to <code>hello@junior.guru</code>, it gets redirected to my personal GMail address. I only automatically flag it with a yellow label. I'm new to ImprovMX, but so far it seems to work reliably. I just hope they don't read all the messages and sell the data to the Russia, or worse, to Facebook. Or to Google. Oh, wait…</p>
 <p>ZEIT Now requires me to use their DNS if I want a custom domain or HTTPS out of the box, so I use the Now CLI to set up ImprovMX where I need:</p>
 <pre class="highlight"><code><span></span><code>$ now dns add junior.guru '@' MX mx1.improvmx.com 10
 $ now dns add junior.guru '@' MX mx2.improvmx.com 20
 </code></code></pre>
 
-<h2 id="dependencies">Dependencies<small class="permalink"><a href="#dependencies" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<h2 id="dependencies">Dependencies<small class="permalink"><a href="#dependencies" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>One slightly unrelated, honorable mention I want to make: <a href="https://dependabot.com/">@dependabot</a>.</p>
 <p>A few lines above I'm making fun of the sheer amount of dependencies one needs to have to create a decent JavaScript project, but even with Python you often end up with a total tree of tens of packages in your dependencies. Tens are not much, but still more than I want to deal with manually, especially if I have ten projects to maintain.</p>
 <p>It's fairly easy to turn on <a href="https://help.github.com/en/github/managing-security-vulnerabilities/about-security-alerts-for-vulnerable-dependencies">GitHub Alerts</a> or <a href="https://snyk.io/">Snyk</a> to get notified when the dependencies have <strong>security issues</strong>, but how do you keep them up to date? Manually?</p>
 <p>You may think it's not important to keep dependencies up to date, but trust me, it is. Not just because of security. It's because often you get to your project after a while and try to develop something, but then you figure out you need to upgrade dependencies to have it done, and then, fast forward a few hours, <strong>your precious evening dedicated to your hobby project got wasted on upgrading random outdated packages</strong> and resolving issues the upgrades bring.</p>
 <p>Upgrading packages gradually over time allows you to do this in small, easy-to-digest chunks. <a href="https://dependabot.com/">@dependabot</a> does this for you. It monitors your dependencies and automatically sends Pull Requests with upgrades. If you have tests and CI set up on your project, <strong>it can even auto-merge the upgrades</strong> if the CI check passes. How cool is that? I use it on most projects, both personal and community ones.</p>
-<h2 id="summary">Summary<small class="permalink"><a href="#summary" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<h2 id="summary">Summary<small class="permalink"><a href="#summary" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>This is what happens when I decide to write a short article about a few interesting things I use. I'm sorry! I hope you liked the overview and learned about options on <strong>deploying your projects with the smallest or no effort in ops, the smallest maintenance footprint, and for no money</strong>. I hope this allows people to realize how easy is to put something into the world today. Now go and create something awesome, the internet is waiting!</p></div></div></div></div>
   </main>
 
@@ -186,15 +186,15 @@ $ now dns add junior.guru '@' MX mx2.improvmx.com 20
         <h3 class="bio-heading">Honza Javorek</h3>
       </header>
       <address class="bio-content">
-          Původně programátor, dnes už spíš podnikatel.
-          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
-          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
-          Podporovatel <a href="https://www.zeleni.cz/">Strany zelených</a>.
-          Tohle je můj blog už 16 let.
+          Originally software engineer, now more of an enterpreneur.
+          Creator of <a href="https://junior.guru/">junior.guru</a>, a project for Czech and Slovak beginners in coding.
+          Long-term volunteer and <a href="https://pyvec.org/en/#members">official</a> in the <a href="https://python.cz/en/">Czech Python community</a>.
+          Supporter of the Czech <a href="https://en.wikipedia.org/wiki/Green_Party_(Czech_Republic)">Green Party</a>.
+          This is my blog for 16 years now.
       </address>
       <ul class="bio-links list-unstyled">
         <li class="bio-links-item">
-          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Personal site</a>
         </li>
         <li class="bio-links-item">
           <i class="bi bi-mastodon"></i> <a href="https://mastodonczech.cz/@honzajavorek">Mastodon</a>
@@ -212,7 +212,7 @@ $ now dns add junior.guru '@' MX mx2.improvmx.com 20
       </div>
 <aside class="promo seealso">
   <div id="comments" class="promo-content container pb-0">
-    <h3 class="promo-heading fs-1">Diskutuj o tomto článku</h3>
+    <h3 class="promo-heading fs-1">Discuss this article</h3>
     <ul class="list-unstyled mb-0">
         <li class="mb-3">
           <i class="bi bi-linkedin"></i>
@@ -242,41 +242,41 @@ $ now dns add junior.guru '@' MX mx2.improvmx.com 20
     </ul>
   </div>
   <div class="promo-content container">
-    <h3 class="promo-heading fs-1">Další Honzovy články</h3>
+    <h3 class="promo-heading fs-1">Read more by Honza</h3>
     <ul class="list-unstyled mb-0">
       <li class="mb-3">
         <i class="bi bi-file-earmark-text"></i>
         2023 —
-        <a href="https://honzajavorek.cz/blog/tydenni-poznamky-tipy-pro-novacky-v-klubu-v2/">
-          Týdenní poznámky: Tipy pro nováčky v klubu, v2</a>
+        <a href="https://honzajavorek.cz/blog/empowered-by-ai-why-junior-devs-have-the-winning-edge/">
+          Empowered by AI: Why junior devs have the winning edge</a>
       </li>
       <li class="mb-3">
         <i class="bi bi-file-earmark-text"></i>
         2021 —
-        <a href="https://honzajavorek.cz/blog/volim-marketing/">
-          Volím marketing</a>
+        <a href="https://honzajavorek.cz/blog/jessica-upani-about-python-events-in-namibia-you-have-to-be-pure-in-terms-of-your-why/">
+          Jessica Upani about Python events in Namibia: You have to be pure in terms of your why</a>
       </li>
       <li class="mb-3">
         <i class="bi bi-file-earmark-text"></i>
-        2021 —
-        <a href="https://honzajavorek.cz/blog/bez-auta/">
-          Bez auta</a>
+        2020 —
+        <a href="https://honzajavorek.cz/blog/i-bought-apple-silicon/">
+          I bought Apple Silicon</a>
       </li>
       <li class="mb-3">
         <i class="bi bi-file-earmark-text"></i>
-        2021 —
-        <a href="https://honzajavorek.cz/blog/spoustim-klub/">
-          Spouštím klub</a>
+        2020 —
+        <a href="https://honzajavorek.cz/blog/courting-haskell/">
+          Courting Haskell</a>
       </li>
       <li class="mb-3">
         <i class="bi bi-file-earmark-text"></i>
-        2016 —
-        <a href="https://honzajavorek.cz/blog/kolonizatori-a-spravci-kolonii/">
-          Kolonizátoři a správci kolonií</a>
+        2018 —
+        <a href="https://honzajavorek.cz/blog/senior-engineer/">
+          Senior Engineer</a>
       </li>
       <li>
         <i class="bi bi-search"></i>
-        <a href="https://honzajavorek.cz/blog/">Archiv blogu</a>
+        <a href="https://honzajavorek.cz/blog/">Blog archive</a>
       </li>
     </ul>
   </div>

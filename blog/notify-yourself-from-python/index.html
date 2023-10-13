@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
   <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
       <meta charset="utf-8">
     <link rel="canonical" href="https://honzajavorek.cz/blog/notify-yourself-from-python/">
@@ -55,7 +55,7 @@
   <h1 class="title display-5">
     Notify yourself from Python
     <small class="permalink">
-      <a href="https://honzajavorek.cz/blog/notify-yourself-from-python/" rel="bookmark" title="Odkaz na tento článek">
+      <a href="https://honzajavorek.cz/blog/notify-yourself-from-python/" rel="bookmark" title="Link to this article">
         <i class="bi bi-link-45deg"></i>
       </a>
     </small>
@@ -65,18 +65,18 @@
       <li class="info-published">
         <i class="bi bi-calendar"></i>
         <time datetime="2020-05-18T00:00:00+02:00">
-          18. 5. 2020
+          May 18, 2020
         </time>
       </li>
       <li class="info-readtime">
         <i class="bi bi-stopwatch"></i>
         4
-          min čtení
+          min of reading
       </li>
       <li class="info-analytics">
         <i class="bi bi-graph-up"></i>
-        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/notify-yourself-from-python&interval=week&start=2020-05-18T00:00:00+02:00&end=today">
-            Návštěvnost
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/notify-yourself-from-python&interval=week&start=2020-05-18T00:00:00+02:00&end=today" target="_blank" rel="noopener">
+            Stats
         </a>
       </li>
     </ul>
@@ -86,17 +86,17 @@
     <div><div><div><div><p>Sharing a quick tip on how to get notification on macOS when a function in Python is done with its job.</p>
 <figure class="figure"><img alt="Reading" src="https://honzajavorek.cz/images/luis-perdigao-JMabq3k4gk8-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
 Photo by <a href="https://unsplash.com/@scalabis">Luís Perdigão</a></figcaption></figure>
-<h2 id="the-problem">The problem<small class="permalink"><a href="#the-problem" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<h2 id="the-problem">The problem<small class="permalink"><a href="#the-problem" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>I'm working on a website for juniors in tech, <a href="https://junior.guru/">junior.guru</a> (the content is Czech only so far, I'm sorry). There is a component with web scrapers made in <a href="https://docs.scrapy.org/">Scrapy</a>, which helps me to download and aggregate job advertisments from other places.</p>
 <p>I often run the scrapers on my local computer, but since it takes a few minutes until they're done, I couldn't stop myself from switching to Twitter or something while waiting. Then I often found myself watching funny cat gifs one hour later, only hardly realizing that the scrapers are probably done by then and I can resume my work.</p>
-<h2 id="notification">Notification<small class="permalink"><a href="#notification" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<h2 id="notification">Notification<small class="permalink"><a href="#notification" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>If all you need to support is macOS, there are at least three simple ways how to notify yourself:</p>
 <ul>
 <li>Terminal sound,</li>
 <li>standard notification,</li>
 <li>the <code>say</code> command.</li>
 </ul>
-<h3 id="say-say-say">Say say say<small class="permalink"><a href="#say-say-say" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
+<h3 id="say-say-say">Say say say<small class="permalink"><a href="#say-say-say" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>Oh, you didn't know about the <code>say</code> command? I'm sorry for ruining your productivity today then. Type the following to your terminal with sound on and see what happens:</p>
 <pre class="highlight"><code><span></span><code>$ say 'Hello!'
 </code></code></pre>
@@ -113,7 +113,7 @@ Photo by <a href="https://unsplash.com/@scalabis">Luís Perdigão</a></figcaptio
 
 <p>This thing has one major disadvantage though. There is a significant potential it scares the shit out of me. Just imagine - you sit in a silent room, and just like that, out of nowhere, there is a human voice talking to you. It's really spooky.</p>
 <p>So I've used the other two options, to have feedback on both screen (when I'm with sound off) and from speakers (when I leave the computer to e.g. brew myself a cup of coffee).</p>
-<h3 id="terminal-sound">Terminal sound<small class="permalink"><a href="#terminal-sound" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
+<h3 id="terminal-sound">Terminal sound<small class="permalink"><a href="#terminal-sound" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>Your terminal can make a sound. There's a dedicated <a href="https://en.wikipedia.org/wiki/Bell_character">bell character</a> you can print and if you didn't mute sounds in settings or something, your terminal should beep whenever the character is printed. In Python, it can be done like this:</p>
 <pre class="highlight"><code><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\a</span><span class="s1">'</span><span class="p">)</span>
 </code></code></pre>
@@ -123,7 +123,7 @@ Photo by <a href="https://unsplash.com/@scalabis">Luís Perdigão</a></figcaptio
 </code></code></pre>
 
 <p>If you don't know what's "flushing <code>stdout</code>", search for keywords "output buffering python".</p>
-<h3 id="standard-macos-notification">Standard macOS notification<small class="permalink"><a href="#standard-macos-notification" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h3>
+<h3 id="standard-macos-notification">Standard macOS notification<small class="permalink"><a href="#standard-macos-notification" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>With the <a href="https://pypi.org/project/pync/">pync</a> library, you can send native macOS notifications directly from your Python code:</p>
 <pre class="highlight"><code><span></span><code>$ pip install pync
 </code></code></pre>
@@ -144,7 +144,7 @@ Photo by <a href="https://unsplash.com/@scalabis">Luís Perdigão</a></figcaptio
     <span class="n">pync</span><span class="o">.</span><span class="n">Notifier</span><span class="o">.</span><span class="n">notify</span><span class="p">(</span><span class="s1">'Hello!'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">'Greeting'</span><span class="p">)</span>
 </code></code></pre>
 
-<h2 id="decorator">Decorator<small class="permalink"><a href="#decorator" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<h2 id="decorator">Decorator<small class="permalink"><a href="#decorator" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Now I wanted to notify myself when a long-running function ends, but I didn't want to pollute the code of the function with printing bell characters or sending notifications. Also, what if there's an error and the function raises an exception? A solution is to have the code as a function decorator. Also, that way I can easily measure duration of the function and put the result into the notification:</p>
 <pre class="highlight"><code><span></span><code><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">wraps</span>
 <span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">time</span>
@@ -186,7 +186,7 @@ Photo by <a href="https://unsplash.com/@scalabis">Luís Perdigão</a></figcaptio
 3.5min<br></p>
 </blockquote>
 </figure><p>Because the notifying part is in the <code>finally</code> block, it happens even if the function raises an exception. This is great, because if I make a typo in my code, run the scrapers, and muscle memory in my fingers immediately switches windows to Twitter, the sound and notification lets me know about the mistake immediately.</p>
-<h2 id="summary">Summary<small class="permalink"><a href="#summary" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<h2 id="summary">Summary<small class="permalink"><a href="#summary" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Even if you don't need to notify yourself from a Python program, I hope this article gave you some inspiration for other problems you might be solving, or taught you some new tricks. Also, now that you know about it, find some <a href="https://www.youtube.com/watch?v=uyV0IVItlM4">good use</a> for the the <code>say</code> program!</p>
 <p><strong>Update:</strong> If your program targets Linux as well, my friend <a href="https://vuyisile.com/">Vuyisile Ndlovu</a> has earlier written an <a href="https://vuyisile.com/how-to-send-desktop-notifications-in-linux/">article</a> on how to send notifications on Ubuntu. Check it out!</p></div></div></div></div>
   </main>
@@ -198,15 +198,15 @@ Photo by <a href="https://unsplash.com/@scalabis">Luís Perdigão</a></figcaptio
         <h3 class="bio-heading">Honza Javorek</h3>
       </header>
       <address class="bio-content">
-          Původně programátor, dnes už spíš podnikatel.
-          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
-          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
-          Podporovatel <a href="https://www.zeleni.cz/">Strany zelených</a>.
-          Tohle je můj blog už 16 let.
+          Originally software engineer, now more of an enterpreneur.
+          Creator of <a href="https://junior.guru/">junior.guru</a>, a project for Czech and Slovak beginners in coding.
+          Long-term volunteer and <a href="https://pyvec.org/en/#members">official</a> in the <a href="https://python.cz/en/">Czech Python community</a>.
+          Supporter of the Czech <a href="https://en.wikipedia.org/wiki/Green_Party_(Czech_Republic)">Green Party</a>.
+          This is my blog for 16 years now.
       </address>
       <ul class="bio-links list-unstyled">
         <li class="bio-links-item">
-          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Personal site</a>
         </li>
         <li class="bio-links-item">
           <i class="bi bi-mastodon"></i> <a href="https://mastodonczech.cz/@honzajavorek">Mastodon</a>
@@ -224,7 +224,7 @@ Photo by <a href="https://unsplash.com/@scalabis">Luís Perdigão</a></figcaptio
       </div>
 <aside class="promo seealso">
   <div id="comments" class="promo-content container pb-0">
-    <h3 class="promo-heading fs-1">Diskutuj o tomto článku</h3>
+    <h3 class="promo-heading fs-1">Discuss this article</h3>
     <ul class="list-unstyled mb-0">
         <li class="mb-3">
           <i class="bi bi-linkedin"></i>
@@ -244,41 +244,41 @@ Photo by <a href="https://unsplash.com/@scalabis">Luís Perdigão</a></figcaptio
     </ul>
   </div>
   <div class="promo-content container">
-    <h3 class="promo-heading fs-1">Další Honzovy články</h3>
+    <h3 class="promo-heading fs-1">Read more by Honza</h3>
     <ul class="list-unstyled mb-0">
       <li class="mb-3">
         <i class="bi bi-file-earmark-text"></i>
         2023 —
-        <a href="https://honzajavorek.cz/blog/tydenni-poznamky-tipy-pro-novacky-v-klubu-v2/">
-          Týdenní poznámky: Tipy pro nováčky v klubu, v2</a>
+        <a href="https://honzajavorek.cz/blog/empowered-by-ai-why-junior-devs-have-the-winning-edge/">
+          Empowered by AI: Why junior devs have the winning edge</a>
       </li>
       <li class="mb-3">
         <i class="bi bi-file-earmark-text"></i>
         2021 —
-        <a href="https://honzajavorek.cz/blog/volim-marketing/">
-          Volím marketing</a>
+        <a href="https://honzajavorek.cz/blog/jessica-upani-about-python-events-in-namibia-you-have-to-be-pure-in-terms-of-your-why/">
+          Jessica Upani about Python events in Namibia: You have to be pure in terms of your why</a>
       </li>
       <li class="mb-3">
         <i class="bi bi-file-earmark-text"></i>
-        2021 —
-        <a href="https://honzajavorek.cz/blog/bez-auta/">
-          Bez auta</a>
+        2020 —
+        <a href="https://honzajavorek.cz/blog/i-bought-apple-silicon/">
+          I bought Apple Silicon</a>
       </li>
       <li class="mb-3">
         <i class="bi bi-file-earmark-text"></i>
-        2021 —
-        <a href="https://honzajavorek.cz/blog/spoustim-klub/">
-          Spouštím klub</a>
+        2020 —
+        <a href="https://honzajavorek.cz/blog/courting-haskell/">
+          Courting Haskell</a>
       </li>
       <li class="mb-3">
         <i class="bi bi-file-earmark-text"></i>
-        2016 —
-        <a href="https://honzajavorek.cz/blog/kolonizatori-a-spravci-kolonii/">
-          Kolonizátoři a správci kolonií</a>
+        2018 —
+        <a href="https://honzajavorek.cz/blog/senior-engineer/">
+          Senior Engineer</a>
       </li>
       <li>
         <i class="bi bi-search"></i>
-        <a href="https://honzajavorek.cz/blog/">Archiv blogu</a>
+        <a href="https://honzajavorek.cz/blog/">Blog archive</a>
       </li>
     </ul>
   </div>
