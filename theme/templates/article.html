@@ -208,7 +208,39 @@
 
 {% block promo %}
 <aside class="promo seealso">
-  {% if article.comments %}
+  {% if article.replies %}
+  <div id="replies" class="promo-content container pb-0">
+    <h3 class="promo-heading fs-1">
+      {%- if article.lang == 'cs' -%}
+        Reakce
+      {%- else -%}
+        Reactions
+      {%- endif -%}
+    </h3>
+    <ul class="list-unstyled mb-0">
+      {% for reply in article.replies %}
+        <li class="mb-3 reply">
+          <a href="{{ reply.account.url }}" class="reply-author" target="_blank" rel="noopener">
+            <img src="{{ reply.account.avatar }}" class="reply-avatar" alt="{{ reply.account.display_name }} (avatar)" width="50" height="50">
+            {{- reply.account.display_name -}}
+          </a>
+          <blockquote>
+            {{ reply.content }}
+          </blockquote>
+          <small>
+            <i class="bi bi-link-45deg"></i>
+            <a class="reply-link" href="{{ reply.url }}" target="_blank" rel="noopener">
+              {{ '{:%-d.%-m.%Y}'.format(reply.created_at) }}
+            </a>
+          </small>
+        </li>
+      {% endfor %}
+    </ul>
+    <a class="btn btn-primary" href="{{ article.replies_url }}" role="button" target="_blank" rel="noopener">
+      <i class="bi bi-mastodon"></i> Reaguj taky!
+    </a>
+  </div>
+  {% elif article.comments %}
   <div id="comments" class="promo-content container pb-0">
     <h3 class="promo-heading fs-1">
       {%- if article.lang == 'cs' -%}

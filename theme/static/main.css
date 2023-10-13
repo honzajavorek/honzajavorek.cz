@@ -405,11 +405,11 @@ pre code {
   margin-bottom: 2rem;
 }
 
-.promo a,
-.promo a:hover,
-.promo a:focus,
-.promo a:active,
-.promo a:visited {
+.promo a:not(.btn),
+.promo a:not(.btn):hover,
+.promo a:not(.btn):focus,
+.promo a:not(.btn):active,
+.promo a:not(.btn):visited {
   color: var(--bs-body-color);
 }
 
@@ -424,6 +424,24 @@ pre code {
 .promo-nav-item {
   margin-right: 1rem;
   white-space: nowrap;
+}
+
+.reply {
+  padding: 1rem;
+  border: var(--bs-border-color) var(--bs-border-width) solid;
+  border-radius: var(--bs-border-radius);
+}
+
+.reply-author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.reply-avatar {
+  display: block;
+  border-radius: 100%;
+  margin-right: 1rem;
 }
 
 .highlight {

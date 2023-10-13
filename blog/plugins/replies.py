@@ -1,3 +1,4 @@
+from datetime import datetime
 import json
 from pathlib import Path
 from pelican import signals
@@ -17,6 +18,10 @@ def register():
 def load_replies(pelican):
     global replies
     replies = json.loads(REPLIES_PATH.read_text())
+    for toot in replies:
+        toot['created_at'] = datetime.fromisoformat(toot['created_at'])
+        for reply in toot['replies']:
+            reply['created_at'] = datetime.fromisoformat(reply['created_at'])
 
 
 def set_replies(article_generator, metadata):
