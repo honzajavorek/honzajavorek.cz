@@ -6,6 +6,8 @@ import requests
 import click
 from sqlite_utils import Database
 
+from blog.sharing import prepare_text
+
 
 METADATA_RE = re.compile(r'(?P<metadata>([\w\s\-]+:\s+[^\n]+\n)+)')
 
@@ -36,7 +38,7 @@ def main(bot_token, db, preflight_chat_id, channel, comments_key):
         post_telegram_message(bot_token, preflight_chat_id, article['url'])
 
         click.echo(f"Posting {article['url']} to Telegram group")
-        data = post_telegram_message(bot_token, f"@{channel}", f"{article['title']} {article['url']}")
+        data = post_telegram_message(bot_token, f"@{channel}", prepare_text(article))
         message_id = data['result']['message_id']
         message_url = f"https://t.me/{channel}/{message_id}"
 
