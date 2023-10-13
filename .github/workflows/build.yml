@@ -48,13 +48,6 @@ jobs:
           MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
         run: poetry run blog toots
 
-      - name: Save to Git
-        uses: EndBug/add-and-commit@v9
-        with:
-          fetch: false
-          add: ./content/data
-          message: "sync toots 🐘"
-
       - name: Pelican Build
         run: poetry run blog build
 
@@ -93,4 +86,4 @@ jobs:
         with:
           pull: --rebase --autostash
           add: ./content
-          message: "add links to comments 💬"
+          message: "sync ⚙️"
