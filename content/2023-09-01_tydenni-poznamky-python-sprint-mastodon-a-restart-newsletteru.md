@@ -372,7 +372,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel:
 
 - [Trying To Find Fitness Advice Online](https://www.youtube.com/watch?v=MtQZKyDGXaM)<br>Jak vypadá pokus o to cokoliv zjistit nebo se naučit na dnešním internetu

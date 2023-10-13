@@ -141,7 +141,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel:
 
 - [Your job is (probably) safe from artificial intelligence](https://www.economist.com/finance-and-economics/2023/05/07/your-job-is-probably-safe-from-artificial-intelligence)<br>Fakt hodně dobrých postřehů (vycházejících z různých studií). Ochutnávka: „The biggest corporate winner so far from the new ai age is not even an ai company. At Nvidia, a computing firm which powers AI models, revenue from data centres is soaring.“ „Smartphones have been in widespread use for a decade, billions of people have access to superfast internet and many workers now shift between the office and home as it suits them. Official surveys show that well over a tenth of American employees already work at firms using ai of some kind, while unofficial surveys point to even higher numbers. Still, though, global productivity growth remains weak.“ „Blue-collar work, such as construction and farming, which accounts for about 20% of rich-world gdp, is one example. An llm is of little use to someone picking asparagus.“ „It is even possible that the ai economy could become less productive. Look at some recent technologies. Smartphones allow instant communication, but they can also be a distraction. With email you are connected 24/7, which can make it hard to focus.“

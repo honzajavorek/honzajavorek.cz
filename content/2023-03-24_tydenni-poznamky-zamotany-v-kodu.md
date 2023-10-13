@@ -208,7 +208,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel:
 
 - [20 let od invaze do Iráku. Vedla k chaosu i nástupu Islámského státu, Ameriku stála důvěryhodnost, říká analytik - VOXPOT](https://www.voxpot.cz/dvacet-let-od-invaze-do-iraku-vedla-k-chaosu-i-nastupu-islamskeho-statu-ameriku-stala-duveryhodnost-rika-analytik/)<br>„…ať už šlo o ten nepravdivý argument zbraněmi hromadného ničení, či o invazi bez souhlasu Rady bezpečnosti OSN, Abú Ghrajb nebo rozpad iráckého státu – to vše poměrně výrazně podlomilo roli, kterou USA měly na začátku 21. století.“

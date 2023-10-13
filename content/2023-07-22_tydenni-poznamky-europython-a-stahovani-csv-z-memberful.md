@@ -221,7 +221,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel:
 
 - [Proč potřebujeme pomalou novinařinu](https://www.mimoagendu.cz/r/6e041952?m=66ba468d-5bc9-4c14-bd0c-21f5c52e7ed0)<br>Dnešní Mimo Agendu je velká pecka. Jako vnější pozorovatel a „uživatel“ novinářského světa souhlasím snad s každou větou. „Dnešní novinařina v Česku je až na výjimky montovnou… Pomalá novinařina je jedinou cestou, jak média mohou přežít v dnešním propojeném světě.“ Sám jsem před delší dobou přešel k pomalé novinařině, např. podcastu ČRo Vinohradská 12, kde vyberou jednu důležitou aktuální věc denně a hotovo.

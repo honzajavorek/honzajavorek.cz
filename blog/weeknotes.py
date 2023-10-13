@@ -159,7 +159,7 @@ def main(context, title, content_path, title_prefix, jobs_api_url, settings_modu
 
         ## Zaujalo mě
 
-        Když na něco narazím a líbí se mi to, sdílím to na [svém Mastodonu](https://mastodonczech.cz/@honzajavorek).
+        Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
         Od posledních poznámek jsem sdílel:
 
     ''').lstrip()

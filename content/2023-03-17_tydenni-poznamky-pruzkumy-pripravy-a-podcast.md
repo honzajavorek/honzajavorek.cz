@@ -337,7 +337,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel toto:
 
 - [Omezení aut v centru Prahy? Místní by to přivítali, ukázal průzkum - Zdopravy.cz](https://zdopravy.cz/omezeni-aut-v-centru-prahy-mistni-by-to-privitali-ukazal-pruzkum-149407/)<br>Tak třeba se něco pohne.

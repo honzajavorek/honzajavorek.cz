@@ -325,7 +325,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel:
 
 - [Stop Trying to Make Social Networks Succeed](https://ploum.net/2023-07-06-stop-trying-to-make-social-networks-succeed.html)<br>„Like every human endeavour, every social network is there for a limited duration and will be useful to a limited niche of people. That niche may grow to the point of being huge, like Facebook and WhatsApp. But, to this day, there are more people in the world without an account on Facebook than people with one. Every single social network is only representative of a minority.“

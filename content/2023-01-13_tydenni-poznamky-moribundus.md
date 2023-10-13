@@ -361,7 +361,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel toto:
 
 - [Lessons Learned from Building Products: The Power of Outcomes over Outputs](https://jukben.codes/lessons-learned-from-building-products-the-power-of-outcomes-over-outputs)<br>O produktovém vývoji z pohledu vývojáře: „I'm a missionary, not a mercenary“

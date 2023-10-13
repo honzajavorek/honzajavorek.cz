@@ -249,7 +249,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel toto:
 
 - [Feri se rozhodl hájit za každou cenu a vyslal nebezpečný signál obětem sexuálního násilí](https://www.e15.cz/nazory/feri-se-rozhodl-hajit-za-kazdou-cenu-a-vyslal-nebezpecny-signal-obetem-sexualniho-nasili-1396624)<br>Pokud sledujete kauzu Feri, toto by nemělo zapadnout.

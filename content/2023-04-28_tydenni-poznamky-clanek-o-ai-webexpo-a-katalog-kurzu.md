@@ -283,7 +283,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel:
 
 - [Máte syndrom podvodníka? Jak ho přetlačit — TVŮRCAST](https://podcasters.spotify.com/pod/show/pickey/episodes/Mte-syndrom-podvodnka--Jak-ho-petlait-e22sc0u)<br>Prima díl o syndromu podvodníka. Sice je to podcast pro tvůrce, ale zdaleka se to netýká jen jich.

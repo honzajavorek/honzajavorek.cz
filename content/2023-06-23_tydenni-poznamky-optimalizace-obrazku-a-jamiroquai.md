@@ -153,7 +153,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel:
 
 - [Call for Proposals: Přihlaš si přednášku, workshop nebo sprint na PyCon CZ 23](https://www.youtube.com/watch?v=xNvvK-gPXUo)<br>A už jsem tady psal, že právě můžete poslat návrh na přednášku nebo workshop pro letošní PyCon CZ, českou Python konferenci? Letos tam bude i celá sekce pro začátečníky. Pusťte si Dana na videu, vysvětlí vám, jak to funguje 🙂 V popisku je pak odkaz přímo na formulář. A neváhejte, ten formulář nebude už otevřený moc dlouho.

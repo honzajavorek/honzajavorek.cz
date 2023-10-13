@@ -163,7 +163,7 @@ Každá koruna jim udělá radost.
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel toto:
 
 - [Kočárkino a Baby Bio ve vašem kalendáři]({filename}2023-02-09_kocarkino-a-baby-bio-ve-vasem-kalendari.md)<br>Můj víkendový výtvor.

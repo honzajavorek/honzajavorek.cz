@@ -362,7 +362,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel toto:
 
 - [Řež u Bachmutu. „Rusové můžou na každého z nás vystřelit stokrát. My musíme trefit vždycky“ - VOXPOT](https://www.voxpot.cz/rez-u-bachmutu-rusove-muzou-na-kazdeho-z-nas-vystrelit-stokrat-my-musime-trefit-vzdycky/)<br>„Západ posílá hlavně vyřazené stroje. Tankům přestane fungovat motor třeba i uprostřed boje. Jeden z velitelů nám ostatně už v dubnu vyprávěl, že protitankové střely NLAW doručené z Británie měly často vadné spouštěcí baterie. Když s nimi voják vyběhl do boje, někdy teprve tváří v tvář tanku zjistil, že systém nefunguje – a s tankem v zádech musel rychle utíkat pryč. „Všechny vaše armády se na Ukrajině zbavují toho, co by už stejně musely vyřadit…“

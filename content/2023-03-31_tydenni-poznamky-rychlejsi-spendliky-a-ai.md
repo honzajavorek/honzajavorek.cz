@@ -267,7 +267,7 @@ Je duben, nejvyšší čas pověnovat se i věcem, které jsem označil za nejv�
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel:
 
 - [Konec domácích úkolů? Děti přetěžují, znechucují jim školu a jsou diskriminační](https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-konec-domacich-ukolu-deti-pretezuji-znechucuji-jim-skolu-a-jsou-diskriminacni-225907)<br>Co si myslíte o domácích úkolech? Měly by být jen dobrovolné? Nebo nechat? Zrušit?

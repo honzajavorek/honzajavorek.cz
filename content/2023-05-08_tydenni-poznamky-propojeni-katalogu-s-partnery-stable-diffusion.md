@@ -206,7 +206,7 @@ No, bude toho zase nějak hodně.
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel:
 
 - [Jak se ničí novináři](https://mimo-agendu.ghost.io/r/d3ffb1ed?m=66ba468d-5bc9-4c14-bd0c-21f5c52e7ed0)<br>„Říct, že novinářka a moderátorka Linda Bartošová ‚odešla‘ z Twitteru, by bylo v lecčem nepřesné. Linda totiž neodešla. Lindu z této sociální sítě vyštvaly dlouhodobě nenávistné, toxické a útočné reakce, které by se bez nadsázky daly označit za kyberšikanu.“ „Byl jsem svědkem situací, kdy se novináři po takové kampani zhroutili či skončili na antidepresivech. Faktem je, že neexistuje způsob, jak říct dost. S útočníky se nedá domluvit. Jde jen doufat, že si brzy najdou nový terč, vydržet to, nebo se stáhnout z veřejného prostoru.“

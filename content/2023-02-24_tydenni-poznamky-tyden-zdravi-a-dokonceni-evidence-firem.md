@@ -228,7 +228,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel toto:
 
 - [Rusko odešlo z Evropy](https://www.respekt.cz/tydenik/2023/8/rusko-odeslo-z-evropy?gift=uj40hq1owi)<br>„Evropa má nyní ve své východní polovině otevřenou ránu: sen o svobodném, mírumilovném a otevřeném kontinentu je mrtvý.“

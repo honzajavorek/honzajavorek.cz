@@ -302,7 +302,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to na [svém Mastodonu](https://mastodonczech.cz/@honzajavorek).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel:
 
 - [The End of the Subscription Era is Coming - Nick Hilton - Medium](https://nickfthilton.medium.com/the-end-of-the-subscription-era-is-coming-ed197f252c6a)<br>Soumrak předplatných a ekonomiky tvůrců?

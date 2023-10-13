@@ -206,7 +206,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel:
 
 - [Jak zmáknout novou dovednost — TVŮRCAST](https://podcasters.spotify.com/pod/show/pickey/episodes/Jak-zmknout-novou-dovednost-e25sdvf)<br>Sice pro tvůrce, ale jsou tam dobré tipy vlastně pro kohokoliv, kdo se učí něco nového: „Bez toho, abyste si na zahrádce ušpinili ruce nikdy nic nevypěstujete!“

@@ -153,7 +153,7 @@ Zatáhl jsem za ruční brzdu a teď se potřebuji rozjet. Nebudu pokračovat v 
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz). Od posledních poznámek jsem sdílel toto:
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek). Od posledních poznámek jsem sdílel toto:
 
 - [(něco na Twitteru)](https://twitter.com/dagorenouf/status/1600135775651233792)<br>Škoda, že přesně tohle vůbec neumím.
 - [A new AI game: Give me ideas for crimes to do](https://simonwillison.net/2022/Dec/4/give-me-ideas-for-crimes-to-do/)<br>Jak přelstít umělou inteligenci a nechat ji vymýšlet třeba zločiny?

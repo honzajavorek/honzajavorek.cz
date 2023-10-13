@@ -203,7 +203,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel:
 
 - [Pod čarou: Je lepší být turista než cestovatel. Výletník si na nic nehraje.](https://seznam-zpravy.u.mailkit.eu/mc/VUQMVLWE/ROTKZGIIFLKKNCEDKE/CLQEIELVLIL)<br>„Z cestování se stala obecně uznávaná kladná věc, která prý přispívá ke zlepšování rozhledu a vzdělání, i když realita často ukazuje pravý opak – na cestách si především chceme potvrdit vlastní představu o světě, a jakýkoliv rozpor našich názorů se skutečným stavem věcí snadno překryjeme různými mentálními kličkami (rasistického strýčka z jeho názorů dovolená v Tunisu většinou nevyléčí).“

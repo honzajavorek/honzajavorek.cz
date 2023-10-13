@@ -114,7 +114,7 @@ Víc toho, myslím, nestihnu.
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to na [svém Mastodonu](https://mastodonczech.cz/@honzajavorek).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel:
 
 - [Odstranění Facebook skupiny, kterou spravujete | Centrum nápovědy pro Facebook](https://www.facebook.com/help/174988392554409/)<br>Věděli jste, že skupinu na Facebooku nelze žádným normálním způsobem úplně zrušit a smazat?

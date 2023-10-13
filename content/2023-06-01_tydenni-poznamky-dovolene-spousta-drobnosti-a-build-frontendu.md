@@ -227,7 +227,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel:
 
 - [The coming Russian revolution will unleash horrifying new demons](https://www.telegraph.co.uk/news/2023/05/25/coming-russian-revolution-unleash-horrifying-new-demons/)<br>„Don’t expect another Mikhail Gorbachev. Instead, we could well be looking at a protracted scenario of chaos, violence, rebellion and repression, with fighting between the Russian army, national guard, security services, the plethora of private armies and perhaps Prighozin’s vision of mobs on the streets with pitchforks.“

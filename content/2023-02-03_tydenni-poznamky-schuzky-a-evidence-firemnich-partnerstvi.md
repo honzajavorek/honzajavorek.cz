@@ -190,7 +190,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel toto:
 
 - [NetNewsWire - Twitter Integration To Be Removed](https://nnw.ranchero.com/2023/02/02/twitter-integration-to.html)<br>Elon odebere API z Twitteru, moje RSS čtečka odebere podporu pro čtení Twitteru 😢 Na Twitter už dál chodit nechci, ale některé lidi jsem sledoval rád. Bohužel budu asi muset Twitter tím pádem přestat číst úplně.

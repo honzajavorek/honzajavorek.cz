@@ -170,7 +170,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel:
 
 - [#5: Philip Marlowe + Excel = data noir](https://samizdat.cz/datazurnal-005/)<br>„Honza B. v posledních měsících bez nadsázky prokopal cestičku novému žánru – označení se ještě neusadilo, váháme mezi datovou detektivkou a data noir. Pátrání po rozdílech v počtu léků oficiálně dodaných do lékáren a počtu léků v lékárnách oficiálně vydaných lidem ho přivedlo do mnoha potemělých oblastí českého, ba dokonce i evropského zdravotnictví. Pár domnělých nekalostí se nakonec ukázalo být čurbesem ve státních datech a pojmosloví, ale pak je tu inhalátor Symbicort Turbuhaler, kterého zmizelo za stovky milionů a nejpravděpodobnějším vysvětlením zůstává nelegální reexport. Jako správná detektivka to vyšlo jako seriál, a to trojdílný… Trilogie mimo jiné ukazuje, jak pomalá, komplikovaná a komplexní datová žurnalistika je a kolik se toho při ní nachodí. Excel, RStudio nebo Pandas jsou jen začátek.“

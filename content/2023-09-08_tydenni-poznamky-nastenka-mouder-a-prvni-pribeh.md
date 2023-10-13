@@ -144,7 +144,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel:
 
 - [Indie, to jest Bhárat. Bude se nejlidnatější země přejmenovávat? - VOXPOT](https://www.voxpot.cz/indie-to-jest-bharat-bude-se-nejlidnatejsi-zeme-prejmenovavat/)<br>„Mnohem pikantnější jsou však ohlasy ze zahraničí. Pokud by nejlidnatější země skutečně od svého mezinárodně uznávaného názvu upustila, po jméně Indie už pokukuje sousední Pákistán.“

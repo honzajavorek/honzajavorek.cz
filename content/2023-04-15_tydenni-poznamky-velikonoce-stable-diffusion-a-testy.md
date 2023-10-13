@@ -168,7 +168,7 @@ Ve zbylém čase asi stihnu jen klub, nějakou režii, možná opravy chyb v kó
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel:
 
 - [Programmer’s Guide to the Big Tech Companies 💻 | Zero To Mastery](https://zerotomastery.io/blog/programmers-guide-to-the-big-tech-companies/)<br>Jaké jsou motivace velkých firem jako Google nebo Apple?

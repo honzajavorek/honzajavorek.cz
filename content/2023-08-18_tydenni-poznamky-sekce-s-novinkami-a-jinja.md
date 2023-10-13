@@ -187,7 +187,7 @@ Buďte v klidu, [není to závod]({filename}2020-06-04_neni-to-zavod.md)!
 
 ## Zaujalo mě
 
-Když na něco narazím a líbí se mi to, sdílím to [na Telegramu](https://t.me/honzajavorekcz).
+Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel:
 
 - [FullJourney - The EVERYTHING AI / Video, Images, Music, Text to Speech, Sound FX](https://www.youtube.com/watch?v=GQUl2ySyj9U)<br>Nestíháte sledovat novinky v AI? Tady je video o tom, jak si to můžete všechno rovnou vyzkoušet na jednom místě. Vygenerujte si bolywoodskou písničku, zvuk prdu, hlas, video…
