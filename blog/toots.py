@@ -11,12 +11,12 @@ from mastodon import Mastodon
 @click.argument('client_id', envvar='MASTODON_CLIENT_ID')
 @click.argument('client_secret', envvar='MASTODON_CLIENT_SECRET')
 @click.argument('access_token', envvar='MASTODON_ACCESS_TOKEN')
-@click.option('--mastodon-server-url', default='https://mastodonczech.cz')
+@click.option('--server-url', default='https://mastodonczech.cz')
 @click.option('--path', default='content/data', type=click.Path(path_type=Path))
 @click.option('--limit', default=100, type=int)
-def main(client_id: str, client_secret: str, access_token: str, mastodon_server_url: str, path: Path, limit: int):
+def main(client_id: str, client_secret: str, access_token: str, server_url: str, path: Path, limit: int):
     click.echo('Connecting to Mastodon')
-    mastodon = Mastodon(api_base_url=mastodon_server_url,
+    mastodon = Mastodon(api_base_url=server_url,
                         client_id=client_id,
                         client_secret=client_secret,
                         access_token=access_token)

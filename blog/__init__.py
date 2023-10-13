@@ -14,7 +14,7 @@ import pytest
 from slugify import slugify
 from strava_offline.cli import cli as strava
 
-from blog.telegram import main as telegram
+from blog.sharing import telegram, mastodon
 from blog.toots import main as toots
 from blog.weeknotes import main as weeknotes
 from blog.media import main as media
@@ -29,15 +29,16 @@ def main():
     pass
 
 
+main.add_command(kocarkino, 'kocarkino')
+main.add_command(mastodon, 'mastodon')
+main.add_command(media, 'media')
+main.add_command(reading, 'reading')
+main.add_command(strava, 'strava')
 main.add_command(telegram, 'telegram')
 main.add_command(toots, 'toots')
-main.add_command(weeknotes, 'weeknotes')
-main.add_command(media, 'media')
-main.add_command(strava, 'strava')
-main.add_command(kocarkino, 'kocarkino')
-main.add_command(reading, 'reading')
 main.add_command(update, 'update')
 main.add_command(wait, 'wait')
+main.add_command(weeknotes, 'weeknotes')
 
 
 @main.command()
