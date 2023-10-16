@@ -2,6 +2,8 @@ Title: Týdenní poznámky: První rozhovor s juniorem a Frontkon
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/292
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/111244394156002363
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-10-06_tydenni-poznamky-tipy-pro-novacky-v-klubu-v2.md) už utekl nějaký ten týden (6. 10. až 16. 10.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
