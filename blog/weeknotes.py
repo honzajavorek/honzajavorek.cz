@@ -12,7 +12,6 @@ from urllib.parse import urlparse
 from textwrap import dedent
 
 from lxml.html import soupparser as html_soup
-from lxml import html
 import requests
 import click
 import sqlite_utils
