@@ -1,5 +1,78 @@
 [
   {
+    "id": 111261690389421492,
+    "created_at": "2023-10-19T12:31:04.860000+00:00",
+    "in_reply_to_id": null,
+    "in_reply_to_account_id": null,
+    "sensitive": false,
+    "spoiler_text": "",
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111261690389421492",
+    "url": "https://mastodonczech.cz/@honzajavorek/111261690389421492",
+    "replies_count": 1,
+    "reblogs_count": 0,
+    "favourites_count": 0,
+    "edited_at": null,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Bylo by na téhle stránce <a href=\"https://junior.guru/news/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">junior.guru/news/</span><span class=\"invisible\"></span></a> lepší mít</p><p>- 🗂️ ty věci rozdělené podle typu, jak je to teď (podcast, akce, příběhy…) a mít tam vždy nejnovější a nějaký tip z archivu,<br />- 📰 nebo z toho udělat nějaký „feed“ zvrchu dolů, vše dohromady bez oddělování, akorát by u každé věci byl nějaký štítek (podcast, akce, příběh…)?</p><p>Hlasujte, pište názory 🙂 Dík! <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a></p>",
+    "filtered": [],
+    "reblog": null,
+    "media_attachments": [],
+    "mentions": [],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ],
+    "emojis": [],
+    "card": {
+      "url": "https://junior.guru/news/",
+      "title": "Novinky pro začátečníky v programování",
+      "description": "Podcasty, přednášky, články a další zdroje pro začátečníky v programování, které tě posunou a namotivují.",
+      "language": "cs",
+      "type": "link",
+      "author_name": "",
+      "author_url": "",
+      "provider_name": "",
+      "provider_url": "",
+      "html": "",
+      "width": 1200,
+      "height": 630,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/002/311/085/original/fa7c6b3c7c154386.png",
+      "image_description": "",
+      "embed_url": "",
+      "blurhash": "UjSY]Tj[t7ayNSj@ofj@ReazRjazbgfQWBj[",
+      "published_at": null
+    },
+    "poll": {
+      "id": 34078,
+      "expires_at": "2023-10-20T12:31:04.384000+00:00",
+      "expired": false,
+      "multiple": false,
+      "votes_count": 6,
+      "voters_count": 6,
+      "voted": true,
+      "own_votes": [],
+      "options": [
+        {
+          "title": "🗂️ rozdělené podle typu",
+          "votes_count": 4
+        },
+        {
+          "title": "📰 „feed“",
+          "votes_count": 2
+        }
+      ],
+      "emojis": []
+    }
+  },
+  {
     "id": 111249683054271295,
     "created_at": "2023-10-17T09:37:26.999000+00:00",
     "in_reply_to_id": null,
