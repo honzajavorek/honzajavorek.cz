@@ -1,5 +1,88 @@
 [
   {
+    "id": 111264006260630561,
+    "created_at": "2023-10-19T22:20:01.800000+00:00",
+    "in_reply_to_id": null,
+    "in_reply_to_account_id": null,
+    "sensitive": false,
+    "spoiler_text": "",
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111264006260630561",
+    "url": "https://mastodonczech.cz/@honzajavorek/111264006260630561",
+    "replies_count": 1,
+    "reblogs_count": 0,
+    "favourites_count": 2,
+    "edited_at": "2023-10-20T07:17:34.168000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Já vím, že <a href=\"https://mastodonczech.cz/tags/Firefox\" class=\"mention hashtag\" rel=\"tag\">#<span>Firefox</span></a> má kontejnery a tak, ale tyjo, já chci tohle přepínátko, které zrovna přidali do Safari. Jak to mám udělat? <a href=\"https://support.apple.com/en-us/HT212544\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">support.apple.com/en-us/HT2125</span><span class=\"invisible\">44</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "filtered": [],
+    "reblog": null,
+    "media_attachments": [
+      {
+        "id": 111264003660054047,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/111/264/003/660/054/047/original/ebf48cbfa1e7d066.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/111/264/003/660/054/047/small/ebf48cbfa1e7d066.png",
+        "remote_url": null,
+        "preview_remote_url": null,
+        "text_url": null,
+        "meta": {
+          "original": {
+            "width": 950,
+            "height": 700,
+            "size": "950x700",
+            "aspect": 1.3571428571428572
+          },
+          "small": {
+            "width": 559,
+            "height": 412,
+            "size": "559x412",
+            "aspect": 1.3567961165048543
+          }
+        },
+        "description": null,
+        "blurhash": "UlMH$Rs+NM-g~MR-fQR.xaoc$_NL$_a#WFfQ"
+      }
+    ],
+    "mentions": [],
+    "tags": [
+      {
+        "name": "firefox",
+        "url": "https://mastodonczech.cz/tags/firefox"
+      },
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "emojis": [],
+    "card": {
+      "url": "https://support.apple.com/en-us/HT212544",
+      "title": "Use profiles in Safari on Mac",
+      "description": "Starting with Safari 17, you can use profiles to keep your browsing separate for topics like work, personal, or school. Each profile has separate history, cookies, website data, extensions, Tab Groups, and favorites.\n\n",
+      "language": "en",
+      "type": "link",
+      "author_name": "",
+      "author_url": "",
+      "provider_name": "Apple Support",
+      "provider_url": "",
+      "html": "",
+      "width": 0,
+      "height": 0,
+      "image": null,
+      "image_description": "",
+      "embed_url": "",
+      "blurhash": null,
+      "published_at": null
+    },
+    "poll": null
+  },
+  {
     "id": 111263822139805969,
     "created_at": "2023-10-19T21:33:12.321000+00:00",
     "in_reply_to_id": null,
@@ -11,8 +94,8 @@
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111263822139805969",
     "url": "https://mastodonczech.cz/@honzajavorek/111263822139805969",
     "replies_count": 0,
-    "reblogs_count": 1,
-    "favourites_count": 1,
+    "reblogs_count": 2,
+    "favourites_count": 2,
     "edited_at": null,
     "favourited": false,
     "reblogged": false,
