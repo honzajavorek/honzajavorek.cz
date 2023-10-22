@@ -59,6 +59,9 @@ jobs:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
         run: poetry run blog reading > ./public/reading.xml
 
+      - name: "Extra: Filip"
+        run: cp -r ./filip ./public/filip
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
