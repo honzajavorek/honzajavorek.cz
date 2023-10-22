@@ -1,1 +1,94 @@
-test
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <title>Všechno nejlepší!</title>
+    <style>
+      html, body {
+        background: rgb(22, 21, 25);
+        padding: 0;
+        margin: 0;
+      }
+
+      .confetti-contianer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .gift-container {
+        position: absolute;
+        z-index: 10;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .gift {
+        display: block;
+        width: min(70vw, 70vh);
+        height: min(70vw, 70vh);
+        max-width: 1024px;
+        max-height: 1024px;
+        background: url('cover.png') no-repeat center center;
+        background-size: contain;
+        transition: filter 1s;
+        text-decoration: none;
+        border-radius: 20%;
+      }
+
+      .gift:hover {
+        filter: hue-rotate(-0.25turn);
+      }
+
+      .gift-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-family: sans-serif;
+        color: white;
+        text-shadow: 2px 2px 4px rgb(22, 21, 25);
+      }
+
+      .gift-text h1 {
+        font-size: min(6vh, 6vw);
+        margin: 0;
+        margin-bottom: 2vh;
+      }
+
+      .gift-text strong {
+        font-size: min(3vh, 3vw);
+        margin: 0;
+        margin-bottom: 1vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="confetti-contianer">
+      <canvas id="confetti"></canvas>
+    </div>
+
+    <div class="gift-container">
+      <a class="gift" href="" id="gift" onclick="pop(event)">
+        <div class="gift-text">
+          <h1>Všechno nejlepší!</h1>
+          <strong>Klikni a rozbalíš dárek</strong>
+        </div>
+      </a>
+    </div>
+
+    <script src="confetti.min.js"></script>
+    <script>
+      var confettiSettings = { target: 'confetti' };
+      var confetti = new ConfettiGenerator(confettiSettings);
+      confetti.render();
+    </script>
+  </body>
+</html>
