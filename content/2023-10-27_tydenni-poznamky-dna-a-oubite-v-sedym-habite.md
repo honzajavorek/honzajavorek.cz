@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Dna a oubitě v šedým hábitě
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/293
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/111308081866248976
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-10-16_tydenni-poznamky-prvni-rozhovor-s-juniorem-a-frontkon.md) už utekl nějaký ten týden (16. 10. až 27. 10.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
