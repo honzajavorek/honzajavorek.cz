@@ -1,3 +1,4 @@
+import json
 import re
 from pathlib import Path
 from operator import itemgetter
@@ -23,7 +24,8 @@ HASHTAGS_MAPPING = {
 @click.option('--preflight-chat-id', default='119318534')  # https://stackoverflow.com/a/37396871/325365
 @click.option('--channel', default='honzajavorekcz')
 @click.option('--comments-key', default='Telegram-Comments')
-def telegram(bot_token: str, db: Database, preflight_chat_id: str, channel: str, comments_key: str):
+@click.option('--debug/--no-debug', default=False)
+def telegram(bot_token: str, db: Database, preflight_chat_id: str, channel: str, comments_key: str, debug: bool):
     query = '''
         select * from articles
         where status == "published"
@@ -40,20 +42,24 @@ def telegram(bot_token: str, db: Database, preflight_chat_id: str, channel: str,
         return
 
     for article in articles:
-        if image_url := article['image_url']:
-            click.echo(f"Posting {image_url} to Honza's Telegram")
-            post_telegram_message(bot_token, preflight_chat_id, image_url)
+        text = prepare_text(article)
+        if debug:
+            click.echo(text)
+        else:
+            if image_url := article['image_url']:
+                click.echo(f"Posting {image_url} to Honza's Telegram")
+                post_telegram_message(bot_token, preflight_chat_id, image_url)
 
-        click.echo(f"Posting {article['url']} to Honza's Telegram")
-        post_telegram_message(bot_token, preflight_chat_id, article['url'])
+            click.echo(f"Posting {article['url']} to Honza's Telegram")
+            post_telegram_message(bot_token, preflight_chat_id, article['url'])
 
-        click.echo(f"Posting {article['url']} to Telegram group")
-        data = post_telegram_message(bot_token, f"@{channel}", prepare_text(article))
-        message_id = data['result']['message_id']
-        message_url = f"https://t.me/{channel}/{message_id}"
+            click.echo(f"Posting {article['url']} to Telegram group")
+            data = post_telegram_message(bot_token, f"@{channel}", text)
+            message_id = data['result']['message_id']
+            message_url = f"https://t.me/{channel}/{message_id}"
 
-        click.echo(f"Saving {message_url} to {article['source_path']}")
-        append_metadata(article['source_path'], comments_key, message_url)
+            click.echo(f"Saving {message_url} to {article['source_path']}")
+            append_metadata(article['source_path'], comments_key, message_url)
 
 
 def post_telegram_message(bot_token, chat_id, text):
@@ -76,7 +82,8 @@ def post_telegram_message(bot_token, chat_id, text):
 @click.option('--db', default='blog.db', type=click.Path(exists=True, path_type=Database))
 @click.option('--server-url', default='https://mastodonczech.cz')
 @click.option('--comments-key', default='Mastodon-Comments')
-def mastodon(client_id: str, client_secret: str, access_token: str, db: Database, server_url: str, comments_key: str):
+@click.option('--debug/--no-debug', default=False)
+def mastodon(client_id: str, client_secret: str, access_token: str, db: Database, server_url: str, comments_key: str, debug: bool):
     query = '''
         select * from articles
         where status == "published"
@@ -99,17 +106,23 @@ def mastodon(client_id: str, client_secret: str, access_token: str, db: Database
                         access_token=access_token)
     for article in articles:
         click.echo(f"Posting {article['url']} to Mastodon")
-        data = mastodon.toot(prepare_text(article))
-        message_url = data['url']
+        text = prepare_text(article)
+        if debug:
+            click.echo(text)
+        else:
+            data = mastodon.toot(text)
+            message_url = data['url']
 
-        click.echo(f"Saving {message_url} to {article['source_path']}")
-        append_metadata(article['source_path'], comments_key, message_url)
+            click.echo(f"Saving {message_url} to {article['source_path']}")
+            append_metadata(article['source_path'], comments_key, message_url)
 
 
 def prepare_text(article: dict) -> str:
-    if 'týdenní poznámky' in article['tags']:
+    tags = json.loads(article['tags'])
+
+    if 'týdenní poznámky' in tags:
         text = f"Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru?"
-    elif 'junior.guru' in article['tags']:
+    elif 'junior.guru' in tags:
         text = f"„{article['title']}” Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru?"
     else:
         text = f"„{article['title']}”"
@@ -124,7 +137,7 @@ def prepare_text(article: dict) -> str:
     else:
         emoji = "🙈"
 
-    hashtags = set(filter(None, [HASHTAGS_MAPPING.get(tag) for tag in article['tags']])) | {'#blog'}
+    hashtags = set(filter(None, [HASHTAGS_MAPPING.get(tag) for tag in tags])) | {'#blog'}
     hashtags = ' '.join(sorted(hashtags))
 
     return f"{text} Tentorkát je to na {article['readtime']} min čtení {emoji} {article['url']} {hashtags}"
