@@ -149,7 +149,9 @@ Pokud jste včera kliknuli na tlačítko, které vám zapnulo integraci s Discor
 Jen vás chci informovat, že jste si pořídili štěně.
 
 A že štěně je _strašně super_ a budete ho milovat.
-Ale je dobré brát v potaz, že aby přežilo, je potřeba ho krmit, venčit ho, každý den, jo a chodit k veterináři, a že je to na dlouho.
+Ale je dobré brát v potaz, že aby přežilo, je potřeba ho krmit, venčit ho, každý den.
+Občas chodit k veterináři.
+A že je to na dlouho.
 Pokud to nechcete dělat, možná pro svoje podporovatele vymyslete něco jiného.
 Něco lepšího než „další komunitu na Discordu“.
 Něco lepšího než mrtvé štěňátko.
