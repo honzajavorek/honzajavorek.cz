@@ -240,14 +240,23 @@
       <i class="bi bi-mastodon"></i> Reaguj taky!
     </a>
   </div>
-  {% elif article.comments %}
+  {% endif %}
+  {% if article.comments %}
   <div id="comments" class="promo-content container pb-0">
     <h3 class="promo-heading fs-1">
-      {%- if article.lang == 'cs' -%}
-        Diskutuj o tomto článku
-      {%- else -%}
-        Discuss this article
-      {%- endif -%}
+      {% if article.replies %}
+        {%- if article.lang == 'cs' -%}
+          Reakce jinde
+        {%- else -%}
+          Reactions elsewhere
+        {%- endif -%}
+      {% else %}
+        {%- if article.lang == 'cs' -%}
+          Diskutuj o tomto článku
+        {%- else -%}
+          Discuss this article
+        {%- endif -%}
+      {% endif %}
     </h3>
     <ul class="list-unstyled mb-0">
       {% for comments in article.comments %}
