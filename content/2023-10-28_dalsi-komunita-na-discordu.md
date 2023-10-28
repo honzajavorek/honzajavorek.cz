@@ -146,7 +146,7 @@ Samonosné to nebude nikdy, nebo až za pár let.
 A rozhodně se to nestane omylem.
 
 Pokud jste včera kliknuli na tlačítko, které vám zapnulo integraci s Discordem, a přidali jste si „exkluzivní komunitu“ do výhod pro podporovatele vašeho podcastu, tak vás tímhle článkem nechci odrazovat.
-Jen vás chci informovat, že jste si koupili štěně.
+Jen vás chci informovat, že jste si pořídili štěně.
 
 A že štěně je _strašně super_ a budete ho milovat.
 Ale je dobré brát v potaz, že aby přežilo, je potřeba ho krmit, venčit ho, každý den, jo a chodit k veterináři, a že je to na dlouho.
