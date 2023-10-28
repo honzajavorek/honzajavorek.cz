@@ -3,6 +3,7 @@ Image: images/engin-akyurt-2-ecuma3qo0-unsplash.jpg
 Lang: cs
 Telegram-Comments: https://t.me/honzajavorekcz/294
 Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/111313342222425399
+LinkedIn-Comments: https://www.linkedin.com/feed/update/urn:li:activity:7124059558561333248/
 
 Pravidelný sraz, konferenci, nebo firmu si jen tak mimoděk nezaložíte, protože to stojí nějaké počáteční úsilí.
 Ale server na Discordu, skupinu na Facebooku, nebo Slack?
