@@ -432,6 +432,10 @@ pre code {
   border-radius: var(--bs-border-radius);
 }
 
+.reply .invisible {
+  display: none;
+}
+
 .reply-author {
   display: flex;
   align-items: center;
