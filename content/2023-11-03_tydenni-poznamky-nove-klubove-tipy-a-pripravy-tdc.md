@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Nové klubové tipy a přípravy TDČ
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/295
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/111348800882196128
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-10-27_tydenni-poznamky-dna-a-oubite-v-sedym-habite.md) už utekl nějaký ten týden (27. 10. až 3. 11.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
