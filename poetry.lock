@@ -129,18 +129,21 @@ click = ">=6.7"
 configobj = ">=5.0.6"
 
 [[package]]
-name = "click-default-group-wheel"
-version = "1.2.2"
-description = "Extends click.Group to invoke a command without explicit subcommand name (packaged as a wheel)"
+name = "click-default-group"
+version = "1.2.4"
+description = "click_default_group"
 optional = false
-python-versions = "*"
+python-versions = ">=2.7"
 files = [
-    {file = "click-default-group-wheel-1.2.2.tar.gz", hash = "sha256:e90da42d92c03e88a12ed0c0b69c8a29afb5d36e3dc8d29c423ba4219e6d7747"},
-    {file = "click_default_group_wheel-1.2.2-py3-none-any.whl", hash = "sha256:1599b0b6e0ff63ee806c2cb76593cb8cc73e723cd53532c92bc496dc6fc90e5c"},
+    {file = "click_default_group-1.2.4-py2.py3-none-any.whl", hash = "sha256:9b60486923720e7fc61731bdb32b617039aba820e22e1c88766b1125592eaa5f"},
+    {file = "click_default_group-1.2.4.tar.gz", hash = "sha256:eb3f3c99ec0d456ca6cd2a7f08f7d4e91771bef51b01bdd9580cc6450fe1251e"},
 ]
 
 [package.dependencies]
 click = "*"
+
+[package.extras]
+test = ["pytest"]
 
 [[package]]
 name = "click-option-group"
@@ -1314,18 +1317,18 @@ test = ["pytest"]
 
 [[package]]
 name = "sqlite-utils"
-version = "3.35"
+version = "3.35.2"
 description = "CLI tool and Python library for manipulating SQLite databases"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "sqlite-utils-3.35.tar.gz", hash = "sha256:8f6fe7f8d12772cd5cf4594703a98dcd0c37c0fd6820dd20541ba74b9fca363a"},
-    {file = "sqlite_utils-3.35-py3-none-any.whl", hash = "sha256:d95591db18716ce7eac9a6359f4958598944d9e6640ccc42a2be6ab8456edddf"},
+    {file = "sqlite-utils-3.35.2.tar.gz", hash = "sha256:590b14ad277914cb3fc7d5e254764847facdaaa23c7bafd85ec93874f6f42143"},
+    {file = "sqlite_utils-3.35.2-py3-none-any.whl", hash = "sha256:afd7df2d248adb9a107695ad73a9abf39b1a4913a80e6915f696ca7420d42a16"},
 ]
 
 [package.dependencies]
 click = "*"
-click-default-group-wheel = "*"
+click-default-group = ">=1.2.3"
 pluggy = "*"
 python-dateutil = "*"
 sqlite-fts4 = "*"
@@ -1495,4 +1498,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "3.10.*"
-content-hash = "7efb11114d91d6f7d05cad42481301a5fbb5df2d73ad74afdf817c9b9746447f"
+content-hash = "d2b8d34cca6d4b0abdfdf85fc47590864641b57fc4f225c015343d3c7353e8f7"
