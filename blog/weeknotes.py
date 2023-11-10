@@ -277,7 +277,7 @@ def calc_strava_stats(activities):
 
 def strava_stats_to_text(start_date, end_date, stats):
     total_days = (end_date - start_date).days + 1
-    text = f"Během {total_days} dní "
+    text = f"Za {total_days} dní "
 
     if not stats:
         return text + 'jsem se nevěnoval žádné sportovní aktivitě.'
