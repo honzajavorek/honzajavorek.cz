@@ -27,8 +27,8 @@ def load_replies(pelican):
 def set_replies(article_generator, metadata):
     for article in replies:
         if article['slug'] == metadata['slug']:
-            metadata['replies'] = article['replies']
-            metadata['replies_stars'] = article['favourites_count']
-            metadata['replies_reblogs'] = article['reblogs_count']
+            metadata['replies'] = article.get('replies', [])
+            metadata['replies_stars'] = article.get('favourites_count', 0)
+            metadata['replies_reblogs'] = article.get('reblogs_count', 0)
             metadata['replies_url'] = article['toot_url']
             return
