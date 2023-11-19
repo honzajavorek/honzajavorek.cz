@@ -1,5 +1,41 @@
 [
   {
+    "id": 111433370991658991,
+    "created_at": "2023-11-18T20:11:42.510000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111433370991658991",
+    "url": "https://mastodonczech.cz/@honzajavorek/111433370991658991",
+    "replies_count": 2,
+    "reblogs_count": 2,
+    "favourites_count": 8,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Pamatujete Winamp? Nostalgie! <a href=\"https://skins.webamp.org/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">skins.webamp.org/</span><span class=\"invisible\"></span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://skins.webamp.org",
+      "title": "Winamp Skin Museum",
+      "description": "Infinite scroll through 80k Winamp skins with interactive preview",
+      "language": "en",
+      "type": "link",
+      "width": 1200,
+      "height": 600,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/000/041/170/original/e4333627597321ec.png",
+      "image_description": "Screenshot of many Winamp skins in a grid.",
+      "blurhash": "U79tfSnWNBIC_3n-IVNF8xXms*InRNXTacIU"
+    }
+  },
+  {
     "id": 111428076084355329,
     "created_at": "2023-11-17T21:45:08.685000+00:00",
     "sensitive": false,
@@ -7,7 +43,8 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111428076084355329",
     "url": "https://mastodonczech.cz/@honzajavorek/111428076084355329",
-    "favourites_count": 5,
+    "reblogs_count": 4,
+    "favourites_count": 12,
     "favourited": false,
     "reblogged": false,
     "muted": false,
@@ -37,6 +74,7 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111424645434512007",
     "url": "https://mastodonczech.cz/@honzajavorek/111424645434512007",
+    "favourites_count": 1,
     "favourited": false,
     "reblogged": false,
     "muted": false,
