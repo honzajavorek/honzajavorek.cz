@@ -1403,12 +1403,12 @@ widechars = ["wcwidth"]
 
 [[package]]
 name = "telethon"
-version = "1.31.1"
+version = "1.32.1"
 description = "Full-featured Telegram client library for Python 3"
 optional = false
 python-versions = ">=3.5"
 files = [
-    {file = "Telethon-1.31.1.tar.gz", hash = "sha256:299567c307818e0ecd1ecb208c2f4269be4ea84fdea49b5061c36362dc92abbd"},
+    {file = "Telethon-1.32.1.tar.gz", hash = "sha256:9896c0d7386121e8e67cf9a20c3aa4743e33cb24253f924e2fc1397df0281890"},
 ]
 
 [package.dependencies]
@@ -1503,4 +1503,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "3.10.*"
-content-hash = "c90fdc9006dfc0977420fa2bdfab39220385f921a99a842cd91a6352f9a08067"
+content-hash = "ae12b2f457d6579cd13a288a33d9049a0ef4b3b1076e049fb60484ce6a9004b9"
