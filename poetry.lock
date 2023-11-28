@@ -1348,13 +1348,13 @@ tui = ["trogon"]
 
 [[package]]
 name = "strava-offline"
-version = "1.0.4"
+version = "1.1.0"
 description = "Leep a local mirror of Strava activities for further analysis/processing"
 optional = false
-python-versions = "~=3.7"
+python-versions = "~=3.8"
 files = [
-    {file = "strava-offline-1.0.4.tar.gz", hash = "sha256:ac48553b6f69ebd854f0dfe695a2884428a69da58e1a18ecaf13d5288b3a0379"},
-    {file = "strava_offline-1.0.4-py3-none-any.whl", hash = "sha256:e00127c7ac51be8233bdf0e8e93454761cae0b253fb8e9eac7403e552ea7be34"},
+    {file = "strava-offline-1.1.0.tar.gz", hash = "sha256:fc632e0a8babc519c67f8c4a6a0e860cca677b1ec22901112ae5cc2d613daed6"},
+    {file = "strava_offline-1.1.0-py3-none-any.whl", hash = "sha256:4cf3f6b614901102621eda42f1cc509903b63506cbfdd793b7ad18814f43f73c"},
 ]
 
 [package.dependencies]
@@ -1371,7 +1371,7 @@ typing-extensions = "*"
 
 [package.extras]
 dev = ["build (>=0.7)", "cram", "flake8", "isort (>=5.0)", "mypy (>=0.900)", "pyflakes (>=2.2.0)", "twine", "types-PyYAML", "types-requests", "types-tabulate"]
-test = ["pytest", "pytest-recording", "vcrpy (>=2.1.0)"]
+test = ["pytest", "pytest-recording", "vcrpy (>=4.3.1)"]
 
 [[package]]
 name = "strictyaml"
@@ -1503,4 +1503,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "3.10.*"
-content-hash = "ae12b2f457d6579cd13a288a33d9049a0ef4b3b1076e049fb60484ce6a9004b9"
+content-hash = "d4bac4c699baba1556717490994136e84c46c741ca954678ae43ded4ddb544a6"
