@@ -2,7 +2,6 @@ Title: Týden pro Digitální Česko z pohledu partnera
 Image: images/62c4cc076044e027.jpeg
 Lang: cs
 Tags: junior.guru
-Status: draft
 
 Minulý týden (20. až 24.11.) jsem se účastnil [Týdne pro Digitální Česko](https://budoucnostjedigitalni.gov.cz/).
 Reprezentoval jsem [junior.guru](https://junior.guru/) jako jednu z „organizací“, které celou věc podpořily.
@@ -18,7 +17,7 @@ V Evropě jsme v tomhle na chvostu, tak by to chtělo nějak podpořit.
 
 Pokud to chápu správně, před rokem se v rámci našeho předsednictví EU dělala podobná akce, ale pouze pro politiky a zainteresované osoby.
 Protože se to líbilo, vznikl nápad, že by se to mohlo udělat větší, pro širokou veřejnost.
-Celé to organizuje tým pod Ivanem Bartošem.
+Celé to organizuje tým pod místopředsedou vlády pro digitalizaci Ivanem Bartošem.
 
 ## Jak jsem se k tomu dostal
 
@@ -26,6 +25,8 @@ Dověděl jsem se o tom díky [Anežce Müller](https://www.linkedin.com/in/anez
 
 Bylo to šup šup a už jsem si dopisoval s lidmi, jejichž e-mail končil `@vlada.cz`.
 Pak zase šup šup a najednou sedím v tramvaji směr Strakovka, abychom se tam na schůzce domluvili, co bych mohl pro TDČ udělat.
+
+![Honza ve Strakovce]({static}/images/img-4187.jpg)
 
 Upřímně jsem vůbec nevěděl, co od toho celého čekat, a taky jsem věděl, že už mám na podzim naplánované dvě akce (PyCon CZ a Frontkon), takže jsem k tomu přistupoval opatrně.
 Mám byznys v jednom člověku a nechtěl jsem naslibovat hory doly.
@@ -36,7 +37,7 @@ Nakonec to dopadlo takhle:
 -   Případně ještě nějakou přednášku, která by mohla být taky živě streamovaná na YouTube.
     Přednášky běžně v klubu dělám, opět nic nového.
 -   Slíbil jsem účast na zahajovací akci, kde budu moci mít i něco jako propagační stánek.
-    Protože jsem jeden, budu si muset sehnat někoho, kdo bude na stánku, jelikož já bych měl spíš na té akci někde networkovat.
+    Protože jsem jeden, budu si muset sehnat někoho, kdo bude na stánku, jelikož já bych měl spíš na té akci někde mluvit s lidmi.
 -   Pomůžu TDČ propagovat na svých sociálních sítích.
 
 ## Přípravy Q&A
@@ -126,7 +127,7 @@ Dotazy mi poslali předem, takže jsem se na ně taky připravil a sepsal jsem s
 
 1. **S jakou motivací jste zakládal úspěšnou komunitu Junior.Guru, kde lidem radíte, jak získat práci a rekvalifikovat se v IT oborech?**
     - Jako programátor jsem dobrovolnicky pomáhal PyLadies, což je aktivita, která se snaží dostat více žen k programování. Časem jsem pochopil, že nestačí naučit se základy programování, ale že k získání práce je potřeba ještě spousta informací, kroků, že tam jsou různé pasti, a že by to bylo dobré někam sepsat. Tak vznikla příručka.
-    - Když se to lidem líbilo a sešlo se to s mým odchodem z práce, řekl jsem si, že najdu způsob, jak by to mohlo vydělat, a zkusím to dělat na plný úvazek.
+    - Když se to lidem líbilo a sešlo se to s mým odchodem z práce, řekl jsem si, že najdu způsob, jak by mě to mohlo uživit, a zkusím to dělat na plný úvazek.
     - Ostatní věci následovaly. Komunita, podcast, atd.
 2. **Mají lidé, dříve technickou oblastí nepoznamenaní, z tohoto oboru strach? Jak jim pomáháte ho překonávat?**
     - Často si lidi nevěří, že se na to hodí. Přitom IT není žádná magie, kterou by dělala sekta vybraných kouzelníků.
@@ -161,6 +162,9 @@ Na samotné akci šlo nakonec vidět leccos.
 Na stánku neurazilo ani tričko, na pódiu jsem myslím zapadl docela dobře a zároveň jsem to nepřehnal.
 Ani prezident nepřišel v kravatě.
 
+![Ivan Bartoš]({static}/images/img-6408-2.jpg)
+Ivan Bartoš
+
 Snažil jsem se vyjet na místo včas, ale dopadlo to jako vždycky.
 V tramvaji mi volá žena, že jsem doma zapomněl sako, tak jsem se pro něj vracel a do Holešovického Vnitroblocku dojel nakonec Boltem.
 Tam mě čekal prázdný stánek, protože Dan nestíhal ještě víc.
@@ -171,6 +175,9 @@ Prakticky hned se začátkem akce jsme ale vše nahodili a bylo to v pohodě.
 
 Měli jsme nakonec štěstí, protože jsme nafasovali stoleček u sloupu a se zásuvkami.
 Na akci nebyly povolené _rollupy_, ale díky sloupu mohl Dan nalepit velký žlutý panel junior.guru do výšky a věřím, že to muselo vypálit zorničky i panu prezidentovi.
+
+![Stánek]({static}/images/img-6413.jpg)
+Ivan Bartoš, Petr Pavel, Radko Sáblík a studenti
 
 Chvíli jsme ladili účty na macOS, aby se dalo něco prezentovat z mého počítače.
 Zjistil jsem, že _Guest User_ je celkem nepoužitelný, otevře to jen Safari a nepovolí ani připojit monitor, takže jsem musel v systému Danovi vytvořit úplně nového uživatele.
@@ -183,6 +190,8 @@ Co dělá kybernetický úřad nebo NPI nevím, ale taky nevím, jestli mě to v
 Většina materiálů na stolech byla mířena na cílovky jednotlivých organizací (junioři, učitelé, studenti…), ale ty na akci nebyly, byla to uzavřená akce.
 Měla sloužit networkingu mezi organizacemi, k propojování, spojení sil.
 
+![Dan a já na stánku]({static}/images/img-6419.jpg)
+
 Podle mě by to dopadlo lépe, kdyby každý dostal na (striktně) 5 minut projektor, bez následné diskuze, a mohl by udělat _lightning talk_ o tom, co jejich organizace dělá.
 To bych se rád podíval a kdybych viděl nějakou možnost spolupráce či synergie, dotyčného bych si v prostoru odchytil i bez stánku.
 Taky bych hned měl diskuzní otvírák pro spoustu lidí v sále: „Vy jste ta, která dělá to a tamto, že? Můžete mi o tom říct víc?“
@@ -190,6 +199,8 @@ Taky bych hned měl diskuzní otvírák pro spoustu lidí v sále: „Vy jste ta
 Naštěstí jsme do stánku nijak zvlášť neinvestovali.
 V podstatě to stálo jen trochu nervů a ten žlutý panel, který jsem ale následně hned párkrát použil.
 Dan se díky cateringu dobře najedl a aspoň měl čas řešit to, že chudák cestou na akci ztratil telefon.
+To mu dalo dost zabrat, protože jak zní velké moudro z prvního dílu Macha a Šebestové, „brýle bez brýlí se špatně hledají.“
+Taky kvůli tomu nemáme žádné fotky toho, jak něco dělám já 😀
 
 Na stánku NPI jsem ale přece jen zjistil něco zajímavého.
 Paní mi dala kontakt na někoho, kdo zpracovává studii o juniorech.
@@ -200,6 +211,8 @@ Pavel přitáhl pozornost spousty kamer a foťáků, možná až moc.
 Z akce už jsou [oficiální fotky](https://www.flickr.com/photos/199576391@N07/albums/72177720312889278) a vlastně mě trochu mrzí, že na nich je skoro jenom prezident 😀
 Dokud na akci byl, pronásledoval ho dav fotografů a dalších lidí.
 Zastavil se u stánku SŠ studentů, kteří vymysleli vlastní AI, a kde zajisté vznikly nějaké pěkné fotky jak prezident hledí vstříc budoucnosti, technologiím a mládí.
+
+![Petr Pavel a studenti]({static}/images/img-6411.jpg)
 
 V Pavlově projevu se mi líbilo, že akcentoval věci jako zpožděné platby sociálních příspěvků, kdy kvůli přetížení úřadů a nedotáhnuté digitalizaci dostávají lidi, kteří ty peníze nejvíc potřebují a jejichž _cashflow_ je úplně na prd, dávky třeba i s několikaměsíčním zpožděním.
 
@@ -218,12 +231,15 @@ Potkal jsem pár takových a dobře jsme si popovídali, nebo se pozdravili.
 Užíval jsem si hlavně povídání s [Petrou Kumovou](https://www.linkedin.com/in/petra-kumov%C3%A1-215a5325a/) a jejími kolegy.
 Napadlo mě pak, že bychom mohli některé z lidí, které jsem potkal, pozvat do [podcastu](https://junior.guru/podcast/), tak uvidíme, co z toho bude.
 
+![Newsroom]({static}/images/img-6410.jpg)
+Ti novináři! Ti se maj
+
 Žádné obrovské spolupráce ani žádný zásadní marketing z toho asi nebude.
 Ale třeba se něco vyvrbí časem.
 Někdy člověk jen někde ukáže ksicht a zúročí se to sice s velkým zpožděním, ale zúročí.
 A třeba i tak, jak by to jeden ani nečekal.
 
-Viděl jsem tam i nějaké známé osobnosti, ale asi nejsem ten typ, abych k nim přišel, zahlásil „jé, já vás znám z televize!“ a pak nějak plynule navázal duchaplnou konverzací.
+Viděl jsem tam i nějaké známé osobnosti, jenže nejsem ten typ, abych k nim přišel, zahlásil „jé, já vás znám z televize!“ a pak nějak plynule navázal duchaplnou konverzací.
 Bez toho, aby mě někdo představil, se prosazovat neumím.
 A hlavně se neumím prosazovat mezi lidi, kde si nejsem jistý, zda vůbec máme společná témata k řešení.
 
@@ -245,7 +261,7 @@ Nevím, jestli je někde záznam.
 Dost jsme se pak bavili hlavně o tom katalogu ÚP, který je sice fajn, ale má ještě dost much.
 Jan Horák projekt převzal dva týdny před akcí a nezbývalo mu, než dušovat se, že mouchy vychytají.
 Po panelu se kolem něj sešlo kolečko lidí, kteří ho přišli grilovat kvůli tomu, jaké má (zatím) jsemvkurzu.cz nelogičnosti a nefunkčnosti, především v procesech a aplikaci celé věci skrze jednotlivé ÚP.
-Naštěstí se to ale neslo v celkem poklidném duchu a nešlo o opravdové grilování, spíš o zpětnou vazbu.
+Dle účastníků kolečka se to údajně neslo v poklidném duchu a nešlo o opravdové grilování, jen o „zpětnou vazbu“, ale jak to vnímal pan Horák, to nevím 😀
 
 Měl jsem v kapse připravený Coldrex, kdyby to bylo špatný, ale naštěstí to špatný nebylo.
 Mluvit jsem mohl, soustředit jsem se taky dokázal.
@@ -265,6 +281,9 @@ Všelijak jsem se tam posouval a mával rukama a snažil se opět o nějaký str
 
 Moderátorka byla milá, ale jak přikyvovala a ptala se, v hlavě mi naskočila scéna z Chalupářů, kde přijede televize na slavnosti a zpovídá místní ([čas 26:17 tady](https://www.ceskatelevize.cz/porady/901363-chalupari/275320075140010/)), a nemohl jsem se toho obrazu zbavit 😀
 
+![Rozhovor]({static}/images/img-6421.jpg)
+Toto nejsem já, ale přesně takhle to vypadalo
+
 Pak jsem se ještě chvíli bavil s kameramankou, která na základě videa bude psát i článek.
 Nezapamatoval jsem si v tom stresu jména, takže nemám kontakty, ale video by pak prý mělo být na sociálních sítích TDČ, na [eduklub.cz](https://eduklub.cz) a na [itpeoplecz.cz](https://itpeoplecz.cz).
 S vydáním tohoto článku se mi na video čekat nechce, ale až ho někde zahlédnu, tak ho sem doplním.
@@ -280,6 +299,8 @@ Dal jsem ho na topení a krásně byl vidět.
 Akci jsem zahájil anketou, zda mám pít čaj nebo Coldrex, ale bylo to jen na oko, protože jsem hodlal vypít postupně oboje.
 To mi pomohlo zvládnout mluvit skoro 2 hodiny v kuse.
 Záznam je [tady](https://www.youtube.com/watch?v=9mpIl8kFulA&t=1s).
+
+![Stream na YouTube]({static}/images/screenshot-2023-11-28-at-20-10-40-honza-javorek-programovani-jako-kariera-ptej-se-q-a-v-ramci-tydne-pro-digitalni-cesko.png)
 
 Byla to pohoda, akorát mě překvapilo, že z YouTube chatu nebyly skoro žádné dotazy.
 Připojil se vlastně někdo?
@@ -304,6 +325,8 @@ Ale letos jsem si řekl, že když je to někde na Kampě a já už budu během 
 Tak se i stalo.
 No a jak už to tak bývá, organizátoři, především [Petr Naske](https://www.linkedin.com/in/naskep/), který mě do DigiKoalice kdysi přitáhl, si všimli, že chci přijít, a hned mě ukecali na to, abych tam měl nějaký výklad u stolečku.
 
+![Zahájení akce]({static}/images/img-6444.jpg)
+
 Opět nebyly povolené rollupy, ale mohli jsme si vzít letáčky.
 Tak jsem vzal samolepky a „the letáček“, tedy onen žlutý panel z pondělního stánku.
 
@@ -311,9 +334,17 @@ Nečekal jsem od toho vlastně nic, takže jsem nebyl v žádném stresu a jen s
 Konalo se to v Lichtenštejnském paláci přímo u Vltavy, takže krásné prostory a krásné výhledy.
 Z různých promluv organizátorů jsem pochopil, že tyto prostory měli k dispozici výjimečně jen díky tomu, že byla akce zařazena do TDČ.
 
+![Vitrínky]({static}/images/img-6451.jpg)
+Nejkrásnější cesta na WC, kterou jsem kdy viděl, lemovaná vitrínami
+
+![Šatna]({static}/images/img-6454.jpg)
+Nejkrásnější šatna, kterou jsem kdy viděl, s Masarykem
+
 Nakonec jsem měl hned několik pěkných konverzací a myslím že i svým povídáním u stolečku jsem zaujal svou skupinku tří nebo čtyř přihlížejících.
 Povedlo se mi družit především s lidmi kolem Matfyzu, [Confido Institute](https://confido.institute/), [Psaní Hravě](https://www.psanihrave.cz/) a [OrgPad](https://www.orgpad.com/).
 Zajímavá směsice!
+
+![Záblesk hezkého počasí]({static}/images/img-6457.jpg)
 
 Na setkání jsem si uvědomil, že učitelé už docela dost jedou Python a možná by mělo velký smysl říct jim i o tom, že existuje [Pyvec](https://pyvec.org/) (kde jsem ve výboru) a jeho [dokumentace](https://docs.pyvec.org/).
 Tak jsem to tam do nich tlačil a když jsem přijel domů, ještě jsem rozhodil pár statusů do skupin na FB, kde jsem se snažil lidem připomenout, že Pyvec existuje, co je, a že máme třeba [návod, jak si založit Python sraz ve vlastním měste](https://docs.pyvec.org/guides/meetup.html).
@@ -357,6 +388,8 @@ Taky mám teď žlutý panel, který se třikrát za jeden týden osvědčil v b
 Vytvořený narychlo na koleně, v náhodném formátu a provedení, ale nakonec překvapivě dobře použitelný pro vše, co jsem teď potřeboval.
 A relativně snadno se převáží MHD, když pominu, že se musím naučit s ním neliskat spolucestující, když se mi do něj v metru opře vítr.
 
+![Panel]({static}/images/img-6458.jpg)
+
 Mohl jsem něco udělat líp?
 Možná jsem mohl ještě víc networkovat, ale nic si nevyčítám, na zahajovací akci TDČ jsem byl z velké části prostě jen rád, že zvenku připomínám zdravého člověka.
 Možná jsem mohl udělat víc akcí, ale jaký efekt by to mělo?
@@ -366,8 +399,10 @@ Nevím.
 Určitě spoustu věcí, různých drobností, ale byl to první ročník tohoto formátu.
 Věci mají svůj rozjezd a i kdyby se vše povedlo, může trvat i roky, než na TDČ budou proudit davy.
 Jako start mi to přijde v pohodě.
+Co musím vyzdvihnout, byla perfektní komunikace a koordinace všech organizátorek.
+Vždy jsem měl všechny informace a pokud jsem neměl, okamžitě odepisovaly na e-maily a vše objasnily.
 
-Přijde mi fajn, že vláda se to nesnaží nějak vymyslet sama, bez kontaktu s běžnými smrtelníky, ale naopak šli a oslovili všechny možné organizace, neziskové i ziskové.
+Přijde mi fajn, že vláda se TDČ nesnaží nějak vymyslet sama, bez kontaktu s běžnými smrtelníky, ale naopak šli a oslovili všechny možné organizace, neziskové i ziskové.
 Takhle to mělo nějaký smysl a možná jsme nakonec v očích veřejnosti propůjčili kredit trochu i my této vládní akci.
 Že to není jen nějaké divadlo, aby se utratily rozpočty a lidi se polácali po zádech, ale že to je akce, kterou i lidi z praxe berou vážně.
 
