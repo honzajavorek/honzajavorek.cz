@@ -2,6 +2,8 @@ Title: Týden pro Digitální Česko z pohledu partnera
 Image: images/62c4cc076044e027.jpeg
 Lang: cs
 Tags: junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/297
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/111489844700499472
 
 Minulý týden (20. až 24.11.) jsem se účastnil [Týdne pro Digitální Česko](https://budoucnostjedigitalni.gov.cz/).
 Reprezentoval jsem [junior.guru](https://junior.guru/) jako jednu z „organizací“, které celou věc podpořily.
