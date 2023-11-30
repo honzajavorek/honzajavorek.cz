@@ -1,5 +1,119 @@
 [
   {
+    "id": 111493327448719904,
+    "created_at": "2023-11-29T10:19:25.417000+00:00",
+    "in_reply_to_id": 111493316874936481,
+    "in_reply_to_account_id": 110921870573231541,
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111493327448719904",
+    "url": "https://mastodonczech.cz/@honzajavorek/111493327448719904",
+    "replies_count": 1,
+    "reblogs_count": 1,
+    "edited_at": "2023-11-29T10:19:48.015000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>A já to tu ještě trochu doplním. Když byl <span class=\"h-card\" translate=\"no\"><a href=\"https://witter.cz/@wvi\" class=\"u-url mention\">@<span>wvi</span></a></span> členem klubu na <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a>, doporučil tam někomu knihu Grokking Algorithms.</p><p>A bylo to moc dobré doporučení! Tip na tuhle knihu se tam od té doby hodně opakuje a kdo o ni zavadil, ten si ji pochvaluje. V podcastu sice nezazní, ale tady vám ji přihazuju jako bonus 😉</p><p><a href=\"https://www.manning.com/books/grokking-algorithms\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">manning.com/books/grokking-alg</span><span class=\"invisible\">orithms</span></a></p>",
+    "mentions": [
+      {
+        "id": 109432155440096165,
+        "username": "wvi",
+        "url": "https://witter.cz/@wvi",
+        "acct": "wvi@witter.cz"
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ],
+    "card": {
+      "url": "https://www.manning.com/books/grokking-algorithms",
+      "title": "Grokking Algorithms",
+      "description": "In this fully illustrated, friendly guide you’ll discover how to apply common algorithms to the practical problems you face every day as a programmer.",
+      "language": "en",
+      "type": "link",
+      "provider_name": "Manning Publications",
+      "image_description": "The cover for Grokking Algorithms"
+    }
+  },
+  {
+    "id": 111493316874936481,
+    "created_at": "2023-11-29T10:16:44.076000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111493316874936481",
+    "url": "https://mastodonczech.cz/@honzajavorek/111493316874936481",
+    "replies_count": 1,
+    "reblogs_count": 2,
+    "favourites_count": 2,
+    "edited_at": "2023-11-29T13:48:38.229000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Vyšel nám <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> <a href=\"https://mastodonczech.cz/tags/podcast\" class=\"mention hashtag\" rel=\"tag\">#<span>podcast</span></a> s <span class=\"h-card\" translate=\"no\"><a href=\"https://witter.cz/@wvi\" class=\"u-url mention\">@<span>wvi</span></a></span>! Sice že prý dělá pro Oracle, a on už dělá pro Pure Storage, ale jinak všechno směroplatný.</p><p>Měli byste při programování nějak řešit, jaký máte operační systém, nebo jak výkonný je procesor? Můžete být dobří, i když vám nešla matika? K čemu se hodí teoretická informatika a jak s ní začít?</p><p>Má to 33 min, mrk na <a href=\"https://junior.guru/podcast\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">junior.guru/podcast</span><span class=\"invisible\"></span></a>, nebo do běžných podcastových aplikací. Líbí se vám náš podcast? Dejte mu hvězdičky a platformy ho nabídnou víc lidem ⭐</p>",
+    "media_attachments": [
+      {
+        "id": 111493307482546084,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/111/493/307/482/546/084/original/905c7f437614e5a1.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/111/493/307/482/546/084/small/905c7f437614e5a1.png",
+        "meta": {
+          "original": {
+            "width": 700,
+            "height": 700,
+            "size": "700x700",
+            "aspect": 1.0
+          },
+          "small": {
+            "width": 480,
+            "height": 480,
+            "size": "480x480",
+            "aspect": 1.0
+          }
+        },
+        "blurhash": "UdR:0#X9-#r=V-o2jqWUs^X8WXjFxkn%jEWr"
+      }
+    ],
+    "mentions": [
+      {
+        "id": 109432155440096165,
+        "username": "wvi",
+        "url": "https://witter.cz/@wvi",
+        "acct": "wvi@witter.cz"
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      },
+      {
+        "name": "podcast",
+        "url": "https://mastodonczech.cz/tags/podcast"
+      }
+    ],
+    "card": {
+      "url": "https://junior.guru/podcast/",
+      "title": "Podcast o programování a kariéře v IT",
+      "description": "Jak začít s programováním? Jak najít práci v IT? Přinášíme odpovědi, inspiraci, motivaci.",
+      "language": "cs",
+      "type": "link",
+      "width": 1200,
+      "height": 630,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/002/747/771/original/cfecbfa795f414a4.png",
+      "blurhash": "UiSiZ_j[ofazNSj@j[j@M@fQWBaybhfQayj@"
+    }
+  },
+  {
     "id": 111489844700499472,
     "created_at": "2023-11-28T19:33:42.899000+00:00",
     "sensitive": false,
@@ -7,6 +121,7 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111489844700499472",
     "url": "https://mastodonczech.cz/@honzajavorek/111489844700499472",
+    "favourites_count": 1,
     "favourited": false,
     "reblogged": false,
     "muted": false,
