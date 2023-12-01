@@ -188,7 +188,7 @@ def get_links(since_date: date, links: list):
         html_tree = html_soup.fromstring(link['content'])
         title = None
 
-        if card := link['card']:
+        if card := link.get('card'):
             link_url = card['url']
             title = card['title']
         else:
