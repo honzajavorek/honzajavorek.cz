@@ -272,6 +272,10 @@ A pak mě ještě rozrušil fakt, že jsme seděli na nějakých historických k
 Když se vám tohle dostane v ten moment do hlavy, už to z ní nevyndáte.
 Najít potom polohu na křesle, která bude působit důstojně, je značně obtížné.
 
+<div class="alert alert-warning" role="alert" markdown="1">
+**Dodatečně:** Záznamy ze zahájení [jsou na YouTube](https://www.youtube.com/playlist?list=PLoSmql-Cov7ejomK9P_6anEij26T0_1rs), já jsem v [Bloku 5](https://www.youtube.com/watch?v=nfMqLOVLg5o&list=PLoSmql-Cov7ejomK9P_6anEij26T0_1rs&index=6).
+</div>
+
 ## Rozhovor
 
 Po panelu jsem se zakecával s lidmi, ale pak si mě odchytili ještě na ten samostatný rozhovor.
@@ -413,3 +417,7 @@ Tato vláda není dle mých představ (chtělo by se říct - která je?), ale a
 
 Bylo to fajn.
 Díky všem, že jsem mohl být součástí téhle akce, ačkoliv jsem taková malá ryba, a že jsem nakonec dostal tolik prostoru, aniž bych si o něj vyloženě říkal.
+
+<div class="alert alert-warning" role="alert" markdown="1">
+**Dodatečně:** Za celý Týden se podařilo přilákat 5.369 účastníků na 126 fyzických i online akcí ve 30 městech České republiky.
+</div>
