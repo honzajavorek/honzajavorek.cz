@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Tatínek na plný úvazek
 Image: images/img-6587.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/299
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/111546103566075564
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-12-01_tydenni-poznamky-odpocivani-prednasky-uzdravovani-staz-a-experimenty.md) už utekl nějaký ten týden (1. 12. až 8. 12.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
