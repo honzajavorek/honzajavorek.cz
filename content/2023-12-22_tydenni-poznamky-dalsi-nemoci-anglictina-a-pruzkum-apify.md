@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Další nemoci, angličtina a průzkum Apify
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/300
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/111625492704255811
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-12-08_tydenni-poznamky-tatinek-na-plny-uvazek.md) už utekl nějaký ten týden (8. 12. až 22. 12.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
