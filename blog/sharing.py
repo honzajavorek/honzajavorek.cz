@@ -140,7 +140,7 @@ def prepare_text(article: dict) -> str:
     hashtags = set(filter(None, [HASHTAGS_MAPPING.get(tag) for tag in tags])) | {'#blog'}
     hashtags = ' '.join(sorted(hashtags))
 
-    return f"{text} Tentorkát je to na {article['readtime']} min čtení {emoji} {article['url']} {hashtags}"
+    return f"{text} Tentokrát je to na {article['readtime']} min čtení {emoji} {article['url']} {hashtags}"
 
 
 def append_metadata(source_path: str | Path, key: str, value: Any):
