@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Vánoce
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/301
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/111705252534378818
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2023-12-22_tydenni-poznamky-dalsi-nemoci-anglictina-a-pruzkum-apify.md) už utekl nějaký ten týden (22. 12. až 5. 1.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
