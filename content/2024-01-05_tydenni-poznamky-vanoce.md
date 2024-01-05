@@ -16,12 +16,14 @@ Aktuální nabídky práce pro juniory: [Red Hat](https://junior.guru/jobs/ade40
 
 Pozitivní informace hned na začátek: Přes Vánoce jsem byl zdravý!
 Odjeli jsme k babičce a tam jsem měl možnost zrelaxovat.
-Odpočinul jsem si od práce i všech dalších povinností a myslím, že mi to prospělo a po svátcích jsem se vrátil do života o něco silnější.
+Odpočinul jsem si od práce i všech dalších povinností.
+Myslím, že mi to prospělo a po svátcích jsem se vrátil do života o něco silnější.
+Taky jsem měl sílu a čas udělat si pár přemýšlecích procházek po polích a lesech.
 
 ## Plány na 2024
 
 Přes svátky jsem hodně přemýšlel.
-Jak o životě, tak o práci, o junior.guru a jeho směřování, o rozbitém pracovním trhu, o klesajících grafech, o mém psychickém zdraví, stresu, atd.
+Jak o životě, tak o práci, o junior.guru a jeho směřování, o rozbitém pracovním trhu, AI, o klesajících grafech, o mém psychickém zdraví, stresu, atd.
 
 Koukám na grafy na junior.guru a jsem z nich smutný.
 Pamatuju si, jak počet členů v klubu útočil na 500.
@@ -40,7 +42,7 @@ Zatím to sem ale nepíšu, protože nad tím jednak ještě trochu přemýšlí
 
 ## Studie
 
-Přes Vánoce jsme domluvili termín callu, na kterém se dovím já a můj tým z junior.guru (moderátoři) závěry studie mezi juniory a career switchery.
+Přes Vánoce jsme domluvili termín callu, na kterém se dovím já a můj tým z junior.guru (moderátoři) závěry studie mezi career switchery.
 Pak jsme si ještě ujasnili okruhy, které nás zajímají nejvíc.
 
 Call jsme měli dnes večer a bylo to výživné.
@@ -54,7 +56,7 @@ No, jsem zvědavý, jestli na základě tohoto callu, poznámek, které jsem si 
 ## Apify
 
 Dál jsem si hrál s Apify.
-Přes Vánoce se mi povedlo se mi stáhnout ukládaná data přes `apify-client` a použít na junior.guru.
+Přes Vánoce se mi povedlo stáhnout ukládaná data přes `apify-client` a použít na junior.guru.
 Zatím jen na zkoušku pro stahování kurzů měn z ČNB, což je zcela nepodstatná funkce junior.guru, kterou tam mám kvůli jedné malé kravině.
 Ale právě proto je to dobrý test.
 Zatím vše funguje, takže je jen otázka času, než stejným způsobem přesunu na Apify další věci, především scrapery nabídek práce, kde to samozřejmě dává úplně největší smysl.
@@ -63,8 +65,9 @@ Předtím se ale ještě musím naučit použít na Apify jejich proxiny.
 Zatím to nešlo, ale za mého velkého fandění Vláďa Dušek přes svátky [podporu pro proxy do Apify klienta a do Scrapy šablony přidal](https://github.com/apify/actor-templates/pull/260).
 Taky se mi ozval Marek Trunkát, CTO Apify, že je rád, že i někdo z Česka staví něco nad Apify a jestli jim dám zpětnou vazbu na _developer experience_.
 
-Protože jsem sledoval code review, když přidávali podporu pro proxy, a všiml jsem si tam malého úkolu, který chtěli udělat, napadlo mě jednou večer, že v rámci relaxu bych to mohl udělat jako open source příspěvek, když už se mnou tak pěkně komunikují.
+Protože jsem sledoval _code review_, když přidávali podporu pro proxy, a všiml jsem si tam malého úkolu, který chtěli udělat, napadlo mě jednou večer, že v rámci relaxu bych to mohl udělat jako open source příspěvek, když už se mnou tak pěkně komunikují.
 Nakonec se mi to nepovedlo dokončit, ale i tak jsem to [vykopl do PR](https://github.com/apify/apify-sdk-python/pull/161) a třeba to někomu pomůže.
+Sám jsem se při tom hned něco naučil, např. že [ruff](https://pypi.org/project/ruff/), o kterém vím, že existuje, ale nepoužívám ho, umí i formátovat kód a má zakomponované i věci jako [isort](https://pypi.org/project/isort/).
 
 Musím říct, že největší problém v komunikaci s Apify je přeučit se, že po písmenech Api- následuje -fy a ne -ary.
 Zvyk je železná košile a tahle slova jsou si až příliš podobná 😅
@@ -87,11 +90,11 @@ Chtěl jsem si konečně sehnat nějakou psychoterapii, takže jsem mkrnul na [c
 Bohužel vyhledávání a filtrování mi tam vůbec nevyhovovalo.
 V Praze je hromada terapeutů a abych tam mohl chodit pravidelně, chtěl jsem se omezit pouze na ty, kteří jsou poblíž bydliště nebo kanceláře.
 Bohužel tak detailní filtrování tam není.
-Nezbylo než si vyhrnout rukávy.
+Nezbylo než si vyhrnout rukávy…
 
 Dal jsem tomu zhruba hoďku a jo, nějak to šlo, takže další hoďku jsem to ladil a za jeden večer jsem si takhle přes Python scrapnul celý ten katalog.
 Nejvíc mi dalo zabrat, že API ze serveru vrací data v JSONu, ve kterém byl jako hodnota uložený nějaký JavaScriptový objekt.
-GitHub Copilot mi poradil knihovnu `demjson`, která nefungovala, ale objevil jsem `demjson3`, a s tím už to nějak šlo.
+GitHub Copilot mi poradil knihovnu `demjson`, která nefungovala, ale objevil jsem [demjson3](https://pypi.org/project/demjson3/), a s tím už to nějak šlo.
 
 Stažený katalog už pak šlo docela snadno na pár řádcích vyfiltrovat tak, jak potřebuji já.
 Dokonce jsem si k jednotlivým terapeutům dogeneroval odkazy na Mapy.cz s jejich adresou apod.
@@ -109,9 +112,9 @@ Nejspíš nezbývá než je potkat a vyzkoušet.
 
 ## Další
 
--   Volal jsem si s Engetem a bavili jsme se s Marianem o trhu, budoucnosti, AI, krachu Green Fox Academy, a všem možném.
+-   Volal jsem si s ENGETO a bavili jsme se s Marianem o trhu, budoucnosti, AI, krachu Green Fox Academy, a všem možném.
     Tyto hovory mě baví.
-    Teoreticky jsou něco mezi zákazníkem a konkurencí, ale prakticky jsem zjistil, že spíš než řešit byznys, baví mě prostě volat si s Marianem jako podnikatelem z oboru a zamýšlet se nad vším možným.
+    ENGETO je něco mezi zákazníkem a konkurencí, ale vlastně si s Marianem volám spíš jako s podnikatelem z oboru, jen tak si povídáme a zamýšlíme se nad vším možným.
     Chtěli jsme původně řešit anketu mezi juniory, ale shodli jsme se, že to teď oba máme na chvostu priorit, a necháme to zatím u ledu.
 -   Napsal jsem e-maily všem dokotrům, ke kterým mám zajít.
     Od všech mi přišlo, že mám zavolat.
@@ -125,11 +128,13 @@ Nejspíš nezbývá než je potkat a vyzkoušet.
     Po delší době jsem se přihlásil na Twitter a zjistil jsem, že data z tohoto projektu [někdo dokonce reálně používá](https://twitter.com/ProgramyDoVoleb/status/1737120205099188467).
 -   Zjistil jsem, že pokud využívám GitHub Pages a mám na doméně hvězdičkové DNS, tak toho mohou zneužít hackeři a vytvořit si stránku na sub-sub-doméně.
     Ošetřil jsem jak junior.guru, tak weby Pyvce, aby se to dít nemohlo.
-    Hackerům se povedlo založit `sltgacorterbaru.id.junior.guru/` nebo `wasiat4d.go.pyladies.cz/`.
+    Hackerům se povedlo založit `sltgacorterbaru.id.junior.guru` nebo `wasiat4d.go.pyladies.cz`.
     Viz [oranžový Warning tady](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages).
 -   Opravil jsem pár chyb v Discord botovi, něco v nabídkách práce, něco v seznamu rolí…
     Debugoval jsem, proč se některé kurzy na jsemvkurzu.cz neobjevují v katalogu na junior.guru.
     Důvod už znám, ale oprava bude na větší programování.
+-   Měli jsme schůzi výboru Pyvce.
+    Nevím, jestli jsme zvládli zápis, bylo to nějaké zmatené, ale vyřešili jsme nějaké věci a posunuli jsme vpřed hledání účetní.
 -   E-maily, [klubový Discord](https://junior.guru/club/), [Pyvec Slack](https://docs.pyvec.org/operations/support.html#sit-kontaktu), zprávy na LinkedIn.
     Udělil jsem dvě stipendia na členství v klubu.
 -   Za 15 dní jsem při procházkách nachodil 17 km, na túrách nachodil 24 km. Celkem jsem se hýbal 10 h a zdolal při tom 41 km.
