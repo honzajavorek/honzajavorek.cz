@@ -114,6 +114,13 @@ Nejspíš nezbývá než je potkat a vyzkoušet.
 
 ## Další
 
+-   Začal jsem přepisovat [film2trello](https://github.com/honzajavorek/film2trello) z webové appky a bookmarkletu do Telegram bota.
+-   Byli jsme se ženou poprvé od narození potomka oba spolu v kině.
+    Akorát když se ta příležitost naskytla, tak tam nic moc nedávali, takže jsme šli na [Wonku](https://www.csfd.cz/film/972101-wonka/prehled/).
+    Protože jsme viděli [recenzi od Fily](https://www.kinobox.cz/clanky/recenze/32901-videorecenze-wonka), věděl jsem, co čekat.
+    A v kině jsem dostal, co jsem čekal, a ještě něco navíc - aspoň teda já jsem si v tom filmu všiml kritiky současné formy kapitalismu.
+    Co mě trochu mrzí je, že na to, že to byl muzikál, tak mi z filmu hraje v hlavě všeho všudy [jediná písnička](https://www.kinobox.cz/clanky/recenze/32901-videorecenze-wonka), která tam byla spíš ze srandy.
+    Když srovnám s Vlasy nebo Nocí na Karlštejně, tak bída.
 -   Volal jsem si s ENGETO a bavili jsme se s Marianem o trhu, budoucnosti, AI, krachu Green Fox Academy, a všem možném.
     Tyto hovory mě baví.
     ENGETO je něco mezi zákazníkem a konkurencí, ale vlastně si s Marianem volám spíš jako s podnikatelem z oboru, jen tak si povídáme a zamýšlíme se nad vším možným.
