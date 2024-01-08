@@ -6,7 +6,38 @@
     "toot_url": "https://mastodonczech.cz/@honzajavorek/111705252534378818",
     "favourites_count": 2,
     "reblogs_count": 0,
-    "replies": []
+    "replies": [
+      {
+        "id": 111714087494171253,
+        "created_at": "2024-01-07T10:01:36.381000+00:00",
+        "in_reply_to_id": 111705252534378818,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111714087494171253",
+        "url": "https://mastodonczech.cz/@honzajavorek/111714087494171253",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p>Přidal jsem tam ještě recenzi na Wonku.</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        }
+      }
+    ]
   },
   {
     "url": "https://honzajavorek.cz/blog/tydenni-poznamky-dalsi-nemoci-anglictina-a-pruzkum-apify/",
