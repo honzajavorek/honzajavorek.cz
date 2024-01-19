@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Hory a scrapery
 Image: images/img-7181.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/303
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/111783362132032936
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-01-05_tydenni-poznamky-vanoce.md) už utekl nějaký ten týden (5. 1. až 19. 1.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
