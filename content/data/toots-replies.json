@@ -4,9 +4,83 @@
     "slug": "tydenni-poznamky-hory-a-scrapery",
     "created_at": "2024-01-19T15:39:03.474000+00:00",
     "toot_url": "https://mastodonczech.cz/@honzajavorek/111783362132032936",
-    "favourites_count": 0,
+    "favourites_count": 2,
     "reblogs_count": 0,
-    "replies": []
+    "replies": [
+      {
+        "id": 111783509655270834,
+        "created_at": "2024-01-19T16:16:34+00:00",
+        "in_reply_to_id": 111783362132032936,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "direct",
+        "language": "cs",
+        "uri": "https://boskovice.social/users/zoul/statuses/111783509639351473",
+        "url": "https://boskovice.social/@zoul/111783509639351473",
+        "favourites_count": 1,
+        "favourited": true,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> Účetního posílám já! Je to dobré borec, dejte vědět, jestli to klaplo :)</p>",
+        "account": {
+          "id": 109324797571302698,
+          "username": "zoul",
+          "acct": "zoul@boskovice.social",
+          "display_name": "Tomáš Znamenáček",
+          "url": "https://boskovice.social/@zoul",
+          "uri": "https://boskovice.social/users/zoul",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/52aca96d73208268.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/52aca96d73208268.png"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ]
+      },
+      {
+        "id": 111785016842266868,
+        "created_at": "2024-01-19T22:39:52.346000+00:00",
+        "in_reply_to_id": 111783509655270834,
+        "in_reply_to_account_id": 109324797571302698,
+        "sensitive": false,
+        "visibility": "direct",
+        "language": "cs",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111785016842266868",
+        "url": "https://mastodonczech.cz/@honzajavorek/111785016842266868",
+        "favourites_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://boskovice.social/@zoul\" class=\"u-url mention\">@<span>zoul</span></a></span> Děkujeme! Myslím, že to téměř už klaplo.</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 109324797571302698,
+            "username": "zoul",
+            "url": "https://boskovice.social/@zoul",
+            "acct": "zoul@boskovice.social"
+          }
+        ]
+      }
+    ]
   },
   {
     "url": "https://honzajavorek.cz/blog/tydenni-poznamky-vanoce/",
