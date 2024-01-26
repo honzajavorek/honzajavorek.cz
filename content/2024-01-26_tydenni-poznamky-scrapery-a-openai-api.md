@@ -47,7 +47,7 @@ Leda že bych našel [alternativní API](https://replicate.com/), kde to funguje
 
 ## Další
 
--   Sepsal jsem konečně [článek, kde jsou mé aktuální plány]({filename}content/2024-01-25_plan-na-q1-2024.md).
+-   Sepsal jsem konečně [článek, kde jsou mé aktuální plány]({filename}2024-01-25_plan-na-q1-2024.md).
 -   Měl jsem rýmu a některé dny jsem pracoval z postele.
 -   Byli jsme na LEGO výstavě.
 -   Optimalizoval jsem, jak se v mém kódu pracuje s _asyncio loops_.
