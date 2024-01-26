@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Scrapery a OpenAI API
 Image: images/img-7403.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/305
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/111822679943390987
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-01-19_tydenni-poznamky-hory-a-scrapery.md) už utekl nějaký ten týden (19. 1. až 26. 1.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
