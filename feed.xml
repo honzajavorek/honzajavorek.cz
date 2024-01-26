@@ -1,17 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Javorové lístky</title><link href="https://honzajavorek.cz/blog/" rel="alternate"></link><link href="https://honzajavorek.cz/feed.xml" rel="self"></link><id>https://honzajavorek.cz/</id><updated>2024-01-25T00:00:00+01:00</updated><author><name>Honza Javorek</name><email>mail@honzajavorek.cz</email><uri>https://honzajavorek.cz</uri></author><subtitle>Blog Honzy Javorka</subtitle><rights>© Copyright 2007—2024 Honza Javorek &lt;https://honzajavorek.cz&gt;</rights><entry><title>Plán na Q1 2024</title><link href="https://honzajavorek.cz/blog/plan-na-q1-2024/" rel="alternate"></link><published>2024-01-25T00:00:00+01:00</published><updated>2024-01-25T00:00:00+01:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2024-01-25:/blog/plan-na-q1-2024/</id><summary type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Pravidelně se zamýšlím nad tím, co je na junior.guru důležité, čemu bych se měl prioritně věnovat.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Javorové lístky</title><link href="https://honzajavorek.cz/blog/" rel="alternate"></link><link href="https://honzajavorek.cz/feed.xml" rel="self"></link><id>https://honzajavorek.cz/</id><updated>2024-01-26T00:00:00+01:00</updated><author><name>Honza Javorek</name><email>mail@honzajavorek.cz</email><uri>https://honzajavorek.cz</uri></author><subtitle>Blog Honzy Javorka</subtitle><rights>© Copyright 2007—2024 Honza Javorek &lt;https://honzajavorek.cz&gt;</rights><entry><title>Týdenní poznámky: Scrapery a OpenAI API</title><link href="https://honzajavorek.cz/blog/tydenni-poznamky-scrapery-a-openai-api/" rel="alternate"></link><published>2024-01-26T00:00:00+01:00</published><updated>2024-01-26T00:00:00+01:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2024-01-26:/blog/tydenni-poznamky-scrapery-a-openai-api/</id><summary type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Jak se mi daří v jednom člověku provozovat a rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;?
+Od &lt;a href="https://honzajavorek.cz/blog/tydenni-poznamky-hory-a-scrapery/"&gt;posledních poznámek&lt;/a&gt; už utekl nějaký ten týden (19. 1. až 26. 1.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.&lt;/p&gt;
+&lt;figure class="figure"&gt;&lt;img alt="Poznámky" src="https://honzajavorek.cz/images/img-7403.jpg" class="img-fluid figure-img rounded"&gt;&lt;/figure&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;
+&lt;p&gt;&lt;strong&gt;Čísla:&lt;/strong&gt; Finanční výsledky, návštěvnost a další čísla k junior.guru &lt;a href="https://junior.guru/open/"&gt;mám přímo na webu&lt;/a&gt;.
+Aktuální …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Jak se mi daří v jednom člověku provozovat a rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;?
+Od &lt;a href="https://honzajavorek.cz/blog/tydenni-poznamky-hory-a-scrapery/"&gt;posledních poznámek&lt;/a&gt; už utekl nějaký ten týden (19. 1. až 26. 1.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.&lt;/p&gt;
+&lt;figure class="figure"&gt;&lt;img alt="Poznámky" src="https://honzajavorek.cz/images/img-7403.jpg" class="img-fluid figure-img rounded"&gt;&lt;/figure&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;
+&lt;p&gt;&lt;strong&gt;Čísla:&lt;/strong&gt; Finanční výsledky, návštěvnost a další čísla k junior.guru &lt;a href="https://junior.guru/open/"&gt;mám přímo na webu&lt;/a&gt;.
+Aktuální nabídky práce pro juniory: &lt;a href="https://junior.guru/jobs/aac817ee027512f150caf872e149e12ef9246815b1ecf880501b877d/"&gt;Red Hat&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="apify-na-produkci"&gt;Apify na produkci&lt;small class="permalink"&gt;&lt;a href="#apify-na-produkci" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Dokončil jsem &lt;a href="https://github.com/juniorguru/plucker"&gt;přesun scraperů na Apify&lt;/a&gt;, opravil jsem jeden zásadní scraper, a pak jsem na Apify připojil produkci junior.guru.
+Pracovní inzeráty se stahují z Apify API, místo aby se scrapovaly přímo u mně.
+&lt;a href="https://github.com/juniorguru/junior.guru/pull/1285"&gt;Výsledný Pull Request&lt;/a&gt; odebral z kódu junior.guru skoro 21.000 řádků kódu a přidal 230.
+To mi dělá ohromnou radost.&lt;/p&gt;
+&lt;p&gt;O jednotlivostech se asi nemá smysl moc rozepisovat.
+Řešil jsem monitoring, cachování, no různé věci.&lt;/p&gt;
+&lt;p&gt;Klukům z Apify jsem dál koukal pod ruce, otravoval je na Discordu, a &lt;a href="https://github.com/apify/apify-sdk-python/pull/178/"&gt;dokonce jsem se zapletl do jednoho code review&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="openai-api"&gt;OpenAI API&lt;small class="permalink"&gt;&lt;a href="#openai-api" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Po přesunu scraperů jsem hned začal napojovat junior.guru na OpenAI API.
+Chci pracovní inzeráty posílat GPT na vyhodnocení.
+To se mi povedlo hned, s krásnými výsledky, jenže pak začala bitva o &lt;em&gt;rate limiting&lt;/em&gt;.
+Abych projel stovky inzerátů, nasázel je do GPT a dostal výsledky, potřebuju se nějak vlézt do limitů, které mi OpenAI dává.
+&lt;a href="https://mastodonczech.cz/@honzajavorek/111811236793735383"&gt;A to byl problém&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Zkoušel jsem knihovnu &lt;a href="https://pypi.org/project/openlimit/"&gt;openlimit&lt;/a&gt;, která plus minus fungovala, ale nebyla v dobré kondici.
+Musel jsem ji instalovat z nějakého forku apod.
+Nakonec jsem to &lt;a href="https://cookbook.openai.com/examples/how_to_handle_rate_limits"&gt;podle návodu přímo od OpenAI&lt;/a&gt; předělal na &lt;a href="https://pypi.org/project/tenacity/"&gt;tenacity&lt;/a&gt;, což je pěkné, obecné řešení.&lt;/p&gt;
+&lt;p&gt;Ale stále to ještě ladím.
+Hloupé je, že to párkrát spustím a je konec, dosáhnu limitu 10.000 požadavků na den.
+Takže někdy na tom prostě musím v půlce přestat pracovat, jít dělat jiné věci, a pokračovat druhý den.&lt;/p&gt;
+&lt;p&gt;Jsem už schopen projet všechny inzeráty a dostat se na konec skriptu, ale celé to trvá 10 minut, což je příšerné.
+Možná to tak ale budu prostě muset dělat.
+Leda že bych našel &lt;a href="https://replicate.com/"&gt;alternativní API&lt;/a&gt;, kde to funguje jinak.&lt;/p&gt;
+&lt;h2 id="dalsi"&gt;Další&lt;small class="permalink"&gt;&lt;a href="#dalsi" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Sepsal jsem konečně &lt;a href="https://honzajavorek.cz/blog/plan-na-q1-2024/"&gt;článek, kde jsou mé aktuální plány&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Měl jsem rýmu a některé dny jsem pracoval z postele.&lt;/li&gt;
+&lt;li&gt;Byli jsme na LEGO výstavě.&lt;/li&gt;
+&lt;li&gt;Optimalizoval jsem, jak se v mém kódu pracuje s &lt;em&gt;asyncio loops&lt;/em&gt;.
+    Místo procesů jsem vrazil vlákna a hned je vše rychlejší.&lt;/li&gt;
+&lt;li&gt;Řešil jsem, jak udělat &lt;em&gt;progress bar&lt;/em&gt;, když mám hromadu &lt;em&gt;asyncio tasků&lt;/em&gt; a posílám je do &lt;em&gt;asyncio.gather()&lt;/em&gt;.
+    Našel jsem &lt;a href="https://superfastpython.com/asyncio-tasks-show-progress/"&gt;toto milé řešení&lt;/a&gt;, ale nakonec jsem to udělal stejně jinak (přes &lt;em&gt;asyncio.as_completed()&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Připravil jsem podklady pro zpracování daňového přiznání.
+    Když už jsem lezl do všech účtů a stahoval dokumenty, spočítali jsme si s manželkou, kolik máme celkem peněz, což několikrát ročně děláme.&lt;/li&gt;
+&lt;li&gt;Podíval jsem se na nespárované platby ve Fakturoidu a spároval je.&lt;/li&gt;
+&lt;li&gt;E-maily, &lt;a href="https://junior.guru/club/"&gt;klubový Discord&lt;/a&gt;, &lt;a href="https://docs.pyvec.org/operations/support.html#sit-kontaktu"&gt;Pyvec Slack&lt;/a&gt;, zprávy na LinkedIn.&lt;/li&gt;
+&lt;li&gt;Za 8 dní jsem se nevěnoval žádné sportovní aktivitě.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="planuji"&gt;Plánuji&lt;small class="permalink"&gt;&lt;a href="#planuji" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Doladím nějak třídění inzerátů přes LLM.
+    Ideálně pak smažu veškerý kód, který řeší třídění inzerátů teď.&lt;/li&gt;
+&lt;li&gt;Přidám podporu pro slovenštinu.&lt;/li&gt;
+&lt;li&gt;Vyberu a naplánuju klubové přednášky na rok 2024.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="zaujalo-me"&gt;Zaujalo mě&lt;small class="permalink"&gt;&lt;a href="#zaujalo-me" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Když na něco narazím a líbí se mi to, sdílím to &lt;a href="https://mastodonczech.cz/@honzajavorek"&gt;na Mastodonu&lt;/a&gt;.
+Od posledních poznámek jsem sdílel:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://audioboom.com/posts/8427357"&gt;59: Ladislav Miko: Půda je živý organismus — 2050&lt;/a&gt;&lt;br&gt;Fakt borec, jak to dokáže podat! Parádní povídání o půdě, jak to v ní funguje, co v ní žije, a tak. Půda mě nijak zvlášť nevzrušuje, nemám ani zahrádku, ale tohle jsem si vážně užil.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.python.cz/jak-jsme-z-tezitek-udelali-uzitecne-notebooky-pro-zaky"&gt;Jak jsme z těžítek udělali užitečné notebooky pro žáky - Python v ČR bloguje&lt;/a&gt;&lt;br&gt;„Předem připravený návod na reinstalaci, ochota si maximálně pomáhat, dobrá káva a skvělá organizace celé akce udělaly z různorodé skupinky lidí, z nichž se někteří viděli úplně poprvé, dobře organizovanou pracovní sílu s jasným cílem, který se dařilo velice rychle plnit.“ „Až na pár strojů, které budou ještě vyžadovat speciální péči, se celá akce vydařila na výbornou a co bylo zbytečným těžítkem ve skříni, už opět slouží žákům.“ Síla Python komunity v praxi!&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://simonwillison.net/2023/Dec/31/ai-in-2023/"&gt;Stuff we figured out about AI in 2023&lt;/a&gt;&lt;br&gt;Simon sepsal pěkné shrnutí toho, co jsme za rok 2023 zjistili o AI (respektive LLM)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.scopeofwork.net/tallow-to-margarine/"&gt;Tallow to Margarine&lt;/a&gt;&lt;br&gt;Zvířecí lůj. Najdete ho ve spoustě plastů, i v nových plastových bankovkách. A jak vlastně vznikl margarín?&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://podcasters.spotify.com/pod/show/jolana-humplov/episodes/Glow-up-krajn-pravice--Stavidla-nenvisti-otevelo-11--z-2001-e2ejnvr"&gt;Glow up krajní pravice. Stavidla nenávisti otevřelo 11. září 2001 — PULS&lt;/a&gt;&lt;br&gt;Hodinová přednáška o krajní pravici, o jejím vzniku, důvodech vzniku, strategii, a o tom, proč je na vzestupu.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://denikn.cz/1329656/zbytecne-skodlive-naopak-spolecenske-vedy-a-absolventy-jejich-studia-potrebujeme-vic-nez-si-mnozi-uvedomuji/?cst=19c2e920f19e8e352de71a0b93cbab16ec5355b8c541245cca7a369adc42b4fd"&gt;Výsledky práce společenských věd jsou dnes potřeba naléhavěji než přírodovědné objevy a technické vynálezy&lt;/a&gt;&lt;br&gt;„Hlavní problémy lidstva dnes nevyřeší přírodní ani technické vědy samy o sobě. Můžete vymyslet sebelepší vakcínu proti pandemii, ale co je to platné, když se jí lidé bojí a odmítají ji? Můžete navrhnout mnoho dílčích technických řešení zmírňujících klimatickou krizi, ale k čemu jsou, když je neprosadíte proti krátkodobým zájmům velké části lidstva?“ „Společnost, nikoli příroda či technika, je dnes nejnaléhavější záhadou.“&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="blog"></category><category term="týdenní poznámky"></category><category term="junior.guru"></category></entry><entry><title>Plán na Q1 2024</title><link href="https://honzajavorek.cz/blog/plan-na-q1-2024/" rel="alternate"></link><published>2024-01-25T00:00:00+01:00</published><updated>2024-01-25T00:00:00+01:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2024-01-25:/blog/plan-na-q1-2024/</id><summary type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Pravidelně se zamýšlím nad tím, co je na junior.guru důležité, čemu bych se měl prioritně věnovat.
 Letos jsem se rozhodl udělat pár změn.
-Jednak vzít v úvahu nejen to, zda je nějaký úkol důležitý, ale taky pro koho je důležitý.
-A taky bych chtěl plány dělat na kratší období …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Pravidelně se zamýšlím nad tím, co je na junior.guru důležité, čemu bych se měl prioritně věnovat.
+Jednak chci vzít v úvahu nejen to, zda je nějaký úkol důležitý, ale taky pro koho je důležitý.
+A taky bych chtěl plány dělat na kratší …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Pravidelně se zamýšlím nad tím, co je na junior.guru důležité, čemu bych se měl prioritně věnovat.
 Letos jsem se rozhodl udělat pár změn.
-Jednak vzít v úvahu nejen to, zda je nějaký úkol důležitý, ale taky pro koho je důležitý.
-A taky bych chtěl plány dělat na kratší období.
-Vloni jsem si udělal &lt;a href="https://honzajavorek.cz/blog/strategie-na-2023/"&gt;velký plán na celý rok&lt;/a&gt;, který jsem pak v létě &lt;a href="https://honzajavorek.cz/blog/letni-pit-stop/"&gt;přehodnocoval a měnil&lt;/a&gt;.
-Myslím ale, že i půlrok se ukázal jako příliš dlouhá doba.
-Tak zkusím plánovat po čtvrtletích.&lt;/p&gt;
+Jednak chci vzít v úvahu nejen to, zda je nějaký úkol důležitý, ale taky pro koho je důležitý.
+A taky bych chtěl plány dělat na kratší období.&lt;/p&gt;
 &lt;figure class="figure"&gt;&lt;img alt="Plán na Q1 2024" src="https://honzajavorek.cz/images/sven-mieke-fter0e2bzko-unsplash.jpg" class="img-fluid figure-img rounded"&gt;&lt;figcaption class="figure-caption"&gt;
 Fotka od &lt;a href="https://unsplash.com/@sxoxm"&gt;Sven Mieke&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;p&gt;Bavíme se o lednu, únoru a březnu, přičemž konec ledna je v podstatě za týden.
+&lt;p&gt;Vloni jsem si udělal &lt;a href="https://honzajavorek.cz/blog/strategie-na-2023/"&gt;velký plán na celý rok&lt;/a&gt;, který jsem pak v létě &lt;a href="https://honzajavorek.cz/blog/letni-pit-stop/"&gt;přehodnocoval a měnil&lt;/a&gt;.
+Myslím ale, že i půlrok se ukázal jako příliš dlouhá doba.
+Tak zkusím plánovat po čtvrtletích.&lt;/p&gt;
+&lt;figure class="figure figure-blockquote"&gt;&lt;blockquote class="blockquote"&gt;
+&lt;p&gt;Plans are a good reference, but then pretty much every day you need to adapt and say, 'what does it mean for my next step and how much do I have to revisit the plan?'&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figcaption class="blockquote-footer"&gt; Andrea Stella v &lt;a href="https://www.autosport.com/f1/news/mclaren-setting-development-targets-not-results-as-its-f1-2024-goals/10564681/"&gt;rozhovoru pro Autosport.com&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;p&gt;Bavíme se o lednu, únoru a březnu, přičemž konec ledna je v podstatě za týden.
 Brzy po Vánocích jsem jel na hory a pak jsem sepsání plánu na blog trochu prokrastinoval…&lt;/p&gt;
 &lt;p&gt;V první řadě se neplánuji teď ničeho účastnit.
 Jel jsem na dovolenou na hory a trochu jsem si tam odpočinul, to bylo fajn.
@@ -9592,340 +9663,4 @@ Od posledních poznámek jsem sdílel toto:&lt;/p&gt;
 &lt;li&gt;&lt;a href="https://restarty.dev/epizody/2022/honza-javorek-kazdy-moze-programovat/"&gt;Honza Javorek: Každý môže programovať&lt;/a&gt;&lt;br&gt;Asi nejosobnější rozhovor, který se mnou někdo udělal 🙂 Bavíme se tam o tom, s čím jsem si hrál jako děcko a o celé mojí kariérní cestě. Řešíme startup, korporát, vysokou školu. Bavíme se o hloupých otázkách, strategii učení, pohovorech, vysokých školách, zaučování juniorů. Nabušená hodina dvacet.&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mujrozhlas.cz/rapi/view/episode/be370e0c-762a-375e-9fa5-a78987c3907b"&gt;Všímáte si toho hezkého v životě nebo jen plníte úkoly? Radost je dovednost, kterou se lze učit — Balanc&lt;/a&gt;&lt;br&gt;Zmínili hodně zajímavých věcí. Například se snížením očekávání a neplánováním mám hodně dobrou zkušenost, protože to je způsob, jakým sbíráme emoce a zážitky. Když jde všechno podle tudůlistu, tak je to nuda. Samozřejmě se mi to nedaří vždy, většinou jedu spíš podle těch tudůlistů. Ale třeba dovolené jsou lepší spontánní.&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://simonwillison.net/2022/Dec/5/rust-chatgpt-copilot/?utm_source=hackernewsletter&amp;amp;utm_medium=email&amp;amp;utm_term=code"&gt;AI assisted learning: Learning Rust with ChatGPT, Copilot and Advent of Code&lt;/a&gt;&lt;br&gt;Simon zkusil využít AI jako pomocníka při tom, jak se učil nový programovací jazyk. Dokázalo mu to skvěle vysvětlovat kód, učit ho, jak a co má dělat. Ale taky si to vymýšlelo úplné hovadiny. „I've started thinking of them as an excellent teacher for some topics who is also a conspiracy theorist around others: you can have a great conversation with them, but you need to take everything they say with a very generous grain of salt.“&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="blog"></category><category term="týdenní poznámky"></category><category term="junior.guru"></category></entry><entry><title>Moje nová strategie na sociální sítě</title><link href="https://honzajavorek.cz/blog/moje-nova-strategie-na-socialni-site/" rel="alternate"></link><published>2022-12-15T00:00:00+01:00</published><updated>2022-12-15T00:00:00+01:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2022-12-15:/blog/moje-nova-strategie-na-socialni-site/</id><summary type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Před rokem jsem studoval, &lt;a href="https://honzajavorek.cz/blog/tydenni-poznamky-73-marketing/"&gt;jak si mám vyladit marketing&lt;/a&gt;.
-Sice jsem to nedotáhl, ale to mi nezabránilo začít systematicky propagovat &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt; na čtyřech sociálních sítích.
-Není divu, že mě to rychle omrzelo a začal jsem v červnu &lt;a href="https://honzajavorek.cz/blog/vypomoc-na-socialni-site/"&gt;hledat výpomoc&lt;/a&gt;.
-Ze zábavy se stala nepříjemná režie, se kterou jsem nevěděl …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Před rokem jsem studoval, &lt;a href="https://honzajavorek.cz/blog/tydenni-poznamky-73-marketing/"&gt;jak si mám vyladit marketing&lt;/a&gt;.
-Sice jsem to nedotáhl, ale to mi nezabránilo začít systematicky propagovat &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt; na čtyřech sociálních sítích.
-Není divu, že mě to rychle omrzelo a začal jsem v červnu &lt;a href="https://honzajavorek.cz/blog/vypomoc-na-socialni-site/"&gt;hledat výpomoc&lt;/a&gt;.
-Ze zábavy se stala nepříjemná režie, se kterou jsem nevěděl, jak naložit.
-Jak to celé dopadlo?&lt;/p&gt;
-&lt;figure class="figure"&gt;&lt;img alt="Sociální sítě" src="https://honzajavorek.cz/images/dole777-EQSPI11rf68-unsplash.jpg" class="img-fluid figure-img rounded"&gt;&lt;figcaption class="figure-caption"&gt;
-Fotka od &lt;a href="https://unsplash.com/@dole777"&gt;dole777&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;p&gt;Na můj „inzerát“ se ozvali dva, tři lidi.
-Než jsem ale přistoupil k nějakému výběrovému řízení, uvědomil jsem si, že vůbec nevím, co těm lidem nabízím.
-Kolik jim mohu dát peněz?
-Kolik mi takový marketing vlastně vydělá?
-Může si to můj byznys dovolit?
-Má ten člověk vymýšlet, jak to má celé fungovat, nebo hledám opravdu jen pomocníka, který dostane jednoduché úkoly a ty udělá?&lt;/p&gt;
-&lt;h2 id="jak-jsem-sel-na-konzultaci"&gt;Jak jsem šel na konzultaci&lt;small class="permalink"&gt;&lt;a href="#jak-jsem-sel-na-konzultaci" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;Zasekl jsem se.
-Lidem, kteří se mi ozvali, jsem se omluvil, že si to celé musím nejdřív promyslet.
-Pak mi poslalo WebExpo e-mail o tom, že publikovali záznamy přednášek.
-Zahlédl jsem mezi nimi &lt;a href="https://slideslive.com/38984420/outsourcing-your-marketing-do-your-homework-first"&gt;Outsourcing Your Marketing? Do Your Homework First&lt;/a&gt; a skončilo to tím, že jsem se &lt;a href="https://www.janadolejsova.cz/"&gt;Janě Dolejšové&lt;/a&gt; ozval s poptávkou.
-Domluvil jsem si jednorázovou konzultaci, která by mi ukázala nějaký směr.&lt;/p&gt;
-&lt;figure class="figure"&gt;&lt;img alt="Jana Dolejšová na WebExpo 2022" src="https://honzajavorek.cz/images/screenshot-2022-12-15-at-23-44-42-outsourcing-your-marketing-do-your-homework-first.png" class="img-fluid figure-img rounded"&gt;&lt;/figure&gt;
-&lt;p&gt;Jana mi nejdřív poslala dotazník, který jsem asi půl dne vyplňoval a už to bylo velice užitečné.
-V mnoha ohledech mi už tohle dost pomohlo uspořádat si myšlenky.
-Následně jsme si zavolali a hodinu se bavili o tom, co bych mohl dělat a jak bych mohl k marketingu přistupovat.
-Odcházel jsem s hromadou poznámek a pocitem, že mi někdo za hodinu ušetřil zhruba tři roky nějakých pokusů a omylů, kdybych se na totéž snažil přijít sám.
-Navíc nešlo o obecné rady, ale opravdu věci, které byly na míru pro můj byznys:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Měl bych se ptát lidí, kde junior.guru našli.
-    Provozuji komunitu, takže to mám jednodušší, než kdokoliv jiný.
-    Pomůže mi to zjistit, které marketingové kanály dávají smysl.&lt;/li&gt;
-&lt;li&gt;Věřit intuici, ale zaznamenávat si data strukturovaně a nenechávat je pouze v hlavě.
-    Hlava má velké kognitivní zkreslení.&lt;/li&gt;
-&lt;li&gt;Měl bych si jasně určit, které věci dělat nebudu a proč.
-    To mi rozváže ruce pořádně dělat věci, které smysl dávají.&lt;/li&gt;
-&lt;li&gt;Pokud dělám byznys v jednom člověku, je legitimní vykašlat se na nějaký kanál, pokud je to pro mě opruz.
-    I kdyby byl nejvýkonnější.
-    Musím najít věci, které budou mít „dostatečnou“ výkonnost a zároveň mě budou bavit.
-    Hledám kompromis.&lt;/li&gt;
-&lt;li&gt;Na sociálních sítích funguje nejlépe zajímavý, bohatý, hluboký obsah, tvořený přímo pro ně.
-    To, co tam dávám já, jsou spíš „novinky“ a odkazy ze sociálních sítí jinam.
-    Je otázka, jak velkou mají hodnotu pro sledující.
-    Pokud to chci dělat, takové novinky pro mě dokáže psát každý marketingový junior.&lt;/li&gt;
-&lt;li&gt;Dělat sociální sítě přes osobní profily má možná větší &lt;em&gt;organický reach&lt;/em&gt; (dosah k lidem i bez toho, abych za něj platil), ale je nemožné na ně něco posílat automaticky nebo to delegovat na další lidi.
-    Přitom má smysl firemní profily mít a aspoň trochu je udržovat, protože lidi tam chodí pro potvrzení, že věc žije a existuje.&lt;/li&gt;
-&lt;li&gt;Mohu členy poprosit, aby nějaké věci sdíleli na svých sociálních sítích.
-    Tím mohu &lt;em&gt;de facto&lt;/em&gt; delegovat svou vlastní činnost na sítích.&lt;/li&gt;
-&lt;li&gt;Značka junior.guru je &lt;em&gt;lovebrand&lt;/em&gt; a má komunitu.
-    Já ji přitom nevyužívám.
-    Mohu najít někoho, kdo bude spravovat např. Instagram pro junior.guru rád úplně sám od sebe, např. výměnou za členství zdarma.
-    Mohu lidi prosit, aby psali na junior.guru recenze, hodnotili podcast, apod.
-    Mohu zkusit aktivizovat členy, aby mi napsali doporučení, nebo dělali rozhovory s jinými členy.&lt;/li&gt;
-&lt;li&gt;Když dám lidem příležitost, aby mi pomohli, a vysvětlím jim, že jim to pomůže v kariéře, tak se rádi přidají.
-    Bude pro ně benefit pracovat pro něco, co už má nějaké jméno, jako má junior.guru.
-    Mohu pomocníky motivovat k tomu, aby si budovali vlastní &lt;em&gt;brand&lt;/em&gt; a promovat je: „Pepa je borec, dělá rozhovory pro junior.guru“&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="jak-jsem-nic-nezrealizoval"&gt;Jak jsem nic nezrealizoval&lt;small class="permalink"&gt;&lt;a href="#jak-jsem-nic-nezrealizoval" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;Rozhodl jsem se, že nebudu hned nikoho najímat.
-Sociální sítě jsem zatím nechal na volnoběh, než si ve všem udělám pořádek.
-Když jsem potřeboval něco důležitého oznámit, udělal jsem to.
-Jinak jsem ale na profily nic navíc netlačil.&lt;/p&gt;
-&lt;p&gt;Přemýšlel jsem nad tím, jaké provedu změny.
-Nechal jsem se přesvědčit, že přesunout propagaci junior.guru na osobní profily má pro mě spíš nevýhody a že ji přesunu zpět na ty „firemní“. Hned to ale neudělám, aby to nevypadalo zmatečně. Spojím to s ostatními změnami.&lt;/p&gt;
-&lt;p&gt;Co dál?
-Jaké sociální sítě bych mohl s junior.guru opustit?
-Které sítě mě baví a bude mi dělat radost pro ně tvořit obsah?
-Nejdříve mi přišlo nemožné své aktivity v tomto směru nějak omezit.
-Každá síť má něco.
-Postupně jsem si však na tu myšlenku zvykal.
-A začal jsem přemýšlet i nad tím, co vlastně z jaké sociální sítě dostávám já osobně.&lt;/p&gt;
-&lt;p&gt;A odkud přicházejí lidi?
-Byl jsem uprostřed programování tzv. &lt;em&gt;onboardingu&lt;/em&gt;, tedy funkce, která členům mojí komunity posílá po registraci sadu tipů, jak mají s klubem pracovat a jak se v něm orientovat.
-Nenapadlo mě nic lepšího, než to s tím spojit.
-Prostě jedním z „tipů“ bude zpráva, kde se lidí zeptám, odkud přišli, ne?
-Stačí, když si pospíším s programováním a brzy budu mít automat, který pomůže členům i mému marketingovému rozhodování.&lt;/p&gt;
-&lt;p&gt;No a víte co? Programuju to doteď.&lt;/p&gt;
-&lt;h2 id="jak-me-prestaly-bavit-site"&gt;Jak mě přestaly bavit sítě&lt;small class="permalink"&gt;&lt;a href="#jak-me-prestaly-bavit-site" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;Elon Musk koupil Twitter.
-Nešlo ani o to, že bych s tím měl zásadní problém, ani že by mi chyběli lidé, kteří utekli na Mastodon.
-Stalo se to, že jsem se poprvé od založení Twitter profilu &lt;a href="https://twitter.com/honzajavorek/status/1591801045264760832"&gt;zamyslel&lt;/a&gt; nad tím, co mi ta síť dává.&lt;/p&gt;
-&lt;p&gt;Jsem s ní spokojený?
-Vůbec.
-Dřív jsem tam měl spoustu zajímavých informací z oboru a bylo to spíš pro geeky.
-Teď je to plné politiky, novinářů a agresivních debat.
-Retweety jsou v rukou uživatelů, ale algoritmus si našel cestu přes srdíčka.
-Vypnout algoritmus lze, sledovat jen vybrané lidi lze, ale původního zážitku se mi v poslední době dosánout nepovedlo.
-Četl jsem k tomu hromadu článků, které jsem pak i sdílel pod týdenními poznámkami tady na blogu.
-Asi nejlépe to &lt;a href="https://nazory.aktualne.cz/komentare/drzme-muskovi-palce-at-twitter-znici-co-nejrychleji/r~8f7199bc6a7211edba5b0cc47ab5f122/"&gt;vystihl David Klimeš&lt;/a&gt;:&lt;/p&gt;
-&lt;figure class="figure figure-blockquote"&gt;&lt;blockquote class="blockquote"&gt;
-&lt;p&gt;Dávno pryč jsou časy, kdy Twitter využívali k přijatelné výměně názorů nejprve internetoví „geekové“, pak technologicky gramotní politici, novináři a osobnosti veřejného života. Nyní už je - jako jakákoliv jiná velká sociální síť - obětí svého vlastního polarizujícího algoritmu. Ať tam tedy kdokoli začne debatu o čemkoli, dočká se po chvíli osočování, výsměchu, šikany - až nakonec dojde i na Hitlera se Stalinem. Mnozí však i tohle rádi snášejí, protože bez twitterové popularity a srdíček svých fanoušků už se nedokáží obejít.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/figure&gt;&lt;p&gt;A totéž Facebook.
-Tam už jsem to cítil dlouho.
-Kdysi síť, kde jsem se dověděl o tom, co dělají kamarádi.
-Dnes už mi algoritmus kamarády vůbec nezobrazuje.
-Nebo tam raději už ani nic nepíšou.
-Procházím desítky notifikací, z nichž zhruba dvě denně vedou na něco, co mě alespoň trochu zajímá.&lt;/p&gt;
-&lt;p&gt;Každý den se přichytím, jak na Facebook píšu propracovaný komentář.
-Co komentář, přímo názor!
-Na obrubníky a pouliční lampy, nebo na psí hovna.
-V sousedské skupině vedu debaty, které jsou na život a na smrt.
-Pokud mi tyto vznešené názory nikdo nelajkne, nebo na ně nikdo neodpoví, nebudu už za 15 minut vědět, že jsem je vůbec psal.&lt;/p&gt;
-&lt;p&gt;Produkuji písmenka do komentářového políčka, přitom je to celé úplně jedno.
-Efekt, jaký to má, vzhledem k vynaložené energii a času, je nulový.
-Akorát živím modrou mašinu na reklamy a trávím tím čas.
-Svůj omezený čas na tomto světě.&lt;/p&gt;
-&lt;figure class="figure figure-blockquote figure-tweet"&gt;&lt;blockquote class="twitter-tweet blockquote-tweet blockquote"&gt;&lt;p lang="en" dir="ltr"&gt;A doctor gives you 72 hours to live. After going on Twitter to argue with a stranger about whether hash browns should be part of a full English breakfast, how do you spend your last 90 seconds?&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;figcaption class="blockquote-footer"&gt; Simon Blackwell (@simonblackwell) &lt;a href="https://twitter.com/simonblackwell/status/1457438184904798214?ref_src=twsrc%5Etfw"&gt;November 7, 2021&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;S podzimem jsem došel do bodu, kdy jsem se rozhodl, že z těchto sítí odejdu.
-Ne úplně, protože se může hodit mít tam přístup.
-Mohu Facebook třikát prohlásit za mrtvý, ale fotka dnešního obědového menu blízké restaurace tam prostě je a já chci být schopen ji vidět.
-Nehodlám tam ale pravidelně chodit.
-Totéž Twitter.
-Aplikace v mobilu jsem neměl už dlouho, teď jsem se všude odhlásil i na webu.
-Přestal jsem tam dávat odkazy na svoje články z blogu a přemýšlím, jak jinak lidi informovat o nových článcích.&lt;/p&gt;
-&lt;p&gt;Podobně jsem odešel i z Instagramu, ale s ním mám dlouhodobě složitý vztah, tak to asi není taková změna.
-Nikdy to nebyla síť, ke které bych měl speciální osobní pouto.
-Historicky jsem tam ve vlnách buď zuřivě přispíval, nebo dlouhodobě nedával vůbec nic.&lt;/p&gt;
-&lt;h2 id="jak-jsem-objevil-e-maily"&gt;Jak jsem objevil e-maily&lt;small class="permalink"&gt;&lt;a href="#jak-jsem-objevil-e-maily" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;Když jsem lidem oznámil, že o nových článcích na mém osobním blogu se už nedoví na Twitteru nebo Facebooku, byli trochu smutní.
-Blog sice má RSS, ale mnoho lidí dnes už neví co to je, nebo to prostě nepoužívá.&lt;/p&gt;
-&lt;p&gt;Když má člověk silný obsah, lidi si jej najdou tam, kde publikuje.
-Já si ale nemyslím, že jsem zase taková celebrita, abych si mohl úplně dělat co chci.
-Musím jít lidem trochu naproti, aby si články četli.
-I ti, kdo je čtou rádi, potřebují vědět, že vyšly.&lt;/p&gt;
-&lt;p&gt;Vzpomněl jsem si, že například &lt;a href="https://www.seznamzpravy.cz/tag/pod-carou-61945"&gt;Pod čarou&lt;/a&gt; odebírám jako newsletter.
-Rád bych to měl v RSS čtečce, ale RSS jsem k tomu prostě nenašel, tak to trpím mezi e-maily.
-A shodou okolností jsem si pustil &lt;a href="https://mimo-agendu.ghost.io/v-zahranici-jsou-newslettery-fenomen-ceka-nas-boom-jako-u-podcastu-veri-kavka/"&gt;epizodu podcastu Jakuba Zelenky&lt;/a&gt;, kde zrovna zpovídal autora &lt;a href="https://newslettery.cz/"&gt;newslettery.cz&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Heuréka!
-Prostě oživím svůj zaprášený účet na MailChimpu a budu lidem novinky posílat postaru e-mailem.
-Nebudu závislý na žádné platformě.
-Mohu e-maily snadno automatizovat, tedy naprogramovat skládání části nebo celého jejich obsahu.
-Tentýž obsah mohu přitom snadno mít i na webu, na vlastní doméně.&lt;/p&gt;
-&lt;p&gt;Kompletní kontrola.
-Musk zničí Twitter.
-Meta začne ovládat svět a já třeba nebudu chtít mít nic společného s Facebookem nebo Instagramem.
-YouTube mi někdo zabanuje.
-Pracně nasbírané publikum mi najednou může být k ničemu.
-Oproti tomu seznam e-mailů, ten mi nevezme ani ďábelské GDPR.
-E-mail je prostě nezávislá, distribuovaná platforma.
-A jediný algoritmus, který se musím naučit přečůrat, je spam filtr.
-Když si sdělení otevře polovina příjemců, stále to bude mít větší efekt, než nepřítomně scrollující lidé na sítích.&lt;/p&gt;
-&lt;p&gt;Na junior.guru kdysi newsletter byl.
-Tvořil jsem ho ručně a pak jsem v tom už neviděl smysl, tak jsem ho přestal posílat.
-Seznam kontaktů však stále mám, takže bych měl na co navázat.&lt;/p&gt;
-&lt;p&gt;Technicky to zatím nemám dořešené a ani tento blog, ani nic na junior.guru zatím e-mailem odebírat nelze.
-Pracuji však na tom, aby to časem šlo.&lt;/p&gt;
-&lt;h2 id="jak-jsem-si-vymyslel-data"&gt;Jak jsem si vymyslel data&lt;small class="permalink"&gt;&lt;a href="#jak-jsem-si-vymyslel-data" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;Pořád nevím, odkud mi přicházejí lidi.
-Vařím z vody.
-Respektive z dojmů, které si ukládám v hlavě.
-A vím, že tyhle dojmy mají velké kognitivní zkreslení, ale prostě to zatím risknu.
-Někdy je lepší udělat NĚCO a zkoušet, než stát na místě.&lt;/p&gt;
-&lt;p&gt;Myslím si, že na sociálních sítích mám hlavně fanoušky a kamarády, které zajímá, co je na junior.guru nového.
-Nemám pocit, že by z mých aktivit na Facebooku, Twitteru, nebo Instagramu přicházeli noví lidé.
-Jednotky možná.
-Například z Facebooku, když mám zrovna nějaké příspěvky ve skupinách jiných komunit.
-Celkově ale spíš bída.
-Na Instagramu mi přibývají sledující, ale podle mě to jsou spíš lidi, kteří původně junior.guru našli jinde.
-Když jsem se svou aktivitou na sítích polevil, na počtu nově příchozích do klubu se to ani po měsících neprojevilo.&lt;/p&gt;
-&lt;p&gt;Jak mě tedy lidé objevují?
-Nějaké signály tu jsou i bez čísel:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Mnoho nových členů v klubu zmiňuje podcast, když se ostatním představuje.
-    A při srovnání s podobnými podcasty nemá &lt;a href="https://junior.guru/podcast/"&gt;Junior Guru podcast&lt;/a&gt; vůbec špatná čísla poslechovosti.
-    Zrovna nedávno mi přišel e-mail, že jsme na Apple Podcasts v kategorii Technologie na 5. místě českého žebříčku a na 9. místě slovenského.
-    Zajímavé je, že v podcastu není na samotné junior.guru, natož klub, jediná reklama, ale přesto si to lidé najdou.&lt;/li&gt;
-&lt;li&gt;Členové také dost zmiňují, že hledali recenze na kurzy a našli klub díky tomu.
-    Všechny tyhle stránky, zvláště ta o &lt;a href="https://junior.guru/topics/greenfox/"&gt;Green Fox Academy&lt;/a&gt;, mají vysokou hledanost (to mi říká Google Search Console) a návštěvnost (to mi říkají &lt;a href="https://referral.simpleanalytics.com/honza-javorek"&gt;Simple Analytics&lt;/a&gt;).
-    Je dost možné, že čím víc reklam a PR si vzdělávací agentury zaplatí, tím víc lidí organicky skončí na těchto mých stránkách.&lt;/li&gt;
-&lt;li&gt;Lidi z firem mě celkem běžně zdraví stylem „já už vás delší dobu sleduji na LinkedIn“.
-    Před pár týdny jsem si pro účely psaní tohoto článku poznačil, že mám na LinkedIn 2.140 sledujících.
-    Než jsem to tu začal psát, mám jich 2.191.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Takže přes podcast!
-A hledáním na Google.
-Tak mě najdou junioři, moje primární cílovka.
-Spolupráce s firmami řeším prakticky výhradně skrze osobní kontakty.
-Ty mě zase sledují na LinkedIn.&lt;/p&gt;
-&lt;h2 id="jak-jsem-si-vymyslel-strategii"&gt;Jak jsem si vymyslel strategii&lt;small class="permalink"&gt;&lt;a href="#jak-jsem-si-vymyslel-strategii" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;Co z toho všeho vyplývá?
-Jak to tedy celé plánuji do budoucna?
-Zatím je to, Honzo, hluboký a velice lidský příběh, ale kde je ta strategie slibovaná v titulku?&lt;/p&gt;
-&lt;figure class="figure"&gt;&lt;img alt="Rybičky z filmu Hledá se Nemo, které plavou v moři uvnitř plastových sáčků a nevědí co dál" src="https://honzajavorek.cz/images/ew-ofkowaaacf5z.jpg" class="img-fluid figure-img rounded"&gt;&lt;/figure&gt;
-&lt;h3 id="zacnu-sbirat-zpetnou-vazbu"&gt;Začnu sbírat zpětnou vazbu&lt;small class="permalink"&gt;&lt;a href="#zacnu-sbirat-zpetnou-vazbu" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
-&lt;p&gt;Tak především, začnu se ptát lidí, odkud přišli.
-Vymyslím ten nejjednodušší způsob, jak se jich hromadně ptát, a ten co nejdříve zrealizuji.
-Žádné další výmluvy!&lt;/p&gt;
-&lt;p&gt;Když mi zbude energie, zkusím se jich ptát i na další věci.
-Jak se vám líbila přednáška?
-Které funkce klubu máte nejraději?
-A tak dále.&lt;/p&gt;
-&lt;h3 id="vylepsim-web"&gt;Vylepším web&lt;small class="permalink"&gt;&lt;a href="#vylepsim-web" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
-&lt;p&gt;Pokud junioři chodí z vyhledávače, tak bych se měl věnovat SEO a té části webu junior.guru, která se zabývá kurzy.
-SEO škáluje.
-Jedno odpoledne práce vydá na několik měsíců velké parády.
-Sociální sítě jsou příliš pracné na to, aby plnily pouze roli novinek.
-A web je navíc můj!
-Tvořím tam svůj produkt na svojí doméně uprostřed svobodného internetu, nejsem produktem někoho jiného na cizí uzavřené platformě.&lt;/p&gt;
-&lt;p&gt;V první řadě chci vylepšit stránky o kurzech.
-Mám nápad, jak by měly vypadat.
-Vymyslím způsob, jak realizovat nějaké MVP.&lt;/p&gt;
-&lt;p&gt;Další dlouho odkládaná věc je „diskuze“ pod stránkami v příručce.
-Když někdo doscrolluje na konec stránky, měl by vidět výzvu, aby šel o tématu diskutovat do klubu.&lt;/p&gt;
-&lt;h3 id="rozjedu-newsletter"&gt;Rozjedu newsletter&lt;small class="permalink"&gt;&lt;a href="#rozjedu-newsletter" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
-&lt;p&gt;Pokud chci na sítě dávat jen věci, které ocení hlavně lidi, kteří junior.guru už znají, tak je nejspíš mohu nahradit e-mailem.
-Jak jsem psal výše, newsletter dřív na junior.guru byl a stačilo by jej obnovit.&lt;/p&gt;
-&lt;p&gt;Opět by šlo o něco, co by žilo na mé doméně, nezávisle na uzavřených platformách a algoritmech.
-A mohl bych si pomoci automatizací, která je u sítí složitá.&lt;/p&gt;
-&lt;h3 id="vykaslu-se-na-twitter-facebook-a-instagram"&gt;Vykašlu se na Twitter, Facebook a Instagram&lt;small class="permalink"&gt;&lt;a href="#vykaslu-se-na-twitter-facebook-a-instagram" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
-&lt;p&gt;Na základě dlouhodobé osobní frustrace jsem svůj Facebook, Twitter a Instagram „vyčistil“ a utlumil na minimum.
-Kromě IG, kde jsem si profil prostě jen zamknul, jsem oznámil svým sledujícím, že tam už moc nebudu.
-V současné chvíli je pro mě představitelnější, že si založím TikTok, než že se vrátím na Facebook.
-Napsal jsem si to i na osobní web:&lt;/p&gt;
-&lt;figure class="figure"&gt;&lt;img alt="Moje další profily, jak jak je mám na osobním webu" class="img-thumbnail img-fluid figure-img rounded" src="https://honzajavorek.cz/images/screenshot-2022-12-01-at-20.49.57.png"&gt;&lt;/figure&gt;
-&lt;p&gt;Můj blog mohou lidé odebírat přes RSS, případně mohou sledovat můj &lt;a href="https://t.me/honzajavorekcz"&gt;kanál na Telegramu&lt;/a&gt;. A budu pracovat na tom, aby do budoucna mohli nové články dostávat i e-mailem.&lt;/p&gt;
-&lt;p&gt;Pro junior.guru mám na Facebooku a Instagramu i firemní profily.
-Ty časem přebuduji tak, aby na nich byl jen statický obsah, který bude lidi motivovat, aby odebírali junior.guru newsletter.
-Až nebudu vědět co s penězi, možná si najmu někoho, kdo bude novinky z e-mailů kreativně přepisovat na sítě.
-Spíš si ale myslím, že to prostě nebudu vůbec potřebovat.
-Pokud budu mít něco velkého, nebo zajímavého i pro jiné komunity, klidně Facebook využiju a osobně s tím ospamuju skupiny.&lt;/p&gt;
-&lt;p&gt;Kde budu sledovat novinky a zajímavosti já?
-Možná zkusím víc číst knihy.
-Nebo blogy, kde musel autor víc přemýšlet nad tím, co napíše.
-Našel jsem si &lt;a href="https://netnewswire.com/"&gt;hezkou RSS čtečku&lt;/a&gt; a sleduji přes ni i pár Twitter účtů.
-Nemožnost na tweety reagovat, nebo číst diskuzi pod nimi, je přímo osvobozující.
-Pokud by mi to nestačilo, zkusím newslettery a Reddit.&lt;/p&gt;
-&lt;h3 id="budu-mnohem-vic-vyuzivat-linkedin"&gt;Budu mnohem víc využívat LinkedIn&lt;small class="permalink"&gt;&lt;a href="#budu-mnohem-vic-vyuzivat-linkedin" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
-&lt;p&gt;Svému LinkedIn profilu se hodlám aktivně věnovat.
-Tedy tomu osobnímu.
-Firemní profil tam dopadne nejspíš stejně, jako ten na Facebooku a Instagramu.
-U toho osobního chci ještě promyslet, jak to pojmu.
-Nechci ho plnit novinkami, ale něčím kvalitním a unikátním, co by tam mohlo lidi zajímat.&lt;/p&gt;
-&lt;p&gt;Nainstaloval jsem si LinkedIn aplikaci na mobil a poslechl jsem si &lt;a href="https://jaknasite.simplecast.com/episodes/jana-bartikova-tipy-a-triky-pro-linkedin-eeBSI5Wr"&gt;Tipy a triky pro LinkedIn od Jany Bártíkové&lt;/a&gt;.
-Jana v podcastu zmiňuje, že nejvíc z této sítě těží lidé, kteří mají více jak 1.000 sledujících, což splňuji.
-Mluví o článcích a newsletterech, takže možná bych mohl na profil nějak dostat i ty novinky.
-Zaujala mě taky možnost dělat živé streamy nebo LinkedIn audio.&lt;/p&gt;
-&lt;p&gt;Proč streamy?
-Protože v klubu dělám přednášky a možná by je šlo do budoucna využít jako video obsah.
-Třeba jen malé kousky, aby z toho byly upoutávky.
-Už mám pomocníka na tvorbu záznamů přednášek.
-Mohl by mi pomoci i s dalšími věcmi, které souvisí s videem.&lt;/p&gt;
-&lt;figure class="figure"&gt;&lt;img alt="Náhled na můj LinkedIn profil" class="img-thumbnail img-fluid figure-img rounded" src="https://honzajavorek.cz/images/screenshot-2022-12-15-at-23-38-26.png"&gt;&lt;/figure&gt;
-&lt;h3 id="usporadam-qa"&gt;Uspořádám Q&amp;amp;A&lt;small class="permalink"&gt;&lt;a href="#usporadam-qa" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
-&lt;p&gt;Vlastně ale s těmi streamy a audiem nejde ani o ty přednášky, to by byl spíš bonus.
-Už skoro rok slibuji &lt;a href="https://pyladies.cz/"&gt;PyLadies&lt;/a&gt;, že pro ně udělám online Q&amp;amp;A.
-Videohovor, kde mi budou moci účastnice kurzů pokládat jakékoliv otázky.
-Ačkoliv to nevyžaduje prakticky žádnou přípravu, nenašel jsem si na to čas.
-Když jsem byl nedávno na kafi s &lt;a href="https://lucie.vaclavkova.com/"&gt;Lucií Václavkovou&lt;/a&gt; a vyprávěla mi, jak dělá svá Q&amp;amp;A, tak mi to najednou celé docvaklo.
-Ten formát je úplně skvělý!&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Jedná se o mluvení.
-    To mi jde a baví mě to.&lt;/li&gt;
-&lt;li&gt;Nevyžaduje to z mé strany žádnou speciální přípravu.
-    Stačí najít vhodný termín.
-    Dá se to dělat i pravidelně.&lt;/li&gt;
-&lt;li&gt;Člověk je v kontaktu s reálnými problémy a dotazy lidí.
-    To mám sice díky klubu, ale není od věci rozšířit si obzory.&lt;/li&gt;
-&lt;li&gt;Kdybych Q&amp;amp;A dělal veřejně na YouTube nebo LinkedIn, doví se o mě velice relevantní cestou mnoho nových lidí.
-    Přitom mě to skoro nic nestojí.&lt;/li&gt;
-&lt;li&gt;Když Q&amp;amp;A udělám pro PyLadies nebo Czechitas a další komunity, doví se o mě lidé z těchto skupin.
-    Jsou to moje velké cílovky.
-    Oslovím je nenásilnou cestou, při které z toho mají užitek obě strany.&lt;/li&gt;
-&lt;li&gt;Může to být stream, nebo z toho může být záznam.
-    Objeví se ve výsledcích vyhledávání na YouTube a nasbírá časem &lt;a href="https://en.wikipedia.org/wiki/Long_tail"&gt;long tail&lt;/a&gt;, podobně jako to umí podcasty.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="budu-si-vybirat-aktivity-podle-efektivity"&gt;Budu si vybírat aktivity podle efektivity&lt;small class="permalink"&gt;&lt;a href="#budu-si-vybirat-aktivity-podle-efektivity" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
-&lt;p&gt;Celkově bych chtěl silně omezit věci, které vyžadují mnoho přípravy, mají malý efekt, nebo trpí dokonce obojím.
-Před rokem jsem &lt;a href="https://www.heroine.cz/clanky/autor/70000223-honza-javorek"&gt;publikoval pro Heroine.cz&lt;/a&gt; a nelituji toho, ale stálo mě to hodně úsilí, které jsem nemohl věnovat junior.guru samotnému.
-Přestal jsem takové věci dělat.
-Stejně tak přednášky na srazech a konferencích.
-Občas mě někdo ukecá, ale v zásadě mi to smysl moc nedává.
-Mám byznys v jednom člověku a musím hledat největší efektivitu.
-Tu mají věci jako podcasty a Q&amp;amp;A.
-Tyto své preference jsem si už také dal na osobní web:&lt;/p&gt;
-&lt;figure class="figure"&gt;&lt;img alt="Možnosti spolupráce, jak jak je mám na osobním webu" class="img-thumbnail img-fluid figure-img rounded" src="https://honzajavorek.cz/images/screenshot-2022-12-01-at-21-03-20.png"&gt;&lt;/figure&gt;
-&lt;p&gt;Nemyslím si, že to někoho odradí.
-Napsal jsem to tam hlavně pro sebe, abych to rozhodnutí někam vytesal a připomínalo se mi.
-Možná by to mohlo někoho naopak motivovat, aby mě pozval na rozhovor, pokud si čte mou osobní stránku a váhá, zda mě oslovit.&lt;/p&gt;
-&lt;h3 id="dam-vic-lasky-podcastu"&gt;Dám víc lásky podcastu&lt;small class="permalink"&gt;&lt;a href="#dam-vic-lasky-podcastu" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
-&lt;p&gt;Další oblastí, kterou bych měl nějak podpořit, je &lt;a href="https://junior.guru/podcast/"&gt;Pavlínin podcast&lt;/a&gt;.
-Měl bych se s ní sejít, nebo si s ní zavolat, abychom probrali, co pro ni můžu udělat.&lt;/p&gt;
-&lt;p&gt;Mohl bych se s ní dělit o nějaký zisk, aby měla finance na rozvoj a zlepšování svého vybavení.
-Určitě by šlo podcast podpořit i lepší webovkou a profesionálnějšími promo obrázky.&lt;/p&gt;
-&lt;p&gt;Technické zázemí není žádná sláva a &lt;a href="https://www.linkedin.com/in/liborvanekcz/"&gt;Libor Vaněk&lt;/a&gt; mi zajistil účet na &lt;a href="https://www.cdn77.com/"&gt;CDN77.com&lt;/a&gt;, tak bych měl podcast přesunout tam.
-Nová infrastruktura bude nejen spolehlivější, ale umožní mi přímo u zdroje počítat, kolik lidí si kterou epizodu stáhlo.&lt;/p&gt;
-&lt;figure class="figure"&gt;&lt;img alt="Webovka Junior Guru podcastu" class="img-thumbnail img-fluid figure-img rounded" src="https://honzajavorek.cz/images/screenshot-2022-12-15-at-23-42-03-podcast-pro-juniory-v-it.png"&gt;&lt;/figure&gt;
-&lt;h3 id="budu-nad-marketingem-dal-premyslet"&gt;Budu nad marketingem dál přemýšlet&lt;small class="permalink"&gt;&lt;a href="#budu-nad-marketingem-dal-premyslet" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
-&lt;p&gt;A nakonec, rozhodl jsem se, že si budu s &lt;a href="https://www.janadolejsova.cz/"&gt;Janou Dolejšovou&lt;/a&gt; domlouvat alespoň jednou ročně konzultaci.
-Taková Stanice technické kontroly, kde probereme, co dělám, jak to dělám, a co bych možná dělat mohl.&lt;/p&gt;
-&lt;p&gt;Někdo by mohl říct, že tohle přece není žádná marketingová strategie.
-Kde je diagnóza?
-Řídící principy?
-Jenže já z toho asi nechci &lt;a href="https://docs.google.com/spreadsheets/d/1mHvqMF8_JcIa13t4NFHbI3d2rSF_PdiY4TyR4qeSTPU/edit#gid=0"&gt;dělat vědu&lt;/a&gt;.
-Potřebuji akorát aby lidi chodili na &lt;a href="https://junior.guru/club/"&gt;stránku o klubu&lt;/a&gt; a klikali tam na tlačítko.
-Už teď tam přijde zhruba 250 až 350 unikátních návštěvníků měsíčně.
-60 až 80 jich dojde až na Discord.
-Přibližně 20 si začně klub platit.&lt;/p&gt;
-&lt;p&gt;Nepotřebuju výkonnou a dobře namazanou marketingovou mašinu.
-Cílem této mojí „strategie“ je vlastně především snížit režii.
-Změnit mix tak, abych měl víc času na jiné věci.
-Nahradit pracné a na čase závislé věci jinými, které lépe škálují.&lt;/p&gt;
-&lt;p&gt;Stále platí, že když vydělám na provoz rodiny, budu spokojený.
-Pokud marketingem podpořím příchod členů do klubu tak, že vydělám i víc, budu moci nějaké peníze investovat zpět do junior.guru.
-Vznikne víc hezkých věcí pro juniory!&lt;/p&gt;
-&lt;h2 id="jak-by-to-slo-vylepsovat"&gt;Jak by to šlo vylepšovat&lt;small class="permalink"&gt;&lt;a href="#jak-by-to-slo-vylepsovat" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;To, co jsem tady sepsal, beru především jako úklid, směr, optimalizaci.
-Představuji si, že jakmile budu hotov s touto fází, bude spousta věcí fungovat sama a já budu mít energii posouvat se ještě dál.
-Přijdou na řadu věci jako aktivizace členů komunity, aby mi pomáhali, junior.guru doporučovali, nebo moje věci sdíleli dál.&lt;/p&gt;
-&lt;p&gt;Věc, kterou mohu zrealizovat relativně snadno, je výhoda pro členy, kteří klub doporučí dalším lidem.
-Používám Memberful a ten &lt;a href="https://memberful.com/referrals/"&gt;na to má přímo funkci&lt;/a&gt;.
-Stačí to vymyslet.
-Napadá mě třeba, že by bot tento odkaz rozeslal lidem, kteří si klub už půl roku nebo rok platí.
-Těm se tam nejspíš líbí.
-Kdyby doporučili někoho, kdo si začne klub platit, mohli by dostat slevu, nebo jinou výhodu.&lt;/p&gt;
-&lt;p&gt;Pavlína mi před časem psala, že by možná k epizodám podcastu psala i nějaké texty.
-Také jsem se domlouval s kamarádem, že pokud bude mít chuť, mohl by začít dělat rozhovory s juniory.
-Na junior.guru není zatím žádný blog, ale mohl bych jej rozjet a tyto věci by tam mohly vycházet.
-Celé by se to dalo propojit i s tím newsletterem.&lt;/p&gt;
-&lt;p&gt;Ne každému však vyhovuje čtení.
-Audio mám pokryté podcastem, ale tím to nemusí končit.
-Novinář Jakub Zelenka používá na svém projektu &lt;a href="https://mimo-agendu.ghost.io/"&gt;Mimo agendu&lt;/a&gt; službu &lt;a href="https://beyondwords.io/"&gt;BeyondWords&lt;/a&gt;.
-Za pár korun to z českého textu vygeneruje poslouchatelnou audio verzi.
-Tím se dá ekosystém podcastu, blogu a newsletteru vzájemně propojit.
-Audioverzi může dostat i &lt;a href="https://junior.guru/handbook/"&gt;příručka&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Když už jsem u novinářů, pohrávám si ještě s jedním bláznivým nápadem.
-Udělal bych na junior.guru stránku, kde bych shromažďoval &lt;a href="https://twitter.com/honzajavorek/status/1588147581544239104"&gt;hurá-do-IT články&lt;/a&gt; a psal k nim komentáře.
-Podle mě by to mohlo začít kultivovat, co v novinách na téma juniorů v IT vychází.
-Jen bych nerad, aby se mi to nějak vymstilo.
-Asi bych tam neměl ty novináře úplně hejtit.
-Spíš bych chtěl, aby mě začali vnímat jako rozumnou, nezávislou mluvící hlavu, která se ráda k tématu vyjádří.&lt;/p&gt;
-&lt;h2 id="jak-byste-to-delali-vy"&gt;Jak byste to dělali vy?&lt;small class="permalink"&gt;&lt;a href="#jak-byste-to-delali-vy" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;Tak, a jsme na konci.
-Myslíte si, že jsem to promyslel dobře?
-Vidíte v plánu nějaké mezery?
-Napište mi do komentářů!&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="blog"></category><category term="junior.guru"></category></entry></feed>
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="blog"></category><category term="týdenní poznámky"></category><category term="junior.guru"></category></entry></feed>
