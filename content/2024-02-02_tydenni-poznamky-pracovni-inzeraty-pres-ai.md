@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Pracovní inzeráty přes AI
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/306
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/111864126306651665
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-01-26_tydenni-poznamky-scrapery-a-openai-api.md) už utekl nějaký ten týden (26. 1. až 2. 2.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
