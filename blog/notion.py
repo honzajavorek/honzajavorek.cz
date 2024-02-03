@@ -29,7 +29,7 @@ def reading(notion_token, database_id, feed_id):
     ):
         for item in result:
             url = item["properties"]["URL"]["url"]
-            if is_youtube_url(url):
+            if is_video_url(url):
                 continue
 
             title = item["properties"]["Name"]["title"][0]["plain_text"]
@@ -56,7 +56,7 @@ def watching(notion_token, database_id, feed_id):
     ):
         for item in result:
             url = item["properties"]["URL"]["url"]
-            if not is_youtube_url(url):
+            if not is_video_url(url):
                 continue
 
             title = item["properties"]["Name"]["title"][0]["plain_text"]
@@ -69,5 +69,5 @@ def watching(notion_token, database_id, feed_id):
     click.echo(feed.atom_str())
 
 
-def is_youtube_url(url: str) -> bool:
+def is_video_url(url: str) -> bool:
     return "youtube.com" in url or "youtu.be" in url
