@@ -54,10 +54,12 @@ jobs:
       - name: "Extra: Kočárkino"
         run: poetry run blog kocarkino > ./public/kocarkino.ics
 
-      - name: "Extra: Reading"
+      - name: "Extra: Notion Feeds"
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-        run: poetry run blog reading > ./public/reading.xml
+        run: |
+          poetry run blog notion reading > ./public/reading.xml
+          poetry run blog notion watching > ./public/watching.xml
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
