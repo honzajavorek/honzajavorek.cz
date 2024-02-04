@@ -1,6 +1,8 @@
 Title: Jak mít sociální sítě a nepoužívat je
 Image: images/sara-kurfess-cjdwj4x2irq-unsplash.jpg
 Lang: cs
+Telegram-Comments: https://t.me/honzajavorekcz/307
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/111875304401817406
 
 Před časem jsem [odešel z mainstreamových sociálních sítí](2022-12-15_moje-nova-strategie-na-socialni-site.md), hlavně proto, že mě přestaly bavit.
 Odejít se dá různými způsoby.
