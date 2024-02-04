@@ -58,9 +58,6 @@ def fetch_notion_items(notion: Client, database_id: str) -> Iterable:
 def add_feed_items(feed: FeedGenerator, items: Iterable):
     for item in items:
         url = item["properties"]["URL"]["url"]
-        if not is_video_url(url):
-            continue
-
         title = item["properties"]["Name"]["title"][0]["plain_text"]
         created_at = item["created_time"]
         entry = feed.add_entry()
