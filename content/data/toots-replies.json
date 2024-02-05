@@ -4,9 +4,82 @@
     "slug": "jak-mit-socialni-site-a-nepouzivat-je",
     "created_at": "2024-02-04T21:21:11.174000+00:00",
     "toot_url": "https://mastodonczech.cz/@honzajavorek/111875304401817406",
-    "favourites_count": 4,
-    "reblogs_count": 1,
-    "replies": []
+    "favourites_count": 15,
+    "reblogs_count": 6,
+    "replies": [
+      {
+        "id": 111877575629894387,
+        "created_at": "2024-02-05T06:58:46+00:00",
+        "in_reply_to_id": 111875304401817406,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://floss.social/users/sesivany/statuses/111877575594363504",
+        "url": "https://floss.social/@sesivany/111877575594363504",
+        "favourites_count": 1,
+        "favourited": true,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> Tenhle blogpost mi mluví z duše. Prošel jsem si stejnou cestou a dopracoval jsem se k stejnému závěru včetně řešení jako RSS a Nitter. Jen teda ten účet na Twitteru jsem smazal úplně.</p>",
+        "account": {
+          "id": 109325093585186636,
+          "username": "sesivany",
+          "acct": "sesivany@floss.social",
+          "display_name": "Jiří Eischmann :fedora:",
+          "url": "https://floss.social/@sesivany",
+          "uri": "https://floss.social/users/sesivany",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/325/093/585/186/636/original/e57f123ad5e685b6.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/325/093/585/186/636/original/e57f123ad5e685b6.jpg"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ]
+      },
+      {
+        "id": 111877828917209970,
+        "created_at": "2024-02-05T08:03:12.220000+00:00",
+        "in_reply_to_id": 111875304401817406,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodonczech.cz/users/jk/statuses/111877828917209970",
+        "url": "https://mastodonczech.cz/@jk/111877828917209970",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\">@<span>honzajavorek</span></a></span> super, můžu se pod něj taky podepsat. Já jsem šel ještě dál. Účet mám jen na LinkedIn (zatím kvůli CV) a Mastodon. Vše ostatní jsem buď zrušil anebo ani nezaložil. Používám RSS ve Feedly a případně newsletters do emailu. Na odkazy, které odkazují na uzavřené sítě z 90 % neklikám. Pokud ano, tak jedině přes TOR. YouTube jen sleduju, nic nekomentuju a nelajkuju.</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110684237632562289,
+          "username": "jk",
+          "acct": "jk",
+          "display_name": "Josef Kusek",
+          "url": "https://mastodonczech.cz/@jk",
+          "uri": "https://mastodonczech.cz/users/jk",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/684/237/632/562/289/original/8296d4f3a4e0d073.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/684/237/632/562/289/original/8296d4f3a4e0d073.jpeg"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ]
+      }
+    ]
   },
   {
     "url": "https://honzajavorek.cz/blog/tydenni-poznamky-pracovni-inzeraty-pres-ai/",
