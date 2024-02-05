@@ -121,10 +121,10 @@ Tak jsem ho tenkrát vypiplal, že Facebook vůbec netuší, že je fejkový.
 Nic moc ale nesleduje a nemá smysl pod jeho jménem na cokoliv reagovat.
 Mohu však díky němu číst odkazy za plotem Facebookové _walled garden_, když mi je někdo pošle.
 
-## 9 z 10 pisoárů
+## Odejít, ale nechat si vrátka
 
 Odejít ze sítí je jako přestat s něčím, na čem jste byli závislí.
-Když se tam pak na chvíli vrátíte, vlastně moc ani nechápete, proč jste tam předtím chodili.
+Když se tam ale pak na chvíli vrátíte, vlastně moc ani nechápete, proč jste tam předtím chodili.
 
 A nejste permanentně na něco nebo někoho nasraní.
 Začnou vám být jedno špatně zaparkovaná auta, politické kauzy, nebo existence lidí s jiným názorem.
