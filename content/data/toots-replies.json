@@ -5,7 +5,7 @@
     "created_at": "2024-02-04T21:21:11.174000+00:00",
     "toot_url": "https://mastodonczech.cz/@honzajavorek/111875304401817406",
     "favourites_count": 15,
-    "reblogs_count": 6,
+    "reblogs_count": 7,
     "replies": [
       {
         "id": 111877575629894387,
@@ -17,7 +17,7 @@
         "language": "en",
         "uri": "https://floss.social/users/sesivany/statuses/111877575594363504",
         "url": "https://floss.social/@sesivany/111877575594363504",
-        "favourites_count": 1,
+        "favourites_count": 2,
         "favourited": true,
         "reblogged": false,
         "muted": false,
@@ -69,6 +69,40 @@
           "uri": "https://mastodonczech.cz/users/jk",
           "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/684/237/632/562/289/original/8296d4f3a4e0d073.jpeg",
           "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/684/237/632/562/289/original/8296d4f3a4e0d073.jpeg"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ]
+      },
+      {
+        "id": 111879416221896270,
+        "created_at": "2024-02-05T14:46:50+00:00",
+        "in_reply_to_id": 111875304401817406,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "unlisted",
+        "language": "cs",
+        "uri": "https://witter.cz/users/lukasvac/statuses/111879416080093232",
+        "url": "https://witter.cz/@lukasvac/111879416080093232",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> Tady tak. Aktivně používám jen Mastodon. Twitter jsem zrušil, ale pár účtů mám v RSS přes Nitter. Instagram jsem zrušil bez náhrady. Facebook mám, ale tam jsem nikdy nebyl aktivní, nikdy nic nesdílel veřejně, v podstatně jej mám jen kvůli práci.</p>",
+        "account": {
+          "id": 109324797899300605,
+          "username": "lukasvac",
+          "acct": "lukasvac@witter.cz",
+          "display_name": "Lukáš Václavík",
+          "url": "https://witter.cz/@lukasvac",
+          "uri": "https://witter.cz/users/lukasvac",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/899/300/605/original/f41c312b2876e6f6.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/899/300/605/original/f41c312b2876e6f6.png"
         },
         "mentions": [
           {
