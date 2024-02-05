@@ -58,6 +58,8 @@ Kdysi bylo RSS automaticky součástí každého redakčního systému, dnes už
 
 Občas se přes RSS dají odebírat i newslettery!
 Bohužel mám asi čtyři, které se mi do čtečky nacpat nepovedlo a pravidelně se mi motají mezi důležité e-maily.
+A své RSS feedy mají i kanály na YouTube.
+Sleduji jich takhle hned několik, „zvoneček“ a účet přímo na YouTube k odběru vůbec nepoužívám.
 
 Když na internetu narazím na zajímavý článek nebo video, [pošlu si to do čtečky přes Notion](2023-04-01_notion-as-a-replacement-for-pocket.md).
 Ale uznávám, že tohle už je docela geekovské.
