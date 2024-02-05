@@ -64,7 +64,7 @@ Sleduji jich takhle hned několik, „zvoneček“ a účet přímo na YouTube k
 Když na internetu narazím na zajímavý článek nebo video, [pošlu si to do čtečky přes Notion](2023-04-01_notion-as-a-replacement-for-pocket.md).
 Ale uznávám, že tohle už je docela geekovské.
 
-Super, je, že díky [NoLogu](https://nolog.cz/) jde **přes RSS sledovat i Twitter**.
+Super je, že díky [NoLogu](https://nolog.cz/) jde **přes RSS sledovat i Twitter**.
 Je tam totiž pár účtů, které chci sledovat a nechci o ně přijít.
 Například [Števo](https://twitter.com/StevoEisele), [Rita](https://twitter.com/rita_codes/), [Levels](https://twitter.com/levelsio/)…
 Chci číst vše, co napíšou, a zároveň je mi úplně ukradené, co je pod tím za diskuzi.
