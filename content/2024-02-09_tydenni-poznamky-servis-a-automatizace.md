@@ -70,23 +70,16 @@ Pokud bych mohl používat Apple Mail, který mám přímo v OS, tak by můj ži
 No, je to hrozné.
 A na iOS to bylo ještě horší.
 
-Koho by to zajámalo nějak víc, tak jsem si [odfrkával na Mastodon](https://mastodonczech.cz/@honzajavorek/), tady to nechci úplně plevelit svými pocity a potřebami okolo e-mailu.
+Koho by to zajímalo nějak víc, tak jsem si [odfrkával na Mastodon](https://mastodonczech.cz/@honzajavorek/), tady to nechci úplně plevelit svými pocity a potřebami okolo e-mailu.
 Taky jsem zjistil, že [ImprovMX](https://improvmx.com/), můj vymakaný způsob, jak mít jednu e-mailovou schránku, ale několik domén, možná není kompatibilní s ničím jiným, než s Gmailem 😀
 Ale to ještě uvidím.
 
-Každopádně mě díky tomu napadlo, že mobilní appku možná vůbec nepotřebuji a odinstaloval jsem ji.
+Každopádně díky celému tomuto cvičení mě napadlo, že mobilní appku možná vůbec nepotřebuji a odinstaloval jsem ji.
 Prostě si e-maily na telefonu vůbec nemám teď jak otevřít.
 Je to jen takový experiment.
 Během jednotek dní nenastala situace, kdy by mi to chybělo, ale dovedu si představit, že při cestování apod. už to bude nepraktické.
 
-Na co jsem se díval, nebo se na to chci ještě podívat:
-
--   [Hey](https://www.hey.com/)
--   [Proton](https://proton.me/)
--   [Airmail](https://airmailapp.com/)
--   [Spark](https://sparkmailapp.com/)
--   [Fastmail](https://www.fastmail.com/)
--   [StartMail](https://www.startmail.com/)
+Na co jsem se díval, nebo se na to chci ještě podívat: [Hey](https://www.hey.com/), [Proton](https://proton.me/), [Airmail](https://airmailapp.com/), [Spark](https://sparkmailapp.com/), [Fastmail](https://www.fastmail.com/), [StartMail](https://www.startmail.com/)
 
 ## Další
 
@@ -110,11 +103,10 @@ Na co jsem se díval, nebo se na to chci ještě podívat:
     Ptali se mě, jestli pro ně nechci nějak víc přispívat.
     Odepsal jsem, že na to nemám kapacitu, ale nakonec jsme se domluvili, že bych se mohl, pokud by zrovna potřebovali, k něčemu i jen „vyjádřit“ a oni by to pak mohli přepsat a použít.
 -   Přemýšlel jsem nad novým ceníkem pro firmy.
--   Potřebuju opravit myčku, která na nás bliká a svítí, ale umývat se jí nic nechce.
+-   Potřebuju opravit myčku, která na nás bliká a pípá, ale umývat se jí nic nechce.
 -   Napsal jsem na blog o tom, [jak mít sociální sítě a nepoužívat je]({filename}2024-02-04_jak-mit-socialni-site-a-nepouzivat-je.md).
 -   E-maily, [klubový Discord](https://junior.guru/club/), [Pyvec Slack](https://docs.pyvec.org/operations/support.html#sit-kontaktu), zprávy na LinkedIn.
 -   Za 8 dní jsem se nevěnoval žádné sportovní aktivitě.
-    Detaily na [Strava](https://www.strava.com/athletes/31242569), jediné sociální síti, kde si napsání statusu musíte zasloužit.
 
 ## Plánuji
 
