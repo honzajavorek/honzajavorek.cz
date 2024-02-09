@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Servis a automatizace
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/308
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/111902348217446405
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-02-02_tydenni-poznamky-pracovni-inzeraty-pres-ai.md) už utekl nějaký ten týden (2. 2. až 9. 2.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
