@@ -4,16 +4,1099 @@
     "slug": "tydenni-poznamky-servis-a-automatizace",
     "created_at": "2024-02-09T15:58:47.052000+00:00",
     "toot_url": "https://mastodonczech.cz/@honzajavorek/111902348217446405",
-    "favourites_count": 0,
+    "favourites_count": 2,
     "reblogs_count": 0,
-    "replies": []
+    "replies": [
+      {
+        "id": 111902478687188787,
+        "created_at": "2024-02-09T16:31:57+00:00",
+        "in_reply_to_id": 111902348217446405,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodon.gamedev.place/users/muzzug/statuses/111902478653537351",
+        "url": "https://mastodon.gamedev.place/@muzzug/111902478653537351",
+        "replies_count": 1,
+        "favourites_count": 1,
+        "favourited": true,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> Držím palce s přechodem od Gmailu. Já si tím prošel před pár lety a jediné, co mi u Google zůstalo, je kalendář a nedůležité/sdílené dokumenty. A i na tom kalendáři ještě asi zapracuju a přesunu ho…</p>",
+        "account": {
+          "id": 109919784515596678,
+          "username": "muzzug",
+          "acct": "muzzug@mastodon.gamedev.place",
+          "display_name": "Muzzug :godot:",
+          "url": "https://mastodon.gamedev.place/@muzzug",
+          "uri": "https://mastodon.gamedev.place/users/muzzug",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/919/784/515/596/678/original/83c74ff3a7b2b79c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/919/784/515/596/678/original/83c74ff3a7b2b79c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ]
+      },
+      {
+        "id": 111902641431127400,
+        "created_at": "2024-02-09T17:13:14.755000+00:00",
+        "in_reply_to_id": 111902478687188787,
+        "in_reply_to_account_id": 109919784515596678,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://genserver.social/objects/29f4f626-05e2-4e40-8ea5-22d8dffc7d1c",
+        "url": "https://genserver.social/objects/29f4f626-05e2-4e40-8ea5-22d8dffc7d1c",
+        "replies_count": 4,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<span class=\"h-card\"><a class=\"u-url mention\" href=\"https://mastodon.gamedev.place/@muzzug\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>muzzug</span></a></span> <span class=\"h-card\"><a class=\"u-url mention\" href=\"https://mastodonczech.cz/@honzajavorek\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> Máš už nějaký nápady, kam přesuneš kalendář? Já jsem teda zatím moc nehledal, ale nikdy jsem neviděl nic ani náznakem tak funkčního jako Google Calendar :-(",
+        "account": {
+          "id": 111100047166256143,
+          "username": "liskin",
+          "acct": "liskin@genserver.social",
+          "display_name": "Tomáš Janoušek",
+          "url": "https://genserver.social/users/liskin",
+          "uri": "https://genserver.social/users/liskin",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/87b1ecca2be1ed2e.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/87b1ecca2be1ed2e.png"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111902662534593238,
+        "created_at": "2024-02-09T17:18:36+00:00",
+        "in_reply_to_id": 111902641431127400,
+        "in_reply_to_account_id": 111100047166256143,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodon.gamedev.place/users/muzzug/statuses/111902662120921560",
+        "url": "https://mastodon.gamedev.place/@muzzug/111902662120921560",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>liskin</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> Tak já mám tu \"výhodu\", že jsem se přesunul k <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.social/@protonmail\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>protonmail</span></a></span> . Takže když už, tak bych to hodil tam. Manželka má taky PM, takže vzájemné sdílení by neměl být problém...</p>",
+        "account": {
+          "id": 109919784515596678,
+          "username": "muzzug",
+          "acct": "muzzug@mastodon.gamedev.place",
+          "display_name": "Muzzug :godot:",
+          "url": "https://mastodon.gamedev.place/@muzzug",
+          "uri": "https://mastodon.gamedev.place/users/muzzug",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/919/784/515/596/678/original/83c74ff3a7b2b79c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/919/784/515/596/678/original/83c74ff3a7b2b79c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 111100047166256143,
+            "username": "liskin",
+            "url": "https://genserver.social/users/liskin",
+            "acct": "liskin@genserver.social"
+          },
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 109326304553417033,
+            "username": "protonmail",
+            "url": "https://mastodon.social/@protonmail",
+            "acct": "protonmail@mastodon.social"
+          }
+        ]
+      },
+      {
+        "id": 111902673036211131,
+        "created_at": "2024-02-09T17:21:19+00:00",
+        "in_reply_to_id": 111902641431127400,
+        "in_reply_to_account_id": 111100047166256143,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://floss.social/users/sesivany/statuses/111902672780198776",
+        "url": "https://floss.social/@sesivany/111902672780198776",
+        "replies_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>liskin</span></a></span> V čem je to tak funkční? Používám ho v práci a občas z něj teču. Ty bugy, kdy mi to ukáže kolegu, u něj fotku jiného kolegy a když na to kliknu, tak email ještě na jiného kolegu... Kompatibilita s jakýmkoliv klientem třetí strany je hrozná.<br>Zrovna Google Calendar se mi opouštěl fakt lehce. :) Mám Nextcloud Calendar a naprosto mi vyhovuje. Je fakt, že ho mám jen pro soukromé účely, kde od toho zase nechci tak moc.</p><p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.gamedev.place/@muzzug\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>muzzug</span></a></span></p>",
+        "account": {
+          "id": 109325093585186636,
+          "username": "sesivany",
+          "acct": "sesivany@floss.social",
+          "display_name": "Jiří Eischmann :fedora:",
+          "url": "https://floss.social/@sesivany",
+          "uri": "https://floss.social/users/sesivany",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/325/093/585/186/636/original/e57f123ad5e685b6.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/325/093/585/186/636/original/e57f123ad5e685b6.jpg"
+        },
+        "mentions": [
+          {
+            "id": 111100047166256143,
+            "username": "liskin",
+            "url": "https://genserver.social/users/liskin",
+            "acct": "liskin@genserver.social"
+          },
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111902913789061215,
+        "created_at": "2024-02-09T18:22:36.989000+00:00",
+        "in_reply_to_id": 111902641431127400,
+        "in_reply_to_account_id": 111100047166256143,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111902913789061215",
+        "url": "https://mastodonczech.cz/@honzajavorek/111902913789061215",
+        "replies_count": 3,
+        "favourites_count": 2,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\">@<span>liskin</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.gamedev.place/@muzzug\" class=\"u-url mention\">@<span>muzzug</span></a></span> Líbilo se mi video od Hey, ale třeba je to jen dobře udělané video 😀 <a href=\"https://www.hey.com/calendar/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"\">hey.com/calendar/</span><span class=\"invisible\"></span></a></p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 111100047166256143,
+            "username": "liskin",
+            "url": "https://genserver.social/users/liskin",
+            "acct": "liskin@genserver.social"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111902920832061431,
+        "created_at": "2024-02-09T18:24:24.458000+00:00",
+        "in_reply_to_id": 111902641431127400,
+        "in_reply_to_account_id": 111100047166256143,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111902920832061431",
+        "url": "https://mastodonczech.cz/@honzajavorek/111902920832061431",
+        "replies_count": 1,
+        "reblogs_count": 2,
+        "favourites_count": 5,
+        "favourited": false,
+        "reblogged": true,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\">@<span>liskin</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.gamedev.place/@muzzug\" class=\"u-url mention\">@<span>muzzug</span></a></span> Jedna z věcí, které mi vadí skoro na všech kalendářích, které jsem kdy viděl (a proto jsem se s ní zatím tak nějak smířil), je nemožnost vidět plovoucí týden.</p><p>Můžu si nastavit, jestli můj týden začíná v pondělí nebo neděli nebo co, ale mě je upřímně dost jedno, co se dělo před 5 dny a spíš potřebuju vědět, co se děje za 5 dní. Takže by se mi líbilo, kdyby zobrazení mého týdne začínalo prostě dnes.</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 111100047166256143,
+            "username": "liskin",
+            "url": "https://genserver.social/users/liskin",
+            "acct": "liskin@genserver.social"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111902935057469828,
+        "created_at": "2024-02-09T18:28:01.519000+00:00",
+        "in_reply_to_id": 111902920832061431,
+        "in_reply_to_account_id": 111100047166256143,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111902935057469828",
+        "url": "https://mastodonczech.cz/@honzajavorek/111902935057469828",
+        "replies_count": 1,
+        "favourites_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\">@<span>liskin</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.gamedev.place/@muzzug\" class=\"u-url mention\">@<span>muzzug</span></a></span> Třeba dnes mi kalendář ukazuje čtyři zašedlé dny (560 zbytečných pixelů na mé obrazovce), dnešek a dva příští dny. Co se děje za tři dny nevím, musím klikat a dívat se za roh. Přijde mi fascinující, že takhle fungují prakticky všechny kalendáře, včetně (podle videa) těch hip super out of the box předělaných, jako je Hey.</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 111100047166256143,
+            "username": "liskin",
+            "url": "https://genserver.social/users/liskin",
+            "acct": "liskin@genserver.social"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111903296703242091,
+        "created_at": "2024-02-09T19:59:52.730000+00:00",
+        "in_reply_to_id": 111902935057469828,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://genserver.social/objects/b77cd8fb-28f8-4e5b-a85d-d6e90298783a",
+        "url": "https://genserver.social/objects/b77cd8fb-28f8-4e5b-a85d-d6e90298783a",
+        "replies_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<span class=\"h-card\"><a class=\"u-url mention\" href=\"https://mastodonczech.cz/@honzajavorek\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> <span class=\"h-card\"><a class=\"u-url mention\" href=\"https://mastodon.gamedev.place/@muzzug\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>muzzug</span></a></span> Tohle Google Calendar skoro určitě umí, aspoň na webu. Když to přepneš do toho režimu 4/5 dní a skočíš na aktuální den, tak to ukáže dalších X dní, kde X se dá v nastavení nastavit.<br>No a na mobilu používám ten agenda widget, ten taky ukazuje pár týdnů dopředu, jen ve formátu agendy a ne tabulky hodin.",
+        "account": {
+          "id": 111100047166256143,
+          "username": "liskin",
+          "acct": "liskin@genserver.social",
+          "display_name": "Tomáš Janoušek",
+          "url": "https://genserver.social/users/liskin",
+          "uri": "https://genserver.social/users/liskin",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/87b1ecca2be1ed2e.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/87b1ecca2be1ed2e.png"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111903309900214089,
+        "created_at": "2024-02-09T20:03:21.166000+00:00",
+        "in_reply_to_id": 111903296703242091,
+        "in_reply_to_account_id": 111100047166256143,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111903309900214089",
+        "url": "https://mastodonczech.cz/@honzajavorek/111903309900214089",
+        "replies_count": 1,
+        "reblogs_count": 1,
+        "favourites_count": 6,
+        "favourited": false,
+        "reblogged": true,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\">@<span>liskin</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.gamedev.place/@muzzug\" class=\"u-url mention\">@<span>muzzug</span></a></span> OK, tak to mě fakt nenapadlo. Takže „custom view“ nastavit na 7 dní a pak jít někam doprava nahoru a přepnout to z „week“ na „7 days“. Dík 😀</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "media_attachments": [
+          {
+            "id": 111903305583152589,
+            "type": "image",
+            "url": "https://mastodonczech.cz/system/media_attachments/files/111/903/305/583/152/589/original/dc6c107961f38d33.png",
+            "preview_url": "https://mastodonczech.cz/system/media_attachments/files/111/903/305/583/152/589/small/dc6c107961f38d33.png",
+            "meta": {
+              "original": {
+                "width": 2148,
+                "height": 474,
+                "size": "2148x474",
+                "aspect": 4.531645569620253
+              },
+              "small": {
+                "width": 1020,
+                "height": 225,
+                "size": "1020x225",
+                "aspect": 4.533333333333333
+              }
+            },
+            "blurhash": "U6Ss50^-9G9F^,9Yog-;jExpjXsmI--qM{M_"
+          }
+        ],
+        "mentions": [
+          {
+            "id": 111100047166256143,
+            "username": "liskin",
+            "url": "https://genserver.social/users/liskin",
+            "acct": "liskin@genserver.social"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111903312698877207,
+        "created_at": "2024-02-09T20:03:56.860000+00:00",
+        "in_reply_to_id": 111902673036211131,
+        "in_reply_to_account_id": 109325093585186636,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://genserver.social/objects/2c876721-127f-4ed6-8a73-e5afa2c7fff3",
+        "url": "https://genserver.social/objects/2c876721-127f-4ed6-8a73-e5afa2c7fff3",
+        "replies_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<span class=\"h-card\"><a class=\"u-url mention\" href=\"https://floss.social/@sesivany\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>sesivany</span></a></span> <span class=\"h-card\"><a class=\"u-url mention\" href=\"https://mastodonczech.cz/@honzajavorek\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> <span class=\"h-card\"><a class=\"u-url mention\" href=\"https://mastodon.gamedev.place/@muzzug\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>muzzug</span></a></span> Tyhle bugy jsem nikdy neviděl. Funkční je to hlavně co se kolaborace týče. Sdílení kalendářů mezi lidma, sdílení kalendářů mezi více mými účty. Vidíš kdo kam jde a nejde. Docela fajn API, takže třeba můžeš vyrobit sdílené kalendáře, kde manažer vidí dovolené svých lidí, a lidi si můžou ukázat kalendáře dovolených jejich týmu. No a to UI mi vyhovuje úplně mega, takže klient třetí strany jsem nikdy nepotřeboval.",
+        "account": {
+          "id": 111100047166256143,
+          "username": "liskin",
+          "acct": "liskin@genserver.social",
+          "display_name": "Tomáš Janoušek",
+          "url": "https://genserver.social/users/liskin",
+          "uri": "https://genserver.social/users/liskin",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/87b1ecca2be1ed2e.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/87b1ecca2be1ed2e.png"
+        },
+        "mentions": [
+          {
+            "id": 109325093585186636,
+            "username": "sesivany",
+            "url": "https://floss.social/@sesivany",
+            "acct": "sesivany@floss.social"
+          },
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111903319099084340,
+        "created_at": "2024-02-09T20:05:41.529000+00:00",
+        "in_reply_to_id": 111903309900214089,
+        "in_reply_to_account_id": 111100047166256143,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111903319099084340",
+        "url": "https://mastodonczech.cz/@honzajavorek/111903319099084340",
+        "replies_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\">@<span>liskin</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.gamedev.place/@muzzug\" class=\"u-url mention\">@<span>muzzug</span></a></span> Hele a podbarevní víkendů bys tam neměl? Teď mi nějak splývají se zbytkem 😂</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 111100047166256143,
+            "username": "liskin",
+            "url": "https://genserver.social/users/liskin",
+            "acct": "liskin@genserver.social"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111903320475521071,
+        "created_at": "2024-02-09T20:05:58.842000+00:00",
+        "in_reply_to_id": 111902913789061215,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://genserver.social/objects/9a3f2620-f0d2-48af-a8e1-9c01d44fa50a",
+        "url": "https://genserver.social/objects/9a3f2620-f0d2-48af-a8e1-9c01d44fa50a",
+        "replies_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<span class=\"h-card\"><a class=\"u-url mention\" href=\"https://mastodonczech.cz/@honzajavorek\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> <span class=\"h-card\"><a class=\"u-url mention\" href=\"https://mastodon.gamedev.place/@muzzug\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>muzzug</span></a></span> Podle popisu to vypadá dobře. Samozřejmě v praxi tam nebude fungovat nic z toho, na co su zvyklej, ale... šance by se tomu dát mohla, někdy. 🙂",
+        "account": {
+          "id": 111100047166256143,
+          "username": "liskin",
+          "acct": "liskin@genserver.social",
+          "display_name": "Tomáš Janoušek",
+          "url": "https://genserver.social/users/liskin",
+          "uri": "https://genserver.social/users/liskin",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/87b1ecca2be1ed2e.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/87b1ecca2be1ed2e.png"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111903326915189066,
+        "created_at": "2024-02-09T20:07:40.793000+00:00",
+        "in_reply_to_id": 111903320475521071,
+        "in_reply_to_account_id": 111100047166256143,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111903326915189066",
+        "url": "https://mastodonczech.cz/@honzajavorek/111903326915189066",
+        "replies_count": 1,
+        "favourites_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\">@<span>liskin</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.gamedev.place/@muzzug\" class=\"u-url mention\">@<span>muzzug</span></a></span> Mě se hodně líbilo to trackování zvyků. Je mi jasný, že na to jsou určitě nějaké pluginy nebo appky, ale mít to tam out of the box, možná bych nějaké ty zvyky i držel...</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 111100047166256143,
+            "username": "liskin",
+            "url": "https://genserver.social/users/liskin",
+            "acct": "liskin@genserver.social"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111903348239597971,
+        "created_at": "2024-02-09T20:12:59.582000+00:00",
+        "in_reply_to_id": 111903319099084340,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://genserver.social/objects/c6a94c01-6ad6-4b5f-b63b-a43de439b6b9",
+        "url": "https://genserver.social/objects/c6a94c01-6ad6-4b5f-b63b-a43de439b6b9",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<span class=\"h-card\"><a class=\"u-url mention\" href=\"https://mastodonczech.cz/@honzajavorek\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> <span class=\"h-card\"><a class=\"u-url mention\" href=\"https://mastodon.gamedev.place/@muzzug\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>muzzug</span></a></span> Hm, to asi neumím. Nějak si matně vybavuju, jestli to náhodou nebylo v Labs dřív, ale možná halucinuju. Vygooglil jsem <a href=\"https://chromewebstore.google.com/detail/google-calendar-weekend-h/pdbcjcpinemooahpfnncddnmjgjhcfod\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">https://chromewebstore.google.com/detail/google-calendar-weekend-h/pdbcjcpinemooahpfnncddnmjgjhcfod</a>. Nebo si udělat celodenní událost opakující se každý týden. :-(",
+        "account": {
+          "id": 111100047166256143,
+          "username": "liskin",
+          "acct": "liskin@genserver.social",
+          "display_name": "Tomáš Janoušek",
+          "url": "https://genserver.social/users/liskin",
+          "uri": "https://genserver.social/users/liskin",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/87b1ecca2be1ed2e.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/87b1ecca2be1ed2e.png"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111903352532074631,
+        "created_at": "2024-02-09T20:14:08.953000+00:00",
+        "in_reply_to_id": 111903326915189066,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://genserver.social/objects/31d91522-fee3-42aa-a0ac-4226238a2f3d",
+        "url": "https://genserver.social/objects/31d91522-fee3-42aa-a0ac-4226238a2f3d",
+        "edited_at": "2024-02-09T20:14:23.404000+00:00",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<span class=\"h-card\"><a class=\"u-url mention\" href=\"https://mastodonczech.cz/@honzajavorek\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> <span class=\"h-card\"><a class=\"u-url mention\" href=\"https://mastodon.gamedev.place/@muzzug\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>muzzug</span></a></span> Jo, to se mi taky trochu líbilo. Ale nedodržoval jsem to. Teď používám <a href=\"https://github.com/FriesI23/mhabit\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">https://github.com/FriesI23/mhabit</a>, a do kalendáře si to občas napíšu ručně, když se donutím si naplánovat pár dní dopředu. Což se většinou nedonutím, protože počasí je tady trochu random. A můj mozek je ještě víc random.",
+        "account": {
+          "id": 111100047166256143,
+          "username": "liskin",
+          "acct": "liskin@genserver.social",
+          "display_name": "Tomáš Janoušek",
+          "url": "https://genserver.social/users/liskin",
+          "uri": "https://genserver.social/users/liskin",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/87b1ecca2be1ed2e.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/87b1ecca2be1ed2e.png"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111903431982399706,
+        "created_at": "2024-02-09T20:34:21+00:00",
+        "in_reply_to_id": 111902913789061215,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "unlisted",
+        "language": "cs",
+        "uri": "https://merta.social/users/zdenek/statuses/01HP7S83902BVAPF5QADT57MY5",
+        "url": "https://merta.social/@zdenek/statuses/01HP7S83902BVAPF5QADT57MY5",
+        "replies_count": 1,
+        "reblogs_count": 2,
+        "favourites_count": 3,
+        "favourited": true,
+        "reblogged": true,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> <span class=\"h-card\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>liskin</span></a></span> <span class=\"h-card\"><a href=\"https://mastodon.gamedev.place/@muzzug\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>muzzug</span></a></span> Mně by se líbil takový kalendář <a href=\"https://julian.digital/2023/07/06/multi-layered-calendars/\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">https://julian.digital/2023/07/06/multi-layered-calendars/</a></p>",
+        "account": {
+          "id": 109534149945836634,
+          "username": "zdenek",
+          "acct": "zdenek@merta.social",
+          "display_name": "Zdeněk Merta",
+          "url": "https://merta.social/@zdenek",
+          "uri": "https://merta.social/users/zdenek",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/534/149/945/836/634/original/b0a6d6a48e7c02d1.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/534/149/945/836/634/original/b0a6d6a48e7c02d1.png"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 111100047166256143,
+            "username": "liskin",
+            "url": "https://genserver.social/users/liskin",
+            "acct": "liskin@genserver.social"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111903449514090326,
+        "created_at": "2024-02-09T20:38:50+00:00",
+        "in_reply_to_id": 111903312698877207,
+        "in_reply_to_account_id": 111100047166256143,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://floss.social/users/sesivany/statuses/111903449467003542",
+        "url": "https://floss.social/@sesivany/111903449467003542",
+        "replies_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>liskin</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.gamedev.place/@muzzug\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>muzzug</span></a></span> Aha, no každý máme jiné potřeby. Já jsem stará škola, takže preferuju nativní aplikace. Mám oblíbenou na desktopu, na mobilu a služba kalendáře je pro mě vlastně jen o synchronizaci. Takže nejdůležitější je, aby pořádně uměla CalDAV. Webové rozhraní kalendáře v Nextcloudu vlastně vidím výjimečně, je to pro mě taková záloha.</p>",
+        "account": {
+          "id": 109325093585186636,
+          "username": "sesivany",
+          "acct": "sesivany@floss.social",
+          "display_name": "Jiří Eischmann :fedora:",
+          "url": "https://floss.social/@sesivany",
+          "uri": "https://floss.social/users/sesivany",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/325/093/585/186/636/original/e57f123ad5e685b6.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/325/093/585/186/636/original/e57f123ad5e685b6.jpg"
+        },
+        "mentions": [
+          {
+            "id": 111100047166256143,
+            "username": "liskin",
+            "url": "https://genserver.social/users/liskin",
+            "acct": "liskin@genserver.social"
+          },
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111903514877027179,
+        "created_at": "2024-02-09T20:55:28.867000+00:00",
+        "in_reply_to_id": 111903431982399706,
+        "in_reply_to_account_id": 109534149945836634,
+        "sensitive": false,
+        "visibility": "unlisted",
+        "language": "cs",
+        "uri": "https://mastodonczech.cz/users/saasa/statuses/111903514877027179",
+        "url": "https://mastodonczech.cz/@saasa/111903514877027179",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://merta.social/@zdenek\" class=\"u-url mention\">@<span>zdenek</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\">@<span>honzajavorek</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\">@<span>liskin</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.gamedev.place/@muzzug\" class=\"u-url mention\">@<span>muzzug</span></a></span> To se mi nechce věřit, že už v nějaké podobě neexistuje. Vše o čem tam píše už tu je a má nějaké to API. Co tomu asi chybí je ten polish, který v článku působí fakt dobře.</p>",
+        "application": {
+          "name": "Ivory for iOS",
+          "website": "https://tapbots.com/"
+        },
+        "account": {
+          "id": 109383116066138244,
+          "username": "saasa",
+          "acct": "saasa",
+          "display_name": "Jan Sasínek",
+          "url": "https://mastodonczech.cz/@saasa",
+          "uri": "https://mastodonczech.cz/users/saasa",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/109/383/116/066/138/244/original/20438f6afbaf5812.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/109/383/116/066/138/244/original/20438f6afbaf5812.jpeg"
+        },
+        "mentions": [
+          {
+            "id": 109534149945836634,
+            "username": "zdenek",
+            "url": "https://merta.social/@zdenek",
+            "acct": "zdenek@merta.social"
+          },
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 111100047166256143,
+            "username": "liskin",
+            "url": "https://genserver.social/users/liskin",
+            "acct": "liskin@genserver.social"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111903547188618889,
+        "created_at": "2024-02-09T21:03:35.047000+00:00",
+        "in_reply_to_id": 111903449514090326,
+        "in_reply_to_account_id": 109325093585186636,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://genserver.social/objects/d8254ce0-a27b-4aee-9943-5a30ea98270b",
+        "url": "https://genserver.social/objects/d8254ce0-a27b-4aee-9943-5a30ea98270b",
+        "replies_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<span class=\"h-card\"><a class=\"u-url mention\" href=\"https://floss.social/@sesivany\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>sesivany</span></a></span> <span class=\"h-card\"><a class=\"u-url mention\" href=\"https://mastodonczech.cz/@honzajavorek\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> <span class=\"h-card\"><a class=\"u-url mention\" href=\"https://mastodon.gamedev.place/@muzzug\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>muzzug</span></a></span> Já mám nativní appky taky rád, ale zas vocaď pocaď. Do kalendáře mrknu občas, nepotřebuju tam žádný extra klávesový zkratky nebo vim-like editaci textu, takže ty výhody funkčního sdílení kalendáře převáží absenci nativní desktop appky.",
+        "account": {
+          "id": 111100047166256143,
+          "username": "liskin",
+          "acct": "liskin@genserver.social",
+          "display_name": "Tomáš Janoušek",
+          "url": "https://genserver.social/users/liskin",
+          "uri": "https://genserver.social/users/liskin",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/87b1ecca2be1ed2e.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/87b1ecca2be1ed2e.png"
+        },
+        "mentions": [
+          {
+            "id": 109325093585186636,
+            "username": "sesivany",
+            "url": "https://floss.social/@sesivany",
+            "acct": "sesivany@floss.social"
+          },
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111903588793356314,
+        "created_at": "2024-02-09T21:14:16.738000+00:00",
+        "in_reply_to_id": 111903547188618889,
+        "in_reply_to_account_id": 111100047166256143,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111903588793356314",
+        "url": "https://mastodonczech.cz/@honzajavorek/111903588793356314",
+        "replies_count": 1,
+        "favourites_count": 4,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\">@<span>liskin</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://floss.social/@sesivany\" class=\"u-url mention\">@<span>sesivany</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.gamedev.place/@muzzug\" class=\"u-url mention\">@<span>muzzug</span></a></span> Já bych měl nativní appky strašně rád, kdyby se chovaly jako ty cloudové služby a měly cloudovou funkcionalitu, která se mi všude synchronizuje a stejný UI na všech zařízeních 😀 A to netrolím, to bych fakt ocenil. To nejlepší z obou světů. Takhle mám sice nativní appku na mail, ale když chci filtr na třídění pošty, který bude fungovat na počítači i mobilu, jako to je na Gmailu, musím někam něco nastavovat na webovku. Blé. Rozumím tomu, proč to je, ale co je mi po tom.</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 111100047166256143,
+            "username": "liskin",
+            "url": "https://genserver.social/users/liskin",
+            "acct": "liskin@genserver.social"
+          },
+          {
+            "id": 109325093585186636,
+            "username": "sesivany",
+            "url": "https://floss.social/@sesivany",
+            "acct": "sesivany@floss.social"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111904483102750137,
+        "created_at": "2024-02-10T01:01:28+00:00",
+        "in_reply_to_id": 111902913789061215,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://witter.cz/users/janpet/statuses/111904482192311174",
+        "url": "https://witter.cz/@janpet/111904482192311174",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>liskin</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.gamedev.place/@muzzug\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>muzzug</span></a></span><br>Mail od Hey (osobní) používám od začátku co ho mají, a jsem hodně spokojený.<br>Na kalendář jsem ještě plně nezmigroval, zatím myslím že mi tam nějaký věci budou chybět (hlavně ukoly/remindery na daný čas).</p>",
+        "account": {
+          "id": 109427827161275378,
+          "username": "janpet",
+          "acct": "janpet@witter.cz",
+          "display_name": "Jan Peterka",
+          "url": "https://witter.cz/@janpet",
+          "uri": "https://witter.cz/users/janpet",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/427/827/161/275/378/original/d54fd59c9a430eea.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/427/827/161/275/378/original/d54fd59c9a430eea.jpg"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 111100047166256143,
+            "username": "liskin",
+            "url": "https://genserver.social/users/liskin",
+            "acct": "liskin@genserver.social"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111906726043888911,
+        "created_at": "2024-02-10T10:32:06+00:00",
+        "in_reply_to_id": 111903588793356314,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "unlisted",
+        "language": "en",
+        "uri": "https://cztwitter.cz/users/djasa/statuses/111906726002589461",
+        "url": "https://cztwitter.cz/@djasa/111906726002589461",
+        "replies_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> <span class=\"h-card\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>liskin</span></a></span> <span class=\"h-card\"><a href=\"https://floss.social/@sesivany\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>sesivany</span></a></span> <span class=\"h-card\"><a href=\"https://mastodon.gamedev.place/@muzzug\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>muzzug</span></a></span> </p><p>This!</p><p>Taky to mám takto, plus su klidnější, když mám důležitý data v \"cloudu\". Ztráta dat, který \"nemám\", mě potkala míňkrát a mnohem míň bolela, než ztráta lokálních nezálohovaných dat.</p>",
+        "account": {
+          "id": 109336206896117898,
+          "username": "djasa",
+          "acct": "djasa@cztwitter.cz",
+          "display_name": "David Jaša",
+          "url": "https://cztwitter.cz/@djasa",
+          "uri": "https://cztwitter.cz/users/djasa",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/336/206/896/117/898/original/ba90108dc0fb23b4.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/336/206/896/117/898/original/ba90108dc0fb23b4.jpg"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 111100047166256143,
+            "username": "liskin",
+            "url": "https://genserver.social/users/liskin",
+            "acct": "liskin@genserver.social"
+          },
+          {
+            "id": 109325093585186636,
+            "username": "sesivany",
+            "url": "https://floss.social/@sesivany",
+            "acct": "sesivany@floss.social"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111906828094876313,
+        "created_at": "2024-02-10T10:58:01+00:00",
+        "in_reply_to_id": 111906726043888911,
+        "in_reply_to_account_id": 109336206896117898,
+        "sensitive": false,
+        "visibility": "unlisted",
+        "language": "en",
+        "uri": "https://floss.social/users/sesivany/statuses/111906827921225949",
+        "url": "https://floss.social/@sesivany/111906827921225949",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://cztwitter.cz/@djasa\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>djasa</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>liskin</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.gamedev.place/@muzzug\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>muzzug</span></a></span> data nemá jen lokálně dnes už snad nikdo, ani ten, kdo používá nativní appky, ne?<br>Jinak já jsem u mailu zvyklý přepínat mezi nativním klientem a webem. V práci chci něco rychlého a firemní a soukromý mail v jednom, tak používám Evolution, doma mi stačí webové rozhraní, které má Zoho Mail fakt pěkné. Takže mi nevadí, že občas musím jít nastavit filtr na web. Nakonec nedělám to každý den. Ale chápu, proč to není ideální.</p>",
+        "account": {
+          "id": 109325093585186636,
+          "username": "sesivany",
+          "acct": "sesivany@floss.social",
+          "display_name": "Jiří Eischmann :fedora:",
+          "url": "https://floss.social/@sesivany",
+          "uri": "https://floss.social/users/sesivany",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/325/093/585/186/636/original/e57f123ad5e685b6.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/325/093/585/186/636/original/e57f123ad5e685b6.jpg"
+        },
+        "mentions": [
+          {
+            "id": 109336206896117898,
+            "username": "djasa",
+            "url": "https://cztwitter.cz/@djasa",
+            "acct": "djasa@cztwitter.cz"
+          },
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 111100047166256143,
+            "username": "liskin",
+            "url": "https://genserver.social/users/liskin",
+            "acct": "liskin@genserver.social"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      }
+    ]
   },
   {
     "url": "https://honzajavorek.cz/blog/jak-mit-socialni-site-a-nepouzivat-je/",
     "slug": "jak-mit-socialni-site-a-nepouzivat-je",
     "created_at": "2024-02-04T21:21:11.174000+00:00",
     "toot_url": "https://mastodonczech.cz/@honzajavorek/111875304401817406",
-    "favourites_count": 18,
+    "favourites_count": 19,
     "reblogs_count": 7,
     "replies": [
       {
@@ -598,19 +1681,7 @@
             "url": "https://mastodonczech.cz/@honzajavorek",
             "acct": "honzajavorek"
           }
-        ],
-        "card": {
-          "url": "https://mastodon.cesko.digital/@mwenisch/111265870263986514",
-          "title": "Martin Wenisch (@mwenisch@cesko.digital)",
-          "description": "Attached: 1 image\n\nBudovani komunity je zaklad (to jsem slysel v podcastu). Tak s chuti do toho. V podcastu radili Circle nebo Mighty Networks. Ale to me pripada moc zamerene na monetizaci.\n\nV >c.d se uz dlouho mluvi o Discourse, tak jsem se rozhodl ho vyzkouset. Na AWS t2.small jsem to nahodil asi za 15 min. I kdyz si teda stezoval, ze ma malo pameti.\n\nA ted uz jenom budovat komunitu umelcu a tvurcu pro svetlejsi zitrky! 🙌\n\nMate nekdo tipy na co si dat pozor? Nebo pluginy?\n\n#community #discourse #art",
-          "language": "en",
-          "type": "link",
-          "provider_name": "Mastodon Česko.Digital",
-          "width": 1024,
-          "height": 666,
-          "image_description": "Screenshot z nove nainstalovane instance Discourse na community.wrks.art",
-          "blurhash": "UZQvwRax9Fj[t7f6WBj[00j[t7j[xuj[fjjt"
-        }
+        ]
       },
       {
         "id": 111325045175281838,
