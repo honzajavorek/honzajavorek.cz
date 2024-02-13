@@ -24,7 +24,7 @@ def main():
 @click.option("--limit", default=100, type=int)
 def reading(notion_token: str, database_id: str, feed_id: str, limit: int):
     notion = Client(auth=notion_token)
-    items = fetch_notion_items(notion, database_id)
+    items = iterate_paginated_api(notion.databases.query, database_id=database_id)
     feed = FeedGenerator()
     feed.id(feed_id)
     feed.title("HJ's Reading")
@@ -39,7 +39,7 @@ def reading(notion_token: str, database_id: str, feed_id: str, limit: int):
 @click.option("--limit", default=100, type=int)
 def watching(notion_token: str, database_id: str, feed_id: str, limit: int):
     notion = Client(auth=notion_token)
-    items = fetch_notion_items(notion, database_id)
+    items = iterate_paginated_api(notion.databases.query, database_id=database_id)
     feed = FeedGenerator()
     feed.id(feed_id)
     feed.title("HJ's Watching")
@@ -47,15 +47,7 @@ def watching(notion_token: str, database_id: str, feed_id: str, limit: int):
     click.echo(feed.atom_str())
 
 
-def fetch_notion_items(notion: Client, database_id: str) -> Iterable:
-    for result in iterate_paginated_api(
-        notion.databases.query,
-        database_id=database_id,
-    ):
-        yield from result
-
-
-def add_feed_items(feed: FeedGenerator, items: Iterable):
+def add_feed_items(feed: FeedGenerator, items: Iterable[dict]):
     for item in items:
         url = item["properties"]["URL"]["url"]
         title = item["properties"]["Name"]["title"][0]["plain_text"]
