@@ -3,33 +3,23 @@ VERSION:2.0
 PRODID:-//kocarkino//honzajavorek.cz//
 UID:9c94f22dac26dce87134e19c4accb1d0c5cc32aa96e4161cd52d8d3a7119ea5c
 BEGIN:VEVENT
-SUMMARY:Kočárkino: Chlapec a volavka
-DTSTART:20240214T090000Z
-DURATION:PT2H
-DTSTAMP:20240213T105109Z
-UID:51a830d086ba1c8fc1bd1c9f5598afa0b94044fcf339102afddbbaa6784304e9
-DESCRIPTION:https://kcvozovna.cz/9894/kocarkino-chlapec-a-volavka/\nhttps:
- //www.csfd.cz/hledat/?q=Chlapec%20a%20volavka
-LOCATION:KC VOZOVNA\, Koněvova 2687/164\, Praha 3
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Baby Bio: Těžký rok
-DTSTART:20240213T090000Z
-DURATION:PT2H
-DTSTAMP:20240213T105110Z
-UID:9517a1b10d6ba28252b5c2307fd6c94483348ae49261606c9cfd84c09552a258
-DESCRIPTION:https://www.biooko.net/?projection=25560\nhttps://www.csfd.cz/
- hledat/?q=T%C4%9B%C5%BEk%C3%BD%20rok
-LOCATION:Bio Oko\, Františka Křížka 460/15\, Praha 7
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Baby Bio: Argylle: Tajný agent
 DTSTART:20240220T090000Z
 DURATION:PT2H
-DTSTAMP:20240213T105110Z
+DTSTAMP:20240215T040527Z
 UID:15e02b61f3e9d696794a1a0d70bc1aadf1ccfad1676318ae7094b24b119341a1
 DESCRIPTION:https://www.biooko.net/?projection=25737\nhttps://www.csfd.cz/
  hledat/?q=Argylle%3A%20Tajn%C3%BD%20agent
+LOCATION:Bio Oko\, Františka Křížka 460/15\, Praha 7
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Baby Bio: Mamacruz
+DTSTART:20240227T090000Z
+DURATION:PT2H
+DTSTAMP:20240215T040527Z
+UID:5c4f2024f166cdb8612a24fa0421de43c2bf35b120bb1fabc84c5bf137976f0c
+DESCRIPTION:https://www.biooko.net/?projection=25897\nhttps://www.csfd.cz/
+ hledat/?q=Mamacruz
 LOCATION:Bio Oko\, Františka Křížka 460/15\, Praha 7
 END:VEVENT
 END:VCALENDAR
