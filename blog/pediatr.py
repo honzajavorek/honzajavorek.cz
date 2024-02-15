@@ -1,12 +1,7 @@
-from datetime import date, datetime, timedelta, timezone
+from datetime import datetime, timezone
 import re
-from urllib.parse import quote
-from zoneinfo import ZoneInfo
-from hashlib import sha256
 
-import extruct
 import click
-from icalendar import Calendar, Event
 import requests
 from lxml import html
 from feedgen.feed import FeedGenerator
