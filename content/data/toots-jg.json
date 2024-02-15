@@ -1,5 +1,64 @@
 [
   {
+    "id": 111924538181432914,
+    "created_at": "2024-02-13T14:01:59.038000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111924538181432914",
+    "url": "https://mastodonczech.cz/@honzajavorek/111924538181432914",
+    "replies_count": 2,
+    "reblogs_count": 6,
+    "favourites_count": 10,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Juniorka Karolina Surma a senior <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.social/@encukou\" class=\"u-url mention\">@<span>encukou</span></a></span>. Poznali se díky komunitě PyLadies CZ, pak společně pracovali v Red Hatu.</p><p>Jak každý z nich vnímal Karolinin začátek v práci? Jak se staví k impostor syndromu? Kam Petr z RH odchází, na čem bude pracovat?</p><p>A jak tyto dvě výrazné osobnosti brněnské <a href=\"https://mastodonczech.cz/tags/Python\" class=\"mention hashtag\" rel=\"tag\">#<span>Python</span></a> komunity zvládají skloubit pracovní život, osobní, a ještě se aktivně dobrovolnicky zapojovat?</p><p>Pavlína ve volném čase sestříhala a vydala další epizodu <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> podcastu, tak šup s ní do ouška!</p>",
+    "media_attachments": [
+      {
+        "id": 111924537699956555,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/111/924/537/699/956/555/original/6cdb00676439ff6c.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/111/924/537/699/956/555/small/6cdb00676439ff6c.png",
+        "meta": {
+          "original": {
+            "width": 700,
+            "height": 700,
+            "size": "700x700",
+            "aspect": 1.0
+          },
+          "small": {
+            "width": 480,
+            "height": 480,
+            "size": "480x480",
+            "aspect": 1.0
+          }
+        },
+        "blurhash": "UfRyc5bb-~nhM@oMoaR*tDbHbbnixkjZadW;"
+      }
+    ],
+    "mentions": [
+      {
+        "id": 110502058243173756,
+        "username": "encukou",
+        "url": "https://mastodon.social/@encukou",
+        "acct": "encukou@mastodon.social"
+      }
+    ],
+    "tags": [
+      {
+        "name": "Python",
+        "url": "https://mastodonczech.cz/tags/Python"
+      },
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ]
+  },
+  {
     "id": 111902348217446405,
     "created_at": "2024-02-09T15:58:47.052000+00:00",
     "sensitive": false,

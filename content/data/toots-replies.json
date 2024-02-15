@@ -896,7 +896,7 @@
         "language": "en",
         "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111903588793356314",
         "url": "https://mastodonczech.cz/@honzajavorek/111903588793356314",
-        "replies_count": 1,
+        "replies_count": 2,
         "favourites_count": 4,
         "favourited": false,
         "reblogged": false,
@@ -1226,6 +1226,168 @@
             "username": "liskin",
             "url": "https://genserver.social/users/liskin",
             "acct": "liskin@genserver.social"
+          }
+        ]
+      },
+      {
+        "id": 111928528924128629,
+        "created_at": "2024-02-14T06:56:48+00:00",
+        "in_reply_to_id": 111903588793356314,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://fosstodon.org/users/almad/statuses/111928528633984004",
+        "url": "https://fosstodon.org/@almad/111928528633984004",
+        "replies_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>liskin</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://floss.social/@sesivany\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>sesivany</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.gamedev.place/@muzzug\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>muzzug</span></a></span> IIRC to umi jak Spark, tak Airmail. Oboje se mi v tomhle pouzivalo dobre (ale nakonec sem prioritizoval bezpecnost a email pouzivam tak uchylne a skoro bez filtru, ze mi staci ten nativni Mail.app s par pluginama).</p>",
+        "account": {
+          "id": 109348481067146603,
+          "username": "almad",
+          "acct": "almad@fosstodon.org",
+          "display_name": "Almad",
+          "url": "https://fosstodon.org/@almad",
+          "uri": "https://fosstodon.org/users/almad",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/348/481/067/146/603/original/ee0d8c976b057924.gif",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/348/481/067/146/603/static/ee0d8c976b057924.png"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 111100047166256143,
+            "username": "liskin",
+            "url": "https://genserver.social/users/liskin",
+            "acct": "liskin@genserver.social"
+          },
+          {
+            "id": 109325093585186636,
+            "username": "sesivany",
+            "url": "https://floss.social/@sesivany",
+            "acct": "sesivany@floss.social"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111928931861228605,
+        "created_at": "2024-02-14T08:39:21.268000+00:00",
+        "in_reply_to_id": 111928528924128629,
+        "in_reply_to_account_id": 109348481067146603,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111928931861228605",
+        "url": "https://mastodonczech.cz/@honzajavorek/111928931861228605",
+        "replies_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://fosstodon.org/@almad\" class=\"u-url mention\">@<span>almad</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\">@<span>liskin</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://floss.social/@sesivany\" class=\"u-url mention\">@<span>sesivany</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.gamedev.place/@muzzug\" class=\"u-url mention\">@<span>muzzug</span></a></span> Já filtry používám třeba na archivování e-mailů, které nám automaticky chodí z některých toolů Pyvce (pro někoho jsou důležité, pro mě ne, ale je dobré, že máme papetrail ve schránkách víc lidí), nebo na archivaci &quot;success&quot; buildů, aby mi v inboxu zůstaly jen ty, které selhaly. Prostě abych měl lepší signal/noise, nic velmi sofistikovaného. Ale každý den mi to výrazně zlepšuje kvalitu života.</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 109348481067146603,
+            "username": "almad",
+            "url": "https://fosstodon.org/@almad",
+            "acct": "almad@fosstodon.org"
+          },
+          {
+            "id": 111100047166256143,
+            "username": "liskin",
+            "url": "https://genserver.social/users/liskin",
+            "acct": "liskin@genserver.social"
+          },
+          {
+            "id": 109325093585186636,
+            "username": "sesivany",
+            "url": "https://floss.social/@sesivany",
+            "acct": "sesivany@floss.social"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
+          }
+        ]
+      },
+      {
+        "id": 111936473416069258,
+        "created_at": "2024-02-15T16:37:15+00:00",
+        "in_reply_to_id": 111928931861228605,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://fosstodon.org/users/almad/statuses/111936473338348306",
+        "url": "https://fosstodon.org/@almad/111936473338348306",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>liskin</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://floss.social/@sesivany\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>sesivany</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.gamedev.place/@muzzug\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>muzzug</span></a></span> Jo ja chapu, akorat tohle resim pres separatni email. Ten co pouzivam a ctu komplet je od registraci, newsletteru a podobnejch veci agresivne air gapped. Kdyz nekdo preskoci, nabiham na nej s GDPR :)</p>",
+        "account": {
+          "id": 109348481067146603,
+          "username": "almad",
+          "acct": "almad@fosstodon.org",
+          "display_name": "Almad",
+          "url": "https://fosstodon.org/@almad",
+          "uri": "https://fosstodon.org/users/almad",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/348/481/067/146/603/original/ee0d8c976b057924.gif",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/348/481/067/146/603/static/ee0d8c976b057924.png"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 111100047166256143,
+            "username": "liskin",
+            "url": "https://genserver.social/users/liskin",
+            "acct": "liskin@genserver.social"
+          },
+          {
+            "id": 109325093585186636,
+            "username": "sesivany",
+            "url": "https://floss.social/@sesivany",
+            "acct": "sesivany@floss.social"
+          },
+          {
+            "id": 109919784515596678,
+            "username": "muzzug",
+            "url": "https://mastodon.gamedev.place/@muzzug",
+            "acct": "muzzug@mastodon.gamedev.place"
           }
         ]
       }
