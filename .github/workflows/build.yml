@@ -54,6 +54,9 @@ jobs:
       - name: "Extra: Kočárkino"
         run: poetry run blog kocarkino > ./public/kocarkino.ics
 
+      - name: "Extra: Pediatr"
+        run: poetry run blog pediatr > ./public/pediatr.xml
+
       - name: "Extra: Notion Feeds"
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
