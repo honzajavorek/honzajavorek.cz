@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Víc inzerátů a méně důvěry v platformy
 Image: images/img-7625.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/309
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/111942112436830874
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-02-09_tydenni-poznamky-servis-a-automatizace.md) už utekl nějaký ten týden (9. 2. až 16. 2.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
