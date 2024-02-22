@@ -1,5 +1,38 @@
 [
   {
+    "id": 111971333316986278,
+    "created_at": "2024-02-21T20:22:36.134000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111971333316986278",
+    "url": "https://mastodonczech.cz/@honzajavorek/111971333316986278",
+    "favourites_count": 1,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>„The ability to analyze video like this feels SO powerful. Being able to take a 20 second video of a bookshelf and get back a JSON array of those books is just the first thing I thought to try.“ <a href=\"https://simonwillison.net/2024/Feb/21/gemini-pro-video/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">simonwillison.net/2024/Feb/21/</span><span class=\"invisible\">gemini-pro-video/</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://simonwillison.net/2024/Feb/21/gemini-pro-video/",
+      "title": "The killer app of Gemini Pro 1.5 is video",
+      "description": "Last week Google introduced Gemini Pro 1.5, an enormous upgrade to their Gemini series of AI models. Gemini Pro 1.5 has a 1,000,000 token context size. This is huge—previously that …",
+      "language": "en",
+      "type": "link",
+      "width": 2046,
+      "height": 1580,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/003/553/724/original/a2a891910781f371.jpg",
+      "blurhash": "U56kbc_4M^9G,%r.g5NH9cIqs-%20fE2s.?G"
+    }
+  },
+  {
     "id": 111961988664232432,
     "created_at": "2024-02-20T04:46:08.048000+00:00",
     "sensitive": false,
@@ -8,7 +41,8 @@
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111961988664232432",
     "url": "https://mastodonczech.cz/@honzajavorek/111961988664232432",
     "replies_count": 1,
-    "favourites_count": 1,
+    "reblogs_count": 1,
+    "favourites_count": 2,
     "favourited": false,
     "reblogged": false,
     "muted": false,
@@ -43,7 +77,7 @@
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111960799226473433",
     "url": "https://mastodonczech.cz/@honzajavorek/111960799226473433",
     "reblogs_count": 2,
-    "favourites_count": 3,
+    "favourites_count": 4,
     "favourited": false,
     "reblogged": false,
     "muted": false,
@@ -135,7 +169,6 @@
       "provider_name": "Ars Technica",
       "width": 640,
       "height": 360,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/003/498/895/original/0ebbc863296230c3.jpg",
       "blurhash": "U597nR_00d4|^%-qXTD%9FNgRX$IA0M_R4tS",
       "published_at": "2024-02-15T18:27:11+00:00"
     }
