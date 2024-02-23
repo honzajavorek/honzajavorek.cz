@@ -1,5 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Javorové lístky</title><link href="https://honzajavorek.cz/blog/" rel="alternate"></link><link href="https://honzajavorek.cz/feed.xml" rel="self"></link><id>https://honzajavorek.cz/</id><updated>2024-02-16T00:00:00+01:00</updated><author><name>Honza Javorek</name><email>mail@honzajavorek.cz</email><uri>https://honzajavorek.cz</uri></author><subtitle>Blog Honzy Javorka</subtitle><rights>© Copyright 2007—2024 Honza Javorek &lt;https://honzajavorek.cz&gt;</rights><entry><title>Týdenní poznámky: Víc inzerátů a méně důvěry v platformy</title><link href="https://honzajavorek.cz/blog/tydenni-poznamky-vic-inzeratu-a-mene-duvery-v-platformy/" rel="alternate"></link><published>2024-02-16T00:00:00+01:00</published><updated>2024-02-16T00:00:00+01:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2024-02-16:/blog/tydenni-poznamky-vic-inzeratu-a-mene-duvery-v-platformy/</id><summary type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Jak se mi daří v jednom člověku provozovat a rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;?
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Javorové lístky</title><link href="https://honzajavorek.cz/blog/" rel="alternate"></link><link href="https://honzajavorek.cz/feed.xml" rel="self"></link><id>https://honzajavorek.cz/</id><updated>2024-02-23T00:00:00+01:00</updated><author><name>Honza Javorek</name><email>mail@honzajavorek.cz</email><uri>https://honzajavorek.cz</uri></author><subtitle>Blog Honzy Javorka</subtitle><rights>© Copyright 2007—2024 Honza Javorek &lt;https://honzajavorek.cz&gt;</rights><entry><title>Týdenní poznámky: Oprašování příručky a Apify</title><link href="https://honzajavorek.cz/blog/tydenni-poznamky-oprasovani-prirucky-a-apify/" rel="alternate"></link><published>2024-02-23T00:00:00+01:00</published><updated>2024-02-23T00:00:00+01:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2024-02-23:/blog/tydenni-poznamky-oprasovani-prirucky-a-apify/</id><summary type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Jak se mi daří v jednom člověku provozovat a rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;?
+Od &lt;a href="https://honzajavorek.cz/blog/tydenni-poznamky-vic-inzeratu-a-mene-duvery-v-platformy/"&gt;posledních poznámek&lt;/a&gt; už utekl nějaký ten týden (16. 2. až 23. 2.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.&lt;/p&gt;
+&lt;figure class="figure"&gt;&lt;img alt="Poznámky" src="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg" class="img-fluid figure-img rounded"&gt;&lt;figcaption class="figure-caption"&gt;
+Fotil &lt;a href="https://unsplash.com/@markusspiske"&gt;Markus Spiske&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;
+&lt;p&gt;&lt;strong&gt;Plány:&lt;/strong&gt; Aktuální „předsevzetí” jsou v článku &lt;a href="https://honzajavorek.cz/blog/plan-na-q1-2024/"&gt;Plán na Q1 2024&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Čísla:&lt;/strong&gt; Finanční …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Jak se mi daří v jednom člověku provozovat a rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;?
+Od &lt;a href="https://honzajavorek.cz/blog/tydenni-poznamky-vic-inzeratu-a-mene-duvery-v-platformy/"&gt;posledních poznámek&lt;/a&gt; už utekl nějaký ten týden (16. 2. až 23. 2.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.&lt;/p&gt;
+&lt;figure class="figure"&gt;&lt;img alt="Poznámky" src="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg" class="img-fluid figure-img rounded"&gt;&lt;figcaption class="figure-caption"&gt;
+Fotil &lt;a href="https://unsplash.com/@markusspiske"&gt;Markus Spiske&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;
+&lt;p&gt;&lt;strong&gt;Plány:&lt;/strong&gt; Aktuální „předsevzetí” jsou v článku &lt;a href="https://honzajavorek.cz/blog/plan-na-q1-2024/"&gt;Plán na Q1 2024&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Čísla:&lt;/strong&gt; Finanční výsledky, návštěvnost a další čísla k junior.guru &lt;a href="https://junior.guru/open/"&gt;mám přímo na webu&lt;/a&gt;.
+Aktuální nabídky práce pro juniory: &lt;a href="https://junior.guru/jobs/ade40e530211c36a309fa370d270da7650ad18462c03c95b0b38de57/"&gt;Red Hat&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="oprasovani-prirucky"&gt;Oprašování příručky&lt;small class="permalink"&gt;&lt;a href="#oprasovani-prirucky" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Prošel jsem si všechny poznámky, které jsem u příručky měl v souvislosti s učením angličtiny.
+Pak jsem vzal dvě sekce, které jsem už v příručce měl, a přesunul je na &lt;a href="https://junior.guru/handbook/english/"&gt;samostatnou stránku o angličtině&lt;/a&gt;.
+Poznámky a tuto stránku jsem pak předal &lt;a href="https://geekpower.cz/"&gt;Veronice&lt;/a&gt;, aby tam mohla připravit vlastní obsah po vzoru &lt;a href="https://junior.guru/handbook/mental-health/"&gt;Nely&lt;/a&gt;.&lt;/p&gt;
+&lt;figure class="figure"&gt;&lt;img alt="Angličtina" class="img-thumbnail img-fluid figure-img rounded" src="../../../Downloads/Screenshot%202024-02-23%20at%2021-50-16%20Anglic%CC%8Ctina%20pro%20programa%CC%81tory.png"&gt;&lt;/figure&gt;
+&lt;p&gt;Pak když jsem měl jít konečně psát novou verzi &lt;a href="https://junior.guru/handbook/git/"&gt;stránky o Gitu a GitHubu&lt;/a&gt;, tak jsem se zakoukal do kódu, nějak neodolal, a šel jsem předělat úvodní stránku příručky.
+Měl jsem dost jasnou představu, jak by to mělo vypadat, a přišlo mi, že to bude za chvilku hotové.
+No, takže to není hotové doteď, klasika 😀&lt;/p&gt;
+&lt;p&gt;Na &lt;a href="https://junior.guru/handbook/"&gt;úvodní stránce&lt;/a&gt; byla cesta juniora, ale bylo to tam naplácané v obyčejném seznamu, nepřehledně, a odkazy dovnitř příručky tam byly vepsané prostě ručně.
+Chtěl jsem, aby to bylo hezčí a aby se to automaticky generovalo.
+Přidal jsem tedy YAML, kam jsem si sepsal jednotlivé fáze, dal jim ikonky, a tak.
+Do každé stránky příručky jsem pak přidal informaci, do jaké fáze spadá.
+To jsem následně načetl do databáze a propojil, což mi zabralo víc času, než jsem chtěl, protože jsem pořád zakopával o nějaké nástrahy.&lt;/p&gt;
+&lt;p&gt;Aktuálně je tedy na té úvodní stránce prozatimní verze, kdy se seznam už vypisuje z databáze a vše je propojené, ale zdaleka to nevypadá tak, jak bych chtěl, aby to vypadalo.&lt;/p&gt;
+&lt;figure class="figure"&gt;&lt;img alt="úvodní stránka" class="img-thumbnail img-fluid figure-img rounded" src="../../../Downloads/Screenshot%202024-02-23%20at%2021-48-50%20Pr%CC%8Ci%CC%81ruc%CC%8Cka%20pro%20juniory.png"&gt;&lt;/figure&gt;
+&lt;h2 id="apify"&gt;Apify&lt;small class="permalink"&gt;&lt;a href="#apify" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Tento týden je ve znamení Apify:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;V pondělí jsem byl v kancelářích Apiary na schůzce, o jejímž obsahu zatím pomlčím.
+    Něco domlouváme, ale není to zatím kompletně domluveno.&lt;/li&gt;
+&lt;li&gt;V úterý jsem si hodinu volal s produkťáky z Apify.
+    Na Apify Discordu se totiž objevila výzva, že dělají nějaký UX průzkum a kdo se přihlásí, může dostat nějaké kredity zadáčo.
+    To mi přišlo jako &lt;em&gt;win-win&lt;/em&gt;.
+    Někdo bude hodinu poslouchat, jak ten produkt používám, čímž jeho vývoj mohu přiklonit k tomu, co potřebuju, a ještě tím ušetřím.
+    A tak se i stalo.
+    Pokec to byl příjemný a dle jejich názoru prý i užitečný.&lt;/li&gt;
+&lt;li&gt;S &lt;a href="https://github.com/vdusek"&gt;Vláďou&lt;/a&gt; jsme řešili bug v integraci se Scrapy.
+    Povedlo se mu to opravit, ale pak jsme objevili ještě něco dalšího.&lt;/li&gt;
+&lt;li&gt;Zítra je &lt;a href="https://prague.python.pizza/"&gt;Python Pizza&lt;/a&gt;.
+    Koná se v kancelářích Apify 😀&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Když jsem měl chvilku a prokrastinoval jsem důležitější věci, připsal jsem si skript, který umí založit nový scraper na Apify přes jejich API.
+Tím se opět zkrátilo &lt;a href="https://github.com/juniorguru/plucker?tab=readme-ov-file#how-to-add-new-scraper"&gt;README&lt;/a&gt;, které popisuje kroky nutné k tomu, aby v repozitáři vznikl nový scraper.
+Skript ještě &lt;a href="https://github.com/juniorguru/plucker/issues/20"&gt;není úplně takový, jak bych chtěl&lt;/a&gt;, ale vypadá to, že funguje, což je fajn.&lt;/p&gt;
+&lt;h2 id="upravy-na-nabidkach-prace"&gt;Úpravy na nabídkách práce&lt;small class="permalink"&gt;&lt;a href="#upravy-na-nabidkach-prace" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Vyčistil jsem určitou historickou nesrovnalost ohledně toho, jak se v datech zapisuje datum, kdy byla nabídka práce publikována.&lt;/li&gt;
+&lt;li&gt;Smazal jsem složku &lt;code&gt;jobs_legacy&lt;/code&gt;, což je malý krok pro lidstvo, ale obrovský milník pro junior.guru 😤&lt;/li&gt;
+&lt;li&gt;Do filtrů nabídek práce jsem přidal jeden, který vyhodí příliš staré nabídky.
+    Je možné, že se tam nějaké zatoulaly a pak by byly jednak matoucí, jednak by mi zbytečně žraly OpenAI tokeny.&lt;/li&gt;
+&lt;li&gt;Timeoutuje mi jeden ze scraperů, ale nějak jsem to nestihl opravit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="vyber-prednasek"&gt;Výběr přednášek&lt;small class="permalink"&gt;&lt;a href="#vyber-prednasek" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Uzavřel jsem si pro sebe hlasování v klubu.
+Výsledky jsem si vynesl do Google Sheets tabulky a seřadil si to podle počtu hlasů.
+Plánuji zhruba na rok dopředu, takže chci zhruba 12 přednášek.
+Vybral jsem 6 nejpopulárnějších témat a na ty budu hledat přednášející a termíny.
+Dalších 6 jsem vybral sám z toho zbytku, částečně podle hlasů, ale i podle toho, co si myslím, že je zajímavé i přesto, že to není populární.
+Např. lidé, kteří ještě ani nemají svou první práci, netuší, že budou v té první práci potřebovat tušit o existenci Jiry nebo SCRUMu, a tedy pro to logicky nebudou hlasovat.&lt;/p&gt;
+&lt;p&gt;Tím jsem si odkroutil něco, co jsem dlouho prokrastinoval.
+Teď už „jen“ sehnat přednášející a domluvit všechny termíny.&lt;/p&gt;
+&lt;h2 id="budoucnost-prednasek"&gt;Budoucnost přednášek&lt;small class="permalink"&gt;&lt;a href="#budoucnost-prednasek" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Je tu ale jeden &lt;em&gt;elephant in the room&lt;/em&gt;, a tím je otázka: Proč to, Honzo, vlastně vůbec děláš?
+Máš to vůbec dělat?
+Jaká je hodnota přednášek?
+Jaké je ROI vynaložené energie?&lt;/p&gt;
+&lt;h3 id="minusy"&gt;Mínusy&lt;small class="permalink"&gt;&lt;a href="#minusy" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Často tuto práci prokrastinuju.
+    A když ji týdny nebo měsíce prokrastinuju, nikdo si nestěžuje, že přednášky v klubu nejsou.&lt;/li&gt;
+&lt;li&gt;Nepřijde mi, že bych potkal jediného člověka, který by řekl, že do klubu zamířil a zůstal v něm kvůli přednáškám.&lt;/li&gt;
+&lt;li&gt;Je to obsah a já si myslím, že junior.guru má být komunita, platforma, rozcestník a agregátor, nemá vytvářet vlastní obsah nad rámec příručky.
+    Neškáluje to.
+    Pája dělá podcast, ale kdyby ho nedělala ona, tak já ho dělat nemám a prostě by neexistoval.
+    Je možné vzít obsahový projekt pod značku junior.guru, ale já sám bych to vytvářet neměl.&lt;/li&gt;
+&lt;li&gt;Obsahu je plno.
+    Je spousta šikovných youtuberů (&lt;a href="https://www.youtube.com/@LucieLenertova"&gt;Lucie&lt;/a&gt;, &lt;a href="https://www.youtube.com/channel/UC01guyOZpf40pUopBvdPwsg"&gt;yablko&lt;/a&gt;…), kteří video udělají zajímavěji a lépe.
+    Je spousta konferencí, kde jsou přesně takové přednášky jako v klubu, a mají pak videa na YouTube.
+    Někdo dělá šikovně Instagram (&lt;a href="https://www.marketawillis.com/"&gt;Markéta&lt;/a&gt;).
+    Někdo dělá šikovně podcasty (namátkou &lt;a href="https://www.programhrovani.cz/"&gt;Šárka a Vojta&lt;/a&gt;, &lt;a href="https://streetofcode.sk/"&gt;Jakub a Gabo&lt;/a&gt;).
+    Jaká je přidaná hodnota přednášek a záznamů přednášek v klubu?
+    Jestli je junior.guru spíš komunita, platforma, rozcestník a agregátor, tak by spíš mělo pomoci dostat se k existujícímu kvalitnímu obsahu, utřídit ho a vypíchnout to nejlepší - protože tam leží přidaná hodnota junior.guru - ne do té hromady ještě přidávat svoje.&lt;/li&gt;
+&lt;li&gt;Dost podobné webináře nebo &lt;em&gt;live streamy&lt;/em&gt; teď pravidelně pořádají &lt;a href="https://www.programatorizacatecnici.cz/"&gt;Programátoři začátečníci&lt;/a&gt; nebo &lt;a href="https://naucme.it/"&gt;Nauč mě IT&lt;/a&gt;.
+    Stává se to komoditou, která mě ale stojí dost přemáhání, času a práce.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="plusy"&gt;Plusy&lt;small class="permalink"&gt;&lt;a href="#plusy" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Přednášky přivádí do klubu zajímavé lidi, což občas (pokud tam zavítají i mimo přednášku) obohacuje klub.&lt;/li&gt;
+&lt;li&gt;Přednášky jsou česky a jsou tematicky laděné pro úplné začátečníky, a to nebývá zas tak běžné ani v té záplavě po covidu oživlých konferencí a YouTube videí.&lt;/li&gt;
+&lt;li&gt;Přednášející jsou v klubu a členové s nimi mohou interagovat, ptát se dotazy, atd.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="co-s-tim"&gt;Co s tím?&lt;small class="permalink"&gt;&lt;a href="#co-s-tim" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
+&lt;p&gt;Nevím.
+Aktuálně zachovám &lt;em&gt;status quo&lt;/em&gt;.
+Do budoucna ale cítím, že to bude chtít nějaké změny.
+Buď přednášky komplet deleguju, zruším, nebo změním formát.&lt;/p&gt;
+&lt;h2 id="jak-to-jde-s-plany"&gt;Jak to jde s plány?&lt;small class="permalink"&gt;&lt;a href="#jak-to-jde-s-plany" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Pojďme si připomenout, &lt;a href="https://honzajavorek.cz/blog/plan-na-q1-2024/"&gt;co jsem plánoval na první čtvrtletí&lt;/a&gt;, protože už je konec února.
+To to letí!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;Programovat a psát, nerozptylovat se akcemi a spolupracemi.&lt;/del&gt; Toto se mi, myslím, daří. Nějaké věci jsem odmítl.&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Soustředit se na problémy lidí, kterým chci pomáhat, ne na svoje problémy.&lt;/del&gt; Dělám co umím 😅&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Přestat aktivně hledat produkt pro firmy.&lt;/del&gt; Načrtl jsem si nový ceník, ve kterém bude velké prd, a pak to nechal zapadnout někde v Trellu, takže dobrý.&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Vytvořím nebo aspoň vymyslím MVP profilů kandidátů&lt;/del&gt; Mám jasnou představu, co je potřeba udělat a vymýšlením té představy jsem strávil docela dost času, povídal jsem si o tom s Milkem, a udělal jsem i jeden malý PoC.&lt;/li&gt;
+&lt;li&gt;Dopíšu kapitoly v příručce: LinkedIn, Git, GitHub 👀&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Přesunu scrapery pracovních inzerátů na Apify a začnu je třídit přes LLM&lt;/del&gt; Hotovo 😤&lt;/li&gt;
+&lt;li&gt;Vydám další &lt;em&gt;success stories&lt;/em&gt; na web 👀&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Automatizace v klubu (povídání, týdenní plány…)&lt;/del&gt; Hotovo 😤&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Vyberu a&lt;/del&gt; domluvím &lt;del&gt;klubové přednášky na rok 2024&lt;/del&gt; 👀 😅&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;No, nepřijde mi to špatný!
+Ještě mám celý březen.
+To bych mohl docela hezky postíhat.
+Mám z toho radost.
+Přitom stačilo dát si realistické cíle, být aspoň chvíli aspoň trochu zdravý, a nenechat se rozptylovat od toho, co je podstatné 💪&lt;/p&gt;
+&lt;h2 id="dalsi"&gt;Další&lt;small class="permalink"&gt;&lt;a href="#dalsi" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Díky &lt;a href="http://tvurcast.cz"&gt;Tvůrcast&lt;/a&gt; komunitě jsem zjistil, že s podcastem nemáme vůbec špatná čísla, minimálně na Spotify.
+    Já je vůbec nesleduju a hlavně nemám srovnání.
+    Teď vím, že máme 25.000 starts, 18.500 streams, 3.000 listeners, 1.200 followers, 15.500 impressions.
+    A to jsme ještě i na YouTube, Apple Podcasts, a spousta lidí si nás (nejspíš?) pouští i &lt;a href="https://junior.guru/podcast/"&gt;přímo na webu&lt;/a&gt;, kde nemám žádné sledování, to jsou jen &lt;code&gt;&amp;lt;audio&amp;gt;&lt;/code&gt; tagy s audio souborem.
+    Na to, že je to Pájino hobby a už ani nedodržujeme jednu epizodu měsíčně, je to podle mě docela dobrý 😀&lt;/li&gt;
+&lt;li&gt;Prošel jsem &lt;a href="https://junior.guru/wisdom/"&gt;moudra&lt;/a&gt; a trochu je uhladil, případně něco smazal, a tak.&lt;/li&gt;
+&lt;li&gt;Domluvil jsem termín, kdy poskytnu jednorázovou placenou konzultace na vedení komunity.
+    Těším se na to.&lt;/li&gt;
+&lt;li&gt;Spadl mi build na junior.guru, protože GraphQL API od Memberful ze dne na den zase něco změnilo.
+    Nakonec mi poradili, že můžu přidat nějaký parametr a bude to zase fungovat.
+    Pozitivní je, že jsem to mohl hned opravit a funguje to.
+    Smutné je, že to je zjevně bug na jejich straně, ale nepřišlo mi, že by je to nějak moc trápilo.&lt;/li&gt;
+&lt;li&gt;Zatím jsem moc nepokročil s přesunem pryč z Gmailu.
+    Naopak, vzdal jsem používání Apple Mail a jsem zpátky i v tom webovém rozhraní.
+    Až se budu zase nudit, tak zas něco vyzkouším, ale teď mám asi lepší věci na práci.&lt;/li&gt;
+&lt;li&gt;Propagoval jsem PyCon NA &lt;a href="https://www.linkedin.com/posts/honzajavorek_community-thankyou-python-activity-7165238625528463360-pf_O"&gt;na LinkedIn&lt;/a&gt; a &lt;a href="https://mastodonczech.cz/@honzajavorek/111957344665919060"&gt;na Mastodonu&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Ze Smitio mě poprosili, ať nasdílím &lt;a href="https://www.survio.com/survey/d/L0Y9W0D9D8B5N2J7J"&gt;průzkum ohledně mezd v IT&lt;/a&gt;, zatím jsem to udělal v klubu.&lt;/li&gt;
+&lt;li&gt;E-maily, &lt;a href="https://junior.guru/club/"&gt;klubový Discord&lt;/a&gt;, &lt;a href="https://docs.pyvec.org/operations/support.html#sit-kontaktu"&gt;Pyvec Slack&lt;/a&gt;, zprávy na LinkedIn.&lt;/li&gt;
+&lt;li&gt;Za 8 dní jsem při procházkách nachodil 5 km. Celkem jsem se hýbal 4 h a zdolal při tom 5 km.
+    Detaily na &lt;a href="https://www.strava.com/athletes/31242569"&gt;Strava&lt;/a&gt;, jediné sociální síti, kde si napsání statusu musíte zasloužit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="planuji"&gt;Plánuji&lt;small class="permalink"&gt;&lt;a href="#planuji" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Dodělám novou úvodní stránku příručky.&lt;/li&gt;
+&lt;li&gt;Přepíšu &lt;a href="https://junior.guru/handbook/git/"&gt;stránku o Gitu a GitHubu&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Užiju si &lt;a href="https://prague.python.pizza/"&gt;Python Pizza&lt;/a&gt; jako pouhý návštěvník! A potom i večerní junior.guru srazík.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="zaujalo-me"&gt;Zaujalo mě&lt;small class="permalink"&gt;&lt;a href="#zaujalo-me" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Když na něco narazím a líbí se mi to, sdílím to &lt;a href="https://mastodonczech.cz/@honzajavorek"&gt;na Mastodonu&lt;/a&gt;.
+Od posledních poznámek jsem sdílel:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://ottobohus.cz/25-top-3-dil-ai"&gt;25 top freelancerů: o AI (3. díl rozhovoru) | Otto Bohuš&lt;/a&gt;&lt;br&gt;„Ve vztahu ke své vlastní práci jsem aha efekt nezažil. Při psaní pracuji především s humorem, češtinou a fakty – a zrovna tohle jsou tři věci, v nichž AI dosud nevyniká.“ Tohle máme se Ziburou stejně. I to Dřímalkovo rezonuje: „FOMO z toho, že kolem nás vzniká ještě víc příležitostí, než kdy jindy a že je nebudu schopen využít. Možná ale trochu i obava z toho, jestli se svět nezmění až moc. Třeba tak, že se mi to nebude líbit.“ A Bohdana Goliášová taky super!&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://a2larm.cz/2024/02/konec-lyzovani-v-cesku-jde-o-prvni-skutecnou-klimatickou-ranu-pro-nas-narod/"&gt;Konec lyžování v Česku. Jde o první skutečnou klimatickou ránu pro náš národ?&lt;/a&gt;&lt;br&gt;Zmizí lyžování?&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://julian.digital/2023/07/06/multi-layered-calendars/"&gt;Multi-layered calendars&lt;/a&gt;&lt;br&gt;Zajímavý pohled na kalendář.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://markwhen.com/"&gt;Markwhen | Markwhen&lt;/a&gt;&lt;br&gt;Markdown a čas. Může se hodit.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://simonwillison.net/2024/Feb/21/gemini-pro-video/"&gt;The killer app of Gemini Pro 1.5 is video&lt;/a&gt;&lt;br&gt;„The ability to analyze video like this feels SO powerful. Being able to take a 20 second video of a bookshelf and get back a JSON array of those books is just the first thing I thought to try.“&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://arstechnica.com/tech-policy/2024/02/air-canada-must-honor-refund-policy-invented-by-airlines-chatbot/"&gt;Air Canada must honor refund policy invented by airline’s chatbot&lt;/a&gt;&lt;br&gt;„It should be obvious to Air Canada that it is responsible for all the information on its website. It makes no difference whether the information comes from a static page or a chatbot.“ „Air Canada’s initial investment in customer service AI technology was much higher than the cost of continuing to pay workers to handle simple queries.“&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.simpleanalytics.com/blog/alternative-search-engines"&gt;Alternative search engines&lt;/a&gt;&lt;br&gt;„Google Search is a very good search engine. In fact, it is arguably the only good product Google developed in-house. And yet, googling information is more frustrating than ever, because Google Search has some big problems.“&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mimoagendu.cz/prumyslova-revoluce-naopak/"&gt;Průmyslová revoluce naopak&lt;/a&gt;&lt;br&gt;„Nejnebezpečnější pro média bude tahle doba otřesů, kdy vlastně nikdo netuší, jakým směrem se dějiny rozběhnou. Jestli jde něco novinářům hodně špatně, tak je to reagování na změny. Doteď nevyřešili internet a synergii mezi servery a papírem. Krátká videa na Instagramu a TikToku jsou pro nás stále ještě okrajovou záležitostí, i když influenceři a marketingové firmy je dávno adoptovali jako vlajkovou loď svého obsahu.“&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="blog"></category><category term="týdenní poznámky"></category><category term="junior.guru"></category></entry><entry><title>Týdenní poznámky: Víc inzerátů a méně důvěry v platformy</title><link href="https://honzajavorek.cz/blog/tydenni-poznamky-vic-inzeratu-a-mene-duvery-v-platformy/" rel="alternate"></link><published>2024-02-16T00:00:00+01:00</published><updated>2024-02-16T00:00:00+01:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2024-02-16:/blog/tydenni-poznamky-vic-inzeratu-a-mene-duvery-v-platformy/</id><summary type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Jak se mi daří v jednom člověku provozovat a rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;?
 Od &lt;a href="https://honzajavorek.cz/blog/tydenni-poznamky-servis-a-automatizace/"&gt;posledních poznámek&lt;/a&gt; už utekl nějaký ten týden (9. 2. až 16. 2.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.&lt;/p&gt;
 &lt;figure class="figure"&gt;&lt;img alt="Oprava myčky" src="https://honzajavorek.cz/images/img-7625.jpg" class="img-fluid figure-img rounded"&gt;&lt;/figure&gt;
 &lt;div class="alert alert-warning" role="alert"&gt;
@@ -8425,178 +8586,4 @@ Tu jsem objevil díky tomu, že ji použila Mia Bajić, když vytvářela &lt;a 
 Na čtení staženého kalendáře je možná jednoduchá, ale na vytváření je to o dost víc práce, než s ics.
 Přijde mi, že icalendar mi dává pár vychytávek navíc oproti tomu, kdybych se ten textový soubor snažil vytvořit ručně, ale abych něco doopravdy vytvořil, musím ten formát docela detailně znát a trávit čas čtením specifikace.&lt;/p&gt;
 &lt;p&gt;Abych mohl věc vůbec dokončit, pomohl mi dost &lt;a href="https://icalendar.org/validator.html"&gt;online iCalendar validátor&lt;/a&gt; a stejně jsem se ještě půl hodiny motal v časových pásmech, než se to začalo v mém Google Kalendáři zobrazovat správně.
-Oproti tomu, když jsem dřív používal ics, většinou stačilo nasypat do něj data podle dokumentace a i když jsem o iCalendar formátu nic moc nevěděl, vygenerovalo mi to přesně to, co jsem chtěl.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="blog"></category></entry><entry><title>Týdenní poznámky: Schůzky a evidence firemních partnerství</title><link href="https://honzajavorek.cz/blog/tydenni-poznamky-schuzky-a-evidence-firemnich-partnerstvi/" rel="alternate"></link><published>2023-02-03T00:00:00+01:00</published><updated>2023-02-03T00:00:00+01:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2023-02-03:/blog/tydenni-poznamky-schuzky-a-evidence-firemnich-partnerstvi/</id><summary type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Utekl zas nějaký ten týden (27. 1. až 3. 2.) a tak &lt;a href="https://honzajavorek.cz/blog/tydenni-poznamky-jeseniky-a-fora-na-discordu/"&gt;stejně jako minule&lt;/a&gt; sepisuji, co jsem dělal a co jsem se naučil.
-Tvořím &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt; a nemám šéfa, kterému bych reportoval každý svůj krok, ale mám &lt;a href="https://junior.guru/club/"&gt;klub&lt;/a&gt; a členy by mohlo zajímat, co dělám.
-Psaní poznámek mi taky …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Utekl zas nějaký ten týden (27. 1. až 3. 2.) a tak &lt;a href="https://honzajavorek.cz/blog/tydenni-poznamky-jeseniky-a-fora-na-discordu/"&gt;stejně jako minule&lt;/a&gt; sepisuji, co jsem dělal a co jsem se naučil.
-Tvořím &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt; a nemám šéfa, kterému bych reportoval každý svůj krok, ale mám &lt;a href="https://junior.guru/club/"&gt;klub&lt;/a&gt; a členy by mohlo zajímat, co dělám.
-Psaní poznámek mi taky pomáhá nezbláznit se a nepropadat pocitu, že je konec týdne a já jsem nestihl nic udělat.&lt;/p&gt;
-&lt;figure class="figure"&gt;&lt;img alt="Poznámky" src="https://honzajavorek.cz/images/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" class="img-fluid figure-img rounded"&gt;&lt;figcaption class="figure-caption"&gt;
-Fotka od &lt;a href="https://unsplash.com/@honza_kahanek"&gt;Honzy Kahánka&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;!-- Honzo, piš jednu větu na řádek! https://sive.rs/1s --&gt;
-
-&lt;h2 id="evidence-firem"&gt;Evidence firem&lt;small class="permalink"&gt;&lt;a href="#evidence-firem" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;Pokračoval jsem v převádění evidence firem z Excelové tabulky do YAMLu napojeného na zbytek JG:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Začal jsem načítat data z YAMLu místo z Excelu.&lt;/li&gt;
-&lt;li&gt;Informace o firemních kupónech nemohou být v YAMLu, protože jsou neveřejné.
-    Stahují se tedy přímo z Memberful API.
-    Při té příležitosti jsem trochu vylepšil třídu, přes kterou k jejich GraphQL API přistupuji.&lt;/li&gt;
-&lt;li&gt;Přidal jsem varování, když mám v kódu logo firmy, které už skončilo partnerství.
-    Chtěl jsem pak loga promazat, ale zjistil jsem, že se používají i jinde (např. na upoutávkách k akcím v klubu).
-    Taky jsem zjistil, že i když se nepoužívají, mám kód blbě a spadne to.
-    Takže jsem radši zatím nic nemazal.&lt;/li&gt;
-&lt;li&gt;Propojil jsem vzájemně všechny informace pomocí tabulek a cizích klíčů v SQLite.
-    Firmy a údaje o jejich partnerství jsou teď asi nejpropletenější tabulky na JG.
-    Celkem jsem se u toho zapotil a musel jsem si dost osvěžit SQL.
-    Mám to pokryté hromadou testů, protože jsem si vůbec nevěřil a polovina mého programování byla pokus-omyl.&lt;/li&gt;
-&lt;li&gt;Web jsem napojil na nová data.
-    Na příručce se tedy vypisují loga už na základě toho, že systém ví, že dané firmy mají určitý tarif a jeho součástí je logo na příručce.&lt;/li&gt;
-&lt;li&gt;Kromě epizod podcastu jsem s daty o firmách propojil i akce v klubu.
-    Nově mohu přednášku označit jako partnerskou, pokud si ji firma zaplatila.
-    Stejně jako u epizod podcastu, nikde se to zatím neprojeví, je to pouze v datech.&lt;/li&gt;
-&lt;li&gt;Mám připravený kód, který dokáže vypsat všechny benefity určitého tarifu.
-    Volitelně buď bez těch, které zdědil od nižších tarifů, nebo s nimi.
-    To se bude hodit, až budu chtít na web vypsat ceník pro firmy (aktuálně je v Google dokumentu).&lt;/li&gt;
-&lt;li&gt;Firmy se ve výpisu na webu řadí nově zaprvé podle toho, jaký mají tarif, zadruhé abecedně podle názvu.&lt;/li&gt;
-&lt;li&gt;Při předělávání evidence firem jsem si uvědomil, že &lt;code&gt;company&lt;/code&gt; a &lt;code&gt;companies&lt;/code&gt; jsou špatné názvy.
-    I v češtině jsem v tom měl zmatek, někde „spolupráce“, někde „sponzorování“.
-    Říká se, že pojmenovávání věcí je jedna ze dvou nejtěžších věcí v programování.
-    Já jsem velkým zastáncem toho, že pojmenování je hodně důležité a jsem trochu ovlivněný věcmi jako &lt;em&gt;ubiquitous language&lt;/em&gt; z &lt;em&gt;Domain-Driven Designu&lt;/em&gt; apod.
-    Našel jsem vhodnější termín pro firmy a entity kolem nich, a to &lt;code&gt;partner&lt;/code&gt;, &lt;code&gt;partnership&lt;/code&gt;.
-    V češtině „partner“, „partnerství“.
-    Podle mě to nejlépe popisuje vztah, který s firmou máme.
-    Do budoucna mi to umožňuje mít v systému i další firmy, které jsou se mnou v jiném vztahu.
-    Například inzerenti pracovních nabídek, nebo vzdělávací agentury v katalogu.
-    Udělal jsem velkou &lt;em&gt;search &amp;amp; replace&lt;/em&gt; akci, při které jsem termíny všude v kódu změnil a sjednotil.&lt;/li&gt;
-&lt;li&gt;Na &lt;a href="https://junior.guru/open/"&gt;/open/&lt;/a&gt; jsem vytvořil novou sekci, &lt;a href="https://junior.guru/open/#firemni-partnerstvi"&gt;Firemní partnerství&lt;/a&gt;.
-    V souvislosti s tím jsem nahoru na stránku přidal osnovu stránky, ať se v tom dá aspoň trochu vyznat.&lt;/li&gt;
-&lt;li&gt;V nové sekci jsem nejdřív pouze vypsal firmy do tabulky a poslal to na produkci.&lt;/li&gt;
-&lt;li&gt;Díky &lt;a href="https://github.com/mkdocs/mkdocs/discussions/3118"&gt;dotazu&lt;/a&gt; jsem zjistil, jak mohu dynamicky generovat stránky pro svoje MkDocs.
-    Je na to plugin &lt;a href="https://oprypin.github.io/mkdocs-gen-files/"&gt;mkdocs-gen-files&lt;/a&gt;.
-    Tím je definitivně vyřešena poslední věc, kterou jsem si nebyl jistý, jak v MkDocs udělám, až ji budu potřebovat.
-    Cesta k tomu, abych zrušil starou část JG postavenou na Flasku, je umetená!&lt;/li&gt;
-&lt;li&gt;Vzápětí jsem použil ještě plugin &lt;a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin"&gt;awesome-pages&lt;/a&gt;, který mi umožnil vygenerované stránky jednoduše zahrnout do navigace MkDocs.
-    Sice mi trvalo snad hodinu, než jsem to rozchodil a pochopil, ale už mi to funguje.&lt;/li&gt;
-&lt;li&gt;Vytvořil jsem tedy dynamicky pro každou firmu stránku.
-    Na tyto stránky teď odkazuji z tabulky firem v oné nové sekci &lt;a href="https://junior.guru/open/#firemni-partnerstvi"&gt;Firemní partnerství&lt;/a&gt;.
-    Zatím na těch stránkách nic není, ale dalším krokem bude výpis všech benefitů, které má firma objednané, a dalších údajů o partnerství firmy s JG.&lt;/li&gt;
-&lt;li&gt;Těmto novým stránkám jsem nastavil &lt;code&gt;noindex&lt;/code&gt; pro vyhledávače.
-    Nemají být „tajné“, ale nepotřebuji, aby vyskakovaly někde ve výsledcích vyhledávání.
-    A určitě nechci, aby na výraz „ENGETO Academy“ někdo našel tohle, místo aby našel jejich budoucí stránku v katalogu vzdělávacích agentur, který letos vyrobím.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="blog"&gt;Blog&lt;small class="permalink"&gt;&lt;a href="#blog" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;Upravil jsem bota, který hází do &lt;a href="https://t.me/honzajavorekcz"&gt;mé Telegramové skupiny&lt;/a&gt; odkazy na články, které vydám tady na blogu.
-Snad budou teď náhledové obrázky fungovat ještě o něco lépe.&lt;/p&gt;
-&lt;p&gt;Na blogu používám tagování článků, ačkoliv tagy samotné nikde nevypisuji.
-Mám je však přístupné z kódu, který sestavuje blog.
-Např. se díky přiřazenému tagu dá vypsat „největší pecky“ na &lt;a href="https://honzajavorek.cz/blog"&gt;hlavní stránce blogu&lt;/a&gt;.
-Upravil jsem články tak, aby poznámky měly tag „týdenní poznámky“ a všechny články související s JG aby měly tag „junior.guru“.&lt;/p&gt;
-&lt;p&gt;Povolil jsem pak v &lt;a href="https://getpelican.com/"&gt;Pelicanu&lt;/a&gt; generování RSS pro jednotlivé tagy s tím, že se mi to může v budoucnu hodit při nějaké automatizaci, např. pokud bych chtěl věci související s JG zobrazovat na samotném JG.&lt;/p&gt;
-&lt;h2 id="schuzky"&gt;Schůzky&lt;small class="permalink"&gt;&lt;a href="#schuzky" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Sešel jsem se s kamarádkou a radil jsem jí, jak začít jako tvůrce (např. videí).
-    Ona mi na oplátku řekla drby o jedné firmě, která fušuje do vzdělávání.&lt;/li&gt;
-&lt;li&gt;Sešel jsem se s &lt;a href="https://www.linkedin.com/in/mariankamenistak/"&gt;Mariánem Kameništákem&lt;/a&gt;, který mě už dříve kontaktoval.
-    Hledali jsme průsečíky toho, co děláme.
-    Konkrétní závěry nemáme, ale byl to příjemný pokec.
-    Možná uděláme přednášku v klubu.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://rozbiteprasatko.cz/"&gt;Jakub „Rozbité prasátko“ Dvořák&lt;/a&gt; vydal knihu.
-    Píšou o něm &lt;a href="https://cc.cz/staci-jeden-akciovy-index-a-do-konce-zivota-nemusite-nic-delat-rika-autor-rozbiteho-prasatka/"&gt;na CC&lt;/a&gt;, &lt;a href="https://www.youtube.com/watch?v=rCcGZDi-hCs"&gt;byl u Vojty Žižky&lt;/a&gt;.
-    Kniha se hned vyprodala.
-    Jakub mě pozval na křest knihy.
-    Nikdy jsem na žádné takové akci nebyl.
-    Měl jsem to kousek a moc jsem si to užil.
-    Byl tam i ten Vojta Žižka, ale bavil jsem se spíš se spoustou jiných zajímavých lidí, na které jsem tam narazil.
-    S redaktorem Jakubova nakladatelství jsem např. diskutoval, jak by šlo vydat příručku na JG jako knihu.
-    Překvapilo mě, že JG znal.
-    Přesvědčoval mě, že by to vydat šlo a že kdybych to chtěl udělat, ať se mu určitě ozvu.&lt;/li&gt;
-&lt;li&gt;Na online schůzce jsem s ENGETO Academy posunul přípravy společné ankety mezi juniory.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="zdrazeni-clenum-v-klubu"&gt;Zdražení členům v klubu&lt;small class="permalink"&gt;&lt;a href="#zdrazeni-clenum-v-klubu" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;Přišel únor a s ním zdražení pro stávající členy klubu.
-Zkontroloval jsem všechny kupóny a opravil jejich nastavení.
-Pak jsem se zhluboka nadechl a použil jsem v Memberful funkci &lt;a href="https://memberful.com/help/manage-your-members/move-all-members-of-a-plan/"&gt;move&lt;/a&gt;.
-Nejdřív na roční, pak na měsíční předplatné.&lt;/p&gt;
-&lt;p&gt;Vypadá to, že to funguje.
-Na starých tarifech už by neměl nikdo být a brzy je úplně smažu ze systému.&lt;/p&gt;
-&lt;p&gt;Za pár měsíců uvidím, jak moc lidí nakonec odejde a o kolik víc budu vydělávat.&lt;/p&gt;
-&lt;h2 id="dalsi"&gt;Další&lt;small class="permalink"&gt;&lt;a href="#dalsi" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Propagoval jsem v klubu a na Pyvec Slacku možnost dobrovolničení v organizačním týmu PyCon CZ, který se začal sestavovat.
-    PyCon CZ bude po covidové odmlce opět v Praze.
-    Kdo byste měli zájem pomoct, &lt;a href="https://docs.pyvec.org/operations/support.html#sit-kontaktu"&gt;přidejte se na Slack podle tohoto návodu&lt;/a&gt;.
-    &lt;a href="https://blog.europython.eu/europython-january-2023-newsletter/"&gt;EuroPython&lt;/a&gt; bude mimochodem taky v Praze,
-    ale má jiný organizační tým a samozřejmě jiný termín.&lt;/li&gt;
-&lt;li&gt;Řešil jsem nějaké detaily partnerství s Green Fox Academy.
-    Propojil jsem je s Pájou, aby mohli natočit podcast.&lt;/li&gt;
-&lt;li&gt;PayPal zavedl podporu pro &lt;a href="https://www.paypal.com/us/cshelp/article/can-i-have-my-balance-automatically-transferred-to-my-bank-account-help398"&gt;automatický transfer peněz&lt;/a&gt;.
-    Chodí mi tam pár korun z Patreonu, tak jsem si to nastavil.&lt;/li&gt;
-&lt;li&gt;Nová verze Scrapy &lt;a href="https://docs.scrapy.org/en/latest/topics/feed-exports.html#feed-uri-params"&gt;změnila některé věci&lt;/a&gt;, tak jsem je opravoval.&lt;/li&gt;
-&lt;li&gt;Zjistil jsem zajímavou věc.
-    Kdybych měl dobrá data o pracovních inzerátech pro juniory, minimálně jedna vzdělávací agentura by za ně byla ochotna platit.
-    Tohle by mohlo vrátit nabídky práce na JG zase trochu na výsluní mého zájmu.&lt;/li&gt;
-&lt;li&gt;Dolaďovali jsme se Zuzanou Pechovou detaily k přednášce, která bude příští týden.
-    Pak jsem to &lt;a href="https://www.linkedin.com/feed/update/urn:li:activity:7026925311933968385?utm_source=share&amp;amp;utm_medium=member_desktop"&gt;propagoval na LinkedIn&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Propagoval jsem na LinkedIn &lt;a href="https://forms.gle/TNT46oPcS3oZEpeb9"&gt;novou možnost pohovorů nanečisto s Ataccamou&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/crdoconnor/strictyaml/issues/191"&gt;Naučil jsem se&lt;/a&gt; jak ve &lt;code&gt;strictyaml&lt;/code&gt; načítat pouze datum místo data a času.
-    Na celém JG jsem to změnil podle toho.
-    Funguje to skvěle.&lt;/li&gt;
-&lt;li&gt;Koupil jsem si lístek na letošní &lt;a href="https://na.pycon.org/"&gt;PyCon NA&lt;/a&gt;, ačkoliv tam nepojedu.
-    &lt;a href="https://honzajavorek.cz/blog/jessica-upani-about-python-events-in-namibia-you-have-to-be-pure-in-terms-of-your-why/"&gt;Jsou úžasní&lt;/a&gt; a chci je podpořit.
-    Podpořte je taky, lístek stojí zhruba pětistovku.
-    Ty lidi znám osobně a mohu se za ně stoprocentně zaručit.
-    Každá koruna jim udělá radost.&lt;/li&gt;
-&lt;li&gt;Dostal jsem seriózní nabídku, že by se &lt;a href="https://cojeapi.cz"&gt;cojeapi.cz&lt;/a&gt; mohlo sloučit s &lt;a href="https://naucme.it/"&gt;naucme.it&lt;/a&gt;, spolu s nabídkou odkupu domén.
-    Vzal jsem si čas na rozmyšlenou.
-    Taky nevím, za kolik bych měl domény cojeapi.cz, jakpsatapi.cz a whatisapi.org prodat.
-    Nikdy jsem domény neprodával.&lt;/li&gt;
-&lt;li&gt;Všiml jsem si, že &lt;a href="https://junior.guru/open/"&gt;grafy&lt;/a&gt; ukazují nula lidí na stipendijním předplatném.
-    To je blbost, takže jsem hledal chybu.
-    Chyba se netýkala jen stipendií.
-    Kód, který jsem nedávno upravoval, nyní hodně špatně vyhodnocoval, kdo je na jakém kupónu.
-    Měl jsem testy na různé hraniční případy, ale neměl jsem test na základní a zcela běžnou situaci.
-    Přesně pro ni se to rozbilo 😀&lt;/li&gt;
-&lt;li&gt;Udělil jsem dvě stipendia.&lt;/li&gt;
-&lt;li&gt;Odpovídání v klubu, e-maily, &lt;a href="https://docs.pyvec.org/operations/support.html#sit-kontaktu"&gt;Pyvec Slack&lt;/a&gt;, atd.
-    Upgradování závislostí na vlastních i Pyvec projektech (zpracovávání Pull Requestů, které průběžně posílá Dependabot).&lt;/li&gt;
-&lt;li&gt;Během 8 dní od 27. 1. do 3. 2. jsem při procházkách nachodil 9 km. Celkem jsem se hýbal 3 hodiny a zdolal při tom 9 kilometrů.&lt;/li&gt;
-&lt;li&gt;Finanční výsledky, návštěvnost a další čísla k JG &lt;a href="https://junior.guru/open/"&gt;mám přímo na webu&lt;/a&gt;.
-    Aktuální nabídky práce pro juniory: &lt;a href="https://junior.guru/jobs/dbbb7bf406b3c33aeba36cae817919d44bfb368a08fb1b4899dba130/"&gt;Processand&lt;/a&gt;, &lt;a href="https://junior.guru/jobs/34fa3ec07892dd3ff64458e2ccbf12578e00860483427e9e7c4847bc/"&gt;Red Hat&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="povedlo-se"&gt;Povedlo se&lt;small class="permalink"&gt;&lt;a href="#povedlo-se" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;Udělal jsem něco z &lt;a href="https://honzajavorek.cz/blog/strategie-na-2023/"&gt;plánů na rok 2023&lt;/a&gt;?&lt;/p&gt;
-&lt;!-- Koukni sem https://www.icloud.com/notes/092v6QG3aoSmpVOGHnpg0uIXQ --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Rychle se blížím se k vyřešení „Firma musí vědět vše o svém předplatném, v jakém je stavu, kolik čeho zbývá.“&lt;/li&gt;
-&lt;li&gt;Pomalu se blížím se k vyřešení „Já i firma musíme mít včas informaci, že se blíží konec.“&lt;/li&gt;
-&lt;li&gt;Velmi pomalu se blížím k tomu, abych mohl mít na webu ceník pro firmy.&lt;/li&gt;
-&lt;li&gt;Podílím se na anketě mezi juniory.&lt;/li&gt;
-&lt;li&gt;Věnuji se Pyvci jako člen výboru.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="alert alert-warning" role="alert"&gt;
-&lt;p&gt;&lt;strong&gt;Okénko duševního zdraví.&lt;/strong&gt;
-Máte dojem, že na rozdíl ode mně nic nestíháte?
-Buďte v klidu, &lt;a href="https://honzajavorek.cz/blog/neni-to-zavod/"&gt;není to závod&lt;/a&gt;!&lt;/p&gt;
-&lt;/div&gt;
-&lt;h2 id="planuji"&gt;Plánuji&lt;small class="permalink"&gt;&lt;a href="#planuji" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Nastavím, aby Memberful posílalo lidem e-mail, pokud zruší členství.
-    Mělo by v něm být něco o tom, aby zkusili stipendium, pokud je pro ně klub moc drahý.&lt;/li&gt;
-&lt;li&gt;Budu mít pro každou firmu stránku, na které bude výpis údajů o jejich partnerství.&lt;/li&gt;
-&lt;li&gt;Aktualizuji skript, který vítá firmy v klubu.
-    Nově bude odkazovat na ty nové stránky a transparentně informovat o všech závazcích, které k firmě mám.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="zaujalo-me"&gt;Zaujalo mě&lt;small class="permalink"&gt;&lt;a href="#zaujalo-me" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;Když na něco narazím a líbí se mi to, sdílím to &lt;a href="https://mastodonczech.cz/@honzajavorek"&gt;na Mastodonu&lt;/a&gt;.
-Od posledních poznámek jsem sdílel toto:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://nnw.ranchero.com/2023/02/02/twitter-integration-to.html"&gt;NetNewsWire - Twitter Integration To Be Removed&lt;/a&gt;&lt;br&gt;Elon odebere API z Twitteru, moje RSS čtečka odebere podporu pro čtení Twitteru 😢 Na Twitter už dál chodit nechci, ale některé lidi jsem sledoval rád. Bohužel budu asi muset Twitter tím pádem přestat číst úplně.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://refresher.cz/130107-Babis-ho-chtel-na-Hrad-co-s-Lojzou-ted-bude-Navstivili-jsme-utulek-Dasenka-kteremu-v-kampani-prinesli-granule-i-nevrazivost"&gt;Babiš ho chtěl na Hrad, co s Lojzou teď bude? Navštívili jsme útulek Dášenka, kterému v kampani přinesli granule i nevraživost&lt;/a&gt;&lt;br&gt;Tohle je parádní článek. Neironicky. Začíná to jako banalita, ale je to úplně skvěle a do hloubky zpracované.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://nemil.com/2019/12/23/the-freedom-of-ignorance/"&gt;The Freedom of Ignorance&lt;/a&gt;&lt;br&gt;Vědět o problému příliš mnoho nám někdy zabrání se do něj vůbec pustit. Když jste dítě na prolézačce, prostě skočíte. Když jste dospělí, neskočíte. Víte, že je to 2m vysoko, co všechno se může zlomit, apod. Když moc analyzujete a víte toho až příliš mnoho, najdete příliš mnoho důvodů, proč něco nejde. Mezitím to udělá někdo jiný, komu nikdo neřekl, že to nejde 😀&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://nemil.com/2019/08/30/beware-engineering-media/"&gt;Beware Engineering Media&lt;/a&gt;&lt;br&gt;Jak nepodlehnout marketingu ve vývojářských komunitách, na konferencích a na webech pro vývojáře. Že existuje sto článků a přednášek o MongoDB nutně neznamená, že tuto technologii všichni používají, ale že v marketingové strategii MongoDB je, aby existovalo sto článků a přednášek. V závěru jsou tři užitečné body, na které se soustředit při čtení věcí jako HackerNews.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.seznamzpravy.cz/clanek/domaci-politika-komentar-babis-si-prisvojuje-monopol-na-pomahani-je-to-chyba-nas-vsech-224119"&gt;Komentář: Babiš si přisvojuje monopol na pomáhání. Je to chyba nás všech&lt;/a&gt;&lt;br&gt;„Jak se vám asi tak bude žít v oblasti, kde prakticky nefunguje jediná nemocnice? Kde si pacienty překládají na benzinkách, protože vozů je málo a nemohou opustit hranice okresu? Jakou perspektivu máte, když už od střední školy vás vzdělání připravuje pouze a jenom na realitu špatně placené práce v ekonomice montoven? Jaké to asi je, když za prací nebo za vzděláním dojíždíte, ale kvalita dopravy upadá a jízdné se neustále zdražuje?“ … „Vyfouknout Babišovi roli toho, kdo se stará o lidi, můžeme jen tím, že budeme soustavně upozorňovat na to, s jakými strukturálními problémy se Česko potýká, a žádat jejich řešení tak, aby byl Babiš vždy o několik kroků pozadu.“&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.buzzsprout.com/2007031"&gt;Ferdinand Leffler: Češi čím dál víc milují užitné zahrady. Pěstují zeleninu a chovají slepice — Město&lt;/a&gt;&lt;br&gt;Pustil jsem si k úklidu kuchyně povídání se zahradníkem, že to bude chill na neděli. Dostal jsem rozzlobeného muže rapujícího o nedostatcích veřejného prostoru, o politice, developerech, udržitelnosti. Skvělý to bylo!&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-komentar-promluvme-si-o-vojne-driv-nez-o-ni-zacnou-mluvit-nostalgici-194070"&gt;Komentář: Promluvme si o vojně dřív, než o ní začnou mluvit nostalgici&lt;/a&gt;&lt;br&gt;Tohle zní jako dobrý nápad.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://seznam-zpravy.u.mailkit.eu/mc/VUQCVLPE/FYSGEKEEEMJWDPOHRD/CUCQCCVECCM"&gt;Pod čarou: Neodsuzujme žvanění politiků. Jazyk nemůže za problémy společnosti.&lt;/a&gt;&lt;br&gt;Opět fajn newsletter, tentokrát o mluveném projevu. Třeba tohle pozoruju od začátku války: „Západní novináři i veřejnost většinou oceňují projevy ukrajinského prezidenta Zelenského, který má ostatně ke skvělé rétorice coby herec z povolání dobré předpoklady. Také hraje na emoce, u západních politiků se snaží vyvolat pocity viny, strach, nebo naopak pošimrat jejich ego, opakuje dokola stejné figury a bonmoty, pracuje se zanícenými morálními apely a expresivním projevem.“ Tohle už TikToková generace dávno ví, ale moje si to potřebuje přečíst: „Efektivní a srozumitelný text vyžaduje propracovanou logickou strukturu, precizní argumenty, bohatou slovní zásobu, věcnost a další vlastnosti, které pak mylně vyžadujeme po ústním projevu. Ten má ale jiné, často zcela protichůdné požadavky.“&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="blog"></category><category term="týdenní poznámky"></category><category term="junior.guru"></category></entry></feed>
+Oproti tomu, když jsem dřív používal ics, většinou stačilo nasypat do něj data podle dokumentace a i když jsem o iCalendar formátu nic moc nevěděl, vygenerovalo mi to přesně to, co jsem chtěl.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="blog"></category></entry></feed>
