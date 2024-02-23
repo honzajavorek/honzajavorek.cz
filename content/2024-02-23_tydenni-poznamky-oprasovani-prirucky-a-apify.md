@@ -22,7 +22,7 @@ Prošel jsem si všechny poznámky, které jsem u příručky měl v souvislosti
 Pak jsem vzal dvě sekce, které jsem už v příručce měl, a přesunul je na [samostatnou stránku o angličtině](https://junior.guru/handbook/english/).
 Poznámky a tuto stránku jsem pak předal [Veronice](https://geekpower.cz/), aby tam mohla připravit vlastní obsah po vzoru [Nely](https://junior.guru/handbook/mental-health/).
 
-![Angličtina](<../../../Downloads/Screenshot 2024-02-23 at 21-50-16 Angličtina pro programátory.png>){: .img-thumbnail }
+![Angličtina]({static}/images/screenshot-2024-02-23-at-21-50-16-anglictina-pro-programatory.png){: .img-thumbnail }
 
 Pak když jsem měl jít konečně psát novou verzi [stránky o Gitu a GitHubu](https://junior.guru/handbook/git/), tak jsem se zakoukal do kódu, nějak neodolal, a šel jsem předělat úvodní stránku příručky.
 Měl jsem dost jasnou představu, jak by to mělo vypadat, a přišlo mi, že to bude za chvilku hotové.
@@ -36,7 +36,7 @@ To jsem následně načetl do databáze a propojil, což mi zabralo víc času, 
 
 Aktuálně je tedy na té úvodní stránce prozatimní verze, kdy se seznam už vypisuje z databáze a vše je propojené, ale zdaleka to nevypadá tak, jak bych chtěl, aby to vypadalo.
 
-![úvodní stránka](<../../../Downloads/Screenshot 2024-02-23 at 21-48-50 Příručka pro juniory.png>){: .img-thumbnail }
+![úvodní stránka]({static}/images/screenshot-2024-02-23-at-21-48-50-prirucka-pro-juniory.png){: .img-thumbnail }
 
 ## Apify
 
