@@ -18,6 +18,8 @@ Fotil [Markus Spiske](https://unsplash.com/@markusspiske)
 Aktuální nabídky práce pro juniory: [Red Hat](https://junior.guru/jobs/ade40e530211c36a309fa370d270da7650ad18462c03c95b0b38de57/)
 </div>
 
+Mám zase nějakou rýmu, ale nebudu propadat beznaději!
+
 ## Oprašování příručky
 
 Prošel jsem si všechny poznámky, které jsem u příručky měl v souvislosti s učením angličtiny.
@@ -44,7 +46,7 @@ Aktuálně je tedy na té úvodní stránce prozatimní verze, kdy se seznam už
 
 Tento týden je ve znamení Apify:
 
--   V pondělí jsem byl v kancelářích Apiary na schůzce, o jejímž obsahu zatím pomlčím.
+-   V pondělí jsem byl v kancelářích Apify na schůzce, o jejímž obsahu zatím pomlčím.
     Něco domlouváme, ale není to zatím kompletně domluveno.
 -   V úterý jsem si hodinu volal s produkťáky z Apify.
     Na Apify Discordu se totiž objevila výzva, že dělají nějaký UX průzkum a kdo se přihlásí, může dostat nějaké kredity zadáčo.
@@ -93,7 +95,7 @@ Jaké je ROI vynaložené energie?
 -   Často tuto práci prokrastinuju.
     A když ji týdny nebo měsíce prokrastinuju, nikdo si nestěžuje, že přednášky v klubu nejsou.
 -   Nepřijde mi, že bych potkal jediného člověka, který by řekl, že do klubu zamířil a zůstal v něm kvůli přednáškám.
--   Je to obsah a já si myslím, že junior.guru má být komunita, platforma, rozcestník a agregátor, nemá vytvářet vlastní obsah nad rámec příručky.
+-   Je to obsah a já si myslím, že junior.guru má být komunita, platforma, rozcestník a agregátor, ale nemá vytvářet vlastní obsah nad rámec příručky.
     Neškáluje to.
     Pája dělá podcast, ale kdyby ho nedělala ona, tak já ho dělat nemám a prostě by neexistoval.
     Je možné vzít obsahový projekt pod značku junior.guru, ale já sám bych to vytvářet neměl.
@@ -149,7 +151,7 @@ Přitom stačilo dát si realistické cíle, být aspoň chvíli aspoň trochu z
     A to jsme ještě i na YouTube, Apple Podcasts, a spousta lidí si nás (nejspíš?) pouští i [přímo na webu](https://junior.guru/podcast/), kde nemám žádné sledování, to jsou jen `<audio>` tagy s audio souborem.
     Na to, že je to Pájino hobby a už ani nedodržujeme jednu epizodu měsíčně, je to podle mě docela dobrý 😀
 -   Prošel jsem [moudra](https://junior.guru/wisdom/) a trochu je uhladil, případně něco smazal, a tak.
--   Domluvil jsem termín, kdy poskytnu jednorázovou placenou konzultace na vedení komunity.
+-   Domluvil jsem termín, kdy poskytnu jednorázovou placenou konzultaci na vedení komunity.
     Těším se na to.
 -   Spadl mi build na junior.guru, protože GraphQL API od Memberful ze dne na den zase něco změnilo.
     Nakonec mi poradili, že můžu přidat nějaký parametr a bude to zase fungovat.
