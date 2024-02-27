@@ -1,5 +1,71 @@
 [
   {
+    "id": 112000428645022067,
+    "created_at": "2024-02-26T23:41:55.607000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112000428645022067",
+    "url": "https://mastodonczech.cz/@honzajavorek/112000428645022067",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Přesně: „In writing, the process is part of the product. Even in drafting this post, I initially started in a completely different direction and it was only clear to me after I was halfway through that the post would have to go in a different direction.“ <a href=\"https://vickiboykis.com/2023/02/26/what-should-you-use-chatgpt-for/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">vickiboykis.com/2023/02/26/wha</span><span class=\"invisible\">t-should-you-use-chatgpt-for/</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://vickiboykis.com/2023/02/26/what-should-you-use-chatgpt-for/",
+      "title": "What should you use ChatGPT for?",
+      "description": "ChatGPT is a probabilistic way of generating vibes",
+      "language": "en",
+      "type": "link",
+      "provider_name": "★ Vicki Boykis ★ ",
+      "width": 1158,
+      "height": 1246,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/000/522/363/original/5be2ea40ec5f3dba.png",
+      "blurhash": "UQQA25%M~Xogx[oLxbM{-;WBInofxIWBI-xu",
+      "published_at": "2023-02-26T00:00:00+00:00"
+    }
+  },
+  {
+    "id": 112000308352578396,
+    "created_at": "2024-02-26T23:11:20.090000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112000308352578396",
+    "url": "https://mastodonczech.cz/@honzajavorek/112000308352578396",
+    "reblogs_count": 1,
+    "favourites_count": 2,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>„Call me old-fashioned, but I firmly believe content should outweigh code size. If you are writing a blog post for 10K characters, you don’t need 1000× more JavaScript to render it.“ <a href=\"https://tonsky.me/blog/js-bloat/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">tonsky.me/blog/js-bloat/</span><span class=\"invisible\"></span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://tonsky.me/blog/js-bloat",
+      "title": "JavaScript Bloat in 2024",
+      "description": "What is the average size of JavaScript code downloaded per website? Fuck around and find out!",
+      "language": "en",
+      "type": "link",
+      "provider_name": "tonsky.me",
+      "published_at": "2024-02-22T00:00:00+00:00"
+    }
+  },
+  {
     "id": 111979561353948612,
     "created_at": "2024-02-23T07:15:06.014000+00:00",
     "sensitive": false,
