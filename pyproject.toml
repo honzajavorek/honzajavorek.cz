@@ -13,7 +13,7 @@ blog = "blog:main"
 
 [tool.poetry.dependencies]
 python = "3.10.*"
-pelican = {version = "4.8.0", extras = ["markdown"]}
+pelican = {version = "4.9.1", extras = ["markdown"]}
 strictyaml = "1.7.3"
 requests = "2.31.0"
 lxml = "5.1.0"
