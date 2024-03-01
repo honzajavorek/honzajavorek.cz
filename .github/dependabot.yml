@@ -3,20 +3,21 @@ updates:
 - package-ecosystem: pip
   directory: "/"
   schedule:
-    interval: weekly
-    day: tuesday
-    time: "06:00"
-    timezone: Europe/Prague
+    interval: daily
   open-pull-requests-limit: 1
   labels:
-  - dependencies
+    - dependencies
 - package-ecosystem: npm
   directory: "/theme"
   schedule:
-    interval: weekly
-    day: wednesday
-    time: "06:00"
-    timezone: Europe/Prague
+    interval: daily
   open-pull-requests-limit: 1
   labels:
-  - dependencies
+    - dependencies
+- package-ecosystem: github-actions
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 1
+  labels:
+    - dependencies
