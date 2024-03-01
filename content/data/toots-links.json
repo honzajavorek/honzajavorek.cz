@@ -1,5 +1,68 @@
 [
   {
+    "id": 112017402493021603,
+    "created_at": "2024-02-29T23:38:35.974000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112017402493021603",
+    "url": "https://mastodonczech.cz/@honzajavorek/112017402493021603",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Pěkně vysvětlené, jak správně čekat na asyncio tasky a co je ve standardní knihovně k dispozici. <a href=\"https://hynek.me/articles/waiting-in-asyncio/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">hynek.me/articles/waiting-in-a</span><span class=\"invisible\">syncio/</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://hynek.me/articles/waiting-in-asyncio/",
+      "title": "Waiting in asyncio",
+      "description": "One of the main appeals of using Python’s asyncio is being able to fire off many coroutines and run them concurrently. How many ways do you know for waiting for their results?",
+      "language": "en",
+      "type": "link",
+      "author_name": "Hynek Schlawack",
+      "provider_name": "Hynek Schlawack",
+      "width": 909,
+      "height": 476,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/001/443/495/original/9812250c86cd818e.png",
+      "blurhash": "U5D7l0?aWBIVRSRkRkt6k9oft6WC4VD*t7xt",
+      "published_at": "2020-05-21T00:00:00+00:00"
+    }
+  },
+  {
+    "id": 112016718328951095,
+    "created_at": "2024-02-29T20:44:36.458000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112016718328951095",
+    "url": "https://mastodonczech.cz/@honzajavorek/112016718328951095",
+    "reblogs_count": 1,
+    "favourites_count": 2,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Přečetl jsem to celé. Slibuju, že pokud PSF udělá fundraiser na technical writera, který by systematicky řešil problémy s dokumentací kolem Python packagingu, lepil všemožné díry a psal návody jak upgradovat a co je aktuální standard, tak přispěju. <a href=\"https://gregoryszorc.com/blog/2023/10/30/my-user-experience-porting-off-setup.py/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">gregoryszorc.com/blog/2023/10/</span><span class=\"invisible\">30/my-user-experience-porting-off-setup.py/</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://gregoryszorc.com/blog/2023/10/30/my-user-experience-porting-off-setup.py/",
+      "title": "Gregory Szorc's Digital Home\n  | My User Experience Porting Off setup.py\n",
+      "type": "link"
+    }
+  },
+  {
     "id": 112010105621461920,
     "created_at": "2024-02-28T16:42:54.550000+00:00",
     "sensitive": false,
@@ -31,7 +94,6 @@
       "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/_o7qjN3KF8U?feature=oembed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms\"></iframe>",
       "width": 200,
       "height": 113,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/003/617/978/original/9f68df46c049b174.jpg",
       "blurhash": "UUHe5vM_pHt7MxNHt7RP0LagMyRk-;xtRix["
     }
   },
@@ -68,7 +130,6 @@
       "provider_name": "Novinky",
       "width": 1200,
       "height": 675,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/001/386/217/original/acf26a646bf20f93.jpeg",
       "blurhash": "UGDvDv~8D%NEEoIrtQRk8|NMkXt79?ovwe%1",
       "published_at": "2023-07-04T08:00:00+00:00"
     }
@@ -103,7 +164,6 @@
       "provider_name": "HouseFresh",
       "width": 1024,
       "height": 576,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/003/533/022/original/255f671fe4dd194a.jpg",
       "image_description": "How Google is killing independent sites like ours",
       "blurhash": "UDQ,E,R,RNRk_2?vRP-;9FD%RkIU~q%MMxoz",
       "published_at": "2024-02-19T15:22:53+00:00"
@@ -140,7 +200,6 @@
       "provider_name": "Apify Blog",
       "width": 1200,
       "height": 670,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/001/251/137/original/4b5e59f76130cef7.jpg",
       "blurhash": "UaPZu:WB_3WA_NoeRQofM{kCs:js-;aeM{WC",
       "published_at": "2023-08-03T07:05:00+00:00"
     }
@@ -180,6 +239,7 @@
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112004850221684161",
     "url": "https://mastodonczech.cz/@honzajavorek/112004850221684161",
     "replies_count": 1,
+    "favourites_count": 1,
     "favourited": false,
     "reblogged": false,
     "muted": false,
