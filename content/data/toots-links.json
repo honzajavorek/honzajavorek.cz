@@ -1,5 +1,33 @@
 [
   {
+    "id": 112022818211181509,
+    "created_at": "2024-03-01T22:35:53.275000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112022818211181509",
+    "url": "https://mastodonczech.cz/@honzajavorek/112022818211181509",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>TIL že v Pythonu nemusím u regulárního výrazu napsat flag zvlášť jako parametr, ale i přímo do samotného reguláru - což se hodí, pokud nemám plnou kontrolu nad kompilací reguláru. Wow. <a href=\"https://death.andgravity.com/f-re#i-don-t-control-the-flags\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">death.andgravity.com/f-re#i-do</span><span class=\"invisible\">n-t-control-the-flags</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://death.andgravity.com/f-re",
+      "title": "The unreasonable effectiveness of f‍-‍strings and re.VERBOSE",
+      "description": "... in which we look at one or two ways to make life easier when working with Python regular expressions.",
+      "type": "link",
+      "provider_name": "death and gravity"
+    }
+  },
+  {
     "id": 112017402493021603,
     "created_at": "2024-02-29T23:38:35.974000+00:00",
     "sensitive": false,
@@ -7,7 +35,7 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112017402493021603",
     "url": "https://mastodonczech.cz/@honzajavorek/112017402493021603",
-    "favourites_count": 1,
+    "favourites_count": 2,
     "favourited": false,
     "reblogged": false,
     "muted": false,
@@ -30,7 +58,6 @@
       "provider_name": "Hynek Schlawack",
       "width": 909,
       "height": 476,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/001/443/495/original/9812250c86cd818e.png",
       "blurhash": "U5D7l0?aWBIVRSRkRkt6k9oft6WC4VD*t7xt",
       "published_at": "2020-05-21T00:00:00+00:00"
     }
@@ -165,6 +192,7 @@
       "provider_name": "HouseFresh",
       "width": 1024,
       "height": 576,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/003/533/022/original/15ad3a6ec2cb7532.jpg",
       "image_description": "How Google is killing independent sites like ours",
       "blurhash": "UDQ,E,R,RNRk_2?vRP-;9FD%RkIU~q%MMxoz",
       "published_at": "2024-02-19T15:22:53+00:00"
@@ -213,6 +241,7 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112005728753542416",
     "url": "https://mastodonczech.cz/@honzajavorek/112005728753542416",
+    "favourites_count": 1,
     "favourited": false,
     "reblogged": false,
     "muted": false,
