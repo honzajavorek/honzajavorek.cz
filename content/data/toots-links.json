@@ -1,5 +1,102 @@
 [
   {
+    "id": 112028269531340309,
+    "created_at": "2024-03-02T21:42:13.818000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112028269531340309",
+    "url": "https://mastodonczech.cz/@honzajavorek/112028269531340309",
+    "favourites_count": 3,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Autor Redisu dobře vystihuje, jak LLM pomáhají při programování, na co jsou dobré, na co jsou k prdu, že tříbí schopnost komunikovat problém, a obecně proč je bude používat. Taky pokládá zajímavou otázku, zda by se člověk neměl ve své expertíze pomalu profilovat k věcem, které jsou pro LLMs těžké, jako např. systémové programování, místo abychom si nechali platit za patlání React komponent, které to za chvíli bude plivat jednu za druhou. <a href=\"http://antirez.com/news/140\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">http://</span><span class=\"\">antirez.com/news/140</span><span class=\"invisible\"></span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "http://antirez.com/news/140",
+      "title": "\nLLMs and Programming in the first days of 2024 - <antirez>\n",
+      "type": "link"
+    }
+  },
+  {
+    "id": 112027436608235855,
+    "created_at": "2024-03-02T18:10:24.420000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112027436608235855",
+    "url": "https://mastodonczech.cz/@honzajavorek/112027436608235855",
+    "favourites_count": 4,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>„Open Source is not great because you don’t have to pay for it. Open source is great because everyone is free to use it.“ „Single vendor isn’t a reasonable way to do Open Source and resist evil proprietary software. It’s just another way to do proprietary software.“ <a href=\"https://opensource.net/why-single-vendor-is-the-new-proprietary/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">opensource.net/why-single-vend</span><span class=\"invisible\">or-is-the-new-proprietary/</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://opensource.net/why-single-vendor-is-the-new-proprietary/",
+      "title": "Why single vendor is the new proprietary - OpenSource.net",
+      "description": "it’s time to reassert the value of software developed in an open collaboration. Everything else is proprietary. Everything else is a relicensing time bomb.",
+      "language": "en",
+      "type": "link",
+      "provider_name": "OpenSource.net",
+      "width": 1600,
+      "height": 1200,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/003/627/737/original/01edfe08b25109da.jpg",
+      "blurhash": "U6F}ZX9aIoR+0*$$E2M{-U-pj?xZ4;?FM{t7",
+      "published_at": "2024-02-29T13:00:00+00:00"
+    }
+  },
+  {
+    "id": 112027337346604808,
+    "created_at": "2024-03-02T17:45:09.810000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112027337346604808",
+    "url": "https://mastodonczech.cz/@honzajavorek/112027337346604808",
+    "favourites_count": 1,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>TIL, že ve standardní knihovně Pythonu je topological sort na procházení directed acyclic graph (DAG) 🤯 <a href=\"https://docs.python.org/3/library/graphlib.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">docs.python.org/3/library/grap</span><span class=\"invisible\">hlib.html</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://docs.python.org/3/library/graphlib.html",
+      "title": "graphlib — Functionality to operate with graph-like structures",
+      "description": "Source code: Lib/graphlib.py Exceptions: The graphlib module defines the following exception classes:",
+      "language": "en",
+      "type": "link",
+      "provider_name": "Python documentation",
+      "width": 200,
+      "height": 200,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/003/648/281/original/2bda6f8082bc49f0.png",
+      "image_description": "Python documentation",
+      "blurhash": "UaHn[?9*4qRk0=WE^aoc4p=;M{WB=;k9E8az"
+    }
+  },
+  {
     "id": 112022818211181509,
     "created_at": "2024-03-01T22:35:53.275000+00:00",
     "sensitive": false,
@@ -7,6 +104,7 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112022818211181509",
     "url": "https://mastodonczech.cz/@honzajavorek/112022818211181509",
+    "favourites_count": 2,
     "favourited": false,
     "reblogged": false,
     "muted": false,
@@ -71,7 +169,7 @@
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112016718328951095",
     "url": "https://mastodonczech.cz/@honzajavorek/112016718328951095",
     "reblogs_count": 1,
-    "favourites_count": 2,
+    "favourites_count": 3,
     "favourited": false,
     "reblogged": false,
     "muted": false,
@@ -192,7 +290,6 @@
       "provider_name": "HouseFresh",
       "width": 1024,
       "height": 576,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/003/533/022/original/15ad3a6ec2cb7532.jpg",
       "image_description": "How Google is killing independent sites like ours",
       "blurhash": "UDQ,E,R,RNRk_2?vRP-;9FD%RkIU~q%MMxoz",
       "published_at": "2024-02-19T15:22:53+00:00"
