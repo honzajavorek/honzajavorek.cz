@@ -294,6 +294,10 @@ Pak jsem se ještě chvíli bavil s kameramankou, která na základě videa bude
 Nezapamatoval jsem si v tom stresu jména, takže nemám kontakty, ale video by pak prý mělo být na sociálních sítích TDČ, na [eduklub.cz](https://eduklub.cz) a na [itpeoplecz.cz](https://itpeoplecz.cz).
 S vydáním tohoto článku se mi na video čekat nechce, ale až ho někde zahlédnu, tak ho sem doplním.
 
+<div class="alert alert-warning" role="alert" markdown="1">
+**Dodatečně:** Záznam rozhovoru [je na YouTube](https://www.youtube.com/watch?v=yIdQ1Fmziyg), článek vyšel jako [Jak se loví ajťáci. Javorek pomáhá projektem Junior Guru plnit sny odvážným zájemcům o IT](https://www.itpeoplecz.cz/jak-se-lovi-ajtaci-javorek-pomaha-projektem-junior-guru-plnit-sny-odvaznym-zajemcum-o-it/).
+</div>
+
 ## Stream na YouTube
 
 Po náročném pondělí jsem měl večer dost vymluvený hlas a můj stav se trochu zhoršil.
