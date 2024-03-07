@@ -6,11 +6,21 @@ BEGIN:VEVENT
 SUMMARY:Kočárkino: To se mi snad zdá
 DTSTART:20240320T090000Z
 DURATION:PT2H
-DTSTAMP:20240306T082600Z
+DTSTAMP:20240307T040522Z
 UID:f150b2d680450c346ac91f3bea4527a84f4bd35eba7178b51af259f97102d40a
 DESCRIPTION:https://kcvozovna.cz/9987/kocarkino-to-se-mi-snad-zda/\nhttps:
  //www.csfd.cz/hledat/?q=To%20se%20mi%20snad%20zd%C3%A1
 LOCATION:KC VOZOVNA\, Koněvova 2687/164\, Praha 3
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Baby Bio: Zimní prázdniny
+DTSTART:20240312T090000Z
+DURATION:PT2H
+DTSTAMP:20240307T040523Z
+UID:f7ebf38481bca9e3f39239e544ce34d5b0bd7896a536c311dbfe6157de0748db
+DESCRIPTION:https://www.biooko.net/?projection=26490\nhttps://www.csfd.cz/
+ hledat/?q=Zimn%C3%AD%20pr%C3%A1zdniny
+LOCATION:Bio Oko\, Františka Křížka 460/15\, Praha 7
 END:VEVENT
 END:VCALENDAR
 
