@@ -1,5 +1,41 @@
 [
   {
+    "id": 112048086070741057,
+    "created_at": "2024-03-06T09:41:50.213000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112048086070741057",
+    "url": "https://mastodonczech.cz/@honzajavorek/112048086070741057",
+    "replies_count": 1,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Vyřeší uv všechny problémy Pythoního packaging světa? Ve videu jsem se taky dověděl, že pip má konfiguraci a můžu mu zakázat instalaci mimo virtualenv 🤯 <a href=\"https://www.youtube.com/watch?v=_FdjW47Au30\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">youtube.com/watch?v=_FdjW47Au3</span><span class=\"invisible\">0</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://www.youtube.com/watch?v=_FdjW47Au30",
+      "title": "Is UV the FUTURE of Python PACKAGING? 🐍📦",
+      "type": "video",
+      "author_name": "Hynek Schlawack",
+      "author_url": "https://www.youtube.com/@The_Hynek",
+      "provider_name": "YouTube",
+      "provider_url": "https://www.youtube.com/",
+      "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/_FdjW47Au30?feature=oembed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms\"></iframe>",
+      "width": 200,
+      "height": 113,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/003/653/505/original/14696f64ab57cbf8.jpg",
+      "blurhash": "UKD+x;EBxUS*r{o?oejK0xwgNNtLx+SuRkjD"
+    }
+  },
+  {
     "id": 112028269531340309,
     "created_at": "2024-03-02T21:42:13.818000+00:00",
     "sensitive": false,
@@ -288,7 +324,6 @@
       "provider_name": "HouseFresh",
       "width": 1024,
       "height": 576,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/003/533/022/original/1c2620da85699c11.jpg",
       "image_description": "How Google is killing independent sites like ours",
       "blurhash": "UDQ,E,R,RNRk_2?vRP-;9FD%RkIU~q%MMxoz",
       "published_at": "2024-02-19T15:22:53+00:00"
@@ -458,7 +493,6 @@
       "provider_name": "tonsky.me",
       "width": 1200,
       "height": 630,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/003/564/168/original/98626a91cfaeae1b.png",
       "blurhash": "UORePU0ZD[V{?9^w-,t6NYR$R%WUxnjqR%WB",
       "published_at": "2024-02-22T00:00:00+00:00"
     }
@@ -1143,7 +1177,7 @@
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/111869415151517978",
     "url": "https://mastodonczech.cz/@honzajavorek/111869415151517978",
     "replies_count": 9,
-    "reblogs_count": 11,
+    "reblogs_count": 10,
     "favourites_count": 17,
     "favourited": false,
     "reblogged": false,
