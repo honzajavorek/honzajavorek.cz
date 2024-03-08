@@ -1,5 +1,131 @@
 [
   {
+    "id": 112056409347382402,
+    "created_at": "2024-03-07T20:58:33.336000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112056409347382402",
+    "url": "https://mastodonczech.cz/@honzajavorek/112056409347382402",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Mám sem průběžně psát jaké změny jsem udělal na <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a>? Zajímal by vás takový changelog?</p><p>Zhruba od Nového roku to píšu pravidelně do klubu, aby lidi viděli, že makám, a na čem - i pokud nečtou moje týdenní poznámky.</p><p>Jen věci, které mají pro lidi nějakou hodnotu: Domluvil jsem přednášku, přidal jsem stránku do příručky, naprogramoval jsem lepší scrapery…</p>",
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ],
+    "poll": {
+      "id": 52412,
+      "expires_at": "2024-03-10T20:58:33.325000+00:00",
+      "expired": false,
+      "multiple": false,
+      "votes_count": 5,
+      "voters_count": 5,
+      "voted": true,
+      "options": [
+        {
+          "title": "Piš to sem",
+          "votes_count": 2
+        },
+        {
+          "title": "Nepiš to sem",
+          "votes_count": 3
+        }
+      ]
+    }
+  },
+  {
+    "id": 112053828808277931,
+    "created_at": "2024-03-07T10:02:17.437000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112053828808277931",
+    "url": "https://mastodonczech.cz/@honzajavorek/112053828808277931",
+    "replies_count": 2,
+    "reblogs_count": 4,
+    "favourites_count": 2,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Co je <a href=\"https://mastodonczech.cz/tags/SCRUM\" class=\"mention hashtag\" rel=\"tag\">#<span>SCRUM</span></a>, <a href=\"https://mastodonczech.cz/tags/Kanban\" class=\"mention hashtag\" rel=\"tag\">#<span>Kanban</span></a>, <a href=\"https://mastodonczech.cz/tags/standup\" class=\"mention hashtag\" rel=\"tag\">#<span>standup</span></a>, <a href=\"https://mastodonczech.cz/tags/sprint\" class=\"mention hashtag\" rel=\"tag\">#<span>sprint</span></a>, <a href=\"https://mastodonczech.cz/tags/backlog\" class=\"mention hashtag\" rel=\"tag\">#<span>backlog</span></a>, <a href=\"https://mastodonczech.cz/tags/userstory\" class=\"mention hashtag\" rel=\"tag\">#<span>userstory</span></a>, nebo <a href=\"https://mastodonczech.cz/tags/retro\" class=\"mention hashtag\" rel=\"tag\">#<span>retro</span></a>…?</p><p>Junioři možná vidí tyto pojmy v pracovních inzerátech, ale většinou asi vůbec netuší, o co přesně jde.</p><p>Zkušenější tuší a možná se jim u těch pojmů ježí chlupy na rukách. Jenže co když ta slova ve skutečnosti za nic nemůžou?</p><p>V klubu na <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> o tom chystáme přednášku s Romanem Loníkem: <a href=\"https://junior.guru/events/41/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">junior.guru/events/41/</span><span class=\"invisible\"></span></a></p>",
+    "media_attachments": [
+      {
+        "id": 112053825351931874,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/112/053/825/351/931/874/original/50b239e6a13517c7.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/112/053/825/351/931/874/small/50b239e6a13517c7.png",
+        "meta": {
+          "original": {
+            "width": 1280,
+            "height": 512,
+            "size": "1280x512",
+            "aspect": 2.5
+          },
+          "small": {
+            "width": 759,
+            "height": 304,
+            "size": "759x304",
+            "aspect": 2.4967105263157894
+          }
+        },
+        "blurhash": "UlQ]x$om%5If$[N1N2xTWFjYoIWFfnocobWF"
+      }
+    ],
+    "tags": [
+      {
+        "name": "scrum",
+        "url": "https://mastodonczech.cz/tags/scrum"
+      },
+      {
+        "name": "kanban",
+        "url": "https://mastodonczech.cz/tags/kanban"
+      },
+      {
+        "name": "standup",
+        "url": "https://mastodonczech.cz/tags/standup"
+      },
+      {
+        "name": "sprint",
+        "url": "https://mastodonczech.cz/tags/sprint"
+      },
+      {
+        "name": "backlog",
+        "url": "https://mastodonczech.cz/tags/backlog"
+      },
+      {
+        "name": "userstory",
+        "url": "https://mastodonczech.cz/tags/userstory"
+      },
+      {
+        "name": "retro",
+        "url": "https://mastodonczech.cz/tags/retro"
+      },
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ],
+    "card": {
+      "url": "https://junior.guru/events/41/",
+      "title": "Online akce – Roman Loník – „Agile is dead!“ …nebo ne?",
+      "description": "Vše o online akci (přednáška, stream, Q&A, AMA, webinář…), kterou junior.guru pořádá na klubovém Discordu.",
+      "language": "cs",
+      "type": "link",
+      "width": 1200,
+      "height": 630,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/003/690/882/original/82d26fc1b8c9e336.png",
+      "blurhash": "UjSF%=fQx]azNSfQfPj@RefQM{ayNPfQofj@"
+    }
+  },
+  {
     "id": 112037851980779465,
     "created_at": "2024-03-04T14:19:10.393000+00:00",
     "sensitive": false,
@@ -868,6 +994,7 @@
       "type": "link",
       "width": 1200,
       "height": 630,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/002/725/044/original/79e6520ddd71e604.png",
       "blurhash": "UhSPUtj[xuayNSj[ofj@RKfQRkayR@fQaxj["
     }
   },
