@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Pizza, viróza, obsidián a vítr v příručce
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/312
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/112065436849323387
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-02-23_tydenni-poznamky-oprasovani-prirucky-a-apify.md) už utekl nějaký ten týden (23. 2. až 8. 3.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
