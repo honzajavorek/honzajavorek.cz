@@ -35,7 +35,6 @@
       "type": "link",
       "width": 1024,
       "height": 683,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/003/711/315/original/609cb7a148136509.jpg",
       "blurhash": "UaKK{9D%-;xu%Mt7RjWB~qxuIUWVRjkCt7j[",
       "published_at": "2024-03-07T23:00:00+00:00"
     }
@@ -48,6 +47,7 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112056409347382402",
     "url": "https://mastodonczech.cz/@honzajavorek/112056409347382402",
+    "replies_count": 1,
     "favourites_count": 1,
     "favourited": false,
     "reblogged": false,
@@ -64,7 +64,7 @@
     "poll": {
       "id": 52412,
       "expires_at": "2024-03-10T20:58:33.325000+00:00",
-      "expired": false,
+      "expired": true,
       "multiple": false,
       "votes_count": 10,
       "voters_count": 10,

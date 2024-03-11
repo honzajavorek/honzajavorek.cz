@@ -1,5 +1,37 @@
 [
   {
+    "id": 112072252726452629,
+    "created_at": "2024-03-10T16:07:44.115000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112072252726452629",
+    "url": "https://mastodonczech.cz/@honzajavorek/112072252726452629",
+    "replies_count": 1,
+    "favourites_count": 3,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Longread o tom, jak moc rozbitá je správa závislostí a balíčkování v Pythonu. <a href=\"https://chriswarrick.com/blog/2023/01/15/how-to-improve-python-packaging/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">chriswarrick.com/blog/2023/01/</span><span class=\"invisible\">15/how-to-improve-python-packaging/</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://chriswarrick.com/blog/2023/01/15/how-to-improve-python-packaging/",
+      "title": "How to improve Python packaging, or why fourteen tools are at least tw",
+      "description": "A journey to the world of Python packaging, a visit to the competition, a hopeful look at the future, and highlights from a disappointing discussion.",
+      "language": "en",
+      "type": "link",
+      "provider_name": "Chris Warrick",
+      "published_at": "2023-01-15T13:45:00+00:00"
+    }
+  },
+  {
     "id": 112065681282566103,
     "created_at": "2024-03-09T12:16:31.840000+00:00",
     "sensitive": false,
@@ -36,7 +68,7 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112059399141100920",
     "url": "https://mastodonczech.cz/@honzajavorek/112059399141100920",
-    "favourites_count": 3,
+    "favourites_count": 4,
     "favourited": false,
     "reblogged": false,
     "muted": false,
@@ -557,7 +589,6 @@
       "provider_name": "tonsky.me",
       "width": 1200,
       "height": 630,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/003/564/168/original/80f24cbd233bce2a.png",
       "blurhash": "UORePU0ZD[V{-$^w-,t6NFR$R%WUxUoHRjRk",
       "published_at": "2024-02-22T00:00:00+00:00"
     }
