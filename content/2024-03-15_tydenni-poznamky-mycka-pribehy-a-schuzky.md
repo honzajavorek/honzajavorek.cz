@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Myčka, příběhy a schůzky
 Image: images/img-8025.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/313
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/112101657304390889
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-03-08_tydenni-poznamky-pizza-viroza-obsidian-a-vitr-v-prirucce.md) už utekl nějaký ten týden (8. 3. až 15. 3.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
