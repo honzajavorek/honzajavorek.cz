@@ -16,7 +16,7 @@ python = "3.10.*"
 pelican = {version = "4.9.1", extras = ["markdown"]}
 strictyaml = "1.7.3"
 requests = "2.31.0"
-lxml = "5.2.0"
+lxml = ">=5.0.0,<5.1.0"
 cssselect = "1.2.0"
 pillow = "10.3.0"
 markdown-del-ins = "1.0.0"
@@ -42,6 +42,9 @@ python_files = "test_*.py"
 testpaths = "tests"
 norecursedirs = "node_modules"
 addopts = "--ff"
+filterwarnings = [
+    "ignore:invalid escape sequence:DeprecationWarning",  # extruct
+]
 
 [build-system]
 requires = ["poetry-core>=1.5.0"]
