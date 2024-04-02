@@ -1,4 +1,4 @@
-from datetime import UTC, datetime, timedelta, timezone
+from datetime import datetime, timedelta, timezone
 from urllib.parse import quote
 from zoneinfo import ZoneInfo
 from hashlib import sha256
@@ -41,7 +41,7 @@ def main():
 
             event = Event()
             event.add("uid", sha256(url.encode("utf-8")).hexdigest())
-            event.add("dtstamp", datetime.now(UTC))
+            event.add("dtstamp", datetime.now(timezone.utc))
             event.add("summary", f"Kočárkino: {title}")
             event.add("description", "\n".join([url, csfd_url]))
             event.add("dtstart", starts_at)
@@ -63,7 +63,7 @@ def main():
 
         event = Event()
         event.add("uid", sha256(data["url"].encode("utf-8")).hexdigest())
-        event.add("dtstamp", datetime.now(UTC))
+        event.add("dtstamp", datetime.now(timezone.utc))
         event.add("summary", f"Baby Bio: {data['name']}")
         event.add("description", "\n".join([data["url"], csfd_url]))
         event.add(
