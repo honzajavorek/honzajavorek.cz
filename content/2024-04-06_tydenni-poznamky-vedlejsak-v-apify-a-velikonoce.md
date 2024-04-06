@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Vedlejšák v Apify a Velikonoce
 Image: images/img-8366.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/315
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/112223002835063163
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-03-22_tydenni-poznamky-novy-pribeh-oprava-scraperu-a-novy-navod.md) už utekl nějaký ten týden (22. 3. až 6. 4.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
