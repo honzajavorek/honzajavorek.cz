@@ -178,9 +178,12 @@ S tím souvisí i ukončení vývoje mé knihovny [redis-collections](https://gi
 
 ## Plánuji
 
-1.
-2.
-3.
+Mohl bych teď na týden zabřednout v řešení milionu oprav a drobností, které jsem teď neměl čas řešit.
+Ale pokusím si to zakázat a pustit se spíš do velkých věcí s dopadem:
+
+1.  Hodím první kód do [hen](https://github.com/juniorguru/hen).
+2.  Budeme s Terkou makat na přepracování prodejní stránky.
+3.  Nasdílím [návod na Gi­tHub pro­fil](https://junior.guru/handbook/github-profile/).
 
 ## Zaujalo mě
 
