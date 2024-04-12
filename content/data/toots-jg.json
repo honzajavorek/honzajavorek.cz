@@ -1,5 +1,72 @@
 [
   {
+    "id": 112254288049055908,
+    "created_at": "2024-04-11T19:41:42.704000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112254288049055908",
+    "url": "https://mastodonczech.cz/@honzajavorek/112254288049055908",
+    "replies_count": 1,
+    "favourites_count": 3,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Dneska se mi povedlo v <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> klubu spustit prototyp automatických zpětných vazeb na GitHub profily. Mám z toho velkou radost.</p><p>Členové mohou na Discordu založit vlákno na zpětnou vazbu ke svému CV, LinkedInu, nebo GitHub profilu.</p><p>Když si můj robot všimne, že tam je GitHub, projede sadu pravidel a dá člověku v komentářích zpětnou vazbu - pochvaly a doporučení.</p><p>Nechytí to logicky vše. Nijak to ale nebrání, aby další komentáře napsali živí lidé se svými postřehy.</p>",
+    "media_attachments": [
+      {
+        "id": 112254283135579629,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/112/254/283/135/579/629/original/2e97213d5c18338e.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/112/254/283/135/579/629/small/2e97213d5c18338e.png",
+        "meta": {
+          "original": {
+            "width": 1036,
+            "height": 1594,
+            "size": "1036x1594",
+            "aspect": 0.6499372647427855
+          },
+          "small": {
+            "width": 387,
+            "height": 595,
+            "size": "387x595",
+            "aspect": 0.6504201680672269
+          }
+        },
+        "blurhash": "U37d:[tm%1%L~XMyxb%MjsIUWBWCM_xuWWM{"
+      },
+      {
+        "id": 112254287538687120,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/112/254/287/538/687/120/original/8ce109599e20b16a.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/112/254/287/538/687/120/small/8ce109599e20b16a.png",
+        "meta": {
+          "original": {
+            "width": 994,
+            "height": 462,
+            "size": "994x462",
+            "aspect": 2.1515151515151514
+          },
+          "small": {
+            "width": 704,
+            "height": 327,
+            "size": "704x327",
+            "aspect": 2.1529051987767582
+          }
+        },
+        "blurhash": "U16a^+?]E0ITt6oLWBWBS}OpSyX8xuoeRjWC"
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ]
+  },
+  {
     "id": 112223239834787529,
     "created_at": "2024-04-06T08:05:44.553000+00:00",
     "sensitive": false,
