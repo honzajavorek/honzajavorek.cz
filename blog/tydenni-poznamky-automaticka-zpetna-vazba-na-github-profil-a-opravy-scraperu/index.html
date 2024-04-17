@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/tydenni-poznamky-automaticka-zpetna-vazba-na-github-profil-a-opravy-scraperu/">
+    <title>Týdenní poznámky: Automatická zpětná vazba na GitHub profil a opravy scraperů &mdash; Javorové lístky</title>
+
+    <meta property="og:title" content="Týdenní poznámky: Automatická zpětná vazba na GitHub profil a opravy scraperů &mdash; Javorové lístky">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-automaticka-zpetna-vazba-na-github-profil-a-opravy-scraperu/">
+
+    <link href="https://mastodonczech.cz/@honzajavorek" rel="me">
+
+    <meta property="og:image" content="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="683">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#457E31">
+    <link rel="icon" href="https://honzajavorek.cz/favicon.ico" sizes="any">
+    <link rel="icon" href="https://honzajavorek.cz/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="https://honzajavorek.cz/apple-touch-icon.png">
+    <link rel="manifest" href="https://honzajavorek.cz/site.webmanifest">
+
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Javorové lístky &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2024-04-17T00:00:00+02:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
+<article class="article">
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
+  </header>
+  <h1 class="title display-5">
+    Týdenní poznámky: Automatická zpětná vazba na GitHub profil a opravy scraperů
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-automaticka-zpetna-vazba-na-github-profil-a-opravy-scraperu/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2024-04-17T00:00:00+02:00">
+          17. 4. 2024
+        </time>
+      </li>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        10
+          min čtení
+      </li>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-automaticka-zpetna-vazba-na-github-profil-a-opravy-scraperu&interval=week&start=2024-04-17T00:00:00+02:00&end=today" target="_blank" rel="noopener">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <main class="article-content clearfix">
+
+    <div><div><div><div><p>Jak se mi daří v jednom člověku provozovat a rozvíjet <a href="https://junior.guru/">junior.guru</a>?
+Od <a href="https://honzajavorek.cz/blog/tydenni-poznamky-vedlejsak-v-apify-a-velikonoce/">posledních poznámek</a> už utekl nějaký ten týden (6. 4. až 17. 4.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.</p>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
+Fotil <a href="https://unsplash.com/@markusspiske">Markus Spiske</a></figcaption></figure>
+<div class="alert alert-warning" role="alert">
+<p><strong>Plány:</strong> Aktuální „předsevzetí” jsou v článku <a href="https://honzajavorek.cz/blog/plan-na-q2-2024/">Plán na Q2 2024</a></p>
+<p><strong>Čísla:</strong> Finanční výsledky, návštěvnost a další čísla k junior.guru <a href="https://junior.guru/open/">mám přímo na webu</a>.</p>
+</div>
+<p>Velkou část období, za které píšu tyto poznámky, jsem byl doma sám, anžto zbytek rodiny jel k babičce.
+Díky tomu jsem stihl spoustu běhání, chození do kina, apod.
+Bylo příjemné si odpočinout, ale teď už frčím vlakem za nimi.</p>
+<h2 id="automaticka-zpetna-vazba-na-github-profil">Automatická zpětná vazba na GitHub profil<small class="permalink"><a href="#automaticka-zpetna-vazba-na-github-profil" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Tak jsem to vyrobil.
+Vypadá to nějak takhle: <a href="https://mastodonczech.cz/@honzajavorek/112254288049055908">Mastodon</a>, <a href="https://www.linkedin.com/feed/update/urn:li:activity:7184275571894317057/">LinkedIn</a>.
+V klubu je kanál #cv-github-linkedin, kde už dřív lidi koukali na CV a poskytovali tam zpětnou vazbu.
+Když tam teď někdo založí vlákno s odkazem na GitHub profil, ujme se toho bot, automaticky projede nějaká pravidla, a do vlákna vypíše výsledek.</p>
+<p>Měl jsem vymyšlené, že to bude žít v repozitáři <a href="https://github.com/juniorguru/hen">hen</a> jako samostatný nástroj, a že to bude celé v <a href="https://docs.python.org/3/library/asyncio.html">asyncio</a> a bude to používat <a href="https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern">pubsub</a> v podobě <a href="https://github.com/pallets-eco/blinker/">blinker</a>u.
+Přišlo mi, že taková architektura bude dost rychlá, asynchronicita se bude dobře snoubit s Discordem, a do budoucna to bude díky tomu pubsub dostatečně flexibilní.
+Časem bych chtěl, aby mohl kdokoliv přispívat novými pravidly, takže je pro mě důležité oddělit kód samotných pravidel od jádra, které získává data.
+Aby VS Code hezky napovídalo, používám všude typování, naučil jsem se používat dataclasses, TypedDict, apod.</p>
+<p>Nejdřív jsem si udělal rešerši knihoven na GitHub.
+Požadavek na asyncio hned několik z nich vyřadilo.
+Zvažoval jsem nakonec <a href="https://github.com/gidgethub/gidgethub">gidgethub</a> a <a href="https://github.com/yanyongyu/githubkit">githubkit</a>, vybral jsem githubkit.
+Jako HTTP knihovnu začínám všude používat <a href="https://github.com/encode/httpx">httpx</a> a jako nejnovější objev mám <a href="https://github.com/karpetrosyan/hishel">hishel</a>, HTTP keš.</p>
+<p>Každé pravidlo má dokumentaci v podobě odkazu na odstavec v návodu v příručce, takže když si chce někdo zjistit kontext celé věci, klikne, a dostane se do příručky na kompletní návod, kde je i nějaká ta omáčka.
+Kvůli tomu <a href="https://github.com/juniorguru/hen/issues">nemám ještě hotová nějaká pravidla</a>, ač by bylo snadné je naprogramovat, protože holt nemají ještě svůj popis v příručce.</p>
+<p>Nejzajímavější je asi pravidlo na kontrolu GitHub obrázku, které analyzuje jeho barvy.
+Díky tomuto pravidlu jsem zjistil, jak správně s <code>httpx</code> a <code>pillow</code> stahovat obrázky, takže jsem si mohl opravit <a href="https://github.com/honzajavorek/film2trello/issues/136#issuecomment-2045476698">chybu ve film2trello</a>.</p>
+<p>Počistil jsem při této příležitosti <a href="https://github.com/juniorguru/chick">balíček s realtime botem</a>, kde se zatím zpětná vazba spouští.
+Udělal jsem nějaký refactoring, opravy, přidal <a href="https://github.com/astral-sh/ruff">ruff</a>, apod.
+Chtěl jsem mít co nejrychleji prototyp, který mohou lidi zkoušet, takže jsem ani neměl ještě všechny pravidla, a už jsem tlačil na integraci s Discordem.</p>
+<p>Potom už jsem jen dolaďoval věci podle zpětné vazby od lidí a užíval si nadšení, které jsem prožíval já a zjevně i všichni, kdo to vyzkoušeli.
+Například jsem přidal možnost spouštět <em>review</em> opakovaně v rámci jednoho vlákna, naučil bota detekovat i odkaz na LinkedIn nebo vložené PDF s CV a dolaďoval jsem zprávy, které bot posílá.
+Taky jsem vylepšoval dokumentaci repozitáře.
+Ještě musím dopsat testy, ale to jsem nevěděl jak dobře udělat, tak jsem se nejdřív <a href="https://github.com/yanyongyu/githubkit/issues/98">zeptal autora githubkitu</a>.</p>
+<p>Už dlouho něco v klubu neudělalo takové vlny a já mám ohromnou radost, protože jsem zjevně vyrobil něco fakt užitečného.
+A to je přitom teprve začátek!</p>
+<h2 id="opravy">Opravy<small class="permalink"><a href="#opravy" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<ul>
+<li>Zmigroval jsem jeden ze skriptů na nové <a href="https://www.fakturoid.cz/api/v3">Fakturoidí API v3</a> (o jednu Apiary dokumentaci na světě méně, zamáčkněme slzu).
+    Protože se s nimi znám, poslal jsem jim zpětnou vazbu na to, jak se mi s API pracovalo.</li>
+<li>Opravil jsem stahování CSV z Memberful.
+    <a href="https://memberful.com/help/metrics-and-analytics/export-data/">Něco tam vylepšovali</a>, takže mi to rozbili.
+    Zabralo pár hodin, než jsem to zase rozběhl.
+    Díky tomu mám opět data s odpověďmi od lidí, např. kde objevili junior.guru, nebo proč odcházejí z klubu.</li>
+<li>Opravil jsem jeden detail v jednom ze scraperů, které stahují pracovní inzeráty.</li>
+<li>Vrtal jsem se zase i ve scraperu, který inzeráty stahuje z LI.
+    Opět nefunguje.
+    Tak jsem zkusil vytáhnout těžký kalibr: <a href="https://github.com/scrapy-plugins/scrapy-playwright">scrapy-playwright</a>.
+    V Apify si jistě všimli, že na něčem dělám, protože jsem se neubránil a <a href="https://github.com/apify/actor-templates/issues/274">založil jedno issue</a>, přidal <a href="https://github.com/apify/actor-templates/issues/252#issuecomment-2056265976">4 komentáře sem</a>, a založil jedno support vlákno na jejich Discordu.
+    Objevil jsem taky zajímavou knihovnu <code>fake-useragent</code>, ale <a href="https://github.com/juniorguru/plucker/issues/37">to si nechám na příště</a>.</li>
+</ul>
+<h2 id="chickenbook">Chickenbook<small class="permalink"><a href="#chickenbook" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Měli jsme v neděli večer tříhodinový hovor s tvůrci projektu <a href="https://github.com/jg-chickenbook/">Chickenbook</a> (ještě před pár dny fungovalo i <a href="https://chickenbook.pythonanywhere.com/">chickenbook.pythonanywhere.com</a>, ale asi to předělávají).</p>
+<p>V rámci <em>challenge</em> v klubu začala po vlastní ose skupinka juniorů vytvářet aplikaci na profily juniorů.
+Pustili se do toho s vervou, nadšením a očekáváním, že by tento projekt mohl pomoci junior.guru a později se do něj zaintegrovat.</p>
+<p>Přijde mi úplně úžasné, co vytvořili a moc si toho vážím.
+Měl bych to určitě zpropagovat na sítích a vynést je do nebes, ať jim to pomůže i na trhu a udělá trochu jméno.</p>
+<p>Co se ale týče Chickenbooku a junior.guru, tak tam bojuju s tím, že bych sice chtěl, aby lidi mohli mít na junior.guru profily, ale mám to vymyšlené z jiné strany a používám jiné technologie.
+Také není jasné, kdo to bude provozovat, nebo tam opravovat v příštích letech chyby.</p>
+<p>Na hovoru jsme si vysvětlovali, jak to kdo má, co od toho čeká, jaké jsou možnosti.
+Shodli jsme se, že Chickenbook by měl junior.guru spíš doplňovat, stát se součástí jeho širšího vesmíru, nebo se nějak vymezit, a najít si své vlastní místo.</p>
+<h2 id="video">Video?<small class="permalink"><a href="#video" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Přemýšlel jsem hned s několika lidmi, zda bych nezkusil natáčet krátká videa.
+Přijde mi, že by mi to mohlo zabrat méně času, než se přemáhat psát statusy na LinkedIn apod.
+Navíc taková videa lze pak nahrát na YouTube, na LinkedIn, na TikTok…
+Video na výšku je dnes asi jediný formát, který jde natočit jednou a nacpat všude.</p>
+<p>Nechám si to ještě projít hlavou, ale neexistuje důvod, proč to nezkusit, i kdybych s tím měl po týdnu nebo měsíci přestat.
+Minimálně mi přijde dobré se vytrénovat a naučit se takové věci točit přirozeněji.
+Jako stárnoucí mileniál jsem totiž rád, že sotva plynule ovládám selfíčka.</p>
+<p>Byl by to výstup z komfortní zóny, ale bylo by to i něco nového a nejspíš by mi nevadilo, že to stojí za prd.
+Na rozdíl od textu.
+I když jde jen o status na LinkedIn, kladu na sebe příliš velké nároky a píšu to klidně půl hodiny nebo déle, ačkoliv se to nevyplatí.</p>
+<h2 id="vystava-o-f1">Výstava o F1<small class="permalink"><a href="#vystava-o-f1" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Byl jsem na <a href="https://f1exhibition.com/vienna/">výstavě o F1</a>.
+Bylo to pěkné, bylo toho možná i moc, dala by se tam strávit spousta hodin.
+Plno videí a interaktivních prvků.
+Líbila se mi i technická část, kde byly skvěle zpracované milníky v rozvoji směrem k dnešní formuli (monokok, aerodynamika…).</p>
+<p>Výstava nevyšla draho, v přepočtu snad 700 Kč nebo tak nějak, nebyla to nějaká řacha, a ještě člověk mohl vychytat i nějakou Velikonoční slevu (my teda ne).
+Akorát je to ve Vídni no.
+Zlanařili mě kamarádi z Ostravy, dali jsme to na otočku.
+Vstal jsem někdy v 5, vyrazil RegioJetem, před polednem tam, pak 8 EUR celodenní lístek MHD ve Vídni, na výstavě jsme strávili několik hodin a pak v podstatě jedno kafe a domů zase RegioJetem.
+Nejdražší na tom byl čas (ale tak já jsem ve vlaku pracoval, nebo si něco četl) a zpáteční lístek.
+Nevím, do kdy to tam ještě je, ale na webu mají všude <em>NOW OPEN BUY NOW</em>, tak asi stále ještě můžete.</p>
+<figure class="figure"><img alt="Honza a F1" src="https://honzajavorek.cz/images/img-8435.jpg" class="img-fluid figure-img rounded"></figure>
+<h2 id="dalsi">Další<small class="permalink"><a href="#dalsi" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<ul>
+<li>Viděl jsem v kině <a href="https://www.csfd.cz/film/1240536-stovky-bobru/">Stovky bobrů</a> a bylo to super, smál jsem se od začátku do konce.</li>
+<li>Dočetl jsem konečně The Future of Freedom: Illiberal Democracy at Home and Abroad (Fareed Zakaria), <a href="https://www.goodreads.com/review/show/3544707917">recenze zde</a>.
+    Podle Kindlu jsem knihu rozečetl v říjnu 2020.
+    Je duben 2024 😅</li>
+<li>Apify, kde mám teď 20% úvazek, <a href="https://cc.cz/tezi-data-z-webu-a-je-v-zisku-datove-apify-ma-pres-200-tisic-uzivatelu-ted-nabira-70-milionu/">dostalo investici</a>.</li>
+<li>Jedno celé dopoledne jsem nahrával podcastový rozhovor pro <a href="https://www.forendors.cz/izatlouk">PeopleOps</a>.
+    Ten bude hlavně pro lidi z firem, kteří by nad juniory uvažovali.
+    Jiné celé dopoledne a ještě i kus odpoledne jsem nahrával youtubový rozhovor pro <a href="https://www.youtube.com/@LucieLenertova/">Lucii Lenértovou</a>.
+    Ten bude hlavně pro začátečníky, kteří by uvažovali o kariérní cestě Python programátorky nebo programátora.
+    Z obou rozhovorů mám dobrý pocit a věřím, že se povedly.
+    Na oba jsem se připravoval podle zaslaných okruhů a to významně zvýšilo mou pohodu při natáčení.
+    Byť teda u Lucie jsem se mohl odtrhnout od programování dřív a připravit se dřív než noc předtím ve 2 ráno, možná bych pak byl čerstvější.</li>
+<li>Byl jsem s kamarádem na kole.
+    Píchnul a pak jsme to 2h řešili.
+    Tuto historku jsem následně použil v rozhovoru s Lucií jako důkaz, že programátoři se nevzdávají, dokud nevyšťourají řešení problému, takže mě teď ty 2h serou o dost méně, mělo to smysl…!</li>
+<li>Vedl jsem debaty pod příspěvkem o tom <a href="https://mastodonczech.cz/@jakubzelenka@mastodon.social/112246524750181098">jak Seznam kompletně zavřel svoje služby všem s adblockem</a>.</li>
+<li>Přejmenoval jsem balíčky v junior.guru repozitářích podle <a href="https://peps.python.org/pep-0423/">PEP 0423</a>, takže mám teď <code>jg.plucker</code>, <code>jg.chick</code>, <code>jg.hen</code>, apod.
+    Nevěděl jsem, jak pojmenovat balíček s monolitem, ale pouze <code>jg</code> by byla cesta do pekel a možná by to ani nešlo kvůli importům z těch ostatních balíčků.
+    Tak jsem zkusil <code>jg.core</code>, ale to se mi nakonec nelíbilo a změnil jsem to na <code>jg.coop</code> (protože <em>coop</em> by měl být kurník).
+    Zabralo mi to mnohem víc času, než bych chtěl.
+    Nejdřív jsem zápasil s tím, abych správně strukturoval složky a poladil konfiguraci Poetry.
+    Změnami se pak rozbily všechny importy a všechny cesty mezi soubory, takže to jsem pak musel několikrát opravovat.</li>
+<li>Volali mi ze Skillmea, že yablko bude mít nějaký meetup po svém JavaScript kurzu, tak jestli se nepřidám, neuděláme diskuzní panel, neodprezentuju junior.guru a nepozvu lidi z klubu.
+    Tak jsem řekl že jo, že to zní dobře.
+    Nemělo by v tom být nic, co mě stresuje, nebo vyžaduje mega přípravu.
+    Termín ještě doladíme, ale bude to v květnu v Praze (Karlíně).</li>
+<li>E-maily, <a href="https://junior.guru/club/">klubový Discord</a>, <a href="https://docs.pyvec.org/operations/support.html#sit-kontaktu">Pyvec Slack</a>, zprávy na LinkedIn.
+    Napsal jsem <a href="https://honzajavorek.cz/blog/plan-na-q2-2024/">článek o plánech na toto čtvrtletí</a>.
+    Sdílel jsem na sociálních sítích <a href="https://junior.guru/handbook/github-profile/">návod na to, jak si vyladit GitHub profil</a>.
+    Řešil jsem jeden nefunkční přístup do klubu.</li>
+<li>Za 12 dní jsem naběhal 10 km, při procházkách nachodil 15 km, ujel na kole 46 km. Celkem jsem se hýbal 19 h a zdolal při tom 71 km.
+    Detaily na <a href="https://www.strava.com/athletes/31242569">Strava</a>, jediné sociální síti, kde si napsání statusu musíte zasloužit.</li>
+</ul>
+<h2 id="planuji">Plánuji<small class="permalink"><a href="#planuji" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<ol>
+<li>Pár dní dovolené.</li>
+<li>Týden 22.-26.4. se budu věnovat kontraktu pro Apify.</li>
+<li>Sepíšu seznam fičur, které nabízí klub.
+    Bude to podklad pro tvorbu nové prodejní stránky.</li>
+</ol>
+<p>Během toho budu sledovat, jak lidi používají <em>reviews</em> GitHub profilů a budu vymýšlet, jak bude přesně vypadat další krok směrem k profilům juniorů.</p>
+<h2 id="zaujalo-me">Zaujalo mě<small class="permalink"><a href="#zaujalo-me" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Když na něco narazím a líbí se mi to, sdílím to <a href="https://mastodonczech.cz/@honzajavorek">na Mastodonu</a>.
+Od posledních poznámek jsem sdílel:</p>
+<ul>
+<li><a href="https://davidklimes.cz/newsletter/189">Důchodový sitcom</a><br>Klimeš naložil: „Nevíme, co s dětmi, které ještě ve čtyřech se nemohou dostat do žádné školky, v druhém stupni jim zmizí půlka třídy na výběrové školy, na střední se složí z přijímaček, protože měli na vysvědčení dvě dvojky, což stačí na diskvalifikaci (či půl roku nechodili na drahé kurzy), aby nakonec po tom všem kolem roku 2028 zjistili, že stát je extrémně zaskočen silným zájmem končících středoškoláků o vysokoškolské vzdělání…“</li>
+<li><a href="https://www.autosport.com/f1/news/alonso-will-be-first-to-raise-my-hand-if-he-loses-f1-edge-at-45/10597928/">Alonso will be "first to raise my hand" if he loses F1 edge at 45</a><br>Alonso bude závodit i ve 45 letech.</li>
+<li><a href="https://www.mujrozhlas.cz/rapi/view/episode/7f97582d-180d-3868-9210-7f3ff3d29eb9">Moderní láska: Čím dál víc lidí se nehlásí k heterosexuální identitě — Balanc</a><br>Ve vztahu muže s mužem nelze spadnout do vyjetého stereotypu, který říká, kdo myje nádobí, kdo pere, kdo uklízí. Ti dva si to musí prostě domluvit. Tohle a spousta dalších super postřehů a myšlenek v epizodě Moderní lásky (Balanc).</li>
+<li><a href="https://noyb.eu/en/pay-or-okay-explained-why-more-and-more-websites-make-you-pay-your-privacy">'Pay or Okay' explained: Why more and more websites make you pay for your privacy</a><br>Seznam začal s drsným "Pay or Okay". Max Schrems vysvětluje, jak to funguje a co nás v tomto směru čeká.</li>
+<li><a href="https://thenextweb.com/news/why-php-continues-to-be-a-popular-but-divisive-programming-language">Why PHP continues to be a popular but divisive programming language</a><br>„PHP is used by 76.5% of all the websites whose server-side programming language we know.“ „While the rival languages see a higher frequency of use in high-traffic websites, PHP is still the dominant language across more than 60% of the world’s top 1,000 websites.“</li>
+<li><a href="https://mikemcquaid.com/open-source-maintainers-owe-you-nothing/">Open Source Maintainers Owe You Nothing</a><br>„Most open source software is developed by volunteers in their free time but both maintainers and users of open source software have adopted an unsustainable business/customer-like relationship“</li>
+</ul></div></div></div></div>
+  </main>
+
+  <footer class="article-footer mb-5">
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Podporovatel <a href="https://www.zeleni.cz/">Strany zelených</a>.
+          Tohle je můj blog už 17 let.
+      </address>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-mastodon"></i> <a href="https://mastodonczech.cz/@honzajavorek">Mastodon</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</article>
+      </div>
+<aside class="promo seealso">
+  <div class="promo-content container">
+    <h3 class="promo-heading fs-1">Další Honzovy články</h3>
+    <ul class="list-unstyled mb-0">
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2024 —
+        <a href="https://honzajavorek.cz/blog/plan-na-q2-2024/">
+          Plán na Q2 2024</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/volim-marketing/">
+          Volím marketing</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/bez-auta/">
+          Bez auta</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/spoustim-klub/">
+          Spouštím klub</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2016 —
+        <a href="https://honzajavorek.cz/blog/kolonizatori-a-spravci-kolonii/">
+          Kolonizátoři a správci kolonií</a>
+      </li>
+      <li>
+        <i class="bi bi-search"></i>
+        <a href="https://honzajavorek.cz/blog/">Archiv blogu</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-play-btn"></i> <a href="https://junior.guru/courses/">Kurzy</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+      <footer class="footer">
+        <address class="footer-content container">
+          © Copyright 2007—2024 Honza Javorek
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+
+      <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+  </body>
+</html>
