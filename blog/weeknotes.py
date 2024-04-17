@@ -1,13 +1,9 @@
 import json
 import re
-import itertools
 from pathlib import Path
 import importlib
 import math
 from datetime import date, datetime
-import csv
-from operator import itemgetter
-import random
 from urllib.parse import urlparse
 from textwrap import dedent
 
@@ -47,7 +43,6 @@ TITLES = {
     type=click.Path(exists=True, path_type=Path),
 )
 @click.option("--title-prefix", default="Týdenní poznámky")
-@click.option("--jobs-api-url", default="https://junior.guru/api/jobs.csv")
 @click.option("--settings-module", default="pelicanconf", type=importlib.import_module)
 @click.option(
     "--links-path",
@@ -80,7 +75,6 @@ def main(
     title,
     content_path,
     title_prefix,
-    jobs_api_url,
     settings_module,
     links_path,
     jg_toots_path,
@@ -111,26 +105,6 @@ def main(
     last_weeknotes_date = date.fromisoformat(last_weeknotes_path.stem[:10])
     last_weeknotes_date_cz = f"{last_weeknotes_date:%-d}. {last_weeknotes_date:%-m}."
     prefix = f"{title_prefix}: "
-
-    # jobs
-    res = requests.get(jobs_api_url, stream=True)
-    res.raise_for_status()
-    jobs = [
-        job
-        for job in csv.DictReader(res.iter_lines(decode_unicode=True))
-        if job["url"].startswith("https://junior.guru")
-    ]
-    jobs = sorted(jobs, key=itemgetter("company_name"))
-    jobs = {
-        company_name: random.choice(list(company_jobs))
-        for company_name, company_jobs in itertools.groupby(
-            jobs, key=itemgetter("company_name")
-        )
-    }
-    jobs_text = "Aktuální nabídky práce pro juniory: "
-    jobs_text += ", ".join(
-        [f"[{job['company_name']}]({job['url']})" for job in jobs.values()]
-    )
 
     # mastodon links
     links = get_links(last_weeknotes_date, json.loads(links_path.read_text()))
@@ -178,7 +152,6 @@ def main(
         **Plány:** Aktuální „předsevzetí” jsou v článku [Plán na Q2 2024]({{filename}}2024-04-06_plan-na-q2-2024.md)
 
         **Čísla:** Finanční výsledky, návštěvnost a další čísla k junior.guru [mám přímo na webu](https://junior.guru/open/).
-        {jobs_text}
         </div>
 
         {jg_toots_text}
