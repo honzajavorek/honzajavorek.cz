@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Automatická zpětná vazba na GitHub profil a oprav
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/317
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/112286492533616477
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-04-06_tydenni-poznamky-vedlejsak-v-apify-a-velikonoce.md) už utekl nějaký ten týden (6. 4. až 17. 4.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
