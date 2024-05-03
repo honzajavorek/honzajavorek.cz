@@ -4,9 +4,44 @@
     "slug": "tydenni-poznamky-apify-vitani-a-vsechno-mozne",
     "created_at": "2024-05-03T15:46:00.860000+00:00",
     "toot_url": "https://mastodonczech.cz/@honzajavorek/112377932049642124",
-    "favourites_count": 0,
+    "favourites_count": 1,
     "reblogs_count": 0,
-    "replies": []
+    "replies": [
+      {
+        "id": 112378124744974999,
+        "created_at": "2024-05-03T16:34:56+00:00",
+        "in_reply_to_id": 112377932049642124,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "direct",
+        "language": "cs",
+        "uri": "https://boskovice.social/users/zoul/statuses/112378124496994195",
+        "url": "https://boskovice.social/@zoul/112378124496994195",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> Ke konci textu je špatně uzavřená ta citace, takže přetéká i na zbytek seznamu.</p>",
+        "account": {
+          "id": 109324797571302698,
+          "username": "zoul",
+          "acct": "zoul@boskovice.social",
+          "display_name": "Tomáš Znamenáček",
+          "url": "https://boskovice.social/@zoul",
+          "uri": "https://boskovice.social/users/zoul",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/52aca96d73208268.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/52aca96d73208268.png"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ]
+      }
+    ]
   },
   {
     "url": "https://honzajavorek.cz/blog/tydenni-poznamky-automaticka-zpetna-vazba-na-github-profil-a-opravy-scraperu/",
