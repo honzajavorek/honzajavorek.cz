@@ -145,7 +145,7 @@ Překvapilo mně, kolik jich už je:
 -   Dočetl jsem Kašpárkovy [Fosilie](https://www.paseka.cz/produkt/fosilie/).
     Vřele doporučuju!
 -   Prošel jsem v klubu dvě CV a dal na ně zpětnou vazbu.
--   Udělal jsem reviews na hned několik Pull Requestů v Pyvci, např. [nový návod na pořádání PyWorkingů (workshopů)](https://github.com/pyvec/docs.pyvec.org/pull/367), ke čtení [zde](https://docs.pyvec.org/guides/pyworkings.html).
+-   Udělal jsem reviews na hned několik Pull Requestů v Pyvci, např. [nový návod na pořádání PyWorkingů (workshopů)](https://github.com/pyvec/docs.pyvec.org/pull/367) od Anežky, ke čtení [zde](https://docs.pyvec.org/guides/pyworkings.html), nebo [zápisky na blogu z východního sprintu Python komunity](https://blog.python.cz/).
 -   Zahájil jsem přesun domény junior.guru ze SubRegu na Wedos.
     Tam mám všechny své domény, jenže když jsem tenkrát registroval .guru doménu, Wedos je ještě nenabízel.
 -   Opravoval jsem zase scrapery, protože se někde něco změnilo.
@@ -161,6 +161,9 @@ Překvapilo mně, kolik jich už je:
     [Mají sice API](https://learn.microsoft.com/en-us/linkedin/shared/integrations/people/profile-api#retrieve-other-members-profile), ale to je jen pro vyvolené a tím já nejsem:
 
     > The use of this API is restricted to those developers approved by LinkedIn and subject to applicable data restrictions in their agreements.
+
+-   Konečně jsme se zase jednou sešli na callu výboru Pyvce.
+    Posunuli jsme proplacení některých věcí, Bára řeší účetního, Anežka nám sehnala nové sídlo.
 -   Překvapilo mně, že o Diátaxis se uvažuje i pro Python dokumentaci a existuje k tomu [celá debata](https://discuss.python.org/t/adopting-the-diataxis-framework-for-python-documentation/15072) odstartovaná Petrem Viktorinem.
     V rámci vzdělávání jsem se chystal přečíst ještě [tohle](https://idratherbewriting.com/blog/what-is-diataxis-documentation-framework), ale nepřečetl.
     [Poptal jsem se v diskuzích kolem Diátaxis](https://github.com/evildmp/diataxis-documentation-framework/discussions/130), zda někdo nemá zkušenosti s aplikací frameworku na kurzy.
@@ -183,7 +186,7 @@ Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://ma
 Od posledních poznámek jsem sdílel:
 
 - [Start with why -- how great leaders inspire action | Simon Sinek | TEDxPugetSound](https://www.youtube.com/watch?v=u4ZoJKF_VuA)<br>Simon Sinek o tom, že máme začínat s "proč". Prý klasika, já to objevil teď. A myslím, že mám na tomhle založené všechno co dělám, ale doteď jsem to neuměl tak hezky pojmenovat.
-- [MastodonCzech](https://mastodonczech.cz/tags/links)<br>Startupy jsou větší než zemědělství. https://mastodonczech.cz/@krab/112370761875552511
+- [MastodonCzech](https://mastodonczech.cz/tags/links)<br>Startupy jsou větší než zemědělství.
 - [UMPRUM – další oběť ve válce propagand](https://www.irozhlas.cz/komentare/umprum-dalsi-obet-ve-valce-propagand_2405011630_kac)<br>„Přestáváme uvažovat, vciťovat se, myslet a jednáme jako vylučovací binární automat, který „volí“ podle předem nastavené volby, ať se děje, co se děje. My a Oni.“
 - [AI and problems of scale — Benedict Evans](https://www.ben-evans.com/benedictevans/2024/4/29/problems-of-scale-z7mrb)<br>„…something that has always been theoretically possible on a small scale becomes practically possible on a massive scale, and that changes what it means.“
 - [After a vegan blue cheese won the Good Food Award, panicked dairy cheese makers forced the foundation to disqualify it](https://boingboing.net/2024/04/29/after-a-vegan-blue-cheese-won-the-good-food-award-panicked-dairy-cheese-makers-forced-the-foundation-to-disqualify-it.html)<br>Veganský sýr byl tak dobrý, že vyhrál. Tradiční výrobci ho nechali diskvalifikovat. Docílili akorát toho, že bych ho chtěl ochutnat. „…the more you try to censor or suppress something, the more attention you inadvertently bring to it. Just like the Barbra Streisand effect, the panicked reaction of the traditional cheesemakers has guaranteed Climax Blue far more publicity and notoriety than it ever would have received by simply winning the Good Food Award outright.“
