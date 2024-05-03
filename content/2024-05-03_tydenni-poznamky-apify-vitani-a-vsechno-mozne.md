@@ -17,7 +17,7 @@ Fotil [Markus Spiske](https://unsplash.com/@markusspiske)
 **Čísla:** Finanční výsledky, návštěvnost a další čísla k junior.guru [mám přímo na webu](https://junior.guru/open/).
 </div>
 
-V týdnu 22. až 26.4. jsem pracoval pro Apify, tak se mi pak nechtělo psát poznámky, shrnu to v rámci těchto.
+Po krásné dovolené na Moravě jsem pracoval pro Apify (22. až 26.4.), tak se mi pak nechtělo psát poznámky.
 V tomto týdnu jsem doháněl nejrůznější věci.
 Ve středu jsme si užívali státní svátek a jeli na výlet.
 
