@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Apify, vítání a všechno možné
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/318
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/112377932049642124
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-04-17_tydenni-poznamky-automaticka-zpetna-vazba-na-github-profil-a-opravy-scraperu.md) už utekl nějaký ten týden (17. 4. až 3. 5.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
