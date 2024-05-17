@@ -54,9 +54,9 @@ Udělal jsem i [pokusnou stránku na webu](http://junior.guru/candidates/), kde 
 
 ![výpis kandidátů]({static}/images/screenshot-2024-05-17-at-21-03-20-kandidati-na-pozici-junior-programator-programatorka.png){: .img-thumbnail }
 
-> Hle­dáš do fir­my ju­ni­o­ra? Za­po­meň na in­ze­rá­ty a sto­hy ži­vo­to­pisů. Vy­ber si prostě ze se­zna­mu. Kaž­dý ju­ni­or tady je ově­ře­ný a má za­ru­če­né zá­klad­ní schop­nosti. Vy­bí­ráš z toho nej­lep­ší­ho na trhu. Oslo­vu­ješ na­přímo, nic ne­pla­tíš.
-
 Možná si říkáte: „Jaký to má, Honzo, byznys model? Zase dáváš všechno zadarmo?“ Ale nebojte! Tohle je monetizované tím, že budou mít junioři velkou motivaci stát se členy klubu. Pokud firma někoho z juniorů najme, je to jen dobře, nechci už tak obtížnou situaci juniorům zatěžovat nějakou provizí. To bych jim moc nepomohl. Když bude firma spokojená, budu u ní akorát apelovat na dobrovolné sponzorství a podporu projektu. Věřím, že kdo na to bude mít chuť a budget, tak si z toho sedne na prdel a ty peníze mi pošle. Kdo juniora najme, ale nebude mít chuť a budget na finanční podporu junior.guru, tak ať, hlavně že má junior práci a já mám aspoň _success story_.
+
+> Hle­dáš do fir­my ju­ni­o­ra? Za­po­meň na in­ze­rá­ty a sto­hy ži­vo­to­pisů. Vy­ber si prostě ze se­zna­mu. Kaž­dý ju­ni­or tady je ově­ře­ný a má za­ru­če­né zá­klad­ní schop­nosti. Vy­bí­ráš z toho nej­lep­ší­ho na trhu. Oslo­vu­ješ na­přímo, nic ne­pla­tíš.
 
 Při tvorbě tohoto celého jsem poprvé použil knihovnu [pydantic](https://docs.pydantic.dev/) (lepší dataclasses) a [moc se mi to s ní líbí](https://mastodonczech.cz/@honzajavorek/112450485166161257), šetří mi hromadu práce. Umí i vygenerovat JSON Schema, tak jsem ho přidal do API jako zoufalou pomoc komukoliv, kdo by nad ním chtěl něco stavět, ačkoliv formát API zatím ještě z hodiny na hodinu radikálně měním.
 
