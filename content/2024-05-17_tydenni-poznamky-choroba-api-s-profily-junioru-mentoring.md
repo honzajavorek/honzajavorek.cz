@@ -111,6 +111,8 @@ Ten by stál méně nebo stejně jako oprava (přemýšlím nad iPhone 12 mini n
 -   Vyšla se mnou [epizoda podcastu PeopleOps](https://www.forendors.cz/p/1c23124f86aa5420ef8261f585ad5942). Propagoval jsem to [na LinkedInu](https://www.linkedin.com/feed/update/urn:li:activity:7196159964824961024/) i [na Mastodonu](https://mastodonczech.cz/@honzajavorek/112441039395872639).
     Irena si s tím dala práci, takže budu rád, když si epizodu koupíte, nebo si podcast předplatíte.
     Pokud jste ale moje máma nebo tak někdo, tak mi akorát napište, můžu poslat mp3.
+-   Sledujeme trochu hokej.
+    Nejvíc na mne zatím zapůsobilo to, [kolik je tam reklam a jak moc je to nepříjemné](https://mastodonczech.cz/@honzajavorek/112424068021942676).
 -   Přesunul jsem doménu junior.guru ze SubRegu na WEDOS.
     Když jsem ji registroval, WEDOS ještě neuměl .guru, tak jsem si založil účet na SubRegu, ale jinak mám všechny domény u WEDOSu.
     Pro jednoduchost správy jsem ji teď, když už WEDOS .guru domény umí, zmigroval k těm svým ostatním.
@@ -121,6 +123,7 @@ Ten by stál méně nebo stejně jako oprava (přemýšlím nad iPhone 12 mini n
     Ty písničky vyprodukované někdy na gymplu jsou docela motivační - takové to, že vím, že už jsem to jednou uměl, že to šlo.
     Ale teď na to samozřejmě nemám tolik času.
     Při sledování [tohoto videa](https://www.youtube.com/watch?v=XyrCwuU43Qc&t=358s&pp=ygUEbG1tcw%3D%3D) jsem si připadal asi stejně, jako si připadá junior, když vidí yablka na YouTube sekat web v Tailwindu nebo tak něco.
+-   Všechny nové repozitáře kolem junior.guru [jsou pod licencí AGPL](https://mastodonczech.cz/@honzajavorek/112450436311726315).
 -   Když nakopírujete hromadu souborů na iCloud, ale máte pomalý internet a chcete pak něco dělat, třeba koukat na streaming F1 v Miami, nejde upload iCloudu bohužel nijak pozastavit.
     Našel jsem ale [skript, který mu zabíjí procesy](https://github.com/farnots/StopNsurlsessiond/blob/master/StopNsurl.sh) a tím to pozastaví 💪
 -   Czechitas ode mně dlouhodobě odebírají přes API data o pracovních inzerátech, která si následně analyzují, aby věděli, kde je jaká poptávka po čem.
