@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Choroba, API s profily juniorů, mentoring
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/319
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/112458149869744029
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-05-03_tydenni-poznamky-apify-vitani-a-vsechno-mozne.md) už utekl nějaký ten týden (3. 5. až 17. 5.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
