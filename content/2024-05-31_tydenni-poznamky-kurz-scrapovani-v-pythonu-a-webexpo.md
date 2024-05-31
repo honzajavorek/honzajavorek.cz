@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Kurz scrapování v Pythonu a WebExpo
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/320
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/112538209134992783
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-05-17_tydenni-poznamky-choroba-api-s-profily-junioru-mentoring.md) už utekl nějaký ten týden (17. 5. až 31. 5.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
