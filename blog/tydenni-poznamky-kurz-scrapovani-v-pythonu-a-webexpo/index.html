@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/tydenni-poznamky-kurz-scrapovani-v-pythonu-a-webexpo/">
+    <title>Týdenní poznámky: Kurz scrapování v Pythonu a WebExpo &mdash; Javorové lístky</title>
+
+    <meta property="og:title" content="Týdenní poznámky: Kurz scrapování v Pythonu a WebExpo &mdash; Javorové lístky">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-kurz-scrapovani-v-pythonu-a-webexpo/">
+
+    <link href="https://mastodonczech.cz/@honzajavorek" rel="me">
+
+    <meta property="og:image" content="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="683">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#457E31">
+    <link rel="icon" href="https://honzajavorek.cz/favicon.ico" sizes="any">
+    <link rel="icon" href="https://honzajavorek.cz/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="https://honzajavorek.cz/apple-touch-icon.png">
+    <link rel="manifest" href="https://honzajavorek.cz/site.webmanifest">
+
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Javorové lístky &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2024-05-31T00:00:00+02:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
+<article class="article">
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
+  </header>
+  <h1 class="title display-5">
+    Týdenní poznámky: Kurz scrapování v Pythonu a WebExpo
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-kurz-scrapovani-v-pythonu-a-webexpo/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2024-05-31T00:00:00+02:00">
+          31. 5. 2024
+        </time>
+      </li>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        15
+          min čtení
+      </li>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-kurz-scrapovani-v-pythonu-a-webexpo&interval=week&start=2024-05-31T00:00:00+02:00&end=today" target="_blank" rel="noopener">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <main class="article-content clearfix">
+
+    <div><div><div><div><p>Jak se mi daří v jednom člověku provozovat a rozvíjet <a href="https://junior.guru/">junior.guru</a>?
+Od <a href="https://honzajavorek.cz/blog/tydenni-poznamky-choroba-api-s-profily-junioru-mentoring/">posledních poznámek</a> už utekl nějaký ten týden (17. 5. až 31. 5.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.</p>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
+Fotil <a href="https://unsplash.com/@markusspiske">Markus Spiske</a></figcaption></figure>
+<p>Opět po dvou týdnech.
+První týden jsem pracoval pro Apify.
+Druhý týden jsem si v pondělí vzal volno, v úterý zajišťoval chod přednášky, ve středu a čtvrtek byl na WebExpu, a v pátek jsem šťouchal do různých věcí s nulovým výsledkem.</p>
+<div class="alert alert-warning" role="alert">
+<p><strong>Plány:</strong> Aktuální „předsevzetí” jsou v článku <a href="https://honzajavorek.cz/blog/plan-na-q2-2024/">Plán na Q2 2024</a></p>
+<p><strong>Čísla:</strong> Finanční výsledky, návštěvnost a další čísla k junior.guru <a href="https://junior.guru/open/">mám přímo na webu</a>.</p>
+</div>
+<h2 id="kurz-scrapovani-v-pythonu">Kurz scrapování v Pythonu<small class="permalink"><a href="#kurz-scrapovani-v-pythonu" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Ve svém týdnu věnovaném práci pro Apify jsem se probíral různými issues na GitHubu a návrhy toho, jak by kurzy měly vypadat do budoucna. Naučil jsem se při tom konečně Mermaid, způsob, jak dělat <em>flow charts</em> v Markdownu. Výsledek zde: <a href="https://github.com/apify/apify-docs/issues/1015">Proposal on future structure of courses</a>. Mermaid takhle přímo funguje v GitHub Issues, ale třeba i v Obsidianu.</p>
+<p>Pak jsem začal konečně něco pořádně tvořit: Kurz scrapování pro Pythonisty. Mám už úvodní stránku, strukturu a jednu a půl kapitoly. Rozpracoval jsem si to <a href="https://github.com/apify/apify-docs/pull/1023">tady</a>. Práce na kurzu mě dost bavila a vlastně se těším, až se k tomu po měsíci vrátím.</p>
+<figure class="figure"><img alt="Úvodní stránka kurzu" src="https://honzajavorek.cz/images/screenshot-2024-05-24-at-17-04-12-web-scraping-basics-for-python-devs-academy-apify-documentation-1.png" class="img-fluid figure-img rounded"></figure>
+<figure class="figure"><img alt="Kapitola z kurzu" src="https://honzajavorek.cz/images/screenshot-2024-05-24-at-16-56-05-downloading-html-with-python-academy-apify-documentation-1.png" class="img-fluid figure-img rounded"></figure>
+<h2 id="krize-s-kamerou">Krize s kamerou<small class="permalink"><a href="#krize-s-kamerou" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Jak jsem tady už psal, odešla mi na noťasu kamera.
+Vážil jsem možnosti, ale s přibližující se přednáškou v klubu jsem do toho musel už říznout a nějaké řešení vybrat.
+Zvolil jsem využití <a href="https://support.apple.com/en-us/102546">Continuity Camera</a>, a tedy upgrade telefonu na iPhone 13 mini s tím, že možná v budoucnu nakoupím díly a zkusím udělat servis noťasu sám.</p>
+<p>Mám iPhone X, což je <em>flagship</em> telefon z roku 2017, kupoval jsem ho v době, kdy už byl za zenitem. Apple stále posílá updaty snad i iPhonům 5, takže to není problém (zdravím lidi s Androidem), ale prostě už nemá nejnovější fičury a v některých appkách se zadýchává. Od té doby Apple vydal spoustu telefonů, ale jen dva jsou menšího vzrůstu, iPhone 12 mini a iPhone 13 mini. Mají stejnou specifikaci jako 12 a 13, jen jsou menší do ruky (na úkor baterky). Mají novější čipy, lepší foťák, nové funkce. Třeba tu Continuity Camera, kterou umí iPhone až od verze 11, tedy těsně jeden model po tom mém.</p>
+<p>První zásek přišel, když jsem zjistil, že iPhone 13 sice má stejně jako můj iPhone X dvě čočky, ale na rozdíl od mého telefonu má místo tele objektivu s optickým zoomem nějaký <em>wide angle</em>. Zoomuju pořád a všechno, zatímco <em>wide angle</em> netuším, k čemu bych použil. Prý se to hodí na svatbě, na párty, na děti. Ou jé. Nakonec jsem se nechal s pocitem „jsem Apple ovce“ zlomit a vsugeroval jsem si, že mi to určitě nebude vadit.</p>
+<p>Další zásek přišel, když jsem měl iPhone 13 mini koupit. Malé telefony jsou v dnešní době zřejmě obskurní věc a trh s nimi není moc velký. Apple nějaké vyrobí jednou za dekádu, aby se neřeklo. Jelikož se už nevyrábí, vybírám jen z modelů, které zbyly, nebo z repasovaných modelů a modelů z druhé ruky. Jenže všechny dobré kusy měly jen 128 GB, což dle mých předchozích zkušeností není dostatečné. Teď mám telefon s 256 GB a dostatečné to je. S koupí nového telefonu jsem na tom nechtěl nic měnit, minimálně toto číslo určitě nezmenšovat. Našel jsem jednotky telefonů s touto velikostí disku, ale všechny až na jednoho byly růžové. Takže jsem koupil ten jeden jediný poslední.</p>
+<p>Pak mi došlo, že ho asi na noťas, který <a href="https://www.stooy.cz/">mívám na stojánku</a>, nepřilepím izolepou, a šel zkoumat držáky. Článek <a href="https://reincubate.com/support/how-to/iphone-webcam-mount-guide/">How to mount a phone webcam: which mount is best</a> se tím krásně probírá, nakonec se mi nejvíc zamlouval ten Belkin. Chvíli to trvalo, ale sehnal jsem ho i u nás.</p>
+<p>Takže hurá. Akorát že vůbec. Asi tři hodiny jsem nový telefon rozběhával, protože si nejdřív klonoval nastavení ze starého a potom stahoval milion updatů. Nakonec hotovo, ale Continuity Camera vůbec nefungovala. Po milionech pokusů a čtení <a href="https://support.apple.com/en-us/102546">dokumentace</a> nebo <a href="https://www.makeuseof.com/fix-iphone-continuity-camera-not-working/">článků o tom, co se může pokazit</a>, jsem zoufale googlil už cokoliv souvisejícího a narazil na to, že lidi s počítači, které nemají kameru, nejsou schopni Continuity Camera rozběhat.</p>
+<p>Například Mac Mini, stolní počítač od Applu, který kameru od výroby nemá, na rozdíl od notebooků. Všichni, kdo mají Mac Mini, mají problém Continuity Camera rozjet. Systém se totiž asi nemá od čeho odpíchnout, potřebuje umožnit výběr mezi kamerami, ale když tam žádná není, tak to nefunguje. Lidi psali, že museli do USB zapojit externí kameru, aby se jim to rozjelo. To je sice milé, ale jaksi to potom celé postrádá smysl - kdybych měl nebo chtěl ve svém USB externí webkameru, tak nedělám celé tohle cvičení. Viz <a href="https://www.reddit.com/r/macmini/comments/1013jfm/does_anyone_else_have_problems_using_the/">Reddit</a> nebo <a href="https://forums.macrumors.com/threads/continuity-camera-not-working-unless-actual-webcam-is-connected-to-mac-mini.2390155/">MacRumors</a> nebo další <a href="https://forums.macrumors.com/threads/continuity-camera-wont-connect-wirelessly.2367281/page-2">MacRumors</a>.</p>
+<figure class="figure figure-blockquote"><blockquote class="blockquote">
+<p>Mac mini seems to have a problem with continuity camera, as they do not have a built-in camera they cannot recognize the iPhone as a "secondary" camera since they do not have a primary camera. The problem is fixed by connecting some other camera for example via USB type A. I have not tried it but I have seen several testimonials about it.</p>
+</blockquote>
+<figcaption class="blockquote-footer"> někdo na Redditu</figcaption>
+</figure><p>Zjevně to testovali jen s noťasama, kde si lze díky Continuity Camera zlepšit kvalitu obrazu oproti vestavěné kameře, a tohle je prostě nějaký bug. Já sice noťas mám, ale s nefunkční kamerou, takže stejný problém. Kromě toho jsem samozřejmě našel spoustu lidí, kterým to i tak fungovalo „všelijak“ a často vůbec. Takže jsem to vzdal a někdy ve tři ráno nešťastný naklikal na Alze <a href="https://www.alza.cz/ausdom-papalook-pa930-d6345155.htm#discussionPosts">první kameru</a>, která vypadala rozumně, s rozšířenou dobou na vrácení na 60 dní. Když přišla a zapojil jsem ji, propojení mobilu přes Continuity Camera hned fungovalo 😀</p>
+<p>Vraťme se na začátek. Co že jsem to měl vlastně za možnosti?</p>
+<ul>
+<li>Koupit levnou externí kameru na Alze a všude ji s sebou jako blbec tahat a cpát ji USB-A kabelem do USB-C portu a řešit, jestli budu mít call doma nebo v práci a když změním plány a kamera bude jinde, tak volat nemůžu, atd.</li>
+<li>Jít do servisu a dát jim počítač, který mě živí, na několik dní, aby na něm vyměnili celý displej za 14 nebo kolik tisíc, protože Apple, protože je kamera zapečená do všeho, jen proto, aby fungovalo to, co před pár dny normálně fungovalo a teď nefunguje, ačkoliv jsem s noťasem nic zvláštního neudělal. (Já vím, tenhle pocit je asi běžný, když máte auto, ale já auto nemám, tak ho neznám.)</li>
+<li>Koupit si náhradní díly nebo nějaký rozbitý počítač z Bazoše na náhradní díly (třeba za 5 tisíc, ale bez jakýchkoliv záruk, že) a pokusit se o výměnu dílů svépomocí.</li>
+<li>Zkusit zhruba 10 tisíc dát za nový mobil, který podporuje Continuity Camera, protože mobil mám u sebe vždy a mohla by to byt dobrá kompenzace pro kameru. (A pak zjistit, že mi to nepomůže.)</li>
+</ul>
+<p>Takže teď mám zaškrtnuté dvě řešení ze čtyř. Co dál? Koukal jsem ještě na videa jako je <a href="https://www.youtube.com/watch?v=Cwn0j10RTqY">toto</a> nebo <a href="https://www.youtube.com/watch?v=uU7kcIMfrZQ">toto</a> a upřímně nemám vůbec chuť se pouštět do opravy svépomocí. Apple to nedělá vůbec jednoduché. Je tam mnoho momentů, kdy se může něco pokazit a nefungovat. Navíc jsou všude návody na výměnu displeje jako takového, ale čip kamery je pod ním a návod na výměnu přímo kamery jsem nikde nenašel. A byla by to spousta práce navíc a další peníze, s velkou nejistotou toho, že se to vyplatí. Takže se začínám smiřovat s tím, že</p>
+<ul>
+<li>s tím prostě půjdu do servisu a dám za to ty peníze,</li>
+<li>vrátím webkameru do Alzy,</li>
+<li>nechám si iPhone 13 mini a prodám starý iPhone X, což by mělo aspoň trochu snížit cenu nového telefonu,</li>
+<li>rychle popřemýšlím, zda vrátit či nevrátit (nerozbalený) Belkin držák.</li>
+</ul>
+<p>Nic lepšího mě nenapadá.</p>
+<figure class="figure"><img alt="Webkamera do USB" src="https://honzajavorek.cz/images/img-8967.jpg" class="img-fluid figure-img rounded"></figure>
+<h2 id="prednaska-v-klubu">Přednáška v klubu<small class="permalink"><a href="#prednaska-v-klubu" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Na úterý byla plánována přednáška s Tomášem Ervínem Dombrovským, na kterou se všichni v klubu velmi těšili.</p>
+<figure class="figure"><img alt="Plakátek" class="img-thumbnail img-fluid figure-img rounded" src="https://honzajavorek.cz/images/20240528-95305ccb8e378e0403b068f0c4fa4d69e3803e52f7d90ea0ba5f973d7d524452-dc.png"></figure>
+<p>Hlavně kvůli ní jsem v rychlosti řešil celou tu věc s kamerou. Kromě toho mě ale přednáška potrápila i jinak. Tomáš byl hodně zaneprázdněný a nestihl mi dodat žádné další informace k přednášce, takže ještě v den přednášky ráno bylo vše označeno jako „bude upřesněno“. Na druhou stranu, přednáška byla na konkrétní objednávku z mé strany a tak jsem ten název i popis prostě vymyslel a pak to rychle ještě propagoval na <a href="https://www.linkedin.com/posts/honzajavorek_juniory-tr%C3%A1p%C3%AD-aktu%C3%A1ln%C3%AD-zbr%C5%BEd%C4%9Bn%C3%AD-n%C3%A1boru-activity-7201170972530425858-w1Yr/">LinkedInu</a> a <a href="https://mastodonczech.cz/@honzajavorek/112518308052499682">Mastodonu</a>. Možná jsem to mohl udělat mnohem dřív!</p>
+<p>Den předtím jsem nezvládl životosprávu a do noci sledoval záznam (!) F1 v Monaku. Bylo to nejhorší možné ponocování, jelikož se v tomhle závodě vůbec nic nedělo a bylo téměř zbytečné jej sledovat. To nic nemění na tom, že jsem byl celé úterý úplně vyžvejklý.</p>
+<p>Do toho mi došlo kafe. Do toho se měnily klíče v kanclu. Do toho jsem se dověděl, že mi vypadl pomocník na nahrávání videí a hledal jsem náhradu. Už už jsem vyhrabával z commitů <a href="https://github.com/juniorguru/junior.guru/blob/0f523d2c24671360225b4900413ba488457d0d3d/juniorguru/mkdocs/docs/event.md">starý návod</a> a instaloval <a href="https://github.com/ExistentialAudio/BlackHole">BlackHole</a> s tím, že to zkusím nějak sám, ale naštěstí měl čas <a href="https://www.linkedin.com/in/patrik-brnusak-cz/">Patrik</a> a vzal to za Tinukiho.</p>
+<p>Dobrá zpráva byla, že Tomáš během dne odpovídal a zaregistroval se úspěšně do klubu, takže byl připraven k přednášení. Bohužel měl nabitý den, takže se připojil až přímo na přednášku a ladili jsme nefunkční techniku až během ní.</p>
+<p>Nicméně potom už se to nějak rozjelo a všechno to bylo super, přišlo přes 30 lidí a do konce jich vydrželo taky kolem 30, což je velmi slušná účast. Na konci v chatu pršely srdíčka a kdyby to nebylo online, tak to byla přímo děkovačka ve stoje. Tomáš byl skvělý a byť to nezačalo moc pozitivními zprávami o vývoji trhu, tak to skončilo celkem motivačními doporučeními co v této situaci dělat.</p>
+<p>Takže sice to bylo náročné, ale dopadlo to dobře, tak to ten dobrý pocit aspoň mohl kompenzovat. Všechny problémy jsem nějak vyřešil, přednáška se odehrála, záznam vznikl. Největší radost mi ale dělalo, že jsem se tím celým nenechal moc stresovat. Během celého úterka jsem zachovával chladnou hlavu a spíš krčil rameny, že pokud třeba záznam nebude, tak holt nebude, planeta se točí dál.</p>
+<p>Jestli se mi ale chce při takové náročnosti dělat přednášky v klubu? To teda asi moc nechce, no. Naštěstí se rýsují ty spolupráce s Lucií Lenértovou, Vojtou Mádrem, a možná něco upečeme i s tím Patrikem Brnušákem, který to nahrával. Tím by mohly být večerní akce v klubu do budoucna relativně pokryté a já bych se už mohl věnovat nějakému jinému kouzlení, které nevyžaduje tolik mojí many.</p>
+<h2 id="webexpo-2024">WebExpo 2024<small class="permalink"><a href="#webexpo-2024" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Celou středu a velkou část čtvrtka jsem byl na <a href="https://webexpo.net/">WebExpu</a>. Chtěl jsem vidět hlavně <a href="https://www.nathanwpyle.art/">Nathana W. Pyla</a>, což je autor mých oblíbených komiksů s mimozemšťany. Tak oblíbených, že mám s jejich motivy dvě trička. Teď mám tři, protože Nathan vytvořil motiv i pro letošní WebExpo tričko!</p>
+<p>Letos jsem střídal povídání s lidmi a chození na přednášky. To bylo strategicky správně, jelikož jsem vždy při jednom mohl odpočívat od toho druhého. Taky jsem se chodil projít na vzduch a na sluníčko do Františkánské zahrady.</p>
+<p>Nebudu tady asi psát nějakou recenzi. Viděl jsem se s mnoha zajímavými lidmi, ať už starými známými, nebo těmi, které jsem nově poznal. Viděl jsem užitečné přednášky. Odnesl jsem si různé poznámky, které si tady odložím.</p>
+<ul>
+<li>Hodí se udělat subdoménu na emailing, třeba <code>něco@mail.junior.guru</code>, protože pak rating z emailingu neovlivňuje vaši celkovou doménu.</li>
+<li>Měl bych nějak přidat lidi, které mám zaregistrované v klubu, do odběratelů mého newsletteru. Teda až bude existovat.</li>
+<li>Až půjdu na WebExpo příště, mohl bych mít pár papírových letáčků, kde bude vysvětlené co je junior.guru a jak může pomoci firmám. Tento letáček budu rozdávat těm, kdo tam mají stánky 😀</li>
+<li>Vyzdvihnout na profilech juniorů, pokud umí pracovat s AI.</li>
+<li>Mrknout se na <a href="https://atuin.sh/">Atuin</a>.</li>
+<li>Ozvat se MSD, se kterými jsem se bavil na stánku.</li>
+<li>Podívat se na program <a href="https://edisonfilmhub.cz/">kina Edison</a>, o kterém jsem nevěděl, že existuje.</li>
+<li>Mrknout na <a href="https://biomejs.dev/">Biome</a></li>
+<li>Mrknout na <a href="https://sqlmodel.tiangolo.com/">SQLModel</a></li>
+<li>Mrknout na <em>animation timelines</em> v CSS: <a href="https://scroll-driven-animations.style/">scroll-driven-animations.style</a></li>
+<li>Možná vytvořit „Tinder“ variantu profilů kandidátů - <em>swipe</em>, nebo tlačítka jako u Eventee, nebo jako u Slacku. Možná je to blbost.</li>
+<li>Screenshoty dělat s nainstalovaným <a href="https://www.i-dont-care-about-cookies.eu/">i-dont-care-about-cookies.eu</a></li>
+<li>Podívat se, jak můžu s <a href="https://python.langchain.com/">langchain</a> a Apify vytvořit chatbota pro junior.guru. Ale nejdřív vymyslet, k čemu by byl.
+    Možná by to nemusel být chatbot, ale mohlo by to z příručky vytahovat něco jako „tip dne“ a posílat do klubu.</li>
+<li>OpenAI má na webu <a href="https://platform.openai.com/docs/guides/prompt-engineering/">návod, jak psát prompty</a>.</li>
+</ul>
+<p>Záznamy přednášek už se objevují <a href="https://slideslive.com/webexpo/webexpo-2024">tady</a>.</p>
+<figure class="figure"><img alt="Nathan W. Pyle na WebExpu" src="https://honzajavorek.cz/images/img-8977.jpg" class="img-fluid figure-img rounded"></figure>
+<h2 id="ladeni-llm">Ladění LLM<small class="permalink"><a href="#ladeni-llm" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Při pátečku jsem si řekl, že než se pustím do důležitých úkolů, udělám nějakou malou věc, která mi rychle dodá pocit dobře udělané práce. Mé oko padlo na požadavek, aby můj bot hledal inzeráty práce nejen pro programátory a testery, ale i pro datové analytiky. Samotná změna byla celkem hned, jenže jsem u ní zjistil, že se mi to vlastně netřídí moc dobře.</p>
+<p>A protože mi to třídí LLM, tak jsem začal ladit prompt. A ladil jsem a ladil jsem. Hodiny. A nakonec jsem to ani nedoladil, protože mi došel počet tokenů na den, OpenAI mě zařízlo. To mě naštvalo, takže jsem se šel koukat na pricing k <a href="https://replicate.com/">Replicate</a>, kde provozují open source modely a mají jiné limity a ceny. Chtěl jsem použít <a href="https://lifeboat.replicate.dev/">Lifeboat</a>, ale nepovedlo se mi to rozchodit.</p>
+<p>No a když byl čas na večeři, tak jsem to akorát celé <a href="https://github.com/juniorguru/junior.guru/pull/1384">pushnul do větve</a> s tím, že to musím teda asi dodělat jindy. Tolik k mé páteční produktivitě.</p>
+<h2 id="dalsi">Další<small class="permalink"><a href="#dalsi" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<ul>
+<li>Vláda ČR chystá na tento podzim roadshow po základních a středních školách, kde budou dobrovolnice přednáškami či diskuzemi motivovat dívky do IT. Pokud je tady někdo, kdo by se toho chtěl jako dobrovolnice účastnit, tak se prosím předběžně registrujte v <a href="https://docs.google.com/forms/d/e/1FAIpQLSdmCxtc-M-CqNfDZEsCnecPAmx9MrtJZoj5x7ybLilZRPvOnQ/viewform">tomto formuláři</a>. Přihlašování je do 7.6., což je za chvíli! Je to jen pro ženy, logicky, aby tam byl ten vzor „když ona může, můžu já“.</li>
+<li>Discord <a href="https://discord.com/blog/discords-next-chapter">mění směr</a>. Čtu to tak, že podchytit obecně komunity Discord vyhodnotil jako odbočku během covidu, která mu nevydělá dost a že se chce (opět) soustředit primárně na hráče. Trpět mě tam asi budou, ale otázka je, zda budou přidávat fičury nebo řešit bugy, které mi k něčemu jsou, nebo které mi spíš překáží. Já <em>soundboard</em> nebo <em>activities</em> zas tak moc neocením. Může se stát, že časem bude pro lidi divné nebo nepraktické na této platformě diskutovat na jiná témata, než je hraní her. Plán B nemám. Ale pokud bych měl mít, zkusil bych něco <em>open source</em>, co může provozovat kdokoliv. Buď někdo, komu platím, nebo já sám. Vím v tomto směru jen o <a href="https://www.discourse.org/">Discourse</a> a nejsem si jistý, zda je to úplně to, co bych chtěl.</li>
+<li>Objevil jsem <a href="https://www.koalasampler.com">Koala sampler</a>. Sdílel to František Fuka na Mastodonu. Už delší dobu jsem něco takového hledal a už jsem zkoušel i za pár korun koupit nějaké appky, ale nikdy to nebylo úplně ono. Ale Koala je boží. A nevěřili byste, jak si s tím dokáže vyhrát moje tříletá dcera! Nejlépe utracené peníze v poslední době.</li>
+<li>Sjednotil jsem si labely pro issues na junior.guru repozitářích na GitHubu.</li>
+<li>Opravil jsem klubového bota, protože jsem ho předchozími změnami rozbil.</li>
+<li>Byli jsme na <a href="https://zizkovskemezidvorky.cz/">Žižkovských mezidvorcích</a> a užili jsme si to.
+    Koukali jsme na hokejové finále a užili jsme si to.
+    V pondělí jsem si vzal dovolenou a prošel jsem se s dlouholetým kamarádem, kterého však nevidím moc často, po lesích, a kecali jsme.</li>
+<li>Žena narazila na nějaký akční slevový kupón na <a href="https://www.vasky.cz/cs/page/zachrana-botas">Botasky</a> a mě se dvoje současné rozpadají, tak jsem to využil a koupil jsem nové.
+    Mám z nich velkou radost, jsou pohodlné.
+    Akorát jsou příliš čisté a jak jsem byl s tím kamarádem v lese, tak jsem si je strašně zašpinil, a pak jsem doma hodně řešil, jak ten semiš zase vyčistit.
+    Jako nějak se mi to povedlo, ale už teda tak zářivé nejsou.
+    Možná škoda, možná dobře, protože na to aspoň přestanu myslet!</li>
+<li>Nevymyslel jsem, o čem bych letos přednášel na Frontkonu, tak jsem jim do CfP nic nehodil.
+    Konference bude v říjnu v Praze, už <a href="https://frontendisti.cz/konference">spustili i prodej lístků</a>.</li>
+<li>E-maily, <a href="https://junior.guru/club/">klubový Discord</a>, <a href="https://docs.pyvec.org/operations/support.html#sit-kontaktu">Pyvec Slack</a>, zprávy na LinkedIn.
+    Naštěstí toho nebylo nějak moc.</li>
+<li>Za 15 dní jsem naběhal 6 km, při procházkách nachodil 25 km, na túrách nachodil 22 km. Celkem jsem se hýbal 23 h a zdolal při tom 53 km.
+    Detaily na <a href="https://www.strava.com/athletes/31242569">Strava</a>, jediné sociální síti, kde si napsání statusu musíte zasloužit.</li>
+</ul>
+<h2 id="planuji">Plánuji<small class="permalink"><a href="#planuji" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<ol>
+<li>Budu s Terkou pracovat na prodejní stránce klubu.</li>
+<li>Podívám se na připravované změny v textu <a href="https://junior.guru/handbook/mental-health/">stránky o psychickém zdraví</a> od Nely.</li>
+</ol>
+<h2 id="zaujalo-me">Zaujalo mě<small class="permalink"><a href="#zaujalo-me" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Když na něco narazím a líbí se mi to, sdílím to <a href="https://mastodonczech.cz/@honzajavorek">na Mastodonu</a>.
+Od posledních poznámek jsem sdílel:</p>
+<ul>
+<li><a href="https://www.amygoodchild.com/blog/cursive-handwriting-in-javascript">Coding my Handwriting — Amy Goodchild</a><br>Tohle je krásný. Amy digitalizovala svoje písmo, takže má font, jako by psala vlastní rukou.</li>
+<li><a href="https://blog.glyph.im/2024/05/grand-unified-ai-hype.html">A Grand Unified Theory of the AI Hype Cycle</a><br>Něco podobného, co prožíváme s LLM, se odehrálo v 50., 60., 80., 90. a 10. letech, a taky se tomu říkalo AI.</li>
+<li><a href="https://www.linkedin.com/posts/tobielangel_tobie-langel-1-billion-for-open-source-activity-7180206812095229952-Ctwq">Tobie Langel on LinkedIn: Tobie Langel - 1 Billion for Open Source Maintainers | 30 comments</a><br>Tobie Langel má zajímavou prezentaci o financování open source.</li>
+<li><a href="https://podcasters.spotify.com/pod/show/jolana-humplov/episodes/I-Evropa-by-potebovala-dekolonizaci--Ve-vztahu-k-Africe-zaspala-e2jnmu9">I Evropa by potřebovala dekolonizaci. Ve vztahu k Africe zaspala — PULS</a><br>Pokud vás zajímá Afrika.</li>
+<li><a href="https://www.youtube.com/watch?v=qrvhmo5LSOQ">Another glorious battle for AI dominance… GPT-4o vs Google I/O - YouTube</a><br>„Its been a year since GPT4 and I still have a job“ 😀</li>
+</ul></div></div></div></div>
+  </main>
+
+  <footer class="article-footer mb-5">
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Podporovatel <a href="https://www.zeleni.cz/">Strany zelených</a>.
+          Tohle je můj blog už 17 let.
+      </address>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-mastodon"></i> <a href="https://mastodonczech.cz/@honzajavorek">Mastodon</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</article>
+      </div>
+<aside class="promo seealso">
+  <div class="promo-content container">
+    <h3 class="promo-heading fs-1">Další Honzovy články</h3>
+    <ul class="list-unstyled mb-0">
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2024 —
+        <a href="https://honzajavorek.cz/blog/tydenni-poznamky-choroba-api-s-profily-junioru-mentoring/">
+          Týdenní poznámky: Choroba, API s profily juniorů, mentoring</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/volim-marketing/">
+          Volím marketing</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/bez-auta/">
+          Bez auta</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/spoustim-klub/">
+          Spouštím klub</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2016 —
+        <a href="https://honzajavorek.cz/blog/kolonizatori-a-spravci-kolonii/">
+          Kolonizátoři a správci kolonií</a>
+      </li>
+      <li>
+        <i class="bi bi-search"></i>
+        <a href="https://honzajavorek.cz/blog/">Archiv blogu</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-play-btn"></i> <a href="https://junior.guru/courses/">Kurzy</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+      <footer class="footer">
+        <address class="footer-content container">
+          © Copyright 2007—2024 Honza Javorek
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+
+      <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+  </body>
+</html>
