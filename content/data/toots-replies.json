@@ -4,9 +4,324 @@
     "slug": "tydenni-poznamky-kurz-scrapovani-v-pythonu-a-webexpo",
     "created_at": "2024-05-31T23:06:34.674000+00:00",
     "toot_url": "https://mastodonczech.cz/@honzajavorek/112538209134992783",
-    "favourites_count": 0,
+    "favourites_count": 2,
     "reblogs_count": 0,
-    "replies": []
+    "replies": [
+      {
+        "id": 112539770193300743,
+        "created_at": "2024-06-01T05:43:34+00:00",
+        "in_reply_to_id": 112538209134992783,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://boskovice.social/users/zoul/statuses/112539770171206928",
+        "url": "https://boskovice.social/@zoul/112539770171206928",
+        "replies_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> Zaujala mě ta zmínka o provozování komunity na Discourse místo Discordu – jestli máš chuť, můžeš to rozvést? Jak v práci s Discourse děláme, zajímá mě, co tam vidíš za omezení nebo otazníky. Díky!</p>",
+        "account": {
+          "id": 109324797571302698,
+          "username": "zoul",
+          "acct": "zoul@boskovice.social",
+          "display_name": "Tomáš Znamenáček",
+          "url": "https://boskovice.social/@zoul",
+          "uri": "https://boskovice.social/users/zoul",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/52aca96d73208268.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/52aca96d73208268.png"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ]
+      },
+      {
+        "id": 112539918253874706,
+        "created_at": "2024-06-01T06:21:13+00:00",
+        "in_reply_to_id": 112538209134992783,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://boskovice.social/users/zoul/statuses/112539918234678594",
+        "url": "https://boskovice.social/@zoul/112539918234678594",
+        "favourites_count": 1,
+        "favourited": true,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> Jo a pokud bude dceru bavit ten sampler, tak moc doporučuju nějaký hardwarový, třeba stařičký Roland SP404 z druhé ruky bude určitě levný anebo víc fancy volba je Pocket Operator 33 K.O. Ta HW mašina je v něčem mnohem omezenější, ale podle mě je s ní nesrovnatelně větší prča.</p>",
+        "account": {
+          "id": 109324797571302698,
+          "username": "zoul",
+          "acct": "zoul@boskovice.social",
+          "display_name": "Tomáš Znamenáček",
+          "url": "https://boskovice.social/@zoul",
+          "uri": "https://boskovice.social/users/zoul",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/52aca96d73208268.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/52aca96d73208268.png"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ]
+      },
+      {
+        "id": 112541093257541783,
+        "created_at": "2024-06-01T11:20:02.881000+00:00",
+        "in_reply_to_id": 112539770193300743,
+        "in_reply_to_account_id": 109324797571302698,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112541093257541783",
+        "url": "https://mastodonczech.cz/@honzajavorek/112541093257541783",
+        "replies_count": 2,
+        "favourites_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://boskovice.social/@zoul\" class=\"u-url mention\">@<span>zoul</span></a></span> Je to fórum. To je fajn, ale Discord má různé další funkce. Každý jeden kanál může být forum. Mám hlasové kanály, video kanály, něco-jako-clubhouse video kanály. Mám eventy. Mám API a možnost psát komplexní boty, což využívám. Neznám feature set Discourse, ale kdybych chtěl jen forum, tak o něm uvažuji. Já chci asi víc. Myslím, že i ta realtime komunikace je užitečná. Tohle by bylo ode zdi ke zdi.</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 109324797571302698,
+            "username": "zoul",
+            "url": "https://boskovice.social/@zoul",
+            "acct": "zoul@boskovice.social"
+          }
+        ]
+      },
+      {
+        "id": 112541649405258022,
+        "created_at": "2024-06-01T13:41:19+00:00",
+        "in_reply_to_id": 112541093257541783,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://merta.social/users/zdenek/statuses/01HZA0H1XCFHPN4TQX0H5RS6DP",
+        "url": "https://merta.social/@zdenek/statuses/01HZA0H1XCFHPN4TQX0H5RS6DP",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> <span class=\"h-card\"><a href=\"https://boskovice.social/@zoul\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>zoul</span></a></span> S takovýma potřebama asi alternativu nemáš.</p><p>Pro mě je používání Discordu naprosté utrpení a to ani nehodnotím privacy a security.<br>Bohužel některé tématické skupiny, které sleduji, ho používají i když jsou spíš fórum.</p>",
+        "account": {
+          "id": 109534149945836634,
+          "username": "zdenek",
+          "acct": "zdenek@merta.social",
+          "display_name": "Zdeněk Merta",
+          "url": "https://merta.social/@zdenek",
+          "uri": "https://merta.social/users/zdenek",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/534/149/945/836/634/original/b0a6d6a48e7c02d1.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/534/149/945/836/634/original/b0a6d6a48e7c02d1.png"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 109324797571302698,
+            "username": "zoul",
+            "url": "https://boskovice.social/@zoul",
+            "acct": "zoul@boskovice.social"
+          }
+        ]
+      },
+      {
+        "id": 112541905660964325,
+        "created_at": "2024-06-01T14:46:38+00:00",
+        "in_reply_to_id": 112541093257541783,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://boskovice.social/users/zoul/statuses/112541905639670338",
+        "url": "https://boskovice.social/@zoul/112541905639670338",
+        "replies_count": 1,
+        "favourites_count": 1,
+        "favourited": true,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> Discourse má kromě toho základního fóra realtime chat, který jde s tím fórem kombinovat. Taky nabízí API, podle mě půjde automatizovat dobře. Na eventy jsem viděl nějaký plugin, ale nevím, jak moc rozumné to bude, zejména UX. Ty hlasové a video funkce myslím nenabízí vůbec. (Neprodávám ti ho, jen sdílím dojmy pro případ, že bys tímhle směrem chtěl dál uvažovat.)</p>",
+        "account": {
+          "id": 109324797571302698,
+          "username": "zoul",
+          "acct": "zoul@boskovice.social",
+          "display_name": "Tomáš Znamenáček",
+          "url": "https://boskovice.social/@zoul",
+          "uri": "https://boskovice.social/users/zoul",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/52aca96d73208268.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/52aca96d73208268.png"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ]
+      },
+      {
+        "id": 112542069777079266,
+        "created_at": "2024-06-01T15:28:23.387000+00:00",
+        "in_reply_to_id": 112541905660964325,
+        "in_reply_to_account_id": 109324797571302698,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112542069777079266",
+        "url": "https://mastodonczech.cz/@honzajavorek/112542069777079266",
+        "replies_count": 1,
+        "favourites_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://boskovice.social/@zoul\" class=\"u-url mention\">@<span>zoul</span></a></span> Díky! Že tam je něco real time, to jsem nevěděl. Ještě mi někdo poslal Zulip, to znáš, nebo někde používáš?</p><p>Jinak je to celé dost hypotetické, pokud mi Discord nezakáže EU nebo něco, tak nepředpokládám, že bych v příštích třeba 5 letech odcházel.</p><p>Ale spí se líp, když vím o alternativách.</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 109324797571302698,
+            "username": "zoul",
+            "url": "https://boskovice.social/@zoul",
+            "acct": "zoul@boskovice.social"
+          }
+        ]
+      },
+      {
+        "id": 112542105053636489,
+        "created_at": "2024-06-01T15:37:21+00:00",
+        "in_reply_to_id": 112542069777079266,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://boskovice.social/users/zoul/statuses/112542105029198140",
+        "url": "https://boskovice.social/@zoul/112542105029198140",
+        "replies_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> Se Zulipem praktické zkušenosti nemám, zmiňovala ho <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.social/@anezkamll\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>anezkamll</span></a></span>, anebo to se mi něco plete?</p>",
+        "account": {
+          "id": 109324797571302698,
+          "username": "zoul",
+          "acct": "zoul@boskovice.social",
+          "display_name": "Tomáš Znamenáček",
+          "url": "https://boskovice.social/@zoul",
+          "uri": "https://boskovice.social/users/zoul",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/52aca96d73208268.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/52aca96d73208268.png"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 111023865642272276,
+            "username": "anezkamll",
+            "url": "https://mastodon.social/@anezkamll",
+            "acct": "anezkamll@mastodon.social"
+          }
+        ]
+      },
+      {
+        "id": 112543385071264822,
+        "created_at": "2024-06-01T21:02:52+00:00",
+        "in_reply_to_id": 112542105053636489,
+        "in_reply_to_account_id": 109324797571302698,
+        "sensitive": false,
+        "visibility": "unlisted",
+        "language": "cs",
+        "uri": "https://kompost.cz/users/jackc/statuses/112543385031607020",
+        "url": "https://kompost.cz/@jackc/112543385031607020",
+        "favourites_count": 1,
+        "favourited": true,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://boskovice.social/@zoul\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>zoul</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.social/@anezkamll\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>anezkamll</span></a></span> Zulip je čistě chat rozdělený do kanálů a témat. Plus SZ apod. Realtime AV nemá. Používáme u Pirátů.</p>",
+        "account": {
+          "id": 109326674365083184,
+          "username": "jackc",
+          "acct": "jackc@kompost.cz",
+          "display_name": "Jan Korbel 🇨🇿 🏴‍☠️",
+          "url": "https://kompost.cz/@jackc",
+          "uri": "https://kompost.cz/users/jackc",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/326/674/365/083/184/original/488cd0e56321cbcd.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/326/674/365/083/184/original/488cd0e56321cbcd.jpg"
+        },
+        "mentions": [
+          {
+            "id": 109324797571302698,
+            "username": "zoul",
+            "url": "https://boskovice.social/@zoul",
+            "acct": "zoul@boskovice.social"
+          },
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 111023865642272276,
+            "username": "anezkamll",
+            "url": "https://mastodon.social/@anezkamll",
+            "acct": "anezkamll@mastodon.social"
+          }
+        ]
+      }
+    ]
   },
   {
     "url": "https://honzajavorek.cz/blog/tydenni-poznamky-choroba-api-s-profily-junioru-mentoring/",
