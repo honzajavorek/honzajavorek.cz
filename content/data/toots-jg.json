@@ -1,5 +1,32 @@
 [
   {
+    "id": 112545540663798567,
+    "created_at": "2024-06-02T06:11:04.917000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112545540663798567",
+    "url": "https://mastodonczech.cz/@honzajavorek/112545540663798567",
+    "replies_count": 3,
+    "favourites_count": 8,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Na <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> mě baví ty pokročilé <a href=\"https://mastodonczech.cz/tags/devops\" class=\"mention hashtag\" rel=\"tag\">#<span>devops</span></a> techniky.</p><p>Přesouval jsem doménu, tak jsem to nějak naklikal, prý do 4 dní přesunou. Když mi lidi psali, že web nefunguje, pochopil jsem, že to přesunuli a šel přepsat DNS záznamy.</p><p>Nebo minulý týden. Nebyl jsem si jistý, zda je token potřeba. Tak jsem ho nechal vypršet. Dnes jsem zjistil, že potřeba je!</p><p>Je osvěžující nemuset věci dělat tak složitě jako startup ze Silicon Valley.</p>",
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      },
+      {
+        "name": "devops",
+        "url": "https://mastodonczech.cz/tags/devops"
+      }
+    ]
+  },
+  {
     "id": 112538209134992783,
     "created_at": "2024-05-31T23:06:34.674000+00:00",
     "sensitive": false,
@@ -36,6 +63,7 @@
       "type": "link",
       "width": 1024,
       "height": 683,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/004/456/285/original/5b9f99235aa2da08.jpg",
       "blurhash": "UaKK{9D%-;xu%Mt7RjWB~qxuIUWVRjkCt7j[",
       "published_at": "2024-05-30T22:00:00+00:00"
     }
