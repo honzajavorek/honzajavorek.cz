@@ -68,4 +68,9 @@ def is_watching_item(item: dict) -> bool:
 
 
 def is_video_url(url: str) -> bool:
-    return "youtube.com" in url or "youtu.be" in url
+    return (
+        "youtube.com" in url or
+        "youtu.be" in url or
+        "slideslive.com" in url or
+        "vimeo.com" in url
+    )
