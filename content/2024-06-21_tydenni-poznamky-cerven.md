@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Červen
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/321
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/112656923106092130
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-05-31_tydenni-poznamky-kurz-scrapovani-v-pythonu-a-webexpo.md) už utekl nějaký ten týden (31. 5. až 21. 6.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
