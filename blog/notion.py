@@ -1,5 +1,6 @@
 from itertools import islice
 from typing import Iterable
+from urllib.parse import urlparse
 import click
 from notion_client import Client
 from notion_client.helpers import iterate_paginated_api
@@ -49,14 +50,12 @@ def watching(notion_token: str, database_id: str, feed_id: str, limit: int):
 
 def add_feed_items(feed: FeedGenerator, items: Iterable[dict]):
     for item in items:
-        url = item["properties"]["URL"]["url"]
-        title = item["properties"]["Name"]["title"][0]["plain_text"]
-        created_at = item["created_time"]
+        url = get_url(item)
         entry = feed.add_entry()
         entry.id(url)
-        entry.title(title)
+        entry.title(get_title(item))
         entry.link(href=url)
-        entry.published(created_at)
+        entry.published(get_created_at(item))
 
 
 def is_reading_item(item: dict) -> bool:
@@ -69,8 +68,23 @@ def is_watching_item(item: dict) -> bool:
 
 def is_video_url(url: str) -> bool:
     return (
-        "youtube.com" in url or
-        "youtu.be" in url or
-        "slideslive.com" in url or
-        "vimeo.com" in url
+        "youtube.com" in url
+        or "youtu.be" in url
+        or "slideslive.com" in url
+        or "vimeo.com" in url
     )
+
+
+def get_url(item: dict) -> str:
+    return item["properties"]["URL"]["url"]
+
+
+def get_title(item: dict) -> str:
+    try:
+        return item["properties"]["Name"]["title"][0]["plain_text"]
+    except IndexError:
+        return f"Něco z domény {urlparse(get_url(item)).netloc}"
+
+
+def get_created_at(item: dict) -> str:
+    return item["created_time"]
