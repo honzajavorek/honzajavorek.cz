@@ -1,5 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Javorové lístky</title><link href="https://honzajavorek.cz/blog/" rel="alternate"></link><link href="https://honzajavorek.cz/feed.xml" rel="self"></link><id>https://honzajavorek.cz/</id><updated>2024-05-31T00:00:00+02:00</updated><author><name>Honza Javorek</name><email>mail@honzajavorek.cz</email><uri>https://honzajavorek.cz</uri></author><subtitle>Blog Honzy Javorka</subtitle><rights>© Copyright 2007—2024 Honza Javorek &lt;https://honzajavorek.cz&gt;</rights><entry><title>Týdenní poznámky: Kurz scrapování v Pythonu a WebExpo</title><link href="https://honzajavorek.cz/blog/tydenni-poznamky-kurz-scrapovani-v-pythonu-a-webexpo/" rel="alternate"></link><published>2024-05-31T00:00:00+02:00</published><updated>2024-05-31T00:00:00+02:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2024-05-31:/blog/tydenni-poznamky-kurz-scrapovani-v-pythonu-a-webexpo/</id><summary type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Jak se mi daří v jednom člověku provozovat a rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;?
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Javorové lístky</title><link href="https://honzajavorek.cz/blog/" rel="alternate"></link><link href="https://honzajavorek.cz/feed.xml" rel="self"></link><id>https://honzajavorek.cz/</id><updated>2024-06-21T00:00:00+02:00</updated><author><name>Honza Javorek</name><email>mail@honzajavorek.cz</email><uri>https://honzajavorek.cz</uri></author><subtitle>Blog Honzy Javorka</subtitle><rights>© Copyright 2007—2024 Honza Javorek &lt;https://honzajavorek.cz&gt;</rights><entry><title>Týdenní poznámky: Červen</title><link href="https://honzajavorek.cz/blog/tydenni-poznamky-cerven/" rel="alternate"></link><published>2024-06-21T00:00:00+02:00</published><updated>2024-06-21T00:00:00+02:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2024-06-21:/blog/tydenni-poznamky-cerven/</id><summary type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Jak se mi daří v jednom člověku provozovat a rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;?
+Od &lt;a href="https://honzajavorek.cz/blog/tydenni-poznamky-kurz-scrapovani-v-pythonu-a-webexpo/"&gt;posledních poznámek&lt;/a&gt; už utekl nějaký ten týden (31. 5. až 21. 6.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.&lt;/p&gt;
+&lt;figure class="figure"&gt;&lt;img alt="Poznámky" src="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg" class="img-fluid figure-img rounded"&gt;&lt;figcaption class="figure-caption"&gt;
+Fotil &lt;a href="https://unsplash.com/@markusspiske"&gt;Markus Spiske&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;
+&lt;p&gt;&lt;strong&gt;Plány:&lt;/strong&gt; Aktuální „předsevzetí” jsou v článku &lt;a href="https://honzajavorek.cz/blog/plan-na-q2-2024/"&gt;Plán na Q2 2024&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Čísla:&lt;/strong&gt; Finanční …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Jak se mi daří v jednom člověku provozovat a rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;?
+Od &lt;a href="https://honzajavorek.cz/blog/tydenni-poznamky-kurz-scrapovani-v-pythonu-a-webexpo/"&gt;posledních poznámek&lt;/a&gt; už utekl nějaký ten týden (31. 5. až 21. 6.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.&lt;/p&gt;
+&lt;figure class="figure"&gt;&lt;img alt="Poznámky" src="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg" class="img-fluid figure-img rounded"&gt;&lt;figcaption class="figure-caption"&gt;
+Fotil &lt;a href="https://unsplash.com/@markusspiske"&gt;Markus Spiske&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;
+&lt;p&gt;&lt;strong&gt;Plány:&lt;/strong&gt; Aktuální „předsevzetí” jsou v článku &lt;a href="https://honzajavorek.cz/blog/plan-na-q2-2024/"&gt;Plán na Q2 2024&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Čísla:&lt;/strong&gt; Finanční výsledky, návštěvnost a další čísla k junior.guru &lt;a href="https://junior.guru/open/"&gt;mám přímo na webu&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Tak sice se to jmenuje týdenní poznámky, ale tentokrát píšu skoro po měsíci. Nějak se to zase sešlo, všeho bylo moc. Naštěstí jsou teď vyhlídky, že bude aktivit málo, a s tím snad přijde i nějaká pohoda. A s pohodou snad zase přijdou pravidelnější a kratší poznámky.&lt;/p&gt;
+&lt;h2 id="landing-page-a-dotazniky"&gt;Landing page a dotazníky&lt;small class="permalink"&gt;&lt;a href="#landing-page-a-dotazniky" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Volali jsme si s Terkou a posunuli zase o kus dál přípravy na novou &lt;em&gt;landing page&lt;/em&gt; klubu. V rámci toho jsme připravili dotazníky, které jsem rozeslal jak mezi členy, tak mezi relevantní „veřejnost“. Ten pro veřejnost je &lt;a href="https://forms.gle/TJbV5ANrUWZbE6L78"&gt;tento&lt;/a&gt; a budu rád, když mi ho vyplníte, pokud jste aspoň trochu cílovka.&lt;/p&gt;
+&lt;p&gt;Vymyslel jsem, že jako odměnu budu z respondentů losovat a někdo vyhraje knihu &lt;a href="https://www.manning.com/books/grokking-algorithms"&gt;Grokking Algorithms&lt;/a&gt;. Docela mi dalo zabrat to vymyslet, ale jsem s tímhle rozhodnutím spokojen. Je to celkem drahá kniha, kterou si každý nekoupí. Je dobrá. Má smysl ji mít fyzicky. A docela blbě se u nás shání.&lt;/p&gt;
+&lt;p&gt;Dotazníky jsem vypustil do světa s tím, že se budou sbírat odpovědi, a pak jsem je úplně vytěsnil z hlavy, takže nemám knihy ještě koupené a na odpovědi jsem ještě vůbec nekoukal. Když to tady tak píšu, tak aspoň mrknu, kolik tam je odpovědí.&lt;/p&gt;
+&lt;p&gt;Takže členů odpovědělo 65 ze zhruba 360, tj. 18,3 %. V tom dotazníku pro veřejnost je zatím 38 odpovědí, to není žádná bomba, ale lepší než nic. Taky jsem to propagoval jen jednou, možná bych tomu mohl dát nějaký &lt;em&gt;boost&lt;/em&gt; příští týden.&lt;/p&gt;
+&lt;p&gt;Terce jsem ještě na callu &lt;a href="https://www.linkedin.com/posts/terezia-palascakova_justdoit-komunita-mentoring-activity-7204012179979669505-sXpq/"&gt;promluvil do duše&lt;/a&gt;, aby konečně spustila svou komunitu, a ona ji pak opravdu spustila, aspoň pro pár beta testerů. Jsem tam taky a hezky se to rozjíždí, tak kdo děláte copywriting, určitě se těšte, vzniká něco pěkného!&lt;/p&gt;
+&lt;figure class="figure"&gt;&lt;img alt="Dotazník" src="https://honzajavorek.cz/images/screenshot-2024-06-21-at-23-54-02-dotaznik-pro-zacinajici-programatory.png" class="img-fluid figure-img rounded"&gt;&lt;/figure&gt;
+&lt;h2 id="vikend-s-dcerou-a-angina"&gt;Víkend s dcerou a angína&lt;small class="permalink"&gt;&lt;a href="#vikend-s-dcerou-a-angina" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Jel jsem na víkendový výlet na Pálavu. Jen tatínci a děti. Poprvé sám s dcerou na několik dní. Bylo to nakonec náročné úplně jinak, než jsem myslel. A trochu víc, než asi kdokoliv čekal, ale vše jsme nějak zvládli.&lt;/p&gt;
+&lt;p&gt;Z víkendu jsem přijel úplně vyčerpaný a na základě toho jsem hned chytl virovou angínu, takže jsem několik dní zase jenom proležel. Naštěstí to bylo sice intenzivní se silnými horečkami, ale rychlé, takže o víkendu jsem pak něco zase dohnal. Stejně jsem nemohl sportovat nebo něco, tak jsem aspoň bušil do počítače.&lt;/p&gt;
+&lt;figure class="figure"&gt;&lt;img alt="Pálava" src="https://honzajavorek.cz/images/img-0160.jpg" class="img-fluid figure-img rounded"&gt;&lt;/figure&gt;
+&lt;h2 id="prekopavani-firemniho-ceniku-patreon-a-github-sponsors"&gt;Překopávání firemního ceníku, Patreon a GitHub Sponsors&lt;small class="permalink"&gt;&lt;a href="#prekopavani-firemniho-ceniku-patreon-a-github-sponsors" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Kdybych měl na práci víc dní v kuse, tak se zase pustím do profilů juniorů, ale vyšlo mi to tak, že před a po týdnu pro Apify jsem měl vždy jeden den sem, jeden den tam. Takže jsem si vybral jinou práci, a to překopání toho, jak junior.guru pracuje s firemními &lt;del&gt;partnery&lt;/del&gt; sponzory.&lt;/p&gt;
+&lt;p&gt;Rozhodl jsem se v podstatě zrušit všechny benefity pro firmy a maximálně to celé zjednodušit. Smazat kód, který super zbytečně složitě trackoval vazby mezi firmami a dalšími věcmi na junior.guru, v historii i současnosti, a který měl několik M:N tabulek. Předělat ceník a přestat používat slovo partnerství, nahradit jej slovem sponzorství, aby bylo jasné, že firmy si na junior.guru vlastně nic speciálního nekupují. Že je to především podpora projektu z jejich strany.&lt;/p&gt;
+&lt;p&gt;Už jen to mazání mi dalo hromadu práce, bylo to jako s pinzetou a skalpelem vypreparovat něco, co prorostlo celým systémem. Ale povedlo se.&lt;/p&gt;
+&lt;p&gt;Taky jsem napsal mail svým posledním dvěma podporovatelům na Patreonu, jestli by nebyli tak hodní a nepřešli na GitHub Sponsors. Hned to udělali (zlatí!), tak jsem mohl Patreon zavřít a zbavit se &lt;a href="https://mastodonczech.cz/@hroncok@floss.social/112050595381651852"&gt;PayPalu a jeho šílených měnových konverzí&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pak ten ceník. Návrh nového mám &lt;a href="https://junior.guru/sponsorship/"&gt;tady&lt;/a&gt;, ale není to ještě hotové a nikde na to zatím není odkaz. „Pošli LOVE“ jsem vzal z &lt;a href="https://mastodonczech.cz/@honzajavorek/112655346522200566"&gt;někdejší stránky /donate/, která bývala na webu, pořád se mi to líbí&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Oživil jsem trochu &lt;a href="https://github.com/sponsors/honzajavorek/"&gt;GitHub Sponsors&lt;/a&gt; a ty, kdo mě tam sponzorují (jednotlivci i firmy) jsem začal vypisovat na &lt;a href="https://junior.guru/"&gt;úvodní stránku junior.guru&lt;/a&gt;. Při tom jsem &lt;a href="https://github.com/orgs/community/discussions/54644#discussioncomment-9780766"&gt;objevil bug v GitHub API&lt;/a&gt;. Předělal jsem &lt;a href="https://junior.guru/open/#sponzori"&gt;sekci o sponzorech na /open/&lt;/a&gt;. Upravil jsem &lt;a href="https://junior.guru/faq/"&gt;FAQ&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;No spousta práce, a stále to ještě není hotové. Ale mám z toho dobrý pocit, protože s každou touhle úpravou se mi do budoucna zjednodušuje život. Postupně procházím úkoly a nápady, které jsem si k téhle věci za ty roky uložil a je to vždy sladký moment, když můžu spoustu z nich smazat jako hotové nebo už nerelevantní.&lt;/p&gt;
+&lt;p&gt;Do budoucna plánuju dotáhnout tu novou stránku s „ceníkem“, sesynchronizovat s ní všechna současná sponzorství, existující sponzory, bartery a komunity převést na Group Plans na Memberful, předělat vítání sponzorů v klubu, zrušit možnost přidávat pracovní inzeráty přímo na web, a pak se ozvat různým firmám, jestli se náhodou nechtějí přidat 😀&lt;/p&gt;
+&lt;figure class="figure"&gt;&lt;img alt="Sponzoři" src="https://honzajavorek.cz/images/screenshot-2024-06-21-at-23-29-33-jak-se-naucit-programovat-a-ziskat-prvni-praci-v-it.png" class="img-fluid figure-img rounded"&gt;&lt;/figure&gt;
+&lt;h2 id="trocha-lasky-pro-knihovnu-fiobank"&gt;Trocha lásky pro knihovnu fiobank&lt;small class="permalink"&gt;&lt;a href="#trocha-lasky-pro-knihovnu-fiobank" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Fio banka změnila adresu API a já jsem kdysi napsal &lt;a href="https://github.com/honzajavorek/fiobank"&gt;knihovnu pro Python&lt;/a&gt;, tak se hned ozvali lidi, že by se to mělo aktualizovat.&lt;/p&gt;
+&lt;p&gt;Velký dík hlavně &lt;a href="https://github.com/spacekpe"&gt;Petrovi Špačkovi&lt;/a&gt;, který změnu poslal v Pull Requestu a ještě do knihovny doplnil i novou funkcionalitu. Hned jsem se od něj něco naučil, nevěděl jsem že mohu v Pythonu říct JSON parseru, aby na desetinná čísla místo &lt;code&gt;float()&lt;/code&gt; použil &lt;code&gt;Decimal()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Tož jsem na to mrknul a udělal tam ještě pár změn, ale ta knihovna by potřebovala teda mnohem víc lásky! Hodně jsem ji zanedbával. Přitom se vsadím, že to je určitě můj nejúspěšnější open source projekt, který používá spousta lidí, jen o tom ani nevím.&lt;/p&gt;
+&lt;p&gt;Brousím si zuby, že když se zase naskytne trochu času, že bych ten repozitář vyčistil a vylepšil a knihovnu trochu přebudoval… Pokud knihovnu používáte a chcete mě trochu namotivovat, &lt;a href="https://github.com/sponsors/honzajavorek/"&gt;víte kde&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="priprava-pudy-pro-studenty-lucie-lenertove"&gt;Příprava půdy pro studenty Lucie Lenértové&lt;small class="permalink"&gt;&lt;a href="#priprava-pudy-pro-studenty-lucie-lenertove" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Mám dohodu s &lt;a href="https://www.youtube.com/@LucieLenertova"&gt;Lucií&lt;/a&gt;, že bude od září vytvářet online obsah pro klub, abych nemusel tolik řešit přednášky, a na oplátku bude moci poslat studenty svého kurzu do junior.guru klubu, aby nemusela řešit komunitu.&lt;/p&gt;
+&lt;p&gt;Na to jsem se rozhodl použít &lt;a href="https://memberful.com/help/plans/create-a-group-plan/"&gt;Group Plans&lt;/a&gt; na Memberful, které jsem doteď nepoužíval, protože jsem je neměl k dispozici. S novým pricingem Memberful je ale k dispozici už mám. Myslím si, že budu moci zrušit spoustu věcí kolem kupónů a přesunout např. sponzory kompletně na tohle.&lt;/p&gt;
+&lt;p&gt;Lucii jsem to nějak naklikal a uvidíme, jak to bude fungovat. Snad bude. A snad na to pak přesunu i ostatní.&lt;/p&gt;
+&lt;h2 id="dalsi"&gt;Další&lt;small class="permalink"&gt;&lt;a href="#dalsi" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Od 17.6. do 20.6. jsem zase pracoval pro Apify. Povedlo se mi posouvat drobné i velké změny v &lt;a href="https://docs.apify.com/academy"&gt;Akademii&lt;/a&gt;, kterou tam mám teď na starost, a hlavně, svůj týden jsem zakončil &lt;a href="https://github.com/apify/apify-docs/pull/1023"&gt;Pull Requestem s výkopem nového kurzu základů scrapování pro Python programátory&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Nela vyhrnula rukávy a zpracovala aktualizaci &lt;a href="https://junior.guru/handbook/mental-health/"&gt;stránky o psychickém zdraví&lt;/a&gt;. Moc se mi to líbí, takže &lt;a href="https://github.com/juniorguru/junior.guru/pull/1388"&gt;už to mám v Pull Requestu&lt;/a&gt;. Doděláme tam jen pár drobností a bude to venku.&lt;/li&gt;
+&lt;li&gt;Rozjímal jsem na Mastodonu o &lt;a href="https://mastodonczech.cz/@honzajavorek/112545540663798567"&gt;pokročilých DevOps technikách&lt;/a&gt;, které na junior.guru praktikuji.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://boskovice.social/@zoul"&gt;Zoul&lt;/a&gt; mě přivedl na &lt;a href="https://hatsu.cli.rs/"&gt;Hatsu&lt;/a&gt;, most mezi staticky generovanou stránkou a Mastodonem, ale neměl jsem to zatím čas prozkoumat.&lt;/li&gt;
+&lt;li&gt;Bude to i v odkazech na konci, ale četl jsem &lt;a href="https://stackoverflow.blog/2024/06/10/generative-ai-is-not-going-to-build-your-engineering-team-for-you/"&gt;super článek&lt;/a&gt; a pokud chcete, aby si ho přečetlo co nejvíc lidí, komentujte a lajkujte mi &lt;a href="https://www.linkedin.com/feed/update/urn:li:activity:7209465614342443010/"&gt;tady tohle na LinkedInu&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Zrušil jsem super složité kešování ve skriptu, který stahuje obsah klubu do databáze.
+    Ve výsledku to totiž žádné urychlení nepřinášelo a naopak to mohlo způsobovat nějaké problémy.
+    Sice jsem i teď hrdý na to, že jsem to tenkrát dokázal vymyslet, ale holt je to k ničemu, tak pryč s tím.
+    Stahování z Discordu občas spadne kvůli &lt;em&gt;rate limitingu&lt;/em&gt;, tak jsem tam prostě prdnul &lt;a href="https://tenacity.readthedocs.io/"&gt;Tenacity&lt;/a&gt; a snad to pomůže.&lt;/li&gt;
+&lt;li&gt;Do klubu začali celkem chodit lidi, hlavně díky &lt;a href="https://www.youtube.com/watch?v=5Yjn6fzN1Sw"&gt;rozhovoru u Lucie&lt;/a&gt;.
+    Sem tam je tedy potřeba něco moderovat, vítat, a tak, ale zvládáme.&lt;/li&gt;
+&lt;li&gt;Přetmelili jsme sprcháč v bytě, aby nezatékal.&lt;/li&gt;
+&lt;li&gt;Udělal jsem review na jedno CV v klubu.&lt;/li&gt;
+&lt;li&gt;Opravil jsem jeden scraper na pracovní inzeráty.&lt;/li&gt;
+&lt;li&gt;Opravil jsem chybu ve vytváření vítacích vláken v klubu.&lt;/li&gt;
+&lt;li&gt;Zkoumal jsem jednu prapodivnost v účtech, kdy mi tam lítá jeden človíček. Je členem, měl by být členem, ale nemá aktivní členství. Netuším, čím to je. Asi erupce na Slunci.&lt;/li&gt;
+&lt;li&gt;Upgradoval jsem na junior.guru &lt;a href="https://github.com/mkdocs/mkdocs/"&gt;MkDocs&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Byl jsem na &lt;a href="https://www.eduspacollege.cz/k/masersky-kurz-klasicka-relaxacni-masaz-pro-verejnost"&gt;kurzu klasické relaxační masáže pro veřejnost&lt;/a&gt;, takže jsem teď certifikovaný masér.
+    Nemohu to vykonávat jako povolání, ale snad i tak to bude dobrý &lt;em&gt;hedging&lt;/em&gt;, kdyby náhodou ta AI přece jenom začala programovat.
+    Kurz jsem si udělal z vlastní iniciativy, jen tak pro radost, ale bylo to rozhodně vystoupení z komfortní zóny.
+    Naučil jsem se něco nového a vyzkoušel jsem si, jak se asi cítí junioři, když začínají s programováním.
+    Jsem rád, že se to tak sešlo a mohl jsem tam jít (bylo to na celý víkend, uvolnilo se tam poslední místo, a holky byly zrovna u babičky).&lt;/li&gt;
+&lt;li&gt;E-maily, &lt;a href="https://junior.guru/club/"&gt;klubový Discord&lt;/a&gt;, &lt;a href="https://docs.pyvec.org/operations/support.html#sit-kontaktu"&gt;Pyvec Slack&lt;/a&gt;, zprávy na LinkedIn.
+    Popravdě jsem ale teď komunikaci v klubu, Pyvec i LinkedIn spíš zanedbával.&lt;/li&gt;
+&lt;li&gt;Za 22 dní jsem při procházkách nachodil 17 km, na túrách nachodil 8 km. Celkem jsem se hýbal 14 h a zdolal při tom 25 km.
+    Detaily na &lt;a href="https://www.strava.com/athletes/31242569"&gt;Strava&lt;/a&gt;, jediné sociální síti, kde si napsání statusu musíte zasloužit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="planuji"&gt;Plánuji&lt;small class="permalink"&gt;&lt;a href="#planuji" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Podle nálady se rozhodnu, jestli chci dělat spíš na &lt;strong&gt;profilech kandidátů&lt;/strong&gt;, nebo dodělat &lt;strong&gt;sponzory&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Měl bych do konce června vymyslet akci nebo akce, které chci dělat v rámci letošního Týdne pro digitální Česko.&lt;/li&gt;
+&lt;li&gt;Dotáhnu změny na stránce o psychickém zdraví.&lt;/li&gt;
+&lt;li&gt;Koupím dvakrát tu knihu, kterou vyhraje někdo z těch, kdo odpovídají na dotazníky.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="zaujalo-me"&gt;Zaujalo mě&lt;small class="permalink"&gt;&lt;a href="#zaujalo-me" title="Odkaz na tento nadpis"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
+&lt;p&gt;Když na něco narazím a líbí se mi to, sdílím to &lt;a href="https://mastodonczech.cz/@honzajavorek"&gt;na Mastodonu&lt;/a&gt;.
+Od posledních poznámek jsem sdílel:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mujrozhlas.cz/rapi/view/episode/8b0f9b74-086d-3007-94b2-4d8ba735cdf7"&gt;Muži se víc zapojují do péče o děti, přebírají ale zábavné úkoly. Otravné věci jsou dál na ženách — Houpačky&lt;/a&gt;&lt;br&gt;Je vaše domácnost fér? Udělejte si audit, nespoléhejte se na dojmy.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.eischmann.cz/2024/06/05/hledani-nahrady-za-mapy-cz/"&gt;Hledání náhrady za Mapy.cz – Sesivany's blog&lt;/a&gt;&lt;br&gt;„Z pohledu českého uživatele se může zdát, že Mapy.cz jsou mainstreamem a OsmAnd a Locus Map jsou alternativami s podstatně menší uživatelskou základnou, ale spíše opak je pravdou. Mapy.cz mají na Google Play 5-10 milionů stažení, ve stejném pásmu se nachází Locus Map a OsmAnd je dokonce o úroveň výš – v pásmu 10-50 milionů stažení.“&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.blog/2024/06/10/generative-ai-is-not-going-to-build-your-engineering-team-for-you/"&gt;Generative AI Is Not Going To Build Your Engineering Team For You - Stack Overflow&lt;/a&gt;&lt;br&gt;Nahradí AI vývojáře? Ne. Ani juniorní. Nej článek o engineeringu a hiringu, jaký jsem v poslední době četl. Chci tu citovat asi deset pasáží! „By not hiring and training up junior engineers, we are cannibalizing our own future.“ „People act like writing code is the hard part of software. It is not. It never has been, it never will be. Writing code is the easiest part of software engineering, and it’s getting easier by the day… Code is easy, but systems are hard.“&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://wp-insights.s3.eu-central-1.amazonaws.com/wp-content/uploads/2024/05/30094851/Zeny-v-IT-2024.pdf"&gt;Ženy v IT 2024: Analýza genderové vyváženosti na pracovišti&lt;/a&gt;&lt;br&gt;Ženy v IT 2024, analýza od NoFluffJobs a Czechitas. „Více než 60 % žen si myslí, že je pro ně těžší dostat se do IT odvětví než pro muže. Až 51 % mužů s tímto prohlášením nesouhlasí.“&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://newsletter.pragmaticengineer.com/p/genz-part-2"&gt;What do GenZ software engineers really think?&lt;/a&gt;&lt;br&gt;Malý náhled do duše GenZ vývojářů. Respondenti jsou z celého světa, citace je tam jedna i z Česka. Jsou tam zajímavé postřehy, např. „older colleagues are regularly clueless about tech YouTubers“ nebo „they use silly concepts like a ‘Bus Factor’, that only old people think is funny“&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pagenotfound.cz/clanek/maminko-tatinku-posilam-vam-vzpominku"&gt;Maminko, tatínku, posílám vám vzpomínku – Page Not Found&lt;/a&gt;&lt;br&gt;„Kamarádi, které jsem měla za drsňáky, mi do zpráv psali, jak jim moje jednoduchá otázka "Zažili jste něco nepříjemného na táborech jako děti nebo mladiství?" rozjela kolotoč otřesných, vytěsněných vzpomínek na mlácení, buzeraci, výsměch a násilí.“&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stefantheard.com/silicon-valleys-best-kept-secret-founder-liquidity/"&gt;Silicon Valley’s Best Kept Secret: Founder Liquidity&lt;/a&gt;&lt;br&gt;„If you work at a venture-backed company the next time a round is announced ask if the founders took any liquidity. Do it anonymously if you have to.“&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://omny.fm/shows/zdopravy/dokument-rn-podcast-hlavn-k-i-ovatka-brno"&gt;Dokumentární podcast Hlavní křižovatka Brno — Zdopravy Podcast&lt;/a&gt;&lt;br&gt;„Mít auto a mít ho kde postavit je něco, co je samozřejmý. Když vám to berou, máte pocit, že vám řežou ruku, protože to je vaše součást přece.“&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pagenotfound.cz/clanek/umeni-davida-cerneho-je-jako-fikovy-list"&gt;Umění Davida Černého je jako fíkový list – Page Not Found&lt;/a&gt;&lt;br&gt;Místo ulic solitérní domy, které existují ve svém paralelním vesmíru. Přesně to mi taky vadí, nejen v Karlíně.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=XD2eRIgBgI4"&gt;‘DO A WHEELIE’ Danny MacAskill | adidas Five Ten&lt;/a&gt;&lt;br&gt;Danny a Viola v jednom videu, to je prostě radost!&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pagenotfound.cz/clanek/jak-si-konzervativci-privlastnili-prislib-svobody"&gt;Jak si konzervativci přivlastnili příslib svobody – Page Not Found&lt;/a&gt;&lt;br&gt;Výborný Jetmar. Ideální čtení po volbách. „Moralizující kritika ošálených či autoritářských částí společnosti skrývá, že nemusíme sledovat zvrat moderní emancipace, ale spíš její pokračování, byť v nešťastné podobě. … Také chtějí žít jako dosud. Všichni chceme, byť patrně víme nebo aspoň tušíme, že to nepůjde. Konejšivé, kolektivní sebeoklamávání ale může být i pro docela všímavé a kritické lidi dobrou taktikou, jak se vypořádat s nešťastnou podobou světa.“&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://media.ccc.de/v/gpn22-492-i-beg-you-please-make-your-own-github-alternatives-"&gt;I beg you, please make your own GitHub alternatives!&lt;/a&gt;&lt;br&gt;Překotný, ale zajímavý talk o alternativách ke GitHubu. Asi nic, do čeho bych se zrovna hrnul, ale je dobré sledovat horizonty. https://media.ccc.de/v/gpn22-492-i-beg-you-please-make-your-own-github-alternatives&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="blog"></category><category term="týdenní poznámky"></category><category term="junior.guru"></category></entry><entry><title>Týdenní poznámky: Kurz scrapování v Pythonu a WebExpo</title><link href="https://honzajavorek.cz/blog/tydenni-poznamky-kurz-scrapovani-v-pythonu-a-webexpo/" rel="alternate"></link><published>2024-05-31T00:00:00+02:00</published><updated>2024-05-31T00:00:00+02:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2024-05-31:/blog/tydenni-poznamky-kurz-scrapovani-v-pythonu-a-webexpo/</id><summary type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Jak se mi daří v jednom člověku provozovat a rozvíjet &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt;?
 Od &lt;a href="https://honzajavorek.cz/blog/tydenni-poznamky-choroba-api-s-profily-junioru-mentoring/"&gt;posledních poznámek&lt;/a&gt; už utekl nějaký ten týden (17. 5. až 31. 5.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.&lt;/p&gt;
 &lt;figure class="figure"&gt;&lt;img alt="Poznámky" src="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg" class="img-fluid figure-img rounded"&gt;&lt;figcaption class="figure-caption"&gt;
 Fotil &lt;a href="https://unsplash.com/@markusspiske"&gt;Markus Spiske&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
@@ -8224,115 +8321,4 @@ Možná by to ale šlo i líp.
 Možná by k tomu šlo použít i to Stable Diffusion!
 Jenže to jsem zatím nezkoumal.&lt;/p&gt;
 &lt;p&gt;Pokud jste ve zkoušení dál než já, dejte vědět nějaké tipy!
-A jestli jste ještě Stable Diffusion nezkoušeli, třeba vám tenhle článek pomůže začít.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="blog"></category></entry><entry><title>Clutter be gone: Reclaiming reading on the internet with a single button</title><link href="https://honzajavorek.cz/blog/clutter-be-gone-reclaiming-reading-on-the-internet-with-a-single-button/" rel="alternate"></link><published>2023-04-07T00:00:00+02:00</published><updated>2023-04-07T00:00:00+02:00</updated><author><name>Honza Javorek</name></author><id>tag:honzajavorek.cz,2023-04-07:/blog/clutter-be-gone-reclaiming-reading-on-the-internet-with-a-single-button/</id><summary type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Are you tired of reading through the clutter of cookie prompts, advertisements, and notification prompts?
-What if I told you there is a single magic button which gets you just the information you're interested in?
-And what if you don't need to install any extensions, because this button is already …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;Are you tired of reading through the clutter of cookie prompts, advertisements, and notification prompts?
-What if I told you there is a single magic button which gets you just the information you're interested in?
-And what if you don't need to install any extensions, because this button is already in your browser?&lt;/p&gt;
-&lt;figure class="figure"&gt;&lt;img alt="Clutter be gone: The art of reading articles online" src="https://honzajavorek.cz/images/screenshot-2023-04-07-at-11-18-52.png" class="img-fluid figure-img rounded"&gt;&lt;figcaption class="figure-caption"&gt;
-The &lt;a href="https://www.e15.cz/"&gt;E15 magazine homepage&lt;/a&gt; in Google Chrome&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;h2 id="why-ad-blockers-suck"&gt;Why ad blockers suck&lt;small class="permalink"&gt;&lt;a href="#why-ad-blockers-suck" title="Link to this heading"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;The screenshot above is just an example of how the current internet experience looks like for a regular user.
-On desktop I use &lt;a href="https://ublockorigin.com/"&gt;uBlock Origin&lt;/a&gt; to eliminate most of the clutter, but it has a few drawbacks:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You need to install the extension.&lt;/li&gt;
-&lt;li&gt;Sometimes it breaks websites and you need to remind yourself that the ad blocker could be the reason.&lt;/li&gt;
-&lt;li&gt;If it breaks a website, you need to figure out some exception rules in the clunky UI of the extension.&lt;/li&gt;
-&lt;li&gt;It isn't available for phones.&lt;/li&gt;
-&lt;li&gt;It requires my trust, because I give it permission to do basically anything on any page I'm browsing.
-    Effectively, the extension is a &lt;a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack"&gt;Man-in-the-middle&lt;/a&gt;.
-    It is like police, a thing which is legally allowed to use force to keep order, but can easily get out of hand if unchecked.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The above points are okay-ish for me, a power user with affinity to make my life a bit more miserable for the sake of privacy and better internet experience.
-However, they're deal breakers for regular users.&lt;/p&gt;
-&lt;p&gt;Also, half of my browsing and reading happens to be on my phone.
-Yeah, there is a thing called AdGuard and others, but here we are again with the trust.
-The installation step where I'm supposed to give it permissions to do almost anything with my phone makes me uneasy.
-And even though I gave it the access, I didn't manage to get it working properly.&lt;/p&gt;
-&lt;h2 id="why-this-all-is-so-annoying"&gt;Why this all is so annoying&lt;small class="permalink"&gt;&lt;a href="#why-this-all-is-so-annoying" title="Link to this heading"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;If clicking on cookie clutter and avoiding ads is annoying on desktop, on a phone it is downright infuriating.
-You want to get stuff done quickly, because you're in a tram and need to check something.
-Or perhaps quietly, because you're reading while someone is sleeping next to you.&lt;/p&gt;
-&lt;p&gt;You open a link and—cookies! Video ads! Pop-ups!
-Websites forcing you to play a fat-fingering game, different kinds, different levels of difficulty.
-Exhausting your patience.
-Making your short stay in this world shorter and more miserable.&lt;/p&gt;
-&lt;p&gt;On iPhone, you can long-press any link and get a preview of what you're clicking on.
-In the preview, you might see the title, the lead paragraph, the main photo, right?
-You can then decide whether you want to actually go to that page, read it later, or let it be.
-You know what all my previews look like?
-Like a giant cookie prompt.&lt;/p&gt;
-&lt;figure class="figure"&gt;&lt;img alt="iPhone preview" src="https://honzajavorek.cz/images/img-2735.png" class="img-fluid figure-img rounded"&gt;&lt;figcaption class="figure-caption"&gt;
-The title of the cookie prompt starts with: „Do you enjoy our content?“ What?! What content are you even talking about?&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;p&gt;This is also how all websites my in-app browsers look like.
-Even if I confirm the cookie prompt in the standalone Safari, the in-app browser windows don't share cookies with it, so I'm prompted again.&lt;/p&gt;
-&lt;p&gt;I have a beard, I'm an old man.
-I remember how the web used to be.
-Yes, we had banners.
-Yes, we had pop-up windows.
-But back then, the browsers at least didn't collaborate with advertisers.
-They seemed to care about user experience.
-They guarded us against the most infuriating practices, so we could have a better time reading the internet.
-Today, Google Chrome has a monopoly.
-A browser developed by an advertising company.
-As of now it takes &lt;a href="https://cookie-script.com/blog/google-delays-blocking-third-party-cookies"&gt;four years of delays&lt;/a&gt; to implement even the most basic protection of its users.&lt;/p&gt;
-&lt;p&gt;Go here: &lt;a href="https://how-i-experience-web-today.com/"&gt;how-i-experience-web-today.com&lt;/a&gt;
-Laughing or crying?
-I'm crying, because I've been laughing for too long and after a decade of more and more of these obstructions, I feel like it's just not funny anymore.
-Coping by joking stopped working for me.
-We, users of the internet, need to take action.&lt;/p&gt;
-&lt;p&gt;If it didn't produce CO₂, I'd wish the most infuriating websites burned down.
-It does produce CO₂ to burn servers and my tapping fingers don't have the superpower to do it anyway, so I'm left with looking for a different approach.&lt;/p&gt;
-&lt;h2 id="yes-to-privacy-aware-browsers-and-reader-modes"&gt;Yes to privacy-aware browsers and reader modes&lt;small class="permalink"&gt;&lt;a href="#yes-to-privacy-aware-browsers-and-reader-modes" title="Link to this heading"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;I use browsers which at least pretend to protect users by blocking the most basic stuff.
-I use Firefox on my desktop and Safari on my phone.&lt;/p&gt;
-&lt;p&gt;Both these browsers also feature a magic button, which hides everything but content on any given page.
-It's quite hidden, but it's there:
-See &lt;a href="https://support.mozilla.org/en-US/kb/firefox-reader-view-clutter-free-web-pages"&gt;how-to for Firefox&lt;/a&gt;, &lt;a href="https://support.apple.com/guide/safari/hide-ads-when-reading-sfri32632/mac"&gt;how-to for Safari&lt;/a&gt;.
-It's called Reader Mode.&lt;/p&gt;
-&lt;figure class="figure"&gt;&lt;img alt="Reader Mode in Safari" src="https://honzajavorek.cz/images/screenshot-2023-04-07-at-11-20-42.png" class="img-fluid figure-img rounded"&gt;&lt;/figure&gt;
-&lt;figure class="figure"&gt;&lt;img alt="Reader Mode in Firefox" src="https://honzajavorek.cz/images/screenshot-2023-04-07-at-11-21-46.png" class="img-fluid figure-img rounded"&gt;&lt;/figure&gt;
-&lt;p&gt;It respects your dark mode settings, so no more bleeding eyes from white backgrounds when you're trying to read something in the middle of the night.
-Not sure about Safari, but Firefox offers font settings and is even able to read the article out loud by a robotic voice.&lt;/p&gt;
-&lt;p&gt;The best thing is that you don't need to click on anything else.
-You land on a page?
-Don't mind any pop-ups, cookie prompts, or ads.
-Just hit the Reader Mode button and be done with it.&lt;/p&gt;
-&lt;p&gt;No, actually, you know what's even better?
-I discovered that Safari has an option to turn this on by default!&lt;/p&gt;
-&lt;figure class="figure"&gt;&lt;img alt="Reader Mode by default on desktop" src="https://honzajavorek.cz/images/screenshot-2023-04-07-at-12-09-00.png" class="img-fluid figure-img rounded"&gt;&lt;/figure&gt;
-&lt;figure class="figure"&gt;&lt;img alt="Reader Mode by default on iOS" src="https://honzajavorek.cz/images/img-2733.jpg" class="img-fluid figure-img rounded"&gt;&lt;/figure&gt;
-&lt;p&gt;Since I use Safari on my phone, this is pure bliss.
-Liberation.
-Deliverance!
-I don't have to tap on anything anymore.
-Most of the stuff I open turns into a nice column of text, immediately and automatically.&lt;/p&gt;
-&lt;p&gt;Sometimes I don't want it turned on or it doesn't process the page well.
-But I figured out this is a minority of pages I open and I'm okay to do the single tap to opt-out, case by case.
-Majority of the websites are utter mess though, so to me, ocassionally opting-out from Reader Mode makes more sense than opting-in.&lt;/p&gt;
-&lt;h2 id="is-it-ethical"&gt;Is it ethical?&lt;small class="permalink"&gt;&lt;a href="#is-it-ethical" title="Link to this heading"&gt;&lt;i class="bi bi-link-45deg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-&lt;p&gt;What about those poor content providers relying on ads?
-Well, in the first place, nobody asked me whether it's ethical to track me everywhere and fuck up the internet to the extent it's almost unusable in its default form.&lt;/p&gt;
-&lt;p&gt;I refuse personal responsibility, I don't care how ethical this is.
-This is coping.
-Surviving in a broken and fucked-up system.&lt;/p&gt;
-&lt;p&gt;You may say: If you don't like it, don't visit that website!
-If you don't display ads, you're a stowaway!
-Well this works only until you actually have a choice.
-The internet got to a state where it's practically impossible to implement a personal policy of avoiding annoying websites.
-All of them are annoying.&lt;/p&gt;
-&lt;figure class="figure"&gt;&lt;img alt="Old man yells at cloud" src="https://honzajavorek.cz/images/3ad-1362626647.jpg" class="img-fluid figure-img rounded"&gt;&lt;/figure&gt;
-&lt;p&gt;I do play the meaningless personal responsibility game to make the world a better place, but I have to choose battles.
-I'm already drinking from pulpy paper straws and I sort my trash by colors to fight climate change.
-I don't have any capacity left to click on cookie prompts and watch ads to save the publishers.&lt;/p&gt;
-&lt;p&gt;Folks, let's be honest.
-If you didn't put the ads all over that page, I wouldn't be motivated to block them.
-If you didn't track me, there would be no cookie prompts to avoid.
-If you didn't prompt me to do five hops before I'm able to get to the content, I wouldn't be giving up on how you designed the site.&lt;/p&gt;
-&lt;p&gt;My &lt;a href="https://junior.guru/"&gt;junior.guru&lt;/a&gt; currently &lt;a href="https://junior.guru/open/"&gt;earns 2.322€ net profit per month&lt;/a&gt; and it doesn't have ads, tracking cookies, nor newsletter prompts.&lt;/p&gt;
-&lt;p&gt;And yes, I do have some &lt;a href="https://simpleanalytics.com/junior.guru"&gt;analytics&lt;/a&gt;.
-Detailed analytics based on tracking people are overrated.
-And it's an evil thing to do.
-That's why the EU wants you to stop doing this!
-If you cannot figure out a better business model than one based on tracking me, I have no respect.
-Protecting my internet privacy and experience takes priority.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="blog"></category></entry></feed>
+A jestli jste ještě Stable Diffusion nezkoušeli, třeba vám tenhle článek pomůže začít.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="blog"></category></entry></feed>
