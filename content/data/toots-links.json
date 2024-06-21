@@ -1,5 +1,71 @@
 [
   {
+    "id": 112647822097166928,
+    "created_at": "2024-06-20T07:42:35.734000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112647822097166928",
+    "url": "https://mastodonczech.cz/@honzajavorek/112647822097166928",
+    "replies_count": 2,
+    "reblogs_count": 1,
+    "favourites_count": 2,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Je vaše domácnost fér? Udělejte si audit, nespoléhejte se na dojmy. <a href=\"https://overcast.fm/+SwH2SokwU\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">overcast.fm/+SwH2SokwU</span><span class=\"invisible\"></span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://overcast.fm/+SwH2SokwU",
+      "title": "Muži se víc zapojují do péče o děti, přebírají ale zábavné úkoly. Otravné věci jsou dál na ženách — Houpačky",
+      "description": "„Ženy jsou v českých domácnostech stále hlavně zodpovědné za úklid, praní, vaření. To jsou věci, které jsou strašně časově náročné, nejdou moc odkládat a musíte se jim věnovat každý den. Z mých rozhovorů často vyplývá, že ženám chybí ocenění za to, že bez toho, co ony dělají, by jejich partneři nemohli dělat v klidu svoji práci,“ říká Martina Dvořáková, zakladatelka projektu Férová domácnost.",
+      "language": "en",
+      "type": "video",
+      "html": "<iframe src=\"https://overcast.fm/podcasts/episode_card/1319548786086661?t=0\" width=\"290\" height=\"58\" allowfullscreen=\"allowfullscreen\" scrolling=\"no\" frameborder=\"0\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms\"></iframe>",
+      "width": 290,
+      "height": 58,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/004/623/571/original/d2869ab33a58eace.jpeg",
+      "embed_url": "https://chtbl.com/track/1EE4E/croaod.cz/download/1533339a-1425-45c2-86cf-26bfcdb3094b.mp3#t=0",
+      "blurhash": "UkG,bDWBBrjEyZfl$xkB%1jZVsbIj]fPs.j["
+    }
+  },
+  {
+    "id": 112613329971553230,
+    "created_at": "2024-06-14T05:30:47.664000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112613329971553230",
+    "url": "https://mastodonczech.cz/@honzajavorek/112613329971553230",
+    "replies_count": 1,
+    "favourites_count": 11,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>„Z pohledu českého uživatele se může zdát, že Mapy.cz jsou mainstreamem a OsmAnd a Locus Map jsou alternativami s podstatně menší uživatelskou základnou, ale spíše opak je pravdou. Mapy.cz mají na Google Play 5-10 milionů stažení, ve stejném pásmu se nachází Locus Map a OsmAnd je dokonce o úroveň výš – v pásmu 10-50 milionů stažení.“ <a href=\"https://blog.eischmann.cz/2024/06/05/hledani-nahrady-za-mapy-cz/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">blog.eischmann.cz/2024/06/05/h</span><span class=\"invisible\">ledani-nahrady-za-mapy-cz/</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://blog.eischmann.cz/2024/06/05/hledani-nahrady-za-mapy-cz/",
+      "title": "Hledání náhrady za Mapy.cz – Sesivany's blog",
+      "language": "cs",
+      "type": "link"
+    }
+  },
+  {
     "id": 112611685732203774,
     "created_at": "2024-06-13T22:32:38.564000+00:00",
     "sensitive": false,
@@ -7,12 +73,15 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112611685732203774",
     "url": "https://mastodonczech.cz/@honzajavorek/112611685732203774",
+    "reblogs_count": 5,
+    "favourites_count": 8,
+    "edited_at": "2024-06-14T05:01:46.311000+00:00",
     "favourited": false,
     "reblogged": false,
     "muted": false,
     "bookmarked": false,
     "pinned": false,
-    "content": "<p>Nahradí AI vývojáře? Ne. Ani juniorní. Dlouhý, ale pěkný článek. „By not hiring and training up junior engineers, we are cannibalizing our own future.“ „People act like writing code is the hard part of software. It is not. It never has been, it never will be. Writing code is the easiest part of software engineering, and it’s getting easier by the day… Code is easy, but systems are hard.“ <a href=\"https://stackoverflow.blog/2024/06/10/generative-ai-is-not-going-to-build-your-engineering-team-for-you/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">stackoverflow.blog/2024/06/10/</span><span class=\"invisible\">generative-ai-is-not-going-to-build-your-engineering-team-for-you/</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "content": "<p>Nahradí AI vývojáře? Ne. Ani juniorní. Nej článek o engineeringu a hiringu, jaký jsem v poslední době četl. Chci tu citovat asi deset pasáží! „By not hiring and training up junior engineers, we are cannibalizing our own future.“ „People act like writing code is the hard part of software. It is not. It never has been, it never will be. Writing code is the easiest part of software engineering, and it’s getting easier by the day… Code is easy, but systems are hard.“ <a href=\"https://stackoverflow.blog/2024/06/10/generative-ai-is-not-going-to-build-your-engineering-team-for-you/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">stackoverflow.blog/2024/06/10/</span><span class=\"invisible\">generative-ai-is-not-going-to-build-your-engineering-team-for-you/</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
     "tags": [
       {
         "name": "links",
@@ -26,7 +95,6 @@
       "type": "link",
       "width": 1200,
       "height": 630,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/004/543/799/original/b7f911756cffa20a.png",
       "blurhash": "UYNw1gIoxGw{o|WBxuWq_4I:WVoe#,jFIoW="
     }
   },
@@ -38,6 +106,7 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112609964844546216",
     "url": "https://mastodonczech.cz/@honzajavorek/112609964844546216",
+    "favourites_count": 1,
     "favourited": false,
     "reblogged": false,
     "muted": false,
@@ -59,8 +128,8 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112609611197175031",
     "url": "https://mastodonczech.cz/@honzajavorek/112609611197175031",
-    "reblogs_count": 1,
-    "favourites_count": 2,
+    "reblogs_count": 2,
+    "favourites_count": 3,
     "edited_at": "2024-06-13T13:46:59.975000+00:00",
     "favourited": false,
     "reblogged": false,
@@ -85,7 +154,6 @@
       "provider_name": "The Pragmatic Engineer",
       "width": 1200,
       "height": 600,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/004/568/864/original/389199d9a848643e.jpg",
       "blurhash": "U6SigQt7~qxu4nWB%Mt7?bRjM{j[IUWBt7j[",
       "published_at": "2024-06-11T16:13:43+00:00"
     }
@@ -99,7 +167,7 @@
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112608652465423934",
     "url": "https://mastodonczech.cz/@honzajavorek/112608652465423934",
     "replies_count": 1,
-    "favourites_count": 1,
+    "favourites_count": 2,
     "favourited": false,
     "reblogged": false,
     "muted": false,
