@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Sponzoři a scrapování Úřadu práce
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/322
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/112695202781271724
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-06-21_tydenni-poznamky-cerven.md) už utekl nějaký ten týden (21. 6. až 28. 6.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
