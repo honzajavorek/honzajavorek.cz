@@ -2,6 +2,8 @@ Title: Týdenní poznámky: EuroPython a překopávání sponzorů
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/323
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/112774927866396175
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-06-28_tydenni-poznamky-sponzori-a-scrapovani-uradu-prace.md) už utekl nějaký ten týden (28. 6. až 12. 7.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
