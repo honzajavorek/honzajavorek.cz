@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Kokořínsko a Apify
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/324
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/112813640428506508
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-07-12_tydenni-poznamky-europython-a-prekopavani-sponzoru.md) už utekl nějaký ten týden (12. 7. až 19. 7.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
