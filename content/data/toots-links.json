@@ -1,5 +1,126 @@
 [
   {
+    "id": 112860326406571559,
+    "created_at": "2024-07-27T20:25:14.166000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112860326406571559",
+    "url": "https://mastodonczech.cz/@honzajavorek/112860326406571559",
+    "favourites_count": 4,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>„I read a post recently where someone bragged about using kubernetes to scale all the way up to 500,000 page views per month. But that’s 0.2 requests per second. I could serve that from my phone, on battery power, and it would spend most of its time asleep.“ <a href=\"https://tailscale.com/blog/new-internet\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">tailscale.com/blog/new-interne</span><span class=\"invisible\">t</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://tailscale.com/blog/new-internet",
+      "title": "The New Internet",
+      "description": "We don’t talk a lot in public about the big vision for Tailscale, why we’re really here. Usually I prefer to focus on what exists right now, and what we’re going to do in the next few months. But let’s look at the biggest of big pictures for a change.",
+      "type": "link",
+      "width": 1200,
+      "height": 630,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/004/940/698/original/79970964a9138f92.png",
+      "blurhash": "U46RM%?bD%M{00IU-;xuxut7WBWB?bxuM{Rj"
+    }
+  },
+  {
+    "id": 112860184995963293,
+    "created_at": "2024-07-27T19:49:16.412000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112860184995963293",
+    "url": "https://mastodonczech.cz/@honzajavorek/112860184995963293",
+    "reblogs_count": 2,
+    "favourites_count": 2,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>„SQLite reads and writes small blobs (for example, thumbnail images) 35% faster than the same blobs can be read from or written to individual files on disk using fread() or fwrite(). Furthermore, a single SQLite database holding 10-kilobyte blobs uses about 20% less disk space than storing the blobs in individual files.“ <a href=\"https://sqlite.org/fasterthanfs.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">sqlite.org/fasterthanfs.html</span><span class=\"invisible\"></span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://sqlite.org/fasterthanfs.html",
+      "title": "35% Faster Than The Filesystem",
+      "type": "link"
+    }
+  },
+  {
+    "id": 112857618940084955,
+    "created_at": "2024-07-27T08:56:41.507000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112857618940084955",
+    "url": "https://mastodonczech.cz/@honzajavorek/112857618940084955",
+    "reblogs_count": 2,
+    "favourites_count": 5,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Jetmar! „Česko je zemí nasáklou chlastem. Patrně i hory tady po ránu vydechují alkovýpary.“ „…jeden z největších pivovarských konglomerátů světa… chce mít už v roce 2040 polovinu svých prodejů z nealko či nízko-alko nápojů.“ „Odvyklí od skutečné práce, té rukama, jsme záhy zjistili, že potřebujeme iontový nápoj. Pivo, byť desetistupňové, nás však zejména v teplejším počasí lenivělo. Navíc jsme museli večer často ještě něco dělat do práce, té placené, na počítači…“ <a href=\"https://pagenotfound.cz/clanek/05-percent-vol-to-nejlepsi-z-obou-svetu\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">pagenotfound.cz/clanek/05-perc</span><span class=\"invisible\">ent-vol-to-nejlepsi-z-obou-svetu</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://pagenotfound.cz/clanek/05-percent-vol-to-nejlepsi-z-obou-svetu",
+      "title": "0,5 % vol. To nejlepší z obou světů – Page Not Found",
+      "description": "Výroba nealko piva se v Česku v poslední dekádě téměř zdvojnásobila, pivovary teď experimentují i se slabšími a méně cukernatými alko verzemi. Lidí, kteří nechtějí skončit jako jejich namatlaní strýcové, zároveň ale neradi zůstávají doma nebo o vodě, očividně přibývá.",
+      "language": "cs",
+      "type": "link"
+    }
+  },
+  {
+    "id": 112857516580249152,
+    "created_at": "2024-07-27T08:30:39.619000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112857516580249152",
+    "url": "https://mastodonczech.cz/@honzajavorek/112857516580249152",
+    "replies_count": 2,
+    "reblogs_count": 2,
+    "favourites_count": 3,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>„Dopady všeho, co je s rizikovým pitím spojené, dělají z alkoholu tu vůbec nejnebezpečnější látku. Když vyskládáme všechny drogy vedle sebe a zhodnotíme míru jejich závadnosti, alkohol z toho vyjde nejhůř a až za ním je heroin. Takhle je to drsné…“ <a href=\"https://pagenotfound.cz/clanek/nekterymi-kroky-jsem-si-vytvoril-nepratele-na-smrt-jindrich-voboril-o-odchodu-z-funkce-protidrogoveho-koordinatora-regulaci-navykovych-latek-i-trestech-za-konopi\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">pagenotfound.cz/clanek/nektery</span><span class=\"invisible\">mi-kroky-jsem-si-vytvoril-nepratele-na-smrt-jindrich-voboril-o-odchodu-z-funkce-protidrogoveho-koordinatora-regulaci-navykovych-latek-i-trestech-za-konopi</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://pagenotfound.cz/clanek/nekterymi-kroky-jsem-si-vytvoril-nepratele-na-smrt-jindrich-voboril-o-odchodu-z-funkce-protidrogoveho-koordinatora-regulaci-navykovych-latek-i-trestech-za-konopi",
+      "title": "\"Některými kroky jsem si vytvořil nepřátele na smrt.\" Jindřich Vobořil o odchodu z funkce protidrogového koordinátora, regulaci návykových látek i trestech za konopí – Page Not Found",
+      "description": "Jindřich Vobořil opouští koncem srpna pozici národního drogového koordinátora a přesouvá se do role poradce premiéra. Co bude obnášet a proč se tak děje? Jaké další plány Vobořil má a co by Česko mělo udělat, aby přestalo být alkoholovou velmocí? To vše řešíme v exkluzivním rozhovoru pro Page 404 s předním českým odborníkem na drogy a závislosti. \n",
+      "language": "cs",
+      "type": "link"
+    }
+  },
+  {
     "id": 112848404786784727,
     "created_at": "2024-07-25T17:53:24.684000+00:00",
     "sensitive": false,
@@ -34,7 +155,6 @@
       "provider_name": "The Elysian",
       "width": 1200,
       "height": 600,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/004/923/365/original/a56804a8d8fd27f1.jpg",
       "blurhash": "UAJHdUIA4nWCWSof4Tg3%hj?9FIp?bofx]%2",
       "published_at": "2024-07-24T10:13:57+00:00"
     }
@@ -68,7 +188,6 @@
       "type": "link",
       "width": 640,
       "height": 427,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/004/712/365/original/8bb1e8e18c27d7ec.jpg",
       "blurhash": "UpKT-~-nsAng*0$gNHnNbwi_Nas9i_S2s9oz"
     }
   },
@@ -135,6 +254,7 @@
       "provider_name": "Ed Zitron's Where's Your Ed At",
       "width": 1200,
       "height": 1200,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/004/721/066/original/f142b31f37273f47.jpeg",
       "blurhash": "U3KKvBxu%LRkIxs;4oWCf-of-.WC_2j]xoxu",
       "published_at": "2024-07-01T17:09:57+00:00"
     }
@@ -764,11 +884,12 @@
     ],
     "card": {
       "url": "https://stackoverflow.blog/2024/06/10/generative-ai-is-not-going-to-build-your-engineering-team-for-you/",
-      "title": "Generative AI Is Not Going To Build Your Engineering Team For You - Stack Overflow",
+      "title": "Generative AI is not going to build your engineering team for you - Stack Overflow",
       "language": "en",
       "type": "link",
       "width": 1200,
       "height": 630,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/004/543/799/original/8bcfa290dd8e797b.png",
       "blurhash": "UYNw1gIoxGw{o|WBxuWq_4I:WVoe#,jFIoW="
     }
   },
