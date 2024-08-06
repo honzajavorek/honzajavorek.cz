@@ -1,5 +1,71 @@
 [
   {
+    "id": 112908682528202405,
+    "created_at": "2024-08-05T09:22:50.025000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/112908682528202405",
+    "url": "https://mastodonczech.cz/@honzajavorek/112908682528202405",
+    "reblogs_count": 2,
+    "favourites_count": 4,
+    "edited_at": "2024-08-05T09:23:04.517000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Seznamte se s <a href=\"https://mastodonczech.cz/tags/Docker\" class=\"mention hashtag\" rel=\"tag\">#<span>Docker</span></a> základy a objevte, jak <a href=\"https://mastodonczech.cz/tags/kontejnery\" class=\"mention hashtag\" rel=\"tag\">#<span>kontejnery</span></a> usnadňují vývoj a nasazení aplikací. Praktické ukázky a tipy, začněte rychle a efektivně!</p><p>Lukáš Pavelka je C#/.NET vývojář. Před lety začínal svou kariéru s pomocí <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> klubu, teď v něm už podruhé přednáší 🚀</p><p>Kdo byste chtěli zítra dorazit, bude to online v 18:00 u nás na Discordu (bude i záznam). Do klubu se dostanete přes <a href=\"https://junior.guru/club\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">junior.guru/club</span><span class=\"invisible\"></span></a>, je to na první dva týdny zdarma 🆓</p>",
+    "media_attachments": [
+      {
+        "id": 112908678454826471,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/112/908/678/454/826/471/original/ae823b702faacac2.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/112/908/678/454/826/471/small/ae823b702faacac2.png",
+        "meta": {
+          "original": {
+            "width": 1280,
+            "height": 512,
+            "size": "1280x512",
+            "aspect": 2.5
+          },
+          "small": {
+            "width": 759,
+            "height": 304,
+            "size": "759x304",
+            "aspect": 2.4967105263157894
+          }
+        },
+        "blurhash": "UrRV?ZtW%OIy$]N2NMxUWGoes,WFWat4obR."
+      }
+    ],
+    "tags": [
+      {
+        "name": "docker",
+        "url": "https://mastodonczech.cz/tags/docker"
+      },
+      {
+        "name": "kontejnery",
+        "url": "https://mastodonczech.cz/tags/kontejnery"
+      },
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ],
+    "card": {
+      "url": "https://junior.guru/club/",
+      "title": "Klub pro začátečníky v programování",
+      "description": "Přidej se na junior.guru Discord! Jsme tvoje online programovací parta, skupina, fórum. Začátečníci, kteří to myslí vážně. Profesionálové s chutí pomáhat. Svoje programování nebo hledání práce posuneš o 1 % každý den.",
+      "language": "cs",
+      "type": "link",
+      "width": 1200,
+      "height": 630,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/002/725/044/original/231ef0b812ff4ece.png",
+      "blurhash": "UhSPUtj[xuayNSj[ofj@RKfQRkayR@fQaxj["
+    }
+  },
+  {
     "id": 112813640428506508,
     "created_at": "2024-07-19T14:32:22.675000+00:00",
     "sensitive": false,
