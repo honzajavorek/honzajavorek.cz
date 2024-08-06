@@ -187,6 +187,7 @@ def main(
     else:
         path.write_text(content)
         if open:
+            click.edit(filename=".")
             click.edit(filename=path)
 
 
