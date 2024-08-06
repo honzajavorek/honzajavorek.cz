@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Léto a vylepšování nabídek práce
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/325
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/112916385891714677
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-07-19_tydenni-poznamky-kokorinsko-a-apify.md) už utekl nějaký ten týden (19. 7. až 6. 8.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
