@@ -1,6 +1,8 @@
 Title: Jak najít psychoterapeuta nebo psychoterapeutku
 Image: images/nik-shuliahin-bunwp1bl0nc-unsplash.jpg
 Lang: cs
+Telegram-Comments: https://t.me/honzajavorekcz/326
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/112921887609899051
 
 Pokud máte pocit, že by vám pomohla psychoterapie, ale totálně se plácáte v tom, jak byste měli nějakého terapeuta nebo terapeutku vybrat, tak tohle je článek přesně pro vás. Krok za krokem, praktický návod. Můj návod, takže možná nebude fungovat každému, ale třeba vás někam z vaší rozhodovací paralýzy posune.
 
