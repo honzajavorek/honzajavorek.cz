@@ -16,7 +16,7 @@ python = "3.10.*"
 pelican = {version = "4.9.1", extras = ["markdown"]}
 strictyaml = "1.7.3"
 requests = "2.32.3"
-lxml = ">=5.0.0,<5.1.0"
+lxml = ">=5.0.0,<5.4.0"
 cssselect = "1.2.0"
 pillow = "10.4.0"
 markdown-del-ins = "1.0.0"
