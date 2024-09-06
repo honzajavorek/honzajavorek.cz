@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Srpen! Dovolené, sponzoři, nové čísla a grafy, 
 Image: images/img-1627.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/327
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/113092489357829527
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-08-06_tydenni-poznamky-leto-a-vylepsovani-nabidek-prace.md) už utekl nějaký ten týden (6. 8. až 6. 9.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
