@@ -1,5 +1,124 @@
 [
   {
+    "id": 113083805886719585,
+    "created_at": "2024-09-05T07:39:00.414000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113083805886719585",
+    "url": "https://mastodonczech.cz/@honzajavorek/113083805886719585",
+    "replies_count": 2,
+    "reblogs_count": 2,
+    "favourites_count": 4,
+    "edited_at": "2024-09-05T07:49:52.602000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Je fascinující, kolik kódu, práce a nejrůznějších pastí zahrnuje vygenerování 100x100px obrázku, uprostřed něhož je vycentrované jedno písmeno, které přijde v parametru funkce. A ne, ChatGPT mi s tím moc neporadilo, spíš mi radilo blbě. <a href=\"https://mastodonczech.cz/tags/python\" class=\"mention hashtag\" rel=\"tag\">#<span>python</span></a> <a href=\"https://mastodonczech.cz/tags/pillow\" class=\"mention hashtag\" rel=\"tag\">#<span>pillow</span></a></p><p>Už to snad funguje, takže od dnešního dne by měl každý inzerát na <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> mít „logo“. Pokud žádné nebude, dogeneruje se tohleto písmenko (první písmeno názvu firmy), ať se v tom dá trochu orientovat.</p>",
+    "media_attachments": [
+      {
+        "id": 113083802079755308,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/113/083/802/079/755/308/original/428e2e441a31d915.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/113/083/802/079/755/308/small/428e2e441a31d915.png",
+        "meta": {
+          "original": {
+            "width": 100,
+            "height": 100,
+            "size": "100x100",
+            "aspect": 1.0
+          },
+          "small": {
+            "width": 100,
+            "height": 100,
+            "size": "100x100",
+            "aspect": 1.0
+          }
+        },
+        "blurhash": "U8S$ov%M~q-;-;ofj[WB%Mt7ofM{-;RjM{t7"
+      },
+      {
+        "id": 113083807983762911,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/113/083/807/983/762/911/original/8c90a9df339ea2c6.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/113/083/807/983/762/911/small/8c90a9df339ea2c6.png",
+        "meta": {
+          "original": {
+            "width": 100,
+            "height": 100,
+            "size": "100x100",
+            "aspect": 1.0
+          },
+          "small": {
+            "width": 100,
+            "height": 100,
+            "size": "100x100",
+            "aspect": 1.0
+          }
+        },
+        "blurhash": "U7S$ov-;~q-;%MfQM{j[_3ayD%fQ-;j[xuay"
+      },
+      {
+        "id": 113083808442811985,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/113/083/808/442/811/985/original/00f4573ad1169196.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/113/083/808/442/811/985/small/00f4573ad1169196.png",
+        "meta": {
+          "original": {
+            "width": 100,
+            "height": 100,
+            "size": "100x100",
+            "aspect": 1.0
+          },
+          "small": {
+            "width": 100,
+            "height": 100,
+            "size": "100x100",
+            "aspect": 1.0
+          }
+        },
+        "blurhash": "U9S$ovxu~q?b%MfQj[j[-;t7IUM{%MfQfQj["
+      },
+      {
+        "id": 113083808702965247,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/113/083/808/702/965/247/original/6af2e8ee178262ae.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/113/083/808/702/965/247/small/6af2e8ee178262ae.png",
+        "meta": {
+          "original": {
+            "width": 100,
+            "height": 100,
+            "size": "100x100",
+            "aspect": 1.0
+          },
+          "small": {
+            "width": 100,
+            "height": 100,
+            "size": "100x100",
+            "aspect": 1.0
+          }
+        },
+        "blurhash": "UASY{q%M-;%MxufQRjfQ~qayM{fQ-;fQt7j["
+      }
+    ],
+    "tags": [
+      {
+        "name": "Python",
+        "url": "https://mastodonczech.cz/tags/Python"
+      },
+      {
+        "name": "pillow",
+        "url": "https://mastodonczech.cz/tags/pillow"
+      },
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ]
+  },
+  {
     "id": 113079810650424302,
     "created_at": "2024-09-04T14:42:57.946000+00:00",
     "sensitive": false,
