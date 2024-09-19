@@ -1,5 +1,84 @@
 [
   {
+    "id": 113160549894754983,
+    "created_at": "2024-09-18T20:56:01.042000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113160549894754983",
+    "url": "https://mastodonczech.cz/@honzajavorek/113160549894754983",
+    "reblogs_count": 1,
+    "favourites_count": 2,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Jinak pokud někdo ručně na klubovém <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> Discordu přidá pracovní inzerát, ode dneška se zobrazí i na webu na <a href=\"https://junior.guru/jobs/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">junior.guru/jobs/</span><span class=\"invisible\"></span></a></p><p>Zatím to jen vede na zprávu na Discordu, bez dalšího vysvětlení, takže kdo není v klubu, nic z toho mít nebude a asi to ani nepochopí. Ale to budu ještě vylepšovat, tohle je jen začátek.</p>",
+    "media_attachments": [
+      {
+        "id": 113160548873910902,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/113/160/548/873/910/902/original/45f25ebc8f92a5fd.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/113/160/548/873/910/902/small/45f25ebc8f92a5fd.png",
+        "meta": {
+          "original": {
+            "width": 1604,
+            "height": 756,
+            "size": "1604x756",
+            "aspect": 2.121693121693122
+          },
+          "small": {
+            "width": 699,
+            "height": 329,
+            "size": "699x329",
+            "aspect": 2.1246200607902734
+          }
+        },
+        "blurhash": "U4RpIGIT~n%M?bt6M{a#4oIV%LWC-=%MV?Ri"
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ],
+    "card": {
+      "url": "https://junior.guru/jobs/",
+      "title": "Práce pro juniorní programátory a testery",
+      "description": "Nabídky práce, stáže a brigády zaměřené výhradně na začínající programátory a testery bez komerční praxe.",
+      "language": "cs",
+      "type": "link",
+      "width": 1200,
+      "height": 630,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/005/187/281/original/189ca779f1645191.png",
+      "blurhash": "UiSY]Sj[t7ayNSj@oej@RLazWBazkIfQWBj["
+    }
+  },
+  {
+    "id": 113160505453107251,
+    "created_at": "2024-09-18T20:44:42.919000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113160505453107251",
+    "url": "https://mastodonczech.cz/@honzajavorek/113160505453107251",
+    "favourites_count": 1,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Přemýšlel jsem, v jakém frameworku udělám filtrování nabídek práce na <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a>, ale i ChatGPT souhlasilo, že čistý JavaScript na tohle bude nejlepší.</p><p>A opravdu, zabralo to asi jen hoďku a mám hotovou první verzi. Celkem 68 řádků JavaScriptu.</p><p>Pořád čekám, kdy se mi bude nějaký ten framework hodit a vyřeší mi nějaký zapeklitý problém, a pořád nic 🤷‍♂️</p><p>Možná by totéž v Reactu, Vue, Svelte, nebo něčem jiném šlo udělat i na méně řádků, ale zbytečně by mi to přidalo tunu režie a závislostí.</p>",
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ]
+  },
+  {
     "id": 113092489357829527,
     "created_at": "2024-09-06T20:27:19.668000+00:00",
     "sensitive": false,
@@ -91,6 +170,7 @@
       "type": "link",
       "width": 1200,
       "height": 630,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/005/187/281/original/189ca779f1645191.png",
       "blurhash": "UiSY]Sj[t7ayNSj@oej@RLazWBazkIfQWBj["
     }
   },
