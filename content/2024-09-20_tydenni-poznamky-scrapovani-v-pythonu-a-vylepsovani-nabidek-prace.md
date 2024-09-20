@@ -12,7 +12,7 @@ Od [posledních poznámek]({filename}2024-09-06_tydenni-poznamky-srpen-dovolene-
 Fotil [Markus Spiske](https://unsplash.com/@markusspiske)
 
 <div class="alert alert-warning" role="alert" markdown="1">
-**Plány:** Aktuální „předsevzetí” jsou v článku [Plán na Q2 2024]({filename}2024-04-06_plan-na-q2-2024.md)
+**Plány:** Stará „předsevzetí” jsou v článku [Plán na Q2 2024]({filename}2024-04-06_plan-na-q2-2024.md), nová ještě nejsou.
 
 **Čísla:** Finanční výsledky, návštěvnost a další čísla k junior.guru [mám přímo na webu](https://junior.guru/about/).
 </div>
@@ -31,13 +31,13 @@ Kromě různé režie a drobností jsem během svého „Apify týdne“ udělal
 
 Kurz scrapování jsem pak sdílel na [LinkedInu](https://www.linkedin.com/feed/update/urn:li:activity:7239882990082822144/), [Mastodonu](https://mastodonczech.cz/@honzajavorek/113117962966123324), na [FB Pyonieri](https://www.facebook.com/groups/pyonieri/posts/8532530260092409/) a [FB Programátoři začátečníci](https://www.facebook.com/groups/144621756262987/posts/1544344902957325/).
 
-![Kurz scrapování]({static}/images/screenshot-2024-09-20-at-14-48-00-web-scraping-basics-for-python-devs-academy-apify-documentation.png)
+![Kurz scrapování]({static}/images/screenshot-2024-09-20-at-14-48-00-web-scraping-basics-for-python-devs-academy-apify-documentation.png){: .img-thumbnail }
 
 ## Kino
 
 Občas si odběhnu do kina. Chodím tam sám, je to příjemný relax. V blízkosti domova mám 2-3 kina, z toho jedno je multiplex, do kterých nechodím, pokud nemusím. Ještě o zastávku dál jsou další 2 malá kina, ale to už je jakoby „daleko“. Ve výsledku se stále dívám na tytéž dva programy a kopíruju si do kalendáře kdy co je, kdybych náhodou měl čas si odskočit do filmové temnoty během náročného týdne.
 
-No a protože už mě to kopírovíní nebaví, jal jsem se vytvořit [kino](https://github.com/honzajavorek/kino). Ještě to není hotové, ale myšlenka je, že si scrapnu ty dva programy a vygeneruju z toho živý .ical export, který si dám přímo do kalendáře. Přesně a pouze s těmi informacemi, které potřebuji.
+No a protože už mě to kopírovíní nebaví, jal jsem se vytvořit [kino](https://github.com/honzajavorek/kino). Ještě to není hotové, ale myšlenka je, že si scrapnu ty dva programy a vygeneruju z toho živý `.ical` export, který si dám přímo do kalendáře. Přesně a pouze s těmi informacemi, které potřebuji.
 
 No a když už Apify vydalo to Crawlee pro Python, rozhodl jsem se to použít a napsat to v tom. Výsledkem mého snažení jsou zatím tyto issues na GitHubu:
 

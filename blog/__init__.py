@@ -152,6 +152,7 @@ def dev(
     args = [
         "pelican",
         content_path,
+        "--debug",
         "--fatal=errors",
         "--listen",
         "--autoreload",
