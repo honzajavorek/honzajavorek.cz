@@ -1,5 +1,73 @@
 [
   {
+    "id": 113169490278084395,
+    "created_at": "2024-09-20T10:49:40.465000+00:00",
+    "in_reply_to_id": 113165056501100331,
+    "in_reply_to_account_id": 110921870573231541,
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113169490278084395",
+    "url": "https://mastodonczech.cz/@honzajavorek/113169490278084395",
+    "favourites_count": 4,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Přijde mi, že v poslední době při programování zachráním nejvíc koťátek, když si uvědomím, že něco a něco nejsou tentýž typ věci, ale jsou to dvě různé věci.</p><p>Rozdělil jsem inzeráty stažené z internetu a ručně vložené do <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> klubu do dvou entit. Když se teď nesnaží ani jedna z těch entit pokroutit do tvaru té druhé, ale žijí si vlastním životem, dá se s tím dělat krásné věci!</p>",
+    "media_attachments": [
+      {
+        "id": 113169489541191597,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/113/169/489/541/191/597/original/48ea43107f14b584.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/113/169/489/541/191/597/small/48ea43107f14b584.png",
+        "meta": {
+          "original": {
+            "width": 2704,
+            "height": 1580,
+            "size": "2704x1580",
+            "aspect": 1.7113924050632912
+          },
+          "small": {
+            "width": 628,
+            "height": 367,
+            "size": "628x367",
+            "aspect": 1.7111716621253406
+          }
+        },
+        "blurhash": "UCSZ2;Rj~T%Mn#WBbJogjEWBbIofxWWBR.t6"
+      },
+      {
+        "id": 113169489671060547,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/113/169/489/671/060/547/original/a7aace376d5e9bd8.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/113/169/489/671/060/547/small/a7aace376d5e9bd8.png",
+        "meta": {
+          "original": {
+            "width": 2688,
+            "height": 1571,
+            "size": "2688x1571",
+            "aspect": 1.711012094207511
+          },
+          "small": {
+            "width": 628,
+            "height": 367,
+            "size": "628x367",
+            "aspect": 1.7111716621253406
+          }
+        },
+        "blurhash": "UEGlL[ay9Eofayayj[j[00ay_3ofj]ayf5j["
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ]
+  },
+  {
     "id": 113165056501100331,
     "created_at": "2024-09-19T16:02:06.397000+00:00",
     "in_reply_to_id": 113160549894754983,
@@ -9,6 +77,7 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113165056501100331",
     "url": "https://mastodonczech.cz/@honzajavorek/113165056501100331",
+    "replies_count": 1,
     "favourites_count": 1,
     "edited_at": "2024-09-19T16:03:03.808000+00:00",
     "favourited": false,
@@ -148,7 +217,6 @@
       "type": "link",
       "width": 1200,
       "height": 630,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/005/187/281/original/189ca779f1645191.png",
       "blurhash": "UiSY]Sj[t7ayNSj@oej@RLazWBazkIfQWBj["
     }
   },
@@ -267,7 +335,6 @@
       "type": "link",
       "width": 1200,
       "height": 630,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/005/187/281/original/189ca779f1645191.png",
       "blurhash": "UiSY]Sj[t7ayNSj@oej@RLazWBazkIfQWBj["
     }
   },
