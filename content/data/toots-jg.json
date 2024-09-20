@@ -1,5 +1,100 @@
 [
   {
+    "id": 113165056501100331,
+    "created_at": "2024-09-19T16:02:06.397000+00:00",
+    "in_reply_to_id": 113160549894754983,
+    "in_reply_to_account_id": 110921870573231541,
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113165056501100331",
+    "url": "https://mastodonczech.cz/@honzajavorek/113165056501100331",
+    "favourites_count": 1,
+    "edited_at": "2024-09-19T16:03:03.808000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Tak jsem asi vyřešil to, že když někdo není v klubu, pochopitelně se mu po kliknutí na klubovou pracovní nabídku nic kloudného neotevře. A kdo nezná ani Discord, nejspíš dostane jen nějakou 404ku a bude hodně zmatený.</p><p>Teď když někdo klikne na libovolný odkaz vedoucí do hlubin <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> Discordu, zobrazí se tenhle dialog. To jsem zvědav, jak to bude fungovat.</p><p>Sice 32 řádků JavaScriptu, ale jednak to (snad) zlepší UX, jednak to (možná) nažene lidi do klubu?</p>",
+    "media_attachments": [
+      {
+        "id": 113165048901331846,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/113/165/048/901/331/846/original/8eb4c0a293aa0b56.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/113/165/048/901/331/846/small/8eb4c0a293aa0b56.png",
+        "meta": {
+          "original": {
+            "width": 2682,
+            "height": 1559,
+            "size": "2682x1559",
+            "aspect": 1.7203335471456063
+          },
+          "small": {
+            "width": 630,
+            "height": 366,
+            "size": "630x366",
+            "aspect": 1.721311475409836
+          }
+        },
+        "blurhash": "UEGu,nay9Eofj@ayj[j[00ay_3j[kCj[f5ay"
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ]
+  },
+  {
+    "id": 113164727554201322,
+    "created_at": "2024-09-19T14:38:27.066000+00:00",
+    "in_reply_to_id": 113160505453107251,
+    "in_reply_to_account_id": 110921870573231541,
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113164727554201322",
+    "url": "https://mastodonczech.cz/@honzajavorek/113164727554201322",
+    "favourites_count": 2,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Oh yeah, filtry inzerátů na <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> už umí AND a OR podle typu tagu. 77 řádků JavaScriptu. To je tak vzrušující, vyrábět něco! A v něčem, co vlastně ani moc neumím. Když sekám backendové věci v Pythonu, tak to je rutina, ale tohle? Tohle je magic ✨ 😂</p>",
+    "media_attachments": [
+      {
+        "id": 113164725737387275,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/113/164/725/737/387/275/original/b2c6e37a028663f4.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/113/164/725/737/387/275/small/b2c6e37a028663f4.png",
+        "meta": {
+          "original": {
+            "width": 2283,
+            "height": 1548,
+            "size": "2283x1548",
+            "aspect": 1.4748062015503876
+          },
+          "small": {
+            "width": 583,
+            "height": 395,
+            "size": "583x395",
+            "aspect": 1.4759493670886077
+          }
+        },
+        "blurhash": "UWR:HCof%LofDzWCS2ayI8WBR*j[I8ayWUay"
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ]
+  },
+  {
     "id": 113160549894754983,
     "created_at": "2024-09-18T20:56:01.042000+00:00",
     "sensitive": false,
@@ -7,6 +102,7 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113160549894754983",
     "url": "https://mastodonczech.cz/@honzajavorek/113160549894754983",
+    "replies_count": 1,
     "reblogs_count": 1,
     "favourites_count": 2,
     "favourited": false,
@@ -64,7 +160,8 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113160505453107251",
     "url": "https://mastodonczech.cz/@honzajavorek/113160505453107251",
-    "favourites_count": 1,
+    "replies_count": 2,
+    "favourites_count": 3,
     "favourited": false,
     "reblogged": false,
     "muted": false,
