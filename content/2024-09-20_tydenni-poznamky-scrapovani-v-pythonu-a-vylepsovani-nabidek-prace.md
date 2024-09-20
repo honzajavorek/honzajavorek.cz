@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Scrapování v Pythonu a vylepšování nabídek pr�
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/328
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/113170135811776128
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-09-06_tydenni-poznamky-srpen-dovolene-sponzori-nove-cisla-a-grafy-nove-pracovni-inzeraty.md) už utekl nějaký ten týden (6. 9. až 20. 9.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
