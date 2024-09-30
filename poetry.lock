@@ -951,13 +951,13 @@ files = [
 
 [[package]]
 name = "pelican"
-version = "4.9.1"
+version = "4.10.1"
 description = "Static site generator supporting Markdown and reStructuredText"
 optional = false
 python-versions = "<4.0,>=3.8.1"
 files = [
-    {file = "pelican-4.9.1-py3-none-any.whl", hash = "sha256:713ea66c6a73bde405acd333d5ee746273850a5350a3c0045f2be991d79bd708"},
-    {file = "pelican-4.9.1.tar.gz", hash = "sha256:c08434f0df2a6b649cfe485cbf0d8fdb727ff89ba6ecb1c867f88ceb2f37f179"},
+    {file = "pelican-4.10.1-py3-none-any.whl", hash = "sha256:5fb59933fd9eaff83a5e4e093a9a6249ec59ae0d8e5da63710d965acd6f5d3f7"},
+    {file = "pelican-4.10.1.tar.gz", hash = "sha256:dfcd468ddb823c70df52545ca413b44505ff2d33132284d2f5a31d217cde6cb8"},
 ]
 
 [package.dependencies]
@@ -1192,6 +1192,7 @@ description = "Pure-Python implementation of ASN.1 types and DER/BER/CER codecs 
 optional = false
 python-versions = ">=3.8"
 files = [
+    {file = "pyasn1-0.6.1-py3-none-any.whl", hash = "sha256:0d632f46f2ba09143da3a8afe9e33fb6f92fa2320ab7e886e2d0f7672af84629"},
     {file = "pyasn1-0.6.1.tar.gz", hash = "sha256:6f580d2bdd84365380830acf45550f2511469f673cb4a5ae3857a3170128b034"},
 ]
 
@@ -1833,4 +1834,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "3.10.*"
-content-hash = "9818aab2f330a99828c1d0fe026d0c2588f2d249768972c6db677cd31b77c03d"
+content-hash = "debb1848954466be755035e6b41336195510dd5229f4c9d054893ab10f04b3b7"
