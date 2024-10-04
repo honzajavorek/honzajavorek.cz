@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Jsem na TikToku, uběhl jsem půlmaraton a mega vyle
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/329
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/113251276791740046
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-09-20_tydenni-poznamky-scrapovani-v-pythonu-a-vylepsovani-nabidek-prace.md) už utekl nějaký ten týden (20. 9. až 4. 10.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
