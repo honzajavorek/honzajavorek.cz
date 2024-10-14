@@ -1,10 +1,10 @@
 from operator import itemgetter
 from pathlib import Path
 import time
-from typing import Any
 
 import click
 import requests
+from slugify import slugify
 from sqlite_utils import Database
 
 
@@ -13,8 +13,21 @@ from sqlite_utils import Database
 @click.option('--repo', 'repo', default='honzajavorek/honzajavorek.cz')
 @click.option('--deployment-polling-interval', default=29, type=int, help='In seconds')
 @click.option('--article-check-attempts', default=10, type=int)
-def main(db_path: Path, repo: str, deployment_polling_interval: int, article_check_attempts: int):
-    click.echo(f"Waiting for the last deployment to finish")
+@click.option("--token", envvar="GITHUB_TOKEN")
+def main(
+    db_path: Path,
+    repo: str,
+    deployment_polling_interval: int,
+    article_check_attempts: int,
+    token: str | None = None,
+):
+    user_agent = f"{slugify(repo.split('/')[1])} (+https://github.com/{repo})"
+    headers = {"User-Agent": user_agent}
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    click.echo(f"Authorized: {'yes' if token else 'no'}, {user_agent}")
+
+    click.echo("Waiting for the last deployment to finish")
     response = requests.get(f'https://api.github.com/repos/{repo}/deployments')
     response.raise_for_status()
     deployment = sorted(response.json(), key=itemgetter('updated_at'), reverse=True)[0]
@@ -27,7 +40,7 @@ def main(db_path: Path, repo: str, deployment_polling_interval: int, article_che
             break
         arbitrary_wait(deployment_polling_interval)
 
-    click.echo(f"Waiting for the latest articles to appear online")
+    click.echo("Waiting for the latest articles to appear online")
     db = Database(db_path)
     articles = db.query('''
         select * from articles

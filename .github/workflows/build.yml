@@ -73,6 +73,8 @@ jobs:
 
       - name: Wait for deployment
         run: poetry run blog wait
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Send to Telegram
         env:
