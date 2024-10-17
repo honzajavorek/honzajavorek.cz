@@ -1,5 +1,49 @@
 [
   {
+    "id": 113315742008792989,
+    "created_at": "2024-10-16T06:43:24.788000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113315742008792989",
+    "url": "https://mastodonczech.cz/@honzajavorek/113315742008792989",
+    "reblogs_count": 1,
+    "favourites_count": 4,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Kupodivu uhlí nepřišlo jako řešení deforestace, ale bylo její příčinou. Dřeva bylo dost a byl to obnovitelný zdroj, ale když zlevnilo uhlí, lidi lesy vykáceli. <a href=\"https://www.ageofinvention.xyz/p/age-of-invention-the-coal-conquest\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">ageofinvention.xyz/p/age-of-in</span><span class=\"invisible\">vention-the-coal-conquest</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://www.ageofinvention.xyz/p/age-of-invention-the-coal-conquest",
+      "title": "Age of Invention: The Coal Conquest",
+      "description": "There was no shortage of trees",
+      "language": "en",
+      "type": "link",
+      "author_name": "Anton Howes",
+      "author_url": "https://substack.com/@antonhowes",
+      "provider_name": "Age of Invention, by Anton Howes",
+      "width": 1200,
+      "height": 600,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/005/687/095/original/371ec2e3f22de31c.jpg",
+      "blurhash": "UJHlxCrHI.5mBmX7I;EhD,=s1N%K#lJkxG-T",
+      "published_at": "2024-10-04T07:03:11+00:00",
+      "authors": [
+        {
+          "name": "Anton Howes",
+          "url": "https://substack.com/@antonhowes"
+        }
+      ]
+    }
+  },
+  {
     "id": 113307717424625162,
     "created_at": "2024-10-14T20:42:39.339000+00:00",
     "sensitive": false,
@@ -8,7 +52,7 @@
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113307717424625162",
     "url": "https://mastodonczech.cz/@honzajavorek/113307717424625162",
     "reblogs_count": 1,
-    "favourites_count": 5,
+    "favourites_count": 6,
     "favourited": false,
     "reblogged": false,
     "muted": false,
@@ -30,9 +74,11 @@
       "provider_name": "Zdopravy.cz",
       "width": 1425,
       "height": 965,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/005/666/831/original/a8afdd281fead07d.png",
       "blurhash": "U7S$ovWB~qt7ofofj[Rj~qofD%WBxuj[WBWB",
-      "published_at": "2024-10-14T06:30:53+00:00"
+      "published_at": "2024-10-14T06:30:53+00:00",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -68,7 +114,12 @@
       "width": 1200,
       "height": 625,
       "blurhash": "U55PODyrt6o}uPkraJj[oztSozozs.ofoff6",
-      "published_at": "2024-10-11T15:00:00+00:00"
+      "published_at": "2024-10-11T15:00:00+00:00",
+      "authors": [
+        {
+          "name": "Cullen Murphy"
+        }
+      ]
     }
   },
   {
@@ -95,7 +146,10 @@
     "card": {
       "url": "https://seznam-zpravy.u.mailkit.eu/mc/VECQVPVC/GLSTEGBNFXFOJUKKCG/VQCUIPVUIWE",
       "title": "Pod čarou: Fotky nikdy nebyly realita. AI na tom nic nemění.",
-      "type": "link"
+      "type": "link",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -130,7 +184,10 @@
       "width": 798,
       "height": 600,
       "image_description": "Roman Týc",
-      "blurhash": "UOIr80_2~p%Ms;?bkCt7IT?bM{t74mt6-;Rj"
+      "blurhash": "UOIr80_2~p%Ms;?bkCt7IT?bM{t74mt6-;Rj",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -163,7 +220,10 @@
       "provider_name": "MatthewBall.co",
       "width": 1024,
       "height": 768,
-      "blurhash": "UCET[K9s0y=yTy,]vfKPBW#.X3NFvgOV$*NF"
+      "blurhash": "UCET[K9s0y=yTy,]vfKPBW#.X3NFvgOV$*NF",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -211,7 +271,13 @@
       "width": 1200,
       "height": 600,
       "blurhash": "UVGR*otTR.xv?wxwkDn$x]M_WAxuodM_oIkC",
-      "published_at": "2023-10-07T08:00:16+00:00"
+      "published_at": "2023-10-07T08:00:16+00:00",
+      "authors": [
+        {
+          "name": "The Continent",
+          "url": "https://substack.com/@thecontinent"
+        }
+      ]
     }
   },
   {
@@ -242,7 +308,10 @@
       "title": "The Disappearance of an Internet Domain",
       "description": "How geopolitics can alter digital infrastructure ",
       "type": "link",
-      "published_at": "2024-10-08T00:00:00+00:00"
+      "published_at": "2024-10-08T00:00:00+00:00",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -273,7 +342,10 @@
       "title": "Katastrofa se nekoná. Karviná se chystá na život po uhlí – Page Not Found",
       "description": "Karviná, uhlí, horníci, doly, práce, uhelný region, transformace, peníze, vyloučená lokalita ",
       "language": "cs",
-      "type": "link"
+      "type": "link",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -307,7 +379,10 @@
       "width": 290,
       "height": 58,
       "embed_url": "https://chtbl.com/track/1EE4E/portal.rozhlas.cz/sites/default/files/audios/8b49b9653a4b446c49db193aacc4c487.mp3#t=0",
-      "blurhash": "UmL;1:ni%Lay~pShRkoesls.V[WWM|WCbHay"
+      "blurhash": "UmL;1:ni%Lay~pShRkoesls.V[WWM|WCbHay",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -336,7 +411,10 @@
     "card": {
       "url": "https://web.archive.org/web/20100111052839/http://www.recombinantrecords.net/docs/2009-05-Amusing-Ourselves-to-Death.html",
       "title": "Amusing Ourselves to Death by Stuart McMillen - cartoon Recombinant Records",
-      "type": "link"
+      "type": "link",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -370,7 +448,13 @@
       "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/8UuW8o4bHbw?feature=oembed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms\"></iframe>",
       "width": 200,
       "height": 113,
-      "blurhash": "UFC~cHB;nEWIx4X0jMje0fwKR.ov%mSuacn%"
+      "blurhash": "UFC~cHB;nEWIx4X0jMje0fwKR.ov%mSuacn%",
+      "authors": [
+        {
+          "name": "Hynek Schlawack",
+          "url": "https://www.youtube.com/@The_Hynek"
+        }
+      ]
     }
   },
   {
@@ -401,7 +485,10 @@
       "title": "Writing Documentation for Your House",
       "description": "Have you considered writing documentation for your house?",
       "language": "en",
-      "type": "link"
+      "type": "link",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -435,7 +522,10 @@
       "width": 1024,
       "height": 576,
       "image_description": "Ratcliffe-on-Soar Power Station near Nottingham. The UK's last remaining coal-fired power station shut on Monday",
-      "blurhash": "UNECID~p$~nNAKElIoR+D*RPxExu$~s+oeaf"
+      "blurhash": "UNECID~p$~nNAKElIoR+D*RPxExu$~s+oeaf",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -469,7 +559,10 @@
       "width": 220,
       "height": 295,
       "blurhash": "UAJ6=,%0Be-Q^%RlRoW={_W=xutRP0V{$RWE",
-      "published_at": "2016-11-02T17:19:46+00:00"
+      "published_at": "2016-11-02T17:19:46+00:00",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -503,7 +596,10 @@
       "width": 290,
       "height": 58,
       "embed_url": "https://chtbl.com/track/1EE4E/portal.rozhlas.cz/sites/default/files/audios/8342f4adea247dbf6a42edabbf0a5767.mp3#t=0",
-      "blurhash": "UZLCP7M^kEs+;1xCWYax}rt7ShWC68V[oJs:"
+      "blurhash": "UZLCP7M^kEs+;1xCWYax}rt7ShWC68V[oJs:",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -539,7 +635,10 @@
       "width": 1200,
       "height": 675,
       "blurhash": "UHC$+X?uMx00ivRixat84onObbt8E2NIWYxt",
-      "published_at": "2024-09-09T15:40:08+00:00"
+      "published_at": "2024-09-09T15:40:08+00:00",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -573,7 +672,10 @@
       "width": 2560,
       "height": 1707,
       "blurhash": "UPI=Gc?wIoD*I:%NbwNG?HkDtSxvIVt8t7jr",
-      "published_at": "2024-09-15T13:57:55+00:00"
+      "published_at": "2024-09-15T13:57:55+00:00",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -606,7 +708,10 @@
       "provider_name": "English Language & Usage Stack Exchange",
       "width": 316,
       "height": 316,
-      "blurhash": "U+PGQ-j[?vj[fka|j[fQ~qj[D%a|j[jtaya|"
+      "blurhash": "U+PGQ-j[?vj[fka|j[fQ~qj[D%a|j[jtaya|",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -634,7 +739,10 @@
     "card": {
       "url": "https://ludic.mataroa.blog/blog/i-will-fucking-haymaker-you-if-you-mention-agile-again/",
       "title": "I Will Fucking Haymaker You If You Mention Agile Again — Ludicity",
-      "type": "link"
+      "type": "link",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -670,7 +778,10 @@
       "width": 1960,
       "height": 1300,
       "blurhash": "UTNv*+^jtSIp%h-:RPV?_NE1M{adR*NGt7t7",
-      "published_at": "2024-09-05T10:00:00+00:00"
+      "published_at": "2024-09-05T10:00:00+00:00",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -699,7 +810,10 @@
       "title": "Proč je Josef Pepa?",
       "description": "Proč se Josefovi říká podomácku Pepa? Josef je prastaré biblické jméno pocházející z hebrejštiny. Je to v současnosti šesté nejpopulárnější české křestní…",
       "language": "cs",
-      "type": "link"
+      "type": "link",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -731,7 +845,10 @@
       "type": "link",
       "width": 1024,
       "height": 576,
-      "blurhash": "UNAo%sS{0OvgwgWUS2ofDlaL%JkqNdj[xDae"
+      "blurhash": "UNAo%sS{0OvgwgWUS2ofDlaL%JkqNdj[xDae",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -765,7 +882,10 @@
       "provider_name": "purplesyringa's blog",
       "width": 1200,
       "height": 630,
-      "blurhash": "UFG%r^#R[BajE.+HoIVz_nxT%gXRJEwHniR:"
+      "blurhash": "UFG%r^#R[BajE.+HoIVz_nxT%gXRJEwHniR:",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -795,7 +915,10 @@
       "language": "en",
       "type": "link",
       "provider_name": "joeblogsf1",
-      "published_at": "2024-09-04T14:29:51+00:00"
+      "published_at": "2024-09-04T14:29:51+00:00",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -854,7 +977,13 @@
       "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/P1-KQZZarpc?start=247&amp;feature=oembed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms\"></iframe>",
       "width": 200,
       "height": 113,
-      "blurhash": "UXG+FFs%~As8^Aa$s?n+4,R.9tShIloINEbI"
+      "blurhash": "UXG+FFs%~As8^Aa$s?n+4,R.9tShIloINEbI",
+      "authors": [
+        {
+          "name": "PyCon US",
+          "url": "https://www.youtube.com/@PyConUS"
+        }
+      ]
     }
   },
   {
@@ -885,7 +1014,10 @@
       "description": "With 380MM MAUs, Roblox probably counts more players than the entire AAA gaming ecosystem, is more played than Disney+ is watched, and is starting to rival smaller social networks in scale. But Roblox has yet to profit. How can it become a business comparable to its operating scale?",
       "language": "en",
       "type": "link",
-      "provider_name": "MatthewBall.co"
+      "provider_name": "MatthewBall.co",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -920,7 +1052,10 @@
       "width": 1920,
       "height": 1440,
       "blurhash": "U%I#=Vozj[ay_4j[afaykWaef6ofV@WBa|j@",
-      "published_at": "2024-08-14T09:00:02+00:00"
+      "published_at": "2024-08-14T09:00:02+00:00",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -956,7 +1091,13 @@
       "width": 1440,
       "height": 810,
       "blurhash": "UoKnPaRjNGfi~qofRjf7%NkCRioLM{jtoffP",
-      "published_at": "2024-08-08T15:24:47+00:00"
+      "published_at": "2024-08-08T15:24:47+00:00",
+      "authors": [
+        {
+          "name": "Stephanie Apstein",
+          "url": "https://www.si.com/author/stephanie-apstein"
+        }
+      ]
     }
   },
   {
@@ -989,7 +1130,10 @@
       "width": 1200,
       "height": 800,
       "blurhash": "UTFE$D^%0L9af9bcR*M{Sgayn%flWBj[oyoJ",
-      "published_at": "2014-06-01T20:00:00+00:00"
+      "published_at": "2014-06-01T20:00:00+00:00",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -1019,7 +1163,10 @@
       "title": "Facebook a Google ničí malé weby. Proč se vyplatí na ně nespoléhat? – Page Not Found",
       "description": "Umolousaný kluk mává novinami na hlavní třídě – říkalo se mu kamelot. Vykřikuje titulky a láká na nákup nejnovějšího vydání za pár centů. Kdyby to dělal dnes, nabízí je nejspíše přes Instagram a Facebook. Jenže tohohle kamelota z centra velkoměsta postupně strážci pořádku vykopávají do postranních uliček. Šanci prodat tam noviny má menší, neboť si ho tolik lidí nevšimne.",
       "language": "cs",
-      "type": "link"
+      "type": "link",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -1049,7 +1196,10 @@
       "title": "Kluci a holky z titulních stran. Žebříčky jako ve Forbesu mohou pokřivovat realitu – Page Not Found",
       "description": "Pojďme se v podnikání více než dosud bavit o krachu a neúspěchu. Adorování příběhů geniálních podnikatelů a jejich řazení byznysových žebříčků je čtenářsky vděčná iluze, ale úkolem novinářů nemá být prodej retušovaných příběhů, které ukazují jen malou – a někdy navíc vysloveně zavádějící – výseč skutečnosti.",
       "language": "cs",
-      "type": "link"
+      "type": "link",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -1085,7 +1235,13 @@
       "width": 1260,
       "height": 709,
       "blurhash": "UII;YWK%*|%#^+nO9ZRjpcH@0K-o%ze.D%xu",
-      "published_at": "2024-08-06T09:15:24+00:00"
+      "published_at": "2024-08-06T09:15:24+00:00",
+      "authors": [
+        {
+          "name": "Matt Bishop",
+          "url": "https://www.motorsportmagazine.com/articles/author/mattbishop/"
+        }
+      ]
     }
   },
   {
@@ -1119,7 +1275,10 @@
       "provider_name": "fastht.ml",
       "width": 948,
       "height": 948,
-      "blurhash": "UaPZota~x]Mx~XS0t6oN9Ft7bYV[$+buofV@"
+      "blurhash": "UaPZota~x]Mx~XS0t6oN9Ft7bYV[$+buofV@",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -1154,7 +1313,10 @@
       "width": 2000,
       "height": 1333,
       "blurhash": "UnJkWHkWS%r;?w-ot4s;%1WYfRs;xWRkRkt7",
-      "published_at": "2024-07-15T11:06:36+00:00"
+      "published_at": "2024-07-15T11:06:36+00:00",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -1187,7 +1349,12 @@
       "type": "link",
       "author_name": "Guardian staff reporter",
       "provider_name": "The Guardian",
-      "published_at": "2024-07-23T04:00:03+00:00"
+      "published_at": "2024-07-23T04:00:03+00:00",
+      "authors": [
+        {
+          "name": "Guardian staff reporter"
+        }
+      ]
     }
   },
   {
@@ -1222,7 +1389,10 @@
       "width": 1920,
       "height": 1439,
       "blurhash": "UmGvFyRks.WCyGR-WVbHniWXWBoeVqoIt6oJ",
-      "published_at": "2024-08-04T18:00:45+00:00"
+      "published_at": "2024-08-04T18:00:45+00:00",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -1252,7 +1422,10 @@
       "type": "link",
       "width": 1200,
       "height": 800,
-      "blurhash": "U_MY$=fQs:j[6$fQWVfQ8wfQNGayWVfQoLfQ"
+      "blurhash": "U_MY$=fQs:j[6$fQWVfQ8wfQNGayWVfQoLfQ",
+      "authors": [
+        {}
+      ]
     }
   },
   {
@@ -1283,7 +1456,10 @@
       "title": "Obchod Sneaker Gallery je v insolnvenci. Věřitelé chtějí zpět desítky milionů – Page Not Found",
       "description": "Ten příběh měl všechno. Mladý kluk bez investorů vybudoval obchod s luxusním showroomem v centru Brna. Jeho obchod Sneaker Gallery se chystal expandovat do zahraničí. Jenže už v době, kdy dával sebevědomé rozhovory, se začaly množit neproplacené složenky. Nyní věřitelé požadují zpátky desítky milionů korun.",
       "language": "cs",
-      "type": "link"
+      "type": "link",
+      "authors": [
+        {}
+      ]
     }
   },
   {
