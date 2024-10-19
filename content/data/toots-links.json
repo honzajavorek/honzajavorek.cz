@@ -1,5 +1,81 @@
 [
   {
+    "id": 113330733371340052,
+    "created_at": "2024-10-18T22:15:54.815000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113330733371340052",
+    "url": "https://mastodonczech.cz/@honzajavorek/113330733371340052",
+    "favourites_count": 2,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>„The more we make the web complex, the more we push normal users into the enclosures that we like to call social networks.“ <a href=\"https://kristoff.it/blog/static-site-paradox/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">kristoff.it/blog/static-site-p</span><span class=\"invisible\">aradox/</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://kristoff.it/blog/static-site-paradox/",
+      "title": "The Static Site Paradox",
+      "description": "Loris Cro's Blog",
+      "language": "en",
+      "type": "link",
+      "width": 512,
+      "height": 512,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/005/615/412/original/41b0332b010b534a.png",
+      "blurhash": "UZHoI6?b00IU_3RjM{%M9FM{ofWBM{xuWBM{",
+      "authors": [
+        {}
+      ]
+    }
+  },
+  {
+    "id": 113327793518720151,
+    "created_at": "2024-10-18T09:48:16.223000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113327793518720151",
+    "url": "https://mastodonczech.cz/@honzajavorek/113327793518720151",
+    "replies_count": 4,
+    "reblogs_count": 1,
+    "favourites_count": 3,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Kolik máte? Já 9/10. Generuju AI obrázky jako hobby, takže vím, na co se dívat. Většina byla fakt jednoduchých a odpověď jsem věděl do pár sekund, nebo jsem minimálně tušil a už jen hledal detaily, které mi doměnku potvrdí. <a href=\"https://leonfurze.com/deepfake-game/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">leonfurze.com/deepfake-game/</span><span class=\"invisible\"></span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://leonfurze.com/deepfake-game/",
+      "title": "Real or Fake? The AI Deepfake Game",
+      "description": "Real or Fake? The AI Deepfake Game As Generative AI becomes more capable, it’s getting harder and harder to spot AI-generated images. Powerful image generation models like Flux (available thr…",
+      "language": "en",
+      "type": "link",
+      "provider_name": "Leon Furze",
+      "width": 1200,
+      "height": 1120,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/005/711/418/original/6519f50104c38e41.png",
+      "blurhash": "UlNm.+MxM{tR~qWBtRoL_4xuozRj9FxtjEWW",
+      "published_at": "2024-08-20T03:46:11+00:00",
+      "authors": [
+        {}
+      ]
+    }
+  },
+  {
     "id": 113325081460131786,
     "created_at": "2024-10-17T22:18:33.494000+00:00",
     "sensitive": false,
@@ -7,6 +83,9 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113325081460131786",
     "url": "https://mastodonczech.cz/@honzajavorek/113325081460131786",
+    "replies_count": 1,
+    "reblogs_count": 5,
+    "favourites_count": 9,
     "favourited": false,
     "reblogged": false,
     "muted": false,
@@ -18,7 +97,17 @@
         "name": "links",
         "url": "https://mastodonczech.cz/tags/links"
       }
-    ]
+    ],
+    "card": {
+      "url": "https://pagenotfound.cz/clanek/snadna-je-unava-z-valky-ktera-probiha-jinde",
+      "title": "Snadná je únava z války, která probíhá jinde – Page Not Found",
+      "description": "V jednu chvíli se smějete s přáteli nad dalším neúspěšným rande a vzápětí nemůžete dojet domů na druhý břeh Kyjeva, protože začíná letecký poplach. Život v hlavním městě Ukrajiny jde zdánlivě dál, jedná se však o pouhou iluzi normálnosti. ",
+      "language": "cs",
+      "type": "link",
+      "authors": [
+        {}
+      ]
+    }
   },
   {
     "id": 113325013067845206,
@@ -28,7 +117,7 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113325013067845206",
     "url": "https://mastodonczech.cz/@honzajavorek/113325013067845206",
-    "favourites_count": 1,
+    "favourites_count": 3,
     "favourited": false,
     "reblogged": false,
     "muted": false,
@@ -40,7 +129,21 @@
         "name": "links",
         "url": "https://mastodonczech.cz/tags/links"
       }
-    ]
+    ],
+    "card": {
+      "url": "https://simonwillison.net/2024/Oct/17/video-scraping/#atom-entries",
+      "title": "Video scraping: extracting JSON data from a 35 second screen capture for less than 1/10th of a cent",
+      "description": "The other day I found myself needing to add up some numeric values that were scattered across twelve different emails. I didn’t particularly feel like copying and pasting all of …",
+      "language": "en",
+      "type": "link",
+      "width": 1620,
+      "height": 1270,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/005/702/105/original/1bd4f463427bb6f3.jpg",
+      "blurhash": "ULA^OM~qogD*?b-;a}M{4nD%f6xu009Fj?%M",
+      "authors": [
+        {}
+      ]
+    }
   },
   {
     "id": 113322834362178010,
@@ -73,7 +176,7 @@
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113321611496513319",
     "url": "https://mastodonczech.cz/@honzajavorek/113321611496513319",
     "reblogs_count": 1,
-    "favourites_count": 4,
+    "favourites_count": 5,
     "favourited": false,
     "reblogged": false,
     "muted": false,
@@ -130,7 +233,6 @@
       "provider_name": "Age of Invention, by Anton Howes",
       "width": 1200,
       "height": 600,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/005/687/095/original/371ec2e3f22de31c.jpg",
       "blurhash": "UJHlxCrHI.5mBmX7I;EhD,=s1N%K#lJkxG-T",
       "published_at": "2024-10-04T07:03:11+00:00",
       "authors": [
@@ -150,7 +252,7 @@
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113307717424625162",
     "url": "https://mastodonczech.cz/@honzajavorek/113307717424625162",
     "reblogs_count": 1,
-    "favourites_count": 6,
+    "favourites_count": 7,
     "favourited": false,
     "reblogged": false,
     "muted": false,
