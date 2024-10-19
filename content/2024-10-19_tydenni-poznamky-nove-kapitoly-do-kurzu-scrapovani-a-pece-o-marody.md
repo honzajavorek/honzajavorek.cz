@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Nové kapitoly do kurzu scrapování a péče o maro
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/330
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/113335141406937247
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-10-04_tydenni-poznamky-jsem-na-tiktoku-ubehl-jsem-pulmaraton-a-mega-vylepsuju-stranku-s-inzeraty.md) už utekl nějaký ten týden (4. 10. až 19. 10.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
