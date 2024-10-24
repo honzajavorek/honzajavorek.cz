@@ -1,5 +1,53 @@
 [
   {
+    "id": 113356894220208146,
+    "created_at": "2024-10-23T13:08:57.689000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113356894220208146",
+    "url": "https://mastodonczech.cz/@honzajavorek/113356894220208146",
+    "reblogs_count": 2,
+    "favourites_count": 3,
+    "edited_at": "2024-10-23T13:10:14.399000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Dnes jsem poprvé použil <a href=\"https://docs.python.org/3/library/graphlib.html\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">docs.python.org/3/library/grap</span><span class=\"invisible\">hlib.html</span></a> a ušetřilo mi to spoustu práce!</p><p>Vyvíjím <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> a mám slovník, kde klíče jsou názvy „jobů“ a hodnoty jsou seznamy názvů jejich závislostí (jiných „jobů”). Dva řádky kódu a mám pořadí, v jakém bych to celé měl spustit, abych závislosti dodržel. Nemusel jsem instalovat networkx nebo něco, nemusel jsem si to programovat. <a href=\"https://mastodonczech.cz/tags/python\" class=\"mention hashtag\" rel=\"tag\">#<span>python</span></a> <a href=\"https://mastodonczech.cz/tags/batteriesincluded\" class=\"mention hashtag\" rel=\"tag\">#<span>batteriesincluded</span></a></p>",
+    "tags": [
+      {
+        "name": "Python",
+        "url": "https://mastodonczech.cz/tags/Python"
+      },
+      {
+        "name": "batteriesincluded",
+        "url": "https://mastodonczech.cz/tags/batteriesincluded"
+      },
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ],
+    "card": {
+      "url": "https://docs.python.org/3/library/graphlib.html",
+      "title": "graphlib — Functionality to operate with graph-like structures",
+      "description": "Source code: Lib/graphlib.py Exceptions: The graphlib module defines the following exception classes:",
+      "language": "en",
+      "type": "link",
+      "provider_name": "Python documentation",
+      "width": 200,
+      "height": 200,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/003/648/281/original/e2d134512611e2f5.png",
+      "image_description": "Python documentation",
+      "blurhash": "UaHn[?9*4qRk0=WE^aoc4p=;M{WB=;k9E8az",
+      "authors": [
+        {}
+      ]
+    }
+  },
+  {
     "id": 113344777376199156,
     "created_at": "2024-10-21T09:47:29.322000+00:00",
     "sensitive": false,
