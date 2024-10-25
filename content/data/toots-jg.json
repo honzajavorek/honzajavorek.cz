@@ -1,5 +1,37 @@
 [
   {
+    "id": 113363190309608611,
+    "created_at": "2024-10-24T15:50:08.388000+00:00",
+    "in_reply_to_id": 113344777376199156,
+    "in_reply_to_account_id": 110921870573231541,
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113363190309608611",
+    "url": "https://mastodonczech.cz/@honzajavorek/113363190309608611",
+    "favourites_count": 2,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Když jsem psal ten předchozí příspěvek, tak jsem na tom začal pracovat. Od té doby jsem na tom dělal, téměř nonstop během pracovních hodin.</p><p>Teď jsem skončil s tím, že to teda asi nějak konečně funguje a dokážu před publikací na <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> naráz zkontrolovat platnost třeba 120 inzerátů. Trvá to nešťastné 3-4min a musel jsem na to vybudovat dedikovaný on demand scraper na <a href=\"https://mastodonczech.cz/tags/apify\" class=\"mention hashtag\" rel=\"tag\">#<span>apify</span></a>, který proplouvá nekonečným množstvím <a href=\"https://mastodonczech.cz/tags/antiscraping\" class=\"mention hashtag\" rel=\"tag\">#<span>antiscraping</span></a> ochran.</p><p>Kolik dní mi to řešení zabralo, to si spočítejte sami.</p>",
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      },
+      {
+        "name": "apify",
+        "url": "https://mastodonczech.cz/tags/apify"
+      },
+      {
+        "name": "antiscraping",
+        "url": "https://mastodonczech.cz/tags/antiscraping"
+      }
+    ]
+  },
+  {
     "id": 113356894220208146,
     "created_at": "2024-10-23T13:08:57.689000+00:00",
     "sensitive": false,
@@ -8,7 +40,7 @@
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113356894220208146",
     "url": "https://mastodonczech.cz/@honzajavorek/113356894220208146",
     "reblogs_count": 2,
-    "favourites_count": 3,
+    "favourites_count": 4,
     "edited_at": "2024-10-23T13:10:14.399000+00:00",
     "favourited": false,
     "reblogged": false,
@@ -39,7 +71,6 @@
       "provider_name": "Python documentation",
       "width": 200,
       "height": 200,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/003/648/281/original/e2d134512611e2f5.png",
       "image_description": "Python documentation",
       "blurhash": "UaHn[?9*4qRk0=WE^aoc4p=;M{WB=;k9E8az",
       "authors": [
@@ -55,6 +86,7 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113344777376199156",
     "url": "https://mastodonczech.cz/@honzajavorek/113344777376199156",
+    "replies_count": 2,
     "favourites_count": 3,
     "favourited": false,
     "reblogged": false,
