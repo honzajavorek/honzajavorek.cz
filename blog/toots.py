@@ -84,6 +84,8 @@ def marshall_toot(data: dict) -> dict:
     for key, value in clear_empty_keys(data).items():
         if key in ['application', 'account']:
             continue
+        if key == "card" and "authors" in value:
+            continue
         if key in ('created_at', 'edited_at'):
             value = value.isoformat()
         if key == 'card' and 'published_at' in value:
