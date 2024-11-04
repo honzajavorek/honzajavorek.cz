@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Peklíčko s nemocemi
 Image: images/img-2903.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/331
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/113426399088583360
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-10-19_tydenni-poznamky-nove-kapitoly-do-kurzu-scrapovani-a-pece-o-marody.md) už utekl nějaký ten týden (19. 10. až 4. 11.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
