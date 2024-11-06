@@ -4,9 +4,213 @@
     "slug": "tydenni-poznamky-peklicko-s-nemocemi",
     "created_at": "2024-11-04T19:44:57.815000+00:00",
     "toot_url": "https://mastodonczech.cz/@honzajavorek/113426399088583360",
-    "favourites_count": 1,
+    "favourites_count": 3,
     "reblogs_count": 0,
-    "replies": []
+    "replies": [
+      {
+        "id": 113428631712019270,
+        "created_at": "2024-11-05T05:12:38+00:00",
+        "in_reply_to_id": 113426399088583360,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://boskovice.social/users/zoul/statuses/113428631285079220",
+        "url": "https://boskovice.social/@zoul/113428631285079220",
+        "replies_count": 2,
+        "favourites_count": 1,
+        "favourited": true,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> Díky za 3000 znaků o nahrávání emoji, cením! :)</p>",
+        "account": {
+          "id": 109324797571302698,
+          "username": "zoul",
+          "acct": "zoul@boskovice.social",
+          "display_name": "Tomáš Znamenáček",
+          "url": "https://boskovice.social/@zoul",
+          "uri": "https://boskovice.social/users/zoul",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/e11a3535a75fa681.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/e11a3535a75fa681.jpeg"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ]
+      },
+      {
+        "id": 113429404518409990,
+        "created_at": "2024-11-05T08:29:17.033000+00:00",
+        "in_reply_to_id": 113428631712019270,
+        "in_reply_to_account_id": 109324797571302698,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113429404518409990",
+        "url": "https://mastodonczech.cz/@honzajavorek/113429404518409990",
+        "favourites_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://boskovice.social/@zoul\" class=\"u-url mention\">@<span>zoul</span></a></span> 3000: Bitva u Twemoji</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 109324797571302698,
+            "username": "zoul",
+            "url": "https://boskovice.social/@zoul",
+            "acct": "zoul@boskovice.social"
+          }
+        ]
+      },
+      {
+        "id": 113429534580505621,
+        "created_at": "2024-11-05T09:02:20+00:00",
+        "in_reply_to_id": 113428631712019270,
+        "in_reply_to_account_id": 109324797571302698,
+        "sensitive": false,
+        "visibility": "unlisted",
+        "language": "cs",
+        "uri": "https://floss.social/users/hroncok/statuses/113429534536137827",
+        "url": "https://floss.social/@hroncok/113429534536137827",
+        "replies_count": 1,
+        "favourites_count": 1,
+        "favourited": true,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://boskovice.social/@zoul\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>zoul</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> Napadlo mě pomocí pillow rendrovat to emoji z textu.</p>",
+        "account": {
+          "id": 109689947561756748,
+          "username": "hroncok",
+          "acct": "hroncok@floss.social",
+          "display_name": "Miro Hrončok :fedora: :python:",
+          "url": "https://floss.social/@hroncok",
+          "uri": "https://floss.social/users/hroncok",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/689/947/561/756/748/original/d8ffe17e1b78f387.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/689/947/561/756/748/original/d8ffe17e1b78f387.jpg"
+        },
+        "mentions": [
+          {
+            "id": 109324797571302698,
+            "username": "zoul",
+            "url": "https://boskovice.social/@zoul",
+            "acct": "zoul@boskovice.social"
+          },
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ]
+      },
+      {
+        "id": 113430202781909512,
+        "created_at": "2024-11-05T11:52:17.568000+00:00",
+        "in_reply_to_id": 113429534580505621,
+        "in_reply_to_account_id": 109689947561756748,
+        "sensitive": false,
+        "visibility": "unlisted",
+        "language": "cs",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113430202781909512",
+        "url": "https://mastodonczech.cz/@honzajavorek/113430202781909512",
+        "replies_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://floss.social/@hroncok\" class=\"u-url mention\">@<span>hroncok</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://boskovice.social/@zoul\" class=\"u-url mention\">@<span>zoul</span></a></span> To je hustý, to mě nenapadlo. Bojím se ale, zda tam nejsou nějaké pasti kolem fontů a operačních systémů. Lokálně by mi to generovalo Applí emoji, na serveru nějaké Linuxové. Na Discordu se používají Twemoji, takhle mám ty samé obrázky. To bych docílil asi jen přes klasickou těžkotonážní cestu HTML + CSS + Playwright = screenshotový obrázek.</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 109689947561756748,
+            "username": "hroncok",
+            "url": "https://floss.social/@hroncok",
+            "acct": "hroncok@floss.social"
+          },
+          {
+            "id": 109324797571302698,
+            "username": "zoul",
+            "url": "https://boskovice.social/@zoul",
+            "acct": "zoul@boskovice.social"
+          }
+        ]
+      },
+      {
+        "id": 113430216961131673,
+        "created_at": "2024-11-05T11:55:50+00:00",
+        "in_reply_to_id": 113430202781909512,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "unlisted",
+        "language": "cs",
+        "uri": "https://floss.social/users/hroncok/statuses/113430216740056700",
+        "url": "https://floss.social/@hroncok/113430216740056700",
+        "favourites_count": 1,
+        "favourited": true,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://boskovice.social/@zoul\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>zoul</span></a></span> nastavíš tam direct font, třeba Google Noto</p>",
+        "account": {
+          "id": 109689947561756748,
+          "username": "hroncok",
+          "acct": "hroncok@floss.social",
+          "display_name": "Miro Hrončok :fedora: :python:",
+          "url": "https://floss.social/@hroncok",
+          "uri": "https://floss.social/users/hroncok",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/689/947/561/756/748/original/d8ffe17e1b78f387.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/689/947/561/756/748/original/d8ffe17e1b78f387.jpg"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          },
+          {
+            "id": 109324797571302698,
+            "username": "zoul",
+            "url": "https://boskovice.social/@zoul",
+            "acct": "zoul@boskovice.social"
+          }
+        ]
+      }
+    ]
   },
   {
     "url": "https://honzajavorek.cz/blog/tydenni-poznamky-nove-kapitoly-do-kurzu-scrapovani-a-pece-o-marody/",
