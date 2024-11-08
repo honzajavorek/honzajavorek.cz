@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Dohánění
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/332
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/113448395114315897
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-11-04_tydenni-poznamky-peklicko-s-nemocemi.md) už utekl nějaký ten týden (4. 11. až 8. 11.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
