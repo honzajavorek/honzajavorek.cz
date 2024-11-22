@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Soutěž o knihy a Týden pro digitální Česko
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/333
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/113528006050182687
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-11-08_tydenni-poznamky-dohaneni.md) už utekl nějaký ten týden (8. 11. až 22. 11.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
