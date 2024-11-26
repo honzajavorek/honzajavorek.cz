@@ -6,7 +6,83 @@
     "toot_url": "https://mastodonczech.cz/@honzajavorek/113528006050182687",
     "favourites_count": 1,
     "reblogs_count": 0,
-    "replies": []
+    "replies": [
+      {
+        "id": 113542983591326958,
+        "created_at": "2024-11-25T09:53:54+00:00",
+        "in_reply_to_id": 113528006050182687,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://witter.cz/users/banterCZ/statuses/113542983506910257",
+        "url": "https://witter.cz/@banterCZ/113542983506910257",
+        "replies_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> Ze všeho nejvíc mě zaujal nádherný standing desk. Máš k tomu výkres nebo jsi někde kupoval?<br>No a svůj deník, kdybych si býval nějaký psal, bych neměl odvahu číst.</p>",
+        "account": {
+          "id": 109337559172025233,
+          "username": "banterCZ",
+          "acct": "banterCZ@witter.cz",
+          "display_name": "Luboš Račanský",
+          "url": "https://witter.cz/@banterCZ",
+          "uri": "https://witter.cz/users/banterCZ",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/337/559/172/025/233/original/5aaecb22392afffd.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/337/559/172/025/233/original/5aaecb22392afffd.jpeg"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ]
+      },
+      {
+        "id": 113543030711144390,
+        "created_at": "2024-11-25T10:05:55.139000+00:00",
+        "in_reply_to_id": 113542983591326958,
+        "in_reply_to_account_id": 109337559172025233,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113543030711144390",
+        "url": "https://mastodonczech.cz/@honzajavorek/113543030711144390",
+        "favourites_count": 1,
+        "edited_at": "2024-11-25T10:06:37.951000+00:00",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://witter.cz/@banterCZ\" class=\"u-url mention\">@<span>banterCZ</span></a></span> Ten deník mám 23 let a celou tu dobu vím, že ho mám, a věděl jsem, kde je. Teď mi došlo, že nevím, na co čekám. A po přečtení mě překvapily úplně jiné věci, než jsem čekal.</p><p>Standing desk je Stooy, ale zdá se, že stooy.cz už nefunguje. A není to pro lidi, co k práci potřebují monitor.</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 109337559172025233,
+            "username": "banterCZ",
+            "url": "https://witter.cz/@banterCZ",
+            "acct": "banterCZ@witter.cz"
+          }
+        ]
+      }
+    ]
   },
   {
     "url": "https://honzajavorek.cz/blog/tydenni-poznamky-dohaneni/",
