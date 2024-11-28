@@ -951,13 +951,13 @@ files = [
 
 [[package]]
 name = "pelican"
-version = "4.9.1"
+version = "4.10.2"
 description = "Static site generator supporting Markdown and reStructuredText"
 optional = false
 python-versions = "<4.0,>=3.8.1"
 files = [
-    {file = "pelican-4.9.1-py3-none-any.whl", hash = "sha256:713ea66c6a73bde405acd333d5ee746273850a5350a3c0045f2be991d79bd708"},
-    {file = "pelican-4.9.1.tar.gz", hash = "sha256:c08434f0df2a6b649cfe485cbf0d8fdb727ff89ba6ecb1c867f88ceb2f37f179"},
+    {file = "pelican-4.10.2-py3-none-any.whl", hash = "sha256:534b3c279b9630a006b5687ea6e8e6113ca17c64ac45f4328cf66bf0be367bdf"},
+    {file = "pelican-4.10.2.tar.gz", hash = "sha256:04932e82dc7542bae7f1830710978836ca00608aa4ece7206dc13185a08c4562"},
 ]
 
 [package.dependencies]
@@ -1834,4 +1834,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "3.10.*"
-content-hash = "9818aab2f330a99828c1d0fe026d0c2588f2d249768972c6db677cd31b77c03d"
+content-hash = "99bd2fb409a5db4f7bf90a46602f018c51bc2f6e66f3170244a449fb70b4c4c0"
