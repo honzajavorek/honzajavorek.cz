@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Dokončování Python kurzu pro Apify
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/334
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/113567013555647380
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-11-22_tydenni-poznamky-soutez-o-knihy-a-tyden-pro-digitalni-cesko.md) už utekl nějaký ten týden (22. 11. až 29. 11.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
