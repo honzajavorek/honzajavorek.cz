@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile# article: https://ogp.me/ns/article#">
+      <meta charset="utf-8">
+    <link rel="canonical" href="https://honzajavorek.cz/blog/tydenni-poznamky-dokoncovani-python-kurzu-pro-apify/">
+    <title>Týdenní poznámky: Dokončování Python kurzu pro Apify &mdash; Javorové lístky</title>
+
+    <meta property="og:title" content="Týdenní poznámky: Dokončování Python kurzu pro Apify &mdash; Javorové lístky">
+    <meta property="og:url" content="https://honzajavorek.cz/blog/tydenni-poznamky-dokoncovani-python-kurzu-pro-apify/">
+
+    <link href="https://mastodonczech.cz/@honzajavorek" rel="me">
+    <meta name="fediverse:creator" content="@honzajavorek@mastodonczech.cz">
+
+    <meta property="og:image" content="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="683">
+    <meta name="twitter:image" content="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#457E31">
+    <link rel="icon" href="https://honzajavorek.cz/favicon.ico" sizes="any">
+    <link rel="icon" href="https://honzajavorek.cz/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="https://honzajavorek.cz/apple-touch-icon.png">
+    <link rel="manifest" href="https://honzajavorek.cz/site.webmanifest">
+
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://honzajavorek.cz/theme/main.css">
+
+
+  <link rel="stylesheet" href="https://honzajavorek.cz/theme/code.css">
+
+    <link href="https://honzajavorek.cz/feed.xml" type="application/atom+xml" rel="alternate" title="Javorové lístky &mdash; Atom Feed">
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2024-11-29T00:00:00+01:00">
+  <meta property="article:author" content="https://honzajavorek.cz">
+  </head>
+  <body>
+      <nav class="navigation container">
+        <a class="navigation-link btn btn-primary" href="https://honzajavorek.cz/blog/" role="button">
+          <i class="bi bi-file-earmark-text"></i> Blog
+        </a>
+      </nav>
+      <div class="content container">
+<article class="article">
+  <header class="article-author author">
+    <a href="https://honzajavorek.cz" class="author-link">
+      <img class="author-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="50" height="50">
+      <span class="author-name">Honza Javorek</span>
+    </a>
+  </header>
+  <h1 class="title display-5">
+    Týdenní poznámky: Dokončování Python kurzu pro Apify
+    <small class="permalink">
+      <a href="https://honzajavorek.cz/blog/tydenni-poznamky-dokoncovani-python-kurzu-pro-apify/" rel="bookmark" title="Odkaz na tento článek">
+        <i class="bi bi-link-45deg"></i>
+      </a>
+    </small>
+  </h1>
+  <footer class="article-info info">
+    <ul class="info-list">
+      <li class="info-published">
+        <i class="bi bi-calendar"></i>
+        <time datetime="2024-11-29T00:00:00+01:00">
+          29. 11. 2024
+        </time>
+      </li>
+      <li class="info-readtime">
+        <i class="bi bi-stopwatch"></i>
+        4
+          min čtení
+      </li>
+      <li class="info-analytics">
+        <i class="bi bi-graph-up"></i>
+        <a href="https://simpleanalytics.com/honzajavorek.cz?search=paths%3Ablog/tydenni-poznamky-dokoncovani-python-kurzu-pro-apify&interval=week&start=2024-11-29T00:00:00+01:00&end=today" target="_blank" rel="noopener">
+            Návštěvnost
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <main class="article-content clearfix">
+
+    <div><div><div><div><p>Jak se mi daří v jednom člověku provozovat a rozvíjet <a href="https://junior.guru/">junior.guru</a>?
+Od <a href="https://honzajavorek.cz/blog/tydenni-poznamky-soutez-o-knihy-a-tyden-pro-digitalni-cesko/">posledních poznámek</a> už utekl nějaký ten týden (22. 11. až 29. 11.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.</p>
+<figure class="figure"><img alt="Poznámky" src="https://honzajavorek.cz/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg" class="img-fluid figure-img rounded"><figcaption class="figure-caption">
+Fotil <a href="https://unsplash.com/@markusspiske">Markus Spiske</a></figcaption></figure>
+<div class="alert alert-warning" role="alert">
+<p><strong>Plány:</strong> Stará „předsevzetí” jsou v článku <a href="https://honzajavorek.cz/blog/plan-na-q2-2024/">Plán na Q2 2024</a>, nová teď nejsou.</p>
+<p><strong>Čísla:</strong> Finanční výsledky, návštěvnost a další čísla k junior.guru <a href="https://junior.guru/about/">mám přímo na webu</a>.</p>
+</div>
+<p>O víkendu žena nabrala síly u babičky a já s kamarády. Já jsem si to moc užil, fakt jsem se bavil, odpočinul jsem si, a nabilo mě to. Máme teď doma trochu víc životní energie a třeba se nám povede někam posunout věci, které chceme posouvat, a ne jen absorbovat různé rány a sbírat se z nich. Hlavně abychom byli teď aspoň chvíli zdraví.</p>
+<p>Pracovní týden proběhl celkem v poklidu. Snažil jsem se soustředit na práci pro Apify, ale nepřetahovat to a mít večer vždy i čas na rodinu a nějaký volný čas. Dařilo se mi trochu i přemýšlet o tom, do čeho bych se chtěl do budoucna pouštět. Je dobré, že si mohu od junior.guru díky Apify zase na chvíli odpočinout, a získat odstup.</p>
+<figure class="figure"><img alt="Reggae" src="https://honzajavorek.cz/images/img-3059.jpg" class="img-fluid figure-img rounded"></figure>
+<figure class="figure"><img alt="MIG 21" src="https://honzajavorek.cz/images/img-3105.jpg" class="img-fluid figure-img rounded"></figure>
+<h2 id="prace-pro-apify">Práce pro Apify<small class="permalink"><a href="#prace-pro-apify" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<ul>
+<li>Udělal jsem review na <a href="https://github.com/apify/apify-docs/pull/1283">tento PR</a> upravující text o psaní README pro Actory.</li>
+<li>Dotáhli jsme review na mém <a href="https://github.com/apify/apify-docs/pull/1244/">předešlém PR</a>, který přidával dvě nové lekce do kurzu. Byly tam ještě nějaké drobnosti a velké obrázky.</li>
+<li>Pak jsem ještě šel a <a href="https://github.com/apify/apify-docs/pull/1302">optimalizoval i obrázky, které jsem přidával už předtím</a>.</li>
+<li>Zbytek týdne jsem pracoval na <a href="https://github.com/apify/apify-docs/pull/1303">přidání lekce o tom, jak při scrapování použít framework</a>. Zabralo mi to více času, než jsem myslel, protože jsem se trochu zasekl u vymýšlení cvičení. Aby cvičení dávala smysl, musí splňovat spoustu podmínek. Takže jsem zkoušel a zahazoval různé věci, než jsem byl s výsledkem spokojený.</li>
+</ul>
+<p>Ještě si sem odložím, čím jsem optimalizoval ty obrázky. Byl to v podstatě jeden příkaz, akorát mi chvíli trvalo na to na něj přijít. Třeba můj oblíbený GIF lopaty přehazující hlínu to stáhlo o 46 %, bez toho, abych vizuálně poznal nějaký rozdíl.</p>
+<pre class="highlight"><code><span></span><code>$<span class="w"> </span>npm<span class="w"> </span>x<span class="w"> </span>--<span class="w"> </span>@funboxteam/optimizt<span class="w"> </span>~/Projects/apify-docs/sources/academy/webscraping/scraping_basics_python/images/
+</code></code></pre>
+
+<p>Cítím se trochu divně, že mi jakoby jedna lekce zabrala týden, ale když se ohlédnu, bylo to fakt docela dost vymýšlení, zkoušení, a zahazování věcí, které jsem pak udělal jinak. Takže člověk prostě ve výsledku napíše pár odstavců, ale holt to vážně zabere skoro týden. Nicméně mám radost z toho, jak <a href="https://docs.apify.com/academy/scraping-basics-python">kurz postupně roste</a> a myslím, že do Vánoc by mohl být hotový, pokud včas dostanu reviews.</p>
+<figure class="figure"><img alt="Vánoce v Apify" src="https://honzajavorek.cz/images/image-720.png" class="img-fluid figure-img rounded"></figure>
+<h2 id="dalsi">Další<small class="permalink"><a href="#dalsi" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<ul>
+<li>Propagoval jsem zítřejší (sobotní) <a href="https://junior.guru/events/47/">Obsidian workshop v klubu</a>, který povede <a href="https://www.youtube.com/watch?v=JyyweqNkdZ0">Lucie Lenértová</a>.</li>
+<li>Postupně propaguju i to, že začně <a href="https://adventofcode.com/">Advent of Code</a>, což tradičně vybudí v klubu velkou společnou aktivitu. Připravil jsem věci v klubu, např. vánoční roli.</li>
+<li>Volal jsem si s <a href="http://www.popitchimentoring.cz/">Terkou</a> a hodinu jsme řešili mou prodejní stránku. Bavili jsme se o výsledcích anket a nakreslili jsme kousek wireframu.</li>
+<li>Stavil jsem se ke kamarádovi pro reprák. <a href="https://usa.yamaha.com/products/audio_visual/desktop_audio/wx-030/index.html">Nový reprák</a> je fajn, ale i ta samotná návštěva byla fajn. Stěhuje se a bylo prima si o všem popovídat.</li>
+<li>Potkal jsem po delší době jiného kamaráda na oběd a taky bylo fajn se vidět a popodívat si.</li>
+<li>E-maily, <a href="https://junior.guru/club/">klubový Discord</a>, <a href="https://docs.pyvec.org/operations/support.html#sit-kontaktu">Pyvec Slack</a>, zprávy na LinkedIn.</li>
+<li>Za 8 dní jsem při procházkách nachodil 5 km, na túrách nachodil 7 km. Celkem jsem se hýbal 4 h a zdolal při tom 12 km.
+    Detaily na <a href="https://www.strava.com/athletes/31242569">Strava</a>, jediné sociální síti, kde si napsání statusu musíte zasloužit.</li>
+</ul>
+<h2 id="planuji">Plánuji<small class="permalink"><a href="#planuji" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Budu pokračovat v dokončování Python kurzu pro Apify, dokud ho nedodělám, abych měl už z tohoto pohledu pro letošek hotovo. Pak si udělám už nějaký konkrétnější plán ohledně toho, co a jak s junior.guru.</p>
+<h2 id="zaujalo-me">Zaujalo mě<small class="permalink"><a href="#zaujalo-me" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
+<p>Když na něco narazím a líbí se mi to, sdílím to <a href="https://mastodonczech.cz/@honzajavorek">na Mastodonu</a>.
+Od posledních poznámek jsem sdílel:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=RpOdennxP24">The Ultimate Clever Dripper Technique - YouTube</a><br>Ani jsem nevěděl, že Hoffmann má video na metodu přípravy kávy, kterou jsme si doma oblíbili a dá se zvládat i při rodičovském provozu. Když jsem se díval posledně, tak neměl, ale je to 3 roky staré, tak buď jsem se díval špatně, nebo je to už fakt dlouho, co jsem se díval naposled!</li>
+</ul></div></div></div></div>
+  </main>
+
+  <footer class="article-footer mb-5">
+    <div id="bio" class="article-bio bio">
+      <header class="bio-header">
+        <img class="bio-avatar" alt="Honza Javorek" src="https://honzajavorek.cz/images/theme/honza.jpg" width="100" height="100" loading="lazy">
+        <h3 class="bio-heading">Honza Javorek</h3>
+      </header>
+      <address class="bio-content">
+          Původně programátor, dnes už spíš podnikatel.
+          Tvůrce <a href="https://junior.guru/">junior.guru</a>, projektu pro začátečníky v programování.
+          Dlouholetý dobrovolník v <a href="https://python.cz">české Python komunitě</a>.
+          Podporovatel <a href="https://www.zeleni.cz/">Strany zelených</a>.
+          Tohle je můj blog už 17 let.
+      </address>
+      <ul class="bio-links list-unstyled">
+        <li class="bio-links-item">
+          <i class="bi bi-person-circle"></i> <a href="https://honzajavorek.cz">Osobní web</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-mastodon"></i> <a href="https://mastodonczech.cz/@honzajavorek">Mastodon</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/honzajavorek">LinkedIn</a>
+        </li>
+        <li class="bio-links-item">
+          <i class="bi bi-github"></i> <a href="https://github.com/honzajavorek/">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</article>
+      </div>
+<aside class="promo seealso">
+  <div class="promo-content container">
+    <h3 class="promo-heading fs-1">Další Honzovy články</h3>
+    <ul class="list-unstyled mb-0">
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2024 —
+        <a href="https://honzajavorek.cz/blog/tydenni-poznamky-soutez-o-knihy-a-tyden-pro-digitalni-cesko/">
+          Týdenní poznámky: Soutěž o knihy a Týden pro digitální Česko</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/volim-marketing/">
+          Volím marketing</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/bez-auta/">
+          Bez auta</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2021 —
+        <a href="https://honzajavorek.cz/blog/spoustim-klub/">
+          Spouštím klub</a>
+      </li>
+      <li class="mb-3">
+        <i class="bi bi-file-earmark-text"></i>
+        2016 —
+        <a href="https://honzajavorek.cz/blog/kolonizatori-a-spravci-kolonii/">
+          Kolonizátoři a správci kolonií</a>
+      </li>
+      <li>
+        <i class="bi bi-search"></i>
+        <a href="https://honzajavorek.cz/blog/">Archiv blogu</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+<aside class="promo jg">
+  <div class="promo-content container">
+    <img class="promo-logo" alt="junior.guru" src="https://honzajavorek.cz/images/theme/chick.svg" width="100" loading="lazy">
+    <h3 class="promo-heading fs-1">I ty můžeš programovat</h3>
+    <div class="promo-text">
+      <p>
+        Programování je <strong>příležitost</strong>. Je to tvá výhoda v kanclu, laborce, redakci.
+        Ale taky nová kariéra po rodičovské, pokračování nedokončené školy, nebo prostě náhrada za blbou práci.
+      </p>
+      <p>
+        Chceš to zkusit? Na <strong>junior.guru</strong> najdeš všechno, co potřebuješ!
+      </p>
+    </div>
+    <ul class="promo-nav lead">
+      <li class="promo-nav-item">
+        <i class="bi bi-book"></i> <a href="https://junior.guru/handbook/">Příručka</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-mic"></i> <a href="https://junior.guru/podcast/">Podcast</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-play-btn"></i> <a href="https://junior.guru/courses/">Kurzy</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-file-earmark-check"></i> <a href="https://junior.guru/jobs/">Práce</a>
+      </li>
+      <li class="promo-nav-item">
+        <i class="bi bi-chat"></i> <a href="https://junior.guru/club/">Klub</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+      <footer class="footer">
+        <address class="footer-content container">
+          © Copyright 2007—2024 Honza Javorek
+        </address>
+      </footer>
+    <script defer src="https://honzajavorek.cz/theme/instant.page/instantpage.js"></script>
+
+      <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+  </body>
+</html>
