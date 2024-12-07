@@ -6,7 +6,42 @@
     "toot_url": "https://mastodonczech.cz/@honzajavorek/113607004262462742",
     "favourites_count": 0,
     "reblogs_count": 0,
-    "replies": []
+    "replies": [
+      {
+        "id": 113607100837071820,
+        "created_at": "2024-12-06T17:39:45+00:00",
+        "in_reply_to_id": 113607004262462742,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodon.cesko.digital/users/mwenisch/statuses/113607100684273759",
+        "url": "https://mastodon.cesko.digital/@mwenisch/113607100684273759",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> Teda mrzi me ten hejt na Obsidian. Ale neco na tom bude, uz jsi druhy clovek za dva tydny, co nasel nejaky deal-breaker.</p><p>Ja jsem switchnul na Obsidian a vytesnil ze zivota vsechny ostatni productivity nastroje (Linear, Notion...). A vsecko delam v Obsidianu v closed modu (bez community pluginu) a vubec nic mi nechybi. Mimo toho mam jenom Paper na iPadu na kresleni poznamek.</p><p>Organizuju tak vse od prace, dobrovolniceni na Kalkulacce a jinde i osobni veci.</p>",
+        "account": {
+          "id": 111147893167726013,
+          "username": "mwenisch",
+          "acct": "mwenisch@cesko.digital",
+          "display_name": "Martin Wenisch",
+          "url": "https://mastodon.cesko.digital/@mwenisch",
+          "uri": "https://mastodon.cesko.digital/users/mwenisch",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/111/147/893/167/726/013/original/8cebbcf6abb5fb6e.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/111/147/893/167/726/013/original/8cebbcf6abb5fb6e.png"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ]
+      }
+    ]
   },
   {
     "url": "https://honzajavorek.cz/blog/tydenni-poznamky-dokoncovani-python-kurzu-pro-apify/",
