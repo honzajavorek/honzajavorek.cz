@@ -4,7 +4,7 @@
     "slug": "tydenni-poznamky-stale-jeste-dokoncovani-python-kurzu-pro-apify",
     "created_at": "2024-12-06T17:15:14.067000+00:00",
     "toot_url": "https://mastodonczech.cz/@honzajavorek/113607004262462742",
-    "favourites_count": 0,
+    "favourites_count": 1,
     "reblogs_count": 0,
     "replies": [
       {
@@ -17,6 +17,7 @@
         "language": "cs",
         "uri": "https://mastodon.cesko.digital/users/mwenisch/statuses/113607100684273759",
         "url": "https://mastodon.cesko.digital/@mwenisch/113607100684273759",
+        "replies_count": 1,
         "favourited": false,
         "reblogged": false,
         "muted": false,
@@ -38,6 +39,45 @@
             "username": "honzajavorek",
             "url": "https://mastodonczech.cz/@honzajavorek",
             "acct": "honzajavorek"
+          }
+        ]
+      },
+      {
+        "id": 113610309785952476,
+        "created_at": "2024-12-07T07:15:52.351000+00:00",
+        "in_reply_to_id": 113607100837071820,
+        "in_reply_to_account_id": 111147893167726013,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113610309785952476",
+        "url": "https://mastodonczech.cz/@honzajavorek/113610309785952476",
+        "edited_at": "2024-12-07T07:16:59.848000+00:00",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.cesko.digital/@mwenisch\" class=\"u-url mention\">@<span>mwenisch</span></a></span> To není hejt, to je zoufání si.</p><p>Nemám čas si s tím hrát a ani zjistit, čím to je. Zároveň v tom mám poznámky, které potřebuju používat.</p><p>Možná za to může ten Kanban. Ale ani jsem ho nezkoušel vypnout, protože právě v něm mám ty nejdůležitější věci.</p><p>Jestli ale může i za to, že aplikace na čtení a psaní textových souborů mi vyžere třetinu RAMky, to nevím. Už jednu takovou mám, jmenuje se VS Code, nemůžu jet zároveň dvě 😀</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 111147893167726013,
+            "username": "mwenisch",
+            "url": "https://mastodon.cesko.digital/@mwenisch",
+            "acct": "mwenisch@cesko.digital"
           }
         ]
       }
