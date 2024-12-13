@@ -1,5 +1,89 @@
 [
   {
+    "id": 113640266844724178,
+    "created_at": "2024-12-12T14:14:20.787000+00:00",
+    "in_reply_to_id": 113640264252954286,
+    "in_reply_to_account_id": 110921870573231541,
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113640266844724178",
+    "url": "https://mastodonczech.cz/@honzajavorek/113640266844724178",
+    "edited_at": "2024-12-12T14:14:42.797000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Na přednášku se připojíte přes <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> účet na <a href=\"https://junior.guru/club\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">junior.guru/club</span><span class=\"invisible\"></span></a>, který je na zkoušku zdarma. Pokud po dvou týdnech nezadáte kartu, účet automaticky skončí.</p>",
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ]
+  },
+  {
+    "id": 113640264252954286,
+    "created_at": "2024-12-12T14:13:41.266000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113640264252954286",
+    "url": "https://mastodonczech.cz/@honzajavorek/113640264252954286",
+    "replies_count": 1,
+    "reblogs_count": 1,
+    "favourites_count": 1,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Je fajn, pokud při psaní kódu používáte <a href=\"https://mastodonczech.cz/tags/AI\" class=\"mention hashtag\" rel=\"tag\">#<span>AI</span></a>, ale děláte to správně?</p><p>Zvlášť u juniorů je dobré nezačít se špatnými návyky. <a href=\"https://mastodonczech.cz/tags/ChatGPT\" class=\"mention hashtag\" rel=\"tag\">#<span>ChatGPT</span></a> si vymýšlí neexistující funkce. <a href=\"https://mastodonczech.cz/tags/Copilot\" class=\"mention hashtag\" rel=\"tag\">#<span>Copilot</span></a> navrhne pěkné řešení, které ale nese bezpečnostní rizika.</p><p>17.12. na <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> Discordu mrkneme na efektivní prompty, nástroje, praktické tipy z reálných projektů. Řekneme si, kde AI opravdu pomáhá a kde práci přidělá. Naučíme se ověřit, zda je kód od AI správný.</p><p>Víc info na <a href=\"https://junior.guru/events/48/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">junior.guru/events/48/</span><span class=\"invisible\"></span></a></p>",
+    "media_attachments": [
+      {
+        "id": 113640250226248570,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/113/640/250/226/248/570/original/f3506828d796cb37.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/113/640/250/226/248/570/small/f3506828d796cb37.png",
+        "meta": {
+          "original": {
+            "width": 1280,
+            "height": 512,
+            "size": "1280x512",
+            "aspect": 2.5
+          },
+          "small": {
+            "width": 759,
+            "height": 304,
+            "size": "759x304",
+            "aspect": 2.4967105263157894
+          }
+        },
+        "description": "Petr Glaser - Jak používat AI asistenty a odnést si z nich maximum",
+        "blurhash": "UnQvpZtD%OIfxkItN2xUogaxjrWFR;t5t3R."
+      }
+    ],
+    "tags": [
+      {
+        "name": "ai",
+        "url": "https://mastodonczech.cz/tags/ai"
+      },
+      {
+        "name": "chatgpt",
+        "url": "https://mastodonczech.cz/tags/chatgpt"
+      },
+      {
+        "name": "copilot",
+        "url": "https://mastodonczech.cz/tags/copilot"
+      },
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ]
+  },
+  {
     "id": 113635215488339823,
     "created_at": "2024-12-11T16:49:43.208000+00:00",
     "sensitive": false,
@@ -7,7 +91,7 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113635215488339823",
     "url": "https://mastodonczech.cz/@honzajavorek/113635215488339823",
-    "replies_count": 1,
+    "replies_count": 2,
     "favourites_count": 2,
     "edited_at": "2024-12-11T16:51:15.525000+00:00",
     "favourited": false,
