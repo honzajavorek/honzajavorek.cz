@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Ani nevím, jak to pojmenovat
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/337
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/113647638328956818
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-12-06_tydenni-poznamky-stale-jeste-dokoncovani-python-kurzu-pro-apify.md) už utekl nějaký ten týden (6. 12. až 13. 12.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
