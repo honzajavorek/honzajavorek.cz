@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Nové přednáškové plakátky
 Image: images/img-7295-copy.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/338
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/113687479302799300
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2024-12-13_tydenni-poznamky-ani-nevim-jak-to-pojmenovat.md) už utekl nějaký ten týden (13. 12. až 20. 12.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
