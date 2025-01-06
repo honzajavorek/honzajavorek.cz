@@ -136,15 +136,15 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 
 <p>Moc se mi to nelíbilo a s více metrikami už to bylo i hodně nepřehledné. Navíc byl kód pro jednotlivé metriky na různých místech a uprostřed všeho byl nějaký dotaz na API, který jakožto side-effect velmi znepříjemňuje testování.</p>
 <p>Použil jsem tedy trik s generátory, který mi umožnil dát kód pro každou metriku na jedno místo:</p>
-<pre class="highlight"><code><span></span><code><span class="k">def</span> <span class="nf">metric_A</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+<pre class="highlight"><code><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">metric_A</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
     <span class="n">report</span> <span class="o">=</span> <span class="k">yield</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>  <span class="c1"># složitý objekt pro metriku A</span>
     <span class="k">yield</span> <span class="n">sum_everything</span><span class="p">(</span><span class="n">report</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">metric_B</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">metric_B</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
     <span class="n">report</span> <span class="o">=</span> <span class="k">yield</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>  <span class="c1"># složitý objekt pro metriku B</span>
     <span class="k">yield</span> <span class="n">calculate_something</span><span class="p">(</span><span class="n">report</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">metric_C</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">metric_C</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
     <span class="n">report</span> <span class="o">=</span> <span class="k">yield</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>  <span class="c1"># složitý objekt pro metriku C</span>
     <span class="k">yield</span> <span class="n">aggregate</span><span class="p">(</span><span class="n">report</span><span class="p">)</span>
 </code></code></pre>

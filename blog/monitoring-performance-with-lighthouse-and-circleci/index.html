@@ -114,8 +114,8 @@ Photo by <a href="https://unsplash.com/@filip42">Philippe D.</a></figcaption></f
 <h2 id="solution-by-a-python-script">Solution by a Python script<small class="permalink"><a href="#solution-by-a-python-script" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p><a href="https://github.com/GoogleChrome/lighthouse">I found the tool</a> and to my pleasant surprise, it's an Open Source tool one can install by <code>npm install lighthouse</code>. As simple as that! The fact that Lighthouse has support for multiple reporters and can report not only HTML, but JSON as well, was another pleasant surprise. I also found an <a href="https://kitconcept.com/blog/continuous-performance-analysis-with-lighthouse-and-jenkins/">article about how it can be ran in CI</a>. Great! Now it's just a matter of gluing things together with a bit of Python.</p>
 <p>First, prepare a directory for the reports. Standard library <code>pathlib</code> and <code>shutil</code> come handy:</p>
-<pre class="highlight"><code><span></span><code><span class="kn">import</span> <span class="nn">shutil</span>
-<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<pre class="highlight"><code><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
 
 <span class="n">LIGHTHOUSE_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="s1">'lighthouse'</span>
 
@@ -124,25 +124,25 @@ Photo by <a href="https://unsplash.com/@filip42">Philippe D.</a></figcaption></f
 </code></code></pre>
 
 <p>Now I need a list of URLs to check:</p>
-<pre class="highlight"><code><span></span><code><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<pre class="highlight"><code><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
 
 <span class="n">PUBLIC_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="s1">'public'</span>
 
-<span class="k">def</span> <span class="nf">html_path_to_url</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">public_dir</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">html_path_to_url</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">public_dir</span><span class="p">):</span>
     <span class="n">path</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s1">'index.html'</span><span class="p">)</span>
     <span class="n">path</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="n">public_dir</span><span class="p">))</span>
     <span class="k">return</span> <span class="sa">f</span><span class="s2">"https://junior.guru/</span><span class="si">{</span><span class="s1">''</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'.'</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">(</span><span class="n">path</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">'/'</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span>
 
-<span class="k">def</span> <span class="nf">get_urls</span><span class="p">(</span><span class="n">public_dir</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_urls</span><span class="p">(</span><span class="n">public_dir</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">[</span><span class="n">html_path_to_url</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">public_dir</span><span class="p">)</span>
             <span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">Path</span><span class="p">(</span><span class="n">public_dir</span><span class="p">)</span><span class="o">.</span><span class="n">rglob</span><span class="p">(</span><span class="s1">'*.html'</span><span class="p">)</span>
             <span class="k">if</span> <span class="s1">'/admin/'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">path</span><span class="p">)]</span>
 </code></code></pre>
 
 <p>The <code>get_urls()</code> function walks through <code>.html</code> files in the <code>public</code> directory, where the static site lives, and then generates a production URL for each of them. Now there is a function which takes care of the check itself:</p>
-<pre class="highlight"><code><span></span><code><span class="kn">import</span> <span class="nn">json</span>
-<span class="kn">import</span> <span class="nn">sys</span>
-<span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">run</span>
+<pre class="highlight"><code><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">subprocess</span><span class="w"> </span><span class="kn">import</span> <span class="n">run</span>
 
 <span class="n">MIN_SCORES</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">'performance'</span><span class="p">:</span> <span class="mi">75</span><span class="p">,</span>
@@ -151,7 +151,7 @@ Photo by <a href="https://unsplash.com/@filip42">Philippe D.</a></figcaption></f
     <span class="s1">'seo'</span><span class="p">:</span> <span class="mi">85</span><span class="p">,</span>
 <span class="p">}</span>
 
-<span class="k">def</span> <span class="nf">check_url</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">check_url</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'[CHECK] </span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s1"> → </span><span class="si">{</span><span class="n">url_to_html_report_path</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="si">}</span><span class="s1">'</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">)</span>
 
     <span class="n">outputs</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'--output=json'</span><span class="p">,</span> <span class="s1">'--output=html'</span><span class="p">,</span>
@@ -163,7 +163,7 @@ Photo by <a href="https://unsplash.com/@filip42">Philippe D.</a></figcaption></f
     <span class="n">report</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="n">url_to_json_report_path</span><span class="p">(</span><span class="n">url</span><span class="p">))</span><span class="o">.</span><span class="n">read_text</span><span class="p">())</span>
     <span class="k">return</span> <span class="n">url</span><span class="p">,</span> <span class="n">get_scores</span><span class="p">(</span><span class="n">report</span><span class="p">[</span><span class="s1">'categories'</span><span class="p">])</span>
 
-<span class="k">def</span> <span class="nf">get_scores</span><span class="p">(</span><span class="n">categories</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_scores</span><span class="p">(</span><span class="n">categories</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">{</span><span class="n">score_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">category</span><span class="p">[</span><span class="s1">'score'</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
             <span class="k">for</span> <span class="n">score_id</span><span class="p">,</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">categories</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
             <span class="k">if</span> <span class="n">score_id</span> <span class="ow">in</span> <span class="n">MIN_SCORES</span><span class="o">.</span><span class="n">keys</span><span class="p">()}</span>
@@ -171,17 +171,17 @@ Photo by <a href="https://unsplash.com/@filip42">Philippe D.</a></figcaption></f
 
 <p>The function takes a URL and prints it out so I have an idea of a progress when watching the script run. Then it composes a <code>npx lighthouse ...</code> command with all the parameters. It runs the command as a subprocess. Lighthouse generates an HTML report as well as JSON report. The Python script reads the JSON, finds the part with scores called <code>categories</code>, and reads the scores. Actually, only the scores for which I've set minimum values. The JSON carries the scores as floating point numbers, so they need to be multiplied with 100: <code>0.98</code> becomes <code>98</code></p>
 <p>Lighthouse deals with report formats and report output paths in some funky way, so I had to create a few helper functions to set the right values to the right places:</p>
-<pre class="highlight"><code><span></span><code><span class="kn">from</span> <span class="nn">slugify</span> <span class="kn">import</span> <span class="n">slugify</span>
+<pre class="highlight"><code><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">slugify</span><span class="w"> </span><span class="kn">import</span> <span class="n">slugify</span>
 
-<span class="k">def</span> <span class="nf">url_to_report_name</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">url_to_report_name</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">LIGHTHOUSE_DIR</span> <span class="o">/</span> <span class="n">slugify</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s1">'https-'</span><span class="p">)</span>
 
 
-<span class="k">def</span> <span class="nf">url_to_json_report_path</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">url_to_json_report_path</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="k">return</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">url_to_report_name</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="si">}</span><span class="s1">.report.json'</span>
 
 
-<span class="k">def</span> <span class="nf">url_to_html_report_path</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">url_to_html_report_path</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="k">return</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">url_to_report_name</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="si">}</span><span class="s1">.report.html'</span>
 </code></code></pre>
 
@@ -205,7 +205,7 @@ Photo by <a href="https://unsplash.com/@filip42">Philippe D.</a></figcaption></f
 
 <p>For each check, I compare whether the scores are lower than my limits or not, and evaluate whether the page passes or fails. I print out failed pages and then a short summary. If there are any failed pages, I exit the script with a code <code>1</code>, which tells the operating system, and especially the CI, that something went wrong.</p>
 <p>Because the checks are very slow, the script could use a bit of parallelization. That's easy to achieve by replacing <code>map()</code> with <code>Pool().map()</code> from Python's <code>multiprocessing</code>. It automatically detects how many cores my processor has and spawns as many "workers" to process the items in parallel.</p>
-<pre class="highlight"><code><span></span><code><span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Pool</span>
+<pre class="highlight"><code><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">multiprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pool</span>
 
 <span class="n">checks</span> <span class="o">=</span> <span class="n">Pool</span><span class="p">()</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">check_url</span><span class="p">,</span> <span class="n">get_urls</span><span class="p">(</span><span class="n">PUBLIC_DIR</span><span class="p">))</span>
 </code></code></pre>
@@ -282,7 +282,7 @@ Runtime error encountered: spawnSync /bin/sh ENOMEM
 </code></code></pre>
 
 <p>I ended up with a silly hotfix, which tests whether there is a <code>CI</code> environment variable set (CI services usually set it to allow detection like this). If the script is running on CI, it uses the <code>map()</code> function, otherwise <code>Pool().map()</code>:</p>
-<pre class="highlight"><code><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<pre class="highlight"><code><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 
 <span class="n">map_</span> <span class="o">=</span> <span class="nb">map</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">'CI'</span><span class="p">)</span> <span class="k">else</span> <span class="n">Pool</span><span class="p">()</span><span class="o">.</span><span class="n">map</span>
 <span class="n">checks</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">map_</span><span class="p">(</span><span class="n">check_url</span><span class="p">,</span> <span class="n">get_urls</span><span class="p">(</span><span class="n">PUBLIC_DIR</span><span class="p">)))</span>
@@ -290,7 +290,7 @@ Runtime error encountered: spawnSync /bin/sh ENOMEM
 
 <p>I introduced the parallelization mainly to shorten the duration of the script locally. I don't really care how much time the CircleCI job takes, as it's gonna happen when I sleep, right? When I tried this version of the script, it passed! But it took 8 minutes. That's not great. What if I need to debug something and I want to retry the build a few times? What if my website gets 20 more pages?</p>
 <p>Searching for the memory error message together with "CircleCI" and "Google Chrome" got me to a section <a href="https://developers.google.com/web/tools/puppeteer/troubleshooting?hl=ja#running-puppeteer-on-circleci">Running Puppeteer on CircleCI</a> in the Puppeteer docs. Puppeteer is a tool which allows Node.js programs to control (headless) Google Chrome, which is very likely exactly what Lighthouse does under the hood. The section gives a hint that usual detection mechanisms think that a CircleCI container has 36 cores, rather than the declared 2. And I was able to confirm that by <code>print('Cores:', multiprocessing.cpu_count())</code> and running the script on CircleCI. Wow! Okay. This brought me to a better hotfix:</p>
-<pre class="highlight"><code><span></span><code><span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">cpu_count</span><span class="p">,</span> <span class="n">Pool</span>
+<pre class="highlight"><code><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">multiprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">cpu_count</span><span class="p">,</span> <span class="n">Pool</span>
 
 <span class="n">pool_size</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">cpu_count</span><span class="p">(),</span> <span class="mi">4</span><span class="p">)</span>  <span class="c1"># CircleCI declares 2, but detection reads 36</span>
 <span class="n">checks</span> <span class="o">=</span> <span class="n">Pool</span><span class="p">(</span><span class="n">pool_size</span><span class="p">)</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">check_url</span><span class="p">,</span> <span class="n">get_urls</span><span class="p">(</span><span class="n">PUBLIC_DIR</span><span class="p">))</span>

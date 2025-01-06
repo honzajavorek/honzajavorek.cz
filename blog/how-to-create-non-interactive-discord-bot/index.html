@@ -101,16 +101,16 @@ Photo by <a href="https://unsplash.com/@rocknrollmonkey">Rock'n Roll Monkey</a><
 <p>I'll be using Python and the <a href="https://discordpy.readthedocs.io/">discord.py</a> library. There are myriads of tutorials on how to start and set up a Discord bot in Python, so I won't be covering that. Be guided by the <a href="https://discordpy.readthedocs.io/en/latest/index.html#getting-started">Getting started</a> section of the discord.py docs.</p>
 <p>I'll add only one pro tip, which I don't think the docs cover very well. To be able to interact with the Discord API, you'll need to reference your server (in the API terminology it's <em>guild</em>), your channels, users, etc. using IDs, but it's not very clear where those IDs come from. The trick is that you need to <a href="https://www.swipetips.com/how-to-get-channel-id-in-discord/">switch your Discord app to dev mode</a> and then you can get the IDs using the context menu.</p>
 <p>Now let's say you went through the intro, finished it with the following code, and it works for you:</p>
-<pre class="highlight"><code><span></span><code><span class="kn">import</span> <span class="nn">discord</span>
+<pre class="highlight"><code><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">discord</span>
 
 <span class="n">client</span> <span class="o">=</span> <span class="n">discord</span><span class="o">.</span><span class="n">Client</span><span class="p">()</span>
 
 <span class="nd">@client</span><span class="o">.</span><span class="n">event</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">on_ready</span><span class="p">():</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">on_ready</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">'We have logged in as </span><span class="si">{0.user}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">client</span><span class="p">))</span>
 
 <span class="nd">@client</span><span class="o">.</span><span class="n">event</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">on_message</span><span class="p">(</span><span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">on_message</span><span class="p">(</span><span class="n">message</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">message</span><span class="o">.</span><span class="n">author</span> <span class="o">==</span> <span class="n">client</span><span class="o">.</span><span class="n">user</span><span class="p">:</span>
         <span class="k">return</span>
 
@@ -122,10 +122,10 @@ Photo by <a href="https://unsplash.com/@rocknrollmonkey">Rock'n Roll Monkey</a><
 
 <p>As you can see, this is an interactive bot, which prints out a message when it starts, then runs indefinitely and listens to messages, reacting to greetings. Under the hood, the code uses <a href="https://docs.python.org/3/library/asyncio.html">asyncio</a> to communicate with the API, and as soon as the <code>client.run()</code> happens, it runs in an asyncio loop forever. That's kind of cool, but we won't need any of that. We want to spin up the loop, do whatever we need, then immediately stop the loop and terminate the program.</p>
 <h2 id="creating-a-one-time-script">Creating a one-time script<small class="permalink"><a href="#creating-a-one-time-script" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
-<pre class="highlight"><code><span></span><code><span class="kn">import</span> <span class="nn">discord</span>
+<pre class="highlight"><code><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">discord</span>
 
-<span class="k">class</span> <span class="nc">NonInteractiveClient</span><span class="p">(</span><span class="n">discord</span><span class="o">.</span><span class="n">Client</span><span class="p">):</span>
-    <span class="k">async</span> <span class="k">def</span> <span class="nf">on_ready</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">NonInteractiveClient</span><span class="p">(</span><span class="n">discord</span><span class="o">.</span><span class="n">Client</span><span class="p">):</span>
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">on_ready</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">wait_until_ready</span><span class="p">()</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">'We have logged in as </span><span class="si">{0.user}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
         <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -140,15 +140,15 @@ Photo by <a href="https://unsplash.com/@rocknrollmonkey">Rock'n Roll Monkey</a><
 <p>This would be all great, but there's one problem. When error happens, it prints out, but the program hangs. Even if you do some changes to the code and force the program to end on error, it's hard to ensure it has a correct exit code. Exit code of a program should be 0 if all went nice and smooth, but it should be 1 (more precisely, non-zero) in case of a problem. If we run the script as part of a CI job (CircleCI, GitHub Actions…) and it fails, returning a non-zero code ensures the whole job fails. So how do we do this?</p>
 <p>The issue is multi-level. First, the discord.py library eats the errors. Second, the asyncio loop eats the errors. If there's an exception raised, it won't crash the program. It gets eaten by one of the error handlers, printed, but silenced. This is a desired behavior in case of a long-running process, where the program is expected to log errors for later inspection, but ideally recovers and continues to do its job. In a one-time script, we want exactly the opposite.</p>
 <h3 id="working-around-discordpy">Working around discord.py<small class="permalink"><a href="#working-around-discordpy" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h3>
-<pre class="highlight"><code><span></span><code><span class="kn">import</span> <span class="nn">discord</span>
+<pre class="highlight"><code><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">discord</span>
 
-<span class="k">class</span> <span class="nc">NonInteractiveClient</span><span class="p">(</span><span class="n">discord</span><span class="o">.</span><span class="n">Client</span><span class="p">):</span>
-    <span class="k">async</span> <span class="k">def</span> <span class="nf">on_ready</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">NonInteractiveClient</span><span class="p">(</span><span class="n">discord</span><span class="o">.</span><span class="n">Client</span><span class="p">):</span>
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">on_ready</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">wait_until_ready</span><span class="p">()</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">'We have logged in as </span><span class="si">{0.user}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
         <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
-    <span class="k">async</span> <span class="k">def</span> <span class="nf">on_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">on_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="k">raise</span>
 
 <span class="n">client</span> <span class="o">=</span> <span class="n">NonInteractiveClient</span><span class="p">()</span>
@@ -158,21 +158,21 @@ Photo by <a href="https://unsplash.com/@rocknrollmonkey">Rock'n Roll Monkey</a><
 <p>In the example above, we added an <code>on_error()</code> listener method, which by default eats errors, but we implemented it in a way that it re-raises them. This way we can work around the discord.py behavior, but it isn't enough for the program to crash on error, because the asyncio loop will still eat it.</p>
 <h3 id="working-around-asyncio">Working around asyncio<small class="permalink"><a href="#working-around-asyncio" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h3>
 <p>Luckily, <code>client.loop</code> allows us to access the loop object and we can modify the behavior. It's not gonna be very nice, but it's gonna work and that surely counts.</p>
-<pre class="highlight"><code><span></span><code><span class="kn">import</span> <span class="nn">discord</span>
+<pre class="highlight"><code><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">discord</span>
 
-<span class="k">class</span> <span class="nc">NonInteractiveClient</span><span class="p">(</span><span class="n">discord</span><span class="o">.</span><span class="n">Client</span><span class="p">):</span>
-    <span class="k">async</span> <span class="k">def</span> <span class="nf">on_ready</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">NonInteractiveClient</span><span class="p">(</span><span class="n">discord</span><span class="o">.</span><span class="n">Client</span><span class="p">):</span>
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">on_ready</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">wait_until_ready</span><span class="p">()</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">'We have logged in as </span><span class="si">{0.user}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
         <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
-    <span class="k">async</span> <span class="k">def</span> <span class="nf">on_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">on_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="k">raise</span>
 
 <span class="n">client</span> <span class="o">=</span> <span class="n">NonInteractiveClient</span><span class="p">()</span>
 
 <span class="n">exc</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="k">def</span> <span class="nf">exc_handler</span><span class="p">(</span><span class="n">loop</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">exc_handler</span><span class="p">(</span><span class="n">loop</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
     <span class="k">nonlocal</span> <span class="n">exc</span>
     <span class="n">exc</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'exception'</span><span class="p">)</span>
     <span class="n">loop</span><span class="o">.</span><span class="n">default_exception_handler</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
@@ -193,13 +193,13 @@ Photo by <a href="https://unsplash.com/@rocknrollmonkey">Rock'n Roll Monkey</a><
 <p>So now, when error occurs, we re-raise it in the <code>on_error()</code> listener (discord.py level), and our custom <code>exc_handler()</code> gets called (asyncio loop level), which saves the exception object for later and stops the loop. At that moment, <code>client.run()</code> stops blocking the program and the lines after it can be executed. In a simple <code>if</code> statement we can peek if an error happened. If yes, we can finally raise it like normal synchronous Python beings, without any loop magic interfering anymore. This crashes the program and sets the exit code to 1. If there is no error (the <code>client.run()</code> has been stopped by <code>self.close()</code> in <code>on_ready()</code>), the program ends normally.</p>
 <h2 id="full-program">Full program<small class="permalink"><a href="#full-program" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>The example below adds a separate function for the actual code of the one-time script. It loads members of a specific Discord server, aka <em>guild</em>, and <a href="https://docs.python.org/3/library/pprint.html">pretty prints</a> them one by one. The ugly rest is the infrastructure needed to work around all the built-in loop architecture.</p>
-<pre class="highlight"><code><span></span><code><span class="kn">import</span> <span class="nn">discord</span>
-<span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+<pre class="highlight"><code><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">discord</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pprint</span><span class="w"> </span><span class="kn">import</span> <span class="n">pprint</span>
 
 
 <span class="c1"># Actual code of the one-time script, which does something useful</span>
 
-<span class="k">async</span> <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="n">client</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="n">client</span><span class="p">):</span>
     <span class="n">guild</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_guild</span><span class="p">(</span><span class="mf">123445.</span><span class="o">..</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">member</span> <span class="ow">in</span> <span class="n">guild</span><span class="o">.</span><span class="n">members</span><span class="p">:</span>
         <span class="n">pprint</span><span class="p">(</span><span class="n">member</span><span class="p">)</span>
@@ -207,19 +207,19 @@ Photo by <a href="https://unsplash.com/@rocknrollmonkey">Rock'n Roll Monkey</a><
 
 <span class="c1"># The ugly rest</span>
 
-<span class="k">class</span> <span class="nc">NonInteractiveClient</span><span class="p">(</span><span class="n">discord</span><span class="o">.</span><span class="n">Client</span><span class="p">):</span>
-    <span class="k">async</span> <span class="k">def</span> <span class="nf">on_ready</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">NonInteractiveClient</span><span class="p">(</span><span class="n">discord</span><span class="o">.</span><span class="n">Client</span><span class="p">):</span>
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">on_ready</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">wait_until_ready</span><span class="p">()</span>
         <span class="k">await</span> <span class="n">run</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
         <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
-    <span class="k">async</span> <span class="k">def</span> <span class="nf">on_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">on_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="k">raise</span>
 
 <span class="n">client</span> <span class="o">=</span> <span class="n">NonInteractiveClient</span><span class="p">()</span>
 
 <span class="n">exc</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="k">def</span> <span class="nf">exc_handler</span><span class="p">(</span><span class="n">loop</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">exc_handler</span><span class="p">(</span><span class="n">loop</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
     <span class="k">nonlocal</span> <span class="n">exc</span>
     <span class="n">exc</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'exception'</span><span class="p">)</span>
     <span class="n">loop</span><span class="o">.</span><span class="n">default_exception_handler</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>

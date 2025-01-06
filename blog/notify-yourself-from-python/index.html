@@ -117,7 +117,7 @@ Photo by <a href="https://unsplash.com/@scalabis">Luís Perdigão</a></figcaptio
 </code></code></pre>
 
 <p>In Python, it's easy to run commands using the <code>subprocess.run()</code> function, so in your script, one can do something like this:</p>
-<pre class="highlight"><code><span></span><code><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">run</span>
+<pre class="highlight"><code><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">subprocess</span><span class="w"> </span><span class="kn">import</span> <span class="n">run</span>
 
 <span class="n">run</span><span class="p">([</span><span class="s1">'say'</span><span class="p">,</span> <span class="s1">'-v'</span><span class="p">,</span> <span class="s1">'zuzana'</span><span class="p">,</span> <span class="s1">'Jedno pivo prosím!'</span><span class="p">])</span>
 </code></code></pre>
@@ -140,14 +140,14 @@ Photo by <a href="https://unsplash.com/@scalabis">Luís Perdigão</a></figcaptio
 </code></code></pre>
 
 <p>Then in your Python program:</p>
-<pre class="highlight"><code><span></span><code><span class="kn">import</span> <span class="nn">pync</span>
+<pre class="highlight"><code><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pync</span>
 
 <span class="n">pync</span><span class="o">.</span><span class="n">Notifier</span><span class="o">.</span><span class="n">notify</span><span class="p">(</span><span class="s1">'Hello!'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">'Greeting'</span><span class="p">)</span>
 </code></code></pre>
 
 <p>Check out the library's README, there're more usage examples. My personal tip is to import it with exception handling, just in case someone wants to run your code somewhere else than on macOS:</p>
 <pre class="highlight"><code><span></span><code><span class="k">try</span><span class="p">:</span>
-    <span class="kn">import</span> <span class="nn">pync</span>
+    <span class="kn">import</span><span class="w"> </span><span class="nn">pync</span>
 <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
     <span class="n">pync</span> <span class="o">=</span> <span class="kc">None</span>
 
@@ -157,19 +157,19 @@ Photo by <a href="https://unsplash.com/@scalabis">Luís Perdigão</a></figcaptio
 
 <h2 id="decorator">Decorator<small class="permalink"><a href="#decorator" title="Link to this heading"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Now I wanted to notify myself when a long-running function ends, but I didn't want to pollute the code of the function with printing bell characters or sending notifications. Also, what if there's an error and the function raises an exception? A solution is to have the code as a function decorator. Also, that way I can easily measure duration of the function and put the result into the notification:</p>
-<pre class="highlight"><code><span></span><code><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">wraps</span>
-<span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">time</span>
+<pre class="highlight"><code><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">functools</span><span class="w"> </span><span class="kn">import</span> <span class="n">wraps</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">time</span><span class="w"> </span><span class="kn">import</span> <span class="n">time</span>
 
 
 <span class="k">try</span><span class="p">:</span>
-    <span class="kn">import</span> <span class="nn">pync</span>
+    <span class="kn">import</span><span class="w"> </span><span class="nn">pync</span>
 <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
     <span class="n">pync</span> <span class="o">=</span> <span class="kc">None</span>
 
 
-<span class="k">def</span> <span class="nf">notify</span><span class="p">(</span><span class="n">fn</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">notify</span><span class="p">(</span><span class="n">fn</span><span class="p">):</span>
     <span class="nd">@wraps</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
-    <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="n">t0</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
         <span class="k">try</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
@@ -184,10 +184,10 @@ Photo by <a href="https://unsplash.com/@scalabis">Luís Perdigão</a></figcaptio
 </code></code></pre>
 
 <p>That funky thing near the end is <a href="https://pyformat.info/#number">advanced formatting</a> inside <a href="https://realpython.com/python-f-strings/">f-strings</a>. I have this code in a separate module, <code>timer.py</code>. (Module <code>timer</code>, function <code>notify</code>… well I'm unsure about proper naming yet, but this is what I have so far.) It can be used as follows:</p>
-<pre class="highlight"><code><span></span><code><span class="kn">from</span> <span class="nn">.timer</span> <span class="kn">import</span> <span class="n">notify</span>
+<pre class="highlight"><code><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">.timer</span><span class="w"> </span><span class="kn">import</span> <span class="n">notify</span>
 
 <span class="nd">@notify</span>
-<span class="k">def</span> <span class="nf">long_running_function</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">long_running_function</span><span class="p">():</span>
     <span class="o">...</span>
 </code></code></pre>
 

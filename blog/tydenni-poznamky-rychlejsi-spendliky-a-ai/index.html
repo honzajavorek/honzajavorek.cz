@@ -121,13 +121,13 @@ Zabil jsem s tím jedno dopoledne a pak jsem to z kódu raději vyházel.</p>
 <p>Naučil jsem se však při tom, že nemusím na <code>asyncio</code> tasky čekat hned, že je mohu vytvářet a až postupně si sbírat jejich výsledky, klidně třeba zrovna přes <code>asyncio.gather()</code>.
 Zní to triviálně, ale mě to původně fakt nedošlo.
 Všechny příklady totiž vždy vypadají takto:</p>
-<pre class="highlight"><code><span></span><code><span class="kn">import</span> <span class="nn">asyncio</span>
+<pre class="highlight"><code><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
 
 <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">something</span><span class="p">(),</span> <span class="n">something</span><span class="p">(),</span> <span class="n">something</span><span class="p">()])</span>
 </code></code></pre>
 
 <p>Takže až teď mi došlo, že můžu udělat tohle:</p>
-<pre class="highlight"><code><span></span><code><span class="kn">import</span> <span class="nn">asyncio</span>
+<pre class="highlight"><code><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
 
 <span class="n">tasks</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">tasks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">asyncio</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="n">something</span><span class="p">()))</span>

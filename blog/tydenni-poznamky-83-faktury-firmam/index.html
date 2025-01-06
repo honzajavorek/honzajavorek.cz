@@ -141,39 +141,39 @@ Fotka od <a href="https://unsplash.com/@honza_kahanek">Honzy Kahánka</a></figca
 <span class="k">if</span> <span class="n">process</span><span class="o">.</span><span class="n">exitcode</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
     <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Process for running async code finished with non-zero exit code: </span><span class="si">{</span><span class="n">process</span><span class="o">.</span><span class="n">exitcode</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">_task</span><span class="p">(</span><span class="o">...</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">_task</span><span class="p">(</span><span class="o">...</span><span class="p">):</span>
     <span class="k">pass</span>  <span class="c1"># tady jsou asynchronní věci</span>
 </code></code></pre>
 
 <p>No a delší dobu jsem pozoroval, jak mi asi zlobí i to řešení pro Discord. Že prý task nemá tu správnou <em>loop</em>, i když mít měl. A teď se to nasbíralo a popadalo. Tak jsem to vzdal. Ta <em>loop</em> prostě asi není na tohle dělaná. Tak jsem si řekl ok, vytáhnu to zase do procesu vedle, na hodinu práce.</p>
 <p>Houby! Celý den jsem to dělal. Zjistil jsem, že <a href="https://stackoverflow.com/questions/9336646/python-decorator-with-multiprocessing-fails">do procesu nejde poslat nic, co má dekorátor</a>. Jenže já přes dekorátory řeším připojení k databázi a vůbec, chtěl jsem se od té blbosti abstrahovat a ne řešit, jestli někde můžu dát dekorátor nebo nemůžu.</p>
 <p>Stále jsem ladil, jak se to bude používat. Nakonec jsem skončil u něčeho jako:</p>
-<pre class="highlight"><code><span></span><code><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<pre class="highlight"><code><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="n">run_discord_task</span><span class="p">(</span><span class="s1">'juniorguru.sync.script.do_something'</span><span class="p">)</span>
 
 <span class="nd">@db</span><span class="o">.</span><span class="n">connection_context</span><span class="p">()</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">do_something</span><span class="p">(</span><span class="n">discord_client</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">do_something</span><span class="p">(</span><span class="n">discord_client</span><span class="p">):</span>
     <span class="k">pass</span>
 </code></code></pre>
 
 <p>Funkce <code>run_discord_task()</code> si bere importovací cestu k funkci jako řetězec a ta se vyřeší až v samotném spuštěném vedlejším procesu. Takže <code>do_something()</code> se ani nemusí picklovat a někam posílat, prostě se naimportuje až potom, v procesu, přes <code>importlib</code>.</p>
 <p>Když potřebuju databázi, můžu použít dekorátor. Jupí. Až na to, že Peewee nezvládne dekorovat asynchronní funkci, jak jsem zjistil :D A ani se to neplánuje, autor Peewee nemá rád asyncio. Takže jsem si musel přečíst kód Peewee a doprogramovat si to:</p>
-<pre class="highlight"><code><span></span><code><span class="kn">import</span> <span class="nn">asyncio</span>
-<span class="kn">from</span> <span class="nn">peewee</span> <span class="kn">import</span> <span class="n">Model</span><span class="p">,</span> <span class="n">SqliteDatabase</span> <span class="k">as</span> <span class="n">BaseSqliteDatabase</span><span class="p">,</span> <span class="n">ConnectionContext</span> <span class="k">as</span> <span class="n">BaseConnectionContext</span>
+<pre class="highlight"><code><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">peewee</span><span class="w"> </span><span class="kn">import</span> <span class="n">Model</span><span class="p">,</span> <span class="n">SqliteDatabase</span> <span class="k">as</span> <span class="n">BaseSqliteDatabase</span><span class="p">,</span> <span class="n">ConnectionContext</span> <span class="k">as</span> <span class="n">BaseConnectionContext</span>
 
-<span class="k">class</span> <span class="nc">ConnectionContext</span><span class="p">(</span><span class="n">BaseConnectionContext</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ConnectionContext</span><span class="p">(</span><span class="n">BaseConnectionContext</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Supports async functions when used as decorator"""</span>
-    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fn</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fn</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">iscoroutinefunction</span><span class="p">(</span><span class="n">fn</span><span class="p">):</span>
-            <span class="k">async</span> <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+            <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
                 <span class="k">with</span> <span class="bp">self</span><span class="p">:</span>
                     <span class="k">return</span> <span class="p">(</span><span class="k">await</span> <span class="n">fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">))</span>
             <span class="k">return</span> <span class="n">wrapper</span>
         <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__call__</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
 
 
-<span class="k">class</span> <span class="nc">SqliteDatabase</span><span class="p">(</span><span class="n">BaseSqliteDatabase</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">connection_context</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">SqliteDatabase</span><span class="p">(</span><span class="n">BaseSqliteDatabase</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">connection_context</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">ConnectionContext</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
 
 
