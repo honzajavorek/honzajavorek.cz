@@ -8,6 +8,7 @@ import click
 from icalendar import Calendar, Event
 import requests
 from lxml import html
+import stamina
 
 
 CALENDAR_UID_SEED = "4v6CadZyePtkN*ciL4w*9uVn62vKH8WPPy-44p8V"
@@ -16,6 +17,7 @@ HEADING_PREFIX = "Kočárkino: "
 
 
 @click.command()
+@stamina.retry(on=requests.RequestException, attempts=5)
 def main():
     calendar = Calendar()
     calendar.add("prodid", "-//kocarkino//honzajavorek.cz//")

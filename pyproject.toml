@@ -33,6 +33,7 @@ extruct = "0.17.0"
 notion-client = "2.2.1"
 feedgen = "1.0.0"
 mastodon-py = "1.8.1"
+stamina = "24.3.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "8.3.3"
