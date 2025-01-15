@@ -17,7 +17,7 @@ HEADING_PREFIX = "Kočárkino: "
 
 
 @click.command()
-@stamina.retry(on=requests.RequestException, attempts=5)
+@stamina.retry(on=requests.RequestException, attempts=10)
 def main():
     calendar = Calendar()
     calendar.add("prodid", "-//kocarkino//honzajavorek.cz//")
