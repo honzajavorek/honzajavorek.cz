@@ -947,13 +947,13 @@ files = [
 
 [[package]]
 name = "pelican"
-version = "4.9.1"
+version = "4.11.0"
 description = "Static site generator supporting Markdown and reStructuredText"
 optional = false
-python-versions = "<4.0,>=3.8.1"
+python-versions = "<4.0,>=3.9"
 files = [
-    {file = "pelican-4.9.1-py3-none-any.whl", hash = "sha256:713ea66c6a73bde405acd333d5ee746273850a5350a3c0045f2be991d79bd708"},
-    {file = "pelican-4.9.1.tar.gz", hash = "sha256:c08434f0df2a6b649cfe485cbf0d8fdb727ff89ba6ecb1c867f88ceb2f37f179"},
+    {file = "pelican-4.11.0-py3-none-any.whl", hash = "sha256:aca6993f6b8a03a20f6828471089cb0504a4dca71e0d30b341fa80ab65668fa4"},
+    {file = "pelican-4.11.0.tar.gz", hash = "sha256:b90234487b818d391733acc1306b785934009749b1fc112b879df9bd89478bd8"},
 ]
 
 [package.dependencies]
@@ -963,7 +963,7 @@ feedgenerator = ">=2.1.0"
 jinja2 = ">=3.1.2"
 markdown = {version = ">=3.1", optional = true, markers = "extra == \"markdown\""}
 ordered-set = ">=4.1.0"
-pygments = ">=2.16.1"
+pygments = ">=2.16.1,<2.19.0"
 python-dateutil = ">=2.8.2"
 rich = ">=13.6.0"
 tzdata = {version = "*", markers = "sys_platform == \"win32\""}
@@ -1194,13 +1194,13 @@ files = [
 
 [[package]]
 name = "pygments"
-version = "2.19.1"
+version = "2.18.0"
 description = "Pygments is a syntax highlighting package written in Python."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pygments-2.19.1-py3-none-any.whl", hash = "sha256:9ea1544ad55cecf4b8242fab6dd35a93bbce657034b0611ee383099054ab6d8c"},
-    {file = "pygments-2.19.1.tar.gz", hash = "sha256:61c16d2a8576dc0649d9f39e089b5f02bcd27fba10d8fb4dcc28173f7a45151f"},
+    {file = "pygments-2.18.0-py3-none-any.whl", hash = "sha256:b8e6aca0523f3ab76fee51799c488e38782ac06eafcf95e7ba832985c8e7b13a"},
+    {file = "pygments-2.18.0.tar.gz", hash = "sha256:786ff802f32e91311bff3889f6e9a86e81505fe99f2735bb6d60ae0c5004f199"},
 ]
 
 [package.extras]
@@ -1885,4 +1885,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "3.10.*"
-content-hash = "235bfc44fa4ed67e78968e725c300c329fc1075884003c07b8f7cb8d4cc112fe"
+content-hash = "ceb39c0bd050dd5a015fa51645ec8ecf372c9491fd134b9dc4ec0e6fb2bfdedc"
