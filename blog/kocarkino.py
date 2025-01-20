@@ -17,15 +17,17 @@ HEADING_PREFIX = "Kočárkino: "
 
 
 @click.command()
-@stamina.retry(on=requests.RequestException, attempts=10)
 def main():
     calendar = Calendar()
     calendar.add("prodid", "-//kocarkino//honzajavorek.cz//")
     calendar.add("version", "2.0")
     calendar.add("uid", sha256(CALENDAR_UID_SEED.encode("utf-8")).hexdigest())
 
-    response = requests.get("https://kcvozovna.cz/program/")
-    response.raise_for_status()
+    for attempt in stamina.retry_context(on=requests.RequestException, wait_max=60):
+        click.echo(f"Requesting kcvozovna.cz, attempt #{attempt.num}", err=True)
+        with attempt:
+            response = requests.get("https://kcvozovna.cz/program/")
+            response.raise_for_status()
     html_tree = html.fromstring(response.content)
     for row in html_tree.cssselect("[data-date]"):
         starts_at = (
