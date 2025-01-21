@@ -23,7 +23,10 @@ def main():
     calendar.add("version", "2.0")
     calendar.add("uid", sha256(CALENDAR_UID_SEED.encode("utf-8")).hexdigest())
 
-    for attempt in stamina.retry_context(on=requests.RequestException, wait_max=60):
+    for attempt in stamina.retry_context(
+        on=(requests.RequestException, OSError),
+        wait_max=60,
+    ):
         click.echo(f"Requesting kcvozovna.cz, attempt #{attempt.num}", err=True)
         with attempt:
             response = requests.get("https://kcvozovna.cz/program/")
