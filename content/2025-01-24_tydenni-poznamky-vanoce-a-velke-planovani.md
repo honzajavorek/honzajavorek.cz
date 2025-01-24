@@ -114,6 +114,7 @@ Tento týden jsem měl pracovat pro Apify. Ale moc mi to nešlo, protože mi do 
 
 - Projít veškerou komunikaci na PRs a issues z minula.
 - Doladit a mergnout kapitoly z minula.
+- Vytvořit [#1417](https://github.com/apify/apify-docs/issues/1417) a [#1418](https://github.com/apify/apify-docs/issues/1418)
 - Kouknout na nový spelling, který máme na repozitáři skrze [Vale](https://vale.sh/).
 - Dotáhnout třetí lekci o DevTools a dát [PR k review](https://github.com/apify/apify-docs/pull/1321).
 - [Rozpracovat PR](https://github.com/apify/apify-docs/pull/1424) na poslední lekci kurzu o tom, jak scraper nasadit na Apify. V té je hodně částí, kde se má něco instalovat nebo registrovat, tak si to všechno zkouším, studuju to, a hrozně mi to trvá.
