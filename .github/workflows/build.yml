@@ -51,8 +51,8 @@ jobs:
       - name: Pelican Build
         run: poetry run blog build
 
-      - name: "Extra: Kočárkino"
-        run: poetry run blog kocarkino > ./public/kocarkino.ics
+      # - name: "Extra: Kočárkino"
+      #   run: poetry run blog kocarkino > ./public/kocarkino.ics
 
       - name: "Extra: Pediatr"
         run: poetry run blog pediatr > ./public/pediatr.xml
