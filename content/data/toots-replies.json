@@ -6,7 +6,117 @@
     "toot_url": "https://mastodonczech.cz/@honzajavorek/113924915659185306",
     "favourites_count": 0,
     "reblogs_count": 0,
-    "replies": []
+    "replies": [
+      {
+        "id": 113952463023665416,
+        "created_at": "2025-02-05T17:29:52+00:00",
+        "in_reply_to_id": 113924915659185306,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://indieweb.social/users/alesroubicek/statuses/113952462735622983",
+        "url": "https://indieweb.social/@alesroubicek/113952462735622983",
+        "replies_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> Co ten scraper paralelizovat na platformě? Jeden actor rozloží úlohu do několika batches a ty spustí v několika instancích aktorů paralelně. Ne že by to efektivně řešilo migrace, ale aspoň se sníží pravděpodobnost, že na ně narazíš. :)</p>",
+        "account": {
+          "id": 110782292519752691,
+          "username": "alesroubicek",
+          "acct": "alesroubicek@indieweb.social",
+          "display_name": "Aleš Roubíček",
+          "url": "https://indieweb.social/@alesroubicek",
+          "uri": "https://indieweb.social/users/alesroubicek",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/110/782/292/519/752/691/original/08eb972f466e2abd.webp",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/110/782/292/519/752/691/original/08eb972f466e2abd.webp"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ]
+      },
+      {
+        "id": 113953250520256000,
+        "created_at": "2025-02-05T20:50:12.676000+00:00",
+        "in_reply_to_id": 113952463023665416,
+        "in_reply_to_account_id": 110782292519752691,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/113953250520256000",
+        "url": "https://mastodonczech.cz/@honzajavorek/113953250520256000",
+        "replies_count": 1,
+        "reblogs_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://indieweb.social/@alesroubicek\" class=\"u-url mention\">@<span>alesroubicek</span></a></span> To by vyžadovalo dost infra kolem, ale jasně. Já pořád věřím, že vyřešíme prapodivnou implementaci Scrapy integrace do Apify, se kterou není spokojený nikdo, a to mi umožní napsat obyčejný cache storage pro Scrapy, aby se proběhlá HTTP komunikace ukládala do KV storu, a když mi pak platforma restartuje scraper, tak se to akorát v sekundě sjede znova z keše a pohoda.</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 110782292519752691,
+            "username": "alesroubicek",
+            "url": "https://indieweb.social/@alesroubicek",
+            "acct": "alesroubicek@indieweb.social"
+          }
+        ]
+      },
+      {
+        "id": 113954944733334722,
+        "created_at": "2025-02-06T04:01:02+00:00",
+        "in_reply_to_id": 113953250520256000,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://indieweb.social/users/alesroubicek/statuses/113954944636366555",
+        "url": "https://indieweb.social/@alesroubicek/113954944636366555",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> úplně si nemyslím, že to vyžaduje dost infra kolem. Ta strategie se dá imlementovat různě.</p><p>Kdyby se podařilo Scrapy spíše napojit na RequestQueue, tak máš problém vyřešený.</p><p>Trochu jsem si to tvoje řešení prohlížel a IMHO je to zbytečně moc komplikovaný. Mám podobné scrapery pro <a href=\"https://www.datatalk.cz/datajobs/\" rel=\"nofollow noopener noreferrer\" translate=\"no\" target=\"_blank\"><span class=\"invisible\">https://www.</span><span class=\"\">datatalk.cz/datajobs/</span><span class=\"invisible\"></span></a> a každej má pod 100 loc.</p>",
+        "account": {
+          "id": 110782292519752691,
+          "username": "alesroubicek",
+          "acct": "alesroubicek@indieweb.social",
+          "display_name": "Aleš Roubíček",
+          "url": "https://indieweb.social/@alesroubicek",
+          "uri": "https://indieweb.social/users/alesroubicek",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/110/782/292/519/752/691/original/08eb972f466e2abd.webp",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/110/782/292/519/752/691/original/08eb972f466e2abd.webp"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ]
+      }
+    ]
   },
   {
     "url": "https://honzajavorek.cz/blog/tydenni-poznamky-vanoce-a-velke-planovani/",
@@ -198,8 +308,8 @@
           "display_name": "Luboš Račanský",
           "url": "https://witter.cz/@banterCZ",
           "uri": "https://witter.cz/users/banterCZ",
-          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/337/559/172/025/233/original/5aaecb22392afffd.jpeg",
-          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/337/559/172/025/233/original/5aaecb22392afffd.jpeg"
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/337/559/172/025/233/original/8da1035a74f11069.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/337/559/172/025/233/original/8da1035a74f11069.jpeg"
         },
         "mentions": [
           {
