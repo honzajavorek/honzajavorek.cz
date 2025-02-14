@@ -17,25 +17,25 @@ Fotil [Markus Spiske](https://unsplash.com/@markusspiske)
 
 O prvním z proběhlých víkendů jsem si vylepšil [kalendář kin](https://github.com/honzajavorek/kino). Přidal jsem kina, rozdělil to na víc kalendářů (nejbližší a nejoblíbenější kina, vzdálenější nebo méně oblíbená kina, multikina). Přidal jsem rok vydání filmu a vlajku země, odkud film je. Přidání vlajky v podobě emoji byl zajímavý problém, protože na ČSFD kódy státu nejsou, jen české názvy, a navíc jsou tam historické státy, které už neexistují. S výsledkem jsem velmi spokojený, ale v kině jsem od té doby ještě nebyl 😅
 
-![Kino](<../../../Downloads/Screenshot 2025-02-14 at 20.48.32.png>)
+![Kino]({static}/images/screenshot-2025-02-14-at-20-48-32.png)
 
 ## Petřín
 
 Během téhož víkendu jsme si rozdělili aktivity, částečně i kvůli útočícím rýmičkám. Jeden den jsem vzal dceru na Petřín do zrcadlového bludiště a pak i na rozhlednu. Na ty zrcadla měla tak akorát věk, přišlo mi, a strašně si to užila, byla to velká společná sranda. Další den ji vzala žena na nějaké žonglovací divadlo kousek od nás.
 
-![Hrad](../../../Downloads/IMG_3964.HEIC)
+![Hrad]({static}/images/img-3964.jpg)
 
-![trpaslík](../../../Downloads/IMG_4005.HEIC)
+![trpaslík]({static}/images/img-4005.jpg)
 
-![výhled](../../../Downloads/IMG_4018.HEIC)
+![výhled]({static}/images/img-4018.jpg)
 
 ## Scrapery na pracovní inzeráty
 
 Pokračoval jsem v opravách scraperů. Abych toho neměl málo, scraper na katalog kurzů z ÚP začal nějak blbnout a když jsem se na to díval, zjistil jsem, že změnili celé API a mají novou verzi. Takže jsem to celé přepsal.
 
-Dál jsem řešil hlavní scraper na pracovní inzeráty. S Vláďou z Apify jsme společnými silami kutali a kutali, až jsme vždy něco vykutali. Vyřešili jsme spoustu věcí, ale pak jsme narazili na nové, a tak stále dokolečka. Těsně před horami jsem objevil další chybu v Apify SDK, která nejspíš od začátku způsobovala celý problém. Během toho, co jsem byl na horách (viz níže), povedlo se Vláďovi udělat další průlomy a leccos opravit. Vznikly [PR #390](https://github.com/apify/apify-sdk-python/pull/390), [issue #392](https://github.com/apify/apify-sdk-python/issues/392), [issue #401](https://github.com/apify/apify-sdk-python/issues/401), a další.
+Dál jsem řešil hlavní scraper na pracovní inzeráty. S Vláďou z Apify jsme společnými silami kutali a kutali, až jsme vždy něco vykutali. Vyřešili jsme spoustu věcí, ale pak jsme narazili na nové, a tak stále dokolečka. Těsně před horami jsem objevil další chybu v Apify SDK, která nejspíš od začátku způsobovala celý problém. Během toho, co jsem byl na horách (viz níže), se povedlo Vláďovi udělat další průlomy a leccos opravit. Vznikly [PR #390](https://github.com/apify/apify-sdk-python/pull/390), [issue #392](https://github.com/apify/apify-sdk-python/issues/392), [issue #401](https://github.com/apify/apify-sdk-python/issues/401), a další.
 
-Po příjezdu z hor však vše vypadalo pozitivně a po pár hodinkách přehazování kódu vidlema jsem dospěl k funkčnímu výsledku. Scraper fungoval a za 30-40min svou práci udělal. Hurá! Pustil jsem si [Queeny](https://www.youtube.com/watch?v=04854XqcfCY) a radoval se.
+Po příjezdu z hor vše vypadalo pozitivně a po pár hodinkách přehazování kódu vidlema jsem dospěl k funkčnímu výsledku. Scraper fungoval a za 30-40min svou práci udělal. Hurá! Pustil jsem si [Queeny](https://www.youtube.com/watch?v=04854XqcfCY) a radoval se.
 
 Hned jsem dopracoval i HTTP cache pro Scrapy, která ukládá do Apify key-value storage. Tu jsem poslal jako [PR do SDK](https://github.com/apify/apify-sdk-python/pull/403). Poladil jsem [vstupy pro scrapery](https://github.com/juniorguru/plucker/issues/110) a vytvořil hned i API pro [Navigaru](https://navigara.com/), se kterou si nejspíš budu vyměňovat data. U té cache i u toho API jsem potřeboval gzip a docela mi v tom pomohlo ChatGPT. Díky němu jsem zjistil, že přímo v gzipu je zabudovaný UNIX timestamp a nemusím ho dávat nikam vedle. Nakonec jsem z kódu definitivně vyčistil scraper na [WWR](https://weworkremotely.com/), které pro junior.guru není relevantní.
 
@@ -45,7 +45,7 @@ No ale ten hlavní scraper je prokletý, zase blbne. Zase se objevují chyby, ji
 
 Bylo všeho nějak moc a úplně jsem zapomněl na propagaci akce na sociálních sítích 🤦‍♂️ Nic zásadního se asi nestalo, nemyslím si, že to mělo dopad na návštěvnost, to už spíš fakt, že jsme to naplánovali v rychlém sledu. Akce byla fajn pokec od srdíčka, otázek jsem měl nakonec nejvíc já, ale myslím, že to dopadlo dobře. Patrik měl záznam připravený prakticky okamžitě.
 
-![Lea](../../juniorguru/jg/coop/images/posters-events/20250204-93a4f78746966dc30eae92fe369ce2b918af0b90df9466156b1d1f019bf59efa.png){: .img-thumbnail }
+![Lea]({static}/images/20250204-93a4f78746966dc30eae92fe369ce2b918af0b90df9466156b1d1f019bf59efa.png){: .img-thumbnail }
 
 ## Schůzky
 
@@ -61,52 +61,52 @@ Byť to bylo i s kamarády, nějak jsem zapomněl, že jsem introvert, a navíc 
 
 ## Krkonoše
 
-Druhý proběhlý víkend jsme vyrazili do Krokonoš. Byl to pobyt s [Active moms & kids](https://www.facebook.com/activemomsandkids/) a bylo to super. Tento výlet byl promovaný jako ideální pro lidi bez auta, protože do destinace se autem stejně dojet nedalo a z Pece se muselo rolbou 😀 Takže [přesně pro nás]({filename}2021-08-28_bez-auta.md).
+Druhý proběhlý víkend a ještě pár dní potom jsme vyrazili do Krokonoš. Byl to pobyt s [Active moms & kids](https://www.facebook.com/activemomsandkids/) a bylo to super. Tento výlet byl promovaný jako ideální pro lidi bez auta, protože do destinace se autem stejně dojet nedalo a z Pece se muselo rolbou 😀 Takže [přesně pro nás]({filename}2021-08-28_bez-auta.md).
 
 Nikoho jsme neznali předem, ale šli jsme do toho, protože se nám to podle popisu líbilo. Tradičně jezdíme na zimní dovolenou s kamarády, ale letos to na nás bylo nějak daleko, tak jsme zkusili tohle. A nelitujem, bylo to mega super. Bylo tam skvělé jídlo, bazén přímo na boudě, fajn připravený program, ideální pro rodiče malých dětí. Buď jsme se mohli účastnit toho, co bylo naplánováno, nebo si dělat, co jsme chtěli. Organizátorky byly taky mamky, tak jsme si nepřipadali jak s cestovkou, spíš jako v nějaké poloorganizované komunitě, a bylo to fajn.
 
 Sbalili jsme se do jedné krosny a do jednoho menšího batohu. Boby jsem vzal do ruk. Jeli jsme tramvají a metrem na Čerňák, a pak autobusem do Pece. Protože nám vyšlo hezké počasí, tak jsme nakonec ani spoustu zabaleného oblečení nevyužili.
 
-Akorát jsme narazili na nějakou dementní společnost jménem **JAMI LINES s.r.o.**, která nejen že přijela na zastávaku až v minutě odjezdu, takže než borec naložil plný autobus, měli jsme 20 minut zpoždění, navíc bylo zakázáno jíst v autobuse. Bylo to úplně bizarní. Autobus byl polepený asi tisícovkou samolepek o tom, že se v něm nesmí jíst, ani pít. Byly všude - na sedadlech, na každém skle, nad řidičem, zepředu na autobusu. Jakmile si kdokoliv vytáhl byť jen nakrájené jabko, řidič na nás začal řvát jako na nějaké malé spratky. Což je samozřejmě super, když má cesta trvat 2,5 hodiny a jedete s 3,5 roku starým děckem. No nějak jsme to přežili, ale firmě JAMI LINES od srdce přeji, aby shořela v pekle. Jak by řekl Cimrman: Provozovali autobus, ale jezdili jim v něm lidi!
+Akorát jsme cestou tam narazili na nějakou dementní autobusovou společnost jménem **JAMI LINES s.r.o.**, která nejen že přijela na zastávaku až v minutě odjezdu, takže než borec naložil plný autobus, měli jsme 20 minut zpoždění, navíc bylo zakázáno jíst v autobuse. Bylo to úplně bizarní. Autobus byl polepený asi tisícovkou samolepek o tom, že se v něm nesmí jíst, ani pít. Byly všude - na sedadlech, na každém skle, nad řidičem, zepředu na autobusu. Jakmile si kdokoliv vytáhl byť jen nakrájené jabko, řidič na nás začal řvát jako na nějaké malé spratky. Což je samozřejmě super, když má cesta trvat 2,5 hodiny a jedete s 3,5 roku starým děckem. No nějak jsme to přežili, ale firmě JAMI LINES od srdce přeji, aby shořela v pekle. Jak by řekl Cimrman: Provozovali autobus, ale jezdili jim v něm lidi!
 
-V peci už byly organizované rolby. To byl perfektní zážitek. Sice jsme se tam natřásali trochu jak brambory, ale byla to sranda a co se týče hromadné dopravy, po rolbě mi chybí už asi jen cesta vrtulníkem. Tu jsem ale naštěstí ani při dramatických situacích při jízdě na bobech nepotřeboval 😅
+V Peci pak už byly organizované rolby. To byl perfektní zážitek. Sice jsme se tam natřásali trochu jak brambory, ale byla to sranda a co se týče hromadné dopravy, po rolbě mi chybí už asi jen cesta vrtulníkem. Tu jsem ale naštěstí ani při dramatických situacích při jízdě na bobech nepotřeboval 😅
 
 Cesta zpět byla stejná, ale autobus měl jiný dopravce, takže to už bylo bez problémů.
 
-![Pec](../../../Downloads/IMG_4079.HEIC)
+![Pec]({static}/images/img-4079.jpg)
 
-![rolba](../../../Downloads/IMG_4104.HEIC)
+![rolba]({static}/images/img-4104.jpg)
 
-![hra](../../../Downloads/IMG_4113.HEIC)
+![hra]({static}/images/img-4113.jpg)
 
-![Sněžka](../../../Downloads/IMG_4126.HEIC)
+![Sněžka]({static}/images/img-4126.jpg)
 
-![Javorka](../../../Downloads/IMG_4143.HEIC)
+![Javorka]({static}/images/img-4143.jpg)
 
-![Krakonoš](../../../Downloads/IMG_4165.HEIC)
+![Krakonoš]({static}/images/img-4165.jpg)
 
-![sníh](../../../Downloads/IMG_4252.HEIC)
+![sníh]({static}/images/img-4252.jpg)
 
 ## Další
 
--   Další firma mi napsala, že by rádi inzerovali na [junior.guru/jobs](https://junior.guru/jobs). Navrhl jsem, že se mohou přidat do klubu a dát do pro členy zadarmo, nebo že si mohou vybrat [libovolný firemní tarif](https://junior.guru/love/) a že to vložím na web jako dlouhodobý inzerát. Vybrali si první možnost. Zatím to budu dělat takhle a uvidím, co s ručně vkládanými inzeráty bude do budoucna.
+-   Jedna firma mi napsala, že by rádi inzerovali na [junior.guru/jobs](https://junior.guru/jobs). Navrhl jsem, že se mohou přidat do klubu a dát do pro členy zadarmo, nebo že si mohou vybrat [libovolný firemní tarif](https://junior.guru/love/) a že to vložím na web jako dlouhodobý inzerát. Vybrali si první možnost. Zatím to budu dělat takhle a uvidím, co s ručně vkládanými inzeráty bude do budoucna.
 -   Přidal jsem nové sponzory junior.guru, [Praha Coding School](https://prahacoding.cz/). Děkuju Danovi, že mi pomohl s SVG variantou loga.
 -   Na [junior.guru/jobs](https://junior.guru/jobs) jsem přidal ke každé pracovní nabídce odkaz na [Jaký byl pohovor?](https://www.jakybylpohovor.cz/)
 -   V klubu jsem do kanálu s pracovními nabídky přidal automatický připnutý příspěvek, který zviditelňuje ručně přidané inzeráty od lidí přímo z klubu, aby nemizely v záplavě inzerátů stahovaných odjinud.
 -   K Valentýnu jsem dal ženě kolopejku v květináči a dostal pytlík kafe se zamilovanou kudlankou.
 -   Prodloužili jsme zase o rok nájem.
--   Nakoupil jsem dvě další Discord boosts pro server, abychom mohli používat všechny funkce, které potřebujeme. Už to začíná lézt docela do peněz. Kde že je ten Discord zadarmo? 💸
--   Rozjel jsem u Cucumberu [diskuzi o AI](https://github.com/orgs/cucumber/discussions/2230), ale vlastně se moc nerozjela.
--   Abych si připadal užitečný, udělal jsem pro Apify nějaké reviews, a to [zde](https://github.com/apify/apify-docs/pull/1217) a [zde](https://github.com/apify/apify-docs/pull/1442).
--   E-maily, [klubový Discord](https://junior.guru/club/), [Pyvec Slack](https://docs.pyvec.org/operations/support.html#sit-kontaktu), zprávy na LinkedIn. Hromady, hromady e-mailů! Po dovolené jich bylo k 60. A zdaleka nemám hotovo.
+-   Nakoupil jsem dva další Discord boosts pro server, abychom mohli používat všechny funkce, které potřebujeme. Už to začíná lézt docela do peněz. Kde že je ten Discord zadarmo? 💸
+-   Otevřel jsem u Cucumberu [diskuzi o AI](https://github.com/orgs/cucumber/discussions/2230), ale vlastně se moc nerozjela.
+-   Abych si připadal užitečný, udělal jsem pro Apify i nějaké reviews, a to [zde](https://github.com/apify/apify-docs/pull/1217) a [zde](https://github.com/apify/apify-docs/pull/1442).
+-   E-maily, [klubový Discord](https://junior.guru/club/), [Pyvec Slack](https://docs.pyvec.org/operations/support.html#sit-kontaktu), zprávy na LinkedIn. Hromady, hromady zpráv! Po dovolené bylo jen e-mailů k 60. A zdaleka nemám hotovo.
 -   Za 15 dní jsem při procházkách nachodil 8 km, na túrách nachodil 14 km. Celkem jsem se hýbal 11 h a zdolal při tom 22 km.
     Detaily na [Strava](https://www.strava.com/athletes/31242569), jediné sociální síti, kde si napsání statusu musíte zasloužit.
 
 ## Plánuji
 
-1.
-2.
-3.
+1.  Dát nějak dopořádku všechno kolem Apify.
+2.  Doplánovat si věci kolem junior.guru.
+3.  Udělat administrativu a odpovídání kolem junior.guru.
 
 ## Zaujalo mě
 
