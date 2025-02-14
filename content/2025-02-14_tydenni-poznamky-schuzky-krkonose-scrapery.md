@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Schůzky, Krkonoše, scrapery
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/341
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/114004305563236804
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-01-31_tydenni-poznamky-oprava-lakatose.md) už utekl nějaký ten týden (31. 1. až 14. 2.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
