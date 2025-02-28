@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Úklid v příbězích a doporučeních, prototyp je
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/343
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/114083622520445721
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-02-21_tydenni-poznamky-palacinky-a-dohaneni-vseho.md) už utekl nějaký ten týden (21. 2. až 28. 2.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
