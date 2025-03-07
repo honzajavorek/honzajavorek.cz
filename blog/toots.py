@@ -1,7 +1,6 @@
 import json
 from operator import itemgetter
 from pathlib import Path
-from typing import Any
 
 import click
 from mastodon import Mastodon

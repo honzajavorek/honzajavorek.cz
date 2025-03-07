@@ -1,5 +1,5 @@
 Title: Týdenní poznámky: Sám doma, natáčení podcastu a zpětná vazba na GitHub profily
-Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
+Image: images/img-4534.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
 Telegram-Comments: https://t.me/honzajavorekcz/344
@@ -8,8 +8,8 @@ Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/114123159800778174
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-02-28_tydenni-poznamky-uklid-v-pribezich-a-doporucenich-prototyp-jedne-nove-veci.md) už utekl nějaký ten týden (28. 2. až 7. 3.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
 
-![Poznámky]({static}/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg)
-Fotil [Markus Spiske](https://unsplash.com/@markusspiske)
+![Tvarůžky]({static}/images/img-4534.jpg)
+Taková normální večeře
 
 <div class="alert alert-warning" role="alert" markdown="1">
 **Čísla:** Finanční výsledky, návštěvnost a další čísla k junior.guru [mám přímo na webu](https://junior.guru/about/).
