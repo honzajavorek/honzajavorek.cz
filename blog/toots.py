@@ -59,21 +59,24 @@ def main(client_id: str, client_secret: str, access_token: str, server_url: str,
     else:
         article_index = {article['url']: article for article in articles}
     for toot in mastodon.account_statuses(account_id, limit=limit, tagged='blog', exclude_replies=True, exclude_reblogs=True):
-        article_url = toot['card']['url']
-        replies = article_index.get(article_url, {'replies': []})['replies']
-        reply_index = {reply['id']: reply for reply in replies}
-        context = mastodon.status_context(toot['id'])
-        if descendants := context['descendants']:
-            for reply in descendants:
-                reply_index[reply['id']] = marshall_reply(reply)
-        article = dict(url=article_url,
-                       slug=parse_slug(article_url),
-                       created_at=toot['created_at'].isoformat(),
-                       toot_url=toot['url'],
-                       favourites_count=toot['favourites_count'],
-                       reblogs_count=toot['reblogs_count'],
-                       replies=sorted(reply_index.values(), key=itemgetter('created_at')))
-        article_index[article_url] = article
+        if toot["card"]:
+            article_url = toot["card"]["url"]
+            replies = article_index.get(article_url, {"replies": []})["replies"]
+            reply_index = {reply["id"]: reply for reply in replies}
+            context = mastodon.status_context(toot["id"])
+            if descendants := context["descendants"]:
+                for reply in descendants:
+                    reply_index[reply["id"]] = marshall_reply(reply)
+            article = dict(
+                url=article_url,
+                slug=parse_slug(article_url),
+                created_at=toot["created_at"].isoformat(),
+                toot_url=toot["url"],
+                favourites_count=toot["favourites_count"],
+                reblogs_count=toot["reblogs_count"],
+                replies=sorted(reply_index.values(), key=itemgetter("created_at")),
+            )
+            article_index[article_url] = article
     articles = sorted(article_index.values(), key=itemgetter('created_at'), reverse=True)
     contents = json.dumps(articles, indent=2, ensure_ascii=False)
     path_replies.write_text(contents)
