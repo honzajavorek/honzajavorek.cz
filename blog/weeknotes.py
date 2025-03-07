@@ -149,8 +149,6 @@ def main(
         Fotil [Markus Spiske](https://unsplash.com/@markusspiske)
 
         <div class="alert alert-warning" role="alert" markdown="1">
-        **Plány:** Stará „předsevzetí” jsou v článku [Plán na Q2 2024]({{filename}}2024-04-06_plan-na-q2-2024.md), nová teď nejsou.
-
         **Čísla:** Finanční výsledky, návštěvnost a další čísla k junior.guru [mám přímo na webu](https://junior.guru/about/).
         </div>
 

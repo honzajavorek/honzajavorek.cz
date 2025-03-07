@@ -1,5 +1,56 @@
 [
   {
+    "id": 114121298629901142,
+    "created_at": "2025-03-07T13:07:05.268000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114121298629901142",
+    "url": "https://mastodonczech.cz/@honzajavorek/114121298629901142",
+    "replies_count": 2,
+    "favourites_count": 3,
+    "edited_at": "2025-03-07T13:31:17.570000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Od včerejška na <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> experimentálně funguje formulář, kde si jde zažádat o zpětnou vazbu na <a href=\"https://mastodonczech.cz/tags/GitHub\" class=\"mention hashtag\" rel=\"tag\">#<span>GitHub</span></a> profil: <a href=\"https://junior.guru/handbook/github-profile/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">junior.guru/handbook/github-pr</span><span class=\"invisible\">ofile/</span></a></p><p>Formulář pomůže založit GitHub issue, s ním se na GitHubu spustí build, tam bot udělá review profilu, a výsledky napíše do komentáře pod to issue. Klidně si to vyzkoušejte!</p>",
+    "media_attachments": [
+      {
+        "id": 114121393793123856,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/114/121/393/793/123/856/original/426f59537795bb1d.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/114/121/393/793/123/856/small/426f59537795bb1d.png",
+        "meta": {
+          "original": {
+            "width": 1000,
+            "height": 563,
+            "size": "1000x563",
+            "aspect": 1.7761989342806395
+          },
+          "small": {
+            "width": 639,
+            "height": 360,
+            "size": "639x360",
+            "aspect": 1.775
+          }
+        },
+        "blurhash": "U#GlL@j[9FfQj[fQayfQ00ay-;j[ayayj[j["
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://mastodonczech.cz/tags/GitHub"
+      }
+    ]
+  },
+  {
     "id": 114117447447941398,
     "created_at": "2025-03-06T20:47:38.982000+00:00",
     "sensitive": false,
@@ -8,7 +59,7 @@
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114117447447941398",
     "url": "https://mastodonczech.cz/@honzajavorek/114117447447941398",
     "replies_count": 1,
-    "favourites_count": 5,
+    "favourites_count": 7,
     "favourited": false,
     "reblogged": false,
     "muted": false,
