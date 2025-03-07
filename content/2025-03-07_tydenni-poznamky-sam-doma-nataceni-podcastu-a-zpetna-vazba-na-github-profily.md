@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Sám doma, natáčení podcastu a zpětná vazba na 
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/344
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/114123159800778174
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-02-28_tydenni-poznamky-uklid-v-pribezich-a-doporucenich-prototyp-jedne-nove-veci.md) už utekl nějaký ten týden (28. 2. až 7. 3.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
