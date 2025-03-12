@@ -6,7 +6,83 @@
     "toot_url": "https://mastodonczech.cz/@honzajavorek/114123159800778174",
     "favourites_count": 0,
     "reblogs_count": 0,
-    "replies": []
+    "replies": [
+      {
+        "id": 114142307970211681,
+        "created_at": "2025-03-11T06:09:59+00:00",
+        "in_reply_to_id": 114123159800778174,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://witter.cz/users/banterCZ/statuses/114142307884730286",
+        "url": "https://witter.cz/@banterCZ/114142307884730286",
+        "replies_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">@<span>honzajavorek</span></a></span> A ta epizoda Lupa podcastu ještě není zveřejněná?</p>",
+        "account": {
+          "id": 109337559172025233,
+          "username": "banterCZ",
+          "acct": "banterCZ@witter.cz",
+          "display_name": "Luboš Račanský",
+          "url": "https://witter.cz/@banterCZ",
+          "uri": "https://witter.cz/users/banterCZ",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/337/559/172/025/233/original/8da1035a74f11069.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/337/559/172/025/233/original/8da1035a74f11069.jpeg"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ]
+      },
+      {
+        "id": 114142505305404622,
+        "created_at": "2025-03-11T07:00:11.522000+00:00",
+        "in_reply_to_id": 114142307970211681,
+        "in_reply_to_account_id": 109337559172025233,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114142505305404622",
+        "url": "https://mastodonczech.cz/@honzajavorek/114142505305404622",
+        "reblogs_count": 1,
+        "favourites_count": 2,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://witter.cz/@banterCZ\" class=\"u-url mention\">@<span>banterCZ</span></a></span> Ještě není.</p><p>Běžně podcasty fungují tak, že nahrávají epizody v předstihu. Záleží, kdo má jakou publikační frontu, může to být i měsíc, dva. Většina podcastů chce aspoň pár týdnů buffer, který pokryje výpadky, nemoci, dovolené. A to ani nepočítám postprodukci.</p><p>Šance, že by epizoda z minulého čtvrtka byla třeba ještě tento týden venku, je nulová 😀</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 109337559172025233,
+            "username": "banterCZ",
+            "url": "https://witter.cz/@banterCZ",
+            "acct": "banterCZ@witter.cz"
+          }
+        ]
+      }
+    ]
   },
   {
     "url": "https://honzajavorek.cz/blog/tydenni-poznamky-uklid-v-pribezich-a-doporucenich-prototyp-jedne-nove-veci/",
@@ -360,8 +436,8 @@
           "display_name": "Martin Wenisch",
           "url": "https://mastodon.cesko.digital/@mwenisch",
           "uri": "https://mastodon.cesko.digital/users/mwenisch",
-          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/111/147/893/167/726/013/original/8cebbcf6abb5fb6e.png",
-          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/111/147/893/167/726/013/original/8cebbcf6abb5fb6e.png"
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/111/147/893/167/726/013/original/7a0168b863ff2574.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/111/147/893/167/726/013/original/7a0168b863ff2574.png"
         },
         "mentions": [
           {
