@@ -55,6 +55,7 @@ Janu Z. to tak namotivovalo, že hned na LI [napsala příspěvek](https://www.l
 ## Další
 
 -   V klubu jsem propagoval [dotazník Smitia](https://forms.gle/z8NsaZ4oComdAMWa6) o kariérních cestách. Ještě na to plánuju udělat příspěvek minimálně na LinkedIn. Je to pro juniory i seniory, dotazník se větví podle odpovědí. Zkusil jsem si to a zabralo mi to přesně 6min a 16s. Pokud jste z IT, budu rád, když to vyplníte!
+-   Vypočítal jsem [minimální důstojnou mzdu pro IT juniory v Praze](https://www.linkedin.com/feed/update/urn:li:activity:7305616028116344836/?commentUrn=urn%3Ali%3Acomment%3A(activity%3A7305616028116344836%2C7305863335713857536)&dashCommentUrn=urn%3Ali%3Afsd_comment%3A(7305863335713857536%2Curn%3Ali%3Aactivity%3A7305616028116344836)).
 -   Předstíral jsem, že daňařovi připravuji podklady pro daňové přiznání.
 -   Ve volné chvilce jsem mergnul [honzajavorek/fiobank#55](https://github.com/honzajavorek/fiobank/pull/55). Vzpomněl jsem si na to, když jsem soubor py.typed zahlédl v jednom z Apify projektů.
 -   Vybrali a zaplatili jsme jedno ubytování na dovolené. Teď ještě druhé ubytování a pojištění, uf.
