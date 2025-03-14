@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Adamova přednáška o LinkedInu a poslední lekce k
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/345
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/114162571623941623
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-03-07_tydenni-poznamky-sam-doma-nataceni-podcastu-a-zpetna-vazba-na-github-profily.md) už utekl nějaký ten týden (7. 3. až 14. 3.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
