@@ -1,5 +1,72 @@
 [
   {
+    "id": 114196653307134132,
+    "created_at": "2025-03-20T20:30:44.461000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114196653307134132",
+    "url": "https://mastodonczech.cz/@honzajavorek/114196653307134132",
+    "replies_count": 1,
+    "reblogs_count": 1,
+    "favourites_count": 5,
+    "edited_at": "2025-03-20T20:31:27.172000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Někdo do AI přepsal legendárního Luboše opravujícího slovenský traktor Lakatoš a vygeneroval z toho barokní operu. <a href=\"https://suno.com/song/6926b098-2d5a-4259-a27e-7dbb941b875b\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">suno.com/song/6926b098-2d5a-42</span><span class=\"invisible\">59-a27e-7dbb941b875b</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://suno.com/song/6926b098-2d5a-4259-a27e-7dbb941b875b",
+      "title": "Lakatoš by @contemplativeelectronic729 | Suno",
+      "description": "opera, classical, baroque song. Listen and make your own with Suno.",
+      "language": "en",
+      "type": "video",
+      "html": "<iframe src=\"https://suno.com/embed/6926b098-2d5a-4259-a27e-7dbb941b875b\" width=\"760\" height=\"240\" allowfullscreen=\"allowfullscreen\" scrolling=\"no\" frameborder=\"0\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms\"></iframe>",
+      "width": 760,
+      "height": 240,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/004/199/620/original/15857d7cc7784f2a.jpeg",
+      "embed_url": "https://cdn1.suno.ai/6926b098-2d5a-4259-a27e-7dbb941b875b.mp3",
+      "blurhash": "UUH^3d};x[-:={t5bYkqX8j]em$iwJsSaKt3"
+    }
+  },
+  {
+    "id": 114195484754751089,
+    "created_at": "2025-03-20T15:33:33.767000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114195484754751089",
+    "url": "https://mastodonczech.cz/@honzajavorek/114195484754751089",
+    "reblogs_count": 1,
+    "favourites_count": 10,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Je fascinující, že tahle zpráva o 27 slovech má na Wikipedii svou vlastní, mnohonásobně delší stránku. <a href=\"https://cs.wikipedia.org/wiki/V_Kohoutovic%C3%ADch_ho%C5%99el_pa%C5%99ez\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">cs.wikipedia.org/wiki/V_Kohout</span><span class=\"invisible\">ovic%C3%ADch_ho%C5%99el_pa%C5%99ez</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://cs.wikipedia.org/wiki/V_Kohoutovic%C3%ADch_ho%C5%99el_pa%C5%99ez",
+      "title": "V Kohoutovicích hořel pařez – Wikipedie",
+      "language": "cs",
+      "type": "link"
+    }
+  },
+  {
     "id": 114191275740999437,
     "created_at": "2025-03-19T21:43:09.314000+00:00",
     "sensitive": false,
@@ -7,6 +74,9 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114191275740999437",
     "url": "https://mastodonczech.cz/@honzajavorek/114191275740999437",
+    "replies_count": 1,
+    "reblogs_count": 1,
+    "favourites_count": 2,
     "favourited": false,
     "reblogged": false,
     "muted": false,
@@ -28,7 +98,6 @@
       "provider_name": "Zdopravy.cz",
       "width": 1800,
       "height": 1200,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/007/427/154/original/3c79b0c0ca99cd98.jpg",
       "blurhash": "UbNcfj~7ICbI[Qx9RQkDxas:R-of9aWGNysk",
       "published_at": "2025-03-19T12:30:14+00:00"
     }
@@ -562,7 +631,6 @@
       "type": "link",
       "width": 1200,
       "height": 630,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/000/007/972/original/a74e3d8af1b709cc.png",
       "blurhash": "U6S~x6of~UofoNa{Rjj[${fjIuazW=fQxaay"
     }
   },
