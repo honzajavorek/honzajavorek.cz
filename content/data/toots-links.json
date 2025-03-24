@@ -1,5 +1,40 @@
 [
   {
+    "id": 114210481644183646,
+    "created_at": "2025-03-23T07:07:28.139000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114210481644183646",
+    "url": "https://mastodonczech.cz/@honzajavorek/114210481644183646",
+    "reblogs_count": 3,
+    "favourites_count": 2,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Skvělý článek o tom, jak Armin Ronacher (autor např. Flasku) používá AI. Naučil jsem se hned několik nových věcí. Je to víc shrnutí a víc „uživatelské“, tak z toho člověk nemá takové FOMO jako při čtení Simona Willisona. <a href=\"http://lucumr.pocoo.org/2025/1/30/how-i-ai\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">http://</span><span class=\"ellipsis\">lucumr.pocoo.org/2025/1/30/how</span><span class=\"invisible\">-i-ai</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "http://lucumr.pocoo.org/2025/1/30/how-i-ai",
+      "title": "How I Use AI: Meet My Promptly Hired Model Intern",
+      "description": "Due to popular request: my use of LLM explained.",
+      "language": "en",
+      "type": "link",
+      "provider_name": "Armin Ronacher's Thoughts and Writings",
+      "width": 300,
+      "height": 300,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/006/839/921/original/7ba9b49325ccafa8.jpg",
+      "blurhash": "UIB3$uM{Ee^+0Kt3VrIU?wsmsBbwD%aeM_V@"
+    }
+  },
+  {
     "id": 114196653307134132,
     "created_at": "2025-03-20T20:30:44.461000+00:00",
     "sensitive": false,
@@ -32,7 +67,6 @@
       "html": "<iframe src=\"https://suno.com/embed/6926b098-2d5a-4259-a27e-7dbb941b875b\" width=\"760\" height=\"240\" allowfullscreen=\"allowfullscreen\" scrolling=\"no\" frameborder=\"0\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms\"></iframe>",
       "width": 760,
       "height": 240,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/004/199/620/original/6be8a6b0fbb87ee2.jpeg",
       "embed_url": "https://cdn1.suno.ai/6926b098-2d5a-4259-a27e-7dbb941b875b.mp3",
       "blurhash": "UUH^3d};x[-:={t5bYkqX8j]em$iwJsSaKt3"
     }
