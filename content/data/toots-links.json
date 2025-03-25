@@ -1,5 +1,41 @@
 [
   {
+    "id": 114217157192431272,
+    "created_at": "2025-03-24T11:25:08.922000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114217157192431272",
+    "url": "https://mastodonczech.cz/@honzajavorek/114217157192431272",
+    "replies_count": 1,
+    "reblogs_count": 1,
+    "favourites_count": 4,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Super článek. „…messy, simple solutions can be powerful if they solve real problems. Eventually, when the time is right, you can clean it up or rebuild from the ground up.“ <a href=\"http://lucumr.pocoo.org/2025/2/20/ugly-code\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">http://</span><span class=\"ellipsis\">lucumr.pocoo.org/2025/2/20/ugl</span><span class=\"invisible\">y-code</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "http://lucumr.pocoo.org/2025/2/20/ugly-code",
+      "title": "Ugly Code and Dumb Things",
+      "description": "Why ugly and dumb code sometimes blind sights engineers from the ingenuity behind it.",
+      "language": "en",
+      "type": "link",
+      "provider_name": "Armin Ronacher's Thoughts and Writings",
+      "width": 300,
+      "height": 300,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/007/100/982/original/8c55a4543cef87ef.jpg",
+      "blurhash": "UIB3$uM{Ee^+0Kt3VrIU?wsmsBbwD%aeM_V@"
+    }
+  },
+  {
     "id": 114210481644183646,
     "created_at": "2025-03-23T07:07:28.139000+00:00",
     "sensitive": false,
@@ -30,7 +66,6 @@
       "provider_name": "Armin Ronacher's Thoughts and Writings",
       "width": 300,
       "height": 300,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/006/839/921/original/7ba9b49325ccafa8.jpg",
       "blurhash": "UIB3$uM{Ee^+0Kt3VrIU?wsmsBbwD%aeM_V@"
     }
   },
