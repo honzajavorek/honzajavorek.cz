@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Kurz o AI, přípravy voleb do výboru Pyvce a spous
 Image: images/img-4675.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/346
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/114242568177829679
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-03-14_tydenni-poznamky-adamova-prednaska-o-linkedinu-a-posledni-lekce-kurzu-scrapovani.md) už utekl nějaký ten týden (14. 3. až 28. 3.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
