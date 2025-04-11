@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Dovolená, volby do výboru Pyvce a kapitola o certi
 Image: images/bfe797c154f17909.jpeg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/347
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/114319794738213368
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-03-28_tydenni-poznamky-kurz-o-ai-pripravy-voleb-do-vyboru-pyvce-a-spousta-dalsiho.md) už utekl nějaký ten týden (28. 3. až 11. 4.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
