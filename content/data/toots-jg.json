@@ -1,5 +1,62 @@
 [
   {
+    "id": 114347362087422119,
+    "created_at": "2025-04-16T11:17:57.948000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114347362087422119",
+    "url": "https://mastodonczech.cz/@honzajavorek/114347362087422119",
+    "favourites_count": 2,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Dnešní poučení: Když na kamarádkách vydyndáte díky svým roztomilým očičkám přístup do API ve firmě, kde pracují, hned to naimplementujte. Trvalo mi 622 dní se k tomu dostat a API mi teď píše „přístup vypršel“ 😬 No tak snad tam ještě ty moje kamarádky pracují. Jdu psát e-mail, trochu trapas no 😅</p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a></p>",
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ]
+  },
+  {
+    "id": 114346790838205497,
+    "created_at": "2025-04-16T08:52:41.376000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114346790838205497",
+    "url": "https://mastodonczech.cz/@honzajavorek/114346790838205497",
+    "replies_count": 1,
+    "reblogs_count": 2,
+    "favourites_count": 2,
+    "edited_at": "2025-04-16T08:53:22.015000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Pokud vás zajímá scrapování, nejspíš vás bude zajímat i to, že v Praze o něm Apify ve středu 23.4. spolupořádá jednodenní konferenci <a href=\"https://www.praguecrawl.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"\">praguecrawl.com/</span><span class=\"invisible\"></span></a></p><p>Protože se s Apify kamarádím, máte s kódem 50PROMO slevu 50 % na lístek 💸 </p><p>Kdo by chtěl lístek úplně zadarmo, 3 volňásky rozdávám u sebe na <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> Discordu a 2 na svojem LinkedIn profilu.</p>",
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ],
+    "card": {
+      "url": "https://www.praguecrawl.com/",
+      "title": "Prague Crawl 2025, April 23 @ Lucerna, Prague",
+      "description": "Web scraping. Beer. Automation.",
+      "type": "link",
+      "width": 1200,
+      "height": 600,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/007/773/171/original/89ad2e410a6c4144.jpg",
+      "blurhash": "UIDJP1~qxu9E%Mt7IUWB4nRiRQxvWBM{x]j]"
+    }
+  },
+  {
     "id": 114340889574637513,
     "created_at": "2025-04-15T07:51:55.261000+00:00",
     "sensitive": false,
@@ -29,7 +86,6 @@
       "type": "link",
       "width": 1280,
       "height": 720,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/007/759/042/original/e344b31f6bb04e8c.png",
       "blurhash": "U}Sr}CkJohW9oca}a#j?t3a$WFocWFj?obWF"
     }
   },
