@@ -1,5 +1,75 @@
 [
   {
+    "id": 114393293007870221,
+    "created_at": "2025-04-24T13:58:48.180000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "en",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114393293007870221",
+    "url": "https://mastodonczech.cz/@honzajavorek/114393293007870221",
+    "reblogs_count": 5,
+    "favourites_count": 4,
+    "edited_at": "2025-04-24T13:59:27.711000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>So… It&#39;s actually happening! Together with <span class=\"h-card\" translate=\"no\"><a href=\"https://fosstodon.org/@daria\" class=\"u-url mention\">@<span>daria</span></a></span> we&#39;re doing a Beginners’ Day at <span class=\"h-card\" translate=\"no\"><a href=\"https://fosstodon.org/@europython\" class=\"u-url mention\">@<span>europython</span></a></span> this year. Lightweight formats: Discussions, lightning talks, circles, Q&amp;As, etc.</p><p>Entry is free for EuroPython ticket holders (any ticket type), and €5 otherwise. Only 40 spots. Apply by May 11th.</p><p><a href=\"https://ep2025.europython.eu/beginners-day/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">ep2025.europython.eu/beginners</span><span class=\"invisible\">-day/</span></a></p><p><a href=\"https://mastodonczech.cz/tags/unconference\" class=\"mention hashtag\" rel=\"tag\">#<span>unconference</span></a> <a href=\"https://mastodonczech.cz/tags/beginners\" class=\"mention hashtag\" rel=\"tag\">#<span>beginners</span></a> <a href=\"https://mastodonczech.cz/tags/juniordevs\" class=\"mention hashtag\" rel=\"tag\">#<span>juniordevs</span></a> <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> <a href=\"https://mastodonczech.cz/tags/europython2025\" class=\"mention hashtag\" rel=\"tag\">#<span>europython2025</span></a> <a href=\"https://mastodonczech.cz/tags/europython\" class=\"mention hashtag\" rel=\"tag\">#<span>europython</span></a></p>",
+    "mentions": [
+      {
+        "id": 110360623734530136,
+        "username": "daria",
+        "url": "https://fosstodon.org/@daria",
+        "acct": "daria@fosstodon.org"
+      },
+      {
+        "id": 110165578403732352,
+        "username": "europython",
+        "url": "https://fosstodon.org/@europython",
+        "acct": "europython@fosstodon.org"
+      }
+    ],
+    "tags": [
+      {
+        "name": "unconference",
+        "url": "https://mastodonczech.cz/tags/unconference"
+      },
+      {
+        "name": "beginners",
+        "url": "https://mastodonczech.cz/tags/beginners"
+      },
+      {
+        "name": "juniordevs",
+        "url": "https://mastodonczech.cz/tags/juniordevs"
+      },
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      },
+      {
+        "name": "europython2025",
+        "url": "https://mastodonczech.cz/tags/europython2025"
+      },
+      {
+        "name": "europython",
+        "url": "https://mastodonczech.cz/tags/europython"
+      }
+    ],
+    "card": {
+      "url": "https://ep2025.europython.eu/beginners-day/",
+      "title": "Beginners' Day | EuroPython 2025 | July 14th-20th 2025 | Prague, Czech Republic & Remote",
+      "description": "This year we're hosting a special day for beginners.",
+      "language": "en",
+      "type": "link",
+      "provider_name": "EuroPython 2025",
+      "width": 3513,
+      "height": 1850,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/007/873/614/original/ff51530a47fd0504.png",
+      "blurhash": "UKQu+^4;-n_1r=o}wd%M~V%M9GE3$*xun$kU"
+    }
+  },
+  {
     "id": 114388787708126505,
     "created_at": "2025-04-23T18:53:02.758000+00:00",
     "in_reply_to_id": 114381702638342755,
@@ -9,8 +79,8 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114388787708126505",
     "url": "https://mastodonczech.cz/@honzajavorek/114388787708126505",
-    "reblogs_count": 1,
-    "favourites_count": 6,
+    "reblogs_count": 3,
+    "favourites_count": 7,
     "favourited": false,
     "reblogged": false,
     "muted": false,
@@ -58,7 +128,6 @@
       "type": "link",
       "width": 1280,
       "height": 720,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/007/863/372/original/275687aeb3b65bbc.png",
       "blurhash": "U}Sr_5kJt8V=oca#a#j?t4a}WFocWFj?obWF"
     }
   },
