@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Katalog kurzů, virtuální asistentka, drobná vyle
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/348
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/114399332084540237
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-04-11_tydenni-poznamky-dovolena-volby-do-vyboru-pyvce-a-kapitola-o-certifikacich.md) už utekl nějaký ten týden (11. 4. až 25. 4.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
