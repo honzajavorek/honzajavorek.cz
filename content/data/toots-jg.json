@@ -1,5 +1,72 @@
 [
   {
+    "id": 114466840277215300,
+    "created_at": "2025-05-07T13:42:50.451000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114466840277215300",
+    "url": "https://mastodonczech.cz/@honzajavorek/114466840277215300",
+    "replies_count": 1,
+    "reblogs_count": 2,
+    "favourites_count": 2,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Před nedávnem jsem do příručky pro juniory přidával celou novou kapitolu o certifikacích, diplomech, osvědčeních a podobných papírech.</p><p>Kapitola vznikla hlavně na základě šťouchu od Štěpána Bechynského. Pomohl mi nastřelit pár prvotních odstavců a odkazů, které jsem pak dorešeršoval a rozpracoval.</p><p>A navrch teď přidáme o certifikacích ještě přednášku. Bude v úterý 13.5. v šest večer, u nás na Discordu. Na ten se proklikáte přes <a href=\"https://junior.guru/club/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">junior.guru/club/</span><span class=\"invisible\"></span></a></p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> <a href=\"https://mastodonczech.cz/tags/certifications\" class=\"mention hashtag\" rel=\"tag\">#<span>certifications</span></a> <a href=\"https://mastodonczech.cz/tags/certifikace\" class=\"mention hashtag\" rel=\"tag\">#<span>certifikace</span></a></p>",
+    "media_attachments": [
+      {
+        "id": 114466839098194524,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/114/466/839/098/194/524/original/170da21f08256d61.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/114/466/839/098/194/524/small/170da21f08256d61.png",
+        "meta": {
+          "original": {
+            "width": 1280,
+            "height": 720,
+            "size": "1280x720",
+            "aspect": 1.7777777777777777
+          },
+          "small": {
+            "width": 640,
+            "height": 360,
+            "size": "640x360",
+            "aspect": 1.7777777777777777
+          }
+        },
+        "description": "Proč se certifikovat? Plakát na akci",
+        "blurhash": "UiQJC=4jsq%d%Lt8j^ocotNHM~s*t9xtxWWF"
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      },
+      {
+        "name": "certifications",
+        "url": "https://mastodonczech.cz/tags/certifications"
+      },
+      {
+        "name": "certifikace",
+        "url": "https://mastodonczech.cz/tags/certifikace"
+      }
+    ],
+    "card": {
+      "url": "https://junior.guru/club/",
+      "title": "Klub pro začátečníky v programování",
+      "description": "Přidej se na junior.guru Discord! Jsme tvoje online programovací parta, skupina, fórum. Začátečníci, kteří to myslí vážně. Profesionálové s chutí pomáhat. Svoje programování nebo hledání práce posuneš o 1 % každý den.",
+      "language": "cs",
+      "type": "link",
+      "width": 1280,
+      "height": 720,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/002/725/044/original/6bb36d9671efaa0f.png",
+      "blurhash": "U}S$ezkJohW8ocfRa#j?t4a#WFocWFfPobWX"
+    }
+  },
+  {
     "id": 114399332084540237,
     "created_at": "2025-04-25T15:34:37.184000+00:00",
     "sensitive": false,
@@ -1349,6 +1416,7 @@
       "type": "link",
       "width": 1280,
       "height": 720,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/002/725/044/original/6bb36d9671efaa0f.png",
       "blurhash": "U}S$ezkJohW8ocfRa#j?t4a#WFocWFfPobWX"
     }
   },
