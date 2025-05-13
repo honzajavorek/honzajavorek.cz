@@ -1,5 +1,39 @@
 [
   {
+    "id": 114496237194754005,
+    "created_at": "2025-05-12T18:18:51.808000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114496237194754005",
+    "url": "https://mastodonczech.cz/@honzajavorek/114496237194754005",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>V titulku mohla stejně tak dobře být i pasáž, kde Leoš popisuje, jak mu při psaní knihy AI radí jako hospodský povaleč - nechápe kontext a nahazuje nápady, o které ale autor nemá vůbec zájem. Nebo jak mu vymyslí šachovou partii do příběhu, sumerštinu, či jméno postavy a ušetří tím spoustu času. Je to zajímavý rozhovor, který podle mě hezky ilustruje, jak může AI kreativní člověk použít, ale jak jej nenahradí. Leda pokud by dělal průměrné a nekreativní věci. <a href=\"https://overcast.fm/+AAOTreXCGfY\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">overcast.fm/+AAOTreXCGfY</span><span class=\"invisible\"></span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://overcast.fm/+AAOTreXCGfY",
+      "title": "Leoš Kyša: První recenzi na moji knihu o AI napsala umělá inteligence — Lupa.cz",
+      "description": "Dokáže AI napsat stejně dobrý román jako člověk? Bude to někdo číst? Jak se dnešní velké jazykové modely dají využít při psaní knih? Proč Kyša přestal na obálkách svých knížek používat obrázky vygenerované AI? Má…",
+      "language": "en",
+      "type": "video",
+      "html": "<iframe src=\"https://overcast.fm/podcasts/episode_card/1006800023460342?t=0\" width=\"290\" height=\"58\" allowfullscreen=\"allowfullscreen\" scrolling=\"no\" frameborder=\"0\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms\"></iframe>",
+      "width": 290,
+      "height": 58,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/008/095/905/original/c6f209f6121513c8.png",
+      "embed_url": "https://traffic.libsyn.com/secure/lupacz/Kysa_Leos_-_podcast.mp3?dest-id=779653#t=0",
+      "blurhash": "UMT93EoLpcjFf6j[bHayy?WVVEkCozWBjZkC"
+    }
+  },
+  {
     "id": 114493625538059531,
     "created_at": "2025-05-12T07:14:41.089000+00:00",
     "sensitive": false,
@@ -7,8 +41,8 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114493625538059531",
     "url": "https://mastodonczech.cz/@honzajavorek/114493625538059531",
-    "reblogs_count": 1,
-    "favourites_count": 4,
+    "reblogs_count": 2,
+    "favourites_count": 8,
     "favourited": false,
     "reblogged": false,
     "muted": false,
@@ -1161,6 +1195,9 @@
       "title": "LibreWolf Browser",
       "description": "A custom version of Firefox, focused on privacy, security and freedom.",
       "type": "link",
+      "width": 1200,
+      "height": 630,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/000/007/972/original/b5a8513d4a5a9ab2.png",
       "blurhash": "U6S~x6of~UofoNa{Rjj[${fjIuazW=fQxaay"
     }
   },
