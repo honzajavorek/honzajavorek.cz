@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Svátky na Moravě, převážně s Apify
 Image: images/img-6191.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/349
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/114534980898988936
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-04-25_tydenni-poznamky-katalog-kurzu-virtualni-asistentka-drobna-vylepseni-prodejni-stranky.md) už utekl nějaký ten týden (25. 4. až 19. 5.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
