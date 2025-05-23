@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Vylepšování prezentace klubových akcí na webu
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/350
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/114558506316034764
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-05-19_tydenni-poznamky-svatky-na-morave-prevazne-s-apify.md) už utekl nějaký ten týden (19. 5. až 23. 5.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
