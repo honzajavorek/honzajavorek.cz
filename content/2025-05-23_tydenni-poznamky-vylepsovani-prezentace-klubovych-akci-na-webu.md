@@ -25,7 +25,7 @@ Má zkušenost velí, že jakmile je někde API, které má složité přihlašo
 
 Takže jsem hodil ručník do ringu a šel na to přes YouTube API. Nadechl jsem se, jak bude složité vyřešit auth, ale pak jsem zjistil, že můžu použít totéž co už používám u stahování dat z Google Sheets a stačí dva řádky kódu a frčí to 😀 Tak jsem to přepsal a už to funguje. Teď mám u každého záznamu i data o jeho délce a další detaily.
 
-Pak jsem vylepšil výpis akcí. Přidal jsem tam tlačítka jako na stránce pro podcast, včetně iCalendar exportu, a pak mě napadlo přidat tam i tým za akcemi, když už to nedělám sám. Přidal jsem nově i odkazy na LI, ať z toho něco mají, když už mi pomáhají v dobrovolně. Samotný výpis jsem pojal jinak, než to bylo a využil komponentu na kartu, která se používá pro různé odkazy napříč junior.guru.
+Pak jsem vylepšil výpis akcí. Přidal jsem tam tlačítka jako na stránce pro podcast, včetně iCalendar exportu, a pak mě napadlo přidat tam i tým, když už to nedělám sám. Přidal jsem nově i odkazy na LI, ať z toho něco mají, když už mi pomáhají v dobrovolně. Samotný výpis jsem pojal jinak, než to bylo a využil komponentu na kartu, která se používá pro různé odkazy napříč junior.guru.
 
 Ten iCalendar export jsem měl už dlouho pro vlastní potřebu, ale vlastně nebyl nikdy na webu pro ostatní, ani nevím proč. Trochu jsem ho vylepšil, aby obsahoval víc informací.
 
