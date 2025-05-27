@@ -1,5 +1,81 @@
 [
   {
+    "id": 114573324539317993,
+    "created_at": "2025-05-26T09:03:11.338000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114573324539317993",
+    "url": "https://mastodonczech.cz/@honzajavorek/114573324539317993",
+    "favourites_count": 1,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Web junior.guru je statická stránka, původně postavená nad Frozen-Flask. Pak jsem přešel na MkDocs, ale zbytky Flasku na webu stále straší. Zkusím se jich dnes zbavit. První na řadě je 404ka. Na nové už nebudou pracovní inzeráty. Ještě by to chtělo nějakou ilustraci, ale to potom.</p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> <a href=\"https://mastodonczech.cz/tags/flask\" class=\"mention hashtag\" rel=\"tag\">#<span>flask</span></a> <a href=\"https://mastodonczech.cz/tags/mkdocs\" class=\"mention hashtag\" rel=\"tag\">#<span>mkdocs</span></a> #404</p>",
+    "media_attachments": [
+      {
+        "id": 114573318837798874,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/114/573/318/837/798/874/original/a3dfa753fa28d0ab.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/114/573/318/837/798/874/small/a3dfa753fa28d0ab.png",
+        "meta": {
+          "original": {
+            "width": 2704,
+            "height": 2648,
+            "size": "2704x2648",
+            "aspect": 1.0211480362537764
+          },
+          "small": {
+            "width": 485,
+            "height": 475,
+            "size": "485x475",
+            "aspect": 1.0210526315789474
+          }
+        },
+        "description": "stará verze 404ky",
+        "blurhash": "UCS?DRM|-;%MM@a#t7WBoCogWCM{syRkRjof"
+      },
+      {
+        "id": 114573318826174268,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/114/573/318/826/174/268/original/a8ccc71a6910530d.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/114/573/318/826/174/268/small/a8ccc71a6910530d.png",
+        "meta": {
+          "original": {
+            "width": 2704,
+            "height": 1119,
+            "size": "2704x1119",
+            "aspect": 2.416443252904379
+          },
+          "small": {
+            "width": 746,
+            "height": 309,
+            "size": "746x309",
+            "aspect": 2.414239482200647
+          }
+        },
+        "description": "nová verze 404ky",
+        "blurhash": "UXS6PeWB%Lof-xWCRnofIQa#Rjay%Da}oIWB"
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      },
+      {
+        "name": "flask",
+        "url": "https://mastodonczech.cz/tags/flask"
+      },
+      {
+        "name": "mkdocs",
+        "url": "https://mastodonczech.cz/tags/mkdocs"
+      }
+    ]
+  },
+  {
     "id": 114558506316034764,
     "created_at": "2025-05-23T18:14:43.196000+00:00",
     "sensitive": false,
