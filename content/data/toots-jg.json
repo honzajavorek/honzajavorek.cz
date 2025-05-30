@@ -1,5 +1,323 @@
 [
   {
+    "id": 114592284838732469,
+    "created_at": "2025-05-29T17:25:02.870000+00:00",
+    "in_reply_to_id": 114591715895529515,
+    "in_reply_to_account_id": 110921870573231541,
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114592284838732469",
+    "url": "https://mastodonczech.cz/@honzajavorek/114592284838732469",
+    "favourites_count": 1,
+    "edited_at": "2025-05-29T17:25:23.781000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Tohle už jsem trochu naprasil, ale funguje to, a to je hlavní. Konečně se budou u lidí zobrazovat i odkazy na jejich profily a další věci. Například u <span class=\"h-card\" translate=\"no\"><a href=\"https://witter.cz/@banterCZ\" class=\"u-url mention\">@<span>banterCZ</span></a></span> tady <a href=\"https://junior.guru/events/27/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">junior.guru/events/27/</span><span class=\"invisible\"></span></a></p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> <a href=\"https://mastodonczech.cz/tags/events\" class=\"mention hashtag\" rel=\"tag\">#<span>events</span></a></p>",
+    "media_attachments": [
+      {
+        "id": 114592282649972144,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/114/592/282/649/972/144/original/9a4ac3e1db1db789.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/114/592/282/649/972/144/small/9a4ac3e1db1db789.png",
+        "meta": {
+          "focus": {
+            "x": -0.55,
+            "y": -0.77
+          },
+          "original": {
+            "width": 1629,
+            "height": 1582,
+            "size": "1629x1582",
+            "aspect": 1.029709228824273
+          },
+          "small": {
+            "width": 487,
+            "height": 473,
+            "size": "487x473",
+            "aspect": 1.029598308668076
+          }
+        },
+        "description": "screenshot",
+        "blurhash": "UCRfqVtmxUjF-=RO-:f,x_V@%LkC00%gRPWA"
+      }
+    ],
+    "mentions": [
+      {
+        "id": 109337559172025233,
+        "username": "banterCZ",
+        "url": "https://witter.cz/@banterCZ",
+        "acct": "banterCZ@witter.cz"
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      },
+      {
+        "name": "Events",
+        "url": "https://mastodonczech.cz/tags/Events"
+      }
+    ],
+    "card": {
+      "url": "https://junior.guru/events/27/",
+      "title": "Luboš Račanský– Posuďme Javu podle obalu – online akce na Discordu junior.guru",
+      "description": "Klub junior.guru pořádá vzdělávací akce, online na svém Discordu. Mohou to být přednášky, stream, Q&A, AMA, webináře… Toto je stránka o jedné z nich.",
+      "language": "cs",
+      "type": "link",
+      "width": 1280,
+      "height": 720,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/008/304/708/original/4c6097e8c6bd247a.png",
+      "blurhash": "UlP%5b0GjJx=NFNGR.t5x@XAR:skNMbEs*WF"
+    }
+  },
+  {
+    "id": 114591715895529515,
+    "created_at": "2025-05-29T15:00:21.161000+00:00",
+    "in_reply_to_id": 114590585209911230,
+    "in_reply_to_account_id": 110921870573231541,
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114591715895529515",
+    "url": "https://mastodonczech.cz/@honzajavorek/114591715895529515",
+    "replies_count": 1,
+    "favourites_count": 2,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Tak už mám hotovou i celou část, kde jsou záznamy, případně informace jak se na online akci připojit. Bylo by to na hodně screenshotů, pochlubím se pak celým výsledkem. Kurňa to je den! Dneska mi k tomu hraje Sara Landry a s výsledky jsem náramně spokojen. <a href=\"https://www.youtube.com/watch?v=VDgaKWRuhRU\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">youtube.com/watch?v=VDgaKWRuhR</span><span class=\"invisible\">U</span></a></p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> <a href=\"https://mastodonczech.cz/tags/techno\" class=\"mention hashtag\" rel=\"tag\">#<span>techno</span></a></p>",
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      },
+      {
+        "name": "techno",
+        "url": "https://mastodonczech.cz/tags/techno"
+      }
+    ]
+  },
+  {
+    "id": 114590585209911230,
+    "created_at": "2025-05-29T10:12:48.268000+00:00",
+    "in_reply_to_id": 114590162775357792,
+    "in_reply_to_account_id": 110921870573231541,
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114590585209911230",
+    "url": "https://mastodonczech.cz/@honzajavorek/114590585209911230",
+    "replies_count": 1,
+    "favourites_count": 2,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>A jedu dál. Už se těším, až to bude na webu. Nový design pro stránky popisující jednotlivé klubové akce, včetně jasného tlačítka na přidání nebo sofistikovaného doporučovacího algoritmu (tzv. „random“). Tohle dopoledne bylo produktivní.</p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> <a href=\"https://mastodonczech.cz/tags/events\" class=\"mention hashtag\" rel=\"tag\">#<span>events</span></a></p>",
+    "media_attachments": [
+      {
+        "id": 114590582446452278,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/114/590/582/446/452/278/original/5be988b578d608f3.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/114/590/582/446/452/278/small/5be988b578d608f3.png",
+        "meta": {
+          "original": {
+            "width": 2710,
+            "height": 1269,
+            "size": "2710x1269",
+            "aspect": 2.1355397951142634
+          },
+          "small": {
+            "width": 700,
+            "height": 328,
+            "size": "700x328",
+            "aspect": 2.1341463414634148
+          }
+        },
+        "description": "screenshot",
+        "blurhash": "UOSY~sWB-:t7nbWBRnofj+a#V@WCoCfkWBWB"
+      },
+      {
+        "id": 114590582900416225,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/114/590/582/900/416/225/original/1591581535db2979.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/114/590/582/900/416/225/small/1591581535db2979.png",
+        "meta": {
+          "original": {
+            "width": 2710,
+            "height": 865,
+            "size": "2710x865",
+            "aspect": 3.132947976878613
+          },
+          "small": {
+            "width": 849,
+            "height": 271,
+            "size": "849x271",
+            "aspect": 3.132841328413284
+          }
+        },
+        "description": "screenshot",
+        "blurhash": "UJR{+0Rj~pt6xVWBR.t7?bayIUt7o#kCoJWB"
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      },
+      {
+        "name": "Events",
+        "url": "https://mastodonczech.cz/tags/Events"
+      }
+    ]
+  },
+  {
+    "id": 114590162775357792,
+    "created_at": "2025-05-29T08:25:22.430000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114590162775357792",
+    "url": "https://mastodonczech.cz/@honzajavorek/114590162775357792",
+    "replies_count": 2,
+    "favourites_count": 1,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Uživatelé kalendářů všech platforem, spojte se a připojte se!</p><p>Na stránku <a href=\"https://junior.guru/events/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">junior.guru/events/</span><span class=\"invisible\"></span></a> jsem přidal tlačítka, pomocí kterých by mělo jít přidat živý (tzn. v čase postupně automaticky aktualizovaný) kalendář klubových přednášek do vašeho kalendáře, pokud nějaký používáte.</p><p>Ale já používám jen jeden, takže to nemůžu vyzkoušet. Zde přichází vaše hrdinství - zkuste, zda vám tlačítka fungují a napište mi, jestli je to ok, nebo je potřeba něco opravit! Dík!</p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> <a href=\"https://mastodonczech.cz/tags/kalend%C3%A1%C5%99\" class=\"mention hashtag\" rel=\"tag\">#<span>kalendář</span></a> <a href=\"https://mastodonczech.cz/tags/calendar\" class=\"mention hashtag\" rel=\"tag\">#<span>calendar</span></a></p>",
+    "media_attachments": [
+      {
+        "id": 114590160703923628,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/114/590/160/703/923/628/original/8310bef606ee651f.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/114/590/160/703/923/628/small/8310bef606ee651f.png",
+        "meta": {
+          "original": {
+            "width": 1094,
+            "height": 1201,
+            "size": "1094x1201",
+            "aspect": 0.9109075770191507
+          },
+          "small": {
+            "width": 458,
+            "height": 503,
+            "size": "458x503",
+            "aspect": 0.9105367793240556
+          },
+          "focus": {
+            "x": 0.01,
+            "y": -0.76
+          }
+        },
+        "description": "screenshot",
+        "blurhash": "UYRp5lM|sos:-voyS3R*VnaLnjofW5kWbIWB"
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      },
+      {
+        "name": "Kalendar",
+        "url": "https://mastodonczech.cz/tags/Kalendar"
+      },
+      {
+        "name": "calendar",
+        "url": "https://mastodonczech.cz/tags/calendar"
+      }
+    ],
+    "card": {
+      "url": "https://junior.guru/events/",
+      "title": "Online akce pro začátečníky v programování",
+      "description": "Online akce pro členy klubu junior.guru. Seznam akcí proběhlých i budoucích. Přednášky, streamy, Q&A, AMA, webináře, a další.",
+      "language": "cs",
+      "type": "link",
+      "width": 1280,
+      "height": 720,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/000/401/238/original/b901bbfaca2223d6.png",
+      "blurhash": "U}Sr_5kJt8Rhoca#a#j?t5a#WFocWFj?obWY"
+    }
+  },
+  {
+    "id": 114590075046008646,
+    "created_at": "2025-05-29T08:03:04.792000+00:00",
+    "in_reply_to_id": 114573324539317993,
+    "in_reply_to_account_id": 110921870573231541,
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114590075046008646",
+    "url": "https://mastodonczech.cz/@honzajavorek/114590075046008646",
+    "favourites_count": 2,
+    "edited_at": "2025-05-29T08:05:59.198000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Trvalo mi to 2 dny, ale konečně jsem vyhodil vše, co souviselo s Flaskem. Nejsložitější bylo převést do nového systému stránky s inzeráty na konkrétní lokaci důležité kvůli SEO, třeba <a href=\"https://junior.guru/jobs/brno/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">junior.guru/jobs/brno/</span><span class=\"invisible\"></span></a></p><p>Pak jsem ještě zoptimalizoval MkDocs. Webovku trvalo složit skoro 10s. Pomocí ChatGPT jsem udělal profiling skript, pomocí ChatGPT jsem interpretoval výsledky, našel viníky, předělal to, a teď to trvá 4s. Sám bych to nedokázal, nebo by mi to trvalo týden.</p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> <a href=\"https://mastodonczech.cz/tags/dx\" class=\"mention hashtag\" rel=\"tag\">#<span>dx</span></a> <a href=\"https://mastodonczech.cz/tags/technicaldebt\" class=\"mention hashtag\" rel=\"tag\">#<span>technicaldebt</span></a></p>",
+    "media_attachments": [
+      {
+        "id": 114590085946598992,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/114/590/085/946/598/992/original/29457dc81a4b96b6.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/114/590/085/946/598/992/small/29457dc81a4b96b6.png",
+        "meta": {
+          "original": {
+            "width": 2698,
+            "height": 1582,
+            "size": "2698x1582",
+            "aspect": 1.7054361567635903
+          },
+          "small": {
+            "width": 627,
+            "height": 368,
+            "size": "627x368",
+            "aspect": 1.703804347826087
+          }
+        },
+        "description": "screenshot",
+        "blurhash": "U9Ss52M|~p-;s+WBbIogacjsoga$Rjayt7of"
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      },
+      {
+        "name": "dx",
+        "url": "https://mastodonczech.cz/tags/dx"
+      },
+      {
+        "name": "technicaldebt",
+        "url": "https://mastodonczech.cz/tags/technicaldebt"
+      }
+    ],
+    "card": {
+      "url": "https://junior.guru/jobs/brno/",
+      "title": "Práce pro juniorní programátory, testery nebo dataře: Brno",
+      "description": "Jaké nabízí Brno příležitosti pro začátečníky v IT? Procházej nabídky práce, stáže a brigády zaměřené výhradně na juniory bez komerční praxe.",
+      "language": "cs",
+      "type": "link",
+      "width": 1280,
+      "height": 720,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/008/298/147/original/db2ef621c6648f4c.png",
+      "blurhash": "U}Sr_5kJt8W8ocfRa#j?t5a#WFocWFfPoba$"
+    }
+  },
+  {
     "id": 114573324539317993,
     "created_at": "2025-05-26T09:03:11.338000+00:00",
     "sensitive": false,
@@ -7,7 +325,8 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114573324539317993",
     "url": "https://mastodonczech.cz/@honzajavorek/114573324539317993",
-    "favourites_count": 1,
+    "replies_count": 1,
+    "favourites_count": 2,
     "favourited": false,
     "reblogged": false,
     "muted": false,
