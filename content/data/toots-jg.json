@@ -358,12 +358,13 @@
     "url": "https://mastodonczech.cz/@honzajavorek/114573324539317993",
     "replies_count": 1,
     "favourites_count": 2,
+    "edited_at": "2025-05-30T19:12:51.604000+00:00",
     "favourited": false,
     "reblogged": false,
     "muted": false,
     "bookmarked": false,
     "pinned": false,
-    "content": "<p>Web junior.guru je statická stránka, původně postavená nad Frozen-Flask. Pak jsem přešel na MkDocs, ale zbytky Flasku na webu stále straší. Zkusím se jich dnes zbavit. První na řadě je 404ka. Na nové už nebudou pracovní inzeráty. Ještě by to chtělo nějakou ilustraci, ale to potom.</p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> <a href=\"https://mastodonczech.cz/tags/flask\" class=\"mention hashtag\" rel=\"tag\">#<span>flask</span></a> <a href=\"https://mastodonczech.cz/tags/mkdocs\" class=\"mention hashtag\" rel=\"tag\">#<span>mkdocs</span></a> #404</p>",
+    "content": "<p>Web junior.guru je statická stránka, původně postavená nad Frozen-Flask. Pak jsem přešel na MkDocs, ale zbytky Flasku na webu stále straší. Zkusím se jich dnes zbavit. První na řadě je 404ka. Na nové už nebudou pracovní inzeráty. Ještě by to chtělo nějakou ilustraci, ale to potom.</p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> <a href=\"https://mastodonczech.cz/tags/flask\" class=\"mention hashtag\" rel=\"tag\">#<span>flask</span></a> <a href=\"https://mastodonczech.cz/tags/mkdocs\" class=\"mention hashtag\" rel=\"tag\">#<span>mkdocs</span></a> <a href=\"https://mastodonczech.cz/tags/page404\" class=\"mention hashtag\" rel=\"tag\">#<span>page404</span></a></p>",
     "media_attachments": [
       {
         "id": 114573318837798874,
@@ -422,6 +423,10 @@
       {
         "name": "mkdocs",
         "url": "https://mastodonczech.cz/tags/mkdocs"
+      },
+      {
+        "name": "page404",
+        "url": "https://mastodonczech.cz/tags/page404"
       }
     ]
   },
