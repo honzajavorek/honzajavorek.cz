@@ -1,5 +1,40 @@
 [
   {
+    "id": 114606802747367071,
+    "created_at": "2025-06-01T06:57:08.254000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114606802747367071",
+    "url": "https://mastodonczech.cz/@honzajavorek/114606802747367071",
+    "reblogs_count": 1,
+    "favourites_count": 6,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>„Technology can identify locations from photographs now. It’s vitally important that people understand how easy this is—if you have any reason at all to be concerned about your safety, you need to know that any photo you share—even a photo as bland as my example above—could be used to identify your location.“ <a href=\"https://simonwillison.net/2025/Apr/26/o3-photo-locations/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">simonwillison.net/2025/Apr/26/</span><span class=\"invisible\">o3-photo-locations/</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://simonwillison.net/2025/Apr/26/o3-photo-locations/",
+      "title": "Watching o3 guess a photo’s location is surreal, dystopian and wildly entertaining",
+      "description": "Watching OpenAI’s new o3 model guess where a photo was taken is one of those moments where decades of science fiction suddenly come to life. It’s a cross between the …",
+      "language": "en",
+      "type": "link",
+      "provider_name": "Simon Willison’s Weblog",
+      "width": 1200,
+      "height": 600,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/007/898/851/original/9eb66803cac0de71.jpg",
+      "blurhash": "UkQJfmj[~qfQ_3ayD%j[ofj[WBayD%j[%May"
+    }
+  },
+  {
     "id": 114604874405215607,
     "created_at": "2025-05-31T22:46:44.089000+00:00",
     "sensitive": false,
@@ -7,6 +42,7 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114604874405215607",
     "url": "https://mastodonczech.cz/@honzajavorek/114604874405215607",
+    "favourites_count": 1,
     "favourited": false,
     "reblogged": false,
     "muted": false,
@@ -28,7 +64,6 @@
       "provider_name": "BBC Sport",
       "width": 2560,
       "height": 1440,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/008/103/981/original/1fc4a8747e98086f.jpg",
       "blurhash": "UQPffxwb?{xu%2RjR*S$?|sDP9axVskpt7V@"
     }
   },
