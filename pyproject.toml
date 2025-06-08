@@ -1,52 +1,55 @@
-[tool.poetry]
+[project]
 name = "blog"
-version = "0.0.0"
-description = "Honza Javorek's personal website and blog"
-authors = ["Honza Javorek <mail@honzajavorek.cz>"]
-readme = "README.md"
-homepage = "https://honzajavorek.cz/"
-repository = "https://github.com/honzajavorek/honzajavorek.cz/"
-classifiers = ["Private :: Do Not Upload"]
 
-[tool.poetry.scripts]
-blog = "blog:main"
+# [tool.poetry]
+# name = "blog"
+# version = "0.0.0"
+# description = "Honza Javorek's personal website and blog"
+# authors = ["Honza Javorek <mail@honzajavorek.cz>"]
+# readme = "README.md"
+# homepage = "https://honzajavorek.cz/"
+# repository = "https://github.com/honzajavorek/honzajavorek.cz/"
+# classifiers = ["Private :: Do Not Upload"]
 
-[tool.poetry.dependencies]
-python = "3.10.*"
-pelican = {version = "4.9.1", extras = ["markdown"]}
-strictyaml = "1.7.3"
-requests = "2.32.3"
-lxml = ">=5.0.0,<5.4.0"
-cssselect = "1.2.0"
-pillow = "10.4.0"
-markdown-del-ins = "1.0.0"
-python-slugify = "8.0.4"
-telethon = "1.36.0"
-beautifulsoup4 = "4.12.3"
-click = "8.1.7"
-strava-offline = "1.1.0"
-sqlite-utils = "3.37"
-send2trash = "1.8.3"
-pillow-heif = "0.18.0"
-icalendar = "5.0.13"
-extruct = "0.17.0"
-notion-client = "2.2.1"
-feedgen = "1.0.0"
-mastodon-py = "1.8.1"
-stamina = "24.3.0"
+# [tool.poetry.scripts]
+# blog = "blog:main"
 
-[tool.poetry.group.dev.dependencies]
-pytest = "8.3.3"
+# [tool.poetry.dependencies]
+# python = "3.10.*"
+# pelican = {version = "4.9.1", extras = ["markdown"]}
+# strictyaml = "1.7.3"
+# requests = "2.32.3"
+# lxml = ">=5.0.0,<5.4.0"
+# cssselect = "1.2.0"
+# pillow = "10.4.0"
+# markdown-del-ins = "1.0.0"
+# python-slugify = "8.0.4"
+# telethon = "1.36.0"
+# beautifulsoup4 = "4.12.3"
+# click = "8.1.7"
+# strava-offline = "1.1.0"
+# sqlite-utils = "3.37"
+# send2trash = "1.8.3"
+# pillow-heif = "0.18.0"
+# icalendar = "5.0.13"
+# extruct = "0.17.0"
+# notion-client = "2.2.1"
+# feedgen = "1.0.0"
+# mastodon-py = "1.8.1"
+# stamina = "24.3.0"
 
-[tool.pytest.ini_options]
-python_files = "test_*.py"
-testpaths = "tests"
-norecursedirs = "node_modules"
-addopts = "--ff"
-filterwarnings = [
-    "ignore:invalid escape sequence:DeprecationWarning",  # extruct
-]
+# [tool.poetry.group.dev.dependencies]
+# pytest = "8.3.3"
 
-[build-system]
-requires = ["poetry-core>=1.5.0"]
-build-backend = "poetry.core.masonry.api"
+# [tool.pytest.ini_options]
+# python_files = "test_*.py"
+# testpaths = "tests"
+# norecursedirs = "node_modules"
+# addopts = "--ff"
+# filterwarnings = [
+#     "ignore:invalid escape sequence:DeprecationWarning",  # extruct
+# ]
+
+# [build-system]
+# requires = ["poetry-core>=1.5.0"]
+# build-backend = "poetry.core.masonry.api"
