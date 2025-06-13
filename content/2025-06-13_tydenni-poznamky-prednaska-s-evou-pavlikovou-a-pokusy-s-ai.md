@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Přednáška s Evou Pavlíkovou a pokusy s AI
 Image: images/img-6506.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/352
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/114676567026113879
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-05-30_tydenni-poznamky-nove-detaily-prednasek-na-webu-a-dalsi-veci.md) už utekl nějaký ten týden (30. 5. až 13. 6.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
