@@ -73,7 +73,8 @@ No, jsem po těch necelých dvou týdnech někde u docela funkčního prototypu,
 ## Plánuji
 
 1.  Registrovat akci do Týdne pro digitální Česko.
-2.  Pokračovat ve tvoření těch automatických shrnutí.
+2.  Daria mi něco poslala k [EuroPython Beginners’ Day Unconference](https://ep2025.europython.eu/beginners-day/), kterou organizujeme, tak bych na to měl mrknout.
+3.  Pokračovat ve tvoření těch automatických shrnutí.
 
 ## Zaujalo mě
 
