@@ -1,5 +1,86 @@
 [
   {
+    "id": 114704440886667308,
+    "created_at": "2025-06-18T12:47:48.023000+00:00",
+    "in_reply_to_id": 114704419232467666,
+    "in_reply_to_account_id": 110921870573231541,
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114704440886667308",
+    "url": "https://mastodonczech.cz/@honzajavorek/114704440886667308",
+    "replies_count": 1,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>A ještě potřebuju vyladit jednu věc. Chtěl bych, aby newsletter dostávali lidi, kteří platí za klub. Teď tam mám jen ty, kdo se přihlásili k odběru na webu.</p><p>Jenže to je GDPR (?) bludiště. Lze newsletter považovat za informování o produktu, za který ti lidi platí? Podle mě jo. Možná nepotřebuju konsent. Ale možná jo.</p><p>Stávajícím členům to nejspíš nemůžu zapnout vůbec, novým musím nějak předělat registrační flow. Asi. Mám v tom guláš. Tolik práce, přitom taková blbost.</p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a></p>",
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ]
+  },
+  {
+    "id": 114704419232467666,
+    "created_at": "2025-06-18T12:42:17.609000+00:00",
+    "in_reply_to_id": 114704281275581302,
+    "in_reply_to_account_id": 110921870573231541,
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114704419232467666",
+    "url": "https://mastodonczech.cz/@honzajavorek/114704419232467666",
+    "replies_count": 1,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Teď bych z toho měl udělat newsletter. Nejvíc se mi zamlouvá seskládat to jednou měsíčně jako novou položku v nějakém RSS, a to nechat automaticky načíst do <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.social/@buttondown\" class=\"u-url mention\">@<span>buttondown</span></a></span>. Tam vznikne draft ke schválení. Upravím, odešlu. Z jejich archivu si můžu vzít upravený obsah a uložit do svého archivu.</p><p>Podporují Django Templates, což je fajn. Ale stejně asi bude v RSS muset být něco, co se dobře zobrazí v emailových klientech 🤔 Kódování e-mailů je za trest, no ChatGPT mi s tím snad pomůže.</p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a></p>",
+    "mentions": [
+      {
+        "id": 110893721556723604,
+        "username": "buttondown",
+        "url": "https://mastodon.social/@buttondown",
+        "acct": "buttondown@mastodon.social"
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ]
+  },
+  {
+    "id": 114704281275581302,
+    "created_at": "2025-06-18T12:07:12.552000+00:00",
+    "in_reply_to_id": 114693337978443029,
+    "in_reply_to_account_id": 110921870573231541,
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114704281275581302",
+    "url": "https://mastodonczech.cz/@honzajavorek/114704281275581302",
+    "replies_count": 2,
+    "favourites_count": 1,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Bylo to nekonečné, strašné ladění, ale asi to teď fakt dokáže vracet něco použitelného. Už jsem tomu ani nevěřil, ale fakt jsem se teď dostal do fáze, že to je z 99% správně.</p><p>Co se za poslední měsíc probíralo za nepodstatnější témata nelze změřit, takže nevadí, že to není deterministické. Zdá se ale, že vybírá vhodné věci. Pomohlo říct si o imaginární skóre engagementu.</p><p>Stylisticky jsem to nakonec taky dosochal do něčeho, co působí konverzačně a nešustí vyloženě papírem.</p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a></p>",
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ]
+  },
+  {
     "id": 114693337978443029,
     "created_at": "2025-06-16T13:44:11.090000+00:00",
     "in_reply_to_id": 114672381612685110,
@@ -9,6 +90,7 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114693337978443029",
     "url": "https://mastodonczech.cz/@honzajavorek/114693337978443029",
+    "replies_count": 1,
     "favourites_count": 2,
     "edited_at": "2025-06-16T13:44:35.465000+00:00",
     "favourited": false,
