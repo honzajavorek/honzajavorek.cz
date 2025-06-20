@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Krůčky směrem k vytvoření newsletteru
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/353
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/114716261401131225
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-06-13_tydenni-poznamky-prednaska-s-evou-pavlikovou-a-pokusy-s-ai.md) už utekl nějaký ten týden (13. 6. až 20. 6.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
