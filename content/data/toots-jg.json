@@ -1,5 +1,79 @@
 [
   {
+    "id": 114750031774858668,
+    "created_at": "2025-06-26T14:02:09.779000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/114750031774858668",
+    "url": "https://mastodonczech.cz/@honzajavorek/114750031774858668",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Začínáš v IT? Přijď 19.7. na super akci! Spolu s <span class=\"h-card\" translate=\"no\"><a href=\"https://fosstodon.org/@daria\" class=\"u-url mention\">@<span>daria</span></a></span> organizujeme pod záštitou <span class=\"h-card\" translate=\"no\"><a href=\"https://fosstodon.org/@europython\" class=\"u-url mention\">@<span>europython</span></a></span> celodenní veřejně přístupnou akci vyloženě pro juniory.</p><p>Bude to na kariérní témata a bude to hodně interaktivní. Nemusíš mít nic společného s Pythonem, ani EuroPythonem, a vstup je 5€. Počet účastníků omezený, tak neváhej 😎</p><p>Info: <a href=\"https://junior.guru/bd/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">junior.guru/bd/</span><span class=\"invisible\"></span></a></p><p>Pokud si chceš prohlédnout podlahu našeho bytu a chceš mě slyšet, jak zpívám „la la la“, pusť si propagační video.</p><p><a href=\"https://mastodonczech.cz/tags/europython2025\" class=\"mention hashtag\" rel=\"tag\">#<span>europython2025</span></a> <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a></p>",
+    "media_attachments": [
+      {
+        "id": 114749991422803787,
+        "type": "video",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/114/749/991/422/803/787/original/1ec8df99d5cf4b17.mp4",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/114/749/991/422/803/787/small/1ec8df99d5cf4b17.png",
+        "meta": {
+          "original": {
+            "width": 1080,
+            "height": 1920,
+            "frame_rate": "30/1",
+            "duration": 148.032,
+            "bitrate": 5461166
+          },
+          "small": {
+            "width": 360,
+            "height": 640,
+            "size": "360x640",
+            "aspect": 0.5625
+          }
+        },
+        "description": "Propagační video, všechno co se tam říká a ukazuje je i na https://junior.guru/bd/",
+        "blurhash": "UjHny#t7D%xaR,aeWBWB4mWBxvoJRPj[t7j["
+      }
+    ],
+    "mentions": [
+      {
+        "id": 110360623734530136,
+        "username": "daria",
+        "url": "https://fosstodon.org/@daria",
+        "acct": "daria@fosstodon.org"
+      },
+      {
+        "id": 110165578403732352,
+        "username": "europython",
+        "url": "https://fosstodon.org/@europython",
+        "acct": "europython@fosstodon.org"
+      }
+    ],
+    "tags": [
+      {
+        "name": "europython2025",
+        "url": "https://mastodonczech.cz/tags/europython2025"
+      },
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ],
+    "card": {
+      "url": "https://junior.guru/bd/",
+      "title": "Beginners’ Day Unconference",
+      "language": "cs",
+      "type": "link",
+      "width": 1280,
+      "height": 720,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/008/630/344/original/7f26520d61320fa0.png",
+      "blurhash": "U}S$ezf?o#W8oJfRa#j?t4a}WFocWFfPoba#"
+    }
+  },
+  {
     "id": 114716261401131225,
     "created_at": "2025-06-20T14:53:54.771000+00:00",
     "sensitive": false,
@@ -35,7 +109,6 @@
       "type": "link",
       "width": 1024,
       "height": 683,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/008/562/701/original/06179fc4aec5d6e8.jpg",
       "blurhash": "UaKK{9D%-;xu%Mt7RjWB~qxuIUWVRjkCt7j[",
       "published_at": "2025-06-19T22:00:00+00:00"
     }
@@ -997,7 +1070,7 @@
       "provider_name": "EuroPython 2025",
       "width": 3513,
       "height": 1850,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/007/873/614/original/6c1932bc8ddc227a.png",
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/007/873/614/original/e90111fe675843bf.png",
       "blurhash": "UKQu+^4;-n_1r=o}wd%M~V%M9GE3$*xun$kU"
     }
   },
@@ -1300,7 +1373,8 @@
       "provider_name": "Lupa.cz",
       "width": 1200,
       "height": 675,
-      "blurhash": "UkJa.mIVIqM_~qM|M|jZD%j[s.t7bcj@e-WV"
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/007/569/840/original/c509c2233c301a1e.jpg",
+      "blurhash": "UkJa.mIoIpM_~qM|M|jZD%j[s.t7bcj@e-WV"
     }
   },
   {
