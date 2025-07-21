@@ -98,6 +98,7 @@ Mám z toho pár fotek, ale ofiko fotky budou až za nějaký čas [na EP Flicke
 - [Ella Michaela Malečková](https://www.linkedin.com/posts/michaela-ella-maleckova_beginnersdayunconference-europython2025-activity-7353006437209464835-HLYK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAACB93ABHHj4UI2winetGMZHboHlZIZojJA)
 - [Šimon Kořený & Veronika Zpěváková](https://www.linkedin.com/feed/update/urn:li:activity:7348640248362405889?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7348640248362405889%2C7352996169448361984%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287352996169448361984%2Curn%3Ali%3Aactivity%3A7348640248362405889%29)
 - [Václav Kotyk](https://www.linkedin.com/posts/vaclavkotyk_beginnersdayunconference-europython2025-europython-activity-7353058765237018624-zE0K?utm_source=share&utm_medium=member_desktop&rcm=ACoAAACB93ABHHj4UI2winetGMZHboHlZIZojJA)
+- [Barbra Flegel](https://www.linkedin.com/feed/update/urn:li:activity:7353077917746155522/)
 
 Když se něco ještě objeví, tak to sem zkusím přidat, ať to mám na jednom místě.
 
