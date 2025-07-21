@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Natáčení promo videa a EuroPython
 Image: images/9-milan-dobes-vlny-1960-768x501.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/355
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/114892035602713856
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-07-04_tydenni-poznamky-prepisovani-kurzu-pripravy-na-europython-a-videotvorba.md) už utekl nějaký ten týden (4. 7. až 21. 7.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
