@@ -91,7 +91,7 @@ Na místě byla strašně milá energie, sešli se fajn lidi, a líbilo se mi, �
 
 Moc si vážím všech, kdo se nechali zlákat jako vystupující v jednotlivých panelech, a především si vážím účasti Šimona Kořeného, který přijel jen kvůli tomu na otočku z Ostravy (po noci strávené na Colours), a Vaška Kotyka, který zaskakoval za nemocnou panelistku a potvrdil nám účast méně než 24h před víkendovou sobotní akcí v teplý letní den 🙂
 
-Mám z toho pár fotek, ale ofiko fotky budou až za nějaký čas [na EP Flickeru](https://www.flickr.com/photos/europython/albums). Tyto ohlasy jsem v pondělí našel na LinkedInu:
+Mám z toho pár fotek, ale ofiko fotky budou až za nějaký čas [na EP Flickeru](https://www.flickr.com/photos/europython/albums). Tyto ohlasy jsem následně našel na LinkedInu (postupně doplňuji, ať to mám na jednom místě):
 
 - [Lenka Hrachovcova](https://www.linkedin.com/feed/update/urn:li:activity:7352801369575018496/)
 - [Tomáš Dinh](https://www.linkedin.com/posts/tomasdinh_after-a-long-time-hiding-in-my-cave-i-finally-ugcPost-7352667975826432000-4nDk/?rcm=ACoAAACB93ABHHj4UI2winetGMZHboHlZIZojJA)
@@ -99,8 +99,7 @@ Mám z toho pár fotek, ale ofiko fotky budou až za nějaký čas [na EP Flicke
 - [Šimon Kořený & Veronika Zpěváková](https://www.linkedin.com/feed/update/urn:li:activity:7348640248362405889?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7348640248362405889%2C7352996169448361984%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287352996169448361984%2Curn%3Ali%3Aactivity%3A7348640248362405889%29)
 - [Václav Kotyk](https://www.linkedin.com/posts/vaclavkotyk_beginnersdayunconference-europython2025-europython-activity-7353058765237018624-zE0K?utm_source=share&utm_medium=member_desktop&rcm=ACoAAACB93ABHHj4UI2winetGMZHboHlZIZojJA)
 - [Barbra Flegel](https://www.linkedin.com/feed/update/urn:li:activity:7353077917746155522/)
-
-Když se něco ještě objeví, tak to sem zkusím přidat, ať to mám na jednom místě.
+- [Jana Moudrá](https://www.linkedin.com/feed/update/urn:li:activity:7353329309295472640/)
 
 Jak to bylo v sobotu večer a co jsem dělal v neděli, to už jsem psal, takže už jen doplním, že teď v pondělí jsem akorát sbíral tyhle feedbacky a dopisoval si s lidma a posílal fotky, psal tyhle poznámky, a tak.
 
