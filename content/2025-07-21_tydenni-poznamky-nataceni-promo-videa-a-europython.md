@@ -100,6 +100,8 @@ Mám z toho pár fotek, ale ofiko fotky budou až za nějaký čas [na EP Flicke
 - [Václav Kotyk](https://www.linkedin.com/posts/vaclavkotyk_beginnersdayunconference-europython2025-europython-activity-7353058765237018624-zE0K?utm_source=share&utm_medium=member_desktop&rcm=ACoAAACB93ABHHj4UI2winetGMZHboHlZIZojJA)
 - [Barbra Flegel](https://www.linkedin.com/feed/update/urn:li:activity:7353077917746155522/)
 - [Jana Moudrá](https://www.linkedin.com/feed/update/urn:li:activity:7353329309295472640/)
+- [Daria Linhart Grudzien & Emilia Stelmasiak](https://www.linkedin.com/feed/update/urn:li:activity:7353344323012247556/)
+- [Daria Linhart Grudzien](https://www.linkedin.com/feed/update/urn:li:activity:7353761572009271296/)
 
 Jak to bylo v sobotu večer a co jsem dělal v neděli, to už jsem psal, takže už jen doplním, že teď v pondělí jsem akorát sbíral tyhle feedbacky a dopisoval si s lidma a posílal fotky, psal tyhle poznámky, a tak.
 
