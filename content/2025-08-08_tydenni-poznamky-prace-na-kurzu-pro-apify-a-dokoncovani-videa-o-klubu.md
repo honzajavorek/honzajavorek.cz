@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Práce na kurzu pro Apify a dokončování videa o k
 Image: images/img-7700.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/356
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/114993576900458816
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-07-21_tydenni-poznamky-nataceni-promo-videa-a-europython.md) už utekl nějaký ten týden (21. 7. až 8. 8.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
