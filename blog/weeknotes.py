@@ -88,12 +88,12 @@ def main(
     open,
 ):
     context.invoke(update_command)
-    context.invoke(
-        toots_command,
-        client_id=mastodon_client_id,
-        client_secret=mastodon_client_secret,
-        access_token=mastodon_access_token,
-    )
+    # context.invoke(
+    #     toots_command,
+    #     client_id=mastodon_client_id,
+    #     client_secret=mastodon_client_secret,
+    #     access_token=mastodon_access_token,
+    # )
 
     today = date.today()
     today_cz = f"{today:%-d}. {today:%-m}."
