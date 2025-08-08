@@ -235,14 +235,19 @@ def get_title_from_webpage(webpage):
 
 
 def get_title_from_url(url):
-    response = requests.get(
-        url,
-        stream=True,
-        headers={"User-Agent": "HonzaJavorekBot (+https://honzajavorek.cz)"},
-    )
     try:
+        response = requests.get(
+            url,
+            stream=True,
+            headers={"User-Agent": "HonzaJavorekBot (+https://honzajavorek.cz)"},
+            timeout=5,
+        )
         response.raise_for_status()
-    except requests.exceptions.HTTPError:
+    except (
+        requests.exceptions.HTTPError,
+        requests.exceptions.ConnectionError,
+        requests.exceptions.ReadTimeout,
+    ):
         pass
     else:
         for line in response.iter_lines(decode_unicode=True):
