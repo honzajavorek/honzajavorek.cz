@@ -1,5 +1,67 @@
 [
   {
+    "id": 115016201678192082,
+    "created_at": "2025-08-12T14:12:40.185000+00:00",
+    "in_reply_to_id": 115010644322803581,
+    "in_reply_to_account_id": 110921870573231541,
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115016201678192082",
+    "url": "https://mastodonczech.cz/@honzajavorek/115016201678192082",
+    "replies_count": 2,
+    "favourites_count": 2,
+    "edited_at": "2025-08-12T14:13:11.446000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Lidem se to moc líbí, ale to mi penízky nevydělá 😀 Penízky vydělají konverze. Takže ode dneška už i na webu!</p><p>Děkuji <span class=\"h-card\" translate=\"no\"><a href=\"https://toot.cafe/@paul_irish\" class=\"u-url mention\">@<span>paul_irish</span></a></span> za <a href=\"https://github.com/paulirish/lite-youtube-embed/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">github.com/paulirish/lite-yout</span><span class=\"invisible\">ube-embed/</span></a>, se kterým jsem mohl docílit kompromisu mezi kapitalistickým mamonem osoby samostatně výdělečně činné a zachováním soukromí návštěvníků mého webu.</p><p>A taky je to rychlejší a mohl jsem tam vrazit vlastní obrázek, protože ten clickbaitový pro YouTube se v tomto kontextu nehodí.</p><p>Výsledek k vidění na <a href=\"https://junior.guru/club/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">junior.guru/club/</span><span class=\"invisible\"></span></a></p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a></p>",
+    "media_attachments": [
+      {
+        "id": 115016185547433362,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/115/016/185/547/433/362/original/4e39151990aca56e.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/115/016/185/547/433/362/small/4e39151990aca56e.png",
+        "meta": {
+          "original": {
+            "width": 2762,
+            "height": 1582,
+            "size": "2762x1582",
+            "aspect": 1.7458912768647281
+          },
+          "small": {
+            "width": 634,
+            "height": 363,
+            "size": "634x363",
+            "aspect": 1.7465564738292012
+          },
+          "focus": {
+            "x": 0.42,
+            "y": 0.32
+          }
+        },
+        "description": "Video vložené na web do stránky junior.guru/club",
+        "blurhash": "U,RC-St0xqRqRKt2j=Rot7WGa$oa%KR:WEs*"
+      }
+    ],
+    "mentions": [
+      {
+        "id": 109374984168660353,
+        "username": "paul_irish",
+        "url": "https://toot.cafe/@paul_irish",
+        "acct": "paul_irish@toot.cafe"
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ]
+  },
+  {
     "id": 115010644322803581,
     "created_at": "2025-08-11T14:39:21.667000+00:00",
     "sensitive": false,
@@ -7,8 +69,8 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115010644322803581",
     "url": "https://mastodonczech.cz/@honzajavorek/115010644322803581",
-    "replies_count": 1,
-    "favourites_count": 4,
+    "replies_count": 3,
+    "favourites_count": 7,
     "favourited": false,
     "reblogged": false,
     "muted": false,
