@@ -1,5 +1,61 @@
 [
   {
+    "id": 115043554165775042,
+    "created_at": "2025-08-17T10:08:46.023000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115043554165775042",
+    "url": "https://mastodonczech.cz/@honzajavorek/115043554165775042",
+    "replies_count": 2,
+    "reblogs_count": 2,
+    "favourites_count": 1,
+    "edited_at": "2025-08-17T10:09:24.534000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>DevOps nebo SRE. Co to vlastně je a chcete to vůbec vědět?</p><p>Út 19.8. v 18h bude na Discordu povídání (nejen) pro juniory: Jak se nasazují aplikace a jak začít, pokud vás to láká a hledáte první práci?</p><p>Dorazí mí bývalí kolegové z Apiary – Naďa Jašíková (Microsoft) a <span class=\"h-card\" translate=\"no\"><a href=\"https://witter.cz/@wvi\" class=\"u-url mention\">@<span>wvi</span></a></span> (Oracle). Mají roky zkušeností, bude to pecka.</p><p>Naše přednášky nejsou nalejvárna. Hodně dotazů, největší hodnota v interakci. Nečekejte na záznam, připojte se živě.</p><p>👉 <a href=\"https://junior.guru/events/54/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">junior.guru/events/54/</span><span class=\"invisible\"></span></a></p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> <a href=\"https://mastodonczech.cz/tags/devops\" class=\"mention hashtag\" rel=\"tag\">#<span>devops</span></a> <a href=\"https://mastodonczech.cz/tags/sre\" class=\"mention hashtag\" rel=\"tag\">#<span>sre</span></a> <a href=\"https://mastodonczech.cz/tags/docker\" class=\"mention hashtag\" rel=\"tag\">#<span>docker</span></a></p>",
+    "mentions": [
+      {
+        "id": 109432155440096165,
+        "username": "wvi",
+        "url": "https://witter.cz/@wvi",
+        "acct": "wvi@witter.cz"
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      },
+      {
+        "name": "devops",
+        "url": "https://mastodonczech.cz/tags/devops"
+      },
+      {
+        "name": "SRE",
+        "url": "https://mastodonczech.cz/tags/SRE"
+      },
+      {
+        "name": "docker",
+        "url": "https://mastodonczech.cz/tags/docker"
+      }
+    ],
+    "card": {
+      "url": "https://junior.guru/events/54/",
+      "title": "Naďa Jašíková, Vilibald Wanča– DevOps/SRE - co to vlastně je a chci to vůbec vědět? – online akce na Discordu junior.guru",
+      "description": "Klub junior.guru pořádá vzdělávací akce, online na svém Discordu. Mohou to být přednášky, stream, Q&A, AMA, webináře… Toto je stránka o jedné z nich.",
+      "language": "cs",
+      "type": "link",
+      "width": 1280,
+      "height": 720,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/009/165/404/original/e689a714fff507c4.png",
+      "blurhash": "U#ON1q0CoJxrozX9RmRit2WCRlj=jdodt3a%"
+    }
+  },
+  {
     "id": 115016201678192082,
     "created_at": "2025-08-12T14:12:40.185000+00:00",
     "in_reply_to_id": 115010644322803581,
