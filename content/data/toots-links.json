@@ -1,5 +1,39 @@
 [
   {
+    "id": 115161757080931601,
+    "created_at": "2025-09-07T07:09:19.368000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115161757080931601",
+    "url": "https://mastodonczech.cz/@honzajavorek/115161757080931601",
+    "replies_count": 1,
+    "favourites_count": 1,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Někoho trápí Nohavica, někoho Rowling. Jak oddělit dílo od autora a jde to vůbec? <a href=\"https://pagenotfound.cz/clanek/v-bradavicich-uz-neni-bezpecno-kouzlo-pominulo\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">pagenotfound.cz/clanek/v-brada</span><span class=\"invisible\">vicich-uz-neni-bezpecno-kouzlo-pominulo</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://pagenotfound.cz/clanek/v-bradavicich-uz-neni-bezpecno-kouzlo-pominulo",
+      "title": "V Bradavicích už není bezpečno, kouzlo pominulo – Page Not Found",
+      "description": "Na knihách o Harry Potterovi vyrostly celé generace. O to náročnější může být návrat k jeho stránkám, když jméno autorky provází značná kontroverze. Koupím si ještě někdy nebelvírskou šálu nebo nové ilustrované knižní vydání, když vím, že se tím nepřímo podílím na financování transfobních organizací?",
+      "language": "cs",
+      "type": "link",
+      "width": 960,
+      "height": 540,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/009/141/504/original/f18f5de1dcd56636.jpeg",
+      "blurhash": "UBCsma4nElDi0K_29G-;pGIU?GM|.7nijaIn"
+    }
+  },
+  {
     "id": 115158668441491025,
     "created_at": "2025-09-06T18:03:50.473000+00:00",
     "sensitive": false,
@@ -7,7 +41,7 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115158668441491025",
     "url": "https://mastodonczech.cz/@honzajavorek/115158668441491025",
-    "favourites_count": 1,
+    "favourites_count": 3,
     "favourited": false,
     "reblogged": false,
     "muted": false,
@@ -29,7 +63,6 @@
       "provider_name": "Deník Referendum",
       "width": 560,
       "height": 373,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/009/268/424/original/d8a7e3466fcfdec5.jpg",
       "blurhash": "UXK_5q4mIVE14:.8M|V?kEV@IU%MIUM{%Moe",
       "published_at": "2025-08-29T15:35:14+00:00"
     }
@@ -703,6 +736,7 @@
       "provider_name": "Fly",
       "width": 1700,
       "height": 965,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/008/350/147/original/9ab3ea1e7879d2b4.png",
       "blurhash": "UZKeZMf4RPR;%QkPxaow^:V{Iyi_RiNfx-s*"
     }
   },
