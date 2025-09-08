@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Už jste mysleli, že nebudou, co?
 Image: images/img-7951.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/358
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/115170370219391310
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-08-08_tydenni-poznamky-prace-na-kurzu-pro-apify-a-dokoncovani-videa-o-klubu.md) už utekl nějaký ten týden (8. 8. až 8. 9.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
