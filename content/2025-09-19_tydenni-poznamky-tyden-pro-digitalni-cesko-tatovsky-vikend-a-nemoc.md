@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Týden pro digitální Česko, tátovský víkend a 
 Image: images/img-8474.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/359
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/115231876734582849
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-09-08_tydenni-poznamky-uz-jste-mysleli-ze-nebudou-co.md) už utekl nějaký ten týden (8. 9. až 19. 9.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
