@@ -1,5 +1,69 @@
 [
   {
+    "id": 115292263035221535,
+    "created_at": "2025-09-30T08:18:42.197000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115292263035221535",
+    "url": "https://mastodonczech.cz/@honzajavorek/115292263035221535",
+    "replies_count": 1,
+    "reblogs_count": 1,
+    "favourites_count": 4,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Tak jsem konečně přidal i ikonky. Teď už to lidi nemusí číst, stačí přeletět očima, zahlédnout známá loga, a mají představu.</p><p>Bylo to trochu složitější, protože v <a href=\"https://icons.getbootstrap.com/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">icons.getbootstrap.com/</span><span class=\"invisible\"></span></a> nejsou programovací jazyky. Kombinuju to s <a href=\"https://devicon.dev/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">devicon.dev/</span><span class=\"invisible\"></span></a> Ty jsou zase barevné, ale to není nic, s čím by si neporadilo `filter: brightness(0) saturate(100%);`</p><p>K prohlédnutí zde: <a href=\"https://junior.guru/club/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">junior.guru/club/</span><span class=\"invisible\"></span></a></p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> <a href=\"https://mastodonczech.cz/tags/css\" class=\"mention hashtag\" rel=\"tag\">#<span>css</span></a> <a href=\"https://mastodonczech.cz/tags/ikony\" class=\"mention hashtag\" rel=\"tag\">#<span>ikony</span></a> <a href=\"https://mastodonczech.cz/tags/design\" class=\"mention hashtag\" rel=\"tag\">#<span>design</span></a> <a href=\"https://mastodonczech.cz/tags/landingpage\" class=\"mention hashtag\" rel=\"tag\">#<span>landingpage</span></a></p>",
+    "media_attachments": [
+      {
+        "id": 115292250247940286,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/115/292/250/247/940/286/original/7a6e13848b837b15.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/115/292/250/247/940/286/small/7a6e13848b837b15.png",
+        "meta": {
+          "original": {
+            "width": 2724,
+            "height": 1467,
+            "size": "2724x1467",
+            "aspect": 1.8568507157464214
+          },
+          "small": {
+            "width": 654,
+            "height": 352,
+            "size": "654x352",
+            "aspect": 1.8579545454545454
+          }
+        },
+        "description": "Jaká témata zajímají členy klubu",
+        "blurhash": "UOSs1xRhtAt8t0a#j^j[I$Roj:ofxxfiacju"
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      },
+      {
+        "name": "css",
+        "url": "https://mastodonczech.cz/tags/css"
+      },
+      {
+        "name": "ikony",
+        "url": "https://mastodonczech.cz/tags/ikony"
+      },
+      {
+        "name": "design",
+        "url": "https://mastodonczech.cz/tags/design"
+      },
+      {
+        "name": "landingpage",
+        "url": "https://mastodonczech.cz/tags/landingpage"
+      }
+    ]
+  },
+  {
     "id": 115288653905946374,
     "created_at": "2025-09-29T17:00:51.256000+00:00",
     "sensitive": false,
@@ -7,8 +71,8 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115288653905946374",
     "url": "https://mastodonczech.cz/@honzajavorek/115288653905946374",
-    "replies_count": 1,
-    "favourites_count": 1,
+    "replies_count": 2,
+    "favourites_count": 2,
     "favourited": false,
     "reblogged": false,
     "muted": false,
