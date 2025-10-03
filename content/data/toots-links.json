@@ -1,5 +1,36 @@
 [
   {
+    "id": 115303295672399131,
+    "created_at": "2025-10-02T07:04:26.880000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115303295672399131",
+    "url": "https://mastodonczech.cz/@honzajavorek/115303295672399131",
+    "replies_count": 2,
+    "reblogs_count": 1,
+    "favourites_count": 5,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Tož dobrý fuckup mají v Ruby komunitě. Už jsem o tom četl asi čtyři články, ale kdo se neorientuje ve specifických jménech a názvech, nebo se v nich nechce začít orientovat jako já, ocení nejvíc asi tenhle – stručné zhodnocení toho, co se stalo na úrovni open source principů. <a href=\"https://joel.drapper.me/p/ruby-central/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">joel.drapper.me/p/ruby-central/</span><span class=\"invisible\"></span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://joel.drapper.me/p/ruby-central/",
+      "title": "The RubyGems takeover from the perspective of an open source developer",
+      "description": "We must demand that Ruby Central make this right.",
+      "language": "en",
+      "type": "link"
+    }
+  },
+  {
     "id": 115300802798870353,
     "created_at": "2025-10-01T20:30:28.647000+00:00",
     "sensitive": false,
@@ -8,7 +39,8 @@
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115300802798870353",
     "url": "https://mastodonczech.cz/@honzajavorek/115300802798870353",
     "replies_count": 1,
-    "favourites_count": 3,
+    "reblogs_count": 1,
+    "favourites_count": 5,
     "favourited": false,
     "reblogged": false,
     "muted": false,
