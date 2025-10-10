@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Obnovování newsletteru
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/361
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/115351106633375952
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-09-26_tydenni-poznamky-covidek-a-zmeny-v-klubu.md) už utekl nějaký ten týden (26. 9. až 10. 10.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
