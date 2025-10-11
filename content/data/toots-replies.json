@@ -4,7 +4,7 @@
     "slug": "tydenni-poznamky-obnovovani-newsletteru",
     "created_at": "2025-10-10T17:43:24.249000+00:00",
     "toot_url": "https://mastodonczech.cz/@honzajavorek/115351106633375952",
-    "favourites_count": 0,
+    "favourites_count": 1,
     "reblogs_count": 1,
     "replies": [
       {
@@ -18,6 +18,7 @@
         "uri": "https://social.vivaldi.net/users/sesivany/statuses/115351265334557255",
         "url": "https://social.vivaldi.net/@sesivany/115351265334557255",
         "replies_count": 1,
+        "favourites_count": 1,
         "favourited": false,
         "reblogged": false,
         "muted": false,
@@ -53,7 +54,7 @@
         "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115351872102381659",
         "url": "https://mastodonczech.cz/@honzajavorek/115351872102381659",
         "replies_count": 1,
-        "favourites_count": 1,
+        "favourites_count": 4,
         "edited_at": "2025-10-10T22:23:20.074000+00:00",
         "favourited": false,
         "reblogged": false,
@@ -93,6 +94,8 @@
         "language": "cs",
         "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115352217719788787",
         "url": "https://mastodonczech.cz/@honzajavorek/115352217719788787",
+        "replies_count": 1,
+        "favourites_count": 1,
         "favourited": false,
         "reblogged": false,
         "muted": false,
@@ -118,6 +121,192 @@
             "username": "sesivany",
             "url": "https://social.vivaldi.net/@sesivany",
             "acct": "sesivany@vivaldi.net"
+          }
+        ]
+      },
+      {
+        "id": 115354031392399325,
+        "created_at": "2025-10-11T06:07:08+00:00",
+        "in_reply_to_id": 115352217719788787,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://social.vivaldi.net/users/sesivany/statuses/115354031116724789",
+        "url": "https://social.vivaldi.net/@sesivany/115354031116724789",
+        "replies_count": 1,
+        "favourites_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> Neber to jako nějakou kritiku. Já jsem taky kromě TikToku asi všude a postuju tam o tom, co napíšu. Akorát se holt držím toho opačného přístupu než POSSE a dávám tam jen odkaz na blogpost. Vím, že je to ze strany těch platforem penalizované a obírám se o dosah, ale zase si říkám, že to lidem aspoň trochu připomíná, že pořád existuje nezávislý web mimo tyto platformy.</p>",
+        "account": {
+          "id": 112705284451433640,
+          "username": "sesivany",
+          "acct": "sesivany@vivaldi.net",
+          "display_name": "Jiří Eischmann",
+          "url": "https://social.vivaldi.net/@sesivany",
+          "uri": "https://social.vivaldi.net/users/sesivany",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/112/705/284/451/433/640/original/146e3f0ee59d34a4.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/112/705/284/451/433/640/original/146e3f0ee59d34a4.jpeg"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ]
+      },
+      {
+        "id": 115354251332163029,
+        "created_at": "2025-10-11T07:03:08+00:00",
+        "in_reply_to_id": 115351106633375952,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://boskovice.social/users/zoul/statuses/115354251306737720",
+        "url": "https://boskovice.social/@zoul/115354251306737720",
+        "replies_count": 1,
+        "favourites_count": 2,
+        "favourited": true,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> Mikrofon: my používáme v novinách bezdrátový set od Røde, můžu doporučit. Konkrétně máme starší generaci modelu Wireless Go (<a href=\"https://rode.com/en-int/products/wireless-go-gen-3\" rel=\"nofollow noopener\" translate=\"no\" target=\"_blank\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">rode.com/en-int/products/wirel</span><span class=\"invisible\">ess-go-gen-3</span></a>) pro dva mluvčí, točíme na to i živé podcasty třeba. Ale tobě může stačit jednodušší Wireless ME (<a href=\"https://rode.com/en-int/products/wireless-me\" rel=\"nofollow noopener\" translate=\"no\" target=\"_blank\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">rode.com/en-int/products/wirel</span><span class=\"invisible\">ess-me</span></a>). Má to pěkný zvuk, vestavěné nahrávání, dlouhou výdrž na baterky, zkrátka je to užitečná a univerzální hračka.</p>",
+        "account": {
+          "id": 109324797571302698,
+          "username": "zoul",
+          "acct": "zoul@boskovice.social",
+          "display_name": "Tomáš Znamenáček",
+          "url": "https://boskovice.social/@zoul",
+          "uri": "https://boskovice.social/users/zoul",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/7091a04da934da40.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/7091a04da934da40.jpeg"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ]
+      },
+      {
+        "id": 115354258463749949,
+        "created_at": "2025-10-11T07:04:56+00:00",
+        "in_reply_to_id": 115354251332163029,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://boskovice.social/users/zoul/statuses/115354258439822236",
+        "url": "https://boskovice.social/@zoul/115354258439822236",
+        "replies_count": 1,
+        "favourites_count": 2,
+        "favourited": true,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> Případně úplně minimalistická varianta je klopový mikrofon, který se připojí rovnou do telefonu: <a href=\"https://rode.com/en-int/products/smartlav-plus\" rel=\"nofollow noopener\" translate=\"no\" target=\"_blank\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">rode.com/en-int/products/smart</span><span class=\"invisible\">lav-plus</span></a></p>",
+        "account": {
+          "id": 109324797571302698,
+          "username": "zoul",
+          "acct": "zoul@boskovice.social",
+          "display_name": "Tomáš Znamenáček",
+          "url": "https://boskovice.social/@zoul",
+          "uri": "https://boskovice.social/users/zoul",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/7091a04da934da40.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/7091a04da934da40.jpeg"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ]
+      },
+      {
+        "id": 115354543328222349,
+        "created_at": "2025-10-11T08:17:24.048000+00:00",
+        "in_reply_to_id": 115354031392399325,
+        "in_reply_to_account_id": 112705284451433640,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115354543328222349",
+        "url": "https://mastodonczech.cz/@honzajavorek/115354543328222349",
+        "favourites_count": 2,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://social.vivaldi.net/@sesivany\" class=\"u-url mention\">@<span>sesivany</span></a></span> Ajo takhle. Jasně, to bych dělal taky, ale ty sítě to prostě penalizují a znesnadňují čím dál víc. Kdybych dělal IG, kde mám hodně velkou cílovku, tak tam nedáš odkaz nebo blogpost vůbec, musíš sdělení přizpůsobit médiu a jen doufat, že si k tobě najdou cestu. Stejně jako nedáš odkaz do reklamy v rádiu. Takže tak to beru, adapt or die. POSSE je to, co děláš ty, ale naráží na hradby. Já se je rozhodl překonat.</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 112705284451433640,
+            "username": "sesivany",
+            "url": "https://social.vivaldi.net/@sesivany",
+            "acct": "sesivany@vivaldi.net"
+          }
+        ]
+      },
+      {
+        "id": 115354544261980611,
+        "created_at": "2025-10-11T08:17:38.295000+00:00",
+        "in_reply_to_id": 115354258463749949,
+        "in_reply_to_account_id": 109324797571302698,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115354544261980611",
+        "url": "https://mastodonczech.cz/@honzajavorek/115354544261980611",
+        "favourites_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://boskovice.social/@zoul\" class=\"u-url mention\">@<span>zoul</span></a></span> Díky za tipy!</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 109324797571302698,
+            "username": "zoul",
+            "url": "https://boskovice.social/@zoul",
+            "acct": "zoul@boskovice.social"
           }
         ]
       }
