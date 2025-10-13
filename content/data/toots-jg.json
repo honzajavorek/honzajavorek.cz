@@ -1,5 +1,61 @@
 [
   {
+    "id": 115360405989990760,
+    "created_at": "2025-10-12T09:08:21.169000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115360405989990760",
+    "url": "https://mastodonczech.cz/@honzajavorek/115360405989990760",
+    "replies_count": 1,
+    "reblogs_count": 1,
+    "favourites_count": 7,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Fireship přesně 😀 Celé moje podnikání na jednom slajdu.</p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> <a href=\"https://mastodonczech.cz/tags/automation\" class=\"mention hashtag\" rel=\"tag\">#<span>automation</span></a> <a href=\"https://mastodonczech.cz/tags/fireship\" class=\"mention hashtag\" rel=\"tag\">#<span>fireship</span></a></p>",
+    "media_attachments": [
+      {
+        "id": 115360404472973838,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/115/360/404/472/973/838/original/a8346333d1687973.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/115/360/404/472/973/838/small/a8346333d1687973.png",
+        "meta": {
+          "original": {
+            "width": 1843,
+            "height": 1582,
+            "size": "1843x1582",
+            "aspect": 1.1649810366624527
+          },
+          "small": {
+            "width": 518,
+            "height": 445,
+            "size": "518x445",
+            "aspect": 1.1640449438202247
+          }
+        },
+        "description": "why spending 1 hour doing something? when you can spend 10 hours failing to automate it...",
+        "blurhash": "U68M{z-VJ7V@njM{Rjof2?bv,[jZ4.xGxtj["
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      },
+      {
+        "name": "automation",
+        "url": "https://mastodonczech.cz/tags/automation"
+      },
+      {
+        "name": "fireship",
+        "url": "https://mastodonczech.cz/tags/fireship"
+      }
+    ]
+  },
+  {
     "id": 115351106633375952,
     "created_at": "2025-10-10T17:43:24.249000+00:00",
     "sensitive": false,
@@ -37,7 +93,6 @@
       "type": "link",
       "width": 1024,
       "height": 683,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/009/646/779/original/42c75a3b7086589b.jpg",
       "blurhash": "UaKK{9D%-;xu%Mt7RjWB~qxuIUWVRjkCt7j[",
       "published_at": "2025-10-09T22:00:00+00:00"
     }
