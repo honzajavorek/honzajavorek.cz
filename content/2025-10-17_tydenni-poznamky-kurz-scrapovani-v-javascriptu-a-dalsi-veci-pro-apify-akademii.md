@@ -4,6 +4,7 @@ Lang: cs
 Tags: týdenní poznámky, junior.guru
 Telegram-Comments: https://t.me/honzajavorekcz/362
 Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/115390217923121340
+LinkedIn-Comments: https://www.linkedin.com/pulse/t%25C3%25BDdenn%25C3%25AD-pozn%25C3%25A1mky-kurz-scrapov%25C3%25A1n%25C3%25AD-v-javascriptu-dal%25C5%25A1%25C3%25AD-v%25C4%259Bci-javorek-jzdke
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-10-10_tydenni-poznamky-obnovovani-newsletteru.md) už utekl nějaký ten týden (10. 10. až 17. 10.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
