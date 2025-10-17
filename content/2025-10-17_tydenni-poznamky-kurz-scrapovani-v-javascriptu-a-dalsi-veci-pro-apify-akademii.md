@@ -2,6 +2,8 @@ Title: Týdenní poznámky: Kurz scrapování v JavaScriptu a další věci pro 
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Telegram-Comments: https://t.me/honzajavorekcz/362
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/115390217923121340
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-10-10_tydenni-poznamky-obnovovani-newsletteru.md) už utekl nějaký ten týden (10. 10. až 17. 10.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
