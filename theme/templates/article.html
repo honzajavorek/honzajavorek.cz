@@ -4,6 +4,10 @@
 
 {% block title %}{{ article.title }} &mdash; {{ BLOGNAME }}{% endblock %}
 
+{% block description %}
+  <meta name="description" content="{{ article.description }}">
+{% endblock %}
+
 {% block image %}
   {% if article.image %}
     <meta property="og:image" content="{{ SITEURL }}/{{ article.image }}">

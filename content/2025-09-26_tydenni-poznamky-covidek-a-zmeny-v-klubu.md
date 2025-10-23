@@ -4,6 +4,7 @@ Lang: cs
 Tags: týdenní poznámky, junior.guru
 Telegram-Comments: https://t.me/honzajavorekcz/360
 Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/115272345037190486
+Description: Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru? Tentokrát je to na 10 min čtení 🧐
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-09-19_tydenni-poznamky-tyden-pro-digitalni-cesko-tatovsky-vikend-a-nemoc.md) už utekl nějaký ten týden (19. 9. až 26. 9.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.

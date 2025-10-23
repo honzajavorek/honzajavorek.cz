@@ -18,7 +18,7 @@ from blog.kocarkino import main as kocarkino
 from blog.media import main as media
 from blog.notion import main as notion
 from blog.pediatr import main as pediatr
-from blog.sharing import telegram, mastodon
+from blog.sharing import telegram, mastodon, descriptions
 from blog.toots import main as toots
 from blog.update import main as update
 from blog.wait import main as wait
@@ -30,6 +30,7 @@ def main():
     pass
 
 
+main.add_command(descriptions, "description")
 main.add_command(kocarkino, "kocarkino")
 main.add_command(mastodon, "mastodon")
 main.add_command(media, "media")
@@ -47,7 +48,8 @@ main.add_command(weeknotes, "weeknotes")
 @click.option("--path", "content_path", default="content", type=click.Path(exists=True))
 @click.option("--settings-module", default="publishconf", type=importlib.import_module)
 @click.option("--debug/--no-debug", default=True)
-def build(content_path, settings_module, debug):
+@click.pass_context
+def build(context, content_path, settings_module, debug):
     extra_args = []
 
     if debug:
@@ -63,6 +65,8 @@ def build(content_path, settings_module, debug):
     click.secho(shlex.join(args), fg="green", bold=True)
     click.echo("")
     subprocess.run(args, check=True)
+
+    context.invoke(descriptions)
 
 
 @main.command()

@@ -38,6 +38,7 @@ def store_content(path, context):
             'image_path': image_path,
             'image_url': image_url,
             'title': context['article'].metadata['title'],
+            'description': context['article'].metadata.get('description'),
             'lang': context['article'].metadata['lang'],
             'tags': [tag.name for tag in context['article'].metadata.get('tags', [])],
             'readtime': context['article'].metadata['readtime'],
