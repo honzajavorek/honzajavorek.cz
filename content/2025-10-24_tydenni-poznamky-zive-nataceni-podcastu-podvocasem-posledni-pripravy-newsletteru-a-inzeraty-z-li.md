@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Živé natáčení podcastu PodVocasem, poslední p�
 Image: images/img-8935.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru? Tentokrát je to na 8 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/363
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/115429480137040684
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-10-17_tydenni-poznamky-kurz-scrapovani-v-javascriptu-a-dalsi-veci-pro-apify-akademii.md) už utekl nějaký ten týden (17. 10. až 24. 10.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
