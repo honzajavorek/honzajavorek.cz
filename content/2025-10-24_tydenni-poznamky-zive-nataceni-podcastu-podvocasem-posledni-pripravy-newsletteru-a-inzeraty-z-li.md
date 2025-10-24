@@ -5,6 +5,7 @@ Tags: týdenní poznámky, junior.guru
 Description: Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru? Tentokrát je to na 8 min čtení 🧐
 Telegram-Comments: https://t.me/honzajavorekcz/363
 Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/115429480137040684
+LinkedIn-Comments: https://www.linkedin.com/pulse/t%25C3%25BDdenn%25C3%25AD-pozn%25C3%25A1mky-%25C5%25BEiv%25C3%25A9-nat%25C3%25A1%25C4%258Den%25C3%25AD-podcastu-podvocasem-posledn%25C3%25AD-javorek-sms5e/
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-10-17_tydenni-poznamky-kurz-scrapovani-v-javascriptu-a-dalsi-veci-pro-apify-akademii.md) už utekl nějaký ten týden (17. 10. až 24. 10.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
