@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Hory, chyby a kandidáti
 Image: images/photo-2025-10-31-15-41-42.jpeg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru? Tentokrát je to na 7 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/364
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/115469510989893191
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-10-24_tydenni-poznamky-zive-nataceni-podcastu-podvocasem-posledni-pripravy-newsletteru-a-inzeraty-z-li.md) už utekl nějaký ten týden (24. 10. až 31. 10.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
