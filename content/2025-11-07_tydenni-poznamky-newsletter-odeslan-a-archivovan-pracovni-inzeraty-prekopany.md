@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Newsletter odeslán a archivován, pracovní inzerá
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru? Tentokrát je to na 12 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/365
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/115509105135455357
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-10-31_tydenni-poznamky-hory-chyby-a-kandidati.md) už utekl nějaký ten týden (31. 10. až 7. 11.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
