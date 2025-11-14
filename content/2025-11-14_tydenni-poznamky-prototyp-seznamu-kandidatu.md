@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Prototyp seznamu kandidátů
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru? Tentokrát je to na 9 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/366
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/115548722780237574
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-11-07_tydenni-poznamky-newsletter-odeslan-a-archivovan-pracovni-inzeraty-prekopany.md) už utekl nějaký ten týden (7. 11. až 14. 11.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
