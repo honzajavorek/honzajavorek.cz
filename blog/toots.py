@@ -124,8 +124,12 @@ def marshall_reply(data: dict) -> dict:
 
 
 def clear_empty_keys(data: dict) -> dict:
+    try:
+        items = data.items()
+    except AttributeError:
+        return data
     result = {}
-    for key, value in data.items():
+    for key, value in items:
         if isinstance(value, dict):
             value = clear_empty_keys(value)
         elif isinstance(value, list):
