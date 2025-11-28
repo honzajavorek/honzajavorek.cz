@@ -1,5 +1,58 @@
 [
   {
+    "id": 115627330896836618,
+    "created_at": "2025-11-28T12:30:52.018000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115627330896836618",
+    "url": "https://mastodonczech.cz/@honzajavorek/115627330896836618",
+    "favourites_count": 3,
+    "edited_at": "2025-11-28T12:34:56.533000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Přidal jsem do katalogu poskytovatelů kurzů hřbitov. To myslím docela dobře ilustruje stav trhu s IT juniory po roce 2023.</p><p>K vidění na <a href=\"https://junior.guru/courses/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">junior.guru/courses/</span><span class=\"invisible\"></span></a> 🪦 Na každé podstránce najdete povídání o historii subjektu a jakým způsobem skončil.</p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a></p>",
+    "media_attachments": [
+      {
+        "id": 115627330048358957,
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/115/627/330/048/358/957/original/7abc5c27c2adbaff.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/115/627/330/048/358/957/small/7abc5c27c2adbaff.png",
+        "meta": {
+          "original": {
+            "width": 1638,
+            "height": 760,
+            "size": "1638x760",
+            "aspect": 2.155263157894737
+          },
+          "small": {
+            "width": 705,
+            "height": 327,
+            "size": "705x327",
+            "aspect": 2.1559633027522938
+          }
+        },
+        "description": "hřbitov",
+        "blurhash": "UZQcr7xuoMWB%1WBWBay~qM{RjayIVj[ofay"
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ],
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
     "id": 115622548243049589,
     "created_at": "2025-11-27T16:14:34.518000+00:00",
     "sensitive": false,
@@ -7,8 +60,9 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115622548243049589",
     "url": "https://mastodonczech.cz/@honzajavorek/115622548243049589",
+    "replies_count": 1,
     "reblogs_count": 1,
-    "favourites_count": 5,
+    "favourites_count": 6,
     "edited_at": "2025-11-27T16:15:18.280000+00:00",
     "favourited": false,
     "reblogged": false,
@@ -274,7 +328,6 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115548722780237574",
     "url": "https://mastodonczech.cz/@honzajavorek/115548722780237574",
-    "reblogs_count": 1,
     "favourites_count": 1,
     "favourited": false,
     "reblogged": false,
