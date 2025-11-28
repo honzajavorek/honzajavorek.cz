@@ -1,5 +1,86 @@
 [
   {
+    "id": 115622548243049589,
+    "created_at": "2025-11-27T16:14:34.518000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115622548243049589",
+    "url": "https://mastodonczech.cz/@honzajavorek/115622548243049589",
+    "reblogs_count": 1,
+    "favourites_count": 5,
+    "edited_at": "2025-11-27T16:15:18.280000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Chtěl jsem si napsat knihovnu, jen malý wrapper nad mastodon-py, který mi umožní posílat idempotentně na můj <a href=\"https://mastodonczech.cz/tags/Mastodon\" class=\"mention hashtag\" rel=\"tag\">#<span>Mastodon</span></a> odkazy – třeba na články na můj blog, nebo na newslettery <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a>, ale hodilo by se to i na <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@p3news\" class=\"u-url mention\">@<span>p3news</span></a></span> a jinde. Zatím jsem to totiž všude implementoval trochu jinak, všelijak na koleně.</p><p>Už jsem měl vymyšlený název, založené repo, už jsem to programoval, a u toho programování jsem si všiml, že mastodon.status_post() má přímo parametr idempotency_key 😀 </p><p>A fakt, funguje to! Stačí do něj narvat URL, které postuju, a bez ohledu na text, který to doprovází, můžu se pak pokoušet tutéž věc poslat kolikrát chci, pošle se pouze jednou. OMG! Je to zabudované přímo v Mastodon API.</p><p>Takže po půl dni práce jsem vymyslel dva řádky kódu.</p>",
+    "mentions": [
+      {
+        "id": 113760207499214238,
+        "username": "p3news",
+        "url": "https://mastodonczech.cz/@p3news",
+        "acct": "p3news"
+      }
+    ],
+    "tags": [
+      {
+        "name": "mastodon",
+        "url": "https://mastodonczech.cz/tags/mastodon"
+      },
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ],
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
+    "id": 115622521982350701,
+    "created_at": "2025-11-27T16:07:53.822000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115622521982350701",
+    "url": "https://mastodonczech.cz/@honzajavorek/115622521982350701",
+    "edited_at": "2025-11-27T16:09:52.444000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Kdo jste ještě neviděli první vydání <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> newsletteru, tak „Říjen 2025 ve světě IT juniorů” je k přečtení tady: <a href=\"https://junior.guru/news/rijen-2025-ve-svete-it-junioru/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">junior.guru/news/rijen-2025-ve</span><span class=\"invisible\">-svete-it-junioru/</span></a> (5 min čtení)</p>",
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ],
+    "card": {
+      "url": "https://junior.guru/news/rijen-2025-ve-svete-it-junioru/",
+      "title": "Říjen 2025 ve světě IT juniorů",
+      "description": "Začínáš v IT? V tomhle newsletteru najdeš pozvánky, kurzy, podcasty, přednášky, články a další zdroje, které tě posunou a namotivují.",
+      "language": "cs",
+      "type": "link",
+      "width": 1280,
+      "height": 720,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/010/078/047/original/771fbe8df7c6a774.png",
+      "blurhash": "U}Sr_6kJt7W8ocfRWEj?t3fRWFocWFfPobWF"
+    },
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
     "id": 115615569453981166,
     "created_at": "2025-11-26T10:39:46.643000+00:00",
     "in_reply_to_id": 115615451560741621,
