@@ -5,6 +5,7 @@ import click
 import requests
 from lxml import html
 from feedgen.feed import FeedGenerator
+import stamina
 
 
 PEDIATR_FEED_ID = "XJvA2s26HQP8K6wLnjjx.ucnj"
@@ -32,8 +33,14 @@ def main(feed_id: str):
     feed.id(feed_id)
     feed.title("Dětské Baranova")
 
-    response = requests.get("https://www.detske-baranova.cz/novinky/")
-    response.raise_for_status()
+    for attempt in stamina.retry_context(
+        on=(requests.RequestException, OSError),
+        wait_max=60,
+    ):
+        click.echo(f"Requesting detske-baranova.cz, attempt #{attempt.num}", err=True)
+        with attempt:
+            response = requests.get("https://www.detske-baranova.cz/novinky/")
+            response.raise_for_status()
     html_tree = html.fromstring(response.content)
     html_tree.make_links_absolute(response.url)
 
