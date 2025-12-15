@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Vylepšování seznamu kandidátů, nové bydlení a
 Image: images/img-9653.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru? Tentokrát je to na 13 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/368
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/115724215303822568
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2025-11-28_tydenni-poznamky-konecne-hotovy-kurz-knedlik-v-krku-a-klubove-akce.md) už utekl nějaký ten týden (28. 11. až 15. 12.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
