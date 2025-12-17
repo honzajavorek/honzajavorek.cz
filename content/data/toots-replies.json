@@ -6,7 +6,94 @@
     "toot_url": "https://mastodonczech.cz/@honzajavorek/115724215303822568",
     "favourites_count": 0,
     "reblogs_count": 1,
-    "replies": []
+    "replies": [
+      {
+        "id": 115728088437871403,
+        "created_at": "2025-12-16T07:34:48+00:00",
+        "in_reply_to_id": 115724215303822568,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://witter.cz/users/banterCZ/statuses/115728088330930354",
+        "url": "https://witter.cz/@banterCZ/115728088330930354",
+        "replies_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> Kdy bude záznam s Irenou Zatloukalovou? Jsi mě celkem nalákal.</p>",
+        "account": {
+          "id": 109337559172025233,
+          "username": "banterCZ",
+          "acct": "banterCZ@witter.cz",
+          "display_name": "Luboš Račanský",
+          "url": "https://witter.cz/@banterCZ",
+          "uri": "https://witter.cz/users/banterCZ",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/337/559/172/025/233/original/8da1035a74f11069.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/337/559/172/025/233/original/8da1035a74f11069.jpeg"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ],
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": 115728091885441730,
+        "created_at": "2025-12-16T07:35:42.687000+00:00",
+        "in_reply_to_id": 115728088437871403,
+        "in_reply_to_account_id": 109337559172025233,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115728091885441730",
+        "url": "https://mastodonczech.cz/@honzajavorek/115728091885441730",
+        "favourites_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://witter.cz/@banterCZ\" class=\"u-url mention\">@<span>banterCZ</span></a></span> Odhadem během dneška. Je to sestříhané, zbývá to publikovat.</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 109337559172025233,
+            "username": "banterCZ",
+            "url": "https://witter.cz/@banterCZ",
+            "acct": "banterCZ@witter.cz"
+          }
+        ],
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      }
+    ]
   },
   {
     "url": "https://honzajavorek.cz/blog/tydenni-poznamky-konecne-hotovy-kurz-knedlik-v-krku-a-klubove-akce/",
