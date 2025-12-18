@@ -1,5 +1,73 @@
 [
   {
+    "id": 115734541471322764,
+    "created_at": "2025-12-17T10:55:55.565000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115734541471322764",
+    "url": "https://mastodonczech.cz/@honzajavorek/115734541471322764",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Pokud vás aspoň trochu baví hudba, nejspíš se vám bude líbit tenhle kanál. <a href=\"https://www.youtube.com/@synthet7\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"\">youtube.com/@synthet7</span><span class=\"invisible\"></span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://www.youtube.com/@synthet7",
+      "title": "Synthet",
+      "description": "music for fun!\n",
+      "language": "cs",
+      "type": "link",
+      "provider_name": "YouTube",
+      "width": 900,
+      "height": 900,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/010/250/783/original/2a47111cb2481d96.jpg",
+      "blurhash": "U47LTAKAE3nL%2R:RkoI01r-%Kby9ZxA%0S6"
+    },
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
+    "id": 115734343075583518,
+    "created_at": "2025-12-17T10:05:28.285000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115734343075583518",
+    "url": "https://mastodonczech.cz/@honzajavorek/115734343075583518",
+    "replies_count": 3,
+    "favourites_count": 5,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Zajímavé varování: „Dítě, jehož formativní zkušeností bude vztah s algoritmem, si vybuduje návyk na to, že svět se točí kolem něj. Že jeho touhy jsou okamžitě uspokojeny a že kompromis je zbytečný přežitek. Až se takový člověk střetne s realitou živého vztahu, narazí do zdi. Živí lidé totiž nejsou naprogramováni k tomu, aby nás neustále hladili naše ega.“ <a href=\"https://jjsalomoun.substack.com/p/ai-pornografie-klepe-na-dvere-a-chysta\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">jjsalomoun.substack.com/p/ai-p</span><span class=\"invisible\">ornografie-klepe-na-dvere-a-chysta</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
     "id": 115700048287988608,
     "created_at": "2025-12-11T08:43:51.354000+00:00",
     "sensitive": false,
@@ -212,7 +280,8 @@
       "provider_name": "The New Stack",
       "width": 1200,
       "height": 796,
-      "blurhash": "UIEV1xrw4oX9?]I=MexHQ,V?xtxtMcoaxroc",
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/009/931/872/original/2341b21b97b3f5f2.jpg",
+      "blurhash": "UIELgBrx4oX9?]I=MexHQ,V?xtxtMcoaxroc",
       "published_at": "2025-11-11T16:30:08+00:00"
     },
     "quote_approval": {
@@ -1161,9 +1230,10 @@
       "description": "Massive tech companies tried to own syndication. They failed.",
       "language": "en",
       "type": "link",
-      "width": 2400,
-      "height": 1200,
-      "blurhash": "U5S6Pl9F~X?Ix^RjMxfj~q%MRjM{IAR*t7of"
+      "width": 1200,
+      "height": 630,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/009/337/441/original/9d490c9885f93797.png",
+      "blurhash": "UDR{.A03N2Rk9IN1WGay-?o$M}a#-=a$M{of"
     },
     "quote_approval": {
       "current_user": "automatic"

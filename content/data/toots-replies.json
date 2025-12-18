@@ -58,6 +58,7 @@
         "language": "cs",
         "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115728091885441730",
         "url": "https://mastodonczech.cz/@honzajavorek/115728091885441730",
+        "replies_count": 1,
         "favourites_count": 1,
         "favourited": false,
         "reblogged": false,
@@ -84,6 +85,46 @@
             "username": "banterCZ",
             "url": "https://witter.cz/@banterCZ",
             "acct": "banterCZ@witter.cz"
+          }
+        ],
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": 115734811517832627,
+        "created_at": "2025-12-17T12:04:27+00:00",
+        "in_reply_to_id": 115728091885441730,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://witter.cz/users/banterCZ/statuses/115734810977684784",
+        "url": "https://witter.cz/@banterCZ/115734810977684784",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> mi to lehce připomnělo scénku: Richard Hendricks employee speech <a href=\"https://www.youtube.com/watch?v=-mSiJyU5aiM\" rel=\"nofollow noopener\" translate=\"no\" target=\"_blank\"><span class=\"invisible\">https://www.</span><span class=\"\">youtube.com/watch?v=-mSiJyU5aiM</span><span class=\"invisible\"></span></a></p>",
+        "account": {
+          "id": 109337559172025233,
+          "username": "banterCZ",
+          "acct": "banterCZ@witter.cz",
+          "display_name": "Luboš Račanský",
+          "url": "https://witter.cz/@banterCZ",
+          "uri": "https://witter.cz/users/banterCZ",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/337/559/172/025/233/original/8da1035a74f11069.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/337/559/172/025/233/original/8da1035a74f11069.jpeg"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
           }
         ],
         "quote_approval": {
