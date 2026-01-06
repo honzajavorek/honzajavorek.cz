@@ -1,5 +1,47 @@
 [
   {
+    "id": 115843253279105607,
+    "created_at": "2026-01-05T15:42:46.106000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115843253279105607",
+    "url": "https://mastodonczech.cz/@honzajavorek/115843253279105607",
+    "reblogs_count": 1,
+    "favourites_count": 6,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Už jsem zahlédl několik kritik ikonek v novém macOS, ale tahle mi přijde nejlepší. Doteď mi ty ikonky byly upřímně dost jedno, ale po tomhle článku už to asi nemůžu nevidět a hlavně je zřejmé, že jde stranou nějaké estetické cítění a vkus – ty ikonky jdou proti všem řemeslným doporučením založeným na tom, jak lidé používají počítače. <a href=\"https://tonsky.me/blog/tahoe-icons/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">tonsky.me/blog/tahoe-icons/</span><span class=\"invisible\"></span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://tonsky.me/blog/tahoe-icons/",
+      "title": "It’s hard to justify Tahoe icons",
+      "description": "Looking at the first principles of icon design—and how Apple failed to apply all of them in macOS Tahoe",
+      "language": "en",
+      "type": "link",
+      "provider_name": "tonsky.me",
+      "width": 1200,
+      "height": 630,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/010/377/152/original/dcd89799a899ff5c.png",
+      "blurhash": "UJRLJ]0qNhEA~1=;xTjXNHxWocWCogIvNLxs",
+      "published_at": "2026-01-05T00:00:00+00:00"
+    },
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
     "id": 115828160739363452,
     "created_at": "2026-01-02T23:44:32.227000+00:00",
     "sensitive": false,
@@ -58,7 +100,6 @@
       "type": "link",
       "width": 2400,
       "height": 1260,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/010/354/034/original/f62cd49fcbe6520c.png",
       "blurhash": "UIP%9OWC~Wt7xufQRjj[~qoe9FWBIUfQxtay"
     },
     "quote_approval": {
