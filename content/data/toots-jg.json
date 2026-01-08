@@ -1,5 +1,79 @@
 [
   {
+    "id": 115855497014578136,
+    "created_at": "2026-01-07T19:36:30.690000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115855497014578136",
+    "url": "https://mastodonczech.cz/@honzajavorek/115855497014578136",
+    "replies_count": 1,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Levnější chleba u nás v pekárně stojí 70 Kč, dražší 100 Kč. Tak asi čas zdražit předplatné v klubu, nebo co.</p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> <a href=\"https://mastodonczech.cz/tags/chleba\" class=\"mention hashtag\" rel=\"tag\">#<span>chleba</span></a> <a href=\"https://mastodonczech.cz/tags/kab%C3%A1t\" class=\"mention hashtag\" rel=\"tag\">#<span>kabát</span></a></p>",
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      },
+      {
+        "name": "chleba",
+        "url": "https://mastodonczech.cz/tags/chleba"
+      },
+      {
+        "name": "kabat",
+        "url": "https://mastodonczech.cz/tags/kabat"
+      }
+    ],
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
+    "id": 115851989187290685,
+    "created_at": "2026-01-07T04:44:25.483000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115851989187290685",
+    "url": "https://mastodonczech.cz/@honzajavorek/115851989187290685",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Nový <a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> newsletter je venku! „Listopad 2025 ve světě IT juniorů” je k přečtení tady: <a href=\"https://junior.guru/news/listopad-2025-ve-svete-it-junioru-1883/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">junior.guru/news/listopad-2025</span><span class=\"invisible\">-ve-svete-it-junioru-1883/</span></a> (4 min čtení)</p>",
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ],
+    "card": {
+      "url": "https://junior.guru/news/listopad-2025-ve-svete-it-junioru-1883/",
+      "title": "Listopad 2025 ve světě IT juniorů",
+      "description": "Začínáš v IT? V tomhle newsletteru najdeš pozvánky, kurzy, podcasty, přednášky, články a další zdroje, které tě posunou a namotivují.",
+      "language": "cs",
+      "type": "link",
+      "width": 1280,
+      "height": 720,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/010/153/474/original/b2f948f382efd868.png",
+      "blurhash": "U}Sr_5kJt7W8ocfRWEj?t3a}WFocWFfPobWF"
+    },
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
     "id": 115842757881990596,
     "created_at": "2026-01-05T13:36:46.942000+00:00",
     "in_reply_to_id": 115841545637094646,
@@ -253,6 +327,7 @@
       "type": "link",
       "width": 1280,
       "height": 720,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/010/153/474/original/b2f948f382efd868.png",
       "blurhash": "U}Sr_5kJt7W8ocfRWEj?t3a}WFocWFfPobWF"
     },
     "quote_approval": {
