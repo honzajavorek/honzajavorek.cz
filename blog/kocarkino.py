@@ -24,7 +24,7 @@ def main():
     calendar.add("uid", sha256(CALENDAR_UID_SEED.encode("utf-8")).hexdigest())
 
     for attempt in stamina.retry_context(
-        on=(requests.RequestException, OSError),
+        on=(requests.RequestException, OSError, TimeoutError),
         wait_max=60,
     ):
         click.echo(f"Requesting kcvozovna.cz, attempt #{attempt.num}", err=True)

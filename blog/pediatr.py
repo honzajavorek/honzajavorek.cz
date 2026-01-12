@@ -34,7 +34,7 @@ def main(feed_id: str):
     feed.title("Dětské Baranova")
 
     for attempt in stamina.retry_context(
-        on=(requests.RequestException, OSError),
+        on=(requests.RequestException, OSError, TimeoutError),
         wait_max=60,
     ):
         click.echo(f"Requesting detske-baranova.cz, attempt #{attempt.num}", err=True)
