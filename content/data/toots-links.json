@@ -1,5 +1,39 @@
 [
   {
+    "id": 115881808444590063,
+    "created_at": "2026-01-12T11:07:51.245000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115881808444590063",
+    "url": "https://mastodonczech.cz/@honzajavorek/115881808444590063",
+    "replies_count": 1,
+    "favourites_count": 2,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>„Yes, maybe you think that you worked so hard to learn coding, and now machines are doing it for you. But what was the fire inside you, when you coded till night to see your project working? It was building. And now you can build more and better, if you find your way to use AI effectively. The fun is still there, untouched.“ <a href=\"https://antirez.com/news/158\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">antirez.com/news/158</span><span class=\"invisible\"></span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://antirez.com/news/158",
+      "title": "Don't fall into the anti-AI hype - <antirez>",
+      "type": "link"
+    },
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
     "id": 115864688683855820,
     "created_at": "2026-01-09T10:34:05.009000+00:00",
     "sensitive": false,
@@ -91,6 +125,7 @@
       "provider_name": "tonsky.me",
       "width": 1200,
       "height": 630,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/010/377/152/original/fec4389962d33eb2.png",
       "blurhash": "UJRLJ]0qNhEA~1=;xTjXNHxWocWCogIvNLxs",
       "published_at": "2026-01-05T00:00:00+00:00"
     },
@@ -160,7 +195,7 @@
       "type": "link",
       "width": 2400,
       "height": 1260,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/010/354/034/original/d4e1768ce37db1be.png",
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/010/354/034/original/f4553a0ddf1aeaba.png",
       "blurhash": "UIP%9OWC~Wt7xufQRjj[~qoe9FWBIUfQxtay"
     },
     "quote_approval": {
@@ -201,7 +236,6 @@
       "provider_name": "Andrew Nesbitt",
       "width": 1200,
       "height": 630,
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/010/315/864/original/1923c134b71a534b.png",
       "blurhash": "UTJ%2dxZWBNH~BkBWCayk9ayazay9aoeayWB",
       "published_at": "2025-12-26T10:00:00+00:00"
     },
