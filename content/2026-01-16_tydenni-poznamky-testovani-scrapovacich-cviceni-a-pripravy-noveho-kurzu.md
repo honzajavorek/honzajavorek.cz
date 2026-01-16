@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Testování scrapovacích cvičení a přípravy nov
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru? Tentokrát je to na 8 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/370
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/115905959376368892
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2026-01-09_tydenni-poznamky-vanoce-a-tak.md) už utekl nějaký ten týden (9. 1. až 16. 1.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
