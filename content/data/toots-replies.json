@@ -6,7 +6,139 @@
     "toot_url": "https://mastodonczech.cz/@honzajavorek/115905959376368892",
     "favourites_count": 0,
     "reblogs_count": 1,
-    "replies": []
+    "replies": [
+      {
+        "id": 115906793797280924,
+        "created_at": "2026-01-16T21:01:56+00:00",
+        "in_reply_to_id": 115905959376368892,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodon.social/users/dmajda/statuses/115906793742329097",
+        "url": "https://mastodon.social/@dmajda/115906793742329097",
+        "replies_count": 1,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> Díky moc za zmínku! Akorát tedy přemýšlím, co znamená „role elitního génia“, protože tak se tedy vůbec necítím 🙂</p>",
+        "account": {
+          "id": 111710927871508211,
+          "username": "dmajda",
+          "acct": "dmajda@mastodon.social",
+          "display_name": "David Majda",
+          "url": "https://mastodon.social/@dmajda",
+          "uri": "https://mastodon.social/users/dmajda",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/111/710/927/871/508/211/original/29fff9669ef9febe.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/111/710/927/871/508/211/original/29fff9669ef9febe.jpg"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ],
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": 115906882222326883,
+        "created_at": "2026-01-16T21:24:26.724000+00:00",
+        "in_reply_to_id": 115906793797280924,
+        "in_reply_to_account_id": 111710927871508211,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115906882222326883",
+        "url": "https://mastodonczech.cz/@honzajavorek/115906882222326883",
+        "replies_count": 1,
+        "edited_at": "2026-01-16T21:27:34.531000+00:00",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.social/@dmajda\" class=\"u-url mention\">@<span>dmajda</span></a></span> Já mám takový fetiš, že když někdo někdy v životě napíše produkce-hodný překladač, tak je u mně už navždy elitní génius 😂</p><p>Předmět o překladačích jsem na VŠ žral, ale nakonec jej prošel jen s odřenýma ušima.</p><p>Po škole jsem si koupil i učebnici o překladačích od Meduny, ačkoliv nešla v ČR sehnat a musel jsem ji draze koupit přes USA, kde ji původně napsal a vydal. Nikdy jsem ji pak už teda neotevřel.</p><p>Jsem prostě uctívač tohoto oboru a to, že jsi byl označen za elitního génia ber třeba jako collateral damage téhle mé úchylky.</p><p>Ale asi jsem tím teda myslel něco jako že se nebojíš ponořit do technologicky/teoreticky/matematicky náročnějších výzev.</p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 111710927871508211,
+            "username": "dmajda",
+            "url": "https://mastodon.social/@dmajda",
+            "acct": "dmajda@mastodon.social"
+          }
+        ],
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": 115906892158433697,
+        "created_at": "2026-01-16T21:26:58.348000+00:00",
+        "in_reply_to_id": 115906882222326883,
+        "in_reply_to_account_id": 111710927871508211,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115906892158433697",
+        "url": "https://mastodonczech.cz/@honzajavorek/115906892158433697",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.social/@dmajda\" class=\"u-url mention\">@<span>dmajda</span></a></span> Tyjo jak jsem to napsal, tak jsem si vzpomněl, že jsem možná jeden jednoduchý produkční překladač snad i napsal 🙀 </p><p>Zkusil jsem to najít a ono to možná stále ještě existuje a dostalo to název MQL 😀 💪 </p><p><a href=\"https://forum.mergado.cz/t/jazyk-mql/2490\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">forum.mergado.cz/t/jazyk-mql/2</span><span class=\"invisible\">490</span></a></p>",
+        "application": {
+          "name": "Web"
+        },
+        "account": {
+          "id": 110921870573231541,
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "mentions": [
+          {
+            "id": 111710927871508211,
+            "username": "dmajda",
+            "url": "https://mastodon.social/@dmajda",
+            "acct": "dmajda@mastodon.social"
+          }
+        ],
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      }
+    ]
   },
   {
     "url": "https://honzajavorek.cz/blog/tydenni-poznamky-vanoce-a-tak/",
