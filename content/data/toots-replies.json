@@ -58,7 +58,8 @@
         "language": "cs",
         "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115906882222326883",
         "url": "https://mastodonczech.cz/@honzajavorek/115906882222326883",
-        "replies_count": 1,
+        "replies_count": 2,
+        "favourites_count": 1,
         "edited_at": "2026-01-16T21:27:34.531000+00:00",
         "favourited": false,
         "reblogged": false,
@@ -104,6 +105,8 @@
         "language": "cs",
         "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115906892158433697",
         "url": "https://mastodonczech.cz/@honzajavorek/115906892158433697",
+        "replies_count": 1,
+        "favourites_count": 1,
         "favourited": false,
         "reblogged": false,
         "muted": false,
@@ -129,6 +132,87 @@
             "username": "dmajda",
             "url": "https://mastodon.social/@dmajda",
             "acct": "dmajda@mastodon.social"
+          }
+        ],
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": 115909724625460916,
+        "created_at": "2026-01-17T09:27:17+00:00",
+        "in_reply_to_id": 115906882222326883,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodon.social/users/dmajda/statuses/115909724575536515",
+        "url": "https://mastodon.social/@dmajda/115909724575536515",
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span></p><p>„Já mám takový fetiš, že když někdo někdy v životě napíše produkce-hodný překladač, tak je u mně už navždy elitní génius 😂“</p><p>I ty, Brute? 😀 Přijde mi, že vývojáři mají z překladačů a věcí okolo zbytečně vítr. Přitom většina algoritmů je přímočarých (stromečky a rekurze), komplikované to začíná být až hodně „dole“ (optimalizace, generování instrukcí, …).</p><p>„Ale asi jsem tím teda myslel něco jako že se nebojíš ponořit do […] náročnějších výzev.“</p><p>Jo, tak nějak jsem to pochopil 🙂</p>",
+        "account": {
+          "id": 111710927871508211,
+          "username": "dmajda",
+          "acct": "dmajda@mastodon.social",
+          "display_name": "David Majda",
+          "url": "https://mastodon.social/@dmajda",
+          "uri": "https://mastodon.social/users/dmajda",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/111/710/927/871/508/211/original/29fff9669ef9febe.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/111/710/927/871/508/211/original/29fff9669ef9febe.jpg"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
+          }
+        ],
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": 115909753379863174,
+        "created_at": "2026-01-17T09:34:36+00:00",
+        "in_reply_to_id": 115906892158433697,
+        "in_reply_to_account_id": 110921870573231541,
+        "sensitive": false,
+        "visibility": "public",
+        "language": "cs",
+        "uri": "https://mastodon.social/users/dmajda/statuses/115909753340549445",
+        "url": "https://mastodon.social/@dmajda/115909753340549445",
+        "favourites_count": 1,
+        "favourited": true,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> Hezké 🙂</p><p>Když jsem vyvíjel PEG.js, tak mě překvapilo, kolik takovýchhle „malých“ věcí existuje. A když nad tím přemýšlím, tak jsem snad ani nedělal na větším projektu, který by nějaký malý jazyk v sobě neobsahoval.</p><p>Prostě překladače jsou všude 🤓</p>",
+        "account": {
+          "id": 111710927871508211,
+          "username": "dmajda",
+          "acct": "dmajda@mastodon.social",
+          "display_name": "David Majda",
+          "url": "https://mastodon.social/@dmajda",
+          "uri": "https://mastodon.social/users/dmajda",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/111/710/927/871/508/211/original/29fff9669ef9febe.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/111/710/927/871/508/211/original/29fff9669ef9febe.jpg"
+        },
+        "mentions": [
+          {
+            "id": 110921870573231541,
+            "username": "honzajavorek",
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "acct": "honzajavorek"
           }
         ],
         "quote_approval": {
