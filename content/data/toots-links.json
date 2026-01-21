@@ -1,5 +1,81 @@
 [
   {
+    "id": 115927281923892583,
+    "created_at": "2026-01-20T11:52:21.471000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115927281923892583",
+    "url": "https://mastodonczech.cz/@honzajavorek/115927281923892583",
+    "favourites_count": 5,
+    "quotes_count": 1,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Člověk si o těch věcech čte každý den zvlášť, vsakuje jednu po druhé, a dokud nepřijde takovýhle článek, ani si neuvědomí, kolik toho už je a jak příšerné to je. Přemýšlím, co můžu dělat, než se rozpadne i úplný zbytek důvěry v USA. <a href=\"https://www.voxpot.cz/clanky/trump-prestal-schovavat-kym-skutecne-je\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">voxpot.cz/clanky/trump-prestal</span><span class=\"invisible\">-schovavat-kym-skutecne-je</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://www.voxpot.cz/clanky/trump-prestal-schovavat-kym-skutecne-je",
+      "title": "Trump přestal schovávat, kým skutečně je",
+      "description": "Druhou polovinu loňského roku trávila administrativa Donalda Trumpa vnitrostranickými hádkami a rácháním se v epsteinovském skandálu. Bylo to ticho před bouří. Teď americký prezident vyhrožuje vojenskými údery jednomu státu za druhým a nejradši by zrušil nadcházející volby.",
+      "language": "cs",
+      "type": "link",
+      "width": 1960,
+      "height": 1300,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/010/504/625/original/b31894ff5dd03d54.jpg",
+      "image_description": "Americký prezident Donald Trump",
+      "blurhash": "UeI#AXjstkw{~AxtgNMxt7M{WXogR*a$n$od"
+    },
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
+    "id": 115926469972799088,
+    "created_at": "2026-01-20T08:25:52.082000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115926469972799088",
+    "url": "https://mastodonczech.cz/@honzajavorek/115926469972799088",
+    "reblogs_count": 1,
+    "favourites_count": 2,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>„Nemusíte být programátorka, ani nemusíte hned (ani za pět let) posílat prostředky na jejich vývoj a údržbu. Ani instalovat a používat hned všechno. Stačí jeden software, jedna alternativní služba. Prostě jen zvídavě vstoupit a namísto nedostatků vidět komunitu. Stejně jako si nosíme komba z dodávek, obrazy do schodů a podáváme teplé lahváče v plesnivých sklepech. S potměšilou radostí. Jen tak zlehka. Zlehka si užívat digitální autonomní zóny.“ <a href=\"https://www.gobgob.org/2025/01/20/goblog-na-barikadach-svobodneho-internetu/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">gobgob.org/2025/01/20/goblog-n</span><span class=\"invisible\">a-barikadach-svobodneho-internetu/</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://www.gobgob.org/2025/01/20/goblog-na-barikadach-svobodneho-internetu/",
+      "title": "Na barikádách svobodného internetu – GobGob",
+      "language": "en",
+      "type": "link"
+    },
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
     "id": 115904577442129865,
     "created_at": "2026-01-16T11:38:18.575000+00:00",
     "sensitive": false,
@@ -78,7 +154,7 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115900827276454120",
     "url": "https://mastodonczech.cz/@honzajavorek/115900827276454120",
-    "replies_count": 1,
+    "replies_count": 2,
     "reblogs_count": 2,
     "favourites_count": 6,
     "favourited": false,
@@ -301,6 +377,7 @@
       "type": "link",
       "width": 2400,
       "height": 1260,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/010/354/034/original/9cd998abf6459b92.png",
       "blurhash": "UIP%9OWC~Wt7xufQRjj[~qoe9FWBIUfQxtay"
     },
     "quote_approval": {
