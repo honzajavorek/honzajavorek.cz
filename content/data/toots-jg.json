@@ -1,5 +1,97 @@
 [
   {
+    "id": 115932252527352690,
+    "created_at": "2026-01-21T08:56:26.856000+00:00",
+    "in_reply_to_id": 115932239848214979,
+    "in_reply_to_account_id": 110921870573231541,
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115932252527352690",
+    "url": "https://mastodonczech.cz/@honzajavorek/115932252527352690",
+    "reblogs_count": 2,
+    "favourites_count": 4,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>S Artemem jsme se kdysi potkali jako kolegové v Oracle (v ex-Apiary týmu), kde jsme společně pracovali právě na nástrojích pro testování API. Od té doby jenom čumím, jak jeho hvězda stoupá:</p><p>👉 Jeho open source nástroj Mock Service Worker je průmyslovým standardem na mockování APIček v JavaScriptu a používají jej i v největších technologických firmách (Microsoft, Google, AWS, Netflix, Vercel, Uber, Spotify…) <a href=\"https://mswjs.io/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mswjs.io/</span><span class=\"invisible\"></span></a></p><p>👉 Jeho naming-cheatsheet má na GitHubu 14.2 tisíc hvězdiček od lidí z celého světa <a href=\"https://github.com/kettanaito/naming-cheatsheet\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">github.com/kettanaito/naming-c</span><span class=\"invisible\">heatsheet</span></a></p><p>👉 Napsal a pod pseudonymem Zak Archer vydal svou vlastní knihu Loggerheads <a href=\"https://zakarcher.com/books/loggerheads\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">zakarcher.com/books/loggerheads</span><span class=\"invisible\"></span></a></p><p>Artema jste mohli vidět vloni na konferenci FrontKon, kam jej do programu ulovil Libor Vaněk. Jeho přednáška tam měla super ohlasy.</p><p>No a v úterý v 18:00 jej můžete vidět na našem klubovém Discordu 🤩</p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> <a href=\"https://mastodonczech.cz/tags/mswjs\" class=\"mention hashtag\" rel=\"tag\">#<span>mswjs</span></a> <a href=\"https://mastodonczech.cz/tags/kettanaito\" class=\"mention hashtag\" rel=\"tag\">#<span>kettanaito</span></a></p>",
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      },
+      {
+        "name": "mswjs",
+        "url": "https://mastodonczech.cz/tags/mswjs"
+      },
+      {
+        "name": "kettanaito",
+        "url": "https://mastodonczech.cz/tags/kettanaito"
+      }
+    ],
+    "card": {
+      "url": "https://mswjs.io/",
+      "title": "Mock Service Worker",
+      "description": "API mocking library for browser and Node.js",
+      "language": "en",
+      "type": "link",
+      "width": 1200,
+      "height": 630,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/000/683/616/original/e3db4ce0b8037526.jpg",
+      "blurhash": "U57T,?x]1zs:t7ayWVkC6*js[:WWSgbHsmo0"
+    },
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
+    "id": 115932239848214979,
+    "created_at": "2026-01-21T08:53:13.392000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/115932239848214979",
+    "url": "https://mastodonczech.cz/@honzajavorek/115932239848214979",
+    "replies_count": 1,
+    "reblogs_count": 1,
+    "favourites_count": 2,
+    "edited_at": "2026-01-21T08:53:34.324000+00:00",
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>Proč programátoři kašlou na testy?</p><p>Kdybych měl na tu otázku odpovědět já, tak se profesorsky zamyslím, jak jde vůbec kašlat na testy v době, kdy jsou skoro tím jediným, co má smysl psát?</p><p>Hezky ručně a exaktně vyspecifikuju, co má program dělat, a implementaci pak snadno doplní AI coding agent.</p><p>Ale i v mojem kódu je hromada chybějících testů, a zrovna včera jsem AI agentovi psal „add unit tests for function parse_interests()” 😅</p><p>Takže mlčím a počkám si, s čím přijde do klubu příští týden v úterý 27.1. Artem, a jestli mou morálku přiblíží těm zářným ideálům 🌤️</p><p>A hlavně co naučí juniory, protože ti by se to s pomocí téhle přednášky mohli naučit rovnou správně, což?</p><p>Prý probereme nejčastější příčiny, které lidem brání kvalitně testovat: od strachů a mylných představ, až po technické znalosti a konkrétní knihovny.</p><p><a href=\"https://junior.guru/events/58/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">junior.guru/events/58/</span><span class=\"invisible\"></span></a></p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a></p>",
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ],
+    "card": {
+      "url": "https://junior.guru/events/58/",
+      "title": "Artem Zakharchenko– Proč programátoři kašlou na testy – online akce na Discordu junior.guru",
+      "description": "Klub junior.guru pořádá vzdělávací akce, online na svém Discordu. Mohou to být přednášky, stream, Q&A, AMA, webináře… Toto je stránka o jedné z nich.",
+      "language": "cs",
+      "type": "link",
+      "width": 1280,
+      "height": 720,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/010/512/534/original/20f81f30594b81cb.png",
+      "blurhash": "U~MQmu05RjxsobayWYj@owWER-s,R.j=obWF"
+    },
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
     "id": 115929196131711660,
     "created_at": "2026-01-20T19:59:09.979000+00:00",
     "sensitive": false,
