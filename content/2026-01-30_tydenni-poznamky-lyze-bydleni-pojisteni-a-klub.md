@@ -54,7 +54,7 @@ Tento týden jsem pracoval na tom, abych měl v [eggtray API](https://github.com
 
 Pak jsem chtěl ještě přidat screenshoty, pokud má projekt nějaké živé demo, ale to se ukázalo zapeklitější a po několika hodinách programování a vymýšlení jsem velkou část kódu zase smazal. Chtěl jsem použít Simonův [shot-scraper](https://github.com/simonw/shot-scraper) a obrázky vyrobit přímo v rámci eggtray repozitáře, ale pak jsem vyhodnotil, že to možná není nejmoudřejší a že je to komplexnější, než jsem myslel. A taky jsem [narazil na chyby](github.com/simonw/shot-scraper/issues/117). Ještě to budu muset promyslet.
 
-## Plány
+## Zamávání roku 2025 a uvítání 2026
 
 V klubu jeden z členů vykopnul vlákno, kam mohli lidi psát svoje plány na rok 2026. Mělo to mít tuhle strukturu:
 
