@@ -39,7 +39,10 @@ def main(feed_id: str):
     ):
         click.echo(f"Requesting detske-baranova.cz, attempt #{attempt.num}", err=True)
         with attempt:
-            response = requests.get("https://www.detske-baranova.cz/novinky/")
+            response = requests.get(
+                "https://www.detske-baranova.cz/novinky/",
+                timeout=60.0,
+            )
             response.raise_for_status()
     html_tree = html.fromstring(response.content)
     html_tree.make_links_absolute(response.url)
