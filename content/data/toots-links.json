@@ -1,5 +1,131 @@
 [
   {
+    "id": 116065250934569077,
+    "created_at": "2026-02-13T20:39:41.497000+00:00",
+    "in_reply_to_id": 116065243659379918,
+    "in_reply_to_account_id": 110921870573231541,
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/116065250934569077",
+    "url": "https://mastodonczech.cz/@honzajavorek/116065250934569077",
+    "reblogs_count": 1,
+    "favourites_count": 1,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>V Arminově článku je odkaz na tohle video, kde autor výroku „I now honestly think that most engineers who still think that agents will be plopped into existing software development loops - tickets, push to GitHub, run CI, review  a PR, merge a PR - aren&#39;t thinking far enough ahead.“ vysvětluje na konkrétním příkladu, co tím myslí. <a href=\"https://x.com/thorstenball/status/2022310010391302259\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">x.com/thorstenball/status/2022</span><span class=\"invisible\">310010391302259</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://x.com/thorstenball/status/2022310010391302259",
+      "title": "Thorsten Ball (@thorstenball) na platformě X",
+      "description": "\"I am the bottleneck now\"\n\nFew more thoughts",
+      "language": "cs",
+      "type": "link",
+      "provider_name": "X (formerly Twitter)",
+      "width": 1920,
+      "height": 1080,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/010/707/015/original/464c37385ea010ed.jpeg",
+      "blurhash": "U8F#m%}@8I5=t5#-$%XT0#EM^O,?pIpIRj-U"
+    },
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
+    "id": 116065243659379918,
+    "created_at": "2026-02-13T20:37:50.491000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/116065243659379918",
+    "url": "https://mastodonczech.cz/@honzajavorek/116065243659379918",
+    "replies_count": 1,
+    "reblogs_count": 1,
+    "favourites_count": 1,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>„The individual weaver no longer carried responsibility for a bad piece of cloth. If it was bad, it became the responsibility of the factory as a whole and it was just replaced outright. As we’re entering the phase of single-use plastic software, we might be moving the whole layer of responsibility elsewhere.“ <a href=\"https://lucumr.pocoo.org/2026/2/13/the-final-bottleneck/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">lucumr.pocoo.org/2026/2/13/the</span><span class=\"invisible\">-final-bottleneck/</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://lucumr.pocoo.org/2026/2/13/the-final-bottleneck/",
+      "title": "The Final Bottleneck",
+      "description": "AI speeds up writing code, but accountability and review capacity still impose hard limits.",
+      "language": "en",
+      "type": "link",
+      "provider_name": "Armin Ronacher's Thoughts and Writings",
+      "width": 1200,
+      "height": 630,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/010/706/213/original/f9741a3b7b0a5d76.png",
+      "blurhash": "U45YdIx^ITWA.9x]M_V@IURkt7jY4mM{x]j]",
+      "published_at": "2026-02-13T00:00:00+00:00"
+    },
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
+    "id": 116064743141528447,
+    "created_at": "2026-02-13T18:30:33.195000+00:00",
+    "sensitive": false,
+    "visibility": "public",
+    "language": "cs",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/116064743141528447",
+    "url": "https://mastodonczech.cz/@honzajavorek/116064743141528447",
+    "replies_count": 2,
+    "favourites_count": 4,
+    "favourited": false,
+    "reblogged": false,
+    "muted": false,
+    "bookmarked": false,
+    "pinned": false,
+    "content": "<p>„Žiju ve dvou společenských bublinách. V té první AI lidem změnilo život od základu. Našli novou náplň práce, jsou mnohem produktivnější než dřív, nabití nadšením a energií. Ale současně se trochu bojí, že to nevydrží věčně, že možná AI začne být lepší než oni a nahradí je. Lidé z druhé bubliny na to nevěřícně koukají a nechápou, o čem ti první mluví. Vždyť AI skoro nic neumí a pořád si jen vymýšlí. Proč se ty dvě skupiny tak liší? Proč ti druzí nevidí to, co vidí ti první?“ <a href=\"https://www.linkedin.com/pulse/5-stup%C5%88%C5%AF-pou%C5%BE%C3%ADv%C3%A1n%C3%AD-ai-marek-prokop-xo0df\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">linkedin.com/pulse/5-stup%C5%8</span><span class=\"invisible\">8%C5%AF-pou%C5%BE%C3%ADv%C3%A1n%C3%AD-ai-marek-prokop-xo0df</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "card": {
+      "url": "https://www.linkedin.com/pulse/5-stup%C5%88%C5%AF-pou%C5%BE%C3%ADv%C3%A1n%C3%AD-ai-marek-prokop-xo0df",
+      "title": "5 stupňů používání AI",
+      "description": "Žiju ve dvou společenských bublinách. V té první AI lidem změnilo život od základu.",
+      "language": "cs",
+      "type": "link",
+      "width": 1279,
+      "height": 720,
+      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/010/706/220/original/9004378e3263b6c2.png",
+      "blurhash": "UHB|sui[-ntl%MW?V@RjDNW?NKRPx^xaV@of"
+    },
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
     "id": 116063500255281638,
     "created_at": "2026-02-13T13:14:28.254000+00:00",
     "sensitive": false,
@@ -7,6 +133,9 @@
     "language": "cs",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/116063500255281638",
     "url": "https://mastodonczech.cz/@honzajavorek/116063500255281638",
+    "replies_count": 1,
+    "reblogs_count": 2,
+    "favourites_count": 1,
     "favourited": false,
     "reblogged": false,
     "muted": false,
@@ -77,7 +206,7 @@
     "url": "https://mastodonczech.cz/@honzajavorek/116052538876064187",
     "replies_count": 3,
     "reblogs_count": 2,
-    "favourites_count": 6,
+    "favourites_count": 7,
     "favourited": false,
     "reblogged": false,
     "muted": false,
