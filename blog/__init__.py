@@ -14,10 +14,8 @@ import pytest
 from slugify import slugify
 from strava_offline.cli import cli as strava
 
-from blog.kocarkino import main as kocarkino
 from blog.media import main as media
 from blog.notion import main as notion
-from blog.pediatr import main as pediatr
 from blog.sharing import telegram, mastodon, descriptions
 from blog.toots import main as toots
 from blog.update import main as update
@@ -31,11 +29,9 @@ def main():
 
 
 main.add_command(descriptions, "description")
-main.add_command(kocarkino, "kocarkino")
 main.add_command(mastodon, "mastodon")
 main.add_command(media, "media")
 main.add_command(notion, "notion")
-main.add_command(pediatr, "pediatr")
 main.add_command(strava, "strava")
 main.add_command(telegram, "telegram")
 main.add_command(toots, "toots")
