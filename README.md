@@ -68,7 +68,9 @@ The script downloads some data from [Strava](). Their [guidelines](https://devel
 
 ## 📦 Dependencies
 
-The npm dependencies of the theme are managed in a standard way, but the `package.json` is inside the `theme` directory and the dependencies are saved as exact versions (see `.npmrc`) as [@dependabot](https://dependabot.com/) takes care of upgrading (see `.github/dependabot.yml`). Python dependencies use [Poetry](https://python-poetry.org/). Again, [@dependabot](https://dependabot.com/) takes care of upgrading.
+- The npm dependencies of the theme are managed in a standard way, but the `package.json` is inside the `theme` directory.
+- Python dependencies are managed by [uv](https://docs.astral.sh/uv/).
+- The [@dependabot](https://dependabot.com/) takes care of upgrading (see `.github/dependabot.yml`).
 
 ## 🚀 Deployment
 

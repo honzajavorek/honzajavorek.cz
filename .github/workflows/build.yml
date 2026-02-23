@@ -16,20 +16,14 @@ jobs:
         with:
           token: ${{ secrets.GH_PAT }}
 
-      - name: Install Poetry
-        run: pipx install poetry
-
-      - name: Setup Python
-        uses: actions/setup-python@v6
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v5
         with:
-          python-version: "3.10"
-          cache: "poetry"
-
-      - name: Install Python dependencies
-        run: poetry install
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
 
       - name: Test
-        run: poetry run blog test
+        run: uv run blog test
 
       - name: Setup Node.js
         uses: actions/setup-node@v6
@@ -46,17 +40,17 @@ jobs:
           MASTODON_CLIENT_ID: ${{ secrets.MASTODON_CLIENT_ID }}
           MASTODON_CLIENT_SECRET: ${{ secrets.MASTODON_CLIENT_SECRET }}
           MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
-        run: poetry run blog toots
+        run: uv run blog toots
 
       - name: Pelican Build
-        run: poetry run blog build
+        run: uv run blog build
 
       - name: "Extra: Notion Feeds"
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
         run: |
-          poetry run blog notion reading > ./public/reading.xml
-          poetry run blog notion watching > ./public/watching.xml
+          uv run blog notion reading > ./public/reading.xml
+          uv run blog notion watching > ./public/watching.xml
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
@@ -66,21 +60,21 @@ jobs:
           cname: honzajavorek.cz
 
       - name: Wait for deployment
-        run: poetry run blog wait
+        run: uv run blog wait
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Send to Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-        run: poetry run blog telegram
+        run: uv run blog telegram
 
       - name: Send to Mastodon
         env:
           MASTODON_CLIENT_ID: ${{ secrets.MASTODON_CLIENT_ID }}
           MASTODON_CLIENT_SECRET: ${{ secrets.MASTODON_CLIENT_SECRET }}
           MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
-        run: poetry run blog mastodon
+        run: uv run blog mastodon
 
       - name: Save to Git
         uses: EndBug/add-and-commit@v9

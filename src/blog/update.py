@@ -10,7 +10,7 @@ def main(pull):
     try:
         if pull:
             subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=True)
-        subprocess.run(["poetry", "install"], check=True)
+        subprocess.run(["uv", "sync"], check=True)
         subprocess.run(["npm", "install", "--prefix=./theme"], check=True)
         shutil.rmtree("public", ignore_errors=True)
     except subprocess.CalledProcessError:

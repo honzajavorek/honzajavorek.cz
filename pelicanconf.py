@@ -110,7 +110,7 @@ THEME_STATIC_PATHS = [
 ]
 
 # Plugins
-PLUGIN_PATHS = ['blog/plugins']
+PLUGIN_PATHS = ["src/blog/plugins"]
 PLUGINS = [
     'alternates',
     'appearances',
