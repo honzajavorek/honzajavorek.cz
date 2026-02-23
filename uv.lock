@@ -82,7 +82,7 @@ requires-dist = [
     { name = "lxml", specifier = ">=5.0.0,<5.4.0" },
     { name = "markdown-del-ins", specifier = ">=1.0.0" },
     { name = "mastodon-py", specifier = ">=1.8.1" },
-    { name = "notion-client", specifier = ">=2.2.1" },
+    { name = "notion-client", specifier = "==2.2.1" },
     { name = "pelican", extras = ["markdown"], specifier = ">=4.9.1" },
     { name = "pillow", specifier = ">=10.4.0" },
     { name = "pillow-heif", specifier = ">=0.18.0" },
@@ -557,14 +557,14 @@ wheels = [
 
 [[package]]
 name = "notion-client"
-version = "3.0.0"
+version = "2.2.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "httpx" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a5/39/60afcbc0148c3dafaaefe851ae3f058077db49d66288dfb218a11a57b997/notion_client-3.0.0.tar.gz", hash = "sha256:05c4d2b4fa3491dc0de21c9c826277202ea8b8714077ee7f51a6e1a09ab23d0f", size = 31357, upload-time = "2026-02-16T11:15:48.024Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/cd/95/6e0d1cb377a296ecc940ad6c8662b6c18cada6b69cec1742295e9228a7d1/notion-client-2.2.1.tar.gz", hash = "sha256:3827e381ccb5a21aeb606686787edfb6c7a10681cb3507c4d606a1918e791061", size = 19857, upload-time = "2023-12-28T11:31:37.347Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/aa/ce/6b03f9aedd2edfcc28e23ced5c2582d543f6ddbb2be5c570533f02890b27/notion_client-3.0.0-py2.py3-none-any.whl", hash = "sha256:177fc3d2ace7e8ef69cf96f46269e8a66071c2c7c526194bf06ce7925853e759", size = 18746, upload-time = "2026-02-16T11:15:46.602Z" },
+    { url = "https://files.pythonhosted.org/packages/22/5e/977505b17c5528cffaaf561de46f58fa546345ae75866e3985039aaa991d/notion_client-2.2.1-py2.py3-none-any.whl", hash = "sha256:4ecf9ec527a124462f7bd407d9c9ead9853a9b2c8f00e56f3fa8fb15106ad871", size = 13983, upload-time = "2023-12-28T11:31:34.498Z" },
 ]
 
 [[package]]
