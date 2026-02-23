@@ -5,7 +5,6 @@ import shlex
 import subprocess
 import multiprocessing
 from pathlib import Path
-from blog.settings import SettingsModuleParam
 from textwrap import dedent
 from datetime import date
 
@@ -14,6 +13,7 @@ import pytest
 from slugify import slugify
 from strava_offline.cli import cli as strava
 
+from blog.lib import SettingsModuleParam
 from blog.media import main as media
 from blog.notion import main as notion
 from blog.sharing import telegram, mastodon, descriptions

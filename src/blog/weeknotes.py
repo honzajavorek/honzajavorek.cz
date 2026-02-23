@@ -1,7 +1,6 @@
 import json
 import re
 from pathlib import Path
-from blog.settings import SettingsModuleParam
 import math
 from datetime import date, datetime
 from urllib.parse import urlparse
@@ -14,6 +13,7 @@ import sqlite_utils
 from strava_offline.cli import cli_sqlite as strava_to_sqlite
 from slugify import slugify
 
+from blog.lib import SettingsModuleParam
 from blog.update import main as update_command
 from blog.toots import main as toots_command
 
