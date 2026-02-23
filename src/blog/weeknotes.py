@@ -186,7 +186,7 @@ def main(
         path.write_text(content)
         if open:
             click.edit(filename=".")
-            click.edit(filename=path)
+            click.edit(filename=str(path))
 
 
 def get_jg_toots(since_date: date, toots: list):

@@ -37,7 +37,7 @@ def main(
     except FileNotFoundError:
         toot_index = {}
     else:
-        toot_index = {toot["id"]: toot for toot in toots}
+        toot_index = {str(toot["id"]): normalize_toot_id(toot) for toot in toots}
     for toot in mastodon.account_statuses(
         account_id,
         limit=limit,
@@ -45,7 +45,7 @@ def main(
         exclude_replies=True,
         exclude_reblogs=True,
     ):
-        toot_index[toot["id"]] = marshall_toot(toot)
+        toot_index[str(toot["id"])] = marshall_toot(toot)
     toots = sorted(toot_index.values(), key=itemgetter("created_at"), reverse=True)
     contents = json.dumps(toots, indent=2, ensure_ascii=False)
     path_links.write_text(contents)
@@ -57,7 +57,7 @@ def main(
     except FileNotFoundError:
         toot_index = {}
     else:
-        toot_index = {toot["id"]: toot for toot in toots}
+        toot_index = {str(toot["id"]): normalize_toot_id(toot) for toot in toots}
     for toot in mastodon.account_statuses(
         account_id,
         limit=limit,
@@ -65,7 +65,7 @@ def main(
         exclude_replies=True,
         exclude_reblogs=True,
     ):
-        toot_index[toot["id"]] = marshall_toot(toot)
+        toot_index[str(toot["id"])] = marshall_toot(toot)
     toots = sorted(toot_index.values(), key=itemgetter("created_at"), reverse=True)
     contents = json.dumps(toots, indent=2, ensure_ascii=False)
     path_jg.write_text(contents)
@@ -117,6 +117,8 @@ def marshall_toot(data: dict) -> dict:
             continue
         if key == "card" and "authors" in value:
             continue
+        if key == "id":
+            value = str(value)
         if key.endswith("_at"):
             value = value.isoformat()
         if key == "card" and "published_at" in value:
@@ -124,6 +126,13 @@ def marshall_toot(data: dict) -> dict:
         if key == "poll" and "expires_at" in value:
             value["expires_at"] = value["expires_at"].isoformat()
         toot[key] = value
+    return toot
+
+
+def normalize_toot_id(toot: dict) -> dict:
+    toot = dict(toot)
+    if "id" in toot:
+        toot["id"] = str(toot["id"])
     return toot
 
 
