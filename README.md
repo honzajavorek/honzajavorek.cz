@@ -59,7 +59,7 @@ By default, the Open Graph image is set to my photo. To set a different image, a
 Inspired by [Simon Willison’s Weblog](https://simonwillison.net/), I decided to write regular weeknotes. To make the job easier, there is a script `weeknotes.py`, which generates a template article for the current week. It accepts the main topic as arguments (joins them with whitespace) or prompts for the topic interactively if not provided:
 
 ```
-$ python weeknotes.py Dovolená
+$ blog weeknotes Dovolená
 ```
 
 The script downloads some data from [Strava](). Their [guidelines](https://developers.strava.com/guidelines/) require me to have their logo here:
