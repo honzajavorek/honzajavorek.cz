@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Seznam kandidátů, hory, AI a mnoho dalšího
 Image: images/img-0560.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru? Tentokrát je to na 23 min čtení 😅
+Telegram-Comments: https://t.me/honzajavorekcz/372
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/116121719521498041
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2026-01-30_tydenni-poznamky-lyze-bydleni-pojisteni-a-klub.md) už utekl nějaký ten týden (30. 1. až 23. 2.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
