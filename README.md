@@ -21,32 +21,34 @@ The theme uses standard CSS and ECMAScript 5 for simplicity and resiliency.
 ## ⚙️ Plugins
 
 For the personal site (the index template) to work properly, there is a plugin `appearances`. It picks up static data from `content/data` or fetches it from the internet by external HTTP requests, and then injects additional information to Pelican's context.
-
+The theme uses Bootstrap CSS and a couple of tiny JS includes (instant.page, Simple Analytics), with no custom JS.
 The `alternates` plugin looks for meta data ending with `-url` in the articles and provides a list of alternate places where the article has been published. As an example, `Zdrojak-URL: https://zdrojak.cz/my-article` would appear as an alternate in the article's meta data.
 
 The `readtime` plugin calculates estimated reading time for each article. The `seealso` plugin generates other recommended articles for each article.
 
-The `comments` plugin looks for meta data ending with `-comments` in the articles and provides a list of places where the article has been shared and where people can discuss it. As an example, `Twitter-Comments: https://twitter.com/honzajavorek/status/1a2b3c4d5` would appear in the `comments` list in the article's meta data.
+For the personal site (the index template) to work properly, there is a plugin `appearances`. It picks up static data from `content/data/appearances.yml`, merges it with recent blog posts, and injects the result into Pelican's context.
 
 The `custom_feed_meta` overwrites Atom feed's top-level meta data with values from configuration.
 
 The `custom_translation_id` plugin and related settings for translation URLs allow for translations of articles with backward-compatible URLs (independent slugs with no implicit language identifier in the URL).
-
+Drop them into the `content/images` directory (or reference local/remote images in Markdown) and run `blog media` to import and normalize them. This command is also run by `blog dev`. It auto-resizes images larger than 1024px and errors out if the file is still above 1MB.
 The rest of the plugins are mostly minor automatic tweaks to the generated article markup.
 
 ## 📸 Adding Images
 
-Drop them into the `content/images` directory and let the blog reload. If it's too large, it'll error with details. Resize large images to fit the constraints reported by the error messages.
+To connect translations, add `Translation-ID` to their meta data with the same value, and set their `Lang` properly. The default language is `cs`.
 
 ## 🇨🇿 Translations
 
 To connect translations, add `Translation-ID` to their meta data with the same value, and set their `Lang` properly. The default language is `en`.
-
+To make the job easier, there is a script `weeknotes.py` (exposed as `blog weeknotes`), which generates a template article for the current week. It expects the main topic as an argument:
 ## 📚 Alternates
 
 To document where the article has been re-published, add the URLs to the meta data as `<whatever>-URL` properties. E.g. `Zdrojak-URL`, `Medium-URL`, or `DevTo-URL`.
 
-## 💬 Comments
+There is a Telegram channel at [t.me/honzajavorekcz](https://t.me/honzajavorekcz). GitHub Actions build (see `.github/workflows/build.yml`) runs the `blog telegram` command (implemented in `src/blog/sharing.py`). The command checks whether the last article has been already posted to the Telegram channel. If not, it posts it there (Telegram bot account) and records the link to the article as `Telegram-Comments` meta data. This is also how next time the script knows that the article is already posted. The change is persisted by a next step in GitHub Actions, which commits the information back to the source and pushes to the repository.
+
+Honza also shares links to stuff he finds interesting on Mastodon. The `weeknotes.py` script uses data synchronized by the `blog toots` command (Mastodon API), collects links shared since the last weeknotes, and persists them as a list at the bottom of the weeknotes article. This has been previously handled by [Pocket](https://getpocket.com/) and the [pocket-recommendations](https://github.com/honzajavorek/pocket-recommendations) library, but Honza doesn't fancy those anymore.
 
 To document where on social networks the article has been shared, add the URLs to the meta data as `<whatever>-Comments` properties. E.g. `Twitter-Comments`, `LinkedIn-Comments`, or `Facebook-Comments`. Links should appear under the article.
 
