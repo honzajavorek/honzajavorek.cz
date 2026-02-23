@@ -1,7 +1,7 @@
 import json
 import re
 from pathlib import Path
-import importlib
+from blog.settings import SettingsModuleParam
 import math
 from datetime import date, datetime
 from urllib.parse import urlparse
@@ -43,7 +43,7 @@ TITLES = {
     type=click.Path(exists=True, path_type=Path),
 )
 @click.option("--title-prefix", default="Týdenní poznámky")
-@click.option("--settings-module", default="pelicanconf", type=importlib.import_module)
+@click.option("--settings-module", default="pelicanconf.py", type=SettingsModuleParam())
 @click.option(
     "--links-path",
     default="content/data/toots-links.json",

@@ -5,7 +5,7 @@ import shlex
 import subprocess
 import multiprocessing
 from pathlib import Path
-import importlib
+from blog.settings import SettingsModuleParam
 from textwrap import dedent
 from datetime import date
 
@@ -42,7 +42,7 @@ main.add_command(weeknotes, "weeknotes")
 
 @main.command()
 @click.option("--path", "content_path", default="content", type=click.Path(exists=True))
-@click.option("--settings-module", default="publishconf", type=importlib.import_module)
+@click.option("--settings-module", default="publishconf.py", type=SettingsModuleParam())
 @click.option("--debug/--no-debug", default=True)
 @click.pass_context
 def build(context, content_path, settings_module, debug):
@@ -106,7 +106,7 @@ def new(title, content_path, debug, open):
 @main.command()
 @click.option("--path", "content_path", default="content", type=click.Path(exists=True))
 @click.option("--articles", "articles_count", default=1, type=int)
-@click.option("--settings-module", default="pelicanconf", type=importlib.import_module)
+@click.option("--settings-module", default="pelicanconf.py", type=SettingsModuleParam())
 @click.option("--wait", "wait_sec", default=10, type=int)
 @click.option("--open/--no-open", "open_browser", default=True)
 @click.option("--cache/--no-cache", default=True)
