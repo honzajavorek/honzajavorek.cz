@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Vymýšlení nového kurzu scrapování, tentokrát 
 Image: images/img-0903.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru? Tentokrát je to na 7 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/373
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/116143118783707688
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2026-02-23_tydenni-poznamky-seznam-kandidatu-hory-ai-a-mnoho-dalsiho.md) už utekl nějaký ten týden (23. 2. až 27. 2.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
