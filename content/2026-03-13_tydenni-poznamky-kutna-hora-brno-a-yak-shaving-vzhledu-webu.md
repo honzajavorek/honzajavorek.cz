@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Kutná hora, Brno, a ‚yak shaving‘ vzhledu webu
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru? Tentokrát je to na 12 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/374
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/116222705941898467
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2026-02-27_tydenni-poznamky-vymysleni-noveho-kurzu-scrapovani-tentokrat-s-ai.md) už utekl nějaký ten týden (27. 2. až 13. 3.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
