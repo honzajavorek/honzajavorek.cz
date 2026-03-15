@@ -1,10 +1,11 @@
 [
   {
-    "id": "116224293705601756",
-    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/116224293705601756",
-    "url": "https://mastodonczech.cz/@honzajavorek/116224293705601756",
-    "content": "<p>„…it combines two very heated topics, licensing and AI, in the worst possible way.“ <a href=\"https://lucumr.pocoo.org/2026/3/5/theseus/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">lucumr.pocoo.org/2026/3/5/thes</span><span class=\"invisible\">eus/</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
-    "created_at": "2026-03-13T22:46:21.597000+00:00",
+    "id": "116226815517586144",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/116226815517586144",
+    "url": "https://mastodonczech.cz/@honzajavorek/116226815517586144",
+    "content": "<p>Hodně zajímavý rozhovor s Arminem na téma agentů a AI, ale i na spoustu dalších témat, která se teď týkají našeho oboru. Je to z loňského EuroPythonu, takže červen 2025, ale Armin byl dost napřed, takže mluví o věcech, které lidi často objevují až teď. <a href=\"https://www.youtube.com/watch?v=4zlHCW0Yihg\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"\">youtube.com/watch?v=4zlHCW0Yihg</span><span class=\"invisible\"></span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "created_at": "2026-03-14T09:27:41.393000+00:00",
+    "favourites_count": 2,
     "reblogged": false,
     "favourited": false,
     "sensitive": false,
@@ -19,12 +20,40 @@
     "language": "cs",
     "muted": false,
     "pinned": false,
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
+    "id": "116224293705601756",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/116224293705601756",
+    "url": "https://mastodonczech.cz/@honzajavorek/116224293705601756",
+    "content": "<p>„…it combines two very heated topics, licensing and AI, in the worst possible way.“ <a href=\"https://lucumr.pocoo.org/2026/3/5/theseus/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">lucumr.pocoo.org/2026/3/5/thes</span><span class=\"invisible\">eus/</span></a> <a href=\"https://mastodonczech.cz/tags/links\" class=\"mention hashtag\" rel=\"tag\">#<span>links</span></a></p>",
+    "created_at": "2026-03-13T22:46:21.597000+00:00",
+    "reblogs_count": 1,
+    "reblogged": false,
+    "favourited": false,
+    "sensitive": false,
+    "visibility": "public",
+    "tags": [
+      {
+        "name": "links",
+        "url": "https://mastodonczech.cz/tags/links"
+      }
+    ],
+    "bookmarked": false,
+    "language": "cs",
+    "muted": false,
+    "pinned": false,
+    "replies_count": 1,
     "card": {
       "url": "https://lucumr.pocoo.org/2026/3/5/theseus/",
       "title": "AI And The Ship of Theseus",
       "description": "Slopforks: what happens when a library gets rewritten with AI?",
       "type": "link",
-      "image": "https://mastodonczech.cz/system/cache/preview_cards/images/010/841/597/original/f55e81ae9306b615.png",
       "width": 1200,
       "height": 630,
       "provider_name": "Armin Ronacher's Thoughts and Writings",
