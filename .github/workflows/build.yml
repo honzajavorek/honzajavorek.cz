@@ -77,7 +77,7 @@ jobs:
         run: uv run blog mastodon
 
       - name: Save to Git
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           pull: --rebase --autostash
           add: ./content
