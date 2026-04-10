@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Jaro
 Image: images/img-1605.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru? Tentokrát je to na 14 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/376
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/116380806650114252
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2026-03-20_tydenni-poznamky-drobna-ale-dulezita-vylepseni-klubu-a-webu.md) už utekl nějaký ten týden (20. 3. až 10. 4.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
