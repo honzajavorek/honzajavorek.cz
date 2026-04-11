@@ -4,9 +4,175 @@
     "slug": "tydenni-poznamky-jaro",
     "created_at": "2026-04-10T14:09:39.601000+00:00",
     "toot_url": "https://mastodonczech.cz/@honzajavorek/116380806650114252",
-    "favourites_count": 0,
+    "favourites_count": 3,
     "reblogs_count": 1,
-    "replies": []
+    "replies": [
+      {
+        "id": "116381033397334549",
+        "uri": "https://genserver.social/objects/aebde8f4-a684-4617-98ee-fe85cd4e3bfe",
+        "url": "https://genserver.social/objects/aebde8f4-a684-4617-98ee-fe85cd4e3bfe",
+        "account": {
+          "id": "111100047166256143",
+          "username": "liskin",
+          "acct": "liskin@genserver.social",
+          "display_name": "Tomáš Janoušek",
+          "url": "https://genserver.social/users/liskin",
+          "uri": "https://genserver.social/users/liskin",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/797ffc4bb2bdfab7.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/797ffc4bb2bdfab7.jpg"
+        },
+        "in_reply_to_id": "116380806650114252",
+        "in_reply_to_account_id": "110921870573231541",
+        "content": "<span class=\"h-card\"><a class=\"u-url mention\" href=\"https://mastodonczech.cz/@honzajavorek\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> díky za tip na lychee!<br><br>dlouho jsem používal linkchecker, ale musel jsem kolem něj postavit šílenou jq věc (<a href=\"https://github.com/liskin/work.lisk.in/blob/b832470aea16732d7f1b929bf67bca30af1d0b3c/.github/workflows/linkchecker.yaml#L14-L68\" rel=\"nofollow noopener\" target=\"_blank\">https://github.com/liskin/work.lisk.in/blob/b832470aea16732d7f1b929bf67bca30af1d0b3c/.github/workflows/linkchecker.yaml#L14-L68</a>), abych redukoval false positives, a stejně mi z toho každý týden chodí mail s chybama, který už ani nečtu :-(<br><br>tak třeba to s lychee bude lepší; no anebo nebude, protože kvůli scrapování spousta webů blokuje roboty včetně tady těch \"dobrých\"",
+        "created_at": "2026-04-10T15:07:10.116000+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          }
+        ],
+        "bookmarked": false,
+        "language": "cs",
+        "muted": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "current_user": "denied"
+        }
+      },
+      {
+        "id": "116381485467516803",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/116381485467516803",
+        "url": "https://mastodonczech.cz/@honzajavorek/116381485467516803",
+        "account": {
+          "id": "110921870573231541",
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "in_reply_to_id": "116381033397334549",
+        "in_reply_to_account_id": "111100047166256143",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\">@<span>liskin</span></a></span> No to jsem teď právě řešil dlouhodobě, že ty anti-bot a anti-scraping věci hází moc false positives. Ale když jsem potunil to nastavení, tak je to najednou v pohodě. Tak se klidně inspiruj <a href=\"https://github.com/juniorguru/junior.guru/blob/main/lychee.toml\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">github.com/juniorguru/junior.g</span><span class=\"invisible\">uru/blob/main/lychee.toml</span></a></p>",
+        "created_at": "2026-04-10T17:02:17.530000+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://genserver.social/users/liskin",
+            "username": "liskin",
+            "acct": "liskin@genserver.social",
+            "id": "111100047166256143"
+          }
+        ],
+        "bookmarked": false,
+        "application": {
+          "name": "Web"
+        },
+        "language": "cs",
+        "muted": false,
+        "pinned": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "116381492461516864",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/116381492461516864",
+        "url": "https://mastodonczech.cz/@honzajavorek/116381492461516864",
+        "account": {
+          "id": "110921870573231541",
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "in_reply_to_id": "116381485467516803",
+        "in_reply_to_account_id": "111100047166256143",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\">@<span>liskin</span></a></span> Jinak lychee jsem dal i na <a href=\"https://github.com/pyvec/docs.pyvec.org/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">github.com/pyvec/docs.pyvec.or</span><span class=\"invisible\">g/</span></a>, kde máme Sphinx, který má zabudovaný link checker, ale prostě lychee je lepší. A tam používám i přímo nějakou tu GitHub Action, která umí vytvořit Issue na GitHubu, když je problém. To je docela užitečné, že se to hned trackuje a dá se to komentovat a případně fixnout a v tom fixu zmínit to Issue a tak.</p>",
+        "created_at": "2026-04-10T17:04:04.250000+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://genserver.social/users/liskin",
+            "username": "liskin",
+            "acct": "liskin@genserver.social",
+            "id": "111100047166256143"
+          }
+        ],
+        "bookmarked": false,
+        "application": {
+          "name": "Web"
+        },
+        "language": "cs",
+        "muted": false,
+        "pinned": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "116381603457373249",
+        "uri": "https://genserver.social/objects/b193dbbc-f17a-4d37-b4dc-b6f06d893ed7",
+        "url": "https://genserver.social/objects/b193dbbc-f17a-4d37-b4dc-b6f06d893ed7",
+        "account": {
+          "id": "111100047166256143",
+          "username": "liskin",
+          "acct": "liskin@genserver.social",
+          "display_name": "Tomáš Janoušek",
+          "url": "https://genserver.social/users/liskin",
+          "uri": "https://genserver.social/users/liskin",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/797ffc4bb2bdfab7.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/797ffc4bb2bdfab7.jpg"
+        },
+        "in_reply_to_id": "116381492461516864",
+        "in_reply_to_account_id": "110921870573231541",
+        "content": "<span class=\"h-card\"><a class=\"u-url mention\" href=\"https://mastodonczech.cz/@honzajavorek\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> pecka, všechno si to záložkuju, dík!",
+        "created_at": "2026-04-10T17:32:07.882000+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          }
+        ],
+        "bookmarked": false,
+        "language": "cs",
+        "muted": false,
+        "quote_approval": {
+          "current_user": "denied"
+        }
+      }
+    ]
   },
   {
     "url": "https://honzajavorek.cz/blog/tydenni-poznamky-drobna-ale-dulezita-vylepseni-klubu-a-webu/",
