@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Vylepšování homepage
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru? Tentokrát je to na 10 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/377
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/116421703252397031
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2026-04-10_tydenni-poznamky-jaro.md) už utekl nějaký ten týden (10. 4. až 17. 4.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
