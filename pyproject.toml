@@ -18,7 +18,8 @@ dependencies = [
     "telethon>=1.36.0",
     "beautifulsoup4>=4.12.3",
     "click>=8.1.7",
-    "strava-offline>=1.1.0",
+    # Temporary hotfix until strava-offline ships a regular release with commit df8891ef29b8f073954a738fec478611fc48f959.
+    "strava-offline @ git+https://github.com/liskin/strava-offline.git@df8891ef29b8f073954a738fec478611fc48f959",
     "sqlite-utils>=3.37",
     "send2trash>=1.8.3",
     "pillow-heif>=0.18.0",
@@ -52,5 +53,5 @@ filterwarnings = [
 ]
 
 [build-system]
-requires = ["uv-build>=0.5.0"]
+requires = ["uv-build>=0.5.0,<0.12"]
 build-backend = "uv_build"
