@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Budeč, Okoř a nová patička na webu
 Image: images/img-1936.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru? Tentokrát je to na 7 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/378
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/116459983302188102
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2026-04-17_tydenni-poznamky-vylepsovani-homepage.md) už utekl nějaký ten týden (17. 4. až 24. 4.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
