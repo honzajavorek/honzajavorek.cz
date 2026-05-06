@@ -1,5 +1,113 @@
 [
   {
+    "id": "116522320584918036",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/116522320584918036",
+    "url": "https://mastodonczech.cz/@honzajavorek/116522320584918036",
+    "in_reply_to_id": "116522313397282535",
+    "in_reply_to_account_id": "110921870573231541",
+    "content": "<p>A dneska tohle, nová sekce na úvodní stránku. To by šlo, ne?</p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a></p>",
+    "created_at": "2026-05-05T13:58:30.878000+00:00",
+    "favourites_count": 3,
+    "reblogged": false,
+    "favourited": false,
+    "sensitive": false,
+    "visibility": "public",
+    "media_attachments": [
+      {
+        "id": "116522317976441569",
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/116/522/317/976/441/569/original/f8fc3d434c988183.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/116/522/317/976/441/569/small/f8fc3d434c988183.png",
+        "meta": {
+          "original": {
+            "width": 2694,
+            "height": 1066,
+            "aspect": 2.527204502814259,
+            "size": "2694x1066"
+          },
+          "small": {
+            "width": 763,
+            "height": 302,
+            "aspect": 2.5264900662251657,
+            "size": "763x302"
+          }
+        },
+        "blurhash": "UFRfqMxu?Ht8~boKRkax^pfOM{j@?NayWBj[",
+        "description": "Čtyři nové boxíky s ikonkama o tom, co najdeš na junior.guru a čím je ten web vyjímečný oproti jiným projektům (diferenciace)."
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ],
+    "bookmarked": false,
+    "language": "cs",
+    "muted": false,
+    "pinned": false,
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
+    "id": "116522313397282535",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/116522313397282535",
+    "url": "https://mastodonczech.cz/@honzajavorek/116522313397282535",
+    "content": "<p>Tak jsem si včera připravil nové metriky a grafy. Normálně by to sežralo příliš mnoho času a asi bych se na to vyprdl, ale s AI agentem to byly dvě nové stránky v „about“ sekci hotové za jeden den:</p><p><a href=\"https://junior.guru/about/candidates/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">junior.guru/about/candidates/</span><span class=\"invisible\"></span></a><br /><a href=\"https://junior.guru/about/jobs/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">junior.guru/about/jobs/</span><span class=\"invisible\"></span></a></p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a></p>",
+    "created_at": "2026-05-05T13:56:41.204000+00:00",
+    "favourites_count": 1,
+    "reblogged": false,
+    "favourited": false,
+    "sensitive": false,
+    "visibility": "public",
+    "media_attachments": [
+      {
+        "id": "116522311922885054",
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/116/522/311/922/885/054/original/7fc902f60fed31e2.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/116/522/311/922/885/054/small/7fc902f60fed31e2.png",
+        "meta": {
+          "original": {
+            "width": 1470,
+            "height": 1518,
+            "aspect": 0.9683794466403162,
+            "size": "1470x1518"
+          },
+          "small": {
+            "width": 472,
+            "height": 487,
+            "aspect": 0.9691991786447639,
+            "size": "472x487"
+          }
+        },
+        "blurhash": "UcP?{|xZ-.of~mNGM}j[IVRkWVt6D,oet6WC",
+        "description": "Počet inzerátů uveřejněných na junior.guru, sloupcový graf"
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      }
+    ],
+    "bookmarked": false,
+    "language": "cs",
+    "muted": false,
+    "pinned": false,
+    "replies_count": 1,
+    "edited_at": "2026-05-05T13:57:27.834000+00:00",
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
     "id": "116494685622759272",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/116494685622759272",
     "url": "https://mastodonczech.cz/@honzajavorek/116494685622759272",
