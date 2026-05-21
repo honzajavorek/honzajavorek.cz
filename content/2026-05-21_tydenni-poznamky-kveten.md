@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Květen
 Image: images/img-2549.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru? Tentokrát je to na 14 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/379
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/116613976656067919
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2026-04-24_tydenni-poznamky-budec-okor-a-nova-paticka-na-webu.md) už utekl nějaký ten týden (24. 4. až 21. 5.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
