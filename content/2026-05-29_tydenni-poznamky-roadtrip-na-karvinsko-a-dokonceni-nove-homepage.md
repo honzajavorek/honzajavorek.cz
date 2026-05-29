@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Roadtrip na Karvinsko a dokončení nové homepage
 Image: images/img-2916.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru? Tentokrát je to na 9 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/380
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/116658251836299174
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2026-05-21_tydenni-poznamky-kveten.md) už utekl nějaký ten týden (21. 5. až 29. 5.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
