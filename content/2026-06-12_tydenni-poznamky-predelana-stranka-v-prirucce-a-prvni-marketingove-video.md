@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Předělaná stránka v příručce a první marketi
 Image: images/img-3518.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru? Tentokrát je to na 12 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/381
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/116737867604308965
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2026-05-29_tydenni-poznamky-roadtrip-na-karvinsko-a-dokonceni-nove-homepage.md) už utekl nějaký ten týden (29. 5. až 12. 6.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
