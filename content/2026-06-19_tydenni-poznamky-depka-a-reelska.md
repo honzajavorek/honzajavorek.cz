@@ -32,7 +32,7 @@ Nevzdávám to, ale není to psychicky moc jednoduché. Pokud mě nezachrání r
 
 V průběhu týdne jsem se z toho pomalu hrabal ven. Dost mi pomohla spolupráce s Patrikem na videích a první malé úspěchy, když – nejspíš i na základě reelsek a zvýšené aktivitě na sociálních sítích – do klubu přišlo na zkoušku pár nových lidí.
 
-Taky je dobrý přiznat si, že je toho teď na mně poslední dobou prostě moc, protože finišuje půl roku intenzivní rekonstrukce, únava je na maximu, příští týden se stěhujeme a nebudeme mít chvíli ani kde bydlet, a do toho neustálé obavy a nekonečný tunel bez světla na konci, jestli zachráním podnikání, nebo to budu muset zabalit, a brzy přijde na svět další mládě, což určitě spoustu věcí nezjednoduší.
+Taky je dobrý přiznat si, že je toho teď na mně poslední dobou prostě moc, protože finišuje půl roku intenzivní rekonstrukce, únava je na maximu, příští týden se stěhujeme a nebudeme mít chvíli ani kde bydlet, minulý týden nemocné děcko, tento týden zase nemocná žena, a do toho neustálé obavy a nekonečný tunel bez světla na konci, jestli zachráním podnikání, nebo to budu muset zabalit, a brzy přijde na svět další mládě, což určitě spoustu věcí nezjednoduší.
 
 Kdybych v hlavě nenosil všechno tohle najednou, asi bych měl víc elánu vyhrnout rukávy a nějak to prostě přeprat.
 
@@ -71,7 +71,7 @@ Ale přísahám, že jsem nespamoval, fakt jsem radil užitečné věci, stejně
 -   Pokračuju ve zkoušení kombinace VSCodium + Claude. Teď moc neprogramuju, takže změna workflow mi tolik nepřekáží. Přidal jsem si notifikace, abych si vždycky všiml, když po mně agent něco chce, nebo když je hotový.
 -   Zašel jsem na úřad a změnil si trvalý pobyt. Aktualizoval jsem pak adresu na webu a ve Fakturoidu.
 -   Hlídal jsem kurz dolaru, abych mohl vyměnit část úspor, aby bylo na kuchyňské uchytky a podobné důležité věci 💰
--   Navštívil jsem slavného DJe, prokecal s ním většinu dnešního dopoledne, a půjčil si od něj krabice na stěhování.
+-   Navštívil jsem slavného DJe, prokecal s ním většinu dnešního dopoledne, a půjčil si od něj krabice na stěhování. Tahal mě z depky a radil mi, jak by se to dalo do budoucna pojmout, což mi nasadilo brouka do hlavy.
 -   Definitivně jsem se rozhodl přeskočit červnový týden pro Apify s tím, že si to kdyžtak nahradím v červenci a udělám dva týdny.
 -   V pátek mě kámoš vytáhl na [festival Naruby](https://filmfestnaruby.cz/), což bylo příjemné osvěžení. Omylem se nám povedlo objevit se na premiéře filmu [The VelociPastor 2](https://www.csfd.cz/film/1590741-the-velocipastor-2/recenze/) a srdečně jej doporučuji.
 -   E-maily, [klubový Discord](https://junior.guru/club/), [Pyvec Slack](https://docs.pyvec.org/operations/support.html#sit-kontaktu), zprávy na LinkedIn, upgrady závislostí na všech projektech. Udělil jsem jedno stipendium, vítal jsem nové členy v klubu, udělal jsem review na jedno CVčko.
