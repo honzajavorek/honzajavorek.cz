@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Depka a reelska
 Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru? Tentokrát je to na 6 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/382
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/116777238799137674
 
 Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
 Od [posledních poznámek]({filename}2026-06-12_tydenni-poznamky-predelana-stranka-v-prirucce-a-prvni-marketingove-video.md) už utekl nějaký ten týden (12. 6. až 19. 6.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
