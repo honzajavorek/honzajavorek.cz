@@ -63,6 +63,7 @@ Ale přísahám, že jsem nespamoval, fakt jsem radil užitečné věci, stejně
 
 ## Další
 
+-   Začal jsem předělávat [kapitolu o projektech](https://junior.guru/handbook/projects/).
 -   CoreSkill upravili [svoji webovku](https://coreskill.tech/), tak jsem jim trochu aktualizoval [zápis v katalogu](https://junior.guru/courses/coreskill/).
 -   Pokračuju ve zkoušení kombinace VSCodium + Claude. Teď moc neprogramuju, takže změna workflow mi tolik nepřekáží. Přidal jsem si notifikace, abych si vždycky všiml, když po mně agent něco chce, nebo když je hotový.
 -   Zašel jsem na úřad a změnil si trvalý pobyt. Aktualizoval jsem pak adresu na webu a ve Fakturoidu.
