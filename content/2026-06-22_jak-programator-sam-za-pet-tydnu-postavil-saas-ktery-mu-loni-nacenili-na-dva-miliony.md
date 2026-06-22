@@ -71,7 +71,7 @@ Vím o čem mluvím. Od svých 20 let mám živnosťák, pracoval jsem na volné
 
 Byl jsem součástí [úspěšně prodaného Apiary](https://byznys.hn.cz/c1-65593630-oracle-kupuje-za-miliardy-korun-cesky-start-up-apiary-zakladatele-ve-firme-zustavaji), dva roky jsem se snažil pochopit korporát, a od roku 2019, což je už sedm let, podnikám a vytvářím [junior.guru](https://junior.guru/), produkt v jednom člověku.
 
-Nasbíral jsem takové know how, že kdybych těď začínal něco nového a rozjížděl to s Claude Code, budu se cítit úplně přesně jako Uďan
+Nasbíral jsem takové know how, že kdybych těď začínal něco nového a rozjížděl to s Claude Code, budu se cítit úplně přesně jako Uďan.
 
 Ale zároveň si myslím, že je to nepřenositelné a není možné si myslet, že každý má tyhle možnosti. A to i když pominu těch $200 měsíčně.
 
