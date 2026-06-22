@@ -1,6 +1,9 @@
 Title: Jak programátor sám za pět týdnů postavil SaaS, který mu loni nacenili na dva miliony
 Image: images/jak-si-postavit-za-mesic-saas-bez-programatoru.jpeg
 Lang: cs
+Description: „Jak programátor sám za pět týdnů postavil SaaS, který mu loni nacenili na dva miliony” Tentokrát je to na 6 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/384
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/116793410105336096
 
 ![Jak programátor sám za pět týdnů postavil SaaS, který mu loni nacenili na dva miliony]({static}/images/jak-si-postavit-za-mesic-saas-bez-programatoru.jpeg)
 Na AI obrázky se nevztahuje copyright, takže s nimi jako autor reakčního článku můžu dělat, co chci, muhehe!
