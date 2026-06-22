@@ -43,7 +43,7 @@ Uďan může díky vibecodingu vytvořit kvalitně postavený produkt jen díky 
 
 A k tomu má samozřejmě těch $200 měsíčně a ohromné zkušenosti jako podnikatel, ředitel a produkťák. Dokáže vymyslet celý produkt, zorganizovat práci na něm, a taky odhadnout, jak se má prodávat.
 
-Svého AI se však ptá „Je tahle funkce fakt nutná?“ nebo „Je to opravdu systémové řešení?“ a hlásá programátorská moudra jako „Nejlevnější funkce je ta, kterou neuděláte.“
+Svého AI se ptá „Je tahle funkce fakt nutná?“ nebo „Je to opravdu systémové řešení?“ a hlásá programátorská moudra jako „Nejlevnější funkce je ta, kterou neuděláte.“
 
 Moc dobře zná slova verzování, git commit, refactoring, webhook, check, logging, invalidace cache, monitoring, dependencies, UX, performance, zátěž serveru…
 
