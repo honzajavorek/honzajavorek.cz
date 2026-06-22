@@ -100,7 +100,7 @@ def new(title, content_path, debug, open):
     else:
         path.write_text(content)
         if open:
-            click.edit(filename=path)
+            click.edit(filename=str(path))
 
 
 @main.command()
