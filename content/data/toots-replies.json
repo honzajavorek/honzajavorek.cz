@@ -4,9 +4,502 @@
     "slug": "jak-programator-sam-za-pet-tydnu-postavil-saas-ktery-mu-loni-nacenili-na-dva-miliony",
     "created_at": "2026-06-22T11:00:08.689000+00:00",
     "toot_url": "https://mastodonczech.cz/@honzajavorek/116793410105336096",
-    "favourites_count": 1,
-    "reblogs_count": 0,
-    "replies": []
+    "favourites_count": 8,
+    "reblogs_count": 4,
+    "replies": [
+      {
+        "id": "116793958584336081",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/116793958584336081",
+        "url": "https://mastodonczech.cz/@honzajavorek/116793958584336081",
+        "account": {
+          "id": "110921870573231541",
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "in_reply_to_id": "116793410105336096",
+        "in_reply_to_account_id": "110921870573231541",
+        "content": "<p>Ach jo. Konečně jsem chtěl taky napsat něco kontroverzního, vyvolat LinkedInové bouře, zvednout tisíce diskutujících ze židle, ale nic nebude! Prostě mám jenom pravdu 😆</p>",
+        "created_at": "2026-06-22T13:19:37.811000+00:00",
+        "favourites_count": 9,
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "media_attachments": [
+          {
+            "id": "116793952723088976",
+            "type": "image",
+            "url": "https://mastodonczech.cz/system/media_attachments/files/116/793/952/723/088/976/original/0851e50deba59d5b.jpg",
+            "preview_url": "https://mastodonczech.cz/system/media_attachments/files/116/793/952/723/088/976/small/0851e50deba59d5b.jpg",
+            "meta": {
+              "original": {
+                "width": 630,
+                "height": 500,
+                "aspect": 1.26,
+                "size": "630x500"
+              },
+              "small": {
+                "width": 539,
+                "height": 428,
+                "aspect": 1.2593457943925233,
+                "size": "539x428"
+              }
+            },
+            "blurhash": "UxNwQM~qa#M{%MRPj@kCtRM{fPj[oJogayoK",
+            "description": "složitý meme, jehož součástí je odpověď Miroslava Uďana na můj reakční článek: „omg, Honzo, jsem dojat! :-) díky, vlastně máš asi pravdu a já to neviděl :-)“"
+          }
+        ],
+        "bookmarked": false,
+        "application": {
+          "name": "Web"
+        },
+        "language": "cs",
+        "muted": false,
+        "pinned": false,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "116794259887012899",
+        "uri": "https://social.vivaldi.net/users/sesivany/statuses/116794259033334005",
+        "url": "https://social.vivaldi.net/@sesivany/116794259033334005",
+        "account": {
+          "id": "112705284451433640",
+          "username": "sesivany",
+          "acct": "sesivany@vivaldi.net",
+          "display_name": "Jiří Eischmann",
+          "url": "https://social.vivaldi.net/@sesivany",
+          "uri": "https://social.vivaldi.net/users/sesivany",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/112/705/284/451/433/640/original/146e3f0ee59d34a4.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/112/705/284/451/433/640/original/146e3f0ee59d34a4.jpeg"
+        },
+        "in_reply_to_id": "116793410105336096",
+        "in_reply_to_account_id": "110921870573231541",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> To je i má zkušenost. Když k tomu sedne člověk bez toho technického vhledu, tak to pořád končí špatně. Ono to i z uživatelského pohledu dělá, co má, ale implementace je plná špatných voleb. Tu architekturu to pořád moc neumí.</p><p>Ale jsem zvědavý, kam se to bude ubírat. My jsme měli o tu motivaci naučit se programovat postaráno. Co jsme si nenaprogramovali, to jsme neměli, ale současná generace? Bude lidi bavit se to učit jen kvůli tomu, aby kontrolovali kód po AI? 🤷‍♂️</p>",
+        "created_at": "2026-06-22T14:36:02+00:00",
+        "favourites_count": 4,
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          }
+        ],
+        "bookmarked": false,
+        "language": "cs",
+        "muted": false,
+        "replies_count": 2,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "116794376766221582",
+        "uri": "https://mamutovo.cz/ap/users/116030707491594106/statuses/116794376722182371",
+        "url": "https://mamutovo.cz/@tritol128/116794376722182371",
+        "account": {
+          "id": "116030841184553008",
+          "username": "tritol128",
+          "acct": "tritol128@mamutovo.cz",
+          "display_name": "Tritol",
+          "url": "https://mamutovo.cz/@tritol128",
+          "uri": "https://mamutovo.cz/ap/users/116030707491594106",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/116/030/841/184/553/008/original/dc7cc0dced3ae912.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/116/030/841/184/553/008/original/dc7cc0dced3ae912.png"
+        },
+        "in_reply_to_id": "116794259887012899",
+        "in_reply_to_account_id": "112705284451433640",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://social.vivaldi.net/@sesivany\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>sesivany</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> Možná to časem zas začne být cool jako vinyly, osmibity a podobně 🤷‍♂️. Třeba já se snažím uplést vlastní ponožky, věc co se dá koupit za pár korun a existují tisíce variant a provedení...</p>",
+        "created_at": "2026-06-22T15:05:58+00:00",
+        "favourites_count": 2,
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "unlisted",
+        "mentions": [
+          {
+            "url": "https://social.vivaldi.net/@sesivany",
+            "username": "sesivany",
+            "acct": "sesivany@vivaldi.net",
+            "id": "112705284451433640"
+          },
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          }
+        ],
+        "bookmarked": false,
+        "language": "cs",
+        "muted": false,
+        "replies_count": 2,
+        "quote_approval": {
+          "current_user": "denied"
+        }
+      },
+      {
+        "id": "116794404174980875",
+        "uri": "https://social.vivaldi.net/users/sesivany/statuses/116794403652036797",
+        "url": "https://social.vivaldi.net/@sesivany/116794403652036797",
+        "account": {
+          "id": "112705284451433640",
+          "username": "sesivany",
+          "acct": "sesivany@vivaldi.net",
+          "display_name": "Jiří Eischmann",
+          "url": "https://social.vivaldi.net/@sesivany",
+          "uri": "https://social.vivaldi.net/users/sesivany",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/112/705/284/451/433/640/original/146e3f0ee59d34a4.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/112/705/284/451/433/640/original/146e3f0ee59d34a4.jpeg"
+        },
+        "in_reply_to_id": "116794376766221582",
+        "in_reply_to_account_id": "116030841184553008",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mamutovo.cz/@tritol128\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>tritol128</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> O tom nepochybuji, že se zachová \"řemeslné\" programování, ale co si budeme... Na jednoho, kdo si šaty šije, je 1000, kteří si kupují rychlou módu z Asie. Je možné, že s programováním to dopadne podobně.</p>",
+        "created_at": "2026-06-22T15:12:49+00:00",
+        "favourites_count": 1,
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "unlisted",
+        "mentions": [
+          {
+            "url": "https://mamutovo.cz/@tritol128",
+            "username": "tritol128",
+            "acct": "tritol128@mamutovo.cz",
+            "id": "116030841184553008"
+          },
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          }
+        ],
+        "bookmarked": false,
+        "language": "cs",
+        "muted": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "116794421409098842",
+        "uri": "https://mastodonczech.cz/users/madhcz/statuses/116794421409098842",
+        "url": "https://mastodonczech.cz/@madhcz/116794421409098842",
+        "account": {
+          "id": "111203229674913224",
+          "username": "madhcz",
+          "acct": "madhcz",
+          "display_name": "\\TeX{}nosma\\v{z}ka",
+          "url": "https://mastodonczech.cz/@madhcz",
+          "uri": "https://mastodonczech.cz/users/madhcz",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/111/203/229/674/913/224/original/d031fcc602676c87.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/111/203/229/674/913/224/original/d031fcc602676c87.jpeg"
+        },
+        "in_reply_to_id": "116794376766221582",
+        "in_reply_to_account_id": "116030841184553008",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mamutovo.cz/@tritol128\" class=\"u-url mention\">@<span>tritol128</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://social.vivaldi.net/@sesivany\" class=\"u-url mention\">@<span>sesivany</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\">@<span>honzajavorek</span></a></span> &quot;dědeček po večerech sedával za stařičkýma vodíkovýma kamínkama a psal na osmibitu kód. Babička u plotny míchala guláš z umělých tkání a sbírala z povrchu transmastné kyseliny, které dědeček nerád.&quot;</p>",
+        "created_at": "2026-06-22T15:17:19.959000+00:00",
+        "favourites_count": 4,
+        "reblogged": false,
+        "favourited": true,
+        "sensitive": false,
+        "visibility": "unlisted",
+        "mentions": [
+          {
+            "url": "https://mamutovo.cz/@tritol128",
+            "username": "tritol128",
+            "acct": "tritol128@mamutovo.cz",
+            "id": "116030841184553008"
+          },
+          {
+            "url": "https://social.vivaldi.net/@sesivany",
+            "username": "sesivany",
+            "acct": "sesivany@vivaldi.net",
+            "id": "112705284451433640"
+          },
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          }
+        ],
+        "bookmarked": false,
+        "application": {
+          "name": "Mastodon for Android",
+          "website": "https://app.joinmastodon.org/android"
+        },
+        "language": "cs",
+        "muted": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "116794454277322252",
+        "uri": "https://mastodonczech.cz/users/madhcz/statuses/116794454277322252",
+        "url": "https://mastodonczech.cz/@madhcz/116794454277322252",
+        "account": {
+          "id": "111203229674913224",
+          "username": "madhcz",
+          "acct": "madhcz",
+          "display_name": "\\TeX{}nosma\\v{z}ka",
+          "url": "https://mastodonczech.cz/@madhcz",
+          "uri": "https://mastodonczech.cz/users/madhcz",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/111/203/229/674/913/224/original/d031fcc602676c87.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/111/203/229/674/913/224/original/d031fcc602676c87.jpeg"
+        },
+        "in_reply_to_id": "116794421409098842",
+        "in_reply_to_account_id": "116030841184553008",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mamutovo.cz/@tritol128\" class=\"u-url mention\">@<span>tritol128</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://social.vivaldi.net/@sesivany\" class=\"u-url mention\">@<span>sesivany</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\">@<span>honzajavorek</span></a></span> &quot;celých těch 200 let spolu se měli rádi, oslavili nanokrystalickou svatbu a užívali si spokojeně longevity&quot;</p>",
+        "created_at": "2026-06-22T15:25:41.488000+00:00",
+        "favourites_count": 3,
+        "reblogged": false,
+        "favourited": true,
+        "sensitive": false,
+        "visibility": "unlisted",
+        "mentions": [
+          {
+            "url": "https://mamutovo.cz/@tritol128",
+            "username": "tritol128",
+            "acct": "tritol128@mamutovo.cz",
+            "id": "116030841184553008"
+          },
+          {
+            "url": "https://social.vivaldi.net/@sesivany",
+            "username": "sesivany",
+            "acct": "sesivany@vivaldi.net",
+            "id": "112705284451433640"
+          },
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          }
+        ],
+        "bookmarked": false,
+        "application": {
+          "name": "Mastodon for Android",
+          "website": "https://app.joinmastodon.org/android"
+        },
+        "language": "cs",
+        "muted": false,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "116794862892813320",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/116794862892813320",
+        "url": "https://mastodonczech.cz/@honzajavorek/116794862892813320",
+        "account": {
+          "id": "110921870573231541",
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "in_reply_to_id": "116794259887012899",
+        "in_reply_to_account_id": "112705284451433640",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://social.vivaldi.net/@sesivany\" class=\"u-url mention\">@<span>sesivany</span></a></span> Čím dál tím víc vidím AI akorát jako nový funnel pro lidi, jak se dostat k programování a naučit se ho, tbh 😀 Motivace učit se základy se nachází sama, byť někomu může stačit i čistý vibecoding, a to je přece taky v pohodě, stejně jako někomu stačí upravování třech HTML tagů ve WordPressu a neučí se kvůli tomu programovat.</p>",
+        "created_at": "2026-06-22T17:09:36.466000+00:00",
+        "favourites_count": 1,
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://social.vivaldi.net/@sesivany",
+            "username": "sesivany",
+            "acct": "sesivany@vivaldi.net",
+            "id": "112705284451433640"
+          }
+        ],
+        "bookmarked": false,
+        "application": {
+          "name": "Web"
+        },
+        "language": "cs",
+        "muted": false,
+        "pinned": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "116794899686186010",
+        "uri": "https://social.vivaldi.net/users/sesivany/statuses/116794899289355790",
+        "url": "https://social.vivaldi.net/@sesivany/116794899289355790",
+        "account": {
+          "id": "112705284451433640",
+          "username": "sesivany",
+          "acct": "sesivany@vivaldi.net",
+          "display_name": "Jiří Eischmann",
+          "url": "https://social.vivaldi.net/@sesivany",
+          "uri": "https://social.vivaldi.net/users/sesivany",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/112/705/284/451/433/640/original/146e3f0ee59d34a4.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/112/705/284/451/433/640/original/146e3f0ee59d34a4.jpeg"
+        },
+        "in_reply_to_id": "116794862892813320",
+        "in_reply_to_account_id": "110921870573231541",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> Tím myslíš, že předpovídáš, že to bude nový funnel, nebo reálně vidíš zvyšující se poptávku po učení se programovámí díky AI? To druhé by byla skvělá zpráva.</p>",
+        "created_at": "2026-06-22T17:18:51+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          }
+        ],
+        "bookmarked": false,
+        "language": "cs",
+        "muted": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "116795322439120879",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/116795322439120879",
+        "url": "https://mastodonczech.cz/@honzajavorek/116795322439120879",
+        "account": {
+          "id": "110921870573231541",
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "in_reply_to_id": "116794899686186010",
+        "in_reply_to_account_id": "112705284451433640",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://social.vivaldi.net/@sesivany\" class=\"u-url mention\">@<span>sesivany</span></a></span> Vidím náznaky, čísla nemám. A trochu matoucí je, že lidi, kteří se k programování dostanou přes AI, se, zdá se mi, vyhnou tradičním prochozeným cestám, takže se to neprojeví tím, že víc lidí hledá „jak se naučit programovat“, nebo že by šli do kurzu, nebo do programátorských komunit, a tak. Zatím je to jen takový můj nos, ale cítím, že je tu nejspíš ohromné množství lidí, kteří díky AI programují, ale vůbec neví, že programují a že se to jmenuje programování.</p>",
+        "created_at": "2026-06-22T19:06:28.586000+00:00",
+        "favourites_count": 1,
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://social.vivaldi.net/@sesivany",
+            "username": "sesivany",
+            "acct": "sesivany@vivaldi.net",
+            "id": "112705284451433640"
+          }
+        ],
+        "bookmarked": false,
+        "application": {
+          "name": "Web"
+        },
+        "language": "cs",
+        "muted": false,
+        "pinned": false,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "116795485801004417",
+        "uri": "https://social.kernel.org/objects/b941da92-3c9a-493a-bef1-c5dab266bc60",
+        "url": "https://social.kernel.org/objects/b941da92-3c9a-493a-bef1-c5dab266bc60",
+        "account": {
+          "id": "111392829744726639",
+          "username": "pavel",
+          "acct": "pavel@social.kernel.org",
+          "display_name": "Pavel Machek",
+          "url": "https://social.kernel.org/users/pavel",
+          "uri": "https://social.kernel.org/users/pavel",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/111/392/829/744/726/639/original/49ba0a038bbcfb8b.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/111/392/829/744/726/639/original/49ba0a038bbcfb8b.jpg"
+        },
+        "in_reply_to_id": "116794404174980875",
+        "in_reply_to_account_id": "112705284451433640",
+        "content": "<span class=\"h-card\"><a class=\"u-url mention\" href=\"https://social.vivaldi.net/@sesivany\" rel=\"nofollow noopener\" target=\"_blank\">@<span>sesivany</span></a></span> <span class=\"h-card\"><a class=\"u-url mention\" href=\"https://mamutovo.cz/@tritol128\" rel=\"nofollow noopener\" target=\"_blank\">@<span>tritol128</span></a></span> <span class=\"h-card\"><a class=\"u-url mention\" href=\"https://mastodonczech.cz/@honzajavorek\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> Tak ono, na rozdil od asijske mody, programy maji skoro nulovou cenu za kopii, a nejake sitove efekty. Davam \"poradnemu\" programovani malicko vetsi sanci.",
+        "created_at": "2026-06-22T19:47:59.238000+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "unlisted",
+        "mentions": [
+          {
+            "url": "https://mamutovo.cz/@tritol128",
+            "username": "tritol128",
+            "acct": "tritol128@mamutovo.cz",
+            "id": "116030841184553008"
+          },
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          },
+          {
+            "url": "https://social.vivaldi.net/@sesivany",
+            "username": "sesivany",
+            "acct": "sesivany@vivaldi.net",
+            "id": "112705284451433640"
+          }
+        ],
+        "bookmarked": false,
+        "language": "cs",
+        "muted": false,
+        "quote_approval": {
+          "current_user": "denied"
+        }
+      }
+    ]
   },
   {
     "url": "https://honzajavorek.cz/blog/tydenni-poznamky-depka-a-reelska/",
