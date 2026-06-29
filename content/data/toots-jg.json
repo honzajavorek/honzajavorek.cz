@@ -1,5 +1,63 @@
 [
   {
+    "id": "116829626053137876",
+    "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/116829626053137876",
+    "url": "https://mastodonczech.cz/@honzajavorek/116829626053137876",
+    "in_reply_to_id": "116800761535884469",
+    "in_reply_to_account_id": "110921870573231541",
+    "content": "<p>Tak minimálně na LinkedInu ten carousel, zdá se, funguje. Na to, že jde o příspěvek se třemi slovy, to má slušný výkon.</p><p><a href=\"https://mastodonczech.cz/tags/juniorguru\" class=\"mention hashtag\" rel=\"tag\">#<span>juniorguru</span></a> <a href=\"https://mastodonczech.cz/tags/linkedin\" class=\"mention hashtag\" rel=\"tag\">#<span>linkedin</span></a></p>",
+    "created_at": "2026-06-28T20:30:20.196000+00:00",
+    "favourites_count": 1,
+    "reblogged": false,
+    "favourited": false,
+    "sensitive": false,
+    "visibility": "public",
+    "media_attachments": [
+      {
+        "id": "116829621873911759",
+        "type": "image",
+        "url": "https://mastodonczech.cz/system/media_attachments/files/116/829/621/873/911/759/original/527dfdd7475ffa4e.png",
+        "preview_url": "https://mastodonczech.cz/system/media_attachments/files/116/829/621/873/911/759/small/527dfdd7475ffa4e.png",
+        "meta": {
+          "original": {
+            "width": 1046,
+            "height": 262,
+            "aspect": 3.9923664122137406,
+            "size": "1046x262"
+          },
+          "small": {
+            "width": 958,
+            "height": 240,
+            "aspect": 3.9916666666666667,
+            "size": "958x240"
+          }
+        },
+        "blurhash": "U56RyC-;adoe?wxuV?ofOHNGRjbI8_Ioo$WY",
+        "description": "1500+ impressions"
+      }
+    ],
+    "tags": [
+      {
+        "name": "juniorguru",
+        "url": "https://mastodonczech.cz/tags/juniorguru"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://mastodonczech.cz/tags/linkedin"
+      }
+    ],
+    "bookmarked": false,
+    "language": "cs",
+    "muted": false,
+    "pinned": false,
+    "quote_approval": {
+      "automatic": [
+        "public"
+      ],
+      "current_user": "automatic"
+    }
+  },
+  {
     "id": "116800761535884469",
     "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/116800761535884469",
     "url": "https://mastodonczech.cz/@honzajavorek/116800761535884469",
@@ -22,7 +80,7 @@
     "language": "cs",
     "muted": false,
     "pinned": false,
-    "replies_count": 1,
+    "replies_count": 2,
     "card": {
       "url": "https://github.com/juniorguru/crowing",
       "title": "GitHub - juniorguru/crowing",
