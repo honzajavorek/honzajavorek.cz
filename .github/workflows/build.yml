@@ -42,6 +42,14 @@ jobs:
           MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
         run: uv run blog toots
 
+      - name: Restore Pelican content cache
+        uses: actions/cache@v4
+        with:
+          path: cache
+          key: pelican-cache-${{ github.run_id }}
+          restore-keys: |
+            pelican-cache-
+
       - name: Pelican Build
         run: uv run blog build
 
