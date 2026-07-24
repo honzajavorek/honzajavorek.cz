@@ -1,7 +1,4 @@
 from lxml import etree
-from pelican import signals
-
-from blog.plugins.utils import parse_html, get_articles
 
 
 TITLES = {
@@ -10,16 +7,10 @@ TITLES = {
 }
 
 
-def register():
-    signals.all_generators_finalized.connect(enhance_headings)
-
-
-def enhance_headings(generators):
-    for article in get_articles(generators):
-        with parse_html(article, modify=True) as html_tree:
-            for query in ['.//h1[@id]', './/h2[@id]', './/h3[@id]', './/h4[@id]']:
-                for heading in html_tree.findall(query):
-                    add_permalink(heading, TITLES[article.lang])
+def enhance_headings(html_tree, lang):
+    for query in ['.//h1[@id]', './/h2[@id]', './/h3[@id]', './/h4[@id]']:
+        for heading in html_tree.findall(query):
+            add_permalink(heading, TITLES[lang])
 
 
 def add_permalink(heading, title):

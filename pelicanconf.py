@@ -117,17 +117,13 @@ PLUGIN_PATHS = ["src/blog/plugins"]
 PLUGINS = [
     'alternates',
     'appearances',
-    'code_blocks',
     'comments',
     'custom_feed_meta',
     'custom_translation_id',
     'database',
-    'headings',
-    'media',
-    'readtime',
+    'enhance_content',
     'replies',
     'seealso',
-    'tables',
 ]
 def CUSTOM_FEED_META(settings):
     return {

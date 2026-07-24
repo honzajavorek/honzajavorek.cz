@@ -1,49 +1,40 @@
-import re
 import logging
-from pathlib import Path
 from functools import lru_cache
 
 from lxml import html
-from pelican import signals
 from PIL import Image
 
-from blog.plugins.utils import parse_html, wrap_element, get_articles
+from blog.plugins.utils import wrap_element
 
 
 logger = logging.getLogger(__name__)
 
 
-def register():
-    signals.all_generators_finalized.connect(process_media)
+def set_image_dimensions(article, content_dir):
+    if getattr(article, 'image', None):
+        image_path = content_dir / article.image
+        width, height = get_dimensions(image_path)
+        article.metadata['image_width'] = width
+        article.image_width = width
+        article.metadata['image_height'] = height
+        article.image_height = height
 
 
-def process_media(generators):
-    content_dir = Path(generators[0].settings['PATH'])
+def process_media(html_tree):
+    for iframe in html_tree.xpath('//iframe'):
+        iframe_to_figure(iframe)
 
-    for article in get_articles(generators):
-        if getattr(article, 'image', None):
-            image_path = content_dir / article.image
-            width, height = get_dimensions(image_path)
-            article.metadata['image_width'] = width
-            article.image_width = width
-            article.metadata['image_height'] = height
-            article.image_height = height
+    for object_ in html_tree.xpath('//object'):
+        object_to_figure(object_)
 
-        with parse_html(article, modify=True) as html_tree:
-            for iframe in html_tree.xpath('//iframe'):
-                iframe_to_figure(iframe)
+    for blockquote in html_tree.xpath('//blockquote'):
+        blockquote_to_figure(blockquote)
 
-            for object_ in html_tree.xpath('//object'):
-                object_to_figure(object_)
+    for img in html_tree.xpath('//p[count(img) = 1]/img'):
+        img_to_figure(img)
 
-            for blockquote in html_tree.xpath('//blockquote'):
-                blockquote_to_figure(blockquote)
-
-            for img in html_tree.xpath('//p[count(img) = 1]/img'):
-                img_to_figure(img)
-
-            for img in html_tree.xpath('//p[count(a) = 1]/a[count(img) = 1]/img'):
-                img_to_figure(img)
+    for img in html_tree.xpath('//p[count(a) = 1]/a[count(img) = 1]/img'):
+        img_to_figure(img)
 
 
 @lru_cache
