@@ -28,6 +28,8 @@ The `comments` plugin looks for meta data ending with `-comments` in the article
 
 The `readtime` plugin calculates estimated reading time for each article. The `seealso` plugin generates other recommended articles for each article.
 
+The `database` plugin writes article metadata into a SQLite file (`blog.db`) during the build. The sharing commands (`blog telegram`, `blog mastodon`, `blog descriptions`) read from this database instead of parsing the content again.
+
 The `custom_feed_meta` overwrites Atom feed's top-level meta data with values from configuration.
 
 The `custom_translation_id` plugin and related settings for translation URLs allow for translations of articles with backward-compatible URLs (independent slugs with no implicit language identifier in the URL).
@@ -95,6 +97,8 @@ Mastodon is used for both posting and reading back data. The integration has thr
 	- Weeknotes use `toots-links.json` and `toots-jg.json` to list links and junior.guru updates since the last weeknotes.
 	- Article pages show replies and counts from `toots-replies.json`.
 	- The comments list includes the `Mastodon-Comments` link.
+
+I tag toots manually with `#links` (to show up in the next weeknotes as a link) or `#juniorguru` (for a junior.guru update). The `#blog` tag is different: I never add it by hand. The `blog mastodon` command appends it automatically when it posts a new article, which is what lets that thread sync back as the article's replies.
 
 The blog does not implement webmentions or native Mastodon commenting; replies are shown only if they are part of a synced `#blog` toot thread.
 
