@@ -1,31 +1,27 @@
 from pathlib import Path
 from operator import itemgetter
+from datetime import date
+from typing import Annotated, Literal, Optional
 
+import yaml
 from pelican import signals
-import strictyaml as yaml
+from pydantic import BaseModel, ConfigDict, HttpUrl, PlainSerializer
 
 from blog.plugins.utils import get_articles
 
 
-SCHEMA = yaml.Seq(
-    yaml.Map({
-        'date': yaml.Datetime(),
-        'title': yaml.Str(),
-        'medium': yaml.Str(),
-        yaml.Optional('type', default='talk'): yaml.Enum([
-            'talk',
-            'workshop',
-            'interview',
-            'text',
-        ]),
-        yaml.Optional('url'): yaml.Url(),
-        yaml.Optional('resources_type', default='slides'): yaml.Enum([
-            'slides',
-            'text',
-        ]),
-        yaml.Optional('resources_url'): yaml.Url(),
-    }),
-)
+class YAMLConfig(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+
+
+class AppearanceConfig(YAMLConfig):
+    date: date
+    title: str
+    medium: str
+    type: Literal['talk', 'workshop', 'interview', 'text'] = 'talk'
+    url: Optional[Annotated[HttpUrl, PlainSerializer(str)]] = None
+    resources_type: Literal['slides', 'text'] = 'slides'
+    resources_url: Optional[Annotated[HttpUrl, PlainSerializer(str)]] = None
 
 
 def register():
@@ -38,9 +34,8 @@ def load_appearances(generators):
 
     # external appearances
     path = Path('./content/data/appearances.yml')
-    appearances = [entry | dict(date=entry['date'].date())
-                   for entry in
-                   yaml.load(path.read_text(), SCHEMA).data]
+    appearances = [AppearanceConfig(**record).model_dump()
+                   for record in yaml.safe_load(path.read_text())]
     appearances = sorted(appearances, key=itemgetter('date'), reverse=True)
 
     # prepare blog articles

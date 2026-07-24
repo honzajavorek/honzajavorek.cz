@@ -82,6 +82,9 @@ DIRECT_TEMPLATES = ['index', 'archives']
 
 # Generating
 OUTPUT_PATH = 'public/'
+CACHE_CONTENT = True
+LOAD_CONTENT_CACHE = True
+CONTENT_CACHING_LAYER = 'reader'
 IGNORE_FILES = [
     '.#*',
     '.DS_Store',
@@ -126,13 +129,14 @@ PLUGINS = [
     'seealso',
     'tables',
 ]
-CUSTOM_FEED_META = lambda settings: {
-    'title': settings['BLOGNAME'],
-    'link': f"{settings['SITEURL']}/{settings['ARCHIVES_URL']}",
-    'description': 'Blog Honzy Javorka',
-    'author_email': 'mail@honzajavorek.cz',
-    'author_name': settings['AUTHOR'],
-    'author_link': settings['SITEURL'],
-    'feed_copyright': f"{settings['COPYRIGHT']} {settings['AUTHOR']} <{settings['SITEURL']}>",
-}
+def CUSTOM_FEED_META(settings):
+    return {
+        'title': settings['BLOGNAME'],
+        'link': f"{settings['SITEURL']}/{settings['ARCHIVES_URL']}",
+        'description': 'Blog Honzy Javorka',
+        'author_email': 'mail@honzajavorek.cz',
+        'author_name': settings['AUTHOR'],
+        'author_link': settings['SITEURL'],
+        'feed_copyright': f"{settings['COPYRIGHT']} {settings['AUTHOR']} <{settings['SITEURL']}>",
+    }
 DB_PATH = 'blog.db'
