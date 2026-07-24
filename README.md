@@ -64,10 +64,6 @@ Inspired by [Simon Willison’s Weblog](https://simonwillison.net/), I decided t
 $ blog weeknotes Dovolená
 ```
 
-The script downloads some data from [Strava](https://www.strava.com/). Their [guidelines](https://developers.strava.com/guidelines/) require me to have their logo here:
-
-<img src="strava.svg" width="300">
-
 ## 📦 Dependencies
 
 - The npm dependencies of the theme are managed in a standard way, but the `package.json` is inside the `theme` directory.

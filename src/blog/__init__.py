@@ -11,7 +11,6 @@ from datetime import date
 import click
 import pytest
 from slugify import slugify
-from strava_offline.cli import cli as strava
 
 from blog.lib import SettingsModuleParam
 from blog.media import main as media
@@ -32,7 +31,6 @@ main.add_command(descriptions, "description")
 main.add_command(mastodon, "mastodon")
 main.add_command(media, "media")
 main.add_command(notion, "notion")
-main.add_command(strava, "strava")
 main.add_command(telegram, "telegram")
 main.add_command(toots, "toots")
 main.add_command(update, "update")

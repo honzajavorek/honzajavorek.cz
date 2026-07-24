@@ -1,7 +1,6 @@
 import json
 import re
 from pathlib import Path
-import math
 from datetime import date, datetime
 from urllib.parse import urlparse
 from textwrap import dedent
@@ -9,22 +8,12 @@ from textwrap import dedent
 from lxml.html import soupparser as html_soup
 import requests
 import click
-import sqlite_utils
-from strava_offline.cli import cli_sqlite as strava_to_sqlite
 from slugify import slugify
 
 from blog.lib import SettingsModuleParam
 from blog.update import main as update_command
 from blog.toots import main as toots_command
 
-
-STRAVA_ACTIVITY_TYPES = {
-    "run": "naběhal",
-    "walk": "při procházkách nachodil",
-    "hike": "na túrách nachodil",
-    "ride": "ujel na kole",
-    "alpineski": "sjel na lyžích",
-}
 
 TITLES = {
     "www.facebook.com": "(něco na Facebooku)",
@@ -54,16 +43,6 @@ TITLES = {
     default="content/data/toots-jg.json",
     type=click.Path(exists=True, path_type=Path),
 )
-@click.option("--strava-skip-sync", is_flag=True, default=False)
-@click.option(
-    "--strava-client-id", envvar="STRAVA_CLIENT_ID", prompt=True, hide_input=True
-)
-@click.option(
-    "--strava-client-secret",
-    envvar="STRAVA_CLIENT_SECRET",
-    prompt=True,
-    hide_input=True,
-)
 @click.option("--mastodon-client_id", envvar="MASTODON_CLIENT_ID")
 @click.option("--mastodon-client_secret", envvar="MASTODON_CLIENT_SECRET")
 @click.option("--mastodon-access_token", envvar="MASTODON_ACCESS_TOKEN")
@@ -78,9 +57,6 @@ def main(
     settings_module,
     links_path,
     jg_toots_path,
-    strava_skip_sync,
-    strava_client_id,
-    strava_client_secret,
     mastodon_client_id,
     mastodon_client_secret,
     mastodon_access_token,
@@ -113,22 +89,6 @@ def main(
     jg_toots = get_jg_toots(last_weeknotes_date, json.loads(jg_toots_path.read_text()))
     jg_toots_text = "\n        ".join([f"-   {toot['url']}" for toot in jg_toots])
 
-    # strava
-    strava_defaults = {
-        param.name: param.default for param in strava_to_sqlite.get_params(context)
-    }
-    if not strava_skip_sync:
-        context.invoke(
-            strava_to_sqlite,
-            strava_client_id=strava_client_id,
-            strava_client_secret=strava_client_secret,
-        )
-    strava_activities = get_strava_activities(
-        strava_defaults["strava_sqlite_database"], last_weeknotes_date, today
-    )
-    strava_stats = calc_strava_stats(strava_activities)
-    strava_text = strava_stats_to_text(last_weeknotes_date, today, strava_stats)
-
     # generate weeknotes
     title = f"{prefix}{title}"
     path = content_path / f"{today_iso}_{slugify(title)}.md"
@@ -157,8 +117,6 @@ def main(
         ## Další
 
         -   E-maily, [klubový Discord](https://junior.guru/club/), [Pyvec Slack](https://docs.pyvec.org/operations/support.html#sit-kontaktu), zprávy na LinkedIn, upgrady závislostí na všech projektech.
-        -   {strava_text}
-            Detaily na [Strava](https://www.strava.com/athletes/31242569), jediné sociální síti, kde si napsání statusu musíte zasloužit.
 
         ## Plánuji
 
@@ -270,51 +228,3 @@ def get_canonical_overcast_url(url):
                 return canonical_url
     return url
 
-
-def get_strava_activities(sqlite, start_date, end_date):
-    db = sqlite_utils.Database(sqlite)
-    return db.query(
-        """
-        select * from activity
-        where start_date >= ? and start_date <= ?
-    """,
-        [start_date, end_date],
-    )
-
-
-def calc_strava_stats(activities):
-    stats = {}
-    for activity in activities:
-        key = activity["type"].lower()
-        stats.setdefault(key, dict(count=0, time=0, distance=0))
-        stats[key]["count"] += 1
-        stats[key]["time"] += activity["elapsed_time"] / 60 / 60  # h
-        stats[key]["distance"] += activity["distance"] / 1000  # km
-    for substats in stats.values():
-        substats["time"] = math.ceil(substats["time"])
-        substats["distance"] = math.ceil(substats["distance"])
-
-    ordering = list(STRAVA_ACTIVITY_TYPES.keys())
-    return dict(sorted(stats.items(), key=lambda item: ordering.index(item[0])))
-
-
-def strava_stats_to_text(start_date, end_date, stats):
-    total_days = (end_date - start_date).days + 1
-    text = f"Za {total_days} dní "
-
-    if not stats:
-        return text + "jsem se nevěnoval žádné sportovní aktivitě."
-
-    parts = [
-        f"{STRAVA_ACTIVITY_TYPES[activity_type]} {substats['distance']} km"
-        for activity_type, substats in stats.items()
-    ]
-
-    total_distance = sum(int(substats["distance"]) for substats in stats.values())
-    total_time = sum(int(substats["time"]) for substats in stats.values())
-
-    text += f"jsem {', '.join(parts)}."
-    text += (
-        f" Celkem jsem se hýbal {total_time} h a zdolal při tom {total_distance} km."
-    )
-    return text
