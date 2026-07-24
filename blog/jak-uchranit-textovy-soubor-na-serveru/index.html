@@ -93,7 +93,7 @@
         </p>
       </div>
 
-    <div><div><div><div><p>Dnes jen krátce malý trik, jak uchránit soubory textového typu na serveru. Pokud si na <code>www.example.com</code> nahraji nějaký <code>velikost-poprsi.txt</code>, pak si jej logicky každý může přečíst na adrese <code>www.example.com/velikost-poprsi.txt</code>. Někdy je to ale nežádoucí – např. pokud si uchováváme <a href="http://interval.cz/clanky/konfiguracni-soubor-v-php-ve-formatu-xml/">konfigurační data aplikace v XML</a> nebo v textovém souboru (třeba <a href="http://en.wikipedia.org/wiki/INI_file">INI soubor</a>, zpracovávaný
+    <div><p>Dnes jen krátce malý trik, jak uchránit soubory textového typu na serveru. Pokud si na <code>www.example.com</code> nahraji nějaký <code>velikost-poprsi.txt</code>, pak si jej logicky každý může přečíst na adrese <code>www.example.com/velikost-poprsi.txt</code>. Někdy je to ale nežádoucí – např. pokud si uchováváme <a href="http://interval.cz/clanky/konfiguracni-soubor-v-php-ve-formatu-xml/">konfigurační data aplikace v XML</a> nebo v textovém souboru (třeba <a href="http://en.wikipedia.org/wiki/INI_file">INI soubor</a>, zpracovávaný
 pomocí <a href="http://cz2.php.net/manual/en/function.parse-ini-file.php">parse_ini_file</a>).</p>
 <h2 id="nastaveni-serveru-pres-htaccess">Nastavení serveru přes .htaccess<small class="permalink"><a href="#nastaveni-serveru-pres-htaccess" title="Odkaz na tento nadpis"><i class="bi bi-link-45deg"></i></a></small></h2>
 <p>Konfigurační <code>velikost-poprsi.txt</code> si například dáme do nějakého adresáře, do něhož umístíme i .htaccess soubor s obsahem</p>
@@ -110,7 +110,7 @@ pomocí <a href="http://cz2.php.net/manual/en/function.parse-ini-file.php">parse
 <pre class="highlight"><code><span></span><code><span class="cm">&lt;!-- &lt;?php exit; ?&gt; --&gt;</span><span class="w"> </span><span class="nt">&lt;conf&gt;</span><span class="w"> </span><span class="nt">&lt;const</span><span class="w"> </span><span class="na">name=</span><span class="s">"leve"</span><span class="nt">&gt;</span>A<span class="nt">&lt;/const&gt;</span><span class="w"> </span><span class="nt">&lt;const</span><span class="w"> </span><span class="na">name=</span><span class="s">"prave"</span><span class="nt">&gt;</span>C<span class="nt">&lt;/const&gt;</span><span class="w"> </span><span class="nt">&lt;/conf&gt;</span>
 </code></code></pre>
 
-<p>Samozřejmě, pokud použijete XML deklaraci, přijde vám na pomoc také <a href="https://honzajavorek.cz/blog/xml-deklarace-a-php/">parse error</a>. <strong>Nelze se však na něj spoléhat</strong> a určitě je dobré vše pojistit oním PHP v komentáři, protože parse error může, ale nemusí nastat (nedojde ke kolizi, když má vaše PHP direktiva <code>short_open_tag</code> hodnotu <code>0</code>).</p></div></div></div></div>
+<p>Samozřejmě, pokud použijete XML deklaraci, přijde vám na pomoc také <a href="https://honzajavorek.cz/blog/xml-deklarace-a-php/">parse error</a>. <strong>Nelze se však na něj spoléhat</strong> a určitě je dobré vše pojistit oním PHP v komentáři, protože parse error může, ale nemusí nastat (nedojde ke kolizi, když má vaše PHP direktiva <code>short_open_tag</code> hodnotu <code>0</code>).</p></div>
   </main>
 
   <footer class="article-footer mb-5">
