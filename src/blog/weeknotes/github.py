@@ -21,6 +21,7 @@ class WorkItem:
     repo: str
     number: int
     url: str
+    title: str
     kind: Literal["pr", "issue"]
     color: Literal["green", "orange"]
 
@@ -135,11 +136,15 @@ def get_work_item(
         if payload.action not in {"opened", "closed"}:
             return None
         if payload.action == "opened":
+            pull_request = get_pull_request(
+                github, owner, repo, payload.pull_request.number, pull_requests
+            )
             return WorkItem(
                 owner,
                 repo,
-                payload.pull_request.number,
-                get_pull_request_url(owner, repo, payload.pull_request.number),
+                pull_request.number,
+                str(pull_request.html_url),
+                pull_request.title,
                 "pr",
                 "orange",
             )
@@ -158,7 +163,13 @@ def get_work_item(
         else:
             color = "orange"
         return WorkItem(
-            owner, repo, pull_request.number, str(pull_request.html_url), "pr", color
+            owner,
+            repo,
+            pull_request.number,
+            str(pull_request.html_url),
+            pull_request.title,
+            "pr",
+            color,
         )
 
     if event.type == "PullRequestReviewEvent" and isinstance(
@@ -176,6 +187,7 @@ def get_work_item(
             repo,
             pull_request.number,
             str(pull_request.html_url),
+            pull_request.title,
             "pr",
             "orange",
         )
@@ -187,7 +199,15 @@ def get_work_item(
         if issue.user is None or is_bot(issue.user):
             return None
         color = "green" if payload.action == "closed" else "orange"
-        return WorkItem(owner, repo, issue.number, str(issue.html_url), "issue", color)
+        return WorkItem(
+            owner,
+            repo,
+            issue.number,
+            str(issue.html_url),
+            issue.title,
+            "issue",
+            color,
+        )
 
     return None
 
@@ -209,10 +229,6 @@ def get_pull_request(
     return pull_requests[key]
 
 
-def get_pull_request_url(owner: str, repo: str, number: int) -> str:
-    return f"https://github.com/{owner}/{repo}/pull/{number}"
-
-
 def format_work_items(items: Iterable[WorkItem]) -> str:
     grouped: dict[str, list[WorkItem]] = {}
     for item in items:
@@ -225,6 +241,7 @@ def format_work_items(items: Iterable[WorkItem]) -> str:
             emoji = "🟢" if item.color == "green" else "🟠"
             lines.append(
                 f"-   {emoji} [{item.owner}/{item.repo}#{item.number}]({item.url})"
+                f" – {item.title}"
             )
         sections.append("\n".join(lines))
     return "\n\n".join(sections)

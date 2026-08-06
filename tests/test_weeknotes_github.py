@@ -104,25 +104,35 @@ def test_is_bot(account_type: str, expected: bool) -> None:
 
 def test_format_work_items() -> None:
     items = [
-        WorkItem("beta", "repo", 5, "https://example.com/beta/5", "pr", "orange"),
-        WorkItem("alpha", "zeta", 4, "https://example.com/alpha/4", "issue", "orange"),
-        WorkItem("alpha", "beta", 3, "https://example.com/alpha/3", "issue", "green"),
-        WorkItem("alpha", "zeta", 2, "https://example.com/alpha/2", "pr", "orange"),
-        WorkItem("alpha", "beta", 1, "https://example.com/alpha/1", "pr", "green"),
+        WorkItem(
+            "beta", "repo", 5, "https://example.com/beta/5", "Five", "pr", "orange"
+        ),
+        WorkItem(
+            "alpha", "zeta", 4, "https://example.com/alpha/4", "Four", "issue", "orange"
+        ),
+        WorkItem(
+            "alpha", "beta", 3, "https://example.com/alpha/3", "Three", "issue", "green"
+        ),
+        WorkItem(
+            "alpha", "zeta", 2, "https://example.com/alpha/2", "Two", "pr", "orange"
+        ),
+        WorkItem(
+            "alpha", "beta", 1, "https://example.com/alpha/1", "One", "pr", "green"
+        ),
     ]
 
     assert (
         format_work_items(items)
         == """### alpha
 
--   🟢 [alpha/beta#1](https://example.com/alpha/1)
--   🟠 [alpha/zeta#2](https://example.com/alpha/2)
--   🟢 [alpha/beta#3](https://example.com/alpha/3)
--   🟠 [alpha/zeta#4](https://example.com/alpha/4)
+-   🟢 [alpha/beta#1](https://example.com/alpha/1) – One
+-   🟠 [alpha/zeta#2](https://example.com/alpha/2) – Two
+-   🟢 [alpha/beta#3](https://example.com/alpha/3) – Three
+-   🟠 [alpha/zeta#4](https://example.com/alpha/4) – Four
 
 ### beta
 
--   🟠 [beta/repo#5](https://example.com/beta/5)"""
+-   🟠 [beta/repo#5](https://example.com/beta/5) – Five"""
     )
 
 
