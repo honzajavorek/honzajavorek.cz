@@ -7,12 +7,19 @@ from zoneinfo import ZoneInfo
 
 import click
 from githubkit import GitHub
+from githubkit_schemas.latest.models import PullRequest
 from slugify import slugify
 
 from blog.lib import SettingsModuleParam
 from blog.toots import main as toots_command
 from blog.update import main as update_command
-from blog.weeknotes.github import format_upgrades, get_closed_dependabot_prs_count
+from blog.weeknotes.github import (
+    format_upgrades,
+    format_work_items,
+    get_closed_dependabot_prs_count,
+    get_github_token,
+    get_work_items,
+)
 from blog.weeknotes.jg_toots import format_toots, get_jg_toots
 from blog.weeknotes.links import format_links, get_links
 
@@ -43,6 +50,7 @@ from blog.weeknotes.links import format_links, get_links
 @click.option("--mastodon-client_id", envvar="MASTODON_CLIENT_ID")
 @click.option("--mastodon-client_secret", envvar="MASTODON_CLIENT_SECRET")
 @click.option("--mastodon-access_token", envvar="MASTODON_ACCESS_TOKEN")
+@click.option("--update/--no-update", default=True)
 @click.option("--debug/--no-debug", default=False)
 @click.option("--open/--no-open", default=True)
 @click.pass_context
@@ -60,16 +68,18 @@ def main(
     mastodon_client_id: str | None,
     mastodon_client_secret: str | None,
     mastodon_access_token: str | None,
+    update: bool,
     debug: bool,
     open: bool,
 ) -> None:
-    context.invoke(update_command)
-    context.invoke(
-        toots_command,
-        client_id=mastodon_client_id,
-        client_secret=mastodon_client_secret,
-        access_token=mastodon_access_token,
-    )
+    if update:
+        context.invoke(update_command)
+        context.invoke(
+            toots_command,
+            client_id=mastodon_client_id,
+            client_secret=mastodon_client_secret,
+            access_token=mastodon_access_token,
+        )
 
     today = datetime.now(ZoneInfo(timezone)).date()
     today_cz = format_weeknotes_date(today)
@@ -77,8 +87,19 @@ def main(
     last_weeknotes_path = get_last_weeknotes_path(content_path, title_prefix)
     last_weeknotes_date = get_weeknotes_date(last_weeknotes_path)
     last_weeknotes_date_cz = format_weeknotes_date(last_weeknotes_date)
+    github = GitHub(get_github_token(github_token))
+    pull_requests: dict[tuple[str, str, int], PullRequest] = {}
     closed_dependabot_prs_count = get_closed_dependabot_prs_count(
-        GitHub(github_token), github_username, last_weeknotes_date
+        github, github_username, last_weeknotes_date, pull_requests
+    )
+    github_work = format_work_items(
+        get_work_items(
+            github,
+            github_username,
+            last_weeknotes_date,
+            today,
+            pull_requests,
+        )
     )
 
     # mastodon links
@@ -102,6 +123,7 @@ def main(
         jg_toots=jg_toots_text,
         links=links_text,
         dependabot_upgrades=format_upgrades(closed_dependabot_prs_count),
+        github_work=github_work,
     )
     if debug:
         debug_print(path, content)
@@ -135,6 +157,7 @@ def format_content(
     jg_toots: str,
     links: str,
     dependabot_upgrades: str,
+    github_work: str,
 ) -> str:
     template_path = Path(__file__).with_name("template.md")
     return Template(template_path.read_text()).substitute(
@@ -146,6 +169,7 @@ def format_content(
         jg_toots=jg_toots,
         links=links.rstrip("\n"),
         dependabot_upgrades=dependabot_upgrades,
+        github_work=github_work,
     )
 
 

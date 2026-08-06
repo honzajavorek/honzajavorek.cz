@@ -1,3 +1,4 @@
+import subprocess
 from datetime import date
 from pathlib import Path
 from types import SimpleNamespace
@@ -6,10 +7,17 @@ from unittest.mock import Mock
 
 import pytest
 from githubkit import GitHub
-from githubkit_schemas.latest.models import Event
+from githubkit_schemas.latest.models import Event, SimpleUser
 from pydantic import TypeAdapter
 
-from blog.weeknotes.github import format_upgrades, get_closed_dependabot_prs_count
+from blog.weeknotes.github import (
+    WorkItem,
+    format_upgrades,
+    format_work_items,
+    get_closed_dependabot_prs_count,
+    get_github_token,
+    is_bot,
+)
 
 
 @pytest.fixture
@@ -17,8 +25,51 @@ def github() -> GitHub:
     fixture_path = Path(__file__).parent / "fixtures" / "github_events.json"
     events = TypeAdapter(list[Event]).validate_json(fixture_path.read_text())
     activity = SimpleNamespace(list_public_events_for_user=Mock())
-    rest = SimpleNamespace(activity=activity, paginate=Mock(return_value=events))
+    pull_request = SimpleNamespace(user=SimpleNamespace(type="Bot"))
+    pulls = SimpleNamespace(
+        get=Mock(return_value=SimpleNamespace(parsed_data=pull_request))
+    )
+    rest = SimpleNamespace(
+        activity=activity,
+        paginate=Mock(return_value=events),
+        pulls=pulls,
+    )
     return cast(GitHub, SimpleNamespace(rest=rest))
+
+
+def test_get_github_token_uses_explicit_token(monkeypatch: pytest.MonkeyPatch) -> None:
+    run = Mock()
+    monkeypatch.setattr(subprocess, "run", run)
+
+    assert (get_github_token("explicit-token"), run.call_count) == (
+        "explicit-token",
+        0,
+    )
+
+
+def test_get_github_token_uses_gh(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(
+        subprocess,
+        "run",
+        Mock(return_value=SimpleNamespace(stdout="gh-token\n")),
+    )
+
+    assert get_github_token(None) == "gh-token"
+
+
+@pytest.mark.parametrize(
+    "error",
+    [
+        FileNotFoundError(),
+        subprocess.CalledProcessError(1, ["gh", "auth", "token"]),
+    ],
+)
+def test_get_github_token_falls_back_to_public_api(
+    monkeypatch: pytest.MonkeyPatch, error: Exception
+) -> None:
+    monkeypatch.setattr(subprocess, "run", Mock(side_effect=error))
+
+    assert get_github_token(None) is None
 
 
 @pytest.mark.parametrize(
@@ -35,6 +86,44 @@ def github() -> GitHub:
 )
 def test_format_upgrades(count: int, expected: str) -> None:
     assert format_upgrades(count) == expected
+
+
+@pytest.mark.parametrize(
+    ("account_type", "expected"),
+    [
+        ("Bot", True),
+        ("User", False),
+        ("Organization", False),
+    ],
+)
+def test_is_bot(account_type: str, expected: bool) -> None:
+    user = cast(SimpleUser, SimpleNamespace(type=account_type))
+
+    assert is_bot(user) is expected
+
+
+def test_format_work_items() -> None:
+    items = [
+        WorkItem("beta", "repo", 5, "https://example.com/beta/5", "pr", "orange"),
+        WorkItem("alpha", "zeta", 4, "https://example.com/alpha/4", "issue", "orange"),
+        WorkItem("alpha", "beta", 3, "https://example.com/alpha/3", "issue", "green"),
+        WorkItem("alpha", "zeta", 2, "https://example.com/alpha/2", "pr", "orange"),
+        WorkItem("alpha", "beta", 1, "https://example.com/alpha/1", "pr", "green"),
+    ]
+
+    assert (
+        format_work_items(items)
+        == """### alpha
+
+-   🟢 [alpha/beta#1](https://example.com/alpha/1)
+-   🟠 [alpha/zeta#2](https://example.com/alpha/2)
+-   🟢 [alpha/beta#3](https://example.com/alpha/3)
+-   🟠 [alpha/zeta#4](https://example.com/alpha/4)
+
+### beta
+
+-   🟠 [beta/repo#5](https://example.com/beta/5)"""
+    )
 
 
 @pytest.mark.parametrize(
@@ -55,7 +144,7 @@ def test_get_closed_dependabot_prs_count(
 def test_get_closed_dependabot_prs_uses_public_events(github: GitHub) -> None:
     get_closed_dependabot_prs_count(github, "honzajavorek", date(2026, 2, 1))
 
-    assert github.rest.paginate.call_args.args == (
-        github.rest.activity.list_public_events_for_user,
-        "honzajavorek",
+    assert github.rest.paginate.call_args == (
+        (github.rest.activity.list_public_events_for_user,),
+        {"username": "honzajavorek"},
     )
