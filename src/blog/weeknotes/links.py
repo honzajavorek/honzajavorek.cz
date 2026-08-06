@@ -1,30 +1,32 @@
 import re
+from collections.abc import Iterable, Iterator, Mapping
 from datetime import date, datetime
+from typing import Any
 from urllib.parse import urlparse
 
 import requests
 from lxml.html import soupparser as html_soup
 
 
-TITLES = {
-    "www.facebook.com": "(něco na Facebooku)",
-    "facebook.com": "(něco na Facebooku)",
-    "twitter.com": "(něco na Twitteru)",
-    "mobile.twitter.com": "(něco na Twitteru)",
+FALLBACK_TITLES = {
+    "www.facebook.com": "(něco z Facebooku)",
+    "facebook.com": "(něco z Facebooku)",
+    "twitter.com": "(něco z Twitteru)",
+    "mobile.twitter.com": "(něco z Twitteru)",
 }
 
 
-def get_links(since_date: date, links: list):
+def get_links(
+    since_date: date, links: Iterable[dict[str, Any]]
+) -> Iterator[dict[str, str]]:
     for link in links:
         if datetime.fromisoformat(link["created_at"]).date() < since_date:
             continue
 
         html_tree = html_soup.fromstring(link["content"])
-        title = None
 
         if card := link.get("card"):
             link_url = card["url"]
-            title = card["title"]
         else:
             link_url = html_tree.cssselect("a")[0].get("href")
 
@@ -33,8 +35,7 @@ def get_links(since_date: date, links: list):
         else:
             url = link_url
 
-        if title is None:
-            title = get_title_from_url(link_url)
+        title = get_title_from_url(link_url)
 
         for element in html_tree.cssselect(f'a[href^="{link_url}"]'):
             element.getparent().remove(element)
@@ -45,7 +46,7 @@ def get_links(since_date: date, links: list):
         yield {"title": title, "comment": comment, "url": url}
 
 
-def format_links(links):
+def format_links(links: Iterable[Mapping[str, str]]) -> str:
     text = ""
     for link in links:
         text += f"- [{link['title']}]({link['url']})"
@@ -54,14 +55,7 @@ def format_links(links):
     return text
 
 
-def get_title_from_webpage(webpage):
-    try:
-        return TITLES[urlparse(webpage.url).hostname]
-    except KeyError:
-        return webpage.title
-
-
-def get_title_from_url(url):
+def get_title_from_url(url: str) -> str:
     try:
         response = requests.get(
             url,
@@ -81,10 +75,10 @@ def get_title_from_url(url):
             match = re.search(r"<title>([^<]+)", str(line), re.IGNORECASE)
             if match:
                 return match.group(1).strip()
-    return "(bez titulku)"
+    return FALLBACK_TITLES.get(urlparse(url).hostname, "(bez titulku)")
 
 
-def get_canonical_overcast_url(url):
+def get_canonical_overcast_url(url: str) -> str:
     response = requests.get(url, stream=True)
     response.raise_for_status()
     for line in response.iter_lines(decode_unicode=True):
