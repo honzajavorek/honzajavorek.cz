@@ -94,7 +94,7 @@ def get_github_token(token: str | None) -> str | None:
             capture_output=True,
             text=True,
         )
-    except (FileNotFoundError, subprocess.CalledProcessError):
+    except FileNotFoundError, subprocess.CalledProcessError:
         return None
     return result.stdout.strip() or None
 
@@ -132,9 +132,7 @@ def get_closed_dependabot_prs_count(
     return sum(
         event["actor"] is not None
         and event["actor"]["login"] == username
-        and since
-        <= datetime.fromisoformat(event["createdAt"].replace("Z", "+00:00"))
-        <= until
+        and since <= datetime.fromisoformat(event["createdAt"]) <= until
         for owner_events in closed_events
         for event in owner_events
     )
