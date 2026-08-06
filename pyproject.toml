@@ -28,6 +28,7 @@ dependencies = [
     "pydantic>=2.13.4",
     "pyyaml>=6.0.3",
     "httpx>=0.28.1",
+    "githubkit>=0.16.0",
 ]
 
 [project.urls]

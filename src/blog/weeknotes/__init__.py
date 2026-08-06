@@ -6,11 +6,13 @@ from types import ModuleType
 from zoneinfo import ZoneInfo
 
 import click
+from githubkit import GitHub
 from slugify import slugify
 
 from blog.lib import SettingsModuleParam
 from blog.toots import main as toots_command
 from blog.update import main as update_command
+from blog.weeknotes.github import format_upgrades, get_closed_dependabot_prs_count
 from blog.weeknotes.jg_toots import format_toots, get_jg_toots
 from blog.weeknotes.links import format_links, get_links
 
@@ -25,6 +27,8 @@ from blog.weeknotes.links import format_links, get_links
 )
 @click.option("--title-prefix", default="Týdenní poznámky")
 @click.option("--timezone", default="Europe/Prague")
+@click.option("--github-token", envvar="GITHUB_TOKEN")
+@click.option("--github-username", default="honzajavorek")
 @click.option("--settings-module", default="pelicanconf.py", type=SettingsModuleParam())
 @click.option(
     "--links-path",
@@ -48,6 +52,8 @@ def main(
     content_path: Path,
     title_prefix: str,
     timezone: str,
+    github_token: str | None,
+    github_username: str,
     settings_module: ModuleType,
     links_path: Path,
     jg_toots_path: Path,
@@ -71,6 +77,9 @@ def main(
     last_weeknotes_path = get_last_weeknotes_path(content_path, title_prefix)
     last_weeknotes_date = get_weeknotes_date(last_weeknotes_path)
     last_weeknotes_date_cz = format_weeknotes_date(last_weeknotes_date)
+    closed_dependabot_prs_count = get_closed_dependabot_prs_count(
+        GitHub(github_token), github_username, last_weeknotes_date
+    )
 
     # mastodon links
     links = get_links(last_weeknotes_date, json.loads(links_path.read_text()))
@@ -92,6 +101,7 @@ def main(
         today=today_cz,
         jg_toots=jg_toots_text,
         links=links_text,
+        dependabot_upgrades=format_upgrades(closed_dependabot_prs_count),
     )
     if debug:
         debug_print(path, content)
@@ -124,6 +134,7 @@ def format_content(
     today: str,
     jg_toots: str,
     links: str,
+    dependabot_upgrades: str,
 ) -> str:
     template_path = Path(__file__).with_name("template.md")
     return Template(template_path.read_text()).substitute(
@@ -134,6 +145,7 @@ def format_content(
         today=today,
         jg_toots=jg_toots,
         links=links.rstrip("\n"),
+        dependabot_upgrades=dependabot_upgrades,
     )
 
 

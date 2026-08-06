@@ -23,6 +23,7 @@ def test_format_content() -> None:
         today="31. 7.",
         jg_toots="-   https://example.com/toot",
         links="- [Example](https://example.com)\n",
+        dependabot_upgrades="-   7 upgradů závislostí na všech projektech.",
     )
 
     assert all(
@@ -34,9 +35,25 @@ def test_format_content() -> None:
             "(20. 7. až 31. 7.)",
             "-   https://example.com/toot",
             "- [Example](https://example.com)",
+            "7 upgradů závislostí na všech projektech.",
             "![Poznámky]({static}/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg)",
         ]
     )
+
+
+def test_format_content_without_upgrades() -> None:
+    content = format_content(
+        title="Týdenní poznámky: Test",
+        weeknotes_tag="weeknotes",
+        last_weeknotes_path="{filename}2026-07-20_test.md",
+        last_weeknotes_date="20. 7.",
+        today="31. 7.",
+        jg_toots="",
+        links="",
+        dependabot_upgrades="",
+    )
+
+    assert "upgrad" not in content
 
 
 @pytest.mark.parametrize(
