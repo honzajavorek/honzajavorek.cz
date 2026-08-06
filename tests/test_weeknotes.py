@@ -43,7 +43,7 @@ def test_format_content() -> None:
     )
 
 
-def test_format_content_without_upgrades() -> None:
+def test_format_content_without_github_work() -> None:
     content = format_content(
         title="Týdenní poznámky: Test",
         weeknotes_tag="weeknotes",

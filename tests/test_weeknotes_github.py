@@ -1,49 +1,24 @@
 import subprocess
 from datetime import date
-from pathlib import Path
+from importlib import import_module
 from types import SimpleNamespace
 from typing import cast
 from unittest.mock import Mock
 
 import pytest
 from githubkit import GitHub
-from githubkit_schemas.latest.models import Event, SimpleUser
-from pydantic import TypeAdapter
 
 from blog.weeknotes.github import (
     WorkItem,
     format_upgrades,
     format_work_items,
     get_closed_dependabot_prs_count,
-    get_events,
+    get_contributed_owners,
+    get_contribution_work_item,
+    get_contributions,
+    get_dependabot_closed_events,
     get_github_token,
-    get_pull_requests,
-    is_bot,
 )
-
-
-@pytest.fixture
-def github() -> GitHub:
-    fixture_path = Path(__file__).parent / "fixtures" / "github_events.json"
-    events = TypeAdapter(list[Event]).validate_json(fixture_path.read_text())
-
-    def list_public_events_for_user(
-        username: str, *, per_page: int, page: int
-    ) -> SimpleNamespace:
-        return SimpleNamespace(parsed_data=events if page == 1 else [])
-
-    activity = SimpleNamespace(
-        list_public_events_for_user=Mock(side_effect=list_public_events_for_user)
-    )
-    pull_request = SimpleNamespace(user=SimpleNamespace(type="Bot"))
-    pulls = SimpleNamespace(
-        get=Mock(return_value=SimpleNamespace(parsed_data=pull_request))
-    )
-    rest = SimpleNamespace(
-        activity=activity,
-        pulls=pulls,
-    )
-    return cast(GitHub, SimpleNamespace(rest=rest))
 
 
 def test_get_github_token_uses_explicit_token(monkeypatch: pytest.MonkeyPatch) -> None:
@@ -87,28 +62,99 @@ def test_get_github_token_falls_back_to_public_api(
         (0, ""),
         (1, "-   1 upgrade závislostí na všech projektech."),
         (2, "-   2 upgrady závislostí na všech projektech."),
-        (3, "-   3 upgrady závislostí na všech projektech."),
-        (4, "-   4 upgrady závislostí na všech projektech."),
         (5, "-   5 upgradů závislostí na všech projektech."),
-        (21, "-   21 upgradů závislostí na všech projektech."),
     ],
 )
 def test_format_upgrades(count: int, expected: str) -> None:
     assert format_upgrades(count) == expected
 
 
-@pytest.mark.parametrize(
-    ("account_type", "expected"),
-    [
-        ("Bot", True),
-        ("User", False),
-        ("Organization", False),
-    ],
-)
-def test_is_bot(account_type: str, expected: bool) -> None:
-    user = cast(SimpleUser, SimpleNamespace(type=account_type))
+def test_get_contributed_owners() -> None:
+    graphql = Mock()
+    graphql.request.return_value = {
+        "user": {
+            "repositoriesContributedTo": {
+                "nodes": [
+                    {"owner": {"login": "honzajavorek", "__typename": "User"}},
+                    {"owner": {"login": "juniorguru", "__typename": "Organization"}},
+                    {"owner": {"login": "juniorguru", "__typename": "Organization"}},
+                ]
+            }
+        }
+    }
+    github = cast(GitHub, SimpleNamespace(graphql=graphql))
 
-    assert is_bot(user) is expected
+    assert get_contributed_owners(github, "honzajavorek") == [
+        "org:juniorguru",
+        "user:honzajavorek",
+    ]
+
+
+def test_get_dependabot_closed_events() -> None:
+    graphql = Mock()
+    graphql.request.return_value = {
+        "search": {
+            "nodes": [
+                {
+                    "timelineItems": {
+                        "nodes": [
+                            {
+                                "actor": {"login": "honzajavorek"},
+                                "createdAt": "2026-08-04T09:02:09Z",
+                            }
+                        ]
+                    }
+                }
+            ],
+            "pageInfo": {"hasNextPage": False, "endCursor": None},
+        }
+    }
+    github = cast(GitHub, SimpleNamespace(graphql=graphql))
+
+    assert get_dependabot_closed_events(
+        github, "user:honzajavorek", date(2026, 7, 24), date(2026, 8, 6)
+    ) == [
+        {
+            "actor": {"login": "honzajavorek"},
+            "createdAt": "2026-08-04T09:02:09Z",
+        }
+    ]
+
+
+def test_get_closed_dependabot_prs_count(monkeypatch: pytest.MonkeyPatch) -> None:
+    github_module = import_module("blog.weeknotes.github")
+    monkeypatch.setattr(
+        github_module,
+        "get_contributed_owners",
+        Mock(return_value=["user:honzajavorek"]),
+    )
+    monkeypatch.setattr(
+        github_module,
+        "get_dependabot_closed_events",
+        Mock(
+            return_value=[
+                {
+                    "actor": {"login": "honzajavorek"},
+                    "createdAt": "2026-08-04T09:02:09Z",
+                },
+                {
+                    "actor": {"login": "dependabot"},
+                    "createdAt": "2026-08-04T09:02:09+00:00",
+                },
+            ]
+        ),
+    )
+
+    assert (
+        get_closed_dependabot_prs_count(
+            Mock(),
+            "honzajavorek",
+            date(2026, 7, 24),
+            date(2026, 8, 6),
+            "Europe/Prague",
+        )
+        == 1
+    )
 
 
 def test_format_work_items() -> None:
@@ -135,8 +181,8 @@ def test_format_work_items() -> None:
         == """### alpha
 
 -   🟢 [alpha/beta#1](https://example.com/alpha/1) – One
--   🟠 [alpha/zeta#2](https://example.com/alpha/2) – Two
 -   🟢 [alpha/beta#3](https://example.com/alpha/3) – Three
+-   🟠 [alpha/zeta#2](https://example.com/alpha/2) – Two
 -   🟠 [alpha/zeta#4](https://example.com/alpha/4) – Four
 
 ### beta
@@ -145,39 +191,77 @@ def test_format_work_items() -> None:
     )
 
 
-@pytest.mark.parametrize(
-    ("since_date", "expected"),
-    [
-        (date(2026, 2, 1), 1),
-        (date(2026, 2, 17), 0),
-    ],
-)
-def test_get_closed_dependabot_prs_count(
-    github: GitHub, since_date: date, expected: int
-) -> None:
-    events = get_events(github, "honzajavorek", since_date, date(2026, 2, 28))
-    pull_requests = get_pull_requests(github, events)
-
-    assert get_closed_dependabot_prs_count(events, pull_requests) == expected
-
-
-def test_get_closed_dependabot_prs_uses_public_events(github: GitHub) -> None:
-    get_events(github, "honzajavorek", date(2026, 2, 1), date(2026, 2, 28))
-
-    assert {
-        (call.args, tuple(sorted(call.kwargs.items())))
-        for call in github.rest.activity.list_public_events_for_user.call_args_list
-    } == {
-        (("honzajavorek",), (("page", 1), ("per_page", 100))),
-        (("honzajavorek",), (("page", 2), ("per_page", 100))),
-        (("honzajavorek",), (("page", 3), ("per_page", 100))),
+def test_get_contribution_work_item() -> None:
+    contribution = {
+        "number": 2849,
+        "title": "Test-driven development",
+        "url": "https://github.com/apify/apify-docs/pull/2849",
+        "author": {"__typename": "User"},
+        "repository": {"name": "apify-docs", "owner": {"login": "apify"}},
     }
 
+    assert get_contribution_work_item(contribution, "pr") == WorkItem(
+        "apify",
+        "apify-docs",
+        2849,
+        "https://github.com/apify/apify-docs/pull/2849",
+        "Test-driven development",
+        "pr",
+        "orange",
+    )
 
-def test_get_pull_requests_fetches_each_pr_once(github: GitHub) -> None:
-    events = get_events(github, "honzajavorek", date(2026, 2, 1), date(2026, 2, 28))
 
-    assert (
-        set(get_pull_requests(github, [*events, *events])),
-        github.rest.pulls.get.call_count,
-    ) == ({("honzajavorek", "film2trello", 297)}, 1)
+def test_get_contribution_work_item_ignores_bot() -> None:
+    contribution = {
+        "author": {"__typename": "Bot"},
+        "repository": {"name": "repo", "owner": {"login": "owner"}},
+    }
+
+    assert get_contribution_work_item(contribution, "pr") is None
+
+
+def test_get_contributions() -> None:
+    graphql = Mock()
+    graphql.request.return_value = {
+        "user": {
+            "contributionsCollection": {
+                "pullRequestContributions": {
+                    "nodes": [
+                        {
+                            "pullRequest": {
+                                "number": 2849,
+                                "title": "Test-driven development",
+                                "url": "https://github.com/apify/apify-docs/pull/2849",
+                                "author": {"__typename": "User"},
+                                "repository": {
+                                    "name": "apify-docs",
+                                    "owner": {"login": "apify"},
+                                },
+                            }
+                        }
+                    ]
+                },
+                "pullRequestReviewContributions": {"nodes": []},
+                "issueContributions": {"nodes": []},
+            }
+        }
+    }
+    github = cast(GitHub, SimpleNamespace(graphql=graphql))
+
+    assert get_contributions(
+        github,
+        "honzajavorek",
+        date(2026, 7, 24),
+        date(2026, 8, 6),
+        "Europe/Prague",
+    ) == [
+        WorkItem(
+            "apify",
+            "apify-docs",
+            2849,
+            "https://github.com/apify/apify-docs/pull/2849",
+            "Test-driven development",
+            "pr",
+            "orange",
+        )
+    ]

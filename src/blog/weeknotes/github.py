@@ -2,18 +2,11 @@ import subprocess
 from collections.abc import Iterable
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
-from datetime import date
-from typing import Literal
+from datetime import date, datetime, time
+from typing import Any, Literal
+from zoneinfo import ZoneInfo
 
 from githubkit import GitHub
-from githubkit_schemas.latest.models import (
-    Event,
-    IssuesEvent,
-    PullRequest,
-    PullRequestEvent,
-    PullRequestReviewEvent,
-    SimpleUser,
-)
 
 
 @dataclass(frozen=True)
@@ -25,6 +18,70 @@ class WorkItem:
     title: str
     kind: Literal["pr", "issue"]
     color: Literal["green", "orange"]
+
+
+CONTRIBUTIONS_QUERY = """
+query($username: String!, $from: DateTime!, $to: DateTime!) {
+  user(login: $username) {
+    contributionsCollection(from: $from, to: $to) {
+      pullRequestContributions(first: 100) {
+        nodes { pullRequest { ...pullRequest } }
+      }
+      pullRequestReviewContributions(first: 100) {
+        nodes { pullRequest { ...pullRequest } }
+      }
+      issueContributions(first: 100) {
+        nodes {
+          issue {
+            number
+            title
+            url
+            author { __typename }
+            repository { name owner { login } }
+          }
+        }
+      }
+    }
+  }
+}
+
+fragment pullRequest on PullRequest {
+  number
+  title
+  url
+  author { __typename }
+  repository { name owner { login } }
+}
+"""
+
+CONTRIBUTED_OWNERS_QUERY = """
+query($username: String!) {
+  user(login: $username) {
+    repositoriesContributedTo(
+      first: 100
+      includeUserRepositories: true
+      contributionTypes: [COMMIT, ISSUE, PULL_REQUEST, PULL_REQUEST_REVIEW]
+    ) {
+      nodes { owner { login __typename } }
+    }
+  }
+}
+"""
+
+DEPENDABOT_PRS_QUERY = """
+query($query: String!, $after: String) {
+  search(type: ISSUE, query: $query, first: 100, after: $after) {
+    nodes {
+      ... on PullRequest {
+        timelineItems(last: 1, itemTypes: [CLOSED_EVENT]) {
+          nodes { ... on ClosedEvent { actor { login } createdAt } }
+        }
+      }
+    }
+    pageInfo { hasNextPage endCursor }
+  }
+}
+"""
 
 
 def get_github_token(token: str | None) -> str | None:
@@ -55,173 +112,116 @@ def format_upgrades(count: int) -> str:
 
 
 def get_closed_dependabot_prs_count(
-    events: Iterable[Event],
-    pull_requests: dict[tuple[str, str, int], PullRequest],
+    github: GitHub,
+    username: str,
+    since_date: date,
+    today: date,
+    timezone: str,
 ) -> int:
-    count = 0
-    for event in events:
-        if (
-            event.type == "PullRequestEvent"
-            and isinstance(event.payload, PullRequestEvent)
-            and event.payload.action == "closed"
-        ):
-            owner, repo = event.repo.name.split("/", maxsplit=1)
-            key = (owner, repo, event.payload.pull_request.number)
-            pull_request = pull_requests[key]
-            if is_bot(pull_request.user):
-                count += 1
-    return count
+    owners = get_contributed_owners(github, username)
+    with ThreadPoolExecutor(max_workers=len(owners) or 1) as executor:
+        closed_events = executor.map(
+            lambda owner: get_dependabot_closed_events(
+                github, owner, since_date, today
+            ),
+            owners,
+        )
+    tz = ZoneInfo(timezone)
+    since = datetime.combine(since_date, time.min, tz)
+    until = datetime.combine(today, time.max, tz)
+    return sum(
+        event["actor"] is not None
+        and event["actor"]["login"] == username
+        and since
+        <= datetime.fromisoformat(event["createdAt"].replace("Z", "+00:00"))
+        <= until
+        for owner_events in closed_events
+        for event in owner_events
+    )
 
 
-def get_work_items(
-    username: str,
-    events: Iterable[Event],
-    pull_requests: dict[tuple[str, str, int], PullRequest],
-) -> list[WorkItem]:
-    items: dict[tuple[str, str, int], WorkItem] = {}
-    for event in events:
-        repo_name = event.repo.name
-        owner, repo = repo_name.split("/", maxsplit=1)
-        item = get_work_item(event, owner, repo, username, pull_requests)
-        if item is None:
-            continue
-
-        key = (item.kind, repo_name, item.number)
-        current_item = items.get(key)
-        if current_item is None or item.color == "green":
-            items[key] = item
-    return list(items.values())
+def get_contributed_owners(github: GitHub, username: str) -> list[str]:
+    result = github.graphql.request(CONTRIBUTED_OWNERS_QUERY, {"username": username})
+    owners = result["user"]["repositoriesContributedTo"]["nodes"]
+    return sorted(
+        {
+            f"{'org' if owner['owner']['__typename'] == 'Organization' else 'user'}:"
+            f"{owner['owner']['login']}"
+            for owner in owners
+        }
+    )
 
 
-def get_events(
-    github: GitHub, username: str, since_date: date, today: date
-) -> list[Event]:
-    def fetch_page(page: int) -> list[Event]:
-        return github.rest.activity.list_public_events_for_user(
-            username, per_page=100, page=page
-        ).parsed_data
-
-    with ThreadPoolExecutor(max_workers=3) as executor:
-        pages = executor.map(fetch_page, range(1, 4))
-        events = [event for page in pages for event in page]
-
-    relevant_events = []
-    for event in events:
-        if event.created_at is None:
-            continue
-        event_date = event.created_at.date()
-        if event_date < since_date:
-            break
-        if event_date <= today:
-            relevant_events.append(event)
-    return relevant_events
-
-
-def get_pull_requests(
-    github: GitHub, events: Iterable[Event]
-) -> dict[tuple[str, str, int], PullRequest]:
-    keys = set()
-    for event in events:
-        payload = event.payload
-        if isinstance(payload, (PullRequestEvent, PullRequestReviewEvent)):
-            owner, repo = event.repo.name.split("/", maxsplit=1)
-            keys.add((owner, repo, payload.pull_request.number))
-    if not keys:
-        return {}
-
-    def fetch(key: tuple[str, str, int]) -> tuple[tuple[str, str, int], PullRequest]:
-        owner, repo, number = key
-        pull_request = github.rest.pulls.get(owner, repo, number).parsed_data
-        return key, pull_request
-
-    with ThreadPoolExecutor(max_workers=min(16, len(keys))) as executor:
-        return dict(executor.map(fetch, sorted(keys)))
-
-
-def get_work_item(
-    event: Event,
+def get_dependabot_closed_events(
+    github: GitHub,
     owner: str,
-    repo: str,
+    since_date: date,
+    today: date,
+) -> list[dict[str, Any]]:
+    query = f"is:pr author:app/dependabot closed:{since_date}..{today} {owner}"
+    after = None
+    events = []
+    while True:
+        result = github.graphql.request(
+            DEPENDABOT_PRS_QUERY,
+            {"query": query, "after": after},
+        )["search"]
+        for pull_request in result["nodes"]:
+            events.extend(pull_request["timelineItems"]["nodes"])
+        if not result["pageInfo"]["hasNextPage"]:
+            return events
+        after = result["pageInfo"]["endCursor"]
+
+
+def get_contributions(
+    github: GitHub,
     username: str,
-    pull_requests: dict[tuple[str, str, int], PullRequest],
+    since_date: date,
+    today: date,
+    timezone: str,
+) -> list[WorkItem]:
+    tz = ZoneInfo(timezone)
+    result = github.graphql.request(
+        CONTRIBUTIONS_QUERY,
+        {
+            "username": username,
+            "from": datetime.combine(since_date, time.min, tz).isoformat(),
+            "to": datetime.combine(today, time.max, tz).isoformat(),
+        },
+    )
+    collection = result["user"]["contributionsCollection"]
+    items = []
+    for contribution in collection["pullRequestContributions"]["nodes"]:
+        item = get_contribution_work_item(contribution["pullRequest"], "pr")
+        if item is not None:
+            items.append(item)
+    for contribution in collection["pullRequestReviewContributions"]["nodes"]:
+        item = get_contribution_work_item(contribution["pullRequest"], "pr")
+        if item is not None:
+            items.append(item)
+    for contribution in collection["issueContributions"]["nodes"]:
+        item = get_contribution_work_item(contribution["issue"], "issue")
+        if item is not None:
+            items.append(item)
+    return list(dict.fromkeys(items))
+
+
+def get_contribution_work_item(
+    contribution: dict[str, Any], kind: Literal["pr", "issue"]
 ) -> WorkItem | None:
-    payload = event.payload
-    if event.type == "PullRequestEvent" and isinstance(payload, PullRequestEvent):
-        if payload.action not in {"opened", "closed"}:
-            return None
-        if payload.action == "opened":
-            pull_request = pull_requests[(owner, repo, payload.pull_request.number)]
-            return WorkItem(
-                owner,
-                repo,
-                pull_request.number,
-                str(pull_request.html_url),
-                pull_request.title,
-                "pr",
-                "orange",
-            )
-
-        pull_request = pull_requests[(owner, repo, payload.pull_request.number)]
-        if is_bot(pull_request.user):
-            return None
-        if payload.action == "closed":
-            if not pull_request.merged or pull_request.merged_by is None:
-                return None
-            if pull_request.merged_by.login != username:
-                return None
-            color = "green"
-        else:
-            color = "orange"
-        return WorkItem(
-            owner,
-            repo,
-            pull_request.number,
-            str(pull_request.html_url),
-            pull_request.title,
-            "pr",
-            color,
-        )
-
-    if event.type == "PullRequestReviewEvent" and isinstance(
-        payload, PullRequestReviewEvent
-    ):
-        if payload.action != "created":
-            return None
-        pull_request = pull_requests[(owner, repo, payload.pull_request.number)]
-        if is_bot(pull_request.user):
-            return None
-        return WorkItem(
-            owner,
-            repo,
-            pull_request.number,
-            str(pull_request.html_url),
-            pull_request.title,
-            "pr",
-            "orange",
-        )
-
-    if event.type == "IssuesEvent" and isinstance(payload, IssuesEvent):
-        if payload.action not in {"opened", "closed"}:
-            return None
-        issue = payload.issue
-        if issue.user is None or is_bot(issue.user):
-            return None
-        color = "green" if payload.action == "closed" else "orange"
-        return WorkItem(
-            owner,
-            repo,
-            issue.number,
-            str(issue.html_url),
-            issue.title,
-            "issue",
-            color,
-        )
-
-    return None
-
-
-def is_bot(user: SimpleUser) -> bool:
-    return user.type == "Bot"
+    author = contribution["author"]
+    if author is not None and author["__typename"] == "Bot":
+        return None
+    repository = contribution["repository"]
+    return WorkItem(
+        repository["owner"]["login"],
+        repository["name"],
+        contribution["number"],
+        contribution["url"],
+        contribution["title"],
+        kind,
+        "orange",
+    )
 
 
 def format_work_items(items: Iterable[WorkItem]) -> str:
@@ -244,8 +244,8 @@ def format_work_items(items: Iterable[WorkItem]) -> str:
 
 def work_item_sort_key(item: WorkItem) -> tuple[int, int, str, int]:
     return (
-        0 if item.kind == "pr" else 1,
         0 if item.color == "green" else 1,
+        0 if item.kind == "pr" else 1,
         item.repo,
         item.number,
     )
