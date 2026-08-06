@@ -1,5 +1,6 @@
 import subprocess
 from collections.abc import Iterable
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from datetime import date
 from typing import Literal
@@ -54,65 +55,34 @@ def format_upgrades(count: int) -> str:
 
 
 def get_closed_dependabot_prs_count(
-    github: GitHub,
-    username: str,
-    since_date: date,
-    pull_requests: dict[tuple[str, str, int], PullRequest] | None = None,
+    events: Iterable[Event],
+    pull_requests: dict[tuple[str, str, int], PullRequest],
 ) -> int:
-    pull_requests = pull_requests if pull_requests is not None else {}
-    events = github.rest.paginate(
-        github.rest.activity.list_public_events_for_user,
-        username=username,
-    )
     count = 0
     for event in events:
-        if event.created_at is None:
-            continue
-        if event.created_at.date() < since_date:
-            break
         if (
             event.type == "PullRequestEvent"
             and isinstance(event.payload, PullRequestEvent)
             and event.payload.action == "closed"
         ):
             owner, repo = event.repo.name.split("/", maxsplit=1)
-            pull_request = get_pull_request(
-                github,
-                owner,
-                repo,
-                event.payload.pull_request.number,
-                pull_requests,
-            )
+            key = (owner, repo, event.payload.pull_request.number)
+            pull_request = pull_requests[key]
             if is_bot(pull_request.user):
                 count += 1
     return count
 
 
 def get_work_items(
-    github: GitHub,
     username: str,
-    since_date: date,
-    today: date,
-    pull_requests: dict[tuple[str, str, int], PullRequest] | None = None,
+    events: Iterable[Event],
+    pull_requests: dict[tuple[str, str, int], PullRequest],
 ) -> list[WorkItem]:
-    pull_requests = pull_requests if pull_requests is not None else {}
-    events = github.rest.paginate(
-        github.rest.activity.list_public_events_for_user,
-        username=username,
-    )
     items: dict[tuple[str, str, int], WorkItem] = {}
     for event in events:
-        if event.created_at is None:
-            continue
-        event_date = event.created_at.date()
-        if event_date < since_date:
-            break
-        if event_date > today:
-            continue
-
         repo_name = event.repo.name
         owner, repo = repo_name.split("/", maxsplit=1)
-        item = get_work_item(github, event, owner, repo, username, pull_requests)
+        item = get_work_item(event, owner, repo, username, pull_requests)
         if item is None:
             continue
 
@@ -123,8 +93,52 @@ def get_work_items(
     return list(items.values())
 
 
+def get_events(
+    github: GitHub, username: str, since_date: date, today: date
+) -> list[Event]:
+    def fetch_page(page: int) -> list[Event]:
+        return github.rest.activity.list_public_events_for_user(
+            username, per_page=100, page=page
+        ).parsed_data
+
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        pages = executor.map(fetch_page, range(1, 4))
+        events = [event for page in pages for event in page]
+
+    relevant_events = []
+    for event in events:
+        if event.created_at is None:
+            continue
+        event_date = event.created_at.date()
+        if event_date < since_date:
+            break
+        if event_date <= today:
+            relevant_events.append(event)
+    return relevant_events
+
+
+def get_pull_requests(
+    github: GitHub, events: Iterable[Event]
+) -> dict[tuple[str, str, int], PullRequest]:
+    keys = set()
+    for event in events:
+        payload = event.payload
+        if isinstance(payload, (PullRequestEvent, PullRequestReviewEvent)):
+            owner, repo = event.repo.name.split("/", maxsplit=1)
+            keys.add((owner, repo, payload.pull_request.number))
+    if not keys:
+        return {}
+
+    def fetch(key: tuple[str, str, int]) -> tuple[tuple[str, str, int], PullRequest]:
+        owner, repo, number = key
+        pull_request = github.rest.pulls.get(owner, repo, number).parsed_data
+        return key, pull_request
+
+    with ThreadPoolExecutor(max_workers=min(16, len(keys))) as executor:
+        return dict(executor.map(fetch, sorted(keys)))
+
+
 def get_work_item(
-    github: GitHub,
     event: Event,
     owner: str,
     repo: str,
@@ -136,9 +150,7 @@ def get_work_item(
         if payload.action not in {"opened", "closed"}:
             return None
         if payload.action == "opened":
-            pull_request = get_pull_request(
-                github, owner, repo, payload.pull_request.number, pull_requests
-            )
+            pull_request = pull_requests[(owner, repo, payload.pull_request.number)]
             return WorkItem(
                 owner,
                 repo,
@@ -149,9 +161,7 @@ def get_work_item(
                 "orange",
             )
 
-        pull_request = get_pull_request(
-            github, owner, repo, payload.pull_request.number, pull_requests
-        )
+        pull_request = pull_requests[(owner, repo, payload.pull_request.number)]
         if is_bot(pull_request.user):
             return None
         if payload.action == "closed":
@@ -177,9 +187,7 @@ def get_work_item(
     ):
         if payload.action != "created":
             return None
-        pull_request = get_pull_request(
-            github, owner, repo, payload.pull_request.number, pull_requests
-        )
+        pull_request = pull_requests[(owner, repo, payload.pull_request.number)]
         if is_bot(pull_request.user):
             return None
         return WorkItem(
@@ -214,19 +222,6 @@ def get_work_item(
 
 def is_bot(user: SimpleUser) -> bool:
     return user.type == "Bot"
-
-
-def get_pull_request(
-    github: GitHub,
-    owner: str,
-    repo: str,
-    number: int,
-    pull_requests: dict[tuple[str, str, int], PullRequest],
-) -> PullRequest:
-    key = (owner, repo, number)
-    if key not in pull_requests:
-        pull_requests[key] = github.rest.pulls.get(owner, repo, number).parsed_data
-    return pull_requests[key]
 
 
 def format_work_items(items: Iterable[WorkItem]) -> str:

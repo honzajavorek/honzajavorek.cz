@@ -15,7 +15,9 @@ from blog.weeknotes.github import (
     format_upgrades,
     format_work_items,
     get_closed_dependabot_prs_count,
+    get_events,
     get_github_token,
+    get_pull_requests,
     is_bot,
 )
 
@@ -24,14 +26,21 @@ from blog.weeknotes.github import (
 def github() -> GitHub:
     fixture_path = Path(__file__).parent / "fixtures" / "github_events.json"
     events = TypeAdapter(list[Event]).validate_json(fixture_path.read_text())
-    activity = SimpleNamespace(list_public_events_for_user=Mock())
+
+    def list_public_events_for_user(
+        username: str, *, per_page: int, page: int
+    ) -> SimpleNamespace:
+        return SimpleNamespace(parsed_data=events if page == 1 else [])
+
+    activity = SimpleNamespace(
+        list_public_events_for_user=Mock(side_effect=list_public_events_for_user)
+    )
     pull_request = SimpleNamespace(user=SimpleNamespace(type="Bot"))
     pulls = SimpleNamespace(
         get=Mock(return_value=SimpleNamespace(parsed_data=pull_request))
     )
     rest = SimpleNamespace(
         activity=activity,
-        paginate=Mock(return_value=events),
         pulls=pulls,
     )
     return cast(GitHub, SimpleNamespace(rest=rest))
@@ -146,15 +155,29 @@ def test_format_work_items() -> None:
 def test_get_closed_dependabot_prs_count(
     github: GitHub, since_date: date, expected: int
 ) -> None:
-    assert (
-        get_closed_dependabot_prs_count(github, "honzajavorek", since_date) == expected
-    )
+    events = get_events(github, "honzajavorek", since_date, date(2026, 2, 28))
+    pull_requests = get_pull_requests(github, events)
+
+    assert get_closed_dependabot_prs_count(events, pull_requests) == expected
 
 
 def test_get_closed_dependabot_prs_uses_public_events(github: GitHub) -> None:
-    get_closed_dependabot_prs_count(github, "honzajavorek", date(2026, 2, 1))
+    get_events(github, "honzajavorek", date(2026, 2, 1), date(2026, 2, 28))
 
-    assert github.rest.paginate.call_args == (
-        (github.rest.activity.list_public_events_for_user,),
-        {"username": "honzajavorek"},
-    )
+    assert {
+        (call.args, tuple(sorted(call.kwargs.items())))
+        for call in github.rest.activity.list_public_events_for_user.call_args_list
+    } == {
+        (("honzajavorek",), (("page", 1), ("per_page", 100))),
+        (("honzajavorek",), (("page", 2), ("per_page", 100))),
+        (("honzajavorek",), (("page", 3), ("per_page", 100))),
+    }
+
+
+def test_get_pull_requests_fetches_each_pr_once(github: GitHub) -> None:
+    events = get_events(github, "honzajavorek", date(2026, 2, 1), date(2026, 2, 28))
+
+    assert (
+        set(get_pull_requests(github, [*events, *events])),
+        github.rest.pulls.get.call_count,
+    ) == ({("honzajavorek", "film2trello", 297)}, 1)

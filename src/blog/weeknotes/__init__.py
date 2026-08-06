@@ -17,7 +17,9 @@ from blog.weeknotes.github import (
     format_upgrades,
     format_work_items,
     get_closed_dependabot_prs_count,
+    get_events,
     get_github_token,
+    get_pull_requests,
     get_work_items,
 )
 from blog.weeknotes.jg_toots import format_toots, get_jg_toots
@@ -88,18 +90,13 @@ def main(
     last_weeknotes_date = get_weeknotes_date(last_weeknotes_path)
     last_weeknotes_date_cz = format_weeknotes_date(last_weeknotes_date)
     github = GitHub(get_github_token(github_token))
-    pull_requests: dict[tuple[str, str, int], PullRequest] = {}
-    closed_dependabot_prs_count = get_closed_dependabot_prs_count(
-        github, github_username, last_weeknotes_date, pull_requests
+    events = get_events(github, github_username, last_weeknotes_date, today)
+    pull_requests: dict[tuple[str, str, int], PullRequest] = get_pull_requests(
+        github, events
     )
+    closed_dependabot_prs_count = get_closed_dependabot_prs_count(events, pull_requests)
     github_work = format_work_items(
-        get_work_items(
-            github,
-            github_username,
-            last_weeknotes_date,
-            today,
-            pull_requests,
-        )
+        get_work_items(github_username, events, pull_requests)
     )
 
     # mastodon links
