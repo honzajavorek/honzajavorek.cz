@@ -133,6 +133,9 @@ def test_get_title_from_url(monkeypatch: pytest.MonkeyPatch) -> None:
         ("https://www.facebook.com/post", "(něco z Facebooku)"),
         ("https://twitter.com/status/123", "(něco z Twitteru)"),
         ("https://mobile.twitter.com/status/123", "(něco z Twitteru)"),
+        ("https://x.com/status/123", "(něco z Xka)"),
+        ("https://medium.com/article", "(něco z Medium)"),
+        ("https://instagram.com/post", "(něco z Instagramu)"),
         ("https://example.com", "(bez titulku)"),
     ],
 )

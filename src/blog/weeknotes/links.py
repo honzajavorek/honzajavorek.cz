@@ -13,6 +13,9 @@ FALLBACK_TITLES = {
     "facebook.com": "(něco z Facebooku)",
     "twitter.com": "(něco z Twitteru)",
     "mobile.twitter.com": "(něco z Twitteru)",
+    "x.com": "(něco z Xka)",
+    "medium.com": "(něco z Medium)",
+    "instagram.com": "(něco z Instagramu)",
 }
 
 
