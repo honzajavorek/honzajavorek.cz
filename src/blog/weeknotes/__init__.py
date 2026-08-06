@@ -105,7 +105,10 @@ def main(
             today,
             timezone,
         )
-        github_work = format_work_items(contributions_future.result())
+        contributions = contributions_future.result()
+        github_work = format_work_items(
+            contributions.work_items, contributions.repo_commits
+        )
         dependabot_upgrades = format_upgrades(upgrades_future.result())
 
     # mastodon links

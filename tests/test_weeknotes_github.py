@@ -9,11 +9,14 @@ import pytest
 from githubkit import GitHub
 
 from blog.weeknotes.github import (
+    Contributions,
     LinkedIssue,
     LinkedPullRequest,
+    RepoCommits,
     WorkItem,
     format_contribution_counts,
     format_linked_issues,
+    format_repo_commits,
     format_section_name,
     format_upgrades,
     format_work_item_label,
@@ -223,9 +226,13 @@ def test_format_work_items() -> None:
     ]
 
     assert (
-        format_work_items(items)
+        format_work_items(
+            items,
+            [RepoCommits("alpha", "beta", "https://example.com/alpha/beta", 8)],
+        )
         == """## Ostatní (3 PRs, 2 reviews, 2 issues)
 
+-   🛠️✅ 8 commits do [alpha/beta](https://example.com/alpha/beta/)
 -   🛠️✅ [alpha/beta#1](https://example.com/alpha/1) ([#3](https://example.com/alpha/3)) – One
 -   🛠️ [alpha/zeta#2](https://example.com/alpha/2) – Two
 -   🛠️ [beta/repo#5](https://example.com/beta/5) – Five
@@ -492,6 +499,20 @@ def test_format_work_item_label(section_name: str, expected: str) -> None:
     assert format_work_item_label(item, section_name) == expected
 
 
+def test_format_repo_commits() -> None:
+    commits = [
+        RepoCommits("honzajavorek", "fiobank", "https://github.com/x/fiobank", 7),
+        RepoCommits(
+            "honzajavorek", "film2trello", "https://github.com/x/film2trello/", 18
+        ),
+    ]
+
+    assert format_repo_commits(commits, "Osobní projekty") == (
+        "-   🛠️✅ 18 commits do [film2trello](https://github.com/x/film2trello/), "
+        "7 commits do [fiobank](https://github.com/x/fiobank/)"
+    )
+
+
 def test_format_linked_issues() -> None:
     item = WorkItem(
         "owner",
@@ -558,6 +579,24 @@ def test_get_contributions() -> None:
                     ]
                 },
                 "issueContributions": {"nodes": []},
+                "commitContributionsByRepository": [
+                    {
+                        "repository": {
+                            "name": "apify-docs",
+                            "url": "https://github.com/apify/apify-docs",
+                            "owner": {"login": "apify"},
+                        },
+                        "contributions": {"totalCount": 6},
+                    },
+                    {
+                        "repository": {
+                            "name": "small",
+                            "url": "https://github.com/apify/small",
+                            "owner": {"login": "apify"},
+                        },
+                        "contributions": {"totalCount": 5},
+                    },
+                ],
             }
         }
     }
@@ -569,14 +608,24 @@ def test_get_contributions() -> None:
         date(2026, 7, 24),
         date(2026, 8, 6),
         "Europe/Prague",
-    ) == [
-        WorkItem(
-            "apify",
-            "apify-docs",
-            2849,
-            "https://github.com/apify/apify-docs/pull/2849",
-            "Test-driven development",
-            "pr",
-            "pending",
-        )
-    ]
+    ) == Contributions(
+        (
+            WorkItem(
+                "apify",
+                "apify-docs",
+                2849,
+                "https://github.com/apify/apify-docs/pull/2849",
+                "Test-driven development",
+                "pr",
+                "pending",
+            ),
+        ),
+        (
+            RepoCommits(
+                "apify",
+                "apify-docs",
+                "https://github.com/apify/apify-docs",
+                6,
+            ),
+        ),
+    )

@@ -36,6 +36,20 @@ class WorkItem:
     closed_by_pull_requests: tuple[LinkedPullRequest, ...] = ()
 
 
+@dataclass(frozen=True)
+class RepoCommits:
+    owner: str
+    repo: str
+    url: str
+    count: int
+
+
+@dataclass(frozen=True)
+class Contributions:
+    work_items: tuple[WorkItem, ...]
+    repo_commits: tuple[RepoCommits, ...]
+
+
 CONTRIBUTIONS_QUERY = """
 query($username: String!, $from: DateTime!, $to: DateTime!) {
   user(login: $username) {
@@ -60,6 +74,10 @@ query($username: String!, $from: DateTime!, $to: DateTime!) {
             }
           }
         }
+      }
+      commitContributionsByRepository(maxRepositories: 100) {
+        repository { name url owner { login } }
+        contributions { totalCount }
       }
     }
   }
@@ -206,7 +224,7 @@ def get_contributions(
     since_date: date,
     today: date,
     timezone: str,
-) -> list[WorkItem]:
+) -> Contributions:
     tz = ZoneInfo(timezone)
     until = datetime.combine(today, time.max, tz)
     result = github.graphql.request(
@@ -233,7 +251,17 @@ def get_contributions(
         item = get_contribution_work_item(contribution["issue"], "issue", until)
         if item is not None:
             items.append(item)
-    return list(dict.fromkeys(items))
+    repo_commits = tuple(
+        RepoCommits(
+            contribution["repository"]["owner"]["login"],
+            contribution["repository"]["name"],
+            contribution["repository"]["url"],
+            contribution["contributions"]["totalCount"],
+        )
+        for contribution in collection["commitContributionsByRepository"]
+        if contribution["contributions"]["totalCount"] > 5
+    )
+    return Contributions(tuple(dict.fromkeys(items)), repo_commits)
 
 
 def is_own_pull_request(pull_request: dict[str, Any], username: str) -> bool:
@@ -286,8 +314,14 @@ def get_contribution_work_item(
     )
 
 
-def format_work_items(items: Iterable[WorkItem]) -> str:
+def format_work_items(
+    items: Iterable[WorkItem], repo_commits: Iterable[RepoCommits] = ()
+) -> str:
     items = list(items)
+    commits_by_section: dict[str, list[RepoCommits]] = {}
+    for commits in repo_commits:
+        section_name = format_section_name(commits.owner)
+        commits_by_section.setdefault(section_name, []).append(commits)
     authored_pr_keys = {
         (item.owner, item.repo, item.number) for item in items if item.kind == "pr"
     }
@@ -325,6 +359,9 @@ def format_work_items(items: Iterable[WorkItem]) -> str:
             f"## {section_name} ({format_contribution_counts(counts)})",
             "",
         ]
+        section_commits = commits_by_section.get(section_name, [])
+        if section_commits:
+            lines.append(format_repo_commits(section_commits, section_name))
         display_items: dict[tuple[str, str, int], WorkItem] = {}
         for item in section_items:
             key = (item.owner, item.repo, item.number)
@@ -372,6 +409,18 @@ def format_work_item_label(item: WorkItem, section_name: str) -> str:
     if section_name == "Ostatní":
         return f"{item.owner}/{item.repo}#{item.number}"
     return f"{item.repo}#{item.number}"
+
+
+def format_repo_commits(repo_commits: Iterable[RepoCommits], section_name: str) -> str:
+    links = []
+    for commits in sorted(repo_commits, key=lambda item: (-item.count, item.repo)):
+        label = commits.repo
+        if section_name == "Ostatní":
+            label = f"{commits.owner}/{commits.repo}"
+        links.append(
+            f"{commits.count} commits do [{label}]({commits.url.rstrip('/')}/)"
+        )
+    return f"-   🛠️✅ {', '.join(links)}"
 
 
 def format_linked_issues(item: WorkItem, linked_issues: Iterable[LinkedIssue]) -> str:
