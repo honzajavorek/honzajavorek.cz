@@ -74,6 +74,7 @@ def main(
 
     # mastodon links
     links = get_links(last_weeknotes_date, json.loads(links_path.read_text()))
+    links_text = format_links(links)
 
     # mastodon jg
     jg_toots = get_jg_toots(last_weeknotes_date, json.loads(jg_toots_path.read_text()))
@@ -90,9 +91,8 @@ def main(
         last_weeknotes_date=last_weeknotes_date_cz,
         today=today_cz,
         jg_toots=jg_toots_text,
+        links=links_text,
     )
-    content += format_links(links)
-
     if debug:
         debug_print(path, content)
     else:
@@ -123,6 +123,7 @@ def format_content(
     last_weeknotes_date: str,
     today: str,
     jg_toots: str,
+    links: str,
 ) -> str:
     template_path = Path(__file__).with_name("template.md")
     return Template(template_path.read_text()).substitute(
@@ -132,6 +133,7 @@ def format_content(
         last_weeknotes_date=last_weeknotes_date,
         today=today,
         jg_toots=jg_toots,
+        links=links.rstrip("\n"),
     )
 
 

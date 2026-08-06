@@ -22,6 +22,7 @@ def test_format_content() -> None:
         last_weeknotes_date="20. 7.",
         today="31. 7.",
         jg_toots="-   https://example.com/toot",
+        links="- [Example](https://example.com)\n",
     )
 
     assert all(
@@ -32,6 +33,7 @@ def test_format_content() -> None:
             "[posledních poznámek]({filename}2026-07-20_test.md)",
             "(20. 7. až 31. 7.)",
             "-   https://example.com/toot",
+            "- [Example](https://example.com)",
             "![Poznámky]({static}/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg)",
         ]
     )

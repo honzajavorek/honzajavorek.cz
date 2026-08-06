@@ -30,3 +30,4 @@ $jg_toots
 Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
 Od posledních poznámek jsem sdílel:
 
+$links
