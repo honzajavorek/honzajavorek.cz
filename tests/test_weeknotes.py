@@ -24,7 +24,7 @@ def test_format_content() -> None:
         jg_toots="-   https://example.com/toot",
         links="- [Example](https://example.com)\n",
         dependabot_upgrades="-   7 upgradů závislostí na všech projektech.",
-        github_work="### example\n\n-   🟢 [example/repo#42](https://example.com/repo/42)",
+        github_work="## example\n\n-   🛠️✅ [example/repo#42](https://example.com/repo/42)",
     )
 
     assert all(
@@ -37,7 +37,7 @@ def test_format_content() -> None:
             "-   https://example.com/toot",
             "- [Example](https://example.com)",
             "7 upgradů závislostí na všech projektech.",
-            "🟢 [example/repo#42](https://example.com/repo/42)",
+            "🛠️✅ [example/repo#42](https://example.com/repo/42)",
             "![Poznámky]({static}/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg)",
         ]
     )

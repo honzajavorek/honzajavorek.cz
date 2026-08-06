@@ -19,8 +19,8 @@ $github_work
 
 ## Další
 
-$dependabot_upgrades
 -   E-maily, [klubový Discord](https://junior.guru/club/), [Pyvec Slack](https://docs.pyvec.org/operations/support.html#sit-kontaktu), zprávy na LinkedIn.
+$dependabot_upgrades
 
 ## Plánuji
 

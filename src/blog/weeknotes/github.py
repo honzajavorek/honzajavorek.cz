@@ -10,14 +10,30 @@ from githubkit import GitHub
 
 
 @dataclass(frozen=True)
+class LinkedIssue:
+    owner: str
+    repo: str
+    number: int
+    url: str
+
+
+@dataclass(frozen=True)
+class LinkedPullRequest:
+    owner: str
+    repo: str
+    number: int
+
+
+@dataclass(frozen=True)
 class WorkItem:
     owner: str
     repo: str
     number: int
     url: str
     title: str
-    kind: Literal["pr", "issue"]
-    color: Literal["green", "orange"]
+    kind: Literal["pr", "review", "issue"]
+    state: Literal["completed", "pending", "review"]
+    closed_by_pull_requests: tuple[LinkedPullRequest, ...] = ()
 
 
 CONTRIBUTIONS_QUERY = """
@@ -37,7 +53,11 @@ query($username: String!, $from: DateTime!, $to: DateTime!) {
             title
             url
             author { __typename }
+            closedAt
             repository { name owner { login } }
+            closedByPullRequestsReferences(first: 100, includeClosedPrs: true) {
+              nodes { number repository { name owner { login } } }
+            }
           }
         }
       }
@@ -49,7 +69,7 @@ fragment pullRequest on PullRequest {
   number
   title
   url
-  author { __typename }
+  author { __typename login }
   mergedAt
   mergedBy { login }
   repository { name owner { login } }
@@ -188,7 +208,6 @@ def get_contributions(
     timezone: str,
 ) -> list[WorkItem]:
     tz = ZoneInfo(timezone)
-    since = datetime.combine(since_date, time.min, tz)
     until = datetime.combine(today, time.max, tz)
     result = github.graphql.request(
         CONTRIBUTIONS_QUERY,
@@ -201,47 +220,60 @@ def get_contributions(
     collection = result["user"]["contributionsCollection"]
     items = []
     for contribution in collection["pullRequestContributions"]["nodes"]:
-        item = get_contribution_work_item(
-            contribution["pullRequest"], "pr", username, since, until
-        )
+        item = get_contribution_work_item(contribution["pullRequest"], "pr", until)
         if item is not None:
             items.append(item)
     for contribution in collection["pullRequestReviewContributions"]["nodes"]:
-        item = get_contribution_work_item(
-            contribution["pullRequest"], "pr", username, since, until
-        )
+        if is_own_pull_request(contribution["pullRequest"], username):
+            continue
+        item = get_contribution_work_item(contribution["pullRequest"], "review", until)
         if item is not None:
             items.append(item)
     for contribution in collection["issueContributions"]["nodes"]:
-        item = get_contribution_work_item(
-            contribution["issue"], "issue", username, since, until
-        )
+        item = get_contribution_work_item(contribution["issue"], "issue", until)
         if item is not None:
             items.append(item)
     return list(dict.fromkeys(items))
 
 
+def is_own_pull_request(pull_request: dict[str, Any], username: str) -> bool:
+    author = pull_request["author"]
+    return author is not None and author["login"] == username
+
+
 def get_contribution_work_item(
     contribution: dict[str, Any],
-    kind: Literal["pr", "issue"],
-    username: str,
-    since: datetime,
+    kind: Literal["pr", "review", "issue"],
     until: datetime,
 ) -> WorkItem | None:
     author = contribution["author"]
     if author is not None and author["__typename"] == "Bot":
         return None
     repository = contribution["repository"]
-    color = "orange"
-    if kind == "pr" and contribution["mergedAt"] is not None:
-        merged_at = datetime.fromisoformat(contribution["mergedAt"])
-        merged_by = contribution["mergedBy"]
-        if (
-            merged_by is not None
-            and merged_by["login"] == username
-            and since <= merged_at <= until
-        ):
-            color = "green"
+    state = "review" if kind == "review" else "pending"
+    is_merged = (
+        kind == "pr"
+        and contribution["mergedAt"] is not None
+        and datetime.fromisoformat(contribution["mergedAt"]) <= until
+    )
+    if is_merged:
+        state = "completed"
+    if (
+        kind == "issue"
+        and contribution["closedAt"] is not None
+        and datetime.fromisoformat(contribution["closedAt"]) <= until
+    ):
+        state = "completed"
+    closed_by_pull_requests = ()
+    if kind == "issue":
+        closed_by_pull_requests = tuple(
+            LinkedPullRequest(
+                pull_request["repository"]["owner"]["login"],
+                pull_request["repository"]["name"],
+                pull_request["number"],
+            )
+            for pull_request in contribution["closedByPullRequestsReferences"]["nodes"]
+        )
     return WorkItem(
         repository["owner"]["login"],
         repository["name"],
@@ -249,11 +281,32 @@ def get_contribution_work_item(
         contribution["url"],
         contribution["title"],
         kind,
-        color,
+        state,
+        closed_by_pull_requests,
     )
 
 
 def format_work_items(items: Iterable[WorkItem]) -> str:
+    items = list(items)
+    authored_pr_keys = {
+        (item.owner, item.repo, item.number) for item in items if item.kind == "pr"
+    }
+    linked_issues_by_pr: dict[tuple[str, str, int], list[LinkedIssue]] = {}
+    for item in items:
+        if item.kind != "issue":
+            continue
+        for pull_request in item.closed_by_pull_requests:
+            key = (pull_request.owner, pull_request.repo, pull_request.number)
+            if key not in authored_pr_keys:
+                continue
+            linked_issues_by_pr.setdefault(key, []).append(
+                LinkedIssue(item.owner, item.repo, item.number, item.url)
+            )
+    linked_issue_keys = {
+        (issue.owner, issue.repo, issue.number)
+        for linked_issues in linked_issues_by_pr.values()
+        for issue in linked_issues
+    }
     grouped: dict[str, list[WorkItem]] = {}
     for item in items:
         grouped.setdefault(format_section_name(item.owner), []).append(item)
@@ -264,11 +317,30 @@ def format_work_items(items: Iterable[WorkItem]) -> str:
         section_items = grouped.get(section_name)
         if section_items is None:
             continue
-        lines = [f"### {section_name}", ""]
-        for item in sorted(section_items, key=work_item_sort_key):
-            emoji = "🟢" if item.color == "green" else "🟠"
+        counts = {
+            kind: sum(item.kind == kind for item in section_items)
+            for kind in ("pr", "review", "issue")
+        }
+        lines = [
+            f"## {section_name} ({format_contribution_counts(counts)})",
+            "",
+        ]
+        display_items: dict[tuple[str, str, int], WorkItem] = {}
+        for item in section_items:
+            key = (item.owner, item.repo, item.number)
+            if item.kind == "issue" and key in linked_issue_keys:
+                continue
+            current_item = display_items.get(key)
+            if current_item is None or state_sort_key(item.state) < state_sort_key(
+                current_item.state
+            ):
+                display_items[key] = item
+        for item in sorted(display_items.values(), key=work_item_sort_key):
+            emoji = format_work_item_marker(item)
+            key = (item.owner, item.repo, item.number)
             lines.append(
-                f"-   {emoji} [{item.owner}/{item.repo}#{item.number}]({item.url})"
+                f"-   {emoji} [{format_work_item_label(item, section_name)}]({item.url})"
+                f"{format_linked_issues(item, linked_issues_by_pr.get(key, []))}"
                 f" – {item.title}"
             )
         sections.append("\n".join(lines))
@@ -279,10 +351,56 @@ def format_section_name(owner: str) -> str:
     return SECTION_NAMES.get(owner, "Ostatní")
 
 
+def format_contribution_counts(counts: dict[str, int]) -> str:
+    labels = {"pr": "PRs", "review": "reviews", "issue": "issues"}
+    return ", ".join(
+        f"{counts[kind]} {labels[kind]}"
+        for kind in ("pr", "review", "issue")
+        if counts[kind]
+    )
+
+
+def format_work_item_marker(item: WorkItem) -> str:
+    if item.kind == "review":
+        return "👀🧠"
+    if item.kind == "pr":
+        return "🛠️✅" if item.state == "completed" else "🛠️"
+    return "📝✅" if item.state == "completed" else "📝"
+
+
+def format_work_item_label(item: WorkItem, section_name: str) -> str:
+    if section_name == "Ostatní":
+        return f"{item.owner}/{item.repo}#{item.number}"
+    return f"{item.repo}#{item.number}"
+
+
+def format_linked_issues(item: WorkItem, linked_issues: Iterable[LinkedIssue]) -> str:
+    linked_issues = list(linked_issues)
+    if not linked_issues:
+        return ""
+    links = []
+    for issue in linked_issues:
+        label = f"#{issue.number}"
+        if (issue.owner, issue.repo) != (item.owner, item.repo):
+            label = f"{issue.owner}/{issue.repo}#{issue.number}"
+        links.append(f"[{label}]({issue.url})")
+    return f" ({', '.join(links)})"
+
+
+def state_sort_key(state: Literal["completed", "pending", "review"]) -> int:
+    return {"completed": 0, "pending": 1, "review": 2}[state]
+
+
 def work_item_sort_key(item: WorkItem) -> tuple[int, int, str, str, int]:
+    if item.state == "completed":
+        activity_order = 0 if item.kind == "pr" else 1
+    elif item.kind == "review":
+        activity_order = 3
+    else:
+        activity_order = 2 if item.kind == "pr" else 4
     return (
-        0 if item.color == "green" else 1,
-        0 if item.kind == "pr" else 1,
+        activity_order,
+        0,
         item.owner,
         item.repo,
         item.number,
