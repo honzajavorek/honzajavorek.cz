@@ -52,7 +52,7 @@ def test_get_jg_toots(
                 {"url": "https://example.com/one"},
                 {"url": "https://example.com/two"},
             ],
-            "-   https://example.com/one\n        -   https://example.com/two",
+            "-   https://example.com/one\n-   https://example.com/two",
         ),
     ],
 )

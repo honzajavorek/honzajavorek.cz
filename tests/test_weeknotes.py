@@ -4,6 +4,7 @@ from pathlib import Path
 import pytest
 
 from blog.weeknotes import (
+    format_content,
     format_last_weeknotes_path,
     format_title,
     format_weeknotes_date,
@@ -11,6 +12,29 @@ from blog.weeknotes import (
     get_weeknotes_date,
     get_weeknotes_path,
 )
+
+
+def test_format_content() -> None:
+    content = format_content(
+        title="Týdenní poznámky: Test",
+        weeknotes_tag="weeknotes",
+        last_weeknotes_path="{filename}2026-07-20_test.md",
+        last_weeknotes_date="20. 7.",
+        today="31. 7.",
+        jg_toots="-   https://example.com/toot",
+    )
+
+    assert all(
+        value in content
+        for value in [
+            "Title: Týdenní poznámky: Test",
+            "Tags: weeknotes, junior.guru",
+            "[posledních poznámek]({filename}2026-07-20_test.md)",
+            "(20. 7. až 31. 7.)",
+            "-   https://example.com/toot",
+            "![Poznámky]({static}/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg)",
+        ]
+    )
 
 
 @pytest.mark.parametrize(

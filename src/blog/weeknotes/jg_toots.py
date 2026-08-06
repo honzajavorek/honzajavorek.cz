@@ -12,4 +12,4 @@ def get_jg_toots(
 
 
 def format_toots(toots: Iterable[dict[str, str]]) -> str:
-    return "\n        ".join(f"-   {toot['url']}" for toot in toots)
+    return "\n".join(f"-   {toot['url']}" for toot in toots)

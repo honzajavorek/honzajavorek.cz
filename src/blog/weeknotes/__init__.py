@@ -1,7 +1,7 @@
 import json
 from datetime import date, datetime
 from pathlib import Path
-from textwrap import dedent
+from string import Template
 from types import ModuleType
 from zoneinfo import ZoneInfo
 
@@ -83,42 +83,14 @@ def main(
     title = format_title(title, title_prefix)
     path = get_weeknotes_path(content_path, title, today)
     last_weeknotes_path = format_last_weeknotes_path(last_weeknotes_path, content_path)
-    content = dedent(
-        f"""
-        Title: {title}
-        Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
-        Lang: cs
-        Tags: {settings_module.WEEKNOTES_TAG}, junior.guru
-
-        Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
-        Od [posledních poznámek]({last_weeknotes_path}) už utekl nějaký ten týden ({last_weeknotes_date_cz} až {today_cz}), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
-
-        ![Poznámky]({{static}}/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg)
-        Fotil [Markus Spiske](https://unsplash.com/@markusspiske)
-
-        <div class="alert alert-warning" role="alert" markdown="1">
-        **Čísla:** Finanční výsledky, návštěvnost a další čísla k junior.guru [mám přímo na webu](https://junior.guru/about/).
-        </div>
-
-        {jg_toots_text}
-
-        ## Další
-
-        -   E-maily, [klubový Discord](https://junior.guru/club/), [Pyvec Slack](https://docs.pyvec.org/operations/support.html#sit-kontaktu), zprávy na LinkedIn, upgrady závislostí na všech projektech.
-
-        ## Plánuji
-
-        1.
-        2.
-        3.
-
-        ## Zaujalo mě
-
-        Když na něco narazím a líbí se mi to, sdílím to [na Mastodonu](https://mastodonczech.cz/@honzajavorek).
-        Od posledních poznámek jsem sdílel:
-
-    """
-    ).lstrip()
+    content = format_content(
+        title=title,
+        weeknotes_tag=settings_module.WEEKNOTES_TAG,
+        last_weeknotes_path=last_weeknotes_path,
+        last_weeknotes_date=last_weeknotes_date_cz,
+        today=today_cz,
+        jg_toots=jg_toots_text,
+    )
     content += format_links(links)
 
     if debug:
@@ -142,6 +114,25 @@ def edit(path: Path) -> None:
 
 def format_title(title: str, title_prefix: str) -> str:
     return f"{title_prefix}: {title}"
+
+
+def format_content(
+    title: str,
+    weeknotes_tag: str,
+    last_weeknotes_path: str,
+    last_weeknotes_date: str,
+    today: str,
+    jg_toots: str,
+) -> str:
+    template_path = Path(__file__).with_name("template.md")
+    return Template(template_path.read_text()).substitute(
+        title=title,
+        weeknotes_tag=weeknotes_tag,
+        last_weeknotes_path=last_weeknotes_path,
+        last_weeknotes_date=last_weeknotes_date,
+        today=today,
+        jg_toots=jg_toots,
+    )
 
 
 def format_last_weeknotes_path(last_weeknotes_path: Path, content_path: Path) -> str:
