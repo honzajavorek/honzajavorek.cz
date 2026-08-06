@@ -70,6 +70,8 @@ $ blog weeknotes Dovolená
 - Python dependencies are managed by [uv](https://docs.astral.sh/uv/).
 - The [@dependabot](https://dependabot.com/) takes care of upgrading (see `.github/dependabot.yml`).
 
+Run `uv run blog test` to execute the tests. The test suite also checks Python code with Ruff for lint and formatting violations.
+
 ## 🚀 Deployment
 
 Each commit to `main` runs a [GitHub Actions](https://github.com/features/actions) build which automatically deploys the site to [GitHub Pages](https://pages.github.com/). The configuration is in `.github/workflows/build.yml`.

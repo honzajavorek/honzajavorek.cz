@@ -1,18 +1,19 @@
 import json
 import re
-from pathlib import Path
 from datetime import date, datetime
-from urllib.parse import urlparse
+from pathlib import Path
 from textwrap import dedent
+from urllib.parse import urlparse
+from zoneinfo import ZoneInfo
 
-from lxml.html import soupparser as html_soup
-import requests
 import click
+import requests
+from lxml.html import soupparser as html_soup
 from slugify import slugify
 
 from blog.lib import SettingsModuleParam
-from blog.update import main as update_command
 from blog.toots import main as toots_command
+from blog.update import main as update_command
 
 
 TITLES = {
@@ -21,6 +22,8 @@ TITLES = {
     "twitter.com": "(něco na Twitteru)",
     "mobile.twitter.com": "(něco na Twitteru)",
 }
+
+PRAGUE_TZ = ZoneInfo("Europe/Prague")
 
 
 @click.command(context_settings={"ignore_unknown_options": True})
@@ -71,7 +74,7 @@ def main(
         access_token=mastodon_access_token,
     )
 
-    today = date.today()
+    today = datetime.now(PRAGUE_TZ).date()
     today_cz = f"{today:%-d}. {today:%-m}."
     today_iso = today.isoformat()
 
@@ -151,7 +154,7 @@ def get_jg_toots(since_date: date, toots: list):
     for toot in toots:
         if datetime.fromisoformat(toot["created_at"]).date() < since_date:
             continue
-        yield dict(content=toot["content"], url=toot["url"])
+        yield {"content": toot["content"], "url": toot["url"]}
 
 
 def get_links(since_date: date, links: list):
@@ -182,7 +185,7 @@ def get_links(since_date: date, links: list):
             element.getparent().remove(element)
         comment = html_tree.text_content().strip()
 
-        yield dict(title=title, comment=comment, url=url)
+        yield {"title": title, "comment": comment, "url": url}
 
 
 def get_title_from_webpage(webpage):
@@ -209,7 +212,7 @@ def get_title_from_url(url):
         pass
     else:
         for line in response.iter_lines(decode_unicode=True):
-            match = re.search(r"<title>([^<]+)", str(line), re.I)
+            match = re.search(r"<title>([^<]+)", str(line), re.IGNORECASE)
             if match:
                 return match.group(1).strip()
     return "(bez titulku)"
@@ -227,4 +230,3 @@ def get_canonical_overcast_url(url):
             if parts.query or parts.params or parts.fragment or parts.path != "/":
                 return canonical_url
     return url
-
