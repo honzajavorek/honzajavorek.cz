@@ -3,7 +3,7 @@ from pathlib import Path
 import time
 
 import click
-import requests
+import httpx
 from slugify import slugify
 from sqlite_utils import Database
 
@@ -28,13 +28,17 @@ def main(
     click.echo(f"Authorized: {'yes' if token else 'no'}, {user_agent}")
 
     click.echo("Waiting for the last deployment to finish")
-    response = requests.get(
-        f"https://api.github.com/repos/{repo}/deployments", headers=headers
+    response = httpx.get(
+        f"https://api.github.com/repos/{repo}/deployments",
+        headers=headers,
+        follow_redirects=True,
     )
     response.raise_for_status()
     deployment = sorted(response.json(), key=itemgetter('updated_at'), reverse=True)[0]
     while True:
-        response = requests.get(deployment["statuses_url"], headers=headers)
+        response = httpx.get(
+            deployment["statuses_url"], headers=headers, follow_redirects=True
+        )
         response.raise_for_status()
         status = sorted(response.json(), key=itemgetter('updated_at'), reverse=True)[0]
         click.echo(f"Deployment status: {status['state']}")
@@ -52,7 +56,7 @@ def main(
     for article in articles:
         for _ in range(article_check_attempts):
             click.echo(f"Checking {article['url']}")
-            response = requests.head(article["url"], timeout=30)
+            response = httpx.head(article["url"])
             if response.status_code == 200:
                 break
             arbitrary_wait(deployment_polling_interval)

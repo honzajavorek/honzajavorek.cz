@@ -4,7 +4,7 @@ from datetime import date, datetime
 from typing import Any
 from urllib.parse import urlparse
 
-import requests
+import httpx
 from lxml.html import soupparser as html_soup
 
 
@@ -57,31 +57,27 @@ def format_links(links: Iterable[Mapping[str, str]]) -> str:
 
 def get_title_from_url(url: str) -> str:
     try:
-        response = requests.get(
+        with httpx.stream(
+            "GET",
             url,
-            stream=True,
             headers={"User-Agent": "HonzaJavorekBot (+https://honzajavorek.cz)"},
             timeout=5,
-        )
-        response.raise_for_status()
-    except (
-        requests.exceptions.HTTPError,
-        requests.exceptions.ConnectionError,
-        requests.exceptions.ReadTimeout,
-    ):
+            follow_redirects=True,
+        ) as response:
+            response.raise_for_status()
+            for line in response.iter_lines():
+                match = re.search(r"<title>([^<]+)", str(line), re.IGNORECASE)
+                if match:
+                    return match.group(1).strip()
+    except httpx.HTTPError:
         pass
-    else:
-        for line in response.iter_lines(decode_unicode=True):
-            match = re.search(r"<title>([^<]+)", str(line), re.IGNORECASE)
-            if match:
-                return match.group(1).strip()
     return FALLBACK_TITLES.get(urlparse(url).hostname, "(bez titulku)")
 
 
 def get_canonical_overcast_url(url: str) -> str:
-    response = requests.get(url, stream=True)
+    response = httpx.get(url, follow_redirects=True)
     response.raise_for_status()
-    for line in response.iter_lines(decode_unicode=True):
+    for line in response.iter_lines():
         if 'rel="canonical"' in line:
             canonical_url = re.search(r'rel="canonical"\s+href="([^"]+)"', line).group(
                 1

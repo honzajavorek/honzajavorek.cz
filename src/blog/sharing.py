@@ -4,8 +4,8 @@ from pathlib import Path
 from operator import itemgetter
 from typing import Any
 
-import requests
 import click
+import httpx
 from sqlite_utils import Database
 from mastodon import Mastodon
 
@@ -115,12 +115,16 @@ def telegram(
 def post_telegram_message(bot_token, chat_id, text):
     api_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     try:
-        response = requests.get(api_url, params=dict(chat_id=chat_id, text=text))
+        response = httpx.get(
+            api_url,
+            params=dict(chat_id=chat_id, text=text),
+            follow_redirects=True,
+        )
         response.raise_for_status()
         data = response.json()
         assert data["ok"], data
         return data
-    except requests.HTTPError as e:
+    except httpx.HTTPStatusError as e:
         click.echo(f"{e.response.json()!r}", err=True)
         raise
 

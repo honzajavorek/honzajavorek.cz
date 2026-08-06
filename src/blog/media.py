@@ -5,8 +5,8 @@ from urllib.parse import urlparse, unquote
 from functools import partial
 
 import click
+import httpx
 from slugify import slugify
-import requests
 from send2trash import send2trash
 from PIL import Image
 from pillow_heif import register_heif_opener
@@ -143,10 +143,11 @@ def process_match(source_path, images_path, images, match, overwrite=False):
         image_path = images_path / Path(urlparse(path).path).name.lower()
         if not overwrite and image_path.exists():
             raise FileExistsError(str(image_path))
-        response = requests.get(path, stream=True)
-        response.raise_for_status()
-        with image_path.open('wb') as f:
-            with click.progressbar(response, label=f'Downloading to {image_path}') as progress:
+        with httpx.stream("GET", path, follow_redirects=True) as response:
+            response.raise_for_status()
+            with image_path.open('wb') as f, click.progressbar(
+                response.iter_bytes(), label=f'Downloading to {image_path}'
+            ) as progress:
                 for chunk in progress:
                     f.write(chunk)
     else:

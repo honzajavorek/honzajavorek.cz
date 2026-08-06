@@ -1,8 +1,8 @@
+from contextlib import AbstractContextManager
 from datetime import date
-from typing import Any
 
+import httpx
 import pytest
-import requests
 
 from blog.weeknotes import links as links_module
 from blog.weeknotes.links import (
@@ -13,15 +13,18 @@ from blog.weeknotes.links import (
 )
 
 
-class FakeResponse:
+class FakeResponse(AbstractContextManager["FakeResponse"]):
     def __init__(self, lines: list[str]) -> None:
         self.lines = lines
 
     def raise_for_status(self) -> None:
         pass
 
-    def iter_lines(self, decode_unicode: bool = False) -> list[str]:
+    def iter_lines(self) -> list[str]:
         return self.lines
+
+    def __exit__(self, *args: object) -> None:
+        pass
 
 
 def test_get_links_filters_old_links() -> None:
@@ -118,7 +121,7 @@ def test_format_links(links: list[dict[str, str]], expected: str) -> None:
 
 def test_get_title_from_url(monkeypatch: pytest.MonkeyPatch) -> None:
     response = FakeResponse(["<html>", "<title>  Example title  </title>"])
-    monkeypatch.setattr(requests, "get", lambda *args, **kwargs: response)
+    monkeypatch.setattr(httpx, "stream", lambda *args, **kwargs: response)
 
     assert get_title_from_url("https://example.com") == "Example title"
 
@@ -136,12 +139,24 @@ def test_get_title_from_url(monkeypatch: pytest.MonkeyPatch) -> None:
 def test_get_title_from_url_falls_back(
     monkeypatch: pytest.MonkeyPatch, url: str, expected: str
 ) -> None:
-    def raise_connection_error(*args: Any, **kwargs: Any) -> None:
-        raise requests.exceptions.ConnectionError
+    def raise_connection_error(*args: object, **kwargs: object) -> None:
+        raise httpx.ConnectError("Connection failed")
 
-    monkeypatch.setattr(requests, "get", raise_connection_error)
+    monkeypatch.setattr(httpx, "stream", raise_connection_error)
 
     assert get_title_from_url(url) == expected
+
+
+def test_get_title_from_url_falls_back_on_read_timeout(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    class TimeoutResponse(FakeResponse):
+        def iter_lines(self) -> list[str]:
+            raise httpx.ReadTimeout("Reading timed out")
+
+    monkeypatch.setattr(httpx, "stream", lambda *args, **kwargs: TimeoutResponse([]))
+
+    assert get_title_from_url("https://facebook.com/post") == "(něco z Facebooku)"
 
 
 @pytest.mark.parametrize(
@@ -161,6 +176,6 @@ def test_get_title_from_url_falls_back(
 def test_get_canonical_overcast_url(
     monkeypatch: pytest.MonkeyPatch, lines: list[str], expected: str
 ) -> None:
-    monkeypatch.setattr(requests, "get", lambda *args, **kwargs: FakeResponse(lines))
+    monkeypatch.setattr(httpx, "get", lambda *args, **kwargs: FakeResponse(lines))
 
     assert get_canonical_overcast_url("https://overcast.fm/+episode") == expected
