@@ -1,5 +1,5 @@
 import subprocess
-from datetime import date
+from datetime import UTC, date, datetime
 from importlib import import_module
 from types import SimpleNamespace
 from typing import cast
@@ -10,6 +10,7 @@ from githubkit import GitHub
 
 from blog.weeknotes.github import (
     WorkItem,
+    format_section_name,
     format_upgrades,
     format_work_items,
     get_closed_dependabot_prs_count,
@@ -178,17 +179,28 @@ def test_format_work_items() -> None:
 
     assert (
         format_work_items(items)
-        == """### alpha
+        == """### Ostatní
 
 -   🟢 [alpha/beta#1](https://example.com/alpha/1) – One
 -   🟢 [alpha/beta#3](https://example.com/alpha/3) – Three
 -   🟠 [alpha/zeta#2](https://example.com/alpha/2) – Two
--   🟠 [alpha/zeta#4](https://example.com/alpha/4) – Four
-
-### beta
-
--   🟠 [beta/repo#5](https://example.com/beta/5) – Five"""
+-   🟠 [beta/repo#5](https://example.com/beta/5) – Five
+-   🟠 [alpha/zeta#4](https://example.com/alpha/4) – Four"""
     )
+
+
+@pytest.mark.parametrize(
+    ("owner", "expected"),
+    [
+        ("juniorguru", "junior.guru"),
+        ("apify", "Apify"),
+        ("pyvec", "Python komunita"),
+        ("honzajavorek", "Osobní projekty"),
+        ("someone-else", "Ostatní"),
+    ],
+)
+def test_format_section_name(owner: str, expected: str) -> None:
+    assert format_section_name(owner) == expected
 
 
 def test_get_contribution_work_item() -> None:
@@ -197,10 +209,18 @@ def test_get_contribution_work_item() -> None:
         "title": "Test-driven development",
         "url": "https://github.com/apify/apify-docs/pull/2849",
         "author": {"__typename": "User"},
+        "mergedAt": None,
+        "mergedBy": None,
         "repository": {"name": "apify-docs", "owner": {"login": "apify"}},
     }
 
-    assert get_contribution_work_item(contribution, "pr") == WorkItem(
+    assert get_contribution_work_item(
+        contribution,
+        "pr",
+        "honzajavorek",
+        datetime(2026, 7, 24, tzinfo=UTC),
+        datetime(2026, 8, 6, 23, 59, tzinfo=UTC),
+    ) == WorkItem(
         "apify",
         "apify-docs",
         2849,
@@ -217,7 +237,44 @@ def test_get_contribution_work_item_ignores_bot() -> None:
         "repository": {"name": "repo", "owner": {"login": "owner"}},
     }
 
-    assert get_contribution_work_item(contribution, "pr") is None
+    assert (
+        get_contribution_work_item(
+            contribution,
+            "pr",
+            "honzajavorek",
+            datetime(2026, 7, 24, tzinfo=UTC),
+            datetime(2026, 8, 6, 23, 59, tzinfo=UTC),
+        )
+        is None
+    )
+
+
+def test_get_contribution_work_item_is_green_when_merged_by_user() -> None:
+    contribution = {
+        "number": 2839,
+        "title": "Fix docs",
+        "url": "https://github.com/apify/apify-docs/pull/2839",
+        "author": {"__typename": "User"},
+        "mergedAt": "2026-07-31T15:00:00Z",
+        "mergedBy": {"login": "honzajavorek"},
+        "repository": {"name": "apify-docs", "owner": {"login": "apify"}},
+    }
+
+    assert get_contribution_work_item(
+        contribution,
+        "pr",
+        "honzajavorek",
+        datetime(2026, 7, 24, tzinfo=UTC),
+        datetime(2026, 8, 6, 23, 59, tzinfo=UTC),
+    ) == WorkItem(
+        "apify",
+        "apify-docs",
+        2839,
+        "https://github.com/apify/apify-docs/pull/2839",
+        "Fix docs",
+        "pr",
+        "green",
+    )
 
 
 def test_get_contributions() -> None:
@@ -233,6 +290,8 @@ def test_get_contributions() -> None:
                                 "title": "Test-driven development",
                                 "url": "https://github.com/apify/apify-docs/pull/2849",
                                 "author": {"__typename": "User"},
+                                "mergedAt": None,
+                                "mergedBy": None,
                                 "repository": {
                                     "name": "apify-docs",
                                     "owner": {"login": "apify"},

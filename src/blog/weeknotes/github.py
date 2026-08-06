@@ -50,6 +50,8 @@ fragment pullRequest on PullRequest {
   title
   url
   author { __typename }
+  mergedAt
+  mergedBy { login }
   repository { name owner { login } }
 }
 """
@@ -82,6 +84,13 @@ query($query: String!, $after: String) {
   }
 }
 """
+
+SECTION_NAMES = {
+    "juniorguru": "junior.guru",
+    "apify": "Apify",
+    "pyvec": "Python komunita",
+    "honzajavorek": "Osobní projekty",
+}
 
 
 def get_github_token(token: str | None) -> str | None:
@@ -179,6 +188,8 @@ def get_contributions(
     timezone: str,
 ) -> list[WorkItem]:
     tz = ZoneInfo(timezone)
+    since = datetime.combine(since_date, time.min, tz)
+    until = datetime.combine(today, time.max, tz)
     result = github.graphql.request(
         CONTRIBUTIONS_QUERY,
         {
@@ -190,27 +201,47 @@ def get_contributions(
     collection = result["user"]["contributionsCollection"]
     items = []
     for contribution in collection["pullRequestContributions"]["nodes"]:
-        item = get_contribution_work_item(contribution["pullRequest"], "pr")
+        item = get_contribution_work_item(
+            contribution["pullRequest"], "pr", username, since, until
+        )
         if item is not None:
             items.append(item)
     for contribution in collection["pullRequestReviewContributions"]["nodes"]:
-        item = get_contribution_work_item(contribution["pullRequest"], "pr")
+        item = get_contribution_work_item(
+            contribution["pullRequest"], "pr", username, since, until
+        )
         if item is not None:
             items.append(item)
     for contribution in collection["issueContributions"]["nodes"]:
-        item = get_contribution_work_item(contribution["issue"], "issue")
+        item = get_contribution_work_item(
+            contribution["issue"], "issue", username, since, until
+        )
         if item is not None:
             items.append(item)
     return list(dict.fromkeys(items))
 
 
 def get_contribution_work_item(
-    contribution: dict[str, Any], kind: Literal["pr", "issue"]
+    contribution: dict[str, Any],
+    kind: Literal["pr", "issue"],
+    username: str,
+    since: datetime,
+    until: datetime,
 ) -> WorkItem | None:
     author = contribution["author"]
     if author is not None and author["__typename"] == "Bot":
         return None
     repository = contribution["repository"]
+    color = "orange"
+    if kind == "pr" and contribution["mergedAt"] is not None:
+        merged_at = datetime.fromisoformat(contribution["mergedAt"])
+        merged_by = contribution["mergedBy"]
+        if (
+            merged_by is not None
+            and merged_by["login"] == username
+            and since <= merged_at <= until
+        ):
+            color = "green"
     return WorkItem(
         repository["owner"]["login"],
         repository["name"],
@@ -218,19 +249,23 @@ def get_contribution_work_item(
         contribution["url"],
         contribution["title"],
         kind,
-        "orange",
+        color,
     )
 
 
 def format_work_items(items: Iterable[WorkItem]) -> str:
     grouped: dict[str, list[WorkItem]] = {}
     for item in items:
-        grouped.setdefault(item.owner, []).append(item)
+        grouped.setdefault(format_section_name(item.owner), []).append(item)
 
     sections = []
-    for owner, owner_items in sorted(grouped.items()):
-        lines = [f"### {owner}", ""]
-        for item in sorted(owner_items, key=work_item_sort_key):
+    section_names = [*SECTION_NAMES.values(), "Ostatní"]
+    for section_name in section_names:
+        section_items = grouped.get(section_name)
+        if section_items is None:
+            continue
+        lines = [f"### {section_name}", ""]
+        for item in sorted(section_items, key=work_item_sort_key):
             emoji = "🟢" if item.color == "green" else "🟠"
             lines.append(
                 f"-   {emoji} [{item.owner}/{item.repo}#{item.number}]({item.url})"
@@ -240,10 +275,15 @@ def format_work_items(items: Iterable[WorkItem]) -> str:
     return "\n\n".join(sections)
 
 
-def work_item_sort_key(item: WorkItem) -> tuple[int, int, str, int]:
+def format_section_name(owner: str) -> str:
+    return SECTION_NAMES.get(owner, "Ostatní")
+
+
+def work_item_sort_key(item: WorkItem) -> tuple[int, int, str, str, int]:
     return (
         0 if item.color == "green" else 1,
         0 if item.kind == "pr" else 1,
+        item.owner,
         item.repo,
         item.number,
     )

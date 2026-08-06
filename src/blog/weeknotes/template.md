@@ -15,12 +15,12 @@ Fotil [Markus Spiske](https://unsplash.com/@markusspiske)
 
 $jg_toots
 
+$github_work
+
 ## Další
 
 $dependabot_upgrades
 -   E-maily, [klubový Discord](https://junior.guru/club/), [Pyvec Slack](https://docs.pyvec.org/operations/support.html#sit-kontaktu), zprávy na LinkedIn.
-
-$github_work
 
 ## Plánuji
 

@@ -2,7 +2,7 @@ from datetime import date
 
 import pytest
 
-from blog.weeknotes.jg_toots import format_toots, get_jg_toots
+from blog.weeknotes.jg_toots import format_toot_text, format_toots, get_jg_toots
 
 
 @pytest.mark.parametrize(
@@ -49,12 +49,43 @@ def test_get_jg_toots(
         ([], ""),
         (
             [
-                {"url": "https://example.com/one"},
-                {"url": "https://example.com/two"},
+                {"url": "https://example.com/one", "content": "<p>One</p>"},
+                {
+                    "url": "https://example.com/two",
+                    "content": "<p>Two</p><p>More</p>",
+                },
             ],
-            "-   https://example.com/one\n-   https://example.com/two",
+            """https://example.com/one
+<!-- One -->
+
+https://example.com/two
+<!-- Two
+
+More -->""",
         ),
     ],
 )
 def test_format_toots(toots: list[dict[str, str]], expected: str) -> None:
     assert format_toots(toots) == expected
+
+
+@pytest.mark.parametrize(
+    ("content", "expected"),
+    [
+        (
+            (
+                '<p>Nový <a href="https://example.com/tag">#'
+                "<span>newsletter</span></a> je na "
+                '<a href="https://example.com"><span>example.com</span></a>.</p>'
+            ),
+            "Nový #newsletter je na example.com.",
+        ),
+        (
+            "<p>První odstavec</p><p>Druhý odstavec</p>",
+            "První odstavec\n\nDruhý odstavec",
+        ),
+        ("Plain text -- hint", "Plain text — hint"),
+    ],
+)
+def test_format_toot_text(content: str, expected: str) -> None:
+    assert format_toot_text(content) == expected
