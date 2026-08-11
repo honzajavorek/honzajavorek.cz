@@ -97,8 +97,7 @@ Podobným způsobem jsem řešil, když něco na junior.guru spadlo. Prostě jse
 
 Výše uvedené dalo Claudovi docela zabrat, takže mu došel dech a musel jsem čekat, až budu moci opět pokračovat. Jenže se mi čekat nechtělo. Vyšší tarif byl drahý, tak jsem šel zaplatit za OpenAI, že to vyzkouším. Klidně i jen na měsíc. A zrovna ten jeden měsíc mi dali v nějaké akci za 0 Kč, takže paráda.
 
-Hledal jsem, kde to má cloudovou verzi, ale nešlo to vůbec najít. Už jsem myslel, že neexistuje, když jsem se někudy proklikal na [https://
-chatgpt.com/codex/cloud](https://chatgpt.com/codex/cloud/). Ale tam jsem zjistil, že ta věc neumí ani sama od sebe vytvořit PR! Ani jeden! Musím kliknout na tlačítko. A další PR to vytvořilo úplně špatně. Neohrabané a naprosto nepoužitelné. Už jsem byl pěkně zmlsaný z Clauda, který všechno umí sám.
+Hledal jsem, kde to má cloudovou verzi, ale nešlo to vůbec najít. Už jsem myslel, že neexistuje, když jsem se někudy proklikal na [chatgpt.com/codex/cloud](https://chatgpt.com/codex/cloud/). Ale tam jsem zjistil, že ta věc neumí ani sama od sebe vytvořit PR! Ani jeden! Musím kliknout na tlačítko. A další PR to vytvořilo úplně špatně. Neohrabané a naprosto nepoužitelné. Už jsem byl pěkně zmlsaný z Clauda, který všechno umí sám.
 
 Vyzkoušel jsem ale Codex lokálně v Zedu a tam se mi to docela líbilo. Aniž bych se snažil, sám si rozjíždí subagenty, a taky mi přijde, že je trochu lepší na editaci Markdownu. Stále ho zkouším, takže to teď mám rozdělené takto:
 
