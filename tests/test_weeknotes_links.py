@@ -120,10 +120,12 @@ def test_format_links(links: list[dict[str, str]], expected: str) -> None:
 
 
 def test_get_title_from_url(monkeypatch: pytest.MonkeyPatch) -> None:
-    response = FakeResponse(["<html>", "<title>  Example title  </title>"])
+    response = FakeResponse(
+        ["<html>", "<title>  Example &aacute; title &mdash; it&#039;s nice  </title>"]
+    )
     monkeypatch.setattr(httpx, "stream", lambda *args, **kwargs: response)
 
-    assert get_title_from_url("https://example.com") == "Example title"
+    assert get_title_from_url("https://example.com") == "Example á title — it's nice"
 
 
 @pytest.mark.parametrize(

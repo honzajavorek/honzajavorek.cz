@@ -1,6 +1,7 @@
 import re
 from collections.abc import Iterable, Iterator, Mapping
 from datetime import date, datetime
+from html import unescape
 from typing import Any
 from urllib.parse import urlparse
 
@@ -71,7 +72,7 @@ def get_title_from_url(url: str) -> str:
             for line in response.iter_lines():
                 match = re.search(r"<title>([^<]+)", str(line), re.IGNORECASE)
                 if match:
-                    return match.group(1).strip()
+                    return unescape(match.group(1)).strip()
     except httpx.HTTPError:
         pass
     return FALLBACK_TITLES.get(urlparse(url).hostname, "(bez titulku)")
