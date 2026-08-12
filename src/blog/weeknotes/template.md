@@ -1,13 +1,13 @@
 Title: $title
-Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
+Image: images/jan-kahanek-fVUl6kzIvLg-unsplash.jpg
 Lang: cs
 Tags: $weeknotes_tag, junior.guru
 
 Jak se mi daří pracovat na [junior.guru](https://junior.guru/) a dalších věcech?
 Od [posledních poznámek]($last_weeknotes_path) už utekl nějaký ten týden ($last_weeknotes_date až $today), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
 
-![Poznámky]({static}/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg)
-Fotil [Markus Spiske](https://unsplash.com/@markusspiske)
+![Poznámky]({static}/images/jan-kahanek-fVUl6kzIvLg-unsplash.jpg)
+Fotka od [Honzy Kahánka](https://unsplash.com/@honza_kahanek)
 
 <div class="alert alert-warning" role="alert" markdown="1">
 **Čísla:** Finanční výsledky, návštěvnost a další čísla k junior.guru [mám přímo na webu](https://junior.guru/about/).
