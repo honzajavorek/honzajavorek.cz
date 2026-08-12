@@ -3,7 +3,7 @@ Image: images/markus-spiske-RiSAjGsa0vg-unsplash.jpg
 Lang: cs
 Tags: $weeknotes_tag, junior.guru
 
-Jak se mi daří v jednom člověku provozovat a rozvíjet [junior.guru](https://junior.guru/)?
+Jak se mi daří pracovat na [junior.guru](https://junior.guru/) a dalších věcech?
 Od [posledních poznámek]($last_weeknotes_path) už utekl nějaký ten týden ($last_weeknotes_date až $today), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
 
 ![Poznámky]({static}/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg)

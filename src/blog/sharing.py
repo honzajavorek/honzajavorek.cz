@@ -190,9 +190,9 @@ def prepare_description(article: dict) -> str:
     tags = json.loads(article["tags"])
 
     if "týdenní poznámky" in tags:
-        text = "Týdenní poznámky! Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru?"
+        text = "Týdenní poznámky! Jak se mi daří pracovat na junior.guru a dalších věcech?"
     elif "junior.guru" in tags:
-        text = f"„{article['title']}” Jak se mi daří v jednom člověku provozovat a rozvíjet junior.guru?"
+        text = f"„{article['title']}” Jak se mi daří pracovat na junior.guru a dalších věcech?"
     else:
         text = f"„{article['title']}”"
 
