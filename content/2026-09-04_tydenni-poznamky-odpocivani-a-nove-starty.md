@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Odpočívání a nové starty
 Image: images/jan-kahanek-fVUl6kzIvLg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří pracovat na junior.guru a dalších věcech? Tentokrát je to na 11 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/387
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/117213963944058853
 
 Jak se mi daří pracovat na [junior.guru](https://junior.guru/) a dalších věcech?
 Od [posledních poznámek]({filename}2026-08-11_tydenni-poznamky-dokoncovani-kurzu-o-vytvareni-scraperu-pomoci-ai.md) už utekl nějaký ten týden (11. 8. až 4. 9.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
