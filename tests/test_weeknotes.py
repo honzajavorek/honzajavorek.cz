@@ -38,7 +38,7 @@ def test_format_content() -> None:
             "- [Example](https://example.com)",
             "7 upgradů závislostí na všech projektech.",
             "🛠️✅ [example/repo#42](https://example.com/repo/42)",
-            "![Poznámky]({static}/images/markus-spiske-RiSAjGsa0vg-unsplash.jpg)",
+            "![Poznámky]({static}/images/jan-kahanek-fVUl6kzIvLg-unsplash.jpg)",
         ]
     )
 
