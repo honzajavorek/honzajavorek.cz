@@ -18,7 +18,7 @@ dependencies = [
     "click>=8.1.7",
     "sqlite-utils>=3.37",
     "send2trash>=1.8.3",
-    "pillow-heif>=0.18.0",
+    "pillow-heif>=1.6.0",
     "icalendar>=5.0.13",
     "extruct>=0.18.0",
     "notion-client==2.2.1",
