@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Zaučování v Apify a klid před bouří
 Image: images/jan-kahanek-fVUl6kzIvLg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří pracovat na junior.guru a dalších věcech? Tentokrát je to na 7 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/388
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/117293642212641471
 
 Jak se mi daří pracovat na [junior.guru](https://junior.guru/) a dalších věcech?
 Od [posledních poznámek]({filename}2026-09-04_tydenni-poznamky-odpocivani-a-nove-starty.md) už utekl nějaký ten týden (4. 9. až 18. 9.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
