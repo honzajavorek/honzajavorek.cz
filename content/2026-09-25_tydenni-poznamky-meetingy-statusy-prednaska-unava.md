@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Meetingy, statusy, přednáška, únava
 Image: images/jan-kahanek-fVUl6kzIvLg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří pracovat na junior.guru a dalších věcech? Tentokrát je to na 11 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/389
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/117331992256178141
 
 Jak se mi daří pracovat na [junior.guru](https://junior.guru/) a dalších věcech?
 Od [posledních poznámek]({filename}2026-09-18_tydenni-poznamky-zaucovani-v-apify-a-klid-pred-bouri.md) už utekl nějaký ten týden (18. 9. až 25. 9.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
