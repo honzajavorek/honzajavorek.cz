@@ -53,13 +53,6 @@ jobs:
       - name: Pelican Build
         run: uv run blog build
 
-      - name: "Extra: Notion Feeds"
-        env:
-          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-        run: |
-          uv run blog notion reading > ./public/reading.xml
-          uv run blog notion watching > ./public/watching.xml
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:

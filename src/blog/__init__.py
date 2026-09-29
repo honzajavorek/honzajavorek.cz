@@ -14,7 +14,6 @@ from slugify import slugify
 
 from blog.lib import SettingsModuleParam
 from blog.media import main as media
-from blog.notion import main as notion
 from blog.sharing import telegram, mastodon, descriptions
 from blog.toots import main as toots
 from blog.update import main as update
@@ -30,7 +29,6 @@ def main():
 main.add_command(descriptions, "description")
 main.add_command(mastodon, "mastodon")
 main.add_command(media, "media")
-main.add_command(notion, "notion")
 main.add_command(telegram, "telegram")
 main.add_command(toots, "toots")
 main.add_command(update, "update")
