@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Zuby, florbalky a M5
 Image: images/jan-kahanek-fVUl6kzIvLg-unsplash.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří pracovat na junior.guru a dalších věcech? Tentokrát je to na 10 min čtení 🧐
+Telegram-Comments: https://t.me/honzajavorekcz/390
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/117373484346990178
 
 Jak se mi daří pracovat na [junior.guru](https://junior.guru/) a dalších věcech?
 Od [posledních poznámek]({filename}2026-09-25_tydenni-poznamky-meetingy-statusy-prednaska-unava.md) už utekl nějaký ten týden (25. 9. až 2. 10.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
