@@ -63,5 +63,5 @@ combine-as-imports = true
 lines-after-imports = 2
 
 [build-system]
-requires = ["uv-build>=0.13.5,<0.14"]
+requires = ["uv-build>=0.13.6,<0.14"]
 build-backend = "uv_build"
