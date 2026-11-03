@@ -2,6 +2,9 @@ Title: Týdenní poznámky: Nový život
 Image: images/podzimni-les.jpg
 Lang: cs
 Tags: týdenní poznámky, junior.guru
+Description: Týdenní poznámky! Jak se mi daří pracovat na junior.guru a dalších věcech? Tentokrát je to na 26 min čtení 😅
+Telegram-Comments: https://t.me/honzajavorekcz/391
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/117552858052487374
 
 Jak se mi daří pracovat na [junior.guru](https://junior.guru/) a dalších věcech?
 Od [posledních poznámek]({filename}2026-10-02_tydenni-poznamky-zuby-florbalky-a-m5.md) už utekl nějaký ten týden (2. 10. až 2. 11.), tak nastal čas se opět ohlédnout a utřídit si myšlenky.
