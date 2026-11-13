@@ -2,16 +2,17 @@ Title: Plán na JARO
 Image: images/plan-glasses.jpg
 Tags: junior.guru, highlight
 Lang: cs
+Description: Mám plán, jak junior.guru do jara zachránit, a jasné datum, kdy se rozhodne, co dál.
 
 Zatímco mezi lety 2019–2023 junior.guru ve všech číslech jen stoupalo, od té doby je jeho meziroční růst −30%. Ano, je tam minus.
 
 Na jaře 2027 mi, jak se říká ve startupovém světě, dojde _runway_. A to jak ta finanční, tak ta psychická, tedy síla udržovat junior.guru v téhle podobě dál při životě.
 
-V týdenních poznámkách jsem poslední měsíce dost otevřeně naznačoval, že řeším, co s junior.guru dál.
+V posledních [týdenních poznámkách]({filename}2026-11-02_tydenni-poznamky-novy-zivot.md) jsem otevřeně naznačoval, že řeším, co s junior.guru dál.
 
-Dva týdny jsem teď ležel v číslech, všechno jsem analyzoval, a nechával si věci projít hlavou. A mám konečně konkrétní plán.
+Dva týdny jsem teď ležel v číslech, všechno jsem analyzoval a nechával si věci projít hlavou. A mám konečně konkrétní plán.
 
-Tenhle článek popisuje, jak tohle moje malé podnikání zachráním, podle čeho a kdy se rozhodnu, a taky co by se stalo, kdyby to nevyšlo.
+Tenhle článek popisuje, jak se tohle moje malé podnikání pokusím zachránit, podle čeho a kdy se rozhodnu, a taky co by se stalo, kdyby to nevyšlo.
 
 ![Plán na JARO]({static}/images/plan-glasses.jpg)
 _A plan? Let me put on my slightly larger glasses._ – [IT Crowd](https://www.youtube.com/watch?v=ARV883Vka5Q)
@@ -39,6 +40,8 @@ Z cílů vyplývají i kritéria úspěchu. A ta jsou následující:
 - Pokud 1. 3. 2027 uvidím, že se čísla na junior.guru přestala propadat, nebo dokonce otočila a jde v nich vysledovat vzestupný trend, i kdyby byl jakkoliv malinkatý, tak se budu dál snažit projekt zachránit.
 - Pokud se pád nezastaví, tak 1. 3. 2027 připravím plán na postupnou archivaci projektu.
 
+Ať to dopadne jakkoliv, na začátku března tady napíšu článek, který zhodnotí, co se povedlo, co se nepovedlo, a naznačí další postup.
+
 ## Co hrozí, aneb jaký je nejhorší možný scénář
 
 Přímo 1. 3. 2027 nehrozí nic. Pokud JARO nesplní svůj cíl, tak v březnu teprve začnu uvažovat o tom, co má smysl vypnout, nebo kdy a jak to celé proběhne. Web i klub pojedou dál bez viditelné újmy, věci se budou dít vždy postupně a vše bude členům klubu s dostatečným předstihem oznámeno, nejméně 30 dní dopředu. Každý dostane to, co si zaplatil. Pokud by se něco měnilo dřív, než členství vyprší, peníze za zbytek vrátím.
@@ -49,7 +52,7 @@ Jako první na ráně by bylo vydávání příběhů juniorů, posílání news
 
 Zatím nevím, do jaké míry bych zastavil scrapery, synchronizační skripty, napojení na API, Discord bota apod. Na jednu stranu většina z toho jede sama a provoz nestojí velké peníze, na druhou stranu se to často samo od sebe rozbíjí a vyžaduje to neustálou údržbu.
 
-Klub na Discordu by buď dostal pouze symbolickou cenovku, která by pokryla minimální náklady na provoz, nebo by se stal volně přístupnou komunitou. Moderování by muselo přejít na dobrovolníky. Současní moderátoři by se mohli samozřejmě rozhodnout, jestli chtějí pokračovat a tým se může obměnit podle toho, kdo by měl chuť to dělat. Komunita by existovala dál, jen by přestala záviset na mně. Já bych dál byl jejím členem, ale už bez zodpovědnosti za provoz.
+Klub na Discordu by buď dostal pouze symbolickou cenovku, která by pokryla minimální náklady na provoz, nebo by se stal volně přístupnou komunitou. Moderování by muselo přejít na dobrovolníky. Současní moderátoři by se mohli samozřejmě rozhodnout, jestli chtějí pokračovat, a tým se může obměnit podle toho, kdo by měl chuť to dělat. Komunita by existovala dál, jen by přestala záviset na mně. Já bych dál byl jejím členem, ale už bez zodpovědnosti za provoz.
 
 Pokud by se klub otevíral, tak jednou z možností je, že by se do něj dalo dostat jen na pozvánku od existujících členů, což by snad zabránilo spamu nebo zhoršení přátelské atmosféry.
 
@@ -60,8 +63,8 @@ Naprogramoval bych příkaz do bota, kterým by si mohli lidi exportovat svoje d
 Důvody, proč se junior.guru nedaří, jsou převážně externí:
 
 - Google přečte můj web, přechroustá ho, a pak lidem servíruje rovnou odpovědi v AI shrnutích. Lidi na můj web vůbec nedojdou a nikdy se nedoví o placeném klubu. Mnoho lidí taky už používá AI napřímo, tam jde o stejný princip. AI mi sežralo organickou návštěvnost webu.
-- Firmy přestaly najímat juniory. AI je samozřejmě jeden z důvodů, ale není jediný. Už se to probíralo mnohokrát, na mnoha místech (třeba [Lupa](https://www.lupa.cz/clanky/honza-javorek-junior-guru-jenom-clovek-vam-rekne-co-chatgpt-poradil-spatne/) nebo [PodVocasem](https://herohero.co/podvocasem/post/aybftsvxxdkgmewgphvnokqpgbfjxhq)), takže se mi to tu moc nechce opakovat, ale po covidu se prostě z hlediska ekonomiky úplně změnil trh a AI do toho přišlo z boku jako řešení, jak ušetřit. Firmy neřeší budoucnost, jen přítomnost. A v takovém prostředí všichni na juniory kašlou. Za pět let, až jim odejde poslední vyhořelý senior a zhasne světla, si vzpomenou, že nějaké měli najmout a zaučit je, aby tam byla kontinuita a tak dále, ale to je teď v jejich očích „problém někoho jiného” a mně ani mým juniorům to teď nepomůže.
-- Když firmy přestaly najímat juniory, extrémně stoupla obtížnost kariérní tranzice do IT. Junioři udělají vše správně, ale pak stejně musí posílat vyšší desítky životopisů. Odpovědí je poskrovnu, natož aby je někdo pozval na pohovor. Teoreticky je vyšší laťka něco, s čím může junior.guru pomoci a je to voda na můj mlýn, ale taky musí něco protéct. Pokud toho proteče fakt málo, tak je pomoc s přípravou na pohovory jen planým slibem. A když se lidi dovědeli, že IT je teď takový mlýnek na maso, a že AI v tomhle oboru přetáčí úplně všechno naruby, raději jdou zkusit něco jiného. [Poplašné články v médiích](https://www.respekt.cz/draft/sbohem-lukrativni-mista-programatoru-absolventi-informatiky-si-hledaji-mista-i-v-rychlem-obcerstveni) nebo [memy karikující tuhle realitu](https://www.instagram.com/reels/DZIPtmRoAdZ/) taky nepomáhají. Takže se radikálně zmenšuje počet lidí, kteří vůbec do _funnelu_ junior.guru přicházejí.
+- Firmy přestaly najímat juniory. AI je samozřejmě jeden z důvodů, ale není jediný. Už se to probíralo mnohokrát, na mnoha místech (třeba [Lupa](https://www.lupa.cz/clanky/honza-javorek-junior-guru-jenom-clovek-vam-rekne-co-chatgpt-poradil-spatne/) nebo [PodVocasem](https://herohero.co/podvocasem/post/aybftsvxxdkgmewgphvnokqpgbfjxhq)), takže se mi to tu moc nechce opakovat, ale po covidu se prostě z hlediska ekonomiky úplně změnil trh a AI do toho přišlo z boku jako řešení, jak ušetřit. Většina firem neřeší budoucnost, jen přítomnost. A v takovém prostředí se na juniory kašle. Za pět let, až jim odejde poslední vyhořelý senior a zhasne světla, si vzpomenou, že nějaké měli najmout a zaučit je, aby tam byla kontinuita a tak dále, ale to je teď v jejich očích „problém někoho jiného” a mně ani mým juniorům to teď nepomůže. Čest výjimkám, které juniory nabírají a zaučují dál, i když to zrovna není v módě. Těm patří můj obdiv a na junior.guru mají dveře otevřené.
+- Když firmy přestaly najímat juniory, extrémně stoupla obtížnost kariérní tranzice do IT. Junioři udělají vše správně, ale pak stejně musí posílat vyšší desítky životopisů. Odpovědí je poskrovnu, natož aby je někdo pozval na pohovor. Vyšší laťka je přesně to, s čím může junior.guru pomoci, a je to voda na můj mlýn, ale taky musí něco protéct. Příprava na pohovory má smysl pořád, jen se k pohovorům dostane mnohem méně lidí a jejich cesta tam trvá déle. Pomoc a podpora v klubu je stejně cenná jako dřív, ale lidí, kteří ji v danou chvíli potřebují, ubylo. A když se lidi dozvědí, že IT je teď takový mlýnek na maso, a že AI v tomhle oboru přetáčí úplně všechno naruby, raději jdou zkusit něco jiného. [Poplašné články v médiích](https://www.respekt.cz/draft/sbohem-lukrativni-mista-programatoru-absolventi-informatiky-si-hledaji-mista-i-v-rychlem-obcerstveni) nebo [memy karikující tuhle realitu](https://www.instagram.com/reels/DZIPtmRoAdZ/) taky nepomáhají. Takže se radikálně zmenšuje počet lidí, kteří vůbec do _funnelu_ junior.guru přicházejí.
 - Posun trhu jde vidět i na poskytovatelích kurzů, kteří postupně odpadávají jako hrušky, nebo mají také velké provozní problémy. Green Fox Academy zavřela krám jako první, pak Software Development Academy, Coding Bootcamp Praha… a mám informace o dalších. Czechitas propustily několik zaměstnanců a procházejí restrukturalizací.
 
 Určitě jsem mohl dělat nějaké věci lépe, ale za daných okolností a v dané situaci jsem je dělal nejlépe, jak jsem uměl. Ničeho nelituju.
@@ -73,11 +76,11 @@ Za poslední roky jsem vyladil spoustu věcí a naučil se, jak přitlačit v ma
 - **Přesun od obsahu k nástrojům.** Obsah sežrala AI a není ekonomicky udržitelné do něj investovat čas a energii, pokud nepůjde za paywall (ale to není byznys model, který bych teď měl čas rozjíždět). Příručku pro juniory tedy archivuji a opatřím páskou, že jde o obsah, který už se neaktualizuje. Stránky zůstanou, kde jsou. Co v AI době funguje a na co lidi pořád chodí, jsou nástroje. Ty mám na webu dva: Nabídky práce a kontrolu GitHub profilu. Na ně se budu soustředit a musí začít do jara přivádět nové lidi do klubu. Podcast už nevychází a asi vycházet nebude, takže dostane archivační pásku taky. [Moudra](https://junior.guru/wisdom/) taky, ale to je už jen detail.
 - **[Nabídky práce](https://junior.guru/jobs/) se stanou ústřední částí webu.** Je to jediná sekce junior.guru, kam chodí čím dál víc lidí, a mají několikrát větší návštěvnost než hlavní stránka. Vytvořím nové podstránky pro účely SEO. Přidám _call to action_ do klubu a formulář na kontrolu GitHub profilu, který lidi zjevně baví. Od chvíle, co jsem ho dal na hlavní stránku, se počet kontrol ztrojnásobil.
 - **Pro studenty kurzů vytvořím samoodbavovací systém**, který je na nějakou dobu zdarma dostane do klubu. Budou to samostatné stránky, které studentům vysvětlí celý proces. K tomu e-mail samotným provozovatelům. Bude tam i kontrola GitHub profilu.
-- **Retenční sleva a pauza.** Pokud někdo platí plnou cenu a plánuje odejít, bude mu nabídnuta sleva. Lepší, když zaplatí méně, než když přestane platit úplně. Kdo potřebuje jen na čas vypadnout, bude si moci členství místo zrušení pozastavit. Přepíšu e-maily, které chodí lidem při konci trialu a při zrušeném členství.
+- **Víc péče o lidi, kteří zvažují odchod.** Někdy stačí jiná nabídka, jindy jen pauza. Kdo potřebuje na čas vypadnout, bude si moci členství místo zrušení pozastavit. Přepíšu e-maily, které chodí lidem při konci trialu a při zrušeném členství.
 - **Přeskupím vnitřek klubu**, aby odrážel novou dobu a novou realitu. Zavřu nepoužívané kanály, sloučím kanály atd.
 - **V lednu pošlu jednorázový e-mail bývalým členům**, kde se pokusím někoho z ~650 lidí přesvědčit, že má smysl se vrátit.
-- **Změna positioningu.** Klub pomáhá lidem tvořit software s AI a sehnat si práci v této nové době. Je pro začátečníky, kteří se chtějí naučit správně pracovat s AI, a pro vibekodéry, kterým nestačí vibes a chtěli by se doučit základy engineeringu. V lednu podle toho přepíšu prodejní stránku klubu.
-- **Sponzoři jsou odteď bonus**, junior.guru na jejich peníze nemůže spoléhat. Přepracuju stránku [LOVE](https://junior.guru/love/), bude konec ceníku pro firmy. Pokud chce nějaká firma junior.guru podpořit, beru cokoliv! 😅 Napište mi e-mail a dohodneme se. A moc děkuji těm, kdo junior.guru teď podporují nebo dříve podporovali!
+- **Změna positioningu.** Klub pomáhá lidem tvořit software s AI a sehnat si práci v této nové době. Je pro začátečníky, kteří se chtějí naučit správně pracovat s AI, a pro vibekodéry, kterým nestačí vibes a chtěli by se doučit základy engineeringu. V lednu podle toho přepíšu prodejní stránku. S jejím zacílením se samozřejmě nemění to, že klub zůstává otevřený všem: Možná se to zdá až neuvěřitelné, ale v pohodě tam už teď koexistují lidé, kteří za měsíc nenapíšou řádek kódu, a lidé, kteří AI vůbec nepoužívají a učí se programovat z knih.
+- **Sponzoři jsou odteď bonus**, junior.guru na jejich peníze nemůže spoléhat. Přepracuju stránku [LOVE](https://junior.guru/love/) a bude konec veřejného ceníku pro firmy. Pokud chce nějaká firma junior.guru podpořit, napište mi e-mail a pobavíme se, co by dávalo smysl. A moc děkuji těm, kdo junior.guru teď podporují nebo dříve podporovali!
 - **Kandidáti se musí ukazovat tam, kde jsou firmy.** Když bude firma přidávat inzerát, poradím jí, ať se podívá i na kandidáty. Jinak je ale tlačení kandidátů do firem něco, co můžu dělat, až když se junior.guru víc nadechne.
 - **Downgradnu Discord server** z Levelu 2 na Level 1, což nijak zásadně neomezí klub, ale ušetří víc než 4.000 Kč za rok (než jsem dopsal tenhle článek, tak tohle už jsem udělal).
 - **Začnu měřit věci** na webu přes UTM, abych mohl líp vyhodnocovat, co přivádí lidi do klubu a co ne.
