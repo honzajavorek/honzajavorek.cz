@@ -42,22 +42,6 @@ Z cílů vyplývají i kritéria úspěchu. A ta jsou následující:
 
 Ať to dopadne jakkoliv, na začátku března tady napíšu článek, který zhodnotí, co se povedlo, co se nepovedlo, a naznačí další postup.
 
-## Co hrozí, aneb jaký je nejhorší možný scénář
-
-Přímo 1. 3. 2027 nehrozí nic. Pokud JARO nesplní svůj cíl, tak v březnu teprve začnu uvažovat o tom, co má smysl vypnout, nebo kdy a jak to celé proběhne. Web i klub pojedou dál bez viditelné újmy, věci se budou dít vždy postupně a vše bude členům klubu s dostatečným předstihem oznámeno, nejméně 30 dní dopředu. Každý dostane to, co si zaplatil. Pokud by se něco měnilo dřív, než členství vyprší, peníze za zbytek vrátím.
-
-Teď tady otevřeně popíšu, co by se mohlo stát v nejhorším případě, ale samozřejmě nechci, aby na to došlo. Taky nic z toho není definitivně rozhodnuté a do března se to klidně může změnit.
-
-Jako první na ráně by bylo vydávání příběhů juniorů, posílání newsletteru nebo připravování klubových akcí.
-
-Zatím nevím, do jaké míry bych zastavil scrapery, synchronizační skripty, napojení na API, Discord bota apod. Na jednu stranu většina z toho jede sama a provoz nestojí velké peníze, na druhou stranu se to často samo od sebe rozbíjí a vyžaduje to neustálou údržbu.
-
-Klub na Discordu by buď dostal pouze symbolickou cenovku, která by pokryla minimální náklady na provoz, nebo by se stal volně přístupnou komunitou. Moderování by muselo přejít na dobrovolníky. Současní moderátoři by se mohli samozřejmě rozhodnout, jestli chtějí pokračovat, a tým se může obměnit podle toho, kdo by měl chuť to dělat. Komunita by existovala dál, jen by přestala záviset na mně. Já bych dál byl jejím členem, ale už bez zodpovědnosti za provoz.
-
-Pokud by se klub otevíral, tak jednou z možností je, že by se do něj dalo dostat jen na pozvánku od existujících členů, což by snad zabránilo spamu nebo zhoršení přátelské atmosféry.
-
-Naprogramoval bych příkaz do bota, kterým by si mohli lidi exportovat svoje deníčky a odnést jinam.
-
 ## Proč se nedaří
 
 Důvody, proč se junior.guru nedaří, jsou převážně externí:
@@ -79,7 +63,7 @@ Za poslední roky jsem vyladil spoustu věcí a naučil se, jak přitlačit v ma
 - **Víc péče o lidi, kteří zvažují odchod.** Někdy stačí jiná nabídka, jindy jen pauza. Kdo potřebuje na čas vypadnout, bude si moci členství místo zrušení pozastavit. Přepíšu e-maily, které chodí lidem při konci trialu a při zrušeném členství.
 - **Přeskupím vnitřek klubu**, aby odrážel novou dobu a novou realitu. Zavřu nepoužívané kanály, sloučím kanály atd.
 - **V lednu pošlu jednorázový e-mail bývalým členům**, kde se pokusím někoho z ~650 lidí přesvědčit, že má smysl se vrátit.
-- **Změna positioningu.** Klub pomáhá lidem tvořit software s AI a sehnat si práci v této nové době. Je pro začátečníky, kteří se chtějí naučit správně pracovat s AI, a pro vibekodéry, kterým nestačí vibes a chtěli by se doučit základy engineeringu. V lednu podle toho přepíšu prodejní stránku. S jejím zacílením se samozřejmě nemění to, že klub zůstává otevřený všem: Možná se to zdá až neuvěřitelné, ale v pohodě tam už teď koexistují lidé, kteří za měsíc nenapíšou řádek kódu, a lidé, kteří AI vůbec nepoužívají a učí se programovat z knih.
+- **Změna positioningu.** Klub pomáhá lidem tvořit software s AI a sehnat si práci v této nové době. Je pro začátečníky, kteří se chtějí naučit správně pracovat s AI, a pro vibekodéry, kterým nestačí vibes a chtěli by se doučit základy engineeringu. V lednu podle toho přepíšu prodejní stránku. S jejím zacílením se samozřejmě nemění to, že klub zůstává otevřený všem: možná se to zdá až neuvěřitelné, ale v pohodě tam už teď koexistují lidé, kteří za měsíc nenapíšou řádek kódu, a lidé, kteří AI vůbec nepoužívají a učí se programovat z knih.
 - **Sponzoři jsou odteď bonus**, junior.guru na jejich peníze nemůže spoléhat. Přepracuju stránku [LOVE](https://junior.guru/love/) a bude konec veřejného ceníku pro firmy. Pokud chce nějaká firma junior.guru podpořit, napište mi e-mail a pobavíme se, co by dávalo smysl. A moc děkuji těm, kdo junior.guru teď podporují nebo dříve podporovali!
 - **Kandidáti se musí ukazovat tam, kde jsou firmy.** Když bude firma přidávat inzerát, poradím jí, ať se podívá i na kandidáty. Jinak je ale tlačení kandidátů do firem něco, co můžu dělat, až když se junior.guru víc nadechne.
 - **Downgradnu Discord server** z Levelu 2 na Level 1, což nijak zásadně neomezí klub, ale ušetří víc než 4.000 Kč za rok (než jsem dopsal tenhle článek, tak tohle už jsem udělal).
@@ -93,6 +77,22 @@ Pokud se ověří, že nabídky práce a kontroly GitHub profilů dokážou při
 - **Vylepším kontrolu GitHub profilu.** Možností, jak to vylepšit, je nepřeberně, a to jak na frontendu, tak na backendu. Místo velké příručky můžu přidat rady k jednotlivým pravidlům, podle kterých se GitHub profily kontrolují. Dá se přidat placená automatická kontrola CV nebo kontrola LinkedIn profilu.
 
 Co počká: úklid a osekávání věcí, které už nejsou potřeba, a modernizace technologií, na kterých junior.guru běží. Obojí chci udělat, ale teď to nepřivede nové lidi, a na tom do jara záleží nejvíc.
+
+## Co hrozí, aneb jaký je nejhorší možný scénář
+
+Přímo 1. 3. 2027 nehrozí nic. Pokud JARO nesplní svůj cíl, tak v březnu teprve začnu uvažovat o tom, co má smysl vypnout, nebo kdy a jak to celé proběhne. Web i klub pojedou dál bez viditelné újmy, věci se budou dít vždy postupně a vše bude členům klubu s dostatečným předstihem oznámeno, nejméně 30 dní dopředu. Každý dostane to, co si zaplatil. Pokud by se něco měnilo dřív, než členství vyprší, peníze za zbytek vrátím.
+
+Teď tady otevřeně popíšu, co by se mohlo stát v nejhorším případě, ale samozřejmě nechci, aby na to došlo. Taky nic z toho není definitivně rozhodnuté a do března se to klidně může změnit.
+
+Jako první na ráně by bylo vydávání příběhů juniorů, posílání newsletteru nebo připravování klubových akcí.
+
+Zatím nevím, do jaké míry bych zastavil scrapery, synchronizační skripty, napojení na API, Discord bota apod. Na jednu stranu většina z toho jede sama a provoz nestojí velké peníze, na druhou stranu se to často samo od sebe rozbíjí a vyžaduje to neustálou údržbu.
+
+Klub na Discordu by buď dostal pouze symbolickou cenovku, která by pokryla minimální náklady na provoz, nebo by se stal volně přístupnou komunitou. Moderování by muselo přejít na dobrovolníky. Současní moderátoři by se mohli samozřejmě rozhodnout, jestli chtějí pokračovat, a tým se může obměnit podle toho, kdo by měl chuť to dělat. Komunita by existovala dál, jen by přestala záviset na mně. Já bych dál byl jejím členem, ale už bez zodpovědnosti za provoz.
+
+Pokud by se klub otevíral, tak jednou z možností je, že by se do něj dalo dostat jen na pozvánku od existujících členů, což by snad zabránilo spamu nebo zhoršení přátelské atmosféry.
+
+Naprogramoval bych příkaz do bota, kterým by si mohli lidi exportovat svoje deníčky a odnést jinam.
 
 ## Hurá na to
 
