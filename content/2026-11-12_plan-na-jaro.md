@@ -1,5 +1,6 @@
 Title: Plán na JARO
 Image: images/plan-glasses.jpg
+Tags: junior.guru, highlight
 Lang: cs
 
 Zatímco mezi lety 2019–2023 junior.guru ve všech číslech jen stoupalo, od té doby je jeho meziroční růst −30%. Ano, je tam minus.
