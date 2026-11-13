@@ -3,6 +3,8 @@ Image: images/plan-glasses.jpg
 Tags: junior.guru, highlight
 Lang: cs
 Description: Mám plán, jak junior.guru do jara zachránit, a jasné datum, kdy se rozhodne, co dál.
+Telegram-Comments: https://t.me/honzajavorekcz/392
+Mastodon-Comments: https://mastodonczech.cz/@honzajavorek/117609324158745472
 
 Zatímco mezi lety 2019–2023 junior.guru ve všech číslech jen stoupalo, od té doby je jeho meziroční růst −30%. Ano, je tam minus. Na jaře 2027 mi, jak se říká ve startupovém světě, dojde _runway_. A to jak ta finanční, tak ta psychická, tedy síla udržovat junior.guru v téhle podobě dál při životě.
 
