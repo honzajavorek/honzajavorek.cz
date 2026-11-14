@@ -4,9 +4,1113 @@
     "slug": "plan-na-jaro",
     "created_at": "2026-11-13T13:17:49.122000+00:00",
     "toot_url": "https://mastodonczech.cz/@honzajavorek/117609324158745472",
-    "favourites_count": 3,
+    "favourites_count": 8,
     "reblogs_count": 0,
-    "replies": []
+    "replies": [
+      {
+        "id": "117609423000037810",
+        "uri": "https://genserver.social/objects/e31258d0-aea0-45d6-a238-b5cff4e67495",
+        "url": "https://genserver.social/objects/e31258d0-aea0-45d6-a238-b5cff4e67495",
+        "account": {
+          "id": "111100047166256143",
+          "username": "liskin",
+          "acct": "liskin@genserver.social",
+          "display_name": "Tomáš Janoušek",
+          "url": "https://genserver.social/users/liskin",
+          "uri": "https://genserver.social/users/liskin",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/797ffc4bb2bdfab7.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/111/100/047/166/256/143/original/797ffc4bb2bdfab7.jpg"
+        },
+        "in_reply_to_id": "117609324158745472",
+        "in_reply_to_account_id": "110921870573231541",
+        "content": "<span class=\"h-card\"><a class=\"u-url mention\" href=\"https://mastodonczech.cz/@honzajavorek\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> Držím palce, ať to nějak dopadne. <br><br>Zaujala mě jedna konkrétní věc - odhad toho, kdy to dojde psychická síla. To se mnohem složitěji odhaduje než kdy dojdou peníze. Už jsem párkrát tenhle odhad přestřelil, a ten (nečekaně brzký) pád pak dost bolel. Tak ti držím i druhý palec, aby tvůj odhad měl dostatečnou rezervu. 👍",
+        "created_at": "2026-11-13T13:42:46.967000+00:00",
+        "favourites_count": 1,
+        "reblogged": false,
+        "favourited": true,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          }
+        ],
+        "bookmarked": false,
+        "language": "cs",
+        "muted": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "current_user": "denied"
+        }
+      },
+      {
+        "id": "117609457291302273",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/117609457291302273",
+        "url": "https://mastodonczech.cz/@honzajavorek/117609457291302273",
+        "account": {
+          "id": "110921870573231541",
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "in_reply_to_id": "117609423000037810",
+        "in_reply_to_account_id": "111100047166256143",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://genserver.social/users/liskin\" class=\"u-url mention\">@<span>liskin</span></a></span> Je to kvalifikovaný odhad, ale to víš že mám už odřený břicho o dno a ouška odřený 😁</p>",
+        "created_at": "2026-11-13T13:51:40.563000+00:00",
+        "favourites_count": 1,
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://genserver.social/users/liskin",
+            "username": "liskin",
+            "acct": "liskin@genserver.social",
+            "id": "111100047166256143"
+          }
+        ],
+        "bookmarked": false,
+        "application": {
+          "name": "Web"
+        },
+        "language": "cs",
+        "muted": false,
+        "pinned": false,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "117609490929751049",
+        "uri": "https://mastodonczech.cz/ap/users/116131631562398109/statuses/117609490929751049",
+        "url": "https://mastodonczech.cz/@vojtechoram/117609490929751049",
+        "account": {
+          "id": "116131631562398109",
+          "username": "vojtechoram",
+          "acct": "vojtechoram",
+          "display_name": "Vojtěch Oram",
+          "url": "https://mastodonczech.cz/@vojtechoram",
+          "uri": "https://mastodonczech.cz/ap/users/116131631562398109",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/116/131/631/562/398/109/original/e6d698ea807cbd2a.png",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/116/131/631/562/398/109/original/e6d698ea807cbd2a.png"
+        },
+        "in_reply_to_id": "117609324158745472",
+        "in_reply_to_account_id": "110921870573231541",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\">@<span>honzajavorek</span></a></span>  Nemáš nějakou statistiku, jak se vyvíjí v čase počet inzerátů pro juniorské pozice? Zkouším si udělat takový průzkum, jaká je budoucnost programování pro seniory a juniory a hodilo by se mít nějaká tvrdá data.</p>",
+        "created_at": "2026-11-13T14:00:13.846000+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          }
+        ],
+        "bookmarked": false,
+        "application": {
+          "name": "Web"
+        },
+        "language": "cs",
+        "muted": false,
+        "replies_count": 2,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "117609556959849743",
+        "uri": "https://vibe.lbc.wtf/users/mwenisch/statuses/01M7AM9NXQ0BGWG94ZDZR73V12",
+        "url": "https://vibe.lbc.wtf/@mwenisch/statuses/01M7AM9NXQ0BGWG94ZDZR73V12",
+        "account": {
+          "id": "114700114305583622",
+          "username": "mwenisch",
+          "acct": "mwenisch@lbc.wtf",
+          "display_name": "Martin Wenisch",
+          "url": "https://vibe.lbc.wtf/@mwenisch",
+          "uri": "https://vibe.lbc.wtf/users/mwenisch",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/114/700/114/305/583/622/original/5a19c12d76b621bf.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/114/700/114/305/583/622/original/5a19c12d76b621bf.png"
+        },
+        "in_reply_to_id": "117609324158745472",
+        "in_reply_to_account_id": "110921870573231541",
+        "content": "<p><span class=\"h-card\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> Neplanujes u akci rozsirit zaber i na aktivni vyvojare? V Liberci par znamych resi krizi nove prace a kolem AI toho nikdo moc nevi. I ja bych dost ocenil misto, kde se pobavit o AI vyvoji. A soucasne po praze jsou hodne na urovni AI psychozy. Viz treba programatorska akce o hubnuti s AI (nedelam si srandu).<br><br>Navic aktivni vyvojari, co zkoumaji AI, muzou takzvane vykesovat kes za clenstvi.</p>",
+        "created_at": "2026-11-13T14:17:01+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          }
+        ],
+        "bookmarked": false,
+        "language": "cs",
+        "muted": false,
+        "replies_count": 3,
+        "quote_approval": {
+          "current_user": "denied"
+        }
+      },
+      {
+        "id": "117609566660990894",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/117609566660990894",
+        "url": "https://mastodonczech.cz/@honzajavorek/117609566660990894",
+        "account": {
+          "id": "110921870573231541",
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "in_reply_to_id": "117609490929751049",
+        "in_reply_to_account_id": "116131631562398109",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@vojtechoram\" class=\"u-url mention\">@<span>vojtechoram</span></a></span> Něco málo mám tady: <a href=\"https://github.com/juniorguru/junior.guru/blob/main/src/jg/coop/data/jobs.jsonl\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">github.com/juniorguru/junior.g</span><span class=\"invisible\">uru/blob/main/src/jg/coop/data/jobs.jsonl</span></a> Ale je těžký ty data číst. Jednak je to závislý na tom, jak to třídím. Jednak na tom, co stahuju. Když jsem přidal scraper na slovenský věci, tak to hoplo, žejo.</p>",
+        "created_at": "2026-11-13T14:19:29.413000+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://mastodonczech.cz/@vojtechoram",
+            "username": "vojtechoram",
+            "acct": "vojtechoram",
+            "id": "116131631562398109"
+          }
+        ],
+        "bookmarked": false,
+        "application": {
+          "name": "Web"
+        },
+        "language": "cs",
+        "muted": false,
+        "pinned": false,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "117609580084424050",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/117609580084424050",
+        "url": "https://mastodonczech.cz/@honzajavorek/117609580084424050",
+        "account": {
+          "id": "110921870573231541",
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "in_reply_to_id": "117609556959849743",
+        "in_reply_to_account_id": "114700114305583622",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://vibe.lbc.wtf/@mwenisch\" class=\"u-url mention\">@<span>mwenisch</span></a></span> V klubu je lásky dost pro každýho, senioři tam jsou a řeší tam AI, řeší tam security, jsou tam různý názory, jak psychotický, tak disentní, takže kdo by chtěl, nechť zkusí! Ale abych na tohle vyloženě sázel a změnil nebo rozšířil celej positioning toho projektu někam takhle úplně jinam, to nevim nevim.</p>",
+        "created_at": "2026-11-13T14:22:54.237000+00:00",
+        "favourites_count": 1,
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://vibe.lbc.wtf/@mwenisch",
+            "username": "mwenisch",
+            "acct": "mwenisch@lbc.wtf",
+            "id": "114700114305583622"
+          }
+        ],
+        "bookmarked": false,
+        "application": {
+          "name": "Web"
+        },
+        "language": "cs",
+        "muted": false,
+        "pinned": false,
+        "replies_count": 3,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "117609585961831576",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/117609585961831576",
+        "url": "https://mastodonczech.cz/@honzajavorek/117609585961831576",
+        "account": {
+          "id": "110921870573231541",
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "in_reply_to_id": "117609580084424050",
+        "in_reply_to_account_id": "114700114305583622",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://vibe.lbc.wtf/@mwenisch\" class=\"u-url mention\">@<span>mwenisch</span></a></span> Jako psychotický názory tam spíš nejsou. Asi bych řekl pokrokový. A to není subjektivní hodnocení. Já si myslel, že jsou psychotický, ale stačilo počkat měsíc, dva, a zjistil jsem, že byly pokrokový a realita je přesně tam, jak říkali, že to bude 😅</p><p>Jakože nikdo tam bezhlavě neříká a nemyslí si, že AI bude dělat všechno a bude ho potřebovat každej řidič tramvaje, tohle co píšu se týká prorgamování a kódu.</p>",
+        "created_at": "2026-11-13T14:24:23.919000+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://vibe.lbc.wtf/@mwenisch",
+            "username": "mwenisch",
+            "acct": "mwenisch@lbc.wtf",
+            "id": "114700114305583622"
+          }
+        ],
+        "bookmarked": false,
+        "application": {
+          "name": "Web"
+        },
+        "language": "cs",
+        "muted": false,
+        "pinned": false,
+        "edited_at": "2026-11-13T14:25:32.019000+00:00",
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "117609597818177973",
+        "uri": "https://vibe.lbc.wtf/users/mwenisch/statuses/01M7AMWPXGVQ3H3FGMSJCGM0R2",
+        "url": "https://vibe.lbc.wtf/@mwenisch/statuses/01M7AMWPXGVQ3H3FGMSJCGM0R2",
+        "account": {
+          "id": "114700114305583622",
+          "username": "mwenisch",
+          "acct": "mwenisch@lbc.wtf",
+          "display_name": "Martin Wenisch",
+          "url": "https://vibe.lbc.wtf/@mwenisch",
+          "uri": "https://vibe.lbc.wtf/users/mwenisch",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/114/700/114/305/583/622/original/5a19c12d76b621bf.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/114/700/114/305/583/622/original/5a19c12d76b621bf.png"
+        },
+        "in_reply_to_id": "117609580084424050",
+        "in_reply_to_account_id": "110921870573231541",
+        "content": "<p><span class=\"h-card\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> Ono se to nezda, ale dnesni seniori jsou s AI ve stejne pozici jako dnesni juniori. Bohuzel ale konkuruji tem juniorum pri hledani prace \"vyvojare s AI\". Znam par lidi osobne, co jdou stejnou cestou jako kdysi na stredni. Proste ten vyvoj s AI drti* cele noci, aby se to naucili.<br><br>*realiaticky, bez AI psychozy.</p>",
+        "created_at": "2026-11-13T14:27:24+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          }
+        ],
+        "bookmarked": false,
+        "language": "cs",
+        "muted": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "current_user": "denied"
+        }
+      },
+      {
+        "id": "117609623462324201",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/117609623462324201",
+        "url": "https://mastodonczech.cz/@honzajavorek/117609623462324201",
+        "account": {
+          "id": "110921870573231541",
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "in_reply_to_id": "117609597818177973",
+        "in_reply_to_account_id": "114700114305583622",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://vibe.lbc.wtf/@mwenisch\" class=\"u-url mention\">@<span>mwenisch</span></a></span> Nejsou ve stejné pozici, protože mají v hlavě vyjetý koleje co je možný a kde jsou mantinely. Vidím to na sobě. Ty mantinely tam dávno už nejsou, ale já do toho místa stejně nesáhnu, protože mě to ani nenapadne. Tímhle junior zatíženej není. Ale jasně, zase nemá 10-20 let zkušeností v oboru. Prostě, junioři mají svoje výhody. Ale vysvětluj to „trhu“ 🫠</p>",
+        "created_at": "2026-11-13T14:33:56.132000+00:00",
+        "favourites_count": 1,
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://vibe.lbc.wtf/@mwenisch",
+            "username": "mwenisch",
+            "acct": "mwenisch@lbc.wtf",
+            "id": "114700114305583622"
+          }
+        ],
+        "bookmarked": false,
+        "application": {
+          "name": "Web"
+        },
+        "language": "cs",
+        "muted": false,
+        "pinned": false,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "117609654013342252",
+        "uri": "https://vibe.lbc.wtf/users/mwenisch/statuses/01M7ANPW85VSDX4ZZYY38BPFA2",
+        "url": "https://vibe.lbc.wtf/@mwenisch/statuses/01M7ANPW85VSDX4ZZYY38BPFA2",
+        "account": {
+          "id": "114700114305583622",
+          "username": "mwenisch",
+          "acct": "mwenisch@lbc.wtf",
+          "display_name": "Martin Wenisch",
+          "url": "https://vibe.lbc.wtf/@mwenisch",
+          "uri": "https://vibe.lbc.wtf/users/mwenisch",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/114/700/114/305/583/622/original/5a19c12d76b621bf.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/114/700/114/305/583/622/original/5a19c12d76b621bf.png"
+        },
+        "in_reply_to_id": "117609580084424050",
+        "in_reply_to_account_id": "110921870573231541",
+        "content": "<p><span class=\"h-card\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> A kdyz uz sem se teda zeptal na jedno, tak se zeptam i na kontroverznejso otazku. Nezvazoval si prejit z Discordu, kdyz uz si zrusil predplatny? Je to fakt misto, kde cesi \"jsou\"?</p>",
+        "created_at": "2026-11-13T14:41:42+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          }
+        ],
+        "bookmarked": false,
+        "language": "cs",
+        "muted": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "current_user": "denied"
+        }
+      },
+      {
+        "id": "117609682411293858",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/117609682411293858",
+        "url": "https://mastodonczech.cz/@honzajavorek/117609682411293858",
+        "account": {
+          "id": "110921870573231541",
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "in_reply_to_id": "117609654013342252",
+        "in_reply_to_account_id": "114700114305583622",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://vibe.lbc.wtf/@mwenisch\" class=\"u-url mention\">@<span>mwenisch</span></a></span> Nezrušil jsem předplatný, jen jsem ho snížil ze 7.000 Kč ročně asi na 2.500 Kč nebo kolik 💸 </p><p>Nevím, jestli bych vybral Discord dnes, ale upřímně, možná ano, protože i když zvážím všelijaká negativa, pořád tam jde skvěle dělat to, co tam klub potřebuje dělat, včetně vestavěných stage kanálů na přednášky apod.</p><p>Žádné open source nebo více nezávislé řešení se tomu nepřibližuje ani zdaleka a nic z toho lidi neznaj víc.</p><p>Kde jsou Češi? Nevím. Na FB? IG? To jsou jednoznačně horší volby.</p>",
+        "created_at": "2026-11-13T14:48:55.621000+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://vibe.lbc.wtf/@mwenisch",
+            "username": "mwenisch",
+            "acct": "mwenisch@lbc.wtf",
+            "id": "114700114305583622"
+          }
+        ],
+        "bookmarked": false,
+        "application": {
+          "name": "Web"
+        },
+        "language": "cs",
+        "muted": false,
+        "pinned": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "117609689235660957",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/117609689235660957",
+        "url": "https://mastodonczech.cz/@honzajavorek/117609689235660957",
+        "account": {
+          "id": "110921870573231541",
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "in_reply_to_id": "117609682411293858",
+        "in_reply_to_account_id": "114700114305583622",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://vibe.lbc.wtf/@mwenisch\" class=\"u-url mention\">@<span>mwenisch</span></a></span> A je to teď úplná sci-fi úvaha, protože zmigrovat klub někam jinam by znamenalo předělat celý junior.guru od základů. Lidi podceňujou, kolik integrací tam mám naprogramovaných. Discord má skvělé API a já ho využívám fakt hodně na hromadu věcí. V situaci, v jaké jsem, je tohle úplně nemyslitelné.</p>",
+        "created_at": "2026-11-13T14:50:39.753000+00:00",
+        "favourites_count": 1,
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://vibe.lbc.wtf/@mwenisch",
+            "username": "mwenisch",
+            "acct": "mwenisch@lbc.wtf",
+            "id": "114700114305583622"
+          }
+        ],
+        "bookmarked": false,
+        "application": {
+          "name": "Web"
+        },
+        "language": "cs",
+        "muted": false,
+        "pinned": false,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "117610255174345457",
+        "uri": "https://witter.cz/users/banterCZ/statuses/117610255137221075",
+        "url": "https://witter.cz/@banterCZ/117610255137221075",
+        "account": {
+          "id": "109337559172025233",
+          "username": "banterCZ",
+          "acct": "banterCZ@witter.cz",
+          "display_name": "Luboš Račanský",
+          "url": "https://witter.cz/@banterCZ",
+          "uri": "https://witter.cz/users/banterCZ",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/337/559/172/025/233/original/8da1035a74f11069.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/337/559/172/025/233/original/8da1035a74f11069.jpeg"
+        },
+        "in_reply_to_id": "117609324158745472",
+        "in_reply_to_account_id": "110921870573231541",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> Díky za tvoji službu! Držím palce, ale zároveň dodávám, že je umění včas odejít. Zrovna mám rozepsaný článek, jak jsem skončil s kroužkem programování (a ne, s AI to nesouvisí). Nevyžádaná manažerská rada, která se snadno řekne, ale hůř následuje: Při rozhodování se nemá brát zřetel na utopené náklady.</p>",
+        "created_at": "2026-11-13T17:14:34+00:00",
+        "favourites_count": 2,
+        "reblogged": false,
+        "favourited": true,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          }
+        ],
+        "bookmarked": false,
+        "language": "cs",
+        "muted": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "117610287369098011",
+        "uri": "https://boskovice.social/users/zoul/statuses/117610287284487474",
+        "url": "https://boskovice.social/@zoul/117610287284487474",
+        "account": {
+          "id": "109324797571302698",
+          "username": "zoul",
+          "acct": "zoul@boskovice.social",
+          "display_name": "Tomáš Znamenáček",
+          "url": "https://boskovice.social/@zoul",
+          "uri": "https://boskovice.social/users/zoul",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/a7d41129052813b7.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/a7d41129052813b7.jpeg"
+        },
+        "in_reply_to_id": "117609490929751049",
+        "in_reply_to_account_id": "116131631562398109",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@vojtechoram\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>vojtechoram</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> Ona i ta tvrdá data (počty inzerátů) jsou podle mě momentálně jen proxy pro měkké dojmy. Ano, ta disciplína se mění, ale podle mě je ještě pořád hodně těžký odhadnout, kde a kdy se to ustálí. Bez seniorů se to podle mě zatím zcela jednoznačně neobejde (troufnu si říct, že na to tvrdá data máme), bez juniorů nebudeš mít časem seniory a reálné náklady na vývoj s LLMs zatím moc neznáme. Takže velká část aktuálních trendů je podle mě tažená dojmy.</p>",
+        "created_at": "2026-11-13T17:22:45+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://mastodonczech.cz/@vojtechoram",
+            "username": "vojtechoram",
+            "acct": "vojtechoram",
+            "id": "116131631562398109"
+          },
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          }
+        ],
+        "bookmarked": false,
+        "language": "cs",
+        "muted": false,
+        "edited_at": "2026-11-13T17:25:02+00:00",
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "117610440143364761",
+        "uri": "https://social.severa.name/objects/98f814da-6676-4c50-b41a-1d0dce036e0d",
+        "url": "https://social.severa.name/objects/98f814da-6676-4c50-b41a-1d0dce036e0d",
+        "account": {
+          "id": "109448992927278078",
+          "username": "segedacz",
+          "acct": "segedacz@social.severa.name",
+          "display_name": "Petr Severa",
+          "url": "https://social.severa.name/users/segedacz",
+          "uri": "https://social.severa.name/users/segedacz",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/448/992/927/278/078/original/4cc92ded0ffabf53.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/448/992/927/278/078/original/4cc92ded0ffabf53.png"
+        },
+        "in_reply_to_id": "117609556959849743",
+        "in_reply_to_account_id": "114700114305583622",
+        "content": "<p><span class=\"h-card\"><a class=\"u-url mention\" href=\"https://vibe.lbc.wtf/@mwenisch\" rel=\"nofollow noopener\" target=\"_blank\">@<span>mwenisch</span></a></span> v Liberci jsou vývojáři co řeší krizi nové práce? Uspořádejte sraz. (Neuspořádáte, Liberec je prokletý venkov)</p>",
+        "created_at": "2026-11-13T18:01:37.395000+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://vibe.lbc.wtf/@mwenisch",
+            "username": "mwenisch",
+            "acct": "mwenisch@lbc.wtf",
+            "id": "114700114305583622"
+          }
+        ],
+        "bookmarked": false,
+        "muted": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "current_user": "denied"
+        }
+      },
+      {
+        "id": "117610460076419353",
+        "uri": "https://vibe.lbc.wtf/users/mwenisch/statuses/01M7B1E7BMN66MV1FJ283V80TP",
+        "url": "https://vibe.lbc.wtf/@mwenisch/statuses/01M7B1E7BMN66MV1FJ283V80TP",
+        "account": {
+          "id": "114700114305583622",
+          "username": "mwenisch",
+          "acct": "mwenisch@lbc.wtf",
+          "display_name": "Martin Wenisch",
+          "url": "https://vibe.lbc.wtf/@mwenisch",
+          "uri": "https://vibe.lbc.wtf/users/mwenisch",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/114/700/114/305/583/622/original/5a19c12d76b621bf.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/114/700/114/305/583/622/original/5a19c12d76b621bf.png"
+        },
+        "in_reply_to_id": "117610440143364761",
+        "in_reply_to_account_id": "109448992927278078",
+        "content": "<p><span class=\"h-card\"><a href=\"https://social.severa.name/users/segedacz\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>segedacz</span></a></span> My jsme se pred-domluvili nekdy na pristi tyden na Linserku, se neoficialne potkat v ramci coworku a pobavit se o AI a jak to lidi vnimaji na pohovorech. Tedy jak o tom mluvit. Az se domluvime vice, tak to kdyztak vyhlasim verejne.</p>",
+        "created_at": "2026-11-13T18:06:41+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://social.severa.name/users/segedacz",
+            "username": "segedacz",
+            "acct": "segedacz@social.severa.name",
+            "id": "109448992927278078"
+          }
+        ],
+        "bookmarked": false,
+        "language": "cs",
+        "muted": false,
+        "quote_approval": {
+          "current_user": "denied"
+        }
+      },
+      {
+        "id": "117610470304166125",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/117610470304166125",
+        "url": "https://mastodonczech.cz/@honzajavorek/117610470304166125",
+        "account": {
+          "id": "110921870573231541",
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "in_reply_to_id": "117610255174345457",
+        "in_reply_to_account_id": "109337559172025233",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://witter.cz/@banterCZ\" class=\"u-url mention\">@<span>banterCZ</span></a></span> Realita je, že tam stále jsou věci, které fungují. Tak tomu dám poslední šanci. Nejde ani tolik o utopené náklady, jako o to, že bych moc rád na JG dělal dál, že mě to baví, je to poslání. Když tomu dám jasně definovanou poslední šanci, budu vědět, že mě nebude hryzat do konce života, že to šlo ještě otočit.</p>",
+        "created_at": "2026-11-13T18:09:17.912000+00:00",
+        "favourites_count": 2,
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://witter.cz/@banterCZ",
+            "username": "banterCZ",
+            "acct": "banterCZ@witter.cz",
+            "id": "109337559172025233"
+          }
+        ],
+        "bookmarked": false,
+        "application": {
+          "name": "Web"
+        },
+        "language": "cs",
+        "muted": false,
+        "pinned": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "117610652920572313",
+        "uri": "https://boskovice.social/users/zoul/statuses/117610652748072011",
+        "url": "https://boskovice.social/@zoul/117610652748072011",
+        "account": {
+          "id": "109324797571302698",
+          "username": "zoul",
+          "acct": "zoul@boskovice.social",
+          "display_name": "Tomáš Znamenáček",
+          "url": "https://boskovice.social/@zoul",
+          "uri": "https://boskovice.social/users/zoul",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/a7d41129052813b7.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/a7d41129052813b7.jpeg"
+        },
+        "in_reply_to_id": "117609556959849743",
+        "in_reply_to_account_id": "114700114305583622",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://vibe.lbc.wtf/@mwenisch\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>mwenisch</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> A nechcem si k AI vývoji udělat nějaký debatní kroužek tady? Například hodinový online call, posdílet use casy a zkušenosti?</p>",
+        "created_at": "2026-11-13T18:55:41+00:00",
+        "favourites_count": 2,
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://vibe.lbc.wtf/@mwenisch",
+            "username": "mwenisch",
+            "acct": "mwenisch@lbc.wtf",
+            "id": "114700114305583622"
+          },
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          }
+        ],
+        "bookmarked": false,
+        "language": "cs",
+        "muted": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "117610683035456361",
+        "uri": "https://boskovice.social/users/zoul/statuses/117610682989666917",
+        "url": "https://boskovice.social/@zoul/117610682989666917",
+        "account": {
+          "id": "109324797571302698",
+          "username": "zoul",
+          "acct": "zoul@boskovice.social",
+          "display_name": "Tomáš Znamenáček",
+          "url": "https://boskovice.social/@zoul",
+          "uri": "https://boskovice.social/users/zoul",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/a7d41129052813b7.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/a7d41129052813b7.jpeg"
+        },
+        "in_reply_to_id": "117610470304166125",
+        "in_reply_to_account_id": "110921870573231541",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://witter.cz/@banterCZ\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>banterCZ</span></a></span> Jsme teď v trochu podobné situaci s novinama a co mně v poslední době hodně pomáhá je udělat si jasnější hranici nebo odstup mezi životem a prací. Měl jsem tam hodně rovnítko (mluvíš o „poslání“) a myslím, že je to nakonec vlastně spíš kontraproduktivní. Možná už to pro tebe bude úplný bizár, ale mě v tom hodně osvobozuje to, jak židé pojímají svátek odpočinku šabat: <a href=\"https://overcast.fm/+ABMuwcQ0aMs\" rel=\"nofollow noopener\" translate=\"no\" target=\"_blank\"><span class=\"invisible\">https://</span><span class=\"\">overcast.fm/+ABMuwcQ0aMs</span><span class=\"invisible\"></span></a></p>",
+        "created_at": "2026-11-13T19:03:23+00:00",
+        "favourites_count": 1,
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "unlisted",
+        "mentions": [
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          },
+          {
+            "url": "https://witter.cz/@banterCZ",
+            "username": "banterCZ",
+            "acct": "banterCZ@witter.cz",
+            "id": "109337559172025233"
+          }
+        ],
+        "bookmarked": false,
+        "language": "cs",
+        "muted": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "117610727418437775",
+        "uri": "https://vibe.lbc.wtf/users/mwenisch/statuses/01M7B5AQ7WED5DCP6EW1PS8R7N",
+        "url": "https://vibe.lbc.wtf/@mwenisch/statuses/01M7B5AQ7WED5DCP6EW1PS8R7N",
+        "account": {
+          "id": "114700114305583622",
+          "username": "mwenisch",
+          "acct": "mwenisch@lbc.wtf",
+          "display_name": "Martin Wenisch",
+          "url": "https://vibe.lbc.wtf/@mwenisch",
+          "uri": "https://vibe.lbc.wtf/users/mwenisch",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/114/700/114/305/583/622/original/5a19c12d76b621bf.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/114/700/114/305/583/622/original/5a19c12d76b621bf.png"
+        },
+        "in_reply_to_id": "117610652920572313",
+        "in_reply_to_account_id": "109324797571302698",
+        "content": "<p><span class=\"h-card\"><a href=\"https://boskovice.social/@zoul\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>zoul</span></a></span> Mas nejakou predstavu o formatu? Ja bych mohl ukazat, jak AI pouzivam v Unreleased a jak bych se na to koukal na pohovoru. Ale musela by se nejak rozjet debata nebo dalsi zkusenosti, to byva v onlinu problem. Offline je na to otevrenejsi. <span class=\"h-card\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span></p>",
+        "created_at": "2026-11-13T19:14:41+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://boskovice.social/@zoul",
+            "username": "zoul",
+            "acct": "zoul@boskovice.social",
+            "id": "109324797571302698"
+          },
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          }
+        ],
+        "bookmarked": false,
+        "language": "cs",
+        "muted": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "current_user": "denied"
+        }
+      },
+      {
+        "id": "117610756748133821",
+        "uri": "https://boskovice.social/users/zoul/statuses/117610756671578756",
+        "url": "https://boskovice.social/@zoul/117610756671578756",
+        "account": {
+          "id": "109324797571302698",
+          "username": "zoul",
+          "acct": "zoul@boskovice.social",
+          "display_name": "Tomáš Znamenáček",
+          "url": "https://boskovice.social/@zoul",
+          "uri": "https://boskovice.social/users/zoul",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/a7d41129052813b7.jpeg",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/109/324/797/571/302/698/original/a7d41129052813b7.jpeg"
+        },
+        "in_reply_to_id": "117610727418437775",
+        "in_reply_to_account_id": "114700114305583622",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://vibe.lbc.wtf/@mwenisch\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>mwenisch</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span> Napadá mě řada možností, hodně záleží na tom, jestli bysme to chtěli udělat víckrát. Pokud ano, dovedu si představit, že si na každý díl někdo nachystá větší demo (10–15 min?), po kterém bude prostor pro dotazy a debatu. Ale pro začátek bysme mohli třeba udělat jednoduché kolečko, kde nasdílíme své profesní zkušenosti a následně stručně představíme, na co používáme LLM a s jakými úspěchy. Když o to bude zájem, můžem pak navázat dalším dílem, kde už by byla hlubší debata.</p>",
+        "created_at": "2026-11-13T19:22:07+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://vibe.lbc.wtf/@mwenisch",
+            "username": "mwenisch",
+            "acct": "mwenisch@lbc.wtf",
+            "id": "114700114305583622"
+          },
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          }
+        ],
+        "bookmarked": false,
+        "language": "cs",
+        "muted": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "117610784726350835",
+        "uri": "https://vibe.lbc.wtf/users/mwenisch/statuses/01M7B65D6DTMMM801W5TR5HGJW",
+        "url": "https://vibe.lbc.wtf/@mwenisch/statuses/01M7B65D6DTMMM801W5TR5HGJW",
+        "account": {
+          "id": "114700114305583622",
+          "username": "mwenisch",
+          "acct": "mwenisch@lbc.wtf",
+          "display_name": "Martin Wenisch",
+          "url": "https://vibe.lbc.wtf/@mwenisch",
+          "uri": "https://vibe.lbc.wtf/users/mwenisch",
+          "avatar": "https://mastodonczech.cz/system/cache/accounts/avatars/114/700/114/305/583/622/original/5a19c12d76b621bf.png",
+          "avatar_static": "https://mastodonczech.cz/system/cache/accounts/avatars/114/700/114/305/583/622/original/5a19c12d76b621bf.png"
+        },
+        "in_reply_to_id": "117610756748133821",
+        "in_reply_to_account_id": "109324797571302698",
+        "content": "<p><span class=\"h-card\"><a href=\"https://boskovice.social/@zoul\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>zoul</span></a></span> Ja jsem pro, akorat bych uz od zacatku mel nejakou praktickou ukazku. Ze bych si ja nebo ty vzal 10 min? Aby to nevyznelo prazdne a zbytecne. Vybereme nejaky pevny den v tydnu a hodinu a zkusime to pristi tyden odstartovat? <span class=\"h-card\"><a href=\"https://mastodonczech.cz/@honzajavorek\" class=\"u-url mention\" rel=\"nofollow noopener\" target=\"_blank\">@<span>honzajavorek</span></a></span></p>",
+        "created_at": "2026-11-13T19:29:15+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://boskovice.social/@zoul",
+            "username": "zoul",
+            "acct": "zoul@boskovice.social",
+            "id": "109324797571302698"
+          },
+          {
+            "url": "https://mastodonczech.cz/@honzajavorek",
+            "username": "honzajavorek",
+            "acct": "honzajavorek",
+            "id": "110921870573231541"
+          }
+        ],
+        "bookmarked": false,
+        "language": "cs",
+        "muted": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "current_user": "denied"
+        }
+      },
+      {
+        "id": "117611355927182809",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/117611355927182809",
+        "url": "https://mastodonczech.cz/@honzajavorek/117611355927182809",
+        "account": {
+          "id": "110921870573231541",
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "in_reply_to_id": "117610683035456361",
+        "in_reply_to_account_id": "109324797571302698",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://boskovice.social/@zoul\" class=\"u-url mention\">@<span>zoul</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://witter.cz/@banterCZ\" class=\"u-url mention\">@<span>banterCZ</span></a></span> Myslím, že umím překračovat Rubikony, v životě jsem jich pár už přebrodil. Například přesunem z Brna do Prahy v situaci, kdy pro mě Brno bylo vším, což zahrnovalo i předání organizace brněnského Pyva. Ale našlo by se toho víc.</p><p>Možná v tom zvenčí vidíte nějakou fixaci, a nejspíš tam i byla. Prošel jsem si ale v poslední době nějakým vývojem a řekl bych, že už to beru s odstupem.</p><p>Jinak bych ani takový plán, jaký jsem dnes sepsal, nedokázal udělat.</p>",
+        "created_at": "2026-11-13T21:54:31.449000+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "unlisted",
+        "mentions": [
+          {
+            "url": "https://boskovice.social/@zoul",
+            "username": "zoul",
+            "acct": "zoul@boskovice.social",
+            "id": "109324797571302698"
+          },
+          {
+            "url": "https://witter.cz/@banterCZ",
+            "username": "banterCZ",
+            "acct": "banterCZ@witter.cz",
+            "id": "109337559172025233"
+          }
+        ],
+        "bookmarked": false,
+        "application": {
+          "name": "Web"
+        },
+        "language": "cs",
+        "muted": false,
+        "pinned": false,
+        "replies_count": 1,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "117611366468339804",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/117611366468339804",
+        "url": "https://mastodonczech.cz/@honzajavorek/117611366468339804",
+        "account": {
+          "id": "110921870573231541",
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "in_reply_to_id": "117611355927182809",
+        "in_reply_to_account_id": "109324797571302698",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://boskovice.social/@zoul\" class=\"u-url mention\">@<span>zoul</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://witter.cz/@banterCZ\" class=\"u-url mention\">@<span>banterCZ</span></a></span> Tím posláním jsem myslel hlavně to, že mě baví se tomu věnovat.</p><p>Samozřejmě se situace změnila, tak je to v poslední době trochu útrpné, ale přijde mi fajn si ten případný konec nějak jasně nastavit a vydefinovat, a nepodléhat při zavírání pro mně něčeho tak významného právě těm chvilkovým emocím.</p><p>Šabat si pak někdy pustím. Bizarní nevím, snažím se mít hlavu otevřenou.</p>",
+        "created_at": "2026-11-13T21:57:12.293000+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "unlisted",
+        "mentions": [
+          {
+            "url": "https://boskovice.social/@zoul",
+            "username": "zoul",
+            "acct": "zoul@boskovice.social",
+            "id": "109324797571302698"
+          },
+          {
+            "url": "https://witter.cz/@banterCZ",
+            "username": "banterCZ",
+            "acct": "banterCZ@witter.cz",
+            "id": "109337559172025233"
+          }
+        ],
+        "bookmarked": false,
+        "application": {
+          "name": "Web"
+        },
+        "language": "cs",
+        "muted": false,
+        "pinned": false,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      },
+      {
+        "id": "117611385201893590",
+        "uri": "https://mastodonczech.cz/users/honzajavorek/statuses/117611385201893590",
+        "url": "https://mastodonczech.cz/@honzajavorek/117611385201893590",
+        "account": {
+          "id": "110921870573231541",
+          "username": "honzajavorek",
+          "acct": "honzajavorek",
+          "display_name": "Honza Javorek",
+          "url": "https://mastodonczech.cz/@honzajavorek",
+          "uri": "https://mastodonczech.cz/users/honzajavorek",
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/110/921/870/573/231/541/original/ff3f4944e047b85c.jpg"
+        },
+        "in_reply_to_id": "117610784726350835",
+        "in_reply_to_account_id": "114700114305583622",
+        "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://vibe.lbc.wtf/@mwenisch\" class=\"u-url mention\">@<span>mwenisch</span></a></span> <span class=\"h-card\" translate=\"no\"><a href=\"https://boskovice.social/@zoul\" class=\"u-url mention\">@<span>zoul</span></a></span> Odstartujte, já vám nic neslíbím. Já mám doma novorozence a 30-60min volného času denně 😀 Kód nepíšu, to už dělá Claude, takže si z junior.guru udělám i laboratoř, jak by mohl vývoj SW produktu v jednom člověku vypadat do budoucna. Žádné alternativní nápady na další byznys teď nemám, ale nejsem úplně zaměstnanecký typ.</p>",
+        "created_at": "2026-11-13T22:01:58.145000+00:00",
+        "reblogged": false,
+        "favourited": false,
+        "sensitive": false,
+        "visibility": "public",
+        "mentions": [
+          {
+            "url": "https://vibe.lbc.wtf/@mwenisch",
+            "username": "mwenisch",
+            "acct": "mwenisch@lbc.wtf",
+            "id": "114700114305583622"
+          },
+          {
+            "url": "https://boskovice.social/@zoul",
+            "username": "zoul",
+            "acct": "zoul@boskovice.social",
+            "id": "109324797571302698"
+          }
+        ],
+        "bookmarked": false,
+        "application": {
+          "name": "Web"
+        },
+        "language": "cs",
+        "muted": false,
+        "pinned": false,
+        "quote_approval": {
+          "automatic": [
+            "public"
+          ],
+          "current_user": "automatic"
+        }
+      }
+    ]
   },
   {
     "url": "https://honzajavorek.cz/blog/tydenni-poznamky-novy-zivot/",
@@ -709,8 +1813,8 @@
           "display_name": "Vojtěch Oram",
           "url": "https://mastodonczech.cz/@vojtechoram",
           "uri": "https://mastodonczech.cz/ap/users/116131631562398109",
-          "avatar": "https://mastodonczech.cz/avatars/original/missing.png",
-          "avatar_static": "https://mastodonczech.cz/avatars/original/missing.png"
+          "avatar": "https://mastodonczech.cz/system/accounts/avatars/116/131/631/562/398/109/original/e6d698ea807cbd2a.png",
+          "avatar_static": "https://mastodonczech.cz/system/accounts/avatars/116/131/631/562/398/109/original/e6d698ea807cbd2a.png"
         },
         "in_reply_to_id": "117077007170212634",
         "in_reply_to_account_id": "110921870573231541",
