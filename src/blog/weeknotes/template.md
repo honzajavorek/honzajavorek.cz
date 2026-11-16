@@ -22,6 +22,15 @@ $github_work
 -   E-maily, [klubový Discord](https://junior.guru/club/), Apify Slack a další pracovní režie, [Pyvec Slack](https://docs.pyvec.org/operations/support.html#sit-kontaktu), zprávy na LinkedIn.
 $dependabot_upgrades
 
+## JARO
+
+Krátká zakladatelská poznámka k [plánu JARO]({filename}/2026-11-13_plan-na-jaro.md).
+Čísla, podle kterých se rozhodnu: [platící členové a MRR](https://junior.guru/about/club/).
+
+-   **Chci to pořád dělat?**
+-   **Co mi dodalo energii?**
+-   **Co mi ji vzalo?**
+
 ## Plánuji
 
 1.
