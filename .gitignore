@@ -14,3 +14,6 @@ venv/
 
 # Database
 *.db*
+
+# 1Password-mounted secrets
+.env
